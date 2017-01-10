@@ -1,0 +1,73 @@
+body
+{
+	margin-top: 160px;
+}
+
+body.scrolled
+{
+	margin-top: 130px;
+}
+
+body > header
+{
+	height: 70px;
+	padding: 20px 20px 20px 80px;
+	font-size: 1em;
+}
+
+body.scrolled > header
+{
+	height: 40px;
+	padding: 10px 40px 10px 40px;
+	font-size: 0.7em;
+}
+
+body.with-breadcrumb.scrolled  > header
+{
+	height: 60px;
+}
+
+body.scrolled > header p.description
+{
+	display: none;
+}
+
+body.scrolled > nav.breadcrumb
+{
+	top: 40px;
+}
+
+body > aside#sidebar
+{
+	top: 110px;
+}
+
+body.scrolled > aside#sidebar
+{
+	top: 60px;
+}
+
+body.with-breadcrumb.scrolled  > aside#sidebar
+{
+	top: 80px;
+}
+
+body #hamburger
+{
+	padding: 44px 10px 40px 30px;
+}
+
+body.scrolled #hamburger
+{
+	padding: 20px 10px;
+}
+
+body header h1
+{
+	padding-top: 20px;
+}
+
+body.scrolled header h1
+{
+	padding-top: 7px;
+}

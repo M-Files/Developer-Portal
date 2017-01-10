@@ -1,0 +1,29 @@
+#hamburger
+{
+	display: none;
+}
+
+body > *
+{
+	margin-right: 30px;
+}
+
+body > aside#sidebar
+{
+	left: 0px; 
+}
+
+body > article, body > footer
+{
+	margin-left: 480px;
+}
+
+body > header
+{
+	padding-left: 40px;
+}
+
+nav.breadcrumb
+{
+	padding-left: 40px;
+}

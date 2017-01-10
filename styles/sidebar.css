@@ -1,0 +1,108 @@
+#hamburger
+{
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 2em;
+	padding: 20px 10px;
+}
+
+aside#sidebar
+{
+	position: fixed;
+	padding: 20px 20px 130px 0px;
+	margin: 0px;
+	top: 60px;
+	left: -110%;
+	bottom: -1px;
+	width: 100%;
+	z-index: 10002;
+	background-color: #2071B7;
+	color: white;
+	box-shadow: 5px 0 5px -5px #333;
+	overflow: hidden;
+	min-height: 100px;
+}
+
+body.with-breadcrumb > aside#sidebar
+{
+	top: 120px;
+}
+
+aside#sidebar nav.primary
+{
+	height: 100%;
+	overflow-y: auto;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+aside#sidebar nav.secondary
+{
+	border-top: 1px solid white;
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	right: 30px;
+	background-color: #2071B7;
+	z-index: 10000;
+	height: 80px;
+}
+
+body.sidebar-expanded aside#sidebar
+{
+	left: 0px;
+}
+
+aside#sidebar h1
+{
+	font-size: 1.2em;
+	margin: 0px;
+	padding: 0px;
+}
+
+aside#sidebar ul li
+{
+	margin: 8px 0px;
+}
+
+aside#sidebar ul li a
+{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+}
+
+ul.treeview ul
+{
+	display: none;
+}
+
+ul.treeview li.expanded > ul
+{
+	display: block;
+}
+
+i.expandCollapseIcon
+{
+	cursor: pointer;
+	position: absolute;
+	left: -57px;
+	top: -3px;
+	padding: 5px 15px;
+}
+
+i.expandCollapseIcon:before
+{
+	content: '\f2fb';
+}
+
+li.expanded > i.expandCollapseIcon
+{
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}

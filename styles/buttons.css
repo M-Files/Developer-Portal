@@ -1,0 +1,61 @@
+button, a.button
+{
+	display: inline-block;
+	position: relative;
+	margin: 30px auto;
+	padding: 12px 24px;
+	border-width: 0;
+	border-radius: 2px;
+	background-color: #2071B7;
+	color: #ecf0f1;
+	width: auto;
+	font-size: 1em;
+	text-decoration: none;
+	font-family: sans-serif;
+	overflow: hidden;
+	cursor: pointer;
+	
+	transition: background-color .3s;
+}
+
+button.green, a.button.green
+{
+	background-color: #2ecc71;
+}
+
+button:hover, a.button:hover, button:focus, a.button:focus
+{
+	/* background-color: #27ae60; */
+}
+
+button:before, a.button:before
+{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	display: block;
+	width: 0;
+	padding-top: 0;
+
+	border-radius: 100%;
+
+	/* background-color: rgba(236, 240, 241, .3); */
+	background-color: white;
+	opacity: 0.15;
+
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+button:active:before, a.button:active:before
+{
+	width: 120%;
+	padding-top: 120%;
+
+	transition: width .2s ease-out, padding-top .2s ease-out;
+}

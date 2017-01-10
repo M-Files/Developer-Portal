@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
+
+
+    <style>
+        @import url("//{{ site.baseurl }}/styles/base.css");
+        @import url("//{{ site.baseurl }}/styles/buttons.css");
+        @import url("//{{ site.baseurl }}/styles/header.css");
+        @import url("//{{ site.baseurl }}/styles/footer.css");
+        @import url("//{{ site.baseurl }}/styles/breadcrumb.css");
+        @import url("//{{ site.baseurl }}/styles/sidebar.css");
+        @import url("//{{ site.baseurl }}/styles/min-width-500px/base.css") screen and (min-width: 500px);
+        @import url("//{{ site.baseurl }}/styles/min-width-1500px/base.css") screen and (min-width: 1500px);
+    </style>
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+</head>
+
+<body>
+
+    <header>
+        <i class="material-icons" id="hamburger">menu</i>
+        <h1 class="title">M-Files as a Platform.</h1>
+    </header>
+
+    <!-- <div role="main"> -->
+    {{ content }}
+    <!-- </div> -->
+
+    <aside id="sidebar" role="navigation">
+        {% include navigation.html %}
+    </aside>
+
+    <footer>
+        <p>&copy; M-Files. <a href="mailto:devsupport@m-files.com">Contact the Developer Evangelist team at M-Files.</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script src="//{{ site.baseurl }}/scripts/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+    <script src="//{{ site.baseurl }}/scripts/sidebar.js"></script>
+    <script src="//{{ site.baseurl }}/scripts/treeview.js"></script>
+    <script src="//{{ site.baseurl }}/scripts/scrolling.js"></script>
+
+    {% include analytics.html %}
+
+</body>
+
+</html>

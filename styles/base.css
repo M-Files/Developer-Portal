@@ -1,0 +1,80 @@
+*
+{
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+body, html
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+body
+{
+	background-color: white;
+	color: #333;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: 130px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+pre
+{
+	position: relative;
+}
+
+pre > code
+{
+	box-shadow: 0 0 5px 2px #CCC;
+	padding-top: 1em;
+}
+
+code::before
+{
+	font-size: 0.8em;
+	float: left;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+code.vbs::before
+{
+	content: 'VBScript';
+}
+
+code.cs::before
+{
+	content: 'C# (.NET)';
+}
+
+body > *
+{
+	margin: 20px;
+}
+
+body > article
+{
+	border-bottom: 3px solid #DDD;
+}
+
+p.description
+{
+	margin: 0px 20px 7px 20px;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+p.description > i.material-icons
+{
+	font-size: 0.9em;
+}

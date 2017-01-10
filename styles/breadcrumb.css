@@ -1,0 +1,48 @@
+nav.breadcrumb
+{
+	margin: 0px;
+	padding: 5px 40px 5px 80px;
+	position: fixed;
+	top: 80px;
+	left: 0px;
+	right: 0px;
+	z-index: 10001;
+	color: white;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+nav.breadcrumb ul,
+	nav.breadcrumb ul li
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav.breadcrumb ul li
+{
+	display: inline-block;
+}
+
+nav.breadcrumb ul li a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+nav.breadcrumb ul li:after
+{
+	content: ' \f2fb ';
+	font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+	color: white;
+	width: 2em;
+	text-align: center;
+	display: inline-block;
+}
+
+nav.breadcrumb ul li:last-child:after
+{
+	display: none;
+}
