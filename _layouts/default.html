@@ -41,7 +41,12 @@
 
     <header>
         <i class="material-icons" id="hamburger">menu</i>
-        <h1 class="title">M-Files as a Platform.</h1>
+        <h1 class="title">
+            {% if page.title %}
+                {{ page.title }} -
+            {% endif %}
+            M-Files as a Platform
+        </h1>
     </header>
 
     <!-- <div role="main"> -->
