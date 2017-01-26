@@ -7,7 +7,7 @@ Whilst the Vault Application Framework has C# templates, it can also be used wit
 
 ## Why does Visual Basic.NET not work natively?
 
-The Vault Application Framework does not require C#, but the [Visual Studio Template](m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1262/3005?object=EA9E06AA-2F7C-4D23-919A-9C93FD5145F6&file=5425A00C-BE53-4F48-A9E6-675C9242AABC) provided for use with the Vault Application Framework creates a C# project.  To create a Vault Application Framework application using VB.NET, you must create the application infrastructure yourself.</p>
+The Vault Application Framework does not require C#, but the [Visual Studio Template](m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1262/3005?object=EA9E06AA-2F7C-4D23-919A-9C93FD5145F6&file=5425A00C-BE53-4F48-A9E6-675C9242AABC) provided for use with the Vault Application Framework creates a C# project.  To create a Vault Application Framework application using VB.NET, you must create the application infrastructure yourself.
 
 ## Getting started with Visual Basic.NET
 
@@ -57,7 +57,7 @@ In order to use the Vault Application Framework, we need to first set up some re
 
 The application definition file is used to define details about your Vault Application Framework application such as the publisher and version, and also to define its Global Unique IDentifier (GUID).  At a minimum you should update:
 
-* The application ID (`<guid>`). This must be a unique ID for the application.  You can create a GUID using a tool such as https://guidgenerator.com/.  Note that the GUID should be formatted without braces.
+* The application ID (`<guid>`). This must be a unique ID for the application.  You can create a GUID using a tool such as [https://guidgenerator.com/](https://guidgenerator.com/).  Note that the GUID should be formatted without braces.
 * The application name (`<name>`). A human-readable name for the application displayed within the M-Files Admin once installed.
 * The application description (`<description>`). A short description of the application.
 * Publisher (`<publisher>`). The name of the publisher of the application - typically your company name.
