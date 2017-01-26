@@ -5,8 +5,6 @@ title: Using the Vault Application Framework with VB.NET
 
 Whilst the Vault Application Framework has C# templates, it can also be used with Visual Basic .NET.  Doing so requires takes some manual steps to get working.  This guide details those steps and provides the developer with the ability to get a Vault Application Framework sample application up-and-running using VB.NET.
 
-## Software Requirements
-
 ## Why does Visual Basic.NET not work natively?
 
 The Vault Application Framework does not require C#, but the [Visual Studio Template](m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1262/3005?object=EA9E06AA-2F7C-4D23-919A-9C93FD5145F6&file=5425A00C-BE53-4F48-A9E6-675C9242AABC) provided for use with the Vault Application Framework creates a C# project.  To create a Vault Application Framework application using VB.NET, you must create the application infrastructure yourself.</p>
@@ -14,9 +12,10 @@ The Vault Application Framework does not require C#, but the [Visual Studio Temp
 ## Getting started with Visual Basic.NET
 
 ### Creating the project
+
 To create a Vault Application Framework application, we first need to start with a .NET 4.5 class library.  Create one as normal by going to File > New Project.  Within the left-hand area, navigate to the Visual Basic section, choose Windows, and then choose a Class Library as the project template.
 
-(image)
+![Select "File", then "New Project", then expand the "Visual Basic" section, expand "Windows", and select "Class Library".](creating-the-project.png)
 
 ### Tidying up the default files
 
@@ -51,6 +50,7 @@ In order to use the Vault Application Framework, we need to first set up some re
   * Enter M-Files.VAF into the search box and press enter to search.
   * Select the MFiles.VAF package and click Install on the right.
   * Follow the prompts to install the package and its prerequisites from NuGet.
+
 <p class="note">The Vault Application Framework requires a specific version of JSON.NET.  If you update it then the application will fail to run.</p>
 
 #### The appdef.xml file
@@ -102,7 +102,41 @@ To create an appdef.xml file:
 </application>
 ```
 
+### Enabling automatic deployment (optional)
+
+Whilst this step is optional, if you choose not to use automatic deployment then you will need to manually create a "zip" file containing the solution output, and install using the M-Files Admin software.  The Vault Application Installer task does this for you, and automatically installs it to a local M-Files server for development/testing.
+
+Automatic deployment is done using the "MFVaultApplicationInstaller.exe" file, along with a build task.  The executable file packages up the various resources from the build folder into a zip file, then connects to a local M-Files server and installs (or updates) the package into a specified vault.
+
+<p class="note">The MFVaultApplicationInstaller.exe file should be available alongside this file in a multi-file-document.  If you cannot find this file then please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.</p>
+
+To set up the automatic deployment:
+
+* Copy the MFVaultApplicationInstaller.exe file to the project.
+* Right-click on the MFVaultApplicationInstaller.exe file and select Properties.  Ensure that Copy to Output Directory is set to Copy if newer.
+* Set up the post-build task:
+  * Right-click on your project within the Solution Explorer and select Properties.
+  * Select Compile on the left.
+  * Click the Build Events… button.
+  * Within the Post Build Events, enter the following text:
+
+
+`start "Installing Vault Application" /D "$(TargetDir)" "MFVaultApplicationInstaller.exe" "Sample Vault"`
+
+<p class="note">"Sample Vault" should be replaced with the name of the vault you wish to test the application in.</p>
+
+### Creating your first Vault Application Framework application
+
+<p class="note">We will create a class named VaultApplication.  Please note that the class and assembly details must match those entered into the appdef.xml file.</p>
+
 #### Creating the Vault Application class
+
+To create a simple Vault Application we need to add a new class to the project and configure some functionality.  For the sake of this article we will create a basic vault application which starts a recurring background operation every 30 seconds:
+
+* Right-click on your project in the Solution Explorer and select Add > New Item.
+* Select a Class, and change the name to VaultApplication.vb.
+* Copy in the sample code below:
+
 
 ```vbnet
 Imports MFiles.VAF
@@ -127,3 +161,27 @@ Public Class VaultApplication
 End Class
 
 ```
+
+### Deploying
+
+To deploy the application, simply build the solution using the menu or keyboard shortcuts (Ctrl-Shift-B).  The post-build event should run and you will be presented with a console screen detailing the installation process.
+
+(image)
+
+Once the application is installed, it can be found by using the M-Files Admin software: connect to the server, then right-click on the vault and select "Applications".  Your application should be listed. 
+
+(image)
+
+We can confirm that our application is running by loading the Windows Event Log and checking for an event every 30 seconds from our test application.
+
+(image)
+
+# Common pitfalls
+
+### Settings.settings
+
+If the Settings.settings file exists in the project then this will cause installation errors.  The file must be removed prior to building.
+
+### Embed Interop Types on M-Files API
+
+If Embed Interop Types is set to True on the M-Files API, then passing complex types from the Vault Application Framework to the VBScript proxies may fail with an exception complaining that properties or methods don't exist on the object.  Embed Interop Types must be set to False for the API reference.
