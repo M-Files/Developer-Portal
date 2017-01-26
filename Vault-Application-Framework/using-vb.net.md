@@ -21,6 +21,7 @@ To create a Vault Application Framework application, we first need to start with
 ### Tidying up the default files
 
 By default, Visual Studio will create some sample files.  We will remove these files before we start.
+
 * Remove the Settings.settings file from the project:
   * Click the Show all files icon in the Solution Explorer.
   * Expand My Project.
@@ -37,6 +38,7 @@ By default, Visual Studio will create some sample files.  We will remove these f
 #### References
 
 In order to use the Vault Application Framework, we need to first set up some references to libraries that we will use:
+
 * Add a reference to the M-Files API.
   * Right-click on your project within the Studio Explorer, select Add > Reference.
   * Choose COM from the left-hand menu, scroll the right-hand window down to the M-Files API, and click the checkbox next to it.  Note that the name will differ depending upon the version of M-Files that you have running (e.g. M-Files API 2015.3).
@@ -54,6 +56,7 @@ In order to use the Vault Application Framework, we need to first set up some re
 #### The appdef.xml file
 
 The application definition file is used to define details about your Vault Application Framework application such as the publisher and version, and also to define its Global Unique IDentifier (GUID).  At a minimum you should update:
+
 * The application ID (<guid>). This must be a unique ID for the application.  You can create a GUID using a tool such as https://guidgenerator.com/.  Note that the GUID should be formatted without braces.
 * The application name (<name>). A human-readable name for the application displayed within the M-Files Admin once installed.
 * The application description (<description>). A short description of the application.
@@ -65,6 +68,7 @@ The application definition file is used to define details about your Vault Appli
   * The class that inherits from VaultApplicationBase (<class>). This is the full class name (including namespace) of the class that inherits from VaultApplicationBase, e.g. "VAFwithVBdotNET.VaultApplication".
 
 To create an appdef.xml file:
+
 * Right-click on your project within the Solution Explorer,
 * Select Add > New Item
 * Choose XML File in the list, and ensure the file's name is appdef.xml: (image)
