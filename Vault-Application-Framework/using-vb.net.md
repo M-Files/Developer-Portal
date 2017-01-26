@@ -57,15 +57,15 @@ In order to use the Vault Application Framework, we need to first set up some re
 
 The application definition file is used to define details about your Vault Application Framework application such as the publisher and version, and also to define its Global Unique IDentifier (GUID).  At a minimum you should update:
 
-* The application ID (<guid>). This must be a unique ID for the application.  You can create a GUID using a tool such as https://guidgenerator.com/.  Note that the GUID should be formatted without braces.
-* The application name (<name>). A human-readable name for the application displayed within the M-Files Admin once installed.
-* The application description (<description>). A short description of the application.
-* Publisher (<publisher>). The name of the publisher of the application - typically your company name.
-* Copyright (<copyright>). Any copyright notices for the application.
-* Extension object details (<extension-object>). These define the entry point for your application, which we will build in the next step.  You must fill in:
-  * The name of the extension object (<name>).
-  * The assembly (<assembly>) that contains your application. This is typically the name of your project output, e.g. "VAFwithVBdotNET.dll".
-  * The class that inherits from VaultApplicationBase (<class>). This is the full class name (including namespace) of the class that inherits from VaultApplicationBase, e.g. "VAFwithVBdotNET.VaultApplication".
+* The application ID (`<guid>`). This must be a unique ID for the application.  You can create a GUID using a tool such as https://guidgenerator.com/.  Note that the GUID should be formatted without braces.
+* The application name (`<name>`). A human-readable name for the application displayed within the M-Files Admin once installed.
+* The application description (`<description>`). A short description of the application.
+* Publisher (`<publisher>`). The name of the publisher of the application - typically your company name.
+* Copyright (`<copyright>`). Any copyright notices for the application.
+* Extension object details (`<extension-object>`). These define the entry point for your application, which we will build in the next step.  You must fill in:
+  * The name of the extension object (`<name>`).
+  * The assembly (`<assembly>`) that contains your application. This is typically the name of your project output, e.g. "VAFwithVBdotNET.dll".
+  * The class that inherits from VaultApplicationBase (`<class>`). This is the full class name (including namespace) of the class that inherits from VaultApplicationBase, e.g. "VAFwithVBdotNET.VaultApplication".
 
 To create an appdef.xml file:
 
