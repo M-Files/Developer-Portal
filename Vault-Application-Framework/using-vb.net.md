@@ -13,7 +13,7 @@ The Vault Application Framework does not require C#, but the [Visual Studio Temp
 
 ### Creating the project
 
-To create a Vault Application Framework application, we first need to start with a .NET 4.5 class library.  Create one as normal by going to File > New Project.  Within the left-hand area, navigate to the Visual Basic section, choose Windows, and then choose a Class Library as the project template.
+To create a Vault Application Framework application, we first need to start with a .NET 4.5 class library.  Create one as normal by going to `File > New Project`.  Within the left-hand area, navigate to the `Visual Basic` section, choose `Windows`, and then choose a `Class Library` as the project template.
 
 ![Select "File", then "New Project", then expand the "Visual Basic" section, expand "Windows", and select "Class Library".](creating-the-project.png)
 
@@ -21,16 +21,16 @@ To create a Vault Application Framework application, we first need to start with
 
 By default, Visual Studio will create some sample files.  We will remove these files before we start.
 
-* Remove the Settings.settings file from the project:
-  * Click the Show all files icon in the Solution Explorer.
-  * Expand My Project.
-  * Select Settings.settings and press the Del key (or use the right-click context menu).
-  * Click the Show all files icon in the Solution Explorer to return to the default layout.
-* Remove the Class1.vb file, as we will create our own later.
-  * Select Class1.vb and press the Del key (or use the right-click context menu).
+* Remove the `Settings.settings`file from the project:
+  * Click the `Show all files` icon in the Solution Explorer.
+  * Expand `My Project`.
+  * Select `Settings.settings` and press the `Del` key (or use the right-click context menu).
+  * Click the `Show all files` icon in the Solution Explorer to return to the default layout.
+* Remove the `Class1.vb file`, as we will create our own later.
+  * Select `Class1.vb` and press the `Del` key (or use the right-click context menu).
 * Save the project.
 
-<p class="note">If you do not remove the Settings.settings file then your application will not work.</p>
+<p class="note">If you do not remove the `Settings.settings` file then your application will not work.</p>
 
 ### Adding references and VAF-specific files
 
@@ -39,16 +39,16 @@ By default, Visual Studio will create some sample files.  We will remove these f
 In order to use the Vault Application Framework, we need to first set up some references to libraries that we will use:
 
 * Add a reference to the M-Files API.
-  * Right-click on your project within the Studio Explorer, select Add > Reference.
-  * Choose COM from the left-hand menu, scroll the right-hand window down to the M-Files API, and click the checkbox next to it.  Note that the name will differ depending upon the version of M-Files that you have running (e.g. M-Files API 2015.3).
-  * Click OK to close the Add Reference window.
-  * Expand References within the project in Solution Explorer (if not already expanded).
-  * Right-click on the MFilesAPI reference and select Properties.  Ensure "Embed Interop Types" is set to False.
-* Add a reference to the M-Files VAF NuGet package.
-  * Right-click on your project within the Solution Explorer and select Manage NuGet Packages.
-  * Within the new NuGet window, click the Browse heading on the left.
-  * Enter M-Files.VAF into the search box and press enter to search.
-  * Select the MFiles.VAF package and click Install on the right.
+  * Right-click on your project within the `Studio Explorer`, select `Add > Reference`.
+  * Choose `COM` from the left-hand menu, scroll the right-hand window down to the M-Files API, and click the checkbox next to it.  Note that the name will differ depending upon the version of M-Files that you have running (e.g. `M-Files API 2015.3`).
+  * Click `OK` to close the `Add Reference` window.
+  * Expand `References` within the project in Solution Explorer (if not already expanded).
+  * Right-click on the `MFilesAPI` reference and select Properties.  Ensure `Embed Interop Types` is set to `False`.
+* Add a reference to the `M-Files VAF NuGet` package.
+  * Right-click on your project within the `Solution Explorer` and select Manage NuGet Packages.
+  * Within the new NuGet window, click the `Browse` heading on the left.
+  * Enter `M-Files.VAF` into the search box and press enter to search.
+  * Select the `MFiles.VAF` package and click `Install` on the right.
   * Follow the prompts to install the package and its prerequisites from NuGet.
 
 <p class="note">The Vault Application Framework requires a specific version of JSON.NET.  If you update it then the application will fail to run.</p>
@@ -64,16 +64,19 @@ The application definition file is used to define details about your Vault Appli
 * Copyright (`<copyright>`). Any copyright notices for the application.
 * Extension object details (`<extension-object>`). These define the entry point for your application, which we will build in the next step.  You must fill in:
   * The name of the extension object (`<name>`).
-  * The assembly (`<assembly>`) that contains your application. This is typically the name of your project output, e.g. "VAFwithVBdotNET.dll".
-  * The class that inherits from VaultApplicationBase (`<class>`). This is the full class name (including namespace) of the class that inherits from VaultApplicationBase, e.g. "VAFwithVBdotNET.VaultApplication".
+  * The assembly (`<assembly>`) that contains your application. This is typically the name of your project output, e.g. `VAFwithVBdotNET.dll`.
+  * The class that inherits from VaultApplicationBase (`<class>`). This is the full class name (including namespace) of the class that inherits from VaultApplicationBase, e.g. `VAFwithVBdotNET.VaultApplication`.
 
-To create an appdef.xml file:
+To create an `appdef.xml` file:
 
-* Right-click on your project within the Solution Explorer,
-* Select Add > New Item
-* Choose XML File in the list, and ensure the file's name is appdef.xml: (image)
-* Right-click on the appdef.xml file and select Properties.  Ensure that Copy to Output Directory is set to Copy if newer.
-* Enter the following text within the appdef.xml file, altering the elements listed above:
+* Right-click on your project within the `Solution Explorer`,
+* Select `Add > New Item`
+* Choose `XML File` in the list, and ensure the file's name is `appdef.xml`:
+
+![Select "XML File" and name it "appdef.xml".](creating-appdef.xml.png)
+
+* Right-click on the `appdef.xml` file and select `Properties`.  Ensure that `Copy to Output Directory` is set to `Copy if newer`.
+* Enter the following text within the `appdef.xml file`, altering the elements listed above:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -106,20 +109,19 @@ To create an appdef.xml file:
 
 Whilst this step is optional, if you choose not to use automatic deployment then you will need to manually create a "zip" file containing the solution output, and install using the M-Files Admin software.  The Vault Application Installer task does this for you, and automatically installs it to a local M-Files server for development/testing.
 
-Automatic deployment is done using the "MFVaultApplicationInstaller.exe" file, along with a build task.  The executable file packages up the various resources from the build folder into a zip file, then connects to a local M-Files server and installs (or updates) the package into a specified vault.
+Automatic deployment is done using the `MFVaultApplicationInstaller.exe` file, along with a build task.  The executable file packages up the various resources from the build folder into a zip file, then connects to a local M-Files server and installs (or updates) the package into a specified vault.
 
 <p class="note">The MFVaultApplicationInstaller.exe file should be available alongside this file in a multi-file-document.  If you cannot find this file then please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.</p>
 
 To set up the automatic deployment:
 
-* Copy the MFVaultApplicationInstaller.exe file to the project.
-* Right-click on the MFVaultApplicationInstaller.exe file and select Properties.  Ensure that Copy to Output Directory is set to Copy if newer.
+* Copy the `MFVaultApplicationInstaller.exe` file to the project.
+* Right-click on the `MFVaultApplicationInstaller.exe` file and select `Properties`.  Ensure that `Copy to Output Directory` is set to `Copy if newer`.
 * Set up the post-build task:
-  * Right-click on your project within the Solution Explorer and select Properties.
-  * Select Compile on the left.
-  * Click the Build Events… button.
-  * Within the Post Build Events, enter the following text:
-
+  * Right-click on your project within the `Solution Explorer` and select `Properties`.
+  * Select `Compile` on the left.
+  * Click the `Build Events...` button.
+  * Within the `Post Build Events`, enter the following text:
 
 `start "Installing Vault Application" /D "$(TargetDir)" "MFVaultApplicationInstaller.exe" "Sample Vault"`
 
@@ -133,10 +135,9 @@ To set up the automatic deployment:
 
 To create a simple Vault Application we need to add a new class to the project and configure some functionality.  For the sake of this article we will create a basic vault application which starts a recurring background operation every 30 seconds:
 
-* Right-click on your project in the Solution Explorer and select Add > New Item.
-* Select a Class, and change the name to VaultApplication.vb.
+* Right-click on your project in the `Solution Explorer` and select `Add > New Item`.
+* Select a Class, and change the name to `VaultApplication.vb`.
 * Copy in the sample code below:
-
 
 ```vbnet
 Imports MFiles.VAF
@@ -164,24 +165,24 @@ End Class
 
 ### Deploying
 
-To deploy the application, simply build the solution using the menu or keyboard shortcuts (Ctrl-Shift-B).  The post-build event should run and you will be presented with a console screen detailing the installation process.
+To deploy the application, simply build the solution using the menu or keyboard shortcuts (`Ctrl-Shift-B`).  The post-build event should run and you will be presented with a console screen detailing the installation process.
 
-(image)
+![A screenshot of the deployment dialog.](deploying.png)
 
-Once the application is installed, it can be found by using the M-Files Admin software: connect to the server, then right-click on the vault and select "Applications".  Your application should be listed. 
+Once the application is installed, it can be found by using the `M-Files Admin` software: connect to the server, then right-click on the vault and select `Applications`.  Your application should be listed. 
 
-(image)
+![A screenshot of the M-Files Admin software showing the applications list.](applications-list.png)
 
 We can confirm that our application is running by loading the Windows Event Log and checking for an event every 30 seconds from our test application.
 
-(image)
+![A screenshot of the Windows Event Log showing the project output.](event-log.png)
 
 # Common pitfalls
 
 ### Settings.settings
 
-If the Settings.settings file exists in the project then this will cause installation errors.  The file must be removed prior to building.
+If the `Settings.settings` file exists in the project then this will cause installation errors.  The file must be removed prior to building.
 
 ### Embed Interop Types on M-Files API
 
-If Embed Interop Types is set to True on the M-Files API, then passing complex types from the Vault Application Framework to the VBScript proxies may fail with an exception complaining that properties or methods don't exist on the object.  Embed Interop Types must be set to False for the API reference.
+If `Embed Interop Types` is set to `True` on the M-Files API, then passing complex types from the Vault Application Framework to the VBScript proxies may fail with an exception complaining that properties or methods don't exist on the object.  `Embed Interop Types` must be set to `False` for the API reference.
