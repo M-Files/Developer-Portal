@@ -16,7 +16,7 @@ body > *
 }
 body > header
 {
-	background-image: url(/design1/images/m-files-logo-white.png);
+	background-image: url(/m-files/images/m-files-logo-white.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center right;
