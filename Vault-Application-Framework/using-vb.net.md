@@ -21,7 +21,7 @@ To create a Vault Application Framework application, we first need to start with
 
 By default, Visual Studio will create some sample files.  We will remove these files before we start.
 
-* Remove the `Settings.settings`file from the project:
+* Remove the `Settings.settings` file from the project:
   * Click the `Show all files` icon in the Solution Explorer.
   * Expand `My Project`.
   * Select `Settings.settings` and press the `Del` key (or use the right-click context menu).
@@ -177,7 +177,7 @@ We can confirm that our application is running by loading the Windows Event Log 
 
 ![A screenshot of the Windows Event Log showing the project output.](event-log.png)
 
-# Common pitfalls
+## Common pitfalls
 
 ### Settings.settings
 
