@@ -6,21 +6,19 @@
 body > *
 {
 	margin-right: 30px;
+	margin-left: 480px;
+}
+header
+{
+	margin-right: 0px;
+	margin-left: 400px;
 }
 
 body > aside#sidebar
 {
-	left: 0px; 
-}
-
-body > article, body > footer
-{
-	margin-left: 480px;
-}
-
-body > header
-{
-	padding-left: 40px;
+	left: 0px;
+	padding-top: 0px;
+	box-shadow: none;
 }
 
 nav.breadcrumb

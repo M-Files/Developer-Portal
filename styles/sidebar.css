@@ -1,20 +1,9 @@
-#hamburger
-{
-	color: white;
-	cursor: pointer;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	font-size: 2em;
-	padding: 20px 10px;
-}
-
 aside#sidebar
 {
 	position: fixed;
-	padding: 20px 20px 130px 0px;
+	padding: 35px 20px 130px 0px;
 	margin: 0px;
-	top: 60px;
+	top: 0px;
 	left: -110%;
 	bottom: -1px;
 	width: 100%;
@@ -51,9 +40,19 @@ aside#sidebar nav.secondary
 	height: 80px;
 }
 
+body.sidebar-expanded > *
+{
+	display: none;
+}
+body.sidebar-expanded > #hamburger
+{
+	display: block;
+}
+
 body.sidebar-expanded aside#sidebar
 {
 	left: 0px;
+	display: block;
 }
 
 aside#sidebar h1

@@ -9,5 +9,6 @@ body > footer
 	margin: 0px;
 	height: 40px;
 	padding: 5px 80px;*/
+	border-top: 1px solid #EEE;
 	font-size: 0.8em;
 }

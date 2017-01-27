@@ -1,0 +1,53 @@
+#in-page-nav, #in-page-nav li
+{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+#in-page-nav
+{
+    display: none;
+    position: fixed;
+    right: 0px;
+    width: 300px;
+    top: 0px;
+    bottom: 0px;
+    padding-top: 120px;
+    background-color: #EEE;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-image: url("../images/M-Files-Logo-White.png");
+    background-size: contain;
+}
+#in-page-nav li
+{
+    padding: 4px 0px;
+    padding-left: 5px;
+    border-left: 5px solid transparent;
+    font-size: 0.8em;
+}
+#in-page-nav a{
+    text-decoration: none;
+    color: #333;
+}
+#in-page-nav li.h2{
+    margin-left: 20px;
+}
+#in-page-nav li:hover{
+    border-left-color: #CCC;
+}
+#in-page-nav li.in-page-nav-active{
+    border-left-color: #333;
+}
+#in-page-nav li.h3{
+    margin-left: 40px;
+}
+article h1.in-page-nav-active,
+	article h2.in-page-nav-active,
+	article h3.in-page-nav-active
+{
+    border-left: 5px solid #333;
+    padding-left: 5px;
+    margin-left: 5px;
+}

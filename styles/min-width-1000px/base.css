@@ -1,38 +1,13 @@
+#in-page-nav
+{
+    display: block;
+}
 article.page
 {
     margin-right: 310px;
     padding-right: 20px;
-    border-right: 2px solid #EEE;
 }
-#in-page-nav
+header h1
 {
-    display: block;
-    position: fixed;
-    right: 5px;
-    width: 300px;
-    top: 155px;
-    bottom: 5px;
-}
-#in-page-nav, #in-page-nav li
-{
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
-#in-page-nav li
-{
-    padding: 4px 0px;
-    padding-left: 5px;
-    border-left: 5px solid transparent;
-    font-size: 0.8em;
-}
-#in-page-nav a{
-    text-decoration: none;
-    color: #333;
-}
-#in-page-nav li.h2{
-    margin-left: 20px;
-}
-#in-page-nav li.h3{
-    margin-left: 40px;
+    margin-right: 300px;
 }

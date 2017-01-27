@@ -1,18 +1,16 @@
-@import "scrolled.css";
-
 aside#sidebar
 {
 	left: -470px;
 	width: 430px;
 }
+body.sidebar-expanded > *
+{
+	display: block;
+}
 
 body.sidebar-expanded aside#sidebar
 {
 	left: 0px;
-}
-body > *
-{
-	margin: 20px 80px;
 }
 body > header
 {
