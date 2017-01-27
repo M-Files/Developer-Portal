@@ -34,18 +34,22 @@
 #in-page-nav li.h2{
     margin-left: 20px;
 }
+#in-page-nav li.h3{
+    margin-left: 40px;
+}
+#in-page-nav li.h4{
+    margin-left: 60px;
+}
 #in-page-nav li:hover{
     border-left-color: #CCC;
 }
 #in-page-nav li.in-page-nav-active{
     border-left-color: #333;
 }
-#in-page-nav li.h3{
-    margin-left: 40px;
-}
 article h1.in-page-nav-active,
 	article h2.in-page-nav-active,
-	article h3.in-page-nav-active
+	article h3.in-page-nav-active,
+	article h4.in-page-nav-active
 {
     border-left: 5px solid #333;
     padding-left: 5px;

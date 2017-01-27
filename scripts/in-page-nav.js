@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     var $ul = $("<ul></ul>").attr("id", "in-page-nav");
-    var $headings = $("h2, h3", $("article.page"));
+    var $headings = $("h2, h3, h4", $("article.page"));
     
     var headingLookups = [];
     $headings.each(function(i, o)
@@ -30,6 +30,7 @@ $(document).ready(function(){
 
     $("BODY").append($ul);
 
+    var previouslySelected = null;
     $(document).on("scroll", function(){
 
         // Go through headings and find the one we're scrolled to.
@@ -45,11 +46,16 @@ $(document).ready(function(){
         }
 
         // Remove any active nav items.
-        $(".in-page-nav-active").removeClass("in-page-nav-active");
+        if(null != previouslySelected)
+        {
+            previouslySelected[0].removeClass("in-page-nav-active");
+            previouslySelected[1].removeClass("in-page-nav-active");
+        }
 
         // Set the current active flag.
         lookup.listItem.addClass("in-page-nav-active");
         lookup.heading.addClass("in-page-nav-active");
+        previouslySelected = [lookup.listItem, lookup.heading];
 
     })
     $(document).scroll();
