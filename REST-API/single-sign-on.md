@@ -79,17 +79,17 @@ namespace WebServiceClient
 		private static void AuthenticateUsingSSO(string vaultGuid)
 		{
 
-      // Build a request to WebServiceSSO.aspx.
+			// Build a request to WebServiceSSO.aspx.
 			var request = new RestRequest($"/WebServiceSSO.aspx?popup=1&vault={vaultGuid}")
 			{
 				Credentials = CredentialCache.DefaultNetworkCredentials
 			};
 
-      // Execute teh request.
+			// Execute the request.
 			var response = restClient.Get(request);
 
-      // Populate our cookie container with the cookies (i.e. session tokens)
-      // returned by the request to WebServiceSSO.aspx.
+			// Populate our cookie container with the cookies (i.e. session tokens)
+			// returned by the request to WebServiceSSO.aspx.
 			restClient.CookieContainer = new CookieContainer();
 			foreach (var cookie in response.Cookies)
 			{
@@ -100,8 +100,8 @@ namespace WebServiceClient
 
 		private static List<ObjType> GetObjectTypes()
 		{
-      // Issue a request for the object types and parse them into the expected structure.
-      // The structures come from http://www.m-files.com/mfws/samples.html
+			// Issue a request for the object types and parse them into the expected structure.
+			// The structures come from http://www.m-files.com/mfws/samples.html
 			return restClient
 				.Get<List<ObjType>>(new RestRequest("/REST/structure/objecttypes")).Data;
 
