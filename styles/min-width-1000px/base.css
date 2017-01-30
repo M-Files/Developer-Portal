@@ -2,11 +2,21 @@
 {
     display: block;
 }
-article.page
+
+@media all and (max-width: 1499px)
 {
-    margin-right: 310px;
-    padding-right: 20px;
-}
-header h1{
-    margin-right: 310px;
+    #in-page-nav
+    {
+        right: initial;
+        left: 0px;
+    }
+    article.page
+    {
+        margin-left: 310px;
+        padding-left: 20px;
+    }
+    header h1{
+        margin-left: 300px;
+        padding-left: 30px;
+    }
 }
