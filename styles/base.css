@@ -122,11 +122,14 @@ p.note
 {
 	background-color: #D6E1F2;
 	border: 1px solid #A6A6A6;
-	padding: 5px 10px;
+	position: relative;
+	padding: 5px 10px 5px 30px;
 }
 p.note::before
 {
 	font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
 	content: "\f1fb";
-	padding-right: 10px;
+	position: absolute;
+	left: 10px;
+	top: 8px;
 }
