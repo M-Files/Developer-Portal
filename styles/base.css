@@ -127,5 +127,6 @@ p.note
 p.note::before
 {
 	font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
-	content: "\f1fe";
+	content: "\f1fb";
+	padding-right: 10px;
 }
