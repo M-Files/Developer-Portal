@@ -25,7 +25,7 @@
 }
 #in-page-nav a{
     text-decoration: none;
-    color: #333;
+    color: #555;
 }
 #in-page-nav li.h2{
     margin-left: 20px;
@@ -37,10 +37,10 @@
     margin-left: 60px;
 }
 #in-page-nav li:hover{
-    border-left-color: #333;
+    border-left-color: #111;
 }
 #in-page-nav li.in-page-nav-active{
-    border-left-color: #333;
+    border-left-color: #555;
 }
 #in-page-nav li.in-page-nav-active a{
     color: #111;

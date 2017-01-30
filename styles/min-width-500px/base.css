@@ -12,11 +12,3 @@ body.sidebar-expanded aside#sidebar
 {
 	left: 0px;
 }
-body > header
-{
-	background-image: url(/m-files/images/m-files-logo-white.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center right;
-	background-origin: content-box;
-}

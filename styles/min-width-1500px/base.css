@@ -10,21 +10,26 @@ body > *
 }
 header
 {
-	margin-right: 0px;
-	margin-left: 400px;
+	display: none;
 }
 
 body > aside#sidebar
 {
 	left: 0px;
-	padding-top: 120px;
+	padding-top: 80px;
 	box-shadow: none;
     background-position: center 10px;
     background-image: url("../../images/M-Files-Logo-White.png");
-    background-size: contain;
+    background-size: 200px;
+	background-repeat: no-repeat;
 }
 
 nav.breadcrumb
 {
 	padding-left: 40px;
+}
+
+#in-page-nav
+{
+    padding-top: 40px;
 }
