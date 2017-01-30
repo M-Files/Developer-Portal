@@ -8,7 +8,7 @@ aside#sidebar
 	bottom: -1px;
 	width: 100%;
 	z-index: 10002;
-	background-color: #2071B7;
+	background-color: #007dc6;
 	color: white;
 	box-shadow: 5px 0 5px -5px #333;
 	overflow: hidden;
@@ -35,7 +35,7 @@ aside#sidebar nav.secondary
 	bottom: 10px;
 	left: 30px;
 	right: 30px;
-	background-color: #2071B7;
+	background-color: #007dc6;
 	z-index: 10000;
 	height: 80px;
 }

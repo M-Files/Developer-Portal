@@ -14,13 +14,13 @@
     bottom: 0px;
     padding-top: 120px;
     z-index: 10;
-    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+    border: solid 1px #f5f5f5;
 }
 #in-page-nav li
 {
     padding: 4px 0px;
     padding-left: 5px;
-    border-left: 5px solid transparent;
     font-size: 0.8em;
 }
 #in-page-nav a{
@@ -36,14 +36,8 @@
 #in-page-nav li.h4{
     margin-left: 60px;
 }
-#in-page-nav li:hover{
-    border-left-color: #111;
-}
-#in-page-nav li.in-page-nav-active{
-    border-left-color: #555;
-}
 #in-page-nav li.in-page-nav-active a{
-    color: #111;
+    color: #e7781e;
 }
 
 article h1.in-page-nav-active,
@@ -51,7 +45,7 @@ article h1.in-page-nav-active,
 	article h3.in-page-nav-active,
 	article h4.in-page-nav-active
 {
-    border-left: 5px solid #333;
+    border-left: 5px solid #e7781e;
     padding-left: 5px;
     margin-left: 5px;
 }
