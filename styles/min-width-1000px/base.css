@@ -10,7 +10,7 @@
         right: initial;
         left: 0px;
     }
-    article.page
+    body > *
     {
         margin-left: 310px;
         padding-left: 20px;

@@ -52,6 +52,13 @@ $(document).ready(function(){
             previouslySelected[1].removeClass("in-page-nav-active");
         }
 
+        // If nothing to select then die.
+        if(null == lookup)
+        {
+            previouslySelected = null;
+            return;
+        }
+
         // Set the current active flag.
         lookup.listItem.addClass("in-page-nav-active");
         lookup.heading.addClass("in-page-nav-active");
