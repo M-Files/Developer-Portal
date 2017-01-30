@@ -17,8 +17,11 @@ header
 body > aside#sidebar
 {
 	left: 0px;
-	padding-top: 0px;
+	padding-top: 120px;
 	box-shadow: none;
+    background-position: center 10px;
+    background-image: url("../../images/M-Files-Logo-White.png");
+    background-size: contain;
 }
 
 nav.breadcrumb
