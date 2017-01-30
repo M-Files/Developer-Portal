@@ -113,7 +113,7 @@ h3{
 }
 
 /* hide the page h1, as it's a duplicate of the big blue one */
-body > h1
+body > article#page > h1
 {
 	display: none
 }
