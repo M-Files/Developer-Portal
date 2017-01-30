@@ -117,3 +117,15 @@ body > article.page > h1
 {
 	display: none
 }
+
+p.note
+{
+	background-color: #D6E1F2;
+	border: 1px solid #A6A6A6;
+	padding: 5px 10px;
+}
+p.note::before
+{
+	font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+	content: "\f1fe";
+}
