@@ -56,7 +56,7 @@ IMAGE!!!
 
 ## Creating the Data Providers
 
-### 4.1	An Overview of the Process
+### An Overview of the Process
 
 To create a Custom External Object Type Data Source in M-Files, we will create a .NET class library using Visual Studio, and create some classes which implement the required interfaces.  This class library will be installed to the server, and a set of registry keys will be created that register the custom External Object Type Data Source with M-Files.
 
