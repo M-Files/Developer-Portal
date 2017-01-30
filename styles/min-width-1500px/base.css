@@ -8,10 +8,6 @@ body > *
 	margin-right: 30px;
 	margin-left: 480px;
 }
-header
-{
-	display: none;
-}
 
 body > aside#sidebar
 {
@@ -32,4 +28,14 @@ nav.breadcrumb
 #in-page-nav
 {
     padding-top: 40px;
+}
+
+/* show the in-page title rather than the big blue one */
+header
+{
+	display: none;
+}
+body > h1
+{
+	display: block;
 }

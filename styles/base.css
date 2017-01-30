@@ -111,3 +111,9 @@ h3{
 	cursor: pointer;
 	z-index: 10003;
 }
+
+/* hide the page h1, as it's a duplicate of the big blue one */
+body > h1
+{
+	display: none
+}
