@@ -35,7 +35,7 @@ header
 {
 	display: none;
 }
-body > article#page > h1
+body > article.page > h1
 {
 	display: block;
 }
