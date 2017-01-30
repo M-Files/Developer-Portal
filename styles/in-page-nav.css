@@ -20,6 +20,9 @@
 #in-page-nav ul
 {
     overflow: auto;
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
 }
 #in-page-nav li
 {
