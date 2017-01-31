@@ -133,3 +133,12 @@ p.note::before
 	left: 10px;
 	top: 8px;
 }
+
+code.highlighter-rouge
+{
+	display: inline-block;
+	padding: 3px 7px;
+	background-color: lightyellow;
+	border: 1px solid gold;
+	margin: 0px 3px;
+}
