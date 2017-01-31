@@ -13,7 +13,7 @@ The sample includes two versions of the code: one written using VBScript, and on
 
 ### Workflow 1
 
-![An overview of the first workflow](workflow-1.png)
+![An overview of the first workflow](workflow1.png)
 
 This workflow contains three states:
 
@@ -26,7 +26,7 @@ Contains VBScript that moves the item to the next workflow.
 
 ### Workflow 2
 
-![An overview of the second  workflow](workflow-2.png)
+![An overview of the second  workflow](workflow2.png)
 
 This workflow contains two states:
 
