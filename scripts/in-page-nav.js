@@ -38,7 +38,7 @@ $(document).ready(function(){
         var position = $(document).scrollTop();
         for(var i=0; i<headingLookups.length; i++)
         {
-            if(position <= headingLookups[i].offset + 15)
+            if(position <= headingLookups[i].offset)
             {
                 lookup = headingLookups[i];
                 break;
