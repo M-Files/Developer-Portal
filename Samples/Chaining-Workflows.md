@@ -221,4 +221,4 @@ Vault.ObjectPropertyOperations.SetLastModificationInfoAdmin ObjVer, true, objLas
 
 An interesting side-effect of this code is that, if you observe the history of the item that is moved from `Workflow 1` to `Workflow 2`, you will notice that the `Final` state doesn't appear in the history at all.  All you will see is one version at `Initial` in `Workflow 1`, then one version at `Initial` in `Workflow 2`; the `Final` state is effectively transient.  This is because the workflow state action alters the properties of the item before it gets saved into the vault.  It is worth noting this behaviour and designing your workflows so that the object history makes sense to the user.
 
-![A sample object's history](history.png)
+![A sample object's history](object-history.png)
