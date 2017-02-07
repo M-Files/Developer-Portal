@@ -3,6 +3,8 @@ layout: page
 title: Using Single Sign On (SSO) through the M-Files Web Service (MFWS).
 ---
 
+Hello Mikko.
+
 Single Sign-On is a mechanism to allow authenticated users to interact with network resources without explicitly authenticating with each one individually.  M-Files Web Access, and therefore the M-Files Web Service, supports Single Sign-On, but requires some manual steps to enable and configure.
 This document details those steps and provides a sample C# class which shows the process of signing into the M-Files Web Access and using the token received to authenticate to the M-Files Web Service and execute further queries.
 
