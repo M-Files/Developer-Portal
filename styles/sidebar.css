@@ -105,3 +105,6 @@ li.expanded > i.expandCollapseIcon
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
+ul.treeview li a.current{
+	font-weight: bold;
+}
