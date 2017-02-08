@@ -6,7 +6,7 @@
 body > *
 {
 	margin-right: 30px;
-	margin-left: 480px;
+	margin-left: 780px;
 }
 
 body > aside#sidebar
@@ -41,9 +41,14 @@ body > article.page > h1
 }
 article.page
 {
-    margin-right: 310px;
     padding-right: 20px;
 }
 header h1{
     margin-right: 310px;
+}
+#in-page-nav
+{
+    right: auto;
+	left: 450px;
+    width: 300px;
 }
