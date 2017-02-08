@@ -24,4 +24,10 @@
             setupNode($li);
         }
     })
+
+    // Auto-expand the current one.
+    var currentPageAddress = window.location.pathname;
+    $("li[href^='" + currentPageAddress + "']", "ul.treeview").each(function(i, o){
+        $(this).parents("li").addClass("expanded");
+    });
 })();
