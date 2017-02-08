@@ -85,10 +85,15 @@ h1{
 	font-size: 2em;
 }
 h2{
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 h3{
-	font-size: 1.2em;
+	font-size: 1.4em;
+}
+
+.page h4
+{
+	font-weight: normal;
 }
 
 #hamburger

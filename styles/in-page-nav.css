@@ -26,7 +26,7 @@
 }
 #in-page-nav li
 {
-    padding: 4px 0px;
+    padding: 4px 20px;
     padding-left: 5px;
     font-size: 0.8em;
 }
@@ -36,12 +36,13 @@
 }
 #in-page-nav li.h2{
     margin-left: 20px;
+    font-weight: bold;
 }
 #in-page-nav li.h3{
-    margin-left: 40px;
+    margin-left: 20px;
 }
 #in-page-nav li.h4{
-    margin-left: 60px;
+    margin-left: 40px;
 }
 #in-page-nav li.in-page-nav-active a{
     color: #e7781e;
@@ -53,6 +54,6 @@ article h1.in-page-nav-active,
 	article h4.in-page-nav-active
 {
     border-left: 5px solid #e7781e;
-    padding-left: 5px;
+    padding-left: 15px;
     margin-left: 5px;
 }
