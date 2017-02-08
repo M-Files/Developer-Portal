@@ -15,14 +15,25 @@
         margin-left: 310px;
         padding-left: 20px;
     }
-    header h1{
-        margin-left: 300px;
-        padding-left: 30px;
-    }
-    #hamburger
+    article.page
     {
-        background-color: #f9f9f9;
-        color: #555;
+        padding-top: 40px;
+    }
+    header h1{
+        padding-left: 30px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 34px;
+        font-size: 1rem;
+        font-weight: normal;
+        height:34px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .sidebar-expanded #hamburger
     {
