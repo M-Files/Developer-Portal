@@ -37,6 +37,8 @@
 #in-page-nav li.h2{
     margin-left: 20px;
     font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 10px;
 }
 #in-page-nav li.h3{
     margin-left: 20px;
