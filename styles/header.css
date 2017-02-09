@@ -15,3 +15,11 @@ header h1
 	font-size: 1rem;
 	min-height:34px;
 }
+
+@media all and (max-width: 499px)
+{
+    header h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

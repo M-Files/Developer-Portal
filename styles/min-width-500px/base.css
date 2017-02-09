@@ -12,11 +12,3 @@ body.sidebar-expanded aside#sidebar
 {
 	left: 0px;
 }
-
-@media all and (max-width: 999px)
-{
-    header h1{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
