@@ -27,7 +27,7 @@ What's even better is that other .NET libraries can be referenced for example, u
 
 #### Better debugging
 
-Debugging complex VBScripting can be time-consuming and frustrating.  When using the Vault Application Framework, applications can instead be debugged within Visual Studio with full access to Visual Studio tools and resources.  The Vault Application Framework even includes [helper utilities]({{ site.baseurl }}/Vault-Application-Framework/helper-utilities/) for writing exception details to the Windows Event Log, where they can be reported on by standard monitoring software.
+Debugging complex VBScripting can be time-consuming and frustrating.  When using the Vault Application Framework, applications can instead be [debugged within Visual Studio]({{ site.baseurl }}/Vault-Application-Framework/development-practices/debugging/) with full access to Visual Studio tools and resources.  The Vault Application Framework even includes [helper utilities]({{ site.baseurl }}/Vault-Application-Framework/helper-utilities/) for writing exception details to the Windows Event Log, where they can be reported on by standard monitoring software.
 
 #### Simplicity of deployment
 
@@ -35,16 +35,14 @@ Deploying a Vault Application Framework application can be done simply using the
 
 ### Additional functionality
 
+#### Configuration
+
+Built-in attributes such as MFConfiguration and MFIdentitifer reduce the boiler-plate code that is needed to manage tasks such as resolving vault aliases to M-Files IDs.  Using this customisable [configuration]({{ site.baseurl }}/Vault-Application-Framework/configuration/) approach also provides a framework for identifying mandatory vault structure, and reporting out to the event log if the structure is not available.
+
+#### Background Operations
+
+Whereas most processes within M-Files typically operate synchronously, [Background Operations]({{ site.baseurl }}/Vault-Application-Framework/background-operations/) allow you to execute periodic or time-consuming processes asynchronously.
 
 #### Helper utilities
 
 [Helper utilities]({{ site.baseurl }}/Vault-Application-Framework/helper-utilities/)
-
-#### Configuration
-
-[Configuration]({{ site.baseurl }}/Vault-Application-Framework/configuration/)
-
-#### Background Operations
-
-[Background Operations]({{ site.baseurl }}/Vault-Application-Framework/background-operations/)
-
