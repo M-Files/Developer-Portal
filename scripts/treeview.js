@@ -27,7 +27,7 @@
 
     // Auto-expand the current one.
     var currentPageAddress = window.location.pathname;
-    $("li a[href^='" + currentPageAddress + "']", "ul.treeview").each(function(i, o){
+    $("li a[href='" + currentPageAddress + "']", "ul.treeview").each(function(i, o){
         $(this).addClass("current").parents("li").addClass("expanded");
     });
 })();
