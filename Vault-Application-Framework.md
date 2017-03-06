@@ -17,7 +17,7 @@ Because C# is strongly typed, the compiler will highlight incorrect usages of th
 
 #### Reduction in lines of code
 
-Due to the design of the Vault Application Framework, the number of lines of code that you need to write is reduced.  Functionality such as [automated resolution of vault item aliases to internal IDs at runtime]({{ site.baseurl }}/Vault-Application-Framework/configuration/), along with helper utilities for building searches or outputting error conditions to the event log, mean that applications can be built faster and with a higher quality.
+Due to the design of the Vault Application Framework, the number of lines of code that you need to write is reduced.  Functionality such as [automated resolution of vault item aliases to internal IDs at runtime]({{ site.baseurl }}/Vault-Application-Framework/Configuration/), along with helper utilities for building searches or outputting error conditions to the event log, mean that applications can be built faster and with a higher quality.
 
 #### Utilisation of .NET Framework Class Library, and other .NET libraries
 
@@ -27,7 +27,7 @@ What's even better is that other .NET libraries can be referenced for example, u
 
 #### Better debugging
 
-Debugging complex VBScripting can be time-consuming and frustrating.  When using the Vault Application Framework, applications can instead be [debugged within Visual Studio]({{ site.baseurl }}/Vault-Application-Framework/development-practices/debugging/) with full access to Visual Studio tools and resources.  The Vault Application Framework even includes [helper utilities]({{ site.baseurl }}/Vault-Application-Framework/helper-utilities/) for writing exception details to the Windows Event Log, where they can be reported on by standard monitoring software.
+Debugging complex VBScripting can be time-consuming and frustrating.  When using the Vault Application Framework, applications can instead be [debugged within Visual Studio]({{ site.baseurl }}/Vault-Application-Framework/Development-Practices/Debugging/) with full access to Visual Studio tools and resources.  The Vault Application Framework even includes [helper utilities]({{ site.baseurl }}/Vault-Application-Framework/Helper-Utilities/) for writing exception details to the Windows Event Log, where they can be reported on by standard monitoring software.
 
 #### Simplicity of deployment
 
@@ -37,12 +37,12 @@ Deploying a Vault Application Framework application can be done simply using the
 
 #### Configuration
 
-Built-in attributes such as MFConfiguration and MFIdentitifer reduce the boiler-plate code that is needed to manage tasks such as resolving vault aliases to M-Files IDs.  Using this customisable [configuration]({{ site.baseurl }}/Vault-Application-Framework/configuration/) approach also provides a framework for identifying mandatory vault structure, and reporting out to the event log if the structure is not available.
+Built-in attributes such as MFConfiguration and MFIdentitifer reduce the boiler-plate code that is needed to manage tasks such as resolving vault aliases to M-Files IDs.  Using this customisable [configuration]({{ site.baseurl }}/Vault-Application-Framework/Configuration/) approach also provides a framework for identifying mandatory vault structure, and reporting out to the event log if the structure is not available.
 
 #### Background Operations
 
-Whereas most processes within M-Files typically operate synchronously, [Background Operations]({{ site.baseurl }}/Vault-Application-Framework/background-operations/) allow you to execute periodic or time-consuming processes asynchronously.
+Whereas most processes within M-Files typically operate synchronously, [Background Operations]({{ site.baseurl }}/Vault-Application-Framework/Background-Operations/) allow you to execute periodic or time-consuming processes asynchronously, providing a smoother solution for your customers.
 
 #### Helper utilities
 
-[Helper utilities]({{ site.baseurl }}/Vault-Application-Framework/helper-utilities/)
+Common functions such as building search conditions, or working with search results, are easier using built-in [helper utilities]({{ site.baseurl }}/Vault-Application-Framework/Helper-Utilities/).  These extensibile helper utilities reduce the amount of code needed to be written, as well as providing more readable and more maintainable code for the future.
