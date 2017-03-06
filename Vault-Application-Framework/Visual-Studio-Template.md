@@ -11,4 +11,13 @@ The template can be downloaded from the [M-Files Partner Portal](https://partner
 
 ## Building your first application ("hello, world")
 
+### Creating an application from the template
+
+### An overview of the application contents
+
+### Adjusting the build event
+
+### Building and deploying
+
+### Observing the output
 
