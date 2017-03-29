@@ -90,6 +90,11 @@ h2{
 h3{
 	font-size: 1.4em;
 }
+h1 a, h2 a, h3 a
+{
+	color: #333;
+	text-decoration: none;
+}
 
 .page h4
 {
