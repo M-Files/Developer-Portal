@@ -90,11 +90,6 @@ h2{
 h3{
 	font-size: 1.4em;
 }
-h1 a, h2 a, h3 a
-{
-	color: #333;
-	text-decoration: none;
-}
 
 .page h4
 {
@@ -151,4 +146,20 @@ code.highlighter-rouge
 	background-color: lightyellow;
 	border: 1px solid gold;
 	margin: 0px 3px;
+}
+
+article.page a
+{
+	color: #007dc6;
+	text-decoration: none;
+}
+article.page a:hover
+{
+	text-decoration: underline;
+}
+article.page h1 a,
+	article.page h2 a,
+	article.page h3 a
+{
+	color: #333;
 }
