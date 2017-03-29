@@ -1,6 +1,6 @@
 (function($){
     // Create the "external link" icon.
-    var $externalLink = $("<i class='zmdi zmdi-open-in-new'></i>");
+    var $externalLink = $("<i class='zmdi zmdi-open-in-new' style='padding-left: 5px;'></i>");
     // Add the "external" class to all external links.
     $("article.page a")
         .filter(function(){
@@ -8,5 +8,5 @@
         })
         .attr("rel", "external")
         .attr("target", "_blank")
-        .prepend($externalLink.clone());
+        .append($externalLink.clone());
 })(jQuery);
