@@ -3,11 +3,16 @@
 	display: none;
 }
 
-body > *
+body.has-in-page-nav > *
 {
 	margin-right: 30px;
 	margin-left: 780px;
 }
+/*body.has-in-page-nav > *
+{
+	margin-right: 30px;
+	margin-left: 780px;
+}*/
 
 body > aside#sidebar
 {
@@ -43,7 +48,7 @@ article.page
 {
     padding-right: 20px;
 }
-header h1{
+.has-in-page-nav header h1{
     margin-right: 310px;
 }
 #in-page-nav

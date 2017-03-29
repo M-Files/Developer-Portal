@@ -2,6 +2,9 @@ $(document).ready(function(){
 
     var $ul = $("<ul></ul>");
     var $headings = $("h2, h3, h4", $("article.page"));
+
+    if(0 == $headings.length)
+        return;
     
     var headingLookups = [];
     $headings.each(function(i, o)
@@ -28,7 +31,11 @@ $(document).ready(function(){
     }
     $(window).resize(reCalculateHeadingOffsets);
 
-    $("BODY").append($("<div></div>").attr("id", "in-page-nav").append($ul));
+    $("BODY")
+        .addClass("has-in-page-nav")
+        .append($("<div></div>")
+        .attr("id", "in-page-nav")
+        .append($ul));
 
     var previouslySelected = null;
     $(document).on("scroll", function(){

@@ -5,7 +5,7 @@ title: Getting Started
 
 ## Using this website
 
-This website compliments and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide developers with tailored guidance, tutorials, and samples.
+This website complements and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.
 
 ## Built-in functionality
 
@@ -48,7 +48,7 @@ M-Files provides two separate frameworks: the User Interface Extensibility Frame
 
 ### The User Interface Extensibility Framework (UIX)
 
-The User Interface Extensibility Framework is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.
+The [User Interface Extensibility Framework]() is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.
 
 ### The Vault Application Framework (VAF)
 

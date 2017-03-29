@@ -10,7 +10,8 @@
         right: initial;
         left: 0px;
     }
-    article.page, footer
+    .has-in-page-nav article.page,
+    .has-in-page-nav footer
     {
         margin-left: 310px;
         padding-left: 20px;
