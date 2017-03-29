@@ -67,4 +67,10 @@
         return false;
     });
 
+    // Default to open?
+    if(window.location.hash == "#menu")
+    {
+        openSidebar();
+    }
+
 })(jQuery);
