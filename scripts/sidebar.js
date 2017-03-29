@@ -27,7 +27,7 @@
     // When the user clicks the body, close the sidebar.
     $body.click(closeSidebar);
     // When the user presses esc, close the sidebar
-    $body.onkeyup(function(e)
+    $body.on("keyup", function(e)
     {
         if(e.keyCode == 27)
         {
