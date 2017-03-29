@@ -38,8 +38,8 @@
         oldHash = newHash;
     }
 
-    // When the user clicks the body, close the sidebar.
-    $body.click(closeSidebar);
+    // When the user clicks the article, close the sidebar.
+    $("article.page").click(closeSidebar);
     // When the user presses esc, close the sidebar
     $body.on("keyup", function(e)
     {
