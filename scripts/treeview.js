@@ -1,4 +1,4 @@
-(function(){
+(function($){
     var $document = $(document);
     var $body = $("body");
     var $expandCollapseIcon = $("<i class='zmdi expandCollapseIcon'></i>");
@@ -30,4 +30,4 @@
     $("li a[href='" + currentPageAddress + "']", "ul.treeview").each(function(i, o){
         $(this).addClass("current").parents("li").addClass("expanded");
     });
-})();
+})(jQuery);

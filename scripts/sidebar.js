@@ -1,4 +1,4 @@
-(function(){
+(function($){
     var $document = $(document);
     var $body = $("body");
     $body.click(function(){
@@ -8,4 +8,4 @@
         $body.toggleClass("sidebar-expanded");
         return false;
     });
-})();
+})(jQuery);

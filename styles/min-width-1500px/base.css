@@ -35,7 +35,8 @@ nav.breadcrumb
 }
 
 /* show the in-page title rather than the big blue one */
-header
+header,
+	.has-in-page-nav header h1
 {
 	display: none;
 }

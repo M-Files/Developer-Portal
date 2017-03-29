@@ -1,77 +1,86 @@
-$(document).ready(function(){
+(function($){
+    $(document).ready(function(){
+        // Get a reference to all the page headings.
+        var $ul = $("<ul></ul>");
+        var $headings = $("h2, h3, h4", $("article.page"));
 
-    var $ul = $("<ul></ul>");
-    var $headings = $("h2, h3, h4", $("article.page"));
-
-    if(0 == $headings.length)
-        return;
-    
-    var headingLookups = [];
-    $headings.each(function(i, o)
-    {
-        var $heading = $(this);
-        var $li = $("<li></li>")
-            .addClass($heading.get(0).nodeName.toLowerCase())
-            .append($("<a></a>").attr("href", "#" + $heading.attr("id")).text($heading.text()));
-        $ul.append($li);
-
-        headingLookups.push({
-            index: i,
-            heading: $heading,
-            offset: $heading.offset().top,
-            listItem: $li
-        })
-    });
-
-    function reCalculateHeadingOffsets(){
-        $.each(headingLookups, function(i, o)
-        {
-            o.offset = o.heading.offset().top;
-        })
-    }
-    $(window).resize(reCalculateHeadingOffsets);
-
-    $("BODY")
-        .addClass("has-in-page-nav")
-        .append($("<div></div>")
-        .attr("id", "in-page-nav")
-        .append($ul));
-
-    var previouslySelected = null;
-    $(document).on("scroll", function(){
-
-        // Go through headings and find the one we're scrolled to.
-        var lookup = null;
-        var position = $(document).scrollTop();
-        for(var i=0; i<headingLookups.length; i++)
-        {
-            if(position <= headingLookups[i].offset)
-            {
-                lookup = headingLookups[i];
-                break;
-            }
-        }
-
-        // Remove any active nav items.
-        if(null != previouslySelected)
-        {
-            previouslySelected[0].removeClass("in-page-nav-active");
-            previouslySelected[1].removeClass("in-page-nav-active");
-        }
-
-        // If nothing to select then die.
-        if(null == lookup)
-        {
-            previouslySelected = null;
+        // If there are none then die now (show no in-page-nav).
+        if(0 == $headings.length)
             return;
+        
+        // Get references to the individual headings (so we can scroll to them),
+        // and create links to each of them in memory for the navigation.
+        var headingLookups = [];
+        $headings.each(function(i, o)
+        {
+            var $heading = $(this);
+            var $li = $("<li></li>")
+                .addClass($heading.get(0).nodeName.toLowerCase())
+                .append($("<a></a>").attr("href", "#" + $heading.attr("id")).text($heading.text()));
+            $ul.append($li);
+
+            headingLookups.push({
+                index: i,
+                heading: $heading,
+                offset: $heading.offset().top,
+                listItem: $li
+            })
+        });
+
+        // Recalculates the offset for the headings (used when the window resizes)
+        // and content re-flows.
+        function reCalculateHeadingOffsets(){
+            $.each(headingLookups, function(i, o)
+            {
+                o.offset = o.heading.offset().top;
+            })
         }
+        $(window).resize(reCalculateHeadingOffsets);
 
-        // Set the current active flag.
-        lookup.listItem.addClass("in-page-nav-active");
-        lookup.heading.addClass("in-page-nav-active");
-        previouslySelected = [lookup.listItem, lookup.heading];
+        // Append the navigation to the page.
+        $("BODY")
+            .addClass("has-in-page-nav")
+            .append($("<div></div>")
+            .attr("id", "in-page-nav")
+            .append($ul));
 
-    })
-    $(document).scroll();
+        // Handle the scrolling to highlight the one we're on.
+        var previouslySelected = null;
+        $(document).on("scroll", function(){
 
-});
+            // Go through headings and find the one we're scrolled to.
+            var lookup = null;
+            var position = $(document).scrollTop();
+            for(var i=0; i<headingLookups.length; i++)
+            {
+                if(position <= headingLookups[i].offset)
+                {
+                    lookup = headingLookups[i];
+                    break;
+                }
+            }
+
+            // Remove any active nav items.
+            if(null != previouslySelected)
+            {
+                previouslySelected[0].removeClass("in-page-nav-active");
+                previouslySelected[1].removeClass("in-page-nav-active");
+            }
+
+            // If nothing to select then die.
+            if(null == lookup)
+            {
+                previouslySelected = null;
+                return;
+            }
+
+            // Set the current active flag.
+            lookup.listItem.addClass("in-page-nav-active");
+            lookup.heading.addClass("in-page-nav-active");
+            previouslySelected = [lookup.listItem, lookup.heading];
+
+        })
+        $(document).scroll();
+
+    });
+})(jQuery);
