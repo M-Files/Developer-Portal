@@ -24,6 +24,20 @@
         }
     }
 
+    var oldHash = window.location.hash;
+    window.onhashchange = function(e)
+    {
+        var newHash = window.location.hash;
+
+        // If we've gone from #menu, close the sidebar.
+        if(oldHash == "#menu")
+        {
+            closeSidebar();
+        }
+
+        oldHash = newHash;
+    }
+
     // When the user clicks the body, close the sidebar.
     $body.click(closeSidebar);
     // When the user presses esc, close the sidebar
