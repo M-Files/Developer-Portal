@@ -45,7 +45,7 @@ M-Files provides two separate frameworks for building applications that run with
 * Can create buttons and menu items which can react to selected items.
 * Can create "dashboards" which are shown on demand, and can be provided with content from M-Files.
 
-### [Vault Application Framework (VAF)](({{ site.baseurl }}/Frameworks/Vault-Application-Framework/)
+### [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/)
 
 * Used to create server-side applications.
 * Can be used to execute .NET code in response to object (e.g before an object is checked in) or vault events (e.g. before a view is deleted).
