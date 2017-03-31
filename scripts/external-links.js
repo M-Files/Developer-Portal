@@ -2,7 +2,7 @@
     // Create the "external link" icon.
     var $externalLink = $("<i class='zmdi zmdi-open-in-new'></i>");
     // Add the "external" class to all external links.
-    $("article.page a")
+    $("a", "article.page")
         .filter(function(){
             return this.hostname && this.hostname !== location.hostname;
         })
