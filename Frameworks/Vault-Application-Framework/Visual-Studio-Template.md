@@ -36,6 +36,10 @@ Used by the [build event](#adjusting-the-build-event) to create the installation
 * `packages.conf`
 The packages configuration file details the [Nuget packages that are required](https://docs.microsoft.com/en-us/nuget/consume-packages/package-restore) for the Vault Application Framework to run.
 
+## The default application
+
+![The default application](default-application.png)
+
 ### Adjusting the build event
 
 Details on the build event can be found by viewing the project properties (right-click on `MFVaultApplication`, or the name of your project, and select `Properties`) and selecting the `Build Events` tab on the left:
