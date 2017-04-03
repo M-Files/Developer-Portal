@@ -13,7 +13,7 @@ The template can be downloaded from the [M-Files Partner Portal](https://partner
 
 In this example we will create a basic Vault Application Framework application and install it into the Sample Vault, running on the local machine.
 
-<p class="note">Note: If you do not have M-Files installed on the same machine as Visual Studio, then you must [deploy the zip file manually](#Manual-deployment).  Debugging can be undertaken on remote applications by [following these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Debugging/#Remote-Debugging)</p>
+<p class="note">Note: If you do not have M-Files installed on the same machine as Visual Studio, then you must [deploy the zip file manually](#manual-deployment).  Debugging can be undertaken on remote applications by [following these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Debugging/#Remote-Debugging)</p>
 
 ### Creating an application from the template
 
@@ -32,7 +32,7 @@ The actual Vault Application Framework application.
 * `appdef.xml`
 The application manifest file, containing information such as the publisher details and the current version number.
 * `MFVaultApplicationInstaller.exe`
-Used by the [build event](#Adjusting-the-build-event) to create the installation package and, optionally, to deploy it to the local M-Files server.
+Used by the [build event](#adjusting-the-build-event) to create the installation package and, optionally, to deploy it to the local M-Files server.
 * `packages.conf`
 The packages configuration file details the [Nuget packages that are required](https://docs.microsoft.com/en-us/nuget/consume-packages/package-restore) for the Vault Application Framework to run.
 
