@@ -36,9 +36,21 @@ Used by the [build event](#adjusting-the-build-event) to create the installation
 * `packages.conf`
 The packages configuration file details the [Nuget packages that are required](https://docs.microsoft.com/en-us/nuget/consume-packages/package-restore) for the Vault Application Framework to run.
 
-## The default application
+### The default application
 
 ![The default application](default-application.png)
+
+The default application consists of two classes.  The first, `Configuration`, contains a single `MFIdentifier` field describing a class with alias `FailAlias`.  The second, `VaultApplication`, contains a sample vault application which defines a method which runs every 10 seconds.  This method calls a Vault Extension Method which is also defined within the class.
+
+When this code is executed it should output an entry to the Windows Event Log every 10 seconds containing the phrase `Hello from MFVaultApplication1: TestClassAlias: -1`.  Note that "MFVaultApplication" is the name of the vault application, "TestClassAlias" is the alias provided to the MFIdentifier when the configuration is instantiated, and "-1" is the ID of the class in the vault with the alias "TestClassAlias" (if one existed - if not it returns -1).
+
+### Items to note
+
+1. [Attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/) are used before properties and methods to define how the Vault Application Framework should interact with them.
+    1. The `MFClass` attribute within the `Configuration` class denotes that the `MFIdentifier` refers to a class (rather than a property definition, object type, or other vault element.)
+    2. The use of the `MFConfiguration` attribute persists the configuration to Named Value Storage.  The attribute is provided with the namespace and key of the configuration item.  Further information can be found within the [Configuration attribute documentation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/).
+2. The `SysUtils` helper object is used to report information to the event log.
+3. The "Permanent Vault" (`this.PermanentVault`) is used within the background operation.  This should only be used where a transactional vault is not provided by the Vault Application Framework.
 
 ### Adjusting the build event
 
@@ -59,9 +71,27 @@ If you do not have an M-Files server running locally, the build event command li
 
 ### Building and deploying
 
+To build and deploy the project, either select the `Build` menu item within Visual Studio and select `Build Solution`, or press F6, or press Ctrl-Shift-B.  Any errors during build will be shown within the Visual Studio "Error List" window, and any errors during the deployment will be shown within the console window opened for the build task:
+
+![Installing the vault application](installing-vault-application.png)
+
+<p class="note">This screen shows the full path to the zip file created by the installer.  If you are deploying the application manually, copy this file to the M-Files server and install using the M-Files Admin software.</p>
+
 ### Observing the output
 
-### Debugging
+Once the Vault Application Framework application has been successfully installed, it can be checked using the Windows Event Log:
+
+![Checking the Windows Event Log](windows-event-log.png)
+
+## Debugging
+
+[Debugging Vault Application Framework applications]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/) is relatively straight-forward:
+
+1. Place a breakpoint within the code - in this case within the background operation.
+2. Select `Debug` and select `Attach to Process`
+3. Select all the `MFAppPlatform.exe` processes and select `Attach`.
+
+![Breakpoint hit](debugging.png)
 
 ## Tips and tricks
 
