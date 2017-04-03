@@ -20,7 +20,7 @@ This workflow contains three states:
 * `Initial`
 This is where objects start the first workflow.  The user then can choose to move the object to the `Final (VAF)` or `Final (VBScript)` states.  These states perform the same actions; the only difference is the language that's used for implementation.
 * `Final (VAF)`
-Contains a VBScript proxy that calls the [Vault Application Framework]({{ site.baseurl }}/Vault-Application-Framework/) application to move the item to the next workflow.
+Contains a VBScript proxy that calls the [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Frameworkn-Framework/) application to move the item to the next workflow.
 * `Final (VBScript)
 Contains VBScript that moves the item to the next workflow.
 

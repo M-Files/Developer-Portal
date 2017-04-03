@@ -5,7 +5,7 @@ title: The Vault Application Framework
 
 The Vault Application Framework was created within M-Files to provide a better way to develop and maintain complicated M-Files scripts which, previously, required significant overhead.  The Vault Application Framework is designed to allow you to replace VBScript code within an M-Files vault with .NET code, and is available to all M-Files partners to develop their own solutions against.
 
-Whilst most of the samples on this site use C#, it is also possible to use VB.NET.  If you would like to use VB.NET then you will need to follow [these instructions]({{ site.baseurl }}/Vault-Application-Framework/using-vb.net/).
+Whilst most of the samples on this site use C#, it is also possible to use VB.NET.  If you would like to use VB.NET then you will need to follow [these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/using-vb.net/).
 
 ## Why use the Vault Application Framework?
 
