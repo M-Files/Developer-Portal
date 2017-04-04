@@ -86,7 +86,7 @@ public MFIdentifier CustomersView = 142;
 
 ## MFConfiguration
 
-The MFConfigurationAttribute attribute automates the persistence and loading of configuration information from and to named value storage.  When the application is first run, the object will be serialized to JSON and stored using the attributes provided at declaration.  On subsequent runs, the data will be deserialized from Named Value Storage into the object.
+The `MFConfigurationAttribute` attribute automates the persistence and loading of configuration information from and to named value storage.  When the application is first run, the object will be serialized to JSON and stored using the attributes provided at declaration.  On subsequent runs, the data will be deserialized from Named Value Storage into the object.
 
 For example, the following code would store a JSON-serialized version of the Configuration object into Named Value Storage with the type of MFConfigurationValue, a namespace of MyApplication and a key of config:
 
