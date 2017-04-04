@@ -48,11 +48,9 @@ We are building a vault for a small online retailer.  The retailer has a blog on
 
 ### The Vault Structure
 
-A simple vault structure for the blog objects has already been agreed with the client, shown on the right.  The object types have been created as internal object types initially, to allow the structure to be simply prototyped:
+A simple vault structure for the blog objects has already been agreed with the client, shown below.  The object types have been created as internal object types initially, to allow the structure to be simply prototyped:
 
-IMAGE!!!
-
-<p class="note">A sample vault containing the above is alongside this tutorial in the Multi-File Document.  Please note that the vault backup was created on M-Files 2015.3, and may not be restorable on previous versions.</p>
+![Vault structure](vault-structure-1.png)
 
 ## Creating the Data Providers
 
@@ -86,7 +84,7 @@ A base class that implements `IDataSourceConnection` and `IDataAlteration` that 
 
 To create the Visual Studio Project, Click `File`, then `New`, then `Project`.  On the following screen, ensure that you select `.NET Framework 4` from the top dropdown, and select a project type of `Class Library`.  We will add further installer projects to the solution later.
 
-IMAGE!!!
+![Creating the project](create-project.png)
 
 In the screenshot above, I've created a solution named `ExtOTDS.JsonPlaceholder`, with a project with the same name.  Once I click `OK`, Visual Studio will create a blank solution with a single class (`Class1.cs`).  We will remove this class at this point.
 
@@ -128,7 +126,7 @@ This method is passed the string entered into the "OLE DB connection string" box
 
 This class can also state whether the supplied `IDataSourceConnection` supports data alteration (creation of new objects, modification of existing ones, or deletion of items).
 
-IMAGE!!!
+![IDataSource](IDataSource.png)
 
 #### Using IDataSourceConnection
 
@@ -169,6 +167,8 @@ The most important methods to fully implement are `PrepareForDataRetrieval()`, `
 `GetAvailableColumns()` provides details to the "Columns" section within the ObjectType Properties window, allowing the user to choose a column for mapping.
 
 `GetItems()` is called by the synchronization engine to retrieve objects to pull into M-Files.
+
+![IDataSource](IDataSourceConnection.png)
 
 ### Deploying the Data Provider and updating M-Files
 
@@ -214,7 +214,7 @@ Repeat this process for all the object types that need to come from the JSON dat
 
 There are many ways to distribute the DLL and associated registry keys to a production server, but the creation of a setup project may be simplest.  We will use the approach below to create a basic setup project that will install our DLL and create the required registry keys for us.
 
-<p class="note">If you have not created setup projects on your machine before, you may have to download the InstallShield Limited Edition for Visual Studio package.  This can be done either by using the prompts within Visual Studio (New Project -> Other Project Types -> Setup and Deployment), or by going to <a href="http://go.microsoft.com/fwlink/?LinkID=239620&lang=1033&ver=pro">http://go.microsoft.com/fwlink/?LinkID=239620&lang=1033&ver=pro</a>.</p>
+<p class="note">If you have not created setup projects on your machine before, you may have to download the InstallShield Limited Edition for Visual Studio package.  This can be done either by using the prompts within Visual Studio (New Project -> Other Project Types -> Setup and Deployment), or by going to <a href="http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro">http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro</a>.</p>
 
 To create an installer:
 
@@ -237,7 +237,7 @@ To create an installer:
 
 M-Files will automatically start importing data from your data provider when the Object Type Properties window is closed.  To check that your data has been pulled through correctly, search the vault contents for the new object type data:
 
-IMAGE!!!
+![Testing the Data Provider](testing.png)
 
 <p class="note">If your data is not appearing properly, follow the guidance in the Debugging and notes section.</p>
 
@@ -245,7 +245,7 @@ IMAGE!!!
 
 When an External Object Type Data Source fails to import data, the first you will often know is exceptions appearing in the Windows Event Log.  A good practice of exception handling and logging will help diagnose the root cause of these issues.
 
-IMAGE!!!
+![Diagnostics](diagnostics-1.png)
 
 In situations where the issue is harder to find, but repeatable, you may wish to manually launch a debugger when the exception is encountered using the following line of code:
 
@@ -255,7 +255,7 @@ System.Diagnostics.Debugger.Launch();
 
 Using this will throw the following dialog on the machine, and you can choose to attach to the application and debug.
 
-IMAGE!!!
+![Diagnostics](diagnostics-2.png)
 
 ## Read/Write data providers
 
@@ -316,7 +316,7 @@ Once your methods have been implemented, re-install the DLL (if needed) and upda
   * Check the `Insert` checkbox next to each property that can be inserted into your data source.
   * Ensure that an `INSERT INTO` statement is filled in, even if your Object Type Data Source does not require one (note in the screenshot that "ignored" has been entered).
 
-IMAGE!!!
+![Processing new items](inserts.png)
 
 Note that even in implementations that do not require an `INSERT INTO statement` to function (e.g. when the data is parsed directly from the column mappings), the `M-Files Object Type Properties` window requires that one is filled in to proceed.  In this scenario, any content can be entered providing it passes the call to ValidateInsertStatemet.
 
@@ -341,7 +341,7 @@ Once your methods have been implemented, re-install the DLL (if needed) and upda
 
 <p class="note">Note that even in implementations that do not require a `DELETE statement` to function (e.g. when the data is parsed directly from the column mappings), the M-Files Object Type Properties window requires that one is filled in to proceed.  In this scenario, any content can be entered providing it passes the call to `ValidateDeleteStatemet`.</p>
 
-IMAGE!!!
+![Processing deletions](deletes.png)
 
 Log in to the vault and delete an existing item.  Deletions should be pushed immediately to the remote source.
 
@@ -371,7 +371,9 @@ Note that even in implementations that do not require an `UPDATE statement` to f
 
 Log in to the vault and update an existing item.  Updates should be pushed immediately to the remote source.
 
-<p class="note">If you encounter exceptions when updating items, follow the steps in the Debugging and Diagnostics section.</p>
+![Processing updates](updates.png)
+
+<p class="note">If you encounter exceptions when updating items, follow the steps in the <a href="#debugging-and-diagnostics">Debugging and Diagnostics</a> section.</p>
 
 
 
