@@ -36,3 +36,75 @@ public MFIdentifier CustomerNameProperty = "PropertyDef.CustomerName";
 ```
 
 <p class="note">Note: This code would output an error to the event log if the property were not found, but the application would still attempt to run.  It is up to the vault application to check whether any items were not found and execute accordingly.</p>
+
+## What Attributes Exist Within the Vault Application Framework?
+
+### Configuration
+
+* [MFIdentifierAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier)
+* [MFConfigurationAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfconfiguration)
+
+#### Vault Structure
+
+The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Frameworks/Getting-Started/Aliases) `MFiles.ObjectType.Project`.
+
+```csharp
+[MFObjType()]
+MFIdentifier ProjectObjectType = "MFiles.ObjectType.Project";
+```
+
+##### Object Types, Classes, Class Groups and Value Lists
+
+* [MFClassGroupAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+* [MFClassAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+* [MFObjTypeAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+* [MFValueListAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+* [MFValueListItemAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+
+##### Access Control Lists and User Groups
+
+* [MFNamedACLAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+* [MFUserGroupAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+
+##### Property Definitions
+
+* [MFPropertyDefAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+
+##### Workflows, Workflow States, And Workflow State Transitions
+
+* [MFWorkflowAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+* [MFStateAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+* [MFStateTransitionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+
+##### Views
+* [MFViewAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
+
+### Attributes and VBScript Proxies
+
+The following attributes precede C# methods and identify where in the vault a VBScript "proxy" should be created.  VBScript proxies are snippets of code which obtain a reference to the Vault Application Framework application, and execute the appropriate method(s).
+
+<p class="note">These VBScript proxies must not be manually altered.</p>
+
+#### Vault Extension Methods
+
+* [VaultExtensionMethodAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods)
+
+#### Event Handlers
+
+* [EventHandlerAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers)
+
+#### Properties
+
+* [PropertyAutomaticNumberingAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties)
+* [PropertyCustomValueAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties)
+* [PropertyValueValidationAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties)
+
+#### Workflow States
+
+* [StatePreConditionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows)
+* [StatePostConditionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows)
+* [StateActionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows)
+
+#### Workflow State Transitions
+
+* [AutomaticStateTransitionTriggerAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows#automatic-state-transitions)
