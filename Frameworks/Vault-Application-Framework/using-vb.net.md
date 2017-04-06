@@ -111,7 +111,7 @@ Whilst this step is optional, if you choose not to use automatic deployment then
 
 Automatic deployment is done using the `MFVaultApplicationInstaller.exe` file, along with a build task.  The executable file packages up the various resources from the build folder into a zip file, then connects to a local M-Files server and installs (or updates) the package into a specified vault.
 
-<p class="note">The MFVaultApplicationInstaller.exe file should be available alongside this file in a multi-file-document.  If you cannot find this file then please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.</p>
+<p class="note">The `MFVaultApplicationInstaller.exe` is available from the [M-Files Partner Portal](m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1694/3768?object=822E5005-5020-433F-A9DD-BC6E0815513D&file=7269C7BD-1564-440E-A6CA-58FC84F1DE96).  If you cannot find this file then please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.</p>
 
 To set up the automatic deployment:
 

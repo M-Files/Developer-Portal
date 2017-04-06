@@ -20,6 +20,18 @@ public class MySerializableClass
 
 <p class="note">Note: The name of the class, by convention, includes the suffix "Attribute", but this does not need to be included when used, so MFPropertyDefAttribute is referenced as [MFPropertyDef].
 More information on Attributes in the .NET framework can be found within MSDN.</p>
+
+### Multiple attributes
+
+Note that multiple attributes can be placed on the same method.  The following code attaches the same code to two separate workflow states:
+
+```csharp
+[StateAction("MyWorkflowState1")]
+[StateAction("MyWorkflowState2")]
+public void HandleWorkflowStatesOneAndTwo(StateEnvironment env)
+{
+}
+```
  
 ## Attributes And The Vault Application Framework
 
