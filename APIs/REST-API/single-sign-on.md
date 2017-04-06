@@ -32,8 +32,6 @@ Select `General` on the left, then enable `Windows SSO`:
 
 ## Using Single Sign-On from an application
 
-<p class="note">A sample C# application is available alongside this document and provides a more complete implementation.  The sample application is not considered production-quality, though, as it does not deal with refreshing the cookie or handling any HTTP exception conditions.</p>
-
 The basic approach to using Single Sign-On from an application is:
 
 * Make a HTTP request to /WebServiceSSO.aspx, providing the vault Id to connect to.

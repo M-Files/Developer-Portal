@@ -222,6 +222,75 @@ var searchResults = searchBuilder.Find();
 
 ### Restricting by object status
 
+This can be executed where an object must have a specific status:
+
+```csharp
+// Create our search builder.
+var searchBuilder = new MFSearchBuilder(vault);
+
+// Only items with an external ID (display ID) of "SUP12345".
+searchBuilder.Status(MFStatusType.MFStatusTypeExtID, MFDataType.MFDataTypeText, "SUP12345")
+
+// Execute the search.
+var searchResults = searchBuilder.Find();
+```
+
+Or this can be executed where n object must not have a specific status
+
+```csharp
+// Create our search builder.
+var searchBuilder = new MFSearchBuilder(vault);
+
+// Exclude items with an external ID (display ID) of "SUP12345".
+searchBuilder.StatusNot(MFStatusType.MFStatusTypeExtID, MFDataType.MFDataTypeText, "SUP12345")
+
+// Execute the search.
+var searchResults = searchBuilder.Find();
+```
+
 ### Restricting by reverse reference (Result.Property = item.ID)
 
+This can be executed using an object ID (in which case any version can be referenced):
+
+```csharp
+// Create our search builder.
+var searchBuilder = new MFSearchBuilder(vault);
+
+// Only items that reference a document with ID 123 in property 456.
+searchBuilder.References(456, new ObjID(){
+    ID = 123,
+    Type = (int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument
+});
+
+// Execute the search.
+var searchResults = searchBuilder.Find();
+```
+
+Or this can be executed using an object version (in which case the specific version must be referenced):
+
+```csharp
+// Create our search builder.
+var searchBuilder = new MFSearchBuilder(vault);
+
+// Only items that reference a document with ID 123 in property 456 (must be version 1).
+searchBuilder.References(456, new ObjVer(){
+    ID = 123,
+    Type = (int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
+    Version = 1
+});
+
+// Execute the search.
+var searchResults = searchBuilder.Find();
+```
+
+### Everything else
+
+Note that the internal `SearchConditions` collection is exposed as `MFSearchBuilder.Conditions` and can be manipulated directly if needed.  This can be used to create custom search conditions for which there currently don't exist any helper methods.
+
 ## Working with search results
+
+Once an `MFSearchBuilder` has been created and populated with the required search conditions, the search can be executed by calling `Find` (find all objects that match the conditions, equivalent to calling [SearchForObjectsByConditionsEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations~SearchForObjectsByConditionsEx.html), which returns an [ObjectSearchResults](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectSearchResults.html)), `FindEx` (finding all matching objects), or `FindOneEx` (finding just one).
+
+These latter two methods return instances of [ObjVerEx]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/ObjVerEx).  This class is new to the Vault Application Framework and facilitates working with objects, combining both information typically held within [ObjectVersion](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion.html) and the object's [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html).
+
+<p class="note">Using the FindEx method loses the score/ranking information held within the standard [ObjectSearchResults](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectSearchResults.html).  This is only available by calling Find.</p>
