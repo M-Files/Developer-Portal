@@ -293,4 +293,4 @@ Once an `MFSearchBuilder` has been created and populated with the required searc
 
 These latter two methods return instances of [ObjVerEx]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/ObjVerEx).  This class is new to the Vault Application Framework and facilitates working with objects, combining both information typically held within [ObjectVersion](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion.html) and the object's [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html).
 
-<p class="note">Using the FindEx method loses the score/ranking information held within the standard [ObjectSearchResults](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectSearchResults.html).  This is only available by calling Find.</p>
+<p class="note">Using the FindEx method loses the score/ranking information held within the standard <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectSearchResults.html">ObjectSearchResults</a>.  This is only available by calling Find.</p>
