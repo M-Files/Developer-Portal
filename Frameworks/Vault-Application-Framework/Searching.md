@@ -235,7 +235,7 @@ searchBuilder.Status(MFStatusType.MFStatusTypeExtID, MFDataType.MFDataTypeText, 
 var searchResults = searchBuilder.Find();
 ```
 
-Or this can be executed where n object must not have a specific status
+Or this can be executed where an object must not have a specific status
 
 ```csharp
 // Create our search builder.
