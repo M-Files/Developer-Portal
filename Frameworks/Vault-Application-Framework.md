@@ -27,7 +27,7 @@ What's even better is that other .NET libraries can be referenced for example, u
 
 #### Better debugging
 
-Debugging complex VBScripting can be time-consuming and frustrating.  When using the Vault Application Framework, applications can instead be [debugged within Visual Studio]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/) with full access to Visual Studio tools and resources.  The Vault Application Framework even includes [helper utilities]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helper-Utilities/) for writing exception details to the Windows Event Log, where they can be reported on by standard monitoring software.
+Debugging complex VBScripting can be time-consuming and frustrating.  When using the Vault Application Framework, applications can instead be [debugged within Visual Studio]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/) with full access to Visual Studio tools and resources.  The Vault Application Framework even includes [helper utilities]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/) for writing exception details to the Windows Event Log, where they can be reported on by standard monitoring software.
 
 #### Simplicity of deployment
 
@@ -43,6 +43,6 @@ Built-in attributes such as MFConfiguration and MFIdentitifer reduce the boiler-
 
 Whereas most processes within M-Files typically operate synchronously, [Background Operations]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Background-Operations/) allow you to execute periodic or time-consuming processes asynchronously, providing a smoother solution for your customers.
 
-#### Helper utilities
+#### Helpers
 
-Common functions such as building search conditions, or working with search results, are easier using built-in [helper utilities]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helper-Utilities/).  These extensibile helper utilities reduce the amount of code needed to be written, as well as providing more readable and more maintainable code for the future.
+Common functions such as building search conditions, or working with search results, are easier using built-in [helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework//).  These extensibile helpers reduce the amount of code needed to be written, as well as providing more readable and more maintainable code for the future.

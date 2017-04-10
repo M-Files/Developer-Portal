@@ -30,7 +30,7 @@ By default, Visual Studio will create some sample files.  We will remove these f
   * Select `Class1.vb` and press the `Del` key (or use the right-click context menu).
 * Save the project.
 
-<p class="note">If you do not remove the `Settings.settings` file then your application will not work.</p>
+<p class="note">If you do not remove the Settings.settings file then your application will not work.</p>
 
 ### Adding references and VAF-specific files
 
@@ -111,7 +111,7 @@ Whilst this step is optional, if you choose not to use automatic deployment then
 
 Automatic deployment is done using the `MFVaultApplicationInstaller.exe` file, along with a build task.  The executable file packages up the various resources from the build folder into a zip file, then connects to a local M-Files server and installs (or updates) the package into a specified vault.
 
-<p class="note">The `MFVaultApplicationInstaller.exe` is available from the [M-Files Partner Portal](m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1694/3768?object=822E5005-5020-433F-A9DD-BC6E0815513D&file=7269C7BD-1564-440E-A6CA-58FC84F1DE96).  If you cannot find this file then please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.</p>
+<p class="note">The MFVaultApplicationInstaller.exe is available from the <a href="m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1694/3768?object=822E5005-5020-433F-A9DD-BC6E0815513D&file=7269C7BD-1564-440E-A6CA-58FC84F1DE96">M-Files Partner Portal</a>.  If you cannot find this file then please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.</p>
 
 To set up the automatic deployment:
 
