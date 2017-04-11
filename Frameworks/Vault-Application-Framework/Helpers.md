@@ -5,6 +5,10 @@ title: Helper Utilities
 
 ## Overview
 
+## MFSearchBuilder
+
+[MFSearchBuilder]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/MFSearchBuilder/) is contained in the `MFiles.VAF.Common` namespace and is used to execute searches against the vault.  More information on [MFSearchBuilder is available here]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/MFSearchBuilder/).
+
 ## ObjVerEx
 
 [ObjVerEx]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/ObjVerEx/) is contained in the `MFiles.VAF.Common` namespace and is returned by [MFSearchBuilder's FindEx and FindOneEx methods]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Searching/) and provides helper methods for working with an object, its properties and history.  More information on [ObjVerEx is available here]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/ObjVerEx/).

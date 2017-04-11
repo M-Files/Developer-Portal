@@ -26,6 +26,8 @@ M-Files provides two Application Programming Interfaces for developers to commun
   * Server mode does not require a vault connection to be set up on the host machine, but cannot show M-Files dialogs.
 * Requires the same version of the API on the client machine as the server.
 
+<p class="note">More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">COM API section</a>.</p>
+
 ### [The M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/)
 
 * A REST-like web service that is available from within M-Files Web Access.
@@ -34,16 +36,20 @@ M-Files provides two Application Programming Interfaces for developers to commun
 * Supports most "user" operations, but cannot be used to undertake "administrative" functions.
 * Not tied directly to the M-Files Server version.
 
+<p class="note">More information is available in the <a href="{{ site.baseurl }}/APIs/REST-API/">REST API section</a>.</p>
+
 ## Our Frameworks
 
-M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Extensibility-Framework/) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
+M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
 
-### [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Extensibility-Framework/)
+### [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/)
 
 * Used to create client-side applications.
 * Can tailor the user interface, such as changing logos or showing or hiding UI elements.
 * Can create buttons and menu items which can react to selected items.
 * Can create "dashboards" which are shown on demand, and can be provided with content from M-Files.
+
+<p class="note">More information is available in the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/">User Interface Extensibility Framework section</a>.</p>
 
 ### [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/)
 
@@ -52,3 +58,9 @@ M-Files provides two separate frameworks for building applications that run with
 * Can be used to execute .NET code as an object moves through a workflow.
 * Can be used to create background operations which execute periodically.
 * Can be used to execute .NET code to calculate property values and/or provide property value validation.
+
+<p class="note">More information is available in the <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/">Vault Application Framework section</a>.</p>
+
+## Development Licences
+
+Development licences are available to M-Files resellers and members of the Certified Application Provider program.  For more information contact your Channel Account Manager or the [developer evangelism team](mailto:devsupport@m-files.com).  Alternatively, a 30-day trial of M-Files can be downloaded from [https://www.m-files.com/en/download-latest-version](https://www.m-files.com/en/download-latest-version).
