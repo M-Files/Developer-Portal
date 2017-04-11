@@ -5,6 +5,8 @@ title: Configuration
 
 ## MFIdentifier
 
+The `MFIdentifier` class is used in combination with a [vault structure attribute](#vault-structure) to automate the resolution of vault element aliases to IDs.  At runtime the Vault Application Framework will identify all properties and fields of type `MFIdentifier` and automatically resolve them, where possible, to an internal ID.  If the vault structure attribute defines the element as `Required` then an error will be logged to the Windows Event Log if it cannot be resolved.
+
 ### Vault Structure
 
 #### Object Types, Classes, Class Groups and Value Lists
