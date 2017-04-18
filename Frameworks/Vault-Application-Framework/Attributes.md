@@ -18,7 +18,7 @@ public class MySerializableClass
 }
 ```
 
-<p class="note">Note: The name of the class, by convention, includes the suffix "Attribute", but this does not need to be included when used, so MFPropertyDefAttribute is referenced as [MFPropertyDef].
+<p class="note">The name of the class, by convention, includes the suffix "Attribute", but this does not need to be included when used, so MFPropertyDefAttribute is referenced as [MFPropertyDef].
 More information on Attributes in the .NET framework can be found within MSDN.</p>
 
 ### Multiple attributes
@@ -47,7 +47,7 @@ Attributes can additionally be passed parameters at the time they are declared. 
 public MFIdentifier CustomerNameProperty = "PropertyDef.CustomerName";
 ```
 
-<p class="note">Note: This code would output an error to the event log if the property were not found, but the application would still attempt to run.  It is up to the vault application to check whether any items were not found and execute accordingly.</p>
+<p class="note">This code would output an error to the event log if the property were not found, but the application would still attempt to run.  It is up to the vault application to check whether any items were not found and execute accordingly.</p>
 
 ## What Attributes Exist Within the Vault Application Framework?
 

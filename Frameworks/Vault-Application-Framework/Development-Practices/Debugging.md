@@ -13,7 +13,7 @@ To debug code that executes on an event (e.g. a workflow state action) or on a p
 
 ![Attach to Process](attach-to-process.png)
 
-<p class="note">Note: multiple `MFAppPlatform.exe` processes may be listed in this window; use the Ctrl or Shift keys on your keyboard to select all of them.</p>
+<p class="note">Multiple `MFAppPlatform.exe` processes may be listed in this window; use the Ctrl or Shift keys on your keyboard to select all of them.</p>
 
 Once attached to the process, you can use any of [Visual Studio's debugging features](https://msdn.microsoft.com/en-us/library/k0k771bt.aspx) to debug your code.
 
@@ -36,4 +36,4 @@ public class VaultApplication
 
 Visual Studio allows developers to debug applications that are deployed on different computers.  To do so, you must use the Visual Studio remote debugger.  [Microsoft have published detailed guidance on deploying and configuring the remote debugging tools](https://msdn.microsoft.com/en-us/library/y7f5zaaa.aspx), which can then be used to debug the `MFAppPlatform.exe` process on another machine.
 
-<p class="note">Note: remote debugging of production systems is not recommended.</p>
+<p class="note">Remote debugging of production systems is not recommended.</p>

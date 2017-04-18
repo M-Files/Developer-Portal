@@ -13,7 +13,7 @@ Whilst most of the samples on this site use C#, it is also possible to use VB.NE
 
 #### Strong typing
 
-Because C# is strongly typed, the compiler will highlight incorrect usages of the API well in advanced of your users.  For example: the compiler can identify if you try and pass a PropertyValue into a method that expects a TypedValue.  This improves the quality of your solution by reducing the number of runtime errors that may be encountered.
+Because C# is strongly typed, the compiler will highlight incorrect usages of the API well in advance of your users.  For example: the compiler can identify if you try and pass a PropertyValue into a method that expects a TypedValue.  This improves the quality of your solution by reducing the number of runtime errors that may be encountered.
 
 #### Reduction in lines of code
 

@@ -100,7 +100,7 @@ For the purposes of this tutorial, we will have to create a means of accessing t
 
 ### Creating the Data Source
 
-<p class="note">For the sake of brevity, the specific implementation required for our scenario is available within the downloadable content attached to this document.  The below information is not a complete code listing.</p>
+<p class="note">For the sake of brevity, the specific implementation required for our scenario is available within the <a href="https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/1EBBAD7B-A948-47C2-973B-5A32300F468D/latest">source code that can be downloaded from the Partner Portal</a>.  The below information is not a complete code listing.</p>
 
 You may implement `IDataSource` and `IDataSourceConnection` in the same object, if it makes development cleaner.  For clarity, in this sample we will separate the implementation of `IDataSource` from `IDataSourceConnection`.
 
@@ -231,7 +231,7 @@ To create an installer:
   * Within this key, create a string value named `Path`.  The value should be the string `[TARGETDIR]`, followed by the name of the DLL file you created, e.g. ` [TARGETDIR]ExtOTDS.Json.dll`.
   * Duplicate the above key and values for the `SOFTWARE (64-Bit)` section, so that the keys are created for both.
 
-<p class="note">Note that the GUID shown above should match the one you will use when altering the Object Type Data Source; create a unique GUID for each data source you create.</p>
+<p class="note">The GUID shown above should match the one you will use when altering the Object Type Data Source; create a unique GUID for each data source you create.</p>
 
 ### Testing the Data Provider
 
@@ -339,13 +339,13 @@ Once your methods have been implemented, re-install the DLL (if needed) and upda
 * Go to the `Connection to External Database` tab, and:
   * Ensure that a `DELETE` statement is filled in, even if your Object Type Data Source does not require one (note in the screenshot that "ignored" has been entered).
 
-<p class="note">Note that even in implementations that do not require a `DELETE statement` to function (e.g. when the data is parsed directly from the column mappings), the M-Files Object Type Properties window requires that one is filled in to proceed.  In this scenario, any content can be entered providing it passes the call to `ValidateDeleteStatemet`.</p>
+<p class="note">Even in implementations that do not require a `DELETE statement` to function (e.g. when the data is parsed directly from the column mappings), the M-Files Object Type Properties window requires that one is filled in to proceed.  In this scenario, any content can be entered providing it passes the call to `ValidateDeleteStatemet`.</p>
 
 ![Processing deletions](deletes.png)
 
 Log in to the vault and delete an existing item.  Deletions should be pushed immediately to the remote source.
 
-<p class="note">Note that only a deletion is required to remove the item from the remote source; items do not need to be permanently destroyed.</p>
+<p class="note">Only a deletion is required to remove the item from the remote source; items do not need to be permanently destroyed.</p>
 
 <p class="note">If you encounter exceptions when creating deleting items, follow the steps in the Debugging and Diagnostics section.</p>
 

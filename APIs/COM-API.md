@@ -13,7 +13,7 @@ The API can be used to create almost any solution that retrieve or process infor
 * Creating objects within M-Files (e.g. to create an Order object when a user completes payment online),
 * Moving objects through a workflow as required (e.g. when an electronically-signed version of a document is received, move the contract to another state).
 
-<p class="note">Note: The COM API requires the same version of the API on the client machine as the server (e.g. if communicating with an M-Files 2015.3 server, the API must also be of the same version).</p>
+<p class="note">The COM API requires the same version of the API on the client machine as the server (e.g. if communicating with an M-Files 2015.3 server, the API must also be of the same version).</p>
 
 ## Connecting to a vault
 
