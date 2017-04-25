@@ -58,7 +58,7 @@ public MFIdentifier CustomerNameProperty = "PropertyDef.CustomerName";
 
 #### Vault Structure
 
-The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Frameworks/Getting-Started/Aliases) `MFiles.ObjectType.Project`.
+The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Frameworks/Concepts/Aliases) `MFiles.ObjectType.Project`.
 
 ```csharp
 [MFObjType()]

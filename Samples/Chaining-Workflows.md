@@ -35,7 +35,7 @@ This is where objects start the second workflow.  The user can choose to move th
 * `Final`
 A sample further state which the object could progress to.
 
-<p class="note">The workflows and workflow states have been assigned <a href="{{ site.baseurl }}/Getting-Started/Aliases/">aliases</a> so that the code can reference the new
+<p class="note">The workflows and workflow states have been assigned <a href="{{ site.baseurl }}/Concepts/Aliases/">aliases</a> so that the code can reference the new
 workflow and state to put the object into.  The Vault Application Framework also uses the alias of the "Final (VAF)" workflow state to automatically create the VBScript proxy that
 it uses to run.</p>
 

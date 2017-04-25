@@ -71,9 +71,9 @@
     <script src="{{ site.baseurl }}/scripts/in-page-nav.js"></script>
     <script src="{{ site.baseurl }}/scripts/external-links.js"></script>
 
-    {% include analytics.html %}
-
+    {% include analytics.html %} {% if site.disqus %}
     <script id="dsq-count-scr" src="//mfilesdeveloperportal.disqus.com/count.js" async></script>
+    {% endif %}
 
 </body>
 
