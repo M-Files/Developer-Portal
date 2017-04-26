@@ -27,7 +27,7 @@ We support three authentication mechanisms: credentials in HTTP headers, cookie-
 
 ### Authentication tokens
 
-Using authentication tokens is the recommended method to interact with the M-Files Web Service.
+Using authentication tokens is the recommended method to interact with the M-Files Web Service.  To use authentication tokens, make a POST request to the `/REST/server/authenticationtokens` endpoint, passing the username, password and vault GUID to log into.  Once an authentication token has been received, provide it in the HTTP headers in all subsequent requests (the HTTP header name should be `X-Authentication`).
 
 ```csharp
 // Create a JSON.NET serializer to serialize/deserialize request and response bodies.
