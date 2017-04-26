@@ -12,9 +12,9 @@
                 {% endcomment %}
             </ul>
         </li>
-        <li><a href="#"><i class="zmdi-hc-li zmdi zmdi-stop"></i>Using built-in functionality</a>
+        <li><a href="{{ site.baseurl }}/Built-In/"><i class="zmdi-hc-li zmdi zmdi-stop"></i>Using built-in functionality</a>
             <ul>
-                <li><a href="#">VBScript</a> {% comment %}
+                <li><a href="{{ site.baseurl }}/Built-In/VBScript/">VBScript</a> {% comment %}
                     <ul>
                         <li><a href="#">The development environment</a></li>
                         <li><a href="#">Resources</a></li>
@@ -64,8 +64,12 @@
         </li>
         <li><a href="{{ site.baseurl }}/APIs/REST-API/"><i class="zmdi-hc-li zmdi zmdi-cloud-outline"></i>RESTful API</a>
             <ul>
-                <li><a href="{{ site.baseurl }}/APIs/REST-API/HTTP-and-REST/">HTTP and REST</a></li>
-                <li><a href="{{ site.baseurl }}/APIs/REST-API/Single-Sign-On/">Using Single Sign On</a></li>
+                <li><a href="{{ site.baseurl }}/APIs/REST-API/Concepts/">Concepts</a></li>
+                <li><a href="{{ site.baseurl }}/APIs/REST-API/Authentication/">Authentication</a>
+                    <ul>
+                        <li><a href="{{ site.baseurl }}/APIs/REST-API/Authentication/Single-Sign-On/">Using Single Sign On</a></li>
+                    </ul>
+                </li>
                 <li><a href="{{ site.baseurl }}/APIs/REST-API/Vault-Extension-Methods/">Vault Extension Methods</a></li>
                 <li><a href="{{ site.baseurl }}/APIs/REST-API/Useful-Applications/">Useful Applications</a></li>
                 {% comment %}
@@ -156,7 +160,6 @@
                     <ul>
                         <li><a href="#">Logo</a></li>
                         <li><a href="#">Deploying vault connections</a></li>
-                        <li><a href="#">Automatically accepting UIXes</a></li>
                     </ul>
                 </li>
             </ul>
@@ -171,7 +174,7 @@
         {% comment %}
         <li><a href="#"><i class="zmdi-hc-li zmdi zmdi-github"></i>Libraries</a>
             <ul class="zmdi-hc-ul">
-                <li><a href="#">.NET (COM/.NET API and Web Service Client)</a></li>
+                <li><a href="#">.NET</a></li>
                 <li><a href="#">UIX</a></li>
                 <li><a href="#">M-Files Web Services</a></li>
             </ul>
