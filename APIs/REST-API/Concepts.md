@@ -42,3 +42,6 @@ Unlike HTTP, REST is not a protocol. Whilst REST (Representational state transfe
 ## Serialization and Deserialization
 
 In order to pass data structures from the calling application to the server, and back again from the server to the calling application, they must be serialised (converted to structured text) and then deserialised (converted back again).  Whilst the [MFWS has experimental support for data encoded in XML](https://www.m-files.com/mfws/parameters.html), most calling applications use [JavaScript Object Notation](http://json.org) instead, and this will be used in all samples.
+
+## Obtaining metadata structure element IDs
+
