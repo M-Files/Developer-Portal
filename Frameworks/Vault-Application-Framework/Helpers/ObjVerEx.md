@@ -31,7 +31,19 @@ An in-memory copy of the object's [PropertyValues](https://www.m-files.com/api/d
 
 `SetCreatedBy` offers a shortcut mechanism to calling [SetCreationInfoAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetCreationInfoAdmin.html), allowing a user ID to be passed rather than a [TypedValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~TypedValue.html).
 
+```csharp
+// Where "env" is the current environment passed
+// to the method.
+env.ObjVerEx.SetCreatedBy(env.CurrentUserID);
+```
+
 `SetModifiedBy` offers a shortcut mechanism to calling [SetLastModificationInfoAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetLastModificationInfoAdmin.html), allowing a user ID to be passed rather than a [TypedValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~TypedValue.html).
+
+```csharp
+// Where "env" is the current environment passed
+// to the method.
+env.ObjVerEx.SetModifiedBy(env.CurrentUserID);
+```
 
 ### SetWorkflowState
 
