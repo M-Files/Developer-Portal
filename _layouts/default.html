@@ -63,6 +63,8 @@
 
     <script src="{{ site.baseurl }}/scripts/highlight.pack.js"></script>
     <script>
+        console.log(hljs.listLanguages());
+        hljs.configure({languages: ["cs", "vbscript"]});
         hljs.initHighlightingOnLoad();
     </script>
 

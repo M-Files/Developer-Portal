@@ -378,16 +378,16 @@ Uri uri =
 await client.PutAsync(uri, httpContent);
 
 // Delete the first file.
-await
-	client.DeleteAsync(new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/{checkedOutObjectVersion.Files[0].ID}"));
+uri = new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/{checkedOutObjectVersion.Files[0].ID}");
+await client.DeleteAsync(uri);
 
 // Create the content for the checkin request.
 // NOTE: 0 == "CheckedIn" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
 httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
-Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
-	await (await client.PutAsync(new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout"), httpContent)).Content.ReadAsStringAsync());
+uri = new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout")
+Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(await (await client.PutAsync(uri, httpContent)).Content.ReadAsStringAsync());
 ```
 
 ## Tips and Tricks
