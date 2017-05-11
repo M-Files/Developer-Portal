@@ -156,6 +156,11 @@ ul.treeview li a.current {
     header,
         body.sidebar-expanded>header{
         display:flex;
-        align-items: ellipsis;
+        align-items: center;
+        width: 100%;
+    }
+    header h1
+    {
+        width: 100%;
     }
 }
