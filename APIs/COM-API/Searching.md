@@ -29,7 +29,7 @@ var searchConditions = new SearchConditions();
 	condition.TypedValue.SetValue(MFDataType.MFDatatypeLookup, 
 		(int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument);
 
-	// Add the condition.
+	// Add the condition to the collection.
 	searchConditions.Add(-1, condition);
 }
 
@@ -47,7 +47,7 @@ var searchConditions = new SearchConditions();
 	// Set the value.
 	condition.TypedValue.SetValue(MFDataType.MFDatatypeBoolean, false);
 
-	// Add the condition.
+	// Add the condition to the collection.
 	searchConditions.Add(-1, condition);
 }
 
@@ -58,10 +58,80 @@ var searchResults = vault.ObjectSearchOperations.SearchForObjectsByConditionsEx(
 
 ## Search Conditions
 
+Detailed below are methods of creating individual [SearchCondition](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchCondition.html) objects.  These are typically combined into a collection of [SearchConditions](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchConditions.html) before being [executed against the vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations.html).
+
 ### Deleted items
+
+Below is an example of creating a [SearchCondition](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchCondition.html) which represents the exclusion of deleted items.
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition();
+
+// Set the expression.
+condition.Expression.SetStatusValueExpression(MFStatusType.MFStatusTypeDeleted);
+
+// Set the condition.
+condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+// Set the value.
+condition.TypedValue.SetValue(MFDataType.MFDatatypeBoolean, false);
+```
+
+Alternatively, you may need to only search for deleted items:
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition();
+
+// Set the expression.
+condition.Expression.SetStatusValueExpression(MFStatusType.MFStatusTypeDeleted);
+
+// Set the condition.
+condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+// Set the value.
+condition.TypedValue.SetValue(MFDataType.MFDatatypeBoolean, true);
+```
+
+### Searching by an external ID
+
+When using [external object types](http://www.m-files.com/user-guide/latest/eng/#Connection_to_external_database.html), the object ID shown on the metadata card will be the primary key for the object in the remote system.  A search can be executed to convert the external ID to an internal ID (e.g. to populate a [PropertyValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValue.html) for a lookup):
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition();
+
+// Set the expression.
+condition.Expression.DataStatusValueType = MFStatusType.MFStatusTypeExtID;
+
+// Set the condition.
+condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+// Set the value.
+// In this case "MyExternalObjectId" is the ID of the object in the remote system.
+condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "MyExternalObjectId");
+```
+
+### Executing a full-text search
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition();
+
+// Set the expression.
+condition.Expression.SetAnyFieldExpression(fullTextSearchFlags);
+
+// Set the condition.
+condition.ConditionType = MFConditionType.MFConditionTypeContains;
+
+// Set the value.
+// In this case "ESTT" is the text to search for.
+condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "ESTT");
+```
 
 ## Tips and tricks
 
 ### Deleted items are returned by default
 
-It is important to note that items which are deleted are returned by default.  If the user has access to deleted items then these items will be returned in the search results.  If deleted items should not be returned then ensure you [add a condition to exclude deleted items](#deleted-items).
+It is important to note that items which are deleted are returned by default.  If the current user context has access to deleted items then these items will be returned in the search results.  If deleted items should not be returned then ensure you [add a condition to exclude deleted items](#deleted-items).
