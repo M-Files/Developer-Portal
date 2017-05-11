@@ -39,11 +39,8 @@ aside#sidebar nav.secondary {
 body.sidebar-expanded>* {
     display: none;
 }
-body.sidebar-expanded>header {
-    display: block;
-}
 
-body.sidebar-expanded #hamburger {
+body.sidebar-expanded>header {
     display: block;
 }
 
@@ -149,7 +146,7 @@ ul.treeview li a.current {
     {
         font-size: 1em;
     }
-    .treeview>li>i.expandCollapseIcon {
+    .treeview li>i.expandCollapseIcon {
         left: -62px;
     }
 }
