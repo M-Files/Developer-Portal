@@ -15,6 +15,7 @@ body.has-in-page-nav > *
 
 body > aside#sidebar
 {
+	top: 0px;
 	left: 0px;
 	padding-top: 80px;
 	box-shadow: none;

@@ -1,8 +1,10 @@
 aside#sidebar {
     position: fixed;
-    padding: 35px 20px 130px 0px;
+    /*padding: 35px 20px 130px 0px;
+    top: 0px;*/
+    padding: 0px 20px 130px 0px;
+    top: 40px;
     margin: 0px;
-    top: 0px;
     left: -110%;
     bottom: -1px;
     width: 100%;
@@ -146,7 +148,14 @@ ul.treeview li a.current {
     {
         font-size: 1em;
     }
-    .treeview li>i.expandCollapseIcon {
-        left: -57px;
+
+    .treeview>li>i.expandCollapseIcon {
+        left: -62px;
+    }
+
+    header,
+        body.sidebar-expanded>header{
+        display:flex;
+        align-items: ellipsis;
     }
 }

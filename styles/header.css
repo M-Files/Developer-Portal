@@ -14,12 +14,7 @@ header h1
 	font-weight: normal;
 	font-size: 1rem;
 	min-height:34px;
-}
-
-@media all and (max-width: 499px)
-{
-    header h1{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
