@@ -138,4 +138,12 @@ ul.treeview li a.current {
         padding-left: 40px;
         padding-right: 40px;
     }
+    aside#sidebar nav.primary li
+    {
+        font-size: 1.1em;
+    }
+    aside#sidebar nav.primary li li
+    {
+        font-size: 1em;
+    }
 }
