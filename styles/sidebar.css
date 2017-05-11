@@ -130,3 +130,12 @@ li.expanded>i.expandCollapseIcon {
 ul.treeview li a.current {
     font-weight: bold;
 }
+
+@media all and (max-width: 500px)
+{
+    aside#sidebar nav.primary
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
