@@ -69,11 +69,34 @@ ul.treeview ul {
     display: none;
     padding: 0px;
     margin: 0px 0px 0px 20px;
+    opacity: 0;
 }
 
 ul.treeview li.expanded>ul {
     display: block;
     list-style: disc;
+    animation: fadeInNav ease-in-out 300ms forwards;
+    animation-delay: 50ms;
+}
+
+@keyframes fadeInNav{
+  0% { opacity: 0 ; }
+  100% { opacity: 0.99; }
+}
+
+@-moz-keyframes fadeInNav{
+  0% { opacity: 0 ; }
+  100% { opacity: 0.99; }
+}
+
+@-webkit-keyframes fadeInNav {
+  0% { opacity: 0 ; }
+  100% { opacity: 0.99; }
+}
+
+@-o-keyframes fadeInNav {
+  0% { opacity: 0 ; }
+  100% { opacity: 0.99; }
 }
 
 i.expandCollapseIcon {
@@ -82,6 +105,11 @@ i.expandCollapseIcon {
     left: -42px;
     top: -2px;
     padding: 5px 15px;
+    transform: rotate(0deg);
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .treeview>li>i.expandCollapseIcon {
