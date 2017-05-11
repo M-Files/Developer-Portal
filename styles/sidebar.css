@@ -147,6 +147,6 @@ ul.treeview li a.current {
         font-size: 1em;
     }
     .treeview li>i.expandCollapseIcon {
-        left: -62px;
+        left: -57px;
     }
 }
