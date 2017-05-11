@@ -32,11 +32,6 @@
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .sidebar-expanded #hamburger
-    {
-        background-color: #007dc6;
-        color: #FFF;
-    }
 
     #sidebar
     {
