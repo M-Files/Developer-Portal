@@ -5,7 +5,7 @@ title: Samples and Libraries
 
 <p class="note warning">Please note that these samples and libraries are provided "as-is" and with no warranty, explicit or otherwise. You should ensure that the functionality of these libraries meet your requirements, and thoroughly test them, prior to using in any production scenarios.  The items linked below are designed as teaching tools and may not be fully complete.</p>
 
-All M-Files Samples and Libraries are available in our [public GitHub repositories](https://github.com/m-files/).
+All M-Files Samples and Libraries are available in our [public GitHub repositories](https://github.com/m-files/).  Further samples and libraries will be added in response to partner feedback.
 
 ## Libraries
 
@@ -39,8 +39,38 @@ Searches executed using [SearchForObjectsbyConditions](https://www.m-files.com/a
 
 ### M-Files Web Service (REST API)
 
+#### .NET
 
+The following .NET (typically v4.5) samples are available.  Please note that these focus on maintaining functionality with the latest versions of Visual Studio and M-Files, and may require additional work to work on previous versions of software.
+
+* [MFWSCheckOutStatus](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/MFWSCheckOutStatus)
+
+An example of retrieving the [checkout status of an object](http://www.m-files.com/mfws/resources/objects/type/objectid/version/checkedout.html) .
+
+* [MFWSDownloading](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/MFWSDownloading)
+
+An example of [searching for](http://www.m-files.com/mfws/resources/objects.html), then [downloading](http://www.m-files.com/mfws/resources/objects/type/objectid/version/files/file/content.html), files from the M-Files Web Service.
+
+* [MFWSSearching](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/MFWSSearching)
+
+An example of using the [search endpoint](http://www.m-files.com/mfws/resources/objects.html) to search for objects within a Vault.  Further details an examples are included in the [readme file](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/MFWSSearching).
+
+* [MFWSVaultStructure](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/MFWSVaultStructure)
+
+A console application that shows how to enumerate the vault structure using the M-Files Web Service.
+
+* [MFWSViewNavigation](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/MFWSViewNavigation)
+
+A console application that shows how to enumerate the vault contents by navigating the view structures using the M-Files Web Service.
+
+<p class="note">We aim to provide examples of achieving the listed functionality using both the <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Libraries/MFaaP.MFWSClient">REST API Wrapper</a> and a base implementation using HttpClient.</p>
 
 ### Vault Application Framework
 
+* [Event Tracing](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/EventTracing)
 
+A Vault Application Framework application that automatically hooks into various Vault Application Framework lifecycle events and vault events and logs when they occur into the Windows Event Log.  Can be used to identify which vault events occur in various situations.
+
+* [Chain Workflows](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/ChainWorkflows)
+
+An example (available as both a Vault Application Framework application, and a VBScript implementation) that shows how to move an object from one workflow to another once it reaches a specific state in a workflow.
