@@ -23,11 +23,26 @@
         {
             setupNode($li);
         }
-    })
-
-    // Auto-expand the current one.
-    var currentPageAddress = window.location.pathname;
-    $("li a[href='" + currentPageAddress + "']", "ul.treeview").each(function(i, o){
-        $(this).addClass("current").parents("li").addClass("expanded");
     });
+
+    // Get the links in the treeview.
+    var $navLinks = $("li a", "ul.treeview");
+
+    // When one is clicked, highlight it.
+    function highlightLink(i, o)
+    {
+        // Unhighlight any existing ones.
+        console.log($navLinks.filter(".current"));
+        $navLinks.filter(".current").removeClass("current");
+
+        // Highlight the clicked one.
+        $(this).addClass("current").parents("li").addClass("expanded");
+        return true;
+    }
+    $navLinks.click(highlightLink);
+
+    // Highlight the current page.
+    var currentPageAddress = window.location.pathname;
+    $($navLinks).filter("a[href='" + currentPageAddress + "']").each(highlightLink);
+
 })(jQuery);
