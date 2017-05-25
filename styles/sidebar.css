@@ -138,6 +138,7 @@ aside#sidebar form.search
 	position: relative;
     margin-left: 20px;
     padding-bottom: 10px;
+    padding-top: 2px;
 }
 aside#sidebar form.search button
 {
@@ -146,7 +147,7 @@ aside#sidebar form.search button
 	top: -32px;
 	left: 0px;
 	color: black;
-	background-color: inherit;
+	background-color: transparent;
 }
 aside#sidebar form.search input#query
 {
