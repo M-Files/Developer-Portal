@@ -3,7 +3,7 @@ aside#sidebar {
     /*padding: 35px 20px 130px 0px;
     top: 0px;*/
     padding: 0px 20px 130px 0px;
-    top: 40px;
+    top: 53px;
     margin: 0px;
     left: -110%;
     bottom: -1px;
@@ -35,7 +35,7 @@ aside#sidebar nav.secondary {
     right: 30px;
     background-color: #007dc6;
     z-index: 10000;
-    height: 80px;
+    height: 70px;
 }
 
 body.sidebar-expanded>* {
@@ -131,6 +131,41 @@ li.expanded>i.expandCollapseIcon {
 
 ul.treeview li a.current {
     font-weight: bold;
+}
+
+aside#sidebar form.search
+{
+	position: relative;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+aside#sidebar form.search button
+{
+	padding: 12px;
+	position: absolute;
+	top: -32px;
+	left: 0px;
+	color: black;
+	background-color: inherit;
+}
+aside#sidebar form.search input#query
+{
+	height: 38px;
+	padding: 0px 10px 0px 30px;
+	width: 100%;
+	box-sizing: border-box;
+}
+aside#sidebar form.search button span.label
+{
+	display:none;
+}
+
+@media all and (max-width: 500px)
+{
+    aside#sidebar form.search
+    {
+    	margin-right: 20px;
+    }
 }
 
 @media all and (max-width: 640px)

@@ -5,7 +5,7 @@ title: Search
 
 <style type="text/css">
 
-form
+article.page form
 {
   margin-top: 40px;
 }

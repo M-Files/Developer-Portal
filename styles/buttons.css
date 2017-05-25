@@ -23,11 +23,6 @@ button.green, a.button.green
 	background-color: #2ecc71;
 }
 
-button:hover, a.button:hover, button:focus, a.button:focus
-{
-	/* background-color: #27ae60; */
-}
-
 button:before, a.button:before
 {
 	content: "";
