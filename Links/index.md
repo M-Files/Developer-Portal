@@ -30,5 +30,5 @@ Our community forum is open to all users of M-Files.  Any questions can be asked
 
 ## Partner-specific Resources
 
-* [The Partner Portal](https://partners.cloudvault.m-files.com/)
+* [The M-Files Partner Portal](https://partners.cloudvault.m-files.com/)
 
