@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Authentication
+includeInSearch: true
 ---
 
 We support three primary authentication mechanisms: credentials in HTTP headers, cookie-based sessions, and authentication tokens.

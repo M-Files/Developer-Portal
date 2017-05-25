@@ -1,6 +1,7 @@
 ---
 layout: page
 title: The M-Files Web Service (REST API)
+includeInSearch: true
 ---
 
 The [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/) is a REST-like web service that is available from within M-Files Web Access. Note that this must be configured separately from the standard M-Files server, and may not be available on all installations.  The following differences are important to note when compared with the [COM API]({{ site.baseurl }}/APIs/COM-API/):

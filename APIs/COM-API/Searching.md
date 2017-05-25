@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Searching using the COM API
+includeInSearch: true
 ---
 
 Searching M-Files is required in most M-Files code.

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Links
+includeInSearch: true
 ---
 
 ## Our official documentation

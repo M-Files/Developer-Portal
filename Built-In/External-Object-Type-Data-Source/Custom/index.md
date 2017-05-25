@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Custom External Object Type Data Sources
+includeInSearch: true
 ---
 
 ## An Overview of External Object Types

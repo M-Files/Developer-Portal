@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Aliases
+includeInSearch: true
 ---
 
 ## The API and Structural Element IDs

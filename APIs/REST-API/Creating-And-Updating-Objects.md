@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Creating and updating objects via the M-Files Web Service
+includeInSearch: true
 ---
 
 To create an object via the M-Files Web Service, make a POST request to [/objects/(type)](http://www.m-files.com/mfws/resources/objects/type.html).  This endpoint takes an [ObjectCreationInfo](http://www.m-files.com/mfws/structs/objectcreationinfo.html) containing information for the new object and returns an [ObjectVersion](http://www.m-files.com/mfws/structs/objectversion.html) representing the newly-created object.

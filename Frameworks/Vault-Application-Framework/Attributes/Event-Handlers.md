@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Event Handlers
+includeInSearch: true
 ---
 
 ## EventHandlerAttribute

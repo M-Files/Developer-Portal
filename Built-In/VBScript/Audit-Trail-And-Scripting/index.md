@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Audit Trail and Scripting ("M-Files Server" in the audit logs)
+includeInSearch: true
 ---
 
 If a server-side script (e.g. event handler, or workflow state action) alters an object during the save process, it can affect the way in which the audit trail records and displays information.

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Properties
+includeInSearch: true
 ---
 
 ## Property Calculation

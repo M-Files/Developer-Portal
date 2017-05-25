@@ -1,6 +1,7 @@
 ---
 layout: page
 title: ObjVerEx
+includeInSearch: true
 ---
 
 ## Overview

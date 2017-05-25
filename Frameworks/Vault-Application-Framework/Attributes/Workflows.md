@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Workflows
+includeInSearch: true
 ---
 
 ## Workflow State Actions

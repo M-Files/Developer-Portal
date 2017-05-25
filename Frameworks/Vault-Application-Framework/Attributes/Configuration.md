@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Configuration
+includeInSearch: true
 ---
 
 ## MFIdentifier

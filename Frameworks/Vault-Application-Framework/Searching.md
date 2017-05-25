@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Searching using the Vault Application Framework
+includeInSearch: true
 ---
 
 ## Searching using the COM API

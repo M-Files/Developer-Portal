@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Exceptions
+includeInSearch: true
 ---
 
 ## Throwing exceptions

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Background Operations
+includeInSearch: true
 ---
 
 ## Overview

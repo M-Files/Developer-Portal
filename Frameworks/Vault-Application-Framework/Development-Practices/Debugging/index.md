@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Debugging
+includeInSearch: true
 ---
 
 ## Approaches

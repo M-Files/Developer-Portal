@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Helper Utilities
+includeInSearch: true
 ---
 
 ## Overview

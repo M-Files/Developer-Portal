@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Concepts
+includeInSearch: true
 ---
 
 ## HTTP

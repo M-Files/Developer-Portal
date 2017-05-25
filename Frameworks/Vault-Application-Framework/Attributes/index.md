@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Attributes
+includeInSearch: true
 ---
 
 ## What Are .NET Attributes?
