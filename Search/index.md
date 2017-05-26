@@ -58,8 +58,12 @@ article.page form
 </style>
 
 <form class="search" action="/Search/" method="get">
- 	<input type="text" class="search-box" id="query" name="query" autocomplete="off" />
- 	<input type="submit" class="search-button" value="Search" />
+    <input type="text" class="search-box" id="query" name="query" autocomplete="off" placeholder="Search..." />
+    <button class="btn btn-default btn-block" type="submit">
+        <i class="zmdi zmdi-invert-colors zmdi-search"></i>
+        <span class="label">search</span>
+    </button>
+    <input type="submit" value="Search" />
 </form>
 
 <div class="search-results-count"></div>

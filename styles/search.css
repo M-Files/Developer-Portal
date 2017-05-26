@@ -1,0 +1,43 @@
+form.search
+{
+	position: relative;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 2px;
+}
+form.search button
+{
+	padding: 12px;
+	position: absolute;
+	top: -32px;
+	left: 0px;
+	color: black;
+	background-color: transparent;
+}
+form.search input#query
+{
+	height: 38px;
+	padding: 0px 10px 0px 30px;
+	width: 100%;
+	box-sizing: border-box;
+}
+form.search button span.label
+{
+	display:none;
+}
+
+form.search input[type='submit']
+{
+	height: 38px;
+    padding: 5px 10px;
+    margin: 5px 0px;
+	box-sizing: border-box;
+}
+
+@media all and (max-width: 500px)
+{
+    aside#sidebar form.search
+    {
+    	margin-right: 20px;
+    }
+}

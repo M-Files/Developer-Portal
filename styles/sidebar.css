@@ -133,42 +133,6 @@ ul.treeview li a.current {
     font-weight: bold;
 }
 
-aside#sidebar form.search
-{
-	position: relative;
-    margin-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 2px;
-}
-aside#sidebar form.search button
-{
-	padding: 12px;
-	position: absolute;
-	top: -32px;
-	left: 0px;
-	color: black;
-	background-color: transparent;
-}
-aside#sidebar form.search input#query
-{
-	height: 38px;
-	padding: 0px 10px 0px 30px;
-	width: 100%;
-	box-sizing: border-box;
-}
-aside#sidebar form.search button span.label
-{
-	display:none;
-}
-
-@media all and (max-width: 500px)
-{
-    aside#sidebar form.search
-    {
-    	margin-right: 20px;
-    }
-}
-
 @media all and (max-width: 640px)
 {
     aside#sidebar nav.primary
