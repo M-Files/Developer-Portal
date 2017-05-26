@@ -9,7 +9,7 @@ includeInSearch: true
 The `StateActionAttribute` attribute marks the following method to be executed when an object reaches a state in a workflow.
 
 ```csharp
-[StateAction("MyWorkflowState")]
+[StateAction("MyWorkflowStateAlias")]
 public void WorkflowStateAction(StateEnvironment env)
 {
 }
@@ -20,7 +20,7 @@ public void WorkflowStateAction(StateEnvironment env)
 The `StatePreConditionsAttribute` attribute marks the following method to be executed to determine whether an object can enter a state in a workflow.
 
 ```csharp
-[StatePreConditions("MyWorkflowState")]
+[StatePreConditions("MyWorkflowStateAlias")]
 public bool MyStatePreConditions(StateEnvironment env, out string message)
 {
 	message = "The object cannot enter this state.";
@@ -33,7 +33,7 @@ public bool MyStatePreConditions(StateEnvironment env, out string message)
 The `StatePostConditionsAttribute` attribute marks the following method to be executed to determine whether an object can leave a state in a workflow.
 
 ```csharp
-[StatePostConditions("MyWorkflowState")]
+[StatePostConditions("MyWorkflowStateAlias")]
 public bool MyStatePostConditions(StateEnvironment env, out string message)
 {
 	message = "The object cannot leave this state.";
@@ -46,7 +46,7 @@ public bool MyStatePostConditions(StateEnvironment env, out string message)
 The `AutomaticStateTransitionTriggerAttribute` attribute marks the following method to be executed to determine whether an object should automatically transition between workflow states.
 
 ```csharp
-[AutomaticStateTransitionTrigger("MyWorkflowState")]
+[AutomaticStateTransitionTrigger("MyWorkflowStateAlias")]
 public bool MyAutomaticStateTransitionTrigger(StateTransitionEnvironment env, out int nextState)
 {
 	nextState = 101; // The Id of the state to transition to.

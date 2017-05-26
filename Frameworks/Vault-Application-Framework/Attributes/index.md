@@ -27,12 +27,14 @@ More information on Attributes in the .NET framework can be found within MSDN.</
 Note that multiple attributes can be placed on the same method.  The following code attaches the same code to two separate workflow states:
 
 ```csharp
-[StateAction("MyWorkflowState1")]
-[StateAction("MyWorkflowState2")]
+[StateAction("MyWorkflowState1Alias")]
+[StateAction("MyWorkflowState2Alias")]
 public void HandleWorkflowStatesOneAndTwo(StateEnvironment env)
 {
 }
 ```
+
+<p class="note">The alias of the referenced item is typically included in the attribute declaration.  This is used to identify which vault element to place the code into.</p>
  
 ## Attributes And The Vault Application Framework
 
@@ -49,6 +51,12 @@ public MFIdentifier CustomerNameProperty = "PropertyDef.CustomerName";
 ```
 
 <p class="note">This code would output an error to the event log if the property were not found, but the application would still attempt to run.  It is up to the vault application to check whether any items were not found and execute accordingly.</p>
+
+### Attributes and VBScript Proxies
+
+The following attributes precede C# methods and identify where in the vault a VBScript "proxy" should be created.  VBScript proxies are snippets of code which obtain a reference to the Vault Application Framework application, and execute the appropriate method(s).
+
+<p class="note">These VBScript proxies must not be manually altered.</p>
 
 ## What Attributes Exist Within the Vault Application Framework?
 
@@ -91,12 +99,6 @@ MFIdentifier ProjectObjectType = "MFiles.ObjectType.Project";
 
 ##### Views
 * [MFViewAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/)
-
-### Attributes and VBScript Proxies
-
-The following attributes precede C# methods and identify where in the vault a VBScript "proxy" should be created.  VBScript proxies are snippets of code which obtain a reference to the Vault Application Framework application, and execute the appropriate method(s).
-
-<p class="note">These VBScript proxies must not be manually altered.</p>
 
 #### Vault Extension Methods
 

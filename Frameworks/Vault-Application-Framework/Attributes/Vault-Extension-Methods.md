@@ -17,5 +17,5 @@ private string MyVaultExtensionMethod(EventHandlerEnvironment env)
 
 Access can be restricted to the extension method by altering the value of `RequiredVaultAccess`.
 
-<p class="note">In the code sample provided, the name of the vault extension method and the name of the actual method are the same, but this is not required.</p>
+<p class="note">In the code sample provided, the name of the vault extension method (provided as a string in the attribute declaration) and the name of the actual method are the same, but this is not required.</p>
 

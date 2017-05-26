@@ -15,9 +15,11 @@ public void MyEventHandler(EventHandlerEnvironment env)
 }
 ```
 
+<p class="note">The event handler type is included in the attribute declaration.  Other values can also be passed, such as the alias of the object type or class of object that this code should run for, if applicable.</p>
+
 ## MFEventHandlerType
 
-Almost all vault-related events can be subscribed to from within a Vault Application Framework event handler.  Below is a full list of the values in the `MFEventHandlerType` enumeration.
+Almost all vault-related events can be subscribed to from within a Vault Application Framework event handler.  This value is passed to the attribute when it is declared; in the sample above, this code would be executed before changes to an item were checked in.  Below is a full list of the values in the `MFEventHandlerType` enumeration.
 
 ```csharp
 public enum MFEventHandlerType
