@@ -144,13 +144,21 @@ p.note::before {
     top: 8px;
 }
 
-p.note.warning {
+p.note.warning, p.note.stub {
     background-color: #FFB84D;
     border: 1px solid #ff9900;
 }
 
+p.note.stub {
+    font-style: italic;
+}
+
 p.note.warning::before {
     content: "\f1f4";
+}
+
+p.note.stub::before {
+    content: "\f25a";
 }
 
 code.highlighter-rouge {

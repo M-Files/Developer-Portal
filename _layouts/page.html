@@ -8,6 +8,11 @@ layout: default
 
   <div class="entry">
     <article>
+
+      {% if page.stubPage %}
+        <p class="note stub">Please note that this page content is not complete.</p>
+      {% endif %}
+
       {{ content }}
     </article>
   </div>
