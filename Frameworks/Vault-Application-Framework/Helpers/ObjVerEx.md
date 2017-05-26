@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ObjVerEx
+title: The ObjVerEx class in the Vault Application Framework
 includeInSearch: true
 ---
 

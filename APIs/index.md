@@ -1,6 +1,6 @@
 ---
 layout: page
-title: M-Files APIs
+title: The M-Files COM and REST APIs
 includeInSearch: true
 ---
 

@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Development Practices
+title: Development Practices for the Vault Application Framework
 ---
 

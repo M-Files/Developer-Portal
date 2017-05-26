@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exceptions
+title: Exceptions in the Vault Application Framework
 includeInSearch: true
 ---
 

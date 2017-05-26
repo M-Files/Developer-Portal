@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Custom External Object Type Data Sources
+title: Creating Custom External Object Type Data Sources
 includeInSearch: true
 ---
 

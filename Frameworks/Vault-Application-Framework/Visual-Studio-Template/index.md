@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Visual Studio Template
+title: The Vault Application Framework Visual Studio Template
 includeInSearch: true
 ---
 

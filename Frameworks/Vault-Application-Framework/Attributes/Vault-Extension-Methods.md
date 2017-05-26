@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Vault Extension Methods
+title: Exposing Vault Extension Methods in the Vault Application Framework
 includeInSearch: true
 ---
 

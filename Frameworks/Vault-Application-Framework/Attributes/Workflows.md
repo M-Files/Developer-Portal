@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Workflows
+title: Workflow-related attributes in the Vault Application Framework
 includeInSearch: true
 ---
 

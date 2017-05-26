@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Aliases
+title: Referencing M-Files structural vault elements by alias
 includeInSearch: true
 ---
 
@@ -71,4 +71,4 @@ Vault.ObjectPropertyOperations.SetProperty(objVer, descriptionPropertyValue);
 
 ## The Vault Application Framework
 
-When using the Vault Application Framework, [attributes can be used to automatically resolve aliases to IDs]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/).  This can significantly reduce the amount of duplicated code within complex installations.
+When using the Vault Application Framework, [attributes can be used to automatically resolve aliases to IDs]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/).  This can significantly reduce the amount of boilerplate code.

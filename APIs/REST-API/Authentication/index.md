@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Authentication
+title: Authenticating to the M-Files Web Service (REST API)
 includeInSearch: true
 ---
 

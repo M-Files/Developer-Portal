@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Background Operations
+title: Running Background Operations using the Vault Application Framework
 includeInSearch: true
 ---
 

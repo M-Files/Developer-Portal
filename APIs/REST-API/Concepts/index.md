@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Concepts
+title: REST API Concepts and Tips
 includeInSearch: true
 ---
 
@@ -74,4 +74,4 @@ It is possible to enumerate most structural elements of an M-Files vault directl
 
 * [/valuelists/(id)/items](http://www.m-files.com/mfws/resources/valuelists/id/items.html) - returns the items within a specific value list in the vault.
 
-<p class="note">The <a href="http://www.m-files.com/mfws/resources/structure/objecttypes.html">/structure/objecttypes</a> endpoint incorrectly details that it will return value lists.</p>
+<p class="note">The <a href="http://www.m-files.com/mfws/resources/structure/objecttypes.html">/structure/objecttypes</a> endpoint incorrectly states that it will return value lists.</p>

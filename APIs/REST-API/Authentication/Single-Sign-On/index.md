@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Using Single Sign On (SSO) through the M-Files Web Service (MFWS).
+title: Using Single Sign On (SSO) through the M-Files Web Service (REST API)
 includeInSearch: true
 ---
 

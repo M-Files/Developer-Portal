@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Properties
+title: Property-related attributes in the Vault Application Framework
 includeInSearch: true
 ---
 

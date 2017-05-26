@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Vault Extension Methods via the M-Files Web Service
+title: Vault Extension Methods via the M-Files Web Service (REST API)
 includeInSearch: true
 ---
 

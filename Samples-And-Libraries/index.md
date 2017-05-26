@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Samples and Libraries
+title: The M-Files Samples and Libraries repository
 includeInSearch: true
 ---
 

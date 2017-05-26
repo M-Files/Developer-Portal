@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MFSearchBuilder
+title: The MFSearchBuilder class in the Vault Application Framework
 includeInSearch: true
 ---
 

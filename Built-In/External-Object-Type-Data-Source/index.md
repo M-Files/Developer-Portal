@@ -1,6 +1,6 @@
 ---
 layout: page
-title: External Object Type Data Sources
+title: External Object Type Data Sources in M-Files
 includeInSearch: true
 ---
 

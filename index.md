@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Hello, world.
+title: Welcome to the M-Files Developer Portal
 includeInSearch: true
 ---
+
+This website complements and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.
+
+## M-Files as a Platform
 
 M-Files' powerful approach to Enterprise Content Management allows businesses to work with what content is, instead of where it's saved.  This powerful metadata-based approach can be used to easily design, build and deploy systems that support businesses in almost any sector, of almost any size.  Whilst M-Files' out-of-the-box functionality allows deep integration with various platforms and technologies, it also has a broad set of developer-orientated APIs and frameworks which can be used to extend this even further.
 
 We call this *M-Files as a Platform*.
-
-## Using this website
-
-This website complements and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.
 
 ## Built-in functionality
 
@@ -18,7 +18,7 @@ M-Files provides significant built-in functionality which can be used by develop
 
 ## Our APIs
 
-M-Files provides two Application Programming Interfaces for developers to communicate with: the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) and the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/). The choice of which to use in each scenario will depend upon the technology you are using and the operations that you wish to undertake.
+M-Files provides two Application Programming Interfaces for developers: the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) and the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/). The choice of which to use in each scenario will depend upon the technology you are using and the operations that you wish to undertake.
 
 ### [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/)
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Links
+title: Links to other development resources from M-Files
 includeInSearch: true
 ---
 

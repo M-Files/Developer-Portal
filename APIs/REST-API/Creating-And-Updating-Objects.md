@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Creating and updating objects via the M-Files Web Service
+title: Creating and updating objects via the M-Files Web Service (REST API)
 includeInSearch: true
 ---
 

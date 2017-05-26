@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The COM/.NET API
+title: The M-Files COM/.NET API
 includeInSearch: true
 ---
 

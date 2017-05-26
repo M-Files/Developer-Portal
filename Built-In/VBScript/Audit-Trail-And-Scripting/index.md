@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Audit Trail and Scripting ("M-Files Server" in the audit logs)
+title: Audit Trail and Scripting (fixing "(M-Files Server)" in the audit logs)
 includeInSearch: true
 ---
 

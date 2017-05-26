@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Concepts
+title: M-Files concepts for the developer
 includeInSearch: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Chaining Workflows
+title: An example of chaining workflows
 includeInSearch: true
 ---
 

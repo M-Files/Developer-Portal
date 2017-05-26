@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Configuration
+title: Configuration attributes in the Vault Application Framework
 includeInSearch: true
 ---
 

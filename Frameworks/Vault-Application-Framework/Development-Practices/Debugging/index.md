@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Debugging
+title: Debugging Vault Application Framework applications
 includeInSearch: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Useful applications
+title: Useful applications for use with the M-Files Web Service (REST API)
 includeInSearch: true
 ---
 

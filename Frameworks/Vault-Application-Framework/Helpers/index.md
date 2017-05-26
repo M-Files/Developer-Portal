@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Helper Utilities
+title: Helper Utilities in the Vault Application Framework
 includeInSearch: true
 ---
 
