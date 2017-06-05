@@ -52,8 +52,9 @@ var responseBody = await httpClient.GetStringAsync(url);
 // Attempt to parse it.  For this we will use the Json.NET library, but you could use others.
 var results = JsonConvert.DeserializeObject<Results<ObjectVersion>>(responseBody);
 Console.WriteLine($"There were {results.Items.Count} results returned.");
+```
 
-### Using the native endpoint
+### Including deleted items
 
 To include deleted items, a querystring parameter named `d` must be included, with a value of `include`:
 
@@ -190,8 +191,6 @@ var url =
 ```
 
 ## Combining search conditions
-
-### Using the native endpoint
 
 Executing a search using multiple conditions involves building up a more complex querystring to provide to the [objects endpoint](http://www.m-files.com/mfws/resources/objects.html).  Each condition is built and encoded as specified in the [search encoding table](http://www.m-files.com/mfws/syntax.html#sect:search-encoding) and the search conditions are appended to the querystring, separated by ampersands.
 
