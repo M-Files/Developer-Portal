@@ -76,7 +76,7 @@ Console.WriteLine($"There were {results.Items.Count} results returned.");
 
 ### Restricting by a property value
 
-*Note that in all the examples below, we will only build the URL to request.  The rest of the code is assumed to be similar to the examples above.**
+*Note that in all the examples below, we will only build the URL to request.  The rest of the code is assumed to be similar to the examples above.*
 
 To restrict search results by the value of a property, a querystring parameter must be constructed, the name of which depends on the property ID to query, and the value must be [correctly formatted](http://www.m-files.com/mfws/syntax.html).
 
