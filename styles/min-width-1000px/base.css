@@ -2,35 +2,50 @@
 {
     display: block;
 }
+#hamburger
+{
+	display: none;
+}
+body > *
+{
+	margin-right: 30px;
+	margin-left: 480px;
+}
+
+body > aside#sidebar
+{
+	top: 0px;
+	left: 0px;
+	padding-top: 80px;
+	box-shadow: none;
+    background-position: center 10px;
+    background-image: url("../../images/M-Files-Logo-White.png");
+    background-size: 200px;
+	background-repeat: no-repeat;
+}
+
+/* show the in-page title rather than the big blue one */
+header,
+	.has-in-page-nav header h1
+{
+	display: none;
+}
+body > article.page > h1
+{
+	display: block;
+}
 
 @media all and (max-width: 1499px)
 {
     #in-page-nav
     {
-        right: initial;
-        left: 0px;
+		display: none;
     }
     .has-in-page-nav article.page,
     .has-in-page-nav footer
     {
-        margin-left: 310px;
+        margin-left: 450px;
         padding-left: 20px;
-    }
-    article.page
-    {
-        padding-top: 40px;
-    }
-    header h1{
-        padding-left: 30px;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        height: 34px;
-        padding: 20px 5px 0px 60px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
 
     #sidebar

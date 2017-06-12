@@ -22,18 +22,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" /> {% feed_meta %}
 
     <style>
-        @import url("{{ site.baseurl }}/styles/base.css");
-        @import url("{{ site.baseurl }}/styles/buttons.css");
-        @import url("{{ site.baseurl }}/styles/header.css");
-        @import url("{{ site.baseurl }}/styles/footer.css");
-        @import url("{{ site.baseurl }}/styles/breadcrumb.css");
-        @import url("{{ site.baseurl }}/styles/sidebar.css");
-        @import url("{{ site.baseurl }}/styles/in-page-nav.css");
-        @import url("{{ site.baseurl }}/styles/external-links.css");
-        @import url("{{ site.baseurl }}/styles/search.css");
-        @import url("{{ site.baseurl }}/styles/min-width-500px/base.css") screen and (min-width: 500px);
-        @import url("{{ site.baseurl }}/styles/min-width-1000px/base.css") screen and (min-width: 1000px);
-        @import url("{{ site.baseurl }}/styles/min-width-1500px/base.css") screen and (min-width: 1500px);
+        @import url("{{ site.baseurl }}/styles/base.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/buttons.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/header.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/footer.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/breadcrumb.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/sidebar.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/in-page-nav.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/external-links.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/search.css?{{ site.github.build_revision }}");
+        @import url("{{ site.baseurl }}/styles/min-width-500px/base.css?{{ site.github.build_revision }}") screen and (min-width: 500px);
+        @import url("{{ site.baseurl }}/styles/min-width-1000px/base.css?{{ site.github.build_revision }}") screen and (min-width: 1000px);
+        @import url("{{ site.baseurl }}/styles/min-width-1500px/base.css?{{ site.github.build_revision }}") screen and (min-width: 1500px);
     </style>
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -61,16 +61,16 @@
         <p>&copy; M-Files. <a href="mailto:devsupport@m-files.com">Contact the Developer Evangelist team at M-Files.</a></p>
     </footer>
 
-    <script src="{{ site.baseurl }}/scripts/highlight.pack.js"></script>
+    <script src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
     <script>
         hljs.configure({languages: ["cs", "vbscript"]});
         hljs.initHighlightingOnLoad();
     </script>
 
-    <script src="{{ site.baseurl }}/scripts/sidebar.js"></script>
-    <script src="{{ site.baseurl }}/scripts/treeview.js"></script>
-    <script src="{{ site.baseurl }}/scripts/in-page-nav.js"></script>
-    <script src="{{ site.baseurl }}/scripts/external-links.js"></script>
+    <script src="{{ site.baseurl }}/scripts/sidebar.js?{{ site.github.build_revision }}"></script>
+    <script src="{{ site.baseurl }}/scripts/treeview.js?{{ site.github.build_revision }}"></script>
+    <script src="{{ site.baseurl }}/scripts/in-page-nav.js?{{ site.github.build_revision }}"></script>
+    <script src="{{ site.baseurl }}/scripts/external-links.js?{{ site.github.build_revision }}"></script>
 
     {% include analytics.html %} {% if site.disqus %}
     <script id="dsq-count-scr" src="//mfilesdeveloperportal.disqus.com/count.js" async></script>
