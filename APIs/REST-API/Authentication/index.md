@@ -67,9 +67,6 @@ var response = (HttpWebResponse)request.GetResponse();
 An Expiration property can be provided as part of the authentication details.  This should be provided in ISO format:
 
 ```csharp
-// Create a JSON.NET serializer to serialize/deserialize request and response bodies.
-var jsonSerializer = JsonSerializer.CreateDefault();
-
 // Create the authentication details.
 var auth = new
 {
