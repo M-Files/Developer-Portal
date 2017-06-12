@@ -62,6 +62,26 @@ var response = (HttpWebResponse)request.GetResponse();
 
 <p class="note">The M-Files Web Service will return an authentication token regardless of whether authentication was successful or not.</p>
 
+### Controlling authentication token expiration
+
+An Expiration property can be provided as part of the authentication details.  This should be provided in ISO format:
+
+```csharp
+// Create a JSON.NET serializer to serialize/deserialize request and response bodies.
+var jsonSerializer = JsonSerializer.CreateDefault();
+
+// Create the authentication details.
+var auth = new
+{
+	Username = "AlexK",
+	Password = "My Password",
+	VaultGuid = "{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}", // Use GUID format with {braces}.
+	Expiration = "2017-01-01T23:59:00Z"
+};
+```
+
+<p class="note warning">If no expiry information is provided then the authentication token returned will have an indefinite expiry.  The only way to forcibly expire an authentication token in this instance is to change the user's login credentials and restart M-Files Web Access.</p>
+
 ## Cookie-based sessions
 
 Cookie-based sessions are typically used in [single-sign-on scenarios]({{ site.baseurl }}/APIs/REST-API/Authentication/Single-Sign-On/), where a request is made to an endpoint and an ASP.NET session cookie is returned.  This session cookie is then included in all future HTTP requests:
