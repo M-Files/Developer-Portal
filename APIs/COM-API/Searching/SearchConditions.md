@@ -63,6 +63,8 @@ condition.ConditionType = MFConditionType.MFConditionTypeContains;
 condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "ESTT");
 ```
 
+{% comment %}
+
 ## Searching by property value
 
 ### Text values
@@ -72,6 +74,8 @@ condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "ESTT");
 ### Date values
 
 ### Timestamp values
+
+{% endcomment %}
 
 ## Searching by an external ID
 
