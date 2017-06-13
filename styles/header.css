@@ -18,3 +18,19 @@ header h1
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
+@media all and (max-width: 999px)
+{
+    header
+    {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+    }
+	article.page
+	{
+		margin-top: 4em;
+	}
+
+}
