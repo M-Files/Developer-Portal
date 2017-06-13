@@ -30,7 +30,16 @@ header h1
     }
 	article.page
 	{
-		margin-top: 4em;
+		margin-top: 60px;
+	}
+
+	/* move all anchors down by the height of the header (deal with fixed header */
+	:target:before {
+		content:"";
+		display:block;
+		height: 70px; /* fixed header height*/
+		margin: -70px 0 0; /* negative fixed header height */
+		visibility: hidden;
 	}
 
 }
