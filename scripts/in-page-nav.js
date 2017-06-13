@@ -37,12 +37,26 @@
         }
         $(window).resize(reCalculateHeadingOffsets);
 
+		// Create the expand/collapse bits.
+		var $expandCollapse = $("<div></div>").addClass("expand-collapse");
+		$expandCollapse.append($('<div class="expand">Show in-page links <i class="zmdi zmdi-long-arrow-up"></i></div>'));
+		$expandCollapse.append($('<div class="collapse">Hide in-page links <i class="zmdi zmdi-long-arrow-down"></i></div>'));
+		$expandCollapse.click(function(){
+			$("BODY #in-page-nav").toggleClass("open");
+		});
+
         // Append the navigation to the page.
         $("BODY")
             .addClass("has-in-page-nav")
             .append($("<div></div>")
             .attr("id", "in-page-nav")
+			.append($expandCollapse)
             .append($ul));
+		
+		// When an in-page-nav link is clicked, collapse the nav (if on this breakpoint).
+		$("BODY #in-page-nav a").click(function(){
+			$("BODY #in-page-nav").removeClass("open");
+		});
 
         // Handle the scrolling to highlight the one we're on.
         var previouslySelected = null;

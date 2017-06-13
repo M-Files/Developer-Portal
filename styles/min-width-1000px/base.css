@@ -35,18 +35,82 @@ body > article.page > h1
 	display: block;
 }
 
+#in-page-nav .expand-collapse
+{
+	display: none;
+	padding-top: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+#in-page-nav .expand-collapse i
+{
+	margin: 0px auto;
+}
+
 @media all and (max-width: 1499px)
 {
     #in-page-nav
     {
-		display: none;
+		display: block;
+		position: fixed;
+		top: auto;
+		left: 430px;
+		right: 0px;
+		bottom: 0;
+		height: 30px;
+		padding-top: 0px;
+		margin: 0px;
+		width: auto;
+		border-top: 1px solid #CCC;
+		-webkit-transition: all 200ms ease-in-out;
+		-moz-transition: all 200ms ease-in-out;
+		-o-transition: all 200ms ease-in-out;
+		transition: all 200ms ease-in-out;
     }
+
+	#in-page-nav .expand-collapse
+	{
+		display: block;
+	}
+	#in-page-nav .expand
+	{
+		display: block;
+	}
+	#in-page-nav .collapse
+	{
+		display: none;
+	}
+	#in-page-nav.open
+	{
+		height: 400px;
+	}
+	#in-page-nav.open .expand
+	{
+		display: none;
+	}
+	#in-page-nav.open .collapse
+	{
+		display: block;
+	}
+	#in-page-nav ul
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		margin: 20px;
+	}
     .has-in-page-nav article.page,
     .has-in-page-nav footer
     {
         margin-left: 450px;
         padding-left: 20px;
     }
+    .has-in-page-nav footer
+	{
+		margin-bottom: 40px;
+	}
 
     #sidebar
     {
@@ -55,4 +119,5 @@ body > article.page > h1
         -o-transition: all 100ms ease-in-out;
         transition: all 100ms ease-in-out;
     }
+
 }
