@@ -40,7 +40,7 @@ mfServerApplication.Connect();
 var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
 ```
 
-### Authentication
+#### Authentication
 
 The COM API supports all common authentication mechanisms.
 
