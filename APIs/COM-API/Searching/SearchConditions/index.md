@@ -261,3 +261,5 @@ condition.ConditionType = MFConditionType.MFConditionTypeEqual;
 // In this case "MyExternalObjectId" is the ID of the object in the remote system.
 condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "MyExternalObjectId");
 ```
+
+<p class="note">An example of searching by display/external ID is available within <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/SearchByDisplayId">the SearchByDisplayId sample in our github repository</a>.</p>
