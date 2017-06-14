@@ -45,6 +45,8 @@ For finding objects:
 * [VaultObjectSearchOperations](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations.html) - used to search the vault for matching objects.
 * [VaultViewOperations](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultViewOperations.html) - used to enumerate the contents of views to find objects.
 
+<p class="note">More information on searching for objects can be found in the <a href="{{ site.baseurl }}/APIs/COM-API/Searching/">dedicated pages</a>.</p>
+
 For working with objects (finding properties, checking in and out, manipulating files, etc.)
 
 * [VaultObjectOperations](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations.html) - used to load, check out, check in, or process objects within the vault.
