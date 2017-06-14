@@ -16,7 +16,7 @@ The API can be used to create almost any solution that retrieve or process infor
 
 <p class="note">The COM API requires the same version of the API on the client machine as the server (e.g. if communicating with an M-Files 2015.3 server, the API must also be of the same version).</p>
 
-## Connecting and Authenticating
+## API modes (client vs. server)
 
 The primary focus of creating a connection to the server is to retrieve a [Vault](https://www.m-files.com/api/documentation/latest/MFilesAPI~Vault.html) object.  The Vault object can then be used to query content from the vault, or to process it in some manner.
 
