@@ -6,8 +6,6 @@ includeInSearch: true
 
 `MFPropertyValuesBuilder` is contained in the `MFiles.VAF.Common` namespace and provides helper methods for building up a collection of [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html).
 
-More information on [MFPropertyValuesBuilder is available here]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/MFPropertyValuesBuilder/).
-
 ```csharp
 // Create a property values builder.
 var mfPropertyValuesBuilder = new MFPropertyValuesBuilder(vault);

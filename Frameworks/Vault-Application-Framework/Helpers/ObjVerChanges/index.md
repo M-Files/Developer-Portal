@@ -6,8 +6,6 @@ includeInSearch: true
 
 `ObjVerChanges` is contained in the `MFiles.VAF.Common` namespace and provides information on metadata changes between two versions of an object.
 
-More information on [ObjVerChanges is available here]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/ObjVerChanges/).
-
 <p class="note">This class only processes metadata property value changes, and does not attempt to identify whether any file changes have occured between versions.</p>
 
 ### Comparing all property values
