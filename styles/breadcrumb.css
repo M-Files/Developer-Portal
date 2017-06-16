@@ -4,17 +4,26 @@
     padding: 10px 0 0 0;
 	display: none;
 }
+.breadcrumb li::after,
+	.breadcrumb li::before
+{
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+}
 .breadcrumb li:not(:last-child)::after
 {
     content: "\f2fb";
     padding: 0px 3px;
-    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
 }
 .breadcrumb li
 {
     display: inline-block;
     margin: 0px;
     padding: 0px;
+}
+.breadcrumb a
+{
+    display: inline-block;
+	padding: 5px 2px;
 }
 @media all and (max-width: 999px)
 {
