@@ -1,10 +1,15 @@
-<form class="search" action="/Search/" method="get">
-    <input type="text" class="search-box" id="query" name="query" autocomplete="off" placeholder="Search..." />
-    <button class="btn btn-default btn-block" type="submit">
-            <i class="zmdi zmdi-invert-colors zmdi-search"></i>
-            <span class="label">search</span>
-        </button>
-</form>
+<div itemscope itemtype="http://schema.org/WebSite">
+	<meta itemprop="url" content="http://developer.m-files.com/"/>
+	<meta itemprop="name" content="M-Files Developer Portal"/>
+	<form class="search" action="/Search/" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+	<meta itemprop="target" content="http://developer.m-files.com/Search/?query={query}"/>
+		<input type="text" itemprop="query-input" class="search-box" id="query" name="query" autocomplete="off" placeholder="Search..." required />
+		<button class="btn btn-default btn-block" type="submit">
+				<i class="zmdi zmdi-invert-colors zmdi-search"></i>
+				<span class="label">search</span>
+			</button>
+	</form>
+</div>
 <nav class="primary">
     <ul class="zmdi-hc-ul treeview">
         <li><a href="{{ site.baseurl }}/"><i class="zmdi-hc-li zmdi zmdi-home"></i>Home</a></li>

@@ -2,6 +2,7 @@
 layout: page
 title: M-Files Frameworks
 includeInSearch: true
+breadcrumb: Frameworks
 ---
 
 M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The User Interface Extensibility Framework (UIX) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
