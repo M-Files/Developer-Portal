@@ -2,6 +2,7 @@
 layout: page
 title: Searching using the Vault Application Framework
 includeInSearch: true
+breadcrumb: Searching
 ---
 
 ## Searching using the COM API

@@ -2,6 +2,7 @@
 layout: page
 title: REST API Concepts and Tips
 includeInSearch: true
+breadcrumb: Concepts
 ---
 
 ## HTTP

@@ -2,6 +2,7 @@
 layout: page
 title: Property-related attributes in the Vault Application Framework
 includeInSearch: true
+breadcrumb: Properties
 ---
 
 ## Property Calculation

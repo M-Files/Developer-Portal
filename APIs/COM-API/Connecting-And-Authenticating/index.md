@@ -2,6 +2,7 @@
 layout: page
 title: Connecting and Authenticating
 includeInSearch: true
+breadcrumb: Connecting
 ---
 
 The API can be used in either "server" or "client" mode. Some API methods are only available in one of the modes.  Client mode is designed to be used in situations where both the user is present, and a connection to the vault has been created in the M-Files Desktop Settings. In client mode, built-in M-Files dialogs (e.g. the "create new object" metadata card) can be shown to the user for them to interact with.  Server mode is designed to be used in situations where the user is not necessarily present, and/or a connection to the vault has not been created in the M-Files Desktop Settings. In server mode, dialogs cannot be shown and the code must programmatically undertake these actions.  The server mode allows connections to M-Files servers using the standard protocols – TCP/IP, HTTPS, and LPC – and supports all the same authentication schemes that M-Files supports.

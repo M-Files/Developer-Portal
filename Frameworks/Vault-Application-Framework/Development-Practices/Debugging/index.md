@@ -2,6 +2,7 @@
 layout: page
 title: Debugging Vault Application Framework applications
 includeInSearch: true
+breadcrumb: Debugging
 ---
 
 ## Approaches

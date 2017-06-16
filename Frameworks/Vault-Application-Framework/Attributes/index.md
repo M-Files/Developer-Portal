@@ -2,6 +2,7 @@
 layout: page
 title: Attributes in the Vault Application Framework
 includeInSearch: true
+breadcrumb: Attributes
 ---
 
 ## What Are .NET Attributes?

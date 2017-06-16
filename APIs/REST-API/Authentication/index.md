@@ -2,6 +2,7 @@
 layout: page
 title: Authenticating to the M-Files Web Service (REST API)
 includeInSearch: true
+breadcrumb: Authentication
 ---
 
 We support three primary authentication mechanisms: credentials in HTTP headers, cookie-based sessions, and authentication tokens.

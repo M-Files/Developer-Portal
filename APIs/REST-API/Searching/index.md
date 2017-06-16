@@ -2,6 +2,7 @@
 layout: page
 title: Searching using the M-Files Web Service (REST API)
 includeInSearch: true
+breadcrumb: Searching
 ---
 
 The M-Files Web Service exposes an [endpoint](http://www.m-files.com/mfws/resources/objects.html) which can be used to execute searches against the current M-Files vault.  Searching against the vault involves providing one or more [search conditions](http://www.m-files.com/mfws/syntax.html#sect:search-encoding) via the querystring.

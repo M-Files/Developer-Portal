@@ -2,6 +2,7 @@
 layout: page
 title: Vault Extension Methods via the M-Files Web Service (REST API)
 includeInSearch: true
+breadcrumb: Vault Extension Methods
 ---
 
 <p class="note">Vault Extension Methods are described in more detail on the <a href="{{ site.baseurl }}/Built-In/VBScript/Vault-Extension-Methods/">Vault Extension Method page</a>.</p>

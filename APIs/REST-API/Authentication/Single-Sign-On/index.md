@@ -2,6 +2,7 @@
 layout: page
 title: Using Single Sign On (SSO) through the M-Files Web Service (REST API)
 includeInSearch: true
+breadcrumb: Single Sign On
 ---
 
 Single Sign-On is a mechanism to allow authenticated users to interact with network resources without explicitly authenticating with each one individually.  M-Files Web Access, and therefore the M-Files Web Service, supports Single Sign-On, but requires some manual steps to enable and configure.

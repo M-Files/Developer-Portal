@@ -3,6 +3,7 @@ layout: page
 title: Useful applications for use with the M-Files Web Service (REST API)
 includeInSearch: true
 stubPage: true
+breadcrumb: Useful Applications
 ---
 
 <p class="note">None of these applications are provided or supported by M-Files, and are used at your own risk.</p>

@@ -2,6 +2,7 @@
 layout: page
 title: Using the Vault Application Framework with VB.NET
 includeInSearch: true
+breadcrumb: Using VB.NET
 ---
 
 Whilst the Vault Application Framework has C# templates, it can also be used with Visual Basic .NET.  Doing so requires takes some manual steps to get working.  This guide details those steps and provides the developer with the ability to get a Vault Application Framework sample application up-and-running using VB.NET.

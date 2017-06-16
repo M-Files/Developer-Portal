@@ -2,6 +2,7 @@
 layout: page
 title: The SysUtils class in the Vault Application Framework
 includeInSearch: true
+breadcrumb: SysUtils
 ---
 
 `SysUtils` is contained in the `MFiles.VAF.Common` namespace and provides common utility methods for system operations.

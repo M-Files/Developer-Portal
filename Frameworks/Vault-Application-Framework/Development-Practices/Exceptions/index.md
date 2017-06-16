@@ -2,6 +2,7 @@
 layout: page
 title: Exceptions in the Vault Application Framework
 includeInSearch: true
+breadcrumb: Exceptions
 ---
 
 ## Throwing exceptions

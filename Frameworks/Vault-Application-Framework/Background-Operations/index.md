@@ -2,6 +2,7 @@
 layout: page
 title: Running Background Operations using the Vault Application Framework
 includeInSearch: true
+breadcrumb: Background Operations
 ---
 
 ## Overview

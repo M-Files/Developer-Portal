@@ -2,6 +2,7 @@
 layout: page
 title: Exposing Vault Extension Methods in the Vault Application Framework
 includeInSearch: true
+breadcrumb: Vault Extension Methods
 ---
 
 The `VaultExtensionMethodAttribute` attribute marks the following method as a vault extension method, and declares its alias and the level of vault access required to call it.  The input provided when the extension method is called is available within `env.Input`.

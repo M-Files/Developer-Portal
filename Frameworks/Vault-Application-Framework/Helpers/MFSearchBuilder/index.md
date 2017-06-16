@@ -2,6 +2,7 @@
 layout: page
 title: The MFSearchBuilder class in the Vault Application Framework
 includeInSearch: true
+breadcrumb: MFSearchBuilder
 ---
 
 The `MFSearchBuilder` class is available within the `MFiles.VAF.Common` namespace and is used to create and execute searches against a given M-Files [Vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html).  The `MFSearchBuilder` class contains a number of methods which aid in the production of `SearchConditions` and in the use of the returned results.  For example, a search that restricts by object type and deletion status may be:

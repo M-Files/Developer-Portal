@@ -2,6 +2,7 @@
 layout: page
 title: The Vault Application Framework Visual Studio Template
 includeInSearch: true
+breadcrumb: Visual Studio Template
 ---
 
 M-Files provides partners with a Visual Studio 2015 template that can be used to rapidly develop Vault Application Framework Applications using C#.  If you would like to use VB.NET then you will need to follow [these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Using-VB.NET/).

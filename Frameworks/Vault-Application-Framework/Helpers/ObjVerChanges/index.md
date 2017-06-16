@@ -2,6 +2,7 @@
 layout: page
 title: The ObjVerChanges class in the Vault Application Framework
 includeInSearch: true
+breadcrumb: ObjVerChanges
 ---
 
 `ObjVerChanges` is contained in the `MFiles.VAF.Common` namespace and provides information on metadata changes between two versions of an object.

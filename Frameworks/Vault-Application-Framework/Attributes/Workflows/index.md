@@ -2,6 +2,7 @@
 layout: page
 title: Workflow-related attributes in the Vault Application Framework
 includeInSearch: true
+breadcrumb: Workflows
 ---
 
 ## Workflow State Actions

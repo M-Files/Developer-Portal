@@ -2,6 +2,7 @@
 layout: page
 title: The ObjVerEx class in the Vault Application Framework
 includeInSearch: true
+breadcrumb: ObjVerEx
 ---
 
 ## Overview

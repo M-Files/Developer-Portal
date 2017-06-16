@@ -2,6 +2,7 @@
 layout: page
 title: The MFUtils class in the Vault Application Framework
 includeInSearch: true
+breadcrumb: MFUtils
 ---
 
 `MFUtils` is contained in the `MFiles.VAF.Common` namespace and provides common utility methods for M-Files operations.

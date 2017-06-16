@@ -2,6 +2,7 @@
 layout: page
 title: Configuration attributes in the Vault Application Framework
 includeInSearch: true
+breadcrumb: Configuration
 ---
 
 ## MFIdentifier

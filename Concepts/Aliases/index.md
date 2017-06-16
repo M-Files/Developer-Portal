@@ -2,6 +2,7 @@
 layout: page
 title: Referencing M-Files structural vault elements by alias
 includeInSearch: true
+breadcrumb: Aliases
 ---
 
 ## The API and Structural Element IDs

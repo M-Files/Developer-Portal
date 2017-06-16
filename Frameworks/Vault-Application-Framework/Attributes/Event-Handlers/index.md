@@ -2,6 +2,7 @@
 layout: page
 title: The Event Handler attribute in the Vault Application Framework
 includeInSearch: true
+breadcrumb: Event Handlers
 ---
 
 ## EventHandlerAttribute
