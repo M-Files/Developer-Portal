@@ -4,6 +4,10 @@
     padding: 10px 0 0 0;
 	display: none;
 }
+.breadcrumb li.active
+{
+	font-style: italic;
+}
 .breadcrumb li::after,
 	.breadcrumb li::before
 {
