@@ -5,7 +5,7 @@ includeInSearch: true
 breadcrumb: URLs
 ---
 
-## Desktop
+## M-Files Desktop
 
 When the M-Files Desktop client is installed, it installs a custom URI handler.  This allows M-Files to react to links that start "m-files://".  Common usage scenarios include:
 
