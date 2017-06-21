@@ -1,7 +1,7 @@
-a[rel='external']
+/*a[rel='external']
 {
     white-space: nowrap;
-}
+}*/
 a[rel='external'] i
 {
     padding-left: 2px;
