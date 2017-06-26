@@ -62,10 +62,10 @@ protected override void StartApplication()
 }
 
 [StateAction("MFiles.StateAction.ConvertToPdfWorkflow.ConvertToPdf")]
-public void ConvertToPdf()
+public void ConvertToPdf(StateEnvironment env)
 {
-	// Start the background operation, if it is not running.
-	this.convertToPdfBackgroundOperation.RunOnce(maximumRunOnceRequests: 1);
+	// Start the background operation.
+	this.convertToPdfBackgroundOperation.RunOnce();
 }
 ```
 
