@@ -269,7 +269,7 @@ condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "MyExternalObjectId");
 
 It can be useful to exclude an object from the search results by its given internal ID.
 
-```
+```csharp
 // Create the condition.
 var condition = new SearchCondition();
 
