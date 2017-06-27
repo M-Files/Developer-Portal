@@ -264,3 +264,21 @@ condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "MyExternalObjectId");
 ```
 
 <p class="note">An example of searching by display/external ID is available within <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/SearchByDisplayId">the SearchByDisplayId sample in our github repository</a>.</p>
+
+## Excluding an object by ID
+
+It can be useful to exclude an object from the search results by its given internal ID.
+
+```
+// Create the condition.
+var condition = new SearchCondition();
+
+// Set the expression.
+condition.Expression.SetStatusValueExpression(MFStatusType.MFStatusTypeObjectID);
+
+// Set the condition type.
+condition.ConditionType = MFConditionType.MFConditionTypeNotEqual;
+
+// Set the value (this excludes all objects with ID 478 - in all object types!).
+condition.TypedValue.SetValue(MFDataType.MFDatatypeInteger, 478);
+```
