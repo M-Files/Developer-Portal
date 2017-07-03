@@ -10,7 +10,7 @@ includeInSearch: true
 
 Our COM API Reference provides detailed documentation on the objects, methods and properties that are exposed by the COM API.
 
-* [The UI Extensibility Framework](https://www.m-files.com/api/documentation/latest/index.html)
+* [The UI Extensibility Framework](https://www.m-files.com/UI_Extensibility_Framework/)
 
 Our UI Extensibility Framework documentation provides introductory information, reference documentation, and sample applications that customise the M-Files user interface.
 
