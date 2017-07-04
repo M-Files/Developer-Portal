@@ -12,9 +12,7 @@ This website complements and extends our existing documentation, available eithe
 	<li class="api"><a href="{{ site.baseurl }}/APIs/COM-API/"><i class="zmdi zmdi-circle-o"></i> COM API</a></li>
 	<li class="api"><a href="{{ site.baseurl }}/APIs/REST-API/"><i class="zmdi zmdi-cloud-outline"></i> REST API</a></li>
 	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/"><i class="zmdi zmdi-widgets"></i> Vault Application Framework</a></li>
-	{% comment %}
-	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/"><i class="zmdi zmdi-window-restore"></i> UI Extensibility Framework</a></li>
-	{% endcomment %}
+	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/"><i class="zmdi zmdi-window-restore"></i> User Interface Extensibility Framework</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/"><i class="zmdi zmdi-swap-alt"></i> External Object Type Data Sources</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/Metadata-Card-Configuration/"><i class="zmdi zmdi-view-web"></i> Metadata Card Configuration</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/URLs/"><i class="zmdi zmdi-link"></i> M-Files URLs</a></li>
@@ -62,7 +60,7 @@ M-Files provides two Application Programming Interfaces for developers: the [COM
 
 ## Our Frameworks
 
-M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The User Interface Extensibility Framework (UIX) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
+M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
 
 ### User Interface Extensibility Framework (UIX)
 
@@ -71,9 +69,7 @@ M-Files provides two separate frameworks for building applications that run with
 * Can create buttons and menu items which can react to selected items.
 * Can create "dashboards" which are shown on demand, and can be provided with content from M-Files.
 
-{% comment %}
 <p class="note">More information is available in the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/">User Interface Extensibility Framework section</a>.</p>
-{% endcomment %}
 
 ### [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/)
 
