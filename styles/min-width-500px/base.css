@@ -7,6 +7,10 @@ body.sidebar-expanded > *
 {
 	display: block;
 }
+body.sidebar-expanded > script
+{
+	display: none;
+}
 
 body.sidebar-expanded aside#sidebar
 {
