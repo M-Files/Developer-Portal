@@ -32,7 +32,6 @@
     function highlightLink(i, o)
     {
         // Unhighlight any existing ones.
-        console.log($navLinks.filter(".current"));
         $navLinks.filter(".current").removeClass("current");
 
         // Highlight the clicked one.
