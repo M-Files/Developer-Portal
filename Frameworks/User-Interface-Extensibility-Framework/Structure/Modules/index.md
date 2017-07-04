@@ -1,15 +1,16 @@
 ---
 layout: page
 title: Modules in the User Interface Extensibility Framework
-includeInSearch: false
 breadcrumb: Modules
 ---
 
 These modules contain the application code.  There are three types of module: `VaultCore` modules, `VaultUI` modules, and `ShellUI` modules.  Most modules are `ShellUI` modules.
 
+<p class="note">Modules are defined within the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Structure/AppDef/">Application Definition (manifest) file</a>, and more information can be found in the dedicated page.</p>
+
 ## VaultCore
 
-`VaultCore` modules run within `MFClient.exe`, and the lifetime of the module follows a connection to a vault within Windows; the module is started when the user logs into the vault, and stops when the user logs out.  `VaultCore` modules:
+`VaultCore` modules run within `MFClient.exe`, and the lifetime of the module follows a connection to a vault within Windows; the module is started when the user logs into the vault, and stops when the user logs out.  These modules:
 
   * Are executed as a _Windows system user_ and may have wider rights than the current user.
   * Can interact with other system processes.
@@ -19,7 +20,7 @@ These modules contain the application code.  There are three types of module: `V
 
 ## VaultUI
 
-`VaultUI` modules run within `MFStatus.exe`, and the lifetime of the module follows a connection to a vault within Windows; the module is started when the user logs into the vault, and stops when the user logs out.  `VaultUI` modules:
+`VaultUI` modules run within `MFStatus.exe`, and the lifetime of the module follows a connection to a vault within Windows; the module is started when the user logs into the vault, and stops when the user logs out.  These modules:
 
   * Are executed as the _current Windows user_ and can only access system resources that the current Windows user can access.
   * Can interact with `VaultCore` modules.
@@ -28,7 +29,7 @@ These modules contain the application code.  There are three types of module: `V
 
 ## ShellUI
 
-`ShellUI` modules are bound to the M-Files Shell component.  Each shell window or Windows common dialog runs its own insance of the module.  The lifetime of modules instantiated by the ShellUI module (e.g. the `ShellFrame`) may be shorter.  `ShellUI` modules:
+`ShellUI` modules are bound to the M-Files Shell component.  Each shell window or Windows common dialog runs its own insance of the module.  The lifetime of modules instantiated by the ShellUI module (e.g. the `ShellFrame`) may be shorter.  These modules:
 
   * Are executed as the current Windows user and can only access system resources that the current Windows user can access.
   * Can access the M-Files Shell interface.
