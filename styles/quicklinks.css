@@ -1,0 +1,35 @@
+ul.quicklinks
+{
+	margin: auto 0px;
+	padding: 0px;
+	text-align: center;
+}
+ul.quicklinks li
+{
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+}
+ul.quicklinks a
+{
+	display: inline-block;
+	background-color: transparent;
+	border: 3px solid #DEDEDE;
+	padding: 15px 15px;
+	margin: 10px 5px;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+	color: #333;
+}
+ul.quicklinks a, ul.quicklinks a:hover
+{
+	text-decoration: none;
+}
+ul.quicklinks a:hover
+{
+	border-color: #007dc6;
+	background-color: #007dc6;
+	color: white;
+}

@@ -6,6 +6,23 @@ includeInSearch: true
 
 This website complements and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.
 
+## Quick links
+
+<ul class="quicklinks">
+	<li class="api"><a href="{{ site.baseurl }}/APIs/COM-API/"><i class="zmdi zmdi-circle-o"></i> COM API</a></li>
+	<li class="api"><a href="{{ site.baseurl }}/APIs/REST-API/"><i class="zmdi zmdi-cloud-outline"></i> REST API</a></li>
+	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/"><i class="zmdi zmdi-widgets"></i> Vault Application Framework</a></li>
+	{% comment %}
+	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/"><i class="zmdi zmdi-window-restore"></i> UI Extensibility Framework</a></li>
+	{% endcomment %}
+	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/"><i class="zmdi zmdi-swap-alt"></i> External Object Type Data Sources</a></li>
+	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/Metadata-Card-Configuration/"><i class="zmdi zmdi-view-web"></i> Metadata Card Configuration</a></li>
+	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/URLs/"><i class="zmdi zmdi-link"></i> M-Files URLs</a></li>
+	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/VBScript/"><i class="zmdi zmdi-collection-item"></i> VBScript</a></li>
+	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/#samples"><i class="zmdi zmdi-github"></i> Samples</a></li>
+	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/#libraries"><i class="zmdi zmdi-github"></i> Libraries</a></li>
+</ul>
+
 ## M-Files as a Platform
 
 M-Files' powerful approach to Enterprise Content Management allows businesses to work with what content is, instead of where it's saved.  This powerful metadata-based approach can be used to easily design, build and deploy systems that support businesses in almost any sector, of almost any size.  Whilst M-Files' out-of-the-box functionality allows deep integration with various platforms and technologies, it also has a broad set of developer-orientated APIs and frameworks which can be used to extend this even further.
