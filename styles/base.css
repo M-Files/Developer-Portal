@@ -42,7 +42,7 @@ pre {
 }
 
 pre>code.hljs {
-    box-shadow: 0 0 5px 2px #CCC;
+	border: 3px solid #CCC;
     padding-top: 1em;
     margin-top: 1.5em;
 }
@@ -61,6 +61,10 @@ code.vbs::before {
 
 code.cs::before {
     content: 'C# (.NET)';
+}
+
+code.xml::before {
+    content: 'XML';
 }
 
 body>* {
