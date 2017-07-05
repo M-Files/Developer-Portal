@@ -96,5 +96,20 @@
         })
         $(document).scroll();
 
+		// When the user presses esc, close the in-page nav.
+		$("BODY").on("keyup", function(e)
+		{
+			if(e.keyCode == 27)
+			{
+				$("BODY #in-page-nav").removeClass("open");
+			}
+		});
+
+		// Close the in-page nav when rticle is clicked.
+		$("article.page").click(function()
+		{
+			$("BODY #in-page-nav").removeClass("open");
+		})
+
     });
 })(jQuery);

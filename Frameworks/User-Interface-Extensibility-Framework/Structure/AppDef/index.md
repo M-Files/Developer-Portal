@@ -6,13 +6,13 @@ breadcrumb: appdef.xml
 
 The application definition/manifest file contains information that the M-Files server uses to register and execute your application.
 
-## Application Definition File Versions
+## Application Definition Schema Versions
 
-There are two versions of the XML that can be used, each using a different schema.  It is recommended that you use the 'v3' schema for applications that target M-Files 2015.2 and higher.
+<p class="note warning">There are two versions of the XML that can be used, each using a different schema.  It is recommended that you use the <a href="#v3-schema">'V3' schema</a> for applications that target M-Files 2015.2 and higher.</p>
 
-### Application Definition File (v3)
+### V3 schema
 
-The v3 schema is supported in M-Files 11.2.4320.49 and higher, and adds additional elements that can be used to extend the functionality of the application.  These include:
+The V3 schema is supported in M-Files 11.2.4320.49 and higher, and adds additional elements that can be used to extend the functionality of the application.  These include:
 
 * `master-application-guid`
 * `platforms`
@@ -65,9 +65,9 @@ The v3 schema is supported in M-Files 11.2.4320.49 and higher, and adds addition
 `install-command` | Optional |
 `uninstall-command` | Optional | 
 
-### Application Definition File (v1)
+### V1 schema
 
-Below is an example of a 'v1' `appdef.xml` file:
+Below is an example of a 'V1' `appdef.xml` file:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,4 +108,4 @@ Below is an example of a 'v1' `appdef.xml` file:
 `dashboards` | Optional | A list of dashboards registered within the application.  The dashboard `id` is used to refer to the dashboard within code (e.g. to show it).  There is more [information on dashboards on their dedicated page]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Structure/Dashboards/).
 
 
-<p class="note">This application definition file version should be used when targeting M-Files versions lower than 11.2.4320.49, as it does not support the new <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Structure/AppDef/#application-definition-file-v3">v3 schema</a>.</p>
+<p class="note">This application definition file version should be used when targeting M-Files versions lower than 11.2.4320.49, as it does not support the new <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Structure/AppDef/#v3-schema">V3 schema</a>.</p>

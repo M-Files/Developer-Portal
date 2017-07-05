@@ -55,16 +55,29 @@ code::before {
     right: 0px;
 }
 
-code.vbs::before {
+.language-vbscript code.hljs::before,
+	 code.hljs.language-vbscript::before {
     content: 'VBScript';
 }
 
-code.cs::before {
+.language-csharp code.hljs::before,
+	 code.hljs.language-cs::before {
     content: 'C# (.NET)';
 }
 
-code.xml::before {
+.language-xml code.hljs::before,
+	code.hljs.language-xml::before {
     content: 'XML';
+}
+
+.language-javascript code.hljs::before,
+	code.hljs.language-javascript::before {
+    content: 'JavaScript';
+}
+
+.language-html code.hljs::before,
+	code.hljs.language-html::before {
+    content: 'HTML';
 }
 
 body>* {
@@ -152,6 +165,12 @@ p.note.warning, p.note.stub {
     background-color: #FFB84D;
     border: 1px solid #ff9900;
 }
+
+/* make the links in warnings a little darker, just to make them contrast better */
+article.page .note.warning a {
+    color: rgba(0, 50, 199, 1);
+}
+
 
 p.note.stub {
     font-style: italic;
