@@ -36,6 +36,7 @@
         @import url("{{ site.baseurl }}/styles/min-width-500px/base.css?{{ site.github.build_revision }}") screen and (min-width: 500px);
         @import url("{{ site.baseurl }}/styles/min-width-1000px/base.css?{{ site.github.build_revision }}") screen and (min-width: 1000px);
         @import url("{{ site.baseurl }}/styles/min-width-1500px/base.css?{{ site.github.build_revision }}") screen and (min-width: 1500px);
+        @import url("{{ site.baseurl }}/styles/highlightjs-custom.css?{{ site.github.build_revision }}");
     </style>
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -64,9 +65,11 @@
     </footer>
 
     <script src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
+    <script src="{{ site.baseurl }}/scripts/highlightjs-line-numbers.js?{{ site.github.build_revision }}"></script>
     <script>
         hljs.configure({languages: ["cs", "xml", "vbscript", "javascript"]});
         hljs.initHighlightingOnLoad();
+		hljs.initLineNumbersOnLoad();
     </script>
 
     <script src="{{ site.baseurl }}/scripts/sidebar.js?{{ site.github.build_revision }}"></script>
