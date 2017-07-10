@@ -1,20 +1,21 @@
-table {
+article > table {
     border: 3px solid #CCC;
     border-collapse: collapse;
 }
-table td, table th {
+article > table td,
+	article > table th {
     padding: 5px;
     vertical-align: top;
 	margin: 0px;
 }
-table tbody tr:hover
+article > table tbody tr:hover
 {
 	background-color: #eee;
 }
-table thead tr {
+article > table thead tr {
     background-color: #eee;
 	border-bottom: 3px solid #CCC;
 }
-tbody tr:nth-child(even) {
+article > table tbody tr:nth-child(even) {
     background-color: #f8f8f8;
 }
