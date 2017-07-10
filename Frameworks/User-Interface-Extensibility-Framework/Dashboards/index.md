@@ -12,8 +12,6 @@ Dashboard content is held within an HTML file.  This HTML file may refer to exte
 
 <p class="note">All referenced files must be static; no server-side code (e.g. <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> or <a href="https://www.asp.net/">ASP.NET</a>) can execute within a User Interface Extensibility Framework application.  Any preprocessing required (e.g. <a href="http://sass-lang.com/">SASS</a> or <a href="http://lesscss.org/">LESS</a>) must be processed before the UIX is run.</p>
 
-
-
 ## Showing and hiding dashboards
 
 <p class="note">More information on using dashboards is available in the <a href="https://www.m-files.com/UI_Extensibility_Framework/#UsingDashboards.html">M-Files UI Extensibility Framework documentation site</a>.</p>

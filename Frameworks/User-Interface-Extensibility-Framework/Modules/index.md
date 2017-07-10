@@ -8,7 +8,9 @@ These modules contain the application code.  There are three types of module: `V
 
 <p class="note">Modules are defined within the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Structure/">Application Definition (manifest) file</a>, and more information can be found in the dedicated page.</p>
 
-## VaultCore
+## Module types
+
+### VaultCore
 
 `VaultCore` modules run within `MFClient.exe`, and the lifetime of the module follows a connection to a vault within Windows; the module is started when the user logs into the vault, and stops when the user logs out.  These modules:
 
@@ -18,7 +20,7 @@ These modules contain the application code.  There are three types of module: `V
   * Can install software components.
   * Typically do not show an interface, but can interact with `VaultUI` modules, so can display popup dashboards.
 
-## VaultUI
+### VaultUI
 
 `VaultUI` modules run within `MFStatus.exe`, and the lifetime of the module follows a connection to a vault within Windows; the module is started when the user logs into the vault, and stops when the user logs out.  These modules:
 
@@ -27,7 +29,7 @@ These modules contain the application code.  There are three types of module: `V
   * Display popup dashboards.
   * React to vault events, such as to validate object properties, trace vault usage, or block check-in requests. 
 
-## ShellUI
+### ShellUI
 
 `ShellUI` modules are bound to the M-Files Shell component.  Each shell window or Windows common dialog runs its own insance of the module.  The lifetime of modules instantiated by the ShellUI module (e.g. the `ShellFrame`) may be shorter.  These modules:
 
@@ -35,4 +37,4 @@ These modules contain the application code.  There are three types of module: `V
   * Can access the M-Files Shell interface.
   * Can add custom commands (e.g. buttons in the task area, or context-menu items).
   * Can launch dashboards, either as popups, inside the integrated windows (e.g. to replace the shell listing, the preview panes), or as separate tabs on the right-hand section.
-  * Can send synchronouse messages to `VaultUI` and `VaultCore` modules.
+  * Can send synchronous messages to `VaultUI` and `VaultCore` modules.
