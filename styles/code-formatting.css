@@ -1,0 +1,55 @@
+
+
+pre {
+    position: relative;
+}
+
+pre>code.hljs,
+	pre>code.language-txt,
+	pre>code.language-reg {
+	padding: 0.5em;
+	color: black;
+	background: white;
+	border: 3px solid #CCC;
+    padding-top: 1em;
+    margin-top: 1.5em;
+	display: block;
+	overflow-x: scroll;
+}
+
+code::before {
+    font-size: 0.8em;
+    float: left;
+    position: absolute;
+    top: -1.5em;
+    right: 0px;
+}
+
+code.language-reg::before {
+    content: '.reg';
+}
+
+.language-vbscript code.hljs::before,
+	 code.hljs.language-vbscript::before {
+    content: 'VBScript';
+}
+
+.language-csharp code.hljs::before,
+	 code.hljs.language-cs::before {
+    content: 'C# (.NET)';
+}
+
+.language-xml code.hljs::before,
+	code.hljs.language-xml::before {
+    content: 'XML';
+}
+
+.language-javascript code.hljs::before,
+	code.hljs.language-javascript::before {
+    content: 'JavaScript';
+}
+
+.language-html code.hljs::before,
+	code.hljs.language-html::before {
+    content: 'HTML';
+}
