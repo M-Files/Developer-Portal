@@ -2,6 +2,7 @@
 layout: page
 title: Application Definition
 breadcrumb: appdef.xml
+includeInSearch: true
 ---
 
 The application definition/manifest file contains information that the M-Files server uses to register and execute your application, such as the unique identifier for the application (its GUID), publisher information, information on the platforms it targets (desktop or web), and the modules and dashboards that make up the application itself.

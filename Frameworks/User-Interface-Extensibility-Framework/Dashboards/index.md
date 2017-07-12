@@ -2,6 +2,7 @@
 layout: page
 title: Dashboards in the User Interface Extensibility Framework
 breadcrumb: Dashboards
+includeInSearch: true
 ---
 
 Dashboards contain user interfaces that can be shown to the user as required.

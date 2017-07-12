@@ -2,6 +2,7 @@
 layout: page
 title: Modules in the User Interface Extensibility Framework
 breadcrumb: Modules
+includeInSearch: true
 ---
 
 These modules contain the application code.  There are three types of module: `VaultCore` modules, `VaultUI` modules, and `ShellUI` modules.  Most modules are `ShellUI` modules.

@@ -2,6 +2,7 @@
 layout: page
 title: Pre-approval of User Interface Extensibility Framework Applications
 breadcrumb: Pre-approval
+includeInSearch: true
 ---
 
 When an M-Files Desktop client connects to the server, it is provided with all the currently-registered User Interface Extensibility Framework applications on the target vault.  If the user has not used this application (or this version of the application) before, they will be prompted to either allow the application to run, or to disallow it:
@@ -96,3 +97,7 @@ Windows Registry Editor Version 5.00
 ```
 
 Provided this key is installed into the client machine before they initially connect to the vault, the acceptance dialog will not be shown and the application will be installed and enabled silently.
+
+## Generating registry keys automatically
+
+A sample application that uses the M-Files COM API to generate `.reg` files containing the required registry keys [can be downloaded from our GitHub Samples and Libraries page](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/GenerateApplicationPreApprovalKey.App).  Information on how to download the sample and compile it can be found on the [GitHub repository readme page](https://github.com/M-Files/MFilesSamplesAndLibraries/#readme).

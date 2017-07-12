@@ -2,6 +2,7 @@
 layout: page
 title: The User Interface Extensibility Framework
 breadcrumb: UIX
+includeInSearch: true
 ---
 
 The User Interface Extensibility Framework (UIX) was created to allow developers to build client-side applications that interact with the M-Files Desktop and M-Files Web Access.  
