@@ -41,10 +41,17 @@ pre {
     position: relative;
 }
 
-pre>code.hljs {
+pre>code.hljs,
+	pre>code.language-txt,
+	pre>code.language-reg {
+	padding: 0.5em;
+	color: black;
+	background: white;
 	border: 3px solid #CCC;
     padding-top: 1em;
     margin-top: 1.5em;
+	display: block;
+	overflow-x: scroll;
 }
 
 code::before {
@@ -53,6 +60,10 @@ code::before {
     position: absolute;
     top: -1.5em;
     right: 0px;
+}
+
+code.language-reg::before {
+    content: '.reg';
 }
 
 .language-vbscript code.hljs::before,

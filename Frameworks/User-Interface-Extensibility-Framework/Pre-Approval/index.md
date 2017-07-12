@@ -42,7 +42,8 @@ The UIX application GUID can be found within the [Application Definition]({{ sit
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef.xsd">
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef.xsd">
 	<guid>1B9552B3-C1C5-44b9-905F-D4ABAC5E8AE2</guid>	
 	<name>Separate preview dashboard</name>
 	<version>1.1</version>
@@ -79,10 +80,19 @@ The checksum in this screenshot is the value `p6NRiPTsbZ9QIKYRYbT5H2+gH8ob4UNP94
 
 To pre-approve the UIX, a registry value must be installed on the client machines. The easiest way to do this is to deploy the the value using group policy. In this sample we will cover the location and value; how it is distributed is a separate topic.  Firstly, a key needs to be created of the following format: `HKEY_LOCAL_MACHINE\SOFTWARE\Motive\M-Files\<version>\Client\MFClient\ApplicationAccess\<vault GUID>`
 
-<p class="note">&lt;version&gt; and &lt;vault GUID&gt; need to be replaced with the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-client-version">M-Files client version</a> and the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-vault-guid">M-Files vault GUID</a>. For example, for a client running <code class="highlighter-rouge">11.3.4330.196 (M-Files 2015.3 SR2)</code> on a vault with GUID <code class="highlighter-rouge">{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}</code>, the key would be <code class="highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Motive\M-Files\11.3.4330.196\Client\MFClient\ApplicationAccess\{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}</code>.</p>
+<p class="note"><code>&lt;version&gt;</code> and <code>&lt;vault GUID&gt;</code> need to be replaced with the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-client-version">M-Files client version</a> and the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-vault-guid">M-Files vault GUID</a>. For example, for a client running <code class="highlighter-rouge">11.3.4330.196 (M-Files 2015.3 SR2)</code> on a vault with GUID <code class="highlighter-rouge">{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}</code>, the key would be <code class="highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Motive\M-Files\11.3.4330.196\Client\MFClient\ApplicationAccess\{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}</code>.</p>
 
 Within this key, a string value (`REG_SZ`) must be created. The name of the value should be the [application GUID]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-uix-application-guid) ([brace-formatted]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#a-note-on-guids)) and the data should be the [application checksum]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-application-checksum). For an application with GUID `1B9552B3-C1C5-44b9-905F-D4ABAC5E8AE2` and checksum `p6NRiPTsbZ9QIKYRYbT5H2+gH8ob4UNP94B3ksNU3/0=`, the registry value would look like this:
 
 ![String value for pre-approving the application](registry-string.png)
+
+This registry value, exported from the registry, may result in this `.reg` file:
+
+```reg
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Motive\M-Files\11.3.4330.196\Client\MFClient\ApplicationAccess\{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}]
+"{1B9552B3-C1C5-44B9-905F-D4ABAC5E8AE2}"="p6NRiPTsbZ9QIKYRYbT5H2+gH8ob4UNP94B3ksNU3/0="
+```
 
 Provided this key is installed into the client machine before they initially connect to the vault, the acceptance dialog will not be shown and the application will be installed and enabled silently.
