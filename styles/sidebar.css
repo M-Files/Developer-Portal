@@ -1,8 +1,6 @@
 aside#sidebar {
     position: fixed;
-    /*padding: 35px 20px 130px 0px;
-    top: 0px;*/
-    padding: 0px 20px 130px 0px;
+    padding: 0px 20px 160px 0px;
     top: 53px;
     margin: 0px;
     left: -110%;
@@ -35,7 +33,7 @@ aside#sidebar nav.secondary {
     right: 30px;
     background-color: #007dc6;
     z-index: 10000;
-    height: 70px;
+    height: 100px;
 }
 
 body.sidebar-expanded>* {
