@@ -24,7 +24,13 @@
                 heading: $heading,
                 offset: $heading.offset().top,
                 listItem: $li
-            })
+			});
+			
+			var $anchor = $("<a></a>")
+				.attr("href", "#" + $heading.attr("id"))
+				.addClass("public-anchor")
+				.append($("<i class='zmdi zmdi-link'></i>"));
+			$heading.append($anchor);
         });
 
         // Recalculates the offset for the headings (used when the window resizes)
