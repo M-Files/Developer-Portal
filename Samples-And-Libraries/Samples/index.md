@@ -21,3 +21,9 @@ The COM API is our most comprehensive API and can be used to create almost any s
 ## Vault Application Framework
 
 <p class="note">More information on the <a href="Vault-Application-Framework">Vault Application Framework (VAF) samples</a> is available in the dedicated page.</p>
+
+## Processes
+
+These  samples do not necessarily utilise one specific technology, but are samples of implementing specific processes using M-Files APIs and Frameworks.
+
+<p class="note">More information on the <a href="Processes">sample processes</a> is available in the dedicated page.</p>
