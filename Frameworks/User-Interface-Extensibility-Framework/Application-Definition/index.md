@@ -60,7 +60,7 @@ The V3 schema is supported in M-Files 11.2.4320.49 and higher, and adds addition
  `optional` | Optional | If false, the application is *mandatory*.  If the user chooses not to install the application then they cannot log into the vault.
  `enabled-by-default` | Optional |
  `master-application-guid` | Optional | 
- `platforms` | Required | Which platforms the application is designed to run on.  Currently supports Desktop and Web.
+ `platforms` | Required | [Which platforms the application is designed to run on.  Currently supports Desktop and Web]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/).
  `modules` | Required (at least one) | A list of the modules that contain this application's logic.  More information on [declaring modules can be found below](#declaring-modules).
 `dashboards` | Optional | A list of dashboards registered within the application.  The dashboard `id` is used to refer to the dashboard within code (e.g. to show it).  More information on [declaring dashboards can be found below](#declaring-dashboards).
 `install-command` | Optional |
@@ -211,3 +211,15 @@ Links to content are treated in the same way as remote content: they will not fu
 	<trusted-content>m-files:</trusted-content>
 </dashboard>
 ```
+
+## Tips and tricks
+
+## File formatting
+
+1. Ensure that the file is formatted as UTF-8.
+2. Ensure that any [special characters are escaped](https://technet.microsoft.com/en-us/library/ms145315(v=sql.90).aspx).
+3. The order of the elements is important; double-check the [schema information](#schema-versions) listed above.
+
+### GUID formatting
+
+Inside the `appdef.xml` file, GUIDs must be formatted without braces and with hyphens ([digit format](https://msdn.microsoft.com/en-us/library/97af8hh4(v=vs.110).aspx)).
