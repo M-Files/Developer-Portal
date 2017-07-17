@@ -214,7 +214,7 @@ Links to content are treated in the same way as remote content: they will not fu
 
 ## Tips and tricks
 
-## File formatting
+### File formatting
 
 1. Ensure that the file is formatted as UTF-8.
 2. Ensure that any [special characters are escaped](https://technet.microsoft.com/en-us/library/ms145315(v=sql.90).aspx).
