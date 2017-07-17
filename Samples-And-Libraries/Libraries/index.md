@@ -1,25 +1,14 @@
 ---
 layout: page
-title: The M-Files Samples and Libraries repository
+title: Libraries
 includeInSearch: true
-breadcrumb: Samples and Libraries
 ---
 
 <p class="note warning">Please note that these samples and libraries are provided "as-is" and with no warranty, explicit or otherwise. You should ensure that the functionality of these libraries meet your requirements, and thoroughly test them, prior to using in any production scenarios.  The items linked below are designed as teaching tools and may not be fully complete.</p>
 
 All M-Files Samples and Libraries are available in our [public GitHub repositories](https://github.com/m-files/MFilesSamplesAndLibraries/).  Further samples and libraries will be added in response to partner feedback.
 
-## Libraries
-
 Our [GitHub repository](https://github.com/m-files/MFilesSamplesAndLibraries/) contains two libraries.  These libraries are provided as learning tools to aid in the development against the M-Files COM and REST APIs.
 
-* [COM API Extension Methods (.NET)](Libraries/COM-API/#com-api-extension-methods-net)
-* [REST API Wrapper (.NET)](Libraries/REST-API/#rest-api-wrapper-net)
-
-<p class="note">More details are available in the <a href="Libraries">dedicated Libraries page</a>.</p>
-
-## Samples
-
-M-Files has published a number of public samples within our [MFilesSamplesAndLibraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples#readme), which focus on achieving specific tasks using our public APIs or Frameworks.
-
-<p class="note">More details are available in the <a href="Samples">dedicated Samples page</a>.</p>
+* [COM API Extension Methods (.NET)](COM-API/#com-api-extension-methods-net)
+* [REST API Wrapper (.NET)](REST-API/#rest-api-wrapper-net)
