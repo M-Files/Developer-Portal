@@ -44,6 +44,9 @@
     text-decoration: none;
     color: #555;
 }
+#in-page-nav li.h1{
+    display: none;
+}
 #in-page-nav li.h2{
     margin-left: 20px;
     font-weight: bold;
@@ -65,10 +68,12 @@
 	.has-in-page-nav article h3,
 	.has-in-page-nav article h4e
 {
-    border-left: 5px solid #EEE;
+	border-left: 5px solid transparent;
+	border-bottom: 1px solid #EEE;
 	overflow: hidden;
     padding-left: 15px;
-    margin-left: 5px;
+	margin-left: 5px;
+	padding-bottom: 5px;
 }
 
 .has-in-page-nav article h1.in-page-nav-active,
@@ -76,7 +81,7 @@
 	.has-in-page-nav article h3.in-page-nav-active,
 	.has-in-page-nav article h4.in-page-nav-active
 {
-    border-left-color: #e7781e;
+    border-color: #e7781e;
 }
 
 #in-page-nav .expand-collapse

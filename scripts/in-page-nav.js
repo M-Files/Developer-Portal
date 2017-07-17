@@ -2,7 +2,7 @@
     $(document).ready(function(){
         // Get a reference to all the page headings.
         var $ul = $("<ul></ul>");
-        var $headings = $("h2, h3, h4", $("article.page"));
+        var $headings = $("h1, h2, h3, h4", $("article.page"));
 
         // If there are none then die now (show no in-page-nav).
         if(0 == $headings.length)
@@ -22,7 +22,6 @@
             headingLookups.push({
                 index: i,
                 heading: $heading,
-                offset: $heading.offset().top,
                 listItem: $li
 			});
 			
@@ -38,9 +37,10 @@
         function reCalculateHeadingOffsets(){
             $.each(headingLookups, function(i, o)
             {
-                o.offset = o.heading.offset().top;
+                o.offset = parseInt(o.heading.offset().top);
             })
-        }
+		}
+		reCalculateHeadingOffsets();
         $(window).resize(reCalculateHeadingOffsets);
 
 		// Create the expand/collapse bits.
@@ -70,10 +70,10 @@
 
             // Go through headings and find the one we're scrolled to.
             var lookup = null;
-            var position = $(document).scrollTop();
+            var position = parseInt($(document).scrollTop());
             for(var i=0; i<headingLookups.length; i++)
             {
-                if(position <= headingLookups[i].offset)
+				if(position <= headingLookups[i].offset)
                 {
                     lookup = headingLookups[i];
                     break;
@@ -94,7 +94,7 @@
                 return;
             }
 
-            // Set the current active flag.
+			// Set the current active flag.
             lookup.listItem.addClass("in-page-nav-active");
             lookup.heading.addClass("in-page-nav-active");
             previouslySelected = [lookup.listItem, lookup.heading];
