@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Development Practices
+title: User Interface Extensibility Framework Development Practices
 includeInSearch: true
 stubPage: true
+breadcrumb: Development Practices
 ---
 
 
@@ -24,4 +25,4 @@ Whilst the majority of code which executes within a User Interface Extensibility
 
 Whilst User Interface Extensibility Framework applications typically target the M-Files Desktop client, since M-Files 11.2.4320.49 it has been possible to additionally target the M-Files Web Access.  More information can be found on the <a href="Platform-Targeting">Platform Targeting page</a>.
 
-<p class="note">The version of the User Interface Extensibility Framework that is available in the M-Files Web Access is a subset of that available in the Desktop client.  Additionally, API support is limited.</p>
+<p class="note">The version of the User Interface Extensibility Framework that is available in the M-Files Web Access is <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#UIExtSupportInMFilesWeb.html">a subset of that available in the Desktop client</a>.  Additionally, <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html">M-Files API support is limited</a>..</p>
