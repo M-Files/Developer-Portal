@@ -164,11 +164,13 @@ namespace MFiles.Server.Extensions
 
 The most important methods to fully implement are `PrepareForDataRetrieval()`, `GetAvailableColumns()` and `GetItems()`.
 
-`PrepareForDataRetrieval()` receives the "SELECT statement" from the Object Type Properties window and can parse it to decide what data needs to be loaded from the data source.
+* `PrepareForDataRetrieval()` receives the "SELECT statement" from the Object Type Properties window and can parse it to decide what data needs to be loaded from the data source.
 
-`GetAvailableColumns()` provides details to the "Columns" section within the ObjectType Properties window, allowing the user to choose a column for mapping.
+* `GetAvailableColumns()` provides details to the "Columns" section within the ObjectType Properties window, allowing the user to choose a column for mapping.
 
-`GetItems()` is called by the synchronization engine to retrieve objects to pull into M-Files.
+<p class="note">The <code class="highlighter-rouge">ColumnDefinition</code> class has a <code class="highlighter-rouge">Type</code> property.  The only supported types are: <code class="highlighter-rouge">string</code>, <code class="highlighter-rouge">int</code>, <code class="highlighter-rouge">bool</code>, <code class="highlighter-rouge">double</code> and <code class="highlighter-rouge">DateTime</code>.  Returning any other column type will result in the M-Files server throwing an exception message when attempting to <a href="#altering-our-object-type-definitions">clicking "Refresh Columns"</a>.</p>
+
+* `GetItems()` is called by the synchronization engine to retrieve objects to pull into M-Files.
 
 ![IDataSource](IDataSourceConnection.png)
 
