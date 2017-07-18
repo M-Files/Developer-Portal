@@ -11,7 +11,7 @@ pre>code.hljs,
 	padding: 0.5em;
 	color: black;
 	background: white;
-    border-top: 2em solid #EEE;
+    border-top: 32px solid #EEE;
 	display: block;
 	overflow-x: scroll;
 }
@@ -20,7 +20,7 @@ code::before {
     font-size: 0.8em;
     float: left;
     position: absolute;
-    top: 5px;
+    top: 8px;
     right: 8px;
 }
 
@@ -58,7 +58,8 @@ code.language-reg::before {
 	display: none;
 }
 
-.toggleLineNumbers
+.toggleLineNumbers,
+	.copyCode
 {
     cursor: pointer;
     position: absolute;
@@ -75,12 +76,17 @@ code.language-reg::before {
 	max-height: 25px;
 }
 
+.copyCode
+{
+	left: 50px;
+}
+
 .highlight .btn
 {
 	position: relative;
 	top: -4px;
 	left: -4px;
-	padding: 2px 4px;
+	padding: 2px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
