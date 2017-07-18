@@ -2,7 +2,6 @@
 layout: page
 title: Useful applications for use with the M-Files Web Service (REST API)
 includeInSearch: true
-stubPage: true
 breadcrumb: Useful Applications
 ---
 
