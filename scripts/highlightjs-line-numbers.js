@@ -42,6 +42,11 @@
 		}
 	}
 
+	function toggleLineNumbers()
+	{
+		$(this).parent("pre").toggleClass("disableLineNumbers");
+	}
+
 	function documentReady () {
 		try {
 			var blocks = document.querySelectorAll('code.hljs');
@@ -54,6 +59,14 @@
 		} catch (e) {
 			console.error('LineNumbers error: ', e);
 		}
+		var $toggleLineNumbersElement = $("<div></div>")
+			.addClass("toggleLineNumbers")
+			.html("<i class='zmdi zmdi-format-list-numbered'></i>")
+			.click(toggleLineNumbers);
+		
+		$("pre:has(>code.hljs)")
+			.prepend($toggleLineNumbersElement.clone(true));
+
 	}
 
 	function lineNumbersBlock (element) {

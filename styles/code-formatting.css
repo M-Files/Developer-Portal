@@ -11,7 +11,7 @@ pre>code.hljs,
 	color: black;
 	background: white;
 	border: 3px solid #CCC;
-    padding-top: 1em;
+    padding-top: 2em;
     margin-top: 1.5em;
 	display: block;
 	overflow-x: scroll;
@@ -21,8 +21,8 @@ code::before {
     font-size: 0.8em;
     float: left;
     position: absolute;
-    top: -1.5em;
-    right: 0px;
+    top: 5px;
+    right: 8px;
 }
 
 code.language-reg::before {
@@ -52,4 +52,35 @@ code.language-reg::before {
 .language-html code.hljs::before,
 	code.hljs.language-html::before {
     content: 'HTML';
+}
+
+.disableLineNumbers .hljs-ln-numbers
+{
+	display: none;
+}
+
+.toggleLineNumbers
+{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+	left: 8px;
+	font-size: 1.5em;
+	color: #333;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.disableLineNumbers .toggleLineNumbers
+{
+	color: #999;
+}
+
+code.hljs
+{
+	padding-top: 2em;
 }
