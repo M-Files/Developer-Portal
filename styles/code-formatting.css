@@ -2,6 +2,7 @@
 
 pre {
     position: relative;
+	border: 3px solid #CCC;
 }
 
 pre>code.hljs,
@@ -10,9 +11,7 @@ pre>code.hljs,
 	padding: 0.5em;
 	color: black;
 	background: white;
-	border: 3px solid #CCC;
-    padding-top: 2em;
-    margin-top: 1.5em;
+    border-top: 2em solid #EEE;
 	display: block;
 	overflow-x: scroll;
 }
@@ -73,11 +72,29 @@ code.language-reg::before {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	max-height: 25px;
 }
 
-.disableLineNumbers .toggleLineNumbers
+.highlight .btn
 {
-	color: #999;
+	position: relative;
+	top: -4px;
+	left: -4px;
+	padding: 2px 4px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.highlight .btn:hover,
+	.toggleLineNumbers .btn
+{
+	background-color: #DDD;
+}
+.disableLineNumbers .toggleLineNumbers .btn
+{
+	background-color: transparent;
 }
 
 code.hljs

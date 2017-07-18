@@ -61,7 +61,8 @@
 		}
 		var $toggleLineNumbersElement = $("<div></div>")
 			.addClass("toggleLineNumbers")
-			.html("<i class='zmdi zmdi-format-list-numbered'></i>")
+			.html("<i class='btn zmdi zmdi-hc-fw zmdi-format-list-numbered'></i>")
+			.attr("title", "Toggle line numbers")
 			.click(toggleLineNumbers);
 		
 		$("pre:has(>code.hljs)")
