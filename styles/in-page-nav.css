@@ -71,9 +71,11 @@
 	border-left: 5px solid transparent;
 	border-bottom: 1px solid #EEE;
 	overflow: hidden;
-    padding-left: 15px;
+    padding-left: 5px;
 	margin-left: 5px;
 	padding-bottom: 5px;
+	position: relative;
+	left: -15px;
 }
 
 .has-in-page-nav article h1.in-page-nav-active,
