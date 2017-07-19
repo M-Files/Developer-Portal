@@ -18,6 +18,18 @@ layout: default
 			<meta itemprop="position" content="{{ i }}" />
 		</li>{% endif %}{% endfor %}{% endfor %}
 	</ol>
+  {% comment %}
+  <div class="share" style="border: 2px solid #EEE; padding: 5px;">
+	  <span class="zmdi-hc-stack zmdi-hc-lg" style="cursor: pointer;" title="Share">
+		<i class="zmdi zmdi-circle-o zmdi-hc-stack-2x" style="color: #DDD"></i> 
+		<i class="zmdi zmdi-share zmdi-hc-stack-1x"></i>
+	  </span>
+	  <i class="zmdi zmdi-hc-lg zmdi-twitter"></i>
+		<i class="zmdi zmdi-hc-lg zmdi-linkedin"></i>
+		<i class="zmdi zmdi-hc-lg zmdi-wikipedia"></i>
+		<input type="text" value="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+  </div>
+	{% endcomment %}
 
   <div class="entry">
 	<article>
