@@ -17,11 +17,15 @@ Code Snippets consist of a block of standardised text, and small editable sectio
 
 To execute a Code Snippet, the developer types the name of the code snippet (e.g. `prop`) and presses `Tab` twice.  Visual Studio then executes the snippet and places it at the current location.
 
+![Inserting a code snippet using the keyboard](code-snippet-via-keyboard.png)
+
 <p class="note warning">Resharper can alter the standard keyboard shortcuts.  If you are using Resharper then You must press <code class="highlighter-rouge">Ctrl-J</code>, then type the code snippet name.  The other keyboard shortcuts still work.</p>
 
 ### Using the mouse
 
 To execute the code snippet, the developer right-clicks at the appropriate place in the code file and selects `Insert Code Snippet...`.  The available code snippets are listed in a folder-style structure.  The developer can double-click on the required Code Snippet and fill out the editable elements of the snippet by pressing `Tab`.
+
+![Inserting a code snippet using the mouse](code-snippet-via-context-menu.png)
 
 ## Code Snippets and the Vault Application Framework
 
@@ -30,6 +34,10 @@ When developing applications using the Vault Application Framework it is common 
 <p class="note">The <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/">Vault Application Framework Attributes page</a> details the attributes and their expected method signature, if appropriate.</p>
 
 Code Snippets can be used to automatically generate class members (methods and properties) with the correct structure and signatures, reducing development time.
+
+### Contributing to the Code Snippets
+
+To contribute additional code snippets or to fix issues with existing code snippets, please visit the [GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries), fork the repository, make the required changes, then submit a [pull request](https://help.github.com/articles/about-pull-requests/).  GitHub has [further information on forking and pull requests](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
 
 ### Available Code Snippets
 
@@ -43,7 +51,7 @@ The following code snippets exist.  Once the snippets are installed, simply type
 * `MFPropertyCustomValue` creates a code snippet for [PropertyCustomValueAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation).
 * `MFPropertyValidation` creates a code snippet for [PropertyValueValidationAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-validation).
 
-### Vault Extension Methods
+#### Vault Extension Methods
 
 * `MFVaultExtensionMethod` creates a code snippet for [VaultExtensionMethodAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/).
 
@@ -77,9 +85,19 @@ The following code snippets exist.  Once the snippets are installed, simply type
 
 * `MFConfiguration` creates a code snippet for a property with a `MFConfigurationAttribute`.
 
-### Contributing to the Code Snippets
-
-To contribute additional code snippets or to fix issues with existing code snippets, please visit the [GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries), make the required changes, and submit a [pull request](https://help.github.com/articles/about-pull-requests/).  GitHub has [further information on forking and pull requests](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
-
 ## Installing the Vault Application Framework Code Snippets
 
+### Installing using the Visual Studio installer
+
+[An installer for the Vault Application Framework Code Snippets is available on the Visual Studio Gallery](#).  Simply press the `Download` button on the gallery page, run the `.vsix` file, and it will install the Code Snippets into Visual Studio for you.
+
+<p class="note">The Vault Application Framework Code Snippets can be uninstalled through <code class="highlighter-rouge">Add/Remove Programs</code>, as with other installed applications.</p>
+
+### Downloading the raw snippet files
+
+The raw snippet files are available for download within our [GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Visual%20Studio%20Snippets/Vault%20Application%20Framework%20/Snippets/CSharp/M-Files%20VAF).  To install the snippets manually:
+
+* Download the `.snippet` file(s).
+* Open Visual Studio.
+* Click the `Tools` menu item and select `Code Snippets Manager`.
+* Click `Add` and locate the downloaded `.snippet` file.
