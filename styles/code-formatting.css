@@ -78,19 +78,21 @@ code.language-reg::before {
 
 .copyCode
 {
-	left: 50px;
+	left: 40px;
 }
 
 .highlight .btn
 {
 	position: relative;
-	top: -4px;
+	top: -3px;
 	left: -4px;
 	padding: 2px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
 	border-radius: 3px;
+	width: 26px;
+	height: 22px;
 }
 
 .highlight .btn:hover,
@@ -106,4 +108,21 @@ code.language-reg::before {
 code.hljs
 {
 	padding-top: 2em;
+}
+
+.toggleLineNumbers i.btn::before {
+    top: 1px;
+}
+.copyCode i.btn::before {
+    font-size: 0.8em;
+    top: 0px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm)
+{ 
+	/* Chrome displays the icons slightly differently and it needs moving */
+	.copyCode i.btn::before {
+		position: relative;
+		top: -2px;
+	}
 }
