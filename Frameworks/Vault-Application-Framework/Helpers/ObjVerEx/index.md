@@ -55,7 +55,7 @@ env.ObjVerEx.SetModifiedBy(env.CurrentUserID);
 
 `SetWorkflowState` sets the workflow and state of an object by affecting the in-memory `PropertyValues` collection.  Both the workflow and state are optional, but at least one must be supplied.  If the workflow is not provided then it will be looked up from the state.  If the state is not provided then the first state on the workflow will be used.
 
-<p class="note">You must call SaveProperties after calling this method for the changes to be persisted.</p>
+<p class="note">You must call <code class="highlighter-rouge">SaveProperties</code> after calling this method for the changes to be persisted.</p>
 
 ### Property helper methods
 
@@ -80,7 +80,7 @@ There are a variety of helper methods available that aid working with properties
 * `GetAllDirectReferences` - creates `ObjVerEx` objects for all items (including deleted) referenced by the provided multi-select lookup property.
 * `GetIndirectReferences` - creates `ObjVerEx` objects for all items (including deleted) that referencethe current on, optionally using a specific property.
 
-<p class="note warning">Calling GetIndirectReferences will execute a search against the M-Files vault.</p>
+<p class="note warning">Calling <code class="highlighter-rouge">GetIndirectReferences</code> will execute a search against the M-Files vault.</p>
 
 ## History
 
@@ -134,5 +134,5 @@ The `ExpandPlaceholderText` method can be used to easily parse a string containi
 * %PROPERTY_123% - the value of property 123 on the current object.
 * %PROPERTY_{MyPropertyDefinition}% - the value of the property with alias "MyPropertyDefinition" on the current object.
 
-<p class="note">Not all placeholders are supported.</p>
+<p class="note warning">Not all placeholders are supported.</p>
 
