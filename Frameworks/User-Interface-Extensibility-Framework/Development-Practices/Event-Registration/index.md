@@ -19,7 +19,7 @@ shellUI.Events.Register(
 		} );
 ```
 
-<p class="note">Often objects cannot be accessed until they are started; attempting to use them before this point will result in an error.  In this case, register for the <code class="highlighter-rouge">OnStarted</code> event to be notified when the object can be use.</p>
+<p class="note">Often objects cannot be accessed until they are started; attempting to use them before this point will result in an error.  In this case, register for the <code class="highlighter-rouge">OnStarted</code> event to be notified when the object can be used.</p>
 
 ```javascript
 // Execute some code when the shell frame is created and available.
