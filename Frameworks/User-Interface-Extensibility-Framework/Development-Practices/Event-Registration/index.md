@@ -45,6 +45,42 @@ shellUI.Events.Register(
 		} );
 ```
 
+Sometimes these nested registrations can lead to code lines getting excessively long.  Alternatively, the code above could be written in a slightly different way:
+
+```javascript
+// Execute some code when the shell frame is created and available.
+
+// Register to be notified when a new shell frame (Event_NewShellFrame) is created.
+shellUI.Events.Register(
+		Event_NewShellFrame,
+		handleNewShellFrame );
+
+function handleNewShellFrame(shellFrame)
+{
+	/// <summary>Handles the OnNewShellFrame event for an IShellUI.</summary>
+	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was created.</param>
+
+	// The shell frame was created.
+
+	// But it cannot be used; this would throw an exception:
+	// shellFrame.ShowMessage("A shell frame was created");
+
+	// Register to be notified when the shell frame is started.
+	// This time pass a reference to the function to call when the event is fired.
+	shellFrame.Events.Register(
+		Event_OnStarted,
+		handleShellFrameStarted );
+}
+
+function handleShellFrameStarted(shellFrame)
+{
+	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
+	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was started.</param>
+
+	// The shell frame is now started and can be use.
+	shellFrame.ShowMessage("A shell frame is available for use.");
+}
+```
 
 ## Module entry points
 
