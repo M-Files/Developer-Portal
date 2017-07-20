@@ -29,6 +29,8 @@ An in-memory copy of the object's [PropertyValues](https://www.m-files.com/api/d
 
 <p class="note">SaveProperties will deal with calling <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetAllProperties.html">SetAllProperties</a> or <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperties.html">SetProperties</a> in the API as appropriate, depending on whether the class of the object is specified in the change set.</p>
 
+<p class="note warning">Calling <code class="highlighter-rouge">SaveProperty</code> forces the internal <code class="highlighter-rouge">Properties</code> collection to be re-loaded from the server.  Any changes made to the collection (e.g. by calling <code class="highlighter-rouge">SetProperty</code>) will be lost by this call.</p>
+
 ### SetCreatedBy and SetModifiedBy
 
 `SetCreatedBy` offers a shortcut mechanism to calling [SetCreationInfoAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetCreationInfoAdmin.html), allowing a user ID to be passed rather than a [TypedValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~TypedValue.html).
@@ -46,6 +48,8 @@ env.ObjVerEx.SetCreatedBy(env.CurrentUserID);
 // to the method.
 env.ObjVerEx.SetModifiedBy(env.CurrentUserID);
 ```
+
+<p class="note warning">Calling <code class="highlighter-rouge">SetCreatedBy</code> or <code class="highlighter-rouge">SetModifiedBy</code> forces the internal <code class="highlighter-rouge">Properties</code> collection to be re-loaded from the server.  Any changes that have not yet been persisted (e.g. calls to <code class="highlighter-rouge">SetProperty</code>) will be lost by these calls.</p>
 
 ### SetWorkflowState
 
