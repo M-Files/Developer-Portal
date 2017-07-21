@@ -78,7 +78,7 @@ function handleNewShellFrame(shellFrame)
 	// The following line would throw an exception ("The object cannot be accessed, because it is not ready."):
 	// shellFrame.ShowMessage("A shell frame was created");
 
-	// Update global scope var to point to shell frame.
+	// Update global scope variable to point to new shell frame.
 	g_shellFrame = shellFrame;
 
 	// Register to be notified when the shell frame is started.
@@ -92,8 +92,9 @@ function handleShellFrameStarted()
 {
 	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
 
-	// The shell frame is now started and can be use.
-	shellFrame.ShowMessage("A shell frame is available for use.");
+	// The shell frame is now started and can be used.
+	// Note: we need to use the global-scope variable.
+	g_shellFrame.ShowMessage("A shell frame is available for use.");
 }
 ```
 
