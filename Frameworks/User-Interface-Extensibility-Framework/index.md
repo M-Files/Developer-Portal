@@ -5,7 +5,7 @@ breadcrumb: UIX
 includeInSearch: true
 ---
 
-The User Interface Extensibility Framework (UIX) was created to allow developers to build client-side applications that interact with the M-Files Desktop and M-Files Web Access.  
+The User Interface Extensibility Framework (UIX) was created to allow developers to build client-side applications that interact with the M-Files Desktop and M-Files Web Access.  User Interface Extensibility Framework applications are a combination of a number of text files (one [application definition file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/), one or more [modules]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/), and zero or more [dashboards]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/).  These are executed on the M-Files Desktop client or within the M-Files Web Access and are used to extend the client-side functionality of the core software.
 
 <p class="note">A <a href="https://www.m-files.com/UI_Extensibility_Framework/">technical reference</a> website is available which provides detailed information such as interface members.  This website focuses instead on the practicalities of developing applications using the UIX.</p>
 
@@ -27,6 +27,14 @@ The User Interface Extensibility Framework is used to develop additional client-
 * [Event registration and module entry points]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Event-Registration-And-Entry-Points/)
 * Using a [local development folder]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Local-Development-Folder/)
 * [Platform targeting]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/)
+
+## Samples and tutorials
+
+* [Hello, World (ShellUI)]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/HelloWorld/) - creates a basic UIX ShellUI application - consisting of an application definition file (`appdef.xml`) and a single module (`main.js`) - that displays a message when the shell frame object becomes available for use.
+* [Commands (ShellUI)]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/Commands/) - creates a number of commands within the M-Files user interface, dealing with more advanced concepts such as:
+	* Creating commands with icons.
+	* Adding commands to the task area, the context menu, or both.
+	* Showing and hiding commands.
 
 ## Application structure
 

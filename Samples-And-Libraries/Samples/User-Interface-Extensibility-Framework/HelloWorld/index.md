@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Getting Started with the User Interface Extensibility Framework
-breadcrumb: Getting Started
+title: Hello, world
 includeInSearch: true
 ---
 
