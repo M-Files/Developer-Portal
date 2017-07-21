@@ -11,5 +11,5 @@ User Interface Extensibility Framework applications are a combination of a numbe
 
 * [Hello, World (ShellUI)](HelloWorld)
 
-Creates a basic UIX ShellUI application - consisting of an appdef.xml and a single module - that displays a message when the shell frame object becomes available for use.
+Creates a basic UIX ShellUI application - consisting of an application definition file (`appdef.xml`) and a single module (`main.js`) - that displays a message when the shell frame object becomes available for use.
 

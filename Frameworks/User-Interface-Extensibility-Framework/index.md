@@ -17,6 +17,17 @@ The User Interface Extensibility Framework is used to develop additional client-
 * Context-menu items that allow custom processing for selected objects.
 * Display of [dashboards]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/) that contain custom user interfaces.  These user interfaces may be context-sensitive, such as showing a [burndown chart](https://en.wikipedia.org/wiki/Burn_down_chart) for a project when the project is selected in M-Files.
 
+## Development processes
+
+[Developing User Interface Extensibility Framework applications]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/) uses a different set of technologies and approaches compared to server-side development such as [VBScript]({{ site.baseurl }}/Built-In/VBScript/) or the [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/).
+
+* [Asynchronous API programming]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/)
+* [Debugging]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Debugging/)
+* [Deployment of applications to the M-Files Server]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Deployment/)
+* [Event registration and module entry points]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Event-Registration-And-Entry-Points/)
+* Using a [local development folder]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Local-Development-Folder/)
+* [Platform targeting]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/)
+
 ## Application structure
 
 User Interface Extensibility Framework applications consist of a number of files deployed in a `.zip` or `.mfappx` package (an `.mfappx` package is simply a renamed zip file and is used to easily identify deployable M-Files applications).  The package must have one [Application manifest (appdef.xml) file](#application-definition-file-appdefxml), one or more [modules](#modules-js-files), and may also contain one or more [dashboards, and their supporting files](#dashboards-js-css-html-files).

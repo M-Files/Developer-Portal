@@ -9,7 +9,7 @@ This sample creates a basic User Interface Extensibility Framework application c
 
 ## Creating a local development folder
 
-Firstly, let's create a [local development folder]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/#local-development-folder) for the application.  For this sample we will assume that the M-Files vault GUID is `{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}` and the M-Files client version is `11.3.4330.196`:
+Firstly, let's create a [local development folder]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Local-Development-Folder/) for the application.  For this sample we will assume that the M-Files vault GUID is `{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}` and the M-Files client version is `11.3.4330.196`:
 
 ![The (empty) local development folder](dev-folder.png)
 
@@ -110,7 +110,7 @@ Open M-Files and navigate to the vault.  The following message should be shown o
 
 ## Deploying the application
 
-To deploy the application:
+To [deploy]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Deployment/) the application:
 
 1. Zip the contents of the local development folder (e.g. `HelloWorld.zip`).
 2. Open the M-Files Admin tool and connect to your M-Files server.
