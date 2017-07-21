@@ -12,13 +12,21 @@ The User Interface Extensibility Framework is largely event-driven; each module 
 There are [numerous ways to register to be notified (section 3.2.4)](https://www.m-files.com/UI_Extensibility_Framework/#Event_Started.html) when events occur within the User Interface Extensibility Framework.  Our samples primarily use the `IEvents.Register` approach, as this allows multiple handlers to be registered for individual events.
 
 ```javascript
-// Register to be notified when a new shell frame (Event_NewShellFrame) is created.
-shellUI.Events.Register(
+function OnNewShellUI( shellUI )
+{
+	/// <summary>Executed by the UIX when a ShellUI module is started.</summary>
+	/// <param name="shellUI" type="MFiles.ShellUI">The shell UI object which was created.</param>
+	
+	// This is the start point of a ShellUI module.
+
+	// Register to be notified when a new shell frame (Event_NewShellFrame) is created.
+	shellUI.Events.Register(
 		Event_NewShellFrame,
 		function(shellFrame)
 		{
 			// The shell frame was created.
 		} );
+}
 ```
 
 <p class="note">Often objects cannot be accessed until they are started; attempting to use them before this point will result in an error.  In this case, register for the <code class="highlighter-rouge">OnStarted</code> event to be notified when the object can be used.</p>
@@ -28,6 +36,9 @@ shellUI.Events.Register(
 
 function OnNewShellUI( shellUI )
 {
+	/// <summary>Executed by the UIX when a ShellUI module is started.</summary>
+	/// <param name="shellUI" type="MFiles.ShellUI">The shell UI object which was created.</param>
+	
 	// This is the start point of a ShellUI module.
 
 	// Register to be notified when a new shell frame (Event_NewShellFrame) is created.
@@ -61,6 +72,9 @@ var g_shellFrame = null;
 
 function OnNewShellUI( shellUI )
 {
+	/// <summary>Executed by the UIX when a ShellUI module is started.</summary>
+	/// <param name="shellUI" type="MFiles.ShellUI">The shell UI object which was created.</param>
+
 	// This is the start point of a ShellUI module.
 
 	// Register to be notified when a new shell frame (Event_NewShellFrame) is created.
