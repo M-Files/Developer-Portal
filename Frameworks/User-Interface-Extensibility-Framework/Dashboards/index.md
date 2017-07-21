@@ -28,7 +28,9 @@ When a dashboard is shown, a JavaScript object can be passed to the dashboard fo
 
 Most dashboards are shown within their own custom tabs on the right-hand-section, alongside "Metadata" and "Preview".
 
+{% comment %}
 <p class="note">This page does not detail how to create a tab; that is shown in more detail on the <a href="#">Creating tabs page</a>.</p>
+{% endcomment %}
 
 Dashboards are shown by calling [IShellPaneTabInterface.ShowDashboard](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellPaneTab~ShowDashboard.html).  This takes two arguments:
 
