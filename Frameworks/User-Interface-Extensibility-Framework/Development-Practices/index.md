@@ -52,7 +52,7 @@ M-Files API objects can be instantiated in the following way:
 var objVer = new MFiles.ObjVer();
 ```
 
-<p class="note">This is useful when calling API methods that define optional parameters, but JavaScript requires a non-null value to be passed.</p>
+<p class="note">This is useful when calling API methods that define optional parameters, where JavaScript requires a non-null value to be passed.</p>
 
 ### Optional parameters
 
