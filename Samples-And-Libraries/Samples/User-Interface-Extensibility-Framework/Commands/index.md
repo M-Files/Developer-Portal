@@ -52,8 +52,11 @@ Next we will create a [module file]({{ site.baseurl }}/Frameworks/User-Interface
 * We will react to the shell frame's `Started` event (as using the shell frame before this point will result in an exception).
 
 ```javascript
-// The current shell frame.
-var g_shellFrame = null;
+// NOTE! This code is for demonstration purposes only and does not contain any kind of
+// 		 error handling. MUST be revised before using in production.
+//		 Authored by: Craig Hawker / M-Files
+
+"use strict";
  
 function OnNewShellUI( shellUI )
 {
@@ -77,39 +80,35 @@ function handleNewShellFrame(shellFrame)
 	// The following line would throw an exception ("The object cannot be accessed, because it is not ready."):
 	// shellFrame.ShowMessage("A shell frame was created");
  
-	// Update global scope variable to point to new shell frame.
-	g_shellFrame = shellFrame;
- 
 	// Register to be notified when the shell frame is started.
-	// This time pass a reference to the function to call when the event is fired.
 	shellFrame.Events.Register(
 		Event_Started,
-		handleShellFrameStarted );
+		getNewShellListingHandler( shellFrame ) );
 }
  
-function handleShellFrameStarted()
+function getShellFrameStartedHandler(shellFrame)
 {
-	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
+	/// <summary>Gets a function to handle the OnStarted event for an IShellFrame.</summary>
  
 	// The shell frame is now started and can be used.
-	// Note: we need to use the global-scope variable.
+	return function(){};
 }
 ```
 
 ## Creating a button in the task area
 
 Adding a button into the task area involves two steps:
-1. Creating a new `ICommand` using [CreateCustomCommand](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html) (line 48).
+1. Creating a new `ICommand` using [CreateCustomCommand](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html) (line 47).
 2. Adding the command into the task area using [AddCustomCommandToGroup](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html) (line 52).
 
 <p class="note">The group that the button will be added to is either one of the built-in <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~TaskPaneGroup.html">task pane groups</a> or the ID of a group that has previously been created with <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~CreateGroup.html">CreateGroup</a>.</p>
 
 ```javascript
-// The current shell frame.
-var g_shellFrame = null;
+// NOTE! This code is for demonstration purposes only and does not contain any kind of
+// 		 error handling. MUST be revised before using in production.
+//		 Authored by: Craig Hawker / M-Files
 
-// The command Id of the first command.
-var g_commandOneId = null;
+"use strict";
  
 function OnNewShellUI( shellUI )
 {
@@ -133,30 +132,35 @@ function handleNewShellFrame(shellFrame)
 	// The following line would throw an exception ("The object cannot be accessed, because it is not ready."):
 	// shellFrame.ShowMessage("A shell frame was created");
  
-	// Update global scope variable to point to new shell frame.
-	g_shellFrame = shellFrame;
- 
 	// Register to be notified when the shell frame is started.
-	// This time pass a reference to the function to call when the event is fired.
 	shellFrame.Events.Register(
 		Event_Started,
-		handleShellFrameStarted );
+		getShellFrameStartedHandler(shellFrame) );
 }
  
-function handleShellFrameStarted()
+function getShellFrameStartedHandler(shellFrame)
 {
-	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
+	/// <summary>Returns a function which handles the OnStarted event for an IShellFrame.</summary>
  
 	// The shell frame is now started and can be used.
-	// Note: we need to use the global-scope variable.
 
-	// Create a command (button).  Note that it is not yet visible.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
-	var g_commandOneId = g_shellFrame.Commands.CreateCustomCommand("My First Command");
+	return function()
+	{
 
-	// Add the command to the task area.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-	g_shellFrame.TaskPane.AddCustomCommandToGroup(g_commandOneId, TaskPaneGroup_Main, 1);
+		// Create a command (button).  Note that it is not yet visible.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
+		var commandOneId = shellFrame.Commands.CreateCustomCommand("My First Command");
+
+		// Add the command to the task area.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		try {
+			shellFrame.TaskPane.AddCustomCommandToGroup(commandOneId, TaskPaneGroup_Main, 1);
+		}
+		catch (e) {
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
+
+	}
 
 }
 ```
@@ -168,17 +172,17 @@ Logging into the M-Files vault should now show a button in the task area with th
 ### Reacting when the command is clicked
 
 Reacting to a command being clicked involves three steps:
-1. Register to be notified of the [CustomCommand](https://www.m-files.com/UI_Extensibility_Framework/index.html#Event_CustomCommand.html) event (line 58).
-2. Ensure that the command that was clicked was the one we want to handle (line 63).
-3. Execute the required code (line 73).
+1. Register to be notified of the [CustomCommand](https://www.m-files.com/UI_Extensibility_Framework/index.html#Event_CustomCommand.html) event (line 59).
+2. Ensure that the command that was clicked was the one we want to handle (line 61).
+3. Execute the required code (line 68).
 
 ```javascript
-// The current shell frame.
-var g_shellFrame = null;
+// NOTE! This code is for demonstration purposes only and does not contain any kind of
+// 		 error handling. MUST be revised before using in production.
+//		 Authored by: Craig Hawker / M-Files
 
-// The command Id of the first command.
-var g_commandOneId = null;
- 
+"use strict";
+
 function OnNewShellUI( shellUI )
 {
 	/// <summary>Executed by the UIX when a ShellUI module is started.</summary>
@@ -201,54 +205,51 @@ function handleNewShellFrame(shellFrame)
 	// The following line would throw an exception ("The object cannot be accessed, because it is not ready."):
 	// shellFrame.ShowMessage("A shell frame was created");
  
-	// Update global scope variable to point to new shell frame.
-	g_shellFrame = shellFrame;
- 
 	// Register to be notified when the shell frame is started.
-	// This time pass a reference to the function to call when the event is fired.
 	shellFrame.Events.Register(
 		Event_Started,
-		handleShellFrameStarted );
+		getShellFrameStartedHandler(shellFrame) );
 }
  
-function handleShellFrameStarted()
+ffunction getShellFrameStartedHandler(shellFrame)
 {
-	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
+	/// <summary>Returns a function which handles the OnStarted event for an IShellFrame.</summary>
  
 	// The shell frame is now started and can be used.
-	// Note: we need to use the global-scope variable.
 
-	// Create a command (button).  Note that it is not yet visible.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
-	var g_commandOneId = g_shellFrame.Commands.CreateCustomCommand("My First Command");
+	return function() {
 
-	// Add the command to the task area.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-	g_shellFrame.TaskPane.AddCustomCommandToGroup(g_commandOneId, TaskPaneGroup_Main, 1);
+		// Create a command (button).  Note that it is not yet visible.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
+		var commandOneId = shellFrame.Commands.CreateCustomCommand("My First Command");
 
-	// Register to be notified when a custom command is clicked.
-	// Note: this will fire for ALL custom commands, so we need to filter out others.
-	g_shellFrame.Commands.Events.Register(
-		Event_CustomCommand,
-		function(commandId)
-		{
-			// Branch depending on the Id of the command that was clicked.
-			switch(commandId)
+		// Add the command to the task area.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		try {
+			shellFrame.TaskPane.AddCustomCommandToGroup(commandOneId, TaskPaneGroup_Main, 1);
+		}
+		catch (e) {
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
+
+		// Register to be notified when a custom command is clicked.
+		// Note: this will fire for ALL custom commands, so we need to filter out others.
+		shellFrame.Commands.Events.Register(
+			Event_CustomCommand,
+			function(commandId)
 			{
-				case g_commandOneId:
-					// Our first command was clicked.
-					handleFirstCommandClicked();
-					break;
-			}
-		});
+				// Branch depending on the Id of the command that was clicked.
+				switch(commandId)
+				{
+					case commandOneId:
+						// Our first command was clicked.
+						shellFrame.ShowMessage("The first command was clicked.")
+						break;
+				}
+			});
 
-}
-function handleFirstCommandClicked()
-{
-	/// <summary>Handles the click of the first command.</summary>
-	
-	// Show a message to show that it was clicked.
-	g_shellFrame.ShowMessage("The first command was clicked.")
+	};
+
 }
 ```
 
@@ -259,17 +260,17 @@ function handleFirstCommandClicked()
 To set an icon for the command:
 1. Ensure that you have an icon in the [correct format](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetIconFromPath.html).  This should be a `.ico` file with at least a 16x16 image.
 2. Ensure that the icon file is included within the User Interface Extensibility Framework application.
-3. Call [SetIconFromPath](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetIconFromPath.html), passing both the command Id and the *relative* path to the icon (line 52).
+3. Call [SetIconFromPath](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetIconFromPath.html), passing both the command Id and the *relative* path to the icon (line 50).
 
 <p class="note">Setting an icon only works if the command is shown in the task area.  Icons will not be shown for items in the context menu.</p>
 
 ```javascript
-// The current shell frame.
-var g_shellFrame = null;
+// NOTE! This code is for demonstration purposes only and does not contain any kind of
+// 		 error handling. MUST be revised before using in production.
+//		 Authored by: Craig Hawker / M-Files
 
-// The command Id of the first command.
-var g_commandOneId = null;
- 
+"use strict";
+
 function OnNewShellUI( shellUI )
 {
 	/// <summary>Executed by the UIX when a ShellUI module is started.</summary>
@@ -292,58 +293,55 @@ function handleNewShellFrame(shellFrame)
 	// The following line would throw an exception ("The object cannot be accessed, because it is not ready."):
 	// shellFrame.ShowMessage("A shell frame was created");
  
-	// Update global scope variable to point to new shell frame.
-	g_shellFrame = shellFrame;
- 
 	// Register to be notified when the shell frame is started.
-	// This time pass a reference to the function to call when the event is fired.
 	shellFrame.Events.Register(
 		Event_Started,
-		handleShellFrameStarted );
+		getShellFrameStartedHandler(shellFrame) );
 }
  
-function handleShellFrameStarted()
+function getShellFrameStartedHandler(shellFrame)
 {
-	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
+	/// <summary>Returns a function which handles the OnStarted event for an IShellFrame.</summary>
  
 	// The shell frame is now started and can be used.
-	// Note: we need to use the global-scope variable.
 
-	// Create a command (button).  Note that it is not yet visible.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
-	var g_commandOneId = g_shellFrame.Commands.CreateCustomCommand("My First Command");
+	return function() {
 
-	// Set the icon for the command.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetIconFromPath.html
-	g_shellFrame.Commands.SetIconFromPath(g_commandOneId, "icons/uparrow.ico");
+		// Create a command (button).  Note that it is not yet visible.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
+		var commandOneId = shellFrame.Commands.CreateCustomCommand("My First Command");
 
-	// Add the command to the task area.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-	g_shellFrame.TaskPane.AddCustomCommandToGroup(g_commandOneId, TaskPaneGroup_Main, 1);
+		// Set the icon for the command.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetIconFromPath.html
+		shellFrame.Commands.SetIconFromPath(commandOneId, "icons/uparrow.ico");
 
-	// Register to be notified when a custom command is clicked.
-	// Note: this will fire for ALL custom commands, so we need to filter out others.
-	g_shellFrame.Commands.Events.Register(
-		Event_CustomCommand,
-		function(commandId)
-		{
-			// Branch depending on the Id of the command that was clicked.
-			switch(commandId)
+		// Add the command to the task area.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		try {
+			shellFrame.TaskPane.AddCustomCommandToGroup(commandOneId, TaskPaneGroup_Main, 1);
+		}
+		catch (e) {
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
+
+		// Register to be notified when a custom command is clicked.
+		// Note: this will fire for ALL custom commands, so we need to filter out others.
+		shellFrame.Commands.Events.Register(
+			Event_CustomCommand,
+			function(commandId)
 			{
-				case g_commandOneId:
-					// Our first command was clicked.
-					handleFirstCommandClicked();
-					break;
-			}
-		});
+				// Branch depending on the Id of the command that was clicked.
+				switch(commandId)
+				{
+					case commandOneId:
+						// Our first command was clicked.
+						shellFrame.ShowMessage("The first command was clicked.")
+						break;
+				}
+			});
 
-}
-function handleFirstCommandClicked()
-{
-	/// <summary>Handles the click of the first command.</summary>
-	
-	// Show a message to show that it was clicked.
-	g_shellFrame.ShowMessage("The first command was clicked.")
+	};
+
 }
 ```
 
@@ -351,17 +349,17 @@ function handleFirstCommandClicked()
 
 ## Adding a command to both the task area and the context menu
 
-To add a command created with [CreateCustomCommand](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html) to the context menu, call [AddCustomCommandToMenu](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html) (line 59).  In the example below, it is the same command object added to both task pane and context menu, so our [code to react when the button is clicked](#reacting-when-the-command-is-clicked) will be fired for the context menu item and the task pane.
+To add a command created with [CreateCustomCommand](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html) to the context menu, call [AddCustomCommandToMenu](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html) (line 62).  In the example below, it is the same command object added to both task pane and context menu, so our [code to react when the button is clicked](#reacting-when-the-command-is-clicked) will be fired for the context menu item and the task pane.
 
 <p class="note">The command can be added in one of <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html">a number of locations</a> within the context menu.  Some of these locations are only shown in some scenarios (e.g. some sections are not shown when files are right-clicked, but are when objects are right-clicked).</p>
 
 ```javascript
-// The current shell frame.
-var g_shellFrame = null;
+// NOTE! This code is for demonstration purposes only and does not contain any kind of
+// 		 error handling. MUST be revised before using in production.
+//		 Authored by: Craig Hawker / M-Files
 
-// The command Id of the first command.
-var g_commandOneId = null;
- 
+"use strict";
+
 function OnNewShellUI( shellUI )
 {
 	/// <summary>Executed by the UIX when a ShellUI module is started.</summary>
@@ -384,61 +382,58 @@ function handleNewShellFrame(shellFrame)
 	// The following line would throw an exception ("The object cannot be accessed, because it is not ready."):
 	// shellFrame.ShowMessage("A shell frame was created");
  
-	// Update global scope variable to point to new shell frame.
-	g_shellFrame = shellFrame;
- 
 	// Register to be notified when the shell frame is started.
-	// This time pass a reference to the function to call when the event is fired.
 	shellFrame.Events.Register(
 		Event_Started,
-		handleShellFrameStarted );
+		getShellFrameStartedHandler(shellFrame) );
 }
  
-function handleShellFrameStarted()
+function getShellFrameStartedHandler(shellFrame)
 {
-	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
+	/// <summary>Returns a function which handles the OnStarted event for an IShellFrame.</summary>
  
 	// The shell frame is now started and can be used.
-	// Note: we need to use the global-scope variable.
 
-	// Create a command (button).  Note that it is not yet visible.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
-	var g_commandOneId = g_shellFrame.Commands.CreateCustomCommand("My First Command");
+	return function() {
 
-	// Set the icon for the command.
-	g_shellFrame.Commands.SetIconFromPath(g_commandOneId, "icons/uparrow.ico");
+		// Create a command (button).  Note that it is not yet visible.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
+		var commandOneId = shellFrame.Commands.CreateCustomCommand("My First Command");
 
-	// Add the command to the task area.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-	g_shellFrame.TaskPane.AddCustomCommandToGroup(g_commandOneId, TaskPaneGroup_Main, 1);
+		// Set the icon for the command.
+		shellFrame.Commands.SetIconFromPath(commandOneId, "icons/uparrow.ico");
 
-	// Add the command to the context menu.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html
-	g_shellFrame.Commands.AddCustomCommandToMenu(g_commandOneId, MenuLocation_ContextMenu_Top, 1);
+		// Add the command to the task area.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		try {
+			shellFrame.TaskPane.AddCustomCommandToGroup(commandOneId, TaskPaneGroup_Main, 1);
+		}
+		catch (e) {
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
 
-	// Register to be notified when a custom command is clicked.
-	// Note: this will fire for ALL custom commands, so we need to filter out others.
-	g_shellFrame.Commands.Events.Register(
-		Event_CustomCommand,
-		function(commandId)
-		{
-			// Branch depending on the Id of the command that was clicked.
-			switch(commandId)
+		// Add the command to the context menu.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html
+		shellFrame.Commands.AddCustomCommandToMenu(commandOneId, MenuLocation_ContextMenu_Top, 1);
+
+		// Register to be notified when a custom command is clicked.
+		// Note: this will fire for ALL custom commands, so we need to filter out others.
+		shellFrame.Commands.Events.Register(
+			Event_CustomCommand,
+			function(commandId)
 			{
-				case g_commandOneId:
-					// Our first command was clicked.
-					handleFirstCommandClicked();
-					break;
-			}
-		});
+				// Branch depending on the Id of the command that was clicked.
+				switch(commandId)
+				{
+					case commandOneId:
+						// Our first command was clicked.
+						shellFrame.ShowMessage("The first command was clicked.")
+						break;
+				}
+			});
 
-}
-function handleFirstCommandClicked()
-{
-	/// <summary>Handles the click of the first command.</summary>
-	
-	// Show a message to show that it was clicked.
-	g_shellFrame.ShowMessage("The first command was clicked.")
+	};
+
 }
 ```
 
@@ -446,20 +441,17 @@ function handleFirstCommandClicked()
 
 ## Showing and hiding buttons
 
-The visibility of commands can be controlled by calling [SetCommandState](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetCommandState.html).  To show this, we will create a second command (line 55) and initially set it to hidden (line 59).  Clicking the first command will show and enable the second command (line 100), and clicking the second command will disable itself (line 107).
+The visibility of commands can be controlled by calling [SetCommandState](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetCommandState.html).  To show this, we will create a second command (line 50) and initially set it to hidden (line 54).  Clicking the first command will show and enable the second command (line 83), and clicking the second command will disable itself (line 89).
 
 <p class="note">Setting a command state to <code class="highlighter-rouge">CommandState_Active</code> will make it both active and visible.</p>
 
 ```javascript
-// The current shell frame.
-var g_shellFrame = null;
+// NOTE! This code is for demonstration purposes only and does not contain any kind of
+// 		 error handling. MUST be revised before using in production.
+//		 Authored by: Craig Hawker / M-Files
 
-// The command Id of the first command.
-var g_commandOneId = null;
+"use strict";
 
-// The command Id of the second command.
-var g_commandTwoId = null;
- 
 function OnNewShellUI( shellUI )
 {
 	/// <summary>Executed by the UIX when a ShellUI module is started.</summary>
@@ -482,82 +474,74 @@ function handleNewShellFrame(shellFrame)
 	// The following line would throw an exception ("The object cannot be accessed, because it is not ready."):
 	// shellFrame.ShowMessage("A shell frame was created");
  
-	// Update global scope variable to point to new shell frame.
-	g_shellFrame = shellFrame;
- 
 	// Register to be notified when the shell frame is started.
-	// This time pass a reference to the function to call when the event is fired.
 	shellFrame.Events.Register(
 		Event_Started,
-		handleShellFrameStarted );
+		getShellFrameStartedHandler(shellFrame));
 }
  
-function handleShellFrameStarted()
+function getShellFrameStartedHandler(shellFrame)
 {
-	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
+	/// <summary>Returns a function which handles the OnStarted event for an IShellFrame.</summary>
  
 	// The shell frame is now started and can be used.
-	// Note: we need to use the global-scope variable.
 
-	// Create a command (button).  Note that it is not yet visible.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
-	g_commandOneId = g_shellFrame.Commands.CreateCustomCommand("My First Command");
+	return function() {
 
-	// Create a command (button).  Note that it is not yet visible.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
-	g_commandTwoId = g_shellFrame.Commands.CreateCustomCommand("My Second Command");
+		// Create a command (button).  Note that it is not yet visible.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
+		var commandOneId = shellFrame.Commands.CreateCustomCommand( "My First Command" );
 
-	// Hide the second command.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetCommandState.html
-	g_shellFrame.Commands.SetCommandState(g_commandTwoId, CommandLocation_All, CommandState_Hidden);
+		// Create a command (button).  Note that it is not yet visible.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html
+		var commandTwoId = shellFrame.Commands.CreateCustomCommand( "My Second Command" );
 
-	// Set the icon for the command.
-	g_shellFrame.Commands.SetIconFromPath(g_commandOneId, "icons/uparrow.ico");
+		// Hide the second command.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetCommandState.html
+		shellFrame.Commands.SetCommandState( commandTwoId, CommandLocation_All, CommandState_Hidden );
 
-	// Add the first and second commands to the task area.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-	g_shellFrame.TaskPane.AddCustomCommandToGroup(g_commandOneId, TaskPaneGroup_Main, 1);
-	g_shellFrame.TaskPane.AddCustomCommandToGroup(g_commandTwoId, TaskPaneGroup_Main, 1);
+		// Set the icon for the command.
+		shellFrame.Commands.SetIconFromPath( commandOneId, "icons/uparrow.ico" );
 
-	// Add the first and second commands to the context menu.
-	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html
-	g_shellFrame.Commands.AddCustomCommandToMenu(g_commandOneId, MenuLocation_ContextMenu_Top, 1);
-	g_shellFrame.Commands.AddCustomCommandToMenu(g_commandTwoId, MenuLocation_ContextMenu_Top, 1);
+		// Add the first and second commands to the task area.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		try {
+			shellFrame.TaskPane.AddCustomCommandToGroup( commandOneId, TaskPaneGroup_Main, 1 );
+			shellFrame.TaskPane.AddCustomCommandToGroup( commandTwoId, TaskPaneGroup_Main, 1 );
+		}
+		catch (e) {
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
 
-	// Register to be notified when a custom command is clicked.
-	// Note: this will fire for ALL custom commands, so we need to filter out others.
-	g_shellFrame.Commands.Events.Register(
-		Event_CustomCommand,
-		function(commandId)
-		{
-			// Branch depending on the Id of the command that was clicked.
-			switch(commandId)
-			{
-				case g_commandOneId:
-					// Our first command was clicked.
-					handleFirstCommandClicked();
-					break;
-				case g_commandTwoId:
-					// Our second command was clicked.
-					handleSecondCommandClicked();
-					break;
-			}
-		});
+		// Add the first and second commands to the context menu.
+		// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html
+		shellFrame.Commands.AddCustomCommandToMenu( commandOneId, MenuLocation_ContextMenu_Top, 1 );
+		shellFrame.Commands.AddCustomCommandToMenu( commandTwoId, MenuLocation_ContextMenu_Top, 1 );
 
-}
-function handleFirstCommandClicked()
-{
-	/// <summary>Handles the click of the first command.</summary>
-	
-	// Show the second command.
-	g_shellFrame.Commands.SetCommandState(g_commandTwoId, CommandLocation_All, CommandState_Active);
-}
-function handleSecondCommandClicked()
-{
-	/// <summary>Handles the click of the first command.</summary>
-	
-	// Disable the second command.
-	g_shellFrame.Commands.SetCommandState(g_commandTwoId, CommandLocation_All, CommandState_Inactive);
+		// Register to be notified when a custom command is clicked.
+		// Note: this will fire for ALL custom commands, so we need to filter out others.
+		shellFrame.Commands.Events.Register(
+			Event_CustomCommand,
+			function(commandId) {
+				// Branch depending on the Id of the command that was clicked.
+				switch (commandId) {
+					case commandOneId:
+						// Our first command was clicked.
+						shellFrame.Commands.SetCommandState(commandTwoId,
+							CommandLocation_All,
+							CommandState_Active);
+						break;
+					case commandTwoId:
+						// Our second command was clicked.
+						shellFrame.Commands.SetCommandState(commandTwoId,
+							CommandLocation_All,
+							CommandState_Inactive);
+						break;
+				}
+			} );
+
+	}
+
 }
 ```
 
