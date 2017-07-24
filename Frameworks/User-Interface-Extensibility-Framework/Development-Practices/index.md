@@ -43,17 +43,6 @@ Additional information on exception handling can be found within the [UI Extensi
 
 Additionally, the Asynchronous API Programming page contains [a section on dealing with exceptions from asynchronous API calls]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-failed-callback).
 
-### Instantiating M-Files API objects
-
-M-Files API objects can be instantiated in the following way:
-
-```javascript
- // Create an instance of ObjVer (https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjVer.html).
-var objVer = new MFiles.ObjVer();
-```
-
-<p class="note">This is useful when calling API methods that define optional parameters, where JavaScript requires a non-null value to be passed.</p>
-
 ### Optional parameters
 
 When calling an API method that defines optional parameters, values for all the optional parameters must be provided.  For example: a call to [GetProperties](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) defines one mandatory and one optional argument, however both must be provided when being called from JavaScript:
@@ -65,3 +54,90 @@ var updateFromServer = false;
 // Get the property values.
 var propertyValues = vault.ObjectPropertyOperations.GetProperties(objVer, updateFromServer);
 ```
+
+<p class="note">An example of using this in API calls is shown <a href="#instantiating-m-files-api-objects">in the following section</a>.</p>
+
+### Instantiating M-Files API objects
+
+M-Files API objects can be instantiated in the following way:
+
+```javascript
+ // Create an instance of ObjVer (https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjVer.html).
+var objVer = new MFiles.ObjVer();
+```
+
+<p class="note">This is useful when calling API methods that define optional parameters, where JavaScript requires a non-null value to be passed.</p>
+
+For example, the following C# could be used to create a new object:
+
+```csharp
+// Create the collection of property values for a new object.
+var propertyValues = new PropertyValues();
+
+// Add the class property.
+{
+	var propertyValue = new PropertyValue()
+	{
+		PropertyDef = (int)MFBuiltInPropertyDef.MFBuiltInPropertyDefClass
+	};
+	propertyValue.TypedValue.SetValue(
+		MFDataType.MFDatatypeLookup,
+		(int)MFBuiltInDocumentClass.MFBuiltInDocumentClassOtherDocument);
+	propertyValues.Add(-1, propertyValue);
+}
+
+// Add the name or title property.
+{
+	var propertyValue = new PropertyValue()
+	{
+		PropertyDef = (int)MFBuiltInPropertyDef.MFBuiltInPropertyDefNameOrTitle
+	};
+	propertyValue.TypedValue.SetValue(
+		MFDataType.MFDatatypeText,
+		"hello world");
+	propertyValues.Add(-1, propertyValue);
+}
+
+// Create the new object.
+vault.ObjectOperations.CreateNewObjectEx(
+	(int) MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
+	propertyValues);
+```
+
+However, within JavaScript the various optional arguments for [CreateNewObjectEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html) must be provided for the call to work.
+
+```javascript
+// Create the collection of property values for a new object.
+var propertyValues = new MFiles.PropertyValues();
+
+// Add the class property.
+{
+	var propertyValue = new MFiles.PropertyValue();
+	propertyValue.PropertyDef = MFBuiltInPropertyDefClass;
+	propertyValue.TypedValue.SetValue(
+		MFDataType.MFDatatypeLookup,
+		MFBuiltInDocumentClassOtherDocument);
+	propertyValues.Add(-1, propertyValue);
+}
+
+// Add the name or title property.
+{
+	var propertyValue = new MFiles.PropertyValue();
+	propertyValue.PropertyDef= MFBuiltInPropertyDefNameOrTitle;
+	propertyValue.TypedValue.SetValue(
+		MFDatatypeText,
+		"hello world");
+	propertyValues.Add(-1, propertyValue);
+}
+
+// Create the new object.
+shellFrame.ShellUI.Vault.ObjectOperations.CreateNewObjectEx(
+	MFBuiltInObjectTypeDocument,
+	propertyValues,
+	new MFiles.SourceObjectFiles(),
+	false, // Zero files, so it isn't a single-file-document.
+	true, // Check it in.
+	new MFiles.AccessControlList() );
+```
+
+<p class="note">Whilst it is generally good practice to use the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming approach</a>, note that this could not be used with <code class="highlighter-rouge">CreateNewObject</code>, <code class="highlighter-rouge">CreateNewObjectEx</code>, or <code class="highlighter-rouge">CreateNewObjectExQuick</code>, as <code class="highlighter-rouge">SourceObjectFiles</code> <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">does not support cloning</a>.</p>
