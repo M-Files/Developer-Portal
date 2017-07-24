@@ -41,7 +41,7 @@ User Interface Extensibility Framework applications are [deployed using the M-Fi
 
 Additional information on exception handling can be found within the [UI Extensibility Framework documentation](https://www.m-files.com/UI_Extensibility_Framework/#ErrorHandling.html).  This includes sections on throwing custom exceptions and interacting with exceptions that are returned from API calls.
 
-Additionally, the Asynchronous API Programming page contains [a section on dealing with exceptions from asynchronous API calls](http://localhost:4000/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-failed-callback).
+Additionally, the Asynchronous API Programming page contains [a section on dealing with exceptions from asynchronous API calls]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-failed-callback).
 
 ### Instantiating M-Files API objects
 
