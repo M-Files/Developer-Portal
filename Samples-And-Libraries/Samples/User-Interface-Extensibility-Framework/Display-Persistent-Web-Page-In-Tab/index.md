@@ -50,11 +50,12 @@ Into this folder we will create an [application definition file]({{ site.baseurl
 Next we will create a [module file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/) to contain our actual application logic.  We will:
 
 * We will declare a [default entry point]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Event-Registration-And-Entry-Points/#shellui-modules) for the ShellUI module.
-* We will react to the ShellUI's `Started` event and create the persistent browser content (lines 38-42-y).
+* We will react to the ShellUI's `Started` event (as using the shell UI before this point will result in an exception).
+* We will [create the persistent browser content (CreatePersistentBrowserContent)](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellUI~CreatePersistentBrowserContent.html) (lines 38-42).
 * We will react to the `NewShellFrame` event and obtain a reference to the shell frame.
 * We will react to the shell frame's `Started` event (as using the shell frame before this point will result in an exception).
-* We will add a tab to the current shell frame's right-hand section, showing the persistent content that was created earlier (lines 69-75).
-* We will set the tab to visible (line 78).
+* We will add a tab to the current shell frame's right-hand section, [showing the persistent content (ShowPersistentContent)](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellPaneTab~ShowPersistentContent.html) that was created earlier (lines 69-75).
+* We will set the tab to [visible](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellPaneTab~Visible.html) (line 78).
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
