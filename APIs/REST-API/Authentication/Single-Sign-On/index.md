@@ -25,7 +25,7 @@ Ensure that `Windows Authentication` is set to `Enabled`:
 ### Configuring M-Files Web Access to allow SSO
 
 By default, M-Files Web Access does not allow Single Sign-On authentication.  Single Sign-On can be enabled alongside standard ("forms-based") authentication using the M-Files Web Access Configuration page.
-To do this, open a web browser and go to http://myserver/Configuration.aspx.  This web page allows a server administrator to configure how M-Files Web Access functions, and to enable or disable functionality such as Single Sign-On.
+To do this, open a web browser and go to `http://myserver/Configuration.aspx`.  This web page allows a server administrator to configure how M-Files Web Access functions, and to enable or disable functionality such as Single Sign-On.
 Select `General` on the left, then enable `Windows SSO`:
 
 ![Enable Windows Single Sign On within MFWA](mfwa-1.png)
@@ -36,7 +36,7 @@ Select `General` on the left, then enable `Windows SSO`:
 
 The basic approach to using Single Sign-On from an application is:
 
-* Make a HTTP request to /WebServiceSSO.aspx, providing the vault Id to connect to.
+* Make a HTTP request to `/WebServiceSSO.aspx`, providing the vault Id to connect to.
 * Ensure that a 200 ("OK") status code was returned, and retrieve the session ID cookie from the HTTP response.
 * Ensure that the session ID cookie is added to all subsequent requests to the M-Files Web Service.
 
