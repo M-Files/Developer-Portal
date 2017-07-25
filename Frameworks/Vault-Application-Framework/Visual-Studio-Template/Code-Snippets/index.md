@@ -47,49 +47,49 @@ The following code snippets exist.  Once the snippets are installed, simply type
 
 #### Properties
 
-* `MFPropertyAutomaticNumber` creates a code snippet for [PropertyAutomaticNumberingAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation).
-* `MFPropertyCustomValue` creates a code snippet for [PropertyCustomValueAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation).
-* `MFPropertyValidation` creates a code snippet for [PropertyValueValidationAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-validation).
+* `MFVAFPropertyAutomaticNumber` creates a code snippet for [PropertyAutomaticNumberingAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation).
+* `MFVAFPropertyCustomValue` creates a code snippet for [PropertyCustomValueAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation).
+* `MFVAFPropertyValidation` creates a code snippet for [PropertyValueValidationAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-validation).
 
 #### Vault Extension Methods
 
-* `MFVaultExtensionMethod` creates a code snippet for [VaultExtensionMethodAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/).
+* `MFVAFVaultExtensionMethod` creates a code snippet for [VaultExtensionMethodAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/).
 
 #### Workflows
 
-* `MFStateAction` creates a code snippet for [StateActionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions).
-* `MFStatePreCondition` creates a code snippet for [StatePreConditionsAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-pre-conditions).
-* `MFStatePostCondition` creates a code snippet for [StatePostConditionsAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-post-conditions).
-* `MFAutomaticStateTransitionTrigger` creates a code snippet for [AutomaticStateTransitionTriggerAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#automatic-state-transitions).
+* `MFVAFStateAction` creates a code snippet for [StateActionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions).
+* `MFVAFStatePreCondition` creates a code snippet for [StatePreConditionsAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-pre-conditions).
+* `MFVAFStatePostCondition` creates a code snippet for [StatePostConditionsAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-post-conditions).
+* `MFVAFAutomaticStateTransitionTrigger` creates a code snippet for [AutomaticStateTransitionTriggerAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#automatic-state-transitions).
 
 #### Event Handlers
 
-* `MFEventHandler` creates a code snippet for [EventHandlerAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/).
+* `MFVAFEventHandler` creates a code snippet for [EventHandlerAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/).
 
 #### Vault Structural Elements (MFIdentifiers)
 
-* `MFClassGroupIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFClassGroupAttribute`.
-* `MFClassIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFClassAttribute`.
-* `MFObjectTypeIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFObjTypeAttribute`.
-* `MFValueListIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFValueListAttribute`.
-* `MFValueListItemIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFValueListItemAttribute`.
-* `MFNamedAccessControlListIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFNamedACL`.
-* `MFUserGroupIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFUserGroupAttribute`.
-* `MFPropertyDefinitionIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFPropertyDefAttribute`.
-* `MFWorkflowIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFWorkflowAttribute`.
-* `MFWorkflowStateIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFStateAttribute`.
-* `MFWorkflowStateTransitionIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFStateTransitionAttribute`.
-* `MFViewIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFViewAttribute`.
+* `MFVAFClassGroupIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFClassGroupAttribute`.
+* `MFVAFClassIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFClassAttribute`.
+* `MFVAFObjectTypeIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFObjTypeAttribute`.
+* `MFVAFValueListIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFValueListAttribute`.
+* `MFVAFValueListItemIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFValueListItemAttribute`.
+* `MFVAFNamedAccessControlListIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFNamedACL`.
+* `MFVAFUserGroupIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFUserGroupAttribute`.
+* `MFVAFPropertyDefinitionIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFPropertyDefAttribute`.
+* `MFVAFWorkflowIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFWorkflowAttribute`.
+* `MFVAFWorkflowStateIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFStateAttribute`.
+* `MFVAFWorkflowStateTransitionIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFStateTransitionAttribute`.
+* `MFVAFViewIdentifier` creates a code snippet for a [MFIdentifier]({{ site.baseurl }}Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) with a `MFVAFViewAttribute`.
 
 #### Configuration
 
-* `MFConfiguration` creates a code snippet for a property with a `MFConfigurationAttribute`.
+* `MFVAFConfiguration` creates a code snippet for a property with a `MFVAFConfigurationAttribute`.
 
 ## Installing the Vault Application Framework Code Snippets
 
 ### Installing using the Visual Studio installer
 
-[An installer for the Vault Application Framework Code Snippets is available on the Visual Studio Gallery](#).  Simply press the `Download` button on the gallery page, run the `.vsix` file, and it will install the Code Snippets into Visual Studio for you.
+[An installer for the Vault Application Framework Code Snippets is available on the Visual Studio Gallery](https://marketplace.visualstudio.com/vsgallery/e85fe8ed-5026-439c-9afd-63b7b4f83767).  Simply press the `Download` button on the gallery page, run the `.vsix` file, and it will install the Code Snippets into Visual Studio for you.
 
 <p class="note">The Vault Application Framework Code Snippets can be uninstalled through <code class="highlighter-rouge">Add/Remove Programs</code>, as with other installed applications.</p>
 
