@@ -42,6 +42,82 @@
 		}
 	}
 
+	function toggleLineNumbers()
+	{
+		$(this).parent("pre").toggleClass("disableLineNumbers");
+	}
+
+	function disableLineNumbers(element)
+	{
+		$(element).parent("pre").addClass("disableLineNumbers");
+	}
+
+	function enableLineNumbers(element)
+	{
+		$(element).parent("pre").removeClass("disableLineNumbers");
+	}
+
+	function hasLineNumbersEnabled(element)
+	{
+		return false == $(element).parent("pre").hasClass("disableLineNumbers");
+	}
+
+	function clearSelection()
+	{
+		if (window.getSelection) window.getSelection().removeAllRanges();
+		else if (document.selection) document.selection.empty();
+	}
+
+	function selectCode(element)
+	{
+		// for Internet Explorer
+		if(document.body.createTextRange)
+		{
+			var range = document.body.createTextRange();
+			range.moveToElementText(element);
+			range.select();
+		}
+		else if(window.getSelection)
+		{
+			// other browsers
+			var selection = window.getSelection();
+			var range = document.createRange();
+			range.selectNodeContents(element);
+			selection.removeAllRanges();
+			selection.addRange(range);
+		}
+	}
+
+	function copyCode()
+	{
+		try
+		{
+			return document.execCommand('copy');
+		}
+		catch (err)
+		{
+			console.log('Unable to copy:');
+			console.log(err);
+			return false;
+		}
+	}
+
+	function selectAndCopyCode()
+	{
+		var lnEnabled = hasLineNumbersEnabled(this);
+		if(lnEnabled)
+		{
+			disableLineNumbers(this);
+		}
+		selectCode($("code.hljs", $(this).parent("pre")).get(0));
+		copyCode();
+		if(lnEnabled)
+		{
+			enableLineNumbers(this);
+		}
+		clearSelection();
+	}
+
 	function documentReady () {
 		try {
 			var blocks = document.querySelectorAll('code.hljs');
@@ -54,6 +130,22 @@
 		} catch (e) {
 			console.error('LineNumbers error: ', e);
 		}
+
+		var $toggleLineNumbersElement = $("<div></div>")
+			.addClass("toggleLineNumbers")
+			.html("<i class='btn zmdi zmdi-hc-fw zmdi-format-list-numbered'></i>")
+			.attr("title", "Toggle line numbers")
+			.click(toggleLineNumbers);
+		var $copyCodeElement = $("<div></div>")
+			.addClass("copyCode")
+			.html("<i class='btn zmdi zmdi-hc-fw zmdi-copy'></i>")
+			.attr("title", "Copy to clipboard")
+			.click(selectAndCopyCode);
+		
+		var $preElements = $("pre:has(>code.hljs)")
+			.prepend($toggleLineNumbersElement.clone(true))
+			.prepend($copyCodeElement.clone(true));
+
 	}
 
 	function lineNumbersBlock (element) {

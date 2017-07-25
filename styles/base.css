@@ -19,10 +19,6 @@ h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
 }
 
 h5 {
@@ -35,32 +31,6 @@ h5 {
 h5 + p {
     margin-top: 0;
     padding-top: 0;
-}
-
-pre {
-    position: relative;
-}
-
-pre>code.hljs {
-    box-shadow: 0 0 5px 2px #CCC;
-    padding-top: 1em;
-    margin-top: 1.5em;
-}
-
-code::before {
-    font-size: 0.8em;
-    float: left;
-    position: absolute;
-    top: -1.5em;
-    right: 0px;
-}
-
-code.vbs::before {
-    content: 'VBScript';
-}
-
-code.cs::before {
-    content: 'C# (.NET)';
 }
 
 body>* {
@@ -148,6 +118,12 @@ p.note.warning, p.note.stub {
     background-color: #FFB84D;
     border: 1px solid #ff9900;
 }
+
+/* make the links in warnings a little darker, just to make them contrast better */
+article.page .note.warning a {
+    color: rgba(0, 50, 199, 1);
+}
+
 
 p.note.stub {
     font-style: italic;

@@ -1,3 +1,13 @@
+* > a.public-anchor
+{
+	display: none;
+	margin-left: 5px;
+}
+*:hover > a.public-anchor
+{
+	display: inline-block;
+}
+
 #in-page-nav, #in-page-nav ul, #in-page-nav li
 {
     margin: 0px;
@@ -21,8 +31,9 @@
 {
     overflow: auto;
     position: absolute;
-    top: 60px;
-    bottom: 0px;
+    top: 10px;
+	bottom: 0px;
+	width:100%;
 }
 #in-page-nav li
 {
@@ -33,6 +44,9 @@
 #in-page-nav a{
     text-decoration: none;
     color: #555;
+}
+#in-page-nav li.h1{
+    display: none;
 }
 #in-page-nav li.h2{
     margin-left: 20px;
@@ -50,15 +64,27 @@
     color: #e7781e;
 }
 
+.has-in-page-nav article h1,
+	.has-in-page-nav article h2,
+	.has-in-page-nav article h3,
+	.has-in-page-nav article h4e
+{
+	border-left: 5px solid transparent;
+	border-bottom: 1px solid #EEE;
+	overflow: hidden;
+    padding-left: 5px;
+	margin-left: 5px;
+	padding-bottom: 5px;
+	position: relative;
+	left: -15px;
+}
+
 .has-in-page-nav article h1.in-page-nav-active,
 	.has-in-page-nav article h2.in-page-nav-active,
 	.has-in-page-nav article h3.in-page-nav-active,
 	.has-in-page-nav article h4.in-page-nav-active
 {
-    border-left: 5px solid #e7781e;
-	overflow: hidden;
-    padding-left: 15px;
-    margin-left: 5px;
+    border-color: #e7781e;
 }
 
 #in-page-nav .expand-collapse

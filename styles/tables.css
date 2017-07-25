@@ -1,0 +1,21 @@
+article > table {
+    border: 3px solid #CCC;
+    border-collapse: collapse;
+}
+article > table td,
+	article > table th {
+    padding: 5px;
+    vertical-align: top;
+	margin: 0px;
+}
+article > table tbody tr:hover
+{
+	background-color: #eee;
+}
+article > table thead tr {
+    background-color: #eee;
+	border-bottom: 3px solid #CCC;
+}
+article > table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}

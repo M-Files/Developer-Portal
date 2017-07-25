@@ -107,3 +107,10 @@ if(hasAlreadyVoted)
 {
 	$("body").addClass("has-voted");
 }
+
+// Was GA blocked?  If so then hide the voting.
+if(!(window.ga && ga.create))
+{
+	console.log("Page rating disabled (cannot log to GA)");
+	$(".rating").css({ visibility: "hidden"});
+}

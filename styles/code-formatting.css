@@ -1,0 +1,128 @@
+
+
+pre {
+    position: relative;
+	border: 3px solid #CCC;
+}
+
+pre>code.hljs,
+	pre>code.language-txt,
+	pre>code.language-reg {
+	padding: 0.5em;
+	color: black;
+	background: white;
+    border-top: 32px solid #EEE;
+	display: block;
+	overflow-x: scroll;
+}
+
+code::before {
+    font-size: 0.8em;
+    float: left;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+code.language-reg::before {
+    content: '.reg';
+}
+
+.language-vbscript code.hljs::before,
+	 code.hljs.language-vbscript::before {
+    content: 'VBScript';
+}
+
+.language-csharp code.hljs::before,
+	 code.hljs.language-cs::before {
+    content: 'C# (.NET)';
+}
+
+.language-xml code.hljs::before,
+	code.hljs.language-xml::before {
+    content: 'XML';
+}
+
+.language-javascript code.hljs::before,
+	code.hljs.language-javascript::before {
+    content: 'JavaScript';
+}
+
+.language-html code.hljs::before,
+	code.hljs.language-html::before {
+    content: 'HTML';
+}
+
+.disableLineNumbers .hljs-ln-numbers
+{
+	display: none;
+}
+
+.toggleLineNumbers,
+	.copyCode
+{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+	left: 8px;
+	font-size: 1.5em;
+	color: #333;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	max-height: 25px;
+}
+
+.copyCode
+{
+	left: 40px;
+}
+
+.highlight .btn
+{
+	position: relative;
+	top: -3px;
+	left: -4px;
+	padding: 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	width: 26px;
+	height: 22px;
+}
+
+.highlight .btn:hover,
+	.toggleLineNumbers .btn
+{
+	background-color: #DDD;
+}
+.disableLineNumbers .toggleLineNumbers .btn
+{
+	background-color: transparent;
+}
+
+code.hljs
+{
+	padding-top: 2em;
+}
+
+.toggleLineNumbers i.btn::before {
+    top: 1px;
+}
+.copyCode i.btn::before {
+    font-size: 0.8em;
+    top: 0px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm)
+{ 
+	/* Chrome displays the icons slightly differently and it needs moving */
+	.copyCode i.btn::before {
+		position: relative;
+		top: -2px;
+	}
+}
