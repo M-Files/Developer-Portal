@@ -91,7 +91,7 @@ The following code snippets exist.  Once the snippets are installed, simply type
 
 [An installer for the Vault Application Framework Code Snippets is available on the Visual Studio Gallery](https://marketplace.visualstudio.com/vsgallery/e85fe8ed-5026-439c-9afd-63b7b4f83767).  Simply press the `Download` button on the gallery page, run the `.vsix` file, and it will install the Code Snippets into Visual Studio for you.
 
-<p class="note">The Vault Application Framework Code Snippets can be uninstalled through <code class="highlighter-rouge">Add/Remove Programs</code>, as with other installed applications.</p>
+<p class="note">The Vault Application Framework Code Snippets can be uninstalled by opening Visual Studio, clicking <code class="highlighter-rouge">Tools</code>, then <code class="highlighter-rouge">Extensions and Updates...</code>, as with other installed extensions.</p>
 
 ### Downloading the raw snippet files
 
