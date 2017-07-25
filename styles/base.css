@@ -19,10 +19,6 @@ h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
 }
 
 h5 {

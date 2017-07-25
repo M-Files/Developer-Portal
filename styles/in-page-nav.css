@@ -31,8 +31,9 @@
 {
     overflow: auto;
     position: absolute;
-    top: 60px;
-    bottom: 0px;
+    top: 10px;
+	bottom: 0px;
+	width:100%;
 }
 #in-page-nav li
 {
