@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello, world - A sample using the User Interface Extensibility Framework
+title: Hello, world
 includeInSearch: true
 breadcrumb: Hello, world
 ---

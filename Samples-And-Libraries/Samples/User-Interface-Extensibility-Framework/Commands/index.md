@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Using Commands - A sample using the User Interface Extensibility Framework
+title: Using Commands
 includeInSearch: true
 breadcrumb: Commands
 ---
