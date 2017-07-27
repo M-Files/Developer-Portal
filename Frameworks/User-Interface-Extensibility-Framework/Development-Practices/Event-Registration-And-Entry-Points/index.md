@@ -68,7 +68,6 @@ Sometimes these nested registrations can lead to code lines getting excessively 
 
 ```javascript
 // Execute some code when the shell frame is created and available.
-var g_shellFrame = null;
 
 function OnNewShellUI( shellUI )
 {
@@ -92,23 +91,22 @@ function handleNewShellFrame(shellFrame)
 	// The following line would throw an exception ("The object cannot be accessed, because it is not ready."):
 	// shellFrame.ShowMessage("A shell frame was created");
 
-	// Update global scope variable to point to new shell frame.
-	g_shellFrame = shellFrame;
-
 	// Register to be notified when the shell frame is started.
 	// This time pass a reference to the function to call when the event is fired.
 	shellFrame.Events.Register(
 		Event_Started,
-		handleShellFrameStarted );
+		getShellFrameStartedHandler(shellFrame) );
 }
 
-function handleShellFrameStarted()
+function getShellFrameStartedHandler(shellFrame)
 {
-	/// <summary>Handles the OnStarted event for an IShellFrame.</summary>
+	/// <summary>Returns a function that handles the OnStarted event for an IShellFrame.</summary>
 
-	// The shell frame is now started and can be used.
-	// Note: we need to use the global-scope variable.
-	g_shellFrame.ShowMessage("A shell frame is available for use.");
+	return function()
+	{
+		// The shell frame is now started and can be used.
+		shellFrame.ShowMessage("A shell frame is available for use.");
+	}
 }
 ```
 
