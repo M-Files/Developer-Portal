@@ -18,6 +18,10 @@ The COM API is our most comprehensive API and can be used to create almost any s
 
 <p class="note">More information on the <a href="REST-API">REST API samples</a> is available in the dedicated page.</p>
 
+## User Interface Extensibility Framework
+
+<p class="note">More information on the <a href="User-Interface-Extensibility-Framework">User Interface Extensibility Framework (UIX) samples</a> is available in the dedicated page.</p>
+
 ## Vault Application Framework
 
 <p class="note">More information on the <a href="Vault-Application-Framework">Vault Application Framework (VAF) samples</a> is available in the dedicated page.</p>
