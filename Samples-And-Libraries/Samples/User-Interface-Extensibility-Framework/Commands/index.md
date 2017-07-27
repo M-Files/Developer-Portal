@@ -545,4 +545,6 @@ function getShellFrameStartedHandler(shellFrame)
 }
 ```
 
+## Testing the application
+
 ![Altering visibility and active state of commands](two-commands.png)

@@ -114,3 +114,9 @@ Unlike User Extensibility Framework applications running on the M-Files Desktop 
 * [Asynchronous method calls]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/) are required (they are optional when targeting M-Files Desktop).
 * Only a [subset of User Interface Extensibility Framework components is supported in M-Files Web](https://www.m-files.com/UI_Extensibility_Framework/index.html#UIExtSupportInMFilesWeb.html).  If a required UIX component is not available in M-Files Web then your application cannot run on the web.
 * Only a [subset of the M-Files API is supported in M-Files Web](https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html).  If a required M-Files API component is not available in M-Files Web then your application may not be able to run.  Note, though, that [Vault Extension Methods]({{ site.baseurl }}/Built-In/VBScript/Vault-Extension-Methods/) can be executed, so some code may be able to be executed server-side and the results returned to the UIX application for display/processing.
+
+## Checking the current platform
+
+The current platform can be checked programmatically by inspecing `MFiles.CurrentApplicationPlatform`.
+
+On M-Files Web Access, `MFiles.CurrentApplicationPlatform` returns `2`.  On M-Files Desktop, `MFiles.CurrentApplicationPlatform` returns `undefined`.

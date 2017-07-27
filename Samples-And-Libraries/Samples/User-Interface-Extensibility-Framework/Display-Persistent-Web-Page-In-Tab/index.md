@@ -140,4 +140,11 @@ function getShellFrameStartedHandler(shellFrame)
 }
 ```
 
+## Testing the application
+
+Opening the vault shows a new tab next to home, named `Intranet`.  Selecting the tab shows the web page that was specified.
+
+![Intranet tab selected](intranet-tab-selected.png)
+
 <p class="note">Note that any navigation within the persistent browser window will be kept when navigating within views in M-Files.</p>
+

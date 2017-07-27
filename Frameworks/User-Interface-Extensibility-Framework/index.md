@@ -31,11 +31,7 @@ The User Interface Extensibility Framework is used to develop additional client-
 
 ## Samples and tutorials
 
-* [Hello, World (ShellUI)]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/HelloWorld/) - creates a basic UIX ShellUI application - consisting of an application definition file (`appdef.xml`) and a single module (`main.js`) - that displays a message when the shell frame object becomes available for use.
-* [Commands (ShellUI)]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/Commands/) - creates a number of commands within the M-Files user interface, dealing with more advanced concepts such as:
-	* Creating commands with icons.
-	* Adding commands to the task area, the context menu, or both.
-	* Showing and hiding commands.
+Various samples are available within our [Samples and Libraries User Interface Extensibility Framework section]({{ site.baseurl }}/Samples-And-Libraries/User-Interface-Extensibility-Framework/).
 
 ## Application structure
 
