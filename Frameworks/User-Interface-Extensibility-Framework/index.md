@@ -31,7 +31,7 @@ The User Interface Extensibility Framework is used to develop additional client-
 
 ## Samples and tutorials
 
-Various samples are available within our [Samples and Libraries User Interface Extensibility Framework section]({{ site.baseurl }}/Samples-And-Libraries/User-Interface-Extensibility-Framework/).
+Various samples are available within our [Samples and Libraries User Interface Extensibility Framework section]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/).
 
 ## Application structure
 
