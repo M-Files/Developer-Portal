@@ -36,7 +36,7 @@ Our community forum is open to all users of M-Files.  Any questions can be asked
 
 <script type="text/javascript" defer>
 /* currently GA breaks the link to the UIX site */
-$('a[href*="?_ga="]').length.each(function()
+$('a[href*="?_ga="]').each(function()
 {
 	this.href = this.href.split("?_ga=")[0];
 });
