@@ -33,21 +33,3 @@ Our community forum is open to all users of M-Files.  Any questions can be asked
 ## Partner-specific Resources
 
 * [The M-Files Partner Portal](https://partners.cloudvault.m-files.com/)
-
-<script type="text/javascript" defer>
-/* currently GA breaks the link to the UIX site */
-function fixLinks()
-{
-	if(typeof(window._gat) == "undefined" && typeof(ga) == "undefined" )
-	{
-		window.setTimeout(fixLinks, 500);
-		return;
-	}
-	var $links = $('a[href*="?_ga="]');
-	$links.each(function()
-	{
-		this.href = this.href.split("?_ga=")[0];
-	});
-}
-window.setTimeout(fixLinks, 500);
-</script>
