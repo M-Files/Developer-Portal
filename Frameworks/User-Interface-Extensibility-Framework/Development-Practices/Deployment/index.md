@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Getting Started with the User Interface Extensibility Framework
-breadcrumb: Getting Started
+title: Deploying User Interface Extensibility Framework Applications
+breadcrumb: Deployment
 includeInSearch: true
 ---
 
