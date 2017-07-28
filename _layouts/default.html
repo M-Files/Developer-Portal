@@ -13,13 +13,12 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,700" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" /> {% feed_meta %}
+	<noscript id="deferred-styles">
+    	<link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
+	</noscript>
 
 	<link rel="stylesheet" href="{{ site.baseurl }}/styles/site.css?{{ site.github.build_revision }}" />
 	
@@ -51,21 +50,36 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
     <script src="{{ site.baseurl }}/scripts/highlightjs-line-numbers.js?{{ site.github.build_revision }}"></script>
+    <script src="{{ site.baseurl }}/scripts/sidebar.js?{{ site.github.build_revision }}"></script>
+    <script src="{{ site.baseurl }}/scripts/treeview.js?{{ site.github.build_revision }}"></script>
+    <script src="{{ site.baseurl }}/scripts/in-page-nav.js?{{ site.github.build_revision }}"></script>
+    <script src="{{ site.baseurl }}/scripts/external-links.js?{{ site.github.build_revision }}"></script>
+	<script src="{{ site.baseurl }}/scripts/page-rating.js?{{ site.github.build_revision }}"></script>
+
+	<script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
     <script>
         hljs.configure({languages: ["cs", "xml", "vbscript", "javascript"]});
         hljs.initHighlightingOnLoad();
 		hljs.initLineNumbersOnLoad();
     </script>
 
-    <script src="{{ site.baseurl }}/scripts/sidebar.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/treeview.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/in-page-nav.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/external-links.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/page-rating.js?{{ site.github.build_revision }}"></script>
 
     {% include analytics.html %}
 	{% if site.disqus %}
-    <script id="dsq-count-scr" src="//mfilesdeveloperportal.disqus.com/count.js" async></script>
+    <!-- <script id="dsq-count-scr" src="//mfilesdeveloperportal.disqus.com/count.js" async></script> -->
     {% endif %}
 
     <div id="preview">
