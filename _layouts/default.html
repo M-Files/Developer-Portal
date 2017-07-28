@@ -21,30 +21,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" /> {% feed_meta %}
 
-    <style>
-        @import url("{{ site.baseurl }}/styles/base.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/buttons.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/header.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/footer.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/breadcrumb.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/sidebar.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/in-page-nav.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/external-links.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/search.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/quicklinks.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/tables.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/code-formatting.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/page-rating.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/min-width-500px/base.css?{{ site.github.build_revision }}") screen and (min-width: 500px);
-        @import url("{{ site.baseurl }}/styles/min-width-1000px/base.css?{{ site.github.build_revision }}") screen and (min-width: 1000px);
-        @import url("{{ site.baseurl }}/styles/min-width-1500px/base.css?{{ site.github.build_revision }}") screen and (min-width: 1500px);
-        @import url("{{ site.baseurl }}/styles/highlightjs-custom.css?{{ site.github.build_revision }}");
-        @import url("{{ site.baseurl }}/styles/samples.css?{{ site.github.build_revision }}");
-    </style>
+	<link rel="stylesheet" href="{{ site.baseurl }}/styles/site.css" />
+	
+	{% feed_meta %}
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -67,6 +48,7 @@
         <p>&copy; M-Files. <a href="mailto:devsupport@m-files.com">Contact the Developer Evangelist team at M-Files.</a></p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
     <script src="{{ site.baseurl }}/scripts/highlightjs-line-numbers.js?{{ site.github.build_revision }}"></script>
     <script>
