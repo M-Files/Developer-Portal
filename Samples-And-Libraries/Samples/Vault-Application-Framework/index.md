@@ -9,10 +9,14 @@ breadcrumb: VAF
 
 M-Files has published a number of public samples within our [MFilesSamplesAndLibraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples#readme), which focus on achieving specific tasks using our public APIs or Frameworks.
 
-## [Event Tracing](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/EventTracing#readme)
+## Introductory
 
-A [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) application that automatically hooks into various Vault Application Framework lifecycle events and vault events and logs when they occur into the Windows Event Log.  Can be used to identify which vault events occur in various situations.
+The [Visual Studio Template page]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/) contains a walkthrough of creating your first VAF application.
 
-## [Chain Workflows](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/ChainWorkflows#readme)
+## Sample applications
 
-An example (available as both a [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) application, and a [VBScript]({{ site.baseurl }}/Built-In/VBScript/) implementation) that shows how to move an object from one workflow to another once it reaches a specific state in a workflow.
+ Title | Source | Details
+--- | --- | ---
+Event Tracing | [GitHub](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/EventTracing#readme) | Hooks into various Vault Application Framework lifecycle events and vault events and logs when they occur into the Windows Event Log.  Can be used to identify which vault events occur in various situations.
+[Chain Workflows]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Chaining-Workflows/) | [GitHub](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/ChainWorkflows#readme) | An example (available as both a [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) application, and a [VBScript]({{ site.baseurl }}/Built-In/VBScript/) implementation) that shows how to move an object from one workflow to another once it reaches a specific state in a workflow.
+{:.samples .vaf}
