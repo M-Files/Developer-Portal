@@ -11,7 +11,7 @@ This sample shows how to move an object from one workflow to another once it rea
 
 In our sample, we will create two workflows, imaginatively called `Workflow 1` and `Workflow 2`.  An object will start in Workflow 1 then, when a state is reached, it will be automatically placed into the start of `Workflow 2`.
 
-The sample includes two versions of the code: one written using VBScript, and one written using the Vault Application Framework.  Full source code for the Vault Application Framework application is available on our code library site, along with a vault backup (created in M-Files 2015.3) which can be used to run the code against your own server.
+[The sample includes two versions of the code](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/ChainWorkflows): one written using VBScript, and one written using the Vault Application Framework.  [Full source code for this solution is available on our code library site](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/ChainWorkflows), along with a vault backup (created in M-Files 2015.3) which can be used to run the code against your own server.
 
 ### Workflow 1
 

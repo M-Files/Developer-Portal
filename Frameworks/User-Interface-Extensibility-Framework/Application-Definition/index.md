@@ -59,7 +59,7 @@ The V3 schema is supported in M-Files 11.2.4320.49 and higher, and adds addition
  `required-mfiles-version` | Optional (_Recommended_) | The version number of the minimum version of M-Files Desktop required to run the application.
  `optional` | Optional | If false, the application is *mandatory*.  If the user chooses not to install the application then they cannot log into the vault.
  `enabled-by-default` | Optional |
- `master-application-guid` | Optional | 
+ `master-application-guid` | Optional | Used to declare another application ([VAF]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) or [UIX]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/)) as the [parent of this application](Master-Application-Guid).
  `platforms` | Required | [Which platforms the application is designed to run on.  Currently supports Desktop and Web]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/).
  `modules` | Required (at least one) | A list of the modules that contain this application's logic.  More information on [declaring modules can be found below](#declaring-modules).
 `dashboards` | Optional | A list of dashboards registered within the application.  The dashboard `id` is used to refer to the dashboard within code (e.g. to show it).  More information on [declaring dashboards can be found below](#declaring-dashboards).
