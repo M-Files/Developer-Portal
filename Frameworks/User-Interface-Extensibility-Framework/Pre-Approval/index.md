@@ -100,4 +100,4 @@ Provided this key is installed into the client machine before they initially con
 
 ## Generating registry keys automatically
 
-A sample application that uses the M-Files COM API to generate `.reg` files containing the required registry keys [can be downloaded from our GitHub Samples and Libraries page](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/GenerateApplicationPreApprovalKey.App).  Information on how to download the sample and compile it can be found on the [GitHub repository readme page](https://github.com/M-Files/MFilesSamplesAndLibraries/#readme).
+A sample application that uses the M-Files COM API to generate `.reg` files containing the required registry keys [can be downloaded from our GitHub Samples and Libraries page](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/GenerateApplicationPreApprovalKey).  Information on how to download the sample and compile it can be found on the [GitHub repository readme page](https://github.com/M-Files/MFilesSamplesAndLibraries/#readme).
