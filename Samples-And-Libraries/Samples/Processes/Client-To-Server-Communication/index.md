@@ -9,7 +9,7 @@ This sample shows how to call server-side code from a client-side event.  In thi
 
 This technique can be used to execute code on the server rather than the client, which may be useful for reasons such as speed or security.
 
-Full source code for this sample is available [in out GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/ClientToServerCode).
+Full source code for this sample is available [in our GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/ClientToServerCode).
 
 ## Overview
 
@@ -242,7 +242,7 @@ In this sample, the User Interface Extensibility Framework application will be c
 
 ### Using PowerShell to build the UIX
 
-In this approach we will use PowerShell to create a `.mfappx` of the User Interface Extensibility Framework application before the Vault Application Framework application is built.  To do this, create a pre-build event in the Visual Studio Project:
+In this approach we will use PowerShell to create a `.mfappx` of the User Interface Extensibility Framework application before the Vault Application Framework application is built.  The build process of the Vault Application Framework application will then ensure that the client application is .  To do this, create a pre-build event in the Visual Studio Project:
 
 1. Right-click on the VAF project name in Visual Studio.
 2. Select `Properties`.
@@ -267,7 +267,7 @@ This requests for PowerShell to execute two commands:
 
 When the Vault Application Framework application is built within Visual Studio, it should automatically deploy to the local machine.  If you do not have M-Files running locally then [manually deploy the application to the server]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/#building-and-deploying).
 
-The two application should be shown as installed within the M-Files Admin tool:
+The two applications should be shown as installed within the M-Files Admin tool:
 
 ![A child application displayed under its parent in the M-Files Admin tool]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Distributing-Child-Applications/parent-child-applications.png)
 
