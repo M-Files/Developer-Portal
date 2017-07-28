@@ -1,0 +1,63 @@
+#in-page-nav
+{
+    display: block;
+}
+#hamburger
+{
+	display: none;
+}
+body > *
+{
+	margin-right: 30px;
+	margin-left: 480px;
+}
+
+body > aside#sidebar
+{
+	top: 0px;
+	left: 0px;
+	padding-top: 80px;
+	box-shadow: none;
+    background-position: center 10px;
+    background-image: url("../../images/M-Files-Logo-White.png");
+    background-size: 200px;
+	background-repeat: no-repeat;
+}
+@media  screen and (min-width: 1000px)
+{
+	
+	/* show the in-page title rather than the big blue one */
+	header,
+		.has-in-page-nav header h1
+	{
+		display: none;
+	}
+	body > article.page > h1
+	{
+		display: block;
+	}
+
+	@media all and (max-width: 1499px)
+	{
+		#in-page-nav
+		{
+			left: 430px;
+		}
+		.has-in-page-nav article.page,
+		.has-in-page-nav footer
+		{
+			margin-left: 450px;
+			padding-left: 20px;
+		}
+
+		#sidebar
+		{
+			-webkit-transition: all 100ms ease-in-out;
+			-moz-transition: all 100ms ease-in-out;
+			-o-transition: all 100ms ease-in-out;
+			transition: all 100ms ease-in-out;
+		}
+
+	}
+
+}
