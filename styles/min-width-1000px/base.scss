@@ -25,6 +25,10 @@ body > aside#sidebar
 }
 @media  screen and (min-width: 1000px)
 {
+    #in-page-nav
+    {
+		left: 430px;
+	}
 	
 	/* show the in-page title rather than the big blue one */
 	header,
