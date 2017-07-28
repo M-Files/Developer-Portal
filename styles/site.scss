@@ -14,8 +14,17 @@
 @import "tables";
 @import "code-formatting";
 @import "page-rating";
-@import "min-width-500px/base";
-@import "min-width-1000px/base";
-@import "min-width-1500px/base";
 @import "highlightjs-custom";
 @import "samples.scss";
+@media screen and (min-width: 500px)
+{
+	@import "min-width-500px/base";
+}
+@media screen and (min-width: 1000px)
+{
+	@import "min-width-1000px/base";
+}
+@media screen and (min-width: 1500px)
+{
+	@import "min-width-1500px/base";
+}
