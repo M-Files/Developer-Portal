@@ -9,9 +9,7 @@ This sample shows how to call server-side code from a client-side event.  In thi
 
 This technique can be used to execute code on the server rather than the client, which may be useful for reasons such as speed or security.
 
-Full source code for this sample is available [in our GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/ClientToServerCode).
-
-## Overview
+<p class="note">Full source code for this sample is available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/ClientToServerCode">in our GitHub Samples and Libraries repository</a>.</p>
 
 ## Creating the VBScript vault extension method
 

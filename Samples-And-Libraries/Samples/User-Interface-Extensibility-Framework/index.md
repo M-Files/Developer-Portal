@@ -9,6 +9,8 @@ breadcrumb: UIX
 
 M-Files has published a number of public samples within our [MFilesSamplesAndLibraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples#readme), which focus on achieving specific tasks using our public APIs or Frameworks.
 
+<p class="note">The <a href="{{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Client-To-Server-Communication/">Client-To-Server Communication sample</a> may also be of interest.</p>
+
 ## Introductory
 
  Title | Source | Details
