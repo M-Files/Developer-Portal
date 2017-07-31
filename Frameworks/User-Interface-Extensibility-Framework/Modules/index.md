@@ -39,3 +39,7 @@ These modules contain the application code.  There are three types of module: `V
   * Can add custom commands (e.g. buttons in the task area, or context-menu items).
   * Can launch dashboards, either as popups, inside the integrated windows (e.g. to replace the shell listing, the preview panes), or as separate tabs on the right-hand section.
   * Can send synchronous messages to `VaultUI` and `VaultCore` modules.
+
+## Module entry points
+
+Each module must have a specifically-named function declared within it, which acts as the module entry point.  More information on module entry points and event registration is [found on the dedicated page]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Event-Registration-And-Entry-Points/).
