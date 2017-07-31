@@ -59,7 +59,8 @@ Next we will create a [module file]({{ site.baseurl }}/Frameworks/User-Interface
 
 "use strict";
 
-function OnNewShellUI(shellUI) {
+function OnNewShellUI(shellUI)
+{
 	/// <summary>The entry point of ShellUI module.</summary>
 	/// <param name="shellUI" type="MFiles.ShellUI">The new shell UI object.</param> 
 
@@ -80,7 +81,8 @@ function newShellFrameHandler(shellFrame)
 		getShellFrameStartedHandler( shellFrame ) );
 }
 
-function getShellFrameStartedHandler(shellFrame) {
+function getShellFrameStartedHandler(shellFrame)
+{
 	/// <summary>Gets a function to handle the Started event for shell frame.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The current shell frame object.</param> 
 	/// <returns type="MFiles.Events.OnStarted">The event handler.</returns>
@@ -91,9 +93,16 @@ function getShellFrameStartedHandler(shellFrame) {
 		// Create a command for "assign to me".
 		var assignCommandId = shellFrame.Commands.CreateCustomCommand( "Assign to me" );
 
-		// Add the command to the task pane.
-		// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-		shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+		try
+		{
+			// Add the command to the task pane.
+			// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+			shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+		}
+		catch (e)
+		{
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
 
 		// Hide the command.  We will show it when the selected items change.
 		shellFrame.Commands.SetCommandState( assignCommandId, CommandLocation_All, CommandState_Hidden );
@@ -125,10 +134,10 @@ Each shell frame may have multiple shell listings.  For example: the default M-F
 
 We will:
 
-* Declare a global variable to hold the currently-selected items (`currentlySelectedItems`) (line 8).
-* React to the shell frame's `NewShellListing` event to attach event handlers to each shell listing (lines 50-52).
-* Alter the visibility of the command depending on whether or not any objects are currently selected (lines 103 and 108).
-* React to each shell listing's `SelectionChanged` event, saving the currently-selected items in the active listing (line 111).
+* Declare a global variable to hold the currently-selected items (`currentlySelectedItems`) (line 9).
+* React to the shell frame's `NewShellListing` event to attach event handlers to each shell listing (lines 59-61).
+* Alter the visibility of the command depending on whether or not any objects are currently selected (lines 114 and 119).
+* React to each shell listing's `SelectionChanged` event, saving the currently-selected items in the active listing (line 122).
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
@@ -140,7 +149,8 @@ We will:
 // The currently-selected items in the active listing.
 var currentlySelectedItems = null;
 
-function OnNewShellUI(shellUI) {
+function OnNewShellUI(shellUI)
+{
 	/// <summary>The entry point of ShellUI module.</summary>
 	/// <param name="shellUI" type="MFiles.ShellUI">The new shell UI object.</param> 
 
@@ -161,7 +171,8 @@ function newShellFrameHandler(shellFrame)
 		getShellFrameStartedHandler( shellFrame ) );
 }
 
-function getShellFrameStartedHandler(shellFrame) {
+function getShellFrameStartedHandler(shellFrame)
+{
 	/// <summary>Gets a function to handle the Started event for shell frame.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The current shell frame object.</param> 
 	/// <returns type="MFiles.Events.OnStarted">The event handler.</returns>
@@ -172,9 +183,16 @@ function getShellFrameStartedHandler(shellFrame) {
 		// Create a command for "assign to me".
 		var assignCommandId = shellFrame.Commands.CreateCustomCommand( "Assign to me" );
 
-		// Add the command to the task pane.
-		// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-		shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+		try
+		{
+			// Add the command to the task pane.
+			// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+			shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+		}
+		catch (e)
+		{
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
 
 		// Hide the command.  We will show it when the selected items change.
 		shellFrame.Commands.SetCommandState( assignCommandId, CommandLocation_All, CommandState_Hidden );
@@ -207,13 +225,15 @@ function getShellFrameStartedHandler(shellFrame) {
 	};
 }
 
-function getNewShellListingHandler(shellFrame, assignCommandId) {
+function getNewShellListingHandler(shellFrame, assignCommandId)
+{
 	/// <summary>Gets a function to handle the NewShellListing event for shell frame.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The current shell frame object.</param> 
 	/// <returns type="MFiles.Events.OnNewShellListing">The event handler.</returns>
 
 	// Return the handler function for NewShellListing event.
-	return function (shellListing) {
+	return function (shellListing)
+	{
 
 		// Listen for selection change events on the listing.
 		shellListing.Events.Register(
@@ -256,13 +276,13 @@ We will:
 
 * Create a function that creates the assignment object (`createAssigmentObject`, lines 120-135).  Specifically, it will:
 	* Create property values for the built-in properties used by the `Assignment` object type:
-		* Class (ID 100, line2 130-133).
-		* Name or title (ID 0, lines 136-139).
-		* Single file document (ID 22, lines 142-145).
-		* Assigned to (ID 44, lines 148-155).
-	* Create properties to establish relationships between the assignment object and the currently-selected items (lines 158-127).
-	* Create the object (lines 220-229) and check it in (line 232).
-* Call the function when the command is clicked (line 73).
+		* Class (ID 100, lines 146-150).
+		* Name or title (ID 0, lines 152-156).
+		* Single file document (ID 22, lines 158-162).
+		* Assigned to (ID 44, lines 164-172).
+	* Create properties to establish relationships between the assignment object and the currently-selected items (lines 177-234).
+	* Create the object (lines 236-246) and check it in (line 249).
+* Call the function when the command is clicked (line 88).
 
 <p class="note">The code below uses the API in the standard synchronous manner.  The next section - <a href="{{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/#enabling-compatibility-with-m-files-web-access">enabling compatibility with M-Files Web</a> - will alter it to use an asynchronous approach.</p>
 
@@ -278,7 +298,8 @@ We will:
 // The currently-selected items in the active listing.
 var currentlySelectedItems = null;
 
-function OnNewShellUI(shellUI) {
+function OnNewShellUI(shellUI)
+{
 	/// <summary>The entry point of ShellUI module.</summary>
 	/// <param name="shellUI" type="MFiles.ShellUI">The new shell UI object.</param> 
 
@@ -299,7 +320,8 @@ function newShellFrameHandler(shellFrame)
 		getShellFrameStartedHandler( shellFrame ) );
 }
 
-function getShellFrameStartedHandler(shellFrame) {
+function getShellFrameStartedHandler(shellFrame)
+{
 	/// <summary>Gets a function to handle the Started event for shell frame.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The current shell frame object.</param> 
 	/// <returns type="MFiles.Events.OnStarted">The event handler.</returns>
@@ -310,9 +332,16 @@ function getShellFrameStartedHandler(shellFrame) {
 		// Create a command for "assign to me".
 		var assignCommandId = shellFrame.Commands.CreateCustomCommand( "Assign to me" );
 
-		// Add the command to the task pane.
-		// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-		shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+		try
+		{
+			// Add the command to the task pane.
+			// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+			shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+		}
+		catch (e)
+		{
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
 
 		// Hide the command.  We will show it when the selected items change.
 		shellFrame.Commands.SetCommandState( assignCommandId, CommandLocation_All, CommandState_Hidden );
@@ -352,13 +381,15 @@ function getShellFrameStartedHandler(shellFrame) {
 	};
 }
 
-function getNewShellListingHandler(shellFrame, assignCommandId) {
+function getNewShellListingHandler(shellFrame, assignCommandId)
+{
 	/// <summary>Gets a function to handle the NewShellListing event for shell frame.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The current shell frame object.</param> 
 	/// <returns type="MFiles.Events.OnNewShellListing">The event handler.</returns>
 
 	// Return the handler function for NewShellListing event.
-	return function (shellListing) {
+	return function (shellListing)
+	{
 
 		// Listen for selection change events on the listing.
 		shellListing.Events.Register(
@@ -544,7 +575,7 @@ Firstly, we need to alter the application definition file to [declare compatibil
 
 ### Altering the module
 
-When creating code to run on the M-Files Desktop client, using [an asynchronous programming style]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/) is optional (but recommended).  For our code to execute within M-Files Web Access, it must use the asynchronous programming style.  In order to alter our above (synchronous) code to execute in an asynchronous manner, two changes must be made to all API calls:
+When creating code to run on the M-Files Desktop client, using [an asynchronous programming style]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/) is optional (but recommended).  For our code to execute within M-Files Web Access, it **must** use the asynchronous programming style.  In order to alter our above (synchronous) code to execute in an asynchronous manner, two changes must be made to all API calls:
 
 1. API calls must use the `Async` object (e.g. change `Vault.ObjectOperations.CheckOut` to `Vault.Async.ObjectOperations.CheckOut`).
 2. API calls do not directly return values; the return value can be accessed in a [callback function](/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-successful-callback) which must be provided in addition to any standard arguments.
@@ -557,7 +588,7 @@ The specific sections of code to change are:
 2. The call to [CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html).
 3. The call to [CheckIn](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html).
 
-<p class="note">Note that <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 289-322).</p>
+<p class="note">Note that <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 204-340).</p>
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
@@ -569,7 +600,8 @@ The specific sections of code to change are:
 // The currently-selected items in the active listing.
 var currentlySelectedItems = null;
 
-function OnNewShellUI(shellUI) {
+function OnNewShellUI(shellUI)
+{
 	/// <summary>The entry point of ShellUI module.</summary>
 	/// <param name="shellUI" type="MFiles.ShellUI">The new shell UI object.</param> 
 
@@ -590,7 +622,8 @@ function newShellFrameHandler(shellFrame)
 		getShellFrameStartedHandler( shellFrame ) );
 }
 
-function getShellFrameStartedHandler(shellFrame) {
+function getShellFrameStartedHandler(shellFrame)
+{
 	/// <summary>Gets a function to handle the Started event for shell frame.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The current shell frame object.</param> 
 	/// <returns type="MFiles.Events.OnStarted">The event handler.</returns>
@@ -601,9 +634,16 @@ function getShellFrameStartedHandler(shellFrame) {
 		// Create a command for "assign to me".
 		var assignCommandId = shellFrame.Commands.CreateCustomCommand( "Assign to me" );
 
-		// Add the command to the task pane.
-		// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-		shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+		try
+		{
+			// Add the command to the task pane.
+			// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+			shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+		}
+		catch (e)
+		{
+			// This will except if the task pane is not available (e.g. in a History view).
+		}
 
 		// Hide the command.  We will show it when the selected items change.
 		shellFrame.Commands.SetCommandState( assignCommandId, CommandLocation_All, CommandState_Hidden );
@@ -643,13 +683,15 @@ function getShellFrameStartedHandler(shellFrame) {
 	};
 }
 
-function getNewShellListingHandler(shellFrame, assignCommandId) {
+function getNewShellListingHandler(shellFrame, assignCommandId)
+{
 	/// <summary>Gets a function to handle the NewShellListing event for shell frame.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The current shell frame object.</param> 
 	/// <returns type="MFiles.Events.OnNewShellListing">The event handler.</returns>
 
 	// Return the handler function for NewShellListing event.
-	return function (shellListing) {
+	return function (shellListing)
+	{
 
 		// Listen for selection change events on the listing.
 		shellListing.Events.Register(
