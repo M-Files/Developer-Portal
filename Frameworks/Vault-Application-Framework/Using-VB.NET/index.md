@@ -32,7 +32,8 @@ By default, Visual Studio will create some sample files.  We will remove these f
   * Select `Class1.vb` and press the `Del` key (or use the right-click context menu).
 * Save the project.
 
-<p class="note">If you do not remove the Settings.settings file then your application will not work.</p>
+If you do not remove the Settings.settings file then your application will not work.
+{:.note}
 
 ### Adding references and VAF-specific files
 
@@ -53,7 +54,8 @@ In order to use the Vault Application Framework, we need to first set up some re
   * Select the `MFiles.VAF` package and click `Install` on the right.
   * Follow the prompts to install the package and its prerequisites from NuGet.
 
-<p class="note">The Vault Application Framework requires a specific version of JSON.NET.  If you update it then the application will fail to run.</p>
+The Vault Application Framework requires a specific version of JSON.NET.  If you update it then the application will fail to run.
+{:.note}
 
 #### The appdef.xml file
 
@@ -113,7 +115,8 @@ Whilst this step is optional, if you choose not to use automatic deployment then
 
 Automatic deployment is done using the `MFVaultApplicationInstaller.exe` file, along with a build task.  The executable file packages up the various resources from the build folder into a zip file, then connects to a local M-Files server and installs (or updates) the package into a specified vault.
 
-<p class="note">The MFVaultApplicationInstaller.exe is available from the <a href="m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1694/3768?object=822E5005-5020-433F-A9DD-BC6E0815513D&file=7269C7BD-1564-440E-A6CA-58FC84F1DE96">M-Files Partner Portal</a>.  If you cannot find this file then please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.</p>
+The MFVaultApplicationInstaller.exe is available from the <a href="m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1694/3768?object=822E5005-5020-433F-A9DD-BC6E0815513D&file=7269C7BD-1564-440E-A6CA-58FC84F1DE96">M-Files Partner Portal</a>.  If you cannot find this file then please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.
+{:.note}
 
 To set up the automatic deployment:
 
@@ -127,11 +130,13 @@ To set up the automatic deployment:
 
 `start "Installing Vault Application" /D "$(TargetDir)" "MFVaultApplicationInstaller.exe" "Sample Vault"`
 
-<p class="note">"Sample Vault" should be replaced with the name of the vault you wish to test the application in.</p>
+"Sample Vault" should be replaced with the name of the vault you wish to test the application in.
+{:.note}
 
 ### Creating your first Vault Application Framework application
 
-<p class="note">We will create a class named VaultApplication.  Please note that the class and assembly details must match those entered into the appdef.xml file.</p>
+We will create a class named VaultApplication.  Please note that the class and assembly details must match those entered into the appdef.xml file.
+{:.note}
 
 #### Creating the Vault Application class
 

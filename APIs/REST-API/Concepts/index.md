@@ -18,7 +18,8 @@ A *HTTP request* is built of a number of parts:
 * An optional [message body](https://en.wikipedia.org/wiki/HTTP_message_body).
 
 ![A HTTP request](request.png)
-<p class="note">The HTTP header (including the request line) is highlighted by a <span css="color: blue">blue line</span>, and the request body (blank in this case) highlighted by a <span css="color: red">red line</span>.</p>
+The HTTP header (including the request line) is highlighted by a <span css="color: blue">blue line</span>, and the request body (blank in this case) highlighted by a <span css="color: red">red line</span>.
+{:.note}
 
 A *HTTP response* is built of similar parts:
 * A response [status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
@@ -27,7 +28,8 @@ A *HTTP response* is built of similar parts:
 * An optional [message body](https://en.wikipedia.org/wiki/HTTP_message_body).
 
 ![A HTTP response](response.png)
-<p class="note">The HTTP header (including the response status code) is highlighted by a <span css="color: blue">blue line</span>, and the response body highlighted by a <span css="color: red">red line</span>.</p>
+The HTTP header (including the response status code) is highlighted by a <span css="color: blue">blue line</span>, and the response body highlighted by a <span css="color: red">red line</span>.
+{:.note}
 
 [More information on HTTP can be found on Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
@@ -55,9 +57,11 @@ The [M-Files Admin](http://www.m-files.com/user-guide/latest/eng/#M-Files_server
 
 ![Object Types](object-types.png)
 
-<p class="note">By default these lists hide built-in items.  Click the `Show all` button to ensure that built-in items are visibile.</p>
+By default these lists hide built-in items.  Click the `Show all` button to ensure that built-in items are visibile.
+{:.note}
 
-<p class="note">Value list item Ids can be viewed by selecting a value list in the section above and clicking the `Contents` button.</p>
+Value list item Ids can be viewed by selecting a value list in the section above and clicking the `Contents` button.
+{:.note}
 
 ### Via the M-Files Web Service
 
@@ -75,4 +79,5 @@ It is possible to enumerate most structural elements of an M-Files vault directl
 
 * [/valuelists/(id)/items](http://www.m-files.com/mfws/resources/valuelists/id/items.html) - returns the items within a specific value list in the vault.
 
-<p class="note">The <a href="http://www.m-files.com/mfws/resources/structure/objecttypes.html">/structure/objecttypes</a> endpoint incorrectly states that it will return value lists.</p>
+The <a href="http://www.m-files.com/mfws/resources/structure/objecttypes.html">/structure/objecttypes</a> endpoint incorrectly states that it will return value lists.
+{:.note}

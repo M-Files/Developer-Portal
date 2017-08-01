@@ -155,4 +155,5 @@ mfServerApplication.Connect(
 var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
 ```
 
-<p class="note">With the HTTPS protocol, specify the M-Files Server endpoint that will be used between the RPC Proxy and M-Files Server on the server side. Typically this value is 4466. Note that this parameter does not affect the port that the client uses to communicate with the server. Regardless of this setting, the client will always use the standard HTTPS port for communicating with the server.</p>
+With the HTTPS protocol, specify the M-Files Server endpoint that will be used between the RPC Proxy and M-Files Server on the server side. Typically this value is 4466. Note that this parameter does not affect the port that the client uses to communicate with the server. Regardless of this setting, the client will always use the standard HTTPS port for communicating with the server.
+{:.note}

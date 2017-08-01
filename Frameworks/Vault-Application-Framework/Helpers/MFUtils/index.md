@@ -16,7 +16,8 @@ var startDate = DateTime.Now();
 var deadlineDate = MFUtils.AddWeekDays(startDate, 20);
 ```
 
-<p class="note">This method assumes that Saturday and Sunday are not working days, and makes no attempt to deal with other non-working days such as national holidays.</p>
+This method assumes that Saturday and Sunday are not working days, and makes no attempt to deal with other non-working days such as national holidays.
+{:.note}
 
 ## Transaction variables
 

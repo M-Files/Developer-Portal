@@ -13,7 +13,8 @@ M-Files supports the use of a [local folder](Local-Development-Folder) for devel
 
 Whilst M-Files COM API calls are typically synchronous (i.e. the application doesn't continue until the API call completes), the M-Files [Vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html) object exposes a property named `Async` which can be used to make asynchronous calls.  Using [asynchronous calls](Asynchronous-API-Programming) - rather than synchronous calls, which wait for the process to finish before continuing - ensures that the user interface doesn't appear to "lock", and the user experience remains fluid.
 
-<p class="note">Using <a href="Asynchronous-API-Programming">asynchronous calls</a> is currently optional when <a href="Platform-Targeting/#the-m-files-desktop-client">targeting the M-Files Desktop client</a>.  It is mandatory when <a href="Platform-Targeting/#m-files-web-access">targeting M-Files Web Access</a>.</p>
+Using <a href="Asynchronous-API-Programming">asynchronous calls</a> is currently optional when <a href="Platform-Targeting/#the-m-files-desktop-client">targeting the M-Files Desktop client</a>.  It is mandatory when <a href="Platform-Targeting/#m-files-web-access">targeting M-Files Web Access</a>.
+{:.note}
 
 ## Debugging
 
@@ -29,7 +30,8 @@ In addition, [modules]({{ site.baseurl }}/Frameworks/User-Interface-Extensibilit
 
 Whilst User Interface Extensibility Framework applications typically target the M-Files Desktop client, since M-Files 11.2.4320.49 it has been possible to additionally target the M-Files Web Access.  More information can be found on the <a href="Platform-Targeting">Platform Targeting page</a>.
 
-<p class="note">The version of the User Interface Extensibility Framework that is available in the M-Files Web Access is <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#UIExtSupportInMFilesWeb.html">a subset of that available in the Desktop client</a>.  Additionally, <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html">M-Files API support is limited</a>.</p>
+The version of the User Interface Extensibility Framework that is available in the M-Files Web Access is <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#UIExtSupportInMFilesWeb.html">a subset of that available in the Desktop client</a>.  Additionally, <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html">M-Files API support is limited</a>.
+{:.note}
 
 ## Deployment
 
@@ -55,7 +57,8 @@ var updateFromServer = false;
 var propertyValues = vault.ObjectPropertyOperations.GetProperties(objVer, updateFromServer);
 ```
 
-<p class="note">An example of using this in API calls is shown <a href="#instantiating-m-files-api-objects">in the following section</a>.</p>
+An example of using this in API calls is shown <a href="#instantiating-m-files-api-objects">in the following section</a>.
+{:.note}
 
 ### Instantiating M-Files API objects
 
@@ -66,7 +69,8 @@ M-Files API objects can be instantiated in the following way:
 var objVer = new MFiles.ObjVer();
 ```
 
-<p class="note">This is useful when calling API methods that define optional parameters, where JavaScript requires a non-null value to be passed.</p>
+This is useful when calling API methods that define optional parameters, where JavaScript requires a non-null value to be passed.
+{:.note}
 
 For example, the following C# could be used to create a new object:
 
@@ -140,4 +144,5 @@ shellFrame.ShellUI.Vault.ObjectOperations.CreateNewObjectEx(
 	new MFiles.AccessControlList() );
 ```
 
-<p class="note">Whilst it is generally good practice to use the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming approach</a>, note that this could not be used with <code class="highlighter-rouge">CreateNewObject</code>, <code class="highlighter-rouge">CreateNewObjectEx</code>, or <code class="highlighter-rouge">CreateNewObjectExQuick</code>, as <code class="highlighter-rouge">SourceObjectFiles</code> <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">does not support cloning</a>.</p>
+Whilst it is generally good practice to use the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming approach</a>, note that this could not be used with `CreateNewObject`, `CreateNewObjectEx`, or `CreateNewObjectExQuick`, as `SourceObjectFiles` <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">does not support cloning</a>.
+{:.note}

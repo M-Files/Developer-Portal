@@ -102,7 +102,8 @@ Properties can be removed by calling `Remove` (for any property type) or `Remove
 
 Calling `RemoveSystemProperties` will remove built-in properties such as who created the object and when it was last modified.
 
-<p class="note">Specifically, this will remove properties 20 (MFBuiltInPropertyDefCreated), 25 (MFBuiltInPropertyDefCreatedBy), 21 (MFBuiltInPropertyDefLastModified), 23 (MFBuiltInPropertyDefLastModifiedBy), 24 (MFBuiltInPropertyDefStatusChanged), 30 (MFBuiltInPropertyDefSizeOnServerThisVersion), 31 (MFBuiltInPropertyDefSizeOnServerAllVersions), 40 (MFBuiltInPropertyDefStateEntered) and 89 (MFBuiltInPropertyDefObjectChanged).</p>
+Specifically, this will remove properties 20 (MFBuiltInPropertyDefCreated), 25 (MFBuiltInPropertyDefCreatedBy), 21 (MFBuiltInPropertyDefLastModified), 23 (MFBuiltInPropertyDefLastModifiedBy), 24 (MFBuiltInPropertyDefStatusChanged), 30 (MFBuiltInPropertyDefSizeOnServerThisVersion), 31 (MFBuiltInPropertyDefSizeOnServerAllVersions), 40 (MFBuiltInPropertyDefStateEntered) and 89 (MFBuiltInPropertyDefObjectChanged).
+{:.note}
 
 ## Helper methods
 
@@ -114,7 +115,8 @@ The `SetClass` helper method sets the built-in property for `Class` as the provi
 
 Sets a property (either single-select lookup or multi-select lookup) to be a single lookup value.
 
-<p class="note">This will remove any existing lookup values in the given multi-select lookup property).</p>
+This will remove any existing lookup values in the given multi-select lookup property).
+{:.note}
 
 ### SetSFD (single or multi-file document)
 

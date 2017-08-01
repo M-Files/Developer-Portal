@@ -7,7 +7,8 @@ breadcrumb: ObjVerChanges
 
 `ObjVerChanges` is contained in the `MFiles.VAF.Common` namespace and provides information on metadata changes between two versions of an object.
 
-<p class="note">This class only processes metadata property value changes, and does not attempt to identify whether any file changes have occured between versions.</p>
+This class only processes metadata property value changes, and does not attempt to identify whether any file changes have occured between versions.
+{:.note}
 
 ### Comparing all property values
 
@@ -40,4 +41,5 @@ foreach (var propertyChanged in objVerChanges.Changed)
 }
 ```
 
-<p class="note">Thsi will only return changed items, not property values which are the same.</p> 
+Thsi will only return changed items, not property values which are the same.
+{:.note} 

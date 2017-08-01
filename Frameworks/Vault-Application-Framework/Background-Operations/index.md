@@ -69,4 +69,5 @@ public void ConvertToPdf(StateEnvironment env)
 }
 ```
 
-<p class="note">If using this approach, consider whether the object should be able to be edited by others whilst it is awaiting PDF conversion.  If it should not then ensure that the permissions on the object are altered appropriately as part of the workflow.</p>
+If using this approach, consider whether the object should be able to be edited by others whilst it is awaiting PDF conversion.  If it should not then ensure that the permissions on the object are altered appropriately as part of the workflow.
+{:.note}

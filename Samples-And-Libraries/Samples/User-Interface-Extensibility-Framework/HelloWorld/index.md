@@ -7,7 +7,8 @@ breadcrumb: Hello, world
 
 This sample creates a basic User Interface Extensibility Framework application consisting of one [ShellUI module]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#shellui) which shows a dialog box to the user when the [shell frame (section 2.6)](https://www.m-files.com/UI_Extensibility_Framework/index.html#DevGuide.htm) is available.  The shell frame is a useful object as it allows us to interact with the shell listings and commands (such as buttons) within the user interface.
 
-<p class="note">The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/HelloWorld">GitHub Samples and Libraries repository</a>.</p>
+The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/HelloWorld">GitHub Samples and Libraries repository</a>.
+{:.note}
 
 ## Creating a local development folder
 
@@ -41,7 +42,8 @@ Into this folder we will create an [application definition file]({{ site.baseurl
 </application>
 ```
 
-<p class="note">Ensure that your application has a unique GUID by using a GUID generator, such as <a href="https://guidgenerator.com/">this one</a>.</p>
+Ensure that your application has a unique GUID by using a GUID generator, such as <a href="https://guidgenerator.com/">this one</a>.
+{:.note}
 
 ## Creating the module
 
@@ -110,7 +112,8 @@ Open M-Files and navigate to the vault.  The following message should be shown o
 
 ![A message showing that the shell frame is available for use](message.png)
 
-<p class="note">If the message is not shown, ensure you log out from the vault and log in again to see the changes.</p>
+If the message is not shown, ensure you log out from the vault and log in again to see the changes.
+{:.note}
 
 ## Deploying the application
 
@@ -125,6 +128,8 @@ To [deploy]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework
 
 ![The vault applications list showing the installed application](installed.png)
 
-<p class="note">The zipped file can be renamed to have a <code class="highlighter-rouge">.mfappx</code> extension if you wish to differentiate it from other zip files.</p>
+The zipped file can be renamed to have a `.mfappx` extension if you wish to differentiate it from other zip files.
+{:.note}
 
-<p class="note warning">If you are testing the deployed application from your local machine then ensure that the local development folder is removed prior to deployment, otherwise it will override the deployed code.</p>
+If you are testing the deployed application from your local machine then ensure that the local development folder is removed prior to deployment, otherwise it will override the deployed code.
+{:.note.warning}

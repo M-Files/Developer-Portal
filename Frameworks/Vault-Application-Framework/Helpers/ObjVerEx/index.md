@@ -27,9 +27,11 @@ An in-memory copy of the object's [PropertyValues](https://www.m-files.com/api/d
 
 `SaveProperty` updates a property value both in memory *and* on the M-Files server.  Multiple calls to `SaveProperty` are discouraged as this will result in many calls back and forth to the server, which will adversely affect performance.  Instead, call `SetProperty` multiple times, then call `SaveProperties` once all changes have been made.
 
-<p class="note">SaveProperties will deal with calling <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetAllProperties.html">SetAllProperties</a> or <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperties.html">SetProperties</a> in the API as appropriate, depending on whether the class of the object is specified in the change set.</p>
+SaveProperties will deal with calling <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetAllProperties.html">SetAllProperties</a> or <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperties.html">SetProperties</a> in the API as appropriate, depending on whether the class of the object is specified in the change set.
+{:.note}
 
-<p class="note warning">Calling <code class="highlighter-rouge">SaveProperty</code> forces the internal <code class="highlighter-rouge">Properties</code> collection to be re-loaded from the server.  Any changes made to the collection (e.g. by calling <code class="highlighter-rouge">SetProperty</code>) will be lost by this call.</p>
+Calling `SaveProperty` forces the internal `Properties` collection to be re-loaded from the server.  Any changes made to the collection (e.g. by calling `SetProperty`) will be lost by this call.
+{:.note.warning}
 
 ### SetCreatedBy and SetModifiedBy
 
@@ -49,13 +51,15 @@ env.ObjVerEx.SetCreatedBy(env.CurrentUserID);
 env.ObjVerEx.SetModifiedBy(env.CurrentUserID);
 ```
 
-<p class="note warning">Calling <code class="highlighter-rouge">SetCreatedBy</code> or <code class="highlighter-rouge">SetModifiedBy</code> forces the internal <code class="highlighter-rouge">Properties</code> collection to be re-loaded from the server.  Any changes that have not yet been persisted (e.g. calls to <code class="highlighter-rouge">SetProperty</code>) will be lost by these calls.</p>
+Calling `SetCreatedBy` or `SetModifiedBy` forces the internal `Properties` collection to be re-loaded from the server.  Any changes that have not yet been persisted (e.g. calls to `SetProperty`) will be lost by these calls.
+{:.note.warning}
 
 ### SetWorkflowState
 
 `SetWorkflowState` sets the workflow and state of an object by affecting the in-memory `PropertyValues` collection.  Both the workflow and state are optional, but at least one must be supplied.  If the workflow is not provided then it will be looked up from the state.  If the state is not provided then the first state on the workflow will be used.
 
-<p class="note">You must call <code class="highlighter-rouge">SaveProperties</code> after calling this method for the changes to be persisted.</p>
+You must call `SaveProperties` after calling this method for the changes to be persisted.
+{:.note}
 
 ### Property helper methods
 
@@ -68,7 +72,8 @@ There are a variety of helper methods available that aid working with properties
 * `RemoveLookup` - removes a single lookup from the specified property value in the `PropertyValues` collection.
 * `RemoveProperty` - removes a property value from the `PropertyValues` collection.
 
-<p class="note">You must call SaveProperties after using these methods for the changes to be persisted.</p>
+You must call SaveProperties after using these methods for the changes to be persisted.
+{:.note}
 
 * `HasProperty` - returns whether the `PropertyValues` collection contains an entry for the supplied property definition.  Does not check the value.
 * `HasValue` - 
@@ -80,7 +85,8 @@ There are a variety of helper methods available that aid working with properties
 * `GetAllDirectReferences` - creates `ObjVerEx` objects for all items (including deleted) referenced by the provided multi-select lookup property.
 * `GetIndirectReferences` - creates `ObjVerEx` objects for all items (including deleted) that referencethe current on, optionally using a specific property.
 
-<p class="note warning">Calling <code class="highlighter-rouge">GetIndirectReferences</code> will execute a search against the M-Files vault.</p>
+Calling `GetIndirectReferences` will execute a search against the M-Files vault.
+{:.note.warning}
 
 ## History
 
@@ -94,7 +100,8 @@ An object can be rolled back by calling `ObjVerEx.Rollback`, and providing it wi
 
 * `ReplaceFiles` - replaces the current files on an object with the ones supplied.
 
-<p class="note">If an object is currently a <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion~SingleFile.html">Single File Document</a> then it must be changed to a <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~SetSingleFileObject.html">multi-file-document</a> before calling ReplaceFiles with multiple documents.</p>
+If an object is currently a <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion~SingleFile.html">Single File Document</a> then it must be changed to a <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~SetSingleFileObject.html">multi-file-document</a> before calling ReplaceFiles with multiple documents.
+{:.note}
 
 ## Permissions
 
@@ -115,7 +122,8 @@ An in-memory representation of the [object's permissions](https://www.m-files.co
 * `Delete` - [deletes the underlying M-Files object](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DeleteObject.html).
 * `Destroy` - [destroys the underlying M-Files object](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html).
 
-<p class="note warning">Destruction of objects cannot be undone.</p>
+Destruction of objects cannot be undone.
+{:.note.warning}
 
 ### Testing user permissions
 
@@ -134,5 +142,6 @@ The `ExpandPlaceholderText` method can be used to easily parse a string containi
 * %PROPERTY_123% - the value of property 123 on the current object.
 * %PROPERTY_{MyPropertyDefinition}% - the value of the property with alias "MyPropertyDefinition" on the current object.
 
-<p class="note warning">Not all placeholders are supported.</p>
+Not all placeholders are supported.
+{:.note.warning}
 

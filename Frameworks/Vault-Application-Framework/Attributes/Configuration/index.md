@@ -39,7 +39,8 @@ public MFIdentifier UnitedKingdomCountryValueList
 	= "{2F7A844E-1E91-41DA-8EA8-80A31A4BCD41}";
 ```
 
-<p class="note">The value list item GUID can be determined by following the instructions for <a href="m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1512?object=52274027-E7F7-4CD3-B8BF-95071AD8090F">Configuring the Metadata Card (2015.3), section 3.3.3.</a></p>
+The value list item GUID can be determined by following the instructions for <a href="m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-1512?object=52274027-E7F7-4CD3-B8BF-95071AD8090F">Configuring the Metadata Card (2015.3), section 3.3.3.</a>
+{:.note}
 
 #### Access Control Lists and User Groups
 
@@ -99,4 +100,5 @@ For example, the following code would store a JSON-serialized version of the Con
 private Configuration config = new Configuration();
 ```
 
-<p class="note">Saving configuration to Named Value Storage allows an administrator to alter the configuration of your application without recompiling the code.  A restart of the vault is required to re-load the configuration from Named Value Storage.</p>
+Saving configuration to Named Value Storage allows an administrator to alter the configuration of your application without recompiling the code.  A restart of the vault is required to re-load the configuration from Named Value Storage.
+{:.note}

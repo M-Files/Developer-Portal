@@ -6,7 +6,8 @@ includeInSearch: true
 
 This sample shows how to create a copy of an object, including all metadata and files, when it moves into a specific workflow state.  This can be useful in scenarios such as controlled document management where a published version a document may need to be created once a document is authorised, or to copy metadata from one object type (e.g. a Quotation) to a new object type (e.g. an Order).
 
-<p class="note">Full source code for this sample is available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/CopyingObjects">in our GitHub Samples and Libraries repository</a>.</p>
+Full source code for this sample is available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/CopyingObjects">in our GitHub Samples and Libraries repository</a>.
+{:.note}
 
 ## Overview
 
@@ -17,7 +18,8 @@ Any object within M-Files consists of internal data (e.g. the object type and ID
 
 Once we have this content, we can call [CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html), [CreateNewObjectEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html) or [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html) to actually create the copy.
 
-<p class="note">The code below is assumed to run as a workflow state action, as this is the typical usage scenario.</p>
+The code below is assumed to run as a workflow state action, as this is the typical usage scenario.
+{:.note}
 
 ## A VBScript Approach
 
@@ -28,7 +30,8 @@ Within a workflow state action, the current property values are available within
 1. The `PropertyValues` variable contains a [Clone method](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues~Clone.html), which can be used to create a copy of the object (line 18).
 2. Some properties will need to be removed from the collection, as they don't make sense to have on the new object (lines 22-23).
 
-<p class="note">This code removes the <code class="highlighter-rouge">MFBuiltInPropertyDefWorkflow</code> and <code class="highlighter-rouge">MFBuiltInPropertyDefState</code> built-in properties from the collection, as the new object doesn't need to be in the same workflow.  It may also be that other <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html">built-in properties</a> should be removed, such as the creation date.</p>
+This code removes the `MFBuiltInPropertyDefWorkflow` and `MFBuiltInPropertyDefState` built-in properties from the collection, as the new object doesn't need to be in the same workflow.  It may also be that other <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html">built-in properties</a> should be removed, such as the creation date.
+{:.note}
 
 ```vbscript
 Option Explicit

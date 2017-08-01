@@ -7,7 +7,8 @@ breadcrumb: Platforms
 
 The [V3 client application definition schema]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/#v3-schema) introduced the ability for applications to define the platforms in which they should execute.  Prior to V3 of the schema, applications only ever executed within the M-Files Desktop client.
 
-<p class="note">The application must use the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/#v3-schema">V3 schema</a> to be able to use platform targeting; using the V1 schema will result in an error.</p>
+The application must use the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/#v3-schema">V3 schema</a> to be able to use platform targeting; using the V1 schema will result in an error.
+{:.note}
 
 ## Available Platforms
 
@@ -17,7 +18,8 @@ There are currently two supported platforms:
 
 The platform that each application supports is defined within the [application definition file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/), in the following ways:
 
-<p class="note">The entire <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/">appdef.xml</a> file is shown, but only the <code class="highlighter-rouge">&lt;platforms&gt;&lt;/platforms&gt;</code> element changes in each sample; the rest is shown for completeness.</p>
+The entire <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/">appdef.xml</a> file is shown, but only the `&lt;platforms&gt;&lt;/platforms&gt;` element changes in each sample; the rest is shown for completeness.
+{:.note}
 
 ### Declaring compatibility with only the M-Files Desktop client
 

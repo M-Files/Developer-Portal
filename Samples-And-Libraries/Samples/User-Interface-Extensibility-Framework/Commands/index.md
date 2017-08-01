@@ -7,7 +7,8 @@ breadcrumb: Commands
 
 This sample creates a basic User Interface Extensibility Framework application consisting of one [ShellUI module]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#shellui) which adds buttons to the task pane and context menu that are enabled/disabled and shown/hidden depending upon the user's actions.
 
-<p class="note">The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/Commands">GitHub Samples and Libraries repository</a>.</p>
+The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/Commands">GitHub Samples and Libraries repository</a>.
+{:.note}
 
 ## Overview
 
@@ -41,7 +42,8 @@ Into this folder we will create an [application definition file]({{ site.baseurl
 </application>
 ```
 
-<p class="note">Ensure that your application has a unique GUID by using a GUID generator, such as <a href="https://guidgenerator.com/">this one</a>.</p>
+Ensure that your application has a unique GUID by using a GUID generator, such as <a href="https://guidgenerator.com/">this one</a>.
+{:.note}
 
 ### Creating the module
 
@@ -101,7 +103,8 @@ Adding a button into the task area involves two steps:
 1. Creating a new `ICommand` using [CreateCustomCommand](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html) (line 47).
 2. Adding the command into the task area using [AddCustomCommandToGroup](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html) (line 52).
 
-<p class="note">The group that the button will be added to is either one of the built-in <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~TaskPaneGroup.html">task pane groups</a> or the ID of a group that has previously been created with <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~CreateGroup.html">CreateGroup</a>.</p>
+The group that the button will be added to is either one of the built-in <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~TaskPaneGroup.html">task pane groups</a> or the ID of a group that has previously been created with <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~CreateGroup.html">CreateGroup</a>.
+{:.note}
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
@@ -262,7 +265,8 @@ To set an icon for the command:
 2. Ensure that the icon file is included within the User Interface Extensibility Framework application.
 3. Call [SetIconFromPath](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetIconFromPath.html), passing both the command Id and the *relative* path to the icon (line 50).
 
-<p class="note">Setting an icon only works if the command is shown in the task area.  Icons will not be shown for items in the context menu.</p>
+Setting an icon only works if the command is shown in the task area.  Icons will not be shown for items in the context menu.
+{:.note}
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
@@ -351,7 +355,8 @@ function getShellFrameStartedHandler(shellFrame)
 
 To add a command created with [CreateCustomCommand](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~CreateCustomCommand.html) to the context menu, call [AddCustomCommandToMenu](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html) (line 62).  In the example below, it is the same command object added to both task pane and context menu, so our [code to react when the button is clicked](#reacting-when-the-command-is-clicked) will be fired for the context menu item and the task pane.
 
-<p class="note">The command can be added in one of <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html">a number of locations</a> within the context menu.  Some of these locations are only shown in some scenarios (e.g. some sections are not shown when files are right-clicked, but are when objects are right-clicked).</p>
+The command can be added in one of <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~AddCustomCommandToMenu.html">a number of locations</a> within the context menu.  Some of these locations are only shown in some scenarios (e.g. some sections are not shown when files are right-clicked, but are when objects are right-clicked).
+{:.note}
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
@@ -443,7 +448,8 @@ function getShellFrameStartedHandler(shellFrame)
 
 The visibility of commands can be controlled by calling [SetCommandState](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommands~SetCommandState.html).  To show this, we will create a second command (line 50) and initially set it to hidden (line 54).  Clicking the first command will show and enable the second command (line 83), and clicking the second command will disable itself (line 89).
 
-<p class="note">Setting a command state to <code class="highlighter-rouge">CommandState_Active</code> will make it both active and visible.</p>
+Setting a command state to `CommandState_Active` will make it both active and visible.
+{:.note}
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of

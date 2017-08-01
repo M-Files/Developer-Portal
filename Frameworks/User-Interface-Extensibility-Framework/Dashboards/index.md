@@ -11,11 +11,13 @@ Dashboards contain user interfaces that can be shown to the user as required.
 
 Dashboard content is held within an HTML file.  This HTML file may refer to external static resources such as CSS files, JavaScript files or image files.  These files are typically packaged inside the User Interface Framework application, although they can be [loaded from remote sources](#loading-remote-content-allowing-trusted-content) if required.
 
-<p class="note">All referenced files must be static; no server-side code (e.g. <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> or <a href="https://www.asp.net/">ASP.NET</a>) can execute within a User Interface Extensibility Framework application.  Any preprocessing required (e.g. <a href="http://sass-lang.com/">SASS</a> or <a href="http://lesscss.org/">LESS</a>) must be processed before the UIX is run.</p>
+All referenced files must be static; no server-side code (e.g. <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> or <a href="https://www.asp.net/">ASP.NET</a>) can execute within a User Interface Extensibility Framework application.  Any preprocessing required (e.g. <a href="http://sass-lang.com/">SASS</a> or <a href="http://lesscss.org/">LESS</a>) must be processed before the UIX is run.
+{:.note}
 
 ## Showing and hiding dashboards
 
-<p class="note">More information on using dashboards is available in the <a href="https://www.m-files.com/UI_Extensibility_Framework/#UsingDashboards.html">M-Files UI Extensibility Framework documentation site</a>.</p>
+More information on using dashboards is available in the <a href="https://www.m-files.com/UI_Extensibility_Framework/#UsingDashboards.html">M-Files UI Extensibility Framework documentation site</a>.
+{:.note}
 
 Dashboards are shown in one of a small number of locations within the M-Files client:
 * Replacing the current listing.
@@ -29,7 +31,8 @@ When a dashboard is shown, a JavaScript object can be passed to the dashboard fo
 Most dashboards are shown within their own custom tabs on the right-hand-section, alongside "Metadata" and "Preview".
 
 {% comment %}
-<p class="note">This page does not detail how to create a tab; that is shown in more detail on the <a href="#">Creating tabs page</a>.</p>
+This page does not detail how to create a tab; that is shown in more detail on the <a href="#">Creating tabs page</a>.
+{:.note}
 {% endcomment %}
 
 Dashboards are shown by calling [IShellPaneTabInterface.ShowDashboard](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellPaneTab~ShowDashboard.html).  This takes two arguments:
@@ -88,7 +91,8 @@ var customData = {};
 shellFrame.ShowDashboard(dashboardId, customData);
 ```
 
-<p class="note">To revert the listing area to showing the default content, call <a href="https://www.m-files.com/UI_Extensibility_Framework/MFClientScript~IShellFrame~ShowDefaultContent.html">IShellFrame.ShowDefaultContent</a>.</p>
+To revert the listing area to showing the default content, call <a href="https://www.m-files.com/UI_Extensibility_Framework/MFClientScript~IShellFrame~ShowDefaultContent.html">IShellFrame.ShowDefaultContent</a>.
+{:.note}
 
 ### Replacing the right or bottom panes
 
@@ -113,7 +117,8 @@ shellFrame.RightPane.ShowDashboard(dashboardId, customData);
 shellFrame.BottomPane.ShowDashboard(dashboardId, customData);
 ```
 
-<p class="note">Replacing the right-pane implicitly creates a tab entitled "Application", into which the dashboard is loaded.  The bottom pane may not be shown by default, but can be made visible by setting <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellPaneContainer~Visible.html">BottomPane.Visible to true</a>.</p>
+Replacing the right-pane implicitly creates a tab entitled "Application", into which the dashboard is loaded.  The bottom pane may not be shown by default, but can be made visible by setting <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellPaneContainer~Visible.html">BottomPane.Visible to true</a>.
+{:.note}
 
 ## Tips and tricks
 

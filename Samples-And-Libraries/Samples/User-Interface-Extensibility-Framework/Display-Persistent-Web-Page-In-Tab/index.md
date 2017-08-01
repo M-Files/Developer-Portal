@@ -7,9 +7,11 @@ breadcrumb: Persistent Content
 
 This sample creates a basic User Interface Extensibility Framework application consisting of one [ShellUI module]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#shellui) which shows a persistent browser window within a tab in the right-pane of M-Files.  This can be useful to display a web page which is not context-sensitive (e.g. an intranet), persisting the user's navigation within the browser window as they navigate within M-Files.
 
-<p class="note">The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/DisplayPersistentWebPageInTab">GitHub Samples and Libraries repository</a>.</p>
+The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/DisplayPersistentWebPageInTab">GitHub Samples and Libraries repository</a>.
+{:.note}
 
-<p class="note">This sample extends the <a href="../">previous samples</a>.  Whilst all basic steps will be covered, more detail may be found in other samples.</p>
+This sample extends the <a href="../">previous samples</a>.  Whilst all basic steps will be covered, more detail may be found in other samples.
+{:.note}
 
 ## Overview
 
@@ -43,7 +45,8 @@ Into this folder we will create an [application definition file]({{ site.baseurl
 </application>
 ```
 
-<p class="note">Ensure that your application has a unique GUID by using a GUID generator, such as <a href="https://guidgenerator.com/">this one</a>.</p>
+Ensure that your application has a unique GUID by using a GUID generator, such as <a href="https://guidgenerator.com/">this one</a>.
+{:.note}
 
 ### Creating the module
 
@@ -146,5 +149,6 @@ Opening the vault shows a new tab next to home, named `Intranet`.  Selecting the
 
 ![Intranet tab selected](intranet-tab-selected.png)
 
-<p class="note">Note that any navigation within the persistent browser window will be kept when navigating within views in M-Files.</p>
+Note that any navigation within the persistent browser window will be kept when navigating within views in M-Files.
+{:.note}
 

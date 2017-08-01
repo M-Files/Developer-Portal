@@ -35,7 +35,8 @@ public void HandleWorkflowStatesOneAndTwo(StateEnvironment env)
 }
 ```
 
-<p class="note">The alias of the referenced item is typically included in the attribute declaration.  This is used to identify which vault element to place the code into.</p>
+The alias of the referenced item is typically included in the attribute declaration.  This is used to identify which vault element to place the code into.
+{:.note}
  
 ## Attributes And The Vault Application Framework
 
@@ -51,13 +52,15 @@ Attributes can additionally be passed parameters at the time they are declared. 
 public MFIdentifier CustomerNameProperty = "PropertyDef.CustomerName";
 ```
 
-<p class="note">This code would output an error to the event log if the property were not found, but the application would still attempt to run.  It is up to the vault application to check whether any items were not found and execute accordingly.</p>
+This code would output an error to the event log if the property were not found, but the application would still attempt to run.  It is up to the vault application to check whether any items were not found and execute accordingly.
+{:.note}
 
 ### Attributes and VBScript Proxies
 
 The following attributes precede C# methods and identify where in the vault a VBScript "proxy" should be created.  VBScript proxies are snippets of code which obtain a reference to the Vault Application Framework application, and execute the appropriate method(s).
 
-<p class="note">These VBScript proxies must not be manually altered.</p>
+These VBScript proxies must not be manually altered.
+{:.note}
 
 ## What Attributes Exist Within the Vault Application Framework?
 

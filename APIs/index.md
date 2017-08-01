@@ -18,7 +18,8 @@ M-Files provides two Application Programming Interfaces for developers to commun
   * Server mode does not require a vault connection to be set up on the host machine, but cannot show M-Files dialogs.
 * Requires the same version of the API on the client machine as the server.
 
-<p class="note">More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">COM API section</a>.</p>
+More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">COM API section</a>.
+{:.note}
 
 ## [The M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/)
 
@@ -28,4 +29,5 @@ M-Files provides two Application Programming Interfaces for developers to commun
 * Supports most "user" operations, but cannot be used to undertake "administrative" functions.
 * Not tied directly to the M-Files Server version.
 
-<p class="note">More information is available in the <a href="{{ site.baseurl }}/APIs/REST-API/">REST API section</a>.</p>
+More information is available in the <a href="{{ site.baseurl }}/APIs/REST-API/">REST API section</a>.
+{:.note}

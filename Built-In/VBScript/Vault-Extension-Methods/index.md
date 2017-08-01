@@ -33,7 +33,8 @@ Option Explicit
 Output = "Input was: " & Input
 ```
 
-<p class="note">Passing more complex data objects into and out of Vault Extension Methods is possibly by serializing and deserializing the objects.</p>
+Passing more complex data objects into and out of Vault Extension Methods is possibly by serializing and deserializing the objects.
+{:.note}
 
 ### Vault Application Framework
 

@@ -7,7 +7,8 @@ breadcrumb: Authentication
 
 We support three primary authentication mechanisms: credentials in HTTP headers, cookie-based sessions, and authentication tokens.
 
-<p class="note">These examples use the .NET HttpWebRequest and HttpWebResponse objects directly, and uses the <a href="http://www.newtonsoft.com/json">JSON.NET</a> library for serialization/deserialization.  Other libraries are available that may make interacting with REST-like web services more simplistic, such as <a href="http://restsharp.org/">RestSharp</a>.  Always check the license details of third-party libraries to ensure that they can be used within your projects.</p>
+These examples use the .NET HttpWebRequest and HttpWebResponse objects directly, and uses the <a href="http://www.newtonsoft.com/json">JSON.NET</a> library for serialization/deserialization.  Other libraries are available that may make interacting with REST-like web services more simplistic, such as <a href="http://restsharp.org/">RestSharp</a>.  Always check the license details of third-party libraries to ensure that they can be used within your projects.
+{:.note}
 
 ## Authentication tokens
 
@@ -61,7 +62,8 @@ request.Headers.Add("X-Authentication", authenticationToken);
 var response = (HttpWebResponse)request.GetResponse();
 ```
 
-<p class="note">The M-Files Web Service will return an authentication token regardless of whether authentication was successful or not.</p>
+The M-Files Web Service will return an authentication token regardless of whether authentication was successful or not.
+{:.note}
 
 ### Controlling authentication token expiration
 
@@ -78,7 +80,8 @@ var auth = new
 };
 ```
 
-<p class="note warning">If no expiry information is provided then the authentication token returned will have an indefinite expiry.  The only way to forcibly expire an authentication token in this instance is to change the user's login credentials and restart M-Files Web Access.</p>
+If no expiry information is provided then the authentication token returned will have an indefinite expiry.  The only way to forcibly expire an authentication token in this instance is to change the user's login credentials and restart M-Files Web Access.
+{:.note.warning}
 
 ## Cookie-based sessions
 
@@ -112,7 +115,8 @@ var response = (HttpWebResponse)request.GetResponse();
 
 ## Sending credentials in HTTP headers
 
-<p class="note warning">This method is not recommended.  Instead, obtain an authentication token so that raw credentials are not passed in all your HTTP requests.</p>
+This method is not recommended.  Instead, obtain an authentication token so that raw credentials are not passed in all your HTTP requests.
+{:.note.warning}
 
 The M-Files Web Service documentation details the available [authentication request parameters](https://www.m-files.com/mfws/parameters.html), which are then included in your subsequent HTTP requests:
 

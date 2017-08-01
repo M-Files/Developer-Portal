@@ -73,7 +73,8 @@ var searchResults = vault.ObjectSearchOperations.SearchForObjectsByConditionsEx(
 	MFSearchFlags.MFSearchFlagNone, SortResults: false);
 ```
 
-<p class="note">More information on individual search conditions is available <a href="{{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions">in the dedicated page</a>.</p>
+More information on individual search conditions is available <a href="{{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions">in the dedicated page</a>.
+{:.note}
 
 ## Tips and tricks
 

@@ -19,7 +19,8 @@ To execute a Code Snippet, the developer types the name of the code snippet (e.g
 
 ![Inserting a code snippet using the keyboard](code-snippet-via-keyboard.png)
 
-<p class="note warning">Resharper can alter the standard keyboard shortcuts.  If you are using Resharper then You must press <code class="highlighter-rouge">Ctrl-J</code>, then type the code snippet name.  The other keyboard shortcuts still work.</p>
+Resharper can alter the standard keyboard shortcuts.  If you are using Resharper then You must press `Ctrl-J`, then type the code snippet name.  The other keyboard shortcuts still work.
+{:.note.warning}
 
 ### Using the mouse
 
@@ -31,7 +32,8 @@ To execute the code snippet, the developer right-clicks at the appropriate place
 
 When developing applications using the Vault Application Framework it is common to create methods that are executed in response to various events within the vault, such as an object reaching a state in a workflow, or a property value requiring validation.  [Attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/) are used to ensure that the Vault Application Framework knows which methods need to be executed at what time.  These attributes often require the following method to have a specific [signature](https://en.wikipedia.org/wiki/Type_signature#Method_signature) in order to function; if the method does not match the expected signature then it will not be invoked.
 
-<p class="note">The <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/">Vault Application Framework Attributes page</a> details the attributes and their expected method signature, if appropriate.</p>
+The <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/">Vault Application Framework Attributes page</a> details the attributes and their expected method signature, if appropriate.
+{:.note}
 
 Code Snippets can be used to automatically generate class members (methods and properties) with the correct structure and signatures, reducing development time.
 
@@ -41,7 +43,8 @@ To contribute additional code snippets or to fix issues with existing code snipp
 
 ### Available Code Snippets
 
-<p class="note">Code Snippets are available to download from our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Snippets/CSharp/M-Files%20VAF">GitHub Samples and Libraries repository</a>.  Information on how to <a href="#installing-the-vault-application-framework-code-snippets">install the code snippets</a> is in the following section.</p>
+Code Snippets are available to download from our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Snippets/CSharp/M-Files%20VAF">GitHub Samples and Libraries repository</a>.  Information on how to <a href="#installing-the-vault-application-framework-code-snippets">install the code snippets</a> is in the following section.
+{:.note}
 
 The following code snippets exist.  Once the snippets are installed, simply type their name within a code file, select the snippet, and press `Tab` twice.
 
@@ -91,7 +94,8 @@ The following code snippets exist.  Once the snippets are installed, simply type
 
 [An installer for the Vault Application Framework Code Snippets is available on the Visual Studio Gallery](https://marketplace.visualstudio.com/vsgallery/e85fe8ed-5026-439c-9afd-63b7b4f83767).  Simply press the `Download` button on the gallery page, run the `.vsix` file, and it will install the Code Snippets into Visual Studio for you.
 
-<p class="note">The Vault Application Framework Code Snippets can be uninstalled by opening Visual Studio, clicking <code class="highlighter-rouge">Tools</code>, then <code class="highlighter-rouge">Extensions and Updates...</code>, as with other installed extensions.</p>
+The Vault Application Framework Code Snippets can be uninstalled by opening Visual Studio, clicking `Tools`, then `Extensions and Updates...`, as with other installed extensions.
+{:.note}
 
 ### Downloading the raw snippet files
 

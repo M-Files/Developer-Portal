@@ -46,7 +46,8 @@ M-Files provides two Application Programming Interfaces for developers: the [COM
   * Server mode does not require a vault connection to be set up on the host machine, but cannot show M-Files dialogs.
 * Requires the same version of the API on the client machine as the server.
 
-<p class="note">More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">COM API section</a>.</p>
+More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">COM API section</a>.
+{:.note}
 
 ### [The M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/)
 
@@ -56,7 +57,8 @@ M-Files provides two Application Programming Interfaces for developers: the [COM
 * Supports most "user" operations, but cannot be used to undertake "administrative" functions.
 * Not tied directly to the M-Files Server version.
 
-<p class="note">More information is available in the <a href="{{ site.baseurl }}/APIs/REST-API/">REST API section</a>.</p>
+More information is available in the <a href="{{ site.baseurl }}/APIs/REST-API/">REST API section</a>.
+{:.note}
 
 ## Our Frameworks
 
@@ -69,7 +71,8 @@ M-Files provides two separate frameworks for building applications that run with
 * Can create buttons and menu items which can react to selected items.
 * Can create "dashboards" which are shown on demand, and can be provided with content from M-Files.
 
-<p class="note">More information is available in the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/">User Interface Extensibility Framework section</a>.</p>
+More information is available in the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/">User Interface Extensibility Framework section</a>.
+{:.note}
 
 ### [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/)
 
@@ -79,7 +82,8 @@ M-Files provides two separate frameworks for building applications that run with
 * Can be used to create background operations which execute periodically.
 * Can be used to execute .NET code to calculate property values and/or provide property value validation.
 
-<p class="note">More information is available in the <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/">Vault Application Framework section</a>.</p>
+More information is available in the <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/">Vault Application Framework section</a>.
+{:.note}
 
 ## Development Licences
 

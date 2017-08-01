@@ -7,7 +7,8 @@ breadcrumb: VBScript
 
 VBScript provides an easily-accessible mechanism for server-side code to be placed within an M-Files vault or server.  Code can react to vault events (e.g. event handlers), can execute when objects move through workflows (e.g. to enforce that an object meets some conditions before moving into a state), or even to calculate or validate values of properties on objects.
 
-<p class="note">The <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework">Vault Application Framework</a> can be used to enable .NET (typically C#) code to be used in many of the places that VBScript can be used, and should be considered for complex scripts.</p>
+The <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework">Vault Application Framework</a> can be used to enable .NET (typically C#) code to be used in many of the places that VBScript can be used, and should be considered for complex scripts.
+{:.note}
 
 ## Locations VBScript can execute
 
@@ -19,7 +20,8 @@ VBScript can respond to various [vault and server events](http://www.m-files.com
 
 VBScript can be used to [calculate the value of a given property](http://www.m-files.com/user-guide/latest/eng/index.html#Automatic_values.html).  This could be based upon the object's other property values, based upon other information in the vault, or even based upon some external logic (e.g. communication with another system).  Some examples of using [VBScript to calculate property values are available here](http://www.m-files.com/user-guide/latest/eng/index.html#Editing_VBScript_code.html).
 
-<p class="note">"Customized automatic numbering (VBScript)" is used to generate an automatic number and is calculated - typically - once, when the object is created.  A "Calculated value (VBScript)" is re-calculated whenever the object is altered.</p>
+"Customized automatic numbering (VBScript)" is used to generate an automatic number and is calculated - typically - once, when the object is created.  A "Calculated value (VBScript)" is re-calculated whenever the object is altered.
+{:.note}
 
 ### Validating Property Values
 

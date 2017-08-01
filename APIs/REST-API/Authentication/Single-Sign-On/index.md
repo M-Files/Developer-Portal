@@ -10,7 +10,8 @@ This document details those steps and provides a sample C# class which shows the
 
 ## Configuring IIS and M-Files Web Access
 
-<p class="note">This document does not deal with setting up M-Files Web Access.  More information is available in the <a href="http://www.m-files.com/user-guide/latest/eng/#Configure_M-Files_Web_Access.html">Web and Mobile Access</a> section of the online user guide.</p>
+This document does not deal with setting up M-Files Web Access.  More information is available in the <a href="http://www.m-files.com/user-guide/latest/eng/#Configure_M-Files_Web_Access.html">Web and Mobile Access</a> section of the online user guide.
+{:.note}
 
 ### Enabling Windows Authentication within IIS
 
@@ -30,7 +31,8 @@ Select `General` on the left, then enable `Windows SSO`:
 
 ![Enable Windows Single Sign On within MFWA](mfwa-1.png)
 
-<p class="note">It is recommended that these changes are tested in a demonstration/test environment prior to changing any live system, as incorrect settings may lead to M-Files Web Access (and therefore the M-Files Web Service) becoming inaccessible.</p>
+It is recommended that these changes are tested in a demonstration/test environment prior to changing any live system, as incorrect settings may lead to M-Files Web Access (and therefore the M-Files Web Service) becoming inaccessible.
+{:.note}
 
 ## Using Single Sign-On from an application
 
@@ -48,7 +50,8 @@ Please note, though:
 
 ### A C# Sample class
 
-<p class="note">This is meant for information only and is not considered production-quality.</p>
+This is meant for information only and is not considered production-quality.
+{:.note}
 
 ```csharp
 using System;
@@ -112,4 +115,5 @@ namespace WebServiceClient
 
 ```
 
-<p class="note">This sample uses the <a href="http://restsharp.org/">RestSharp</a> library to avoid boilerplate HTTP request and parsing code.  Please confirm the licenses for any third party libraries prior to their use.</p>
+This sample uses the <a href="http://restsharp.org/">RestSharp</a> library to avoid boilerplate HTTP request and parsing code.  Please confirm the licenses for any third party libraries prior to their use.
+{:.note}

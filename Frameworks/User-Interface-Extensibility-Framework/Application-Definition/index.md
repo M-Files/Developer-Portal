@@ -9,7 +9,8 @@ The application definition/manifest file contains information that the M-Files s
 
 ## Schema Versions
 
-<p class="note warning">There are two versions of the XML that can be used, each using a different schema.  It is recommended that you use the <a href="#v3-schema">'V3' schema</a> for applications that target M-Files 2015.2 and higher.</p>
+There are two versions of the XML that can be used, each using a different schema.  It is recommended that you use the <a href="#v3-schema">'V3' schema</a> for applications that target M-Files 2015.2 and higher.
+{:.note.warning}
 
 ### V3 schema
 
@@ -109,13 +110,15 @@ Below is an example of a 'V1' `appdef.xml` file:
 `dashboards` | Optional | A list of dashboards registered within the application.  The dashboard `id` is used to refer to the dashboard within code (e.g. to show it).  More information on [declaring dashboards can be found below](#declaring-dashboards).
 
 
-<p class="note">This application definition file version should be used when targeting M-Files versions lower than 11.2.4320.49, as it does not support the new <a href="#v3-schema">V3 schema</a>.</p>
+This application definition file version should be used when targeting M-Files versions lower than 11.2.4320.49, as it does not support the new <a href="#v3-schema">V3 schema</a>.
+{:.note}
 
 ## Declaring modules
 
 Each application must contain one or more modules.  Each module is declared within the application definition, and the definition contains both the `environment` and the `file` which contains the module code.
 
-<p class="note">This page focused on the declaration of modules.  For more information on using modules within a User Interface Extensibility Framework application, view <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/">the dedicated Modules page</a>.</p>
+This page focused on the declaration of modules.  For more information on using modules within a User Interface Extensibility Framework application, view <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/">the dedicated Modules page</a>.
+{:.note}
 
 The following declares a [ShellUI]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#module-types) module and states that the source code for the module is within `mymodule.js`:
 
@@ -144,7 +147,8 @@ Each application may declare multiple modules.  For example, the following decla
 
 Each application can contain zero or more dashboards.  Each dashboard is declared within the application definition and provided with a unique ID.  This ID is used to reference the dashboard when [showing or hiding it](#showing-and-hiding-dashboards).
 
-<p class="note">This page focused on the declaration of dashboards.  For more information on using dashboards within a User Interface Extensibility Framework application, view <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/">the dedicated Dashboards page</a>.</p>
+This page focused on the declaration of dashboards.  For more information on using dashboards within a User Interface Extensibility Framework application, view <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/">the dedicated Dashboards page</a>.
+{:.note}
 
 The following example declares a single dashboard and assigns it an ID of `myDashboard`.  It also defines the dashboard content to come from a file named `mydashboard.html`:
 
@@ -199,7 +203,8 @@ It is possible to whitelist an entire URI prefix scheme, although this would all
 </dashboard>
 ```
 
-<p class="note">Typical web development practices encourage the use of content delivery networks for static resources such as JavaScript libraries.  In context of User Interface Extensibility Framework applications it is often best to download the library and refer to it locally, so that the application continues to function even if a public internet connection is not available.</p>
+Typical web development practices encourage the use of content delivery networks for static resources such as JavaScript libraries.  In context of User Interface Extensibility Framework applications it is often best to download the library and refer to it locally, so that the application continues to function even if a public internet connection is not available.
+{:.note}
 
 #### Allowing links to function within dashboards
 

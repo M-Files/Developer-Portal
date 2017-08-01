@@ -11,7 +11,8 @@ When working with [ShellUI modules]({{ site.baseurl }}/Frameworks/User-Interface
 
 For example: in a typical `ShellUI` module,  a developer may [register to be notified](../Event-Registration-And-Entry-Points/) when a `ShellListing` is created within the current `ShellFrame` and, from there, register to be notified when the items selected in the listing change.  However, in many situations there may be multiple listings within each shell frame (e.g. the home page contains one shell listing for the central area, plus others including "Recently accessed by me" and "Assigned to me"), and selecting items in one may cause events to be raised in others.
 
-<p class="note">In this example, the handler may check <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellListing~IsActive.html">IsActive</a> on the listing that raised the event to ensure that they only handle events for the listing that the user is interacting with.</p>
+In this example, the handler may check <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellListing~IsActive.html">IsActive</a> on the listing that raised the event to ensure that they only handle events for the listing that the user is interacting with.
+{:.note}
 
 In another example - [detailed further below](#global-scoped-variables) - multiple `ShellFrame` objects may be instantiated at the same time within one window.  Code that assumes that there is only one `ShellFrame` at any one time may fail when the second `ShellFrame` is instantiated.
 

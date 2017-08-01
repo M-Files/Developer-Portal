@@ -15,7 +15,8 @@ Each Object Type can be defined as Internal (created and managed within the M-Fi
 
 By default, M-Files can be set to import objects from an external database using OLEDB.  This functionality allows M-Files to retrieve data from almost any database where an OLEDB driver is available (e.g. Microsoft SQL Server).  M-Files will automatically query the remote data source every 15 minutes to load new objects (known as a "quick refresh"), and will process updates (known as a "full refresh") once per day.
 
-<p class="note">More information on connecting M-Files to external databases can be found in the <a href="http://www.m-files.com/user-guide/latest/eng/#Connection_to_external_database.html">user guide</a>.</p>
+More information on connecting M-Files to external databases can be found in the <a href="http://www.m-files.com/user-guide/latest/eng/#Connection_to_external_database.html">user guide</a>.
+{:.note}
 
 ### Support for Custom External Object Types
 
@@ -27,7 +28,8 @@ Custom External Object Type Data Providers are Microsoft .NET class libraries th
 
 M-Files often uses the concept of "Object Ids".  The object id is an integer (whole number) and is guaranteed to be unique within a given object type.  When external object types are used, M-Files allows the id from that system to be shown on the metadata card instead.  This id is referred to either as the "Display ID" or the "External ID".  Each object still has an internal ID that must be used for normal API calls.
 
-<p class="note">When mapping the "Object ID" in the Connection to External Database, ensure that you map a column which is a unique Id.  If this changes in the future, objects that have been associated with this item may become disconnected.</p>
+When mapping the "Object ID" in the Connection to External Database, ensure that you map a column which is a unique Id.  If this changes in the future, objects that have been associated with this item may become disconnected.
+{:.note}
 
 ### Full vs. quick refreshes
 
@@ -38,7 +40,8 @@ A full refresh detects new objects, compares and updates existing objects, and p
 
 * A quick refresh only detects new objects.  To give some comparative context, a quick refresh of 120,000 items on a test system takes approximately 7 seconds.
 
-<p class="note">The default time intervals for refreshes can be altered using registry settings on the server.  More information on this is available in the <a href="https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/3AEC36EE-946C-4B0C-9DE2-8BF82DED3078/latest">Partner Portal</a>.</p>
+The default time intervals for refreshes can be altered using registry settings on the server.  More information on this is available in the <a href="https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/3AEC36EE-946C-4B0C-9DE2-8BF82DED3078/latest">Partner Portal</a>.
+{:.note}
 
 From the perspective of a custom External Object Type Data Source, there is no difference between a full refresh and a quick refresh; the M-Files Server simply alters how it deals with the data which it is provided.
 
@@ -46,7 +49,8 @@ From the perspective of a custom External Object Type Data Source, there is no d
 
 We are building a vault for a small online retailer.  The retailer has a blog on their website which has posts and comments, which they wish to pull into M-Files to use for reporting and reference.  The blog itself is hosted externally and exposes information for Posts, Users and Comments via a JSON RESTful interface.
 
-<p class="note">For our example we will use sample data from <a href="http://jsonplaceholder.typicode.com/">http://jsonplaceholder.typicode.com/</a>, although we will maintain this data in files on the computer so that we can test saving changes and adding new items.</p>
+For our example we will use sample data from <a href="http://jsonplaceholder.typicode.com/">http://jsonplaceholder.typicode.com/</a>, although we will maintain this data in files on the computer so that we can test saving changes and adding new items.
+{:.note}
 
 ### The Vault Structure
 
@@ -80,7 +84,8 @@ A base class that implements `IDataSourceConnection` that can be used to provide
 * `BasicDataSourceConnection`
 A base class that implements `IDataSourceConnection` and `IDataAlteration` that can be used to provide read/write data to M-Files.
 
-<p class="note">Whilst it is typical that each custom External Object Type Data Source has only one class that implements IDataSource, and one class that implements IDataSourceConnection, this is not mandatory.</p>
+Whilst it is typical that each custom External Object Type Data Source has only one class that implements IDataSource, and one class that implements IDataSourceConnection, this is not mandatory.
+{:.note}
 
 ### Creating the Visual Studio Project
 
@@ -102,7 +107,8 @@ For the purposes of this tutorial, we will have to create a means of accessing t
 
 ### Creating the Data Source
 
-<p class="note">For the sake of brevity, the specific implementation required for our scenario is available within the <a href="https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/1EBBAD7B-A948-47C2-973B-5A32300F468D/latest">source code that can be downloaded from the Partner Portal</a>.  The below information is not a complete code listing.</p>
+For the sake of brevity, the specific implementation required for our scenario is available within the <a href="https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/1EBBAD7B-A948-47C2-973B-5A32300F468D/latest">source code that can be downloaded from the Partner Portal</a>.  The below information is not a complete code listing.
+{:.note}
 
 You may implement `IDataSource` and `IDataSourceConnection` in the same object, if it makes development cleaner.  For clarity, in this sample we will separate the implementation of `IDataSource` from `IDataSourceConnection`.
 
@@ -160,7 +166,8 @@ namespace MFiles.Server.Extensions
 }
 ```
 
-<p class="note">Whilst you can implement IDataSourceConnection yourself, you may instead want to derive from ReadOnlyDataSourceConnection or BasicDataSourceConnection instead.</p>
+Whilst you can implement IDataSourceConnection yourself, you may instead want to derive from ReadOnlyDataSourceConnection or BasicDataSourceConnection instead.
+{:.note}
 
 The most important methods to fully implement are `PrepareForDataRetrieval()`, `GetAvailableColumns()` and `GetItems()`.
 
@@ -168,7 +175,8 @@ The most important methods to fully implement are `PrepareForDataRetrieval()`, `
 
 * `GetAvailableColumns()` provides details to the "Columns" section within the ObjectType Properties window, allowing the user to choose a column for mapping.
 
-<p class="note">The <code class="highlighter-rouge">ColumnDefinition</code> class has a <code class="highlighter-rouge">Type</code> property.  The only supported types are: <code class="highlighter-rouge">string</code>, <code class="highlighter-rouge">int</code>, <code class="highlighter-rouge">bool</code>, <code class="highlighter-rouge">double</code> and <code class="highlighter-rouge">DateTime</code>.  Returning any other column type will result in the M-Files server throwing an exception message when attempting to <a href="#altering-our-object-type-definitions">clicking "Refresh Columns"</a>.</p>
+The `ColumnDefinition` class has a `Type` property.  The only supported types are: `string`, `int`, `bool`, `double` and `DateTime`.  Returning any other column type will result in the M-Files server throwing an exception message when attempting to <a href="#altering-our-object-type-definitions">clicking "Refresh Columns"</a>.
+{:.note}
 
 * `GetItems()` is called by the synchronization engine to retrieve objects to pull into M-Files.
 
@@ -176,7 +184,8 @@ The most important methods to fully implement are `PrepareForDataRetrieval()`, `
 
 ### Deploying the Data Provider and updating M-Files
 
-<p class="note">Editing the computer registry can cause significant harm to your computer.  Taking these steps must be done at your own risk.</p>
+Editing the computer registry can cause significant harm to your computer.  Taking these steps must be done at your own risk.
+{:.note}
 
 To register the custom Object Type Data Source, we must add a new key to the registry:
 
@@ -218,7 +227,8 @@ Repeat this process for all the object types that need to come from the JSON dat
 
 There are many ways to distribute the DLL and associated registry keys to a production server, but the creation of a setup project may be simplest.  We will use the approach below to create a basic setup project that will install our DLL and create the required registry keys for us.
 
-<p class="note">If you have not created setup projects on your machine before, you may have to download the InstallShield Limited Edition for Visual Studio package.  This can be done either by using the prompts within Visual Studio (New Project -> Other Project Types -> Setup and Deployment), or by going to <a href="http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro">http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro</a>.</p>
+If you have not created setup projects on your machine before, you may have to download the InstallShield Limited Edition for Visual Studio package.  This can be done either by using the prompts within Visual Studio (New Project -> Other Project Types -> Setup and Deployment), or by going to <a href="http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro">http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro</a>.
+{:.note}
 
 To create an installer:
 
@@ -235,7 +245,8 @@ To create an installer:
   * Within this key, create a string value named `Path`.  The value should be the string `[TARGETDIR]`, followed by the name of the DLL file you created, e.g. ` [TARGETDIR]ExtOTDS.Json.dll`.
   * Duplicate the above key and values for the `SOFTWARE (64-Bit)` section, so that the keys are created for both.
 
-<p class="note">The GUID shown above should match the one you will use when altering the Object Type Data Source; create a unique GUID for each data source you create.</p>
+The GUID shown above should match the one you will use when altering the Object Type Data Source; create a unique GUID for each data source you create.
+{:.note}
 
 ### Testing the Data Provider
 
@@ -243,7 +254,8 @@ M-Files will automatically start importing data from your data provider when the
 
 ![Testing the Data Provider](testing.png)
 
-<p class="note">If your data is not appearing properly, follow the guidance in the Debugging and notes section.</p>
+If your data is not appearing properly, follow the guidance in the Debugging and notes section.
+{:.note}
 
 ## Debugging and Diagnostics
 
@@ -297,7 +309,8 @@ namespace MFiles.Server.Extensions
 }
 ```
 
-<p class="note">In the sample code we inherit from BasicDataSourceConnection and then override the relevant methods, rather than implementing IDataAlteration directly.</p>
+In the sample code we inherit from BasicDataSourceConnection and then override the relevant methods, rather than implementing IDataAlteration directly.
+{:.note}
 
 ### Processing new items (inserts)
 
@@ -326,7 +339,8 @@ Note that even in implementations that do not require an `INSERT INTO statement`
 
 Log into the vault using the client and test creating an item using the metadata card.  New items should automatically be pushed into the remote data source on save, and be updated with their Id in that data source.
 
-<p class="note">If you encounter exceptions when creating new items, follow the steps in the Debugging and Diagnostics section.</p>
+If you encounter exceptions when creating new items, follow the steps in the Debugging and Diagnostics section.
+{:.note}
 
 ### Processing deletions
 
@@ -343,15 +357,18 @@ Once your methods have been implemented, re-install the DLL (if needed) and upda
 * Go to the `Connection to External Database` tab, and:
   * Ensure that a `DELETE` statement is filled in, even if your Object Type Data Source does not require one (note in the screenshot that "ignored" has been entered).
 
-<p class="note">Even in implementations that do not require a `DELETE statement` to function (e.g. when the data is parsed directly from the column mappings), the M-Files Object Type Properties window requires that one is filled in to proceed.  In this scenario, any content can be entered providing it passes the call to `ValidateDeleteStatemet`.</p>
+Even in implementations that do not require a `DELETE statement` to function (e.g. when the data is parsed directly from the column mappings), the M-Files Object Type Properties window requires that one is filled in to proceed.  In this scenario, any content can be entered providing it passes the call to `ValidateDeleteStatemet`.
+{:.note}
 
 ![Processing deletions](deletes.png)
 
 Log in to the vault and delete an existing item.  Deletions should be pushed immediately to the remote source.
 
-<p class="note">Only a deletion is required to remove the item from the remote source; items do not need to be permanently destroyed.</p>
+Only a deletion is required to remove the item from the remote source; items do not need to be permanently destroyed.
+{:.note}
 
-<p class="note">If you encounter exceptions when creating deleting items, follow the steps in the Debugging and Diagnostics section.</p>
+If you encounter exceptions when creating deleting items, follow the steps in the Debugging and Diagnostics section.
+{:.note}
 
 ### Processing updates
 
@@ -377,7 +394,8 @@ Log in to the vault and update an existing item.  Updates should be pushed immed
 
 ![Processing updates](updates.png)
 
-<p class="note">If you encounter exceptions when updating items, follow the steps in the <a href="#debugging-and-diagnostics">Debugging and Diagnostics</a> section.</p>
+If you encounter exceptions when updating items, follow the steps in the <a href="#debugging-and-diagnostics">Debugging and Diagnostics</a> section.
+{:.note}
 
 
 

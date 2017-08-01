@@ -5,7 +5,8 @@ includeInSearch: true
 breadcrumb: COM API
 ---
 
-<p class="note warning">Please note that these samples and libraries are provided "as-is" and with no warranty, explicit or otherwise. You should ensure that the functionality of these libraries meet your requirements, and thoroughly test them, prior to using in any production scenarios.  The items linked below are designed as teaching tools and may not be fully complete.</p>
+Please note that these samples and libraries are provided "as-is" and with no warranty, explicit or otherwise. You should ensure that the functionality of these libraries meet your requirements, and thoroughly test them, prior to using in any production scenarios.  The items linked below are designed as teaching tools and may not be fully complete.
+{:.note.warning}
 
 All M-Files Samples and Libraries are available in our [public GitHub repositories](https://github.com/m-files/MFilesSamplesAndLibraries/).  Further samples and libraries will be added in response to partner feedback.
 
@@ -27,4 +28,5 @@ This library provides helper and extension methods to more easily work with the 
     * `AddDisplayIdSearchCondition` - adds a search condition restricting the results to an object with a specific external / display id.
     * `AddFullTextSearchCondition` - adds a search condition executing a full-text search for a given text string.  Can be restricted to search in metadata, file data, or both (default).
 
-<p class="note">More details and examples are available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Libraries/MFaaP.MFilesAPI#readme">in in the GitHub repository</a>.</p>
+More details and examples are available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Libraries/MFaaP.MFilesAPI#readme">in in the GitHub repository</a>.
+{:.note}

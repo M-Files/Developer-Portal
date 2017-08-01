@@ -54,7 +54,8 @@ The basic process of our code will be:
 * Save our changes to the object.
 * Handle issues with the audit trail.
 
-<p class="note">Whenever we update an object during a workflow state action or event handler (e.g. using <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperty.html">SetProperty</a> or <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperties.html">SetProperties</a>), we must call <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetLastModificationInfoAdmin.html">SetLastModificationInfoAdmin</a> to ensure that the correct user is shown in the audit trail, otherwise "(M-Files Server)" will be shown.</p>
+Whenever we update an object during a workflow state action or event handler (e.g. using <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperty.html">SetProperty</a> or <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperties.html">SetProperties</a>), we must call <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetLastModificationInfoAdmin.html">SetLastModificationInfoAdmin</a> to ensure that the correct user is shown in the audit trail, otherwise "(M-Files Server)" will be shown.
+{:.note}
 
 ### VBScript
 
@@ -104,7 +105,8 @@ Vault.ObjectPropertyOperations.SetLastModificationInfoAdmin ObjVer, true, objLas
 
 ### Vault Application Framework
 
-<p class="note">The content below only shows the classes required for this to function.  A full set of source code is included in the sample project.</p>
+The content below only shows the classes required for this to function.  A full set of source code is included in the sample project.
+{:.note}
 
 ```csharp
 

@@ -15,7 +15,8 @@ The API can be used to create almost any solution that retrieve or process infor
 * Creating objects within M-Files (e.g. to create an Order object when a user completes payment online),
 * Moving objects through a workflow as required (e.g. when an electronically-signed version of a document is received, move the contract to another state).
 
-<p class="note">The COM API requires the same version of the API on the client machine as the server (e.g. if communicating with an M-Files 2015.3 server, the API must also be of the same version).</p>
+The COM API requires the same version of the API on the client machine as the server (e.g. if communicating with an M-Files 2015.3 server, the API must also be of the same version).
+{:.note}
 
 ## API modes (client vs. server)
 
@@ -46,7 +47,8 @@ For finding objects:
 * [VaultObjectSearchOperations](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations.html) - used to search the vault for matching objects.
 * [VaultViewOperations](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultViewOperations.html) - used to enumerate the contents of views to find objects.
 
-<p class="note">More information on searching for objects can be found in the <a href="{{ site.baseurl }}/APIs/COM-API/Searching/">dedicated pages</a>.</p>
+More information on searching for objects can be found in the <a href="{{ site.baseurl }}/APIs/COM-API/Searching/">dedicated pages</a>.
+{:.note}
 
 For working with objects (finding properties, checking in and out, manipulating files, etc.)
 

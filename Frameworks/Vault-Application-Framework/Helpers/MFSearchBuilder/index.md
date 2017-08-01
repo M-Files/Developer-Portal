@@ -21,7 +21,8 @@ searchBuilder.Deleted(false);
 var searchResults = searchBuilder.Find();
 ```
 
-<p class="note">MFSearchBuilder uses the COM API behind-the-scenes, which means that deleted items will be returned unless you add a search condition to filter them out.</p>
+MFSearchBuilder uses the COM API behind-the-scenes, which means that deleted items will be returned unless you add a search condition to filter them out.
+{:.note}
 
 ## Arguments
 

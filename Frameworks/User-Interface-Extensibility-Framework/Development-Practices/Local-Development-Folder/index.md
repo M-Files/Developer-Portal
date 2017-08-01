@@ -19,6 +19,8 @@ For example, for an application running in a vault with GUID `{C840BE1A-5B47-4AC
 
 Once the applications are complete, the contents of the folder can be zipped up and [deployed to the live vault using the M-Files Admin tool]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Deployment/).  The application will be offered to users to install next time they connect to the vault.  This screen can be avoided - and the application forcibly installed - by [pre-approving it using registry keys]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/).
 
-<p class="note">To test your application, simply log into the M-Files vault using the M-Files Desktop client on the same machine as the local development folder.  Changes will only be loaded when you log out and log in again to the vault.</p>
+To test your application, simply log into the M-Files vault using the M-Files Desktop client on the same machine as the local development folder.  Changes will only be loaded when you log out and log in again to the vault.
+{:.note}
 
-<p class="note warning">The local development area is also used to hold local copies of applications installed into the vault.  You cannot use this location to develop new versions of an existing application unless you alter the application's <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/#guid-formatting">GUID</a> so that it is different to the live version.</p>
+The local development area is also used to hold local copies of applications installed into the vault.  You cannot use this location to develop new versions of an existing application unless you alter the application's <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/#guid-formatting">GUID</a> so that it is different to the live version.
+{:.note.warning}

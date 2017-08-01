@@ -14,7 +14,8 @@ To deploy the application:
 5. Click `Install...` and select the zip file.
 6. Click `Open` and the application should be listed.
 
-<p class="note warning">If you are testing the deployed application from your local machine then ensure that the local development folder is removed prior to deployment, otherwise it will override the deployed code.</p>
+If you are testing the deployed application from your local machine then ensure that the local development folder is removed prior to deployment, otherwise it will override the deployed code.
+{:.note.warning}
 
 ## Tips and tricks
 

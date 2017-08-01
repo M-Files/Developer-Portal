@@ -29,7 +29,8 @@ function OnNewShellUI( shellUI )
 }
 ```
 
-<p class="note">Often objects cannot be accessed until they are started; attempting to use them before this point will result in an error.  In this case, register for the <code class="highlighter-rouge">OnStarted</code> event to be notified when the object can be used.</p>
+Often objects cannot be accessed until they are started; attempting to use them before this point will result in an error.  In this case, register for the `OnStarted` event to be notified when the object can be used.
+{:.note}
 
 ```javascript
 // Execute some code when the shell frame is created and available.
@@ -126,7 +127,8 @@ function OnNewShellUI( shellUI )
 }
 ```
 
-<p class="note">More information on <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#shellui">ShellUI modules can be found here</a>.</p>
+More information on <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#shellui">ShellUI modules can be found here</a>.
+{:.note}
 
 ### VaultUI modules
 
@@ -140,7 +142,8 @@ function OnNewVaultUI( vaultUI )
 }
 ```
 
-<p class="note">More information on <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#vaultui">VaultUI modules can be found here</a>.</p>
+More information on <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#vaultui">VaultUI modules can be found here</a>.
+{:.note}
 
 ### VaultCore modules
 
@@ -154,7 +157,8 @@ function OnNewVaultCore( vaultCore )
 } 
 ```
 
-<p class="note">More information on <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#vaultcore">VaultCore modules can be found here</a>.</p>
+More information on <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#vaultcore">VaultCore modules can be found here</a>.
+{:.note}
 
 ## Dashboard entry points
 
@@ -181,4 +185,5 @@ function OnNewVaultCore( vaultCore )
 </body>
 </html>
 ```
-<p class="note">More information on <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/">dashboards can be found here</a>.</p>
+More information on <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/">dashboards can be found here</a>.
+{:.note}

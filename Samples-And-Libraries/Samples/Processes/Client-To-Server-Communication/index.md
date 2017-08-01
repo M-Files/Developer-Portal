@@ -9,7 +9,8 @@ This sample shows how to call server-side code from a client-side event.  In thi
 
 This technique can be used to execute code on the server rather than the client, which may be useful for reasons such as speed or security.
 
-<p class="note">Full source code for this sample is available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/ClientToServerCode">in our GitHub Samples and Libraries repository</a>.</p>
+Full source code for this sample is available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/Processes/ClientToServerCode">in our GitHub Samples and Libraries repository</a>.
+{:.note}
 
 ## Creating the VBScript vault extension method
 
@@ -32,7 +33,8 @@ Option Explicit
 Output = "The VBScript event handler said the time was: " & Now() & " (input was: " & Input & ")"
 ```
 
-<p class="note">In the sample above the name of the vault extension method was <code class="highlighter-rouge">VaultExtensionMethod_VBScript</code>.</p>
+In the sample above the name of the vault extension method was `VaultExtensionMethod_VBScript`.
+{:.note}
 
 ## Creating the Vault Application Framework application
 
@@ -108,7 +110,8 @@ It is important to note:
 </application>
 ```
 
-<p class="note">The above code declares <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#declaring-compatibility-with-both-platforms">platform compatibility with both M-Files Desktop and M-Files Web Access</a>. </p>
+The above code declares <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#declaring-compatibility-with-both-platforms">platform compatibility with both M-Files Desktop and M-Files Web Access</a>. 
+{:.note}
 
 ### The module file
 
@@ -118,7 +121,8 @@ We will create a module file that:
 2. Reacts when the buttons are clicked and executes a vault extension method (lines 56-95).
 3. Displays the result of the vault extension method in a message box (lines 71 and 85).
 
-<p class="note">The below code uses the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming style</a> so that the code is compatible with M-Files Web Access.</p>
+The below code uses the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming style</a> so that the code is compatible with M-Files Web Access.
+{:.note}
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
@@ -226,7 +230,8 @@ To deploy both applications together, follow the instructions in the [distributi
 
 ![A child application displayed under its parent in the M-Files Admin tool]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Distributing-Child-Applications/parent-child-applications.png)
 
-<p class="note">Technically the User Interface Extensibility Framework application can be uninstalled through the M-Files Admin tool, but it will be re-installed automatically when the vault restarts.</p>
+Technically the User Interface Extensibility Framework application can be uninstalled through the M-Files Admin tool, but it will be re-installed automatically when the vault restarts.
+{:.note}
 
 ## Automating the build of the UIX application
 
@@ -248,7 +253,8 @@ In this approach we will use PowerShell to create a `.mfappx` of the User Interf
 
 ![The Visual Studio project details](visual-studio-project-details.png)
 
-<p class="note">The post-build event command line should already be populated due.</p>
+The post-build event command line should already be populated due.
+{:.note}
 
 Enter the following into the `Pre-build event command line` box:
 

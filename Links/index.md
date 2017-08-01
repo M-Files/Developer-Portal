@@ -28,7 +28,8 @@ Our community forum is open to all users of M-Files.  Any questions can be asked
 
 * [The M-Files Developer Community Yammer Network (invite-only)](https://www.yammer.com/m-filesdevelopercommunity/)
 
-<p class="note">If you would like to be invited to the M-Files Developer Community Yammer network, please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.</p>
+If you would like to be invited to the M-Files Developer Community Yammer network, please contact <a href="mailto:devsupport@m-files.com">devsupport@m-files.com</a>.
+{:.note}
 
 ## Partner-specific Resources
 

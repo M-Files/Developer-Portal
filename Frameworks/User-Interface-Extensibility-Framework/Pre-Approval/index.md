@@ -75,13 +75,15 @@ This is more awkward to locate, as it is only shown in the dialog when the clien
 
 The checksum in this screenshot is the value `p6NRiPTsbZ9QIKYRYbT5H2+gH8ob4UNP94B3ksNU3/0=`.
 
-<p class="note">The checksum is for the application, and does not change if it moves between server or vaults.  It will, however, change if any files within the application are modified.</p>
+The checksum is for the application, and does not change if it moves between server or vaults.  It will, however, change if any files within the application are modified.
+{:.note}
 
 ## Pre-approving the application
 
 To pre-approve the UIX, a registry value must be installed on the client machines. The easiest way to do this is to deploy the the value using group policy. In this sample we will cover the location and value; how it is distributed is a separate topic.  Firstly, a key needs to be created of the following format: `HKEY_LOCAL_MACHINE\SOFTWARE\Motive\M-Files\<version>\Client\MFClient\ApplicationAccess\<vault GUID>`
 
-<p class="note"><code>&lt;version&gt;</code> and <code>&lt;vault GUID&gt;</code> need to be replaced with the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-client-version">M-Files client version</a> and the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-vault-guid">M-Files vault GUID</a>. For example, for a client running <code class="highlighter-rouge">11.3.4330.196 (M-Files 2015.3 SR2)</code> on a vault with GUID <code class="highlighter-rouge">{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}</code>, the key would be <code class="highlighter-rouge">HKEY_LOCAL_MACHINE\SOFTWARE\Motive\M-Files\11.3.4330.196\Client\MFClient\ApplicationAccess\{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}</code>.</p>
+<code>&lt;version&gt;</code> and <code>&lt;vault GUID&gt;</code> need to be replaced with the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-client-version">M-Files client version</a> and the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-vault-guid">M-Files vault GUID</a>. For example, for a client running `11.3.4330.196 (M-Files 2015.3 SR2)` on a vault with GUID `{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}`, the key would be `HKEY_LOCAL_MACHINE\SOFTWARE\Motive\M-Files\11.3.4330.196\Client\MFClient\ApplicationAccess\{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}`.
+{:.note}
 
 Within this key, a string value (`REG_SZ`) must be created. The name of the value should be the [application GUID]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-uix-application-guid) ([brace-formatted]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#a-note-on-guids)) and the data should be the [application checksum]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-application-checksum). For an application with GUID `1B9552B3-C1C5-44b9-905F-D4ABAC5E8AE2` and checksum `p6NRiPTsbZ9QIKYRYbT5H2+gH8ob4UNP94B3ksNU3/0=`, the registry value would look like this:
 

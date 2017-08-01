@@ -7,7 +7,8 @@ breadcrumb: Assign to me
 
 This sample creates a basic User Interface Extensibility Framework application consisting of one [ShellUI module]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#shellui) which allows the user to select objects within the M-Files vault and assign them to themselves via a button in the task pane.
 
-<p class="note">The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/Commands">GitHub Samples and Libraries repository</a>.</p>
+The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/Commands">GitHub Samples and Libraries repository</a>.
+{:.note}
 
 ## Overview
 
@@ -40,7 +41,8 @@ Into this folder we will create an [application definition file]({{ site.baseurl
 	</modules>
 </application>
 ```
-<p class="note">Ensure that your application has a unique GUID by using a GUID generator, such as <a href="https://guidgenerator.com/">this one</a>.</p>
+Ensure that your application has a unique GUID by using a GUID generator, such as <a href="https://guidgenerator.com/">this one</a>.
+{:.note}
 
 ### Creating the module
 
@@ -284,9 +286,11 @@ We will:
 	* Create the object (lines 236-246) and check it in (line 249).
 * Call the function when the command is clicked (line 88).
 
-<p class="note">The code below uses the API in the standard synchronous manner.  The next section - <a href="{{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/#enabling-compatibility-with-m-files-web-access">enabling compatibility with M-Files Web</a> - will alter it to use an asynchronous approach.</p>
+The code below uses the API in the standard synchronous manner.  The next section - <a href="{{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/#enabling-compatibility-with-m-files-web-access">enabling compatibility with M-Files Web</a> - will alter it to use an asynchronous approach.
+{:.note}
 
-<p class="note">We have to execute <code class="highlighter-rouge">CreateNewObject</code> and <code class="highlighter-rouge">CheckIn</code> separately (rather than calling <code class="highlighter-rouge">CreateNewObjectEx</code>, which will check it in for us) as <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html">only CreateNewObject is supported in M-Files Web Access</a>.</p>
+We have to execute `CreateNewObject` and `CheckIn` separately (rather than calling `CreateNewObjectEx`, which will check it in for us) as <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html">only CreateNewObject is supported in M-Files Web Access</a>.
+{:.note}
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
@@ -580,7 +584,8 @@ When creating code to run on the M-Files Desktop client, using [an asynchronous 
 1. API calls must use the `Async` object (e.g. change `Vault.ObjectOperations.CheckOut` to `Vault.Async.ObjectOperations.CheckOut`).
 2. API calls do not directly return values; the return value can be accessed in a [callback function](/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-successful-callback) which must be provided in addition to any standard arguments.
 
-<p class="note">In addition, it is also recommended to provide both a <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-failed-callback">callback to handle any exceptions</a>, and a <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-cleanup-callback">callback which is executed regardless of success or failure</a>.  The code below uses both.</p>
+In addition, it is also recommended to provide both a <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-failed-callback">callback to handle any exceptions</a>, and a <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-cleanup-callback">callback which is executed regardless of success or failure</a>.  The code below uses both.
+{:.note}
 
 The specific sections of code to change are:
 
@@ -588,7 +593,8 @@ The specific sections of code to change are:
 2. The call to [CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html).
 3. The call to [CheckIn](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html).
 
-<p class="note">Note that <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 204-340).</p>
+Note that <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 204-340).
+{:.note}
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of

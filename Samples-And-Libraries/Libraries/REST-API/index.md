@@ -5,7 +5,8 @@ includeInSearch: true
 breadcrumb: REST API
 ---
 
-<p class="note warning">Please note that these samples and libraries are provided "as-is" and with no warranty, explicit or otherwise. You should ensure that the functionality of these libraries meet your requirements, and thoroughly test them, prior to using in any production scenarios.  The items linked below are designed as teaching tools and may not be fully complete.</p>
+Please note that these samples and libraries are provided "as-is" and with no warranty, explicit or otherwise. You should ensure that the functionality of these libraries meet your requirements, and thoroughly test them, prior to using in any production scenarios.  The items linked below are designed as teaching tools and may not be fully complete.
+{:.note.warning}
 
 All M-Files Samples and Libraries are available in our [public GitHub repositories](https://github.com/m-files/MFilesSamplesAndLibraries/).  Further samples and libraries will be added in response to partner feedback.
 
@@ -24,4 +25,5 @@ This library aims to provide an easy-to-use .NET wrapper for the [M-Files Web Se
 
 The library contains a set of basic unit tests, which will be expanded as the library progresses.
 
-<p class="note">More details and examples are available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Libraries/MFaaP.MFWSClient#readme">in in the GitHub repository</a>.</p>
+More details and examples are available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Libraries/MFaaP.MFWSClient#readme">in in the GitHub repository</a>.
+{:.note}

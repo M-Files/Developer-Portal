@@ -9,7 +9,8 @@ To create an object via the M-Files Web Service, make a POST request to [/object
 
 The examples below are written in C# and use objects from the [downloadable code samples](http://www.m-files.com/mfws/samples.html), which contains an `MFWSStructs.cs` file.  This file contains structures that mimic the JSON structures expected by the M-Files Web Service.  These are used to simplify the creation of objects, but are not directly required for use with the Web Service.  Note the bug mentioned in the [tips and tricks](#tips-and-tricks) section below.
 
-<p class="note">The code below uses <a href="http://www.newtonsoft.com/json">JSON.NET</a> to serialize and deserialize objects into JSON strings.  This library is used simply to keep the code below as clean as possible, and is not required to use the M-Files Web Service.  Some samples in the official documentation use the built-in <a href="https://msdn.microsoft.com/en-us/library/system.runtime.serialization.json.datacontractjsonserializer(v=vs.110).aspx">DataContractJsonSerializer</a> class, but this can have issues with JSON-formatted dates.</p>
+The code below uses <a href="http://www.newtonsoft.com/json">JSON.NET</a> to serialize and deserialize objects into JSON strings.  This library is used simply to keep the code below as clean as possible, and is not required to use the M-Files Web Service.  Some samples in the official documentation use the built-in <a href="https://msdn.microsoft.com/en-us/library/system.runtime.serialization.json.datacontractjsonserializer(v=vs.110).aspx">DataContractJsonSerializer</a> class, but this can have issues with JSON-formatted dates.
+{:.note}
 
 ## Creating objects
 
@@ -17,7 +18,8 @@ The examples below are written in C# and use objects from the [downloadable code
 
 To create a non-document object, execute a POST request to [/objects/(type)](http://www.m-files.com/mfws/resources/objects/type.html) with the property values for the new object.
 
-<p class="note">The sample code includes a dummy authentication token.  For more information on authentication, see <a href="{{ site.baseurl }}/APIs/REST-API/Authentication/">Authentication</a>.</p>
+The sample code includes a dummy authentication token.  For more information on authentication, see <a href="{{ site.baseurl }}/APIs/REST-API/Authentication/">Authentication</a>.
+{:.note}
 
 ```csharp
 // Create a HttpClient.
@@ -77,7 +79,8 @@ var objectVersion = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>
 System.Console.WriteLine("New object Id was: " + objectVersion.ObjVer.ID);
 ```
 
-<p class="note">The default "Name or Title" property always has the property Id of zero.  However, each class may have the property used for the name or title altered during setup.  Ensure that the property values sent match the expected properties from the class.</p>
+The default "Name or Title" property always has the property Id of zero.  However, each class may have the property used for the name or title altered during setup.  Ensure that the property values sent match the expected properties from the class.
+{:.note}
 
 ### Creating an object with files
 
@@ -121,7 +124,8 @@ objectCreationInfo.Files = new UploadInfo[]
 };
 ```
 
-<p class="note">After a file is uploaded to <a href="http://www.m-files.com/mfws/resources/files.html">/files</a>, an <a href="http://www.m-files.com/mfws/structs/uploadinfo.html">UploadInfo</a> will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.</p>
+After a file is uploaded to <a href="http://www.m-files.com/mfws/resources/files.html">/files</a>, an <a href="http://www.m-files.com/mfws/structs/uploadinfo.html">UploadInfo</a> will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
+{:.note}
 
 #### Putting it all together
 
@@ -205,7 +209,8 @@ Properties for an object can be altered en-masse by making a `POST` or `PUT` req
 
 A specific property can be added, updated, or removed from an object by using the [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html) endpoint.  In addition, some other endpoints exist (e.g. [/objects/(type)/(objectid)/(version)/properties/comments](http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html), [/objects/(type)/(objectid)/(version)/properties/title](http://www.m-files.com/mfws/resources/objects/type/objectid/version/title.html), and [/objects/(type)/(objectid)/(version)/properties/workflowstate](http://www.m-files.com/mfws/resources/objects/type/objectid/version/workflowstate.html)) that allow specific M-Files properties to be updated.
 
-<p class="note">Updating properties still requires the object to be checked out.  The general process should be: check out, update object, check in.  Some endpoints will automatically do this in the background (e.g. <a href="http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html">/objects/(type)/(objectid)/(version)/properties/comments</a>), but these will be detailed in the documentation.</p>
+Updating properties still requires the object to be checked out.  The general process should be: check out, update object, check in.  Some endpoints will automatically do this in the background (e.g. <a href="http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html">/objects/(type)/(objectid)/(version)/properties/comments</a>), but these will be detailed in the documentation.
+{:.note}
 
 ```csharp
 // Create a HttpClient.
@@ -261,7 +266,8 @@ Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
 	await (await client.PutAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout"), httpContent)).Content.ReadAsStringAsync());
 ```
 
-<p class="note">The <a href="http://www.m-files.com/mfws/resources/objects/type/objectid/version/checkedout.html">check out status endpoint documentation</a> states that the PUT request takes an <a href="http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html">MFCheckOutStatus</a> as an input, but this must be wrapped in a <a href="http://www.m-files.com/mfws/structs/primitivetypet.html">PrimitiveType</a>; this is the reason that the JSON for the checkout/checkin requests contains the "Value" element and not just the check in enum value.</p>
+The <a href="http://www.m-files.com/mfws/resources/objects/type/objectid/version/checkedout.html">check out status endpoint documentation</a> states that the PUT request takes an <a href="http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html">MFCheckOutStatus</a> as an input, but this must be wrapped in a <a href="http://www.m-files.com/mfws/structs/primitivetypet.html">PrimitiveType</a>; this is the reason that the JSON for the checkout/checkin requests contains the "Value" element and not just the check in enum value.
+{:.note}
 
 
 ### Adding a new file to an existing object
@@ -341,7 +347,8 @@ Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
 	await (await client.PutAsync(new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout"), httpContent)).Content.ReadAsStringAsync());
 ```
 
-<p class="note">There are a number of endpoints that can be used to add files to an existing object.  The approach above uses the same pattern as creating a new object.</p>
+There are a number of endpoints that can be used to add files to an existing object.  The approach above uses the same pattern as creating a new object.
+{:.note}
 
 ### Removing a file
 

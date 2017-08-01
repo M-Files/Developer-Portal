@@ -9,7 +9,8 @@ The M-Files Web Service exposes an [endpoint](http://www.m-files.com/mfws/resour
 
 Note that, unlike the M-Files COM API, the M-Files Web Service will exclude deleted objects from the search results by default.
 
-<p class="note">If using .NET, it may be worth looking at the <a href="/Samples-And-Libraries/#rest-api-wrapper-net">REST API Wrapper for .NET</a>.  This handles the creation of the search condition querystring parameters, and any encoding required for their values.</p>
+If using .NET, it may be worth looking at the <a href="/Samples-And-Libraries/#rest-api-wrapper-net">REST API Wrapper for .NET</a>.  This handles the creation of the search condition querystring parameters, and any encoding required for their values.
+{:.note}
 
 ## Example search conditions
 

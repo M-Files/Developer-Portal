@@ -39,4 +39,5 @@ Most modern web browsers have built-in debugging tools, e.g. in [Microsoft Edge 
 
 ![Debugging using Microsoft Edge](debugging_microsoftedge.png)
 
-<p class="note">Once a breakpoint is set, you may need to refresh the page for the correct event to be triggered.</p>
+Once a breakpoint is set, you may need to refresh the page for the correct event to be triggered.
+{:.note}

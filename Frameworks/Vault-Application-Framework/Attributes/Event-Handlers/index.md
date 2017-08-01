@@ -16,7 +16,8 @@ public void MyEventHandler(EventHandlerEnvironment env)
 }
 ```
 
-<p class="note">The event handler type is included in the attribute declaration.  Other values can also be passed, such as the alias of the object type or class of object that this code should run for, if applicable.</p>
+The event handler type is included in the attribute declaration.  Other values can also be passed, such as the alias of the object type or class of object that this code should run for, if applicable.
+{:.note}
 
 ## MFEventHandlerType
 

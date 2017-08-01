@@ -20,7 +20,8 @@ Executing a search to find objects by various property values.
 
 Full details and samples are available in the [M-Files URL properties](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/BE2AA2E4-8B75-43DF-8E31-C045A31938B0/latest) document, available in our online knowledgebase.
 
-<p class="note">In order to use M-Files URLs, the M-Files Desktop client must be installed on the computer, and a connection to the vault must have already been set up.</p>
+In order to use M-Files URLs, the M-Files Desktop client must be installed on the computer, and a connection to the vault must have already been set up.
+{:.note}
 
 ## M-Files Web
 
@@ -35,4 +36,5 @@ Linking directly to a view by ID and, optionally, virtual folder.
 
 Full details and samples are available in the [Creating M-Files Web URLs](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/A20AFDD6-9F0E-42FB-AA30-D2347142B51C/latest) document, available in our online knowledgebase.
 
-<p class="note">Linking to objects, files or views will require the user to log into the M-Files Web Access, if appropriate, prior to accessing the relevant item.</p>
+Linking to objects, files or views will require the user to log into the M-Files Web Access, if appropriate, prior to accessing the relevant item.
+{:.note}

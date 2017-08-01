@@ -57,7 +57,8 @@ Vault.ObjectPropertyOperations.SetLastModificationInfoAdmin ObjVer, True, objLas
 
 ![Fixed audit trail](history-fixed.png)
 
-<p class="note">In the screenshot above, note that the "Execute code" state now has the correct user against it.  The transition back to "Initial" is still executed by the M-Files Server, as this is an automatic state transition.</p>
+In the screenshot above, note that the "Execute code" state now has the correct user against it.  The transition back to "Initial" is still executed by the M-Files Server, as this is an automatic state transition.
+{:.note}
 
 ### Helpers in the Vault Application Framework
 

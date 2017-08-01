@@ -14,7 +14,8 @@ M-Files can retrieve content from various systems:
 * [Salesforce](#salesforce)
 * [Any other system, via custom data sources]({{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Custom/)
 
-<p class="note">More information on the <a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Default-Refresh-Logic/">synchronisation process, including the default refresh logic, is available</a>.</p>
+More information on the <a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Default-Refresh-Logic/">synchronisation process, including the default refresh logic, is available</a>.
+{:.note}
 
 ## ODBC
 
@@ -38,4 +39,5 @@ Some systems, however, cannot be easily accessed using OLEDB.  These include leg
 
 [Custom External Object Type Data Sources]({{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Custom/) are Microsoft .NET class libraries that are installed onto the server and handle the mapping of content from the data source into M-Files property definitions.  Custom External Object Type Data Providers can be read-only, or can support update/create functions.
 
-<p class="note">This site contains a <a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Custom/">step-by-step guide to creating your own Custom External Object Type Data Source</a>.</p>
+This site contains a <a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Custom/">step-by-step guide to creating your own Custom External Object Type Data Source</a>.
+{:.note}

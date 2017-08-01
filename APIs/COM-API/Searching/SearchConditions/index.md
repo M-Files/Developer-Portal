@@ -7,7 +7,8 @@ breadcrumb: Conditions
 
 Detailed below are methods of creating individual [SearchCondition](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchCondition.html) objects.  These are typically combined into a collection of [SearchConditions](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchConditions.html) before being [executed against the vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations.html).
 
-<p class="note">When using the Vault Application Framework, the <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/MFSearchBuilder/">MFSearchBuilder</a> class can be used to more easily construct otherwise-complex search conditions.</p>
+When using the Vault Application Framework, the <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/MFSearchBuilder/">MFSearchBuilder</a> class can be used to more easily construct otherwise-complex search conditions.
+{:.note}
 
 ## Excluding deleted items
 
@@ -263,7 +264,8 @@ condition.ConditionType = MFConditionType.MFConditionTypeEqual;
 condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "MyExternalObjectId");
 ```
 
-<p class="note">An example of searching by display/external ID is available within <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/SearchByDisplayId">the SearchByDisplayId sample in our github repository</a>.</p>
+An example of searching by display/external ID is available within <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/SearchByDisplayId">the SearchByDisplayId sample in our github repository</a>.
+{:.note}
 
 ## Excluding an object by ID
 

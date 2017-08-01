@@ -15,7 +15,8 @@ The template can be downloaded from the [M-Files Partner Portal](https://partner
 
 In this example we will create a basic Vault Application Framework application and install it into the Sample Vault, running on the local machine.
 
-<p class="note">If you do not have M-Files installed on the same machine as Visual Studio, then you must <a href="#manual-deployment">deploy the zip file manually</a>.  Debugging can be undertaken on remote applications by <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Debugging/#Remote-Debugging">following these instructions</a></p>
+If you do not have M-Files installed on the same machine as Visual Studio, then you must <a href="#manual-deployment">deploy the zip file manually</a>.  Debugging can be undertaken on remote applications by <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Debugging/#Remote-Debugging">following these instructions</a>
+{:.note}
 
 ### Creating an application from the template
 
@@ -66,7 +67,8 @@ By default, the post-build event command line is set to the following:
 This instructs Visual Studio, after the build process has completed, to execute the M-Files Vault Application Installer.  This installer will create a zip file within the output folder and then attempt to deploy the application to the vault named "Sample Vault".  This can be altered to the name of the vault you wish to install to.  For example, the following will instruct the installer to deploy the application into a vault named "My Test Vault".
 `start "Installing Vault Application" /D "$(TargetDir)" "MFVaultApplicationInstaller.exe" "My Test Vault"`
 
-<p class="note">The name passed to the installer is the name of the vault on the server, not the name of the vault configured within the M-Files Desktop Settings application.</p>
+The name passed to the installer is the name of the vault on the server, not the name of the vault configured within the M-Files Desktop Settings application.
+{:.note}
 
 If you do not have an M-Files server running locally, the build event command line can be altered to avoid the deploy step.  In this scenario the application zip will still be created, and the path to the zip output for manual deployment.  This is done by simply removing the final argument from the command line:
 `start "Installing Vault Application" /D "$(TargetDir)" "MFVaultApplicationInstaller.exe"`
@@ -77,7 +79,8 @@ To build and deploy the project, either select the `Build` menu item within Visu
 
 ![Installing the vault application](installing-vault-application.png)
 
-<p class="note">This screen shows the full path to the zip file created by the installer.  If you are deploying the application manually, copy this file to the M-Files server and install using the M-Files Admin software.</p>
+This screen shows the full path to the zip file created by the installer.  If you are deploying the application manually, copy this file to the M-Files server and install using the M-Files Admin software.
+{:.note}
 
 ### Observing the output
 
