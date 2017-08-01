@@ -1,0 +1,78 @@
+* > a.public-anchor
+{
+	display: none;
+	margin-left: 5px;
+}
+*:hover > a.public-anchor
+{
+	display: inline-block;
+}
+
+#in-page-nav > ul::before
+{
+	font-weight: bold;
+	position: relative;
+}
+
+#in-page-nav > ul::before
+{
+	top: 10px;
+	left: 25px;
+	font-size: 1em;
+}
+
+body #in-page-nav
+{
+    position: fixed;
+	left: auto;
+    right: 0px;
+    width: 300px;
+    top: 0px;
+    bottom: 0px;
+    padding-top: 80px;
+    z-index: 10;
+    background-color: white;
+	border: solid 1px #f5f5f5;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	a
+	{
+		text-decoration: none;
+		color: #555;
+	}
+	> ul
+	{
+		overflow: auto;
+		position: absolute;
+		top: 60px;
+		bottom: 0px;
+		width: 100%;
+		border-top: 0px;
+		font-size: 0.9em;
+		li
+		{
+			padding: 4px 20px;
+			padding-left: 5px;
+		}
+		> li
+		{
+			margin-top: 10px;
+		}
+	}
+}
+
+.has-in-page-nav article h1,
+	.has-in-page-nav article h2,
+	.has-in-page-nav article h3,
+	.has-in-page-nav article h4e
+{
+	border-left: 5px solid transparent;
+	border-bottom: 1px solid #EEE;
+	overflow: hidden;
+    padding-left: 5px;
+	margin-left: 5px;
+	padding-bottom: 5px;
+	position: relative;
+	left: -15px;
+}
