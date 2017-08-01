@@ -41,7 +41,10 @@
     $navLinks.click(highlightLink);
 
     // Highlight the current page.
-    var currentPageAddress = window.location.pathname;
-    $($navLinks).filter("a[href='" + currentPageAddress + "']").each(highlightLink);
+	var currentPageAddress = window.location.pathname;
+	
+	$document.ready(function(){
+		$($navLinks).filter("a[href='" + currentPageAddress + "']").each(highlightLink);
+	})
 
 })(jQuery);
