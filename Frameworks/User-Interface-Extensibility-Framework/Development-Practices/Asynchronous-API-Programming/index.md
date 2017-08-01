@@ -46,7 +46,7 @@ Each asynchronous call can be provded with up to three callback functions, in th
 
 ### The successful callback
 
-The success callback is executed if the API call completed successfully.  It always receives a single parameter which is the return value of the call.  For example: [GetProperties](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) defines two parameters (the [ObjVer](https://www.m-files.com/api/documentation/latest/MFilesAPI~ObjVer.html) to get the properties of, and the whether to update from the server or not) and returns a [PropertyValues]https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html() object, so the parameter would be a single object of type `PropertyValues`:
+The success callback is executed if the API call completed successfully.  It always receives a single parameter which is the return value of the call.  For example: [GetProperties](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) defines two parameters (the [ObjVer](https://www.m-files.com/api/documentation/latest/MFilesAPI~ObjVer.html) to get the properties of, and the whether to update from the server or not) and returns a [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html) object, so the parameter would be a single object of type `PropertyValues`:
 
 ```javascript
 vault.Async.ObjectPropertyOperations.GetProperties(objVer, 

@@ -14,7 +14,7 @@
 	content: "In this article";
 	position: absolute;
 	top: 5px;
-	left: 25px;
+	left: 10px;
 	font-size: 0.9em;
 	font-family: "Source Sans Pro",sans-serif;
 	color: #333;
@@ -35,17 +35,56 @@ body #in-page-nav
 	position: relative;
 	left: 0px;
 	padding-bottom: 5px;
+	margin: 10px;
+	a
+	{
+		text-decoration: none;
+	}
 	> ul
 	{
-		border-top: 32px solid #EEE;
 		li
 		{
-			padding: 5px 20px 0px 5px;
+			padding: 7px 20px 0px 7px;
 			margin-left: 10px;
 		}
 		> li
 		{
 			margin-left: 20px;
 		}
+	}
+}
+
+@media screen and (max-width: 1499px)
+{
+	body #in-page-nav
+	{
+		> ul
+		{
+			border-top: 32px solid #EEE;
+			li
+			{
+				margin-right: 25px;
+				a
+				{
+					width: 100%;
+					height: 100%;
+					display: inline-block;
+					border-bottom: 1px dashed #CCC;
+					padding-bottom: 7px;
+				}
+			}
+			> li
+			{
+				> ul > li
+				{
+					display: none;
+				}
+			}
+		}
+	}
+	body #in-page-nav > ul > li:last-child a
+	{
+		border-bottom: none;
+		padding-bottom: 5px;
 	}
 }
