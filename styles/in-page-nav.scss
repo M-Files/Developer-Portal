@@ -1,3 +1,14 @@
+* > a.public-anchor
+{
+	display: none;
+	margin-left: 5px;
+}
+
+*:hover > a.public-anchor
+{
+	display: inline-block;
+}
+
 #in-page-nav > ul::before
 {
 	content: "In this article";
