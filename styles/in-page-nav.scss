@@ -28,6 +28,10 @@
     padding: 0px;
     list-style-type: none;
 }
+body #in-page-nav:empty
+{
+	display:none;
+}
 
 body #in-page-nav
 {

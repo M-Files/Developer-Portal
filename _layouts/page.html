@@ -34,9 +34,7 @@ layout: default
   <div class="entry">
 	<article>
 	  
-	  <div id="in-page-nav">
-	  	{% include toc.html html=content sanitize=true h_min=2 h_max=4 %}
-      </div>
+	  <div id="in-page-nav">{% include toc.html html=content sanitize=true h_min=2 h_max=4 %}</div>
 
 	  {% if page.stubPage %}
 		<p class="note stub">Please note that this page content is not complete.</p>
