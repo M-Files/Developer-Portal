@@ -7,7 +7,7 @@ breadcrumb: Custom
 
 ## An Overview of External Object Types
 
-M-Files uses "Object Types" to define the objects that will be managed, stored, and maintained within the M-Files vault.  Built-in object types include Documents and Document Collections, but object types such as Company, Contact, or Project can be created and customized depending upon the needs of the organization.
+M-Files uses `Object Types` to define the objects that will be managed, stored, and maintained within the M-Files vault.  Built-in object types include Documents and Document Collections, but object types such as Company, Contact, or Project can be created and customized depending upon the needs of the organization.
 
 Each Object Type can be defined as Internal (created and managed within the M-Files clients), or External (typically managed within an external system).  External object types can either be read-only within the M-Files client, or can be defined as read/write, where objects created, changed, or deleted in the M-Files client can be pushed back to the originating system.
 
@@ -26,9 +26,9 @@ Custom External Object Type Data Providers are Microsoft .NET class libraries th
 
 ### A quick note on Internal and External Object Ids
 
-M-Files often uses the concept of "Object Ids".  The object id is an integer (whole number) and is guaranteed to be unique within a given object type.  When external object types are used, M-Files allows the id from that system to be shown on the metadata card instead.  This id is referred to either as the "Display ID" or the "External ID".  Each object still has an internal ID that must be used for normal API calls.
+M-Files often uses the concept of `Object Ids`.  The object id is an integer (whole number) and is guaranteed to be unique within a given object type.  When external object types are used, M-Files allows the id from that system to be shown on the metadata card instead.  This id is referred to either as the `Display ID` or the `External ID`.  Each object still has an internal ID that must be used for normal API calls.
 
-When mapping the "Object ID" in the Connection to External Database, ensure that you map a column which is a unique Id.  If this changes in the future, objects that have been associated with this item may become disconnected.
+When mapping the `Object ID` in the Connection to External Database, ensure that you map a column which is a unique Id.  If this changes in the future, objects that have been associated with this item may become disconnected.
 {:.note}
 
 ### Full vs. quick refreshes
@@ -175,7 +175,7 @@ The most important methods to fully implement are `PrepareForDataRetrieval()`, `
 
 * `GetAvailableColumns()` provides details to the "Columns" section within the ObjectType Properties window, allowing the user to choose a column for mapping.
 
-The `ColumnDefinition` class has a `Type` property.  The only supported types are: `string`, `int`, `bool`, `double` and `DateTime`.  Returning any other column type will result in the M-Files server throwing an exception message when attempting to <a href="#altering-our-object-type-definitions">clicking "Refresh Columns"</a>.
+The `ColumnDefinition` class has a `Type` property.  The only supported types are: `string`, `int`, `bool`, `double` and `DateTime`.  Returning any other column type will result in the M-Files server throwing an exception message when [clicking "Refresh Columns"](#altering-our-object-type-definitions).
 {:.note}
 
 * `GetItems()` is called by the synchronization engine to retrieve objects to pull into M-Files.
@@ -189,7 +189,7 @@ Editing the computer registry can cause significant harm to your computer.  Taki
 
 To register the custom Object Type Data Source, we must add a new key to the registry:
 
-* Create a new Globally Unique Identifier (GUID).  This can be done in a number of ways, but the easiest is to use an online tool such as <a href="https://guidgenerator.com/">https://guidgenerator.com/</a>.
+* Create a new Globally Unique Identifier (GUID).  This can be done in a number of ways, but the easiest is to use an online tool such as [https://guidgenerator.com/](https://guidgenerator.com/).
 * Open the Registry Editor (regedit.exe) and locate the following key (note that you must change the GUID below to the one you just created):
 `HKEY_LOCAL_MACHINE\SOFTWARE\Motive\M-Files\Common\Server\ExternalDataSources\{b13655c3-c5bb-4bde-ba8b-8d063a8508a4}`
 * Create a string value for the name of the data source.  This is for your reference only:
@@ -227,7 +227,7 @@ Repeat this process for all the object types that need to come from the JSON dat
 
 There are many ways to distribute the DLL and associated registry keys to a production server, but the creation of a setup project may be simplest.  We will use the approach below to create a basic setup project that will install our DLL and create the required registry keys for us.
 
-If you have not created setup projects on your machine before, you may have to download the InstallShield Limited Edition for Visual Studio package.  This can be done either by using the prompts within Visual Studio (New Project -> Other Project Types -> Setup and Deployment), or by going to <a href="http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro">http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro</a>.
+If you have not created setup projects on your machine before, you may have to download the InstallShield Limited Edition for Visual Studio package.  This can be done either by using the prompts within Visual Studio (New Project -> Other Project Types -> Setup and Deployment), or by going to [http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro](http://go.microsoft.com/fwlink/?LinkID=239620&amp;lang=1033&amp;ver=pro).
 {:.note}
 
 To create an installer:
@@ -394,7 +394,7 @@ Log in to the vault and update an existing item.  Updates should be pushed immed
 
 ![Processing updates](updates.png)
 
-If you encounter exceptions when updating items, follow the steps in the <a href="#debugging-and-diagnostics">Debugging and Diagnostics</a> section.
+If you encounter exceptions when updating items, follow the steps in the [Debugging and Diagnostics](#debugging-and-diagnostics) section.
 {:.note}
 
 
