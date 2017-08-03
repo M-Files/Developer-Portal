@@ -12,6 +12,7 @@ This page details the main updates to the [M-Files Developer Portal](http://deve
 * General
 	* Added a sample on [copying objects from within a workflow](http://developer.m-files.com/Samples-And-Libraries/Samples/Processes/Copying-Objects/)
 	* Added a [What's New](http://developer.m-files.com/Whats-New/) page to detail major additions to the developer portal
+	* Added a [code of conduct](https://github.com/M-Files/MFilesSamplesAndLibraries/blob/master/CODE_OF_CONDUCT.md) and [contribution guide](https://github.com/M-Files/MFilesSamplesAndLibraries/blob/master/CONTRIBUTING.md) to clarify the way in which we interact with the developer community through our public repositories.
 
 ### July 2017
 
