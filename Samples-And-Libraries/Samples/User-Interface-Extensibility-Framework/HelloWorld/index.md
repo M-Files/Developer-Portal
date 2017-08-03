@@ -67,16 +67,18 @@ function OnNewShellUI( shellUI )
 	/// <param name="shellUI" type="MFiles.ShellUI">The shell UI object which was created.</param>
  
 	// This is the start point of a ShellUI module.
- 
-	// Register to be notified when a new shell frame (Event_NewShellFrame) is created.
+	
+	// Register to be notified when a new normal shell frame (Event_NewNormalShellFrame) is created.
+	// We use Event_NewNormalShellFrame rather than Event_NewShellFrame as this won't fire for history (etc.) dialogs.
+	// ref: https://www.m-files.com/UI_Extensibility_Framework/index.html#Event_NewNormalShellFrame.html
 	shellUI.Events.Register(
-		Event_NewShellFrame,
+		Event_NewNormalShellFrame,
 		handleNewShellFrame );
 }
  
 function handleNewShellFrame(shellFrame)
 {
-	/// <summary>Handles the OnNewShellFrame event for an IShellUI.</summary>
+	/// <summary>Handles the OnNewNormalShellFrame event for an IShellUI.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was created.</param>
  
 	// The shell frame was created but it cannot be used yet.

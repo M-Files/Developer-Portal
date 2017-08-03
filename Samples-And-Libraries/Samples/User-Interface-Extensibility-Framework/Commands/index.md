@@ -75,7 +75,7 @@ function OnNewShellUI( shellUI )
  
 function handleNewShellFrame(shellFrame)
 {
-	/// <summary>Handles the OnNewShellFrame event for an IShellUI.</summary>
+	/// <summary>Handles the OnNewNormalShellFrame event for an IShellUI.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was created.</param>
  
 	// The shell frame was created but it cannot be used yet.
@@ -128,7 +128,7 @@ function OnNewShellUI( shellUI )
  
 function handleNewShellFrame(shellFrame)
 {
-	/// <summary>Handles the OnNewShellFrame event for an IShellUI.</summary>
+	/// <summary>Handles the OnNewNormalShellFrame event for an IShellUI.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was created.</param>
  
 	// The shell frame was created but it cannot be used yet.
@@ -201,7 +201,7 @@ function OnNewShellUI( shellUI )
  
 function handleNewShellFrame(shellFrame)
 {
-	/// <summary>Handles the OnNewShellFrame event for an IShellUI.</summary>
+	/// <summary>Handles the OnNewNormalShellFrame event for an IShellUI.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was created.</param>
  
 	// The shell frame was created but it cannot be used yet.
@@ -290,7 +290,7 @@ function OnNewShellUI( shellUI )
  
 function handleNewShellFrame(shellFrame)
 {
-	/// <summary>Handles the OnNewShellFrame event for an IShellUI.</summary>
+	/// <summary>Handles the OnNewNormalShellFrame event for an IShellUI.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was created.</param>
  
 	// The shell frame was created but it cannot be used yet.
@@ -380,7 +380,7 @@ function OnNewShellUI( shellUI )
  
 function handleNewShellFrame(shellFrame)
 {
-	/// <summary>Handles the OnNewShellFrame event for an IShellUI.</summary>
+	/// <summary>Handles the OnNewNormalShellFrame event for an IShellUI.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was created.</param>
  
 	// The shell frame was created but it cannot be used yet.
@@ -473,7 +473,7 @@ function OnNewShellUI( shellUI )
  
 function handleNewShellFrame(shellFrame)
 {
-	/// <summary>Handles the OnNewShellFrame event for an IShellUI.</summary>
+	/// <summary>Handles the OnNewNormalShellFrame event for an IShellUI.</summary>
 	/// <param name="shellFrame" type="MFiles.ShellFrame">The shell frame object which was created.</param>
  
 	// The shell frame was created but it cannot be used yet.
