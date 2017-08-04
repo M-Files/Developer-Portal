@@ -1,6 +1,17 @@
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ site.github.build_revision }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ site.github.build_revision }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ site.github.build_revision }}">
+	<link rel="manifest" href="/manifest.json?v={{ site.github.build_revision }}">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ site.github.build_revision }}" color="#007dc6">
+	<link rel="shortcut icon" href="/favicon.ico?v={{ site.github.build_revision }}">
+	<meta name="msapplication-TileColor" content="#007dc6">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png?v={{ site.github.build_revision }}">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml?v={{ site.github.build_revision }}" />
 
     {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
