@@ -49,7 +49,7 @@ Ensure that your application has a unique GUID by using a GUID generator, such a
 Next we will create a [module file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/) to contain our actual application logic.  Initially:
 
 * We will declare a [default entry point]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Event-Registration-And-Entry-Points/#shellui-modules) for the ShellUI module.
-* We will react to the `NewShellFrame` event and obtain a reference to the shell frame.
+* We will react to the `NewNormalShellFrame` event and obtain a reference to the shell frame.
 * We will react to the shell frame's `Started` event (as using the shell frame before this point will result in an exception).
 * Create a command (button,  place it into the task area, and hide it.
 * React to the shellFrame's `CustomCommand` event and add some placeholder code to execute when the command is clicked.
@@ -97,16 +97,9 @@ function getShellFrameStartedHandler(shellFrame)
 		// Create a command for "assign to me".
 		var assignCommandId = shellFrame.Commands.CreateCustomCommand( "Assign to me" );
 
-		try
-		{
-			// Add the command to the task pane.
-			// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-			shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
-		}
-		catch (e)
-		{
-			// This will except if the task pane is not available (e.g. in a History view).
-		}
+		// Add the command to the task pane.
+		// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
 
 		// Hide the command.  We will show it when the selected items change.
 		shellFrame.Commands.SetCommandState( assignCommandId, CommandLocation_All, CommandState_Hidden );
@@ -139,9 +132,9 @@ Each shell frame may have multiple shell listings.  For example: the default M-F
 We will:
 
 * Declare a global variable to hold the currently-selected items (`currentlySelectedItems`) (line 8).
-* React to the shell frame's `NewShellListing` event to attach event handlers to each shell listing (lines 59-61).
-* Alter the visibility of the command depending on whether or not any objects are currently selected (lines 114 and 119).
-* React to each shell listing's `SelectionChanged` event, saving the currently-selected items in the active listing (line 122).
+* React to the shell frame's `NewShellListing` event to attach event handlers to each shell listing (lines 53-56).
+* Alter the visibility of the command depending on whether or not any objects are currently selected (lines 109 and 114).
+* React to each shell listing's `SelectionChanged` event, saving the currently-selected items in the active listing (line 117).
 
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
@@ -189,16 +182,9 @@ function getShellFrameStartedHandler(shellFrame)
 		// Create a command for "assign to me".
 		var assignCommandId = shellFrame.Commands.CreateCustomCommand( "Assign to me" );
 
-		try
-		{
-			// Add the command to the task pane.
-			// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-			shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
-		}
-		catch (e)
-		{
-			// This will except if the task pane is not available (e.g. in a History view).
-		}
+		// Add the command to the task pane.
+		// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
 
 		// Hide the command.  We will show it when the selected items change.
 		shellFrame.Commands.SetCommandState( assignCommandId, CommandLocation_All, CommandState_Hidden );
@@ -280,15 +266,15 @@ function getNewShellListingHandler(shellFrame, assignCommandId)
 
 We will:
 
-* Create a function that creates the assignment object (`createAssigmentObject`, lines 137-end).  Specifically, it will:
+* Create a function that creates the assignment object (`createAssigmentObject`, lines 132-end).  Specifically, it will:
 	* Create property values for the built-in properties used by the `Assignment` object type:
-		* Class (lines 146-152).
-		* Name or title (lines 156-159).
-		* Single file document (lines 163-166).
-		* Assigned to (lines 170-177).
-	* Create properties to establish relationships between the assignment object and the currently-selected items (lines 180-239).
-	* Create the object (lines 248-252) and check it in (line 255).
-* Call the function when the command is clicked (line 88).
+		* Class (lines 141-147).
+		* Name or title (lines 149-154).
+		* Single file document (lines 156-161).
+		* Assigned to (lines 163-172).
+	* Create properties to establish relationships between the assignment object and the currently-selected items (lines 174-234).
+	* Create the object (lines 242-247) and check it in (line 250).
+* Call the function when the command is clicked (line 83).
 
 The code below uses the API in the standard synchronous manner.  The next section - <a href="{{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/#enabling-compatibility-with-m-files-web-access">enabling compatibility with M-Files Web</a> - will alter it to use an asynchronous approach.
 {:.note}
@@ -345,16 +331,9 @@ function getShellFrameStartedHandler(shellFrame)
 		// Create a command for "assign to me".
 		var assignCommandId = shellFrame.Commands.CreateCustomCommand( "Assign to me" );
 
-		try
-		{
-			// Add the command to the task pane.
-			// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-			shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
-		}
-		catch (e)
-		{
-			// This will except if the task pane is not available (e.g. in a History view).
-		}
+		// Add the command to the task pane.
+		// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
 
 		// Hide the command.  We will show it when the selected items change.
 		shellFrame.Commands.SetCommandState( assignCommandId, CommandLocation_All, CommandState_Hidden );
@@ -607,8 +586,9 @@ The specific sections of code to change are:
 1. The code which retrieves the [default property definition for an object type](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectTypeOperations~GetObjectType.html) (used to create the relationships from assignment to object).
 2. The call to [CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html).
 3. The call to [CheckIn](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html).
+4. We will supply a 16x16 pixel `.png` icon for the command if we are executing within the web.  [.ico file support is significant but less than png](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).  In addition, a `.png` of the correct size may be significantly smaller than an `.ico` file which may contain multiple image sizes (lines 46-56).
 
-Note that <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 312-346).
+Note that <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 316-350).
 {:.note}
 
 ```javascript
@@ -621,8 +601,7 @@ Note that <a href="https://www.m-files.com/api/documentation/latest/index.html#M
 // The currently-selected items in the active listing.
 var currentlySelectedItems = null;
 
-function OnNewShellUI(shellUI)
-{
+function OnNewShellUI(shellUI) {
 	/// <summary>The entry point of ShellUI module.</summary>
 	/// <param name="shellUI" type="MFiles.ShellUI">The new shell UI object.</param> 
 	
@@ -652,25 +631,30 @@ function getShellFrameStartedHandler(shellFrame)
 	/// <returns type="MFiles.Events.OnStarted">The event handler.</returns>
 
 	// Return the handler function for ShellFrame's Started event.
-	return function ()
+	return function()
 	{
 		// Create a command for "assign to me".
 		var assignCommandId = shellFrame.Commands.CreateCustomCommand( "Assign to me" );
 
-		try
+		// Set the icon for the command.
+		if (MFiles.CurrentApplicationPlatform == MFExtApplicationPlatformWeb)
 		{
-			// Add the command to the task pane.
-			// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
-			shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
+			// We are executing on the web; use the .png file.
+			shellFrame.Commands.SetIconFromPath( assignCommandId, "icons/clipboard.png" );
 		}
-		catch (e)
+		else
 		{
-			// This will except if the task pane is not available (e.g. in a History view).
+			// We are executing on the desktop; use the .ico file.
+			shellFrame.Commands.SetIconFromPath( assignCommandId, "icons/clipboard.ico" );
 		}
+
+		// Add the command to the task pane.
+		// ref: http://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ITaskPane~AddCustomCommandToGroup.html
+		shellFrame.TaskPane.AddCustomCommandToGroup( assignCommandId, TaskPaneGroup_Main, 0 );
 
 		// Hide the command.  We will show it when the selected items change.
 		shellFrame.Commands.SetCommandState( assignCommandId, CommandLocation_All, CommandState_Hidden );
-		
+
 		// Register to listen to when new shell listings are created.
 		shellFrame.Events.Register(
 			Event_NewShellListing,
@@ -713,9 +697,8 @@ function getNewShellListingHandler(shellFrame, assignCommandId)
 	/// <returns type="MFiles.Events.OnNewShellListing">The event handler.</returns>
 
 	// Return the handler function for NewShellListing event.
-	return function (shellListing)
+	return function(shellListing)
 	{
-
 		// Listen for selection change events on the listing.
 		shellListing.Events.Register(
 			Event_SelectionChanged,
@@ -918,7 +901,6 @@ function createAssignmentObject(shellFrame)
 			}
 
 			// Create the default values for the assignment.
-			// ref: https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInObjectType.html
 			var assignmentObjectTypeId = 10; // MFBuiltInObjectTypeAssignment not defined in MFWA.
 			var sourceObjectFiles = new MFiles.SourceObjectFiles();
 			var accessControlList = new MFiles.AccessControlList();
@@ -956,7 +938,8 @@ function createAssignmentObject(shellFrame)
 					accessControlList );
 
 				// Check it in.
-				shellFrame.ShellUI.Vault.Async.ObjectOperations.CheckIn( objectVersionAndProperties.ObjVer );
+				shellFrame.ShellUI.Vault.ObjectOperations.CheckIn( objectVersionAndProperties.ObjVer );
+
 				// Say that it worked.
 				shellFrame.ShowMessage( "Assigned to you." );
 			}
