@@ -3,7 +3,7 @@ layout: page
 title: What's New
 ---
 
-This page details the main updates to the [M-Files Developer Portal](http://developer.m-files.com) since its initial launch.
+This page details the major updates to the [M-Files Developer Portal](http://developer.m-files.com) since its initial launch.
 
 ## 2017
 
@@ -13,6 +13,7 @@ This page details the main updates to the [M-Files Developer Portal](http://deve
 	* Added a sample on [copying objects from within a workflow]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Copying-Objects/)
 	* Added a [What's New]({{ site.baseurl }}/Whats-New/) page to detail major additions to the developer portal
 	* Added a [code of conduct](https://github.com/M-Files/MFilesSamplesAndLibraries/blob/master/CODE_OF_CONDUCT.md) and [contribution guide](https://github.com/M-Files/MFilesSamplesAndLibraries/blob/master/CONTRIBUTING.md) to clarify the way in which we interact with the developer community through our public repositories.
+	* Altered website source code to provide a better experience when pinning the site (Windows, Android, iOS).
 
 ### July 2017
 
