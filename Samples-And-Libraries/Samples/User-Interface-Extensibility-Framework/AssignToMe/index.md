@@ -7,7 +7,7 @@ breadcrumb: Assign to me
 
 This sample creates a basic User Interface Extensibility Framework application consisting of one [ShellUI module]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/#shellui) which allows the user to select objects within the M-Files vault and assign them to themselves via a button in the task pane.
 
-The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/Commands">GitHub Samples and Libraries repository</a>.
+The source code for this sample is available within our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/AssignToMe">GitHub Samples and Libraries repository</a>.
 {:.note}
 
 ## Overview
