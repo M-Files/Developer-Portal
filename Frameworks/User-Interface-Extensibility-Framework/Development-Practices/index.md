@@ -144,5 +144,41 @@ shellFrame.ShellUI.Vault.ObjectOperations.CreateNewObjectEx(
 	new MFiles.AccessControlList() );
 ```
 
-Whilst it is generally good practice to use the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming approach</a>, note that this could not be used with `CreateNewObject`, `CreateNewObjectEx`, or `CreateNewObjectExQuick`, as `SourceObjectFiles` <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">does not support cloning</a>.
+Whilst it is generally good practice to use the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming approach</a>, note that `SourceObjectFiles` could not be used asynchronously on the desktop as <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">it does not support cloning</a>.  Implicit wrappers are available to support the use of [CreateNewObject on M-Files Web Access](https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html).
 {:.note}
+
+### Referencing enumerated values
+
+The M-Files API contains a number of enumerated values (e.g. [MFBuiltInObjectClass](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInObjectClass.html), [MFBuiltInObjectType](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInObjectType.html), [MFBuiltInPropertyDef](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html), or [MFObjectWindowMode](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFObjectWindowMode.html)).
+
+When using the API from within a scripting environment (e.g. [VBScript](http://developer.m-files.com/Built-In/VBScript/) or within [User Interface Extensibility Framework modules ](http://developer.m-files.com/Frameworks/User-Interface-Extensibility-Framework/Modules/)) it is typically not required to provide the name or namespace of the enumeration as part of the call.  For example, the following code is broadly equivalent in all languages:
+
+```csharp
+// Declare a property value for the class property.
+var propertyValue = new PropertyValue()
+{
+	PropertyDef = (int)MFBuiltInPropertyDef.MFBuiltInPropertyDefClass
+};
+```
+
+```vbscript
+' Declare a property value for the class property.
+Dim objPropertyValue
+Set objPropertyValue = CreateObject("MFilesAPI.PropertyValue")
+objPropertyValue.PropertyDef = MFBuiltInPropertyDefClass
+```
+
+```javascript
+// Declare a property value for the class property.
+var propertyValue = new MFiles.PropertyValue();
+propertyValue.PropertyDef = MFBuiltInPropertyDefClass;
+```
+
+If an enumerated value is not available within the User Interface Extensibility Framework, you must instead reference it by its integer value.  In the example above, the value of `MFBuiltInPropertyDefClass` can be found on the [MFBuiltInPropertyDef documentation](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html), and could be instead hard-coded as the ID `100`, as below.
+{: .note.warning}
+
+```javascript
+// Declare a property value for the class property.
+var propertyValue = new MFiles.PropertyValue();
+propertyValue.PropertyDef = 100; // MFBuiltInPropertyDef.MFBuiltInPropertyDefClass
+```
