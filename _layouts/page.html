@@ -4,7 +4,9 @@ layout: default
 
 <article class="page" itemscope itemtype="http://schema.org/WebPage">
 
-  <h1 itemprop="headline">{{ page.title }}</h1>
+	<h1 itemprop="headline">{{ page.title }}</h1>
+
+	{% include social.html %}
 
 	<ol class="breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
 
@@ -18,35 +20,23 @@ layout: default
 			<meta itemprop="position" content="{{ i }}" />
 		</li>{% endif %}{% endfor %}{% endfor %}
 	</ol>
-  {% comment %}
-  <div class="share" style="border: 2px solid #EEE; padding: 5px;">
-	  <span class="zmdi-hc-stack zmdi-hc-lg" style="cursor: pointer;" title="Share">
-		<i class="zmdi zmdi-circle-o zmdi-hc-stack-2x" style="color: #DDD"></i> 
-		<i class="zmdi zmdi-share zmdi-hc-stack-1x"></i>
-	  </span>
-	  <i class="zmdi zmdi-hc-lg zmdi-twitter"></i>
-		<i class="zmdi zmdi-hc-lg zmdi-linkedin"></i>
-		<i class="zmdi zmdi-hc-lg zmdi-wikipedia"></i>
-		<input type="text" value="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
-  </div>
-	{% endcomment %}
 
-  <div class="entry">
+	<div class="entry">
+
 	<article>
-	  
-	  <div id="in-page-nav">{% include toc.html html=content sanitize=true h_min=2 h_max=4 %}</div>
+		
+		<div id="in-page-nav">{% include toc.html html=content sanitize=true h_min=2 h_max=4 %}</div>
 
-	  {% if page.stubPage %}
-		<p class="note stub">Please note that this page content is not complete.</p>
-	  {% endif %}
+		{% if page.stubPage %}
+			<p class="note stub">Please note that this page content is not complete.</p>
+		{% endif %}
 
-	  {{ content }}
+		{{ content }}
 	</article>
-  </div>
+	</div>
 
   {% if page.comments %} 
 	{% include disqus.html %}
   {% endif %}
   
-
 </article>
