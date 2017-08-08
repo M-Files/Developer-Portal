@@ -33,7 +33,7 @@ header h1
 		margin-top: 60px;
 	}
 
-	/* move all anchors down by the height of the header (deal with fixed header */
+	/* move all anchors down by the height of the header (deal with fixed header) */
 	:target:before {
 		content:"";
 		display:block;

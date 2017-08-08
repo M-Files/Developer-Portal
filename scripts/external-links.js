@@ -7,7 +7,7 @@
     var $githubLink = $("<i class='zmdi zmdi-github'></i>");
 
     // Add the "external" class to all external links.
-    var $externalLinks = $("a", "article.page")
+    var $externalLinks = $("a", "article.page article")
         .filter(function(){
             return this.hostname && this.hostname !== location.hostname;
         })

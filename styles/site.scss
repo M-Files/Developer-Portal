@@ -16,6 +16,7 @@
 @import "page-rating";
 @import "highlightjs-custom";
 @import "samples.scss";
+@import "sharing.scss";
 @media screen and (min-width: 500px)
 {
 	@import "min-width-500px/base";
@@ -28,4 +29,5 @@
 {
 	@import "min-width-1500px/base";
 	@import "min-width-1500px/in-page-nav";
+	@import "min-width-1500px/sharing";
 }
