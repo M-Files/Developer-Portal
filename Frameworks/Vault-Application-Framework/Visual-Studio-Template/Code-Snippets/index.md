@@ -99,7 +99,7 @@ The Vault Application Framework Code Snippets can be uninstalled by opening Visu
 
 ### Downloading the raw snippet files
 
-The raw snippet files are available for download within our [GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Visual%20Studio%20Snippets/Vault%20Application%20Framework%20/Snippets/CSharp/M-Files%20VAF).  To install the snippets manually:
+The raw snippet files are available for download within our [GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Visual%20Studio%20Snippets/Vault%20Application%20Framework/Snippets/CSharp/MFilesVAF).  To install the snippets manually:
 
 * Download the `.snippet` file(s).
 * Open Visual Studio.
