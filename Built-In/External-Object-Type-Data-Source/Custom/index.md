@@ -237,7 +237,7 @@ To create an installer:
 * Give the project a name (e.g. `Setup`) and click OK.
 * Click `Application Information` at the bottom and complete the details for your organization and application.
 * Click `Application Files` and choose to include your Project Output(s) in into the install directory.
-* Click `Application Registry` and select `Yes at the top, as we want to configure the registry data.  Click `Registry` on the left, under `Other Places` to open the designer.
+* Click `Application Registry` and select `Yes` at the top, as we want to configure the registry data.  Click `Registry` on the left, under `Other Places` to open the designer.
   * Using the `Destination computer's registry` window, create keys for the following under `HKEY_LOCAL_MACHINE\SOFTWARE (32-Bit)`:
 `Motive\M-Files\Common\Server\ExternalDataSources\{b13655c3-c5bb-4bde-ba8b-8d063a8508a4}`
   * Within this key, create a string value named `Name`, with the name of your data source.
