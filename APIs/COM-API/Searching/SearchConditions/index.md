@@ -284,3 +284,207 @@ condition.ConditionType = MFConditionType.MFConditionTypeNotEqual;
 // Set the value (this excludes all objects with ID 478 - in all object types!).
 condition.TypedValue.SetValue(MFDataType.MFDatatypeInteger, 478);
 ```
+
+## Using indirection levels
+
+Often searches need to return objects that should be filtered by properties on objects they refer to, rather than on their own properties.  For example, a simple search may want to return all `Contact` for `Customer`s based in the `United Kingdom`.  To do this using the M-Files Desktop Client, click the `Advanced Search` button and use an indirect reference in the property dropdown (e.g. `Customer.Country`):
+
+![Searching by an indirect reference (object type) in the M-Files Desktop Client](indirection-m-files-desktop.png)
+
+An indirect reference can be either by object type or property.  In the screenshot above, any valid reference to a customer (regardless of the property being used to make the reference) will be included in the search results.  In the result returned above the relationship to the Test Customer was made via the `Owner (Customer)` property, but other valid properties would also be considered.
+{:.note}
+
+When searching via the COM API, [Indirection Levels](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Expression~IndirectionLevels.html) are used to describe the relationship between the object being returned and the location of the property being used in the search condition.  In our example above, there is one level of indirection between the `Contact` object and the `Country` property definition: the `Customer` object.
+
+### Referencing by object type
+
+In the example below, we will search using three search conditions:
+
+1. We wish to return `Contact` objects (lines 11-28).
+2. We wish to exclude deleted contacts (lines 30-46).
+3. The contacts must be associated at a `Customer` based in the UK (lines 48-75).
+	1. The search condition will describe the state of the `Country` property, which must equal `United Kingdom` (lines 53-64).
+	2. The search condition will define a single indirection level, showing that the `Contact` must be related to a `Customer` object with the correct `Country` (lines 66-71).
+
+In the sample below we have hard-coded the vault structural element Ids.  This is bad practice ([aliases should be used instead]({{ site.baseurl }}/Concepts/Aliases/)), but this is shown to keep the code concise.
+{:.note}
+
+```csharp
+// Declare the Ids of the vault elements that we're searching for.
+// HACK: These should instead be loaded at runtime by alias instead.
+var contactPersonObjectTypeId = 149;
+var customerObjectTypeId = 136;
+var countryPropertyDefId = 1090;
+var unitedKingdomValueListItemId = 3;
+
+// Create our search conditions.
+var searchConditions = new SearchConditions();
+
+// Add an object type filter.
+{
+	// Create the condition.
+	var condition = new SearchCondition();
+
+	// Set the expression.
+	condition.Expression.SetStatusValueExpression(MFStatusType.MFStatusTypeObjectTypeID);
+
+	// Set the condition.
+	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+	// Set the value.
+	condition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeLookup,
+		contactPersonObjectTypeId);
+
+	// Add the condition to the collection.
+	searchConditions.Add(-1, condition);
+}
+
+// Add a "not deleted" filter.
+{
+	// Create the condition.
+	var condition = new SearchCondition();
+
+	// Set the expression.
+	condition.Expression.SetStatusValueExpression(MFStatusType.MFStatusTypeDeleted);
+
+	// Set the condition.
+	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+	// Set the value.
+	condition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeBoolean, false);
+
+	// Add the condition to the collection.
+	searchConditions.Add(-1, condition);
+}
+
+// Add a condition that the customer must be based in the UK.
+{
+	// Create the condition.
+	var condition = new SearchCondition();
+
+	// Set the expression.
+	// Note: this is the property on the customer object that we wish to match.
+	// In this example, this is the "Country" property.
+	condition.Expression.SetPropertyValueExpression(countryPropertyDefId, MFParentChildBehavior.MFParentChildBehaviorNone);
+
+	// Set the condition.
+	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+	// Set the value.
+	// Note: this is the value of the property to match.
+	// In this example, this is the ID of the "UK" value list item.
+	condition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeMultiSelectLookup, unitedKingdomValueListItemId);
+
+	// Describe the indirection between what we're returning (the Contact) and the property we're searching (the Country).
+	// In this example, the Contact is associated with a Customer which has the property, so we add the indirection level for that object type.
+	var customerObjectTypeIndirectionLevel = new PropertyDefOrObjectType();
+	customerObjectTypeIndirectionLevel.PropertyDef = false; // We do not care which property definition is used.
+	customerObjectTypeIndirectionLevel.ID = customerObjectTypeId; // Instead care which object type it is related to.
+	condition.Expression.IndirectionLevels.Add(-1, customerObjectTypeIndirectionLevel);
+
+	// Add the condition to the collection.
+	searchConditions.Add(-1, condition);
+}
+
+// Execute the search.
+var searchResults = vault.ObjectSearchOperations.SearchForObjectsByConditionsEx(searchConditions,
+	MFSearchFlags.MFSearchFlagNone, SortResults: false);
+```
+
+### Referencing by property definition
+
+Occasionally an object may be associated with another via multiple properties containing values from the same list.  For example: a `Contract` may have a property named `Author` and one named `Signer`, both of which show objects from the `Employees` list.  In this context it is often useful to specify not just that the contract should be associated with an employee with a specific property value, but that they must be the `Signer`, not the `Author`.
+
+![Searching by an indirect reference (property definition) in the M-Files Desktop Client](indirection-m-files-desktop-propertydef.png)
+
+In the screenshot above, the object is returned as `Bill Richards` is the signer and is in the `Sales` department.  If `Bill Richards` was also the author of a contract (but not a signer) then the document would not be returned in the search results.
+{:.note}
+
+The code below is largely the same as the [example that references by object type]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#referencing-by-object-type), except for:
+
+1. The `PropertyDefOrObjectType.ID` is assigned the property definition Id (line 71).
+2. The `PropertyDefOrObjectType.PropertyDef` value is set to `true`, as the ID refers to a property definition Id rather than an object type Id (line 70).
+
+```csharp
+// Declare the Ids of the vault elements that we're searching for.
+// HACK: These should instead be loaded at runtime by alias instead.
+var contractClassId = 99;
+var departmentPropertyDefId = 1136;
+var signerPropertyDef = 1174;
+var salesValueListItemId = 1;
+
+// Create our search conditions.
+var searchConditions = new SearchConditions();
+
+// Add a class filter.
+{
+	// Create the condition.
+	var condition = new SearchCondition();
+
+	// Set the expression.
+	condition.Expression.SetPropertyValueExpression((int)MFBuiltInPropertyDef.MFBuiltInPropertyDefClass,
+		MFParentChildBehavior.MFParentChildBehaviorNone);
+
+	// Set the condition.
+	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+	// Set the value.
+	condition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeLookup,
+		contractClassId);
+
+	// Add the condition to the collection.
+	searchConditions.Add(-1, condition);
+}
+
+// Add a "not deleted" filter.
+{
+	// Create the condition.
+	var condition = new SearchCondition();
+
+	// Set the expression.
+	condition.Expression.SetStatusValueExpression(MFStatusType.MFStatusTypeDeleted);
+
+	// Set the condition.
+	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+	// Set the value.
+	condition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeBoolean, false);
+
+	// Add the condition to the collection.
+	searchConditions.Add(-1, condition);
+}
+
+// Add a condition that the signer must be in the sales department.
+{
+	// Create the condition.
+	var condition = new SearchCondition();
+
+	// Set the expression.
+	// Note: this is the property on the employee object that we wish to match.
+	// In this example, this is the "Department" property.
+	condition.Expression.SetPropertyValueExpression(departmentPropertyDefId, MFParentChildBehavior.MFParentChildBehaviorNone);
+
+	// Set the condition.
+	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+	// Set the value.
+	// Note: this is the value of the property to match.
+	// In this example, this is the ID of the "Sales" value list item.
+	condition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeLookup, salesValueListItemId);
+
+	// Describe the indirection between what we're returning (the Contract) and the property we're searching (the Department).
+	// In this example, the Contract uses the Signer property to refer to an Employee which has the property, so we add the indirection level for that property definition.
+	var signerPropertyDefIndirectionLevel = new PropertyDefOrObjectType();
+	signerPropertyDefIndirectionLevel.PropertyDef = true; // The relationship must be via this property.
+	signerPropertyDefIndirectionLevel.ID = signerPropertyDef;
+	condition.Expression.IndirectionLevels.Add(-1, signerPropertyDefIndirectionLevel);
+
+	// Add the condition to the collection.
+	searchConditions.Add(-1, condition);
+}
+
+// Execute the search.
+var searchResults = vault.ObjectSearchOperations.SearchForObjectsByConditionsEx(searchConditions,
+	MFSearchFlags.MFSearchFlagNone, SortResults: false);
+```
+
