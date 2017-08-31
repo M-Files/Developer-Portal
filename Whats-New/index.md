@@ -9,6 +9,8 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ### August 2017
 
+* COM API
+	* Added examples of [using indirection levels in search conditions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#using-indirection-levels).
 * General
 	* Added a sample on [copying objects from within a workflow]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Copying-Objects/)
 	* Added a [What's New]({{ site.baseurl }}/Whats-New/) page to detail major additions to the developer portal
