@@ -296,6 +296,9 @@ An indirect reference can be either by object type or property.  In the screensh
 
 When searching via the COM API, [Indirection Levels](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Expression~IndirectionLevels.html) are used to describe the relationship between the object being returned and the location of the property being used in the search condition.  In our example above, there is one level of indirection between the `Contact` object and the `Country` property definition: the `Customer` object.
 
+It is important to note that indirection levels only follow relationships 'from' the selected object, not relationships 'to' it, whereas the 360 degree view in the M-Files Desktop Client shows relationships in either direction.
+{:.note.warning}
+
 ### Referencing by object type
 
 In the example below, we will search using three search conditions:
