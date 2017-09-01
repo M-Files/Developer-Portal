@@ -7,6 +7,12 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2017
 
+### September 2017
+
+* General
+	* Added navigational links to official API references for the [COM API](https://www.m-files.com/api/documentation/latest/index.html), [REST API](http://www.m-files.com/MFWS/) and [User Interface Extensibility Framework](https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html).
+
+
 ### August 2017
 
 * COM API
