@@ -400,7 +400,7 @@ Occasionally an object may be associated with another via multiple properties co
 
 ![Searching by an indirect reference (property definition) in the M-Files Desktop Client](indirection-m-files-desktop-propertydef.png)
 
-In the screenshot above, the object is returned as `Bill Richards` is the signer and is in the `Sales` department.  If `Bill Richards` was also the author of a contract (but not a signer) then the document would not be returned in the search results.
+In the screenshot above, the object is returned as `Bill Richards` is the signer and is in the `Sales` department.  If `Bill Richards` was the author of a contract (but not a signer) then the document would not be returned in the search results.
 {:.note}
 
 The code below is largely the same as the [example that references by object type]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#referencing-by-object-type), except for:
