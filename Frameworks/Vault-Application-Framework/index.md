@@ -19,7 +19,7 @@ Because C# is strongly typed, the compiler will highlight incorrect usages of th
 
 #### Reduction in lines of code
 
-Due to the design of the Vault Application Framework, the number of lines of code that you need to write is reduced.  Functionality such as [automated resolution of vault item aliases to internal IDs at runtime]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/), along with helper utilities for building searches or outputting error conditions to the event log, mean that applications can be built faster and with a higher quality.
+Due to the design of the Vault Application Framework, the number of lines of code that you need to write is reduced.  Functionality such as [automated resolution of vault item aliases to internal IDs at runtime]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/), along with helper utilities for building searches or outputting error conditions to the event log, mean that applications can be built faster and with a higher quality.
 
 #### Utilisation of .NET Framework Class Library, and other .NET libraries
 

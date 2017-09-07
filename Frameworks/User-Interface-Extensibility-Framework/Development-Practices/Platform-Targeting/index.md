@@ -18,7 +18,7 @@ There are currently two supported platforms:
 
 The platform that each application supports is defined within the [application definition file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/), in the following ways:
 
-The entire <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/">appdef.xml</a> file is shown, but only the `&lt;platforms&gt;&lt;/platforms&gt;` element changes in each sample; the rest is shown for completeness.
+The entire <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/">appdef.xml</a> file is shown, but only the `<platforms></platforms>` element changes in each sample; the rest is shown for completeness.
 {:.note}
 
 ### Declaring compatibility with only the M-Files Desktop client

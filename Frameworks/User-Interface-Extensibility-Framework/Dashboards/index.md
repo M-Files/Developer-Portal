@@ -9,7 +9,7 @@ Dashboards contain user interfaces that can be shown to the user as required.
 
 ## Dashboard content
 
-Dashboard content is held within an HTML file.  This HTML file may refer to external static resources such as CSS files, JavaScript files or image files.  These files are typically packaged inside the User Interface Framework application, although they can be [loaded from remote sources](#loading-remote-content-allowing-trusted-content) if required.
+Dashboard content is held within an HTML file.  This HTML file may refer to external static resources such as CSS files, JavaScript files or image files.  These files are typically packaged inside the User Interface Framework application, although they can be [loaded from remote sources]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/#loading-remote-content-allowing-trusted-content) if required.
 
 All referenced files must be static; no server-side code (e.g. <a href="https://en.wikipedia.org/wiki/PHP">PHP</a> or <a href="https://www.asp.net/">ASP.NET</a>) can execute within a User Interface Extensibility Framework application.  Any preprocessing required (e.g. <a href="http://sass-lang.com/">SASS</a> or <a href="http://lesscss.org/">LESS</a>) must be processed before the UIX is run.
 {:.note}
@@ -35,7 +35,7 @@ This page does not detail how to create a tab; that is shown in more detail on t
 {:.note}
 {% endcomment %}
 
-Dashboards are shown by calling [IShellPaneTabInterface.ShowDashboard](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellPaneTab~ShowDashboard.html).  This takes two arguments:
+Dashboards are shown by calling [IShellPaneTab.ShowDashboard](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~IShellPaneTab~ShowDashboard.html).  This takes two arguments:
 
 * The ID of the dashboard, as [defined in the appdef.xml file](#declaration).
 * A [custom data object that the dashboard can read](#passing-content-to-dashboards-and-back).
@@ -154,7 +154,7 @@ function OnNewDashboard( dashboard )
 </html>
 ```
 
-#### Passing content from dashboards to modules
+#### Executing a function declared within a module from within a dashboard
 
 The custom data object passed to the dashboard can contain simple data types, complex objects (e.g. M-Files API objects), functions, or almost any other type of content.  Passing a function to the dashboard allows that function to be used as a callback when certain events occur within the dashboard.
 
@@ -175,7 +175,7 @@ var customDataObject = {
 shellFrame.RightPane.ShowDashboard("myDashboardId", customDataObject);
 ```
 
-From within the dashboard, store a reference to the function passed, and call it when you need to pass content back to the module.  In this scenario, clicking the button will cause the module to show a message box with the text from the input:
+From within the dashboard, store a reference to the function passed, and call it when you need to execute the code that was declared within the module.  In this scenario, clicking the button will cause the module to show a message box with the text from the input:
 ```html
 <html>
 <head>
