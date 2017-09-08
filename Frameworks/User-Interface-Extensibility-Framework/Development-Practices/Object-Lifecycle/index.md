@@ -28,7 +28,6 @@ Care must be taken with global-scope variables.  The code below will seem to fun
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
 // 		 error handling. MUST be revised before using in production.
-//		 Authored by: Craig Hawker / M-Files
 
 "use strict";
 
@@ -127,7 +126,6 @@ Instead, a [closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Clo
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
 // 		 error handling. MUST be revised before using in production.
-//		 Authored by: Craig Hawker / M-Files
 
 "use strict";
 

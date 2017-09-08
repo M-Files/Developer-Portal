@@ -56,7 +56,6 @@ Next we will create a [module file]({{ site.baseurl }}/Frameworks/User-Interface
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
 // 		 error handling. MUST be revised before using in production.
-//		 Authored by: Craig Hawker / M-Files
 
 "use strict";
  
@@ -109,7 +108,6 @@ The group that the button will be added to is either one of the built-in <a href
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
 // 		 error handling. MUST be revised before using in production.
-//		 Authored by: Craig Hawker / M-Files
 
 "use strict";
  
@@ -182,7 +180,6 @@ Reacting to a command being clicked involves three steps:
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
 // 		 error handling. MUST be revised before using in production.
-//		 Authored by: Craig Hawker / M-Files
 
 "use strict";
 
@@ -274,7 +271,6 @@ To maximise browser compatibility, it is recommended that a 16x16 `.png` file is
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
 // 		 error handling. MUST be revised before using in production.
-//		 Authored by: Craig Hawker / M-Files
 
 "use strict";
 
@@ -364,7 +360,6 @@ The command can be added in one of <a href="https://www.m-files.com/UI_Extensibi
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
 // 		 error handling. MUST be revised before using in production.
-//		 Authored by: Craig Hawker / M-Files
 
 "use strict";
 
@@ -457,7 +452,6 @@ Setting a command state to `CommandState_Active` will make it both active and vi
 ```javascript
 // NOTE! This code is for demonstration purposes only and does not contain any kind of
 // 		 error handling. MUST be revised before using in production.
-//		 Authored by: Craig Hawker / M-Files
 
 "use strict";
 
