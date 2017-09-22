@@ -48,7 +48,7 @@ condition.TypedValue.SetValue(MFDataType.MFDatatypeBoolean, true);
 
 ## Executing a full-text search
 
-A full-text search can search across both the metadata and file contents and is executed when the [SearchForObjectsByString](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations~SearchForObjectsByString.html) API method is called.  To use it in combination with other search conditions, the following SearchCondition object can be created:
+A full-text search can search across both the metadata and file contents and is executed when the [SearchForObjectsByString](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations~SearchForObjectsByString.html) API method is called.  To use it in combination with other search conditions, the following `SearchCondition` object can be created:
 
 ```csharp
 // Create the condition.
@@ -64,6 +64,26 @@ condition.ConditionType = MFConditionType.MFConditionTypeContains;
 // Set the value.
 // In this case "ESTT" is the text to search for.
 condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "ESTT");
+```
+
+## Searching by file type
+
+Occasionally it is useful to restrict a search to only specific types of file.  The following `SearchCondition` instance represents searching for files containing ".txt".
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition();
+
+// Set the expression.
+condition.Expression.SetFileValueExpression(MFFileValueType.MFFileValueTypeFileName);
+
+// Set the condition type.
+condition.ConditionType = MFConditionType.MFConditionTypeContains;
+
+// Set the value.
+condition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeText, ".txt");
+
+searchConditions.Add(-1, condition);
 ```
 
 ## Searching by property value
