@@ -6,7 +6,7 @@ redirect_from: "/APIs/REST-API/Reference/overview.html"
 ---
 
 # Overview
-{:#overview}
+{:#chpt:overview}
 
 M-Files Web Service consists of several [resources]({{ site.baseurl }}/APIs/REST-API/Reference/resources) and the [types]({{ site.baseurl }}/APIs/REST-API/Reference/structs) that represent these. Most of the resource belong to one of the five major resource hierarchies. These hierarchies are listed below.
 

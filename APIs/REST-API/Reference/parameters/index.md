@@ -6,7 +6,7 @@ redirect_from: "/APIs/REST-API/Reference/parameters.html"
 ---
 
 # Request parameters
-{:#parameters}
+{:#chpt:parameters}
 
 In addition to the resource specific parameters there are few request parameters that affect the way M-Files Web Service handles the requests with all resources.
 
@@ -15,6 +15,11 @@ In addition to the resource specific parameters there are few request parameters
 Almost all of the M-Files Web Service resources require either an application-level or vault-level authentication. There are three alternate ways to authenticate the requests: Two header-based approaches using either plain text credentials or encrypted authentication token or a cookie based approach using the [/session]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session) and [/session/vault]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/vault) resources.
 
 The headers used in the header-based authentication are listed below in [table 1](#table-1).
+
+<div class="caption">
+	<span class="caption-label">Table 1:</span>
+	Authentication headers
+</div>
 
 {:#table-1 .table}
 Header | Description
@@ -30,15 +35,15 @@ X-Authentication | Encrypted authentication token. This can be requested through
 X-Vault | Document vault GUID. Application-level resources such as [the document vault list]({{ site.baseurl }}/APIs/REST-API/Reference/server/vaults) can be accessed even if this header is missing.
 X-ComputerName | Unique identifier for the client computer. This is used mainly to distinguish check-outs from different computers. This header always overrides the computer name - even if an authentication token containing a computer name is used.  The default ComputerName is `M-FILES WWW` for systems accessing MFWS without java enabled in their browsers. If a java enabled browser is used to access MFWS, then ComputerName will be `M-FILES WWW ( NAME )`, NAME being an arbritrary string to identify the machine used.
 
-<div class="caption">
-	<span class="caption-label">Table 1:</span>
-	Authentication headers
-</div>
-
 The authentication token can be created with or without the vault-information. If the token is created without the vault-information it provides only an application-level token. Application-level authentication token can be used to request [the vault listing]({{ site.baseurl }}/APIs/REST-API/Reference/server/vaults) from the server in which case the listing contains vault-level authentication tokens or alternatively the application-level authentication token may be combined with the `X-Vault` header to acquire a vault-level authentication context.
 {:.remark}
 
 M-Files Web Service also supports passing the header values as query parameters in case the header values cannot be modified for one reason or another. The mapping between headers and query parameters is listed in [table 2](#table-2) below. In case a parameter is defined both as a header and as a query parameter the header value is used.
+
+<div class="caption">
+	<span class="caption-label">Table 2:</span>
+	Authentication headers
+</div>
 
 {:#table-2 .table}
 Header | Query parameter
@@ -50,11 +55,6 @@ X-Domain | domain
 X-Authentication | auth
 X-Vault | vault
 X-ComputerName | computername
-
-<div class="caption">
-	<span class="caption-label">Table 2:</span>
-	Authentication headers
-</div>
 
 ## Content type negotiation
 

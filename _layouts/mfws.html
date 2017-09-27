@@ -29,6 +29,7 @@ table.table
 	table-layout: fixed;
 	border-collapse: collapse;
 	width: 100%;
+	margin-bottom: 1em;
 }
 table.table thead th
 {
@@ -36,6 +37,11 @@ table.table thead th
 	font-weight: normal;
 	padding: 0.3em;
 	text-align: left;
+}
+table.table thead th:first-child,
+	table.table tbody td:first-child
+{
+	width: 30%;
 }
 table.table tbody tr td
 {
