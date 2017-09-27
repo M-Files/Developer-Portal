@@ -279,31 +279,40 @@
 
 
 <script>
-	(function($){
-    var $document = $(document);
-    var $body = $("body");
+(function($){
+	var $document = $(document);
+	var $body = $("body");
 
-    // Get the links in the treeview.
-    var $navLinks = $("li.nav-item");
+	// Get the links in the treeview.
+	var $navLinks = $("li.nav-item a");
 
-    // When one is clicked, highlight it.
-    function highlightLink(i, o)
-    {
-        // Unhighlight any existing ones.
-        $navLinks.filter(".active").removeClass("active");
+	// When one is clicked, highlight it.
+	function highlightLink(i, o)
+	{
+		// Get all the parents
+		var $parents = $($(this).parents("li"));
 
-        // Highlight the clicked one.
-        $(this).addClass("active").parents("li").addClass("open");
-        return true;
-    }
-    $navLinks.click(highlightLink);
+		// Process the parents.
+		$parents.each(function(a, b)
+		{
+			var $parent = $(this);
 
-    // Highlight the current page.
+			// Open it.
+			$parent.attr("class", $parent.attr("class") + " open");
+
+			// If it is the top parent then it should be active.
+			if(a == 0)
+			{
+				$parent.attr("class", $parent.attr("class") + " active");
+			}
+		});
+		return true;
+	}
+	$navLinks.click(highlightLink);
+
+	// Highlight the current page.
 	var currentPageAddress = window.location.pathname;
-	
-	$document.ready(function(){
-		$($navLinks).filter("a[href='" + currentPageAddress + "']").each(highlightLink);
-	})
+	$($navLinks).filter("[href='" + currentPageAddress + "']").each(highlightLink);
 
 })(jQuery);
 </script>
