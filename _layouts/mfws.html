@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="{{ site.baseurl }}/APIs/REST-API/Reference/static/style.css" type="text/css">
+<link rel="stylesheet" href="{{ site.baseurl }}/APIs/REST-API/Reference/static/css/custom-theme/jquery-ui-1.8.24.custom.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script src="{{ site.baseurl }}/APIs/REST-API/Reference/static/jquery.simpletip-1.3.1.min.js"></script>
+<script src="{{ site.baseurl }}/APIs/REST-API/Reference/static/jquery.jstree.js"></script>
+<script src="{{ site.baseurl }}/APIs/REST-API/Reference/static/documentation.js"></script>
+<script type="text/javascript">
+    MFWSPageRoot = "{{ site.baseurl }}/APIs/REST-API/Reference";
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
+<script src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
+
+<script>
+hljs.configure({languages: ["cs", "xml", "vbscript", "javascript"]});
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
+</script>
+
+<title>M-Files Web Service: {% if page.title %}{{ page.title }} {% endif %}</title>
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <div class="title"><a href="{{ site.baseurl }}/APIs/REST-API/Reference/">M-Files Web Service</a></div>
+        <div class="breadcrumb">
+			
+			{% capture page_url_without_index_html %}{{ page.url | remove: "/APIs/REST-API/Reference/" | remove: "index.html" }}{% endcapture %}{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}{% for i in (1..forLoopMaxInt) %}{% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}{% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}{% for breadcrumb_page in site.pages %}{% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}{% assign j = forLoopMaxInt | plus: 0 %}
+				{% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
+				<a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">
+					{% if breadcrumb_page.breadcrumb == nil %}{{ breadcrumb_page.title }}{% else %}{{ breadcrumb_page.breadcrumb }}{% endif %}
+				</a>{% endif %}{% endfor %}{% endfor %}
+				
+				&gt; <span>{% if page.title %}{{ page.title }} {% endif %}</span>
+        </div>
+    </div>
+
+    <hr>
+
+    {{ content }}
+
+
+    <div class="footer">
+        <hr>
+        Copyright &copy; M-Files Corporation. All rights reserved.
+    </div>
+</div>
+
+<div class="navigation">
+    <div class="navigation-header">
+        Contents
+    </div>
+    <div class="navigation-tree">
+        <ul>
+            {% include navigation-mfws.html %}
+        </ul>
+    </div>
+</div>
+</body>
+</html>
