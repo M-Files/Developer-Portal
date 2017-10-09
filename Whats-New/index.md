@@ -9,8 +9,11 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ### September 2017
 
+* COM API
+	* Added code sample for [searching by file name/extension]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#searching-by-file-type).
 * General
 	* Added navigational links to official API references for the [COM API](https://www.m-files.com/api/documentation/latest/index.html), [REST API](http://www.m-files.com/MFWS/) and [User Interface Extensibility Framework](https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html).
+	* Added UIX [sample to show how to react to built-in events]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/BuiltInCommand-Event/).
 
 
 ### August 2017
