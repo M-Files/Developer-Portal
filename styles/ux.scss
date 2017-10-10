@@ -1,0 +1,38 @@
+/* format the borderless pictures */
+body>article img.borderless {
+    box-sizing: border-box;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px 20px 0px 0px;
+    max-width: 100%;
+}
+body>article img.borderless.clear
+{
+	margin-bottom: 1em;
+}
+
+/* allow clear the floating of images in the UX design section */
+footer, .clear, h3, h4, body>article *.clear::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* allow laying out of image to the left of text */
+h4.layout-section ~ p,
+	h4.layout-section ~ ul,
+	h4.layout-section ~ h5
+{
+	margin-left: 215px;
+}
+h4.layout-section ~ p img
+{
+	margin-left: -215px;
+	float: left;
+}
+h5.layout-section
+{
+	/* force the h5 to align properly with the image, for sub-section layouts */
+	margin-top: 0px;
+}
