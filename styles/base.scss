@@ -68,7 +68,7 @@ h3 {
 }
 
 .page h4 {
-    font-weight: normal;
+    font-weight: bold;
 }
 
 #hamburger {
@@ -177,4 +177,25 @@ article.page h3 a {
     color: #333;
     text-decoration: none;
     text-transform: uppercase;
+}
+/*added by S*/
+article.page li {
+    margin: 8px 0px;
+}
+#share-links li {
+	margin:0;
+}
+body>article img.borderless {
+    box-sizing: border-box;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px 20px 0px 0px;
+    max-width: 100%;
+}
+.floatleft {
+	float:left;
+}
+.clear {clear:both}
+body>article span.flex {
+    display:table;
 }
