@@ -17,7 +17,6 @@ M-Files 2018 Desktop client layout include three general areas by their function
 There are also sub-areas as bottom pane and task pane, and layout control behaviors inside and in between areas, which are explained below.
 
 ### Top pane
-{:.layout-section}
 
 ![Top pane location](Page-layout-toppane.png){:.borderless .leftcol}
 
@@ -43,7 +42,6 @@ Navigation-arrow-size: 32px
 Indication-icon-size: 16px  
 
 ### Listing area
-{:.layout-section}
 
 ![Listing area location](Page-layout-listingarea.png){:.borderless .leftcol}
 
@@ -60,7 +58,7 @@ Background-color (listing area): #fafafa
 ![Bottom pane location](Page-layout-listinarea-bottompane.png){:.borderless .leftcol}
 
 #### Bottom pane
-{:.layout-section .rightcol}
+{:.rightcol}
 
 {:.rightcol}
 Bottom pane actually is a sub area within listing area. It provides an alter location for some contents to be shown simultaneously, especially for user with large display. For example, Metadata/property. More often, it attaches controls that are related with listing above. For example multiple vault search.
@@ -71,7 +69,6 @@ Background-color: #318ccc
 Margin: 0px 6px 10px 0px  
 
 ### Right pane
-{:.layout-section}
 
 ![Right pane location](Page-layout-rightpane.png){:.borderless .leftcol}
 
@@ -86,7 +83,7 @@ Margin: 0px 10px 10px 0px
 ![Right pane header location](Page-layout-rightpane-header.png){:.borderless .leftcol}
 
 #### Header
-{:.layout-section .rightcol}
+{:.rightcol}
 
 {:.rightcol}
 Header is the top most part inside right pane. Often it is used to show the vital information of the content.
@@ -104,7 +101,7 @@ Font-size (italic): 12px
 ![Tools ribbon location](Page-layout-rightpane-ribbon.png){:.borderless .leftcol}
 
 #### Object tools ribbon
-{:.layout-section .rightcol}
+{:.rightcol}
 
 {:.rightcol}
 Tools ribbon collects function buttons related with specific selection of the object or function.
@@ -120,7 +117,7 @@ Font-color: #ffffff
 ![Metadata form location](Page-layout-rightpane-metadataform.png){:.borderless .leftcol}
 
 #### Metadata form
-{:.layout-section .rightcol}
+{:.rightcol}
 
 {:.rightcol}
 Metadata form is the place where you can view or even change properties of the selected object or functions.
@@ -137,7 +134,7 @@ Row height: 26px
 ![Pinned location](Page-layout-rightpane-pinned.png){:.borderless .leftcol}
 
 #### Pinned
-{:.layout-section .rightcol}
+{:.rightcol}
 
 {:.rightcol}
 Pinned is the last tab from top pane, it shares the area with right pane. It is a place where user can collect all kinds of object and links, and personalize at certain extend. 
@@ -153,13 +150,11 @@ Cell-icon-size: 32px
 Cell-margin: 4px  
 Cell-background-color* : #cfcfcf, # d4cfbf, # b1dee3, # bce3c0, #eddfb9, #bab4a9, #9dc2cc  
 
-##### Color-codings for Pinned item categories  
-{:.layout-section}
+##### Color-codings for Pinned item categories 
 
 ![Colo-coding for Pinned item](Page-layout-rightpane-pinned-colors.png){:.borderless}  
 
 ### Task pane  
-{:.layout-section}
 
 ![Task pane location](Page-layout-taskpane.png){:.borderless .leftcol}
 
