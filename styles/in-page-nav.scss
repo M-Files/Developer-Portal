@@ -79,7 +79,7 @@ body #in-page-nav
 			}
 			> li
 			{
-				> ul > li > ul > li
+				> ul > li
 				{
 					display: none;
 				}
@@ -88,6 +88,7 @@ body #in-page-nav
 	}
 	body #in-page-nav > ul > li:last-child a
 	{
+		border-bottom: none;
 		padding-bottom: 5px;
 	}
 }
