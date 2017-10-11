@@ -32,7 +32,7 @@ Top pane is a full-width header locate above the content areas of the applicatio
 * Pinned tab
 
 {:.rightcol}
-Style and layout parameters:  
+**Style and layout parameters:**   
 Background-color: #318ccc  
 Padding: 12px 0px 0px 0px  
 Logo-size: 128x32px  
@@ -50,21 +50,21 @@ Listing area occupies left half of the application besides top pane and right pa
 Sometime, it can also host multiple listing by micro layout, for example tiling.
 
 {:.rightcol}
-Style and layout parameters:  
+**Style and layout parameters:**   
 Background-color: #318ccc  
 Margin: 0px 0px 10px 0px  
 Background-color (listing area): #fafafa  
 
-![Bottom pane location](Page-layout-listinarea-bottompane.png){:.borderless .leftcol}
-
 #### Bottom pane
 {:.rightcol}
+
+![Bottom pane location](Page-layout-listinarea-bottompane.png){:.borderless .leftcol}
 
 {:.rightcol}
 Bottom pane actually is a sub area within listing area. It provides an alter location for some contents to be shown simultaneously, especially for user with large display. For example, Metadata/property. More often, it attaches controls that are related with listing above. For example multiple vault search.
 
 {:.rightcol}
-Style and layout parameters:  
+**Style and layout parameters:**   
 Background-color: #318ccc  
 Margin: 0px 6px 10px 0px  
 
@@ -76,20 +76,20 @@ Margin: 0px 6px 10px 0px
 Right pane plays an important row in offering detailed control options over object properties, previews, search and personalization. Its contents switch contextually according to the selected object or current function. Furthermore, it can be switched manually with tabs above it inside top pane. 
 
 {:.rightcol}
-Style and layout parameters:  
+**Style and layout parameters:**   
 Background-color: #318ccc  
 Margin: 0px 10px 10px 0px  
 
-![Right pane header location](Page-layout-rightpane-header.png){:.borderless .leftcol}
-
 #### Header
 {:.rightcol}
+
+![Right pane header location](Page-layout-rightpane-header.png){:.borderless .leftcol}
 
 {:.rightcol}
 Header is the top most part inside right pane. Often it is used to show the vital information of the content.
 
 {:.rightcol}
-Style and layout parameters:  
+**Style and layout parameters:**   
 Background-color: #f2f2f2  
 Padding: 10px 10px 0px 10px  
 Height: 130px  
@@ -98,32 +98,32 @@ Font-size (heading):  22px
 Font-size (subheading): 14px  
 Font-size (italic): 12px  
 
-![Tools ribbon location](Page-layout-rightpane-ribbon.png){:.borderless .leftcol}
-
 #### Object tools ribbon
 {:.rightcol}
+
+![Tools ribbon location](Page-layout-rightpane-ribbon.png){:.borderless .leftcol}
 
 {:.rightcol}
 Tools ribbon collects function buttons related with specific selection of the object or function.
 
 {:.rightcol}
-Style and layout parameters:  
+**Style and layout parameters:**   
 Background-color: #318ccc  
 Padding: 4px 6px 4px 14px  
 Height: 32px  
 Icons-size: 24px  
 Font-color: #ffffff  
 
-![Metadata form location](Page-layout-rightpane-metadataform.png){:.borderless .leftcol}
-
 #### Metadata form
 {:.rightcol}
+
+![Metadata form location](Page-layout-rightpane-metadataform.png){:.borderless .leftcol}
 
 {:.rightcol}
 Metadata form is the place where you can view or even change properties of the selected object or functions.
 
 {:.rightcol}
-Style and layout parameters:  
+**Style and layout parameters:**   
 Background-color: #fafafa  
 Padding: 20px 8px 0px 0px  
 Font-size: 13px  
@@ -131,16 +131,16 @@ Font-color: #999999, #5a5a5a, #1a1a1a
 Font-color (link): #0069dd  
 Row height: 26px  
 
-![Pinned location](Page-layout-rightpane-pinned.png){:.borderless .leftcol}
-
 #### Pinned
 {:.rightcol}
+
+![Pinned location](Page-layout-rightpane-pinned.png){:.borderless .leftcol}
 
 {:.rightcol}
 Pinned is the last tab from top pane, it shares the area with right pane. It is a place where user can collect all kinds of object and links, and personalize at certain extend. 
 
 {:.rightcol}
-Style and layout parameters:  
+**Style and layout parameters:**   
 Background-color: #f2f2f2  
 Padding: 4px  
 Font-color: #666666  
@@ -162,19 +162,19 @@ Cell-background-color* : #cfcfcf, # d4cfbf, # b1dee3, # bce3c0, #eddfb9, #bab4a9
 Task pane use to be the place where all quick shortcuts being collected. Its preservation is reasoning in backward compatibility. Task pane can be collapsed and expanded by clicking of the handle on its right side.
 
 {:.rightcol}
-Style and layout parameters:
-Background-color: #d9d9d9
-Width: 156px
-Font-color: #ffffff
-Font-color (mouseover): #ffffff
-Font-size: 13px
-Font-size (Group header): 14px
-Cell-icon-size: 16px
-Cell-padding: 5px 10px
-Cell-margin: 0px 0px 0px 2px
-Cell-background-color: #989898
-Cell-background-color (mouseover): #aebfc9
-Cell-background-color (Group header): #b3b3b3
+**Style and layout parameters:**   
+Background-color: #d9d9d9  
+Width: 156px  
+Font-color: #ffffff  
+Font-color (mouseover): #ffffff  
+Font-size: 13px  
+Font-size (Group header): 14px  
+Cell-icon-size: 16px  
+Cell-padding: 5px 10px  
+Cell-margin: 0px 0px 0px 2px  
+Cell-background-color: #989898  
+Cell-background-color (mouseover): #aebfc9  
+Cell-background-color (Group header): #b3b3b3  
 
 ## Layout controls  
 
@@ -190,5 +190,23 @@ Some panels have more flexibility with their layout. Explicitly, right pane and 
 
 ![Expand task pane](Page-layout-control-divider-taskpane.png){:.borderless}
 
+![divider layout parameter](Page-layout-control-divider-parameter.png){:.borderless .leftcol}
+
+{:.rightcol}
+**Style and layout parameters:**   
+Background-color: #318ccc  
+Width: 8px  
+Border-width (divider line): 4px  
+Border-color (divider line): # 8fabcc  
+Handle-width: 8px  
+Handle-color: # bac9db  
+Handle-height: 100px  
+
+### Tiling
+
+![tile layout ](Page-layout-control-tiles.png){:.borderless .leftcol}
+
+{:.rightcol}
+In case of Home view, listing area is tiled into multiple areas in order to make more views accessible at same time.  
 
 

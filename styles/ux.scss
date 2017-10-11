@@ -1,4 +1,4 @@
-h6 {margin-bottom:0.6em;}
+h4, h5, h6 {margin-bottom:0.6em;}
 
 /* format the borderless pictures */
 body>article img.borderless {
@@ -35,8 +35,8 @@ footer, .clear, h2, h3, h5, body>article *.clear::after
 	}
 	h4.rightcol
 	{
-		/* force the h4 to align properly with the image, for sub-section layouts */
-		margin-top: 0px;
+		/* sperate h4 from paragraph above */
+		margin-top: 2em;
 	}
 
 }
