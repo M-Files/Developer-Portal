@@ -8,7 +8,7 @@ M-Files 2018 Desktop client layout design is a visual flow based on navigation h
 
 ![Top pane location](2018-layout.png){:.borderless .clear}
 
-### Layout areas
+## Layout areas
 
 M-Files 2018 Desktop client layout include three general areas by their functionalities.
 * Top Pane holds essential features that are needed all the time, such as structured navigation and vault level and user operations.
@@ -16,7 +16,7 @@ M-Files 2018 Desktop client layout include three general areas by their function
 * Right pane is at final level of the navigation, it contains the detailed cover information and object-level operations for selected file.
 There are also sub-areas as bottom pane and task pane, and layout control behaviors inside and in between areas, which are explained below.
 
-#### Top pane
+### Top pane
 {:.layout-section}
 
 ![Top pane location](Page-layout-toppane.png){:.borderless}
@@ -39,7 +39,7 @@ Font-color: #ffffff
 Navigation-arrow-size: 32px  
 Indication-icon-size: 16px  
 
-#### Listing area
+### Listing area
 {:.layout-section}
 
 ![Listing area location](Page-layout-listingarea.png){:.borderless}
@@ -54,7 +54,7 @@ Background-color (listing area): #fafafa
 
 ![Bottom pane location](Page-layout-listinarea-bottompane.png){:.borderless}
 
-##### Bottom pane
+#### Bottom pane
 {:.layout-section}
 
 Bottom pane actually is a sub area within listing area. It provides an alter location for some contents to be shown simultaneously, especially for user with large display. For example, Metadata/property. More often, it attaches controls that are related with listing above. For example multiple vault search.
@@ -63,7 +63,7 @@ Style and layout parameters:
 Background-color: #318ccc  
 Margin: 0px 6px 10px 0px  
 
-#### Right pane
+### Right pane
 {:.layout-section}
 
 ![Right pane location](Page-layout-rightpane.png){:.borderless}
@@ -76,7 +76,7 @@ Margin: 0px 10px 10px 0px
 
 ![Right pane header location](Page-layout-rightpane-header.png){:.borderless}
 
-##### Header
+#### Header
 {:.layout-section}
 
 Header is the top most part inside right pane. Often it is used to show the vital information of the content.
@@ -92,7 +92,7 @@ Font-size (italic): 12px
 
 ![Tools ribbon location](Page-layout-rightpane-ribbon.png){:.borderless}
 
-##### Object tools ribbon
+#### Object tools ribbon
 {:.layout-section}
 
 Tools ribbon collects function buttons related with specific selection of the object or function.
@@ -106,7 +106,7 @@ Font-color: #ffffff
 
 ![Metadata form location](Page-layout-rightpane-metadataform.png){:.borderless}
 
-##### Metadata form
+#### Metadata form
 {:.layout-section}
 
 Metadata form is the place where you can view or even change properties of the selected object or functions.
@@ -121,7 +121,7 @@ Row height: 26px
 
 ![Pinned location](Page-layout-rightpane-pinned.png){:.borderless}
 
-##### Pinned
+#### Pinned
 {:.layout-section}
 
 Pinned is the last tab from top pane, it shares the area with right pane. It is a place where user can collect all kinds of object and links, and personalize at certain extend. 
@@ -136,12 +136,12 @@ Cell-icon-size: 32px
 Cell-margin: 4px  
 Cell-background-color* : #cfcfcf, # d4cfbf, # b1dee3, # bce3c0, #eddfb9, #bab4a9, #9dc2cc  
 
-###### Color-codings for Pinned item categories  
+##### Color-codings for Pinned item categories  
 {:.layout-section}
 
 ![Colo-coding for Pinned item](Page-layout-rightpane-pinned-colors.png){:.borderless .nofloat}  
 
-#### Task pane  
+### Task pane  
 {:.layout-section}
 
 ![Task pane location](Page-layout-taskpane.png){:.borderless}
@@ -162,16 +162,16 @@ Cell-background-color: #989898
 Cell-background-color (mouseover): #aebfc9
 Cell-background-color (Group header): #b3b3b3
 
-### Layout controls  
+## Layout controls  
 
-#### Expanding/collapsing control  
+### Expanding/collapsing control  
 
 Some panels have more flexibility with their layout. Explicitly, right pane and task pane can be collapse to make room for other views. This can be done by clicking the "handle" in the middle of the layout divider. Click once more to expand back.  
 
-###### Collapsing in action for Right pane  
+##### Collapsing in action for Right pane  
 ![Collapsing right pane](Page-layout-control-divider-rightpane.png){:.borderless .nofloat}
 
-###### Expanding action for Task pane  
+##### Expanding action for Task pane  
 ![Expand task pane](Page-layout-control-divider-taskpane.png){:.borderless .nofloat}
 
 

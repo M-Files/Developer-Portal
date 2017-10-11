@@ -14,7 +14,7 @@ body>article img.borderless.clear
 }
 
 /* allow clear the floating of images in the UX design section */
-footer, .clear, h3, h4, h6, body>article *.clear::after
+footer, .clear, h2, h3, h5, body>article *.clear::after
 {
 	content: '';
 	display: block;
@@ -26,7 +26,7 @@ footer, .clear, h3, h4, h6, body>article *.clear::after
 	/* allow laying out of image to the left of text */
 	h4.layout-section ~ p,
 	h4.layout-section ~ ul,
-	h4.layout-section ~ h5
+	h4.layout-section ~ h4
 	{
 		margin-left: 215px;
 	}
