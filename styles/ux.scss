@@ -24,27 +24,18 @@ footer, .clear, h2, h3, h5, body>article *.clear::after
 @media screen and (min-width: 610px)
 { 
 	/* allow laying out of image to the left of text */
-	h4.layout-section ~ p,
-	h4.layout-section ~ ul,
-	h4.layout-section ~ h4
+	*.rightcol
 	{
 		margin-left: 215px;
 	}
-	h4.layout-section ~ p img
+	img.leftcol
 	{
 		margin-left: -215px;
 		float: left;
 	}
-	/* allow no floating images*/
-	h4.layout-section ~ p img.nofloat
+	h4.rightcol
 	{
-		margin-left: -215px;
-		float: none;
-	}
-		
-	h5.layout-section
-	{
-		/* force the h5 to align properly with the image, for sub-section layouts */
+		/* force the h4 to align properly with the image, for sub-section layouts */
 		margin-top: 0px;
 	}
 
