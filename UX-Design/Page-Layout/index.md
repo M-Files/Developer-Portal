@@ -136,8 +136,43 @@ Cell-icon-size: 32px
 Cell-margin: 4px  
 Cell-background-color* : #cfcfcf, # d4cfbf, # b1dee3, # bce3c0, #eddfb9, #bab4a9, #9dc2cc  
 
-###### List of color codings for cell categories  
+###### Color-codings for Pinned item categories  
 {:.layout-section}
 
-![Listing area location](Page-layout-rightpane-pinned-colors.png){:.borderless}
+![Colo-coding for Pinned item](Page-layout-rightpane-pinned-colors.png){:.borderless .nofloat}  
+
+#### Task pane  
+{:.layout-section}
+
+![Task pane location](Page-layout-taskpane.png){:.borderless}
+
+Task pane use to be the place where all quick shortcuts being collected. Its preservation is reasoning in backward compatibility. Task pane can be collapsed and expanded by clicking of the handle on its right side.
+
+Style and layout parameters:
+Background-color: #d9d9d9
+Width: 156px
+Font-color: #ffffff
+Font-color (mouseover): #ffffff
+Font-size: 13px
+Font-size (Group header): 14px
+Cell-icon-size: 16px
+Cell-padding: 5px 10px
+Cell-margin: 0px 0px 0px 2px
+Cell-background-color: #989898
+Cell-background-color (mouseover): #aebfc9
+Cell-background-color (Group header): #b3b3b3
+
+### Layout controls  
+
+#### Expanding/collapsing control  
+
+Some panels have more flexibility with their layout. Explicitly, right pane and task pane can be collapse to make room for other views. This can be done by clicking the "handle" in the middle of the layout divider. Click once more to expand back.  
+
+###### Collapsing in action for Right pane  
+![Collapsing right pane](Page-layout-control-divider-rightpane.png){:.borderless .nofloat}
+
+###### Expanding action for Task pane  
+![Expand task pane](Page-layout-control-divider-taskpane.png){:.borderless .nofloat}
+
+
 
