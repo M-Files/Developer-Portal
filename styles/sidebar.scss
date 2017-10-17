@@ -162,3 +162,69 @@ ul.treeview li a.current {
         width: 100%;
     }
 }
+
+
+aside#sidebar ul
+{
+	margin: 0px;
+	padding: 0px;
+	.zmdi-hc-li
+	{
+		left: 20px;
+		top: 4px;
+	}	
+	li
+	{
+		margin: 0px;
+		padding: 0px;
+		&.expanded ul
+		{
+			list-style-type: none;
+		}
+		a
+		{
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			padding: 3px 0px;
+			background-color: transparent;
+		}
+	}
+	> li
+	{
+		> a
+		{
+			padding-left: 50px;
+		}
+		> ul > li
+		{
+			a
+			{
+				padding-left: 60px;
+			}
+			> ul > li
+			{
+				a
+				{
+					padding-left: 80px;
+				}
+			}
+		}
+	}
+	&.zmdi-hc-ul
+ 	{
+		margin: 0px;
+		padding: 0px;
+		li > a:hover
+		{
+			-webkit-transition: background-color 450ms ease-in;
+			-ms-transition: background-color 450ms ease-in;
+			transition: background-color 450ms ease-in;
+			background-color: #0064AD;
+		}
+		li.current > a
+		{
+			background-color: #004A93;
+		}
+	} 
+}
