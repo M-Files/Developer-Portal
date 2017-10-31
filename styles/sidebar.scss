@@ -1,6 +1,6 @@
 aside#sidebar {
     position: fixed;
-    padding: 0px 20px 130px 0px;
+    padding: 80px 30px 130px 3px;
     top: 53px;
     margin: 0px;
     left: -110%;
@@ -11,29 +11,21 @@ aside#sidebar {
     color: white;
     box-shadow: 5px 0 5px -5px #333;
     overflow: hidden;
-    min-height: 100px;
+	min-height: 100px;
+	box-sizing: border-box;
+	height: 100%;
+	overflow-y: auto;
+}
+
+nav.secondary
+{
+	border-top: 1px solid white;
+	margin: 10px 10px 0px 10px;
+	padding: 10px 0px;
 }
 
 body.with-breadcrumb>aside#sidebar {
     top: 120px;
-}
-
-aside#sidebar nav.primary {
-    height: 100%;
-    overflow-y: auto;
-    padding-left: 20px;
-    padding-right: 10px;
-}
-
-aside#sidebar nav.secondary {
-    border-top: 1px solid white;
-    position: absolute;
-    bottom: 10px;
-    left: 30px;
-    right: 30px;
-    background-color: #007dc6;
-    z-index: 10000;
-    height: 70px;
 }
 
 body.sidebar-expanded>* {
@@ -102,7 +94,7 @@ ul.treeview li.expanded>ul {
 i.expandCollapseIcon {
     cursor: pointer;
     position: absolute;
-    left: -42px;
+    /* left: -42px; */
     top: -2px;
     padding: 5px 15px;
     transform: rotate(0deg);
@@ -112,8 +104,23 @@ i.expandCollapseIcon {
     transition: all 100ms ease-in-out;
 }
 
-.treeview>li>i.expandCollapseIcon {
-    left: -57px;
+.treeview>li
+{
+	>i.expandCollapseIcon {
+    	left: -57px;
+	}
+	>ul>li
+	{
+		>i.expandCollapseIcon {
+	    	left:33px;
+		}
+		>ul>li
+		{
+			>i.expandCollapseIcon {
+				left:53px;
+			}
+		}
+	}
 }
 
 i.expandCollapseIcon:before {
@@ -163,7 +170,6 @@ ul.treeview li a.current {
     }
 }
 
-
 aside#sidebar ul
 {
 	margin: 0px;
@@ -188,6 +194,7 @@ aside#sidebar ul
 			height: 100%;
 			padding: 3px 0px;
 			background-color: transparent;
+			box-sizing: border-box;			
 		}
 	}
 	> li
@@ -208,6 +215,13 @@ aside#sidebar ul
 				{
 					padding-left: 80px;
 				}
+				> ul > li
+				{
+					a
+					{
+						padding-left: 100px;
+					}
+				}
 			}
 		}
 	}
@@ -224,7 +238,7 @@ aside#sidebar ul
 		}
 		li.current > a
 		{
-			background-color: #004A93;
+			background-color: #0064AD;
 		}
 	} 
 }
