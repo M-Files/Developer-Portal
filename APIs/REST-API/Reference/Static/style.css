@@ -120,9 +120,10 @@ div.navigation .navigation-tree > ul ul {
     margin: 0px;
 }
 
-.resource h2 .parameter {
+h2 .parameter {
     color: rgb(100, 150, 250);
-    cursor: default;
+	cursor: default;
+	text-decoration: none;
 }
 
 .content .method .label {
@@ -220,4 +221,3 @@ div.navigation .navigation-tree > ul ul {
     padding: 0.5em;
     border-radius: 8px;
 }
-

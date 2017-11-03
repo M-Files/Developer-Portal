@@ -69,6 +69,30 @@ a[rel='external'] i
 	padding-left: 2px;
 	padding-right: 3px;
 }
+.tooltip.active
+{
+	display: block;
+}
+
+table.method{
+	width: 100%;
+}
+table.method tr td:first-child
+{
+	width: 100px;
+}
+table.method tr td:last-child
+{
+    font-family: 'Consolas';
+}
+table.method tr td
+{
+    margin-top: 5px;
+}
+
+h3.method {
+    border-bottom: 2px solid black;
+}
 
 </style>
 
@@ -121,6 +145,7 @@ a[rel='external'] i
 </div>
 
 <script src="{{ site.baseurl }}/scripts/external-links.js"></script>
+<script src="{{ site.baseurl }}/APIs/REST-API/Reference/static/url-parameters.js"></script>
 
 </body>
 </html>
