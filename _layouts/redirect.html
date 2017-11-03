@@ -9,3 +9,11 @@ layout: default
     <p>This page has moved to <a href="{{ page.redirect.to }}">{{ page.redirect.to }}</a>. Please update your bookmarks. You will be redirected there now.</p>
 
 </article>
+
+<meta http-equiv="refresh" content="0; url={{ page.redirect.to }}" />
+
+<script>
+	window.setTimeout(function(){
+		window.location.href = "{{ page.redirect.to }}";
+	}, 5000);
+</script>

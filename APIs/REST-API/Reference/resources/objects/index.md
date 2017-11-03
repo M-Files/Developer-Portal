@@ -39,7 +39,7 @@ Earlier 9.0.3372.x M-Files versions have an issue preventing the use of this res
 	</div>
 	<div class="caption">
 		<span class="caption-label">Example 1:</span>
-		Requesting the authentication token.
+		Retrieving an object version.
 	</div>
 </div>
 

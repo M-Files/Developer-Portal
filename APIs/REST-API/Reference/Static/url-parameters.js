@@ -5,6 +5,9 @@ var parameters = {
 	"objectid": {
 		"<number>": "Refers to an internal object ID",
 		"e<string>": "Refers to an external object ID"
+	},
+	"id": {
+		"<number>": "Refers to an ID"
 	}
 };
 
