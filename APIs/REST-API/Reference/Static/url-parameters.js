@@ -8,6 +8,9 @@ var parameters = {
 	},
 	"id": {
 		"<number>": "Refers to an ID"
+	},
+	"path": {
+		"<path>" : "Any number of path segments separated with '/'.\r\nSee Encoding syntax for the path encoding."
 	}
 };
 
@@ -40,7 +43,13 @@ $(document).ready(function()
 				var $child = $("<div></div>");
 				$child.append($("<b></b>").append($("<tt></tt>").text(o)))
 				$child.append($("<br />"))
-				$child.append("- " + parameters[a][o])
+				var lines = parameters[a][o].split("\r\n");
+				for(var e=0; e<lines.length; e++)
+				{
+					if(e > 0)
+						$child.append($("<br />"));
+					$child.append("- " + lines[e])
+				}
 				$hoverElement.append($child);
 			});
 			$("body").append($hoverElement);
