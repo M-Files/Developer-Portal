@@ -28,44 +28,53 @@ $(document).ready(function()
 		{
 			// If the parameter doesn't exist, die.
 			var parameterText = "(" + a + ")";
-			var parameterLocation = text.indexOf(parameterText);
-			if(-1 == parameterLocation)
-				return;
-
-			// Generate the hover element.
-			var $hoverElement = $("<div></div>")
-				.addClass("tooltip")
-				.attr("id", "tooltip-" + a);
+			var parameterLocation = 0;
 			
-			// Add in the description(s).
-			$.each(parameters[a], function(o)
+			while(parameterLocation != -1)
 			{
-				var $child = $("<div></div>");
-				$child.append($("<b></b>").append($("<tt></tt>").text(o)))
-				$child.append($("<br />"))
-				var lines = parameters[a][o].split("\r\n");
-				for(var e=0; e<lines.length; e++)
-				{
-					if(e > 0)
-						$child.append($("<br />"));
-					$child.append("- " + lines[e])
-				}
-				$hoverElement.append($child);
-			});
-			$("body").append($hoverElement);
-			
-			// Build up the link.
-			var $link = $("<a></a>")
-				.addClass("parameter")
-				.attr("href", "#")
-				.attr("data-tooltip", "#tooltip-" + a)
-				.text(parameterText)
+				parameterLocation = text.indexOf(parameterText, parameterLocation+1);
+				if(-1 == parameterLocation)
+					return;
 
-			// Replace the text.
-			text = text.substring(0, parameterLocation)
-				+ $link.prop("outerHTML")
-				+ text.substring(parameterLocation + parameterText.length);
-			
+				// Generate the hover element.
+				var $hoverElement = $("<div></div>")
+					.addClass("tooltip")
+					.attr("id", "tooltip-" + parameterLocation);
+				
+				// Add in the description(s).
+				$.each(parameters[a], function(o)
+				{
+					var $child = $("<div></div>");
+					$child.append($("<b></b>").append($("<tt></tt>").text(o)))
+					$child.append($("<br />"))
+					var lines = parameters[a][o].split("\r\n");
+					for(var e=0; e<lines.length; e++)
+					{
+						if(e > 0)
+							$child.append($("<br />"));
+						$child.append("- " + lines[e])
+					}
+					$hoverElement.append($child);
+				});
+				$("body").append($hoverElement);
+				
+				// Build up the link.
+				var $link = $("<a></a>")
+					.addClass("parameter")
+					.attr("href", "#")
+					.attr("data-tooltip", "#tooltip-" + parameterLocation)
+					.text(parameterText)
+
+				// Replace the text.
+				text = text.substring(0, parameterLocation)
+					+ $link.prop("outerHTML")
+					+ text.substring(parameterLocation + parameterText.length);
+
+				// Move to the end of the string we just altered.
+				parameterLocation = parameterLocation + $link.prop("outerHTML").length;
+
+			}
+
 		})
 
 		// Update the text.
