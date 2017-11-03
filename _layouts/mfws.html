@@ -112,6 +112,8 @@ table#sub-resources thead
 
 				{% if i > 3 %}
 
+				&gt; 
+				
 				{% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
 				<a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}" id="bc-{{ j }}">
 					{% if breadcrumb_page.breadcrumb == nil %}{{ breadcrumb_page.title }}{% else %}{{ breadcrumb_page.breadcrumb }}{% endif %}
