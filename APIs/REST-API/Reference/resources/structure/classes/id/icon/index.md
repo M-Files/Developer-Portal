@@ -21,5 +21,5 @@ Output: | Stream: `application/png`
 | Retrieves the object class icon. 
 Parameters: | `?size` - Icon dimension. Default is 16.
 
-The icons supports only certain sizes and the real size on the received icon in the respponse might differ from the specified size. 
+The icons supports only certain sizes and the real size on the received icon in the response might differ from the specified size. 
 {:.remark}
