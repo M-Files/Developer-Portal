@@ -19,7 +19,7 @@ Collection of states under a single workflow.
 {:.method}
 Output: | [WorkflowState[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/workflowstate/)
 | Retrieves information on all workflow states of the given workflow. 
-Parameters: | `?currentstate` - 'null' or state ID. Restricts the list of returned states to those that are available as valid states from the current state.
+Parameters: | `?currentstate` - `null` or state ID. Restricts the list of returned states to those that are available as valid states from the current state.
 
 ### Sub-Resources
 

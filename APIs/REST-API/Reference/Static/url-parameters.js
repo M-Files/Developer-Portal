@@ -1,16 +1,23 @@
 var parameters = {
 	"type": {
-		"<number>": "Refers to an object type ID"
+		"<number>": "Refers to an object type ID."
 	},
 	"objectid": {
 		"<number>": "Refers to an internal object ID",
-		"e<string>": "Refers to an external object ID"
+		"e<string>": "Refers to an external object ID."
 	},
 	"id": {
-		"<number>": "Refers to an ID"
+		"<number>": "Refers to an ID."
 	},
 	"path": {
 		"<path>" : "Any number of path segments separated with '/'.\r\nSee Encoding syntax for the path encoding."
+	},
+	"version": {
+		"<number>" : "Specifies the version number",
+		"latest" : "Refers to the latest available version.\r\nMay also be left out which equals 'latest'."
+	},
+	"file":{
+		"<number>": "Refers to a file ID."
 	}
 };
 
