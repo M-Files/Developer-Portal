@@ -28,3 +28,4 @@ Parameters: | `?objtype` - Object type ID. Filters the returned classes by objec
 Item | Description
 --- | ---
 [Object class]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/id/) | Information on a single object class. 
+[Item ID by GUID]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/itemidbyguid/) | Retrieves the ID of a class with the given GUID.

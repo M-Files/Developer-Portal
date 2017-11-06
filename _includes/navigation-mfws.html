@@ -80,6 +80,7 @@
 				</ul>
 				</li>
 				<li class="nav-item" id="nav-resources-recentlyaccessedbyme" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/recentlyaccessedbyme/">Recently accessed by the user</a></li>
+				<li class="nav-item" id="nav-resources-repositories" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/repositories/">Repositories</a></li>
 				<li
 				 class="nav-item" id="nav-resources-server" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/server/">Server resources</a>
 					<ul class="nav-children">
@@ -95,6 +96,7 @@
 					<li class="nav-item" id="nav-resources-session" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/session/">Session</a>
 						<ul class="nav-children">
 							<li class="nav-item" id="nav-resources-session-authenticationtoken" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/session/authenticationtoken/">Authentication token</a></li>
+							<li class="nav-item" id="nav-resources-session-userid" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/session/userid/">User Id</a></li>
 							<li
 							 class="nav-item" id="nav-resources-session-vault" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/session/vault/">Vault</a></li>
 					</ul>
@@ -117,7 +119,8 @@
 							<li class="nav-item" id="nav-resources-structure-classes" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/">Object classes</a>
 								<ul
 								 class="nav-children">
-									<li class="nav-item" id="nav-resources-structure-classes-id" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/id/">Object class</a>
+								 <li class="nav-item" id="nav-resources-structure-classes-id" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/itemidbyguid/">Item ID by GUID</a></li>	
+								 <li class="nav-item" id="nav-resources-structure-classes-id" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/id/">Object class</a>
 										<ul
 										 class="nav-children">
 											<li class="nav-item" id="nav-resources-structure-classes-id-icon" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/id/icon/">Class icon</a></li>
@@ -128,9 +131,10 @@
 						<li class="nav-item" id="nav-resources-structure-objecttypes" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/">Object types</a>
 							<ul
 							 class="nav-children">
-								<li class="nav-item" id="nav-resources-structure-objecttypes-type" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/">Object type</a>
+							 <li class="nav-item" id="nav-resources-structure-objecttypes-type" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/">Object type</a>
 									<ul
 									 class="nav-children">
+									 	<li class="nav-item" id="nav-resources-structure-objecttypes-type-classes" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/classes/">Classes</a></li>
 										<li class="nav-item" id="nav-resources-structure-objecttypes-type-refreshstatus" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/refreshstatus/">External source refresh</a></li>
 										<li
 										 class="nav-item" id="nav-resources-structure-objecttypes-type-icon" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/icon/">Object type icon</a></li>
@@ -213,6 +217,8 @@
 																 id="nav-structs-objver" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/objver/">ObjVer</a></li>
 																<li class="nav-item"
 																 id="nav-structs-passwordchange" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/passwordchange/">PasswordChange</a></li>
+																 <li
+																 class="nav-item" id="nav-structs-plugininfoconfiguration" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/plugininfoconfiguration/">PluginInfoConfiguration</a></li>
 																<li
 																 class="nav-item" id="nav-structs-primitivetypet" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/primitivetypet/">PrimitiveType&lt;T&gt;</a></li>
 																	<li
@@ -225,6 +231,12 @@
 																			 class="nav-item" id="nav-structs-publickey" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/publickey/">PublicKey</a></li>
 																				<li
 																				 class="nav-item" id="nav-structs-resultst" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/resultst/">Results&lt;T&gt;</a></li>
+																				 <li
+																				 class="nav-item" id="nav-structs-repositoryauthentication" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/repositoryauthentication/">RepositoryAuthentication</a></li>
+																				 <li
+																				 class="nav-item" id="nav-structs-repositoryauthenticationstatus" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/repositoryauthenticationstatus/">RepositoryAuthenticationStatus</a></li>
+																				 <li
+																				 class="nav-item" id="nav-structs-repositoryauthenticationtarget" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/repositoryauthenticationtarget/">RepositoryAuthenticationTarget</a></li>
 																					<li
 																					 class="nav-item" id="nav-structs-sessioninfo" rel="struct"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/structs/sessioninfo/">SessionInfo</a></li>
 																						<li
