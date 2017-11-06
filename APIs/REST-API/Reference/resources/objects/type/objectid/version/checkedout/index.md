@@ -25,6 +25,9 @@ Output: | [MFCheckOutStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerat
 ### DELETE
 {:.method}
 
+Note that PUT and DELETE verbs may not be supported in IIS; it is recommended to route them via the POST verb and specify the _method, as [detailed in the compatibility page]({{ site.baseurl }}/APIs/REST-API/Reference/compatibility/#http-methods).
+{:.remark}
+
 {:.method}
 Input: | [MFCheckOutStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfcheckoutstatus/)
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/), `HTTP 204`

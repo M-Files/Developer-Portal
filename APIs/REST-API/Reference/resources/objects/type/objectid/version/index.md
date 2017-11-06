@@ -26,6 +26,9 @@ Parameters: | `?include` - A list of additional fields to include in the Extende
 ### DELETE
 {:.method}
 
+Note that PUT and DELETE verbs may not be supported in IIS; it is recommended to route them via the POST verb and specify the _method, as [detailed in the compatibility page]({{ site.baseurl }}/APIs/REST-API/Reference/compatibility/#http-methods).
+{:.remark}
+
 {:.method}
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/), `HTTP 204`
 | Destroys the object version. As checked in versions cannot be destroyed this can only be performed on a checked out version and is equivalent to an undo checkout. Returns the new ObjectVersion information if it is still visible to the user.
