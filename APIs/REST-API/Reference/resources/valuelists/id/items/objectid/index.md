@@ -25,6 +25,9 @@ Output: | [ValueListItem]({{ site.baseurl }}/APIs/REST-API/Reference/structs/val
 ### DELETE
 {:.method}
 
+Note that PUT and DELETE verbs may not be supported in IIS; it is recommended to route them via the POST verb and specify the _method, as [detailed in the compatibility page]({{ site.baseurl }}/APIs/REST-API/Reference/compatibility/#http-methods).
+{:.remark}
+
 {:.method}
 Output: | [ValueListItem]({{ site.baseurl }}/APIs/REST-API/Reference/structs/valuelistitem/)
 | Deletes a value list item. 
