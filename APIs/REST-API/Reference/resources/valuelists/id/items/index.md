@@ -21,13 +21,9 @@ Collection of value list items for a single value list.
 {:.method}
 Output: | [Results]({{ site.baseurl }}/APIs/REST-API/Reference/structs/resultst/)<[ValueListItem]({{ site.baseurl }}/APIs/REST-API/Reference/structs/valuelistitem/)>
 | Retrieves value list item information. 
-Parameters:  | `?propertydef` - Filters the items using the filter defined on the property definition.
-| `?pN` - Filter items using defined property ID and its value. See search conditions.
-| `?parent` - Filters items by parent item.
-| `?owner` - Filters items by owner item.
-| `?name` - Filter using name. Supports wildcards.
-| `?page` - Retrieves only one page. Default page size is 100.
-| `?pagesize` - Defines page size. If page size is defined, retrieve only one page, default to first.
+Parameters:  | `?filter` - Filter using name. Supports wildcards.
+| `?filterItem` - A collection of value list IDs (comma-separated).  Returns only items with these IDs.
+| `?CondiitonType` - One of the following values: `1` = "Equal to", `2` = "Not equal to", `3` = "Greater than", `4` = "Less than".
 
 ### POST
 {:.method}

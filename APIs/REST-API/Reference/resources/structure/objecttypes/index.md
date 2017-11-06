@@ -18,8 +18,7 @@ Collection of object type information.
 
 {:.method}
 Output: | [ObjType[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objtype/)
-| Retrieves information on all object types. 
-Parameters: | `?type` - Only returns the object types of specific kind. `real` returns only real object types. `valuelist` returns only non-object type valuelists. `both` is the default which returns all object types.
+| Retrieves information on real object types. 
 
 ### Sub-Resources
 
