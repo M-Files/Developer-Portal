@@ -53,22 +53,22 @@ $(function () {
             types: {
                 page: {
                     icon: {
-                        image: MFWSPageRoot + '/static/images/file.gif'
+                        image: MFWSPageRoot + '/Static/images/file.gif'
                     }
                 },
                 resource: {
                     icon: {
-                        image: MFWSPageRoot + '/static/images/resource.gif'
+                        image: MFWSPageRoot + '/Static/images/resource.gif'
                     }
                 },
                 struct: {
                     icon: {
-                        image: MFWSPageRoot + '/static/images/struct.gif'
+                        image: MFWSPageRoot + '/Static/images/struct.gif'
                     }
                 },
                 'enum': {
                     icon: {
-                        image: MFWSPageRoot + '/static/images/enum.gif'
+                        image: MFWSPageRoot + '/Static/images/enum.gif'
                     }
                 }
             }

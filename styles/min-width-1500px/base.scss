@@ -34,17 +34,6 @@ article.page
 	border-right-width: 0px;
 	border-bottom-width: 0px;
 }
-body.has-in-page-nav > #preview
-{
-	margin-right: 30px;
-	transform: none;
-	right: -10px;
-}
-body.has-in-page-nav #preview a
-{
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
 #in-page-nav > ul::before
 {
 	content: "In this article";
