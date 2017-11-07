@@ -7,7 +7,7 @@ redirect_from: "/APIs/REST-API/Reference/structs/extendedobjectclass.html"
 
 # ExtendedObjectClass
 
-An object class with extended properties. Inherits from [ObjectClass](objectclass). 
+An object class with extended properties. Inherits from [ObjectClass](../objectclass). 
 
 ## Properties
 

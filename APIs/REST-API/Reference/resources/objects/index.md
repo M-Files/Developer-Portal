@@ -20,9 +20,9 @@ Collection of objects in the document vault.
 
 {:.method}
 Output: | [Results]({{ site.baseurl }}/APIs/REST-API/Reference/structs/resultst/)<[ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/)>
-| Retrieves objects. The amount of returned objects is limited by the server. See [search encoding]({{ site.baseurl }}/APIs/REST-API/Reference/resources/syntax/#sect:search-encoding) for how to further specify the objects. 
+| Retrieves objects. The amount of returned objects is limited by the server. See [search encoding]({{ site.baseurl }}/APIs/REST-API/Reference/syntax/#sect:search-encoding) for how to further specify the objects. 
 
-Earlier 9.0.3372.x M-Files versions have an issue preventing the use of this resource.  The search within root view ([/views/objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/objects/)) resource is identical to this one and can be used as a working alternative.
+Earlier 9.0.3372.x M-Files versions have an issue preventing the use of this resource.  The search within root view ([/views/(path)/objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/objects/)) resource is identical to this one and can be used as a working alternative.
 {:.remark}
 
 ### Example

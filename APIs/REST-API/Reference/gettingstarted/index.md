@@ -8,7 +8,7 @@ redirect_from: "/APIs/REST-API/Reference/gettingstarted.html"
 # Getting Started
 {:#gettingstarted}
 
-This section demonstrates the use of M-Files Web Service by using low level HTTP requests. The information below should be applicale to most programming languages. See [Sample Code]({{ site.baseurl }}/APIs/REST-API/Reference/codesamples) section for sample M-Files Web Service C# client. The Sample Code package also contains the [struct]({{ site.baseurl }}/APIs/REST-API/Reference/structs) definitions used in the samples below.
+This section demonstrates the use of M-Files Web Service by using low level HTTP requests. The information below should be applicale to most programming languages. See [Sample Code]({{ site.baseurl }}/APIs/REST-API/Reference/samples) section for sample M-Files Web Service C# client. The Sample Code package also contains the [struct]({{ site.baseurl }}/APIs/REST-API/Reference/structs) definitions used in the samples below.
 
 ## Prerequisities
 
@@ -79,7 +79,7 @@ Testing resource reading is easy with the browser itself. You can log in to M-Fi
 
 ## Writing the resources
 
-Just like reading resources, modifying them by deleting or editing existing ones or creating new ones is done with basic HTTP requests as well. Each of these different operations has its own HTTP verb: POST for creating, PUT for editing and DELETE for deleting. However unlike GET, these other verbs are not available for all resources. The [resource reference]({{ site.baseurl }}/APIs/REST-API/Reference/resources) contains information on the resources and the methods available for them. The example [example below](#example-3) below uses POST request on the documents collection resource found at [/objects/0]({{ site.baseurl }}/APIs/REST-API/Reference/objects/(type)) to create a new document in the document vault.
+Just like reading resources, modifying them by deleting or editing existing ones or creating new ones is done with basic HTTP requests as well. Each of these different operations has its own HTTP verb: POST for creating, PUT for editing and DELETE for deleting. However unlike GET, these other verbs are not available for all resources. The [resource reference]({{ site.baseurl }}/APIs/REST-API/Reference/resources) contains information on the resources and the methods available for them. The example [example below](#example-3) below uses POST request on the documents collection resource found at [/objects/0]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/) to create a new document in the document vault.
 
 <div class="sample" id="example-3">
 	<div class="sample-code">
@@ -102,7 +102,7 @@ Just like reading resources, modifying them by deleting or editing existing ones
 	</div>
 </div>
 
-Especially older IIS versions (5.1, 6.0) make it harder to use non GET or POST verbs with ASP.Net applications. While M-Files Web Service supports pure PUT and DELETE requests, the default IIS configuration for M-Files Web Access doesn't enable PUT and DELETE requests for IIS. For this reason M-Files Web Service supports a `?\_method=VERB` query parameter which is the recommended way to communicate the PUT and DELETE intents. See [compatibility]({{ site.baseurl }}/APIs/REST-API/Reference/compatibility) for more information on this. [Example below](#example-4) shows a PUT request on the [check-out state]({{ site.baseurl }}/APIs/REST-API/Reference/objects/(type)/(objectid)/(version)/checkedout) resource.
+Especially older IIS versions (5.1, 6.0) make it harder to use non GET or POST verbs with ASP.Net applications. While M-Files Web Service supports pure PUT and DELETE requests, the default IIS configuration for M-Files Web Access doesn't enable PUT and DELETE requests for IIS. For this reason M-Files Web Service supports a `?\_method=VERB` query parameter which is the recommended way to communicate the PUT and DELETE intents. See [compatibility]({{ site.baseurl }}/APIs/REST-API/Reference/compatibility) for more information on this. [Example below](#example-4) shows a PUT request on the [check-out state]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout) resource.
 {:.remark}
 
 <div class="sample" id="example-4">
