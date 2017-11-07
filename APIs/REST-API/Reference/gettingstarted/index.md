@@ -8,7 +8,7 @@ redirect_from: "/APIs/REST-API/Reference/gettingstarted.html"
 # Getting Started
 {:#gettingstarted}
 
-This section demonstrates the use of M-Files Web Service by using low level HTTP requests. The information below should be applicale to most programming languages. See [Sample Code]({{ site.baseurl }}/APIs/REST-API/Reference/codesamples) section for sample M-Files Web Service C# client. The Sample Code package also contains the [struct]({{ site.baseurl }}/APIs/REST-API/Reference/structs) definitions used in the samples below.
+This section demonstrates the use of M-Files Web Service by using low level HTTP requests. The information below should be applicale to most programming languages. See [Sample Code]({{ site.baseurl }}/APIs/REST-API/Reference/samples) section for sample M-Files Web Service C# client. The Sample Code package also contains the [struct]({{ site.baseurl }}/APIs/REST-API/Reference/structs) definitions used in the samples below.
 
 ## Prerequisities
 
