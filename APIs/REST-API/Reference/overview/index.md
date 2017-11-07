@@ -12,7 +12,7 @@ M-Files Web Service consists of several [resources]({{ site.baseurl }}/APIs/REST
 
 The **[objects hierarchy]({{ site.baseurl }}/APIs/REST-API/Reference/objects)** contains the resources used to read and edit individual objects. This includes searching objects, reading and editing metadata, downloading files and creating new objects. 
 
-The **[views hierarchy]({{ site.baseurl }}/APIs/REST-API/Reference/views/(path))** contains the resources representing the document vault view hierarchy. These resources enable applications to navigate through M-Files views. These resources are read-only as M-Files Web Service doesn't currently support creating or modifying views.
+The **[views hierarchy]({{ site.baseurl }}/APIs/REST-API/Reference/views/path)** contains the resources representing the document vault view hierarchy. These resources enable applications to navigate through M-Files views. These resources are read-only as M-Files Web Service doesn't currently support creating or modifying views.
 
 The **[vault structure hierarchy]({{ site.baseurl }}/APIs/REST-API/Reference/structure)** provides information on the metadata structure of the vault. The hierarchy contains resources for object types, property definitions and workflows for example. Similar to the views hierarchy, the structure hierarchy doesn't currently support modification either.
 
