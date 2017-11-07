@@ -10,7 +10,7 @@ redirect_from: "/APIs/REST-API/Reference/samples.html"
 
 ## Package
 
-The sample code package for M-Files Web Service can be downloaded from [http://developer.m-files.com{{ site.baseurl }}/APIs/REST-API/Reference/samples/MFWS_Samples.zip]({{ site.baseurl }}/APIs/REST-API/Reference/samples/MFWS_Samples.zip). The package contains code samples and utilities in different languages. The package structure is described in [table 1](#table-1).
+The sample code package for M-Files Web Service can be downloaded from [http://developer.m-files.com{{ site.baseurl }}/APIs/REST-API/Reference/MFWS_Samples.zip]({{ site.baseurl }}/APIs/REST-API/Reference/MFWS_Samples.zip). The package contains code samples and utilities in different languages. The package structure is described in [table 1](#table-1).
 
 <div class="caption">
 	<span class="caption-label">Table 1:</span>
