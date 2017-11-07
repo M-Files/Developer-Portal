@@ -51,7 +51,7 @@ Once the authentication token has been acquired it can be used in the requests b
 
 ## Reading the resources
 
-Once the authentication has been performed it is possible to access information within a document vault. This information is made available in terms of [resources]({{ site.baseurl }}/APIs/REST-API/Reference/resources). Save for few exceptions all of these resources support the HTTP GET method which allows an application to request the current representation of the resource. The [example below](#example-2) uses a GET request on the document vault root view resource found at [/views/items]({{ site.baseurl }}/APIs/REST-API/Reference/views/path/items) to list all the views in the document vault root.
+Once the authentication has been performed it is possible to access information within a document vault. This information is made available in terms of [resources]({{ site.baseurl }}/APIs/REST-API/Reference/resources). Save for few exceptions all of these resources support the HTTP GET method which allows an application to request the current representation of the resource. The [example below](#example-2) uses a GET request on the document vault root view resource found at [/views/items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items) to list all the views in the document vault root.
 
 <div class="sample" id="example-2">
 	<div class="sample-code">
