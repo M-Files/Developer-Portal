@@ -32,5 +32,5 @@ This document is aimed at developers interested in using M-Files Web Service for
 
 **[Compatibility]({{ site.baseurl }}/APIs/REST-API/Reference/compatibility)** lists best practices that enable applications to consume M-Files Web Services hosted on top of different server configurations.
 
-**[Sample code]({{ site.baseurl }}/APIs/REST-API/Reference/codesamples)** contains a package of code samples to help in application development.
+**[Sample code]({{ site.baseurl }}/APIs/REST-API/Reference/samples)** contains a package of code samples to help in application development.
 
