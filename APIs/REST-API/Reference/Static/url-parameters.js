@@ -18,7 +18,10 @@ var parameters = {
 	},
 	"file":{
 		"<number>": "Refers to a file ID."
-	}
+	},
+	":guid": { 
+		"<guid>" : "The element's GUID." 
+	} 
 };
 
 $(document).ready(function()
