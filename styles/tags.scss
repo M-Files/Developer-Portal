@@ -35,13 +35,26 @@ article.page .tag
 			}
 		}
 	}
+	&.available
+	{
+		a
+		{
+			background-color: #009688;
+			border: 1px solid #26A69A;
+			color: black;
+			&:before
+			{
+				content: "\f26b";
+			}
+		}
+	}
 	&.unavailable
 	{
 		a
 		{
 			background-color: #eee;
 			border: 1px solid #ddd;
-			color: 333;
+			color: #333;
 			&:before
 			{
 				content: "\f136";

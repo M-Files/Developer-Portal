@@ -8,7 +8,7 @@ breadcrumb: Vault Application Framework Licensing
 [Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
 {:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework only."}
 [Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
-{:.tag.important title="This functionality is available in version 2.0 of the Vault Application Framework only."}
+{:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework only."}
 
 This article details how to implement licensing within your Vault Application Framework applications. The licensing infrastructure was added to M-Files 2015.3, and is available to use in Vault Application Framework from [version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/) onwards.  This article details the minimum steps required to create secure license files, and to check the validity of the license files at runtime within the Vault Application Framework application.
 
