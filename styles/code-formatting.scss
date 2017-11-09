@@ -33,6 +33,11 @@ code.language-reg::before {
     content: 'VBScript';
 }
 
+.language-text code.hljs::before,
+	 code.hljs.language-text::before {
+    content: 'Text';
+}
+
 .language-csharp code.hljs::before,
 	 code.hljs.language-cs::before {
     content: 'C# (.NET)';
@@ -46,6 +51,11 @@ code.language-reg::before {
 .language-javascript code.hljs::before,
 	code.hljs.language-javascript::before {
     content: 'JavaScript';
+}
+
+.language-json code.hljs::before,
+	code.hljs.language-json::before {
+    content: 'JSON';
 }
 
 .language-html code.hljs::before,

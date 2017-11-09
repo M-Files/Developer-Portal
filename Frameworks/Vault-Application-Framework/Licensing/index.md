@@ -6,9 +6,9 @@ breadcrumb: Vault Application Framework Licensing
 ---
 
 [Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
-{:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework only."}
+{:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework."}
 [Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
-{:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework only."}
+{:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework."}
 
 This article details how to implement licensing within your Vault Application Framework applications. The licensing infrastructure was added to M-Files 2015.3, and is available to use in Vault Application Framework from [version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/) onwards.  This article details the minimum steps required to create secure license files, and to check the validity of the license files at runtime within the Vault Application Framework application.
 
@@ -74,6 +74,8 @@ Once the keys have been saved to the configuration file, click the `Load Configu
 ## Creating a Licensed Vault Application Framework Application
 
 ### Creating an Application from the Template
+
+Create an application using the [Visual Studio template]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template) (compatible with Visual Studio 2015 and upwards), ensuring that you choose version 2.0 of the template.
 
 ### Implementing License Loading and Validation
 
@@ -156,7 +158,7 @@ It is up to your application to decide what functionality should be disabled, an
 
 ## Creating and Installing a License File
 
-### Modifying Our Sample `.mlfconf` File
+### Modifying the sample `.mlfconf` File
 
 #### Updating the Vault Application Framework Application GUID
 
@@ -212,11 +214,11 @@ When the vault is restarted, our license check code is re-executed, and a note i
 
 ## Extending the License Usage
 
-## Other Built-In Fields
+### Other Built-In Fields
 
 The `LicenseContentBas`e base class, used when parsing the license content by the Vault Application Framework, contains a number of other built-in members which you can use; simply define the member in the `.mflconf` file to enable the functionality.
 
-### Informational
+#### Informational
 
 Property | Type | Shown in M-Files Admin | Automatically Enforced
 --- | --- | --- | ---
@@ -226,7 +228,7 @@ LicensedTo | `String` | Yes
 LicenseVersion | `Integer`		
 SerialNumber | `String` | Yes	
 
-### Limits
+#### Limits
 
 Property | Type | Shown in M-Files Admin | Automatically Enforced
 --- | --- | --- | ---
@@ -234,7 +236,7 @@ Application	GUID | `String` | Yes | If set, requires that the receiving applicat
 MFilesSerialNumber | `String` | Yes | If set, requires that the current M-Files server license serial number matches.
 Vaults | Array of strings | Yes | If set, requires that the vault GUID is one of the listed values.
 
-### Expiration
+#### Expiration
 
 Property | Type | Shown in M-Files Admin | Automatically Enforced
 --- | --- | --- | ---
@@ -242,14 +244,14 @@ MaintenanceExpireDate | `Date-string` - Must be formatted `d.M.yyy` | Yes | If s
 LicenseExpireDate | `Date-string` - Must be formatted `d.M.yyy` | Yes | If set, requires that the current date is not later than the set value (plus optional GraceDays).
 GraceDays | `Integer` | If set, used with `LicenseExpireDate`.
 
-### Other
+#### Other
 
 Property | Type | Shown in M-Files Admin | Automatically Enforced
 --- | --- | --- | ---
 Modules | Array of strings
 ServerVersions | Array of strings | | If set, requires that the current M-Files server version number matches any of the listed values.  Value can include 1-4 values and the missing ones are checked as wildcards: <br />"12" matches all 12.*.*.* versions.<br />Value "11.3" matches all 11.3.*.* versions.<br />Value "11.2.4320.99" matches only the version 11.2.4320.99
 
-### User limits
+#### User limits
 
 Property | Type | Shown in M-Files Admin | Automatically Enforced
 --- | --- | --- | ---
@@ -261,3 +263,92 @@ Groups | Array of objects: | | Group (`string` - the user group alias)<br/>Len (
 The application GUID, the M-Files Serial Number, the vault GUID, expiration days, server numbers, and user limitations are all checked as part of the base implementation; simply providing values for these in JSON enables the checks.
 {:.note}
 
+## Using Custom Fields
+
+### Altering the Configuration File
+
+Whilst the sample `.mflconf` file contains some basic values, the JSON structure within the `.mflconf` file can be altered to allow you to customize exactly what content is encoded within the licensing file.  To do this, you can add additional members to the `Editor.editors.LicenseConfiguration.members` object:
+
+```json
+{
+"Editor": {
+	"editors" : {
+		"LicenseConfiguration" : {
+			"members" : {
+				"CustomField1" : {
+					"type" : "string"
+				}
+			}
+		}
+	}
+}
+```
+
+In the above sample (curtailed to only include the additional field), we have added a new field named `CustomField1` and have specified the type as a `string.  Different supported types are: 
+
+* `string`
+	* Any string value. Value put into JSON as string.
+* `number`
+	* Editor can filter input characters. Value put into JSON as number, integer or real.
+* `bool`
+	* Editor can use checkbox. Value put into JSON as bool, true or false.
+* `date`
+	* Editor can use date-picker. Value put into JSON as string. See also below the "format".
+* `array`
+	* Selectable array of strings. Values put into JSON as array of strings.
+* `enumOptions`
+	* Value is one of predefined string options.
+
+Your custom fields can be named anything, and do not have to start with `CustomField`.
+{:.note}
+
+### Accessing the Custom Fields at Runtime
+
+To access the custom fields, you should create your own class that derives from `LicenseContentBase`.  This class should define the additional fields and mark them with the `[DataMember]` attribute.  The Vault Application Framework will then automatically populate these fields when the license key is read:
+
+```csharp
+using System.Runtime.Serialization;
+public class LicenseContent
+	: LicenseContentBase
+{
+	[DataMember]
+	public string CustomField1 { get; set; }
+}
+```
+
+The custom field can then be parsed from by using `this.License.Content<LicenseContent>`, where `LicenseContent` is the name of our custom class created above.
+
+```csharp
+// Ensure the license is valid.
+switch (this.License.LicenseStatus)
+{
+
+	case MFApplicationLicenseStatus.MFApplicationLicenseStatusValid:
+	{
+		SysUtils.ReportInfoToEventLog($"Application is licensed ({this.License.Content<LicenseContent>().CustomField1}).");
+		break;
+	}
+	default:
+	{
+		SysUtils.ReportToEventLog(
+			$"Application is in an unexpected state: {this.License.LicenseStatus}.",
+			EventLogEntryType.Error);
+		break;
+	}
+}
+```
+
+## Tips and Tricks
+
+### License is incorrect. The file is either not a license or it is corrupt or falsified.
+
+This error can be shown whilst installing a license if the keys do not match correctly. The full error text may say something like:
+
+```text
+Unexpected character encountered while parsing value: F. Path '', line 0, position 0.
+```
+
+In this case, ensure that the various keys are correctly set, and that the correct `Key.conf` file was used to generate the `.lic` file.
+
+Vault Application Framework must be set with the public key of the main key, and the secret/private key of the secondary key.
+{:.note}
