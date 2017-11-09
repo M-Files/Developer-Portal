@@ -3,7 +3,7 @@
 
         // Get a reference to all the page headings.
         var $ul = $("<ul></ul>");
-        var $headings = $("h2, h3, h4", $("article.page"));
+        var $headings = $("h2, h3", $("article.page"));
 
         // If there are none then die now (show no in-page-nav).
         if(0 == $headings.length)
