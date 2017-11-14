@@ -51,6 +51,11 @@ body #in-page-nav
 				&.current
 				{
 					border-left-color: #007dc6;
+					-o-transition: border-left-color linear 0.3s;
+					-webkit-transition: border-left-color linear 0.3s;
+					-moz-transition: border-left-color linear 0.3s;
+					-ms-transition: border-left-color linear 0.3s;
+					transition: border-left-color linear 0.3s;
 				}
 			}
 		}
