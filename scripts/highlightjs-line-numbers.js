@@ -188,6 +188,7 @@ $(document).ready(function()
 		
 		hljs.configure({languages: ["cs", "xml", "vbscript", "javascript"]});
 		hljs.initHighlightingOnLoad();
+
 		hljs.initLineNumbersOnLoad();
 
 	}
