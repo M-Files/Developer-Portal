@@ -39,7 +39,8 @@ code.language-reg::before {
 }
 
 .language-csharp code.hljs::before,
-	 code.hljs.language-cs::before {
+	code.hljs.language-cs::before,
+	code.hljs.language-csharp::before {
     content: 'C# (.NET)';
 }
 
