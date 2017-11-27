@@ -8,8 +8,17 @@ includeInSearch: true
 
 ![Tabs](UI-components-tabs.png){:.borderless}
 
-Locate in top pane, Tabs provide direct access to views and functions. A tooltip with description of tab function will be shown when mouse over on each tab.  
-Tab layout are controlled through tab groups. Each tab group has a minimum number for visible tabs. When horizontal space is insufficient to show all the tabs inside a group, hidden tab will be collapsed under an expandable menu indicated by a triangle icon accordingly.  Currently, there are "Vault navigation" and "details and operation " two tab groups. Most of Third party application utilize "Details and functions" tab group provide access to their extension application.  
+Located in top pane, `Tabs` provide direct access to views and functions. A tooltip with description of each tab's function will be shown when the user hovers the mouseover each tab.  
+
+Tab layout is controlled through tab groups. Each tab group has a minimum number for visible tabs. When horizontal space is insufficient to show all the tabs inside a group, the hidden tabs will be collapsed under an expandable menu indicated by a "triangle" icon.  Currently, the two tab groups are "Vault Navigation" and "Details and Operations":
+
+* Vault Navigation
+	* Contains tabs to navigate to the vault `Home` view, and common views such as `Recently Accessed by Me`, `Assigned to Me`, and `Favourites`.
+* Details and Operations
+	* Contains tabs to view the selected object's metadata, to preview a selected file, or to search for objects.
+
+Third party tabs created using the [User Interface Extensibility Framework](/Frameworks/User-Interface-Extensibility-Framework/) are located in the "Details and Operations" tab group.
+{:.note}
 
 {: .secondary}
 **Style and layout parameters:**  
@@ -28,7 +37,7 @@ Font-color: #555555
 
 ![Lists](UI-components-lists.png){:.borderless}
 
-Lists is one typical view for displaying index of multiple objects. They are mostly locate within listing area. In some case it can be nested inside a tile.  
+A `List` is the typical method for displaying a collection of multiple items such as views or objects. Lists are mostly located within the [Listing Area](/UX-Design/Page-Layout/#listing-area).
 
 {: .secondary}
 **Style and layout parameters:**  
@@ -44,7 +53,7 @@ Icon-size: 16px
 #### List grouping header
 ![List grouping](UI-components-list-grouping.png){:.borderless}
 
-List grouping can be used to organize listed objects. It appears as a header component with textual title and expanding/collapsing control on right side.  
+A `List Grouping` can be used to organize listed objects, grouping them by object type or a specific metadata property. The grouping appears as a header component with textual title and expanding/collapsing control on right side.  
 
 {: .secondary}
 **Style and layout parameters:**  

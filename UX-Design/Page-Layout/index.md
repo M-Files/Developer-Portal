@@ -4,24 +4,24 @@ title: Page layout
 includeInSearch: true
 ---
 
-M-Files 2018 Desktop client layout design is a visual flow based on navigation hierarchy. From top to down, M-Files, vaults, views and objects. From each level, corresponding operations are in place and can be accessed accordingly.
-
-![Top pane location](2018-layout.png){:.borderless .clear}
+![Top Pane location](2018-layout.png){:.borderless .clear}
 
 ## Layout areas
 
-M-Files 2018 Desktop client layout include three general areas by their functionalities.
-* Top Pane holds essential features that are needed all the time, such as structured navigation and vault level and user operations.
-* Listing area occupies the left half below Top pane.  As described with its name, it provides access to the index of the desired contents.
-* Right pane is at final level of the navigation, it contains the detailed cover information and object-level operations for selected file.
-There are also sub-areas as bottom pane and task pane, and layout control behaviors inside and in between areas, which are explained below.
+M-Files 2018 Desktop client layout includes three general layout areas:
 
-### Top pane
+* The [Top Pane](#top-pane) holds essential features that are needed all the time, such as structured navigation and vault- and user-operations.
+* The [Listing Area](#listing-area) occupies the left half below the [Top Pane](#top-pane).  The listing area shows access to content as the user navigates the vault structure.
+* The [Right Pane](#right-pane) is at final level of the navigation, it contains the metadata and object-operations for selected object(s).
 
-![Top pane location](Page-layout-toppane.png){:.borderless .leftcol}
+There are also sub-areas as the [Bottom Pane](#bottom-pane) and the [Task Pane](#task-pane), which are explained further below.
+
+### Top Pane
+
+![Top Pane location](Page-layout-toppane.png){:.borderless .leftcol}
 
 {:.rightcol}
-Top pane is a full-width header locate above the content areas of the application. It hosts most of the navigation function groups:
+The `Top Pane` is a full-width header located above the content areas of the application. It hosts most of the navigation function groups:
 
 {:.rightcol}
 * M-File logo with link to home and navigation arrows
@@ -41,13 +41,12 @@ Font-color: #ffffff
 Navigation-arrow-size: 32px  
 Indication-icon-size: 16px  
 
-### Listing area
+### Listing Area
 
-![Listing area location](Page-layout-listingarea.png){:.borderless .leftcol}
+![Listing Area location](Page-layout-listingarea.png){:.borderless .leftcol}
 
 {:.rightcol}
-Listing area occupies left half of the application besides top pane and right pane. It lists all the file candidates upon browse navigation or search function. In most of cases, it will also have a search bar above content listing.
-Sometime, it can also host multiple listing by micro layout, for example tiling.
+The `Listing Area` occupies the left half of the application underneath the [Top Pane](#top-pane). It lists all views, files and other objects when navigating views or searching. In most of cases, it will also have a search bar above content listing.  Sometimes, it can also host multiple listings, for example the [tiling on the home view](#tiling).
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -55,25 +54,25 @@ Background-color: #318ccc
 Margin: 0px 0px 10px 0px  
 Background-color (listing area): #fafafa  
 
-#### Bottom pane
+#### Bottom Pane
 {:.rightcol}
 
 ![Bottom pane location](Page-layout-listinarea-bottompane.png){:.borderless .leftcol}
 
 {:.rightcol}
-Bottom pane actually is a sub area within listing area. It provides an alter location for some contents to be shown simultaneously, especially for user with large display. For example, Metadata/property. More often, it attaches controls that are related with listing above. For example multiple vault search.
+The `Bottom Pane` actually is a sub area within the [Listing Area](#listing-area). It provides an alternate location for content to be shown, e.g. the [selected object's metadata](#metadata-form). It may also contain elements such as the multiple-vault search. Additionally, the contents of the bottom can be customised using the [User Interface Extensibility Framework](/Frameworks/User-Interface-Extensibility-Framework/Dashboards/#replacing-the-right-or-bottom-panes).
 
 {:.rightcol}
 **Style and layout parameters:**   
 Background-color: #318ccc  
 Margin: 0px 6px 10px 0px  
 
-### Right pane
+### Right Pane
 
-![Right pane location](Page-layout-rightpane.png){:.borderless .leftcol}
+![Right Pane location](Page-layout-rightpane.png){:.borderless .leftcol}
 
 {:.rightcol}
-Right pane plays an important row in offering detailed control options over object properties, previews, search and personalization. Its contents switch contextually according to the selected object or current function. Furthermore, it can be switched manually with tabs above it inside top pane. 
+The `Right Pane` plays an important role in offering detailed control options over object properties, previews, search and personalization. Its contents switch contextually according to the selected object or current function. Additionally, the contents of the right pane can be customised using the [User Interface Extensibility Framework](/Frameworks/User-Interface-Extensibility-Framework/Dashboards/#within-a-custom-tab) to show additional tabs of content. 
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -83,10 +82,10 @@ Margin: 0px 10px 10px 0px
 #### Header
 {:.rightcol}
 
-![Right pane header location](Page-layout-rightpane-header.png){:.borderless .leftcol}
+![Right Pane Header location](Page-layout-rightpane-header.png){:.borderless .leftcol}
 
 {:.rightcol}
-Header is the top most part inside right pane. Often it is used to show the vital information of the content.
+The `Right Pane Header` is the top most part inside the [Right Pane](#right-pane). Often it is used to show the vital information of the selected item, such as the object ID, version, and checkout information.
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -98,13 +97,13 @@ Font-size (heading):  22px
 Font-size (subheading): 14px  
 Font-size (italic): 12px  
 
-#### Object tools ribbon
+#### Object Tools Ribbon
 {:.rightcol}
 
 ![Tools ribbon location](Page-layout-rightpane-ribbon.png){:.borderless .leftcol}
 
 {:.rightcol}
-Tools ribbon collects function buttons related with specific selection of the object or function.
+The `Right Pane Object Tools Ribbon` collects shows buttons to execute common object-specific functions, such as following the object, or to add it to your pinboard or favorites.
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -114,13 +113,13 @@ Height: 32px
 Icons-size: 24px  
 Font-color: #ffffff  
 
-#### Metadata form
+#### Metadata Form
 {:.rightcol}
 
 ![Metadata form location](Page-layout-rightpane-metadataform.png){:.borderless .leftcol}
 
 {:.rightcol}
-Metadata form is the place where you can view or even change properties of the selected object or functions.
+The `Metadata Form` displays the properties of the selected object.  Depending on your access rights, you may also be able to edit some of the properties.  The layout is largely driven by the class of the selected object, but can be customised using [Metadata Card Configuration rules](/Built-In/Metadata-Card-Configuration/).
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -137,7 +136,7 @@ Row height: 26px
 ![Pinned location](Page-layout-rightpane-pinned.png){:.borderless .leftcol}
 
 {:.rightcol}
-Pinned is the last tab from top pane, it shares the area with right pane. It is a place where user can collect all kinds of object and links, and personalize at certain extend. 
+The `Pinned` tab is the final tab in the [Top Pane](#top-pane), shown on the far right of the screen. Clicking the `Pinned` tab replaces the [Right Pane](#right-pane) with a pinboard, where users can create a personal collection of links to objects and views.  The contents of the pinboard are also available using the M-Files mobile applications. 
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -154,12 +153,12 @@ Cell-background-color* : #cfcfcf, # d4cfbf, # b1dee3, # bce3c0, #eddfb9, #bab4a9
 
 ![Colo-coding for Pinned item](Page-layout-rightpane-pinned-colors.png){:.borderless}  
 
-### Task pane  
+### Task Pane  
 
-![Task pane location](Page-layout-taskpane.png){:.borderless .leftcol}
+![Task Pane location](Page-layout-taskpane.png){:.borderless .leftcol}
 
 {:.rightcol}
-Task pane use to be the place where all quick shortcuts being collected. Its preservation is reasoning in backward compatibility. Task pane can be collapsed and expanded by clicking of the handle on its right side.
+The `Task Pane`, now defaulting to hidden in M-Files 2018, was previously be the place where all quick shortcuts were collected. The `Task Pane` can be collapsed and expanded by clicking of the handle on its right side. The task pane is kept for backwards compatibility.
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -176,21 +175,21 @@ Cell-background-color: #989898
 Cell-background-color (mouseover): #aebfc9  
 Cell-background-color (Group header): #b3b3b3  
 
-## Layout controls  
+## Layout Controls  
 
 ### Expanding/collapsing control  
 
-Some panels have more flexibility with their layout. Explicitly, right pane and task pane can be collapse to make room for other views. This can be done by clicking the "handle" in the middle of the layout divider. Click once more to expand back.  
+Some panels have more flexibility with their layout. For example: both the [Right  Pane](#right-pane) and [Task Pane](#task-pane) can be collapsed to make additional space on the screen. This can be done by clicking the "handle" in the middle of the layout divider. Clicking the handle again will toggle the panel back to its original size.  
 
 ##### Collapsing in action for Right pane  
 
-![Collapsing right pane](Page-layout-control-divider-rightpane.png){:.borderless}
+![Collapsing the Right Pane](Page-layout-control-divider-rightpane.png){:.borderless}
 
 ##### Expanding action for Task pane  
 
-![Expand task pane](Page-layout-control-divider-taskpane.png){:.borderless}
+![Expanding the Task Pane](Page-layout-control-divider-taskpane.png){:.borderless}
 
-![divider layout parameter](Page-layout-control-divider-parameter.png){:.borderless .leftcol}
+![Style information for the Task Pane handle](Page-layout-control-divider-parameter.png){:.borderless .leftcol}
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -207,6 +206,6 @@ Handle-height: 100px
 ![tile layout ](Page-layout-control-tiles.png){:.borderless .leftcol}
 
 {:.rightcol}
-In case of Home view, listing area is tiled into multiple areas in order to make more views accessible at same time.  
+In the `Home` view, the [Listing Area](#listing-area) is split into multiple "tiles"  in order to make more views accessible at same time.  These tiles include `Browse` (to navigate internal and external views), `Assigned to me`, `Recently Accessed by Me`, and `Checked Out to Me`.  The pinboard appears to the right of the tiled area.
 
 
