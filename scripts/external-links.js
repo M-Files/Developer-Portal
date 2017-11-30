@@ -11,7 +11,7 @@
         .filter(function(){
             return this.hostname && this.hostname !== location.hostname;
         })
-        .attr("rel", "external")
+        .attr("rel", "external noopener")
 		.attr("target", "_blank");
     
     // Add the github icon.
