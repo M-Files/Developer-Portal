@@ -19,7 +19,7 @@ Resource listing the full object comment history.
 {:.method}
 
 {:.method}
-Output: | [VersionComment[]]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/versioncomment/)
+Output: | [VersionComment[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/versioncomment/)
 | Retrieves the comments written on the object. 
 
 ### PUT

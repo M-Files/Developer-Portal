@@ -6,7 +6,7 @@ includeInSearch: true
 
 ## Debugging on the desktop
 
-Code that executes within a [module]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/) cannot be debugged directly.  Code that executes within a [dashboard]( {{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboard/) or a [persisted browser window](https://www.m-files.com/UI_Extensibility_Framework/index.html#PersistentWWWSessions.html) - i.e. within a web browser - can be debugged using Microsoft Visual Studio.
+Code that executes within a [module]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/) cannot be debugged directly.  Code that executes within a [dashboard]( {{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/) or a [persisted browser window](https://www.m-files.com/UI_Extensibility_Framework/index.html#PersistentWWWSessions.html) - i.e. within a web browser - can be debugged using Microsoft Visual Studio.
 
 ### Debugging dashboards and persistent browser windows
 
@@ -25,7 +25,7 @@ Once the debugger is attached, Visual Studio will allow you to set breakpoints a
 
 ## Debugging in M-Files Web Access
 
-User Interface Extensibility Framework applications that [target M-Files Web Access]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Platform-Targeting) can be debugged within a web browser.  This includes module-level code that cannot be debugged on the M-Files Desktop client.
+User Interface Extensibility Framework applications that [target M-Files Web Access]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting) can be debugged within a web browser.  This includes module-level code that cannot be debugged on the M-Files Desktop client.
 
 Most modern web browsers have built-in debugging tools, e.g. in [Microsoft Edge / Internet Explorer](https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide), [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/), [Mozilla FireFox](https://developer.mozilla.org/en-US/docs/Tools), or [Safari](https://developer.apple.com/safari/tools/).  *This tutorial will focus on the tools available in Microsoft Edge / Internet Explorer, although they are broadly the same in all modern browsers.*
 

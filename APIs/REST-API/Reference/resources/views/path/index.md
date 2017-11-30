@@ -19,4 +19,4 @@ A single view in the view hierarchy.
 Item | Description
 --- | ---
 [View contents]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items/) | Contents of a single view. 
-[Search view contents]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/paths/objects/) | All objects found within the view. 
+[Search view contents]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/objects/) | All objects found within the view. 

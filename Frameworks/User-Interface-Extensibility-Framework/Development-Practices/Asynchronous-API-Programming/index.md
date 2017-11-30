@@ -5,9 +5,9 @@ includeInSearch: true
 breadcrumb: Async
 ---
 
-Whilst M-Files COM API calls are typically synchronous (i.e. the application doesn't continue until the API call completes), the M-Files [Vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html) object exposes a property named `Async` which can be used to make asynchronous calls.  Using [asynchronous calls](Asynchronous-API-Programming) - rather than synchronous calls, which wait for the process to finish before continuing - ensures that the user interface doesn't appear to "lock", and the user experience remains fluid.
+Whilst M-Files COM API calls are typically synchronous (i.e. the application doesn't continue until the API call completes), the M-Files [Vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html) object exposes a property named `Async` which can be used to make asynchronous calls.  Using asynchronous calls - rather than synchronous calls, which wait for the process to finish before continuing - ensures that the user interface doesn't appear to "lock", and the user experience remains fluid.
 
-Using <a href="Asynchronous-API-Programming">asynchronous calls</a> is currently optional when <a href="Platform-Targeting/#the-m-files-desktop-client">targeting the M-Files Desktop client</a>.  It is mandatory when <a href="Platform-Targeting/#m-files-web-access">targeting M-Files Web Access</a>.
+Using asynchronous calls are currently optional when [targeting the M-Files Desktop client]({{ site.baseurl }}/Frameworks/Development-Practices/Platform-Targeting/#the-m-files-desktop-client).  It is mandatory when [targeting M-Files Web Access]({{ site.baseurl }}/Frameworks/Development-Practices/Platform-Targeting/#m-files-web-access).
 {:.note}
 
 ## Altering synchronous to asynchronous calls
@@ -98,7 +98,7 @@ vault.Async.ObjectPropertyOperations.GetProperties(objVer,
 
 ### The cleanup callback
 
-The cleanup callback is always executed - if provided - regardless of whether the call completes or excepts.  It is always executed after [the successful callback](the-successful-callback) or the [failed callback](#the-failed-callback) and receives no parameters.
+The cleanup callback is always executed - if provided - regardless of whether the call completes or excepts.  It is always executed after [the successful callback](#the-successful-callback) or the [failed callback](#the-failed-callback) and receives no parameters.
 
 ```javascript
 vault.Async.ObjectPropertyOperations.GetProperties(objVer, 
@@ -121,5 +121,5 @@ Asynchronous calls *clone* each input parameter and the return value, therefore 
 
 For example: [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html) has a [Clone](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues~Clone.html) method, so methods using it can be called asynchronously.  However, [SourceObjectFiles](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html) does not have a `Clone` method, so methods using it cannot be called asynchronously.
 
-Note that M-Files Web Access has specific wrappers around some of these uncloneable objects; `SourceObjectFiles` <b>can</b> be used asynchronously in M-Files Web Access, but cannot be used in M-Files Desktop client.  To work around this, <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the current platform</a> and call methods such as <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html">CreateNewObject</a> synchronously on M-Files Desktop and asynchronously on M-Files Web Access.
+Note that M-Files Web Access has specific wrappers around some of these uncloneable objects; `SourceObjectFiles` <b>can</b> be used asynchronously in M-Files Web Access, but cannot be used in M-Files Desktop client.  To work around this, [check the current platform]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform) and call methods such as [CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html) synchronously on M-Files Desktop and asynchronously on M-Files Web Access.
 {:.note}
