@@ -7,7 +7,7 @@ includeInSearch: true
 
 These modules contain the application code.  There are three types of module: `VaultCore` modules, `VaultUI` modules, and `ShellUI` modules.  Most modules are `ShellUI` modules.
 
-Modules are defined within the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Structure/">Application Definition (manifest) file</a>, and more information can be found in the dedicated page.
+Modules are defined within the [Application Definition (manifest) file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/), and more information can be found in the dedicated page.
 {:.note}
 
 ## Module types
