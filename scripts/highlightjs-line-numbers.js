@@ -43,7 +43,7 @@ $(document).ready(function()
 				if (document.readyState === 'complete') {
 					documentReady();
 				} else {
-					w.addEventListener('DOMContentLoaded', documentReady);
+					w.addEventListener('load', documentReady);
 				}
 			}
 

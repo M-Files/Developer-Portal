@@ -1,7 +1,8 @@
 {
 	"name": "M-Files Developer Portal",
-	"short_name" : "Developer Portal",
+	"short_name" : "Dev Portal",
 	"start_url": "/?utm_source=homescreen",
+	"description" : "This website provides tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.",
     "icons": [
         {
             "src": "/favicon-16x16.png",
@@ -46,6 +47,11 @@
         {
             "src": "/android-chrome-256x256.png",
             "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
