@@ -39,7 +39,7 @@ Deploying a Vault Application Framework application can be done simply using the
 
 #### Configuration
 
-Built-in attributes such as MFConfiguration and MFIdentitifer reduce the boiler-plate code that is needed to manage tasks such as resolving vault aliases to M-Files IDs.  Using this customisable [configuration]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/) approach also provides a framework for identifying mandatory vault structure, and reporting out to the event log if the structure is not available.
+Built-in attributes such as MFConfiguration and MFIdentitifer reduce the boiler-plate code that is needed to manage tasks such as resolving vault aliases to M-Files IDs.  Using this customisable [configuration]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) approach also provides a framework for identifying mandatory vault structure, and reporting out to the event log if the structure is not available.
 
 #### Background Operations
 

@@ -16,7 +16,7 @@ The <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework">Vault Ap
 
 ## Retrieving objects from external data sources
 
-M-Files can query information (e.g. Customers, Contacts or Projects) held within external data sources, and [automatically import them into M-Files for reference or processing]({{ site.baseurl }}/Built-in/External-Object-Type-Data-Source/).  By default, M-Files can do this with any ODBC-compatible data source, and other data sources can be supported through the use of [Custom External Object Type Data Sources]({{ site.baseurl }}/Built-in/External-Object-Type-Data-Source/Custom/) (.NET assemblies).
+M-Files can query information (e.g. Customers, Contacts or Projects) held within external data sources, and [automatically import them into M-Files for reference or processing]({{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/).  By default, M-Files can do this with any ODBC-compatible data source, and other data sources can be supported through the use of [Custom External Object Type Data Sources]({{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Custom/) (.NET assemblies).
 
 ## Configuring the metadata card
 
