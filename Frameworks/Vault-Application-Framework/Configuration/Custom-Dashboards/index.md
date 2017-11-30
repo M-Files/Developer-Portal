@@ -71,3 +71,124 @@ namespace MFVaultApplication1
 
 ## Using helper functions
 
+Generating the HTML for standard dashboard components can be done through the use of the `StatusDashboard` class.  Once the dashboard is populated, the HTML required to render it can be retrieved by calling its `ToString` method:
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF;
+using MFiles.VAF.AdminConfigurations;
+using MFiles.VAF.Common;
+using MFilesAPI;
+
+namespace MFVaultApplication1
+{
+	[DataContract]
+	public class Configuration
+	{
+		[DataMember]
+		public string ConnectionString { get; set; }
+
+	}
+
+	public class VaultApplication
+		: VaultApplicationBase, IUsesAdminConfigurations
+	{
+
+		private ConfigurationNode<Configuration> config { get; set; }
+
+		public void InitializeAdminConfigurations(IAdminConfigurations adminConfigurations)
+		{
+			// Add it to the configuration screen.
+			this.config = adminConfigurations.AddSimpleConfigurationNode<Configuration>(
+				"My Vault Application",
+				this.DashboardGenerator);
+		}
+		private string DashboardGenerator()
+		{
+			var statusDashboard = new StatusDashboard();
+			return statusDashboard.ToString();
+		}
+	}
+}
+{% endhighlight %}
+
+### Dashboard contents
+
+The `StatusDashboard` has a property named `Contents` which is a collection of items that are shown within it.  Whilst the built-in implementations are shown below, any class which implements the `IDashboardContent` interface can be added to the collection.
+
+#### Panels
+
+```csharp
+// Create the panel.
+var panel = new DashboardPanel()
+{
+	Title = "Dashboard panel 1"
+};
+
+// Panels can also contain other dashboard content like lists or text
+// (not shown, for clarity).
+// panel.InnerContent.Add( ... )
+
+// Set up the dashboard.
+var statusDashboard = new StatusDashboard();
+statusDashboard.Contents.Add(panel);
+
+// Return the HTML.
+return statusDashboard.ToString();
+```
+
+#### Lists
+
+```csharp
+// Create the list.
+var list = new DashboardList()
+{
+	Title = "My list"
+};
+
+// Add a list item.
+list.Items.Add(new DashboardListItem()
+{
+	Title = "First List item",
+	StatusSummary = new DomainStatusSummary()
+	{
+		Status = DomainStatus.Enabled
+	}
+});
+
+// Set up the dashboard.
+var statusDashboard = new StatusDashboard();
+statusDashboard.Contents.Add(list);
+
+// Return the HTML.
+return statusDashboard.ToString();
+```
+
+#### Text
+
+```csharp
+// Create the text.
+// Any newlines (\n) in the text will be respected in the HTML rendered.
+var dashboardText = new DashboardText("line 1\nline 1");
+
+// Set up the dashboard.
+var statusDashboard = new StatusDashboard();
+statusDashboard.Contents.Add(dashboardText);
+
+// Return the HTML.
+return statusDashboard.ToString();
+```
+
+#### Custom content
+
+```csharp
+// Create the custom content.
+var customContent = new DashboardCustomContent("<table><tr><td>Item 1</td><td>Item 2</td></tr></table>");
+
+// Set up the dashboard.
+var statusDashboard = new StatusDashboard();
+statusDashboard.Contents.Add(customContent);
+
+// Return the HTML.
+return statusDashboard.ToString();
+```
