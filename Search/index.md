@@ -69,12 +69,17 @@ article.page form
 <div class="search-results-count"></div>
 <ul class="search-results"></ul>
 
-<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script defer src="https://unpkg.com/lunr/lunr.js"></script>
 
-<script src="query.js"></script>
+<script defer src="query.js"></script>
 
 <script>
-Query.setData({% include_relative data.json %});
+window.addEventListener("load", function()
+{
+	Query.setData({% include_relative data.json %});
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src = "results.js";
+	$("body").append(script);
+});
 </script>
-
-<script src="results.js"></script>
