@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -15,19 +15,28 @@
 
 	{% feed_meta %}
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/styles/site.css?{{ site.github.build_revision }}" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,700">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		@import url("{{ site.baseurl }}/styles/site.css?{{ site.github.build_revision }}");
+	</style>
+	<noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,700" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
+	</noscript>
+	<link rel="deferred-stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:400,700" />
+	<link rel="deferred-stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="deferred-stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+	<link rel="deferred-stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
+	
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
 <body class="has-in-page-nav">
-	
+		
     <header>
         <i class="material-icons" id="hamburger">menu</i>
         <h1 class="title">
@@ -44,25 +53,25 @@
     <footer>
         <p>&copy; M-Files. <a href="mailto:devsupport@m-files.com">Contact the Developer Evangelist team at M-Files.</a></p>
     </footer>
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
-
-    <script src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/highlightjs-line-numbers.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/sidebar.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/treeview.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/in-page-nav.js?{{ site.github.build_revision }}"></script>
-    <script src="{{ site.baseurl }}/scripts/external-links.js?{{ site.github.build_revision }}"></script>
-
+	<script defer src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
+	<script defer src="{{ site.baseurl }}/scripts/highlightjs-line-numbers.js?{{ site.github.build_revision }}"></script>
+	<script defer src="{{ site.baseurl }}/scripts/sidebar.js?{{ site.github.build_revision }}"></script>
+	<script defer src="{{ site.baseurl }}/scripts/treeview.js?{{ site.github.build_revision }}"></script>
+	<script defer src="{{ site.baseurl }}/scripts/in-page-nav.js?{{ site.github.build_revision }}"></script>
+	<script defer src="{{ site.baseurl }}/scripts/external-links.js?{{ site.github.build_revision }}"></script>
+	
+	<script>
+		var deferredStylesheets = document.querySelectorAll("link[rel=deferred-stylesheet]");
+		for(var i = 0; i<deferredStylesheets.length; i++)
+		{
+			deferredStylesheets[i].setAttribute("rel", "stylesheet");
+		}
+	</script>
 
     {% include analytics.html %}
 	{% if site.disqus %}
     <!-- <script id="dsq-count-scr" src="//mfilesdeveloperportal.disqus.com/count.js" async></script> -->
     {% endif %}
-
-    <div id="preview">
-        <a href="{{ site.baseurl }}/preview">Preview</a>
-    </div>
 
 </body>
 

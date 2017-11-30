@@ -11,8 +11,8 @@
         .filter(function(){
             return this.hostname && this.hostname !== location.hostname;
         })
-        .attr("rel", "external")
-        .attr("target", "_blank");
+        .attr("rel", "external noopener")
+		.attr("target", "_blank");
     
     // Add the github icon.
     $externalLinks.filter(function(){ return this.hostname == "github.com" })

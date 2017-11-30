@@ -31,14 +31,10 @@
     // When one is clicked, highlight it.
     function highlightLink(i, o)
     {
-        // Unhighlight any existing ones.
-        $navLinks.filter(".current").removeClass("current");
-
         // Highlight the clicked one.
-        $(this).addClass("current").parents("li").addClass("expanded");
+        $($(this).parents("li").addClass("expanded").get(0)).addClass("current");
         return true;
     }
-    $navLinks.click(highlightLink);
 
     // Highlight the current page.
 	var currentPageAddress = window.location.pathname;

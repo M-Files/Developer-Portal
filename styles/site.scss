@@ -31,3 +31,21 @@
 	@import "min-width-1500px/in-page-nav";
 	@import "min-width-1500px/sharing";
 }
+aside#sidebar
+{
+	padding: 0px;
+}
+aside#sidebar nav.primary
+{
+	margin: 0px;
+	padding: 0px;
+}
+.treeview > li > i.expandCollapseIcon
+{
+    left: 0px;
+}
+
+aside#sidebar form.search
+{
+	margin-right: 20px;
+}

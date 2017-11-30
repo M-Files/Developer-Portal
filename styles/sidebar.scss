@@ -1,6 +1,6 @@
 aside#sidebar {
     position: fixed;
-    padding: 0px 20px 130px 0px;
+    padding: 80px 30px 130px 3px;
     top: 53px;
     margin: 0px;
     left: -110%;
@@ -11,29 +11,21 @@ aside#sidebar {
     color: white;
     box-shadow: 5px 0 5px -5px #333;
     overflow: hidden;
-    min-height: 100px;
+	min-height: 100px;
+	box-sizing: border-box;
+	height: 100%;
+	overflow-y: auto;
+}
+
+nav.secondary
+{
+	border-top: 1px solid white;
+	margin: 10px 0 0px 0px;
+	padding: 10px 0px;
 }
 
 body.with-breadcrumb>aside#sidebar {
     top: 120px;
-}
-
-aside#sidebar nav.primary {
-    height: 100%;
-    overflow-y: auto;
-    padding-left: 20px;
-    padding-right: 10px;
-}
-
-aside#sidebar nav.secondary {
-    border-top: 1px solid white;
-    position: absolute;
-    bottom: 10px;
-    left: 30px;
-    right: 30px;
-    background-color: #007dc6;
-    z-index: 10000;
-    height: 70px;
 }
 
 body.sidebar-expanded>* {
@@ -102,7 +94,7 @@ ul.treeview li.expanded>ul {
 i.expandCollapseIcon {
     cursor: pointer;
     position: absolute;
-    left: -42px;
+    /* left: -42px; */
     top: -2px;
     padding: 5px 15px;
     transform: rotate(0deg);
@@ -112,8 +104,23 @@ i.expandCollapseIcon {
     transition: all 100ms ease-in-out;
 }
 
-.treeview>li>i.expandCollapseIcon {
-    left: -57px;
+.treeview>li
+{
+	>i.expandCollapseIcon {
+    	left: -57px;
+	}
+	>ul>li
+	{
+		>i.expandCollapseIcon {
+	    	left:33px;
+		}
+		>ul>li
+		{
+			>i.expandCollapseIcon {
+				left:53px;
+			}
+		}
+	}
 }
 
 i.expandCollapseIcon:before {
@@ -161,4 +168,77 @@ ul.treeview li a.current {
     {
         width: 100%;
     }
+}
+
+aside#sidebar ul
+{
+	margin: 0px;
+	padding: 0px;
+	.zmdi-hc-li
+	{
+		left: 20px;
+		top: 4px;
+	}	
+	li
+	{
+		margin: 0px;
+		padding: 0px;
+		&.expanded ul
+		{
+			list-style-type: none;
+		}
+		a
+		{
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			padding: 3px 0px;
+			background-color: transparent;
+			box-sizing: border-box;			
+		}
+	}
+	> li
+	{
+		> a
+		{
+			padding-left: 50px;
+		}
+		> ul > li
+		{
+			a
+			{
+				padding-left: 60px;
+			}
+			> ul > li
+			{
+				a
+				{
+					padding-left: 80px;
+				}
+				> ul > li
+				{
+					a
+					{
+						padding-left: 100px;
+					}
+				}
+			}
+		}
+	}
+	&.zmdi-hc-ul
+ 	{
+		margin: 0px;
+		padding: 0px;
+		li > a:hover
+		{
+			-webkit-transition: background-color 450ms ease-in;
+			-ms-transition: background-color 450ms ease-in;
+			transition: background-color 450ms ease-in;
+			background-color: #0064AD;
+		}
+		li.current > a
+		{
+			background-color: #0064AD;
+		}
+	} 
 }
