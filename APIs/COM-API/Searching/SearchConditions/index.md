@@ -511,3 +511,64 @@ var searchResults = vault.ObjectSearchOperations.SearchForObjectsByConditionsEx(
 	MFSearchFlags.MFSearchFlagNone, SortResults: false);
 ```
 
+## Executing a "one of" search
+
+A "one of" search condition can be useful to find items that are in, for example, one of a number of classes.  This can be done easily using the M-Files desktop `Advanced Search`:
+
+![The "Additional Conditions" dialog of the Advanced Search on M-Files Desktop](one-of-desktop.png)
+
+### In .NET
+
+Executing the search in .NET-based languages is relatively straight-forward.  In this scenario create the search condition as if it were to match (`MFConditionTypeEqual`) a specific class Id, but instead pass an array of integers for the class Ids that it must match.
+
+```csharp
+// Create an array of the class Ids.
+// Matched objects must have one of these class Ids.
+var classIds = new [] { 
+	64, // Brochure or Ad
+	42 // Bulletin or Press Release
+ };
+
+// Create the search condition.
+var searchCondition = new SearchCondition();
+
+// We want to search by property - in this case the built-in "class" property.
+// Alternatively we could pass the ID of the property definition if it's not built-in.
+searchCondition.Expression.SetPropertyValueExpression(
+	(int)MFBuiltInPropertyDef.MFBuiltInPropertyDefClass,
+				MFParentChildBehavior.MFParentChildBehaviorNone );
+
+// We want only items that equal one of the class Ids.
+searchCondition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+// We want to search for items whose class property is one of the supplied class Ids.
+// This should be MFDatatypeMultiSelectLookup, even though the property is MFDatatypeLookup.
+searchCondition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeMultiSelectLookup, classIds);
+```
+
+### In VBScript
+
+Unfortunately, VBScript built-in arrays cannot be passed to SetValue.  Instead, we must instantiate an `ArrayList` from .NET and utilise that instead:
+
+```vbscript
+' Create an array of the class Ids.
+' Matched objects must have one of these class Ids.
+Dim objArrayList: Set objArrayList = CreateObject("System.Collections.ArrayList")
+objArrayList.Add 64 ' Brochure or Ad
+objArrayList.Add 42 ' Bulletin or Press Release
+
+' Create the search condition.
+Dim objSearchCondition
+Set objSearchCondition = CreateObject("MFilesAPI.SearchCondition")
+
+' We want to search by property - in this case the built-in "class" property.
+' Alternatively we could pass the ID of the property definition if it's not built-in.
+objSearchCondition.Expression.SetPropertyValueExpression MFBuiltInPropertyDefClass, MFParentChildBehaviorNone, Nothing
+
+' We want only items that equal one of the class Ids.
+objSearchCondition.ConditionType = MFConditionTypeEqual
+
+' We want to search for items whose class property is one of the supplied class Ids.
+' This should be MFDatatypeMultiSelectLookup, even though the property is MFDatatypeLookup.
+objSearchCondition.TypedValue.SetValue MFDatatypeMultiSelectLookup, objArrayList.ToArray()
+```
