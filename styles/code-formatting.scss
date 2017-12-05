@@ -2,14 +2,14 @@
 
 pre {
     position: relative;
-	border: 3px solid #CCC;
+	border: 1px solid #CCC;
 }
 
 pre>code.hljs,
 	pre>code.language-txt,
 	pre>code.language-reg {
 	padding: 0.5em;
-	color: black;
+	color: #333;
 	background: white;
     border-top: 32px solid #EEE;
 	display: block;
@@ -95,13 +95,9 @@ code.language-reg::before {
 .highlight .btn
 {
 	position: relative;
-	top: -3px;
+	top: -2px;
 	left: -4px;
 	padding: 2px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	border-radius: 3px;
 	width: 26px;
 	height: 22px;
 }
