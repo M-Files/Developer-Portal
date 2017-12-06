@@ -124,6 +124,7 @@ $(document).ready(function()
 			}
 
 			function documentReady () {
+				hljs.initHighlighting();
 				try {
 					var blocks = document.querySelectorAll('code.hljs');
 
@@ -187,7 +188,7 @@ $(document).ready(function()
 		}(window));
 		
 		hljs.configure({languages: ["cs", "xml", "vbscript", "javascript"]});
-		hljs.initHighlightingOnLoad();
+
 		hljs.initLineNumbersOnLoad();
 
 	}
