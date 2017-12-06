@@ -42,7 +42,6 @@
 					navItem: $navItem,
 					offset: parseInt(heading.getBoundingClientRect().top) + offset
 				});
-				// console.log($navItem.text() + " = " + pairs[pairs.length-1].offset);
 				
 				// Ensure the array is sorted largest offset to smallest.
 				pairs.sort(function(a, b){
@@ -60,33 +59,38 @@
 		var $selectedNavItem = null;
 		function selectInPageNavItem()
 		{
-			// Deselect any existing selected ones.
-			if($selectedNavItem != null)
-			{
-				$selectedNavItem.removeClass("current");
-				$selectedNavItem = null;
-			}
-
 			// Find one to select.
 			var scrollOffset = $(window).scrollTop() + 5;
+			var $navItemToSelect = null;
 			$.each(pairs, function(i, o)
 			{
-				if($selectedNavItem != null)
+				if($navItemToSelect != null)
 					return;
 				if(o.offset <= scrollOffset)
 				{
-					// console.log(o.navItem.text() + " (" + o.offset + ", " + scrollOffset + ")" )
-					$selectedNavItem = o.navItem;
-					$selectedNavItem.addClass("current");
+					$navItemToSelect = o.navItem;
 				}
 			});
 
 			// Select the first if none match.
-			if($selectedNavItem == null)
+			if($navItemToSelect == null)
 			{
-				$selectedNavItem = pairs[pairs.length-1].navItem;
-				$selectedNavItem.addClass("current");
+				$navItemToSelect = pairs[pairs.length-1].navItem;
 			}
+			// If the selection has changed then reflect it.
+			if($navItemToSelect != $selectedNavItem)
+			{
+				// Deselect, if we had one selected.
+				if($selectedNavItem != null)
+				{
+					$selectedNavItem.removeClass("current");
+				}
+				
+				// Select it.
+				$navItemToSelect.addClass("current");
+				$selectedNavItem = $navItemToSelect;
+			}
+
 		}
 
 		// Set up the selection to run on window scroll.
