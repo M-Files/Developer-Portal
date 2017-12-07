@@ -133,6 +133,10 @@ p.note.warning, p.note.stub {
 article.page .note.warning a {
     color: rgba(0, 50, 199, 1);
 }
+article.page a .zmdi
+{
+	padding: 0px 2px;
+}
 
 
 p.note.stub {

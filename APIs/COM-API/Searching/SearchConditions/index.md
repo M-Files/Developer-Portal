@@ -572,3 +572,28 @@ objSearchCondition.ConditionType = MFConditionTypeEqual
 ' This should be MFDatatypeMultiSelectLookup, even though the property is MFDatatypeLookup.
 objSearchCondition.TypedValue.SetValue MFDatatypeMultiSelectLookup, objArrayList.ToArray()
 ```
+
+## Restricting the search results by user permissions
+
+Sometimes searches must be undertaken using common credentials.  In these instances it is important to ensure that the objects which are returned are only the ones to which a specific user has access.
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition();
+
+// Set the expression (must be visible to the provided user).
+condition.Expression.SetPermissionExpression(MFPermissionsExpressionType.MFVisibleTo);
+
+// Set the condition type.
+condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+// Set a lookup representing the user.
+var lookup = new MFilesAPI.Lookup()
+{
+	ObjectType = (int)MFBuiltInValueList.MFBuiltInValueListUsers,
+	Item = 25 // User ID = 25
+};
+
+// Set the value.
+condition.TypedValue.SetValue(MFDataType.MFDatatypeLookup, lookup);
+```
