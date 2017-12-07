@@ -7,6 +7,13 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2017
 
+### December 2017
+* COM API
+	* Added code sample for [searching for 'one of' a set of values]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#executing-a-one-of-search) in both VBScript and .NET.
+	* Added code sample for [restricting search results by a user's permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions), effectively allowing a high-permissions user restrict search results to items which another user can also see.
+* General
+	* Added UIX [sample to show how to prompt the user to confirm a workflow state change](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ConfirmWorkflowStateChange).
+
 ### September 2017
 
 * COM API
