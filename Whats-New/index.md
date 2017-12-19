@@ -13,6 +13,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 	* Added code sample for [restricting search results by a user's permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions), effectively allowing a high-permissions user restrict search results to items which another user can also see.
 * General
 	* Added UIX [sample to show how to prompt the user to confirm a workflow state change](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ConfirmWorkflowStateChange).
+	* Uodated [the sample showing how to react to built-in commands]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/BuiltInCommand-Event/) to additionally show how to execute built-in commands from within a UIX application.
 
 ### September 2017
 
