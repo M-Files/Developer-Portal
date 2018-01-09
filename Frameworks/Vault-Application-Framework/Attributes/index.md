@@ -5,8 +5,6 @@ includeInSearch: true
 breadcrumb: Attributes
 ---
 
-## What Are .NET Attributes?
-
 Attributes within .NET provide a mechanism of associating additional information with elements within C# code.  This approach can simplify code that would otherwise require significant scaffolding and maintenance.  Attributes are effectively metadata that describe the property, method or class that they precede.
 
 All samples in this document show C# code, but attributes can also be used from VB.NET.

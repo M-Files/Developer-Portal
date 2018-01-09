@@ -5,8 +5,6 @@ includeInSearch: true
 breadcrumb: Background Operations
 ---
 
-## Overview
-
 Most operations within M-Files are blocking (or synchronous): they must complete prior to the overall operation completing.  For example: a workflow state action script must complete before the object "save" operation is complete.  This can cause the user interface to "lock" whilst the scripts execute, and can provide a bad user experience.  Whilst this is sometimes required (e.g. processing a state pre-condition to ensure that the object can be moved to that state), other long-running processes can move to asynchronous execution, providing a better user experience.
 
 Background Operations provide developers with the means to execute code in an asynchronous manner, either on-demand or after a set period of time.  Examples of good uses of background operations are to process long-running file operations (e.g. conversion to PDF), or interactions with external systems (e.g. web services) that may introduce significant latency.
