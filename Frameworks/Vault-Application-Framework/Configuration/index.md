@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Configuration in the Vault Application Framework
+title: Configuration in the Vault Application Framework 2.0
 includeInSearch: true
 breadcrumb: Configuration
 ---
@@ -22,8 +22,6 @@ THIS NEEDS LOOKING AT, AT SOME POINT, BUT WORKS FOR NOW.
 The approach shown below is only compatible with [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
 {:.note.warning}
 
-## Background
-
 M-Files 2018 introduces a new section within the M-Files Admin software that collates a variety of customisable configuration options from across the M-Files vault, including:
 
 * Metadata card configuration
@@ -34,9 +32,7 @@ The [2.0 release of the Vault Application Framework]({{ site.baseurl }}/Framewor
 
 ![The M-Files 2018 Configuration area](configuration-area.png)
 
-## Base implementation
-
-### Implementing IUsesAdminConfigurations
+## Implementing IUsesAdminConfigurations
 
 Ensure that your vault application implements `MFiles.VAF.AdminConfigurations.IUsesAdminConfigurations`.  This will require you to declare one method - `InitializeAdminConfigurations` - as shown below.
 
@@ -56,11 +52,11 @@ namespace MFVaultApplication1
 }
 {% endhighlight %}
 
-### Registering configuration nodes
+## Registering configuration nodes
 
 The `InitializeAdminConfigurations` method allows a developer to add configuration nodes into the M-Files Admin configuration screen, and for these configuration nodes to be rendered within the M-Files Admin.
 
-In the sample below we declare a custom configuration class named `Configuration`, which must be marked with the `[DataContract]` attribute.  All fields and properties of this class that are marked with the `[DataMember]` attribute will be shown within the M-Files Admin interface, as shown in the screenshot below.
+In the sample below we declare a custom configuration class named `Configuration`, which must be marked with the `[DataContract]` attribute from `System.Runtime.Serialization`.  All fields and properties of this class that are marked with the `[DataMember]` attribute will be shown within the M-Files Admin interface, as shown in the screenshot below.
 
 Configuration values can be more than just strings.  More information on editor types is available [on the dedicated page](Editors).  Configuration values can even be [hierarchical](Hierarchical-Configuration).
 {:.note}
@@ -99,7 +95,7 @@ namespace MFVaultApplication1
 
 ![A simple configuration object rendered within the M-Files 2018 Admin interface](simple-configuration-node.png)
 
-### Reacting when configuration changes
+## Reacting when configuration changes
 
 The configuration can be automatically updated when changes are saved within the M-Files 2018 Admin interface
 

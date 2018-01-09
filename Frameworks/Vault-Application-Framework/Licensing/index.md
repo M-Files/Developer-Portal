@@ -17,9 +17,7 @@ Whilst the Vault Application Framework licensing infrastructure allows a multitu
 
 ## The M-Files License Generator Application
 
-Generation of license key files (LIC) files is undertaken using the M-Files License Generator application.  
-
-A zipped version of the License Generator application should be available alongside this guide. If it is not available, then please contact [devsupport@m-files.com](mailto:devsupport@m-files.com). 
+Generation of license key files (LIC) files is undertaken using the M-Files License Generator application.  This application can be found within the M-Files Partner Portal.  If it is not available, then please contact [devsupport@m-files.com](mailto:devsupport@m-files.com). 
 {:.note}
 
 ### Installation

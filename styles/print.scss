@@ -27,7 +27,7 @@ body > article.page
 		margin-top: 0px;
 		padding-top: 0px;
 	}
-	a:not([rel~=external])
+	a:not([href~=external])
 	{
 		/* internal links should be the same as the current text colour */
 		color: #333;
@@ -98,4 +98,8 @@ code::before
 	/* move the language tag to the left on print (easier to read) */
 	left: 8px;
 	right: auto;
+}
+article.page .tag
+{
+	display: none;
 }

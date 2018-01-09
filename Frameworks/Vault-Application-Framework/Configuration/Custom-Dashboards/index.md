@@ -22,12 +22,7 @@ THIS NEEDS LOOKING AT, AT SOME POINT, BUT WORKS FOR NOW.
 The approach shown below is only compatible with [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
 {:.note.warning}
 
-## Basic dashboard generation
-
 Each configuration node can define a method which builds a dashboard which is shown to the user when they select the "Dashboard" tab for the application within the M-Files Admin software.  In the sample below, the `DashboardGenerator` method has been set as the generator for the configuration node.  This method must return a valid HTML string which will then be displayed.
-
-Only simple HTML is allowed; elements such as `<script>` will be ignored.
-{:.note.warning}
 
 {% highlight csharp %}
 using System.Runtime.Serialization;
@@ -66,6 +61,9 @@ namespace MFVaultApplication1
 	}
 }
 {% endhighlight %}
+
+Only simple HTML is allowed; elements such as `<script>` will be ignored.
+{:.note.warning}
 
 ![An example of a basic dashboard](Basic.png)
 

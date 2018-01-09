@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Custom Validation
+title: Custom Configuration Validation
 includeInSearch: true
 breadcrumb: Validation
 ---
