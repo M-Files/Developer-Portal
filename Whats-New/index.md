@@ -5,6 +5,12 @@ title: What's New
 
 This page details the major updates to the [M-Files Developer Portal](http://developer.m-files.com) since its initial launch.
 
+## 2018
+
+### January 2018
+* General
+	* Added a print style sheet for partners wishing to print content.
+
 ## 2017
 
 ### December 2017

@@ -1,0 +1,101 @@
+---
+---
+
+@page
+{
+	size: auto;
+}
+div#share-links,
+	ol.breadcrumb,
+	div#in-page-nav,
+	.hljs-ln-numbers,
+	.toggleLineNumbers,
+	.copyCode,
+	header
+{
+	/* Hide navigational/functional content.  */
+	display: none;
+}
+body > article.page
+{
+	font-size: 80%;
+	margin: 0px !important;
+	padding: 0px !important;
+	> h1
+	{
+		display: block;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	a:not([rel~=external])
+	{
+		/* internal links should be the same as the current text colour */
+		color: #333;
+	}
+}
+pre
+{
+	/* code needs to be wrapped so that we don't have half-lines. */
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	page-break-inside:avoid;
+	page-break-after:auto;
+}
+img
+{
+	/* images broken over the page are hard to read.*/
+	page-break-inside:avoid;
+}
+h2
+{
+	/* start a new section on a new page */
+	page-break-before: always;
+}
+a[rel~=external]::after
+{
+	/* external links write out the address afterwards. */
+	content: " (" attr(href) ")";
+	text-decoration: underline;
+}
+a[rel~=external] i
+{
+	/* hide external link icons */
+	display: none;
+}
+code.highlighter-rouge
+{
+	/* format the keywords in the page better for printing. */
+	display: inline;
+	padding: 0px 2px;
+	background-color: inherit;
+}
+p.note, p.note.warning
+{
+	/* As we lose the background colour on print, re-format to look nicer. */
+	border-left: 0px;
+	border-right: 0px;
+	background-color: inherit;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+p.note::before
+{
+	left: 30px;
+}
+body > footer
+{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+footer a
+{
+	/* no point having a contact link in the footer. */
+	display: none;
+}
+code::before
+{
+	/* move the language tag to the left on print (easier to read) */
+	left: 8px;
+	right: auto;
+}
