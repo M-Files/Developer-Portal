@@ -103,7 +103,7 @@ namespace MFVaultApplication1
 
 The configuration can be automatically updated when changes are saved within the M-Files 2018 Admin interface
 
-To  `ConfigurationNode<T>` returned from the call to `AddSimpleConfigurationNode` 
+The `ConfigurationNode<T>` returned from the call to `AddSimpleConfigurationNode` will raise a `Changed` event when the configuration within the M-Files Admin is altered.  This allows your application to reflect an updated configuration without requiring a vault restart:
 
 {% highlight csharp %}
 using System.Runtime.Serialization;
