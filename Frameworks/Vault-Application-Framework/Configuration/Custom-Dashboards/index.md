@@ -190,3 +190,29 @@ statusDashboard.Contents.Add(customContent);
 // Return the HTML.
 return statusDashboard.ToString();
 ```
+
+## Tips and tricks
+
+### Displaying an image in a dashboard
+
+The content rendered within a dashboard is limited, and HTML `<img />` tags are not directly supported.  It is, however, possible to render an image within a dashboard:
+
+```csharp
+// Read the image and convert it to a Base64 encoding format.
+var image = DashboardHelper.ImageFileToDataUri("image.png");
+
+// Create a dashboard panel for the content to sit into.
+var panel = new DashboardPanel();
+panel.InnerContent = new DashboardContentCollection()
+{
+	// Add the image as a CSS background to a div.
+	new DashboardCustomContent($"<div style='background-image: url({image}); background-repeat: no-repeat; height: 92px; width: 92px'></div>"),
+};
+
+// Set up the dashboard.
+var dashboard = new StatusDashboard();
+dashboard.Contents.Add(panel);
+
+// Return the HTML.
+return dashboard.ToString();
+```
