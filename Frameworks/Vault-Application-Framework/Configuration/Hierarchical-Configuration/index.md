@@ -3,6 +3,7 @@ layout: page
 title: Nested/Hierarchical configuration
 includeInSearch: true
 breadcrumb: Hierarchical configuration
+prerelease: true
 ---
 
 {% comment %}

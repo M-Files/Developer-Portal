@@ -3,6 +3,7 @@ layout: page
 title: Configuration in the Vault Application Framework 2.0
 includeInSearch: true
 breadcrumb: Configuration
+prerelease: true
 ---
 
 {% comment %}

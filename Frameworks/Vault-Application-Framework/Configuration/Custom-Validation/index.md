@@ -3,6 +3,7 @@ layout: page
 title: Custom Configuration Validation
 includeInSearch: true
 breadcrumb: Validation
+prerelease: true
 ---
 
 {% comment %}

@@ -3,6 +3,7 @@ layout: page
 title: Custom Dashboard
 includeInSearch: true
 breadcrumb: Dashboard
+prerelease: true
 ---
 
 {% comment %}

@@ -2,6 +2,7 @@
 layout: page
 title: Editors
 includeInSearch: true
+prerelease: true
 ---
 
 {% comment %}

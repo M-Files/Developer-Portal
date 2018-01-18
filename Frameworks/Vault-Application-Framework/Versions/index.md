@@ -23,16 +23,16 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 [Workflow State Actions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions) | Yes | Yes
 --- | ---
 
-## Version 2.0
+## Version 2.0 (pre-release) <a name="version-20" id="version-20"></a>
 
-Version 2.0 of the Vault Application Framework was released in late 2017, alongside M-Files 2018.  Alongside numerous internal bugfixes and performance work, this release brings two new major features:
+Version 2.0 of the Vault Application Framework is currently in limited pre-release.  Alongside numerous internal bugfixes and performance work, this release brings two new major features:
 
 * [Licensing](../Licensing)
 
 * [Compatibility with the M-Files 2018 Administration Configuration interface](../Configuration)
 
 Version 2.0 of the Vault Application Framework is compatible with M-Files 2015.3 upwards.  Please see the [note below](#configuration-compatibility) regarding configuration compatibility with M-Files 2015.3.
-{.note.warning}
+{:.note.warning}
 
 ### Configuration compatibility
 
@@ -56,3 +56,20 @@ The 2.0 release of the framework introduced another approach which integrates wi
 ## Upgrading versions
 
 ### From Version 1.0 to Version 2.0
+
+The current Visual Studio Template allows creation of VAF 1.0 applications.  An updated application will be made available which allows VAF 2.0 applications to be created.  Until that time, please follow the steps below to convert a VAF 1.0 application to VAF 2.0.
+{:.note}
+
+To upgrade a VAF 1.0 application to 2.0, the following steps need to be taken.
+
+* Unzip the VAF 2.0 release into a new folder.  This zip contains a number of files.
+* Open the existing VAF 1.0 application in Visual Studio:
+	* Update the references
+		* Expand the `References` node in `Solution Explorer`.
+		* Locate and delete the existing `MFiles.VAF.dll` reference.
+		* Add a reference to `MFiles.VAF.dll`, `MFiles.VAF.Configuration.dll` and `MFiles.Crypto.dll` from the VAF 2.0 release.
+		* [Use nuget to update](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#updating-a-package) the `Newtonsoft.JSON` reference from `6.0.x` to `10.0.3`.
+	* Resolve any namespace issues, for example:
+		* `MFIdentifier` (and other [configuration attributes](/Frameworks/Vault-Application-Framework/Attributes/Configuration/)) have moved from `MFiles.VAF.Common` to `MFiles.VAF.Configuration`.
+
+At this point the VAF application can be altered to support 2.0 features such as [icensing](../Licensing) and [integration into the M-Files 2018 Administration Configuration interface](../Configuration).

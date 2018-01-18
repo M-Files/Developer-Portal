@@ -124,9 +124,18 @@ p.note::before {
     top: 8px;
 }
 
-p.note.warning, p.note.stub {
+p.note.warning, p.note.stub, p.note.prerelease {
     background-color: #FFB84D;
     border: 1px solid #ff9900;
+}
+
+p.note.prerelease {
+    background-color: #eee;
+    border-color: #CCC;
+}
+
+p.note.prerelease::before {
+    content: "\f333";
 }
 
 /* make the links in warnings a little darker, just to make them contrast better */
