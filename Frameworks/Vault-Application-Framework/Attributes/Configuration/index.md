@@ -5,6 +5,14 @@ includeInSearch: true
 breadcrumb: Configuration
 ---
 
+[Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
+{:.tag.available title="This functionality is available in version 1.0 of the Vault Application Framework."}
+[Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
+{:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework."}
+
+When using [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) and targeting M-Files 2018, the [updated configuration approach]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/) should be used instead.  This updated approach allows the configuration to be visible and easily edited from within the M-Files Admin software.
+{:.note.warning}
+
 ## MFIdentifier
 
 The `MFIdentifier` class is used in combination with a [vault structure attribute](#vault-structure) to automate the resolution of vault element aliases to IDs.  At runtime the Vault Application Framework will identify all properties and fields of type `MFIdentifier` and automatically resolve them, where possible, to an internal ID.  If the vault structure attribute defines the element as `Required` then an error will be logged to the Windows Event Log if it cannot be resolved.

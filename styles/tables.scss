@@ -14,7 +14,10 @@ article > table tbody tr:hover
 }
 article > table thead tr {
     background-color: #eee;
-	border-bottom: 3px solid #CCC;
+}
+
+article > table tbody tr:first-child {
+	border-top: 3px solid #CCC;
 }
 article > table tbody tr:nth-child(even) {
     background-color: #f8f8f8;

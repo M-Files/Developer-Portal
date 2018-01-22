@@ -25,8 +25,11 @@ layout: default
 
 	<article>
 		
-		<div id="in-page-nav">{% include toc.html html=content sanitize=true h_min=2 h_max=4 %}</div>
+		<div id="in-page-nav">{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}</div>
 
+		{% if page.prerelease %}
+			<p class="note prerelease">Please note that this page content refers to a pre-release version of software.  Please read the information below thoroughly for more information.</p>
+			{% endif %}
 		{% if page.stubPage %}
 			<p class="note stub">Please note that this page content is not complete.</p>
 		{% endif %}

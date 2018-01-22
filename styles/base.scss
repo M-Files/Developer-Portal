@@ -37,6 +37,11 @@ body>* {
     margin: 0px 20px;
 }
 
+figure{
+	margin: 0px;
+	padding: 0px;
+}
+
 p.description {
     margin: 0px 20px 7px 20px;
     font-style: italic;
@@ -54,6 +59,11 @@ body>article img {
     margin: 5px auto;
     max-width: 100%;
 }
+body>article p img:only-child
+{
+	display: block;
+}
+
 
 h1 {
     font-size: 2em;
@@ -114,9 +124,18 @@ p.note::before {
     top: 8px;
 }
 
-p.note.warning, p.note.stub {
+p.note.warning, p.note.stub, p.note.prerelease {
     background-color: #FFB84D;
     border: 1px solid #ff9900;
+}
+
+p.note.prerelease {
+    background-color: #eee;
+    border-color: #CCC;
+}
+
+p.note.prerelease::before {
+    content: "\f333";
 }
 
 /* make the links in warnings a little darker, just to make them contrast better */
