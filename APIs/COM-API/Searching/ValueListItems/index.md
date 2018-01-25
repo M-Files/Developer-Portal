@@ -5,6 +5,9 @@ includeInSearch: true
 breadcrumb: Value List Items
 ---
 
+This page is solely applicable to searching for value list items within a value list.  To search for objects, please [see this page]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/).
+{:.note.warning}
+
 Whilst most search operations are looking for *objects* within the M-Files vault, occasionally we need to search a value list for specific *value list items*.
 
 Value Lists are collections of possible values that can be selected within a property definition.  An example may be `Country`, which may have values for `Finland`, `United States of America`, or `United Kingdom`.  Value Lists may also be hierarchical, so we may have a sub-list of `Regions` which may contain various states underneath `United States of America`, or counties within the `United Kingdom`.
@@ -26,8 +29,8 @@ The code below will create a [SearchCondition](https://www.m-files.com/api/docum
 var condition = new SearchCondition();
 
 // Set the expression.
-// NOTE: 2 is the internal property definition used for the value list item name.
-condition.Expression.DataPropertyValuePropertyDef = 2;
+condition.Expression.SetValueListItemExpression(MFValueListItemPropertyDef.MFValueListItemPropertyDefName,
+	MFParentChildBehavior.MFParentChildBehaviorNone);
 
 // Set the condition type.
 condition.ConditionType = MFConditionType.MFConditionTypeStartsWith;
@@ -45,8 +48,8 @@ The code below will create a [SearchCondition](https://www.m-files.com/api/docum
 var condition = new SearchCondition();
 
 // Set the expression.
-// NOTE: 5 is the internal property definition used for the deletion flag on a value list item.
-condition.Expression.DataPropertyValuePropertyDef = 5;
+condition.Expression.SetValueListItemExpression(MFValueListItemPropertyDef.MFValueListItemPropertyDefDeleted,
+	MFParentChildBehavior.MFParentChildBehaviorNone);
 
 // Set the condition type.
 condition.ConditionType = MFConditionType.MFConditionTypeEqual;
@@ -64,20 +67,36 @@ The code below will create a [SearchCondition](https://www.m-files.com/api/docum
 var condition = new SearchCondition();
 
 // Set the expression.
-// NOTE: 3 is the internal property definition used for the value list item owner.
-condition.Expression.DataPropertyValuePropertyDef = 3;
+condition.Expression.SetValueListItemExpression(MFValueListItemPropertyDef.MFValueListItemPropertyDefOwner,
+	MFParentChildBehavior.MFParentChildBehaviorNone);
 
 // Set the condition type.
 condition.ConditionType = MFConditionType.MFConditionTypeEqual;
 
 // Set the value.
-// NOTE: The '3' shown here is the ID of the "United Kingdom" value list item
-// and is not related to the '3' used when setting Expression.DataPropertyValuePropertyDef.
 condition.TypedValue.SetValue(MFDataType.MFDatatypeLookup, 3);
 ```
 
 Searching by owner can only be done with hierarchical value lists.
 {:.note}
+
+### Searching by external/display ID
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition();
+
+// Set the expression.
+condition.Expression.SetValueListItemExpression(MFValueListItemPropertyDef.MFValueListItemPropertyDefExtID,
+	MFParentChildBehavior.MFParentChildBehaviorNone);
+
+// Set the condition type.
+// NOTE: Other condition types such as "starts with" are supported.
+condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+// Set the value (search for an item with external ID "ext-11").
+condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "ext-11");
+```
 
 ## Executing the search
 
@@ -93,8 +112,8 @@ var conditions = new SearchConditions();
 	var condition = new SearchCondition();
 
 	// Set the expression.
-	// NOTE: 5 is the internal property definition used for the deletion flag on a value list item.
-	condition.Expression.DataPropertyValuePropertyDef = 5;
+	condition.Expression.SetValueListItemExpression(MFValueListItemPropertyDef.MFValueListItemPropertyDefDeleted,
+		MFParentChildBehavior.MFParentChildBehaviorNone);
 
 	// Set the condition type.
 	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
@@ -112,8 +131,8 @@ var conditions = new SearchConditions();
 	var condition = new SearchCondition();
 
 	// Set the expression.
-	// NOTE: 2 is the internal property definition used for the value list item name.
-	condition.Expression.DataPropertyValuePropertyDef = 2;
+	condition.Expression.SetValueListItemExpression(MFValueListItemPropertyDef.MFValueListItemPropertyDefName,
+		MFParentChildBehavior.MFParentChildBehaviorNone);
 
 	// Set the condition type.
 	condition.ConditionType = MFConditionType.MFConditionTypeStartsWith;
@@ -132,15 +151,13 @@ var conditions = new SearchConditions();
 	var condition = new SearchCondition();
 
 	// Set the expression.
-	// NOTE: 3 is the internal property definition used for the value list item owner.
-	condition.Expression.DataPropertyValuePropertyDef = 3;
+	condition.Expression.SetValueListItemExpression(MFValueListItemPropertyDef.MFValueListItemPropertyDefOwner,
+		MFParentChildBehavior.MFParentChildBehaviorNone);
 
 	// Set the condition type.
 	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
 
 	// Set the value.
-	// NOTE: The '3' shown here is the ID of the "United Kingdom" owner value list item
-	// and is not related to the '3' used when setting Expression.DataPropertyValuePropertyDef.
 	condition.TypedValue.SetValue(MFDataType.MFDatatypeLookup, 3);
 
 	// Add it to the collection.
