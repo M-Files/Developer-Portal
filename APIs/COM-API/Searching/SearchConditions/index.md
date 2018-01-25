@@ -573,6 +573,24 @@ objSearchCondition.ConditionType = MFConditionTypeEqual
 objSearchCondition.TypedValue.SetValue MFDatatypeMultiSelectLookup, objArrayList.ToArray()
 ```
 
+## Restricting by object flags (e.g. searching for conflict objects)
+
+The following search condition can be used to find objects with specific flags (e.g. objects that are conflicts or shortcuts).  Conflicts can then subsequently be resolved using the [ResolveConflict](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~ResolveConflict.html) API method.
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition
+{
+	ConditionType = MFConditionType.MFConditionTypeEqual
+};
+
+// Set the expression (we wish to search by the object flags).
+condition.Expression.SetStatusValueExpression(MFStatusType.MFStatusTypeObjectFlags);
+
+// Set the value to be the flag to search by (e.g. Conflict, below).
+condition.TypedValue.SetValue(MFDataType.MFDatatypeInteger, (int)MFSpecialObjectFlag.MFSpecialObjectFlagConflict);
+```
+
 ## Restricting the search results by user permissions
 
 Sometimes searches must be undertaken using common credentials.  In these instances it is important to ensure that the objects which are returned are only the ones to which a specific user has access.

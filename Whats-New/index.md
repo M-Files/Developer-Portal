@@ -10,6 +10,8 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 ### January 2018
 * Built-in
 	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Concepts/InternalAndExternalIDs/).
+* COM API
+	* Added in a search condition sample for [finding objects with specific flags (e.g. conflict objects)]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-by-object-flags-eg-searching-for-conflict-objects).
 * Vault Application Framework
 	* Added [information on the VAF versions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/).
 	* Added initial (pre-release) content for [the new Configuration integration with M-Files Admin](http://developer.m-files.com/Frameworks/Vault-Application-Framework/Configuration/) with VAF 2.0.
