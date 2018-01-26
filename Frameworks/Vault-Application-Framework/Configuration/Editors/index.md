@@ -61,7 +61,7 @@ public class Configuration
 
 ## Text editor
 
-The text editor is the default editor used by the administraion area.  Its display can be further customized through the use of additional attributes.  In addition to the base `JsonConfEditor` attribute listed above, the following can be used with the text editor:
+The text editor is the default editor used by the administration area.  Its display can be further customized through the use of additional attributes.  In addition to the base `JsonConfEditor` attribute listed above, the following can be used with the text editor:
 
 * `JsonConfEditor`
 	* `TypeEditor` - defines the sub-type of the editor shown.  Value values are:
