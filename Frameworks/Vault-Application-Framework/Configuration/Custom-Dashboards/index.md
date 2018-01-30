@@ -192,6 +192,49 @@ statusDashboard.Contents.Add(customContent);
 return statusDashboard.ToString();
 ```
 
+##### Allowed HTML tags and attributes
+
+The following HTML tags are allowed within dashboards:
+
+* &lt;h1&gt;&lt;/h1&gt;
+* &lt;h2&gt;&lt;/h2&gt;
+* &lt;h3&gt;&lt;/h3&gt;
+* &lt;h4&gt;&lt;/h4&gt;
+* &lt;h5&gt;&lt;/h5&gt;
+* &lt;h6&gt;&lt;/h6&gt;
+* &lt;blockquote&gt;&lt;/blockquote&gt;
+* &lt;p&gt;&lt;/p&gt;
+* &lt;a&gt;&lt;/a&gt;
+* &lt;ul&gt;&lt;/ul&gt;
+* &lt;ol&gt;&lt;/ol&gt;
+* &lt;nl&gt;&lt;/nl&gt;
+* &lt;li&gt;&lt;/li&gt;
+* &lt;i&gt;&lt;/i&gt;
+* &lt;strong&gt;&lt;/strong&gt;
+* &lt;em&gt;&lt;/em&gt;
+* &lt;strike&gt;&lt;/strike&gt;
+* &lt;code&gt;&lt;/code&gt;
+* &lt;hr /&gt;
+* &lt;br /&gt;
+* &lt;div&gt;&lt;/div&gt;
+* &lt;span&gt;&lt;/span&gt;
+* &lt;button&gt;&lt;/button&gt;
+
+The following attributes are allowed:
+
+* &lt;a&gt;&lt;/a&gt;
+	* href
+	* name
+	* target
+* &lt;img /&gt;
+	* src
+* (all elements)
+	* id
+	* name
+	* class
+	* style
+	* data-*
+
 ## Tips and tricks
 
 ### Displaying an image in a dashboard
