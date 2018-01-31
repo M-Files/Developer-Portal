@@ -219,6 +219,14 @@ The following HTML tags are allowed within dashboards:
 * &lt;div&gt;&lt;/div&gt;
 * &lt;span&gt;&lt;/span&gt;
 * &lt;button&gt;&lt;/button&gt;
+* &lt;table&gt;&lt;/table&gt;
+* &lt;thead&gt;&lt;/thead&gt;
+* &lt;caption&gt;&lt;/caption&gt;
+* &lt;tbody&gt;&lt;/tbody&gt;
+* &lt;tr&gt;&lt;/tr&gt;
+* &lt;th&gt;&lt;/th&gt;
+* &lt;td&gt;&lt;/td&gt;
+* &lt;pre&gt;&lt;/pre&gt;
 
 The following attributes are allowed:
 
