@@ -33,6 +33,8 @@ The following editors are available to use:
 * A [Placeholder editor](#placeholder-editor), to allow the user to create a text template that will be filled with metadata.
 * A [Search Conditions editor](#search-conditions-editor) to allow the user to specify search conditions for use by the vault application.
 * [Date picker](#date-picker), for selecting dates.
+* [Time picker](#time-picker), for selecting times.
+* [Timestamp picker](#timestamp-picker), for selecting time stamps.
 * [Color picker](#color-picker), for selecting dates.
 
 In addition, the `JsonConfEditor` attribute can be used to set the following values on each editor:
@@ -312,13 +314,53 @@ public class Configuration
 {
 	[DataMember]
 	[JsonConfEditor(TypeEditor="date")]
-	public DateTime MyDateTimePropertyValue { get; set; }
+	public DateTime? MyDateTimePropertyValue { get; set; }
 }
 {% endhighlight %}
 
 ![Allowing the user to select a date](DatePicker.png)
 
 The member can be declared as either a `string` or a `DateTime`.  If it is declared as a `string` then it will receive the date formatted as in locale-neutral ISO format (e.g. `2017-11-27`).  The date may be displayed in the admin area in a locale-specific format.
+{:.note}
+
+## Time picker
+
+By declaring a time property and marking it with a correctly-configured `JsonConfEditor` attribute, the M-Files Admin software will render a datepicker for the user to enter a time.
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+
+[DataContract]
+public class Configuration
+{
+	[DataMember]
+	[JsonConfEditor(TypeEditor="time", Default="00:00:00")]
+	public TimeSpan MyTimePropertyValue { get; set; } = TimeSpan.Zero;
+}
+{% endhighlight %}
+
+The member can be declared as either a `string` or a `TimeSpan`.  If it is declared as a `string` then it will receive the date formatted as `HH:MM:SS`.
+{:.note}
+
+## Timestamp picker
+
+By declaring a date/time property and marking it with a correctly-configured `JsonConfEditor` attribute, the M-Files Admin software will render a datepicker for the user to select a date and time.
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+
+[DataContract]
+public class Configuration
+{
+	[DataMember]
+	[JsonConfEditor(TypeEditor="timestamp")]
+	public DateTime? MyTimeStampPropertyValue { get; set; };
+}
+{% endhighlight %}
+
+The member can be declared as either a `string` or a `DateTime`.  If it is declared as a `string` then it will receive the date formatted as in locale-neutral ISO format (e.g. `2017-11-27 01:02:59`).  The date may be displayed in the admin area in a locale-specific format.
 {:.note}
 
 ## Color picker
