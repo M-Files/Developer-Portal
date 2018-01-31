@@ -192,7 +192,7 @@ statusDashboard.Contents.Add(customContent);
 return statusDashboard.ToString();
 ```
 
-##### Allowed HTML tags and attributes
+## Allowed HTML tags and attributes
 
 The following HTML tags are allowed within dashboards:
 
