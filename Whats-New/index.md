@@ -8,6 +8,19 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 ## 2018
 
 ### January 2018
+* Built-in
+	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Concepts/InternalAndExternalIDs/).
+* COM API
+	* Added in a search condition sample for [finding objects with specific flags (e.g. conflict objects)]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-by-object-flags-eg-searching-for-conflict-objects).
+	* Added in a page detailing how to [search for value list items by name, deleted status and owner]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems).
+* Vault Application Framework
+	* Added [information on the VAF versions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/).
+	* Added initial (pre-release) content for [the new Configuration integration with M-Files Admin](http://developer.m-files.com/Frameworks/Vault-Application-Framework/Configuration/) with VAF 2.0.
+	* Added initial (pre-release) [details on implementing licensing]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Licensing/) with VAF 2.0.
+	* Added initial (pre-release) information on the new [file helper]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#mffilehelper) and [URL helper]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#urlhelper) objects in VAF 2.0.
+* User Interface Extensibility Framework
+	* Added link to a GitHub sample showing how to use the `OnShowContextMenu` event to [show/hide context menu commands depending on the selected object(s)](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/AlterContextMenuDependingOnSelectedObject/#readme).
+	* Added link to a GitHub sample showing [how to interact with .NET managed assemblies distributed with UIX applications](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/UsingManagedAssemblies/#readme).
 * General
 	* Added a print style sheet for partners wishing to print content.
 

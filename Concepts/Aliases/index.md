@@ -5,8 +5,6 @@ includeInSearch: true
 breadcrumb: Aliases
 ---
 
-## The API and Structural Element IDs
-
 The M-Files API primarily uses IDs when referencing structural vault elements.  For example, the following code may update a "Description" property (with an example ID of 1090) on an object:
 
 ```csharp
@@ -23,7 +21,7 @@ However, this same code can often not be used directly on another vault, as the 
 
 Instead, one or more aliases should be assigned to the vault element and resolved to the current ID at runtime.
 
-### Items with multiple aliases
+## Items with multiple aliases
 
 Occasionally one vault element may be referenced by a number of scripts, each expecting the property to have a different alias.  For example: a "Description" property may be expected to have an alias of `MFiles.PropertyDef.Description` in one script, but `Description` in another.  Fortunately, elements can have multiple aliases assigned by separating them with a semi-colon (`;`):
 
@@ -72,4 +70,4 @@ Vault.ObjectPropertyOperations.SetProperty(objVer, descriptionPropertyValue);
 
 ## The Vault Application Framework
 
-When using the Vault Application Framework, [attributes can be used to automatically resolve aliases to IDs]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/).  This can significantly reduce the amount of boilerplate code.
+When using the Vault Application Framework, [the MFIdentifier class, combined with configuration attributes, can be used to automatically resolve aliases to IDs]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/).  This can significantly reduce the amount of boilerplate code.

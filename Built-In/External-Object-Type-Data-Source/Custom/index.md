@@ -5,8 +5,6 @@ includeInSearch: true
 breadcrumb: Custom
 ---
 
-## An Overview of External Object Types
-
 M-Files uses `Object Types` to define the objects that will be managed, stored, and maintained within the M-Files vault.  Built-in object types include Documents and Document Collections, but object types such as Company, Contact, or Project can be created and customized depending upon the needs of the organization.
 
 Each Object Type can be defined as Internal (created and managed within the M-Files clients), or External (typically managed within an external system).  External object types can either be read-only within the M-Files client, or can be defined as read/write, where objects created, changed, or deleted in the M-Files client can be pushed back to the originating system.
@@ -26,7 +24,7 @@ Custom External Object Type Data Providers are Microsoft .NET class libraries th
 
 ### A quick note on Internal and External Object Ids
 
-M-Files often uses the concept of `Object Ids`.  The object id is an integer (whole number) and is guaranteed to be unique within a given object type.  When external object types are used, M-Files allows the id from that system to be shown on the metadata card instead.  This id is referred to either as the `Display ID` or the `External ID`.  Each object still has an internal ID that must be used for normal API calls.
+M-Files often uses the concept of `Object Ids`.  The object id is an integer (whole number) and is guaranteed to be unique within a given object type.  When external object types are used, M-Files allows the id from that system to be shown on the metadata card instead.  This id is referred to either as the `Display ID` or the `External ID`.  Each object still has an internal ID that must be used for normal API calls.  This is detailed further on the ['Internal and External IDs' dedicated page]({{ site.baseurl}}/Concepts/InternalAndExternalIDs/).
 
 When mapping the `Object ID` in the Connection to External Database, ensure that you map a column which is a unique Id.  If this changes in the future, objects that have been associated with this item may become disconnected.
 {:.note}

@@ -5,6 +5,9 @@ includeInSearch: true
 breadcrumb: Conditions
 ---
 
+This page is solely applicable to searching for objects within an M-Files vault.  To search for value list items within a value list, please [see this page]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems/).
+{:.note.warning}
+
 Detailed below are methods of creating individual [SearchCondition](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchCondition.html) objects.  These are typically combined into a collection of [SearchConditions](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchConditions.html) before being [executed against the vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations.html).
 
 When using the Vault Application Framework, the <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/MFSearchBuilder/">MFSearchBuilder</a> class can be used to more easily construct otherwise-complex search conditions.
@@ -571,6 +574,24 @@ objSearchCondition.ConditionType = MFConditionTypeEqual
 ' We want to search for items whose class property is one of the supplied class Ids.
 ' This should be MFDatatypeMultiSelectLookup, even though the property is MFDatatypeLookup.
 objSearchCondition.TypedValue.SetValue MFDatatypeMultiSelectLookup, objArrayList.ToArray()
+```
+
+## Restricting by object flags (e.g. searching for conflict objects)
+
+The following search condition can be used to find objects with specific flags (e.g. objects that are conflicts or shortcuts).  Conflicts can then subsequently be resolved using the [ResolveConflict](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~ResolveConflict.html) API method.
+
+```csharp
+// Create the condition.
+var condition = new SearchCondition
+{
+	ConditionType = MFConditionType.MFConditionTypeEqual
+};
+
+// Set the expression (we wish to search by the object flags).
+condition.Expression.SetStatusValueExpression(MFStatusType.MFStatusTypeObjectFlags);
+
+// Set the value to be the flag to search by (e.g. Conflict, below).
+condition.TypedValue.SetValue(MFDataType.MFDatatypeInteger, (int)MFSpecialObjectFlag.MFSpecialObjectFlagConflict);
 ```
 
 ## Restricting the search results by user permissions
