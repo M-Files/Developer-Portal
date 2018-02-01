@@ -82,6 +82,112 @@ System.Console.WriteLine("New object Id was: " + objectVersion.ObjVer.ID);
 The default "Name or Title" property always has the property Id of zero.  However, each class may have the property used for the name or title altered during setup.  Ensure that the property values sent match the expected properties from the class.
 {:.note}
 
+#### HTTP request
+```text
+POST http://localhost/REST/objects/0 HTTP/1.1
+X-Authentication: KPhtr_jAux2BYvyqZD-GBMMP8tzQMaQRWLePtH2tRD5cnN15euV_ANJydrOYgejB4PmK61VQkVpRrhTTc7njW5ZYBwHtWpMQagYuqjVJ05xerxQe3rz7mJPdkE_eUnrDqygqKowkOVAh1Usb-hNHA1R5Em0swVw58Lit6fyxtIbtoW8ysMztCkuOmy2vd3CRJB89CKsOE_OHLj2G9JDfCiXhoLbUEtWm8UmsjWbstNK1SJRtNgnm6STe48zm9V7Hyqi9GxDl6i8qgaAQ2qD8S43C0E_BPo2qSSh6Mb4DFJri28_DxPEk-9Nm_FXcrnvrCbNW7a6gZl4myRPt_mgP7A
+Content-Type: application/json; charset=utf-8
+Host: localhost
+Cookie: ASP.NET_SessionId=3a2wrpaqv42g1qysstp5nmdz
+Content-Length: 451
+Expect: 100-continue
+
+{
+  "PropertyValues": [
+    {
+      "PropertyDef": 100,
+      "TypedValue": {
+        "DataType": 9,
+        "HasValue": false,
+        "Value": null,
+        "Lookup": {
+          "Deleted": false,
+          "DisplayValue": null,
+          "Hidden": false,
+          "Item": 1,
+          "Version": -1
+        },
+        "Lookups": null,
+        "DisplayValue": null,
+        "SortingKey": null,
+        "SerializedValue": null
+      }
+    },
+    {
+      "PropertyDef": 0,
+      "TypedValue": {
+        "DataType": 1,
+        "HasValue": false,
+        "Value": "my test document",
+        "Lookup": null,
+        "Lookups": null,
+        "DisplayValue": null,
+        "SortingKey": null,
+        "SerializedValue": null
+      }
+    }
+  ],
+  "Files": null
+}
+```
+
+#### HTTP response
+```text
+HTTP/1.1 200 OK
+Cache-Control: private, must-revalidate, max-age=0
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 25 Jan 2017 09:44:34 GMT
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Date: Fri, 26 Jan 2018 09:44:34 GMT
+Content-Length: 1011
+
+{
+  "Title": "my test document",
+  "EscapedTitleWithID": "my test document (ID 659)",
+  "DisplayID": "659",
+  "ObjVer": {
+    "Version": 1,
+    "VersionType": 4,
+    "ID": 659,
+    "Type": 0
+  },
+  "Class": 1,
+  "CheckedOutAtUtc": "1601-01-01T00:00:00Z",
+  "CheckedOutAt": "1601-01-01T00:00:00Z",
+  "LastModifiedUtc": "2018-01-26T09:44:33Z",
+  "LastModified": "2018-01-26T09:44:33Z",
+  "ObjectCheckedOut": false,
+  "ObjectCheckedOutToThisUser": false,
+  "CheckedOutTo": 0,
+  "SingleFile": false,
+  "ThisVersionLatestToThisUser": true,
+  "CreatedUtc": "2018-01-26T09:44:33Z",
+  "Created": "2018-01-26T09:44:33Z",
+  "Files": [
+    
+  ],
+  "VisibleAfterOperation": true,
+  "PathInIDView": "0\\0-999\\659\\S\\v1",
+  "LastModifiedDisplayValue": "26.1.2018 9.44",
+  "CheckedOutAtDisplayValue": "1.1.1601 0.00",
+  "CreatedDisplayValue": "26.1.2018 9.44",
+  "ObjectVersionFlags": 0,
+  "Score": 0,
+  "LastAccessedByMe": "2018-01-26T09:44:34Z",
+  "AccessedByMeUtc": "2018-01-26T09:44:34Z",
+  "AccessedByMe": "2018-01-26T09:44:34Z",
+  "ObjectGUID": "{351AD1D3-E1DE-44B3-8002-B31E1628AEB9}",
+  "ObjectCapabilityFlags": -1,
+  "ObjectFlags": 68,
+  "propertyID": 0,
+  "BaseProperties": [
+    
+  ]
+}
+```
+
 ### Creating an object with files
 
 To create an object with files, the file content must first be `POST`ed to [/files](http://www.m-files.com/mfws/resources/files.html).  The file will be saved into a temporary location on the server and an [UploadInfo](http://www.m-files.com/mfws/structs/uploadinfo.html) returned containing an ID for the temporary file.  During the file creation, these UploadInfo objects are provided as part of the [ObjectCreationInfo](http://www.m-files.com/mfws/structs/objectcreationinfo.html) and the server automatically attaches the temporary files to the new object.
@@ -99,7 +205,7 @@ client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken")
 var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 
 // Upload the file and retrieve the upload information.
-var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files/"),
+var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files"),
 	new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
 			
 // Extract the value.
@@ -122,6 +228,39 @@ objectCreationInfo.Files = new UploadInfo[]
 {
     uploadInfo
 };
+```
+
+##### HTTP request
+
+```text
+POST http://localhost/REST/files HTTP/1.1
+X-Authentication: pajhNYPOfX-KM73zSMHUDcd9dOhfawP-e4RYkeBC_8oeOE_fS_7yMrGQwT4tliFbSB7MKWr-FNTB8WSkzUafRaprZCbYqJ5eWEWxLicRKzz7UR5Wtxz6vXEyOJ04ewAMoBmgm008eDzvIcqKfAcUk-9Oma2EYt_e5IB0RiaY24mRJpClFNCJmAjwsyJNv1fzcFc-wS5cD6xDTwcplg3bOvdRWrYvR7KF2_wWODjflIQZhyKY8BEB2cRAlZMgcCwHACx6Ws_huXvSYQXqqZd9s-wBLEq5oNsF-f0kMxy1UWNHeBYLr32gsnewbdFPopHnvKUxDzOC0r8zEHwEF3FBYA
+Host: localhost
+Cookie: ASP.NET_SessionId=tsxugyihuwdyj4vtzalt34je
+Content-Length: 27
+Expect: 100-continue
+
+This is my sample text file
+```
+
+##### HTTP response
+
+```text
+HTTP/1.1 200 OK
+Cache-Control: private, must-revalidate, max-age=0
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 25 Jan 2017 10:04:26 GMT
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Date: Fri, 26 Jan 2018 10:04:26 GMT
+Content-Length: 48
+
+{
+  "UploadID": 1,
+  "Size": 27,
+  "FileInformationType": 0
+}
 ```
 
 After a file is uploaded to <a href="http://www.m-files.com/mfws/resources/files.html">/files</a>, an <a href="http://www.m-files.com/mfws/structs/uploadinfo.html">UploadInfo</a> will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
@@ -199,6 +338,142 @@ var objectVersion = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>
 System.Console.WriteLine("New object Id was: " + objectVersion.ObjVer.ID);
 ```
 
+##### HTTP request
+
+This shows the HTTP request for the object creation, assuming the file(s) have already been uploaded.
+{:.note}
+
+```text
+POST http://localhost/REST/objects/0 HTTP/1.1
+X-Authentication: pajhNYPOfX-KM73zSMHUDcd9dOhfawP-e4RYkeBC_8oeOE_fS_7yMrGQwT4tliFbSB7MKWr-FNTB8WSkzUafRaprZCbYqJ5eWEWxLicRKzz7UR5Wtxz6vXEyOJ04ewAMoBmgm008eDzvIcqKfAcUk-9Oma2EYt_e5IB0RiaY24mRJpClFNCJmAjwsyJNv1fzcFc-wS5cD6xDTwcplg3bOvdRWrYvR7KF2_wWODjflIQZhyKY8BEB2cRAlZMgcCwHACx6Ws_huXvSYQXqqZd9s-wBLEq5oNsF-f0kMxy1UWNHeBYLr32gsnewbdFPopHnvKUxDzOC0r8zEHwEF3FBYA
+Content-Type: application/json; charset=utf-8
+Host: localhost
+Cookie: ASP.NET_SessionId=tsxugyihuwdyj4vtzalt34je
+Content-Length: 504
+Expect: 100-continue
+
+{
+  "PropertyValues": [
+    {
+      "PropertyDef": 100,
+      "TypedValue": {
+        "DataType": 9,
+        "HasValue": false,
+        "Value": null,
+        "Lookup": {
+          "Deleted": false,
+          "DisplayValue": null,
+          "Hidden": false,
+          "Item": 1,
+          "Version": -1
+        },
+        "Lookups": null,
+        "DisplayValue": null,
+        "SortingKey": null,
+        "SerializedValue": null
+      }
+    },
+    {
+      "PropertyDef": 0,
+      "TypedValue": {
+        "DataType": 1,
+        "HasValue": false,
+        "Value": "my test document",
+        "Lookup": null,
+        "Lookups": null,
+        "DisplayValue": null,
+        "SortingKey": null,
+        "SerializedValue": null
+      }
+    }
+  ],
+  "Files": [
+    {
+      "UploadID": 1,
+      "Title": null,
+      "Extension": "txt",
+      "Size": 27
+    }
+  ]
+}
+```
+
+##### HTTP response
+
+This shows the HTTP response for the object creation, assuming the file(s) have already been uploaded.
+{:.note}
+
+```text
+HTTP/1.1 200 OK
+Cache-Control: private, must-revalidate, max-age=0
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 25 Jan 2017 10:04:27 GMT
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Date: Fri, 26 Jan 2018 10:04:26 GMT
+Content-Length: 1435
+
+{
+  "Title": "my test document",
+  "EscapedTitleWithID": "my test document (ID 663).txt",
+  "DisplayID": "663",
+  "ObjVer": {
+    "Version": 1,
+    "VersionType": 4,
+    "ID": 663,
+    "Type": 0
+  },
+  "Class": 1,
+  "CheckedOutAtUtc": "1601-01-01T00:00:00Z",
+  "CheckedOutAt": "1601-01-01T00:00:00Z",
+  "LastModifiedUtc": "2018-01-26T10:04:26Z",
+  "LastModified": "2018-01-26T10:04:26Z",
+  "ObjectCheckedOut": false,
+  "ObjectCheckedOutToThisUser": false,
+  "CheckedOutTo": 0,
+  "SingleFile": true,
+  "ThisVersionLatestToThisUser": true,
+  "CreatedUtc": "2018-01-26T10:04:26Z",
+  "Created": "2018-01-26T10:04:26Z",
+  "Files": [
+    {
+      "Name": "my test document",
+      "EscapedName": "my test document.txt",
+      "Extension": "txt",
+      "Size": 27,
+      "LastModified": "2018-01-26T10:04:26Z",
+      "ChangeTimeUtc": "2018-01-26T10:04:26Z",
+      "ChangeTime": "2018-01-26T10:04:26Z",
+      "CreatedUtc": "2018-01-26T10:04:26Z",
+      "CreatedDisplayValue": "26.1.2018 10.04",
+      "LastModifiedDisplayValue": "26.1.2018 10.04",
+      "FileGUID": "{EA17457E-7F7B-48F2-BB4C-3E0E0E2900EF}",
+      "ID": 678,
+      "Version": 1,
+      "FileVersionType": 3
+    }
+  ],
+  "VisibleAfterOperation": true,
+  "PathInIDView": "0\\0-999\\663\\S\\v1",
+  "LastModifiedDisplayValue": "26.1.2018 10.04",
+  "CheckedOutAtDisplayValue": "1.1.1601 0.00",
+  "CreatedDisplayValue": "26.1.2018 10.04",
+  "ObjectVersionFlags": 0,
+  "Score": 0,
+  "LastAccessedByMe": "2018-01-26T10:04:26Z",
+  "AccessedByMeUtc": "2018-01-26T10:04:26Z",
+  "AccessedByMe": "2018-01-26T10:04:26Z",
+  "ObjectGUID": "{6FA5C6C4-FDDA-44C8-8DFB-4948082F3829}",
+  "ObjectCapabilityFlags": -1,
+  "ObjectFlags": 68,
+  "propertyID": 0,
+  "BaseProperties": [
+    
+  ]
+}
+```
+
 ## Updating existing objects
 
 Objects can be found and modified using endpoints underneath the [object's version endpoint](http://www.m-files.com/mfws/resources/objects/type/objectid/version.html).  Each object within M-Files is automatically versioned as it is changed by users or the M-Files system itself.  The object version endpoint represents a specific version of the object within the vault.  For example, `/objects/0/123/1` represents version 1 of a document with ID 123, and `/objects/0/456/2` represents version 2 of a document with ID 456.  The latest version of an object can always be found by replacing the `version` element of the endpoint address with the string `latest`.  For example: `/objects/0/789/latest` always refers to the latest version of an object, even as the object is changed by others within the M-Files vault.
@@ -207,9 +482,9 @@ Objects can be found and modified using endpoints underneath the [object's versi
 
 Properties for an object can be altered en-masse by making a `POST` or `PUT` request to [/objects/(type)/(objectid)/(version)/properties](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties.html).  Note that a `POST` request can be used to add specific properties to an object, whereas a `PUT` request must always include all object properties, as those not included will be removed from the object.
 
-A specific property can be added, updated, or removed from an object by using the [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html) endpoint.  In addition, some other endpoints exist (e.g. [/objects/(type)/(objectid)/(version)/properties/comments](http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html), [/objects/(type)/(objectid)/(version)/properties/title](http://www.m-files.com/mfws/resources/objects/type/objectid/version/title.html), and [/objects/(type)/(objectid)/(version)/properties/workflowstate](http://www.m-files.com/mfws/resources/objects/type/objectid/version/workflowstate.html)) that allow specific M-Files properties to be updated.
+A specific property can be added, updated, or removed from an object by using the [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html) endpoint.  In addition, some other endpoints exist (e.g. [/objects/(type)/(objectid)/(version)/comments](http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html), [/objects/(type)/(objectid)/(version)/title](http://www.m-files.com/mfws/resources/objects/type/objectid/version/title.html), and [/objects/(type)/(objectid)/(version)/workflowstate](http://www.m-files.com/mfws/resources/objects/type/objectid/version/workflowstate.html)) that allow specific M-Files properties to be updated.
 
-Updating properties still requires the object to be checked out.  The general process should be: check out, update object, check in.  Some endpoints will automatically do this in the background (e.g. <a href="http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html">/objects/(type)/(objectid)/(version)/properties/comments</a>), but these will be detailed in the documentation.
+Updating properties still requires the object to be checked out.  The general process should be: check out, update object, check in.  Some endpoints will automatically do this in the background (e.g. <a href="http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html">/objects/(type)/(objectid)/(version)/comments</a>), but these will be detailed in the documentation.
 {:.note}
 
 ```csharp

@@ -48,3 +48,7 @@ Whereas most processes within M-Files typically operate synchronously, [Backgrou
 #### Helpers
 
 Common functions such as building search conditions, or working with search results, are easier using built-in [helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework//).  These extensibile helpers reduce the amount of code needed to be written, as well as providing more readable and more maintainable code for the future.
+
+## Versions
+
+There are two public releases of the Vault Application Framework.  Details are available on the [dedicated Vault Application Framework version page](Versions).
