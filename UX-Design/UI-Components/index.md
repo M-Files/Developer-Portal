@@ -62,12 +62,48 @@ Height: 27px
 Font-color: #5a5a5a  
 Font-size: 13px  
 
-#### Search 
+### Search 
+
+Search function in M-Files is hosted by `Search bar`, and enhanced by `Search filters` and `Advanced search options`.  
 
 ##### Search bar
+
+Right above the Listing area, a `Search Bar` with search field, search button and access to `Advances search options` can be found.  
 
 ![search bar](UI-components-search-bar.png){:.borderless}
 
 ##### Search filter
 
+`Search Filters` tab will be activated when search field is focused.  User will found options to enhance the search function before or after search is performed.  
+
 ![search filters](UI-components-search-filters.png){:.borderless}
+
+##### Advances search options
+
+`Advances search options` will be toggled on or off by clicking on the right most icon of the Search bar.  
+
+![search advanced options](UI-components-search-adv-options.png){:.borderless}
+
+### Dialogs 
+
+Example of a common `Dialog` in M-Files that consists a title, an icon, a dialog message and a button group.  
+
+![dialogs](UI-components-dialogs.png){:.borderless}
+
+### Menus
+
+Here is an example of a contextual menu activated by right-click on an object which provides corresponding functions.  
+
+![menus](UI-components-menus.png){:.borderless}
+ 
+### Metadata card 
+
+`Metadata Card` is dedicated for displaying and editing Metadata for object classification and basic properties of selected object[s]. User also can access object related functions from `Function Ribbon`.  
+
+![Metadata forms](UI-components-metadataforms.png){:.borderless}
+
+#### Function Ribbon 
+
+By using function buttons on the ribbon, user are able to Follow, Pin, or put an object to Favorite. With M-Files 2018 release, we also introduced the `Analyze` button. It will analyze object automatically and provide classification suggestions.
+
+![Metadata forms](UI-components-function-ribbon.png){:.borderless}
