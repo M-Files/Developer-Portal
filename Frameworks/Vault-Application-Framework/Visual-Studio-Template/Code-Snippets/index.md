@@ -43,7 +43,7 @@ To contribute additional code snippets or to fix issues with existing code snipp
 
 ### Available Code Snippets
 
-Code Snippets are available to download from our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Snippets/CSharp/M-Files%20VAF">GitHub Samples and Libraries repository</a>.  Information on how to <a href="#installing-the-vault-application-framework-code-snippets">install the code snippets</a> is in the following section.
+Code Snippets are available to download from our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Visual%20Studio%20Snippets/Vault%20Application%20Framework/Snippets/CSharp/MFilesVAF">GitHub Samples and Libraries repository</a>.  Information on how to <a href="#installing-the-vault-application-framework-code-snippets">install the code snippets</a> is in the following section.
 {:.note}
 
 The following code snippets exist.  Once the snippets are installed, simply type their name within a code file, select the snippet, and press `Tab` twice.
