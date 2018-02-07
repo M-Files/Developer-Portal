@@ -1,0 +1,18 @@
+{% assign navurl = page.url | remove: 'index.html' %}
+<ul class="zdmi-hc-ul treeview">
+{% for item in include.items %}
+	{% assign link = item.Link %}
+	{% assign starting = link | slice: 0, 4 %}
+    <li{% if item.Link == navurl %} class="expanded current"{% endif %}>
+        <a href="{% if starting == 'http' %}{{ link }}{% else %}{{ link | prepend: site.baseurl }}{% endif %}"{% if item.IsExternal %} target="_blank" rel="noopener"{% endif %}>
+			{% if item.Icon %}<i class="zmdi-hc-li zmdi {{ item.Icon }}"></i>{% endif %}
+			{{ item.Title }}
+			{% if item.IsOfficialReference %}<i class="zmdi zmdi-bookmark-outline"></i>{% endif %}
+			{% if item.IsGitHubLink %}<i class="zmdi zmdi-github"></i>{% endif %}
+        </a>
+		{% if item.Items  %}
+			{% include nav-data.html items=item.Items %}
+		{% endif %}
+    </li>
+{% endfor %}
+</ul>
