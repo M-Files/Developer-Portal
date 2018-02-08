@@ -44,7 +44,7 @@ layout: default
 	</div>
 	
 	<nav id="other-articles" role="navigation">
-		{% include other-articles.html items=site.data.navigation %}
+		{% capture other %}{% include other-articles.html items=site.data.navigation %}{% endcapture %}{{ other | strip_newlines }}
 	</nav>
 
   {% if page.comments %} 

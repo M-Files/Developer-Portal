@@ -2,7 +2,8 @@
 	{
 		"Link": "/",
 		"Icon": "zmdi-home",
-		"Title": "Home"
+		"Title": "Home",
+		"SkipInOtherArticles" : true
 	},
 	{
 		"Link": "/Whats-New/",
