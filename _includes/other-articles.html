@@ -1,6 +1,5 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 {% for item in include.items %}
-	{% assign link = item.Link %}
 	{% if item.Link == navurl %}
 		{% assign children = item.Items | default: include.parent.Items | default: site.data.navigation %}
 		{% assign childCount = children | size | default: 0 %}
@@ -11,6 +10,8 @@
 					{% if child.SkipInOtherArticles %}
 						{% continue %}
 					{% endif %}
+					{% assign link = child.Link %}
+					{% assign starting = link | slice: 0, 4 %}
 				<li>
 				<a href="{% if starting == 'http' %}{{ link }}{% else %}{{ link | prepend: site.baseurl }}{% endif %}"{% if child.IsExternal %} target="_blank" rel="noopener"{% endif %}>
 						{{ child.Title }}
