@@ -8,7 +8,7 @@ layout: default
 
 	{% include social.html %}
 
-	<ol class="breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<ol class="breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList" role="navigation">
 
 		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="{{ site.baseurl }}/">Home</a></li>
 		{% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}{% for i in (1..forLoopMaxInt) %}{% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}{% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}{% for breadcrumb_page in site.pages %}{% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}{% assign j = forLoopMaxInt | plus: 0 %}
@@ -23,15 +23,12 @@ layout: default
 
 	<div class="entry">
 
-	<article>
+	<article role="main">
 		
-		<nav id="in-page-nav">
+		<nav id="in-page-nav" role="navigation">
 			<div id="in-this-article">
 				<h1>In this article</h1>
 				{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}
-			</div>
-			<div id="other-articles">
-				{% include other-articles.html items=site.data.navigation %}
 			</div>
 		</nav>
 
@@ -45,6 +42,10 @@ layout: default
 		{{ content }}
 	</article>
 	</div>
+	
+	<nav id="other-articles" role="navigation">
+		{% include other-articles.html items=site.data.navigation %}
+	</nav>
 
   {% if page.comments %} 
 	{% include disqus.html %}
