@@ -20,7 +20,7 @@
 			$heading.append($anchor);
 		});
 
-		var $inPageNavItems = $("#in-page-nav > ul li a");
+		var $inPageNavItems = $("#in-page-nav #in-this-article > ul li a");
 		var pairs = [];
 		function recalculateNavItemLocations()
 		{
