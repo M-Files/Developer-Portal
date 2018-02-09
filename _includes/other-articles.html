@@ -4,23 +4,25 @@
 		{% assign children = item.Items | default: include.parent.Items | default: site.data.navigation %}
 		{% assign childCount = children | size | default: 0 %}
 		{% if childCount != 0 %}
-			<h1>{{ item.Title }}</h1>
-			<ul>
-				{% for child in children %}
-					{% if child.SkipInOtherArticles %}
-						{% continue %}
-					{% endif %}
-					{% assign link = child.Link %}
-					{% assign starting = link | slice: 0, 4 %}
-				<li>
-				<a href="{% if starting == 'http' %}{{ link }}{% else %}{{ link | prepend: site.baseurl }}{% endif %}"{% if child.IsExternal %} target="_blank" rel="noopener"{% endif %}>
-						{{ child.Title }}
-						{% if child.IsOfficialReference %}<i class="zmdi zmdi-bookmark-outline"></i>{% endif %}
-						{% if child.IsGitHubLink %}<i class="zmdi zmdi-github"></i>{% endif %}
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
+			<nav class="other-articles" role="navigation">
+				<h1>{% if item.Title == 'Home' %}M-Files Developer Portal sections{% else %}{{ item.Title }} articles{% endif %}</h1>
+				<ul>
+					{% for child in children %}
+						{% if child.SkipInOtherArticles %}
+							{% continue %}
+						{% endif %}
+						{% assign link = child.Link %}
+						{% assign starting = link | slice: 0, 4 %}
+					<li>
+					<a href="{% if starting == 'http' %}{{ link }}{% else %}{{ link | prepend: site.baseurl }}{% endif %}"{% if child.IsExternal %} target="_blank" rel="noopener"{% endif %}>
+							{{ child.Title }}
+							{% if child.IsOfficialReference %}<i class="zmdi zmdi-bookmark-outline"></i>{% endif %}
+							{% if child.IsGitHubLink %}<i class="zmdi zmdi-github"></i>{% endif %}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
 		{% endif %}
 		{% break %}
 	{% endif %}

@@ -73,10 +73,10 @@ body #in-page-nav
 	}
 }
 
-.has-in-page-nav article h1,
-	.has-in-page-nav article h2,
-	.has-in-page-nav article h3,
-	.has-in-page-nav article h4e
+.has-in-page-nav article[role=main] h1,
+	.has-in-page-nav article[role=main] h2,
+	.has-in-page-nav article[role=main] h3,
+	.has-in-page-nav article[role=main] h4
 {
 	border-left: 5px solid transparent;
 	border-bottom: 1px solid #EEE;

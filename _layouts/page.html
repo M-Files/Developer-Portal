@@ -41,15 +41,15 @@ layout: default
 
 		{{ content }}
 	</article>
-	</div>
-	
-	<nav id="other-articles" role="navigation">
-		<h1>You may also be interested in...</h1>
-		{% capture other %}{% include other-articles.html items=site.data.navigation %}{% endcapture %}{{ other | strip_newlines }}
-	</nav>
 
-  {% if page.comments %} 
+	<h1 class="other-articles">You may also be interested in...</h1>
+	{% capture other %}{% include other-articles.html items=site.data.navigation %}{% endcapture %}{{ other | strip_newlines }}
+
+	{% if page.comments %} 
 	{% include disqus.html %}
-  {% endif %}
+	{% endif %}
+
+	</div>
   
 </article>
+

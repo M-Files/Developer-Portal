@@ -1,33 +1,36 @@
-#other-articles
+h1.other-articles
 {
-	border: 5px solid #007dc6;
+	font-size: 0.8em;
+	font-weight: normal;
+	margin: 15px 0px 5px 0px;
+	padding: 15px 0px 5px 0px;
+	border-top: 3px dashed #CCC;
+}
+nav.other-articles
+{
 	border-top-width: 0px;
 	padding-bottom: 5px;
-	margin: 30px 0px 0px 0px;
+	margin: 0px 0px 5px 0px;
+	border: 5px solid #007dc6;
 	background-color: #d6e1f2;
 	h1
 	{
 		font-size: 0.9em;
 		margin: 0px;
 		padding: 5px 10px;
-		position: initial;
-		left: 0px;
 		border: 0px;
 		letter-spacing: 0px;
 		font-weight: normal;
-	}
-	h1:first-child
-	{
 		color: white;
 		background-color: #007dc6;
-		padding-top:10px;
+		position: initial;
+		left: 0px;
 	}
 	ul
 	{
 		list-style-type: none;
 		margin: 0px;
 		padding: 0px;
-		text-align: center;
 		li
 		{
 			list-style-type: none;
