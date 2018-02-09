@@ -4,7 +4,7 @@
 		{% assign children = item.Items | default: include.parent.Items | default: site.data.navigation %}
 		{% assign childCount = children | size | default: 0 %}
 		{% if childCount != 0 %}
-			<h1>You may also be interested in...</h1>
+			<h1>{{ item.Title }}</h1>
 			<ul>
 				{% for child in children %}
 					{% if child.SkipInOtherArticles %}
@@ -24,7 +24,8 @@
 		{% endif %}
 		{% break %}
 	{% endif %}
-	{% if item.Items  %}
+	{% assign childCount = item.Items | size | default: 0 %}
+	{% if childCount != 0  %}
 		{% include other-articles.html items=item.Items parent=item %}
 	{% endif %}
 {% endfor %}
