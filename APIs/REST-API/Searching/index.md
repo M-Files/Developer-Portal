@@ -102,7 +102,7 @@ var url =
 	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1002*=ESTT");
 ```
 
-If we wished to restrict by a text property with ID where the field matches a [wildcard search for `ESTT*`](http://www.m-files.com/user-guide/latest/eng/#Quick_search.html), we would alter the operator:
+If we wished to restrict by a text property with ID where the field matches a [wildcard search for `ESTT*`](https://www.m-files.com/user-guide/latest/eng/Quick_search.html), we would alter the operator:
 
 ```csharp
 // Build the url to request.

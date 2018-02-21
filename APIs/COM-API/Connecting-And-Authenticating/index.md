@@ -11,7 +11,7 @@ The primary focus of creating a connection to the server is to create a [Vault](
 
 ## Creating a Client Connection
 
-A client connection requires that a connection to the vault has already been created using the [M-Files Desktop Settings](http://www.m-files.com/user-guide/latest/eng/#Implementing_the_document_vault.html) application.  When creating a client connection, the connection information (the server details, how to communicate with it, and authentication details) are held within the existing connection, and we just need to retrieve the connection.
+A client connection requires that a connection to the vault has already been created using the [M-Files Desktop Settings](https://www.m-files.com/user-guide/latest/eng/Implementing_the_document_vault.html) application.  When creating a client connection, the connection information (the server details, how to communicate with it, and authentication details) are held within the existing connection, and we just need to retrieve the connection.
 
 ```csharp
 // Instantiate an MFilesClientApplication object.

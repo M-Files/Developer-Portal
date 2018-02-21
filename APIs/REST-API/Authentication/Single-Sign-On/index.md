@@ -10,7 +10,7 @@ This document details those steps and provides a sample C# class which shows the
 
 ## Configuring IIS and M-Files Web Access
 
-This document does not deal with setting up M-Files Web Access.  More information is available in the [Web and Mobile Access](http://www.m-files.com/user-guide/latest/eng/#Configure_M-Files_Web_Access.html) section of the online user guide.
+This document does not deal with setting up M-Files Web Access.  More information is available in the [Web and Mobile Access](https://www.m-files.com/user-guide/latest/eng/Configure_M-Files_Web_Access.html) section of the online user guide.
 {:.note}
 
 ### Enabling Windows Authentication within IIS

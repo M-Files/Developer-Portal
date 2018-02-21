@@ -15,5 +15,5 @@ The [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/) is a REST-li
 
 ## Setup
 
-The M-Files Web Service (MFWS) is part of the M-Files Web Access.  Once M-Files Web Access is correctly configured, the M-Files Web Service will be available to use.  More information on [setting up the M-Files Web and Mobile Access is available in our user guide](http://www.m-files.com/user-guide/latest/eng/#Configure_M-Files_Web_Access.html).  Once configured the REST API is available within the M-Files Web Access at `/REST/`.  If your Web Access has been configured in a subdirectory then remember to prefix that on all links (e.g. if it's in `/MFiles/` then your REST API is available within `/MFiles/REST/`).
+The M-Files Web Service (MFWS) is part of the M-Files Web Access.  Once M-Files Web Access is correctly configured, the M-Files Web Service will be available to use.  More information on [setting up the M-Files Web and Mobile Access is available in our user guide](https://www.m-files.com/user-guide/latest/eng/Configure_M-Files_Web_Access.html).  Once configured the REST API is available within the M-Files Web Access at `/REST/`.  If your Web Access has been configured in a subdirectory then remember to prefix that on all links (e.g. if it's in `/MFiles/` then your REST API is available within `/MFiles/REST/`).
 

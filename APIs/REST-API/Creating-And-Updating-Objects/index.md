@@ -549,9 +549,9 @@ The <a href="http://www.m-files.com/mfws/resources/objects/type/objectid/version
 
 Adding a new file to an existing object is similar to replacing the content of an existing file: the object must be checked out, the file added, then checked in again.  There are, however, two additional situations that may need to be considered:
 
-* If a file is being added to an object which is not a document ([see "Creating a New Object Type"](http://www.m-files.com/user-guide/latest/eng/#New_object_type.html)) then the object type must support having files.  If not then the request will fail.
+* If a file is being added to an object which is not a document ([see "Creating a New Object Type"](https://www.m-files.com/user-guide/latest/eng/New_object_type.html)) then the object type must support having files.  If not then the request will fail.
 
-* If a file is being added to an existing document, then the document may need to be converted to a [Multi-File Document (MFD)](http://www.m-files.com/user-guide/latest/eng/#MFD_SFD.html) as part of the process.  Whether a document is a Multi-File-Document can be found either by checking the [ObjectVersion](http://www.m-files.com/mfws/structs/objectversion.html) (the "SingleFile" property will be true), or by checking the value of property 22 ("Single file").  This is a built-in property.
+* If a file is being added to an existing document, then the document may need to be converted to a [Multi-File Document (MFD)](https://www.m-files.com/user-guide/latest/eng/MFD_SFD.html) as part of the process.  Whether a document is a Multi-File-Document can be found either by checking the [ObjectVersion](http://www.m-files.com/mfws/structs/objectversion.html) (the "SingleFile" property will be true), or by checking the value of property 22 ("Single file").  This is a built-in property.
 
 ```csharp
 // Create a HttpClient.

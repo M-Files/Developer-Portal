@@ -124,7 +124,7 @@ The `SetSFD` helper method sets the value of the "Single File" property (ID 22) 
 
 ### SetTitle
 
-Sets the property value for the current object's name or title property to the value provided.  If the object class information is supplied and the class uses another property as its title (see the [Set as Name section](http://www.m-files.com/user-guide/latest/eng/#New_class.html)), the correct property value will be set.
+Sets the property value for the current object's name or title property to the value provided.  If the object class information is supplied and the class uses another property as its title (see the [Set as Name section](https://www.m-files.com/user-guide/latest/eng/New_class.html)), the correct property value will be set.
 
 ### SetWorkflowState
 

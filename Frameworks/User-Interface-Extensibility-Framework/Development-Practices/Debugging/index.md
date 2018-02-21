@@ -29,7 +29,7 @@ User Interface Extensibility Framework applications that [target M-Files Web Acc
 
 Most modern web browsers have built-in debugging tools, e.g. in [Microsoft Edge / Internet Explorer](https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide), [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/), [Mozilla FireFox](https://developer.mozilla.org/en-US/docs/Tools), or [Safari](https://developer.apple.com/safari/tools/).  *This tutorial will focus on the tools available in Microsoft Edge / Internet Explorer, although they are broadly the same in all modern browsers.*
 
-1. Log into the vault using [M-Files Web Access](https://www.m-files.com/user-guide/latest/eng/#Web_access.html).
+1. Log into the vault using [M-Files Web Access](https://www.m-files.com/user-guide/latest/eng/Web_access.html).
 2. Open the Developer Tools dialog (e.g. press `F12`).
 3. Click on the `Debugger` tab.
 4. Expand the hostname of the web server (in this screenshot the code is running from `localhost`):

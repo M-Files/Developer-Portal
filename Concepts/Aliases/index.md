@@ -17,7 +17,7 @@ descriptionPropertyValue.SetValue(MFDatatypeMultiLineText, "hello world");
 Vault.ObjectPropertyOperations.SetProperty(objVer, descriptionPropertyValue);
 ```
 
-However, this same code can often not be used directly on another vault, as the "Description" property's ID will normally not be the same.  This is because the internal ID is assigned at the time that the element is created, and cannot be re-used.  This is additionally important when [replication](http://www.m-files.com/user-guide/latest/eng/#Metadata_specifications.html) is used, as the script may be replicated to another vault but not able to function due to the IDs being different.
+However, this same code can often not be used directly on another vault, as the "Description" property's ID will normally not be the same.  This is because the internal ID is assigned at the time that the element is created, and cannot be re-used.  This is additionally important when [replication](https://www.m-files.com/user-guide/latest/eng/Metadata_specifications.html) is used, as the script may be replicated to another vault but not able to function due to the IDs being different.
 
 Instead, one or more aliases should be assigned to the vault element and resolved to the current ID at runtime.
 

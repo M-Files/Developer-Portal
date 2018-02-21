@@ -14,7 +14,7 @@ M-Files provides two Application Programming Interfaces for developers to commun
 * Supports the same connection protocols as the desktop client.
 * Supports the same authentication schemes as the desktop client.
 * Can be run in "client" or "server" mode:
-  * Client mode requires a vault connection is already set up within the [M-Files Desktop Settings](http://www.m-files.com/user-guide/latest/eng/#Implementing_the_document_vault.html), and can show M-Files dialogs such as the metadata card for object creation.
+  * Client mode requires a vault connection is already set up within the [M-Files Desktop Settings](https://www.m-files.com/user-guide/latest/eng/Implementing_the_document_vault.html), and can show M-Files dialogs such as the metadata card for object creation.
   * Server mode does not require a vault connection to be set up on the host machine, but cannot show M-Files dialogs.
 * Requires the same version of the API on the client machine as the server.
 

@@ -270,7 +270,7 @@ var searchConditions = new SearchConditions();
 
 ## Searching by an external ID
 
-When using [external object types](http://www.m-files.com/user-guide/latest/eng/#Connection_to_external_database.html), the object ID shown on the metadata card will be the primary key for the object in the remote system.  A search can be executed to convert the external ID to an internal ID (e.g. to populate a [PropertyValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValue.html) for a lookup):
+When using [external object types](https://www.m-files.com/user-guide/latest/eng/Connection_to_external_database.html), the object ID shown on the metadata card will be the primary key for the object in the remote system.  A search can be executed to convert the external ID to an internal ID (e.g. to populate a [PropertyValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValue.html) for a lookup):
 
 ```csharp
 // Create the condition.
