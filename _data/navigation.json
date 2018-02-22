@@ -353,6 +353,29 @@
 		]
 	},
 	{
+		"Link": "/UX-Design/",
+		"Title": "UX/Design guidance",
+		"Icon": "zmdi-view-dashboard",
+		"Items": [
+			{
+				"Link": "/UX-Design/Page-Layout/",
+				"Title": "Page Layout"
+			},
+			{
+				"Link": "/UX-Design/UI-Components/",
+				"Title": "UI Components"
+			},
+			{
+				"Link": "/UX-Design/Navigation-patterns/",
+				"Title": "Navigation-patterns"
+			},
+			{
+				"Link": "/UX-Design/Icons-and-Fonts/",
+				"Title": "Icons and Fonts"
+			}
+		]
+	},
+	{
 		"Link": "/Samples-And-Libraries/",
 		"Icon": "zmdi-github",
 		"Title": "Samples and Libraries",
