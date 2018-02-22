@@ -74,4 +74,4 @@ To upgrade a VAF 1.0 application to 2.0, the following steps need to be taken.
 	* Resolve any namespace issues, for example:
 		* `MFIdentifier` (and other [configuration attributes](/Frameworks/Vault-Application-Framework/Attributes/Configuration/)) have moved from `MFiles.VAF.Common` to `MFiles.VAF.Configuration`.
 
-At this point the VAF application can be altered to support 2.0 features such as [icensing](../Licensing) and [integration into the M-Files 2018 Administration Configuration interface](../Configuration).
+At this point the VAF application can be altered to support 2.0 features such as [licensing](../Licensing) and [integration into the M-Files 2018 Administration Configuration interface](../Configuration).

@@ -25,22 +25,4 @@
         }
     });
 
-    // Get the links in the treeview.
-    var $navLinks = $("li a", "ul.treeview");
-
-    // When one is clicked, highlight it.
-    function highlightLink(i, o)
-    {
-        // Highlight the clicked one.
-        $($(this).parents("li").addClass("expanded").get(0)).addClass("current");
-        return true;
-    }
-
-    // Highlight the current page.
-	var currentPageAddress = window.location.pathname;
-	
-	$document.ready(function(){
-		$($navLinks).filter("a[href='" + currentPageAddress + "']").each(highlightLink);
-	})
-
 })(jQuery);

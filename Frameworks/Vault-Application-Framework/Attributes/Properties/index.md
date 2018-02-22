@@ -7,7 +7,7 @@ breadcrumb: Properties
 
 ## Property Calculation
 
-The `PropertyAutomaticNumberingAttribute` attribute marks the following method to be executed to calculate a custom automatic number for an object (see [Customized automatic numbering (VBScript)](http://www.m-files.com/user-guide/latest/eng/#Automatic_values.html)).
+The `PropertyAutomaticNumberingAttribute` attribute marks the following method to be executed to calculate a custom automatic number for an object (see [Customized automatic numbering (VBScript)](https://www.m-files.com/user-guide/latest/eng/Automatic_values.html)).
 
 ```csharp
 [PropertyAutomaticNumbering("MyPropertyDefinitionAlias")]
@@ -24,7 +24,7 @@ public TypedValue MyPropertyAutomaticNumber(PropertyEnvironment env)
 }
 ```
 
-The `PropertyCustomValueAttribute` attribute marks the following method to be executed to calculate a custom value for an object (see [Calculated value (VBScript)](http://www.m-files.com/user-guide/latest/eng/#Automatic_values.html)).
+The `PropertyCustomValueAttribute` attribute marks the following method to be executed to calculate a custom value for an object (see [Calculated value (VBScript)](https://www.m-files.com/user-guide/latest/eng/Automatic_values.html)).
 
 ```csharp
 [PropertyCustomValue("MySecondPropertyDefinitionAlias")]
@@ -43,7 +43,7 @@ public TypedValue MySecondPropertyCustomValue(PropertyEnvironment env)
 
 ## Property Validation
 
-The `PropertyValueValidationAttribute` attribute marks the following method to be executed to validate a property value (see [Automatically Validating Property Values](http://www.m-files.com/user-guide/latest/eng/#Validation.html)).
+The `PropertyValueValidationAttribute` attribute marks the following method to be executed to validate a property value (see [Automatically Validating Property Values](https://www.m-files.com/user-guide/latest/eng/Validation.html)).
 
 ```csharp
 [PropertyValueValidation("MyThirdPropertyDefinitionAlias")]

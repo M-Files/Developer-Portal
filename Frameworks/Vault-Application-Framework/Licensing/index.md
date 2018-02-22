@@ -215,7 +215,7 @@ When the vault is restarted, our license check code is re-executed, and a note i
 
 ### Other Built-In Fields
 
-The `LicenseContentBas`e base class, used when parsing the license content by the Vault Application Framework, contains a number of other built-in members which you can use; simply define the member in the `.mflconf` file to enable the functionality.
+The `LicenseContentBase` base class, used when parsing the license content by the Vault Application Framework, contains a number of other built-in members which you can use; simply define the member in the `.mflconf` file to enable the functionality.
 
 #### Informational
 
@@ -351,3 +351,25 @@ In this case, ensure that the various keys are correctly set, and that the corre
 
 Vault Application Framework must be set with the public key of the main key, and the secret/private key of the secondary key.
 {:.note}
+
+### Altering the key file to use
+
+The default `.mflconf` file contains an instruction to load/use keys from `sample.Keys.conf`.  This can be altered by changing the `KeyFile` element within the `.mflconf` file:
+
+From
+``` json
+{
+  // ...
+  "KeyFile": "sample.Keys.conf",
+  // ...
+}
+```
+
+To
+``` json
+{
+  // ...
+  "KeyFile": "anotherfile.Keys.conf",
+  // ...
+}
+```

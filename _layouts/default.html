@@ -48,7 +48,7 @@
     {{ content }}
 
     <aside id="sidebar" role="navigation">
-        {% include navigation.html %}
+		{% capture navigation %}{% include navigation.html %}{% endcapture %}{{ navigation | strip_newlines }}
     </aside>
 
     <footer>
