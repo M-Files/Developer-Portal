@@ -8,7 +8,7 @@ M-Files offers various ways of organizing vault contents, and letting user acces
 
 ### Views
 
-![Tabs](UI-components-tabs.png){:.borderless}
+![Views](views.png){:.borderless}
 
 `Views` are shown in the [Listing Area](/UX-Design/Page-Layout/#listing-area) and allow users to drill down to locate the content they need. Each view can be used to search (and further refine a search) across the vault contents, displaying objects that match the search criteria.  Unlike traditional folders, objects may appear in multiple views, allowing views to provide exactly the information the user requires at the time they need it.  
 
