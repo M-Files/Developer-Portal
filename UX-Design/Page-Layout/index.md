@@ -8,7 +8,7 @@ includeInSearch: true
 
 ## Layout areas
 
-M-Files 2018 Desktop client layout includes three general layout areas:
+The M-Files 2018 Desktop client layout includes three general layout areas:
 
 * The [Top Pane](#top-pane) holds essential features that are needed all the time, such as structured navigation and vault- and user-operations.
 * The [Listing Area](#listing-area) occupies the left half below the [Top Pane](#top-pane).  The listing area shows access to content as the user navigates the vault structure.
@@ -25,11 +25,11 @@ The `Top Pane` is a full-width header located above the content areas of the app
 
 {:.rightcol}
 * M-File logo with link to home and navigation arrows
-* A Breadcrumb shows current location
+* A [breadcrumb]({{ site.baseurl }}/UX-Design/Navigation-patterns/#breadcrumb) shows current location
 * Create function and vault main navigation tabs
-* Object related taps and search filters
-* Indication and account panel 
-* Pinned tab
+* Object related tabs and search filters
+* The account panel (to log out, to alter notification settings, and to log in/out of external repositories)
+* The [Pinned tab](http://localhost:4000/UX-Design/Page-Layout/#pinned)
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -60,7 +60,7 @@ Background-color (listing area): #fafafa
 ![Bottom pane location](Page-layout-listinarea-bottompane.png){:.borderless .leftcol}
 
 {:.rightcol}
-The `Bottom Pane` actually is a sub area within the [Listing Area](#listing-area). It provides an alternate location for content to be shown, e.g. the [selected object's metadata](#metadata-form). It may also contain elements such as the multiple-vault search. Additionally, the contents of the bottom can be customised using the [User Interface Extensibility Framework](/Frameworks/User-Interface-Extensibility-Framework/Dashboards/#replacing-the-right-or-bottom-panes).
+The `Bottom Pane` actually is a sub area within the [Listing Area](#listing-area). It provides an alternate location for content to be shown, e.g. the [selected object's metadata](#metadata-form). It may also contain elements such as the multiple-vault search. Additionally, the contents of the bottom can be customised using the [User Interface Extensibility Framework]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/#replacing-the-right-or-bottom-panes).
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -72,7 +72,7 @@ Margin: 0px 6px 10px 0px
 ![Right Pane location](Page-layout-rightpane.png){:.borderless .leftcol}
 
 {:.rightcol}
-The `Right Pane` plays an important role in offering detailed control options over object properties, previews, search and personalization. Its contents switch contextually according to the selected object or current function. Additionally, the contents of the right pane can be customised using the [User Interface Extensibility Framework](/Frameworks/User-Interface-Extensibility-Framework/Dashboards/#within-a-custom-tab) to show additional tabs of content. 
+The `Right Pane` plays an important role in offering detailed control options over object properties, previews, search and personalization. Its contents switch contextually according to the selected object or current function. Additionally, the contents of the right pane can be customised using the [User Interface Extensibility Framework]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/#within-a-custom-tab) to show additional tabs of content. 
 
 {:.rightcol}
 **Style and layout parameters:**   
@@ -119,7 +119,7 @@ Font-color: #ffffff
 ![Metadata form location](Page-layout-rightpane-metadataform.png){:.borderless .leftcol}
 
 {:.rightcol}
-The `Metadata Form` displays the properties of the selected object.  Depending on your access rights, you may also be able to edit some of the properties.  The layout is largely driven by the class of the selected object, but can be customised using [Metadata Card Configuration rules](/Built-In/Metadata-Card-Configuration/).
+The `Metadata Form` displays the properties of the selected object.  Depending on your access rights, you may also be able to edit some of the properties.  The layout is largely driven by the class of the selected object, but can be customised using [Metadata Card Configuration rules]({{ site.baseurl }}/Built-In/Metadata-Card-Configuration/).
 
 {:.rightcol}
 **Style and layout parameters:**   
