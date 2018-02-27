@@ -20,7 +20,3 @@ The more familiar we are with something, the less cost for our cognitive process
 ## Personal
 
 Customization, in this context, allows users to configure the look and feel according to their needs. This can be reflected in changes to the order of icons, color, or even [application themes]({{ site.baseurl }}/Built-In/Theming/), etc.  M-Files 2018 allows personalization through the use of [individual user views](https://www.m-files.com/user-guide/latest/eng/New_view.html#new_view), the [favourites list](https://www.m-files.com/user-guide/latest/eng/task_area.html?hl=favorites#task_area__section_F1548BD48D564D35A685D69F2413D73F) and the [pinboard](https://www.m-files.com/user-guide/latest/eng/the_pinned_tab.html?hl=pinned), all of which are available on desktop, web and mobile.
-
-## More Intelligent
-
-TBA

@@ -11,7 +11,7 @@ Specific font sizes are shown in the "Style and layout parameters" in the associ
 
 ## Icons
 
-The M-Files icon set is evolving towards simplicity. The target is to allow users to easily and quickly recognise structures and operations through visual presentation.
+The M-Files icon set is evolving towards simplicity. The target is to allow users to easily and quickly recognise structures and operations through visual presentation. 
 
 ### Icon package download
 
@@ -21,8 +21,12 @@ The M-Files icon set is evolving towards simplicity. The target is to allow user
 	Download M-Files 2018 icon package (14.5mb)</a></li>
 </ul>
 
+{% comment %}
+
 The download above includes all the images shown below in a variety of formats.
 {:.note}
+
+<!-- REPLACE WITH ICON SYSTEM! -->
 
 ### Main navigation
 
@@ -45,3 +49,6 @@ The download above includes all the images shown below in a variety of formats.
 ### Brand, status, etc.
 
 ![update icon set](MFicons_07.png){:.borderless}
+
+
+{% endcomment %}
