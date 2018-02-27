@@ -1,3 +1,9 @@
+article::after
+{
+	content: "";
+	display: block;
+	clear: left;
+}
 h1.other-articles
 {
 	font-size: 0.8em;

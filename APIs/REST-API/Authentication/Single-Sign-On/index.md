@@ -115,5 +115,5 @@ namespace WebServiceClient
 
 ```
 
-This sample uses the [RestSharp](http://restsharp.org/) library to avoid boilerplate HTTP request and parsing code.  Please confirm the licenses for any third party libraries prior to their use.
+This sample uses the <a href="http://restsharp.org/">RestSharp</a> library to avoid boilerplate HTTP request and parsing code.  Please confirm the licenses for any third party libraries prior to their use.
 {:.note}
