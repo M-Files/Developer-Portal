@@ -7,6 +7,10 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### February 2018
+* UX/Design guidance
+	* Added [UX/Design guidance]({{ site.baseurl}}/UX-Design/) section to the developer portal.
+
 ### January 2018
 * Built-in
 	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Concepts/InternalAndExternalIDs/).
