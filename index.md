@@ -15,7 +15,7 @@ This website complements and extends our existing documentation, available eithe
 	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/"><i class="zmdi zmdi-window-restore"></i> User Interface Extensibility Framework</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/"><i class="zmdi zmdi-swap-alt"></i> External Object Type Data Sources</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/Metadata-Card-Configuration/"><i class="zmdi zmdi-view-web"></i> Metadata Card Configuration</a></li>
-	<li class="built-in"><a href="{{ site.baseurl}}/UX-Design/"><i class="zmdi-hc-li zmdi zmdi-view-dashboard"></i>UX/Design guidance</a></li>
+	<li class="built-in"><a href="{{ site.baseurl}}/UX-Design/"><i class="zmdi zmdi-view-dashboard"></i>UX/Design guidance</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/URLs/"><i class="zmdi zmdi-link"></i> M-Files URLs</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/VBScript/"><i class="zmdi zmdi-collection-item"></i> VBScript</a></li>
 	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/#samples"><i class="zmdi zmdi-github"></i> Samples</a></li>
