@@ -462,6 +462,10 @@
 							{
 								"Link": "/Samples-And-Libraries/Samples/Processes/Client-To-Server-Communication/",
 								"Title": "Client To Server Communication"
+							},
+							{
+								"Link": "/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/",
+								"Title": "Original Template"
 							}
 						]
 					}
