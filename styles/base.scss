@@ -101,6 +101,11 @@ h3 {
     z-index: 10003;
 }
 
+p
+{
+	/* for easier reading, space out the lines a little */
+	line-height: 1.5em;
+}
 
 /* hide the page h1, as it's a duplicate of the big blue one */
 
@@ -158,14 +163,6 @@ p.note.warning::before {
 
 p.note.stub::before {
     content: "\f25a";
-}
-
-code.highlighter-rouge {
-    display: inline-block;
-    padding: 3px 7px;
-    background-color: lightyellow;
-    border: 1px solid gold;
-    margin: 0px 3px;
 }
 
 article.page a {
