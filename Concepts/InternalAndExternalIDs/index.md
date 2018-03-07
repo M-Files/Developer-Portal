@@ -55,11 +55,11 @@ When using the COM API, many APIs will return an [ObjectVersion](https://www.m-f
 
 #### Providing values
 
-When using the [REST API]({{ site.baseurl }}/APIs/REST-API/), the object type ID, object ID and optionally version number are typically encoded into the endpoint address.  For example, to retrieve information on an object a `GET` request may be sent to [http://m-files.mycompany.com/REST/objects/0/123/latest](www.m-files.com/mfws/resources/objects/type/objectid/version.html).  In this example, the object type ID is `0`, the object ID is `123` and the version is specified as `latest`.
+When using the [REST API]({{ site.baseurl }}/APIs/REST-API/), the object type ID, object ID and optionally version number are typically encoded into the endpoint address.  For example, to retrieve information on an object a `GET` request may be sent to [http://m-files.mycompany.com/REST/objects/0/123/latest](https://www.m-files.com/mfws/resources/objects/type/objectid/version.html).  In this example, the object type ID is `0`, the object ID is `123` and the version is specified as `latest`.
 
 #### Retrieving values
 
-When using the REST API, many endpoints return an [ObjectVersion](http://www.m-files.com/mfws/structs/extendedobjectversion.html) (or [ExtendedObjectVersion](http://www.m-files.com/mfws/structs/extendedobjectversion.html), which inherits the properties defined on `ObjectVersion`).  Both these classes expose the following properties:
+When using the REST API, many endpoints return an [ObjectVersion](https://www.m-files.com/mfws/structs/extendedobjectversion.html) (or [ExtendedObjectVersion](https://www.m-files.com/mfws/structs/extendedobjectversion.html), which inherits the properties defined on `ObjectVersion`).  Both these classes expose the following properties:
 
 * `DisplayID` - will be empty unless the object has an `External ID` defined.
 * `ObjVer` - will be details on the object version, including the internal object type, object id, and version information.

@@ -7,7 +7,7 @@ breadcrumb: Async
 
 Whilst M-Files COM API calls are typically synchronous (i.e. the application doesn't continue until the API call completes), the M-Files [Vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html) object exposes a property named `Async` which can be used to make asynchronous calls.  Using asynchronous calls - rather than synchronous calls, which wait for the process to finish before continuing - ensures that the user interface doesn't appear to "lock", and the user experience remains fluid.
 
-Using asynchronous calls are currently optional when [targeting the M-Files Desktop client]({{ site.baseurl }}/Frameworks/Development-Practices/Platform-Targeting/#the-m-files-desktop-client).  It is mandatory when [targeting M-Files Web Access]({{ site.baseurl }}/Frameworks/Development-Practices/Platform-Targeting/#m-files-web-access).
+Using asynchronous calls are currently optional when [targeting the M-Files Desktop client]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#the-m-files-desktop-client).  It is mandatory when [targeting M-Files Web Access]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#m-files-web-access).
 {:.note}
 
 ## Altering synchronous to asynchronous calls
