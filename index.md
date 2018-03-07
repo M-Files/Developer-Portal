@@ -18,8 +18,8 @@ This website complements and extends our existing documentation, available eithe
 	<li class="built-in"><a href="{{ site.baseurl}}/UX-Design/"><i class="zmdi zmdi-view-dashboard"></i>UX/Design guidance</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/URLs/"><i class="zmdi zmdi-link"></i> M-Files URLs</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/VBScript/"><i class="zmdi zmdi-collection-item"></i> VBScript</a></li>
-	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/#samples"><i class="zmdi zmdi-github"></i> Samples</a></li>
-	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/#libraries"><i class="zmdi zmdi-github"></i> Libraries</a></li>
+	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/Samples"><i class="zmdi zmdi-github"></i> Samples</a></li>
+	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/Libraries"><i class="zmdi zmdi-github"></i> Libraries</a></li>
 </ul>
 
 ## M-Files as a Platform
