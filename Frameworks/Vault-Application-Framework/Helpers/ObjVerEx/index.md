@@ -133,7 +133,7 @@ Destruction of objects cannot be undone.
 
 ### ExpandPlaceholderText
 
-The `ExpandPlaceholderText` method can be used to easily parse a string containing [notification placeholders](http://www.m-files.com/user-guide/latest/eng/#Notifications.html#personalizing_notification_messages) and replace them with the current values.  Supported placeholders include:
+The `ExpandPlaceholderText` method can be used to easily parse a string containing [notification placeholders](https://www.m-files.com/user-guide/latest/eng/Notifications.html#personalizing_notification_messages) and replace them with the current values.  Supported placeholders include:
 
 * %OBJID% - the current object ID and type.
 * %OBJVER% - the current object ID, type and version.

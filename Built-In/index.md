@@ -28,5 +28,5 @@ Links can be constructed for either [M-Files Desktop]({{ site.baseurl }}/Built-I
 
 ## Retrieving documents from file or email sources
 
-M-Files can natively [retrieve documents from file or email sources](http://www.m-files.com/user-guide/latest/eng/#connections_to_external_sources.html).  These can be configured using the M-Files Admin program.
+M-Files can natively [retrieve documents from file or email sources](https://www.m-files.com/user-guide/latest/eng/connections_to_external_sources.html).  These can be configured using the M-Files Admin program.
 

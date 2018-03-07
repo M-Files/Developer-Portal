@@ -53,7 +53,7 @@ Whilst it is typically advisable to reference metadata structure elements via th
 
 ### Via M-Files Admin
 
-The [M-Files Admin](http://www.m-files.com/user-guide/latest/eng/#M-Files_server_administrator_heading.html) is to administer and maintain M-Files document vaults and servers.  IDs of structural elements can easily be found using this application; simply expand the vault in question, then expand the `Metadata Structure (Flat View)` node.  By selecting each of the items within (e.g. `Object Types`, or `Property Definitions`), the item is listed alongside its ID:
+The [M-Files Admin](https://www.m-files.com/user-guide/latest/eng/M-Files_server_administrator_heading.html) is to administer and maintain M-Files document vaults and servers.  IDs of structural elements can easily be found using this application; simply expand the vault in question, then expand the `Metadata Structure (Flat View)` node.  By selecting each of the items within (e.g. `Object Types`, or `Property Definitions`), the item is listed alongside its ID:
 
 ![Object Types](object-types.png)
 

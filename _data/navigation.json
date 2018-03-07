@@ -1,0 +1,476 @@
+[
+	{
+		"Link": "/",
+		"Icon": "zmdi-home",
+		"Title": "Home",
+		"SkipInOtherArticles" : true
+	},
+	{
+		"Link": "/Whats-New/",
+		"Icon": "zmdi-edit",
+		"Title": "What's New"
+	},
+	{
+		"Link": "/Concepts/",
+		"Icon": "zmdi-play",
+		"Title": "Concepts",
+		"Items": [{
+				"Link": "/Concepts/Aliases/",
+				"Title": "Aliases"
+			},
+			{
+				"Link": "/Concepts/InternalAndExternalIDs/",
+				"Title": "Internal and External IDs"
+			}
+		]
+	},
+	{
+		"Link": "/Built-In/",
+		"Icon": "zmdi-stop",
+		"Title": "Using built-in functionality",
+		"Items": [{
+				"Link": "/Built-In/External-Object-Type-Data-Source/",
+				"Title": "External Object Type Data Sources",
+				"Items": [{
+						"Link": "/Built-In/External-Object-Type-Data-Source/Default-Refresh-Logic/",
+						"Title": "Default refresh logic"
+					},
+					{
+						"Link": "/Built-In/External-Object-Type-Data-Source/Custom/",
+						"Title": "Creating your own Custom External Object Type Data Sources"
+					}
+				]
+			},
+			{
+				"Link": "/Built-In/Metadata-Card-Configuration/",
+				"Title": "Metadata Card Configuration"
+			},
+			{
+				"Link": "/Built-In/Theming/",
+				"Title": "Theming"
+			},
+			{
+				"Link": "/Built-In/URLs/",
+				"Title": "URLs"
+			},
+			{
+				"Link": "/Built-In/VBScript/",
+				"Title": "VBScript",
+				"Items": [{
+						"Link": "/Built-In/VBScript/Audit-Trail-And-Scripting/",
+						"Title": "Audit trail and Scripting"
+					},
+					{
+						"Link": "/Built-In/VBScript/Vault-Extension-Methods/",
+						"Title": "Vault Extension Methods"
+					}
+				]
+			}
+		]
+	},
+	{
+		"Link": "/APIs/COM-API/",
+		"Icon": "zmdi-circle-o",
+		"Title": "COM API",
+		"Items": [{
+				"Link": "https://www.m-files.com/api/documentation/latest/index.html",
+				"Title": "Official API Reference ",
+				"IsExternal": true,
+				"IsOfficialReference": true
+			},
+			{
+				"Link": "/Samples-And-Libraries/Samples/COM-API/",
+				"Title": "Samples and Tutorials",
+				"IsGitHubLink": true
+			},
+			{
+				"Link": "/APIs/COM-API/Connecting-And-Authenticating/",
+				"Title": "Connecting and authenticating"
+			},
+			{
+				"Link": "/APIs/COM-API/Searching/",
+				"Title": "Searching",
+				"Items": [{
+						"Link": "/APIs/COM-API/Searching/SearchConditions/",
+						"Title": "Example Search Conditions"
+					},
+					{
+						"Link": "/APIs/COM-API/Searching/ValueListItems/",
+						"Title": "Searching for Value List Items"
+					}
+				]
+			}
+		]
+	},
+	{
+		"Link": "/APIs/REST-API/",
+		"Icon": "zmdi-cloud-outline",
+		"Title": "REST API",
+		"Items": [{
+				"Link": "http://www.m-files.com/MFWS/",
+				"Title": "Official API Reference ",
+				"IsExternal": true,
+				"IsOfficialReference": true
+			},
+			{
+				"Link": "/Samples-And-Libraries/Samples/REST-API/",
+				"Title": "Samples and Tutorials",
+				"IsGitHubLink": true
+			},
+			{
+				"Link": "/APIs/REST-API/Concepts/",
+				"Title": "Concepts"
+			},
+			{
+				"Link": "/APIs/REST-API/Authentication/",
+				"Title": "Authentication",
+				"Items": [{
+					"Link": "/APIs/REST-API/Authentication/Single-Sign-On/",
+					"Title": "Using Single Sign On"
+				}]
+			},
+			{
+				"Link": "/APIs/REST-API/Searching/",
+				"Title": "Searching"
+			},
+			{
+				"Link": "/APIs/REST-API/Creating-And-Updating-Objects/",
+				"Title": "Creating and updating objects"
+			},
+			{
+				"Link": "/APIs/REST-API/Vault-Extension-Methods/",
+				"Title": "Vault Extension Methods"
+			},
+			{
+				"Link": "/APIs/REST-API/Useful-Applications/",
+				"Title": "Useful Applications"
+			}
+		]
+	},
+	{
+		"Link": "/Frameworks/User-Interface-Extensibility-Framework/",
+		"Icon": "zmdi-window-restore",
+		"Title": "UI Extensibility Framework",
+		"Items": [{
+				"Link": "https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html",
+				"Title": "Official Reference ",
+				"IsExternal": true,
+				"IsOfficialReference": true
+			},
+			{
+				"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/",
+				"Title": "Samples and Tutorials",
+				"IsGitHubLink": true
+			},
+			{
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/",
+				"Title": "Development Practices",
+				"Items": [{
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/",
+						"Title": "Asynchronous API programming"
+					},
+					{
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Debugging/",
+						"Title": "Debugging"
+					},
+					{
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Deployment/",
+						"Title": "Deployment"
+					},
+					{
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Event-Registration-And-Entry-Points/",
+						"Title": "Event registration and entry points"
+					},
+					{
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Local-Development-Folder/",
+						"Title": "Local development folder"
+					},
+					{
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Object-Lifecycle/",
+						"Title": "Object Lifecycle"
+					},
+					{
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/",
+						"Title": "Platform targeting"
+					}
+				]
+			},
+			{
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/",
+				"Title": "Application Definition File",
+				"Items": [{
+					"Link": "/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/Master-Application-Guid/",
+					"Title": "Master application GUID"
+				}]
+			},
+			{
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Dashboards/",
+				"Title": "Dashboards"
+			},
+			{
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Modules/",
+				"Title": "Modules"
+			},
+			{
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/",
+				"Title": "Pre-Approval"
+			}
+		]
+	},
+	{
+		"Link": "/Frameworks/Vault-Application-Framework/",
+		"Icon": "zmdi-widgets",
+		"Title": "Vault Application Framework",
+		"Items": [{
+				"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/",
+				"Title": "Samples and Tutorials",
+				"IsGitHubLink": true
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Versions/",
+				"Title": "Versions"
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Attributes/",
+				"Title": "Attributes",
+				"Items": [{
+						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Configuration/",
+						"Title": "Configuration"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/",
+						"Title": "Event Handlers"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Workflows/",
+						"Title": "Workflow State Actions, Pre-conditions, Post-conditions, and Automatic State Transitions"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Properties/",
+						"Title": "Property calculation and validation"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/",
+						"Title": "Vault Extension Methods"
+					}
+				]
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Background-Operations/",
+				"Title": "Background Operations"
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Configuration/",
+				"Title": "Configuration",
+				"Items": [{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Editors/",
+						"Title": "Configuration value editors"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Hierarchical-Configuration/",
+						"Title": "Nested/hierarchical configuration"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Custom-Dashboards/",
+						"Title": "Custom dashboards"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Custom-Validation/",
+						"Title": "Custom validation"
+					}
+				]
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Development-Practices/",
+				"Title": "Development Practices",
+				"Items": [{
+						"Link": "/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/",
+						"Title": "Debugging"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Development-Practices/Exceptions/",
+						"Title": "Exceptions"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Development-Practices/DotNet-Configuration-Files/",
+						"Title": ".NET Configuration Files"
+					}
+				]
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Distributing-Child-Applications/",
+				"Title": "Distributing child applications"
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio-Template/",
+				"Title": "Visual Studio Template",
+				"Items": [{
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio-Template/Code-Snippets/",
+					"Title": "Code Snippets"
+				}]
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Helpers/",
+				"Title": "Helpers",
+				"Items": [{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/MFFileHelper/",
+						"Title": "MFFileHelper"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/MFPropertyValuesBuilder/",
+						"Title": "MFPropertyValuesBuilder"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/MFSearchBuilder/",
+						"Title": "MFSearchBuilder"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/ObjVerChanges/",
+						"Title": "ObjVerChanges"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/ObjVerEx/",
+						"Title": "ObjVerEx"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/UrlHelper/",
+						"Title": "UrlHelper"
+					}
+				]
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Licensing/",
+				"Title": "Licensing"
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Searching/",
+				"Title": "Searching"
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Using-VB.NET/",
+				"Title": "Using VB.NET"
+			}
+		]
+	},
+	{
+		"Link": "/UX-Design/",
+		"Title": "UX/Design guidance",
+		"Icon": "zmdi-view-dashboard",
+		"Items": [
+			{
+				"Link": "/UX-Design/Page-Layout/",
+				"Title": "Page Layout"
+			},
+			{
+				"Link": "/UX-Design/UI-Components/",
+				"Title": "UI Components"
+			},
+			{
+				"Link": "/UX-Design/Navigation-patterns/",
+				"Title": "Navigation patterns"
+			},
+			{
+				"Link": "/UX-Design/Icons-and-Fonts/",
+				"Title": "Icons and Fonts"
+			}
+		]
+	},
+	{
+		"Link": "/Samples-And-Libraries/",
+		"Icon": "zmdi-github",
+		"Title": "Samples and Libraries",
+		"Items": [{
+				"Link": "/Samples-And-Libraries/Libraries/",
+				"Title": "Libraries",
+				"Items": [{
+						"Link": "/Samples-And-Libraries/Libraries/COM-API/",
+						"Title": "COM API"
+					},
+					{
+						"Link": "/Samples-And-Libraries/Libraries/REST-API/",
+						"Title": "REST API"
+					}
+				]
+			},
+			{
+				"Link": "/Samples-And-Libraries/Samples/",
+				"Title": "Samples",
+				"Items": [{
+						"Link": "/Samples-And-Libraries/Samples/COM-API/",
+						"Title": "COM API"
+					},
+					{
+						"Link": "/Samples-And-Libraries/Samples/REST-API/",
+						"Title": "REST API"
+					},
+					{
+						"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/",
+						"Title": "User Interface Extensibility Framework",
+						"Items": [{
+								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/HelloWorld/",
+								"Title": "Hello, World"
+							},
+							{
+								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/Commands/",
+								"Title": "Commands"
+							},
+							{
+								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/BuiltInCommand-Event/",
+								"Title": "Handling Built-In Commands"
+							},
+							{
+								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/Display-Persistent-Web-Page-In-Tab/",
+								"Title": "Display Persistent Web Page In Tab"
+							},
+							{
+								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/",
+								"Title": "Creating Assignments"
+							},
+							{
+								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ConfirmWorkflowStateChange",
+								"Title": "Confirm Workflow State Change",
+								"IsExternal": true
+							},
+							{
+								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ShowWebPageInIFrame",
+								"Title": "Show Web Page in tab (iframe)",
+								"IsExternal": true
+							},
+							{
+								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/AlterContextMenuDependingOnSelectedObject",
+								"Title": "Using OnShowContextMenu event",
+								"IsExternal": true
+							},
+							{
+								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/UsingManagedAssemblies",
+								"Title": "Using Managed Assemblies",
+								"IsExternal": true
+							}
+						]
+					},
+					{
+						"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/",
+						"Title": "Vault Application Framework"
+					},
+					{
+						"Link": "/Samples-And-Libraries/Samples/Processes/",
+						"Title": "Processes",
+						"Items": [{
+								"Link": "/Samples-And-Libraries/Samples/Processes/Copying-Objects/",
+								"Title": "Copying Objects"
+							},
+							{
+								"Link": "/Samples-And-Libraries/Samples/Processes/Client-To-Server-Communication/",
+								"Title": "Client To Server Communication"
+							},
+							{
+								"Link": "/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/",
+								"Title": "Original Template"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

@@ -25,7 +25,7 @@ The code below is assumed to run as a workflow state action, as this is the typi
 
 ### Creating a copy of the properties
 
-Within a workflow state action, the current property values are available within a workflow state action as a variable named [PropertyValues](https://www.m-files.com/user-guide/latest/eng/#Variables.html), which is of type [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html).  Duplicating the content of this collection is a two-step process:
+Within a workflow state action, the current property values are available within a workflow state action as a variable named [PropertyValues](https://www.m-files.com/user-guide/latest/eng/Variables.html), which is of type [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html).  Duplicating the content of this collection is a two-step process:
 
 1. The `PropertyValues` variable contains a [Clone method](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues~Clone.html), which can be used to create a copy of the object (line 18).
 2. Some properties will need to be removed from the collection, as they don't make sense to have on the new object (lines 22-23).

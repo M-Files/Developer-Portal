@@ -54,9 +54,9 @@ p.description>i.material-icons {
 
 body>article img {
     box-sizing: border-box;
-    border: 5px solid #007dc6;
+    border: 3px solid #007dc6;
     padding: 5px;
-    margin: 5px auto;
+    margin: 5px;
     max-width: 100%;
 }
 body>article p img:only-child
@@ -78,7 +78,7 @@ h3 {
 }
 
 .page h4 {
-    font-weight: normal;
+    font-weight: bold;
 }
 
 #hamburger {
@@ -101,6 +101,17 @@ h3 {
     z-index: 10003;
 }
 
+article.page p,
+	article.page li
+{
+	/* for easier reading, space out the lines a little */
+	line-height: 1.5em;
+}
+article.page ol[role="navigation"] li,
+	article.page nav li
+{
+	line-height:  initial;
+}
 
 /* hide the page h1, as it's a duplicate of the big blue one */
 
@@ -158,14 +169,6 @@ p.note.warning::before {
 
 p.note.stub::before {
     content: "\f25a";
-}
-
-code.highlighter-rouge {
-    display: inline-block;
-    padding: 3px 7px;
-    background-color: lightyellow;
-    border: 1px solid gold;
-    margin: 0px 3px;
 }
 
 article.page a {

@@ -15,6 +15,7 @@ This website complements and extends our existing documentation, available eithe
 	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/"><i class="zmdi zmdi-window-restore"></i> User Interface Extensibility Framework</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/"><i class="zmdi zmdi-swap-alt"></i> External Object Type Data Sources</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/Metadata-Card-Configuration/"><i class="zmdi zmdi-view-web"></i> Metadata Card Configuration</a></li>
+	<li class="built-in"><a href="{{ site.baseurl}}/UX-Design/"><i class="zmdi zmdi-view-dashboard"></i>UX/Design guidance</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/URLs/"><i class="zmdi zmdi-link"></i> M-Files URLs</a></li>
 	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/VBScript/"><i class="zmdi zmdi-collection-item"></i> VBScript</a></li>
 	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/#samples"><i class="zmdi zmdi-github"></i> Samples</a></li>
@@ -29,7 +30,7 @@ We call this *M-Files as a Platform*.
 
 ## Built-in functionality
 
-M-Files provides significant built-in functionality which can be used by developers and non-developers to create integrated solutions.  [M-Files' scripting environment]({{ site.baseurl }}/Built-In/VBScript/) allows VBScript to be executed in response to object or server events, or as objects move through workflows.  Objects can be retrieved from remote [ODBC-compatible data sources](http://www.m-files.com/user-guide/latest/eng/#Connection_to_external_database.html), or [Custom External Object Type Data Sources]({{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Custom/) can be created to extend this functionality to other sources, such as web services.  Files can also be imported from [External File Sources](http://www.m-files.com/user-guide/latest/eng/#Connection_to_external_database_metadata.html) and can import content from XML files produced by various scanning and imaging software.
+M-Files provides significant built-in functionality which can be used by developers and non-developers to create integrated solutions.  [M-Files' scripting environment]({{ site.baseurl }}/Built-In/VBScript/) allows VBScript to be executed in response to object or server events, or as objects move through workflows.  Objects can be retrieved from remote [ODBC-compatible data sources](https://www.m-files.com/user-guide/latest/eng/Connection_to_external_database.html), or [Custom External Object Type Data Sources]({{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/Custom/) can be created to extend this functionality to other sources, such as web services.  Files can also be imported from [External File Sources](https://www.m-files.com/user-guide/latest/eng/Connection_to_external_database_metadata.html) and can import content from XML files produced by various scanning and imaging software.
 
 ## Our APIs
 
@@ -42,7 +43,7 @@ M-Files provides two Application Programming Interfaces for developers: the [COM
 * Supports the same connection protocols as the desktop client.
 * Supports the same authentication schemes as the desktop client.
 * Can be run in "client" or "server" mode:
-  * Client mode requires a vault connection is already set up within the [M-Files Desktop Settings](http://www.m-files.com/user-guide/latest/eng/#Implementing_the_document_vault.html), and can show M-Files dialogs such as the metadata card for object creation.
+  * Client mode requires a vault connection is already set up within the [M-Files Desktop Settings](https://www.m-files.com/user-guide/latest/eng/Implementing_the_document_vault.html), and can show M-Files dialogs such as the metadata card for object creation.
   * Server mode does not require a vault connection to be set up on the host machine, but cannot show M-Files dialogs.
 * Requires the same version of the API on the client machine as the server.
 

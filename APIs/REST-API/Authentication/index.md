@@ -7,7 +7,7 @@ breadcrumb: Authentication
 
 We support three primary authentication mechanisms: credentials in HTTP headers, cookie-based sessions, and authentication tokens.
 
-These examples use the .NET HttpWebRequest and HttpWebResponse objects directly, and uses the [JSON.NET](http://www.newtonsoft.com/json) library for serialization/deserialization.  Other libraries are available that may make interacting with REST-like web services more simplistic, such as [RestSharp](http://restsharp.org/).  Always check the license details of third-party libraries to ensure that they can be used within your projects.
+These examples use the .NET HttpWebRequest and HttpWebResponse objects directly, and uses the <a href="http://www.newtonsoft.com/json">JSON.NET</a> library for serialization/deserialization.  Other libraries are available that may make interacting with REST-like web services more simplistic, such as <a href="http://restsharp.org/">RestSharp</a>.  Always check the license details of third-party libraries to ensure that they can be used within your projects.
 {:.note}
 
 ## Authentication tokens

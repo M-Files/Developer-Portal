@@ -11,6 +11,8 @@
 	font-size: 1em;
 }
 
+
+
 body #in-page-nav
 {
     position: fixed;
@@ -18,7 +20,7 @@ body #in-page-nav
     right: 0px;
     width: 300px;
     top: 0px;
-    bottom: 0px;
+    bottom: 2em;
     padding-top: 0px;
     z-index: 10;
     background-color: white;
@@ -26,17 +28,20 @@ body #in-page-nav
 	border-top-width: 0px;
 	border-right-width: 0px;
 	border-bottom-width: 0px;
+	overflow: auto;
 	a
 	{
 		text-decoration: none;
 		color: #555;
 	}
-	> ul
+	h1
 	{
-		overflow: auto;
-		position: absolute;
-		top: 0px;
-		bottom: 0px;
+		margin: 10px 20px 0px 20px;
+		padding: 0px 0px 10px 0px;
+		font-size: 1em;
+	}
+	ul
+	{
 		width: 100%;
 		font-size: 0.9em;
 		li
@@ -51,6 +56,7 @@ body #in-page-nav
 				display: block;
 				padding: 4px 3px 4px 7px;
 				color: #333;
+				margin: 0px 5px 0px 0px;
 				&.current, &:active, &:hover
 				{
 					border-color: #007dc6;
@@ -67,10 +73,10 @@ body #in-page-nav
 	}
 }
 
-.has-in-page-nav article h1,
-	.has-in-page-nav article h2,
-	.has-in-page-nav article h3,
-	.has-in-page-nav article h4e
+.has-in-page-nav article[role=main] h1,
+	.has-in-page-nav article[role=main] h2,
+	.has-in-page-nav article[role=main] h3,
+	.has-in-page-nav article[role=main] h4
 {
 	border-left: 5px solid transparent;
 	border-bottom: 1px solid #EEE;

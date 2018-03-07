@@ -13,7 +13,7 @@ Each Object Type can be defined as Internal (created and managed within the M-Fi
 
 By default, M-Files can be set to import objects from an external database using OLEDB.  This functionality allows M-Files to retrieve data from almost any database where an OLEDB driver is available (e.g. Microsoft SQL Server).  M-Files will automatically query the remote data source every 15 minutes to load new objects (known as a "quick refresh"), and will process updates (known as a "full refresh") once per day.
 
-More information on connecting M-Files to external databases can be found in the [user guide](http://www.m-files.com/user-guide/latest/eng/#Connection_to_external_database.html).
+More information on connecting M-Files to external databases can be found in the [user guide](https://www.m-files.com/user-guide/latest/eng/Connection_to_external_database.html).
 {:.note}
 
 ### Support for Custom External Object Types
