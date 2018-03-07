@@ -33,7 +33,7 @@ Next, let's create some of the structure that we need. This structure could be c
 
 * Has a `Data type` of `Choose from list (single)`, and select the list named `Document`.
 
-* Has an [alias]({{ site.baseurl }}/Concepts/Aliases/) of `MFiles.PropertyDef.OriginalTemplate`. This format naming is completely up to you, but I tend to use a format of `{CompanyName}.{StructuralElementType}.{TextualName}`, which should help avoid any clashes. The important thing to note is that the alias here will be used in our code to [retrieve the property ID]({{ site.baseurl }}/Concepts/Aliases/#resolving-aliases), so we must keep a note of it.
+* Has an [alias]({{ site.baseurl }}/Concepts/Aliases/) of `MFiles.PropertyDef.OriginalTemplate`. This format naming is not important, but a format of `{CompanyName}.{StructuralElementType}.{TextualName}` should help avoid any clashes. The important thing to note is that the alias here will be used in our code to [retrieve the property ID]({{ site.baseurl }}/Concepts/Aliases/#resolving-aliases), so we must keep a note of it.
 
 ![The property definition properties, showing the general tab.](property-1.png)
 
@@ -214,7 +214,7 @@ Note that the property value now states the version number. This is included bec
 
 ### Creating documents
 
-To create a document from this template, simply double-click on it. In the screenshot below I have created a new document from the template, and the system has copied across the `Original Template` property from the template itself. Even if the template gets changed in the future, the lookup continues to point to the specific version that was used to create the document.
+To create a document from this template, simply double-click on it. In the screenshot below a new document has been created from the template, and the system has copied across the `Original Template` property from the template itself. Even if the template gets changed in the future, the lookup continues to point to the specific version that was used to create the document.
 
 ![The metadata card of a document, showing the "Original Template" property added.](document-from-template.png)
 
