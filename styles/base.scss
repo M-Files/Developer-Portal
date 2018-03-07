@@ -101,6 +101,12 @@ h3 {
     z-index: 10003;
 }
 
+article.page li > p
+{
+	/* remove the margin on paragraphs inside list items (typical markdown rendering) */
+	margin: 0px;
+}
+
 article.page p,
 	article.page li
 {
