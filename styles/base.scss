@@ -101,7 +101,8 @@ h3 {
     z-index: 10003;
 }
 
-p
+article.page p,
+	article.page li
 {
 	/* for easier reading, space out the lines a little */
 	line-height: 1.5em;
