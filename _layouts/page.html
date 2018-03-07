@@ -25,12 +25,16 @@ layout: default
 
 	<article role="main">
 		
+		{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
+		{% assign inthisarticle_size = inthisarticle | size %}
+		{% if inthisarticle_size > 0 %}
 		<nav id="in-page-nav" role="navigation">
 			<div id="in-this-article">
 				<h1>In this article</h1>
-				{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}
+				{{ inthisarticle }}
 			</div>
 		</nav>
+		{% endif %}
 
 		{% if page.prerelease %}
 			<p class="note prerelease">Please note that this page content refers to a pre-release version of software.  Please read the information below thoroughly for more information.</p>
@@ -42,8 +46,12 @@ layout: default
 		{{ content }}
 	</article>
 
-	<h1 class="other-articles">You may also be interested in...</h1>
-	{% capture other %}{% include other-articles.html items=site.data.navigation %}{% endcapture %}{{ other | strip_newlines }}
+	{% capture other %}{% include other-articles.html items=site.data.navigation %}{% endcapture %}
+	{% assign other_size = other | size %}
+	{% if other_size > 0 %}
+		<h1 class="other-articles">You may also be interested in...</h1>
+		{{ other | strip_newlines }}
+	{% endif %}
 
 	{% if page.comments %} 
 	{% include disqus.html %}
