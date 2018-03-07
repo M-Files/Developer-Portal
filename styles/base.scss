@@ -107,6 +107,11 @@ article.page p,
 	/* for easier reading, space out the lines a little */
 	line-height: 1.5em;
 }
+article.page ol[role="navigation"] li,
+	article.page nav li
+{
+	line-height:  initial;
+}
 
 /* hide the page h1, as it's a duplicate of the big blue one */
 
