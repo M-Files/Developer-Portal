@@ -35,8 +35,15 @@
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
+		
+{% if page.noInnerLinks  %}
+	{% assign bodycssClass = "" %}
+{% else %}
+	{% assign bodycssClass = "has-in-page-nav" %}
+{% endif %}
 
-<body class="has-in-page-nav">
+
+<body class="{{bodycssClass}}">
 		
     <header>
         <i class="material-icons" id="hamburger">menu</i>

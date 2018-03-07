@@ -82,4 +82,8 @@ table.uix > thead > tr > th:nth-child(3)
 		top: 0px;
 		left: 0px;
 	}
+	article > table.samples tbody tr:hover
+	{
+		background-color: inherit;
+	}
 }

@@ -3,6 +3,7 @@ layout: page
 title: COM API Samples
 includeInSearch: true
 breadcrumb: COM API
+noInnerLinks: true
 ---
 
 Please note that these samples and libraries are provided "as-is" and with no warranty, explicit or otherwise. You should ensure that the functionality of these libraries meet your requirements, and thoroughly test them, prior to using in any production scenarios.  The items linked below are designed as teaching tools and may not be fully complete.

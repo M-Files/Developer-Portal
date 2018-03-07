@@ -3,6 +3,7 @@ layout: page
 title: Sample Processes
 includeInSearch: true
 breadcrumb: Processes
+noInnerLinks: true
 ---
 
 The following samples do not necessarily utilise one specific technology, but are samples of implementing specific processes using M-Files APIs and Frameworks:
