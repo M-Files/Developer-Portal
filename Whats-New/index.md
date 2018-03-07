@@ -7,6 +7,10 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### March 2018
+* General
+	* Added process [sample to show how to maintain the original template used to create a document]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/).
+
 ### February 2018
 * UX/Design guidance
 	* Added [UX/Design guidance]({{ site.baseurl}}/UX-Design/) section to the developer portal.

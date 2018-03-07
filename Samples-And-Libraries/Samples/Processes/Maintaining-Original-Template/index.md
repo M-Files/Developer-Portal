@@ -43,6 +43,79 @@ Next, let's create some of the structure that we need. This structure could be c
 
 ### A VBScript approach
 
+If using VBScript we have to manually attach VBScript to both the `BeforeCreateNewObjectFinalize` and `BeforeCheckInChangesFinalize` events.  The actual code can be the same, though:
+
+```vbscript
+Option Explicit
+
+' The alias of the "Original Property" property definition.
+Const strOriginalTemplatePropertyDefAlias = "MFiles.PropertyDef.OriginalTemplate"
+
+' Resolve the property definition alias to an ID.
+Dim intOriginalTemplatePropertyDefID
+intOriginalTemplatePropertyDefID = GetPropertyDefIDByAlias(Vault, strOriginalTemplatePropertyDefAlias)
+
+' Sanity.
+If intOriginalTemplatePropertyDefID = -1 Then
+	Err.Raise MFScriptCancel, "A property definition with alias '" & strOriginalTemplatePropertyDefAlias & "' could not be found in the vault."
+End If
+
+' Load the properties of the current object.
+Dim objPropertyValues
+Set objPropertyValues = Vault.ObjectPropertyOperations.GetProperties(ObjVer, True)
+
+' Retrieve the "Is template" property.
+Dim objIsTemplateProperty
+Set objIsTemplateProperty = objPropertyValues.SearchForPropertyEx(MFBuiltInPropertyDefIsTemplate, True)
+
+' Only do this for objects that have the "Is template" property set to true.
+If Not objIsTemplateProperty Is Nothing Then
+
+	If objIsTemplateProperty.Value.Value = True Then
+
+		' The "Is template" property is set to true.
+
+		' Create a lookup pointing at the current object.
+		' Ensuring that the "Version" is set will mean that this will point to this specific version of the object.
+		Dim objLookup
+		Set objLookup = CreateObject("MFilesAPI.Lookup")
+		objLookup.ObjectType = ObjVer.Type
+		objLookup.Item = ObjVer.ID
+		objLookup.Version = ObjVer.Version
+
+		' Create a property value for the "Original Template" property value
+		' and set its value to the lookup.
+		Dim objOriginalTemplatePropertyValue
+		Set objOriginalTemplatePropertyValue = CreateObject("MFilesAPI.PropertyValue")
+		objOriginalTemplatePropertyValue.PropertyDef = intOriginalTemplatePropertyDefID
+		objOriginalTemplatePropertyValue.Value.SetValueToLookup objLookup
+
+		' Update the object.
+		Vault.ObjectPropertyOperations.SetProperty ObjVer, objOriginalTemplatePropertyValue
+
+		' Ensure that the audit is correct.
+		' ref: http://developer.m-files.com{{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting
+		Dim objLastModifiedByTypedValue
+		Set objLastModifiedByTypedValue = CreateObject("MFilesAPI.TypedValue")
+		objLastModifiedByTypedValue.SetValue MFDatatypeLookup, CurrentUserID
+		Vault.ObjectPropertyOperations.SetLastModificationInfoAdmin ObjVer, True, objLastModifiedByTypedValue, False, Nothing
+
+	End If
+
+End If
+
+''' Helper functions
+
+''' Retrieves the ID of a property definition from its alias.
+''' Returns the ID or -1 if the alias is not found, or if more than one property definition uses the alias.
+' ref: https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultPropertyDefOperations~GetPropertyDefIDByAlias.html
+Function GetPropertyDefIDByAlias(oVault, sPropertyDefAlias)
+
+	GetPropertyDefIDByAlias = oVault.PropertyDefOperations.GetPropertyDefIDByAlias(sPropertyDefAlias)
+
+End Function
+```
+
 ### A Vault Application Framework approach
 
 [Create a new VAF application]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/), clear down the boilerplate code, and create an [event handler]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/). This event handler will react before the object is created and will add the `Original Template` property to the object before it's saved. The value for the property will be a pointer to the current version of the current document:
@@ -124,8 +197,8 @@ namespace MaintainOriginalTemplate
 			env.ObjVerEx.Properties.Add(-1, originalTemplatePropertyValue);
 			env.ObjVerEx.SaveProperties();
 
-			// Audit.
-			// {{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting
+			// Ensure that the audit is correct.
+			// ref: http://developer.m-files.com{{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting
 			env.ObjVerEx.SetModifiedBy(env.CurrentUserID);
 		}
 
