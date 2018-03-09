@@ -3,6 +3,7 @@ layout: page
 title: Internal and External IDs
 includeInSearch: true
 breadcrumb: IDs
+redirect_from: /Getting-Started/Aliases/
 ---
 
 All objects within M-Files (excluding unmanaged objects from [IML repositories](https://www.m-files.com/en/intelligent-metadata-layer-ecm)) are identified using a combination of an *object type ID* and an *object ID*.  The combination of these IDs - which are both positive integers - uniquely identify a specific object within the M-Files vault.  In addition, M-Files maintains a version history for each managed object, with the version number also being defines as a positive integer.

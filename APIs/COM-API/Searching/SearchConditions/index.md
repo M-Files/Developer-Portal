@@ -332,7 +332,7 @@ In the example below, we will search using three search conditions:
 	1. The search condition will describe the state of the `Country` property, which must equal `United Kingdom` (lines 53-64).
 	2. The search condition will define a single indirection level, showing that the `Contact` must be related to a `Customer` object with the correct `Country` (lines 66-71).
 
-In the sample below we have hard-coded the vault structural element Ids.  This is bad practice ([aliases should be used instead]({{ site.baseurl }}/Concepts/Aliases/)), but this is shown to keep the code concise.
+In the sample below we have hard-coded the vault structural element Ids.  This is bad practice ([aliases should be used instead]({{ site.baseurl }}/Getting-Started/Aliases/)), but this is shown to keep the code concise.
 {:.note}
 
 ```csharp

@@ -11,15 +11,15 @@
 		"Title": "What's New"
 	},
 	{
-		"Link": "/Concepts/",
+		"Link": "/Getting-Started/",
 		"Icon": "zmdi-play",
-		"Title": "Concepts",
+		"Title": "Getting Started",
 		"Items": [{
-				"Link": "/Concepts/Aliases/",
+				"Link": "/Getting-Started/Aliases/",
 				"Title": "Aliases"
 			},
 			{
-				"Link": "/Concepts/InternalAndExternalIDs/",
+				"Link": "/Getting-Started/InternalAndExternalIDs/",
 				"Title": "Internal and External IDs"
 			}
 		]

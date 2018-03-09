@@ -3,6 +3,7 @@ layout: page
 title: Referencing M-Files structural vault elements by alias
 includeInSearch: true
 breadcrumb: Aliases
+redirect_from: /Concepts/Aliases/
 ---
 
 The M-Files API primarily uses IDs when referencing structural vault elements.  For example, the following code may update a "Description" property (with an example ID of 1090) on an object:
