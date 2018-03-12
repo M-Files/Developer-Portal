@@ -15,6 +15,31 @@ Most organizations simply have one vault which contains everything that they nee
 In order to work with information within an M-Files vault, you will typically need to obtain a [Vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html) reference.  When using [VBScript]({{ site.baseurl }}/Built-In/VBScript/) this is often already available as a built-in variable named `Vault`.  When using the [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) this will be provided as part of the `Environment` method parameter, or the `VaultApplicationBase.PermanentVault` reference can be used.  When using the [COM API]({{ site.baseurl }}/APIs/COM-API/), a reference will be obtained as part of the [connection process](/APIs/COM-API/Connecting-And-Authenticating/).  A vault reference is not required when using the [REST API]({{ site.baseurl }}/APIs/REST-API/).
 {:.note.api}
 
+## Objects and versions
+
+Items stored within an M-Files vault - aside from value lists - are considered `Objects`.  Each document stored to M-Files is an object.  Each project - if a vault is configured to store projects - is an object.  Each object is of a specific [object type](#object-types) and [class](#classes), and has a series of [property values](#property-values) which together make up its metadata.  Some objects contain files (e.g. documents) and some objects do not.
+
+### Checking in and out.
+
+Whenever the metadata or files of an object are altered, M-Files automatically creates a new `Object Version`.  These versions can be seen by viewing the object's history.  In order to maintain this audit trail, M-Files uses a process whereby an object is checked out, altered, then checked in.  [Objects can only be checked out by one person at a time](https://www.m-files.com/user-guide/latest/eng/Why_cant_I_edit_a_document_that_has_been_checked_out.html?hl=check%2Cout).
+
+For changes that may take some time (e.g. editing a file), M-Files may prompt the user to [check out the object](https://www.m-files.com/user-guide/latest/eng/Check_out.html?hl=check%2Cout).  No other user can make alterations to this object until it is [checked back in](https://www.m-files.com/user-guide/latest/eng/Check_in.html), the [checkout is discarded](https://www.m-files.com/user-guide/latest/eng/Undo_checkout.html), or an administrator overrides the checkout.
+
+For smaller, atomic, changes, M-Files will often perform the check out and in transparently for the user.  This can be seen by finding an object and altering its metadata: when clicking the `Save` button, M-Files will check out the object, persist the changes, then check it back in again.
+
+Any operation that alters the object's metadata or files causes a new version to be created, including moving items through workflows.
+{:.note}
+
+![Viewing an object's history](/Built-In/VBScript/Audit-Trail-And-Scripting/history-fixed.png)
+
+### ObjID
+
+The [ObjID](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjID.html) class represents a single object in the M-Files vault.  The combination of the `Type` (the internal ID of the object type) and the `ID` (the M-Files [internal ID](InternalAndExternalIDs)) uniquely identify an object in the system.  The `ObjID` is used to reference items when the version is not important, such as for checking out an object.
+
+### ObjVer
+
+The [ObjVer](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjVer.html) class represents a specific version of a single object in the M-Files vault.  The combination of the `Version` number (always a positive integer, starting at 1), the `Type` and the `ID` uniquely identify a specific version of an object in the system.  The `ObjVer` is used to reference items when the version is important, such as loading the property values that were on a specific object version.
+
 ## M-Files vault structure
 
 The structure of the M-Files vault can be altered by administrators using the [M-Files Admin](https://www.m-files.com/user-guide/latest/eng/M-Files_server_administrator.html) software.
@@ -120,12 +145,25 @@ Retrieving and setting property values on an object version is done via [VaultOb
 
 [SetProperty](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultObjectPropertyOperations~SetProperty.html) can be used to update a single property value on an object version, and [SetProperties](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultObjectPropertyOperations~SetProperties.html) to set multiple property values on one object.  Note that [SetAllProperties](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultObjectPropertyOperations~SetAllProperties.html) must be used if the class of the object is to change.
 
+A property can be removed using [RemoveProperty](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultObjectPropertyOperations~RemoveProperty.html).
+
 When dealing with multiple objects, [GetPropertiesOfMultipleObjects](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultObjectPropertyOperations~GetPropertiesOfMultipleObjects.html) and [SetPropertiesOfMultipleObjects](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultObjectPropertyOperations~SetPropertiesOfMultipleObjects.html) may be used.
 {:.note}
 
 #### Property values in the REST API
 
+Retrieving and setting property values on an object version is done via the [/objects/(type)/(objectid)/(version)/properties](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties.html) endpoint.
 
+Issuing a HTTP GET to [/objects/(type)/(objectid)/(version)/properties](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties.html) will retrieve all property values on an object version, and issuing a GET to [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html) will retrieve a single property value.
+
+Issuing a HTTP PUT to [/objects/(type)/(objectid)/(version)/properties](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties.html) will set the property values on an object version, and issuing a PUT to [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html) will set a single property value.
+
+A property can be removed by issuing a HTTP DELETE to [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html).
+
+When dealing with multiple objects, the [/objects/properties](http://www.m-files.com/mfws/resources/objects/properties.html) endpoint may be used.
+
+HTTP PUT and DELETE requests may not work in some scenarios.  Instead, it is recommended that [HTTP PUT and DELETE methods are routed via the _method querystring parameter](http://www.m-files.com/mfws/compatibility.html).
+{:.note.warning}
 
 ### Workflows
 
@@ -142,11 +180,7 @@ The current workflow and state of an object are held in its [property values](#p
 
 #### Workflows in the REST API
 
-`Worfklow` information can be accessed via the [/structure/workflows](www.m-files.com/mfws/resources/structure/workflows.html) endpoint.  Information on states within each workflow can be accessed via the [/structure/workflows/(id)/states/](www.m-files.com/mfws/resources/structure/workflows/id/states.html) endpoint.
-
-### Permissions
-
-## Objects and versions
+`Worfklow` information can be accessed via the [/structure/workflows](http://www.m-files.com/mfws/resources/structure/workflows.html) endpoint.  Information on states within each workflow can be accessed via the [/structure/workflows/(id)/states/](http://www.m-files.com/mfws/resources/structure/workflows/id/states.html) endpoint.
 
 ## Tips and tricks
 
