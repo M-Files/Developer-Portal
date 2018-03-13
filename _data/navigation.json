@@ -14,7 +14,15 @@
 		"Link": "/Getting-Started/",
 		"Icon": "zmdi-play",
 		"Title": "Getting Started",
-		"Items": [{
+		"Items": [
+			{
+				"Link": "/Getting-Started/Objects-And-Versions/",
+				"Title": "Objects and Versions"
+			},{
+				"Link": "/Getting-Started/Vault-Structure/",
+				"Title": "Vault Structure"
+			},
+			{
 				"Link": "/Getting-Started/Aliases/",
 				"Title": "Aliases"
 			},
