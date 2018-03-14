@@ -20,15 +20,16 @@
 				"Title": "Objects and Versions"
 			},{
 				"Link": "/Getting-Started/Vault-Structure/",
-				"Title": "Vault Structure"
-			},
-			{
-				"Link": "/Getting-Started/Aliases/",
-				"Title": "Aliases"
-			},
-			{
-				"Link": "/Getting-Started/InternalAndExternalIDs/",
-				"Title": "Internal and External IDs"
+				"Title": "Vault Structure",
+				"Items": [
+					{
+						"Link": "/Getting-Started/Vault-Structure/Aliases/",
+						"Title": "Aliases"
+					},
+					{
+						"Link": "/Getting-Started/Vault-Structure/InternalAndExternalIDs/",
+						"Title": "Internal and External IDs"
+					}]
 			}
 		]
 	},
