@@ -19,6 +19,12 @@ If you are testing the deployed application from your local machine then ensure 
 
 ## Tips and tricks
 
+### Deploying a UIX application alongside a VAF application
+
+[User Interface eXtensibility]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/) applications are sometimes deployed alongside [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) applications.  A good example is where a client-side application depends upon a server-side application for some functionality.
+
+An example of distributing applications like this is shown in the [distributing child applications]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Distributing-Child-Applications/) page.
+
 ### .mfappx
 
 The zipped file can be renamed to have a `.mfappx` extension (e.g. `MyApp.mfappx`) if you wish to differentiate it from other zip files.  The functionality does not change.
