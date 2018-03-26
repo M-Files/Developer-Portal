@@ -302,11 +302,14 @@
 				"Title": "Distributing child applications"
 			},
 			{
-				"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio-Template/",
-				"Title": "Visual Studio Template",
+				"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/",
+				"Title": "Visual Studio Integration",
 				"Items": [{
-					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio-Template/Code-Snippets/",
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/",
 					"Title": "Code Snippets"
+				},{
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes/",
+					"Title": "Attach to VAF Processes button"
 				}]
 			},
 			{
