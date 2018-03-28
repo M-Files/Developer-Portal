@@ -13,6 +13,8 @@ The structure of the M-Files vault can be altered by administrators using the [M
 Any object type can be allowed to [have files](https://www.m-files.com/user-guide/latest/eng/New_object_type.html), but it is recommended that documents are always stored within the built-in `Documents` object type.  This object type behaves differently in many situations and is best suited for storage of files.
 {:.note.warning}
 
+![Object types in the M-Files Admin](object-types.png)
+
 ### Object types in the COM API
 
 `Object Type` information can be accessed via the [VaultObjectTypeOperations](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectTypeOperations.html) class.  When working with object types, most information can be obtained from the [ObjType](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectTypeOperations~GetObjectType.html) class, although the [ObjTypeAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjTypeAdmin.html) class contains administrative information such as external object type connection and any [aliases]({{ site.baseurl }}/Getting-Started/Aliases/).
@@ -60,14 +62,6 @@ A property definition is different to a [Property Value](#property-values).  A p
 
 A property definition must be given a name and a [data type](#data-types).  Values for a property can be either entered by the user when the object is created (e.g. on the metadata card), or [calculated through some means](https://www.m-files.com/user-guide/latest/eng/Automatic_values.html?hl=calculate).  [Property value validation](https://www.m-files.com/user-guide/latest/eng/Validation.html) can also be done via VBScript or the Vault Application Framework.
 
-### Property definitions in the COM API
-
-`Property Definition` information can be accessed via the [VaultPropertyDefOperations](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultPropertyDefOperations.html) class.  When working with classes, most information can be obtained from the [PropertyDef](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyDef.html) class, although the [PropertyDefAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyDefAdmin.html) class contains additional administrative information such as any [aliases]({{ site.baseurl }}/Getting-Started/Aliases/).
-
-### Property definitions in the REST API
-
-`Property Definition` information can be accessed via the [/structure/properties](http://www.m-files.com/mfws/resources/structure/properties.html) endpoint.
-
 ### Data types
 
 The following [data types](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFDataType.html) are supported within M-Files:
@@ -91,6 +85,14 @@ The following [data types](https://www.m-files.com/api/documentation/latest/inde
 * `Number (real)`: The user can enter a number in decimal format (e.g. 1.2).
 
 * `Boolean`: The user can choose between true/yes and false/no values.  This property type can be customized using the [metadata card configuration]({{ site.baseurl }}/Built-In/Metadata-Card-Configuration/) to appear as a checkbox.
+
+### Property definitions in the COM API
+
+`Property Definition` information can be accessed via the [VaultPropertyDefOperations](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultPropertyDefOperations.html) class.  When working with classes, most information can be obtained from the [PropertyDef](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyDef.html) class, although the [PropertyDefAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyDefAdmin.html) class contains additional administrative information such as any [aliases]({{ site.baseurl }}/Getting-Started/Aliases/).
+
+### Property definitions in the REST API
+
+`Property Definition` information can be accessed via the [/structure/properties](http://www.m-files.com/mfws/resources/structure/properties.html) endpoint.
 
 ## Property values
 

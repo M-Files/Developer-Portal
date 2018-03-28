@@ -1,7 +1,8 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 {% for item in include.items %}
 	{% if item.Link == navurl %}
-		{% assign children = item.Items | default: include.parent.Items | default: site.data.navigation %}
+		{% assign children = item.AssociatedItems | default: [] %}
+		{% assign children = children | concat: item.Items | default: include.parent.Items | default: site.data.navigation %}
 		{% assign childCount = children | size | default: 0 %}
 		{% if childCount != 0 %}
 			<nav class="other-articles" role="navigation">

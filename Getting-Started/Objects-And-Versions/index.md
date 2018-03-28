@@ -19,18 +19,31 @@ Any operation that alters the object's metadata or files causes a new version to
 
 ![Viewing an object's history](/Built-In/VBScript/Audit-Trail-And-Scripting/history-fixed.png)
 
-## COM API
+## API objects
 
-### API objects
-
-#### ObjID
+### ObjID
 
 The [ObjID](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjID.html) class represents a single object in the M-Files vault.  The combination of the `Type` (the internal ID of the object type) and the `ID` (the M-Files [internal ID](../InternalAndExternalIDs)) uniquely identify an object in the system.  The `ObjID` is used to reference items when the version is not important, such as for checking out an object.
 
-#### ObjVer
+### ObjVer
 
 The [ObjVer](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjVer.html) class represents a specific version of a single object in the M-Files vault.  The combination of the `Version` number (always a positive integer, starting at 1), the `Type` and the `ID` uniquely identify a specific version of an object in the system.  The `ObjVer` is used to reference items when the version is important, such as loading the property values that were on a specific object version.
 
-## REST API
+Object versions will be created from 1 upwards, but it is not safe to assume that all object versions are still available in the vault, nor that a specific user can necessarily see all versions.  The [GetHistory](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~GetHistory.html) API method will return the items which are available for the current user.
+{:.note.warning}
 
-Details on creating and updating objects using the REST API can be found [in the dedicated page]({{ site.baseurl }}/APIs/REST-API/Creating-And-Updating-Objects/).
+## Managing objects using the API
+
+The following pages discuss the creation and management of objects in an M-Files vault:
+
+### COM API
+
+* [Creating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/)
+* [Updating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/)
+* [Deleting and destroying objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Deleting-Objects/)
+
+### REST API
+
+* [Creating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Creating-Objects/)
+* [Updating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Updating-Objects/)
+* [Deleting and destroying objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Deleting-Objects/)
