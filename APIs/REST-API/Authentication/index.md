@@ -91,6 +91,7 @@ Cookie-based sessions are typically used in [single-sign-on scenarios]({{ site.b
 // Create a web request for the single sign on authentication endpoint,
 // passing it the vault GUID (without braces).
 var authenticationRequest = (HttpWebRequest)WebRequest.Create( "/WebServiceSSO.aspx?popup=1&vault=C840BE1A-5B47-4AC0-8EF7-835C166C8E24" );
+authenticationRequest.CookieContainer = new CookieContainer();
 
 // Execute the request.
 var authenticationResponse = (HttpWebResponse)authenticationRequest.GetResponse();

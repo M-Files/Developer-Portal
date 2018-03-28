@@ -13,6 +13,10 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 	* Added process [sample to show how to maintain the original template used to create a document]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/).
 	* Renamed `Concepts` page to [Getting Started]({{ site.baseurl }}/Getting-Started/), and populated content to help developers get started with M-Files terminology and structures.
 	* Added details on how to create an [Attach to VAF Processes button]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Process).
+* REST API
+	* Updated code sample for retrieving cookies for authentication to correctly instantiate the CookieContainer.
+* UX/Design
+	* Updated icons with March release.
 
 ### February 2018
 
