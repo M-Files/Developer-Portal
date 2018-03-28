@@ -91,7 +91,7 @@ if(null == vault)
 
 // We want to alter the document with ID 664.
 var objID = new MFilesAPI.ObjID();
-objID.SetIDs( 
+objID.SetIDs(
 	ObjType: (int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
 	ID: 664);
 
@@ -139,7 +139,7 @@ if(null == vault)
 
 // We want to alter the document with ID 664.
 var objID = new MFilesAPI.ObjID();
-objID.SetIDs( 
+objID.SetIDs(
 	ObjType: (int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
 	ID: 664);
 
@@ -151,7 +151,7 @@ if (checkedOutObjectVersion.ObjVer.Type == (int)MFBuiltInObjectType.MFBuiltInObj
 	&& checkedOutObjectVersion.SingleFile)
 {
 	vault.ObjectOperations.SetSingleFileObject(
-		ObjVer: checkedOutObjectVersion.ObjVer, 
+		ObjVer: checkedOutObjectVersion.ObjVer,
 		SingleFile: false); // Setting to false alters it to a multi-file-document.
 }
 
