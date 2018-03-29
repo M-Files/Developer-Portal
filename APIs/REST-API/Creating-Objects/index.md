@@ -6,6 +6,9 @@ breadcrumb: Creating objects
 redirect_from: /APIs/REST-API/Creating-And-Updating-Objects/
 ---
 
+This page focuses on creating objects using the REST API.  Details on creating objects using the COM API can be found [in the dedicated page]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/).
+{:.note}
+
 To create an object via the M-Files Web Service, make a POST request to [/objects/(type)](http://www.m-files.com/mfws/resources/objects/type.html).  This endpoint takes an [ObjectCreationInfo](http://www.m-files.com/mfws/structs/objectcreationinfo.html) containing information for the new object and returns an [ObjectVersion](http://www.m-files.com/mfws/structs/objectversion.html) representing the newly-created object.
 
 The examples below are written in C# and use objects from the [downloadable code samples](http://www.m-files.com/mfws/samples.html), which contains an `MFWSStructs.cs` file.  This file contains structures that mimic the JSON structures expected by the M-Files Web Service.  These are used to simplify the creation of objects, but are not directly required for use with the Web Service.  Note the bug mentioned in the [tips and tricks](#tips-and-tricks) section below.
