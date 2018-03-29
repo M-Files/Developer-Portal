@@ -118,7 +118,7 @@ End Function
 
 ### A Vault Application Framework approach
 
-[Create a new VAF application]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/), clear down the boilerplate code, and create an [event handler]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/). This event handler will react before the object is created and will add the `Original Template` property to the object before it's saved. The value for the property will be a pointer to the current version of the current document:
+[Create a new VAF application]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/), clear down the boilerplate code, and create an [event handler]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/). This event handler will react before the object is created and will add the `Original Template` property to the object before it's saved. The value for the property will be a pointer to the current version of the current document:
 
 ```csharp
 using System;

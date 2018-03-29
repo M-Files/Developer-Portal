@@ -40,7 +40,7 @@ In the sample above the name of the vault extension method was `VaultExtensionMe
 
 To create the Vault Application Framework application:
 
-1. Follow the instructions in the [Visual Studio Template guide]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/) to create a basic Vault Application Framework application.
+1. Follow the instructions in the [Visual Studio Template guide]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/) to create a basic Vault Application Framework application.
 2. Note the application's `guid`, which can be found in the `appdef.xml` file.
 3. Alter the default `VaultApplication.cs` file:
 
@@ -271,7 +271,7 @@ This requests for PowerShell to execute two commands:
 
 ### Deployment
 
-When the Vault Application Framework application is built within Visual Studio, it should automatically deploy to the local machine.  If you do not have M-Files running locally then [manually deploy the application to the server]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/#building-and-deploying).
+When the Vault Application Framework application is built within Visual Studio, it should automatically deploy to the local machine.  If you do not have M-Files running locally then [manually deploy the application to the server]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/#building-and-deploying).
 
 The two applications should be shown as installed within the M-Files Admin tool:
 

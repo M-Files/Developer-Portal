@@ -355,7 +355,7 @@ We will assume that the workflow state that this code is executing on has an ali
 
 1. Create a basic [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) application from the Visual Studio template.
 2. Remove all the code from the template application.
-3. Add a stub event handler using the [Visual Studio Code Snippets](http://developer.m-files.com/Frameworks/Vault-Application-Framework/Visual-Studio-Template/Code-Snippets/) (start typing `MFVAFStateAction`; once Visual Studio selects it, press `Tab` twice to create the snippet).
+3. Add a stub event handler using the [Visual Studio Code Snippets](http://developer.m-files.com/Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/) (start typing `MFVAFStateAction`; once Visual Studio selects it, press `Tab` twice to create the snippet).
 4. Add some code to stop the code executing if we're [passed null data](https://en.wikipedia.org/wiki/Defensive_programming).
 
 ```csharp

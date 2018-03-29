@@ -12,7 +12,7 @@ M-Files has published a number of public samples within our [MFilesSamplesAndLib
 
 ## Introductory
 
-The [Visual Studio Template page]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/) contains a walkthrough of creating your first VAF application.
+The [Visual Studio Template page]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/) contains a walkthrough of creating your first VAF application.
 
 ## Sample applications
 

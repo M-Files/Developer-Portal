@@ -11,7 +11,7 @@ Background Operations provide developers with the means to execute code in an as
 
 ## Executing an operation after a time period
 
-The following method is adapted from the [Visual Studio Template]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/):
+The following method is adapted from the [Visual Studio Template]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/):
 
 ```csharp
 /// <summary>
