@@ -5,7 +5,7 @@ includeInSearch: true
 breadcrumb: Updating objects
 ---
 
-This page focuses on creating objects using the COM API.  Details on creating and updating objects using the REST API can be found [in the dedicated page]({{ site.baseurl }}/APIs/REST-API/Updating-Objects/).
+This page focuses on creating objects using the COM API.  Details on updating objects using the REST API can be found [in the dedicated page]({{ site.baseurl }}/APIs/REST-API/Updating-Objects/).
 {:.note}
 
 Updating an object (e.g. the file, its metadata, or to move it through a workflow) always requires three steps:

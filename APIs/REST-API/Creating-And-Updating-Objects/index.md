@@ -468,9 +468,7 @@ Content-Length: 1435
   "ObjectCapabilityFlags": -1,
   "ObjectFlags": 68,
   "propertyID": 0,
-  "BaseProperties": [
-    
-  ]
+  "BaseProperties": []
 }
 ```
 

@@ -123,16 +123,22 @@
 				"Title": "Connecting and authenticating"
 			},
 			{
-				"Link": "/APIs/COM-API/Creating-Objects/",
-				"Title": "Creating objects"
-			},
-			{
-				"Link": "/APIs/COM-API/Updating-Objects/",
-				"Title": "Updating objects"
-			},
-			{
-				"Link": "/APIs/COM-API/Deleting-Objects/",
-				"Title": "Deleting objects"
+				"Link": "#",
+				"Title": "Managing objects",
+				"Items" : [
+					{
+						"Link": "/APIs/COM-API/Creating-Objects/",
+						"Title": "Creating objects"
+					},
+					{
+						"Link": "/APIs/COM-API/Updating-Objects/",
+						"Title": "Updating objects"
+					},
+					{
+						"Link": "/APIs/COM-API/Deleting-Objects/",
+						"Title": "Deleting objects"
+					}
+				]
 			},
 			{
 				"Link": "/APIs/COM-API/Searching/",
@@ -177,16 +183,22 @@
 				}]
 			},
 			{
-				"Link": "/APIs/REST-API/Creating-Objects/",
-				"Title": "Creating objects"
-			},
-			{
-				"Link": "/APIs/REST-API/Updating-Objects/",
-				"Title": "Updating objects"
-			},
-			{
-				"Link": "/APIs/REST-API/Deleting-Objects/",
-				"Title": "Deleting objects"
+				"Link": "#",
+				"Title": "Managing objects",
+				"Items" : [
+					{
+						"Link": "/APIs/REST-API/Creating-Objects/",
+						"Title": "Creating objects"
+					},
+					{
+						"Link": "/APIs/REST-API/Updating-Objects/",
+						"Title": "Updating objects"
+					},
+					{
+						"Link": "/APIs/REST-API/Deleting-Objects/",
+						"Title": "Deleting objects"
+					}
+				]
 			},
 			{
 				"Link": "/APIs/REST-API/Searching/",

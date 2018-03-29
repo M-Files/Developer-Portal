@@ -5,7 +5,7 @@ includeInSearch: true
 breadcrumb: Creating objects
 ---
 
-This page focuses on creating objects using the COM API.  Details on creating and updating objects using the REST API can be found [in the dedicated page]({{ site.baseurl }}/APIs/REST-API/Creating-Objects/).
+This page focuses on creating objects using the COM API.  Details on creating objects using the REST API can be found [in the dedicated page]({{ site.baseurl }}/APIs/REST-API/Creating-Objects/).
 {:.note}
 
 Creating an object is done by calling [VaultObjectOperations.CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html), [VaultObjectOperations.CreateNewObjectEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html), or [VaultObjectOperations.CreateNewObjectExQuick](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html).  The `CreateNewObject` method is the only version supported in the [User Interface Extensibility Framework on the web](https://www.m-files.com/UI_Extensibility_Framework/#ApiSupportInMFilesWeb.html).
