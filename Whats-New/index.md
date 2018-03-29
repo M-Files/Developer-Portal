@@ -82,7 +82,7 @@ The User Interface Extensibility Framework section was created and launched.
 * Vault Application Framework
 	* Detailed [RequiredVaultAccess]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/) when using Vault Extension Methods
 	* Detailed how to [access content from .NET configuration files]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/DotNet-Configuration-Files/) within the Vault Application Framework
-	* Added information on the [Vault Application Framework Code Snippets]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/Code-Snippets/), including how to get them and use them
+	* Added information on the [Vault Application Framework Code Snippets]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/), including how to get them and use them
 * General
 	* Added line numbers to code samples
 	* Better layout on very small (e.g. phone) resolutions
