@@ -13,8 +13,17 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 	* Added process [sample to show how to maintain the original template used to create a document]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/).
 	* Renamed `Concepts` page to [Getting Started]({{ site.baseurl }}/Getting-Started/), and populated content to help developers get started with M-Files terminology and structures.
 	* Added details on how to create an [Attach to VAF Processes button]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes).
+* COM API
+	* Examples shown for managing objects:
+		* [Creating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/)
+		* [Updating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/)
+		* [Deleting and destroying objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Deleting-Objects/)
 * REST API
-	* Updated code sample for retrieving cookies for authentication to correctly instantiate the CookieContainer.
+	* Updated [code sample for retrieving cookies for authentication](/APIs/REST-API/Authentication/#cookie-based-sessions) to correctly instantiate the CookieContainer.
+	* Examples shown for managing objects:
+		* [Creating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Creating-Objects/)
+		* [Updating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Updating-Objects/)
+		* [Deleting and destroying objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Deleting-Objects/)
 * UX/Design
 	* Updated icons with March release.
 
