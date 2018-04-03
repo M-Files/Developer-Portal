@@ -5,12 +5,12 @@ includeInSearch: true
 breadcrumb: Deleting objects
 ---
 
-This page focuses on creating objects using the COM API.  Details on deleting objects using the REST API can be found [in the dedicated page]({{ site.baseurl }}/APIs/REST-API/Deleting-Objects/).
+This page focuses on deleting and destroying objects using the COM API.  Details on deleting objects using the REST API can be found [in the dedicated page]({{ site.baseurl }}/APIs/REST-API/Deleting-Objects/).
 {:.note}
 
 ## Deleting vs destroying
 
-When removing objects from an M-Files vault, it is important to decide whether the object should be deleted or destroyed.  Deleted objects are simply flagged as deleted and are hidden from most users.  Administrators can access these deleted items (and optionally undelete/restore them) by searching for them using the M-Files Desktop client.  Destroyed objects are permanently removed from the system and cannot be restored.
+When removing objects from an M-Files vault, it is important to decide whether the object should be [deleted](#deleting-objects) or [destroyed](#destroying-objects).  Deleted objects are simply flagged as deleted and are hidden from most users.  Administrators can access these deleted items (and optionally [undelete/restore](#undeleting-objects) them) by searching for them using the M-Files Desktop client.  Destroyed objects (or destroyed versions of an object) are permanently removed from the system and cannot be restored.
 
 ## Deleting objects
 
@@ -122,9 +122,9 @@ vault.ObjectOperations.DestroyObject(
 	ObjectVersion: 1);
 ```
 
-### Destroying all object versions
+### Destroying all versions of an object
 
-To permanently destroy a specific version of an object - leaving all other versions available - call [DestroyObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html), ensuring that `DestroyAllVersions` is set to `true`, and `ObjectVersion` is set to `-1`.
+To permanently destroy all versions of an object call [DestroyObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html), ensuring that `DestroyAllVersions` is set to `true`, and `ObjectVersion` is set to `-1`.
 
 ```csharp
 // Which vault are we connecting to?

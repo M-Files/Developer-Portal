@@ -21,7 +21,7 @@ The code below uses [JSON.NET](http://www.newtonsoft.com/json) to serialize and 
 
 To create a non-document object, execute a POST request to [/objects/(type)](http://www.m-files.com/mfws/resources/objects/type.html) with the property values for the new object.
 
-The sample code includes a dummy authentication token.  For more information on authentication, see <a href="{{ site.baseurl }}/APIs/REST-API/Authentication/">Authentication</a>.
+The sample code includes a dummy authentication token.  For more information on authentication, see [Authentication]({{ site.baseurl }}/APIs/REST-API/Authentication/).
 {:.note}
 
 ```csharp
@@ -89,7 +89,7 @@ The default "Name or Title" property always has the property Id of zero.  Howeve
 
 ```text
 POST http://localhost/REST/objects/0 HTTP/1.1
-X-Authentication: KPhtr_jAux2BYvyqZD-GBMMP8tzQMaQRWLePtH2tRD5cnN15euV_ANJydrOYgejB4PmK61VQkVpRrhTTc7njW5ZYBwHtWpMQagYuqjVJ05xerxQe3rz7mJPdkE_eUnrDqygqKowkOVAh1Usb-hNHA1R5Em0swVw58Lit6fyxtIbtoW8ysMztCkuOmy2vd3CRJB89CKsOE_OHLj2G9JDfCiXhoLbUEtWm8UmsjWbstNK1SJRtNgnm6STe48zm9V7Hyqi9GxDl6i8qgaAQ2qD8S43C0E_BPo2qSSh6Mb4DFJri28_DxPEk-9Nm_FXcrnvrCbNW7a6gZl4myRPt_mgP7A
+X-Authentication: DummyAuthenticationToken
 Content-Type: application/json; charset=utf-8
 Host: localhost
 Cookie: ASP.NET_SessionId=3a2wrpaqv42g1qysstp5nmdz
@@ -146,7 +146,6 @@ X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
 Strict-Transport-Security: max-age=31536000; includeSubDomains;
 Date: Fri, 26 Jan 2018 09:44:34 GMT
-Content-Length: 1011
 
 {
   "Title": "my test document",
@@ -171,7 +170,6 @@ Content-Length: 1011
   "CreatedUtc": "2018-01-26T09:44:33Z",
   "Created": "2018-01-26T09:44:33Z",
   "Files": [
-    
   ],
   "VisibleAfterOperation": true,
   "PathInIDView": "0\\0-999\\659\\S\\v1",
@@ -188,7 +186,6 @@ Content-Length: 1011
   "ObjectFlags": 68,
   "propertyID": 0,
   "BaseProperties": [
-    
   ]
 }
 ```
@@ -239,7 +236,7 @@ objectCreationInfo.Files = new UploadInfo[]
 
 ```text
 POST http://localhost/REST/files HTTP/1.1
-X-Authentication: pajhNYPOfX-KM73zSMHUDcd9dOhfawP-e4RYkeBC_8oeOE_fS_7yMrGQwT4tliFbSB7MKWr-FNTB8WSkzUafRaprZCbYqJ5eWEWxLicRKzz7UR5Wtxz6vXEyOJ04ewAMoBmgm008eDzvIcqKfAcUk-9Oma2EYt_e5IB0RiaY24mRJpClFNCJmAjwsyJNv1fzcFc-wS5cD6xDTwcplg3bOvdRWrYvR7KF2_wWODjflIQZhyKY8BEB2cRAlZMgcCwHACx6Ws_huXvSYQXqqZd9s-wBLEq5oNsF-f0kMxy1UWNHeBYLr32gsnewbdFPopHnvKUxDzOC0r8zEHwEF3FBYA
+X-Authentication: DummyAuthenticationToken
 Host: localhost
 Cookie: ASP.NET_SessionId=tsxugyihuwdyj4vtzalt34je
 Content-Length: 27
@@ -268,7 +265,7 @@ Content-Length: 48
 }
 ```
 
-After a file is uploaded to <a href="http://www.m-files.com/mfws/resources/files.html">/files</a>, an <a href="http://www.m-files.com/mfws/structs/uploadinfo.html">UploadInfo</a> will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
+After a file is uploaded to [/files](http://www.m-files.com/mfws/resources/files.html)</a>, an [UploadInfo](http://www.m-files.com/mfws/structs/uploadinfo.html) will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
 {:.note}
 
 ### Putting it all together
@@ -350,7 +347,7 @@ This shows the HTTP request for the object creation, assuming the file(s) have a
 
 ```text
 POST http://localhost/REST/objects/0 HTTP/1.1
-X-Authentication: pajhNYPOfX-KM73zSMHUDcd9dOhfawP-e4RYkeBC_8oeOE_fS_7yMrGQwT4tliFbSB7MKWr-FNTB8WSkzUafRaprZCbYqJ5eWEWxLicRKzz7UR5Wtxz6vXEyOJ04ewAMoBmgm008eDzvIcqKfAcUk-9Oma2EYt_e5IB0RiaY24mRJpClFNCJmAjwsyJNv1fzcFc-wS5cD6xDTwcplg3bOvdRWrYvR7KF2_wWODjflIQZhyKY8BEB2cRAlZMgcCwHACx6Ws_huXvSYQXqqZd9s-wBLEq5oNsF-f0kMxy1UWNHeBYLr32gsnewbdFPopHnvKUxDzOC0r8zEHwEF3FBYA
+X-Authentication: DummyAuthenticationToken
 Content-Type: application/json; charset=utf-8
 Host: localhost
 Cookie: ASP.NET_SessionId=tsxugyihuwdyj4vtzalt34je
@@ -494,27 +491,27 @@ public class Lookup
     /// Based on M-Files API.
     /// </summary>
     public bool Deleted { get; set; }
-        
+
     /// <summary>
     /// Based on M-Files API.
     /// </summary>
     public string DisplayValue { get; set; }
-        
+
     /// <summary>
     /// Based on M-Files API.
     /// </summary>
     public bool Hidden { get; set; }
-        
+
     /// <summary>
     /// Based on M-Files API.
     /// </summary>
     public int Item { get; set; }
-        
+
     /// <summary>
     /// Based on M-Files API.
     /// </summary>
     public int? Version { get; set; }
-        
+
 }
 ```
 

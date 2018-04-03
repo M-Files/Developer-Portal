@@ -33,7 +33,7 @@ var client = new System.Net.Http.HttpClient();
 client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken");
 
 // Add a comment to the document with ID 459.
-await client.PutAsync(new Uri("http://localhost/REST/objects/0/459/latest/comments"),
+await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/comments?_method=PUT"),
 	new System.Net.Http.StringContent("{ \"Value\" : \"This is a test comment \"}"));
 ```
 
@@ -63,12 +63,12 @@ var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
 var checkedOutObjectVersion  = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
-	await (await client.PutAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout"), httpContent)).Content.ReadAsStringAsync());
+	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 
 // Upload the file.
 var uri =
-	new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/files/{checkedOutObjectVersion.Files[0].ID}/content");
-await client.PutAsync(uri, new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
+	new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/files/{checkedOutObjectVersion.Files[0].ID}/content?_method=PUT");
+await client.PostAsync(uri, new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
 
 // Create the content for the checkin request.
 // NOTE: 0 == "CheckedIn" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
@@ -76,7 +76,7 @@ httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
 Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
-	await (await client.PutAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout"), httpContent)).Content.ReadAsStringAsync());
+	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 ```
 
 The [check out status endpoint documentation](http://www.m-files.com/mfws/resources/objects/type/objectid/version/checkedout.html) states that the PUT request takes an [MFCheckOutStatus](http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html) as an input, but this must be wrapped in a [PrimitiveType](http://www.m-files.com/mfws/structs/primitivetypet.html); this is the reason that the JSON for the checkout/checkin requests contains the "Value" element and not just the check in enum value.
@@ -107,7 +107,7 @@ var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
 var checkedOutObjectVersion  = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
-	await (await client.PutAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout"), httpContent)).Content.ReadAsStringAsync());
+	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 
 Uri uri;
 
@@ -127,8 +127,8 @@ if (checkedOutObjectVersion.SingleFile)
 
 	// Update the property.
 	uri =
-		new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22");
-	await client.PutAsync(uri, httpContent);
+		new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22?_method=PUT");
+	await client.PostAsync(uri, httpContent);
 }
 
 // Upload the new file to a temporary location.
@@ -156,7 +156,7 @@ httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
 Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
-	await (await client.PutAsync(new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout"), httpContent)).Content.ReadAsStringAsync());
+	await (await client.PostAsync(new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 ```
 
 There are a number of endpoints that can be used to add files to an existing object.  The approach above uses the same pattern as creating a new object.
@@ -179,7 +179,7 @@ var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
 var checkedOutObjectVersion  = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
-	await (await client.PutAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout"), httpContent)).Content.ReadAsStringAsync());
+	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 
 // Create the content for the "Single file" property.
 httpContent = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(new PropertyValue()
@@ -195,20 +195,20 @@ httpContent = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(new 
 // Update the property.
 Uri uri =
 	new Uri(
-		$"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22");
-await client.PutAsync(uri, httpContent);
+		$"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22?_method=PUT");
+await client.PostAsync(uri, httpContent);
 
 // Delete the first file.
-uri = new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/{checkedOutObjectVersion.Files[0].ID}");
-await client.DeleteAsync(uri);
+uri = new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/{checkedOutObjectVersion.Files[0].ID}?_method=DELETE");
+await client.PostAsync(uri);
 
 // Create the content for the checkin request.
 // NOTE: 0 == "CheckedIn" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
 httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
-uri = new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout")
-Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(await (await client.PutAsync(uri, httpContent)).Content.ReadAsStringAsync());
+uri = new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout?_method=PUT")
+Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(await (await client.PostAsync(uri, httpContent)).Content.ReadAsStringAsync());
 ```
 
 ## Tips and Tricks
@@ -228,27 +228,27 @@ public class Lookup
     /// Based on M-Files API.
     /// </summary>
     public bool Deleted { get; set; }
-        
+
     /// <summary>
     /// Based on M-Files API.
     /// </summary>
     public string DisplayValue { get; set; }
-        
+
     /// <summary>
     /// Based on M-Files API.
     /// </summary>
     public bool Hidden { get; set; }
-        
+
     /// <summary>
     /// Based on M-Files API.
     /// </summary>
     public int Item { get; set; }
-        
+
     /// <summary>
     /// Based on M-Files API.
     /// </summary>
     public int? Version { get; set; }
-        
+
 }
 ```
 
