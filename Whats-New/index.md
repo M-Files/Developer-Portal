@@ -21,6 +21,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 		* [Creating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Creating-Objects/)
 		* [Updating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Updating-Objects/)
 		* [Deleting and destroying objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Deleting-Objects/)
+	* Added section on [maximising compatibility]({{ site.baseurl }}/APIs/REST-API/#iis-compatibility) when using the M-Files Web Service.
 
 ### March 2018
 
@@ -73,7 +74,6 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 * General
 	* Added navigational links to official API references for the [COM API](https://www.m-files.com/api/documentation/latest/index.html), [REST API](http://www.m-files.com/MFWS/) and [User Interface Extensibility Framework](https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html).
 	* Added UIX [sample to show how to react to built-in events]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/BuiltInCommand-Event/).
-
 
 ### August 2017
 

@@ -33,6 +33,7 @@ var client = new System.Net.Http.HttpClient();
 client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken");
 
 // Add a comment to the document with ID 459.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/comments?_method=PUT"),
 	new System.Net.Http.StringContent("{ \"Value\" : \"This is a test comment \"}"));
 ```
@@ -62,10 +63,12 @@ var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var checkedOutObjectVersion  = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
 	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 
 // Upload the file.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var uri =
 	new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/files/{checkedOutObjectVersion.Files[0].ID}/content?_method=PUT");
 await client.PostAsync(uri, new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
@@ -75,6 +78,7 @@ await client.PostAsync(uri, new System.Net.Http.StreamContent(localFileToUpload.
 httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
 	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 ```
@@ -106,6 +110,7 @@ var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var checkedOutObjectVersion  = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
 	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 
@@ -126,6 +131,7 @@ if (checkedOutObjectVersion.SingleFile)
 	}));
 
 	// Update the property.
+	// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 	uri =
 		new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22?_method=PUT");
 	await client.PostAsync(uri, httpContent);
@@ -155,6 +161,7 @@ await
 httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
 	await (await client.PostAsync(new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 ```
@@ -178,6 +185,7 @@ client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken")
 var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var checkedOutObjectVersion  = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
 	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 
@@ -199,6 +207,7 @@ Uri uri =
 await client.PostAsync(uri, httpContent);
 
 // Delete the first file.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 uri = new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/{checkedOutObjectVersion.Files[0].ID}?_method=DELETE");
 await client.PostAsync(uri);
 
@@ -207,6 +216,7 @@ await client.PostAsync(uri);
 httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 uri = new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout?_method=PUT")
 Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(await (await client.PostAsync(uri, httpContent)).Content.ReadAsStringAsync());
 ```

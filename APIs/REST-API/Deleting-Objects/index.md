@@ -36,7 +36,7 @@ const int documentObjectTypeId = 0;
 const int documentId = 8;
 
 // Execute the post.
-// NOTE: Route the PUT verb via the _method querystring.
+// NOTE: Route the PUT verb via the _method querystring: http://developer.m-files.com/APIs/REST-API/#iis-compatibility.
 await client.PostAsync(new Uri("http://localhost/REST/objects/" + documentObjectTypeId + "/" + documentId + "/deleted?_method=PUT"),
 	new System.Net.Http.StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(primitiveType), Encoding.UTF8, "application/json"));
 ```
@@ -65,7 +65,7 @@ const int documentObjectTypeId = 0;
 const int documentId = 8;
 
 // Execute the post.
-// NOTE: Route the PUT verb via the _method querystring.
+// NOTE: Route the PUT verb via the _method querystring: http://developer.m-files.com/APIs/REST-API/#iis-compatibility.
 await client.PostAsync(new Uri("http://localhost/REST/objects/" + documentObjectTypeId + "/" + documentId + "/deleted?_method=PUT"),
 	new System.Net.Http.StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(primitiveType), Encoding.UTF8, "application/json"));
 ```
@@ -97,7 +97,7 @@ const int documentId = 8;
 
 // What is the endpoint to hit?
 // NOTE: The object must be checked out to this user.
-// NOTE: Route the DELETE verb via the _method querystring.
+// NOTE: Route the DELETE verb via the _method querystring: http://developer.m-files.com/APIs/REST-API/#iis-compatibility.
 var uri = new Uri("http://localhost/REST/objects/" + documentObjectTypeId + "/" + documentId + "/latest?_method=DELETE&allVersions=false");
 
 // Execute the post.
@@ -123,7 +123,7 @@ const int documentObjectTypeId = 0;
 const int documentId = 8;
 
 // What is the endpoint to hit?
-// NOTE: Route the DELETE verb via the _method querystring.
+// NOTE: Route the DELETE verb via the _method querystring: http://developer.m-files.com/APIs/REST-API/#iis-compatibility.
 var uri = new Uri("http://localhost/REST/objects/" + documentObjectTypeId + "/" + documentId + "/latest?_method=DELETE&allVersions=true");
 
 // Execute the post.
