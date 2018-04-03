@@ -73,7 +73,8 @@ var content = new System.Net.Http.StringContent(stringContent, Encoding.UTF8, "a
 const int documentObjectTypeId = 0; //
 
 // Execute the POST.
-var httpResponseMessage = await client.PostAsync(new Uri("http://localhost/REST/objects/" + documentObjectTypeId), content);
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
+var httpResponseMessage = await client.PostAsync(new Uri("http://localhost/REST/objects/" + documentObjectTypeId + ".aspx"), content);
 
 // Extract the value.
 var objectVersion = Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(await httpResponseMessage.Content.ReadAsStringAsync());
@@ -88,7 +89,7 @@ The default "Name or Title" property always has the property Id of zero.  Howeve
 ### HTTP request
 
 ```text
-POST http://localhost/REST/objects/0 HTTP/1.1
+POST http://localhost/REST/objects/0.aspx HTTP/1.1
 X-Authentication: DummyAuthenticationToken
 Content-Type: application/json; charset=utf-8
 Host: localhost
@@ -207,9 +208,10 @@ client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken")
 var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 
 // Upload the file and retrieve the upload information.
-var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files"),
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
+var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files.aspx"),
 	new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
-			
+
 // Extract the value.
 var uploadInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<UploadInfo>(
 	await uploadFileResponse.Content.ReadAsStringAsync());
@@ -235,7 +237,7 @@ objectCreationInfo.Files = new UploadInfo[]
 #### HTTP request
 
 ```text
-POST http://localhost/REST/files HTTP/1.1
+POST http://localhost/REST/files.aspx HTTP/1.1
 X-Authentication: DummyAuthenticationToken
 Host: localhost
 Cookie: ASP.NET_SessionId=tsxugyihuwdyj4vtzalt34je
@@ -311,7 +313,8 @@ var objectCreationInfo = new ObjectCreationInfo()
 var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 
 // Upload the file and retrieve the upload information.
-var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files/"),
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
+var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files.aspx"),
 	new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
 			
 // Extract the value.
@@ -329,7 +332,8 @@ objectCreationInfo.Files = new[] { uploadInfo };
 const int documentObjectTypeId = 0;
 
 // Execute the post.
-var createObjectResponse = await client.PostAsync(new Uri("http://localhost/REST/objects/" + documentObjectTypeId),
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
+var createObjectResponse = await client.PostAsync(new Uri("http://localhost/REST/objects/" + documentObjectTypeId + ".aspx"),
 	new System.Net.Http.StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(objectCreationInfo), Encoding.UTF8, "application/json"));
 
 // Extract the value.
@@ -346,7 +350,7 @@ This shows the HTTP request for the object creation, assuming the file(s) have a
 {:.note}
 
 ```text
-POST http://localhost/REST/objects/0 HTTP/1.1
+POST http://localhost/REST/objects/0.aspx HTTP/1.1
 X-Authentication: DummyAuthenticationToken
 Content-Type: application/json; charset=utf-8
 Host: localhost
