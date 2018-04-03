@@ -24,7 +24,7 @@ Custom External Object Type Data Providers are Microsoft .NET class libraries th
 
 ### A quick note on Internal and External Object Ids
 
-M-Files often uses the concept of `Object Ids`.  The object id is an integer (whole number) and is guaranteed to be unique within a given object type.  When external object types are used, M-Files allows the id from that system to be shown on the metadata card instead.  This id is referred to either as the `Display ID` or the `External ID`.  Each object still has an internal ID that must be used for normal API calls.  This is detailed further on the ['Internal and External IDs' dedicated page]({{ site.baseurl}}/Concepts/InternalAndExternalIDs/).
+M-Files often uses the concept of `Object Ids`.  The object id is an integer (whole number) and is guaranteed to be unique within a given object type.  When external object types are used, M-Files allows the id from that system to be shown on the metadata card instead.  This id is referred to either as the `Display ID` or the `External ID`.  Each object still has an internal ID that must be used for normal API calls.  This is detailed further on the ['Internal and External IDs' dedicated page]({{ site.baseurl}}/Getting-Started/InternalAndExternalIDs/).
 
 When mapping the `Object ID` in the Connection to External Database, ensure that you map a column which is a unique Id.  If this changes in the future, objects that have been associated with this item may become disconnected.
 {:.note}

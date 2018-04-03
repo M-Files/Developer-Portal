@@ -14,7 +14,16 @@
         {
             expandCollapse($node);
             return false;
-        })
+		});
+		var $anchor = $(">a", $node);
+		if($anchor.attr("href") == "#")
+		{
+			$anchor.click(function()
+			{
+				expandCollapse($node);
+				return false;
+			})
+		}
     }
     $("ul.treeview li").each(function(i, o)
     {

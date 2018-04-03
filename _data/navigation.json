@@ -11,16 +11,51 @@
 		"Title": "What's New"
 	},
 	{
-		"Link": "/Concepts/",
+		"Link": "/Getting-Started/",
 		"Icon": "zmdi-play",
-		"Title": "Concepts",
-		"Items": [{
-				"Link": "/Concepts/Aliases/",
-				"Title": "Aliases"
-			},
+		"Title": "Getting Started",
+		"Items": [
 			{
-				"Link": "/Concepts/InternalAndExternalIDs/",
-				"Title": "Internal and External IDs"
+				"Link": "/Getting-Started/Objects-And-Versions/",
+				"Title": "Objects and Versions",
+				"AssociatedItems" : [
+					{
+						"Link" : "/APIs/COM-API/Creating-Objects/",
+						"Title" : "Creating objects with the COM API"
+					},
+					{
+						"Link" : "/APIs/COM-API/Updating-Objects/",
+						"Title" : "Updating objects with the COM API"
+					},
+					{
+						"Link" : "/APIs/COM-API/Deleting-Objects/",
+						"Title" : "Deleting objects with the COM API"
+					},
+					{
+						"Link": "/APIs/REST-API/Creating-Objects/",
+						"Title": "Creating objects with the REST API"
+					},
+					{
+						"Link": "/APIs/REST-API/Updating-Objects/",
+						"Title": "Updating objects with the REST API"
+					},
+					{
+						"Link": "/APIs/REST-API/Deleting-Objects/",
+						"Title": "Deleting objects with the REST API"
+					}
+				]
+			},{
+				"Link": "/Getting-Started/Vault-Structure/",
+				"Title": "Vault Structure",
+				"Items": [
+					{
+						"Link": "/Getting-Started/Vault-Structure/Aliases/",
+						"Title": "Aliases"
+					},
+					{
+						"Link": "/Getting-Started/Vault-Structure/InternalAndExternalIDs/",
+						"Title": "Internal and External IDs"
+					}]
 			}
 		]
 	},
@@ -88,8 +123,26 @@
 				"Title": "Connecting and authenticating"
 			},
 			{
+				"Link": "#",
+				"Title": "Managing objects",
+				"Items" : [
+					{
+						"Link": "/APIs/COM-API/Creating-Objects/",
+						"Title": "Creating objects"
+					},
+					{
+						"Link": "/APIs/COM-API/Updating-Objects/",
+						"Title": "Updating objects"
+					},
+					{
+						"Link": "/APIs/COM-API/Deleting-Objects/",
+						"Title": "Deleting objects"
+					}
+				]
+			},
+			{
 				"Link": "/APIs/COM-API/Searching/",
-				"Title": "Searching",
+				"Title": "Searching for objects",
 				"Items": [{
 						"Link": "/APIs/COM-API/Searching/SearchConditions/",
 						"Title": "Example Search Conditions"
@@ -130,12 +183,26 @@
 				}]
 			},
 			{
-				"Link": "/APIs/REST-API/Searching/",
-				"Title": "Searching"
+				"Link": "#",
+				"Title": "Managing objects",
+				"Items" : [
+					{
+						"Link": "/APIs/REST-API/Creating-Objects/",
+						"Title": "Creating objects"
+					},
+					{
+						"Link": "/APIs/REST-API/Updating-Objects/",
+						"Title": "Updating objects"
+					},
+					{
+						"Link": "/APIs/REST-API/Deleting-Objects/",
+						"Title": "Deleting objects"
+					}
+				]
 			},
 			{
-				"Link": "/APIs/REST-API/Creating-And-Updating-Objects/",
-				"Title": "Creating and updating objects"
+				"Link": "/APIs/REST-API/Searching/",
+				"Title": "Searching for objects"
 			},
 			{
 				"Link": "/APIs/REST-API/Vault-Extension-Methods/",

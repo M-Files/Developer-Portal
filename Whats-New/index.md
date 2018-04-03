@@ -8,21 +8,34 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 ## 2018
 
 ### March 2018
+
 * General
 	* Added process [sample to show how to maintain the original template used to create a document]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/).
+	* Renamed `Concepts` page to [Getting Started]({{ site.baseurl }}/Getting-Started/), and populated content to help developers get started with M-Files terminology and structures.
 	* Added details on how to create an [Attach to VAF Processes button]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes).
+* COM API
+	* Examples shown for managing objects:
+		* [Creating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/)
+		* [Updating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/)
+		* [Deleting and destroying objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Deleting-Objects/)
 * REST API
-	* Updated code sample for retrieving cookies for authentication to correctly instantiate the CookieContainer.
+	* Updated [code sample for retrieving cookies for authentication](/APIs/REST-API/Authentication/#cookie-based-sessions) to correctly instantiate the CookieContainer.
+	* Examples shown for managing objects:
+		* [Creating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Creating-Objects/)
+		* [Updating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Updating-Objects/)
+		* [Deleting and destroying objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Deleting-Objects/)
 * UX/Design
 	* Updated icons with March release.
 
 ### February 2018
+
 * UX/Design guidance
 	* Added [UX/Design guidance]({{ site.baseurl}}/UX-Design/) section to the developer portal.
 
 ### January 2018
+
 * Built-in
-	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Concepts/InternalAndExternalIDs/).
+	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Getting-Started/InternalAndExternalIDs/).
 * COM API
 	* Added in a search condition sample for [finding objects with specific flags (e.g. conflict objects)]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-by-object-flags-eg-searching-for-conflict-objects).
 	* Added in a page detailing how to [search for value list items by name, deleted status and owner]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems).
@@ -40,6 +53,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 ## 2017
 
 ### December 2017
+
 * COM API
 	* Added code sample for [searching for 'one of' a set of values]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#executing-a-one-of-search) in both VBScript and .NET.
 	* Added code sample for [restricting search results by a user's permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions), effectively allowing a high-permissions user restrict search results to items which another user can also see.

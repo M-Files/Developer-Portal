@@ -130,29 +130,63 @@ p.note {
     border: 1px solid #A6A6A6;
     position: relative;
     padding: 5px 10px 5px 30px;
-    color: black; /* increase contrast */
+	color: black; /* increase contrast */
+	&::before {
+		font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+		content: "\f1fb";
+		position: absolute;
+		left: 10px;
+		top: 8px;
+	}
+	&.api::before {
+		content: "\f11d";
+	}
+	
+	&.api.com::before {
+		content: "\f26c";
+	}
+	
+	&.api.rest::before {
+		content: "\f21d";
+	}
 }
 
-p.note::before {
-    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
-    content: "\f1fb";
-    position: absolute;
-    left: 10px;
-    top: 8px;
-}
-
-p.note.warning, p.note.stub, p.note.prerelease {
+p.note.warning,
+	p.note.stub,
+	p.note.prerelease
+{
     background-color: #FFB84D;
-    border: 1px solid #ff9900;
+	border: 1px solid #ff9900;
+	&.stub
+	{
+		font-style: italic;
+	}
+	&.warning::before {
+		content: "\f1f4";
+	}
+	&.stub::before {
+		content: "\f25a";
+	}
 }
 
-p.note.prerelease {
+p.note.hint
+{
+    background-color: rgba(224, 237, 222, 1);
+	border: 1px solid rgb(64, 146, 89);
+	&::before
+	{
+		content: "\f1c3";
+	}
+}
+
+p.note.prerelease
+{
     background-color: #eee;
-    border-color: #CCC;
-}
-
-p.note.prerelease::before {
-    content: "\f333";
+	border-color: #CCC;
+	&::before
+	{
+		content: "\f333";
+	}
 }
 
 /* make the links in warnings a little darker, just to make them contrast better */
@@ -162,19 +196,6 @@ article.page .note.warning a {
 article.page a .zmdi
 {
 	padding: 0px 2px;
-}
-
-
-p.note.stub {
-    font-style: italic;
-}
-
-p.note.warning::before {
-    content: "\f1f4";
-}
-
-p.note.stub::before {
-    content: "\f25a";
 }
 
 article.page a {

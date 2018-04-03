@@ -69,7 +69,7 @@ These VBScript proxies must not be manually altered.
 
 #### Vault Structure
 
-The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Concepts/Aliases) `MFiles.ObjectType.Project`.
+The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Getting-Started/Aliases) `MFiles.ObjectType.Project`.
 
 ```csharp
 [MFObjType()]
