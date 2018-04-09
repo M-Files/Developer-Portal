@@ -231,7 +231,7 @@ SerialNumber | `String` | Yes
 
 Property | Type | Shown in M-Files Admin | Automatically Enforced
 --- | --- | --- | ---
-Application	GUID | `String` | Yes | If set, requires that the receiving application's GUID matches.
+Application | `String` | Yes | If set, requires that the receiving application's GUID matches.  Should be a GUID in brace-format.
 MFilesSerialNumber | `String` | Yes | If set, requires that the current M-Files server license serial number matches.
 Vaults | Array of strings | Yes | If set, requires that the vault GUID is one of the listed values.
 
