@@ -11,6 +11,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 * General
 	* Renamed `Concepts` page to [Getting Started]({{ site.baseurl }}/Getting-Started/), and populated content to help developers get started with M-Files terminology and structures.
+	* Added a cookie dialog stating what we use cookies for.  This dialog needs to be accepted once by new users.
 * COM API
 	* Examples shown for managing objects:
 		* [Creating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/)
