@@ -338,6 +338,10 @@
 						"Title": "Nested/hierarchical configuration"
 					},
 					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Showing-And-Hiding/",
+						"Title": "Showing and Hiding Configuration Options"
+					},
+					{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Custom-Dashboards/",
 						"Title": "Custom dashboards"
 					},
