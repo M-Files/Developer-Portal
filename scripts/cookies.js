@@ -14,7 +14,7 @@ $(document).ready(function()
 	function setAcceptedCookie()
 	{
 		// Set the cookie
-		document.cookie = "accepted=1; path=/; expires=Fri, 31 Dec 9999 25:59:59 GMT";
+		document.cookie = "accepted=1; path=/; expires=" + new Date(9999, 11, 31, 23, 59, 59).toUTCString();
 		$body.addClass("accepted-cookies");
 	}
 	function getAcceptedCookie()
