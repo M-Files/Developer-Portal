@@ -22,6 +22,9 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 		* [Updating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Updating-Objects/)
 		* [Deleting and destroying objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Deleting-Objects/)
 	* Added section on [maximising compatibility]({{ site.baseurl }}/APIs/REST-API/#iis-compatibility) when using the M-Files Web Service.
+* Vault Application Framework 2.0 configuration
+	* Added an example of [showing and hiding configuration options]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/Showing-And-Hiding/) based on other configuration options (e.g. "Show Advanced Configuration").
+	* Added an example of [how to customise how array element names are displayed]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/Hierarchical-Configuration/#customising-array-element-names).
 
 ### March 2018
 
