@@ -1,0 +1,22 @@
+#cookies
+{
+	position: fixed;
+	margin: 5px;
+	padding: 15px;
+	bottom: 30px;
+	right: 15px;
+	max-width: 400px;
+	border: 1px solid #007dc6;
+	box-shadow: 10px 10px lighten(#007dc6, 20%);
+	background-color: white;
+	z-index: 10003;
+	#cookie-hide
+	{
+		display: block;
+		margin: 5px auto;
+	}
+}
+body.accepted-cookies #cookies
+{
+	display: none;
+}
