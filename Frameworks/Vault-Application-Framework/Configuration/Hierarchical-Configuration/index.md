@@ -25,6 +25,8 @@ The approach shown below is only compatible with [version 2.0]({{ site.baseurl }
 
 In some situations, using nested configuration objects may be needed to express complex configuration structures.  One such example would be where an application requires the user to configure a collection of rules, similarly to the [Metadata Card Configuration](/Built-In/Metadata-Card-Configuration/).  The sample below defines two configuration classes (`Configuration` and `ConfigurationChild`).  Members exposed by either configuration class could be simple strings (as below), or any other configuration value for which an [editor exists](../Editors).
 
+## Using nested configuration
+
 ![An example of nested configuration objects](nested-configuration.png)
 
 {% highlight csharp %}
@@ -50,6 +52,61 @@ namespace MFVaultApplication1
 	{
 		[DataMember]
 		public string Value1 { get; set; }
+	}
+
+	public class VaultApplication
+		: VaultApplicationBase, IUsesAdminConfigurations
+	{
+
+		private ConfigurationNode<Configuration> config { get; set; }
+
+		/// <inheritdoc />
+		public void InitializeAdminConfigurations(IAdminConfigurations adminConfigurations)
+		{
+
+			// Add it to the configuration screen.
+			this.config = adminConfigurations.AddSimpleConfigurationNode<Configuration>("My Vault Application");
+		}
+	}
+}
+{% endhighlight %}
+
+## Customising array element names
+
+In the example screenshot above, adding new items to the `Children` collection results in items being added named `ConfigurationChild[1]`, `ConfigurationChild[1]`, etc.  In some situations, it is more useful to show a different value for the item name to make locating the correct item more simple.
+
+In the example below, the configuration element's name is derived from the `Name` property set on the child object:
+
+![Customising array element names](name-member.png)
+
+{% highlight csharp %}
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using MFiles.VAF;
+using MFiles.VAF.AdminConfigurations;
+
+namespace MFVaultApplication1
+{
+	[DataContract]
+	public class Configuration
+	{
+		[DataMember]
+		public ConfigurationChild MySubConfiguration { get; set; }
+
+		[DataMember]
+		[JsonConfEditor(NameMember = "Name")]
+		public List<ConfigurationChild> Children { get; set; }
+	}
+
+	[DataContract]
+	public class ConfigurationChild
+	{
+		[DataMember]
+		public string Value1 { get; set; }
+
+		[DataMember]
+		[TextEditor(IsRequired = true)]
+		public string Name { get; set; }
 	}
 
 	public class VaultApplication
