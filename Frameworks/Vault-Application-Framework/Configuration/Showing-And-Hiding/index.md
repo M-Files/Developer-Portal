@@ -24,6 +24,10 @@ The approach shown below is only compatible with [version 2.0]({{ site.baseurl }
 
 Some configuration settings are only applicable in specific scenarios, and showing all configuration options to users may not be the most user-friendly.  In these situations, configuration options may be shown or hidden depending on the state of other options.
 
+## JSPath
+
+The `ShowWhen` and `HideWhen` configuration both use [JSPath](https://github.com/dfilatov/jspath) syntax to define both the trigger property to test, and the condition which it must meet.  More information on the JSPath syntax is available on [the JSPath official GitHub repository](https://github.com/dfilatov/jspath).
+
 ## Showing or hiding options depending on configuration state
 
 In the example below, the `AdvancedConfiguration` option is hidden by default and only shown when the user sets the `UsesAdvancedConfiguration` option to `true`.
