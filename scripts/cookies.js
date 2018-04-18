@@ -16,7 +16,7 @@ $(document).ready(function()
 		// Set the cookie
 		var expiry = new Date();
 		expiry.setFullYear(expiry.getFullYear() + 2);
-		document.cookie = "accepted=1; path=/; expires=" + expiry.toISOString();
+		document.cookie = "accepted=1; path=/; expires=" + expiry.toUTCString();
 		$body.addClass("accepted-cookies");
 	}
 	function getAcceptedCookie()
