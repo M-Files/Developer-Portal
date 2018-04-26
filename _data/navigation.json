@@ -450,6 +450,19 @@
 		]
 	},
 	{
+		"Link": "/Intelligent-Metadata-Layer/",
+		"Title": "Intelligent Metadata Layer",
+		"Icon": "zmdi-memory",
+		"Items": [{
+				"Link": "/Intelligent-Metadata-Layer/External-Repository-Connectors/",
+				"Title": "External Repository Connectors"
+			},
+			{
+				"Link": "/Intelligent-Metadata-Layer/Intelligence-Services/",
+				"Title": "Intelligence Services"
+			}]
+	},
+	{
 		"Link": "/Samples-And-Libraries/",
 		"Icon": "zmdi-github",
 		"Title": "Samples and Libraries",
