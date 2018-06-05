@@ -7,6 +7,13 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### May 2018
+
+* Vault Application Framework 2.0 configuration
+	* Updated [configuration sample]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/) to show how to use default values.
+* General
+	* Updated [Client to Server Communication](/{{ site.baseurl }}Samples-And-Libraries/Samples/Processes/Client-To-Server-Communication/) sample to show explicitly the method for installation of the UIX application from within `InitializeApplication`.
+
 ### April 2018
 
 * General
