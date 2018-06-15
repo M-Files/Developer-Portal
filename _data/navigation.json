@@ -409,6 +409,14 @@
 					{
 						"Link": "/Frameworks/Vault-Application-Framework/Helpers/UrlHelper/",
 						"Title": "UrlHelper"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/MFUtils/",
+						"Title": "MFUtils"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/SysUtils/",
+						"Title": "SysUtils"
 					}
 				]
 			},
