@@ -4,9 +4,8 @@ self.addEventListener('install', function(event) {
 });
 
 var preLoad = function(){
-	console.log('[PWA] Install Event processing');
 	return caches.open('pwa-offline').then(function(cache) {
-		console.log('[PWA] Cached index and offline page during Install');
+		console.log('Caching index and offline pages.');
 		return cache.addAll(['/offline/index.html', '/index.html']);
 	});
 }
@@ -19,8 +18,8 @@ self.addEventListener('fetch', function(event) {
 	{
 		return;
 	}
-	console.log('The service worker is serving the asset.');
 	event.respondWith(checkResponse(event.request).catch(function() {
+		console.log('Returning cached asset for ' + event.request.url);
 		return returnFromCache(event.request)}
 	));
 	event.waitUntil(addToCache(event.request));
@@ -41,7 +40,6 @@ var checkResponse = function(request){
 var addToCache = function(request){
 	return caches.open('pwa-offline').then(function (cache) {
 		return fetch(request).then(function (response) {
-			console.log('[PWA] add page to offline ('+ response.url + ')')
 			return cache.put(request, response);
 		});
 	});

@@ -17,6 +17,24 @@ aside#sidebar {
 	overflow-y: auto;
 }
 
+@keyframes wobble
+{
+	25%
+	{
+		transform: rotate(-10deg);
+		animation-timing-function: ease-in-out;
+	}
+	75%
+	{
+		transform: rotate(10deg);
+		animation-timing-function: ease-in-out;
+	}
+}
+#pwa-link:hover i
+{
+	animation: wobble 1s linear 0s infinite;
+}
+
 nav.secondary
 {
 	border-top: 1px solid white;

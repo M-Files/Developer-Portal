@@ -546,5 +546,11 @@
 				]
 			}
 		]
+	},
+	{
+		"Link": "/PWA/",
+		"Icon": "zmdi-notifications",
+		"Title": "Progressive Web Application",
+		"ID" : "pwa-link"
 	}
 ]
