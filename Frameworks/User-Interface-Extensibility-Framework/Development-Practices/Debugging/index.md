@@ -12,7 +12,7 @@ Code that executes within a [module]({{ site.baseurl }}/Frameworks/User-Interfac
 
 In order to debug UIX dashboards, the following registry keys must be set on the client:
 
-```registry
+```reg
 Key: HKEY_CURRENT_USER\Software\Motive\M-Files\<version>\Client\Common\NonVaultSpecifics\ScriptHostIESettings\Main
 Value #1: Disable Script Debugger (REG_SZ), set to no
 Value #2: DisableScriptDebuggerIE (REG_SZ), set to no
