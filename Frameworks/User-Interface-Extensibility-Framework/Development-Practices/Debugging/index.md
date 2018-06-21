@@ -8,7 +8,24 @@ includeInSearch: true
 
 Code that executes within a [module]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/) cannot be debugged directly.  Code that executes within a [dashboard]( {{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/) or a [persisted browser window](https://www.m-files.com/UI_Extensibility_Framework/index.html#PersistentWWWSessions.html) - i.e. within a web browser - can be debugged using Microsoft Visual Studio.
 
+### Setup
+
+In order to debug UIX dashboards, the following registry keys must be set on the client:
+
+```reg
+Key: HKEY_CURRENT_USER\Software\Motive\M-Files\<version>\Client\Common\NonVaultSpecifics\ScriptHostIESettings\Main
+Value #1: Disable Script Debugger (REG_SZ), set to no
+Value #2: DisableScriptDebuggerIE (REG_SZ), set to no
+```
+
+You may also need to enable script debugging within Internet Explorer by *unticking* the `Disable script debugging (Internet Explorer)` and `Disable script debugging (Other)` within the Internet Explorer advanced settings:
+
+![Enabling debugging within Internet Explorer](debugging_iesettings.png)
+
 ### Debugging dashboards and persistent browser windows
+
+Visual Studio 2010 must be used if your computer runs Internet Explorer 9.  If running Internet Explorer 10 or higher, use Visual Studio 2012 or newer.
+{:.note}
 
 1. Open Microsoft Visual Studio on the machine executing the User Interface Extensbility Framework application.
 2. Select the `Debug` menu, and choose `Attach to Process...`.

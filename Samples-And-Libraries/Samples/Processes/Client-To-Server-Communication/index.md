@@ -228,7 +228,35 @@ function getShellFrameStartedHandler(shellFrame) {
 
 ## Deploying both applications together
 
-To deploy both applications together, follow the instructions in the [distributing child applications]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Distributing-Child-Applications/) page.
+To deploy both applications together, follow the instructions in the [distributing child applications]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Distributing-Child-Applications/) page.  Your VAF application class must include the following code (replace `UIX.mfappx` with the name of your UIX package):
+
+```csharp
+/// <summary>
+/// Install the UIX application, as it will not be installed by default.
+/// </summary>
+/// <param name="vault">The vault to install the application into.</param>
+protected override void InitializeApplication(Vault vault)
+{
+	try
+	{
+		string appPath = "UIX.mfappx";
+		if (File.Exists(appPath))
+		{
+			vault.CustomApplicationManagementOperations.InstallCustomApplication(appPath);
+		}
+		else
+		{
+			SysUtils.ReportErrorToEventLog("File: " + appPath + " does not exist");
+		}
+	}
+	catch (Exception ex)
+	{
+		SysUtils.ReportErrorToEventLog(ex.Message);
+	}
+	
+	base.InitializeApplication(vault);
+}
+```
 
 ![A child application displayed under its parent in the M-Files Admin tool]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Distributing-Child-Applications/parent-child-applications.png)
 
