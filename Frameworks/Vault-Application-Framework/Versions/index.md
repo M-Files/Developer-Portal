@@ -25,9 +25,9 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 [Workflow State Actions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions) | Yes | Yes
 --- | ---
 
-## Version 2.0 (pre-release) <a name="version-20" id="version-20"></a>
+## Version 2.0
 
-Version 2.0 of the Vault Application Framework is currently in limited pre-release.  Alongside numerous internal bugfixes and performance work, this release brings two new major features:
+Alongside numerous internal bugfixes and performance work, this release brings two new major features:
 
 * [Licensing](../Licensing)
 
