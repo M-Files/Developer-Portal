@@ -3,7 +3,6 @@ layout: page
 title: Licensing
 includeInSearch: true
 breadcrumb: Vault Application Framework Licensing
-prerelease: true
 ---
 
 [Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)

@@ -2,7 +2,6 @@
 layout: page
 title: Showing and Hiding Configuration Options
 includeInSearch: true
-prerelease: true
 ---
 
 {% comment %}
