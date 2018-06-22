@@ -15,21 +15,21 @@ When installing the template into Visual Studio 2017, a popup will be shown stat
 
 The Vault Application Framework 2.0 template is part of the `M-Files 2018 Visual Studio template package`, which can be downloaded from the [M-Files Partner Portal]().  If you are a partner and do not have access to the M-Files Partner Portal, then please contact your Channel Account Manager.  To install the template, simply double-click on the ".vsix" file, which will then guide you through installing the templates into the version of Visual Studio that you have installed.
 
-## Building your first application ("hello, world")
+## Building your first application
 
 In this example we will create a basic Vault Application Framework application and install it into the Sample Vault, running on the local machine.
 
-If you do not have M-Files installed on the same machine as Visual Studio, then you must <a href="#manual-deployment">deploy the zip file manually</a>.  Debugging can be undertaken on remote applications by [following these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/#Remote-Debugging).
+If you do not have M-Files installed on the same machine as Visual Studio, then you must [deploy the zip file manually](#manual-deployment).  Debugging can be undertaken on remote applications by [following these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/#Remote-Debugging).
 {:.note}
 
 ### Creating an application from the template
 
 Creating a new Vault Application Framework application can be done from within Visual Studio by clicking `File`, `New`, `Project`, then selecting `M-Files Vault Application 2.0` From the list of Visual C# templates:
 
+![Creating a new project](create-new-project.png)
+
 If you have the [VAF 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF1.0/) template installed then you may notice two "Vault Application Framework" templates; ensure that you choose the 2.0 version.
 {:.note}
-
-![Creating a new project](create-new-project.png)
 
 ### An overview of the project contents
 

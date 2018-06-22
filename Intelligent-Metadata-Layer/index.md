@@ -18,9 +18,9 @@ External Repository Connectors built by M-Files or one of our Certified Applicat
 
 ## Intelligence Services
 
-Intelligence Services analyse files being added to M-Files and can suggest values for items on the object's metadata card.  In the screenshot below, the system has analysed the file being added and suggested a summary of the document using an online provider.
+Intelligence Services analyse files being added to M-Files and can suggest values for items on the object's metadata card.  Developers provide their own suggestions by building their own [intelligence services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services), utilising online services, AI techniques, or their own custom logic.
 
-!!! MISSING IMAGE !!!
+![Intelligence service processing](intelligence_services.png)
 
 Intelligence Services built by M-Files or one of our Certified Application Partners can be found on the [M-Files Solution Catalog](https://catalog.m-files.com/product-category/intelligence-services/).
 {:.note.store}

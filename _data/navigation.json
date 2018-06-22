@@ -474,7 +474,11 @@
 			},
 			{
 				"Link": "/Intelligent-Metadata-Layer/Intelligence-Services/",
-				"Title": "Intelligence Services"
+				"Title": "Intelligence Services",
+				"Items" : [{
+					"Link": "/Intelligent-Metadata-Layer/Intelligence-Services/Visual-Studio/",
+					"Title": "Visual Studio Integration"
+				}]
 			}]
 	},
 	{

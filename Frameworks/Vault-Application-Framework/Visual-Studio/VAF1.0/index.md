@@ -19,7 +19,7 @@ The template can be downloaded from the [M-Files Partner Portal](https://partner
 
 In this example we will create a basic Vault Application Framework application and install it into the Sample Vault, running on the local machine.
 
-If you do not have M-Files installed on the same machine as Visual Studio, then you must <a href="#manual-deployment">deploy the zip file manually</a>.  Debugging can be undertaken on remote applications by [following these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/#Remote-Debugging).
+If you do not have M-Files installed on the same machine as Visual Studio, then you must [deploy the zip file manually](#manual-deployment).  Debugging can be undertaken on remote applications by [following these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/#Remote-Debugging).
 {:.note}
 
 ### Creating an application from the template
