@@ -18,7 +18,9 @@ Value #1: Disable Script Debugger (REG_SZ), set to no
 Value #2: DisableScriptDebuggerIE (REG_SZ), set to no
 ```
 
-You may also need to enable script debugging within Internet Explorer by *unticking* the `Disable script debugging (Internet Explorer)` and `Disable script debugging (Other)` within the Internet Explorer advanced settings:
+#### Debugging persistent browser windows
+
+To debug persistent browser windows, you will also need to enable script debugging within Internet Explorer by *unticking* the `Disable script debugging (Internet Explorer)` and `Disable script debugging (Other)` within the Internet Explorer advanced settings.  If you do not do this then the `Attach to Process...` window (detailed in the next section) will not show `explorer.exe`.
 
 ![Enabling debugging within Internet Explorer](debugging_iesettings.png)
 
