@@ -99,7 +99,7 @@ To test the External Repository Connector, open the M-Files desktop client and n
 If the connection is not shown then check for any build/deployment errors, or for exceptions in the Windows Event Log.
 {:.note}
 
-Navigating into the view structure should show objects and subobjects:
+Navigating into the folder structure should show sub-folders and objects:
 
 ![The connection](client-connection-2.png)
 
