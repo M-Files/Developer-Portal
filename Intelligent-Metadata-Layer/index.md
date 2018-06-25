@@ -13,12 +13,14 @@ External Repository Connectors allow content stored within other repositories to
 
 Users can choose to `Promote` this unmanaged content to become `Managed`.  By becoming `Managed`, the object becomes a first-class citizen within the M-Files system.  Managed objects can have metadata (such as a class), appear within dynamic views, and can even participate in workflows.  All the time their respective file data continues to reside on the source system.
 
+Developers build connections to their own data sources by [building their own external repository connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors).
+
 External Repository Connectors built by M-Files or one of our Certified Application Partners can be found on the [M-Files Solution Catalog](https://catalog.m-files.com/product-category/iml-connectors-to-external-repositories/).
 {:.note.store}
 
 ## Intelligence Services
 
-Intelligence Services analyse files being added to M-Files and can suggest values for items on the object's metadata card.  Developers provide their own suggestions by building their own [intelligence services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services), utilising online services, AI techniques, or their own custom logic.
+Intelligence Services analyse files being added to M-Files and can suggest values for items on the object's metadata card.  This functionality is available on M-Files Desktop, M-Files Web, and our mobile applications.  Developers provide their own suggestions by [building their own intelligence services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services) which utilising online services, AI techniques, or their own custom logic.
 
 ![Intelligence service processing](intelligence_services.png)
 

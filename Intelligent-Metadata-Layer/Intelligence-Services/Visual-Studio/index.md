@@ -1,9 +1,8 @@
 ---
 layout: page
-title: The Vault Application Framework Visual Studio Template
+title: Visual Studio Template for building Intelligence Services
 includeInSearch: true
 breadcrumb: Visual Studio Template
-redirect_from: /Frameworks/Vault-Application-Framework/Visual-Studio-Template/
 ---
 
 M-Files provides partners with a Visual Studio 2015/2017 template that can be used to develop Intelligent Metadata Layer Intelligence Service components using C#.
@@ -128,7 +127,7 @@ To configure the Intelligence Service, expand the vault in the M-Files Admin sof
 * Under `Suggestions`, add one suggestion and map our term (`My Term`) to a property in the vault.  In this example, the suggestion was for a text value, so the Intelligence Service has been configured to put the suggestion into the `Description` (text) property.
 * If any changes have been made, click `Save`.
 
-![Configuring the Intelligence Service](configuration.png)
+![Configuring the Intelligence Service](mfadmin-configuration.png)
 
 ### Testing
 

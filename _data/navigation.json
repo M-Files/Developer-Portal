@@ -470,7 +470,11 @@
 		"Icon": "zmdi-memory",
 		"Items": [{
 				"Link": "/Intelligent-Metadata-Layer/External-Repository-Connectors/",
-				"Title": "External Repository Connectors"
+				"Title": "External Repository Connectors",
+				"Items" : [{
+					"Link": "/Intelligent-Metadata-Layer/External-Repository-Connectors/Visual-Studio/",
+					"Title": "Visual Studio Integration"
+				}]
 			},
 			{
 				"Link": "/Intelligent-Metadata-Layer/Intelligence-Services/",
