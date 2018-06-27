@@ -7,6 +7,18 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### June 2018
+
+* Vault Application Framework 2.0
+	* Removed references to the VAF 2.0 being pre-release.
+	* Added page on using the [VAF 2.0 Visual Studio template package]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0).
+* [Intelligent Metadata Layer]({{ site.baseurl }}/Intelligent-Metadata-Layer) section created
+	* Initial introductory content to IML components such as External Repository Connectors and Intelligence Services.
+	* Added details on building [External Repository Connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/Visual-Studio) using the provided template.
+	* Added details on building [Intelligence Services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services/Visual-Studio) using the provided template.
+* User Interface Extensibility Framework
+	* Added page on using the [UIX Visual Studio template package]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio).
+
 ### May 2018
 
 * Vault Application Framework 2.0 configuration

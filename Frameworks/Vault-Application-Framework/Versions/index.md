@@ -65,7 +65,7 @@ M-Files have published to partners a [Visual Studio 2015/2017 template for use w
 
 ### From Version 1.0 to Version 2.0
 
-To upgrade an existing VAF 1.0 application to 2.0, the following steps need to be taken.
+New VAF 2.0 applications can be created using the [M-Files 2018 Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  To upgrade an existing VAF 1.0 application to 2.0, the following steps need to be taken.
 
 * Unzip the VAF 2.0 release into a new folder.  This zip contains a number of files.
 * Open the existing VAF 1.0 application in Visual Studio:
