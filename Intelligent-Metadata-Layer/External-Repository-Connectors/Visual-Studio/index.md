@@ -15,7 +15,7 @@ Testing of Intelligent Metadata Layer components requires that you are running a
 
 ## Downloading the Template
 
-The External Repository Connector template is part of the `M-Files 2018 Visual Studio template package`, which can be downloaded from the [M-Files Partner Portal](m-files://show/CE7643CB-C9BB-4536-8187-707DB78EAF2A/0-2583?object=D93538F9-B429-44DE-9840-553A67964438).  If you are a partner and do not have access to the M-Files Partner Portal, then please contact your Channel Account Manager.  To install the template, simply double-click on the ".vsix" file, which will then guide you through installing the templates into the version of Visual Studio that you have installed.
+The External Repository Connector template is part of the `M-Files 2018 Visual Studio template package`, which can be downloaded from the [M-Files Partner Portal](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  If you are a partner and do not have access to the M-Files Partner Portal, then please contact your Channel Account Manager.  To install the template, simply double-click on the ".vsix" file, which will then guide you through installing the templates into the version of Visual Studio that you have installed.
 
 ## Building your first External Repository Connector
 
