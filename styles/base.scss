@@ -145,9 +145,11 @@ p.note {
 	&.api.com::before {
 		content: "\f26c";
 	}
-	
 	&.api.rest::before {
 		content: "\f21d";
+	}
+	&.store::before {
+		content: "\f1cb";
 	}
 }
 

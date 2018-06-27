@@ -99,6 +99,11 @@ public MFIdentifier CustomersView = 142;
 
 ## MFConfiguration
 
+[Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
+{:.tag.available title="This functionality is available in version 1.0 of the Vault Application Framework."}
+[Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
+{:.tag.unavailable title="This functionality is NOT available in version 2.0 of the Vault Application Framework."}
+
 The `MFConfigurationAttribute` attribute automates the persistence and loading of configuration information from and to named value storage.  When the application is first run, the object will be serialized to JSON and stored using the attributes provided at declaration.  On subsequent runs, the data will be deserialized from Named Value Storage into the object.
 
 For example, the following code would store a JSON-serialized version of the Configuration object into Named Value Storage with the type of `MFConfigurationValue`, a namespace of `MyApplication` and a key of `config`:
