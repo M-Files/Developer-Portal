@@ -39,7 +39,7 @@ The template only supports creation of ShellUI-based UIX applications at this ti
 The default project contains a number of items:
 
 * `app\my-dashboard\console-dashboard.js`
-Enables interaction from the dashboard into [Jive]().
+Enables interaction from the dashboard into Jive.
 * `app\my-dashboard\my-dashboard.html`
 A sample dashboard.
 * `app\my-dashboard\my-dashboard.js`
@@ -47,10 +47,9 @@ Contains the logic for the sample dashboard.
 * `appdef.xml`
 The application manifest file, containing information such as the publisher details and the current version number.
 * `console-shellui.js`
-Enables interaction from the ShellUI module into [Jive]().
+Enables interaction from the ShellUI module into Jive.
 * `shellui.js`
 A sample ShellUI module.
-
 
 ## Building and deploying
 
