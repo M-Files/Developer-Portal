@@ -281,6 +281,10 @@
 			{
 				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/",
 				"Title": "Pre-Approval"
+			},
+			{
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio/",
+				"Title": "Visual Studio Integration"
 			}
 		]
 	},
