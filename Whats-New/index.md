@@ -7,6 +7,11 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### July 2018
+
+* Vault Application Framework 2.0
+	* Samples added [showing integration to the M-Files Admin configurations area]({{ site.baseurl }}/Samples-And-Libraries/Samples/Vault-Application-Framework/).
+
 ### June 2018
 
 * Vault Application Framework 2.0
