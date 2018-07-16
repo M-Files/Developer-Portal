@@ -102,7 +102,7 @@ Just like reading resources, modifying them by deleting or editing existing ones
 	</div>
 </div>
 
-Especially older IIS versions (5.1, 6.0) make it harder to use non GET or POST verbs with ASP.Net applications. While M-Files Web Service supports pure PUT and DELETE requests, the default IIS configuration for M-Files Web Access doesn't enable PUT and DELETE requests for IIS. For this reason M-Files Web Service supports a `?\_method=VERB` query parameter which is the recommended way to communicate the PUT and DELETE intents. See [compatibility]({{ site.baseurl }}/APIs/REST-API/Reference/compatibility) for more information on this. [Example below](#example-4) shows a PUT request on the [check-out state]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout) resource.
+Especially older IIS versions (5.1, 6.0) make it harder to use non GET or POST verbs with ASP.Net applications. While M-Files Web Service supports pure PUT and DELETE requests, the default IIS configuration for M-Files Web Access doesn't enable PUT and DELETE requests for IIS. For this reason M-Files Web Service supports a `?\_method=VERB` query parameter which is the recommended way to communicate the PUT and DELETE intents. See [compatibility]({{ site.baseurl }}/REST-API/#iis-compatibility) for more information on this. [Example below](#example-4) shows a PUT request on the [check-out state]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout) resource.
 {:.remark}
 
 <div class="sample" id="example-4">

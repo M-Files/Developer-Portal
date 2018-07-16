@@ -2,7 +2,6 @@
 layout: page
 title: Editors
 includeInSearch: true
-prerelease: true
 ---
 
 {% comment %}
@@ -158,7 +157,7 @@ public class Configuration
 
 ## MFIdentifier selector
 
-The [MFIdentifier](/Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) class can be used to reference vault elements such as classes, object types, or properties without having to [hard-code their respective vault IDs](/Concepts/Aliases/).  By declaring the member as an `MFIdentifier`, the M-Files Admin software will show the user a selection of items from the vault structure for them to pick.
+The [MFIdentifier](/Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier) class can be used to reference vault elements such as classes, object types, or properties without having to [hard-code their respective vault IDs](/Getting-Started/Aliases/).  By declaring the member as an `MFIdentifier`, the M-Files Admin software will show the user a selection of items from the vault structure for them to pick.
 
 The `MFIdentifier` class must be used along with an attribute such as `[MFClass]` or `[MFPropertyDef]` to define the type of vault structural element that the identifier points to.  An example is shown below.
 {:.note.warning}

@@ -9,7 +9,7 @@ The M-Files Web Service exposes an [endpoint](http://www.m-files.com/mfws/resour
 
 Note that, unlike the M-Files COM API, the M-Files Web Service will exclude deleted objects from the search results by default.
 
-If using .NET, it may be worth looking at the <a href="/Samples-And-Libraries/#rest-api-wrapper-net">REST API Wrapper for .NET</a>.  This handles the creation of the search condition querystring parameters, and any encoding required for their values.
+If using .NET, it may be worth looking at the [REST API Wrapper for .NET](/Samples-And-Libraries/#rest-api-wrapper-net).  This handles the creation of the search condition querystring parameters, and any encoding required for their values.
 {:.note}
 
 ## Example search conditions
@@ -20,8 +20,9 @@ To execute a quicksearch, include a querystring parameter named `q` and set its 
 
 ```csharp
 // Build the url to request (note to encode the query term).
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?q=" + System.Net.WebUtility.UrlEncode("mfws"));
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?q=" + System.Net.WebUtility.UrlEncode("mfws"));
 
 // Build the request.
 var httpClient = new HttpClient();
@@ -42,8 +43,9 @@ This example restricts the search to only return documents (built-in object type
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?o=0");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?o=0");
 
 // Build the request.
 var httpClient = new HttpClient();
@@ -62,8 +64,9 @@ To include deleted items, a querystring parameter named `d` must be included, wi
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?d=include");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?d=include");
 
 // Build the request.
 var httpClient = new HttpClient();
@@ -90,24 +93,27 @@ Note that the querystring parameter may need to be [URL encoded](https://en.wiki
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1002=ESTT");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1002=ESTT");
 ```
 
 If we wished to restrict by a text property with ID where the field contains `ESTT`, we would alter the operator:
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1002*=ESTT");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1002*=ESTT");
 ```
 
 If we wished to restrict by a text property with ID where the field matches a [wildcard search for `ESTT*`](https://www.m-files.com/user-guide/latest/eng/Quick_search.html), we would alter the operator:
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1002**=ESTT");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1002**=ESTT");
 ```
 
 #### Restricting by a boolean property
@@ -116,16 +122,18 @@ To restrict the search results by the value of a property with ID `1050`, the qu
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1050=true");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1050=true");
 ```
 
 Alternatively, we could search for only objects where the property is false:
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1050=false");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1050=false");
 ```
 
 #### Restricting by a numeric property (integer or real)
@@ -134,16 +142,18 @@ To restrict the search results by the value of a property with ID `1100`, the qu
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1100=123");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1100=123");
 ```
 
 Alternatively, we could make use of a [different operator](#operators) to instead search for objects where the value is greater than 1000:
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1100>>=1000");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1100>>=1000");
 ```
 
 #### Restricting by a date/time or timestamp property
@@ -152,16 +162,18 @@ To restrict the search results by the value of a property with ID `1200`, the qu
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1200=2017-06-01");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1200=2017-06-01");
 ```
 
 Alternatively, we could make use of a [different operator](#operators) to instead search for objects where the date is newer than 1st June 2017:
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1200>>=2017-06-01");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1200>>=2017-06-01");
 ```
 
 #### Restricting by a lookup (single-select) property
@@ -170,8 +182,9 @@ To restrict the search results by the value of a property with ID `1500`, the qu
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1500=12345");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1500=12345");
 ```
 
 #### Restricting by a multi-select lookup property
@@ -180,16 +193,18 @@ To restrict the search results by the value of a property with ID `1500`, the qu
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1500=12345");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1500=12345");
 ```
 
 To restrict objects to only objects which reference objects or value list items with *either* IDs 1, 2, 3, or 4, the values must be comma-separated.  The full querystring parameter would be `p1500=1,2,3,4`:
 
 ```csharp
 // Build the url to request.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?p1500=1,2,3,4");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?p1500=1,2,3,4");
 ```
 
 ## Combining search conditions
@@ -201,8 +216,9 @@ For example, a quicksearch for the string "mfws" may be encoded as `q=mfws`, and
 ```csharp
 // Build the url to request (note to encode the query term).
 // Also note that "o=0" (object type Id equals zero) has been added to the querystring.
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var url =
-	new Uri("http://kb.cloudvault.m-files.com/REST/objects?q=" + System.Net.WebUtility.UrlEncode("mfws") + "&o=0");
+	new Uri("http://kb.cloudvault.m-files.com/REST/objects.aspx?q=" + System.Net.WebUtility.UrlEncode("mfws") + "&o=0");
 
 // Build the request.
 var httpClient = new HttpClient();
@@ -239,3 +255,12 @@ The op-mod negates the operator provided, and is used in front of it.  For examp
 | Operator | Description | Example |
 | - | - | - |
 | != | The property value must *not* equal the value provided. | p1050!=ESTT |
+
+## Tips and tricks
+
+### Increasing the number of results
+
+You can provide a querystring parameter to the search named `limit`, with a maximum value, `e.g. /REST/objects/0?q=test&limit=5000` would limit the results to 5000 items.
+
+Please note that this endpoint calls the [SearchForObjectsByConditionsEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations~SearchForObjectsByConditionsEx.html) API method and provides the limit value to the `MaxSearchResults` parameter. The timeout stays at the default (60 seconds), and the limitations described in the API endpoint are still applicable.
+{:.note}

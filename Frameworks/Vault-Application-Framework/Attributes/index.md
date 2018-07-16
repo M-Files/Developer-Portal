@@ -67,9 +67,12 @@ These VBScript proxies must not be manually altered.
 * [MFIdentifierAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfidentifier)
 * [MFConfigurationAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfconfiguration)
 
+The `MFConfigurationAttribute` is used in the Vault Application Framework 1.0 to persist configuration information to name value storage.  In the Vault Application Framework 2.0, configuration information should use the [new approach to integrate with the M-Files 2018 configuration area]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/).
+{:.note}
+
 #### Vault Structure
 
-The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Concepts/Aliases) `MFiles.ObjectType.Project`.
+The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Getting-Started/Aliases) `MFiles.ObjectType.Project`.
 
 ```csharp
 [MFObjType()]

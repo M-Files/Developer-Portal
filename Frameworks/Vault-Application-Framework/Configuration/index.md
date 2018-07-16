@@ -3,7 +3,6 @@ layout: page
 title: Configuration in the Vault Application Framework 2.0
 includeInSearch: true
 breadcrumb: Configuration
-prerelease: true
 ---
 
 {% comment %}
@@ -74,7 +73,10 @@ namespace MFVaultApplication1
 	[DataContract]
 	public class Configuration
 	{
+		// NOTE: The default value needs to be placed in both the JsonConfEditor
+		// (or derived) attribute, and as a default value on the member.
 		[DataMember]
+		[JsonConfEditor(DefaultValue = "Value 1")]
 		public string ConfigValue1 = "Value 1";
 
 	}
@@ -114,7 +116,10 @@ namespace MFVaultApplication1
 	[DataContract]
 	public class Configuration
 	{
+		// NOTE: The default value needs to be placed in both the JsonConfEditor
+		// (or derived) attribute, and as a default value on the member.
 		[DataMember]
+		[JsonConfEditor(DefaultValue = "Value 1")]
 		public string ConfigValue1 = "Value 1";
 
 	}

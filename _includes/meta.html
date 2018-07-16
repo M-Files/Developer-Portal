@@ -13,20 +13,22 @@
 	<meta name="theme-color" content="#ffffff">
 	<meta name="msapplication-config" content="/browserconfig.xml?v={{ site.github.build_revision }}" />
 
-    {% if page.excerpt %}
+    {%- if page.excerpt -%}
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
     <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
-		{% if site.description %}
+    {%- else -%}
+		{%- if site.description -%}
 		<meta name="description" content="{{ site.description }}">
 		<meta property="og:description" content="{{ site.description }}" />
-		{% endif %}
-    {% endif %}
-    <meta name="author" content="{{ site.name }}" />
+		{%- endif -%}
+	{%- endif -%}
+	{%- if site.author -%}
+		<meta name="author" content="{{ site.author }}" />
+	{%- endif -%}
 
-    {% if page.title %}
+    {%- if page.title -%}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+    {%- endif -%}
 
     <link rel="canonical" href="http://developer.m-files.com{{ page.url }}" />

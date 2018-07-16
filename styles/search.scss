@@ -34,6 +34,55 @@ form.search input[type='submit']
 	box-sizing: border-box;
 }
 
+
+
+article.page form
+{
+  margin-top: 40px;
+}
+
+.search-results
+{
+  list-style-type:none;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.search-results li
+{
+  position: relative;
+}
+
+.result
+{
+  margin-left: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.excerpt
+{
+  margin-left: 50px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.score
+{
+  font-size: 0.8em;
+  color: green;
+  display: inline-block;
+  width: 30px;
+  text-align: right;
+  padding: 0px 10px;
+}
+
+.search-results-count
+{
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
 @media all and (max-width: 500px)
 {
     aside#sidebar form.search

@@ -7,7 +7,7 @@ breadcrumb: Authentication
 
 We support three primary authentication mechanisms: credentials in HTTP headers, cookie-based sessions, and authentication tokens.
 
-These examples use the .NET HttpWebRequest and HttpWebResponse objects directly, and uses the <a href="http://www.newtonsoft.com/json">JSON.NET</a> library for serialization/deserialization.  Other libraries are available that may make interacting with REST-like web services more simplistic, such as <a href="http://restsharp.org/">RestSharp</a>.  Always check the license details of third-party libraries to ensure that they can be used within your projects.
+These examples use the .NET HttpWebRequest and HttpWebResponse objects directly, and uses the [JSON.NET](http://www.newtonsoft.com/json) library for serialization/deserialization.  Other libraries are available that may make interacting with REST-like web services more simplistic, such as [RestSharp](http://restsharp.org/).  Always check the license details of third-party libraries to ensure that they can be used within your projects.
 {:.note}
 
 ## Authentication tokens
@@ -27,7 +27,8 @@ var auth = new
 };
 
 // Create the web request.
-var authenticationRequest = (HttpWebRequest) WebRequest.Create("http://example.org/REST/server/authenticationtokens");
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
+var authenticationRequest = (HttpWebRequest) WebRequest.Create("http://example.org/REST/server/authenticationtokens.aspx");
 authenticationRequest.Method = "POST";
 
 // Add the authentication details to the request stream.
@@ -53,7 +54,8 @@ using (var streamReader = new StreamReader(authenticationResponse.GetResponseStr
 }
 
 // Create a web request pointing at the endpoint that returns all items in the root view.
-var request = (HttpWebRequest)WebRequest.Create("http://example.org/REST/views/items");
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
+var request = (HttpWebRequest)WebRequest.Create("http://example.org/REST/views/items.aspx");
 
 // Ensure we set the authentication header.
 request.Headers.Add("X-Authentication", authenticationToken);
@@ -91,6 +93,7 @@ Cookie-based sessions are typically used in [single-sign-on scenarios]({{ site.b
 // Create a web request for the single sign on authentication endpoint,
 // passing it the vault GUID (without braces).
 var authenticationRequest = (HttpWebRequest)WebRequest.Create( "/WebServiceSSO.aspx?popup=1&vault=C840BE1A-5B47-4AC0-8EF7-835C166C8E24" );
+authenticationRequest.CookieContainer = new CookieContainer();
 
 // Execute the request.
 var authenticationResponse = (HttpWebResponse)authenticationRequest.GetResponse();
@@ -104,7 +107,8 @@ foreach(var cookie in authenticationResponse.Cookies)
 }
 
 // Create a web request pointing at the endpoint that returns all items in the root view.
-var request = (HttpWebRequest)WebRequest.Create( "http://example.org/REST/views/items" );
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
+var request = (HttpWebRequest)WebRequest.Create( "http://example.org/REST/views/items.aspx" );
 
 // Ensure we set the authentication cookies.
 request.CookieContainer = cookieContainer;
@@ -122,7 +126,8 @@ The M-Files Web Service documentation details the available [authentication requ
 
 ```csharp
 // Create a web request pointing at the endpoint that returns all items in the root view.
-var request = (HttpWebRequest)WebRequest.Create( "http://example.org/REST/views/items" );
+// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
+var request = (HttpWebRequest)WebRequest.Create( "http://example.org/REST/views/items.aspx" );
 
 // Add the username.
 request.Headers.Add("X-Username", "AlexK");

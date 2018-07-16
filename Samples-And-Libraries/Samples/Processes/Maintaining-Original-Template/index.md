@@ -33,7 +33,7 @@ Next, let's create some of the structure that we need. This structure could be c
 
 * Has a `Data type` of `Choose from list (single)`, and select the list named `Document`.
 
-* Has an [alias]({{ site.baseurl }}/Concepts/Aliases/) of `MFiles.PropertyDef.OriginalTemplate`. This format naming is not important, but a format of `{CompanyName}.{StructuralElementType}.{TextualName}` should help avoid any clashes. The important thing to note is that the alias here will be used in our code to [retrieve the property ID]({{ site.baseurl }}/Concepts/Aliases/#resolving-aliases), so we must keep a note of it.
+* Has an [alias]({{ site.baseurl }}/Getting-Started/Aliases/) of `MFiles.PropertyDef.OriginalTemplate`. This format naming is not important, but a format of `{CompanyName}.{StructuralElementType}.{TextualName}` should help avoid any clashes. The important thing to note is that the alias here will be used in our code to [retrieve the property ID]({{ site.baseurl }}/Getting-Started/Aliases/#resolving-aliases), so we must keep a note of it.
 
 ![The property definition properties, showing the general tab.](property-1.png)
 
@@ -118,7 +118,7 @@ End Function
 
 ### A Vault Application Framework approach
 
-[Create a new VAF application]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/), clear down the boilerplate code, and create an [event handler]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/). This event handler will react before the object is created and will add the `Original Template` property to the object before it's saved. The value for the property will be a pointer to the current version of the current document:
+[Create a new VAF application]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/), clear down the boilerplate code, and create an [event handler]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/). This event handler will react before the object is created and will add the `Original Template` property to the object before it's saved. The value for the property will be a pointer to the current version of the current document:
 
 ```csharp
 using System;

@@ -119,7 +119,7 @@ var propertyValues = new MFiles.PropertyValues();
 	var propertyValue = new MFiles.PropertyValue();
 	propertyValue.PropertyDef = MFBuiltInPropertyDefClass;
 	propertyValue.TypedValue.SetValue(
-		MFDataType.MFDatatypeLookup,
+		MFDatatypeLookup,
 		MFBuiltInDocumentClassOtherDocument);
 	propertyValues.Add(-1, propertyValue);
 }

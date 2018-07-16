@@ -25,9 +25,9 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 [Workflow State Actions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions) | Yes | Yes
 --- | ---
 
-## Version 2.0 (pre-release) <a name="version-20" id="version-20"></a>
+## Version 2.0
 
-Version 2.0 of the Vault Application Framework is currently in limited pre-release.  Alongside numerous internal bugfixes and performance work, this release brings two new major features:
+Alongside numerous internal bugfixes and performance work, this release brings two new major features:
 
 * [Licensing](../Licensing)
 
@@ -49,20 +49,23 @@ Version 1.0 of the Vault Application Framework was released in early 2016.  This
 * [Helper objects]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/) to aid working with the M-Files vault and Microsoft Windows environment.
 * [Search helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Searching/)
 
+M-Files have published to partners a [Visual Studio 2015/2017 template for use when creating VAF 1.0 applications]({{ site.baseurl}}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF1.0/).
+{:.note}
+
 ### Name-Value Storage Configuration
 
 The initial release of the framework supported [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/#mfconfiguration) that were used to mark up configuration objects used by each application.  These configuration objects were serialised into Name-Value storage, and the [Name-Value Storage Manager](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/0A8D789B-4E2B-4649-B1A1-AF0755B0C444/latest) could be used to alter them at runtime.
 
 The 2.0 release of the framework introduced another approach which integrates with the new configuration administration interface in M-Files 2018.  It is recommended that applications that target M-Files 2018 and upwards migrate to the new version.
 
+M-Files have published to partners a [Visual Studio 2015/2017 template for use when creating VAF 1.0 applications]({{ site.baseurl}}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0/).
+{:.note}
+
 ## Upgrading versions
 
 ### From Version 1.0 to Version 2.0
 
-The current Visual Studio Template allows creation of VAF 1.0 applications.  An updated application will be made available which allows VAF 2.0 applications to be created.  Until that time, please follow the steps below to convert a VAF 1.0 application to VAF 2.0.
-{:.note}
-
-To upgrade a VAF 1.0 application to 2.0, the following steps need to be taken.
+New VAF 2.0 applications can be created using the [M-Files 2018 Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  To upgrade an existing VAF 1.0 application to 2.0, the following steps need to be taken.
 
 * Unzip the VAF 2.0 release into a new folder.  This zip contains a number of files.
 * Open the existing VAF 1.0 application in Visual Studio:

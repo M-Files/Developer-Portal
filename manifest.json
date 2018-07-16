@@ -57,5 +57,6 @@
     ],
     "theme_color": "#0064ad",
     "background_color": "#0064ad",
-    "display": "minimal-ui"
+	"display": "minimal-ui",
+	"gcm_sender_id": "103953800507"
 }

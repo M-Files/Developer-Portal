@@ -36,7 +36,7 @@ M-Files provides significant built-in functionality which can be used by develop
 
 M-Files provides two Application Programming Interfaces for developers: the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) and the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/). The choice of which to use in each scenario will depend upon the technology you are using and the operations that you wish to undertake.
 
-### [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/)
+### COM/.NET API
 
 * Our most comprehensive API, providing interfaces for both "user" and "administrative" functions.
 * Can only be run on Windows, where the M-Files COM object can be made available.
@@ -47,10 +47,10 @@ M-Files provides two Application Programming Interfaces for developers: the [COM
   * Server mode does not require a vault connection to be set up on the host machine, but cannot show M-Files dialogs.
 * Requires the same version of the API on the client machine as the server.
 
-More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">COM API section</a>.
+More information is available in the [COM API section](/APIs/COM-API/).
 {:.note}
 
-### [The M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/)
+### The M-Files Web Service (MFWS)
 
 * A REST-like web service that is available from within M-Files Web Access.
 * Can be called from any environment that can make HTTP requests (e.g. mobile), and is not limited to Windows operating systems.
@@ -58,7 +58,7 @@ More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">
 * Supports most "user" operations, but cannot be used to undertake "administrative" functions.
 * Not tied directly to the M-Files Server version.
 
-More information is available in the <a href="{{ site.baseurl }}/APIs/REST-API/">REST API section</a>.
+More information is available in the [REST API section]({{ site.baseurl }}/APIs/REST-API/).
 {:.note}
 
 ## Our Frameworks
@@ -72,10 +72,10 @@ M-Files provides two separate frameworks for building applications that run with
 * Can create buttons and menu items which can react to selected items.
 * Can create "dashboards" which are shown on demand, and can be provided with content from M-Files.
 
-More information is available in the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/">User Interface Extensibility Framework section</a>.
+More information is available in the [User Interface Extensibility Framework section]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/).
 {:.note}
 
-### [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/)
+### Vault Application Framework (VAF)
 
 * Used to create server-side applications.
 * Can be used to execute .NET code in response to object (e.g before an object is checked in) or vault events (e.g. before a view is deleted).
@@ -83,7 +83,7 @@ More information is available in the <a href="{{ site.baseurl }}/Frameworks/User
 * Can be used to create background operations which execute periodically.
 * Can be used to execute .NET code to calculate property values and/or provide property value validation.
 
-More information is available in the <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/">Vault Application Framework section</a>.
+More information is available in the [Vault Application Framework section]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/).
 {:.note}
 
 ## Development Licences

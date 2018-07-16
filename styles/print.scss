@@ -7,11 +7,12 @@
 }
 div#share-links,
 	ol.breadcrumb,
-	div#in-page-nav,
+	#in-page-nav,
 	.hljs-ln-numbers,
 	.toggleLineNumbers,
 	.copyCode,
-	header
+	header,
+	#cookies
 {
 	/* Hide navigational/functional content.  */
 	display: none;
@@ -100,6 +101,12 @@ code::before
 	right: auto;
 }
 article.page .tag
+{
+	display: none;
+}
+
+/* Remove "you may also be interested in */
+.other-articles
 {
 	display: none;
 }

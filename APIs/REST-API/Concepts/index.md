@@ -49,7 +49,7 @@ In order to pass data structures from the calling application to the server, and
 
 ## Obtaining metadata structure element IDs
 
-Whilst it is typically advisable to reference metadata structure elements via their [aliases]({{ site.baseurl }}/Concepts/Aliases/), alias support is not available on the M-Files Web Service.  Instead, structural elements (e.g. properties, object types, classes, etc.) must be referenced by their internal ID.
+Whilst it is typically advisable to reference metadata structure elements via their [aliases]({{ site.baseurl }}/Getting-Started/Aliases/), alias support is not available on the M-Files Web Service.  Instead, structural elements (e.g. properties, object types, classes, etc.) must be referenced by their internal ID.
 
 ### Via M-Files Admin
 

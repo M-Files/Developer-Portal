@@ -7,17 +7,69 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### July 2018
+
+* Vault Application Framework 2.0
+	* Samples added [showing integration to the M-Files Admin configurations area]({{ site.baseurl }}/Samples-And-Libraries/Samples/Vault-Application-Framework/).
+
+### June 2018
+
+* Vault Application Framework 2.0
+	* Removed references to the VAF 2.0 being pre-release.
+	* Added page on using the [VAF 2.0 Visual Studio template package]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0).
+* [Intelligent Metadata Layer]({{ site.baseurl }}/Intelligent-Metadata-Layer) section created
+	* Initial introductory content to IML components such as External Repository Connectors and Intelligence Services.
+	* Added details on building [External Repository Connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/Visual-Studio) using the provided template.
+	* Added details on building [Intelligence Services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services/Visual-Studio) using the provided template.
+* User Interface Extensibility Framework
+	* Added page on using the [UIX Visual Studio template package]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio).
+
+### May 2018
+
+* Vault Application Framework 2.0 configuration
+	* Updated [configuration sample]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/) to show how to use default values.
+* General
+	* Updated [Client to Server Communication](/{{ site.baseurl }}Samples-And-Libraries/Samples/Processes/Client-To-Server-Communication/) sample to show explicitly the method for installation of the UIX application from within `InitializeApplication`.
+
+### April 2018
+
+* General
+	* Renamed `Concepts` page to [Getting Started]({{ site.baseurl }}/Getting-Started/), and populated content to help developers get started with M-Files terminology and structures.
+	* Added a cookie dialog stating what we use cookies for.  This dialog needs to be accepted once by new users.
+* COM API
+	* Examples shown for managing objects:
+		* [Creating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/)
+		* [Updating objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/)
+		* [Deleting and destroying objects with the COM API]({{ site.baseurl }}/APIs/COM-API/Deleting-Objects/)
+* REST API
+	* Examples shown for managing objects:
+		* [Creating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Creating-Objects/)
+		* [Updating objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Updating-Objects/)
+		* [Deleting and destroying objects with the REST API]({{ site.baseurl }}/APIs/REST-API/Deleting-Objects/)
+	* Added section on [maximising compatibility]({{ site.baseurl }}/APIs/REST-API/#iis-compatibility) when using the M-Files Web Service.
+* Vault Application Framework 2.0 configuration
+	* Added an example of [showing and hiding configuration options]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/Showing-And-Hiding/) based on other configuration options (e.g. "Show Advanced Configuration").
+	* Added an example of [how to customise how array element names are displayed]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/Hierarchical-Configuration/#customising-array-element-names).
+
 ### March 2018
+
 * General
 	* Added process [sample to show how to maintain the original template used to create a document]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/).
+	* Added details on how to create an [Attach to VAF Processes button]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes).
+* REST API
+	* Updated [code sample for retrieving cookies for authentication](/APIs/REST-API/Authentication/#cookie-based-sessions) to correctly instantiate the CookieContainer.
+* UX/Design
+	* Updated icons with March release.
 
 ### February 2018
+
 * UX/Design guidance
 	* Added [UX/Design guidance]({{ site.baseurl}}/UX-Design/) section to the developer portal.
 
 ### January 2018
+
 * Built-in
-	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Concepts/InternalAndExternalIDs/).
+	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Getting-Started/InternalAndExternalIDs/).
 * COM API
 	* Added in a search condition sample for [finding objects with specific flags (e.g. conflict objects)]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-by-object-flags-eg-searching-for-conflict-objects).
 	* Added in a page detailing how to [search for value list items by name, deleted status and owner]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems).
@@ -35,6 +87,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 ## 2017
 
 ### December 2017
+
 * COM API
 	* Added code sample for [searching for 'one of' a set of values]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#executing-a-one-of-search) in both VBScript and .NET.
 	* Added code sample for [restricting search results by a user's permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions), effectively allowing a high-permissions user restrict search results to items which another user can also see.
@@ -49,7 +102,6 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 * General
 	* Added navigational links to official API references for the [COM API](https://www.m-files.com/api/documentation/latest/index.html), [REST API](http://www.m-files.com/MFWS/) and [User Interface Extensibility Framework](https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html).
 	* Added UIX [sample to show how to react to built-in events]({{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/BuiltInCommand-Event/).
-
 
 ### August 2017
 
@@ -77,7 +129,7 @@ The User Interface Extensibility Framework section was created and launched.
 * Vault Application Framework
 	* Detailed [RequiredVaultAccess]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/) when using Vault Extension Methods
 	* Detailed how to [access content from .NET configuration files]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/DotNet-Configuration-Files/) within the Vault Application Framework
-	* Added information on the [Vault Application Framework Code Snippets]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/Code-Snippets/), including how to get them and use them
+	* Added information on the [Vault Application Framework Code Snippets]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/), including how to get them and use them
 * General
 	* Added line numbers to code samples
 	* Better layout on very small (e.g. phone) resolutions
