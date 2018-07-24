@@ -21,7 +21,10 @@ var parameters = {
 	},
 	":guid": { 
 		"<guid>" : "The element's GUID." 
-	} 
+	},
+	"targetid" : {
+		"<targetid>" : "The external repository target ID."
+	}
 };
 
 $(document).ready(function()

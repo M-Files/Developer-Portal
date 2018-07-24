@@ -13,6 +13,9 @@ redirect_from: "/APIs/REST-API/Reference/resources/views/path/items.html"
 Contents of a single view. 
 {:.description}
 
+By default this endpoint will return only managed objects.  By enabling [IML compatibility]({{ site.baseurl }}/APIs/REST-API/Reference/iml/), [external view folders]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffoldercontentitemtype/) and object versions without internal object ID values will be returned.  Read more on the [IML compatibility page]({{ site.baseurl }}/APIs/REST-API/Reference/iml/) for how to handle these structures.
+{:.remark}
+
 ### GET
 {:.method}
 

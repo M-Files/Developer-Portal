@@ -21,5 +21,5 @@ Retrieves automatic metadata based on specified request info.
 {:.method}
 Input: | [AutomaticMetadataRequestInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/automaticmetadatarequestinfo/)
 | Holds file upload ids and property values for fetching automatic metadata.
-Output: | [PropertyValueSuggestion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/propertyvaluesuggestion/)
-| Collection of property value suggestions.
+Output: | [PropertyValueSuggestion[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/propertyvaluesuggestion/)
+| Collection of property value suggestions from the registered intelligence services.
