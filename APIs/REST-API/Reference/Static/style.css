@@ -15,32 +15,52 @@ body {
     border: 1px solid black;
 }
 
-.table table {
+.table table, table.table {
     width: 100%;
     padding: 5px;
     border-collapse: collapse;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
+.table table tbody tr > *,
+	table.table tbody tr > *
+{
+	border-top: 1px dotted #CCC;
+	padding: 5px;
+}
+table.table tbody tr:first-child > *
+{
+	border-top: 1px solid black;
+}
+.table table thead th, table.table thead th
+{
+	font-style: italic;
+	font-weight: normal;
+	padding: 0.3em;
+	text-align: left;
+}
+
+li
+{
+	margin-bottom: 7px;
+}
 
 td {
     vertical-align: top;
-}
-
-.table table td {
-    padding: 0.3em;
 }
 
 .monospace {
     font-family: "Consolas";
 }
 
-.table table tr.pre-rule td {
+.table table tr.pre-rule td,
+	table.table tr.pre-rule td {
     border-bottom: 1px solid black;
     padding-bottom: 0.5em;
 }
 
-.table table tr.post-rule td {
+.table table tr.post-rule td,
+	table.table tr.post-rule td{
     padding-top: 0.3em;
 }
 
@@ -153,7 +173,7 @@ h2 .parameter {
 }
 
 .content {
-    max-width: 800px;
+    /* max-width: 800px; */
 }
 
 .content .method > div {

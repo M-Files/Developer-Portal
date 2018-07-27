@@ -47,8 +47,10 @@ Item | Description
 [Lookup](lookup) | Based on M-Files API. 
 [ObjectClass](objectclass) | Based on M-Files API. 
 [ObjectCreationInfo](objectcreationinfo) | Specifies the information required when creating a new object.
+[ObjectsUpdateInfo](objectsupdateinfo) | Specifies information for updating objects via [setmultipleobjproperties]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/setmultipleobjproperties/).
 [ObjectFile](objectfile) | Based on M-Files API. 
 [ObjectVersion](objectversion) | Based on M-Files API. 
+[ObjectVersionUpdateInformation](objectversionupdateinformation) | Specifies information for updating objects via [setmultipleobjproperties]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/setmultipleobjproperties/).
 [ObjectWorkflowState](objectworkflowstate) | A workflow state on an object.
 [ObjID](objid) | Based on M-Files API. 
 [ObjType](objtype) | Based on M-Files API. 

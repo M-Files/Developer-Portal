@@ -109,3 +109,20 @@ id-value | = number / 'e' string <br> ; 'e' specifies external ID condition. ID 
 Note that unlike M-Files API, M-Files Web Service doesn't return deleted objects by default. Specify `d=include` condition to include the deleted objects as well.
 {:.remark}
 
+## External object IDs
+
+[Some endpoints]({{ site.baseurl }}/APIs/REST-API/Reference/iml/#object-operations-supporting-external-objects) can be used to interact with unmanaged objects (external objects which have not yet been promoted).  However, these objects do not have internal M-Files IDs and so the typical URI format is not valid.
+
+Instead, the `ExternalRepositoryName` and `ExternalRepositoryObjectID` from the returned [ObjVer]({{site.baseurl }}/APIs/REST-API/Reference/structs/objver/) can be used instead of the "object ID" in the URI.  The format of the URI element should be the letter `u`, followed by the `ExternalRepositoryName` (URL-encoded), followed by a colon, followed by the `ExternalRepositoryObjectID` (URL-encoded).
+
+In the samples below, the external object has an `ExternalRepositoryName` of `e46e8488c1f94e529038e9fb80cf88b0`, an `ExternalRepositoryObjectID` of `Document!o1` and an `ExternalRepositoryObjectVersionID` of `f46f848831f94f529038f9fb803f88b0`.
+{:.remark}
+
+{:.table}
+Description | URI
+--- | ---
+Managed object (latest version) | `/REST/objects/0/123/latest/properties` 
+Unmanaged object (latest version) | `/REST/objects/0/ue46e8488c1f94e529038e9fb80cf88b0:Document%2101/latest/properties`
+Managed object (specific version) | `/REST/objects/0/123/3/properties`
+Unmanaged object (specific version) | `/REST/objects/0/ue46e8488c1f94e529038e9fb80cf88b0:Document%2101/f46f848831f94f529038f9fb803f88b0/properties`
+

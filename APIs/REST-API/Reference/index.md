@@ -26,6 +26,8 @@ This document is aimed at developers interested in using M-Files Web Service for
 
 **[Enumeration reference]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations)** Lists the different enumeration types used by the M-Files Web Service.
 
+**[Intelligent Metadata Layer (IML)]({{ site.baseurl }}/APIs/REST-API/Reference/iml)** contains information on IML and how its functionality can be accessed via the M-Files REST API.
+
 **[Encoding syntax]({{ site.baseurl }}/APIs/REST-API/Reference/syntax)** contains a reference on the more complex encoding formats used by the M-Files Web Service.
 
 **[Error reporting]({{ site.baseurl }}/APIs/REST-API/Reference/error)** describes the way M-Files Web Service communicates server-side exception back to the application over the HTTP protocol.

@@ -49,5 +49,7 @@ Earlier 9.0.3372.x M-Files versions have an issue preventing the use of this res
 Item | Description
 --- | ---
 [Automatic metadata suggestions]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/automaticmetadata/) | Returns suggestions for metadata properties from the installed Intelligence Services.
+[Demoting objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/demoting-objects/) | Demotes external objects that have been previously promoted.
 [Objects of type]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/) | Collection of objects filtered by object type. 
+[Setting properties on multiple objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/setmultipleobjproperties/) | Sets properties on multiple objects at once.  Can also be used to promote unmanaged objects.
 [Properties of multiple objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/properties/) | A resource that allows access to properties of multiple objects. 

@@ -15,6 +15,9 @@ Type | Name | Description
 `int` | ID
 `int` | Type
 `int` | Version
+`string` | ExternalRepositoryName (for external objects only)
+`string` | ExternalRepositoryObjectID (for external objects only)
+`string` | ExternalRepositoryObjectVersionID
 
 This is related to [the ObjVer class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjVer.html) in the COM API.
 {:.remark}
