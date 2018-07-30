@@ -43,21 +43,57 @@ If this header is not included on the call to retrieve an authentication token t
 
 ### External view folders content type
 
-Once IML functionality is enabled, querying for view contents may start to return [external view folders]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffoldercontentitemtype/).  This is most often seen when querying the root/home of the vault, as any external repository connections are listed here.
+Once IML functionality is enabled, querying for view contents may start to return [external view folders]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffoldercontentitemtype/), and searches may return unmanaged objects.  This is most often seen when querying the root/home of the vault, as any external repository connections are listed here.
 
 ### Navigating external view folders
 
-### External object versions
+After [enabling external repository connector functionality](#enabling-external-repository-connector-functionality), retrieving [items from the vault root]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items/) (a GET request to `/REST/views/items`) will return [external view folders]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffoldercontentitemtype/) for any configured vault external repository connections, in the same way that the M-Files Desktop Client does.
+
+To retrieve items from within an external view folder, a request must be made to [/REST/views/(path)/items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items/) including the external view folder path encoded as shown on the [encoding sytax page]({{ site.baseurl }}/APIs/REST-API/Reference/syntax/#sect%3aviewpath).
+
+For example, for an external view folder in a repository with `ExternalRepositoryName` of `myrepository` and an external view ID of `1234`, the request would be of the format:
+
+```text
+http://myfiles.mycompany.com/REST/views/umyrepository%3A1234/items
+```
+
+If the above view folder had a sub-folder with ID `5678` then the request would be of the format:
+
+```text
+http://myfiles.mycompany.com/REST/views/umyrepository%3A1234/umyrepository%3A5678/items
+```
+
+If the external repository connection uses personal authentication then the above endpoint(s) may return a `403` HTTP status.  This happens when the user has not already authenticated to the repository, or if their authentication is no longer valid.  The user must [log into the repository]({{ site.baseurl }}/APIs/REST-API/Reference/resources/repositories/session/) before this connection can be used.
+{:.remark}
+
+### External object repository object versions
 
 Once IML functionality is enabled, querying for view contents or performing searches may return external objects.  External objects can be identified as their [ObjVer]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objver/) will contain populated `ExternalRepositoryName`, `ExternalRepositoryObjectID` and `ExternalRepositoryObjectVersionID` properties.
 
-Note that external objects may be `unmanaged` or `managed`.  Unmanaged objects have not been `promoted`, do not have an internal M-Files ID (`ObjID.ID`) assigned, and will not contain extended metadata.  Managed objects have been promoted are assigned an internal M-Files ID (alongside external repository information), and will contain other metadata such as the object's class.
+Note that objects from external repositories may be `unmanaged` or `managed`.  Unmanaged objects have not been `promoted`, do not have an internal M-Files ID (`ObjID.ID`) assigned, and will not contain extended metadata.  Managed objects have been promoted are assigned an internal M-Files ID (alongside external repository information), and will contain other metadata such as the object's class.
 
-### Retrieving properties of external objects
+The class property lookup ID of an `unmanaged` document will always be -107.
+{:.remark}
+
+### Retrieving properties of objects from external repositories
+
+The [object version properties]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/) endpoint supports both managed and unmanaged objects.
+
+For an unmanged document with an `ExternalRepositoryName` of `myrepository`, an `ExternalRepositoryObjectID` of `123456` and `ExternalRepositoryObjectVersionID` of `version1`, the request would be of the format:
+
+```text
+http://myfiles.mycompany.com/REST/objects/0/umyrepository%3A123456/uversion1/properties
+```
+
+Note that for unmanaged objects the amount of metadata returned will be limited.  The class of an unmanaged document will always be `-107`.
+{:.remark}
 
 ### Promoting unmanaged objects
 
+To promote an object (to convert it from an unmanaged to a managed object), execute a `PUT` request to the [setting properties on multiple objects endpoint]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/setmultipleobjproperties/).
 
+The properties for the new object must include, at a minimum, the object class (built-in property definition with ID 100), and all mandatory properties for that class.
+{:.remark}
 
 ### Demoting managed objects
 
@@ -67,9 +103,11 @@ If an object has previously been promoted from an external system and is no long
 
 The following endpoints can be used to retrieve information for unmanaged objects (i.e. objects residing in external systems which have not yet been promoted).
 
-* [Object version properties]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/)
-* [Object checkout status]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout/)
-* [Object title]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/title/)
-* Object file download
-* Favourite
-* Delete / Undelete
+* [Retrieval of object version properties]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/)
+* [Checking objects in and out]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout/)
+* [Reading the object tile (and renaming it)]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/title/)
+* [Object file download (and replacing file contents)]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/content/)
+* [Delete / Undelete]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/deleted/)
+
+When dealing with umanaged objects, M-Files attempts to perform the requested function directly against the external repository.  Depending upon the repository, and support of the connector, these functions may fail.
+{:.remark}
