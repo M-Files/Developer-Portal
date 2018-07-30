@@ -5,7 +5,7 @@ var parameters = {
 	"objectid": {
 		"<number>": "Refers to an internal object ID",
 		"e<string>": "Refers to an external object ID.",
-		"u<string>:<string>" : "Refers to an external object. See the Encoding syntax page for more information.  Only supported on some endpoints; see the IML page for more information."
+		"u<string>%3A<string>" : "Refers to an unmanaged object from an external repository. Only supported on some endpoints; see the IML page for more information."
 	},
 	"id": {
 		"<number>": "Refers to an ID."

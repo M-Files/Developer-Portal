@@ -121,6 +121,6 @@ In the samples below, the external object has an `ExternalRepositoryName` of `e4
 Description | URI
 --- | ---
 Managed object (latest version) | `/REST/objects/0/123/latest/properties` 
-Unmanaged object (latest version) | `/REST/objects/0/ue46e8488c1f94e529038e9fb80cf88b0%3ADocument%2101/latest/properties`
+Unmanaged object (latest version) | `/REST/objects/0/ue46e8488c1f94e529038e9fb80cf88b0%3ADocument%252101/latest/properties`
 Managed object (specific version) | `/REST/objects/0/123/3/properties`
-Unmanaged object (specific version) | `/REST/objects/0/ue46e8488c1f94e529038e9fb80cf88b0%3ADocument%2101/uf46f848831f94f529038f9fb803f88b0/properties`
+Unmanaged object (specific version) | `/REST/objects/0/ue46e8488c1f94e529038e9fb80cf88b0%3ADocument%252101/uf46f848831f94f529038f9fb803f88b0/properties`
