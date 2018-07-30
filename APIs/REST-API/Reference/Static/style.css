@@ -234,10 +234,15 @@ h2 .parameter {
     left: 0;
     z-index: 3;
     display: none;
-
     font-size: 10pt;
     color: black;
     font-weight: normal;
     padding: 0.5em;
     border-radius: 8px;
+}
+
+/* add a little margin to the icon on external links */
+a[rel~=external] > .zmdi
+{
+	margin: 0px 3px;
 }
