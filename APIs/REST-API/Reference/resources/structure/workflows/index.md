@@ -26,3 +26,4 @@ Output: | [Workflow[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/workfl
 Item | Description
 --- | ---
 [Workflow]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/) | Information on a single workflow. 
+[Workflow ID from alias (multiple)](itemidbyalias/) | Allows resolution of one or more workflows IDs from their aliases.

@@ -26,6 +26,9 @@ var parameters = {
 	},
 	"targetid" : {
 		"<targetid>" : "The external repository target ID."
+	},
+	"alias" : {
+		"<alias>" : "The alias of the item to resolve."
 	}
 };
 
