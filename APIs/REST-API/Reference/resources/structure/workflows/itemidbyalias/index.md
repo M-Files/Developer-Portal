@@ -1,7 +1,8 @@
 ---
 layout: mfws
 title: Workflow IDs by alias
-includeInSearch: true
+includeInSearch: 
+minimumVersion: 12.0.6783.0
 ---
 
 # Workflow ID by alias

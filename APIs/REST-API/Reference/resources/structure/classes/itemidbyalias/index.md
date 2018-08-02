@@ -2,6 +2,7 @@
 layout: mfws
 title: Object class IDs by alias
 includeInSearch: true
+minimumVersion: 12.0.6783.0
 ---
 
 # Object class ID by alias

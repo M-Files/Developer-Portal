@@ -2,6 +2,7 @@
 layout: mfws
 title: Demoting objects
 includeInSearch: true
+minimumVersion: 12.0.6400.37
 ---
 
 # Demoting objects

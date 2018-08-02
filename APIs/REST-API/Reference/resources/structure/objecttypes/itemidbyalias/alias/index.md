@@ -2,6 +2,7 @@
 layout: mfws
 title: Object type ID by alias
 includeInSearch: true
+minimumVersion: 12.0.6783.0
 ---
 
 # Object type ID by alias
@@ -12,7 +13,7 @@ includeInSearch: true
 Resolves a single object type alias to its ID.
 {:.description}
 
-The alias should be URI-encoded.  If resolving multiple aliases, or your alias contains the character `\`, then it is recommended to use [/structure/objecttypes/itemidbyalias](../), or [/structure/metadatastructure/itemidbyalias](../../../metadatastructure/itemidbyalias).
+The alias should be URI-encoded.  If resolving multiple aliases, or your alias contains the character `\`, then it is recommended to use [/structure/objecttypes/itemidbyalias](../), or [/structure/metadatastructure/itemidbyalias]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/metadatastructure/itemidbyalias).
 {:.remark}
 
 ### GET

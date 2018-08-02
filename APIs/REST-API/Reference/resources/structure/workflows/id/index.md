@@ -7,7 +7,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/structure/workflows/id.html"
 
 # Workflow
 
-## /structure/Workflow/(id)
+## /structure/workflow/(id)
 {:.url-with-parameters}
 
 Information on a single workflow. 

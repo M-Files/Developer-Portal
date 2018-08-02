@@ -3,6 +3,7 @@ layout: mfws
 title: Automatic metadata
 includeInSearch: true
 redirect_from: "/APIs/REST-API/Reference/resources/automaticmetadata.html"
+minimumVersion: 12.0.6400.37
 ---
 
 # Automatic metadata

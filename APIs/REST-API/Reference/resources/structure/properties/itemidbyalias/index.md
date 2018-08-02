@@ -2,6 +2,7 @@
 layout: mfws
 title: Property definition IDs by alias
 includeInSearch: true
+minimumVersion: 12.0.6783.0
 ---
 
 # Property definition ID by alias

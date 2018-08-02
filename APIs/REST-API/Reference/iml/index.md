@@ -2,6 +2,7 @@
 layout: mfws
 title: Intelligent Metadata Layer
 includeInSearch: true
+minimumVersion: 12.0.6400.37
 ---
 
 # Intelligent Metadata Layer
@@ -72,9 +73,6 @@ Once IML functionality is enabled, querying for view contents or performing sear
 
 Note that objects from external repositories may be `unmanaged` or `managed`.  Unmanaged objects have not been `promoted`, do not have an internal M-Files ID (`ObjID.ID`) assigned, and will not contain extended metadata.  Managed objects have been promoted are assigned an internal M-Files ID (alongside external repository information), and will contain other metadata such as the object's class.
 
-The class property lookup ID of an `unmanaged` document will always be -107.
-{:.remark}
-
 ### Retrieving properties of objects from external repositories
 
 The [object version properties]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/) endpoint supports both managed and unmanaged objects.
@@ -85,7 +83,7 @@ For an unmanged document with an `ExternalRepositoryName` of `myrepository`, an 
 http://myfiles.mycompany.com/REST/objects/0/umyrepository%3A123456/uversion1/properties
 ```
 
-Note that for unmanaged objects the amount of metadata returned will be limited.  The class of an unmanaged document will always be `-107`.
+Note that for unmanaged objects the amount of metadata returned will be limited.
 {:.remark}
 
 ### Promoting unmanaged objects

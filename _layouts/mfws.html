@@ -24,62 +24,6 @@ hljs.configure({languages: ["cs", "xml", "vbscript", "javascript"]});
 hljs.initHighlightingOnLoad();
 </script>
 
-<style>
-
-table.enum tbody td{
-	font-family: "Consolas"
-}
-table.table.enum thead th:first-child,
-	table.table.enum tbody td:first-child
-{
-	width: 10%;
-}
-
-a[rel='external'] i
-{
-	padding-left: 2px;
-	padding-right: 3px;
-}
-.tooltip.active
-{
-	display: block;
-}
-
-table.method{
-	width: 100%;
-}
-table.method tr td:first-child
-{
-	width: 100px;
-}
-table.method tr td
-{
-    margin-top: 5px;
-}
-
-h3.method {
-    border-bottom: 2px solid black;
-}
-table#sub-resources thead
-{
-	display: none;
-}
-h1
-{
-	font-size: 2em;
-	margin: 15px 0px;
-}
-code.highlighter-rouge {
-    background-color: lightyellow;
-    display: inline-block;
-    margin: 0px 3px;
-    border: 1px solid gold;
-    padding: 3px 7px;
-}
-
-
-</style>
-
 <title>M-Files Web Service: {% if page.title %}{{ page.title }} {% endif %}</title>
 </head>
 <body>
@@ -106,6 +50,15 @@ code.highlighter-rouge {
 
     <hr>
 	<article class="page">
+
+		{% if page.minimumVersion != nil  %}
+		
+		<p class="minimumVersion">
+			Information on this page is only applicable to M-Files (server) version <code class="highlighter-rouge">{{ page.minimumVersion }}</code> and higher.
+		</p>
+
+		{% endif %}
+
 		<article>
 			
 			{{ content }}

@@ -2,6 +2,7 @@
 layout: mfws
 title: Setting properties on multiple objects
 includeInSearch: true
+minimumVersion: 12.0.6400.37
 ---
 
 # Setting properties on multiple objects

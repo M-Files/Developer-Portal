@@ -7,7 +7,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/structure/workflows/id/states
 
 # Workflow states
 
-## /structure/Workflow/(id)/states
+## /structure/workflow/(id)/states
 {:.url-with-parameters}
 
 Collection of states under a single workflow. 
@@ -27,3 +27,4 @@ Parameters: | `?currentstate` - `null` or state ID. Restricts the list of return
 Item | Description
 --- | ---
 [Workflow state]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/states/id/) | Information on a single workflow state. 
+[Workflow state ID from alias (multiple)](itemidbyalias/) | Allows resolution of one or more workflow state IDs from their aliases.

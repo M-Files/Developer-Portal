@@ -107,18 +107,6 @@
 					</ul>
 					</li>
 					<li class="nav-item" id="nav-resources-files" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/files/">Temporary upload</a></li>
-					<li class="nav-item"
-					 id="nav-resources-valuelists-id-items" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/valuelists/id/items/">Value list items</a>
-						<ul
-						 class="nav-children">
-							<li class="nav-item" id="nav-resources-valuelists-id-items-objectid" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/valuelists/id/items/objectid/">Value list item</a>
-								<ul
-								 class="nav-children">
-									<li class="nav-item" id="nav-resources-valuelists-id-items-objectid-title" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/valuelists/id/items/objectid/title/">Value list item title</a></li>
-									</ul>
-							</li>
-							</ul>
-					</li>
 					<li class="nav-item" id="nav-resources-structure" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/">Vault structure</a>
 						<ul class="nav-children">
 							<li class="nav-item" id="nav-resources-structure-classes" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/">Object classes</a>
@@ -138,20 +126,20 @@
 						</ul>
 						</li>
 						<li class="nav-item" id="nav-resources-structure-objecttypes" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/">Object types</a>
+							<ul class="nav-children">
 							<li class="nav-item" id="nav-resources-structure-objecttypes-itemidbyalias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/itemidbyalias/">Alias to ID (multiple)</a>
 								<ul class="nav-children">
 									<li class="nav-item" id="nav-resources-structure-objecttypes-itemidbyalias-alias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/itemidbyalias/alias/">Alias to ID (single)</a></li>
 								</ul>
-							<ul
-							 class="nav-children">
-								<li class="nav-item" id="nav-resources-structure-objecttypes-type" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/">Object type</a>
-									<ul
-									 class="nav-children">
-									 	<li class="nav-item" id="nav-resources-structure-objecttypes-type-classes" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/classes/">Classes</a></li> 
-										<li class="nav-item" id="nav-resources-structure-objecttypes-type-refreshstatus" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/refreshstatus/">External source refresh</a></li>
-										<li
-										 class="nav-item" id="nav-resources-structure-objecttypes-type-icon" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/icon/">Object type icon</a></li>
-								</ul>
+							</li>
+							<li class="nav-item" id="nav-resources-structure-objecttypes-type" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/">Object type</a>
+								<ul
+								 class="nav-children">
+								 	<li class="nav-item" id="nav-resources-structure-objecttypes-type-classes" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/classes/">Classes</a></li> 
+									<li class="nav-item" id="nav-resources-structure-objecttypes-type-refreshstatus" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/refreshstatus/">External source refresh</a></li>
+									<li
+									 class="nav-item" id="nav-resources-structure-objecttypes-type-icon" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/icon/">Object type icon</a></li>
+							</ul>
 						</li>
 						</ul>
 					</li>
@@ -166,20 +154,60 @@
 							<li class="nav-item" id="nav-resources-structure-properties-id" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/properties/id/">Property definition</a></li>
 							</ul>
 					</li>
+					<li class="nav-item" id="nav-resources-structure-valuelists" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/">Value lists</a>
+						<ul class="nav-children">
+							<li class="nav-item" id="nav-resources-structure-valuelists-id" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/">Value list</a>
+								<ul class="nav-children">
+									<li class="nav-item"
+									id="nav-resources-valuelists-id-items" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/">Value list items</a>
+									   <ul
+										class="nav-children">
+										   <li class="nav-item" id="nav-resources-valuelists-id-items-objectid" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/objectid/">Value list item</a>
+											   <ul
+												class="nav-children">
+												   <li class="nav-item" id="nav-resources-valuelists-id-items-objectid-title" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/objectid/title/">Value list item title</a></li>
+												   </ul>
+										   </li>
+										   </ul>
+								   </li>
+								</ul>
+							</li>
+							<li class="nav-item" id="nav-resources-structure-valuelists-itemidbyalias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/itemidbyalias/">Alias to ID (multiple)</a>
+								<ul class="nav-children">
+									<li class="nav-item" id="nav-resources-structure-valuelists-itemidbyalias-alias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/itemidbyalias/alias/">Alias to ID (single)</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
 					<li class="nav-item" id="nav-resources-structure-workflows" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/">Workflows</a>
 						<ul class="nav-children">
 							<li class="nav-item" id="nav-resources-structure-workflows-itemidbyalias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/itemidbyalias/">Alias to ID (multiple)</a>
 								<ul class="nav-children">
-									<li class="nav-item" id="nav-resources-structure-workflows-itemidbyalias-alias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/workflows/properties/itemidbyalias/alias/">Alias to ID (single)</a></li>
+									<li class="nav-item" id="nav-resources-structure-workflows-itemidbyalias-alias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/itemidbyalias/alias/">Alias to ID (single)</a></li>
 								</ul>
 								</li>		
 							<li class="nav-item" id="nav-resources-structure-workflows-id" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/">Workflow</a>
 								<ul
 								 class="nav-children">
+								 <li class="nav-item" id="nav-resources-structure-workflows-id-statetransitions" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/statetransitions/">Workflow state transitions</a>
+									<ul
+									 class="nav-children">
+									 <li class="nav-item" id="nav-resources-structure-workflows-id-statetransitions-itemidbyalias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/statetransitions/itemidbyalias/">Alias to ID (multiple)</a>
+										<ul class="nav-children">
+											<li class="nav-item" id="nav-resources-structure-workflows-id-statetransitions-itemidbyalias-alias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/statetransitions/itemidbyalias/alias/">Alias to ID (single)</a></li>
+										</ul>
+										</li>
+					</ul>
+					</li>
 									<li class="nav-item" id="nav-resources-structure-workflows-id-states" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/states/">Workflow states</a>
 										<ul
 										 class="nav-children">
-											<li class="nav-item" id="nav-resources-structure-workflows-id-states-id" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/states/id/">Workflow state</a></li>
+										 <li class="nav-item" id="nav-resources-structure-workflows-id-states-itemidbyalias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/states/itemidbyalias/">Alias to ID (multiple)</a>
+											<ul class="nav-children">
+												<li class="nav-item" id="nav-resources-structure-workflows-id-states-itemidbyalias-alias" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/states/itemidbyalias/alias/">Alias to ID (single)</a></li>
+											</ul>
+											</li>		
+														<li class="nav-item" id="nav-resources-structure-workflows-id-states-id" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/workflows/id/states/id/">Workflow state</a></li>
 						</ul>
 						</li>
 						</ul>
