@@ -43,7 +43,7 @@ The application manifest file, containing information such as the publisher deta
 * `MyApplication.cs`
 The entry point for the application.  Defines the services which the application exposes.
 * `MyConfiguration.cs`
-The configuration information.  Configuration members are defined in the same way as [Vault Application Framework 2.0 configuration]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration).
+The configuration information.  Configuration members are defined in the same way as [Vault Application Framework 2.0 configuration]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/).
 * `MyIntelligenceProvider.cs`
 Declares the `ExtractMetadata` method, which provides the metadata suggestions.
 * `MyIntelligenceService.cs`

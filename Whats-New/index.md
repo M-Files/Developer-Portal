@@ -16,13 +16,13 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 * Vault Application Framework 2.0
 	* Removed references to the VAF 2.0 being pre-release.
-	* Added page on using the [VAF 2.0 Visual Studio template package]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0).
-* [Intelligent Metadata Layer]({{ site.baseurl }}/Intelligent-Metadata-Layer) section created
+	* Added page on using the [VAF 2.0 Visual Studio template package]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0/).
+* [Intelligent Metadata Layer]({{ site.baseurl }}/Intelligent-Metadata-Layer/) section created
 	* Initial introductory content to IML components such as External Repository Connectors and Intelligence Services.
-	* Added details on building [External Repository Connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/Visual-Studio) using the provided template.
-	* Added details on building [Intelligence Services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services/Visual-Studio) using the provided template.
+	* Added details on building [External Repository Connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/Visual-Studio/) using the provided template.
+	* Added details on building [Intelligence Services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services/Visual-Studio/) using the provided template.
 * User Interface Extensibility Framework
-	* Added page on using the [UIX Visual Studio template package]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio).
+	* Added page on using the [UIX Visual Studio template package]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio/).
 
 ### May 2018
 
@@ -55,7 +55,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 * General
 	* Added process [sample to show how to maintain the original template used to create a document]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/).
-	* Added details on how to create an [Attach to VAF Processes button]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes).
+	* Added details on how to create an [Attach to VAF Processes button]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes/).
 * REST API
 	* Updated [code sample for retrieving cookies for authentication](/APIs/REST-API/Authentication/#cookie-based-sessions) to correctly instantiate the CookieContainer.
 * UX/Design
@@ -72,7 +72,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Getting-Started/InternalAndExternalIDs/).
 * COM API
 	* Added in a search condition sample for [finding objects with specific flags (e.g. conflict objects)]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-by-object-flags-eg-searching-for-conflict-objects).
-	* Added in a page detailing how to [search for value list items by name, deleted status and owner]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems).
+	* Added in a page detailing how to [search for value list items by name, deleted status and owner]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems/).
 * Vault Application Framework
 	* Added [information on the VAF versions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/).
 	* Added initial (pre-release) content for [the new Configuration integration with M-Files Admin](http://developer.m-files.com/Frameworks/Vault-Application-Framework/Configuration/) with VAF 2.0.

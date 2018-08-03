@@ -72,7 +72,7 @@ The `MFConfigurationAttribute` is used in the Vault Application Framework 1.0 to
 
 #### Vault Structure
 
-The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Getting-Started/Aliases) `MFiles.ObjectType.Project`.
+The following attributes precede `MFIdentifier` properties and fields and define the type of vault element that the identifier points to.  For example, the following code will declare an `MFIdentifier` for an object type with the [alias]({{ site.baseurl }}/Getting-Started/Aliases/) `MFiles.ObjectType.Project`.
 
 ```csharp
 [MFObjType()]
@@ -107,23 +107,23 @@ MFIdentifier ProjectObjectType = "MFiles.ObjectType.Project";
 
 #### Vault Extension Methods
 
-* [VaultExtensionMethodAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods)
+* [VaultExtensionMethodAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/)
 
 #### Event Handlers
 
-* [EventHandlerAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers)
+* [EventHandlerAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/)
 
 #### Properties
 
-* [PropertyAutomaticNumberingAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties)
-* [PropertyCustomValueAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties)
-* [PropertyValueValidationAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties)
+* [PropertyAutomaticNumberingAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/)
+* [PropertyCustomValueAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/)
+* [PropertyValueValidationAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/)
 
 #### Workflow States
 
-* [StatePreConditionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows)
-* [StatePostConditionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows)
-* [StateActionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows)
+* [StatePreConditionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/)
+* [StatePostConditionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/)
+* [StateActionAttribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/)
 
 #### Workflow State Transitions
 

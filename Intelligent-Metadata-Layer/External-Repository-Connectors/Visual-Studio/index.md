@@ -47,7 +47,7 @@ An in-memory repository of folder and file information.  **This is only included
 * `MyApplication.cs`
 The entry point for the application.  Defines the services which the application exposes.
 * `MyConfiguration.cs`
-The configuration information.  Configuration members are defined in the same way as [Vault Application Framework 2.0 configuration]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration).
+The configuration information.  Configuration members are defined in the same way as [Vault Application Framework 2.0 configuration]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/).
 * `MyRepositoryConnector.cs`
 Provides basic information about the external repository connector itself (its name, GUID, etc.).
 * `MyRepositoryConnection.cs`

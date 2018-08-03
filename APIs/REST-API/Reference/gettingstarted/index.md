@@ -8,7 +8,7 @@ redirect_from: "/APIs/REST-API/Reference/gettingstarted.html"
 # Getting Started
 {:#gettingstarted}
 
-This section demonstrates the use of M-Files Web Service by using low level HTTP requests. The information below should be applicale to most programming languages. See [Sample Code]({{ site.baseurl }}/APIs/REST-API/Reference/samples) section for sample M-Files Web Service C# client. The Sample Code package also contains the [struct]({{ site.baseurl }}/APIs/REST-API/Reference/structs) definitions used in the samples below.
+This section demonstrates the use of M-Files Web Service by using low level HTTP requests. The information below should be applicale to most programming languages. See [Sample Code]({{ site.baseurl }}/APIs/REST-API/Reference/samples/) section for sample M-Files Web Service C# client. The Sample Code package also contains the [struct]({{ site.baseurl }}/APIs/REST-API/Reference/structs/) definitions used in the samples below.
 
 ## Prerequisities
 
@@ -24,7 +24,7 @@ MFWS provides three ways to authenticate the requests: Credentials in HTTP heade
 
 ### Example: Acquiring the authentication token
 
-An authentication token request is one of the requests that can be made unauthenticated. It is made by POSTing the authentication credentials to the [/server/authenticationtokens]({{ site.baseurl }}/APIs/REST-API/Reference/resources/server/authenticationtokens) resource as shown in the [example below](#example-1).
+An authentication token request is one of the requests that can be made unauthenticated. It is made by POSTing the authentication credentials to the [/server/authenticationtokens]({{ site.baseurl }}/APIs/REST-API/Reference/resources/server/authenticationtokens/) resource as shown in the [example below](#example-1).
 
 <div class="sample" id="example-1">
 	<div class="sample-code">
@@ -51,7 +51,7 @@ Once the authentication token has been acquired it can be used in the requests b
 
 ## Reading the resources
 
-Once the authentication has been performed it is possible to access information within a document vault. This information is made available in terms of [resources]({{ site.baseurl }}/APIs/REST-API/Reference/resources). Save for few exceptions all of these resources support the HTTP GET method which allows an application to request the current representation of the resource. The [example below](#example-2) uses a GET request on the document vault root view resource found at [/views/items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items) to list all the views in the document vault root.
+Once the authentication has been performed it is possible to access information within a document vault. This information is made available in terms of [resources/. Save for few exceptions all of these resources support the HTTP GET method which allows an application to request the current representation of the resource. The [example below](#example-2) uses a GET request on the document vault root view resource found at [/views/items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items/) to list all the views in the document vault root.
 
 <div class="sample" id="example-2">
 	<div class="sample-code">
@@ -79,7 +79,7 @@ Testing resource reading is easy with the browser itself. You can log in to M-Fi
 
 ## Writing the resources
 
-Just like reading resources, modifying them by deleting or editing existing ones or creating new ones is done with basic HTTP requests as well. Each of these different operations has its own HTTP verb: POST for creating, PUT for editing and DELETE for deleting. However unlike GET, these other verbs are not available for all resources. The [resource reference]({{ site.baseurl }}/APIs/REST-API/Reference/resources) contains information on the resources and the methods available for them. The example [example below](#example-3) below uses POST request on the documents collection resource found at [/objects/0]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/) to create a new document in the document vault.
+Just like reading resources, modifying them by deleting or editing existing ones or creating new ones is done with basic HTTP requests as well. Each of these different operations has its own HTTP verb: POST for creating, PUT for editing and DELETE for deleting. However unlike GET, these other verbs are not available for all resources. The [resource reference]({{ site.baseurl }}/APIs/REST-API/Reference/resources/) contains information on the resources and the methods available for them. The example [example below](#example-3) below uses POST request on the documents collection resource found at [/objects/0]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/) to create a new document in the document vault.
 
 <div class="sample" id="example-3">
 	<div class="sample-code">
@@ -102,7 +102,7 @@ Just like reading resources, modifying them by deleting or editing existing ones
 	</div>
 </div>
 
-Especially older IIS versions (5.1, 6.0) make it harder to use non GET or POST verbs with ASP.Net applications. While M-Files Web Service supports pure PUT and DELETE requests, the default IIS configuration for M-Files Web Access doesn't enable PUT and DELETE requests for IIS. For this reason M-Files Web Service supports a `?\_method=VERB` query parameter which is the recommended way to communicate the PUT and DELETE intents. See [compatibility]({{ site.baseurl }}/REST-API/#iis-compatibility) for more information on this. [Example below](#example-4) shows a PUT request on the [check-out state]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout) resource.
+Especially older IIS versions (5.1, 6.0) make it harder to use non GET or POST verbs with ASP.Net applications. While M-Files Web Service supports pure PUT and DELETE requests, the default IIS configuration for M-Files Web Access doesn't enable PUT and DELETE requests for IIS. For this reason M-Files Web Service supports a `?\_method=VERB` query parameter which is the recommended way to communicate the PUT and DELETE intents. See [compatibility]({{ site.baseurl }}/REST-API/#iis-compatibility) for more information on this. [Example below](#example-4) shows a PUT request on the [check-out state]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout/) resource.
 {:.remark}
 
 <div class="sample" id="example-4">

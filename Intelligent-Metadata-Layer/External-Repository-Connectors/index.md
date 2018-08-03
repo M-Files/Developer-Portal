@@ -8,7 +8,7 @@ External Repository Connectors allow content stored within other repositories to
 
 Users can choose to `Promote` this unmanaged content to become `Managed`.  By becoming `Managed`, the object becomes a first-class citizen within the M-Files system.  Managed objects can have metadata (such as a class), appear within dynamic views, and can even participate in workflows.  All the time their respective file data continues to reside on the source system.
 
-Developers build connections to their own data sources by [building their own external repository connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors).
+Developers build connections to their own data sources by [building their own external repository connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/).
 
 ## Locating External Repository Connectors
 
@@ -17,7 +17,7 @@ External Repository Connectors built by M-Files or one of our Certified Applicat
 
 ## Installing and configuring External Repository Connectors
 
-External Repository Connectors are installed and configured in an identical way to [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework) applications; by using the M-Files Admin tool.  The online user guide [details how to install an External Repository Connector](https://www.m-files.com/user-guide/latest/eng/adding_a_connector.html).
+External Repository Connectors are installed and configured in an identical way to [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) applications; by using the M-Files Admin tool.  The online user guide [details how to install an External Repository Connector](https://www.m-files.com/user-guide/latest/eng/adding_a_connector.html).
 
 External Repository Connectors may or may not require an additional licence to run.  Licences are installed using the M-Files Admin tool, in the same `Applications` dialog used to install the service itself.
 {:.note}
