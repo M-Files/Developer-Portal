@@ -15,8 +15,8 @@ Holds file upload ids and property values for fetching automatic metadata. This 
 Type | Name | Description
 --- | --- | ---
 `int[]` | UploadIds | List of temporary file upload ids.
-[PropertyValue[]](../propertyvalue) | PropertyValues | Array of object's current property values. 
-[ObjVer](../objver) | ObjVer | ObjVer of current object.
+[PropertyValue[]](../propertyvalue/) | PropertyValues | Array of object's current property values. 
+[ObjVer](../objver/) | ObjVer | ObjVer of current object.
 `int` | ObjectType | The object type of the new object.
 `string[]` | MetadataProviderIds | List of metadata provider ids.
 `string` | CustomData | Custom data provided to the providers.

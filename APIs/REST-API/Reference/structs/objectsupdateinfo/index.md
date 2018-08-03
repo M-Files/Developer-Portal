@@ -14,4 +14,4 @@ To be used when [setting properties on multiple objects]({{ site.baseurl }}/APIs
 {:.struct.table}
 Type | Name | Description
 --- | --- | ---
-[ObjectVersionUpdateInformation](../objectversionupdateinformation) | MultipleObjectInfo
+[ObjectVersionUpdateInformation](../objectversionupdateinformation/) | MultipleObjectInfo

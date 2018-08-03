@@ -17,4 +17,4 @@ Type | Name | Description
 `bool` | IsNewValue
 `int` | PropertyDef
 `float` | Quality
-[TypedValue](../typedvalue) | TypedValue
+[TypedValue](../typedvalue/) | TypedValue

@@ -14,4 +14,4 @@ Type | Name | Description
 --- | --- | ---
 `string` | Message | The raw error message. 
 [ExceptionInfo](.) | InnerException | Underlying error that caused this one. 
-[StackTraceElement[]](../stacktraceelement) | Stack | M-Files Web Service server-side stack trace. 
+[StackTraceElement[]](../stacktraceelement/) | Stack | M-Files Web Service server-side stack trace. 

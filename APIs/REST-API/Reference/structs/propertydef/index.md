@@ -14,9 +14,9 @@ Type | Name | Description
 --- | --- | ---
 `bool` | AllObjectTypes
 `string` | AutomaticValue
-[MFAutomaticValueType](../../enumerations/mfautomaticvaluetype) | AutomaticValueType
+[MFAutomaticValueType](../../enumerations/mfautomaticvaluetype/) | AutomaticValueType
 `bool` | BasedOnValueList
-[MFDataType](../../enumerations/mfdatatype) | DataType
+[MFDataType](../../enumerations/mfdatatype/) | DataType
 `int` | ID
 `string` | Name
 `int` | ObjectType
