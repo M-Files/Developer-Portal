@@ -7,6 +7,13 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### August 2018
+
+* REST API
+	* Official documentation [migrated to the developer portal]({{ site.baseurl }}/APIs/REST-API/Reference/).
+	* Documentation added for usage of the [Intelligent Metadata Layer via the REST API]({{ site.baseurl }}/APIs/REST-API/Reference/iml/).
+	* Documentation added for [resolving vault structural element aliases to IDs]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/itemidbyalias/).
+
 ### July 2018
 
 * Vault Application Framework 2.0
