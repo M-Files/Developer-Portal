@@ -29,7 +29,7 @@ The `Top Pane` is a full-width header located above the content areas of the app
 * Create function and vault main navigation tabs
 * Object related tabs and search filters
 * The account panel (to log out, to alter notification settings, and to log in/out of external repositories)
-* The [Pinned tab](http://localhost:4000/UX-Design/Page-Layout/#pinned)
+* The [Pinned tab]({{ site.baseurl }}/UX-Design/Page-Layout/#pinned)
 
 {:.rightcol}
 **Style and layout parameters:**   
