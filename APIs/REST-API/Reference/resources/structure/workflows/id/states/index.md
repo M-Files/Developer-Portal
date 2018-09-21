@@ -7,7 +7,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/structure/workflows/id/states
 
 # Workflow states
 
-## /structure/workflow/(id)/states
+## /structure/workflows/(id)/states
 {:.url-with-parameters}
 
 Collection of states under a single workflow. 
