@@ -7,6 +7,13 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### September 2018
+
+* COM API
+	* Added information on [using pre-shared keys via the COM API]({{ site.baseurl }}/APIs/COM-API/Connecting-And-Authenticating/Pre-Shared-Keys/).
+* REST API
+	* Added information on [using pre-shared keys via the REST API]({{ site.baseurl }}/APIs/REST-API/Authentication/Pre-Shared-Keys/).
+
 ### August 2018
 
 * REST API

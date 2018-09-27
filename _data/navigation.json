@@ -120,7 +120,11 @@
 			},
 			{
 				"Link": "/APIs/COM-API/Connecting-And-Authenticating/",
-				"Title": "Connecting and authenticating"
+				"Title": "Connecting and authenticating",
+				"Items": [{
+					"Link": "/APIs/COM-API/Connecting-And-Authenticating/Pre-Shared-Keys/",
+					"Title": "Pre-Shared Keys"
+				}]
 			},
 			{
 				"Link": "#",
@@ -180,6 +184,10 @@
 				"Items": [{
 					"Link": "/APIs/REST-API/Authentication/Single-Sign-On/",
 					"Title": "Using Single Sign On"
+				},
+				{
+					"Link": "/APIs/REST-API/Authentication/Pre-Shared-Keys/",
+					"Title": "Pre-Shared Keys"
 				}]
 			},
 			{
