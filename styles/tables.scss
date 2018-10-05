@@ -7,16 +7,14 @@ article > table td,
     padding: 5px;
     vertical-align: top;
 	margin: 0px;
+	font-weight: normal;
 }
-article > table thead tr,
-	article > table tbody tr:hover
+article > table thead tr
 {
 	background-color: #eee;
 }
 
-article > table tbody tr:first-child {
-	border-top: 3px solid #CCC;
-}
-article > table tbody tr:nth-child(even) {
-    background-color: #f8f8f8;
+article > table tbody tr:nth-child(2n) {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 }

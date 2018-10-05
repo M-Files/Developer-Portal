@@ -8,7 +8,6 @@ body
 
 	aside#sidebar
 	{
-		/* background-color: #0064ad; */
 		background-color: #000;
 	}
 	nav.secondary
@@ -34,11 +33,24 @@ body
 	{
 		color: #007dc6;
 	}
-	article > table tbody tr:nth-child(even),
-		article > table thead tr,
-		article > table tbody tr:hover
+
+	article > table
 	{
-		color: #333;
+		border: 5px solid #007dc6;
+		thead tr
+		{
+			background-color: #0064ad;
+			color: #DDD;
+			> td, > th
+			{
+				font-weight: normal;
+			}
+		}
+		tbody tr:nth-child(2n)
+		{
+			border-top-color: #007dc6;
+			border-bottom-color: #007dc6;
+		}
 	}
 
 	code::before
@@ -59,11 +71,6 @@ body
 	{
 		background-color: rgba(219, 132, 0, 1);
 		border-color: rgba(189, 113, 0, 1);
-	}
-
-	nav.other-articles
-	{
-		background-color: rgba(170, 193, 228, 1);
 	}
 
 	article.page>h1,
@@ -93,16 +100,25 @@ body
 	{
 		color: #DDD;
 	}
+	code.highlighter-rouge
+	{
+		color: #333;
+	}
+	article.page
+	{
+		border-color: #222;
+	}
+	ul.quicklinks a:hover
+	{
+		border-color: #007dc6;
+		background-color: #0064ad;
+	}
 }
 
 @media screen and (min-width: 1500px)
 {
 	body
 	{
-		article.page
-		{
-			border-color: #222;
-		}
 		#share-links
 		{
 			border-top-color: #444;
@@ -119,15 +135,6 @@ body
 					color: #333;
 				}
 			}
-		}
-		code.highlighter-rouge
-		{
-			color: #333;
-		}
-		ul.quicklinks a:hover
-		{
-			border-color: #007dc6;
-			background-color: #0064ad;
 		}
 	}
 }
