@@ -6,7 +6,7 @@
 		{%- if childCount != 0 -%}
 			<nav class="other-articles" role="navigation">
 				<h1>{%- if item.Title == 'Home' -%}M-Files Developer Portal sections{%- else -%}Articles associated with "{{ item.Title }}"{%- endif -%}</h1>
-				<ul>
+				<ul class="quicklinks">
 					{%- for child in children -%}
 						{%- if child.SkipInOtherArticles -%}
 							{%- continue -%}
