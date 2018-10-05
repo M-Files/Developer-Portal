@@ -101,6 +101,14 @@ h3 {
     z-index: 10003;
 }
 
+article[role=main] h1,
+	article[role=main] h2,
+	article[role=main] h3,
+	article[role=main] h4
+{
+	border-bottom: 1px solid #EEE;
+}
+
 article.page li > p
 {
 	/* remove the margin on paragraphs inside list items (typical markdown rendering) */
@@ -122,7 +130,10 @@ article.page ol[role="navigation"] li,
 /* hide the page h1, as it's a duplicate of the big blue one */
 
 body>article.page>h1 {
-    display: none
+	display: none;
+	border-bottom: 2px solid #EEE;
+	padding: 10px 0px;
+	margin: 0px 0px 10px 0px;
 }
 
 p.note {
@@ -191,6 +202,11 @@ p.note.prerelease
 	}
 }
 
+body article.page
+{
+	border-right-color: #EEE;
+}
+
 /* make the links in warnings a little darker, just to make them contrast better */
 article.page .note.warning a {
     color: rgba(0, 50, 199, 1);
@@ -200,7 +216,8 @@ article.page a .zmdi
 	padding: 0px 2px;
 }
 
-article.page a {
+article.page a,
+	article.page a:visited {
     color: #007dc6;
     text-decoration: none;
 }
@@ -213,4 +230,9 @@ article.page h1 a,
 article.page h2 a,
 article.page h3 a {
     color: #333;
+}
+
+.zmdi
+{
+	padding-left: 2px;
 }

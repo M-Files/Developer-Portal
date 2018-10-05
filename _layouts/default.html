@@ -34,6 +34,9 @@ layout: compress
 	<link rel="deferred-stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
 	
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+	<link rel="alternate-stylesheet" media="screen" href="{{ site.baseurl }}/styles/dark.css?{{ site.github.build_revision }}" />
+	<link rel="alternate-stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow-night.min.css" crossorigin="anonymous" />
 	
 	<!-- <script defer src="/sw-register.js?{{ site.github.build_revision }}"></script> -->
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -47,7 +50,7 @@ layout: compress
 {% endif %}
 
 
-<body class="{{bodycssClass}}">
+<body class="{{bodycssClass}} dark">
 		
     <header>
         <i class="material-icons" id="hamburger">menu</i>
@@ -62,9 +65,6 @@ layout: compress
 		{% capture navigation %}{% include navigation.html %}{% endcapture %}{{ navigation | strip_newlines }}
     </aside>
 
-    <footer>
-        <p>&copy; M-Files. <a href="mailto:devsupport@m-files.com">Contact the Developer Evangelist team at M-Files.</a></p>
-    </footer>
 	<script defer src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/highlightjs-line-numbers.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/sidebar.js?{{ site.github.build_revision }}"></script>

@@ -4,8 +4,9 @@ body > *
 }
 body.has-in-page-nav > *
 {
-	margin-left: 470px;
 	margin-right: 300px;
+	margin-left: 440px;
+	padding-left: 10px;
 }
 
 nav.breadcrumb
@@ -20,37 +21,9 @@ nav.breadcrumb
 article.page
 {
 	padding-right: 20px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
 }
 .has-in-page-nav header h1{
 	margin-right: 310px;
-}
-#in-page-nav
-{
-	right: 0px;
-	left: auto;
-	width: 300px;
-	background-color: white;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-}
-#in-page-nav > ul::before
-{
-	content: "In this article";
-	position: relative;
-	top: 10px;
-	left: 25px;
-	font-weight: bold;
-	font-family: "Source Sans Pro",sans-serif;
-	color: #333;
-	display: inline-block;
-	margin-bottom: 10px;
-}
-#in-page-nav li.h2
-{
-	font-weight: normal;
-}
-#in-page-nav li.h3
-{
-	margin-left: 30px;
 }

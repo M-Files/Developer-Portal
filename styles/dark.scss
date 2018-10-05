@@ -1,0 +1,132 @@
+---
+---
+
+body.dark
+{
+	background-color: #000;
+	color: #DDD;
+
+	aside#sidebar
+	{
+		/* background-color: #0064ad; */
+		background-color: #000;
+	}
+	nav.secondary
+	{
+		border-top: 1px solid #222;
+	}
+	aside#sidebar ul.zmdi-hc-ul li.current > a,
+		aside#sidebar ul.zmdi-hc-ul li > a:hover
+	{
+		background-color: #007dc6;
+	}
+	article.page ul.quicklinks
+	{
+		a, a:visited
+		{
+			color: #DDD;
+		}
+	}
+	article.page a,
+		article.page a:visited,
+		footer a,
+		footer a:visited
+	{
+		color: #007dc6;
+	}
+	article > table tbody tr:nth-child(even),
+		article > table thead tr,
+		article > table tbody tr:hover
+	{
+		color: #333;
+	}
+
+	code::before
+	{
+		color: #333;
+	}
+
+	p.note
+	{
+		background-color: rgba(158, 185, 224, 1);
+		a, a:visited
+		{
+			color: #0064ad;
+		}
+	}
+
+	p.note.warning, p.note.stub, p.note.prerelease
+	{
+		background-color: rgba(219, 132, 0, 1);
+		border-color: rgba(189, 113, 0, 1);
+	}
+
+	nav.other-articles
+	{
+		background-color: rgba(170, 193, 228, 1);
+	}
+
+	article.page>h1,
+		article[role=main] h1,
+		article[role=main] h2,
+		article[role=main] h3,
+		article[role=main] h4
+	{
+		border-color: #444;
+	}
+
+	nav.other-articles h1
+	{
+		background-color: #0064ad;
+	}
+
+	pre > code
+	{
+		border-top-color: #DDD;
+	}
+
+	#share-links ul:before
+	{
+		color: #DDD;
+	}
+	#in-page-nav h1
+	{
+		color: #DDD;
+	}
+}
+
+@media screen and (min-width: 1500px)
+{
+	body.dark
+	{
+		article.page
+		{
+			border-color: #222;
+		}
+		#share-links
+		{
+			border-top-color: #444;
+		}
+		#in-page-nav
+		{
+			border-color: #222;
+			ul li > a
+			{
+				color: #DDD;
+				&.current, &:active, &:hover
+				{
+					color: #333;
+				}
+			}
+		}
+		code.highlighter-rouge
+		{
+			color: #333;
+		}
+		ul.quicklinks a:hover
+		{
+			border-color: #007dc6;
+			background-color: #0064ad;
+		}
+	}
+}

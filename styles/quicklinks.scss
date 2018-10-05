@@ -22,8 +22,13 @@ ul.quicklinks a
 	-o-transition: all 200ms ease-in-out;
 	transition: all 200ms ease-in-out;
 	color: #333;
+	&:visited{
+		color: #333;
+	}
 }
-ul.quicklinks a, ul.quicklinks a:hover
+ul.quicklinks a,
+	ul.quicklinks a:hover,
+	ul.quicklinks a:visited
 {
 	text-decoration: none;
 }

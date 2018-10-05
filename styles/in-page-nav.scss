@@ -20,6 +20,11 @@ body #in-page-nav:empty
 	display:none;
 }
 
+body #in-page-nav h1
+{
+	color: #333;
+}
+
 @media screen and (max-width: 1499px)
 {
 	body #in-page-nav
@@ -27,10 +32,8 @@ body #in-page-nav:empty
 		h1
 		{
 			font-size: 0.9em;
-			color: #333;
 			margin: 0px;
 			padding: 5px 10px;
-			background-color: #EEE;
 		}
 		> div
 		{

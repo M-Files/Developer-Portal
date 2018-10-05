@@ -8,12 +8,10 @@ article > table td,
     vertical-align: top;
 	margin: 0px;
 }
-article > table tbody tr:hover
+article > table thead tr,
+	article > table tbody tr:hover
 {
 	background-color: #eee;
-}
-article > table thead tr {
-    background-color: #eee;
 }
 
 article > table tbody tr:first-child {
