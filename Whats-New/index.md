@@ -7,6 +7,10 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### October 2018
+
+* Dark mode theme available.
+
 ### September 2018
 
 * COM API
