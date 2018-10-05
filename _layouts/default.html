@@ -35,8 +35,7 @@ layout: compress
 	
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-	<link rel="alternate-stylesheet" media="screen" href="{{ site.baseurl }}/styles/dark.css?{{ site.github.build_revision }}" />
-	<link rel="alternate-stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow-night.min.css" crossorigin="anonymous" />
+	<script src="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}"></script>
 	
 	<!-- <script defer src="/sw-register.js?{{ site.github.build_revision }}"></script> -->
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -50,7 +49,7 @@ layout: compress
 {% endif %}
 
 
-<body class="{{bodycssClass}} dark">
+<body class="{{bodycssClass}}">
 		
     <header>
         <i class="material-icons" id="hamburger">menu</i>

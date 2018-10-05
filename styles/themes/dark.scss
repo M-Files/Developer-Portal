@@ -1,7 +1,7 @@
 ---
 ---
 
-body.dark
+body
 {
 	background-color: #000;
 	color: #DDD;
@@ -97,7 +97,7 @@ body.dark
 
 @media screen and (min-width: 1500px)
 {
-	body.dark
+	body
 	{
 		article.page
 		{
@@ -110,7 +110,8 @@ body.dark
 		#in-page-nav
 		{
 			border-color: #222;
-			ul li > a
+			ul li > a,
+				ul li > a:visited
 			{
 				color: #DDD;
 				&.current, &:active, &:hover
