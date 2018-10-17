@@ -50,7 +50,7 @@ Once IML functionality is enabled, querying for view contents may start to retur
 
 After [enabling external repository connector functionality](#enabling-external-repository-connector-functionality), retrieving [items from the vault root]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items/) (a GET request to `/REST/views/items`) will return [external view folders]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffoldercontentitemtype/) for any configured vault external repository connections, in the same way that the M-Files Desktop Client does.
 
-To retrieve items from within an external view folder, a request must be made to [/REST/views/(path)/items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items/) including the external view folder path encoded as shown on the [encoding sytax page]({{ site.baseurl }}/APIs/REST-API/Reference/syntax/#sect%3aviewpath).
+To retrieve items from within an external view folder, a request must be made to [/REST/views/(path)/items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/items/) including the external view folder path encoded as shown on the [encoding syntax page]({{ site.baseurl }}/APIs/REST-API/Reference/syntax/#sect%3aviewpath).
 
 For example, for an external view folder in a repository with `ExternalRepositoryName` of `myrepository` and an external view ID of `1234`, the request would be of the format:
 
@@ -77,7 +77,7 @@ Note that objects from external repositories may be `unmanaged` or `managed`.  U
 
 The [object version properties]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/) endpoint supports both managed and unmanaged objects.
 
-For an unmanged document with an `ExternalRepositoryName` of `myrepository`, an `ExternalRepositoryObjectID` of `123456` and `ExternalRepositoryObjectVersionID` of `version1`, the request would be of the format:
+For an unmanaged document with an `ExternalRepositoryName` of `myrepository`, an `ExternalRepositoryObjectID` of `123456` and `ExternalRepositoryObjectVersionID` of `version1`, the request would be of the format:
 
 ```text
 http://myfiles.mycompany.com/REST/objects/0/umyrepository%3A123456/uversion1/properties
