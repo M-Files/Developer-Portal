@@ -58,5 +58,5 @@ A sample response body is shown below:
 }
 ```
 
-Aliases that could not be resolved will be returned as -1.  The endpoint will return a 500 status code and the following text if the JSON format is incorrect: `The JSON part of hte API call contains one or more errors`.
+Aliases that could not be resolved will be returned as -1.  The endpoint will return a 500 status code and the following text if the JSON format is incorrect: `The JSON part of the API call contains one or more errors`.
 {:.remark}
