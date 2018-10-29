@@ -76,9 +76,9 @@ Item | Description
 [Sub-object count]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/subobjects/count/) | The count of the sub-objects.
 [Sub-objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/subobjects/) | A collection of sub-objects.
 [Temporary upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/) | A collection of temporary uploads.
-[Value list item]({{ site.baseurl }}/APIs/REST-API/Reference/resources/valuelists/id/items/objectid/) | Single value list item information.
-[Value list item title]({{ site.baseurl }}/APIs/REST-API/Reference/resources/valuelists/id/items/objectid/title/) | The title of a value list item.
-[Value list items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/valuelists/id/items/) | Collection of value list items for a single value list.
+[Value list item]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/objectid/) | Single value list item information.
+[Value list item title]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/objectid/title/) | The title of a value list item.
+[Value list items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/) | Collection of value list items for a single value list.
 [Vault]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/vault/) | The document vault attached to the current session.
 [Vault structure]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/) | Vault metadata structure information.
 [Vaults]({{ site.baseurl }}/APIs/REST-API/Reference/resources/server/vaults/) | Collection of vaults on the server.

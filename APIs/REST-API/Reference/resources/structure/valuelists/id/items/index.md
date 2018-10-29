@@ -38,4 +38,4 @@ Output: | [ValueListItem]({{ site.baseurl }}/APIs/REST-API/Reference/structs/val
 {:#sub-resources}
 Item | Description
 --- | ---
-[Value list item]({{ site.baseurl }}/APIs/REST-API/Reference/resources/valuelists/id/items/objectid/) | Single value list item information. 
+[Value list item]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/objectid/) | Single value list item information. 

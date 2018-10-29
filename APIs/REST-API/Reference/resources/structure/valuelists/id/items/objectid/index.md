@@ -37,4 +37,4 @@ Output: | [ValueListItem]({{ site.baseurl }}/APIs/REST-API/Reference/structs/val
 {:#sub-resources}
 Item | Description
 --- | ---
-[Value list item title]({{ site.baseurl }}/APIs/REST-API/Reference/resources/valuelists/id/items/objectid/title/) | The title of a value list item. 
+[Value list item title]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/objectid/title/) | The title of a value list item. 
