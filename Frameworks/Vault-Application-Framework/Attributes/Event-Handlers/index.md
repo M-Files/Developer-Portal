@@ -118,7 +118,7 @@ public void MyEventHandler(EventHandlerEnvironment env)
 }
 ```
 
-These attributes may be stacked.  In the scenario below the code would be executed to both object types `MFiles.ObjectType.Invoice` and `MFiles.ObjectType.Document`.
+These attributes may be stacked.  In the scenario below the code would be executed for objects of type `MFiles.ObjectType.Invoice` and objects of type `MFiles.ObjectType.Document`.
 
 ```csharp
 [EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, ObjectType="MFiles.ObjectType.Invoice")]
@@ -134,6 +134,16 @@ For example in the code below the method would only be executed when objects wit
 
 ```csharp
 [EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, Class="MFiles.Class.Agreement")]
+public void MyEventHandler(EventHandlerEnvironment env)
+{
+}
+```
+
+These attributes may be stacked.  In the scenario below the code would be executed for objects with either a class of `MFiles.Class.Invoice` or a class of `MFiles.Class.OtherDocument`.
+
+```csharp
+[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, Class="MFiles.Class.Invoice")]
+[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, Class="MFiles.Class.OtherDocument")]
 public void MyEventHandler(EventHandlerEnvironment env)
 {
 }
