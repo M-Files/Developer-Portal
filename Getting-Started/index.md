@@ -21,11 +21,11 @@ In order to work with information within an M-Files vault, you will typically ne
 
 When developing applications against M-Files, most API calls require vault structural elements to be referenced by their internal ID.  Aside from built-in properties, these IDs will typically change between vaults, and the ID cannot be defined or altered by code.  To work around this, it is recommended that aliases are assigned to vault structural elements, and used to find the ID of the item at runtime.
 
-More details on aliases are available on their [dedicated page]({{ site.baseurl }}/Getting-Started/Aliases/).
+More details on aliases are available on their [dedicated page]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
 
 ### Internal and External IDs
 
-When using the M-Files API, objects must be referenced by their (unique) internal M-Files object ID.  In certain situations, the ID displayed on an object's metadata card may not be the ID that must be used for API calls.  More details on internal and external IDs are available on the [dedicated page]({{ site.baseurl }}/Getting-Started/InternalAndExternalIDs/).
+When using the M-Files API, objects must be referenced by their (unique) internal M-Files object ID.  In certain situations, the ID displayed on an object's metadata card may not be the ID that must be used for API calls.  More details on internal and external IDs are available on the [dedicated page]({{ site.baseurl }}/Getting-Started/Vault-Structure/InternalAndExternalIDs/).
 
 ### Script execution order
 
