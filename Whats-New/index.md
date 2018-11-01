@@ -9,7 +9,15 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ### October 2018
 
-* Dark mode theme available.
+* General
+	* Dark mode theme available
+	* Optimisations for samples tables at low browser window widths (e.g. mobile)
+* REST API
+	* Added additional information to the [/objects/properties endpoint]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/properties/) for working around URI length limitations
+	* Fixes for some broken links caused during migration
+* Vault Application Framework 2.0
+	* Added samples of filtering event handlers by [object type and class]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/)
+	* Added example of making an `MFIdentifier` attribute [optional]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/Editors/#making-mfidentifier-elements-optional)
 
 ### September 2018
 
