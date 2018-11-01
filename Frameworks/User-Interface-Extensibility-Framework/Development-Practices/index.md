@@ -182,3 +182,9 @@ If an enumerated value is not available within the User Interface Extensibility 
 var propertyValue = new MFiles.PropertyValue();
 propertyValue.PropertyDef = 100; // MFBuiltInPropertyDef.MFBuiltInPropertyDefClass
 ```
+
+### Raising and handling exceptions
+
+Exceptions within User Interface Extensibility Framework applications can be thrown/reported using the [ICommonFunctions](https://www.m-files.com/UI_Extensibility_Framework/index.html#MFClientScript~ICommonFunctions.html)' `ThrowError` and `ReportException` methods.
+
+More information on handling M-Files exceptions, and raising your own using the standard M-Files error dialog, please see the [Error Handling in UI Extensibility Applications](https://www.m-files.com/UI_Extensibility_Framework/index.html#ErrorHandling.html) page on the official documentation.
