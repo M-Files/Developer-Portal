@@ -9,6 +9,9 @@ The [DataFunctionCall](https://www.m-files.com/api/documentation/latest/index.ht
 
 ![The advanced search conditions screen](ObjectsModifiedIn2010.png)
 
+More information on using options (and the associated expected values) is available in the [M-Files User Guide](https://www.m-files.com/user-guide/latest/eng/property_based_conditions.html#filter_settings_properties__options).
+{:.note}
+
 ## SetDataDate
 
 The [SetDataDate](https://www.m-files.com/api/documentation/latest/MFilesAPI~DataFunctionCall~SetDataDate.html) method states that the search condition should only consider the date portion of the property for comparison.
