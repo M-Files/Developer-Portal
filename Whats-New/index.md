@@ -7,6 +7,11 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### November 2018
+
+* COM API
+	* Added examples of using [DataFunctionCall]({{ site.baseurl }}/APIs/COM-API/Searching/DataFunctionCall/) with search conditions.
+
 ### October 2018
 
 * General

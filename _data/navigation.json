@@ -150,6 +150,9 @@
 				"Items": [{
 						"Link": "/APIs/COM-API/Searching/SearchConditions/",
 						"Title": "Example Search Conditions"
+					},{
+						"Link": "/APIs/COM-API/Searching/DataFunctionCall/",
+						"Title": "Using DataFunctionCall"
 					},
 					{
 						"Link": "/APIs/COM-API/Searching/ValueListItems/",
