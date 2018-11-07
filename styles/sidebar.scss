@@ -176,8 +176,8 @@ aside#sidebar ul
 	padding: 0px;
 	.zmdi-hc-li
 	{
-		left: 20px;
-		top: 4px;
+		left: 16px;
+		top: 5px;
 	}	
 	li
 	{
@@ -195,6 +195,10 @@ aside#sidebar ul
 			padding: 3px 0px;
 			background-color: transparent;
 			box-sizing: border-box;			
+		}
+		.zmdi
+		{
+			padding-left: 4px;
 		}
 	}
 	> li
