@@ -3,23 +3,31 @@ form.search
 	position: relative;
     margin-left: 20px;
     padding-bottom: 10px;
-    padding-top: 2px;
+	padding-top: 2px;
 }
 form.search button
 {
-	padding: 12px;
 	position: absolute;
-	top: -32px;
-	left: 0px;
-	color: black;
+	top: 0px;
+	right: 0px;
+	height: 38px;
+	width: 38px;
+	padding: 0px;
+	margin: 0px;
 	background-color: transparent;
+	color: black;
 }
 form.search input#query
 {
 	height: 38px;
-	padding: 0px 10px 0px 30px;
+	padding: 0px 40px 0px 10px;
 	width: 100%;
 	box-sizing: border-box;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
 }
 form.search button span.label
 {
@@ -33,8 +41,6 @@ form.search input[type='submit']
     margin: 5px 0px;
 	box-sizing: border-box;
 }
-
-
 
 article.page form
 {
@@ -87,4 +93,5 @@ aside#sidebar form.search
 {
 	margin: 5px 20px;
 	padding: 0px;
+	height: 38px;
 }
