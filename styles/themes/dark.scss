@@ -33,6 +33,10 @@ body
 	{
 		color: #007dc6;
 	}
+	body article.page .breadcrumb a
+	{
+		color: rgba(0, 145, 230, 1);
+	}
 
 	article > table
 	{
@@ -108,6 +112,10 @@ body
 	{
 		border-color: #0064ad;
 		word-spacing: .05em;
+	}
+	article.page a.public-anchor
+	{
+		color: #007dc6;
 	}
 	ul.quicklinks a:hover
 	{

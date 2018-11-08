@@ -1,12 +1,20 @@
-* > a.public-anchor
+article.page a.public-anchor
 {
-	display: none;
 	margin-left: 5px;
-}
-
-*:hover > a.public-anchor
-{
-	display: inline-block;
+	opacity: 0.5;
+	color: #333;
+    -webkit-transition: opacity 100ms ease-in-out;
+    -moz-transition: opacity 100ms ease-in-out;
+    -o-transition: opacity 100ms ease-in-out;
+	transition: opacity 100ms ease-in-out;
+	.zmdi
+	{
+		transform: rotate(-30deg);
+	}
+	&:hover
+	{
+		opacity: 0.99;
+	}
 }
 
 #in-page-nav, #in-page-nav ul, #in-page-nav li
