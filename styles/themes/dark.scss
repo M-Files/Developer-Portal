@@ -3,16 +3,16 @@
 
 body
 {
-	background-color: #000;
-	color: #DDD;
+	background-color: #37373D;
+	color: #CDCDCD;
 
 	aside#sidebar
 	{
-		background-color: #000;
+		background-color: transparent;
 	}
 	nav.secondary
 	{
-		border-top: 1px solid #222;
+		border-top: 1px solid #0064ad;
 	}
 	aside#sidebar ul.zmdi-hc-ul li.current > a,
 		aside#sidebar ul.zmdi-hc-ul li > a:hover
@@ -23,7 +23,7 @@ body
 	{
 		a, a:visited
 		{
-			color: #DDD;
+			color: #CDCDCD;
 		}
 	}
 	article.page a,
@@ -106,7 +106,8 @@ body
 	}
 	article.page
 	{
-		border-color: #222;
+		border-color: #0064ad;
+		word-spacing: .05em;
 	}
 	ul.quicklinks a:hover
 	{
