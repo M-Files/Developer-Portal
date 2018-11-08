@@ -9,6 +9,9 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ### November 2018
 
+* General
+	* Dark mode theme improvements
+	* Improvements to layouts close to responsive breakpoints
 * COM API
 	* Added examples of using [DataFunctionCall]({{ site.baseurl }}/APIs/COM-API/Searching/DataFunctionCall/) with search conditions.
 
