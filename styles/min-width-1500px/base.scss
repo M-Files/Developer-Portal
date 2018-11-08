@@ -1,12 +1,6 @@
-body > *
-{
-	margin-left: 480px;
-}
 body.has-in-page-nav > *
 {
 	margin-right: 300px;
-	margin-left: 440px;
-	padding-left: 10px;
 }
 
 nav.breadcrumb
@@ -21,8 +15,11 @@ nav.breadcrumb
 article.page
 {
 	padding-right: 20px;
-	border-left: 1px solid transparent;
 	border-right: 1px solid transparent;
+}
+aside#sidebar
+{
+	border-right: 0px;
 }
 .has-in-page-nav header h1{
 	margin-right: 310px;
