@@ -18,6 +18,14 @@ form.search button
 	color: black;
 	border-radius: 0px;
 }
+article.page form.search
+{
+	height: 20px;
+	input[type="submit"]
+	{
+		display: none;
+	}
+}
 form.search input#query
 {
 	height: 38px;
@@ -72,6 +80,7 @@ article.page form
   margin-left: 50px;
   padding-top: 0px;
   margin-top: 0px;
+  padding-left: 50px;
 }
 
 .score
