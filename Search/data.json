@@ -6,8 +6,8 @@
 		"categories": [{% for cat in p.categories %}"{{ cat }}"{% unless forloop.last %},{% endunless %}{% endfor %}],	
 		"tags": [{% for tag in p.tags %}"{{ tag }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
 		"url": "{{ p.url }}",
-		"content": {{ p.content | markdownify | strip_html | json_escape | jsonify }},
-		"excerpt": {{ p.content | markdownify | strip_html | truncatewords:100 | json_escape | jsonify }},
+		"content": {{ p.content | remove: "{% comment %} HACK! THIS PAGE USES HIGHLIGHTER LIQUID COMMANDS RATHER THAN BACKTICKS. BACKTICKS AREN’T CORRECTLY HIGHLIGHTING THE CODE. THIS NEEDS LOOKING AT, AT SOME POINT, BUT WORKS FOR NOW. {% endcomment %}" | markdownify | strip_html | json_escape | jsonify }},
+		"excerpt": {{ p.content | remove: "{% comment %} HACK! THIS PAGE USES HIGHLIGHTER LIQUID COMMANDS RATHER THAN BACKTICKS. BACKTICKS AREN’T CORRECTLY HIGHLIGHTING THE CODE. THIS NEEDS LOOKING AT, AT SOME POINT, BUT WORKS FOR NOW. {% endcomment %}" | markdownify | strip_html | truncatewords:100 | json_escape | jsonify }},
 		"description": {{ p.description | markdownify | rstrip | json_escape | jsonify }}
 	}{% unless forloop.last %},{% endunless %}{% endfor %}
 ]
