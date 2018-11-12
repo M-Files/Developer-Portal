@@ -5,15 +5,6 @@ includeInSearch: true
 breadcrumb: Validation
 ---
 
-{% comment %}
-
-HACK!
-THIS PAGE USES HIGHLIGHTER LIQUID COMMANDS RATHER THAN BACKTICKS.
-BACKTICKS AREN'T CORRECTLY HIGHLIGHTING THE CODE.
-THIS NEEDS LOOKING AT, AT SOME POINT, BUT WORKS FOR NOW.
-
-{% endcomment %}
-
 [Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
 {:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework."}
 [Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
