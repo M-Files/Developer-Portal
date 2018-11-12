@@ -255,3 +255,12 @@ The op-mod negates the operator provided, and is used in front of it.  For examp
 | Operator | Description | Example |
 | - | - | - |
 | != | The property value must *not* equal the value provided. | p1050!=ESTT |
+
+## Tips and tricks
+
+### Increasing the number of results
+
+You can provide a querystring parameter to the search named `limit`, with a maximum value, `e.g. /REST/objects/0?q=test&limit=5000` would limit the results to 5000 items.
+
+Please note that this endpoint calls the [SearchForObjectsByConditionsEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectSearchOperations~SearchForObjectsByConditionsEx.html) API method and provides the limit value to the `MaxSearchResults` parameter. The timeout stays at the default (60 seconds), and the limitations described in the API endpoint are still applicable.
+{:.note}

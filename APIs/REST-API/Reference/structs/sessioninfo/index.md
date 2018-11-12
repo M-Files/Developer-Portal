@@ -13,8 +13,8 @@ redirect_from: "/APIs/REST-API/Reference/structs/sessioninfo.html"
 Type | Name | Description
 --- | --- | ---
 `string` | AccountName
-[MFACLMode](../../enumerations/mfaclmode) | ACLMode
-[MFAuthType](../../enumerations/mfauthtype) | AuthenticationType
+[MFACLMode](../../enumerations/mfaclmode/) | ACLMode
+[MFAuthType](../../enumerations/mfauthtype/) | AuthenticationType
 `bool` | CanForceUndoCheckout
 `bool` | CanManageCommonUISettings
 `bool` | CanManageCommonViews

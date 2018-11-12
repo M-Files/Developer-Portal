@@ -7,6 +7,57 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### November 2018
+
+* General
+	* Dark mode theme improvements
+	* Improvements to layouts close to responsive breakpoints
+* COM API
+	* Added examples of using [DataFunctionCall]({{ site.baseurl }}/APIs/COM-API/Searching/DataFunctionCall/) with search conditions.
+
+### October 2018
+
+* General
+	* Dark mode theme available
+	* Optimisations for samples tables at low browser window widths (e.g. mobile)
+* REST API
+	* Added additional information to the [/objects/properties endpoint]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/properties/) for working around URI length limitations
+	* Fixes for some broken links caused during migration
+* Vault Application Framework 2.0
+	* Added samples of filtering event handlers by [object type and class]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/)
+	* Added example of making an `MFIdentifier` attribute [optional]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/Editors/#making-mfidentifier-elements-optional)
+
+### September 2018
+
+* COM API
+	* Added information on [using pre-shared keys via the COM API]({{ site.baseurl }}/APIs/COM-API/Connecting-And-Authenticating/Pre-Shared-Keys/).
+* REST API
+	* Added information on [using pre-shared keys via the REST API]({{ site.baseurl }}/APIs/REST-API/Authentication/Pre-Shared-Keys/).
+
+### August 2018
+
+* REST API
+	* Official documentation [migrated to the developer portal]({{ site.baseurl }}/APIs/REST-API/Reference/).
+	* Documentation added for usage of the [Intelligent Metadata Layer via the REST API]({{ site.baseurl }}/APIs/REST-API/Reference/iml/).
+	* Documentation added for [resolving vault structural element aliases to IDs]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/itemidbyalias/).
+
+### July 2018
+
+* Vault Application Framework 2.0
+	* Samples added [showing integration to the M-Files Admin configurations area]({{ site.baseurl }}/Samples-And-Libraries/Samples/Vault-Application-Framework/).
+
+### June 2018
+
+* Vault Application Framework 2.0
+	* Removed references to the VAF 2.0 being pre-release.
+	* Added page on using the [VAF 2.0 Visual Studio template package]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0/).
+* [Intelligent Metadata Layer]({{ site.baseurl }}/Intelligent-Metadata-Layer/) section created
+	* Initial introductory content to IML components such as External Repository Connectors and Intelligence Services.
+	* Added details on building [External Repository Connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/Visual-Studio/) using the provided template.
+	* Added details on building [Intelligence Services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services/Visual-Studio/) using the provided template.
+* User Interface Extensibility Framework
+	* Added page on using the [UIX Visual Studio template package]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio/).
+
 ### May 2018
 
 * Vault Application Framework 2.0 configuration
@@ -38,7 +89,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 * General
 	* Added process [sample to show how to maintain the original template used to create a document]({{ site.baseurl }}/Samples-And-Libraries/Samples/Processes/Maintaining-Original-Template/).
-	* Added details on how to create an [Attach to VAF Processes button]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes).
+	* Added details on how to create an [Attach to VAF Processes button]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes/).
 * REST API
 	* Updated [code sample for retrieving cookies for authentication](/APIs/REST-API/Authentication/#cookie-based-sessions) to correctly instantiate the CookieContainer.
 * UX/Design
@@ -55,7 +106,7 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Getting-Started/InternalAndExternalIDs/).
 * COM API
 	* Added in a search condition sample for [finding objects with specific flags (e.g. conflict objects)]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-by-object-flags-eg-searching-for-conflict-objects).
-	* Added in a page detailing how to [search for value list items by name, deleted status and owner]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems).
+	* Added in a page detailing how to [search for value list items by name, deleted status and owner]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems/).
 * Vault Application Framework
 	* Added [information on the VAF versions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/).
 	* Added initial (pre-release) content for [the new Configuration integration with M-Files Admin](http://developer.m-files.com/Frameworks/Vault-Application-Framework/Configuration/) with VAF 2.0.

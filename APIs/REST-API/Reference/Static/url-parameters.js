@@ -4,7 +4,8 @@ var parameters = {
 	},
 	"objectid": {
 		"<number>": "Refers to an internal object ID",
-		"e<string>": "Refers to an external object ID."
+		"e<string>": "Refers to an external object ID.",
+		"u<string>%3A<string>" : "Refers to an unmanaged object from an external repository. Only supported on some endpoints; see the IML page for more information."
 	},
 	"id": {
 		"<number>": "Refers to an ID."
@@ -14,10 +15,20 @@ var parameters = {
 	},
 	"version": {
 		"<number>" : "Specifies the version number",
+		"<string>" : "Refers to the version ID of an external object.  Only supported on some endpoints; see the IML page for more information.",
 		"latest" : "Refers to the latest available version.\r\nMay also be left out which equals 'latest'."
 	},
 	"file":{
 		"<number>": "Refers to a file ID."
+	},
+	":guid": { 
+		"<guid>" : "The element's GUID." 
+	},
+	"targetid" : {
+		"<targetid>" : "The external repository target ID."
+	},
+	"alias" : {
+		"<alias>" : "The alias of the item to resolve."
 	}
 };
 

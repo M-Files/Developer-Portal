@@ -10,18 +10,18 @@ redirect_from: "/APIs/REST-API/Reference/enumerations.html"
 
 ## Contents
 
-[MFACLMode](mfaclmode)
+[MFACLMode](mfaclmode/)
 
-[MFAuthType](mfauthtype)
+[MFAuthType](mfauthtype/)
 
-[MFAutomaticValueType](mfautomaticvaluetype)
+[MFAutomaticValueType](mfautomaticvaluetype/)
 
-[MFCheckOutStatus](mfcheckoutstatus)
+[MFCheckOutStatus](mfcheckoutstatus/)
 
-[MFDataType](mfdatatype)
+[MFDataType](mfdatatype/)
 
-[MFFolderContentItemType](mffoldercontentitemtype)
+[MFFolderContentItemType](mffoldercontentitemtype/)
 
-[MFObjectVersionFlag](mfobjectversionflag)
+[MFObjectVersionFlag](mfobjectversionflag/)
 
-[MFRefreshStatus](mfrefreshstatus)
+[MFRefreshStatus](mfrefreshstatus/)

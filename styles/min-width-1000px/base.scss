@@ -8,8 +8,14 @@
 }
 body > *
 {
-	margin-right: 30px;
-	margin-left: 480px;
+	margin-right: 10px;
+	margin-left: 440px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+article.page
+{
+	border-left: 1px solid transparent;
 }
 
 body > aside#sidebar
@@ -23,6 +29,11 @@ body > aside#sidebar
     background-size: 200px;
 	background-repeat: no-repeat;
 	background-attachment: local;
+    -webkit-transition: left 0ms none;
+    -moz-transition: left 0ms none;
+    -o-transition: left 0ms none;
+	transition: left 0ms none;
+	border-right: 0px;
 }
 @media  screen and (min-width: 1000px)
 {

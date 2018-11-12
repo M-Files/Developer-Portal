@@ -1,0 +1,141 @@
+(function()
+{
+	var themes = [{
+			id : "",
+			display : "Light",
+			icon : "brightness-7",
+			stylesheets: []
+		},
+		{
+			id : "dark",
+			display : "Dark",
+			icon : "brightness-3",
+			stylesheets: [
+				"/styles/themes/dark.css",
+				"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow-night.min.css"
+			]
+		}];
+	function setThemeCookie(theme)
+	{
+		// Set the cookie
+		var expiry = new Date();
+		expiry.setFullYear(expiry.getFullYear() + 2);
+		document.cookie = "theme=" + escape(theme)+ "; path=/; expires=" + expiry.toUTCString();
+	}
+	function getThemeCookie()
+	{
+		// If there are no cookies then die.
+		if(null == document.cookie)
+		{
+			return null;
+		}
+
+		// Find "theme" and return the value.
+		var cookies = document.cookie.split(";");
+		for(var i=0; i<cookies.length; i++)
+		{
+			var kvp = cookies[i].split("=");
+			if(kvp.length != 2)
+				continue;
+			if(kvp[0].trim() == "theme")
+			{
+				return (kvp[1] + "").trim();
+			}
+		}
+		return null;
+	}
+
+	function setTheme(theme, force)
+	{
+		// If the chosen theme isn't in the list of values then default to "".
+		var chosenTheme = themes[0];
+		for(var i=0; i<themes.length; i++)
+		{
+			if(themes[i].id == theme)
+			{
+				chosenTheme = themes[i];
+				break;
+			}
+		}
+
+		// If we have jQuery then update the UI.
+		if(typeof($) != "undefined")
+		{
+			// Display all theme options.
+			$("#theme-toggle .theme-toggle").css("display", "inline-block");
+			
+			// Hide the selected one.
+			$("#theme-toggle .theme-toggle-" + escape(chosenTheme.id)).css("display", "none");
+		}
+
+		// If the chosen theme is the current theme then die.
+		if(force != true && chosenTheme.id == getThemeCookie() + "")
+		{
+			return;
+		}
+
+		// Set the cookie.
+		setThemeCookie(chosenTheme.id);
+
+		// Disable all themes.
+		var themeStyles = document.getElementsByClassName("theme");
+		for(var i=0; i<themeStyles.length; i++)
+		{
+			var element = themeStyles[i];
+			element.parentNode.removeChild(element);
+		}
+
+		// Enable the specific theme.
+		var head = document.head;
+		for(var i=0; i<chosenTheme.stylesheets.length; i++)
+		{
+			if(document.readyState == "loading")
+			{
+				// Render it directly to the head.
+				document.writeln('<link type="text/css" media="screen" rel="stylesheet" class="theme theme-' + chosenTheme.id + '" href="' + chosenTheme.stylesheets[i] + '" />');
+			}
+			else
+			{
+				// Modify the DOM.
+				var link = document.createElement("link");
+				link.type = "text/css";
+				link.media = "screen";
+				link.rel = "stylesheet";
+				link.className = "theme theme-" + chosenTheme.id;
+				link.href = chosenTheme.stylesheets[i];
+				head.appendChild(link);
+			}
+		}
+
+	}
+
+	// Set the currently-selected theme.
+	setTheme(getThemeCookie() + "", true);
+
+	// When the window loads, render our theme change options.
+	window.addEventListener("load", function()
+	{
+		// Add the theme options.
+		var $themeToggle = $('<div id="theme-toggle">Change theme: </div>');
+		for(var i=0; i<themes.length; i++)
+		{
+			var icon = themes[i].icon;
+			var displayName = themes[i].display;
+			var id = themes[i].id;
+			var $themeAnchor = $('<a href="#" class="theme-toggle"><i class="zmdi zmdi-' + icon + '"></i> ' + displayName + '</a>');
+			$themeAnchor.addClass("theme-toggle-" + escape(id));
+			$themeAnchor.data("theme-id", id);
+			$themeAnchor.click(function()
+			{
+				setTheme($(this).data("theme-id"));
+				return false;
+			})
+			$themeToggle.append($themeAnchor);
+		}
+		$("article.page").prepend($themeToggle);
+
+		// Ensure they're set correctly.
+		setTheme(getThemeCookie() + "");
+	})
+
+})();

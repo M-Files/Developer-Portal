@@ -13,7 +13,7 @@ redirect_from: "/APIs/REST-API/Reference/structs/propertyvalue.html"
 Type | Name | Description
 --- | --- | ---
 `int` | PropertyDef
-[TypedValue](../typedvalue) | TypedValue
+[TypedValue](../typedvalue/) | TypedValue
 
 This is related to [the PropertyValue class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValue.html) in the COM API.
 {:.remark}

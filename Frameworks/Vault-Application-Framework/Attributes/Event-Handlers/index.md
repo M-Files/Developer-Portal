@@ -102,3 +102,49 @@ public enum MFEventHandlerType
     MFEventHandlerAfterDeleteView
 }
 ```
+
+## Filtering by class or object type
+
+In many scenarios event handlers should only be executed for specific types of documents.  In this case the `ObjectType` and `Class` properties can be used to filter the situations in which the event handler would execute.
+
+### Filtering by object type
+
+For example in the code below the method would only be executed when objects with an object type with alias `MFiles.ObjectType.Invoice` were created.  Objects of other object types would not cause this code to execute.
+
+```csharp
+[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, ObjectType="MFiles.ObjectType.Invoice")]
+public void MyEventHandler(EventHandlerEnvironment env)
+{
+}
+```
+
+These attributes may be stacked.  In the scenario below the code would be executed for objects of type `MFiles.ObjectType.Invoice` and objects of type `MFiles.ObjectType.Document`.
+
+```csharp
+[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, ObjectType="MFiles.ObjectType.Invoice")]
+[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, ObjectType="MFiles.ObjectType.Document")]
+public void MyEventHandler(EventHandlerEnvironment env)
+{
+}
+```
+
+### Filtering by class
+
+For example in the code below the method would only be executed when objects with an object type with alias `MFiles.Class.Agreement` were created.  Objects of other object types would not cause this code to execute.
+
+```csharp
+[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, Class="MFiles.Class.Agreement")]
+public void MyEventHandler(EventHandlerEnvironment env)
+{
+}
+```
+
+These attributes may be stacked.  In the scenario below the code would be executed for objects with either a class of `MFiles.Class.Invoice` or a class of `MFiles.Class.OtherDocument`.
+
+```csharp
+[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, Class="MFiles.Class.Invoice")]
+[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize, Class="MFiles.Class.OtherDocument")]
+public void MyEventHandler(EventHandlerEnvironment env)
+{
+}
+```

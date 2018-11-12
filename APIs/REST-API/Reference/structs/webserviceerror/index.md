@@ -17,4 +17,4 @@ Type | Name | Description
 int | Status | HTTP Status code 
 `string` | URL | The request URL which caused this error. 
 `string` | Method | The request method. 
-[ExceptionInfo](../exceptioninfo) | Exception | Detailed information on the exception. 
+[ExceptionInfo](../exceptioninfo/) | Exception | Detailed information on the exception. 

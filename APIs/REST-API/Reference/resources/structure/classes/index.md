@@ -27,4 +27,6 @@ Parameters: | `?objtype` - Object type ID. Filters the returned classes by objec
 {:#sub-resources}
 Item | Description
 --- | ---
+[Item ID by GUID]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/itemidbyguid/) | Retrieves the ID of a class with the given GUID. ]
 [Object class]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/classes/id/) | Information on a single object class. 
+[Object class ID from alias (multiple)](itemidbyalias/) | Allows resolution of one or more object class IDs from their aliases.

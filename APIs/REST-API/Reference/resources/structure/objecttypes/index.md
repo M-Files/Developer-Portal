@@ -5,7 +5,7 @@ includeInSearch: true
 redirect_from: "/APIs/REST-API/Reference/resources/structure/objecttypes.html"
 ---
 
-# Object classes
+# Object types
 
 ## /structure/objecttypes
 {:.url-with-parameters}
@@ -26,3 +26,4 @@ Output: | [ObjType[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objtype
 Item | Description
 --- | ---
 [Object type]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/objecttypes/type/) | Information on a single object type. 
+[Object type ID from alias (multiple)](itemidbyalias/) | Allows resolution of one or more object type IDs from their aliases.

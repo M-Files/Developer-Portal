@@ -14,15 +14,15 @@ h1.other-articles
 }
 nav.other-articles
 {
+	margin: 5px 0px;
 	border-top-width: 0px;
-	padding-bottom: 5px;
-	margin: 0px 0px 5px 0px;
+	padding-bottom: 10px;
 	border: 5px solid #007dc6;
-	background-color: #d6e1f2;
 	h1
 	{
 		font-size: 0.9em;
 		margin: 0px;
+		margin-bottom: 5px;
 		padding: 5px 10px;
 		border: 0px;
 		letter-spacing: 0px;
@@ -31,45 +31,5 @@ nav.other-articles
 		background-color: #007dc6;
 		position: initial;
 		left: 0px;
-	}
-	ul
-	{
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-		li
-		{
-			list-style-type: none;
-			margin: 0px;
-			margin-left: 10px;
-			display: inline-block;
-			a
-			{
-				display: inline-block;
-				border: 3px solid #DEDEDE;
-				padding: 15px;
-				margin: 5px;
-				background-color: white;
-				color: #333;
-				text-decoration: none;
-				-webkit-transition: all 200ms ease-in-out;
-				-moz-transition: all 200ms ease-in-out;
-				-o-transition: all 200ms ease-in-out;
-				transition: all 200ms ease-in-out;
-			}
-			a:hover
-			{
-				border-color: #007dc6;
-				background-color: #0d3c57;
-				color: white;
-			}
-		}
-		> li
-		{
-			> ul > li
-			{
-				display: none;
-			}
-		}
 	}
 }

@@ -1,0 +1,156 @@
+---
+---
+
+$background-color: #37373D;
+
+body
+{
+	background-color: $background-color;
+	color: #CDCDCD;
+
+	aside#sidebar
+	{
+		background-color: $background-color;
+	}
+	form.search button
+	{
+		background-color: #007dc6;
+		color: #ecf0f1;
+	}
+	nav.secondary
+	{
+		border-top: 1px solid #0064ad;
+	}
+	aside#sidebar ul.zmdi-hc-ul li.current > a,
+		aside#sidebar ul.zmdi-hc-ul li > a:hover
+	{
+		background-color: #007dc6;
+	}
+	article.page ul.quicklinks
+	{
+		a, a:visited
+		{
+			color: #CDCDCD;
+		}
+	}
+	article.page a,
+		article.page a:visited,
+		footer a,
+		footer a:visited
+	{
+		color: #007dc6;
+	}
+	body article.page .breadcrumb a
+	{
+		color: rgba(0, 145, 230, 1);
+	}
+
+	article > table
+	{
+		border: 5px solid #007dc6;
+		thead tr
+		{
+			background-color: #0064ad;
+			color: #DDD;
+			> td, > th
+			{
+				font-weight: normal;
+			}
+		}
+		tbody tr:nth-child(2n)
+		{
+			border-top-color: #007dc6;
+			border-bottom-color: #007dc6;
+		}
+	}
+
+	code::before
+	{
+		color: #333;
+	}
+
+	p.note
+	{
+		background-color: rgba(158, 185, 224, 1);
+		a, a:visited
+		{
+			color: #0064ad;
+		}
+	}
+
+	p.note.warning, p.note.stub, p.note.prerelease
+	{
+		background-color: rgba(219, 132, 0, 1);
+		border-color: rgba(189, 113, 0, 1);
+	}
+
+	article.page>h1,
+		article[role=main] h1,
+		article[role=main] h2,
+		article[role=main] h3,
+		article[role=main] h4
+	{
+		border-color: #444;
+	}
+
+	nav.other-articles h1
+	{
+		background-color: #0064ad;
+	}
+
+	pre > code
+	{
+		border-top-color: #DDD;
+	}
+
+	#share-links ul:before
+	{
+		color: #DDD;
+	}
+	#in-page-nav h1
+	{
+		color: #DDD;
+	}
+	code.highlighter-rouge
+	{
+		color: #333;
+	}
+	article.page
+	{
+		border-color: #0064ad;
+		word-spacing: .05em;
+	}
+	article.page a.public-anchor
+	{
+		color: #007dc6;
+	}
+	ul.quicklinks a:hover
+	{
+		border-color: #007dc6;
+		background-color: #0064ad;
+	}
+}
+
+@media screen and (min-width: 1500px)
+{
+	body
+	{
+		#share-links
+		{
+			border-top-color: #444;
+		}
+		#in-page-nav
+		{
+			border-color: #222;
+			ul li > a,
+				ul li > a:visited
+			{
+				color: #DDD;
+				&.current, &:active, &:hover
+				{
+					color: #333;
+				}
+			}
+		}
+	}
+}

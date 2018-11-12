@@ -120,7 +120,11 @@
 			},
 			{
 				"Link": "/APIs/COM-API/Connecting-And-Authenticating/",
-				"Title": "Connecting and authenticating"
+				"Title": "Connecting and authenticating",
+				"Items": [{
+					"Link": "/APIs/COM-API/Connecting-And-Authenticating/Pre-Shared-Keys/",
+					"Title": "Pre-Shared Keys"
+				}]
 			},
 			{
 				"Link": "#",
@@ -146,6 +150,9 @@
 				"Items": [{
 						"Link": "/APIs/COM-API/Searching/SearchConditions/",
 						"Title": "Example Search Conditions"
+					},{
+						"Link": "/APIs/COM-API/Searching/DataFunctionCall/",
+						"Title": "Using DataFunctionCall"
 					},
 					{
 						"Link": "/APIs/COM-API/Searching/ValueListItems/",
@@ -180,6 +187,10 @@
 				"Items": [{
 					"Link": "/APIs/REST-API/Authentication/Single-Sign-On/",
 					"Title": "Using Single Sign On"
+				},
+				{
+					"Link": "/APIs/REST-API/Authentication/Pre-Shared-Keys/",
+					"Title": "Pre-Shared Keys"
 				}]
 			},
 			{
@@ -281,6 +292,10 @@
 			{
 				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/",
 				"Title": "Pre-Approval"
+			},
+			{
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio/",
+				"Title": "Visual Studio Integration"
 			}
 		]
 	},
@@ -376,6 +391,17 @@
 				"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/",
 				"Title": "Visual Studio Integration",
 				"Items": [{
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF1.0/",
+					"Title": "VAF 1.0 Visual Studio Template",
+					"Items":[{
+							"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF1.0/Using-VB.NET/",
+							"Title": "Using VB.NET"
+						}
+					]
+				},{
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0/",
+					"Title": "VAF 2.0 Visual Studio Template"
+				},{
 					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/",
 					"Title": "Code Snippets"
 				},{
@@ -409,6 +435,14 @@
 					{
 						"Link": "/Frameworks/Vault-Application-Framework/Helpers/UrlHelper/",
 						"Title": "UrlHelper"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/MFUtils/",
+						"Title": "MFUtils"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Helpers/SysUtils/",
+						"Title": "SysUtils"
 					}
 				]
 			},
@@ -419,10 +453,6 @@
 			{
 				"Link": "/Frameworks/Vault-Application-Framework/Searching/",
 				"Title": "Searching"
-			},
-			{
-				"Link": "/Frameworks/Vault-Application-Framework/Using-VB.NET/",
-				"Title": "Using VB.NET"
 			}
 		]
 	},
@@ -448,6 +478,27 @@
 				"Title": "Icons and Fonts"
 			}
 		]
+	},
+	{
+		"Link": "/Intelligent-Metadata-Layer/",
+		"Title": "Intelligent Metadata Layer",
+		"Icon": "zmdi-memory",
+		"Items": [{
+				"Link": "/Intelligent-Metadata-Layer/External-Repository-Connectors/",
+				"Title": "External Repository Connectors",
+				"Items" : [{
+					"Link": "/Intelligent-Metadata-Layer/External-Repository-Connectors/Visual-Studio/",
+					"Title": "Visual Studio Integration"
+				}]
+			},
+			{
+				"Link": "/Intelligent-Metadata-Layer/Intelligence-Services/",
+				"Title": "Intelligence Services",
+				"Items" : [{
+					"Link": "/Intelligent-Metadata-Layer/Intelligence-Services/Visual-Studio/",
+					"Title": "Visual Studio Integration"
+				}]
+			}]
 	},
 	{
 		"Link": "/Samples-And-Libraries/",

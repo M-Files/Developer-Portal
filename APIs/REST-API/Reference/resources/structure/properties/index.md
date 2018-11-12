@@ -26,3 +26,4 @@ Output: | [PropertyDef[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/pro
 Item | Description
 --- | ---
 [Property definition]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/properties/id/) | Information on a single property definition. 
+[Property definition ID from alias (multiple)](itemidbyalias/) | Allows resolution of one or more property definition IDs from their aliases.

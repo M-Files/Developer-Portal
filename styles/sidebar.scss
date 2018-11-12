@@ -1,7 +1,7 @@
 aside#sidebar {
     position: fixed;
     padding: 80px 30px 130px 3px;
-    top: 53px;
+    top: 54px;
     margin: 0px;
     left: -110%;
     bottom: -1px;
@@ -15,6 +15,11 @@ aside#sidebar {
 	box-sizing: border-box;
 	height: 100%;
 	overflow-y: auto;
+    -webkit-transition: left 300ms ease-in-out;
+    -moz-transition: left 300ms ease-in-out;
+	-o-transition: left 300ms ease-in-out;
+	border-right: 1px solid #007dc6;
+    transition: left 300ms ease-in-out;
 }
 
 @keyframes wobble
@@ -113,13 +118,9 @@ i.expandCollapseIcon {
     cursor: pointer;
     position: absolute;
     /* left: -42px; */
-    top: -2px;
+    top: 0px;
     padding: 5px 15px;
     transform: rotate(0deg);
-    -webkit-transition: all 100ms ease-in-out;
-    -moz-transition: all 100ms ease-in-out;
-    -o-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
 }
 
 .treeview>li
@@ -194,8 +195,8 @@ aside#sidebar ul
 	padding: 0px;
 	.zmdi-hc-li
 	{
-		left: 20px;
-		top: 4px;
+		left: 16px;
+		top: 5px;
 	}	
 	li
 	{
@@ -213,6 +214,10 @@ aside#sidebar ul
 			padding: 3px 0px;
 			background-color: transparent;
 			box-sizing: border-box;			
+		}
+		ul li a .zmdi
+		{
+			padding-left: 4px;
 		}
 	}
 	> li

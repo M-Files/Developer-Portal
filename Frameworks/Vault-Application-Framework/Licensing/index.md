@@ -3,7 +3,6 @@ layout: page
 title: Licensing
 includeInSearch: true
 breadcrumb: Vault Application Framework Licensing
-prerelease: true
 ---
 
 [Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
@@ -74,7 +73,7 @@ Once the keys have been saved to the configuration file, click the `Load Configu
 
 ### Creating an Application from the Template
 
-Create an application using the [Visual Studio template]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template) (compatible with Visual Studio 2015 and upwards), ensuring that you choose version 2.0 of the template.
+Create an application using the [Visual Studio template]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio-Template/) (compatible with Visual Studio 2015 and upwards), ensuring that you choose version 2.0 of the template.
 
 ### Implementing License Loading and Validation
 

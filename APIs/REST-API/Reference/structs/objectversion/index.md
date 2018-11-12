@@ -20,7 +20,7 @@ Type | Name | Description
 `DateTime` | CreatedUtc
 `bool` | Deleted
 `string` | DisplayID
-[ObjectFile[]](../objectfile) | Files
+[ObjectFile[]](../objectfile/) | Files
 `bool` | HasAssignments
 `bool` | HasRelationshipsFromThis
 `bool` | HasRelationshipsToThis
@@ -28,8 +28,8 @@ Type | Name | Description
 `DateTime` | LastModifiedUtc
 `bool` | ObjectCheckedOut
 `bool` | ObjectCheckedOutToThisUser
-[MFObjectVersionFlag](../../enumerations/mfobjectversionflag) | ObjectVersionFlags
-[ObjVer](../objver) | ObjVer
+[MFObjectVersionFlag](../../enumerations/mfobjectversionflag/) | ObjectVersionFlags
+[ObjVer](../objver/) | ObjVer
 `bool` | SingleFile
 `bool` | ThisVersionLatestToThisUser
 `string` | Title

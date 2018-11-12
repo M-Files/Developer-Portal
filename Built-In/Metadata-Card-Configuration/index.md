@@ -12,25 +12,30 @@ For example:
 
 This would result in a header image - along with some text - being shown at the top of the metadata card for high-priority projects.
 
-Note that the M-Files Web interface does not currently support all configuration features of the M-Files Desktop client.  More information is available in the <a href="https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/E3847E26-5635-4386-A189-B9086FC9BEBA/latest">M-Files Desktop vs. M-Files Web comparison document</a>.
+Note that the M-Files Web interface does not currently support all configuration features of the M-Files Desktop client.  More information is available in the [M-Files Desktop vs. M-Files Web comparison document](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/E3847E26-5635-4386-A189-B9086FC9BEBA/latest).
 {:.note}
 
 ## Functionality by version
 
 The functionality available differs by the version of M-Files installed on the client.
 
+### Functionality in M-Files 2018
+
+Full documentation on the [configuration options in M-Files 2018 is available in our knowledgebase](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/13782C11-3A00-4CA7-A033-7A2F3C8555A6/latest).
+{:.note} 
+
 ### Functionality in M-Files 2015.3
 
-Full documentation on the <a href="https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/52274027-E7F7-4CD3-B8BF-95071AD8090F/latest">configuration options in M-Files 2015.3 is available in our knowledgebase</a>.
+Full documentation on the [configuration options in M-Files 2015.3 is available in our knowledgebase](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/52274027-E7F7-4CD3-B8BF-95071AD8090F/latest).
 {:.note} 
 
 ### Functionality in M-Files 2015.2
 
-Full documentation on the <a href="https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/06917B8A-8D5A-4F40-B09E-037EBCF376BA/latest">configuration options in M-Files 2015.2 is available in our knowledgebase</a>.
+Full documentation on the [configuration options in M-Files 2015.2 is available in our knowledgebase](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/06917B8A-8D5A-4F40-B09E-037EBCF376BA/latest).
 {:.note} 
 
 ### Functionality in M-Files 2015.1
 
-Full documentation on the <a href="https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/F4D36C6B-0D51-4F9A-A8FE-715F32541405/latest">configuration options in M-Files 2015.1 is available in our knowledgebase</a>.
+Full documentation on the [configuration options in M-Files 2015.1 is available in our knowledgebase](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/F4D36C6B-0D51-4F9A-A8FE-715F32541405/latest).
 {:.note} 
 

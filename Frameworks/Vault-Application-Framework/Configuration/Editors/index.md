@@ -2,17 +2,7 @@
 layout: page
 title: Editors
 includeInSearch: true
-prerelease: true
 ---
-
-{% comment %}
-
-HACK!
-THIS PAGE USES HIGHLIGHTER LIQUID COMMANDS RATHER THAN BACKTICKS.
-BACKTICKS AREN'T CORRECTLY HIGHLIGHTING THE CODE.
-THIS NEEDS LOOKING AT, AT SOME POINT, BUT WORKS FOR NOW.
-
-{% endcomment %}
 
 [Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
 {:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework."}
@@ -186,6 +176,32 @@ public class Configuration
 
 The user will be first asked to select the vault element to reference (e.g. the `Other document` class or the `Deleted` property definition, in the screenshot above), then the method of referencing the vault element.  In the screenshot above, the user has chosen to reference `Other document` by its alias of `MF.CL.OtherDocument`, but the `Deleted` property definition by its ID (`27`).  Referencing vault structure elements by their alias is recommended if the configuration is expected to be copied between vaults.
 {:.note}
+
+### Making MFIdentifier elements optional
+
+By default any elements exposed within the configuration class will be assumed to be mandatory.  The user will see an error about empty values in the validation screens at the bottom of the configuration window.  To highlight that the value is not mandatory, ensure that `MFObjType` has `AllowEmpty` set to `true`, and that the default value is correctly specified in the `JsonConfEditor` attribute.
+
+In the code sample below the `Mandatory` configuration item will be highlighted as an error if empty, but the `Optional` configuration item can be left empty with no errors:
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+
+[DataContract]
+public class Configuration
+{
+	[DataMember]
+	[MFObjType]
+	[JsonConfEditor(IsRequired = true, DefaultValue = null)]
+	public MFIdentifier Mandatory { get; set; }
+
+	[DataMember]
+	[MFObjType(AllowEmpty = true)]
+	[JsonConfEditor(IsRequired = false, DefaultValue = null)]
+	public MFIdentifier Optional { get; set; }
+
+}
+{% endhighlight %}
 
 ## Enumerations editor
 
