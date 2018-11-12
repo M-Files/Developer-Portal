@@ -87,23 +87,55 @@ searchCondition.TypedValue.SetValue(MFDatatypeInteger, 1);
 Below is an example of using `DataFunctionCall` to search for a document that was created at some point in 2018.
 
 ```javascript
-// Create the DataFunctionCall.
-var dataFunctionCall = new MFiles.DataFunctionCall();
-dataFunctionCall.SetDataYear();
+// Create our search conditions.
+var searchConditions = new MFiles.SearchConditions();
 
-// Create a search condition.
-var searchCondition = new MFiles.SearchConditon();
+// Add an object type filter.
+{
+	// Create the condition.
+	var condition = new MFiles.SearchCondition();
 
-// Set up the expression.
-searchCondition.Expression.SetPropertyValueExpression(20, // The built-in "created" date property.
-	MFParentChildBehaviorNone, // No special parent/child behaviour required.
-	dataFunctionCall); // Use the "year" data function call declared above.
+	// Set the expression.
+	condition.Expression.SetStatusValueExpression(MFStatusTypeObjectTypeID, new MFiles.DataFunctionCall());
 
-// Set up the condition (equals).
-searchCondition.ConditionType = MFConditionTypeEqual;
+	// Set the condition.
+	condition.ConditionType = MFConditionTypeEqual;
 
-// Set up the value to match against.
-searchCondition.TypedValue.SetValue(MFDatatypeInteger, 2018);
+	// Set the value.
+	condition.TypedValue.SetValue(MFDatatypeLookup, MFBuiltInObjectTypeDocument);
+
+	// Add the condition to the collection.
+	searchConditions.Add(-1, condition);
+}
+
+// Created by (year) = 2018
+{
+	// Create the DataFunctionCall.
+	var dataFunctionCall = new MFiles.DataFunctionCall();
+	dataFunctionCall.SetDataYear();
+
+	// Create a search condition.
+	var searchCondition = new MFiles.SearchConditon();
+
+	// Set up the expression.
+	searchCondition.Expression.SetPropertyValueExpression(20, // The built-in "created" date property.
+		MFParentChildBehaviorNone, // No special parent/child behaviour required.
+		dataFunctionCall); // Use the "year" data function call declared above.
+
+	// Set up the condition (equals).
+	searchCondition.ConditionType = MFConditionTypeEqual;
+
+	// Set up the value to match against.
+	searchCondition.TypedValue.SetValue(MFDatatypeInteger, 2018);
+}
+
+// Execute the search (assuming we have a valid, started shellFrame reference).
+shellFrame.ShellUI.Vault.Async.ObjectSearchOperations.SearchForObjectsByConditionsEx(searchConditions,
+	MFSearchFlagNone, false, 20000, 120, function(results)
+{
+	shellFrame.ShowMessage("There were " + results.Count + " objects.");
+});
+
 ```
 
 More information on using `DataFunctionCall` with the M-Files API can be found [on its dedicated page](https://developer.m-files.com/APIs/COM-API/Searching/DataFunctionCall/).
