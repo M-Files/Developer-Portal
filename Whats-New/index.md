@@ -12,6 +12,9 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 * General
 	* Dark mode theme improvements
 	* Improvements to layouts close to responsive breakpoints
+	* Initial [Progressive Web Application]({{ site.baseurl }}/PWA) compatibility enabled (requires browser support)
+		* Offline caching 
+		* "Add to homepage"
 * COM API
 	* Added examples of using [DataFunctionCall]({{ site.baseurl }}/APIs/COM-API/Searching/DataFunctionCall/) with search conditions.
 
