@@ -1,28 +1,20 @@
 // Set up some useful flags.
-var serviceWorkerAvailable = false;
+var serviceWorkerAvailable = 'serviceWorker' in navigator;
 var serviceWorkerInstalled = false;
 var serviceWorkerRegistration = null;
-function setServiceWorkerFlags(callback)
+
+// Be notified if anything changes.
+if(serviceWorkerAvailable)
 {
-	serviceWorkerAvailable = 'serviceWorker' in navigator;
-	serviceWorkerInstalled = false;
-	serviceWorkerRegistration = null;
-	if(serviceWorkerAvailable)
+	navigator.serviceWorker.ready.then(function(registration)
 	{
-		navigator.serviceWorker.ready.then(function(registration)
-		{
-			serviceWorkerInstalled = registration != null;
-			serviceWorkerRegistration = registration;
-			if(typeof(callback) == "function")
-				callback();
-		})
-		.catch(function()
-		{
-			serviceWorkerInstalled = false;
-			if(typeof(callback) == "function")
-				callback();
-		});
-	}
+		serviceWorkerInstalled = registration != null && registration.active != null;
+		serviceWorkerRegistration = registration;
+	})
+	.catch(function()
+	{
+		serviceWorkerInstalled = false;
+	});
 }
 
 // https://developers.google.com/web/updates/2018/06/a2hs-updates
@@ -34,10 +26,6 @@ window.addEventListener('beforeinstallprompt', function(event)
 
 	// Stash the event so it can be triggered later.
 	installPromptEvent = event;
-
-	// Update any existing UI.
-	if(typeof(refreshNotificationUI) == "function")
-		refreshNotificationUI();
 });
 
 // Unregisters a service worker.
@@ -53,6 +41,8 @@ function unregisterServiceWorker(callback)
 	serviceWorkerRegistration.unregister().then(function(success)
 	{
 		console.log('Service worker has been unregistered. (' + success + ')');
+		serviceWorkerInstalled = false;
+		serviceWorkerRegistration = null;
 		if(typeof(callback) == "function")
 		{
 			callback();
@@ -80,6 +70,7 @@ function registerServiceWorker(force, callback)
 		// Register the service worker.
 		navigator.serviceWorker.register('/sw.js').then(function(reg) {
 			console.log('Service worker has been registered.');
+
 			if(typeof(callback) == "function")
 			{
 				callback();
@@ -100,44 +91,26 @@ function addToHomescreen()
 	installPromptEvent = null;
 }
 
-function refreshNavigationUI()
+window.addEventListener("load", function()
 {
-	// Get a link to the PWA icon.
-	var $pwaIcon = $("A#pwa-link i");
+	// Set up the service worker if we can.
+	registerServiceWorker();
 
-	// Sanity.
-	if($pwaIcon.length == 0)
+	// Create the anchor for the user to find more information out.
+	var $anchor = $("<a href='/PWA/'></a>");
+	if (serviceWorkerAvailable)
 	{
-		return;
-	}
-
-	// Are we already registered?
-	if(serviceWorkerInstalled)
-	{
-		// Show that we are able to send notifications.
-		$pwaIcon
-			.addClass("zmdi-notifications-active")
-			.removeClass("zmdi-notifications")
-			.removeClass("zmdi-notifications-none");
-		console.log('Active service worker found, no need to register')
+		$anchor.text(" Enabled");
+		$anchor.prepend($("<i class='zmdi zmdi-check'></i>"));
 	}
 	else
 	{
-		// Show that notifications COULD be done.
-		$pwaIcon
-			.addClass("zmdi-notifications-none")
-			.removeClass("zmdi-notifications")
-			.removeClass("zmdi-notifications-active");
+		$anchor.text(" Unavailable");
+		$anchor.prepend($("<i class='zmdi zmdi-block'></i>"));
 	}
 
-}
-
-// If we can set up the service worker then note.
-if (serviceWorkerAvailable)
-{
-	$(document).ready(function()
-	{
-		// Ensure the service worker flags are up-to-date then refresh the UI.
-		setServiceWorkerFlags(refreshNavigationUI);
-	})
-}
+	// Render to screen.
+	var $div = $("<div>Web App: </div>");
+	$div.append($anchor);
+	$("#options").prepend($div);
+});

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Search
+noInnerLinks: true
 ---
 
 <form class="search" action="/Search/" method="get">

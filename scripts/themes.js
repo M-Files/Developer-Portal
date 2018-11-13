@@ -132,7 +132,7 @@
 			})
 			$themeToggle.append($themeAnchor);
 		}
-		$("article.page").prepend($themeToggle);
+		$("#options").append($themeToggle);
 
 		// Ensure they're set correctly.
 		setTheme(getThemeCookie() + "");

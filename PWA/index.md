@@ -2,13 +2,12 @@
 layout: page
 title: Progressive Web Application
 includeInSearch: true
+noInnerLinks: true
 ---
 
 <style type="text/css">
 #browser-support
 {
-	margin: 20px;
-	border: 1px solid #007dc6;
 	padding: 20px;
 }
 #browser-support p
@@ -64,12 +63,10 @@ p.status.success::before
 }
 </style>
 
-Progressive Web Applications allow web applications - such as the M-Files Developer Portal - to behave much more like 'apps' on phones, tablets and computers.  These PWAs enable deeper integration to the host operating system, enabling offline page access (via local caching) and push notifications for content updates.  PWAs are supported by some modern web browsers, including Google Chrome (both on desktop and Android) and Microsoft Edge (17 upwards).
-
-For these to work, a `service worker` needs to be registered.  If your browser/computer supports Progressive Web Applications then you can use the buttons below to enable or disable this functionality.
+Progressive Web Applications allow web applications - such as the M-Files Developer Portal - to behave much more like 'apps' on phones, tablets and computers.  These PWAs enable deeper integration to the host operating system, enabling offline page access (via local caching) and push notifications for content updates.  PWAs are supported by some modern web browsers, including Google Chrome (both on desktop and Android) and Microsoft Edge (17 upwards, included in Windows 10 version 1804).
 
 <script>
-	document.writeln("<div id='browser-support'><p class='status unknown'>We are checking your browser support.  Please wait..</p></div>");
+	document.writeln("<div id='browser-support'><p class='status unknown'>We are checking your browser support.  Please wait...</p></div>");
 </script>
 <noscript>
 	<p>Service workers require JavaScript support.</p>

@@ -35,13 +35,12 @@ layout: compress
 
 	<script src="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}"></script>
 	
-	<!-- <script defer src="/sw-register.js?{{ site.github.build_revision }}"></script> -->
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script defer src="/sw-register.js?{{ site.github.build_revision }}"></script>
 
 </head>
 		
-{% if page.noInnerLinks  %}
+{% if page.noInnerLinks %}
 	{% assign bodycssClass = "" %}
 {% else %}
 	{% assign bodycssClass = "has-in-page-nav" %}
