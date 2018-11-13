@@ -17,17 +17,6 @@ if(serviceWorkerAvailable)
 	});
 }
 
-// https://developers.google.com/web/updates/2018/06/a2hs-updates
-let installPromptEvent;
-window.addEventListener('beforeinstallprompt', function(event)
-{
-	// Prevent Chrome <= 67 from automatically showing the prompt
-	event.preventDefault();
-
-	// Stash the event so it can be triggered later.
-	installPromptEvent = event;
-});
-
 // Unregisters a service worker.
 function unregisterServiceWorker(callback)
 {
@@ -77,18 +66,6 @@ function registerServiceWorker(force, callback)
 			}
 		});
 	}
-}
-
-// Add to the homescreen?
-function addToHomescreen()
-{
-	// Sanity.
-	if(null == installPromptEvent)
-		return;
-	
-	// Prompt.
-	installPromptEvent.prompt();
-	installPromptEvent = null;
 }
 
 window.addEventListener("load", function()
