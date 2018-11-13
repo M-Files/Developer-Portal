@@ -40,6 +40,17 @@ $(document).ready(function()
 			installPromptEvent.prompt();
 			installPromptEvent = null;
 		}
+		
+		window.addEventListener('appinstalled', (evt) => {
+			// Hide the add button.
+			$("#addToHomescreen").remove();
+
+			// Track using GA.
+			if(ga)
+			{
+				ga("send", "event", "site", "add-to-homescreen");
+			}
+		});
 
 		function updateUI()
 		{
