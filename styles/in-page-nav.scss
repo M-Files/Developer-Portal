@@ -3,10 +3,10 @@ article.page a.public-anchor
 	margin-left: 5px;
 	opacity: 0.5;
 	color: #333;
-    -webkit-transition: opacity 100ms ease-in-out;
-    -moz-transition: opacity 100ms ease-in-out;
-    -o-transition: opacity 100ms ease-in-out;
-	transition: opacity 100ms ease-in-out;
+    -webkit-transition: opacity 400ms ease-in-out;
+    -moz-transition: opacity 400ms ease-in-out;
+    -o-transition: opacity 400ms ease-in-out;
+	transition: opacity 400ms ease-in-out;
 	.zmdi
 	{
 		transform: rotate(-30deg);
@@ -45,7 +45,7 @@ body #in-page-nav h1
 		}
 		> div
 		{
-			border: 3px solid #DEDEDE;
+			border: 1px solid #DEDEDE;
 			position: relative;
 			left: 0px;
 			padding-bottom: 5px;
