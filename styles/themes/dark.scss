@@ -133,6 +133,16 @@ body
 		border-color: #007dc6;
 		background-color: #0064ad;
 	}
+	.platforms
+	{
+		.zmdi
+		{
+			&.incompatible
+			{
+				display: none;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 1500px)
