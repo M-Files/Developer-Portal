@@ -51,54 +51,59 @@ Option Explicit
 ' The alias of the "Original Property" property definition.
 Const strOriginalTemplatePropertyDefAlias = "MFiles.PropertyDef.OriginalTemplate"
 
-' Resolve the property definition alias to an ID.
-Dim intOriginalTemplatePropertyDefID
-intOriginalTemplatePropertyDefID = GetPropertyDefIDByAlias(Vault, strOriginalTemplatePropertyDefAlias)
+' Only execute this for documents
+If ObjVer.Type = 0 Then
 
-' Sanity.
-If intOriginalTemplatePropertyDefID = -1 Then
-	Err.Raise MFScriptCancel, "A property definition with alias '" & strOriginalTemplatePropertyDefAlias & "' could not be found in the vault."
-End If
+	' Resolve the property definition alias to an ID.
+	Dim intOriginalTemplatePropertyDefID
+	intOriginalTemplatePropertyDefID = GetPropertyDefIDByAlias(Vault, strOriginalTemplatePropertyDefAlias)
 
-' Load the properties of the current object.
-Dim objPropertyValues
-Set objPropertyValues = Vault.ObjectPropertyOperations.GetProperties(ObjVer, True)
+	' Sanity.
+	If intOriginalTemplatePropertyDefID = -1 Then
+		Err.Raise MFScriptCancel, "A property definition with alias '" & strOriginalTemplatePropertyDefAlias & "' could not be found in the vault."
+	End If
 
-' Retrieve the "Is template" property.
-Dim objIsTemplateProperty
-Set objIsTemplateProperty = objPropertyValues.SearchForPropertyEx(MFBuiltInPropertyDefIsTemplate, True)
+	' Load the properties of the current object.
+	Dim objPropertyValues
+	Set objPropertyValues = Vault.ObjectPropertyOperations.GetProperties(ObjVer, True)
 
-' Only do this for objects that have the "Is template" property set to true.
-If Not objIsTemplateProperty Is Nothing Then
+	' Retrieve the "Is template" property.
+	Dim objIsTemplateProperty
+	Set objIsTemplateProperty = objPropertyValues.SearchForPropertyEx(MFBuiltInPropertyDefIsTemplate, True)
 
-	If objIsTemplateProperty.Value.Value = True Then
+	' Only do this for objects that have the "Is template" property set to true.
+	If Not objIsTemplateProperty Is Nothing Then
 
-		' The "Is template" property is set to true.
+		If objIsTemplateProperty.Value.Value = True Then
 
-		' Create a lookup pointing at the current object.
-		' Ensuring that the "Version" is set will mean that this will point to this specific version of the object.
-		Dim objLookup
-		Set objLookup = CreateObject("MFilesAPI.Lookup")
-		objLookup.ObjectType = ObjVer.Type
-		objLookup.Item = ObjVer.ID
-		objLookup.Version = ObjVer.Version
+			' The "Is template" property is set to true.
 
-		' Create a property value for the "Original Template" property value
-		' and set its value to the lookup.
-		Dim objOriginalTemplatePropertyValue
-		Set objOriginalTemplatePropertyValue = CreateObject("MFilesAPI.PropertyValue")
-		objOriginalTemplatePropertyValue.PropertyDef = intOriginalTemplatePropertyDefID
-		objOriginalTemplatePropertyValue.Value.SetValueToLookup objLookup
+			' Create a lookup pointing at the current object.
+			' Ensuring that the "Version" is set will mean that this will point to this specific version of the object.
+			Dim objLookup
+			Set objLookup = CreateObject("MFilesAPI.Lookup")
+			objLookup.ObjectType = ObjVer.Type
+			objLookup.Item = ObjVer.ID
+			objLookup.Version = ObjVer.Version
 
-		' Update the object.
-		Vault.ObjectPropertyOperations.SetProperty ObjVer, objOriginalTemplatePropertyValue
+			' Create a property value for the "Original Template" property value
+			' and set its value to the lookup.
+			Dim objOriginalTemplatePropertyValue
+			Set objOriginalTemplatePropertyValue = CreateObject("MFilesAPI.PropertyValue")
+			objOriginalTemplatePropertyValue.PropertyDef = intOriginalTemplatePropertyDefID
+			objOriginalTemplatePropertyValue.Value.SetValueToLookup objLookup
 
-		' Ensure that the audit is correct.
-		' ref: http://developer.m-files.com{{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting
-		Dim objLastModifiedByTypedValue
-		Set objLastModifiedByTypedValue = CreateObject("MFilesAPI.TypedValue")
-		objLastModifiedByTypedValue.SetValue MFDatatypeLookup, CurrentUserID
-		Vault.ObjectPropertyOperations.SetLastModificationInfoAdmin ObjVer, True, objLastModifiedByTypedValue, False, Nothing
+			' Update the object.
+			Vault.ObjectPropertyOperations.SetProperty ObjVer, objOriginalTemplatePropertyValue
+
+			' Ensure that the audit is correct.
+			' ref: http://developer.m-files.com{{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting
+			Dim objLastModifiedByTypedValue
+			Set objLastModifiedByTypedValue = CreateObject("MFilesAPI.TypedValue")
+			objLastModifiedByTypedValue.SetValue MFDatatypeLookup, CurrentUserID
+			Vault.ObjectPropertyOperations.SetLastModificationInfoAdmin ObjVer, True, objLastModifiedByTypedValue, False, Nothing
+
+		End If
 
 	End If
 
@@ -146,8 +151,10 @@ namespace MaintainOriginalTemplate
 		/// is maintained on templates.
 		/// </summary>
 		/// <param name="env">The vault/object environment.</param>
-		[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize)]
-		[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCheckInChangesFinalize)]
+		[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCreateNewObjectFinalize,
+			ObjectType = (int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument)]
+		[EventHandler(MFEventHandlerType.MFEventHandlerBeforeCheckInChangesFinalize,
+			ObjectType = (int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument)]
 		public void MaintainOriginalTemplateProperty(EventHandlerEnvironment env)
 		{
 			// Sanity.
@@ -205,6 +212,9 @@ namespace MaintainOriginalTemplate
 	}
 }
 ```
+
+The code above filters the event handler to only run for documents.  This is because the `Original Template` property is a list of documents and will fail when being used for other types of object.
+{:.note}
 
 ### Creating templates
 
