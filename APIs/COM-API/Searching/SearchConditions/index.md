@@ -224,7 +224,7 @@ var searchConditions = new SearchConditions();
 
 ### Timestamp values
 
-Timestamp property values are most easily searched for by using a range.  For example, the following conditions could be used to find all items that were created on 1st January 2017.
+Timestamp property values are most easily searched for by using a range.  For example, the following conditions could be used to find all items that were created on 1st January 2017.  An alternative would be to use a [DataFunctionCall](../DataFunctionCall).
 
 ```csharp
 // Create our search conditions collection,
@@ -263,6 +263,71 @@ var searchConditions = new SearchConditions();
 	// We only want documents that are before the next day.
 	searchCondition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeTimestamp, new DateTime(2017, 01, 02));
 
+	// Add it to the conditions.
+	searchConditions.Add(-1, searchCondition);
+}
+```
+
+### Searching for empty values
+
+Objects can be found where a property exists on the metadata card, but the property value is empty.
+
+Note that objects that do not have the property on their metadata card will not be returned.
+{:.note}
+
+```csharp
+// Create our search conditions collection,
+// which we will add the individual conditions to.
+var searchConditions = new SearchConditions();
+{
+	{
+		// Create the condition.
+		var condition = new SearchCondition();
+
+		// Set the expression.
+		condition.Expression.SetPropertyValueExpression(
+			1078, // This is our "project" property; we want empty ones.
+			MFParentChildBehavior.MFParentChildBehaviorNone);
+
+		// Set the condition type.
+		condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+		// Set the value.
+		condition.TypedValue.SetValueToNULL(MFDataType.MFDatatypeMultiSelectLookup);
+
+		conditions.Add(-1, condition);
+	}
+	// Add it to the conditions.
+	searchConditions.Add(-1, searchCondition);
+}
+```
+
+### Searching for non-empty values
+
+Objects can be found where a property exists on the metadata card and the property value is **not** empty.
+
+```csharp
+// Create our search conditions collection,
+// which we will add the individual conditions to.
+var searchConditions = new SearchConditions();
+{
+	{
+		// Create the condition.
+		var condition = new SearchCondition();
+
+		// Set the expression.
+		condition.Expression.SetPropertyValueExpression(
+			1078, // This is our "project" property; we want empty ones.
+			MFParentChildBehavior.MFParentChildBehaviorNone);
+
+		// Set the condition type.
+		condition.ConditionType = MFConditionType.MFConditionTypeNotEqual;
+
+		// Set the value.
+		condition.TypedValue.SetValueToNULL(MFDataType.MFDatatypeMultiSelectLookup);
+
+		conditions.Add(-1, condition);
+	}
 	// Add it to the conditions.
 	searchConditions.Add(-1, searchCondition);
 }
