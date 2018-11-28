@@ -17,6 +17,8 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 		* "Add to homepage"
 * COM API
 	* Added examples of using [DataFunctionCall]({{ site.baseurl }}/APIs/COM-API/Searching/DataFunctionCall/) with search conditions.
+* Vault Application Framework
+	* Added example of [filtering configuration options by other values]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/Filtering) (e.g. workflow state by workflow).
 
 ### October 2018
 

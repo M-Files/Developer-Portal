@@ -353,6 +353,10 @@
 						"Title": "Nested/hierarchical configuration"
 					},
 					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Filtering/",
+						"Title": "Filtering configuration options"
+					},
+					{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Showing-And-Hiding/",
 						"Title": "Showing and Hiding Configuration Options"
 					},
