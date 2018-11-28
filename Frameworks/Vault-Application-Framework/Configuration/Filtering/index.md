@@ -81,6 +81,9 @@ namespace FilteredConfigurationSample
 
 ![Filtering workflow states by workflow](FilteringStatesByWorkflow.png)
 
+In the `MFWorkflow` attribute above, the C# `nameof` operator is used to avoid hard-coding a string value which may change.  This could be altered, instead, to: `[MFWorkflow(RefMember = "Workflow")]`.
+{:.note}
+
 ## Filtering workflow state transitions by workflow
 
 For the filtering to work, you must:
@@ -146,3 +149,6 @@ namespace FilteredConfigurationSample
 ```
 
 ![Filtering workflow state transitions by workflow](FilteringStateTransitionsByWorkflow.png)
+
+In the `MFWorkflow` attribute above, the C# `nameof` operator is used to avoid hard-coding a string value which may change.  This could be altered, instead, to: `[MFWorkflow(RefMember = "Workflow")]`.
+{:.note}
