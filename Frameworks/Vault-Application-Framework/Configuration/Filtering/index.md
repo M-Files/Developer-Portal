@@ -17,6 +17,13 @@ There are situations where configuration options should be filtered according to
 
 ## Filtering workflow state by workflow
 
+For the filtering to work, you must:
+
+1. Ensure that the configuration elements are in their own class (e.g. `WorkflowTrigger`, in the sample below).
+2. Add the `MFWorkflow` attribute to the new class.  This is the type of the parent that will drive the filtering.
+3. Add the `RefMember` property to the `MFWorkflow` attribute, providing it with the name of the `MFIdentifier` member that identifies the parent (e.g. `WorkflowTrigger.Workflow`, in the sample below).
+4. Other configuration values within the class which support filtering will now be filtered by the value of the parent (e.g. `State` will be filtered by `Workflow`, in the sample below).
+
 ```csharp
 using System.Collections.Generic;
 using System.Runtime.Serialization;
@@ -75,6 +82,13 @@ namespace FilteredConfigurationSample
 ![Filtering workflow states by workflow](FilteringStatesByWorkflow.png)
 
 ## Filtering workflow state transitions by workflow
+
+For the filtering to work, you must:
+
+1. Ensure that the configuration elements are in their own class (e.g. `WorkflowTrigger`, in the sample below).
+2. Add the `MFWorkflow` attribute to the new class.  This is the type of the parent that will drive the filtering.
+3. Add the `RefMember` property to the `MFWorkflow` attribute, providing it with the name of the `MFIdentifier` member that identifies the parent (e.g. `WorkflowTrigger.Workflow`, in the sample below).
+4. Other configuration values within the class which support filtering will now be filtered by the value of the parent (e.g. `Transitions` will be filtered by `Workflow`, in the sample below).
 
 ```csharp
 using System.Collections.Generic;
