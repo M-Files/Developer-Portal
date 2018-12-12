@@ -7,6 +7,11 @@ This page details the major updates to the [M-Files Developer Portal](http://dev
 
 ## 2018
 
+### December 2018
+
+* User Interface Extensibility Framework
+	* Added example to GitHub of [generating the M-Files URL for a selected view](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ViewURLGenerator/#readme).
+
 ### November 2018
 
 * General

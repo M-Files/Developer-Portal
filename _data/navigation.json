@@ -574,6 +574,11 @@
 								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/UsingManagedAssemblies",
 								"Title": "Using Managed Assemblies",
 								"IsExternal": true
+							},
+							{
+								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ViewURLGenerator/#readme",
+								"Title": "View URL Generator",
+								"IsExternal": true
 							}
 						]
 					},
