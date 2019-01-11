@@ -76,8 +76,8 @@ You must call SaveProperties after using these methods for the changes to be per
 {:.note}
 
 * `HasProperty` - returns whether the `PropertyValues` collection contains an entry for the supplied property definition.  Does not check the value.
-* `HasValue` - 
-* `HasPropertyFlag` - returns whether the `PropertyValues` collection contains an entry for the supplied property definition, and checks that the property value has a value.
+* `HasValue` - returns whether the `PropertyValues` collection contains an entry for the supplied property definition, and checks that the property value has a value.
+* `HasPropertyFlag` - checks whether an object has a specific boolean property and it is true.
 * `HasClass` - returns whether the supplied class matches the class of the current object.
 * `GetProperty` - returns the `PropertyValue` for the provided property definition from the `PropertyValues` collection.  Returns null if not found.
 * `GetPropertyText` - returns the current property value of the supplied property, to be displayed to the user.
