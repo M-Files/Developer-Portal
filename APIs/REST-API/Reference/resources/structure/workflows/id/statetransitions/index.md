@@ -7,7 +7,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/structure/workflows/id/statet
 
 # Workflow state transitions
 
-## /structure/workflow/(id)/statetransitions
+## /structure/workflows/(id)/statetransitions
 {:.url-with-parameters}
 
 Valid state transitions in the selected workflow.
