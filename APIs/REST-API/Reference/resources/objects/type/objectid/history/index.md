@@ -7,7 +7,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/objects/type/objectid/history
 
 # History
 
-## /objects/(type)/history
+## /objects/(type)/(objectid)history
 {:.url-with-parameters}
 
 Resource listing the full object version history. 

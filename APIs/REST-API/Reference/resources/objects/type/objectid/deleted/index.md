@@ -7,7 +7,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/objects/type/objectid/deleted
 
 # Deleted
 
-## /objects/(type)/deleted
+## /objects/(type)/(objectid)/deleted
 {:.url-with-parameters}
 
 Resource representing the Deleted-state of an object. 
