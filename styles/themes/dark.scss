@@ -160,7 +160,11 @@ body
 			{
 				&.current > a, > a:hover, > a:active
 				{
-					background-color: rgba(64, 64, 64, 0.72);
+					background-color: #3c3c42;
+					.text
+					{
+						background-color: #3c3c42;
+					}
 				}
 			}
 		}
