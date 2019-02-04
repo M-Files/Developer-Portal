@@ -70,6 +70,11 @@ aside#sidebar h1 {
     padding: 0px;
 }
 
+aside#sidebar > nav > ul > li
+{
+	margin-right: 5px;
+}
+
 aside#sidebar ul li {
     margin: 8px 0px;
     position: relative;
@@ -118,7 +123,7 @@ i.expandCollapseIcon {
     cursor: pointer;
     position: absolute;
     /* left: -42px; */
-    top: 0px;
+    top: 4px;
     padding: 5px 15px;
     transform: rotate(0deg);
 }
@@ -130,14 +135,8 @@ i.expandCollapseIcon {
 	}
 	>ul>li
 	{
-		>i.expandCollapseIcon {
-	    	left:33px;
-		}
-		>ul>li
-		{
-			>i.expandCollapseIcon {
-				left:53px;
-			}
+		i.expandCollapseIcon {
+	    	left:-15px;
 		}
 	}
 }
@@ -196,12 +195,12 @@ aside#sidebar ul
 	.zmdi-hc-li
 	{
 		left: 16px;
-		top: 5px;
+		top: 9px;
 	}	
 	li
 	{
 		margin: 0px;
-		padding: 0px;
+		padding: 3px 0px;
 		&.expanded ul
 		{
 			list-style-type: none;
@@ -211,7 +210,7 @@ aside#sidebar ul
 			display: inline-block;
 			width: 100%;
 			height: 100%;
-			padding: 3px 0px;
+			padding: 1px;
 			background-color: transparent;
 			box-sizing: border-box;			
 		}
@@ -222,46 +221,15 @@ aside#sidebar ul
 	}
 	> li
 	{
-		> a
+		padding-left: 50px;
+		li
 		{
-			padding-left: 50px;
-		}
-		> ul > li
-		{
-			a
-			{
-				padding-left: 60px;
-			}
-			> ul > li
-			{
-				a
-				{
-					padding-left: 80px;
-				}
-				> ul > li
-				{
-					a
-					{
-						padding-left: 100px;
-					}
-				}
-			}
+			padding-left: 10px;
 		}
 	}
 	&.zmdi-hc-ul
  	{
 		margin: 0px;
 		padding: 0px;
-		li > a:hover
-		{
-			-webkit-transition: background-color 450ms ease-in;
-			-ms-transition: background-color 450ms ease-in;
-			transition: background-color 450ms ease-in;
-			background-color: #0064AD;
-		}
-		li.current > a
-		{
-			background-color: #0064AD;
-		}
 	} 
 }

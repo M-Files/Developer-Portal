@@ -19,12 +19,12 @@ body
 	}
 	nav.secondary
 	{
-		border-top: 1px solid #0064ad;
+		border-top: 1px solid #444;
 	}
 	aside#sidebar ul.zmdi-hc-ul li.current > a,
 		aside#sidebar ul.zmdi-hc-ul li > a:hover
 	{
-		background-color: #007dc6;
+		background-color: #3F3f3f;
 	}
 	article.page ul.quicklinks
 	{
@@ -117,7 +117,7 @@ body
 	}
 	article.page
 	{
-		border-color: #0064ad;
+		border-color: #444;
 		word-spacing: .05em;
 	}
 	article.page a.public-anchor
@@ -143,6 +143,29 @@ body
 			}
 		}
 	}
+	#cookies
+	{
+		color: #37373D;
+	}
+
+	&.fluid
+	{	
+		aside#sidebar
+		{
+			.text
+			{
+				background-color: #37373d;
+			}
+			ul.zmdi-hc-ul li
+			{
+				&.current > a, > a:hover, > a:active
+				{
+					background-color: rgba(64, 64, 64, 0.72);
+				}
+			}
+		}
+	}
+
 }
 
 @media screen and (min-width: 1500px)
