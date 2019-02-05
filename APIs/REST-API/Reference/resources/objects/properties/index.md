@@ -36,5 +36,5 @@ Input: | [ObjVer[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objver/)
 Output: | [PropertyValue[][]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/propertyvalue/)
 | Retrieves properties of multiple objects. The object versions are specified in the request body.
 
-Note that explicit object versions must be provided when using this endpoint (you cannot provide -1 as the version number).
+Note that explicit object versions must be provided when using this endpoint (you cannot provide -1 as the version number to indicate the latest version).
 {:.remark}
