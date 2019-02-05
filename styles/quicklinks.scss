@@ -16,43 +16,19 @@ ul.quicklinks a
 	display: inline-block;
 	margin: 10px 5px;
 	text-decoration: none;
-	border: 1px solid #333;
 	.text
 	{
 		display: block;
 		padding: 10px 15px;
 	}
-	&:hover, &:active
-	{
-		.text
-		{
-			background-color: #1482c3;
-		}
-	}
-
 }
 ul.quicklinks a
 {
 	display: inline-block;
-	background-color: transparent;
-	-webkit-transition: all 400ms ease-in-out;
-	-moz-transition: all 400ms ease-in-out;
-	-o-transition: all 400ms ease-in-out;
-	transition: all 400ms ease-in-out;
-	color: #333;
-	&:visited{
-		color: #333;
-	}
 }
 ul.quicklinks a,
 	ul.quicklinks a:hover,
 	ul.quicklinks a:visited
 {
 	text-decoration: none;
-}
-ul.quicklinks a:hover
-{
-	border-color: #007dc6;
-	background-color: #007dc6;
-	color: white;
 }

@@ -145,7 +145,8 @@ body
 
 	&.reveal
 	{	
-		.text
+		.text,
+			ul.quicklinks a .text
 		{
 			background-color: #37373d;
 		}
