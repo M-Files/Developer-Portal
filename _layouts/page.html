@@ -50,7 +50,6 @@ layout: default
 	{% capture other %}{% include other-articles.html items=site.data.navigation %}{% endcapture %}
 	{% assign other_size = other | size %}
 	{% if other_size > 0 %}
-		<h1 class="other-articles">You may also be interested in...</h1>
 		{{ other | strip_newlines }}
 	{% endif %}
 

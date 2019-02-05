@@ -93,9 +93,13 @@ body
 		border-color: #444;
 	}
 
-	nav.other-articles h1
+	nav.other-articles
 	{
-		background-color: #0064ad;
+		border-color: #666;
+		h1
+		{
+			background-color: #333;
+		}
 	}
 
 	pre > code
@@ -124,17 +128,6 @@ body
 	{
 		color: #007dc6;
 	}
-	/*
-	ul.quicklinks a
-	{
-		border-color: #57575d;
-	}
-	ul.quicklinks a:hover
-	{
-		border-color: #007dc6;
-		background-color: #0064ad;
-	}
-	*/
 	.platforms
 	{
 		.zmdi
