@@ -43,7 +43,7 @@ aside#sidebar {
 nav.secondary
 {
 	border-top: 1px solid white;
-	margin: 10px 0 0px 0px;
+	margin: 10px 5px 0px 20px;
 	padding: 10px 0px;
 }
 
@@ -232,4 +232,16 @@ aside#sidebar ul
 		margin: 0px;
 		padding: 0px;
 	} 
+}
+aside#sidebar > nav.secondary > ul
+{
+	> li
+	{
+		padding-left: 30px;
+		margin-right: 0px;
+		i
+		{
+			left: -4px;
+		}
+	}
 }

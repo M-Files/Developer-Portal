@@ -35,7 +35,11 @@ body > aside#sidebar
 	transition: left 0ms none;
 	border-right: 0px;
 }
-@media  screen and (min-width: 1000px)
+aside#sidebar form.search
+{
+	margin-left: 20px;
+}
+@media screen and (min-width: 1000px)
 {
     #in-page-nav
     {
