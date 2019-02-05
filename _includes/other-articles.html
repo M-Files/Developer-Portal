@@ -15,9 +15,11 @@
 						{%- assign starting = link | slice: 0, 4 -%}
 					<li>
 					<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
-							{{ child.Title }}
-							{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
-							{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+							<span class="text">
+								{{ child.Title }}
+								{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
+								{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+							</span>
 						</a>
 					</li>
 					{%- endfor -%}
@@ -38,9 +40,11 @@
 						{%- assign starting = link | slice: 0, 4 -%}
 					<li>
 					<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
-							{{ child.Title }}
-							{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
-							{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+							<span class="text">
+								{{ child.Title }}
+								{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
+								{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+							</span>
 						</a>
 					</li>
 					{%- endfor -%}
@@ -68,9 +72,11 @@
 							{%- assign starting = link | slice: 0, 4 -%}
 						<li>
 						<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
-								{{ child.Title }}
-								{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
-								{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+								<span class="text">
+									{{ child.Title }}
+									{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
+									{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+								</span>
 							</a>
 						</li>
 						{%- endfor -%}

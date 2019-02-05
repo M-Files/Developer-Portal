@@ -12,11 +12,29 @@ ul.quicklinks li
 }
 ul.quicklinks a
 {
+	padding: 1px;
+	display: inline-block;
+	margin: 10px 5px;
+	text-decoration: none;
+	border: 1px solid #333;
+	.text
+	{
+		display: block;
+		padding: 10px 15px;
+	}
+	&:hover, &:active
+	{
+		.text
+		{
+			background-color: #1482c3;
+		}
+	}
+
+}
+ul.quicklinks a
+{
 	display: inline-block;
 	background-color: transparent;
-	border: 1px solid #DEDEDE;
-	padding: 10px 15px;
-	margin: 10px 5px;
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
 	-o-transition: all 400ms ease-in-out;

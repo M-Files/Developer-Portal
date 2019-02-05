@@ -1,5 +1,11 @@
 body.fluid
 {
+	ul.quicklinks a
+	{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;	
+	}
 	aside#sidebar
 	{
 		.text
@@ -16,10 +22,10 @@ body.fluid
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center center;
+				background-color: #1482c3;
 			}
 			&.current > a, > a:hover, > a:active
 			{
-				background-color: #1482c3;
 				background-image: url("/images/light-hover.png");
 				.text
 				{

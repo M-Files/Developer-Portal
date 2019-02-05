@@ -124,6 +124,7 @@ body
 	{
 		color: #007dc6;
 	}
+	/*
 	ul.quicklinks a
 	{
 		border-color: #57575d;
@@ -133,6 +134,7 @@ body
 		border-color: #007dc6;
 		background-color: #0064ad;
 	}
+	*/
 	.platforms
 	{
 		.zmdi
@@ -150,23 +152,49 @@ body
 
 	&.fluid
 	{	
+		.text
+		{
+			background-color: #37373d;
+		}
 		aside#sidebar
 		{
-			.text
-			{
-				background-color: #37373d;
-			}
 			ul.zmdi-hc-ul li
 			{
-				&.current > a, > a:hover, > a:active
+				.text
+				{
+					background-color: #37373d;
+				}
+				> a
 				{
 					background-color: #3c3c42;
+				}
+				&.current > a, > a:hover, > a:active
+				{
 					.text
 					{
 						background-color: #3c3c42;
 					}
 				}
 			}
+		}
+		
+		ul.quicklinks a
+		{
+			background-color: #3c3c42;
+			background-image: url("/images/light-hover.png");
+			border: 0px;
+			-webkit-transition: none;
+			-moz-transition: none;
+			-o-transition: none;
+			transition: none;
+			&:hover, &:active
+			{
+				.text
+				{
+					background-color: #3c3c42;
+				}
+			}
+
 		}
 	}
 
