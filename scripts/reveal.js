@@ -15,12 +15,6 @@ $(document).ready(function()
 
 					// Calculate the delta.
 					var delta = (parseInt(e.clientX) - offset) - halfWidth;
-					// console.log({
-					// 	offset: offset,
-					// 	halfWidth: halfWidth,
-					// 	e: e,
-					// 	delta: delta
-					// });
 
 					// Update the CSS.
 					$this.css({
