@@ -32,7 +32,74 @@ body #in-page-nav h1
 {
 	color: #333;
 }
-
+body #in-page-nav
+{
+	h1
+	{
+		font-size: 0.9em;
+		margin: 0px;
+		padding: 5px 10px;
+		border-bottom: none;
+	}
+	> div
+	{
+		position: relative;
+		left: 0px;
+		padding-bottom: 5px;
+		margin: 10px 0px;
+		a
+		{
+			text-decoration: none;
+		}
+	}
+	ul
+	{
+		li
+		{
+			padding: 4px 0px 5px 5px;
+			margin-top: 0px;
+			.text
+			{
+				display: block;
+				padding: 3px;
+				background-color: white;
+			}
+			> a
+			{
+				padding: 1px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-color: #f7faff;
+				display: block;
+			}
+			> a.current, > a:hover, > a:active
+			{
+				background-image: url("/images/light-hover.png");
+				.text
+				{
+					background-color: #f7faff;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1499px)
+{
+	body #in-page-nav
+	{
+		> div
+		{
+			border-top: 1px solid #DEDEDE;
+			border-bottom: 1px solid #DEDEDE;
+		}
+		ul li li
+		{
+			margin-left: 25px;
+		}
+	}
+}
+/*
 @media screen and (max-width: 1499px)
 {
 	body #in-page-nav
@@ -96,3 +163,4 @@ body #in-page-nav h1
 		padding-bottom: 5px;
 	}
 }
+*/

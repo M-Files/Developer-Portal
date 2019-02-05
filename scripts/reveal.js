@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	$("aside#sidebar ul a, ul.quicklinks a")
+	$("aside#sidebar ul a, ul.quicklinks a, body #in-page-nav a")
 		.each(function(i, o)
 		{
 			var $this = $(this);

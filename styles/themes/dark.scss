@@ -156,24 +156,25 @@ body
 		{
 			background-color: #37373d;
 		}
-		aside#sidebar
+		
+		aside#sidebar ul.zmdi-hc-ul li,
+			#in-page-nav ul > li
 		{
-			ul.zmdi-hc-ul li
+			> a >.text
 			{
-				.text
-				{
-					background-color: #37373d;
-				}
-				> a
+				background-color: #37373d;
+			}
+			> a,
+				> a:visited
+			{
+				background-color: #3c3c42;
+				color: #DDD;
+			}
+			&.current > a, > a:hover, > a:active
+			{
+				> .text
 				{
 					background-color: #3c3c42;
-				}
-				&.current > a, > a:hover, > a:active
-				{
-					.text
-					{
-						background-color: #3c3c42;
-					}
 				}
 			}
 		}
@@ -197,7 +198,6 @@ body
 
 		}
 	}
-
 }
 
 @media screen and (min-width: 1500px)
@@ -211,15 +211,6 @@ body
 		#in-page-nav
 		{
 			border-color: #222;
-			ul li > a,
-				ul li > a:visited
-			{
-				color: #DDD;
-				&.current, &:active, &:hover
-				{
-					color: #333;
-				}
-			}
 		}
 	}
 }
