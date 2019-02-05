@@ -2,6 +2,8 @@
 ---
 
 $background-color: #37373D;
+$reveal-background: #37373d;
+$reveal-highlight: #63636b;
 
 body
 {
@@ -140,7 +142,7 @@ body
 	}
 	#cookies
 	{
-		color: #37373D;
+		color: $reveal-background;
 	}
 
 	&.reveal
@@ -148,15 +150,15 @@ body
 		.text,
 			ul.quicklinks a .text
 		{
-			background-color: #37373d;
+			background-color: $reveal-background;
 		}
 		
 		aside#sidebar ul.zmdi-hc-ul li,
 			#in-page-nav ul > li
 		{
-			> a >.text
+			&.current > a >.text, > a >.text
 			{
-				background-color: #37373d;
+				background-color: $reveal-background;
 			}
 			> a,
 				> a:visited
@@ -164,8 +166,9 @@ body
 				background-color: #3c3c42;
 				color: #DDD;
 			}
-			&.current > a, > a:hover, > a:active
+			> a.current, > a:hover, > a:active
 			{
+				background-color: $reveal-highlight;
 				> .text
 				{
 					background-color: #3c3c42;
@@ -175,8 +178,7 @@ body
 		
 		ul.quicklinks a
 		{
-			background-color: #3c3c42;
-			background-image: url("/images/light-hover.png");
+			background-color: $reveal-highlight;
 			border: 0px;
 			-webkit-transition: none;
 			-moz-transition: none;
