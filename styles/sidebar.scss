@@ -43,7 +43,7 @@ aside#sidebar {
 nav.secondary
 {
 	border-top: 1px solid white;
-	margin: 10px 5px 0px 20px;
+	margin: 10px 5px 0px0px;
 	padding: 10px 0px;
 }
 
@@ -88,7 +88,7 @@ aside#sidebar ul li a {
 ul.treeview ul {
     display: none;
     padding: 0px;
-    margin: 0px 0px 0px 20px;
+    margin: 0px;
     opacity: 0;
 }
 
@@ -136,7 +136,7 @@ i.expandCollapseIcon {
 	>ul>li
 	{
 		i.expandCollapseIcon {
-	    	left:-15px;
+	    	left:-3px;
 		}
 	}
 }
@@ -188,15 +188,10 @@ ul.treeview li a.current {
     }
 }
 
-aside#sidebar ul
+aside#sidebar > nav > ul
 {
 	margin: 0px;
-	padding: 0px;
-	.zmdi-hc-li
-	{
-		left: 16px;
-		top: 9px;
-	}	
+	padding: 0px;	
 	li
 	{
 		margin: 0px;
@@ -221,10 +216,20 @@ aside#sidebar ul
 	}
 	> li
 	{
-		padding-left: 50px;
+		padding-left: 30px;
 		li
 		{
-			padding-left: 10px;
+			padding-left: 25px;
+		}
+		> a > span.text
+		{
+			padding-left: 27px !important;
+			> i
+			{
+				position: absolute;
+				left: 2px;
+				top: 5px;
+			}
 		}
 	}
 	&.zmdi-hc-ul
@@ -239,9 +244,10 @@ aside#sidebar > nav.secondary > ul
 	{
 		padding-left: 30px;
 		margin-right: 0px;
-		i
+		> a > span.text > i
 		{
 			left: -4px;
+			top: 6px;
 		}
 	}
 }
