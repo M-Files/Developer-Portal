@@ -4,9 +4,8 @@ title: Getting started developing for M-Files
 includeInSearch: true
 breadcrumb: Getting started
 redirect_from: /Concepts/
+excerpt: This section introduces the concepts and terminology used within the M-Files software, with particular focus upon the terminology and techniques required to interact with an M-Files vault.
 ---
-
-This section introduces the concepts and terminology used within the M-Files software, with particular focus upon the terminology and techniques required to interact with an M-Files vault.
 
 Information held within M-Files is held within one or more `Vaults`.  On the M-Files Server, each vault consists of a database and, optionally, separate file storage.  Each vault has a [defined structure](Vault-Structure) - implemented as part of the initial configuration - that controls what types of information can be stored.  By default, M-Files can manage `Documents`, but the system will typically be customised to [manage many types of object](Objects-And-Versions).
 

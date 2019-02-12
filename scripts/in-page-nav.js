@@ -11,10 +11,14 @@
 		
         $headings.each(function(i, o)
         {
-            var $heading = $(this);
+			var $heading = $(this);
+			
+			var id = $heading.attr("id");
+			if(typeof(id) == "undefined")
+				return;
 			
 			var $anchor = $("<a></a>")
-				.attr("href", "#" + $heading.attr("id"))
+				.attr("href", "#" + id)
 				.addClass("public-anchor")
 				.append($("<i class='zmdi zmdi-link'></i>"));
 			$heading.append($anchor);

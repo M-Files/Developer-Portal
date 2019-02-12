@@ -88,18 +88,13 @@ body #in-page-nav
 {
 	body #in-page-nav
 	{
-		> div
-		{
-			border-top: 1px solid #DEDEDE;
-			border-bottom: 1px solid #DEDEDE;
-		}
 		ul li li
 		{
 			margin-left: 25px;
 		}
 		li
 		{
-			margin-left: 40px;
+			margin-left: 20px;
 			list-style-type: decimal;
 			ul li
 			{

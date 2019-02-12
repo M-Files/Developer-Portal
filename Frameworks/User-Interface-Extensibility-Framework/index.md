@@ -3,11 +3,10 @@ layout: page
 title: The User Interface Extensibility Framework
 breadcrumb: UIX
 includeInSearch: true
+excerpt: The User Interface Extensibility Framework (UIX) was created to allow developers to build client-side applications that interact with the M-Files Desktop and M-Files Web Access.  User Interface Extensibility Framework applications are a combination of a number of text files (one [application definition file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/), one or more [modules]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/), and zero or more [dashboards]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/).  These are executed on the M-Files Desktop client or within the M-Files Web Access and are used to extend the client-side functionality of the core software.
 ---
 
-The User Interface Extensibility Framework (UIX) was created to allow developers to build client-side applications that interact with the M-Files Desktop and M-Files Web Access.  User Interface Extensibility Framework applications are a combination of a number of text files (one [application definition file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/), one or more [modules]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/), and zero or more [dashboards]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/).  These are executed on the M-Files Desktop client or within the M-Files Web Access and are used to extend the client-side functionality of the core software.
-
-A <a href="https://www.m-files.com/UI_Extensibility_Framework/">technical reference</a> website is available which provides detailed information such as interface members.  This website focuses instead on the practicalities of developing applications using the UIX.
+A [technical reference](https://www.m-files.com/UI_Extensibility_Framework/) website is available which provides detailed information such as interface members.  This website focuses instead on the practicalities of developing applications using the UIX.
 {:.note}
 
 ## Use cases

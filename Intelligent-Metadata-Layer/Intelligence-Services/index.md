@@ -2,9 +2,8 @@
 layout: page
 title: Intelligence Services
 includeInSearch: true
+excerpt: Intelligence Services analyse files being added to M-Files and can suggest values for items on the object's metadata card.  Developers provide their own suggestions by building their own [intelligence services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services/), utilising online services, AI techniques, or their own custom logic.
 ---
-
-Intelligence Services analyse files being added to M-Files and can suggest values for items on the object's metadata card.  Developers provide their own suggestions by building their own [intelligence services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services/), utilising online services, AI techniques, or their own custom logic.
 
 ![Intelligence service processing](../intelligence_services.png)
 

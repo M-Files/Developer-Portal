@@ -2,9 +2,8 @@
 layout: page
 title: External Repository Connectors
 includeInSearch: true
+excerpt: External Repository Connectors allow content stored within other repositories to be shown within the M-Files interface.  This functionality is available on M-Files Desktop, M-Files Web, and our mobile applications.  Users can use the full-text search (or navigate a folder structure) to find this `Unmanaged` content without leaving M-Files.
 ---
-
-External Repository Connectors allow content stored within other repositories to be shown within the M-Files interface.  This functionality is available on M-Files Desktop, M-Files Web, and our mobile applications.  Users can use the full-text search (or navigate a folder structure) to find this `Unmanaged` content without leaving M-Files.
 
 Users can choose to `Promote` this unmanaged content to become `Managed`.  By becoming `Managed`, the object becomes a first-class citizen within the M-Files system.  Managed objects can have metadata (such as a class), appear within dynamic views, and can even participate in workflows.  All the time their respective file data continues to reside on the source system.
 

@@ -28,10 +28,14 @@ layout: default
 		{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
 		{% assign inthisarticle_size = inthisarticle | size %}
 
+		{% if page.excerpt %}
+			<div class="description">{{ page.excerpt | markdownify }}</div>
+		{% endif %}
+
 		{% if inthisarticle_size > 0 %}
 		<nav id="in-page-nav" role="navigation">
 			<div id="in-this-article">
-				<h1>In this article</h1>
+				<h2>In this article</h2>
 				{{ inthisarticle }}
 			</div>
 		</nav>

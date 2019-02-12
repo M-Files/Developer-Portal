@@ -14,8 +14,8 @@
 	<meta name="msapplication-config" content="/browserconfig.xml?v={{ site.github.build_revision }}" />
 
     {%- if page.excerpt -%}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <meta name="description" content="{{ page.excerpt | markdownify | strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt| markdownify | strip_html }}" />
     {%- else -%}
 		{%- if site.description -%}
 		<meta name="description" content="{{ site.description }}">

@@ -3,9 +3,8 @@ layout: page
 title: Executing VBScript within M-Files
 includeInSearch: true
 breadcrumb: VBScript
+excerpt: VBScript provides an easily-accessible mechanism for server-side code to be placed within an M-Files vault or server.  Code can react to vault events (e.g. event handlers), can execute when objects move through workflows (e.g. to enforce that an object meets some conditions before moving into a state), or even to calculate or validate values of properties on objects.
 ---
-
-VBScript provides an easily-accessible mechanism for server-side code to be placed within an M-Files vault or server.  Code can react to vault events (e.g. event handlers), can execute when objects move through workflows (e.g. to enforce that an object meets some conditions before moving into a state), or even to calculate or validate values of properties on objects.
 
 The [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) can be used to enable .NET (typically C#) code to be used in many of the places that VBScript can be used, and should be considered for complex scripts.
 {:.note}

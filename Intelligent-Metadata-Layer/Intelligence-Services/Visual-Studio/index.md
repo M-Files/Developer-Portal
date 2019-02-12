@@ -3,9 +3,8 @@ layout: page
 title: Visual Studio Template for building Intelligence Services
 includeInSearch: true
 breadcrumb: Visual Studio Template
+excerpt: M-Files provides partners with a Visual Studio 2015/2017 template that can be used to develop Intelligent Metadata Layer Intelligence Service components using C#.
 ---
-
-M-Files provides partners with a Visual Studio 2015/2017 template that can be used to develop Intelligent Metadata Layer Intelligence Service components using C#.
 
 When installing the template into Visual Studio 2017, a popup will be shown stating that the template does not use the 2017 format.  This is expected, as the template is backwards compatible with Visual Studio 2015 as well.  Simply accept the popup and continue installation.
 {:.note}

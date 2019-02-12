@@ -1,9 +1,8 @@
 ---
 layout: page
 title: What's New
+excerpt: This page details the major updates to the [M-Files Developer Portal](http://developer.m-files.com) since its initial launch.
 ---
-
-This page details the major updates to the [M-Files Developer Portal](http://developer.m-files.com) since its initial launch.
 
 ## 2018
 

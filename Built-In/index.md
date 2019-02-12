@@ -3,9 +3,8 @@ layout: page
 title: M-Files' Built-In Functionality
 includeInSearch: true
 breadcrumb: Built-In
+excerpt: As well as APIs and Frameworks allowing developers to extend M-Files' functionality, or to integrate it with other systems, M-Files also provides a number of built-in technologies that developers can utilise to streamline customer implementations.
 ---
-
-As well as APIs and Frameworks allowing developers to extend M-Files' functionality, or to integrate it with other systems, M-Files also provides a number of built-in technologies that developers can utilise to streamline customer implementations.
 
 ## VBScript
 

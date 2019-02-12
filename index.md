@@ -2,9 +2,8 @@
 layout: page
 title: Welcome to the M-Files Developer Portal
 includeInSearch: true
+excerpt: This website complements and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.
 ---
-
-This website complements and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.
 
 ## Quick links
 
