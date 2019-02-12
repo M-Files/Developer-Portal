@@ -70,11 +70,19 @@ body #in-page-nav
 	{
 		width: 100%;
 		font-size: 0.9em;
+		ul
+		{
+			font-size: 1em;
+		}
 		li
 		{
 			padding: 4px 0px;
 			padding-left: 5px;
 			margin-top: 0px;
+			.text
+			{
+				padding: 3px 5px;
+			}
 		}
 	}
 }
