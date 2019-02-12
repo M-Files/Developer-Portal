@@ -251,3 +251,17 @@ aside#sidebar > nav.secondary > ul
 		}
 	}
 }
+aside#sidebar
+{
+	padding: 0px;
+}
+aside#sidebar nav.primary
+{
+	margin: 0px;
+	padding: 0px;
+}
+aside#sidebar nav.primary,
+	aside#sidebar nav.secondary
+{
+	margin-right: 5px;
+}
