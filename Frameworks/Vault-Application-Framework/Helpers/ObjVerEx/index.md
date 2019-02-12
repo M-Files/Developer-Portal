@@ -83,7 +83,7 @@ You must call SaveProperties after using these methods for the changes to be per
 * `GetPropertyText` - returns the current property value of the supplied property, to be displayed to the user.
 * `GetDirectReferences` - creates `ObjVerEx` objects for each non-deleted item referenced by the provided multi-select lookup property.
 * `GetAllDirectReferences` - creates `ObjVerEx` objects for all items (including deleted) referenced by the provided multi-select lookup property.
-* `GetIndirectReferences` - creates `ObjVerEx` objects for all items (including deleted) that referencethe current on, optionally using a specific property.
+* `GetIndirectReferences` - creates `ObjVerEx` objects for all items (including deleted) that reference the current object, optionally using a specific property.
 
 Calling `GetIndirectReferences` will execute a search against the M-Files vault.
 {:.note.warning}
