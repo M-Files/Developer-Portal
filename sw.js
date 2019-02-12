@@ -4,10 +4,16 @@ self.addEventListener('install', function(event) {
 });
 
 var preLoad = function(){
-	return caches.open('pwa-offline').then(function(cache) {
-		console.log('Caching index and offline pages.');
-		return cache.addAll(['/offline/index.html', '/index.html']);
-	});
+	return caches.open('pwa-offline')
+		.then(function(cache) {
+			console.log('Caching offline page.');
+			return cache.addAll(['/offline/index.html']);
+		})
+		.catch(function(error)
+		{
+			console.log("Exception adding default cached files: " + error)
+			return Promise.reject("Could not cache offline page.");
+		});
 }
 
 self.addEventListener('fetch', function(event) {
@@ -39,9 +45,15 @@ var checkResponse = function(request){
 
 var addToCache = function(request){
 	return caches.open('pwa-offline').then(function (cache) {
-		return fetch(request).then(function (response) {
-			return cache.put(request, response);
-		});
+		return fetch(request)
+			.then(function (response) {
+				return cache.put(request, response);
+			})
+			.catch(function(error)
+			{
+				console.log("Exception requesting file: " + error)
+				return Promise.reject("no match");
+			});
 	});
 };
 
