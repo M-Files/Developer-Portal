@@ -17,12 +17,12 @@ Whilst the Vault Application Framework licensing infrastructure allows a multitu
 
 ## The M-Files License Generator Application
 
-Generation of license key files (LIC) files is undertaken using the M-Files License Generator application.  This application can be found within the M-Files Partner Portal.  If it is not available, then please contact [devsupport@m-files.com](mailto:devsupport@m-files.com). 
+Generation of license key files (LIC) files is undertaken using the M-Files License Generator application.  This application can be found [within the M-Files Partner Portal](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/F47735A7-F6BA-42B5-BDD8-19F332EDAAA7/latest). 
 {:.note}
 
 ### Installation
 
-To install the application, simply unzip `VaultAppLicenseGenerator.zip` into a new folder. The unzipped folder contents will look like the following:
+To install the application, simply unzip `VAF Licence Generator application.zip` into a new folder. The unzipped folder contents will look like the following:
 
 ![The default licence generator folder contents](file-listing.png)
 
