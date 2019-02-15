@@ -13,13 +13,18 @@
 	<meta name="theme-color" content="#ffffff">
 	<meta name="msapplication-config" content="/browserconfig.xml?v={{ site.github.build_revision }}" />
 
+	<meta property="twitter:card" content="summary" />
+	<meta property="twitter:site" content="@M_Files" />
+
     {%- if page.excerpt -%}
-    <meta name="description" content="{{ page.excerpt | markdownify | strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| markdownify | strip_html }}" />
+    	<meta name="description" content="{{ page.excerpt | markdownify | strip_html }}" />
+		<meta property="og:description" content="{{ page.excerpt| markdownify | strip_html }}" />
+		<meta property="twitter:summary" content="{{ page.excerpt| markdownify | strip_html }}" />
     {%- else -%}
 		{%- if site.description -%}
 		<meta name="description" content="{{ site.description }}">
 		<meta property="og:description" content="{{ site.description }}" />
+		<meta property="twitter:summary" content="{{ site.description }}" />
 		{%- endif -%}
 	{%- endif -%}
 	{%- if site.author -%}
@@ -31,4 +36,5 @@
     <meta property="twitter:title" content="{{ page.title }}" />
     {%- endif -%}
 
-    <link rel="canonical" href="https://developer.m-files.com{{ page.url }}" />
+	<link rel="canonical" href="https://developer.m-files.com{{ page.url }}" />
+	<meta property="og:url" content="https://developer.m-files.com{{ page.url }}" />
