@@ -12,9 +12,12 @@
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png?v={{ site.github.build_revision }}">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="msapplication-config" content="/browserconfig.xml?v={{ site.github.build_revision }}" />
+	
+	<meta property="og:site_name" content="Welcome to the M-Files Developer Portal" />
 
 	<meta property="twitter:card" content="summary" />
 	<meta property="twitter:site" content="@M_Files" />
+
 
     {%- if page.excerpt -%}
     	<meta name="description" content="{{ page.excerpt | markdownify | strip_html }}" />
