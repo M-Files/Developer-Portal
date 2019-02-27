@@ -194,6 +194,21 @@ body
 
 		}
 	}
+	form.search input#query
+	{
+		background-color: black;
+		border: 1px solid #5B5B5B;
+		color: #cdcdcd;
+		&::placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+		{
+			color: #AEAEAE;
+			opacity: 1;
+		}
+		&:focus
+		{
+			box-shadow: 0px 0px 5px #007dc6;
+		}
+	}
 }
 
 @media screen and (min-width: 1500px)
