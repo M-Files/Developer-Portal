@@ -10,7 +10,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/session/vaults.html"
 ## /session/vaults
 {:.url-with-parameters}
 
-Retrieves vault list which is accessible by current user. 
+Retrieves a list of vaults that are accessible by the current user. 
 {:.description}
 
 ### GET

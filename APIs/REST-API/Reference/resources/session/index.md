@@ -49,3 +49,4 @@ Item | Description
 [Authentication tokens]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/authenticationtoken/) | Authentication token representing the current session. 
 [User ID]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/userid/) | The ID of the current user. 
 [Vault]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/vault/) | The document vault attached to the current session. 
+[Vaults]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/vaults/) | Retrieves a list of vaults that are accessible by the current user. 
