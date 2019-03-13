@@ -98,7 +98,7 @@ The following [data types](https://www.m-files.com/api/documentation/latest/inde
 
 Each version of an object contains multiple property values.  Some of these property values are built-in and may be automatically maintained (e.g. the creation date, or who last modified the object), and some will be shown on the metadata card and maintained as users add and process objects within M-Files.
 
-Objects may need to be [checked out]({{ site.baseurl }}/Getting-Started/Vault-Structure/Objects-and-Versions) before their properties can be modified.  Setting properties from VBScript or the Vault Application Framework may cause the [audit trail to become broken]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/) unless care is taken.
+Objects may need to be [checked out]({{ site.baseurl }}/Getting-Started/Objects-And-Versions) before their properties can be modified.  Setting properties from VBScript or the Vault Application Framework may cause the [audit trail to become broken]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/) unless care is taken.
 {:.note.hint}
 
 ### Property values in the COM API
