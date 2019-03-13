@@ -25,11 +25,11 @@ The official M-Files Web Service documentation defines endpoints that use differ
 
 * [/objects/(type)/(objectid)/(version)](http://www.m-files.com/mfws/resources/objects/type/objectid/version.html) uses `GET` to retrieve information about a specific object version.
 
-* [/objects/(type)/(objectid)/(version)/files](www.m-files.com/mfws/resources/objects/type/objectid/version/files.html) uses `POST` to add files to an object.
+* [/objects/(type)/(objectid)/(version)/files](http://www.m-files.com/mfws/resources/objects/type/objectid/version/files.html) uses `POST` to add files to an object.
 
 * [/objects/(type)/(objectid)/(version)](http://www.m-files.com/mfws/resources/objects/type/objectid/version.html) uses `DELETE` to destroy an object.
 
-* [/objects/(type)/(objectid)/(version)/files/(file)/content](www.m-files.com/mfws/resources/objects/type/objectid/version/files/file/content.html) uses `PUT` to replace the contents of a specific file.
+* [/objects/(type)/(objectid)/(version)/files/(file)/content](http://www.m-files.com/mfws/resources/objects/type/objectid/version/files/file/content.html) uses `PUT` to replace the contents of a specific file.
 
 Depending upon the version of Windows, IIS, and M-Files being used, sometimes only the `GET` and `POST` HTTP verbs will correctly work.  For maximum compatibility it is recommended that `DELETE` and `PUT` requests are routed via the `_method` querystring parameter, as shown below.
 {:.note.warning}

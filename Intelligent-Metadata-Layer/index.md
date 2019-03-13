@@ -3,7 +3,7 @@ layout: page
 title: Intelligent Metadata Layer
 includeInSearch: true
 breadcrumb: IML
-excerpt: "The Intelligent Metadata Layer, first made available with M-Files 2018, consists of two broad sets of technologies: [External Repository Connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/) and [Intelligence Services]({{ site.baseurl }}/Intelligent-Metadata-Layer/Intelligence-Services/).  Custom Intelligent Metadata Layer components are written using .NET, can be developed by partners, and can be run by M-Files customers with the Intelligent Metadata Layer Core module.  Each custom component can, additionally, require its own licence to function."
+excerpt: "The Intelligent Metadata Layer, first made available with M-Files 2018, consists of two broad sets of technologies: [External Repository Connectors](./External-Repository-Connectors/) and [Intelligence Services](./Intelligence-Services/).  Custom Intelligent Metadata Layer components are written using .NET, can be developed by partners, and can be run by M-Files customers with the Intelligent Metadata Layer Core module.  Each custom component can, additionally, require its own licence to function."
 ---
 
 ## External Repository Connectors

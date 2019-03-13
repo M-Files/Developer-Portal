@@ -26,7 +26,7 @@ Type | JSON serialization format
 `int` | JSON number.
 `double` | JSON number.
 `bool` | JSON boolean.
-`DateTime` | Converted to [ISO-8601](http://en.wikipedia.org/wiki/ISO\_8601) format and serialized as string.
+`DateTime` | Converted to [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format and serialized as string.
 Arrays |  JSON array.
 Other objects |  JSON object.
 Enumerations |  JSON number.

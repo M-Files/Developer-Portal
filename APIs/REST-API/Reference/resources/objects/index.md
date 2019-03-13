@@ -22,7 +22,7 @@ Collection of objects in the document vault.
 Output: | [Results]({{ site.baseurl }}/APIs/REST-API/Reference/structs/resultst/)<[ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/)>
 | Retrieves objects. The amount of returned objects is limited by the server, by default to 500 items.  This can be increased by following [this guidance](https://developer.m-files.com/APIs/REST-API/Searching/#increasing-the-number-of-results). See [search encoding]({{ site.baseurl }}/APIs/REST-API/Reference/syntax/#sect:search-encoding) for how to further specify the objects. 
 
-Earlier 9.0.3372.x M-Files versions have an issue preventing the use of this resource.  The search within root view ([/views/objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/objects/)) resource is identical to this one and can be used as a working alternative.
+Earlier 9.0.3372.x M-Files versions have an issue preventing the use of this resource.  The search within root view ([/views/objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/objects/)) resource is identical to this one and can be used as a working alternative.
 {:.remark}
 
 ### Example

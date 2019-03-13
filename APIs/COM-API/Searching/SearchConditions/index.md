@@ -352,7 +352,7 @@ condition.ConditionType = MFConditionType.MFConditionTypeEqual;
 condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "MyExternalObjectId");
 ```
 
-An example of searching by display/external ID is available within <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/SearchByDisplayId">the SearchByDisplayId sample in our github repository</a>.
+An example of searching by display/external ID is available within [the SearchByDisplayId sample in our github repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/COM%20API/SearchByDisplayId).
 {:.note}
 
 ## Excluding an object by ID

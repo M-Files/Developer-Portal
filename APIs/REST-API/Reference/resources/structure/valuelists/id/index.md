@@ -24,4 +24,4 @@ Output: | [ObjType]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objtype/)
 {:#sub-resources}
 Item | Description
 --- | ---
-[Value list items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/states/) | Collection ofitems within a single value list. 
+[Value list items]({{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/valuelists/id/items/) | Collection ofitems within a single value list. 

@@ -23,10 +23,10 @@ This library provides helper and extension methods to more easily work with the 
 * Extension methods to aid creation of [SearchCondition](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchCondition.html) objects, and searching against a given vault:
     * `AddNotDeletedSearchCondition` - adds a "not deleted" search condition to the given [SearchConditions collection](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SearchConditions.html).
     * `AddObjectTypeSearchCondition` - adds a search condition restricting the results to a single object type.
-    * `AddMinimumObjectIdSearchCondition` - used in combination with `AddObjectIdSegmentSearchCondition` to execute a [segmented search](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/SegmentedSearch).
-    * `AddObjectIdSegmentSearchCondition` used in combination with `AddMinimumObjectIdSearchCondition` to execute a [segmented search](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/SegmentedSearch).
+    * `AddMinimumObjectIdSearchCondition` - used in combination with `AddObjectIdSegmentSearchCondition` to execute a [segmented search](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/COM%20API/SegmentedSearch).
+    * `AddObjectIdSegmentSearchCondition` used in combination with `AddMinimumObjectIdSearchCondition` to execute a [segmented search](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/COM%20API/SegmentedSearch).
     * `AddDisplayIdSearchCondition` - adds a search condition restricting the results to an object with a specific external / display id.
     * `AddFullTextSearchCondition` - adds a search condition executing a full-text search for a given text string.  Can be restricted to search in metadata, file data, or both (default).
 
-More details and examples are available <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Libraries/MFaaP.MFilesAPI#readme">in in the GitHub repository</a>.
+More details and examples are available [in the GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Libraries/MFaaP.MFilesAPI#readme).
 {:.note}

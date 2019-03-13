@@ -10,7 +10,7 @@ Whenever the metadata or files of an object are altered, M-Files automatically c
 
 ## Object history
 
-For changes that may take some time (e.g. editing a file), M-Files may prompt the user to [check out the object](https://www.m-files.com/user-guide/latest/eng/Check_out.html?hl=check%2Cout).  No other user can make alterations to this object until it is [checked back in](https://www.m-files.com/user-guide/latest/eng/Check_in.html), the [checkout is discarded](https://www.m-files.com/user-guide/latest/eng/Undo_checkout.html), or an administrator overrides the checkout.
+For changes that may take some time (e.g. editing a file), M-Files may prompt the user to [check out the object](https://www.m-files.com/user-guide/latest/eng/Check_out.html?hl=check%2Cout).  No other user can make alterations to this object until it is [checked back in](https://www.m-files.com/user-guide/latest/eng/Check_in.html), the [checkout is discarded](https://www.m-files.com/user-guide/latest/eng/Check_out.html#undo_checkout), or an administrator overrides the checkout.
 
 For smaller, atomic, changes, M-Files will often perform the check out and in transparently for the user.  This can be seen by finding an object and altering its metadata: when clicking the `Save` button, M-Files will check out the object, persist the changes, then check it back in again.
 
@@ -23,7 +23,7 @@ Any operation that alters the object's metadata or files causes a new version to
 
 ### ObjID
 
-The [ObjID](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjID.html) class represents a single object in the M-Files vault.  The combination of the `Type` (the internal ID of the object type) and the `ID` (the M-Files [internal ID](../InternalAndExternalIDs)) uniquely identify an object in the system.  The `ObjID` is used to reference items when the version is not important, such as for checking out an object.
+The [ObjID](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjID.html) class represents a single object in the M-Files vault.  The combination of the `Type` (the internal ID of the object type) and the `ID` (the M-Files [internal ID](../Vault-Structure/InternalAndExternalIDs)) uniquely identify an object in the system.  The `ObjID` is used to reference items when the version is not important, such as for checking out an object.
 
 ### ObjVer
 
