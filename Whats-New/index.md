@@ -112,7 +112,7 @@ excerpt: This page details the major updates to the [M-Files Developer Portal](h
 ### January 2018
 
 * Built-in
-	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Getting-Started/InternalAndExternalIDs/).
+	* Added a page explaining [internal and external IDs]({{ site.baseurl }}/Getting-Started/Vault-Structure/InternalAndExternalIDs/).
 * COM API
 	* Added in a search condition sample for [finding objects with specific flags (e.g. conflict objects)]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-by-object-flags-eg-searching-for-conflict-objects).
 	* Added in a page detailing how to [search for value list items by name, deleted status and owner]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems/).
