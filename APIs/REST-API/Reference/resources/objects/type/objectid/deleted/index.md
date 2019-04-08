@@ -22,7 +22,7 @@ Resource representing the Deleted-state of an object.
 Output: | `bool`
 | Retrieves the deleted status of the object.
 
-### POST
+### PUT
 {:.method}
 
 {:.method}
