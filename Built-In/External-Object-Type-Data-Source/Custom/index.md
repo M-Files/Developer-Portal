@@ -9,6 +9,9 @@ M-Files uses `Object Types` to define the objects that will be managed, stored, 
 
 Each Object Type can be defined as Internal (created and managed within the M-Files clients), or External (typically managed within an external system).  External object types can either be read-only within the M-Files client, or can be defined as read/write, where objects created, changed, or deleted in the M-Files client can be pushed back to the originating system.
 
+Code for this tutorial can be found in our GitHub repository: [https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/ExtOTDS/ExtOTDS.Json](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/ExtOTDS/ExtOTDS.Json).
+{:.note}
+
 ### Built-in support for External Object Types
 
 By default, M-Files can be set to import objects from an external database using OLEDB.  This functionality allows M-Files to retrieve data from almost any database where an OLEDB driver is available (e.g. Microsoft SQL Server).  M-Files will automatically query the remote data source every 15 minutes to load new objects (known as a "quick refresh"), and will process updates (known as a "full refresh") once per day.
@@ -38,7 +41,7 @@ A full refresh detects new objects, compares and updates existing objects, and p
 
 * A quick refresh only detects new objects.  To give some comparative context, a quick refresh of 120,000 items on a test system takes approximately 7 seconds.
 
-The default time intervals for refreshes can be altered using registry settings on the server.  More information on this is available in the <a href="https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/3AEC36EE-946C-4B0C-9DE2-8BF82DED3078/latest">Partner Portal</a>.
+The default time intervals for refreshes can be altered using registry settings on the server.  More information on this is available in the [Partner Portal](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/3AEC36EE-946C-4B0C-9DE2-8BF82DED3078/latest).
 {:.note}
 
 From the perspective of a custom External Object Type Data Source, there is no difference between a full refresh and a quick refresh; the M-Files Server simply alters how it deals with the data which it is provided.
@@ -47,7 +50,7 @@ From the perspective of a custom External Object Type Data Source, there is no d
 
 We are building a vault for a small online retailer.  The retailer has a blog on their website which has posts and comments, which they wish to pull into M-Files to use for reporting and reference.  The blog itself is hosted externally and exposes information for Posts, Users and Comments via a JSON RESTful interface.
 
-For our example we will use sample data from <a href="http://jsonplaceholder.typicode.com/">http://jsonplaceholder.typicode.com/</a>, although we will maintain this data in files on the computer so that we can test saving changes and adding new items.
+For our example we will use sample data from [http://jsonplaceholder.typicode.com/](http://jsonplaceholder.typicode.com/), although we will maintain this data in files on the computer so that we can test saving changes and adding new items.
 {:.note}
 
 ### The Vault Structure
@@ -105,7 +108,7 @@ For the purposes of this tutorial, we will have to create a means of accessing t
 
 ### Creating the Data Source
 
-For the sake of brevity, the specific implementation required for our scenario is available within the <a href="https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/1EBBAD7B-A948-47C2-973B-5A32300F468D/latest">source code that can be downloaded from the Partner Portal</a>.  The below information is not a complete code listing.
+For the sake of brevity, the specific implementation required for our scenario is available within the [source code](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/ExtOTDS/ExtOTDS.Json).  The below information is not a complete code listing.
 {:.note}
 
 You may implement `IDataSource` and `IDataSourceConnection` in the same object, if it makes development cleaner.  For clarity, in this sample we will separate the implementation of `IDataSource` from `IDataSourceConnection`.
