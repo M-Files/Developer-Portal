@@ -67,6 +67,10 @@
 	/* when the contents are open, do it full-screen */
 	body.sidebar-expanded
 	{
+		li.nav-item ins.jstree-icon
+		{
+			margin: 5px;
+		}
 		div.navigation
 		{
 			div.navigation-header
