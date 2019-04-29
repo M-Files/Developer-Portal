@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="{{ site.baseurl }}/APIs/REST-API/Reference/Static/style.css" type="text/css">
 <link rel="stylesheet" href="{{ site.baseurl }}/APIs/REST-API/Reference/Static/css/custom-theme/jquery-ui-1.8.24.custom.css">
@@ -18,6 +21,8 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+<link rel="stylesheet" href="{{ site.baseurl }}/APIs/REST-API/Reference/styles/base.css">
 
 <link rel="canonical" href="https://developer.m-files.com{{ page.url }}" />
 
@@ -76,7 +81,8 @@ hljs.initHighlightingOnLoad();
 
 <div class="navigation">
     <div class="navigation-header">
-        Contents
+		<i class="material-icons" id="hamburger">menu</i>
+        <span>Contents</span>
     </div>
     <div class="navigation-tree">
         <ul>
@@ -85,8 +91,9 @@ hljs.initHighlightingOnLoad();
     </div>
 </div>
 
-<script src="{{ site.baseurl }}/scripts/external-links.js"></script>
-<script src="{{ site.baseurl }}/APIs/REST-API/Reference/Static/url-parameters.js"></script>
+<script defer src="{{ site.baseurl }}/scripts/external-links.js"></script>
+<script defer src="{{ site.baseurl }}/APIs/REST-API/Reference/Static/url-parameters.js"></script>
+<script defer src="{{ site.baseurl }}/scripts/sidebar.js"></script>
 
 <!-- Google Analytics --> <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-90139210-1', 'auto'); ga('send', 'pageview', { 'page': '/', 'title': 'Welcome to the M-Files Developer Portal' }); </script> <!-- End Google Analytics -->
 <!-- coorporate analytics --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PSSMKLJ');</script> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSSMKLJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- end corporate analytics -->

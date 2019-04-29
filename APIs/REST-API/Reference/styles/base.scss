@@ -1,0 +1,98 @@
+---
+---
+
+#hamburger {
+	display:none;
+	vertical-align: text-bottom;
+	cursor: pointer;
+}
+
+@media all and (max-width:900px)
+{
+	#hamburger
+	{
+		display: inline-block;
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		color: rgb(50, 80, 150);
+	}
+	.jstree li{
+		a {
+			padding: 4px 6px;
+		}
+	}
+	div.navigation
+	{
+		left: -275px;
+		-webkit-transition: margin-left 300ms ease-in-out;
+		-moz-transition: margin-left 300ms ease-in-out;
+		-o-transition: margin-left 300ms ease-in-out;
+		transition: margin-left 300ms ease-in-out;
+	}
+	div.content
+	{
+		margin-left: 0px;
+		padding-left: 50px;
+		-webkit-transition: margin-left 300ms ease-in-out;
+		-moz-transition: margin-left 300ms ease-in-out;
+		-o-transition: margin-left 300ms ease-in-out;
+		transition: margin-left 300ms ease-in-out;
+	}
+	body.sidebar-expanded
+	{
+		#hamburger
+		{
+			position: initial;
+			top: auto;
+			left: auto;
+			color: inherit;
+		}
+		div.navigation
+		{
+			left: 0px;
+		}
+		div.content
+		{
+			margin-left: 270px;
+		}
+	}
+}
+@media all and (max-width:600px)
+{
+	/* when the contents are open, do it full-screen */
+	body.sidebar-expanded
+	{
+		div.navigation
+		{
+			div.navigation-header
+			{
+				font-size: 100%;
+				span
+				{
+					position: relative;
+					top: -2px;
+				}
+			}
+			.navigation-tree
+			{
+				top: 2.2em;
+			}
+			font-size: 100%;
+			left: 0px;
+			width: 100%;
+			-webkit-transition: left 0ms ease-in-out;
+			-moz-transition: left 0ms ease-in-out;
+			-o-transition: left 0ms ease-in-out;
+			transition: left 0ms ease-in-out;
+			.jstree a .jstree-icon
+			{
+				margin-right:6px;
+			}
+		}
+		div.content
+		{
+			display: none;
+		}
+	}
+}
