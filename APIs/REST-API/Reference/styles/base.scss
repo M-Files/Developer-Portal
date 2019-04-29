@@ -16,6 +16,10 @@
 		top: 10px;
 		left: 10px;
 		color: rgb(50, 80, 150);
+		-webkit-transition: color 300ms ease-in-out;
+		-moz-transition: color 300ms ease-in-out;
+		-o-transition: color 300ms ease-in-out;
+		transition: color 300ms ease-in-out;
 	}
 	.jstree li{
 		a {
@@ -25,10 +29,10 @@
 	div.navigation
 	{
 		left: -275px;
-		-webkit-transition: margin-left 300ms ease-in-out;
-		-moz-transition: margin-left 300ms ease-in-out;
-		-o-transition: margin-left 300ms ease-in-out;
-		transition: margin-left 300ms ease-in-out;
+		-webkit-transition: left 300ms ease-in-out;
+		-moz-transition: left 300ms ease-in-out;
+		-o-transition: left 300ms ease-in-out;
+		transition: left 300ms ease-in-out;
 	}
 	div.content
 	{
