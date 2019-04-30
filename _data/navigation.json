@@ -129,6 +129,7 @@
 			{
 				"Link": "#",
 				"Title": "Managing objects",
+				"SkipInOtherArticles" : true,
 				"Items" : [
 					{
 						"Link": "/APIs/COM-API/Creating-Objects/",
@@ -196,6 +197,7 @@
 			{
 				"Link": "#",
 				"Title": "Managing objects",
+				"SkipInOtherArticles" : true,
 				"Items" : [
 					{
 						"Link": "/APIs/REST-API/Creating-Objects/",
