@@ -45,8 +45,8 @@ $(document).ready(function()
 
         }
 
-        // show how many results there were, in the DOM
-        $resultsCount.append(results.length + (results.length === 1 ? ' result' : ' results') + ' for "' + query.get() +'":');
+		// show how many results there were, in the DOM
+        $resultsCount.text(results.length + (results.length === 1 ? ' result' : ' results') + ' for "' + query.get() +'":');
 
         // get the total score of all items, so that we can divide each result into it, giving us a percentage
         $.each(results, function(i, result) {
