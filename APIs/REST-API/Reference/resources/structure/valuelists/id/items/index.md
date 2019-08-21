@@ -22,7 +22,7 @@ Collection of value list items for a single value list.
 Output: | [Results]({{ site.baseurl }}/APIs/REST-API/Reference/structs/resultst/)<[ValueListItem]({{ site.baseurl }}/APIs/REST-API/Reference/structs/valuelistitem/)>
 | Retrieves value list item information. 
 Parameters:  | `?filter` - Filter using name. Supports wildcards.
-| `?filterItem` - A collection of value list IDs (comma-separated).  Returns only items with these IDs.
+| `?filterItem` - A collection of value list item IDs (comma-separated).  Returns only items with these IDs.
 | `?conditionType` - One of the following values: `1` = "Equal to", `2` = "Not equal to", `3` = "Greater than", `4` = "Less than".
 
 ### POST
