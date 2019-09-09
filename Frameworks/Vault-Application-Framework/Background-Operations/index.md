@@ -45,7 +45,6 @@ private BackgroundOperation convertToPdfBackgroundOperation;
 /// </summary>
 protected override void StartApplication()
 {
-	// Start writing content to the event log every ten seconds.
 	// The background operation will continue until the vault goes offline.
 	this.convertToPdfBackgroundOperation = this.BackgroundOperations
         .CreateBackgroundOperation("Conversion to PDF", () =>
