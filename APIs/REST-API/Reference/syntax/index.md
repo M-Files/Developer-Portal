@@ -87,7 +87,9 @@ operator | = [ '!' ] op-mod
 op-mod | = '='  ; Equal <br> / '<<=' / '<='  ; Less, Less or Equal  <br> / '>>=' / '>='  ; Greater, Greater or Equal  <br> / '**=' / '*='  ; Matches wildcard, Contains  <br> / '\^='  ; Starts With
 value | = null-value / id-value / typed-value-encoded-value / 'include' <br> ; See 5.1 for the typed value encoding.  <br> ; 'include' is a special value available for the 'Is Deleted' condition.
 null-value | = '\%00'  ; Equals null
-id-value | = number / 'e' string <br> ; 'e' specifies external ID condition. ID is URI escaped.
+id-value | = number / 'e' string <br> ; 'e' specifies external ID condition <i>(* see note below)</i>. ID is URI escaped.
+
+<i>* External IDs can only be used with value list searches (e.g. `vl102=eABC` would search for items that refer to an object of type `102` with an external ID `ABC`).  External IDs cannot be used with property value searches (e.g. `p1024=eABC` would not search for items that refer to an object with an external ID `ABC` in property `1024`).</i>
 
 <div class="sample" id="example-2">
 	<div class="sample-code">
