@@ -21,6 +21,7 @@ layout: default
 				<span itemprop="name">{% if breadcrumb_page.breadcrumb == nil %}{{ breadcrumb_page.title }}{% else %}{{ breadcrumb_page.breadcrumb }}{% endif %}</span>
 			</a>
 			<meta itemprop="position" content="{{ position }}" />
+			<meta itemprop="id" content="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}" />
 		</li>{% endif %}{% endfor %}{% endfor %}
 	</ol>
 
