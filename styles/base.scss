@@ -109,6 +109,21 @@ article[role=main] h1,
 	border-bottom: 1px solid #EEE;
 }
 
+article.page li
+{
+	margin: 7px auto;
+}
+article.page ol > li
+{
+	list-style: decimal;
+	ol > li{
+		list-style: lower-alpha;
+		ol > li{
+			list-style: lower-roman;
+		}
+	}
+}
+
 article.page li > p
 {
 	/* remove the margin on paragraphs inside list items (typical markdown rendering) */

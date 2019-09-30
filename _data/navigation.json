@@ -344,6 +344,10 @@
 				"Title": "Background Operations"
 			},
 			{
+				"Link": "/Frameworks/Vault-Application-Framework/Cloud/",
+				"Title": "Cloud"
+			},
+			{
 				"Link": "/Frameworks/Vault-Application-Framework/Configuration/",
 				"Title": "Configuration",
 				"Items": [{
