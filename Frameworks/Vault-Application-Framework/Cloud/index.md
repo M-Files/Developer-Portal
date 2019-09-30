@@ -53,5 +53,7 @@ The validation team will check a number of items in the source code, including:
 1. If the application must send emails directly then it **must use the customer's own mail servers** for doing so.
 1. The application **must not attempt to establish separate connections to the vault**.
 1. The application **must not attempt to alter anything outside of the vault during the initialization routines**.
+1. The application **must not run input as code**.
+1. **Do not log errors to the Windows event log**.
 
 </div>
