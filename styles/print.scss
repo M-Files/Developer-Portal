@@ -35,6 +35,21 @@ body > article.page
 		color: #333;
 	}
 }
+article[role=main]
+{
+	/* Remove dashed border under article */
+	border: none;
+}
+a.public-anchor
+{
+	/* Hide the anchors for in-page-linking */
+	display: none;
+}
+#options
+{
+	/* Hide the theme switcher and the like */
+	display: none;
+}
 pre
 {
 	/* code needs to be wrapped so that we don't have half-lines. */
@@ -47,11 +62,6 @@ img
 {
 	/* images broken over the page are hard to read.*/
 	page-break-inside:avoid;
-}
-h2
-{
-	/* start a new section on a new page */
-	page-break-before: always;
 }
 a[rel~=external]::after
 {
