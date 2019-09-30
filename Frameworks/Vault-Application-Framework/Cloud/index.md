@@ -12,7 +12,7 @@ In order to maintain a high quality of service for customers within our Cloud in
 
 ## Validation process
 
-To request code validation, please open a support ticket via [support@m-files.com](support@m-files.com).  The support team will request details on the vault it is to be installed into and your code to be validated.
+To request code validation, please open a support ticket via [support@m-files.com](mailto:support@m-files.com).  The support team will request details on the vault it is to be installed into and your code to be validated.
 
 * **The time required for validation will depend on the complexity of the application**. If the application is large or complex then this may be worth discussing with us prior to initial development.
 * **There will be some "lead time" on the validation**; we typically need a couple of weeks to schedule in the validation, so ensure that this is noted within your project plans.  Try to reserve at least two weeks, but longer may be needed for complex applications or applications where validation takes a number of iterations.
