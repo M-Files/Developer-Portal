@@ -8,13 +8,17 @@ breadcrumb: M-Files Cloud
 This page refers to running Vault Application Framework applications within the M-Files Cloud infrastructure.  These notes may not be applicable when running code within other cloud infrastructures, such as those provided by our partners.
 {:.note}
 
-In order to maintain a high quality of service for customers within our Cloud infrastructure, any code (Vault Application Framework or VBScript) must first be validated by our Cloud Ops department before it can be run within the M-Files Cloud.  This applies to both premium and standard cloud offerings.
+In order to maintain a high quality of service for customers within our Cloud infrastructure, any code (Vault Application Framework or VBScript) must first be validated by our Cloud Ops department before it can be run within the M-Files Cloud.  This applies to both premium and standard cloud offerings.  Please note that code validation incurs a charge depending upon the complexity of the code needing validation.  For more information please speak to our support team who can organise an estimate.
 
 ## Validation process
 
 To request code validation, please open a support ticket via [support@m-files.com](support@m-files.com).  The support team will request details on the vault it is to be installed into and your code to be validated.
 
-Please note that code validation incurs a charge depending upon the complexity of the code needing validation.  For more information please speak to our support team who can organise an estimate.
+* **The time required for validation will depend on the complexity of the application**. If the application is large or complex then this may be worth discussing with us prior to initial development.
+* **There will be some "lead time" on the validation**; we typically need a couple of weeks to schedule in the validation, so ensure that this is noted within your project plans.  Try to reserve at least two weeks, but longer may be needed for complex applications or applications where validation takes a number of iterations.
+* **Validation is done "per version"**; if you make changes in the future then these may be subject to additional validation.
+* **The validation team will require the source code to your VAF applications, including the source codes of any libraries** .  We reserve the right to make minor changes to enable validation to pass.  In these cases we will discuss the changes with you beforehand.
+* **The validation team will compile the code themselves**, and it is this compiled code which will be delivered to the cloud operations team to install.
 
 ## Rules of thumb
 
@@ -31,23 +35,23 @@ Please note that code validation incurs a charge depending upon the complexity o
 This checklist is provided for initial guidance only and details the common items that will be checked by the validation process.  Adherence to this checklist does not ensure validation will be successful, but should reduce the time (and potential iterations) required.
 {:.note}
 
-1. **The time required for validation will depend on the complexity of the application**. If the application is large or complex then this may be worth discussing with us prior to initial development.
-1. **There will be some "lead time" on the validation**; we typically need a couple of weeks to schedule in the validation, so ensure that this is noted within your project plans.  Try to reserve at least two weeks, but longer may be needed for complex applications or applications where validation takes a number of iterations.
-1. **Validation is done "per version"**; if you make changes in the future then these may be subject to additional validation.
-1. **The validation team will require the source code to your VAF applications, including the source codes of any libraries** .  We reserve the right to make minor changes to enable validation to pass.  In these cases we will discuss the changes with you beforehand.
-1. **The validation team will compile the code themselves**, and it is this compiled code which will be delivered to the cloud operations team to install.
-1. The validation team will check a number of items in the source code, including: 
-	1. The application **must not attempt to modify any Windows-level settings**.
-	1. The application **must not install any Windows applications or reboot the server**.
-	1. The application **must not excessively use server resources**, even in dedicated environments.
-		1. Note that many cloud implementations use shared environments, so any intensive operation might be cause for concern.
-	1. The application **must not access the file system**, aside from utilizing short-lived temporary files.  Treat the filesystem as transient as changes will be lost as the host machine is upgraded/migrated.
-		1. The application **should not access the registry**.
-		1. Use temporary folders for storing temporary files.
-		1. **Temporary files, handles, and other resources must be properly disposed of**.
-		1. File operations (upload/download) using the M-Files API are typically restricted.
-	1. The application **must not attempt to access or modify any server-level settings in M-Files** (login accounts, scheduled jobs, etc.).
-	1. The application **must not connect to other computers over the internet**.
-	1. If the application must send emails directly then it **must use the customer's own mail servers** for doing so.
-	1. The application **must not attempt to establish separate connections to the vault**.
-	1. The application **must not attempt to alter anything outside of the vault during the initialization routines**.
+The validation team will check a number of items in the source code, including: 
+
+<div class="checklist" markdown="1">
+
+1. The application **must not attempt to modify any Windows-level settings**.
+1. The application **must not install any Windows applications or reboot the server**.
+1. The application **must not excessively use server resources**, even in dedicated environments.
+	1. Note that many cloud implementations use shared environments, so any intensive operation might be cause for concern.
+1. The application **must not access the file system**, aside from utilizing short-lived temporary files.  Treat the filesystem as transient as changes will be lost as the host machine is upgraded/migrated.
+	1. The application **should not access the registry**.
+	1. Use temporary folders for storing temporary files.
+	1. **Temporary files, handles, and other resources must be properly disposed of**.
+	1. File operations (upload/download) using the M-Files API are typically restricted.
+1. The application **must not attempt to access or modify any server-level settings in M-Files** (login accounts, scheduled jobs, etc.).
+1. The application **must not connect to other computers over the internet**.
+1. If the application must send emails directly then it **must use the customer's own mail servers** for doing so.
+1. The application **must not attempt to establish separate connections to the vault**.
+1. The application **must not attempt to alter anything outside of the vault during the initialization routines**.
+
+</div>
