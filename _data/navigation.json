@@ -6,11 +6,6 @@
 		"SkipInOtherArticles" : true
 	},
 	{
-		"Link": "/Whats-New/",
-		"Icon": "zmdi-edit",
-		"Title": "What's New"
-	},
-	{
 		"Link": "/Getting-Started/",
 		"Icon": "zmdi-play",
 		"Title": "Getting Started",
