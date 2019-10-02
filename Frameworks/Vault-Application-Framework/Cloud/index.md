@@ -52,7 +52,7 @@ The validation team will check a number of items in the source code, including:
 	1. **Temporary files, handles, and other resources must be properly disposed of**.
 	1. File operations (upload/download) using the M-Files API are typically restricted.
 1. The application **must not attempt to access or modify any server-level settings in M-Files** (login accounts, scheduled jobs, etc.).
-1. The application **must not connect to arbitrary internet addresses.  Connections to specific addresses may be allowed.**.
+1. The application **must not connect to arbitrary internet addresses.  Connections to specific addresses may be allowed**.
 1. If the application must send emails directly then it **must use the customer's own mail servers** for doing so.
 1. The application **must not attempt to establish separate connections to the vault**.
 1. The application **must not attempt to alter anything outside of the vault during the initialization routines**.
