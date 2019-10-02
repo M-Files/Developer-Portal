@@ -17,7 +17,7 @@ To request code validation, please open a support ticket via [support@m-files.co
 * **The time required for validation will depend _heavily_ on the complexity of the application**. If the application is large or complex then this may be worth discussing with the support team prior to initial development.
 * **There will be some "lead time" on the validation** so ensure that this is noted within your project plans.  Try to reserve at least two weeks, but longer may be needed for complex applications, situations where validation takes a number of iterations, or during common vacation times.  If you have specific deployment deadlines then please let us know as early as possible so that we can allocate resources.
 * **Validation is done "per version"**; if you make changes in the future then these may be subject to additional validation.
-* **The validation team will require the source code to your VAF applications, including the source code of any libraries** .  Common libraries (e.g. Newtonsoft) can be referenced from nuget.  Libraries provided by a trusted entity (e.g. libraries signed by Microsoft or other reputable sources) may be accepted without source code.  If in doubt, please contact us prior to initiating the validation process.  We reserve the right to make minor changes to enable validation to pass.  In these cases we will discuss the changes with you beforehand.
+* **The validation team will require the source code to your VAF applications, including the source code of any libraries** .  Common libraries (e.g. Newtonsoft) can be referenced from nuget.  Libraries provided by a trusted entity (e.g. libraries signed by Microsoft or other reputable sources) may be accepted without source code.  If in doubt, please contact us prior to initiating the validation process.  We reserve the right to make minor changes to enable validation to pass.
 * **The validation team will compile the code themselves**, and it is this compiled code which will be delivered to the cloud operations team to install.  Ensure that all solution files, project files, resources, imagery, libraries or other references are included in the supplied package.  Good practice is to take the package you are delivering onto another machine and attempt to compile it using just the files in the package.  If it does not compile for you there then it will not compile for us here.
 
 ## Rules of thumb
@@ -36,7 +36,9 @@ To request code validation, please open a support ticket via [support@m-files.co
 This checklist is provided for initial guidance only and details the common items that will be checked by the validation process.  Adherence to this checklist does not ensure validation will be successful, but should reduce the time (and potential iterations) required.
 {:.note}
 
-If a vault application does not comply with the validation checklist then we will - where feasible - provide guidance on how to modify the application so that it will be compatible.  This checklist is a living document and is periodically updated with feedback from our Cloud Operations and Product Development teams.
+If a vault application does not comply with the validation checklist then we will - where feasible - provide guidance on how to modify the application so that it will be compatible.  **It is your responsibility to implement these changes and to confirm that the application continues to work as expected.**
+
+This checklist is a living document and is periodically updated with feedback from our Cloud Operations and Product Development teams.
 
 The validation team will check a number of items in the source code, including: 
 
