@@ -15,13 +15,14 @@ In order to maintain a high quality of service for customers within our Cloud in
 To request code validation, please open a support ticket via [support@m-files.com](mailto:support@m-files.com).  The support team will request details on the vault it is to be installed into and your code to be validated.
 
 * **The time required for validation will depend _heavily_ on the complexity of the application**. If the application is large or complex then this may be worth discussing with the support team prior to initial development.
-* **There will be some "lead time" on the validation**; we typically need a couple of weeks to schedule in the validation, so ensure that this is noted within your project plans.  Try to reserve at least two weeks, but longer may be needed for complex applications, situations where validation takes a number of iterations, or during common vacation times.
+* **There will be some "lead time" on the validation** so ensure that this is noted within your project plans.  Try to reserve at least two weeks, but longer may be needed for complex applications, situations where validation takes a number of iterations, or during common vacation times.  If you have specific deployment deadlines then please let us know as early as possible so that we can allocate resources.
 * **Validation is done "per version"**; if you make changes in the future then these may be subject to additional validation.
-* **The validation team will require the source code to your VAF applications, including the source code of any libraries** .  Common libraries (e.g. Newtonsoft) can be referenced from nuget.  Libraries provided by a trusted entity (e.g. libraries signed by Microsoft or other reputable sources may be accepted without source code.  If in doubt, please contact us prior to initiating the validation process.  We reserve the right to make minor changes to enable validation to pass.  In these cases we will discuss the changes with you beforehand.
+* **The validation team will require the source code to your VAF applications, including the source code of any libraries** .  Common libraries (e.g. Newtonsoft) can be referenced from nuget.  Libraries provided by a trusted entity (e.g. libraries signed by Microsoft or other reputable sources) may be accepted without source code.  If in doubt, please contact us prior to initiating the validation process.  We reserve the right to make minor changes to enable validation to pass.  In these cases we will discuss the changes with you beforehand.
 * **The validation team will compile the code themselves**, and it is this compiled code which will be delivered to the cloud operations team to install.  Ensure that all solution files, project files, resources, imagery, libraries or other references are included in the supplied package.  Good practice is to take the package you are delivering onto another machine and attempt to compile it using just the files in the package.  If it does not compile for you there then it will not compile for us here."
 
 ## Rules of thumb
 
+* Do not provide source code that includes credentials.  We will store your application inside our source control system (for quicker validation of changes), and our Quality Management procedures prohibit us from storing code that includes credentials.
 * Be aware that code may run in a shared environment, so try and be as lightweight as possible.
 * Ensure that you do not touch anything outside of the vault (e.g. filesystem, registry, etc.), as the host Windows machine can be switched out and your changes will be lost.
 * Be careful when designing solutions that use external resources; connections to external network addresses are typically denied, and sending email could be a potential avenue for abuse.
@@ -51,7 +52,7 @@ The validation team will check a number of items in the source code, including:
 	1. **Temporary files, handles, and other resources must be properly disposed of**.
 	1. File operations (upload/download) using the M-Files API are typically restricted.
 1. The application **must not attempt to access or modify any server-level settings in M-Files** (login accounts, scheduled jobs, etc.).
-1. The application **must not connect to other computers over the internet**.
+1. The application **must not connect to arbitrary internet addresses.  Connections to specific addresses may be allowed.**.
 1. If the application must send emails directly then it **must use the customer's own mail servers** for doing so.
 1. The application **must not attempt to establish separate connections to the vault**.
 1. The application **must not attempt to alter anything outside of the vault during the initialization routines**.
