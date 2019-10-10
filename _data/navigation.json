@@ -301,6 +301,11 @@
 		"Icon": "zmdi-widgets",
 		"Title": "Vault Application Framework",
 		"Items": [{
+				"Link": "/Frameworks/Vault-Application-Framework/Reference/",
+				"Title": "Official Reference ",
+				"IsExternal": true,
+				"IsOfficialReference": true
+			},{
 				"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/",
 				"Title": "Samples and Tutorials",
 				"IsGitHubLink": true
