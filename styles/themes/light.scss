@@ -7,9 +7,15 @@ $reveal-highlight: rgb(155, 153, 153);
 
 body
 {
+	header h1, #hamburger
+	{
+		background-color: $background-color;
+		color: #333;
+	}
 	> aside#sidebar
 	{
 		background-color: $background-color;
+		border-right-color: #333;
 	}
 	form.search button
 	{
