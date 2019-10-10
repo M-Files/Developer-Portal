@@ -2,9 +2,16 @@
 {
 	var themes = [{
 			id : "",
+			display : "Normal",
+			icon : "brightness-auto",
+			stylesheets: []
+		},{
+			id : "light",
 			display : "Light",
 			icon : "brightness-7",
-			stylesheets: []
+			stylesheets: [
+				"/styles/themes/light.css"
+			]
 		},
 		{
 			id : "dark",
@@ -61,11 +68,11 @@
 		// If we have jQuery then update the UI.
 		if(typeof($) != "undefined")
 		{
-			// Display all theme options.
-			$("#theme-toggle .theme-toggle").css("display", "inline-block");
+			// Hide all theme options.
+			$("#theme-toggle .theme-toggle").css("display", "none");
 			
-			// Hide the selected one.
-			$("#theme-toggle .theme-toggle-" + escape(chosenTheme.id)).css("display", "none");
+			// Show the selected one.
+			$("#theme-toggle .theme-toggle-" + escape(chosenTheme.id)).css("display", "inline-block");
 		}
 
 		// If the chosen theme is the current theme then die.
@@ -125,9 +132,11 @@
 			var $themeAnchor = $('<a href="#" class="theme-toggle"><i class="zmdi zmdi-' + icon + '"></i> ' + displayName + '</a>');
 			$themeAnchor.addClass("theme-toggle-" + escape(id));
 			$themeAnchor.data("theme-id", id);
+			$themeAnchor.data("next-theme-id", themes[(i + 1) % themes.length].id);
 			$themeAnchor.click(function()
 			{
-				setTheme($(this).data("theme-id"));
+				// Set the theme as the next one.
+				setTheme($(this).data("next-theme-id"));
 				return false;
 			})
 			$themeToggle.append($themeAnchor);
