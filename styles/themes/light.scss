@@ -1,0 +1,125 @@
+---
+---
+
+$background-color: #D7D9DB;
+$reveal-background: #e5e6e7;
+$reveal-highlight: rgb(155, 153, 153);
+
+body.theme-light
+{
+	header h1, #hamburger
+	{
+		background-color: $background-color;
+		color: #333;
+	}
+	> aside#sidebar
+	{
+		background-color: $background-color;
+		border-right: none;
+	}
+	form.search button
+	{
+		background-color: #007dc6;
+		color: #ecf0f1;
+	}
+	#cookies
+	{
+		color: $reveal-background;
+	}
+
+	&.reveal
+	{	aside#sidebar
+		{
+			color: #333;
+		}
+		aside#sidebar ul.zmdi-hc-ul li
+		{
+			&.current > a >.text, > a >.text
+			{
+				background-color: $background-color;
+			}
+			> a,
+				> a:visited
+			{
+				background-color: $background-color;
+				color: #333;
+			}
+			> a.current, > a:hover, > a:active
+			{
+				background-color: $reveal-highlight;
+				> .text
+				{
+					background-color: $reveal-background;
+				}
+			}
+		}
+
+		ul.quicklinks a
+		{
+			background-color: $background-color;
+			border: 0px;
+			-webkit-transition: none;
+			-moz-transition: none;
+			-o-transition: none;
+			transition: none;
+			&:hover, &:active
+			{
+				.text
+				{
+					background-color: $reveal-background;
+				}
+			}
+
+		}
+	}
+	form.search input#query
+	{
+		&:focus
+		{
+			box-shadow: 0px 0px 5px #007dc6;
+		}
+	}
+	nav.secondary
+	{
+		border-top: 1px solid rgb(94, 93, 93);
+	}
+	nav.other-articles
+	{
+		border-color: $reveal-background;
+		h1
+		{
+			background-color: $reveal-background;
+			color: #333;
+		}
+	}
+	p.note
+	{
+		background-color: $reveal-background;
+	}
+	article>table
+	{
+		border-color: $background-color;
+		thead tr
+		{
+			background-color: $reveal-background;
+		}
+	}
+}
+
+@media screen and (min-width: 1000px)
+{
+	body.theme-light
+	{
+		> aside#sidebar
+		{
+			background-image: url(../../images/M-Files-Logo-Black.png);
+		}
+	}
+}
+@media all and (max-width: 999px)
+{
+	body.theme-light header h1
+	{
+		background-image: url(../../images/M-Files-Logo-Black.png);
+	}
+}
