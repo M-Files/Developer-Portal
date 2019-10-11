@@ -46,15 +46,11 @@ aside#sidebar form.search
 		left: 430px;
 	}
 	
-	/* show the in-page title rather than the big blue one */
+	/* hide the blue header */
 	header,
 		.has-in-page-nav header h1
 	{
 		display: none;
-	}
-	body > article.page > h1
-	{
-		display: block;
 	}
 
 	@media all and (max-width: 1499px)
