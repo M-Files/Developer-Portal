@@ -47,6 +47,11 @@ body.theme-dark
 		color: rgba(0, 145, 230, 1);
 	}
 
+	article.page table th a
+	{
+		color: #DDD;
+	}
+
 	article > table
 	{
 		border: 5px solid #007dc6;
