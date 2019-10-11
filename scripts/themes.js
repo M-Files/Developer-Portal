@@ -18,8 +18,7 @@
 			display : "Dark",
 			icon : "brightness-3",
 			stylesheets: [
-				"/styles/themes/dark.css",
-				"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow-night.min.css"
+				"/styles/themes/dark.css"
 			]
 		}];
 	function setThemeCookie(theme)
@@ -85,15 +84,20 @@
 		setThemeCookie(chosenTheme.id);
 
 		// Disable all themes.
-		var themeStyles = document.getElementsByClassName("theme");
-		for(var i=0; i<themeStyles.length; i++)
+		for(var i=0; i<themes.length; i++)
 		{
-			var element = themeStyles[i];
-			element.parentNode.removeChild(element);
+			document.body.classList.remove("theme-" + themes[i].id);
 		}
 
 		// Enable the specific theme.
-		var head = document.head;
+		document.body.classList.add("theme-" + chosenTheme.id);
+
+	}
+
+	// Append all theme stylesheets.
+	for(var e=0; e<themes.length; e++)
+	{
+		var chosenTheme = themes[e];
 		for(var i=0; i<chosenTheme.stylesheets.length; i++)
 		{
 			if(document.readyState == "loading")
@@ -110,18 +114,17 @@
 				link.rel = "stylesheet";
 				link.className = "theme theme-" + chosenTheme.id;
 				link.href = chosenTheme.stylesheets[i];
-				head.appendChild(link);
+				document.head.appendChild(link);
 			}
 		}
-
 	}
-
 	// Set the currently-selected theme.
 	setTheme(getThemeCookie() + "", true);
 
 	// When the window loads, render our theme change options.
 	window.addEventListener("load", function()
 	{
+
 		// Add the theme options.
 		var $themeToggle = $('<div id="theme-toggle">Change theme: </div>');
 		for(var i=0; i<themes.length; i++)

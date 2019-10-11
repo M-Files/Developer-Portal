@@ -5,7 +5,7 @@ $background-color: #D7D9DB;
 $reveal-background: #e5e6e7;
 $reveal-highlight: rgb(155, 153, 153);
 
-body
+body.theme-light
 {
 	header h1, #hamburger
 	{
@@ -21,25 +21,6 @@ body
 	{
 		background-color: #007dc6;
 		color: #ecf0f1;
-	}
-
-	article > table
-	{
-		border: 5px solid #007dc6;
-		thead tr
-		{
-			background-color: #0064ad;
-			color: #DDD;
-			> td, > th
-			{
-				font-weight: normal;
-			}
-		}
-		tbody tr:nth-child(2n)
-		{
-			border-top-color: #007dc6;
-			border-bottom-color: #007dc6;
-		}
 	}
 	#cookies
 	{
@@ -115,11 +96,19 @@ body
 	{
 		background-color: $reveal-background;
 	}
+	article>table
+	{
+		border-color: $background-color;
+		thead tr
+		{
+			background-color: $reveal-background;
+		}
+	}
 }
 
 @media screen and (min-width: 1000px)
 {
-	body
+	body.theme-light
 	{
 		> aside#sidebar
 		{
