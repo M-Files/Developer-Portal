@@ -15,7 +15,7 @@ body
 	> aside#sidebar
 	{
 		background-color: $background-color;
-		border-right-color: #333;
+		border-right: none;
 	}
 	form.search button
 	{
@@ -102,6 +102,19 @@ body
 	{
 		border-top: 1px solid rgb(94, 93, 93);
 	}
+	nav.other-articles
+	{
+		border-color: $reveal-background;
+		h1
+		{
+			background-color: $reveal-background;
+			color: #333;
+		}
+	}
+	p.note
+	{
+		background-color: $reveal-background;
+	}
 }
 
 @media screen and (min-width: 1000px)
@@ -112,5 +125,12 @@ body
 		{
 			background-image: url(../../images/M-Files-Logo-Black.png);
 		}
+	}
+}
+@media all and (max-width: 999px)
+{
+	header h1
+	{
+		background-image: url(../../images/M-Files-Logo-Black.png);
 	}
 }
