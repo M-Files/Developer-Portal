@@ -5,6 +5,10 @@ includeInSearch: true
 breadcrumb: Vault Extension Methods
 ---
 
+## How to define a Vault Extension Method
+
+### Vault Application Framework
+
 The `VaultExtensionMethodAttribute` attribute marks the following method as a vault extension method, and declares its alias and the level of vault access required to call it.  The input provided when the extension method is called is available within `env.Input`.
 
 ```csharp
@@ -21,3 +25,10 @@ Access can be restricted to the extension method by altering the value of `Requi
 In the code sample provided, the name of the vault extension method (provided as a string in the attribute declaration) and the name of the actual method are the same, but this is not required.
 {:.note}
 
+### VBScript
+
+The [VBScript page on Vault Extension Methods]({{ site.baseurl }}/Built-In/VBScript/Vault-Extension-Methods/) has details on how to define a Vault Extension Method using VBScript.
+
+## Calling a Vault Extension Method using the COM and REST APIs
+
+The [VBScript page on Vault Extension Methods]({{ site.baseurl }}/Built-In/VBScript/Vault-Extension-Methods/) has details on how to call the Vault Extension Method using either the COM or REST APIs.

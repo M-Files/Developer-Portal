@@ -40,3 +40,37 @@ Passing more complex data objects into and out of Vault Extension Methods is pos
 
 An example on defining [Vault Extension Methods through the Vault Application Framework can be found here]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/).  The Vault Extension Method will automatically register the VBScript proxy at installation.
 
+## Calling a Vault Extension Method using the COM and REST APIs
+
+### Using the COM API from C\#
+
+```csharp
+string output = vault.ExtensionMethodOperations.ExecuteVaultExtensionMethod("MethodName", "InputString");
+```
+
+### Using the COM API from VBScript
+
+```vbscript
+Dim strOutput
+strOutput = Vault.ExtensionMethodOperations.ExecuteVaultExtensionMethod("MethodName", "InputString")
+```
+
+### Using the COM API from the User Interface Extensibility Framework
+
+```javascript
+var output = vault.ExtensionMethodOperations.ExecuteVaultExtensionMethod("MethodName", "InputString");
+```
+
+### Using the REST API from another language (e.g. JavaScript)
+
+```javascript
+$.ajax({ // Using jQuery for simplicity
+	method: "POST",
+	url: host + "/vault/extensionmethod/MethodName",
+	data: "InputString",
+	contentType: "text/plain",
+	datatype: "text"
+}).done(function(output){
+	console.log(output);
+});
+```
