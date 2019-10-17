@@ -18,13 +18,13 @@ Collection of objects filtered by object type.
 ### GET
 {:.method}
 
+Note that this endpoint will return an [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/) by default.  If `?include=properties` is specified then the endpoint will return an [ExtendedObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/extendedobjectversion/) including the object version's properties.
+{:.remark}
+
 {:.method}
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/) or [ExtendedObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/extendedobjectversion/)
 | Retrieves the object information. 
 Parameters: | `?include` - A list of additional fields to include in the ExtendedObjectVersion. Currently only `properties` is supported.
-
-Note that this endpoint will return an [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/) by default.  If `?include=properties` is specified then the endpoint will return an [ExtendedObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/extendedobjectversion/) including the object version's properties.
-{:.remark}
 
 ### DELETE
 {:.method}
