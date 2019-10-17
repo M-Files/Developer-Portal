@@ -19,7 +19,7 @@ Collection of objects filtered by object type.
 {:.method}
 
 {:.method}
-Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/) | [ExtendedObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/extendedobjectversion/)
+Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/) or [ExtendedObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/extendedobjectversion/)
 | Retrieves the object information. 
 Parameters: | `?include` - A list of additional fields to include in the ExtendedObjectVersion. Currently only `properties` is supported.  `properties` includes the Properties field in the returned object.
 
