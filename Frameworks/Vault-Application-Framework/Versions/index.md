@@ -93,7 +93,7 @@ New VAF 2.0 applications can be created using the [M-Files Online Visual Studio 
 * Right-click on the project name and select `Manage NuGet Packages...`
 * Select the existing `M-Files.VAF` reference and click the `Update` button to upgrade to the latest published version.
 
-You may choose to optionally update your entry point class ("VaultApplication") to [use the new base class]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/#inheriting-from-the-new-base-class).  This will require some changes to your code but is required to enable some of the new VAF 2.1 functionality.
+You may choose to optionally update your entry point class (typically `VaultApplication`) to [use the new base class]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/#inheriting-from-the-new-base-class).  This will require some changes to your code but is required to enable some of the new VAF 2.1 functionality.
 
 ### From Version 1.0 to Version 2.0
 
