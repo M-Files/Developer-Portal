@@ -9,9 +9,52 @@ breadcrumb: Dashboard
 {:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework."}
 [Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
 {:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework."}
+[Version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21)
+{:.tag.available title="This functionality is available in version 2.1 of the Vault Application Framework."}
 
-The approach shown below is only compatible with [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
+The approach shown below is only compatible with version 2.0(and higher) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
 {:.note.warning}
+
+## VAF 2.1
+
+Version 2.1 of the Vault Application Framework introduces a new base class for your applications to inherit from.  This new base class encapsulates a large chunk of boilerplate code that was previously required to be implemented manually, including the output of a simple dashboard containing the application name, version and description.
+
+Implementing a custom dashboard involves overriding the `GetDashboardContent` method:
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+using MFiles.VAF.Configuration.AdminConfigurations;
+using MFiles.VAF.Core;
+
+namespace MFVaultApplication1
+{
+	public class VaultApplication
+		: ConfigurableVaultApplicationBase<Configuration>
+	{
+		#region Overrides of ConfigurableVaultApplicationBase<Configuration>
+
+		/// <inheritdoc />
+		public override string GetDashboardContent(IConfigurationRequestContext context)
+		{
+			return "<html><head></head><body>hello world</body></html>";
+		}
+
+		#endregion
+	}
+	
+	[DataContract]
+	public class Configuration
+	{
+ 
+	}
+}
+{% endhighlight %}
+
+## VAF 2.0
+
+Use this approach when using version 2.0 of the Vault Application Framework.  When using version 2.1 or later, use the approach above.
+{:.note}
 
 Each configuration node can define a method which builds a dashboard which is shown to the user when they select the "Dashboard" tab for the application within the M-Files Admin software.  In the sample below, the `DashboardGenerator` method has been set as the generator for the configuration node.  This method must return a valid HTML string which will then be displayed.
 

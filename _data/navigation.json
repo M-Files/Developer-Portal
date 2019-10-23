@@ -319,7 +319,13 @@
 				"Title": "Attributes",
 				"Items": [{
 						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Configuration/",
-						"Title": "Configuration"
+						"Title": "Configuration",
+						"Items": [
+							{
+								"Link": "/Frameworks/Vault-Application-Framework/Attributes/Configuration/Security/",
+								"Title": "Security"
+							}
+						]
 					},
 					{
 						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/",

@@ -27,13 +27,15 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 ## Version 2.1
 
-Alongside numerous internal bugfixes and performance work, this release brings two new major features:
+Alongside numerous internal bugfixes and performance work, this release brings three new major features:
 
 * [Buttons within dashboards](../Configuration/Custom-Dashboards)
 
-* [Ability to define security constraints in configuration](../Configuration#security)
+* [Ability to define security constraints in configuration](../Attributes/Configuration/Security)
 
-Version 2.1 of the Vault Application Framework is compatible with M-Files 2015.3 upwards.  Please see the [note below](#configuration-compatibility) regarding configuration compatibility with M-Files 2015.3.
+* The Vault Application Framework is now [published to NuGet](https://www.nuget.org/packages/MFiles.VAF).
+
+Version 2.1 of the Vault Application Framework is compatible with M-Files 19.1 upwards.  To target earlier versions of M-Files, please use an earleir version of the Vault Application Framework.
 {:.note.warning}
 
 ## Version 2.0
@@ -74,9 +76,28 @@ M-Files have published to partners a [Visual Studio 2015/2017 template for use w
 
 ## Upgrading versions
 
+When you upgrade the Vault Application Framework you may need to make some small changes due to changes in class namespaces or method signatures.
+{:.note.warning}
+
+### From Version 2.0 to Version 2.1
+
+New VAF 2.0 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  Projects using the existing Vault Application Framework 2.0 template need to be manually upgraded to use the Vault Application Framework 2.1 runtime:
+
+* Open the existing project in Visual Studio.
+* Locate the `Solution Explorer` window, and find the VAF project within the solution.
+* Expand the project's `References` node and **delete** the existing references to:
+	* `MFiles.Crypto`
+	* `MFiles.VAF`
+	* `MFiles.VAF.Configuration`
+	* `MFilesAPI`
+* Right-click on the project name and select `Manage NuGet Packages...`
+* Select the existing `M-Files.VAF` reference and click the `Update` button to upgrade to the latest published version.
+
+You may choose to optionally update your entry point class ("VaultApplication") to [use the new base class]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/#inheriting-from-the-new-base-class).  This will require some changes to your code but is required to enable some of the new VAF 2.1 functionality.
+
 ### From Version 1.0 to Version 2.0
 
-New VAF 2.0 applications can be created using the [M-Files 2018 Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  To upgrade an existing VAF 1.0 application to 2.0, the following steps need to be taken.
+New VAF 2.0 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  To upgrade an existing VAF 1.0 application to 2.0, the following steps need to be taken.
 
 * Create a blank VAF 2.0 application from the updated template.
 	* From the new application, locate the `MFiles.VAF.dll`, `MFiles.VAF.Configuration.dll` and `MFiles.Crypto.dll` files.
