@@ -11,6 +11,7 @@ Feature | [Version 1.0](#version-10) | [Version 2.0](#version-20) | [Version 2.1
 [Automatic State Transitions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#automatic-state-transitions) | Yes | Yes | Yes
 [Background Operations]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Background-Operations/) | Yes | Yes | Yes
 [Configuration](../Configuration) | Yes[*](#name-value-storage-configuration) | Yes[*](#configuration-compatibility) | Yes[*](#configuration-compatibility)
+[Configuration commands and buttons](../Configuration/Commands) | No | No | Yes
 [Event Handlers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/) | Yes | Yes | Yes
 [File helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#mffilehelper) | - | Yes | Yes
 [Licensing](../Licensing) | - | Yes | Yes
@@ -27,25 +28,28 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 ## Version 2.1
 
-Alongside numerous internal bugfixes and performance work, this release brings three new major features:
-
-* [Buttons within dashboards](../Configuration/Custom-Dashboards/#using-commands-within-dashboards)
-
-* [Ability to define security constraints in configuration](../Attributes/Configuration/Security)
-
-* The Vault Application Framework is now [published to NuGet](https://www.nuget.org/packages/MFiles.VAF).  This allows us to publish more easily - and faster - Vault Application Framework versions, and this reference is used by the updated Visual Studio templates.
-
 Version 2.1 of the Vault Application Framework is compatible with M-Files 19.1 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
 {:.note.warning}
 
-In addition, please note that there are two changes in method signatures from [version 2.0](#version-20):
+Alongside numerous internal bugfixes and performance work, this release brings four new major features:
+
+* The Vault Application Framework is now [published to NuGet](https://www.nuget.org/packages/MFiles.VAF).  This allows us to publish more easily - and faster - Vault Application Framework versions, and for code to be upgraded to use these new versions.
+
+* Ability to define [security constraints in configuration](../Attributes/Configuration/Security).
+
+* [Commands can be added](../Configuration/Commands) to various built-in areas in the M-Files Admin Configurations area screens.
+
+* [Buttons within dashboards](../Configuration/Custom-Dashboards/#using-commands-within-dashboards) can call server-side code when clicked.
+
+In addition, please note that there are two changes in method signatures from [version 2.0](#version-20).  Both of these changes are implemented to work around situations where code attempts to start background operations when the vault may not yet be fully operational:
 
 * `BackgroundOperationManager.StartRecurringBackgroundOperation` now returns a `Task<BackgroundOperation>`, a change from `BackgroundOperation` in VAF 2.0.
 * `BackgroundOperationManager.RunOnce` now returns a `Task`, a change from `void` in VAF 2.0.
 
-Both of these changes are implemented to work around situations where code attempts to start background operations when the vault may not yet be fully operational.
-
 ## Version 2.0
+
+Version 2.0 of the Vault Application Framework is compatible with M-Files 2015.3 upwards.  Please see the [note below](#configuration-compatibility) regarding configuration compatibility with M-Files 2015.3.
+{:.note.warning}
 
 Alongside numerous internal bugfixes and performance work, this release brings two new major features:
 
@@ -53,12 +57,11 @@ Alongside numerous internal bugfixes and performance work, this release brings t
 
 * [Compatibility with the M-Files 2018 Administration Configuration interface](../Configuration)
 
-Version 2.0 of the Vault Application Framework is compatible with M-Files 2015.3 upwards.  Please see the [note below](#configuration-compatibility) regarding configuration compatibility with M-Files 2015.3.
-{:.note.warning}
-
 ### Configuration compatibility
 
 Version 2.0 of the Vault Application Framework introduces a new pattern for exposing [application-specific configuration into the M-Files 2018 Admin interface](../Configuration).  As M-Files 2015.3 (and earlier) do not contain this section within the M-Files Admin interface, it is recommended that the [earlier configuration approach](#name-value-storage-configuration) (which continues to work in Version 2.0) is used for compatibility with M-Files 2015.3 systems.
+
+Version 2.1 of the Vault Application Framework extends this configuration ability, allowing developers to instruct the user interface to mask values that are entered (e.g. passwords), and to restrict sections of configuration so that only server administrators (not vault administrators) can change the values.
 
 ## Version 1.0
 
