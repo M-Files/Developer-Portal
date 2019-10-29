@@ -33,7 +33,7 @@ Alongside numerous internal bugfixes and performance work, this release brings t
 
 * [Ability to define security constraints in configuration](../Attributes/Configuration/Security)
 
-* The Vault Application Framework is now [published to NuGet](https://www.nuget.org/packages/MFiles.VAF).  This allows us to more easily publish Vault Application Framework versions, and this reference is used by the updated Visual Studio templates.
+* The Vault Application Framework is now [published to NuGet](https://www.nuget.org/packages/MFiles.VAF).  This allows us to publish more easily - and faster - Vault Application Framework versions, and this reference is used by the updated Visual Studio templates.
 
 Version 2.1 of the Vault Application Framework is compatible with M-Files 19.1 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
 {:.note.warning}
