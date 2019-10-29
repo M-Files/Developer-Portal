@@ -53,6 +53,9 @@ namespace MFVaultApplication1
 }
 {% endhighlight %}
 
+The information returned by the `CustomValidation` method should be the same as with the [VAF 2.0](#vaf-20) implementation.
+{:.note}
+
 ## VAF 2.0
 
 Each configuration node can define a method which executes additional validation of the configuration.  In the sample below, the `CustomValidator` method has been set as the Validator for the configuration node.

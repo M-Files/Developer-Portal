@@ -51,11 +51,17 @@ namespace MFVaultApplication1
 }
 {% endhighlight %}
 
+The text returned by the `GetDashboardContent` method should be the same as the [VAF 2.0](#vaf-20) dashboard generator function.
+{:.note}
+
 ### Using commands within dashboards
+
+Commands can also be used outside of dashboards.  Please see the [dedicated page on commands](../Commands) for more information.
+{:.note}
 
 Version 2.1 of the Vault Application Framework provides an easy way to create commands within dashboards that, when clicked, execute custom server-side code.  This could include, for example, executing a vault extension method or creating objects in the vault.  Creating a dashboard button and reacting to it being clicked involves three steps:
 
-* Declare the `CustomDomainCommand` containing a unique ID for the command and the method to run when the command is executed.
+* Declare the `CustomDomainCommand` containing a unique ID for the command and the method to run when the command is executed.  Commands used in dashboards should not declare any `Locations`.
 * Override `GetCommands` and ensure that this command is returned in the collection.
 * Override `GetDashboardContents` and add the command to the dashboard somewhere so that it can be clicked.
 

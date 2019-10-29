@@ -377,6 +377,10 @@
 						"Title": "Custom dashboards"
 					},
 					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Commands/",
+						"Title": "Commands"
+					},
+					{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Custom-Validation/",
 						"Title": "Custom validation"
 					}
