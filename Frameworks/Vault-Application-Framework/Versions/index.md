@@ -88,7 +88,7 @@ When you upgrade the Vault Application Framework you may need to make some small
 
 ### From Version 2.0 to Version 2.1
 
-New VAF 2.0 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  Projects using the existing Vault Application Framework 2.0 template need to be manually upgraded to use the Vault Application Framework 2.1 runtime:
+New VAF 2.1 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  Projects using the existing Vault Application Framework 2.0 template need to be manually upgraded to use the Vault Application Framework 2.1 runtime:
 
 * Open the existing project in Visual Studio.
 * Locate the `Solution Explorer` window, and find the VAF project within the solution.
