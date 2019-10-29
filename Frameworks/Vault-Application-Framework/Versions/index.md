@@ -29,7 +29,7 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 Alongside numerous internal bugfixes and performance work, this release brings three new major features:
 
-* [Buttons within dashboards](../Configuration/Custom-Dashboards)
+* [Buttons within dashboards](../Configuration/Custom-Dashboards/#using-commands-within-dashboards)
 
 * [Ability to define security constraints in configuration](../Attributes/Configuration/Security)
 
