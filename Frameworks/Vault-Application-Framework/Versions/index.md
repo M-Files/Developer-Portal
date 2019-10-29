@@ -11,7 +11,7 @@ Feature | [Version 1.0](#version-10) | [Version 2.0](#version-20) | [Version 2.1
 [Automatic State Transitions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#automatic-state-transitions) | Yes | Yes | Yes
 [Background Operations]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Background-Operations/) | Yes | Yes | Yes
 [Configuration](../Configuration) | Yes[*](#name-value-storage-configuration) | Yes[*](#configuration-compatibility) | Yes[*](#configuration-compatibility)
-[Configuration commands and buttons](../Configuration/Commands) | No | No | Yes
+[Configuration commands and buttons](../Configuration/Commands) | - | - | Yes
 [Event Handlers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/) | Yes | Yes | Yes
 [File helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#mffilehelper) | - | Yes | Yes
 [Licensing](../Licensing) | - | Yes | Yes
