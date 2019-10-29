@@ -38,6 +38,13 @@ Alongside numerous internal bugfixes and performance work, this release brings t
 Version 2.1 of the Vault Application Framework is compatible with M-Files 19.1 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
 {:.note.warning}
 
+In addition, please note that there are two changes in method signatures from [version 2.0](#version-20):
+
+* `BackgroundOperationManager.StartRecurringBackgroundOperation` now returns a `Task<BackgroundOperation>`, a change from `BackgroundOperation` in VAF 2.0.
+* `BackgroundOperationManager.RunOnce` now returns a `Task`, a change from `void` in VAF 2.0.
+
+Both of these changes are implemented to work around situations where code attempts to start background operations when the vault may not yet be fully operational.
+
 ## Version 2.0
 
 Alongside numerous internal bugfixes and performance work, this release brings two new major features:

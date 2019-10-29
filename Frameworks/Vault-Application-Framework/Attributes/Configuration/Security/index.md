@@ -21,7 +21,7 @@ Passwords within configuration objects should be marked with the `[Security(IsPa
 
 ![An example of an obscured password in the M-Files Admin software](obscured-password.png)
 
-```csharp
+{% highlight csharp %}
 using System.Runtime.Serialization;
 using MFiles.VAF.Configuration;
 using MFiles.VAF.Core;
@@ -45,7 +45,7 @@ namespace MyCompany.MyProduct.MyVaultApplication3
  
 	}
 }
-```
+{% endhighlight %}
 
 Note that configuration elements marked with a `[Security(IsPassword = true)]` attribute are not encrypted before being stored within Name Value Storage.  Whilst the storage location is only accessible to system administrators, it is important to note that these may be accessible by code executing with elevated rights.
 {:.note.warning}
@@ -56,7 +56,7 @@ The `[Security]` attribute can also be used to configure who can change the valu
 
 In the following example the `WebAddress` property is visible by anyone who can access the M-Files Admin area, but changes to the value can only be made by the System Administrator.  A Vault Administrator can see the value in the configuration but will get an error when trying to save changes.
 
-```csharp
+{% highlight csharp %}
 using System.Runtime.Serialization;
 using MFiles.VAF.Configuration;
 using MFiles.VAF.Core;
@@ -84,4 +84,4 @@ namespace MyCompany.MyProduct.MyVaultApplication3
  
 	}
 }
-```
+{% endhighlight %}
