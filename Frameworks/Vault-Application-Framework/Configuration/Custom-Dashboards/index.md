@@ -37,7 +37,8 @@ namespace MFVaultApplication1
 		/// <inheritdoc />
 		public override string GetDashboardContent(IConfigurationRequestContext context)
 		{
-			return "<html><head></head><body>hello world</body></html>";
+			var loginAccount = context.Vault.UserOperations.GetLoginAccountOfUser( context.CurrentUserID );
+			return "<h3>Hello {loginAccount.FullName}</h3>";
 		}
 
 		#endregion
@@ -164,7 +165,7 @@ namespace MFVaultApplication1
 		}
 		private string DashboardGenerator()
 		{
-			return "<html><head></head><body>hello world</body></html>";
+			return "<p>hello world</p>";
 		}
 	}
 }
