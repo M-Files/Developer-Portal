@@ -54,7 +54,7 @@ Note that configuration elements marked with a `[Security(IsPassword = true)]` a
 
 The `[Security]` attribute can also be used to configure who can change the value of a given element of the configuration.  This can be used to ensure that only system administrators - and not vault administrators - can change specific values.  **This is of increased importance in the M-Files cloud environment where some values must only be configurable by the M-Files Cloud Ops team.**
 
-In the following example the `WebAddress` property is visible by anyone who can access the M-Files Admin area, but changes to the value can only be made by the System Administrator.  A Vault Administrator can see the value in the configuration but will get an error when trying to save changes.
+In the following example the `WebAddress` property can only be changed by the System Administrator.  The value will be hidden from Vault Administrators in the `Configuration` tab, although they will see the value in the 'Advanced' configuration.  Vault Administrators will get an error when trying to save changes to the value.
 
 {% highlight csharp %}
 using System.Runtime.Serialization;
