@@ -28,7 +28,7 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 ## Version 2.1
 
-Version 2.1 of the Vault Application Framework is compatible with M-Files 19.1 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
+Version 2.1 of the Vault Application Framework is compatible with M-Files 19.9 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
 {:.note.warning}
 
 Alongside numerous internal bugfixes and performance work, this release brings four new major features:
