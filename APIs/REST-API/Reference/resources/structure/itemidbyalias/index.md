@@ -1,7 +1,7 @@
 ---
 layout: mfws
 title: Vault structural element alias to ID resolution
-includeInSearch: 
+includeInSearch: true
 minimumVersion: 12.0.6783.0
 ---
 
