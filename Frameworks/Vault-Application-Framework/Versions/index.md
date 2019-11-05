@@ -61,7 +61,7 @@ Alongside numerous internal bugfixes and performance work, this release brings t
 
 Version 2.0 of the Vault Application Framework introduces a new pattern for exposing [application-specific configuration into the M-Files 2018 Admin interface](../Configuration).  As M-Files 2015.3 (and earlier) do not contain this section within the M-Files Admin interface, it is recommended that the [earlier configuration approach](#name-value-storage-configuration) (which continues to work in Version 2.0) is used for compatibility with M-Files 2015.3 systems.
 
-Version 2.1 of the Vault Application Framework extends this configuration ability, allowing developers to instruct the user interface to mask values that are entered (e.g. passwords), and to restrict sections of configuration so that only server administrators (not vault administrators) can change the values.
+Version 2.1 of the Vault Application Framework extends this configuration ability, allowing [developers to instruct the user interface to mask values that are entered (e.g. passwords), to restrict sections of configuration so that only server administrators (not vault administrators) can change the values](../Attributes/Configuration/Security), and to add [buttons to the dashboard which run server-side code](../Configuration/Custom-Dashboards/#using-commands-within-dashboards).
 
 ## Version 1.0
 
