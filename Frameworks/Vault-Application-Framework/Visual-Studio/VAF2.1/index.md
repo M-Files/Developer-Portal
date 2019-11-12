@@ -14,7 +14,7 @@ When installing the template into Visual Studio 2017 and 2019, a popup will be s
 
 The Vault Application Framework 2.1 template is part of the `M-Files Online Visual Studio template package`, which can be downloaded from the [M-Files Partner Portal](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  If you are a partner and do not have access to the M-Files Partner Portal, then please contact your Channel Account Manager.  To install the template, simply double-click on the ".vsix" file, which will then guide you through installing the templates into the version of Visual Studio that you have installed.
 
-Both Vault Application Framework 2.0 and Vault Application Framework 2.1 project templates are both included in the same package.  The 2.1 runtime is only compatible with M-Files 19.9 onwards, so 2.0 should be used if targeting older installations.
+Both Vault Application Framework 2.0 and Vault Application Framework 2.1 project templates are included in the same package.  The 2.1 runtime is only compatible with M-Files 19.9 onwards, so 2.0 should be used if targeting older installations.
 {:.note}
 
 ## Building your first application
@@ -38,10 +38,10 @@ The default project contains a number of items:
 
 * `appdef.xml`
 The application manifest file, containing information such as the publisher details and the current version number.
-* `install-application.ps1`
-A PowerShell script used to deploy the installation package to the local M-Files server.
 * `Configuration.cs`
 The configuration class used by the Vault Application Framework application.
+* `install-application.ps1`
+A PowerShell script used to deploy the installation package to the local M-Files server.
 * `VaultApplication.cs`
 The actual Vault Application Framework application.
 * `packages.conf`
@@ -77,4 +77,4 @@ Please also see the [tips and tricks for the VAF 2.0 version](/Frameworks/Vault-
 
 ### Nuget packages and versions
 
-The Vault Application Framework 2.1 release requires Newtonsoft.Json (JSON.NET) version 10.0.3.  If this is upgraded to a later version then your Vault Application Framework application will not correctly load.
+The Vault Application Framework 2.1 release requires Newtonsoft.Json (JSON.NET) version 10.0.3.
