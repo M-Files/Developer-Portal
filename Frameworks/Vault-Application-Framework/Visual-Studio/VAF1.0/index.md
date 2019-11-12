@@ -6,9 +6,9 @@ breadcrumb: Visual Studio Template
 redirect_from: /Frameworks/Vault-Application-Framework/Visual-Studio-Template/
 ---
 
-M-Files provides partners with a Visual Studio 2015/2017 template that can be used to rapidly develop Vault Application Framework Applications using C#.  If you would like to use VB.NET then you will need to follow [these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Using-VB.NET/).
+M-Files provides partners with a Visual Studio 2015/2017/2019 template that can be used to rapidly develop Vault Application Framework Applications using C#.  If you would like to use VB.NET then you will need to follow [these instructions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Using-VB.NET/).
 
-When installing the template into Visual Studio 2017, a popup will be shown stating that the template does not use the 2017 format.  This is expected, as the template is backwards compatible with Visual Studio 2015 as well.  Simply accept the popup and continue installation.
+When installing the template into Visual Studio 2017 and 2019, a popup will be shown stating that the template does not use the 2017 format.  This is expected, as the template is backwards compatible with Visual Studio 2015 as well.  Simply accept the popup and continue installation.
 {:.note}
 
 ## Downloading the Template

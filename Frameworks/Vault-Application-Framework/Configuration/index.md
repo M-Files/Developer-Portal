@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Configuration in the Vault Application Framework 2.0
+title: Configuration in the Vault Application Framework
 includeInSearch: true
 breadcrumb: Configuration
 ---
