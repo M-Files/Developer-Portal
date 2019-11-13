@@ -138,6 +138,9 @@ searchCondition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeText, "hello 
 Lookup values are often used when executing a search for items that refer to other objects, or to value list items.  In the sample below we search for items that refer to a project (in this case with object type Id of 101) with an internal Id of 23.  The property we're using to find the item is 1078:
 
 ```csharp
+// Create the search condition.
+var searchCondition = new SearchCondition();
+
 // We want to search by property.
 searchCondition.Expression.SetPropertyValueExpression(
 	1078, // This is the property that refers from our object to the Project.
@@ -156,6 +159,39 @@ var lookup = new MFilesAPI.Lookup()
 
 // We want to search for items that reference the project.
 searchCondition.TypedValue.SetValue(MFilesAPI.MFDataType.MFDatatypeLookup, lookup);
+```
+
+#### Searching by "Any property"
+
+In the [lookup sample above](#lookup-values) we have to specify the specific property that should contain the value.  Sometimes, though, we wish to find all objects that refer to something else, regardless of the property used.
+
+Consider a situation where one object type (e.g. `Employee`) is used for multiple property definitions (perhaps `Employee`, `Project Manager`, `Project Member`, `Supervisor`, etc.).  When using the M-Files Desktop Client you can create an `Any property` search condition:
+
+![Any property search condition definition](any-property-searchcondition.png)
+
+When executed it will return objects that refer to the supplied item, regardless of the property used:
+
+![Any property search results](any-property-search.png)
+
+To do this via code we need a `TypedValueExpression`.  In the code below we want to find all objects that refer to the `Alex Kramer` (object ID 8) `Employee` (object type ID 156):
+
+```csharp
+// Create the search condition.
+var searchCondition = new SearchCondition();
+
+// We want to search by the value that any property may point at.
+searchCondition.Expression.SetTypedValueExpression(
+	MFDataType.MFDatatypeLookup,
+	156, // This is the value list ID or object type ID of the item.
+	MFParentChildBehavior.MFParentChildBehaviorNone);
+
+// Set the condition type.
+searchCondition.ConditionType = MFConditionType.MFConditionTypeEqual;
+
+// Find items that refer to item with ID 8 (Alex Kramer) of object type 156 (above).
+searchCondition.TypedValue.SetValue(
+	MFDataType.MFDatatypeLookup,
+	8);
 ```
 
 ### Date values
