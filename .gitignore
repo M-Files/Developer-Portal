@@ -10,3 +10,5 @@ node_modules
 package.json
 debug.log
 firebase-debug.log
+deploy-to-staging.bat
+deploy-to-staging-monitoring.bat
