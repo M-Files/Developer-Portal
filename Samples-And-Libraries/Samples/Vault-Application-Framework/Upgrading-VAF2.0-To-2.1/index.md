@@ -487,6 +487,9 @@ This code will not work correctly until the [Dashboard generation](#dashboard-ge
 
 #### Dashboard generation
 
+The base class provides a default implementation of the `GetDashboardContent` that displays the application name, version and publisher.  You only need to override the base implementation if you would like to alter the content that's displayed.
+{:.note}
+
 Currently the `GenerateDashboard` method is not being called.  We need to migrate this logic to an override of `GetDashboardContent`:
 
 {% highlight csharp %}
