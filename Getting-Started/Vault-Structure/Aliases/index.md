@@ -32,9 +32,7 @@ Occasionally one vault element may be referenced by a number of scripts, each ex
 
 Resolving aliases to IDs is done using one of the following methods:
 
-* [GetPropertyDefIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultPropertyDefOperations~GetPropertyDefIDByAlias.html)
-
-Retrieves the ID of a property definition by its alias.
+* [GetPropertyDefIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultPropertyDefOperations~GetPropertyDefIDByAlias.html): retrieves the ID of a property definition by its alias.
 
 * [GetObjectClassIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultClassOperations~GetObjectClassIDByAlias.html): retrieves the ID of a class by its alias.
 
