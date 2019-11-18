@@ -32,7 +32,7 @@ The [2.0 release of the Vault Application Framework]({{ site.baseurl }}/Framewor
 Using the VAF 2.1 base class will alter the Named Value Storage location used for configuration, therefore any existing configuration will be lost.  You should ensure that users are aware of the correct way to migrate their configuration from VAF 2.0 applications to VAF 2.1 applications.
 {:.note.warning}
 
-Version 2.1 of the Vault Application Framework continues to support the [VAF 2.0 configuration approach](Configuration/#vaf-20) approach, but adds in a base class that allows easy extension of the standard functionality.  In order to support newer items such as the [[Security] attribute](../Attributes/Configuration/Security), you **must change your implementation to use the newer approach**.
+Version 2.1 of the Vault Application Framework continues to support the [VAF 2.0 configuration approach](Configuration/#vaf-20) approach, but adds in a base class that allows easy extension of the standard functionality.  In order to support newer items such as the [[Security] attribute](../Attributes/Configuration/Security), you **must change your implementation to use the newer approach**.  A sample on [how to convert a VAF 2.0 application to VAF 2.1]({{ site.baseurl }}/Samples-And-Libraries/Samples/Vault-Application-Framework/Upgrading-VAF2.0-To-2.1/) is also available.
 
 To do this you must inherit from `ConfigurableVaultApplicationBase<T>`, instead of the older `VaultApplicationBase` class.  Common functionality such as implementing a [custom dashboard](Custom-Dashboards) can be implemented by overriding methods in the base class.
 

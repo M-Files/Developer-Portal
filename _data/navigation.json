@@ -603,7 +603,12 @@
 					},
 					{
 						"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/",
-						"Title": "Vault Application Framework"
+						"Title": "Vault Application Framework",
+						"Items": [{
+								"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/Upgrading-VAF2.0-To-2.1/",
+								"Title": "Upgrading from VAF 2.0 to 2.1"
+							},
+						]
 					},
 					{
 						"Link": "/Samples-And-Libraries/Samples/Processes/",
