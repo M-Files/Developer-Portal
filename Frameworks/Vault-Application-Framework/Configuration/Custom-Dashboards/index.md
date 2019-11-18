@@ -38,7 +38,7 @@ namespace MFVaultApplication1
 		public override string GetDashboardContent(IConfigurationRequestContext context)
 		{
 			var loginAccount = context.Vault.UserOperations.GetLoginAccountOfUser( context.CurrentUserID );
-			return "<h3>Hello {loginAccount.FullName}</h3>";
+			return $"<h3>Hello {loginAccount.FullName}</h3>";
 		}
 
 		#endregion
