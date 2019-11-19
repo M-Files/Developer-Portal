@@ -474,6 +474,10 @@
 				"Title": "Licensing"
 			},
 			{
+				"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/",
+				"Title": "Multi-Server Mode"
+			},
+			{
 				"Link": "/Frameworks/Vault-Application-Framework/Searching/",
 				"Title": "Searching"
 			}
