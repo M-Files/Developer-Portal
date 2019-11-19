@@ -9,6 +9,8 @@ breadcrumb: Configuration
 {:.tag.available title="This functionality is available in version 1.0 of the Vault Application Framework."}
 [Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
 {:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework."}
+[Version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21)
+{:.tag.available title="This functionality is available in version 2.1 of the Vault Application Framework."}
 
 When using [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) and targeting M-Files 2018, the [updated configuration approach]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/) should be used instead.  This updated approach allows the configuration to be visible and easily edited from within the M-Files Admin software.
 {:.note.warning}
