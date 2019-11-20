@@ -13,6 +13,9 @@ M-Files Multi-Server Mode instead allows multiple servers to concurrently have t
 
 This change in architecture impacts Vault Application Framework applications: **in order for your Vault Application Framework application to run on M-Files Multi-Server Mode, you must make some changes to the structure of the application**.
 
+Note that applications that are compatible with Multi-Server Mode will also install and function correctly in single-server environments, provided they are running M-Files 20.2 or higher.  If compatibility with Multi-Server Mode is anticipated in the future, it is recommended that you use the approaches listed on this page from the start.
+{:.note}
+
 ## Concepts
 
 * Note that your vault application will be run concurrently on all servers.  If there are three M-Files servers in the multi-server configuration then there will be three instances of your application running.
@@ -23,27 +26,35 @@ This change in architecture impacts Vault Application Framework applications: **
 
 * **Background operations must not be used in applications that support Multi-Server Mode**.  Instead, you must alter your code to use one of the [task queue approaches](#task-queues) instead.
 
-* *If you are not using the Vault Application Framework Multi-Server Mode template (e.g. you are upgrading/converting an existing application)*, then your [`appdef.xml` must be updated](#appdefxml-changes).
+* *If you are not using the Vault Application Framework Multi-Server Mode template (e.g. you are upgrading/converting an existing application)*, then your [`appdef.xml` must be manually updated](#appdefxml-changes).
 
 ### Task queues
 
+Task queues should be used in place of background operations when targeting Multi-Server Mode.  This ensures that the operations are correctly processed when multiple M-Files servers may be connected to a vault.
+
 #### Sequential task queues
 
-#### Batch task queues
+Tasks added to a sequential task queue will be processed in the order in which they were added; if tasks 1, 2, then 3 are added to the queue then the tasks will be processed one at a time and the processing order is guaranteed to be 1, 2, 3.
+
+#### Concurrent task queues
+
+Tasks added to a concurrent task queue can be assigned to any number of M-Files servers in the Multi-Server Mode configuration, may be processed concurrently, and without regard for the order in which they were added to the queue.
 
 #### Broadcast task queues
+
+Broadcast task queues are used to broadcast information generated in one M-Files server to all others in the Multi-Server Mode configuration.  This can be used to send commands for other servers to update any cached information they may have, for example.
 
 ## Converting an existing Vault Application Framework project
 
 ### Required code changes
 
-You will need to alter the code of any existing Vault Application Framework application to support Multi-Server M-Files implementations.  The required changes will depend on the exact structure and complexity of your application.  At a minimum you will need to [update your appdef.xml](#appdefxml-changes) to mark compatibility, but you may also need to 
+You will need to alter the code of any existing Vault Application Framework application to support Multi-Server M-Files implementations.  The required changes will depend on the exact structure and complexity of your application.  At a minimum you will need to [update your appdef.xml](#appdefxml-changes) to mark compatibility, but you may also need to [remove any in-memory state](#removal-of-in-memory-state) and [convert background operations to use task queues instead](#migration-of-background-processes-to-task-queues).
 
 ### appdef.xml changes
 
 * It must reference the v3 XSD (`http://www.m-files.com/schemas/appdef-server-v3.xsd`).
 * It must have a `multi-server-compatible` element with a value of `true`.
-* It must define an appropriate minimum M-Files version (`19.9.8227.13` upwards).
+* It must define an appropriate minimum M-Files version (`20.2` upwards).
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -57,7 +68,7 @@ You will need to alter the code of any existing Vault Application Framework appl
   <publisher></publisher>
   <version>0.1</version>
   <copyright></copyright>
-  <required-mfiles-version>19.9.8227.13</required-mfiles-version>
+  <required-mfiles-version>20.2.0.0</required-mfiles-version>
   <multi-server-compatible>true</multi-server-compatible>
   <extension-objects>
     <extension-object>
@@ -77,3 +88,5 @@ You will need to alter the code of any existing Vault Application Framework appl
 ### Removal of in-memory state
 
 ### Migration of background processes to task queues
+
+#### Recurring background operations
