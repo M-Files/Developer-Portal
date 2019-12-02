@@ -9,9 +9,127 @@ breadcrumb: Dashboard
 {:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework."}
 [Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
 {:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework."}
+[Version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21)
+{:.tag.available title="This functionality is available in version 2.1 of the Vault Application Framework."}
 
-The approach shown below is only compatible with [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
+The approach shown below is only compatible with version 2.0(and higher) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
 {:.note.warning}
+
+## VAF 2.1
+
+Version 2.1 of the Vault Application Framework introduces a new base class for your applications to inherit from.  This new base class encapsulates a large chunk of boilerplate code that was previously required to be implemented manually, including the output of a simple dashboard containing the application name, version and description.
+
+Implementing a custom dashboard involves overriding the `GetDashboardContent` method:
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+using MFiles.VAF.Configuration.AdminConfigurations;
+using MFiles.VAF.Core;
+
+namespace MFVaultApplication1
+{
+	public class VaultApplication
+		: ConfigurableVaultApplicationBase<Configuration>
+	{
+		#region Overrides of ConfigurableVaultApplicationBase<Configuration>
+
+		/// <inheritdoc />
+		public override string GetDashboardContent(IConfigurationRequestContext context)
+		{
+			var loginAccount = context.Vault.UserOperations.GetLoginAccountOfUser( context.CurrentUserID );
+			return $"<h3>Hello {loginAccount.FullName}</h3>";
+		}
+
+		#endregion
+	}
+	
+	[DataContract]
+	public class Configuration
+	{
+ 
+	}
+}
+{% endhighlight %}
+
+The text returned by the `GetDashboardContent` method should be the same as the [VAF 2.0](#vaf-20) dashboard generator function.
+{:.note}
+
+### Using commands within dashboards
+
+Commands can also be used outside of dashboards.  Please see the [dedicated page on commands](../Commands) for more information.
+{:.note}
+
+Version 2.1 of the Vault Application Framework provides an easy way to create commands within dashboards that, when clicked, execute custom server-side code.  This could include, for example, executing a vault extension method or creating objects in the vault.  Creating a dashboard button and reacting to it being clicked involves three steps:
+
+* Declare the `CustomDomainCommand` containing a unique ID for the command and the method to run when the command is executed.  Commands used in dashboards should not declare any `Locations`.
+* Override `GetCommands` and ensure that this command is returned in the collection.
+* Override `GetDashboardContents` and add the command to the dashboard somewhere so that it can be clicked.
+
+The code below registers one command named `refreshDashboardCommand`.  When executed, this command instructs the dashboard to refresh.  The dashboard simply contains the time that it was rendered, and displays a button that executes this command.
+
+{% highlight csharp %}
+/// <summary>
+/// The entry point for this Vault Application Framework application.
+/// </summary>
+/// <remarks>Examples and further information available on the developer portal: http://developer.m-files.com/. </remarks>
+public partial class VaultApplication
+	: ConfigurableVaultApplicationBase<Configuration>
+{
+	/// <summary>
+	/// The command which will be executed.
+	/// </summary>
+	/// <remarks>The "Execute" method will be called when the command is clicked.</remarks>
+	private readonly CustomDomainCommand refreshDashboardCommand = new CustomDomainCommand
+	{
+		ID = "cmdRefreshDashboard",
+		ConfirmMessage = "Are you sure you would like to refresh the dashboard?",
+		Execute = (c, o) =>
+		{
+			o.RefreshDashboard();
+		}
+	};
+
+	#region Overrides of ConfigurableVaultApplicationBase<Configuration>
+
+	/// <inheritdoc />
+	public override IEnumerable<CustomDomainCommand> GetCommands(IConfigurationRequestContext context)
+	{
+		// Return any commands that the base implementation provides, plus our refresh command.
+		return new List<CustomDomainCommand>(base.GetCommands(context))
+			{
+				this.refreshDashboardCommand
+		};
+	}
+
+	/// <inheritdoc />
+	public override string GetDashboardContent(IConfigurationRequestContext context)
+	{
+		// Create the surrounding dashboard.
+		var dashboard = new StatusDashboard();
+
+		// Create a panel showing when the dashboard was rendered.
+		var refreshPanel = new DashboardPanel();
+		refreshPanel.SetInnerContent( $"Dashboard generated at: {DateTime.Now.ToString( "T" )}" );
+
+		// Add the refresh command to the panel, and the panel to the dashboard.
+		refreshPanel.Commands.Add( DashboardHelper.CreateDomainCommand( "Refresh", this.refreshDashboardCommand.ID ) );
+		dashboard.AddContent( refreshPanel );
+
+		return dashboard.ToString();
+	}
+
+	#endregion
+
+}
+{% endhighlight %}
+
+![The dashboard generated by the above code, with a refresh button](refresh-command.png)
+
+## VAF 2.0
+
+Use this approach when using version 2.0 of the Vault Application Framework.  When using version 2.1 or later, use the approach above.
+{:.note}
 
 Each configuration node can define a method which builds a dashboard which is shown to the user when they select the "Dashboard" tab for the application within the M-Files Admin software.  In the sample below, the `DashboardGenerator` method has been set as the generator for the configuration node.  This method must return a valid HTML string which will then be displayed.
 
@@ -47,7 +165,7 @@ namespace MFVaultApplication1
 		}
 		private string DashboardGenerator()
 		{
-			return "<html><head></head><body>hello world</body></html>";
+			return "<p>hello world</p>";
 		}
 	}
 }

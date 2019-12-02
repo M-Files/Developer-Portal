@@ -41,7 +41,7 @@ using MFiles.VAF.Configuration;
 public class Configuration
 {
 	[DataMember]
-	[TextEditor(
+	[JsonConfEditor(
 		RegExMask = @"\d{3}.{4}",
 		HelpText = "This is a simple string value.",
 		Label = "My string value")]

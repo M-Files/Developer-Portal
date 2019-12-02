@@ -22,3 +22,5 @@ Event Tracing | [GitHub](https://github.com/M-Files/MFilesSamplesAndLibraries/tr
 Simple Configuration (VAF 2.0) | [GitHub](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/VAF/SimpleConfiguration) | Implements a simple VAF 2.0 configuration object which can be altered using the M-Files admin software.  This implementation contains a fairly basic implementation to show the plumbing required to get the configuration up and running.
 Complex Configuration (VAF 2.0) | [GitHub](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/VAF/ComplexConfiguration) | Implements a VAF 2.0 configuration object showing a variety of features that are supported, including custom dashboards, server-side validation, customising the configuration layout (e.g. using labels and help text), etc.
 {:.samples .vaf}
+[Upgrading VAF 2.0 to 2.1](Upgrading-VAF2.0-To-2.1) | | A step-by-step example of how to upgrade a Vault Application Framework 2.0 application to use the Vault Application Framework 2.1 runtime and new features.
+{:.samples .vaf}

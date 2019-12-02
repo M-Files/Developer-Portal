@@ -56,15 +56,21 @@ function registerServiceWorker(force, callback)
 	}
 	else
 	{
-		// Register the service worker.
-		navigator.serviceWorker.register('/sw.js').then(function(reg) {
-			console.log('Service worker has been registered.');
+		try
+		{
+			// Register the service worker.
+			navigator.serviceWorker.register('/sw.js').then(function(reg) {
+				console.log('Service worker has been registered.');
 
-			if(typeof(callback) == "function")
-			{
-				callback();
-			}
-		});
+				if(typeof(callback) == "function")
+				{
+					callback();
+				}
+			});
+		}
+		catch
+		{
+		}
 	}
 }
 

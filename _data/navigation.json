@@ -301,6 +301,11 @@
 		"Icon": "zmdi-widgets",
 		"Title": "Vault Application Framework",
 		"Items": [{
+				"Link": "/Frameworks/Vault-Application-Framework/Reference/",
+				"Title": "Official Reference ",
+				"IsExternal": true,
+				"IsOfficialReference": true
+			},{
 				"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/",
 				"Title": "Samples and Tutorials",
 				"IsGitHubLink": true
@@ -314,7 +319,13 @@
 				"Title": "Attributes",
 				"Items": [{
 						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Configuration/",
-						"Title": "Configuration"
+						"Title": "Configuration",
+						"Items": [
+							{
+								"Link": "/Frameworks/Vault-Application-Framework/Attributes/Configuration/Security/",
+								"Title": "Security"
+							}
+						]
 					},
 					{
 						"Link": "/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/",
@@ -366,6 +377,10 @@
 						"Title": "Custom dashboards"
 					},
 					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Commands/",
+						"Title": "Commands"
+					},
+					{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Custom-Validation/",
 						"Title": "Custom validation"
 					}
@@ -406,6 +421,9 @@
 				},{
 					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0/",
 					"Title": "VAF 2.0 Visual Studio Template"
+				},{
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.1/",
+					"Title": "VAF 2.1 Visual Studio Template"
 				},{
 					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/",
 					"Title": "Code Snippets"
@@ -585,7 +603,12 @@
 					},
 					{
 						"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/",
-						"Title": "Vault Application Framework"
+						"Title": "Vault Application Framework",
+						"Items": [{
+								"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/Upgrading-VAF2.0-To-2.1/",
+								"Title": "Upgrading from VAF 2.0 to 2.1"
+							},
+						]
 					},
 					{
 						"Link": "/Samples-And-Libraries/Samples/Processes/",

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Configuration in the Vault Application Framework 2.0
+title: Configuration in the Vault Application Framework
 includeInSearch: true
 breadcrumb: Configuration
 ---
@@ -9,8 +9,10 @@ breadcrumb: Configuration
 {:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework."}
 [Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
 {:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework."}
+[Version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21)
+{:.tag.available title="This functionality is available in version 2.1 of the Vault Application Framework."}
 
-The approach shown below is only compatible with [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
+The approach shown below is only compatible with version 2.0 (and higher) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
 {:.note.warning}
 
 M-Files 2018 introduces a new section within the M-Files Admin software that collates a variety of customisable configuration options from across the M-Files vault, including:
@@ -23,7 +25,63 @@ The [2.0 release of the Vault Application Framework]({{ site.baseurl }}/Framewor
 
 ![The M-Files 2018 Configuration area](configuration-area.png)
 
-## Implementing IUsesAdminConfigurations
+## VAF 2.1
+
+### Inheriting from the new base class
+
+Using the VAF 2.1 base class will alter the Named Value Storage location used for configuration, therefore any existing configuration will be lost.  You should ensure that users are aware of the correct way to migrate their configuration from VAF 2.0 applications to VAF 2.1 applications.
+{:.note.warning}
+
+Version 2.1 of the Vault Application Framework continues to support the [VAF 2.0 configuration approach](Configuration/#vaf-20) approach, but adds in a base class that allows easy extension of the standard functionality.  In order to support newer items such as the [[Security] attribute](../Attributes/Configuration/Security), you **must change your implementation to use the newer approach**.  A sample on [how to convert a VAF 2.0 application to VAF 2.1]({{ site.baseurl }}/Samples-And-Libraries/Samples/Vault-Application-Framework/Upgrading-VAF2.0-To-2.1/) is also available.
+
+To do this you must inherit from `ConfigurableVaultApplicationBase<T>`, instead of the older `VaultApplicationBase` class.  Common functionality such as implementing a [custom dashboard](Custom-Dashboards) can be implemented by overriding methods in the base class.
+
+{% highlight csharp %}
+using System;
+using System.IO;
+using MFiles.VAF;
+using MFiles.VAF.Common;
+using MFiles.VAF.Core;
+using MFilesAPI;
+
+namespace MFilesUserLiteTraining
+{
+	[DataContract]
+	public class Configuration
+	{
+		// NOTE: The default value needs to be placed in both the JsonConfEditor
+		// (or derived) attribute, and as a default value on the member.
+		[DataMember]
+		[JsonConfEditor(DefaultValue = "Value 1")]
+		public string ConfigValue1 = "Value 1";
+ 
+	}
+
+	public partial class VaultApplication
+		: ConfigurableVaultApplicationBase<Configuration>
+	{
+		#region Overrides of VaultApplicationBase
+
+		/// <inheritdoc />
+		public override void StartOperations(Vault vaultPersistent)
+		{
+			base.StartOperations(vaultPersistent);
+
+			// An instance of the current configuration can be found in this.Configuration.
+			SysUtils.ReportInfoToEventLog(this.Configuration.ConfigValue1);
+		}
+
+		#endregion
+	}
+}
+{% endhighlight %}
+
+In the example above there has been a `Configuration` class defined elsewhere in the project.  By inheriting from this base class, a configuration node will be added to the M-Files Admin `Other Applications` configuration section.  The "Configuration" properties are driven from the properties on the Configuration class, as detailed [on the dedicated page](Editors).
+{:.note}
+
+## VAF 2.0
+
+### Implementing IUsesAdminConfigurations
 
 Ensure that your vault application implements `MFiles.VAF.AdminConfigurations.IUsesAdminConfigurations`.  This will require you to declare one method - `InitializeAdminConfigurations` - as shown below.
 
@@ -43,7 +101,7 @@ namespace MFVaultApplication1
 }
 {% endhighlight %}
 
-## Registering configuration nodes
+### Registering configuration nodes
 
 The `InitializeAdminConfigurations` method allows a developer to add configuration nodes into the M-Files Admin configuration screen, and for these configuration nodes to be rendered within the M-Files Admin.
 
@@ -89,7 +147,7 @@ namespace MFVaultApplication1
 
 ![A simple configuration object rendered within the M-Files 2018 Admin interface](simple-configuration-node.png)
 
-## Reacting when configuration changes
+### Reacting when configuration changes
 
 The configuration can be automatically updated when changes are saved within the M-Files 2018 Admin interface
 

@@ -63,6 +63,11 @@ img
 	/* images broken over the page are hard to read.*/
 	page-break-inside:avoid;
 }
+body>article img
+{
+	margin: 0px;
+	padding: 0px;
+}
 a[rel~=external]::after
 {
 	/* external links write out the address afterwards. */
