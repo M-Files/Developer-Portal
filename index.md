@@ -8,17 +8,17 @@ excerpt: This website complements and extends our existing documentation, availa
 ## Quick links
 
 <ul class="quicklinks">
-	<li class="api"><a href="{{ site.baseurl }}/APIs/COM-API/"><span class="text"><i class="zmdi zmdi-circle-o"></i> COM API</span></a></li>
-	<li class="api"><a href="{{ site.baseurl }}/APIs/REST-API/"><span class="text"><i class="zmdi zmdi-cloud-outline"></i> REST API</span></a></li>
-	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/"><span class="text"><i class="zmdi zmdi-widgets"></i> Vault Application Framework</span></a></li>
-	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/"><span class="text"><i class="zmdi zmdi-window-restore"></i> User Interface Extensibility Framework</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/"><span class="text"><i class="zmdi zmdi-swap-alt"></i> External Object Type Data Sources</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/Metadata-Card-Configuration/"><span class="text"><i class="zmdi zmdi-view-web"></i> Metadata Card Configuration</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl}}/UX-Design/"><span class="text"><i class="zmdi zmdi-view-dashboard"></i>UX/Design guidance</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/URLs/"><span class="text"><i class="zmdi zmdi-link"></i> M-Files URLs</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/VBScript/"><span class="text"><i class="zmdi zmdi-collection-item"></i> VBScript</span></a></li>
-	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/Samples"><span class="text"><i class="zmdi zmdi-github"></i> Samples</span></a></li>
-	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/Libraries"><span class="text"><i class="zmdi zmdi-github"></i> Libraries</span></a></li>
+	<li class="api"><a href="{{ site.baseurl }}/APIs/COM-API/"><span class="text"><span class="iconify" data-icon="mdi:circle-outline"></span> COM API</span></a></li>
+	<li class="api"><a href="{{ site.baseurl }}/APIs/REST-API/"><span class="text"><span class="iconify" data-icon="mdi:cloud-outline"></span> REST API</span></a></li>
+	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/"><span class="text"><span class="iconify" data-icon="mdi:widgets"></span> Vault Application Framework</span></a></li>
+	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/"><span class="text"><span class="iconify" data-icon="mdi:window-restore"></span> User Interface Extensibility Framework</span></a></li>
+	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/"><span class="text"><span class="iconify" data-icon="mdi:swap-vertical-variant"></span> External Object Type Data Sources</span></a></li>
+	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/Metadata-Card-Configuration/"><span class="text"><span class="iconify" data-icon="mdi:settings-outline"></span> Metadata Card Configuration</span></a></li>
+	<li class="built-in"><a href="{{ site.baseurl}}/UX-Design/"><span class="text"><span class="iconify" data-icon="mdi:view-dashboard"></span>UX/Design guidance</span></a></li>
+	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/URLs/"><span class="text"><span class="iconify" data-icon="mdi:link"></span> M-Files URLs</span></a></li>
+	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/VBScript/"><span class="text"><span class="iconify" data-icon="mdi:script-text-outline"></span> VBScript</span></a></li>
+	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/Samples"><span class="text"><span class="iconify" data-icon="mdi:github-circle"></span> Samples</span></a></li>
+	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/Libraries"><span class="text"><span class="iconify" data-icon="mdi:github-circle"></span> Libraries</span></a></li>
 </ul>
 
 ## M-Files as a Platform

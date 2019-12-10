@@ -10,6 +10,12 @@ ul.quicklinks li
 	padding: 0px;
 	display: inline-block;
 }
+ul.quicklinks li .iconify
+{
+	font-size: 1.6em;
+	position: relative;
+	top: 2px;
+}
 ul.quicklinks a
 {
 	padding: 1px;

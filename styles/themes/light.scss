@@ -7,10 +7,14 @@ $reveal-highlight: rgb(155, 153, 153);
 
 body.theme-light
 {
-	header h1, #hamburger
+	header h1
 	{
 		background-color: $background-color;
 		color: #333;
+	}
+	header #hamburger path
+	{
+		fill: #333;
 	}
 	> aside#sidebar
 	{
@@ -22,17 +26,13 @@ body.theme-light
 		background-color: #007dc6;
 		color: #ecf0f1;
 	}
-	#cookies
-	{
-		color: $reveal-background;
-	}
 
 	&.reveal
 	{	aside#sidebar
 		{
 			color: #333;
 		}
-		aside#sidebar ul.zmdi-hc-ul li
+		aside#sidebar ul li
 		{
 			&.current > a >.text, > a >.text
 			{
@@ -104,6 +104,11 @@ body.theme-light
 			background-color: $reveal-background;
 		}
 	}
+	.expandCollapseIcon path
+	{
+		fill: #333;
+	}
+
 }
 
 @media screen and (min-width: 1000px)

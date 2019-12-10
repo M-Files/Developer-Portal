@@ -9,15 +9,16 @@
 {
 	font-style: italic;
 }
-.breadcrumb li::after,
-	.breadcrumb li::before
+article.page .breadcrumb li:not(:last-child)::after
 {
-    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
-}
-.breadcrumb li:not(:last-child)::after
-{
-    content: "\f2fb";
-    padding: 0px 3px;
+	content: " ";
+	white-space: pre;
+	width: 12px;
+	height: 1em;
+	display: inline-block;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='1em' height='1em' style='-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cpath d='M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42z' /%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center bottom;
 }
 article.page .breadcrumb li
 {
@@ -29,6 +30,7 @@ article.page .breadcrumb li
 {
     display: inline-block;
 	padding: 5px 2px;
+	vertical-align: bottom;
 }
 @media all and (max-width: 999px)
 {

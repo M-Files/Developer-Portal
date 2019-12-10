@@ -17,7 +17,7 @@ The M-Files icon set is evolving towards simplicity. The target is to allow user
 
 <ul class="quicklinks">
 	<li class="api"><a href="{{ site.baseurl }}/UX-Design/Icons-and-Fonts/MF_icons_2018_mar.zip">
-	<i class="zmdi zmdi-download"></i> &nbsp;
+	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
 	Download M-Files 2018 icon package (22.9MB)</a></li>
 </ul>
 

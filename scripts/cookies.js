@@ -16,7 +16,7 @@ $(document).ready(function()
 		// Set the cookie
 		var expiry = new Date();
 		expiry.setFullYear(expiry.getFullYear() + 2);
-		document.cookie = "accepted=1; path=/; expires=" + expiry.toUTCString();
+		document.cookie = "accepted-localstorage=1; path=/; expires=" + expiry.toUTCString();
 		$body.addClass("accepted-cookies");
 	}
 	function getAcceptedCookie()
@@ -34,7 +34,7 @@ $(document).ready(function()
 			var kvp = cookies[i].split("=");
 			if(kvp.length != 2)
 				continue;
-			if(kvp[0].trim() == "accepted")
+			if(kvp[0].trim() == "accepted-localstorage")
 			{
 				return (kvp[1] + "").trim();
 			}
@@ -45,11 +45,14 @@ $(document).ready(function()
 	// If they've already accepted then die.
 	if(getAcceptedCookie() == "1")
 	{
+		window.IconifyConfig= {
+			localStorage: true
+		};
 		return;
 	}
 
 	// Add the cookie statement.
-	var $cookieStatement = $("<div id='cookies'>We use cookies on this site to log anonymous statistics on how people use this website.  For more information, see our <a href='https://www.m-files.com/en/privacy-policy-statement' target='_blank' rel='external noopener nofollow'>corporate privacy policy</a>.</div>");
+	var $cookieStatement = $("<div id='cookies'>We use cookies on this site to log anonymous statistics on how people use this website.  We may also use local storage to make the site perform better for you.  For more information, see our <a href='https://www.m-files.com/en/privacy-policy-statement' target='_blank' rel='external noopener nofollow'>corporate privacy policy</a>.</div>");
 	var $hideButton = $("<button id='cookie-hide'>Hide</button>");
 	$hideButton.click(setAcceptedCookie);
 	$cookieStatement.append($hideButton);

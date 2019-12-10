@@ -242,7 +242,7 @@ h2 .parameter {
 }
 
 /* add a little margin to the icon on external links */
-a[rel~=external] > .zmdi
+a[rel~=external] > .iconify
 {
 	margin: 0px 3px;
 }

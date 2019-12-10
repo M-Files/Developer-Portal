@@ -68,7 +68,7 @@ function registerServiceWorker(force, callback)
 				}
 			});
 		}
-		catch
+		catch(e)
 		{
 		}
 	}
@@ -84,12 +84,12 @@ window.addEventListener("load", function()
 	if (serviceWorkerAvailable)
 	{
 		$anchor.text(" Enabled");
-		$anchor.prepend($("<i class='zmdi zmdi-check'></i>"));
+		$anchor.prepend($("<span class='iconify' data-icon='mdi:check'></span>"));
 	}
 	else
 	{
 		$anchor.text(" Unavailable");
-		$anchor.prepend($("<i class='zmdi zmdi-block'></i>"));
+		$anchor.prepend($("<span class='iconify' data-icon='mdi:block'></span>"));
 	}
 
 	// Render to screen.

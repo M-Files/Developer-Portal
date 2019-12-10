@@ -1,13 +1,13 @@
 [
 	{
 		"Link": "/",
-		"Icon": "zmdi-home",
+		"Icon": "mdi:home",
 		"Title": "Home",
 		"SkipInOtherArticles" : true
 	},
 	{
 		"Link": "/Getting-Started/",
-		"Icon": "zmdi-play",
+		"Icon": "mdi:play-outline",
 		"Title": "Getting Started",
 		"Items": [
 			{
@@ -56,7 +56,7 @@
 	},
 	{
 		"Link": "/Built-In/",
-		"Icon": "zmdi-stop",
+		"Icon": "mdi:script-text-outline",
 		"Title": "Using built-in functionality",
 		"Items": [{
 				"Link": "/Built-In/External-Object-Type-Data-Source/",
@@ -100,7 +100,7 @@
 	},
 	{
 		"Link": "/APIs/COM-API/",
-		"Icon": "zmdi-circle-o",
+		"Icon": "mdi:circle-outline",
 		"Title": "COM API",
 		"Items": [{
 				"Link": "https://www.m-files.com/api/documentation/latest/index.html",
@@ -160,7 +160,7 @@
 	},
 	{
 		"Link": "/APIs/REST-API/",
-		"Icon": "zmdi-cloud-outline",
+		"Icon": "mdi:cloud-outline",
 		"Title": "REST API",
 		"Items": [{
 				"Link": "http://www.m-files.com/MFWS/",
@@ -224,7 +224,7 @@
 	},
 	{
 		"Link": "/Frameworks/User-Interface-Extensibility-Framework/",
-		"Icon": "zmdi-window-restore",
+		"Icon": "mdi:window-restore",
 		"Title": "UI Extensibility Framework",
 		"Items": [{
 				"Link": "https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html",
@@ -298,7 +298,7 @@
 	},
 	{
 		"Link": "/Frameworks/Vault-Application-Framework/",
-		"Icon": "zmdi-widgets",
+		"Icon": "mdi:widgets",
 		"Title": "Vault Application Framework",
 		"Items": [{
 				"Link": "/Frameworks/Vault-Application-Framework/Reference/",
@@ -486,7 +486,7 @@
 	{
 		"Link": "/UX-Design/",
 		"Title": "UX/Design guidance",
-		"Icon": "zmdi-view-dashboard",
+		"Icon": "mdi:view-dashboard",
 		"Items": [
 			{
 				"Link": "/UX-Design/Page-Layout/",
@@ -509,7 +509,7 @@
 	{
 		"Link": "/Intelligent-Metadata-Layer/",
 		"Title": "Intelligent Metadata Layer",
-		"Icon": "zmdi-memory",
+		"Icon": "mdi:memory",
 		"Items": [{
 				"Link": "/Intelligent-Metadata-Layer/External-Repository-Connectors/",
 				"Title": "External Repository Connectors",
@@ -529,7 +529,7 @@
 	},
 	{
 		"Link": "/Samples-And-Libraries/",
-		"Icon": "zmdi-github",
+		"Icon": "mdi:github-circle",
 		"Title": "Samples and Libraries",
 		"Items": [{
 				"Link": "/Samples-And-Libraries/Libraries/",
