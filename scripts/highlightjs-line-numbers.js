@@ -139,12 +139,12 @@ $(document).ready(function()
 
 				var $toggleLineNumbersElement = $("<div></div>")
 					.addClass("toggleLineNumbers")
-					.html("<i class='btn zmdi zmdi-hc-fw zmdi-format-list-numbered'></i>")
+					.html("<span class='iconify btn' data-icon='mdi:format-list-numbered'></span>")
 					.attr("title", "Toggle line numbers")
 					.click(toggleLineNumbers);
 				var $copyCodeElement = $("<div></div>")
 					.addClass("copyCode")
-					.html("<i class='btn zmdi zmdi-hc-fw zmdi-copy'></i>")
+					.html("<span class='iconify btn' data-icon='mdi:content-copy'></span>")
 					.attr("title", "Copy to clipboard")
 					.click(selectAndCopyCode);
 				

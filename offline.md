@@ -34,6 +34,5 @@ article[role="main"] p
 }
 </style>
 
-<i class="zmdi zmdi-block zmdi-wifi-off zmdi-hc-3x pulse" style="color: #007dc6"></i>
 
 Unfortunately you are offline and this file is not in your cache.  Please go online to view this content.

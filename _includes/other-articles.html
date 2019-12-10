@@ -17,8 +17,8 @@
 					<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
 							<span class="text">
 								{{ child.Title }}
-								{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
-								{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+								{%- if child.IsOfficialReference -%}<span class="iconify" data-icon="mdi:bookmark-check"></span>{%- endif -%}
+								{%- if child.IsGitHubLink -%}<span class="iconify" data-icon="mdi:github-circle"></span>{%- endif -%}
 							</span>
 						</a>
 					</li>
@@ -42,8 +42,8 @@
 					<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
 							<span class="text">
 								{{ child.Title }}
-								{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
-								{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+								{%- if child.IsOfficialReference -%}<span class="iconify" data-icon="mdi:bookmark-check"></span>{%- endif -%}
+								{%- if child.IsGitHubLink -%}<span class="iconify" data-icon="mdi:github-circle"></span>{%- endif -%}
 							</span>
 						</a>
 					</li>
@@ -74,8 +74,8 @@
 						<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
 								<span class="text">
 									{{ child.Title }}
-									{%- if child.IsOfficialReference -%}<i class="zmdi zmdi-bookmark-outline"></i>{%- endif -%}
-									{%- if child.IsGitHubLink -%}<i class="zmdi zmdi-github"></i>{%- endif -%}
+									{%- if child.IsOfficialReference -%}<span class="iconify" data-icon="mdi:bookmark-check"></span>{%- endif -%}
+									{%- if child.IsGitHubLink -%}<span class="iconify" data-icon="mdi:github-circle"></span>{%- endif -%}
 								</span>
 							</a>
 						</li>

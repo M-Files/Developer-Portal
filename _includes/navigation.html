@@ -5,7 +5,7 @@
 	<meta itemprop="target" content="http://developer.m-files.com/Search/?query={query}"/>
 		<input type="text" itemprop="query-input" class="search-box" id="query" name="query" autocomplete="off" placeholder="Search..." aria-label="Search Query" required />
 		<button class="btn btn-default btn-block" type="submit" aria-label="Perform Search">
-				<i class="zmdi zmdi-invert-colors zmdi-search"></i>
+				<span class="iconify" data-icon="mdi:magnify"></i>
 				<span class="label">search</span>
 			</button>
 	</form>
@@ -14,9 +14,8 @@
     {%- include nav-data.html items=site.data.navigation -%}
 </nav>
 <nav class="secondary">
-    <ul class="zmdi-hc-ul">
-        <li><a href="mailto:devsupport@m-files.com"><span class="text"><i class="zmdi-hc-li zmdi zmdi-comments"></i>Feedback</span></a></li>
-        <li><a href="{{ site.baseurl }}/Links"><span class="text">Links<i class="zmdi-hc-li zmdi zmdi-link"></i></span></a></li>
-        <!-- <li><a href="{{ site.baseurl }}/PWA" id="pwa-link">Progressive Web Application<i class="zmdi-hc-li zmdi zmdi-notifications"></i></a></li> -->
+    <ul>
+        <li><a href="mailto:devsupport@m-files.com"><span class="text"><span class="iconify" data-icon="mdi:comment-text-multiple-outline"></span>Feedback</span></a></li>
+        <li><a href="{{ site.baseurl }}/Links"><span class="text">Links<span class="iconify" data-icon="mdi:link-variant"></span></span></a></li>
     </ul>
 </nav>

@@ -1,16 +1,17 @@
 (function($){
 
     // Create the "external link" icon.
-    var $externalLink = $("<i class='zmdi zmdi-open-in-new'></i>");
+    var $externalLink = $("<span class='iconify' data-icon='mdi:open-in-new'></span>");
 
     // Create the "github" icon.
-    var $githubLink = $("<i class='zmdi zmdi-github'></i>");
+    var $githubLink = $("<span class='iconify' data-icon='mdi:github-circle'></span>");
 
     // Add the "external" class to all external links.
     var $externalLinks = $("a", "article.page article")
         .filter(function(){
             return this.hostname && this.hostname !== location.hostname;
-        })
+		})
+		.addClass("external")
         .attr("rel", "external noopener")
 		.attr("target", "_blank");
     

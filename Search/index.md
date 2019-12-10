@@ -7,7 +7,7 @@ noInnerLinks: true
 <form class="search" action="/Search/" method="get">
     <input type="text" class="search-box" id="query" name="query" autocomplete="off" placeholder="Search..." />
     <button class="btn btn-default btn-block" type="submit">
-        <i class="zmdi zmdi-invert-colors zmdi-search"></i>
+        <span class="iconify" data-icon="mdi:magnify"></span>
         <span class="label">search</span>
     </button>
     <input type="submit" value="Search" />

@@ -239,11 +239,11 @@ body article.page
 article.page .note.warning a {
     color: rgba(0, 50, 199, 1);
 }
-article.page a .zmdi
+article.page a .iconify
 {
 	padding: 0px 2px;
 }
-article.page a .zmdi-open-in-new
+article.page a.external .iconify
 {
 	padding-left: 5px;
 }
@@ -264,7 +264,7 @@ article.page h3 a {
     color: #333;
 }
 
-.zmdi
+.iconify
 {
 	padding-left: 2px;
 }
