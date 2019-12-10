@@ -104,6 +104,11 @@ body.theme-light
 			background-color: $reveal-background;
 		}
 	}
+	.expandCollapseIcon path
+	{
+		fill: #333;
+	}
+
 }
 
 @media screen and (min-width: 1000px)

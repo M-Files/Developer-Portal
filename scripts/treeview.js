@@ -10,7 +10,7 @@
     function setupNode($node)
     {
         var $icon = $expandCollapseIcon.clone();
-        $node.append($icon);
+        $node.prepend($icon);
         $icon.click(function()
         {
             expandCollapse($node);
