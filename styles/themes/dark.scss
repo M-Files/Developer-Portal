@@ -35,6 +35,10 @@ body.theme-dark
 			color: #CDCDCD;
 		}
 	}
+	article.page .breadcrumb li:not(:last-child)::after
+	{
+		color: #CDCDCD;
+	}
 	article.page a,
 		article.page a:visited,
 		footer a,
