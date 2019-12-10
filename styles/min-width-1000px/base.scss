@@ -41,6 +41,10 @@ aside#sidebar form.search
 }
 @media screen and (min-width: 1000px)
 {
+	aside#sidebar
+	{
+		margin-top: 0px;
+	}
     #in-page-nav
     {
 		left: 430px;

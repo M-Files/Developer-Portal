@@ -27,6 +27,7 @@ layout: compress
 	
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script defer src="/sw-register.js?{{ site.github.build_revision }}"></script>
+	<script src="https://code.iconify.design/1/1.0.0-rc1/iconify.min.js"></script>
 
 </head>
 		
@@ -42,7 +43,7 @@ layout: compress
 	<script src="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}"></script>
 		
     <header>
-        <span class="iconify" id="hamburger" data-icon="mdi:menu"></span>
+		<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z" /></svg>
         <h1 class="title">
             {% if page.title %} {{ page.title }} {% endif %}
         </h1>
@@ -62,8 +63,7 @@ layout: compress
 	<script defer src="{{ site.baseurl }}/scripts/external-links.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/cookies.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/reveal.js?{{ site.github.build_revision }}"></script>
-	<script defer src="https://code.iconify.design/1/1.0.0-rc1/iconify.min.js"></script>
-	<script defer src="{{ site.baseurl }}/scripts/iconify.js?{{ site.github.build_revision }}"></script>
+	<script src="{{ site.baseurl }}/scripts/iconify.js?{{ site.github.build_revision }}"></script>
 
 	<script>
 		var deferredStylesheets = document.querySelectorAll("link[rel=deferred-stylesheet]");

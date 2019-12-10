@@ -68,7 +68,7 @@ function registerServiceWorker(force, callback)
 				}
 			});
 		}
-		catch
+		catch(e)
 		{
 		}
 	}

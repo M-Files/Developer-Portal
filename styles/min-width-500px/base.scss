@@ -7,14 +7,6 @@ aside#sidebar
     -o-transition: all 100ms ease-in-out;
 	transition: all 100ms ease-in-out;
 }
-body.sidebar-expanded > *
-{
-	display: block;
-}
-body.sidebar-expanded > script
-{
-	display: none;
-}
 
 body.sidebar-expanded aside#sidebar
 {

@@ -7,10 +7,14 @@ $reveal-highlight: rgb(155, 153, 153);
 
 body.theme-light
 {
-	header h1, #hamburger
+	header h1
 	{
 		background-color: $background-color;
 		color: #333;
+	}
+	header #hamburger path
+	{
+		fill: #333;
 	}
 	> aside#sidebar
 	{

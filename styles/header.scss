@@ -2,6 +2,10 @@ header{
 	margin: 0px;
 	z-index: 1000;
 }
+header #hamburger path
+{
+	fill: white;
+}
 
 header h1
 {
@@ -9,11 +13,11 @@ header h1
 	color: white;
 	padding: 5px;
 	margin: 0px;
-	padding: 20px 5px 0px 60px;
+	padding: 10px 5px 0px 60px;
 	z-index: 1001;
 	font-weight: normal;
 	font-size: 1rem;
-	min-height:34px;
+	min-height: 35px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;

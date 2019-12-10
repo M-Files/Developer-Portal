@@ -1,8 +1,8 @@
 aside#sidebar {
     position: fixed;
     padding: 80px 30px 130px 3px;
-    top: 54px;
-    margin: 0px;
+    top: 0px;
+    margin: 45px 0 0 0;
     left: -110%;
     bottom: -1px;
     width: 100%;
@@ -12,8 +12,7 @@ aside#sidebar {
     box-shadow: 5px 0 5px -5px #333;
     overflow: hidden;
 	min-height: 100px;
-	box-sizing: border-box;
-	height: 100%;
+	box-sizing: content-box;
 	overflow-y: auto;
     -webkit-transition: left 300ms ease-in-out;
     -moz-transition: left 300ms ease-in-out;
@@ -49,10 +48,6 @@ nav.secondary
 
 body.with-breadcrumb>aside#sidebar {
     top: 120px;
-}
-
-body.sidebar-expanded>* {
-    display: none;
 }
 
 body.sidebar-expanded>header {
