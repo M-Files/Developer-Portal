@@ -139,10 +139,10 @@ body.theme-dark
 	{
 		.iconify
 		{
-			color: darkgreen;
+			color: #CDCDCD;
 			&.incompatible
 			{
-				color: darkred;
+				color: $reveal-highlight;
 			}
 		}
 	}
