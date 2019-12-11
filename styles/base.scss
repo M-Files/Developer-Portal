@@ -103,9 +103,9 @@ h3 {
     cursor: pointer;
     z-index: 10003;
 }
-#logo
+.logo
 {	
-	z-index: 11000;
+	display: none;
 	*
 	{
 		fill: white;
