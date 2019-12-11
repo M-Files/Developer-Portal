@@ -21,19 +21,22 @@ article.page
 body > aside#sidebar
 {
 	top: 0px;
-	left: 0px;
 	padding-top: 80px;
+	left: 0px;
 	box-shadow: none;
-    background-position: center 10px;
-    background-image: url("../../images/M-Files-Logo-White.png");
-    background-size: 200px;
-	background-repeat: no-repeat;
-	background-attachment: local;
     -webkit-transition: left 0ms none;
     -moz-transition: left 0ms none;
     -o-transition: left 0ms none;
 	transition: left 0ms none;
 	border-right: 0px;
+}
+#logo
+{
+	display: block;
+	position: absolute;
+	left: 70px;
+	width: 215px;
+	margin: 10px;
 }
 aside#sidebar form.search
 {

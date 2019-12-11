@@ -109,22 +109,12 @@ body.theme-light
 		fill: #333;
 	}
 
-}
-
-@media screen and (min-width: 1000px)
-{
-	body.theme-light
+	#logo
 	{
-		> aside#sidebar
+		*
 		{
-			background-image: url(../../images/M-Files-Logo-Black.png);
+			fill: black;
 		}
 	}
-}
-@media all and (max-width: 999px)
-{
-	body.theme-light header h1
-	{
-		background-image: url(../../images/M-Files-Logo-Black.png);
-	}
+
 }

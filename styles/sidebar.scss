@@ -18,7 +18,7 @@ aside#sidebar {
     -moz-transition: left 300ms ease-in-out;
 	-o-transition: left 300ms ease-in-out;
 	border-right: 1px solid #007dc6;
-    transition: left 300ms ease-in-out;
+	transition: left 300ms ease-in-out;
 }
 
 nav.secondary
@@ -149,12 +149,7 @@ ul.treeview li a.current {
 
     header,
         body.sidebar-expanded>header{
-        display:flex;
         align-items: center;
-        width: 100%;
-    }
-    header h1
-    {
         width: 100%;
 	}
 	body aside#sidebar > nav > ul

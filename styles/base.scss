@@ -103,6 +103,14 @@ h3 {
     cursor: pointer;
     z-index: 10003;
 }
+#logo
+{	
+	z-index: 11000;
+	*
+	{
+		fill: white;
+	}
+}
 
 article[role=main] h1,
 	article[role=main] h2,
