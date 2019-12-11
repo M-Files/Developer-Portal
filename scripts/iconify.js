@@ -21,4 +21,14 @@ Iconify.preloadImages([
 	'mdi:format-list-numbered',
 	'mdi:brightness-auto',
 	'mdi:brightness-7',
-	'mdi:brightness-3']);
+	'mdi:brightness-3',
+	'mdi:email',
+	'mdi:twitter',
+	'mdi:linkedin-box',
+	'mdi:disqus',
+	'mdi:swap-vertical-variant',
+	'mdi:settings-outline',
+	'mdi:link',
+	'mdi:windows',
+	'mdi:web',
+	'mdi:download']);
