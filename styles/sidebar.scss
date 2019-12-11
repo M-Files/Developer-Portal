@@ -129,7 +129,7 @@ ul.treeview li a.current {
 
 @media all and (max-width: 640px)
 {
-	.expandCollapseIcon
+	nav.primary > ul.treeview > li > .expandCollapseIcon
 	{
 		top: 4px;
 	}
