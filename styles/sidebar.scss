@@ -231,7 +231,10 @@ aside#sidebar nav.primary
 aside#sidebar nav.primary,
 	aside#sidebar nav.secondary
 {
-	margin-right: 5px;
+	margin-right: 0px;
+}
+aside#sidebar nav.secondary > ul
+{
 	position: relative;
 	left: -5px;
 }

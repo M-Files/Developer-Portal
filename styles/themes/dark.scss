@@ -21,7 +21,7 @@ body.theme-dark
 	}
 	nav.secondary
 	{
-		border-top: 1px solid #444;
+		border-top-color: #444;
 	}
 	aside#sidebar ul li.current > a,
 		aside#sidebar ul li > a:hover
@@ -132,7 +132,6 @@ body.theme-dark
 	}
 	article.page
 	{
-		border-color: #444;
 		word-spacing: .05em;
 	}
 	article.page a.public-anchor
