@@ -23,7 +23,7 @@ $(document).ready(function()
 				})
 				.mouseout(function()
 				{
-					$(this).css("background-position-x", "0px");
+					$(this).css("background-position-x", "-200px");
 				});
 		});
 });
