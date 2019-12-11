@@ -45,7 +45,7 @@ var checkResponse = function(request){
 
 var addToCache = function(request){
 	return caches.open('pwa-offline').then(function (cache) {
-		return fetch(request)
+		return fetch(request.clone())
 			.then(function (response) {
 				return cache.put(request, response);
 			})
