@@ -16,6 +16,7 @@
 					<li>
 					<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
 							<span class="text">
+								{%- if child.Icon -%}<span class="iconify" data-icon="{{ item.Icon }}"></span>{%- endif -%}
 								{{ child.Title }}
 								{%- if child.IsOfficialReference -%}<span class="iconify" data-icon="mdi:bookmark-check"></span>{%- endif -%}
 								{%- if child.IsGitHubLink -%}<span class="iconify" data-icon="mdi:github-circle"></span>{%- endif -%}
@@ -41,6 +42,7 @@
 					<li>
 					<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
 							<span class="text">
+								{%- if child.Icon -%}<span class="iconify" data-icon="{{ item.Icon }}"></span>{%- endif -%}
 								{{ child.Title }}
 								{%- if child.IsOfficialReference -%}<span class="iconify" data-icon="mdi:bookmark-check"></span>{%- endif -%}
 								{%- if child.IsGitHubLink -%}<span class="iconify" data-icon="mdi:github-circle"></span>{%- endif -%}
@@ -73,6 +75,7 @@
 						<li>
 						<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{%- if child.IsExternal -%} target="_blank" rel="noopener"{%- endif -%}>
 								<span class="text">
+									{%- if child.Icon -%}<span class="iconify" data-icon="{{ item.Icon }}"></span>{%- endif -%}
 									{{ child.Title }}
 									{%- if child.IsOfficialReference -%}<span class="iconify" data-icon="mdi:bookmark-check"></span>{%- endif -%}
 									{%- if child.IsGitHubLink -%}<span class="iconify" data-icon="mdi:github-circle"></span>{%- endif -%}
