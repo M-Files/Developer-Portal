@@ -16,6 +16,17 @@ layout: compress
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" as="style" />
+	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" as="script" />
+	<link rel="preload" href="https://code.iconify.design/1/1.0.0-rc1/iconify.min.js" as="script" />
+	<link rel="preload" href="https://code.iconify.design/1/1.0.0-rc1/iconify.min.js" as="script" />
+	<link rel="preload" href="sw-register.js?{{ site.github.build_revision }}" as="script" />
+	<link rel="preload" href="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}" as="script" />
+	<link rel="preload" href="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}" as="script" />
+	<link rel="preconnect" href="https://www.google-analytics.com" />
+	<link rel="preconnect" href="https://www.googletagmanager.com" />
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
 	<style type="text/css">
 		@import url("{{ site.baseurl }}/styles/site.css?{{ site.github.build_revision }}");
 	</style>
@@ -25,9 +36,9 @@ layout: compress
 	<link rel="stylesheet" media="print" href="{{ site.baseurl }}/styles/print.css?{{ site.github.build_revision }}" />
 	<link rel="deferred-stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
 	
-	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script defer src="/sw-register.js?{{ site.github.build_revision }}"></script>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://code.iconify.design/1/1.0.0-rc1/iconify.min.js"></script>
+	<script defer src="/sw-register.js?{{ site.github.build_revision }}"></script>
 
 </head>
 		
@@ -75,7 +86,7 @@ layout: compress
 
     {% include analytics.html %}
 	{% if site.disqus %}
-    <!-- <script id="dsq-count-scr" src="//mfilesdeveloperportal.disqus.com/count.js" async></script> -->
+    <!-- <script id="dsq-count-scr" src="https://mfilesdeveloperportal.disqus.com/count.js" async></script> -->
     {% endif %}
 
 </body>
