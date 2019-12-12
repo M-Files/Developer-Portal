@@ -20,6 +20,10 @@ body.theme-light
 	{
 		background-color: $background-color;
 		border-right: none;
+		div.search
+		{
+			background-color: $background-color;
+		}
 	}
 	form.search button
 	{
@@ -109,7 +113,7 @@ body.theme-light
 		fill: #333;
 	}
 
-	.logo
+	#logo
 	{
 		*
 		{
@@ -117,4 +121,16 @@ body.theme-light
 		}
 	}
 
+}
+
+
+@media screen and (min-width: 1000px)
+{
+	body.theme-light
+	{
+		#logo
+		{
+			background-color: $background-color;
+		}
+	}
 }
