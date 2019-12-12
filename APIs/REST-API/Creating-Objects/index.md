@@ -267,7 +267,7 @@ Content-Length: 48
 }
 ```
 
-After a file is uploaded to [/files](http://www.m-files.com/mfws/resources/files.html)</a>, an [UploadInfo](http://www.m-files.com/mfws/structs/uploadinfo.html) will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
+After a file is uploaded to [/files](http://www.m-files.com/mfws/resources/files.html), an [UploadInfo](http://www.m-files.com/mfws/structs/uploadinfo.html) will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
 {:.note}
 
 ### Putting it all together
