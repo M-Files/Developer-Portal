@@ -10,7 +10,7 @@ M-Files provides partners with Visual Studio 2015/2017/2019 templates that can b
 
 ## VAF 2.1
 
-The second version of the Vault Application Framework was released in late-2019, and can be used to create applications for M-Files 19.9 upwards.  A [detailed walkthrough shows how to use the VAF 2.1 template](VAF2.1).
+The third version of the Vault Application Framework was released in late 2019, and can be used to create applications for M-Files 19.9 upwards.  A [detailed walkthrough shows how to use the VAF 2.1 template](VAF2.1).
 
 Note that the VAF 2.1 Visual Studio template is part of the `M-Files Online Visual Studio template package`.  Currently this is available to partners from the Partner Portal.
 {:.note}
