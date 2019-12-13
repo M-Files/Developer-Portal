@@ -9,7 +9,7 @@ includeInSearch: true
 [Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
 {:.tag.available title="This functionality is available in version 2.0 of the Vault Application Framework."}
 
-The approach shown below is only compatible with [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
+The approach shown below is only compatible with [version 2.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20) and [version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21) of the Vault Application Framework, where the target audience runs M-Files 2018 or higher.  If using [version 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10), or to maintain compatibility with M-Files 2015.3 and lower, [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/) should be used instead.
 {:.note.warning}
 
 Some configuration settings are only applicable in specific scenarios, and showing all configuration options to users may not be the most user-friendly.  In these situations, configuration options may be shown or hidden depending on the state of other options.
