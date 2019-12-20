@@ -5,6 +5,6 @@
             return this.hostname && this.hostname !== location.hostname;
 		})
 		.addClass("external")
-        .attr("rel", "external noopener")
+        .attr("rel", "external noopener noreferrer")
 		.attr("target", "_blank");
 })(jQuery);
