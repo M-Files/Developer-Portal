@@ -7,7 +7,7 @@ breadcrumb: UX guidelines
 
 This document is intended to brief developers on the design principles of the M-Files UI, and to introduce the UI components used in desktop development. It targets  M-Files partners and developers who are building applications or services that need to replicate the M-Files "look and feel".
 
-M-Files 2018 contains an updated user interface in the desktop client. The following design principles have been followed throughout the design process:
+M-Files Online contains an updated user interface in the desktop client. The following design principles have been followed throughout the design process:
 
 ## Engaging
 
