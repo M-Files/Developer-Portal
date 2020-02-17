@@ -21,6 +21,10 @@ The M-Files icon set is evolving towards simplicity. The target is to allow user
 	Download M-Files 2018 icon package (22.9MB)</a></li>
 </ul>
 
+### Logo
+
+A version of the [M-Files logo can be downloaded from here](M-Files logo_130x33.png).
+
 {% comment %}
 
 The download above includes all the images shown below in a variety of formats.
