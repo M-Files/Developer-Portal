@@ -1,8 +1,12 @@
 ---
 layout: page
-title: Icons and Fonts
+title: Icons, Fonts and Logo
 includeInSearch: true
 ---
+
+### Logo
+
+A version of the [M-Files logo can be downloaded from here](M-Files logo_130x33.png).
 
 ## Fonts
 
@@ -20,10 +24,6 @@ The M-Files icon set is evolving towards simplicity. The target is to allow user
 	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
 	Download M-Files 2018 icon package (22.9MB)</a></li>
 </ul>
-
-### Logo
-
-A version of the [M-Files logo can be downloaded from here](M-Files logo_130x33.png).
 
 {% comment %}
 
