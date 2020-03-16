@@ -13,6 +13,10 @@ body.theme-dark
 	aside#sidebar
 	{
 		background-color: $background-color;
+		div.search
+		{
+			background-color: $background-color;
+		}
 	}
 	form.search button
 	{
@@ -224,6 +228,16 @@ body.theme-dark
 
 }
 
+@media screen and (min-width: 1000px)
+{
+	body.theme-dark
+	{
+		#logo
+		{
+			background-color: $background-color;
+		}
+	}
+}
 @media screen and (min-width: 1500px)
 {
 	body.theme-dark

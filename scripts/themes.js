@@ -100,22 +100,14 @@
 		var chosenTheme = themes[e];
 		for(var i=0; i<chosenTheme.stylesheets.length; i++)
 		{
-			if(document.readyState == "loading")
-			{
-				// Render it directly to the head.
-				document.writeln('<link type="text/css" media="screen" rel="stylesheet" class="theme theme-' + chosenTheme.id + '" href="' + chosenTheme.stylesheets[i] + '" />');
-			}
-			else
-			{
-				// Modify the DOM.
-				var link = document.createElement("link");
-				link.type = "text/css";
-				link.media = "screen";
-				link.rel = "stylesheet";
-				link.className = "theme theme-" + chosenTheme.id;
-				link.href = chosenTheme.stylesheets[i];
-				document.head.appendChild(link);
-			}
+			// Modify the DOM.
+			var link = document.createElement("link");
+			link.type = "text/css";
+			link.media = "screen";
+			link.rel = "stylesheet";
+			link.className = "theme theme-" + chosenTheme.id;
+			link.href = chosenTheme.stylesheets[i];
+			document.head.appendChild(link);
 		}
 	}
 	// Set the currently-selected theme.

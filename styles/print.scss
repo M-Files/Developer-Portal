@@ -34,6 +34,18 @@ body > article.page
 		/* internal links should be the same as the current text colour */
 		color: #333;
 	}
+	> #logo
+	{
+		display: block;
+		position: relative;
+		width: 30%;
+		left: 40%;
+		margin: 20px 0px;
+		*
+		{
+			fill: #333;
+		}
+	}
 }
 article[role=main]
 {
@@ -74,11 +86,6 @@ a[rel~=external]::after
 	content: " (" attr(href) ")";
 	text-decoration: underline;
 }
-a[rel~=external] i
-{
-	/* hide external link icons */
-	display: none;
-}
 code.highlighter-rouge
 {
 	/* format the keywords in the page better for printing. */
@@ -92,12 +99,20 @@ p.note, p.note.warning
 	border-left: 0px;
 	border-right: 0px;
 	background-color: inherit;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-p.note::before
-{
-	left: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	&::before
+	{
+		position: initial;
+		width: auto;
+		height: auto;
+		font-weight: bold;
+		content: "Note: ";
+	}
+	&.warning::before
+	{
+		content: "Warning: ";
+	}
 }
 body > footer
 {

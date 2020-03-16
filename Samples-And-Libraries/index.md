@@ -16,7 +16,7 @@ Our [GitHub repository](https://github.com/m-files/MFilesSamplesAndLibraries/) c
 * [COM API Extension Methods (.NET)](Libraries/COM-API/#com-api-extension-methods-net)
 * [REST API Wrapper (.NET)](Libraries/REST-API/#rest-api-wrapper-net)
 
-More details are available in the <a href="Libraries">dedicated Libraries page</a>.
+More details are available in the [dedicated Libraries page](Libraries/).
 {:.note}
 
 ## Samples

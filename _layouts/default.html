@@ -6,6 +6,7 @@ layout: compress
 
 <head>
 
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>{% if page.title %}{{ page.title }} {% endif %}</title>
@@ -16,6 +17,14 @@ layout: compress
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" as="script" />
+	<link rel="preload" href="https://code.iconify.design/1/1.0.0-rc1/iconify.min.js" as="script" />
+	<link rel="preload" href="/sw-register.js?{{ site.github.build_revision }}" as="script" />
+	<link rel="preload" href="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}" as="script" />
+	<link rel="preconnect" href="https://www.google-analytics.com" />
+	<link rel="preconnect" href="https://www.googletagmanager.com" />
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
 	<style type="text/css">
 		@import url("{{ site.baseurl }}/styles/site.css?{{ site.github.build_revision }}");
 	</style>
@@ -25,9 +34,9 @@ layout: compress
 	<link rel="stylesheet" media="print" href="{{ site.baseurl }}/styles/print.css?{{ site.github.build_revision }}" />
 	<link rel="deferred-stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/vs.min.css" integrity="sha256-w6kCMnFvhY2tI1OnsYR/rb5DG9yFGodJknvFZOkp51E=" crossorigin="anonymous" />
 	
-	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script defer src="/sw-register.js?{{ site.github.build_revision }}"></script>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://code.iconify.design/1/1.0.0-rc1/iconify.min.js"></script>
+	<script defer src="/sw-register.js?{{ site.github.build_revision }}"></script>
 
 </head>
 		
@@ -46,7 +55,7 @@ layout: compress
 		<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z" /></svg>
         <h1 class="title">
             {% if page.title %} {{ page.title }} {% endif %}
-        </h1>
+		</h1>
 	</header>
 
     {{ content }}
@@ -75,7 +84,7 @@ layout: compress
 
     {% include analytics.html %}
 	{% if site.disqus %}
-    <!-- <script id="dsq-count-scr" src="//mfilesdeveloperportal.disqus.com/count.js" async></script> -->
+    <!-- <script id="dsq-count-scr" src="https://mfilesdeveloperportal.disqus.com/count.js" async></script> -->
     {% endif %}
 
 </body>

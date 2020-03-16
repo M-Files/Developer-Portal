@@ -119,6 +119,6 @@ Unlike User Extensibility Framework applications running on the M-Files Desktop 
 
 ## Checking the current platform
 
-The current platform can be checked programmatically by inspecing `MFiles.CurrentApplicationPlatform`.
+The current platform can be checked programmatically by inspecting `MFiles.CurrentApplicationPlatform`.
 
-On M-Files Web Access, `MFiles.CurrentApplicationPlatform` returns `2`.  On M-Files Desktop, `MFiles.CurrentApplicationPlatform` returns `undefined`.
+On M-Files Web Access, `MFiles.CurrentApplicationPlatform` returns `2`.  On M-Files Desktop, `MFiles.CurrentApplicationPlatform` returns `1`.  In versions of M-Files Desktop less than 12.0.6658.0, the value is incorrectly returned as `undefined`.

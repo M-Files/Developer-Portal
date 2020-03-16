@@ -1,8 +1,12 @@
 ---
 layout: page
-title: Icons and Fonts
+title: Icons, Fonts and Logo
 includeInSearch: true
 ---
+
+## M-Files Logo
+
+A version of the [M-Files logo can be downloaded from here](M-Files logo_130x33.png).
 
 ## Fonts
 

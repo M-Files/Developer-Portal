@@ -21,19 +21,35 @@ article.page
 body > aside#sidebar
 {
 	top: 0px;
+	padding-top: 120px;
 	left: 0px;
-	padding-top: 80px;
 	box-shadow: none;
-    background-position: center 10px;
-    background-image: url("../../images/M-Files-Logo-White.png");
-    background-size: 200px;
-	background-repeat: no-repeat;
-	background-attachment: local;
     -webkit-transition: left 0ms none;
     -moz-transition: left 0ms none;
     -o-transition: left 0ms none;
 	transition: left 0ms none;
 	border-right: 0px;
+}
+#logo
+{
+	left: 0px;
+	width: 390px;
+	height: 53px;
+	margin: 0px;
+	padding: 10px;
+	display: block;
+	position: fixed;
+	top: 0px;
+	z-index: 11000;
+	background-color: #007dc6;
+}
+aside#sidebar div.search
+{
+	position: fixed;
+	top: 70px;
+	width: 410px;
+	z-index: 11000;
+	background-color: #007dc6;
 }
 aside#sidebar form.search
 {
