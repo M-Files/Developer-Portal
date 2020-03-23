@@ -497,15 +497,34 @@
 				"Title": "Navigation patterns"
 			},
 			{
-				"Link": "/UX-Design/Icons-and-Fonts/",
-				"Title": "Icons and Fonts"
+				"Link": "/UX-Design/Colors/",
+				"Title": "Colors"
+			},
+			{
+				"Link": "/UX-Design/Logo/",
+				"Title": "Logo"
+			},			
+
+			{
+				"Link": "/UX-Design/Typography/",
+				"Title": "Typography"
+			},			
+			{
+				"Link": "/UX-Design/Icons/",
+				"Title": "Icons"
+			},
+
+			{
+				"Link": "/UX-Design/Data-visualization/",
+				"Title": "Data visualization"
 			}
+
 		]
 	},
 	{
 		"Link": "/Intelligent-Metadata-Layer/",
 		"Title": "Intelligent Metadata Layer",
-		"Icon": "mdi:memory",
+		"Icon": "mdi:memory", 
 		"Items": [{
 				"Link": "/Intelligent-Metadata-Layer/External-Repository-Connectors/",
 				"Title": "External Repository Connectors",
