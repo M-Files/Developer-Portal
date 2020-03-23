@@ -475,7 +475,11 @@
 			},
 			{
 				"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/",
-				"Title": "Multi-Server Mode"
+				"Title": "Multi-Server Mode",
+				"Items": [{
+						"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/",
+						"Title": "Task Queues"
+					}]
 			},
 			{
 				"Link": "/Frameworks/Vault-Application-Framework/Searching/",
