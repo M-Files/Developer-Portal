@@ -7,6 +7,7 @@ includeInSearch: true
 Good typography is invisible, enabling users to have a seamless experience while they’re using M-Files products.
 
 ## Typefaces
+
 M-Files Desktop uses Segoe UI typeface. Segoe UI Bold is used especially to highlight pane headings and some other headings. Segoe UI Regular is used in many sections and is the most common typeface type in M-Files desktop.
 
 ![Typefaces](typefaces.png){:.borderless}
