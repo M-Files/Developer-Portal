@@ -493,8 +493,8 @@
 				"Title": "UI Components"
 			},
 			{
-				"Link": "/UX-Design/Navigation-patterns/",
-				"Title": "Navigation patterns"
+				"Link": "/UX-Design/Navigation-Patterns/",
+				"Title": "Navigation Patterns"
 			},
 			{
 				"Link": "/UX-Design/Colors/",
@@ -515,8 +515,8 @@
 			},
 
 			{
-				"Link": "/UX-Design/Data-visualization/",
-				"Title": "Data visualization"
+				"Link": "/UX-Design/Data-Visualization/",
+				"Title": "Data Visualization"
 			}
 
 		]
