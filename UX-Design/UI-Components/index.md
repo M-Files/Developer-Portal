@@ -108,7 +108,7 @@ Context menu items can be added using the [User Interface Extensibility Framewor
 
 ### Function Ribbon 
 
-By using function buttons on the ribbon, user are able to Follow, Pin, or add an object to their Favorites list. With the M-Files 2020 release, we also introduced the `Analyze` button. Clicking this button will execute any registered [Intelligence Services](https://www.m-files.com/user-guide/latest/eng/intelligence_services.html) for the document, and show any additional metadata suggestions on the metadata card.
+By using function buttons on the ribbon, user are able to Follow, Pin, or add an object to their Favorites list. With the M-Files release, we also introduced the `Analyze` button. Clicking this button will execute any registered [Intelligence Services](https://www.m-files.com/user-guide/latest/eng/intelligence_services.html) for the document, and show any additional metadata suggestions on the metadata card.
 
 ![Metadata forms](UI-components-function-ribbon.png)
 

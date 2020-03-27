@@ -8,7 +8,7 @@ includeInSearch: true
 
 ## Layout areas
 
-The M-Files 2020 Desktop client layout includes three general layout areas:
+The M-Files Desktop client layout includes three general layout areas:
 
 * The [Top Pane](#top-pane) holds essential features that are needed all the time, such as structured navigation and vault- and user-operations.
 * The [Listing Area](#listing-area) occupies the left half below the [Top Pane](#top-pane).  The listing area shows access to content as the user navigates the vault structure.
@@ -158,7 +158,7 @@ Cell-background-color* : #cfcfcf, # d4cfbf, # b1dee3, # bce3c0, #eddfb9, #bab4a9
 ![Task Pane location](Page-layout-taskpane.png){:.borderless .leftcol}
 
 {:.rightcol}
-The `Task Pane`, now defaulting to hidden in M-Files 2020, was previously be the place where all quick shortcuts were collected. The `Task Pane` can be collapsed and expanded by clicking of the handle on its right side. The task pane is kept for backwards compatibility.
+The `Task Pane` was previously be the place where all quick shortcuts were collected. The `Task Pane` can be collapsed and expanded by clicking of the handle on its right side. The task pane is kept for backwards compatibility.
 
 {:.rightcol}
 **Style and layout parameters:**   

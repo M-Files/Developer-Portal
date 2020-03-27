@@ -12,9 +12,9 @@ The M-Files icon set is evolving towards simplicity. The target is to allow user
 
 
 <ul class="quicklinks">
-	<li class="api"><a href="{{ site.baseurl }}/UX-Design/Icons-and-Fonts/MF_icons_2018_mar.zip">
+	<li class="api"><a href="{{ site.baseurl }}/UX-Design/Icons/MF_icons.zip">
 	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
-	Download M-Files 2020 icon package (22.9MB)</a></li>
+	Download M-Files icon package (22.9MB)</a></li>
 </ul>
 
 {% comment %}  
