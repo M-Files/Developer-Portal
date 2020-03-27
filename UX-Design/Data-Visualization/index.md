@@ -41,4 +41,4 @@ Typography used in data visualization is Segoe UI.
 
 ## Avoid these
 
-![Avoid in dat avisualization wrong colors, too similar colors, too small graphs and too big differences in scales.](avoid.png){:.borderless .leftcol}
+![Avoid in data visualization: using the wrong colors, too similar colors, too small graphs and too big differences in scales.](avoid.png){:.borderless .leftcol}
