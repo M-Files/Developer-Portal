@@ -28,7 +28,11 @@ Text is displayed bit diferently depending on the background color. With blue ba
 
 Below is explained how to use different fonts in M-Files Desktop.
 
+### Metadata card and text
+
 ![Metadata card and text](metadatacard-text.png){:.borderless}
+
+### Vault view and text
 
 ![Vault view and text](vault-view-text.png){:.borderless}
 

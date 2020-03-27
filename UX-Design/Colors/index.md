@@ -26,9 +26,15 @@ Color | Color name  | Color code  | Where to use
 
 ## How to use and when
 
+### Vault view colors
+
 ![Vault view colors](Vault-view-colors.png){:.borderless}
 
+### Metadata colors
+
 ![Metadata colors](metadata-colors.png){:.borderless}
+
+### Create vault colors
 
 ![Create vault view colors](create-view.png){:.borderless}
 
