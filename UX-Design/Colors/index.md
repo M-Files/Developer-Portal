@@ -6,47 +6,37 @@ includeInSearch: true
 
 ## Colors
 
-
- |  | 
---- | --- | ---
-Background colors |  | 
-![Pinned location](background-color-blue.png){:.borderless .leftcol} | Main background | #318CCC
-![Pinned location](whitebackground.png){:.borderless .leftcol} | White background | #FFFFFF
-![Pinned location](dialogbackground.png){:.borderless .leftcol} | Dialog background | #F2F2F2
-Header colors |  | 
-![Pinned location](metadataheader.png){:.borderless .leftcol} | Metadata header | #3AABED
-![Pinned location](paneheaderinactive.png){:.borderless .leftcol} | Pane header (inactive) | #E6E6E6
-![Pinned location](paneheaderactive.png){:.borderless .leftcol} | Pane header (active) | #CCCCCC
-Text colors |  | 
-![Pinned location](maintext.png){:.borderless .leftcol} | Main text | #000000
-![Pinned location](headertext.png){:.borderless .leftcol} | Header text | #333333
-![Pinned location](headertextinactive.png){:.borderless .leftcol} | Header text  (inactive) | #666666
-![Pinned location](taskpanemenutext.png){:.borderless .leftcol} | Task pane menu text | #FFFFFF
-Button colors |  | 
-![Pinned location](searchbutton.png){:.borderless .leftcol} | Search button | #B3B3B3
-![Pinned location](mainbutton.png){:.borderless .leftcol} | Main button | #318CCC
-Icon colors |  | 
-![Pinned location](activeiconmenu.png){:.borderless .leftcol} | Active icon (menu) | #8E8E8E
-![Pinned location](inactiveiconmenu.png){:.borderless .leftcol} | Inactive icon (menu) | #FFFFFF
-Menu colors |  | 
-![Pinned location](taskpanemenuitemupper.png){:.borderless .leftcol} | Task pane menu item (upper) | #B3B3B3
-![Pinned location](taskpanemenuitemlower.png){:.borderless .leftcol} | Task pane menu item (lower) | #989898
-Hover colors |  | 
-![Pinned location](hover.png){:.borderless .leftcol} | Hover | #E5F3FF
-
+Color | Color name  | Color code  | Where to use
+--- | --- | --- |
+![Main blue](main-blue.png){:.borderless .leftcol} | Main blue | #318CCC | Backgrounds, buttons
+![Secondary blue](secondary-blue.png){:.borderless .leftcol} | Secondary blue | #3AABED | Metadata header
+![Light blue](lightblue.png){:.borderless .leftcol} | Light blue | #CBE8F6| Selected item
+![Light blue 2](lightblue2.png){:.borderless .leftcol} | Light blue 2 | #E5F3FF| Hover
+![Main white](main-white.png){:.borderless .leftcol} | Main white | #FFFFFF | Backgrounds, text color, inactive icon
+![Main black](main-black.png){:.borderless .leftcol} | Main black | #000000 | Text color
+![Gray 1](gray1.png){:.borderless .leftcol} | Gray 1 | #333333 | Base text color
+![Gray 2](gray2.png){:.borderless .leftcol} | Gray 2 | #666666 | Header text  (inactive)
+![Gray 3](gray3.png){:.borderless .leftcol} | Gray 3 | #676767 | Metadata card heading
+![Gray 4](gray4.png){:.borderless .leftcol} | Gray 4 | #808080 | Metadata card italic sub-heading
+![Gray 5](gray5.png){:.borderless .leftcol} | Gray 5 | #999999 |  Metadata card left text
+![Gray 6](gray6.png){:.borderless .leftcol} | Gray 6 | #B3B3B3 | Search button, Task pane menu item (upper)
+![Gray 7](gray7.png){:.borderless .leftcol} | Gray 7 | #CCCCCC | Pane header (active)
+![Gray 8](gray8.png){:.borderless .leftcol} | Gray 8 | #E6E6E6 | Pane header (inactive)
+![Gray 9](gray9.png){:.borderless .leftcol} | Gray 9  | #F2F2F2 | Dialog background 
 
 ## How to use and when
 
-![Vault location](Vault-view-colors.png){:.borderless}
+![Vault view colors](Vault-view-colors.png){:.borderless}
 
-![Vault location](create-view.png){:.borderless}
+![Metadata colors](metadata-colors.png){:.borderless}
+
+![Create vault view colors](create-view.png){:.borderless}
 
 {% comment %} 
 
 ---> Web colors
 
-## Colors
-
+## Web colors
 
 | |
 --- | --- | ---
@@ -69,16 +59,16 @@ Other |  |
 ![Web colors](web-boxes.png){:.borderless .leftcol} | Boxes | #819196
 
 
-## How to use and when
+## Web colors how to use and when
 
 ![Web how when](web-how-to-use.png){:.borderless}
 
 
 ---> Manage colors
 
-## Colors
+## Manage Colors
 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | . . . . . . . . . . . . . . . .
+| | 
 --- | --- | ---
 Background colors |  | 
 ![Manage colors](manage-main-background.png){:.borderless .leftcol} | Main background | #FFFFFF
@@ -99,7 +89,7 @@ Icons |  |
 ![Manage colors](manage-icons.png){:.borderless .leftcol} | Icons | #026491
 
 
-## How to use and when
+## Manage colors how to use and when
 
 ![Web how when](manage-how-to-use.png){:.borderless}
 

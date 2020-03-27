@@ -15,16 +15,16 @@ Logo | Name | Color | Where to use
 
 ## Protected area
 
-![Protected area](protected-area.png){:.borderless}
+![Protected area: 50% clearance exclusion zone](protected-area.png){:.borderless}
 
 
 ## Avoid these
 
-![Avoid these](avoid-these.png){:.borderless}
+![Avoid stretching, complex backgrounds and different colors](avoid-these.png){:.borderless}
 
 ## Distances
 
-![Distance](distances.png){:.borderless}
+![Logo distance from corners 14 px from top and 12 px from left. Logo size: widith 128px, height 29px](distances.png){:.borderless}
 
 ## Download
 

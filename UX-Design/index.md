@@ -9,7 +9,7 @@ This document is intended to brief developers on the design principles of the M-
 
 M-Files Online contains an updated user interface in the desktop client. The following design principles have been followed throughout the design process:
 
-![our design](our-design.png){:.borderless} 
+![M-Files Design: Engaging, familiar, personal and easy to use](our-design.png){:.borderless} 
 
 
 {% comment %}

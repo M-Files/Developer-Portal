@@ -8,53 +8,53 @@ Good typography is invisible, enabling users to have a seamless experience while
 
 ## Typefaces
 
-M-Files Desktop uses Segoe UI typeface. Segoe UI Bold is used especially to highlight pane headings and some other headings. Segoe UI Regular is used in many sections and is the most common typeface type in M-Files desktop.
+M-Files Desktop uses Segoe UI typeface.
 
-![Typefaces](typefaces.png){:.borderless}
+![Typefaces. Segoe UI Light is used in sub-headings. Segoe UI Regular is used as base text. Segoe UI Bold is used to highlight text.](typefaces.png){:.borderless}
 
 ## Scale
 
-Typography scale changes according to text.
+Typography has 4 different scales.
 
-![Scale](scale.png){:.borderless}
+![Scale. Heading size is 22px and weight regular. Sub-Heading size is 14p and weight regular. Sub heading italic size is 12px and weight regular. Base size is 13px and weight regular.](scale.png){:.borderless}
 
 ## Text and background
 
 Text is displayed bit diferently depending on the background color. With blue background white text is used and with gray background darker text is used.
 
-![Text and background](text-background.png){:.borderless}
+![Text and background. With blue background text color is white. With light background text color is black or gray.](text-background.png){:.borderless}
 
 ## How to use and when
 
 Below is explained how to use different fonts in M-Files Desktop.
 
-![Metadata text](metadatacard-text.png){:.borderless}
+![Metadata card and text](metadatacard-text.png){:.borderless}
 
-![Vault view text](vault-view-text.png){:.borderless}
+![Vault view and text](vault-view-text.png){:.borderless}
 
 {% comment %} 
 
 ## Web Typography
 
-### Typefaces
+### Web Typefaces
 
 M-Files Web uses Lato typeface.
 
 ![Web typefaces](web-typefaces.png){:.borderless}
 
-### Scale
+### Web Scale
 
 Typography scale changes according to text.
 
 ![Web typefaces](web-scale.png){:.borderless}
 
-### Text and background colors
+### Web Text and background colors
 
 Text is displayed bit diferently depending on the background color.
 
 ![Web text and background](web-text-and-background.png){:.borderless}
 
-### How to use and when
+### Web How to use and when
 
 Below is explained how to use different fonts in M-Files Web.
 
@@ -63,25 +63,25 @@ Below is explained how to use different fonts in M-Files Web.
 
 ## Manage Typography
 
-### Typefaces
+### Manage Typefaces
 
 M-Files Manage uses Lato typeface.
 
 ![Manage typefaces](manage-typefaces.png){:.borderless}
 
-### Scale
+### Manage Scale
 
 Typography scale changes according to text.
 
 ![Manage scale](manage-scale.png){:.borderless}
 
-### Text and background colors
+### Manage Text and background colors
 
 Text is displayed bit diferently depending on the background color.
 
 ![Manage text and background](manage-text-and-background-colors.png){:.borderless}
 
-### How to use and when
+### Manage How to use and when
 
 Below is explained how to use different fonts in M-Files Web.
 

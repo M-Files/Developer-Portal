@@ -33,12 +33,12 @@ Font colors |  |
 
 Typography used in data visalization is Segoe UI.
 
-![Typography](typography.png){:.borderless .leftcol}
+![Typography in data visualization. Main title size 22px color #333333. Percent number size 18px color #FFFFFF.](typography.png){:.borderless .leftcol}
 
 ## Chart design
 
-![Chart](charts.png){:.borderless .leftcol}
+![Charts. Pie chart size 231px and minimun 143px. Donut chart size 231px and minimun 143px. Column chart size 246px and minimun 147px. Line chart size 419px and minimun 147px.](charts.png){:.borderless .leftcol}
 
 ## Avoid these
 
-![Avoid](avoid.png){:.borderless .leftcol}
+![Avoid in datavisualization wrong colors, too similar colors, too small graphs and too big differences in scales.](avoid.png){:.borderless .leftcol}

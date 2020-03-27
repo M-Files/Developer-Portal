@@ -116,7 +116,7 @@ By using function buttons on the ribbon, user are able to Follow, Pin, or add an
 
 Buttons are used to move to the next step, confirm or cancel actions.
 
-![Buttons](UI-buttons.png){:.borderless}
+![Buttons: M-Files buttons font Segoe UI, #FFFFFF and button background #318CCC. Other buttons are default windows buttons.](UI-buttons.png){:.borderless}
 
 
 {% comment %} 

@@ -151,7 +151,7 @@ Cell-background-color* : #cfcfcf, # d4cfbf, # b1dee3, # bce3c0, #eddfb9, #bab4a9
 
 ##### Color-codings for Pinned item categories 
 
-![Colo-coding for Pinned item](Page-layout-rightpane-pinned-colors.png){:.borderless}  
+![Color-coding for Pinned item](Page-layout-rightpane-pinned-colors.png){:.borderless}  
 
 ### Task Pane  
 
