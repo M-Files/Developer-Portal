@@ -7,7 +7,7 @@ excerpt: External Repository Connectors allow content stored within other reposi
 
 Users can choose to `Promote` this unmanaged content to become `Managed`.  By becoming `Managed`, the object becomes a first-class citizen within the M-Files system.  Managed objects can have metadata (such as a class), appear within dynamic views, and can even participate in workflows.  All the time their respective file data continues to reside on the source system.
 
-Developers build connections to their own data sources by [building their own external repository connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/).
+Developers build connections to their own data sources by [building their own external repository connectors]({{ site.baseurl }}/Intelligent-Metadata-Layer/External-Repository-Connectors/Visual-Studio/).
 
 ## Locating External Repository Connectors
 
