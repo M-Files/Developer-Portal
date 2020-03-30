@@ -76,7 +76,7 @@ M-Files Online contains an updated user interface in the desktop client. The fol
 <article class="block">
 	<img src="engaging.png" alt="Engaging" class="borderless" />
 	<h1>Engaging</h1>
-	<p>A product is "enaging" simply if the user wishes to come back to the application or product to continue using it.  One of the most important factors is to make onboarding as awesome an experience as possible. An engaging product is intuitive and easy to use, whilst fulfilling the purpose it was created for.  M-Files has been designed to be familiar and to be responsive and easily to use.</p>
+	<p>A product is "engaging" simply if the user wishes to come back to the application or product to continue using it.  One of the most important factors is to make onboarding as awesome an experience as possible. An engaging product is intuitive and easy to use, whilst fulfilling the purpose it was created for.  M-Files has been designed to be familiar and to be responsive and easily to use.</p>
 </article>
 
 <article class="block">
@@ -96,7 +96,7 @@ M-Files Online contains an updated user interface in the desktop client. The fol
 
 <article class="block">
 	<img src="easy-to-use.png" alt="Easy to use" class="borderless" />
-	<h1>Engaging</h1>
+	<h1>Easy to use</h1>
 	<p>Easy to use products allow users to navigate and find everything they need without any external help or problems.  M-Files uses application standards and light features to make the use as easy as possible.</p>
 </article>
 
