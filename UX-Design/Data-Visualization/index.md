@@ -37,7 +37,22 @@ Typography used in data visualization is Segoe UI.
 
 ## Chart design
 
-![Charts. Pie chart size 231px and minimum 143px. Donut chart size 231px and minimum 143px. Column chart size 246px and minimum 147px. Line chart size 419px and minimum 147px.](charts.png){:.borderless .leftcol}
+### Pie chart
+
+![Pie chart size 231px and minimum 143px.](piechart.png){:.borderless .leftcol}
+
+### Donut chart
+
+![ Donut chart size 231px and minimum 143px.](donutchart.png){:.borderless .leftcol}
+
+
+### Column chart
+
+![Column chart size 246px and minimum 147px.](columnchart.png){:.borderless .leftcol}
+
+### Line chart
+
+![Line chart size 419px and minimum 147px.](linechart.png){:.borderless .leftcol}
 
 ## Avoid these
 
