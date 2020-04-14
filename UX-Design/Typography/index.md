@@ -32,9 +32,19 @@ Below is explained how to use different fonts in M-Files Desktop.
 
 ![Metadata card and text](metadatacard-text.png){:.borderless}
 
+1. Heading 22px, Gray 3, #676767
+2. Sub-heading (Italic) 12px, Gray 4, #808080
+3. Base 13px,  Gray 5, #999999
+4. Base 13px, Main black, #000000
+5. Base (italic) 13px
+
 ### Vault view and text
 
 ![Vault view and text](vault-view-text.png){:.borderless}
+
+1. Base 13px, Main white, #FFFFFF
+2. Base 13px (bold), Gray 1, #333333
+3. Base 13px, Main black, #000000
 
 {% comment %} 
 
