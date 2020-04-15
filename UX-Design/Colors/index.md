@@ -30,13 +30,41 @@ Color | Color name  | Color code  | Where to use
 
 ![Vault view colors](Vault-view-colors.png){:.borderless}
 
+1. Main blue, #318CCC
+2. Gray 8, #E6E6E6
+3. Gray 6, #B3B3B3
+4. Gray 6, #B3B3B3
+5. Gray 7, #CCCCCC
+6. Gray 6, #333333
+7. Light blue, #CBE8F6
+8. Main black, #000000
+9. Main white, #FFFFFF
+10. Gray 2, #666666
+11. Gray 8, #E6E6E6
+
 ### Metadata colors
 
 ![Metadata colors](metadata-colors.png){:.borderless}
 
+1. Gray 3, #676767
+2. Gray 9, #F2F2F2
+3. Gray 4, #808080
+4. Main blue, #318CCC
+5. Main white, #FFFFFF (icon)
+6.  Main black, #000000
+7.  Gray 5, #999999
+
 ### Create vault colors
 
 ![Create vault view colors](create-view.png){:.borderless}
+
+1. Gray 1, #333333
+2. Main white, #FFFFFF
+3. Gray 9, #F2F2F2
+4. Gray 1,  #333333
+5. Light blue, #CBE8F6
+6. Gray 1, #333333
+7. Main blue, #318CCC
 
 {% comment %} 
 
