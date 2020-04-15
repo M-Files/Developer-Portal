@@ -25,11 +25,14 @@ Broadcast task queues are used to broadcast information generated in one M-Files
 
 The concept of a background operation is more awkward in situations where more than one M-Files server is involved.  As a Vault Application Framework background operation is simply a .NET `Task`, and vault actions performed by the background operation are typically run outside of a transaction, it is fairly easy for background operations to cause unexpected side-effects within the vault.
 
-To resolve this, a `TaskQueue` should be used instead.  Operations running on various servers can add tasks into the queue via the `TaskQueueManager`, which will then delegate processing of the task to an appropriate `TaskQueueProcessor`.
+To resolve this, a `TaskQueue` should be used instead.  Operations running on various servers can add tasks into the queue via the `TaskQueueManager`, which will then delegate processing of the task to an appropriate `TaskQueueProcessor` running on one or more of the M-Files servers.
 
 ### Creating a task processor
 
 ```csharp
+
+private CancellationTokenSource TokenSource { get;set; }
+
 /// <summary>
 /// Override the start operations so we can register our task processor.
 /// </summary>
@@ -167,5 +170,8 @@ MyCustomBroadcastDirective directive = TaskQueueDirective
 #### Application tasks
 
 #### Broadcast messages
+
+### Handling application shutdown
+
 
 ### Recurring background operations
