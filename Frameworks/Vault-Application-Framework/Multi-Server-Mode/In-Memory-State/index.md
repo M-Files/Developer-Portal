@@ -14,8 +14,6 @@ breadcrumb: In-memory state
 
 This is the preferred means of persisting data like such a configuration setting or task processing history that may be shown in a UI dashboard. Taking this precaution into account, if a tolerance of being out of date due to the potential for a race condition is acceptable, the usage of the `SharedSettingsHelper` is recommended.
 
-###### Sample code
-
 ```c#
 // Get the persisted custom status.
 CustomStatus status = SharedSettingsHelper.Get<CustomStatus>

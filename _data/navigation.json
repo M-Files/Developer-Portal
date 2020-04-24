@@ -492,6 +492,9 @@
 					},{
 						"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Recurring-Tasks/",
 						"Title": "Recurring Tasks"
+					},{
+						"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/In-Memory-State/",
+						"Title": "In-Memory State"
 					}]
 			},
 			{
