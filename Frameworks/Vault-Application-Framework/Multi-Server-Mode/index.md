@@ -88,7 +88,7 @@ To install the library, search for the `MFiles.VAF.MultiServerMode` library in n
 
 The concept of a background operation is more awkward in situations where more than one M-Files server is involved.  As a Vault Application Framework background operation is simply a .NET `Task`, and vault actions performed by the background operation are typically run outside of a transaction, it is fairly easy for background operations to cause unexpected side-effects within the vault.
 
-Details on the [types of task queues and how to migrate your code from background processes to task queues is available here](Task-Queues).
+Details on the [types of task queues and how to migrate your code from background processes to task queues is available here](Recurring-Tasks).
 
 ### Handling of in-memory state
 

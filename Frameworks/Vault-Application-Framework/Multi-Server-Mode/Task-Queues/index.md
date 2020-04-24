@@ -13,18 +13,18 @@ Before creating a task queue, you must decide which type of queue is most approp
 
 ### Sequential task queues
 
-Tasks added to a sequential task queue will be processed in the order in which they were added; if tasks 1, 2, then 3 are added to the queue then the tasks will be processed one at a time and the processing order is guaranteed to be 1, 2, 3.
+Tasks added to a [sequential task queue](Sequential) will be processed in the order in which they were added; if tasks 1, 2, then 3 are added to the queue then the tasks will be processed one at a time and the processing order is guaranteed to be 1, 2, 3.
 
 ### Concurrent task queues
 
-Tasks added to a concurrent task queue can be assigned to any number of M-Files servers in the Multi-Server Mode configuration, may be processed concurrently, and without regard for the order in which they were added to the queue.
+Tasks added to a [concurrent task queue](Concurrent) can be assigned to any number of M-Files servers in the Multi-Server Mode configuration, may be processed concurrently, and without regard for the order in which they were added to the queue.
 
 ### Broadcast task queues
 
-Broadcast task queues are used to broadcast information generated in one M-Files server to all others in the Multi-Server Mode configuration.  This can be used to send commands for other servers to update any cached information they may have, for example.
+[Broadcast task queues](Broadcast) are used to broadcast information generated in one M-Files server to all others in the Multi-Server Mode configuration.  This can be used to send commands for other servers to update any cached information they may have, for example.
 
-## Migration of background processes to task queues
+## Migration of background processes to a recurring task
 
 The concept of a background operation is more awkward in situations where more than one M-Files server is involved.  As a Vault Application Framework background operation is simply a .NET `Task`, and vault actions performed by the background operation are typically run outside of a transaction, it is fairly easy for background operations to cause unexpected side-effects within the vault.
 
-To resolve this, a `TaskQueue` should be used instead.  Operations running on various servers can add tasks into the queue via the `TaskQueueManager`, which will then delegate processing of the task to an appropriate `TaskQueueProcessor` running on one or more of the M-Files servers.
+To resolve this, a [recurring task](../Recurring-Tasks) should be used instead.

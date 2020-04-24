@@ -8,7 +8,7 @@ breadcrumb: Recurring tasks
 The code listed below is available within the [M-Files Samples and Libraries GitHub repository](#).
 {:.note .github}
 
-Recurring tasks can be created through the use of a [task queue (typically a concurrent task queue)](Task-Queues/Concurrent/).  Each job should, when processed, re-schedule itself to run once it is completed.
+Recurring tasks can be created through the use of a [task queue](Task-Queues).  Each job should, when processed, re-schedule itself to run once it is completed.
 
 ## Creating a recurring task
 
@@ -16,7 +16,7 @@ Creating a recurring task broadly falls into three steps:
 
 1. Create the task processor.
 2. Scheduling the task execution.
-4. Ensure that the task runs again once the scheduled execution completes.
+3. Ensure that the task runs again once the scheduled execution completes.
 
 ### Create the task processor
 
