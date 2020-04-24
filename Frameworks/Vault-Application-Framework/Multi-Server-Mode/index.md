@@ -95,5 +95,3 @@ Details on the [types of task queues and how to migrate your code from backgroun
 In general in-memory state (e.g. cached lists of content) should be avoided, as it's easy to have situations where the cache on one server has different data to the cache on another server.  However, there are some situations where this may be required.  This can be achieved in a number of ways, but the recommended best practice is the use of named value storage.
 
 Details on the [handling in-memory state is available here](In-Memory-State).
-
-

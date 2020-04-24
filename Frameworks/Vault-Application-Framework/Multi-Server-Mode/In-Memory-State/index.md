@@ -18,16 +18,20 @@ This is the preferred means of persisting data like such a configuration setting
 
 ```c#
 // Get the persisted custom status.
-CustomStatus status = SharedSettingsHelper.Get<CustomStatus>(
-						this.PermanentVault,
-						TaskQueueId,
-						nameof( this.CustomStatusProperty ) );
+CustomStatus status = SharedSettingsHelper.Get<CustomStatus>
+(
+	this.PermanentVault,
+	TaskQueueId,
+	nameof( this.CustomStatusProperty )
+);
 // Set the persisted custom status.
-SharedSettingsHelper.Set(
-				this.PermanentVault,
-				TaskQueueId,
-				nameof( this.CustomStatusProperty ),
-				this.CustomStatusProperty );
+SharedSettingsHelper.Set
+(
+	this.PermanentVault,
+	TaskQueueId,
+	nameof( this.CustomStatusProperty ),
+	this.CustomStatusProperty
+);
 
 // Wrap both the get and set in a property.
 private DateTime TimeOfLastBroadcastTaskCreation
@@ -35,20 +39,24 @@ private DateTime TimeOfLastBroadcastTaskCreation
     get
     {
         // Return the shared settings value.
-        return SharedSettingsHelper.Get<DateTime>(
+        return SharedSettingsHelper.Get<DateTime>
+		(
             this.PermanentVault,
             typeof( VaultApplication ).FullName,
-            nameof( this.TimeOfLastBroadcastTaskCreation ) );
+            nameof( this.TimeOfLastBroadcastTaskCreation )
+		);
     }
 
     set
     {
         // Set the shared settings value.
-        SharedSettingsHelper.Set(
+        SharedSettingsHelper.Set
+		(
             this.PermanentVault,
             typeof( VaultApplication ).FullName,
             nameof( this.TimeOfLastBroadcastTaskCreation ),
-            value );
+            value
+		);
     }
 }
 ```

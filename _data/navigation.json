@@ -478,7 +478,20 @@
 				"Title": "Multi-Server Mode",
 				"Items": [{
 						"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/",
-						"Title": "Task Queues"
+						"Title": "Task Queues",
+						"Items": [{
+							"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Broadcast/",
+							"Title": "Broadcast"
+						},{
+							"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Concurrent/",
+							"Title": "Concurrent"
+						},{
+							"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Sequential/",
+							"Title": "Sequential"
+						}]
+					},{
+						"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Recurring-Tasks/",
+						"Title": "Recurring Tasks"
 					}]
 			},
 			{
