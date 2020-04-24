@@ -39,7 +39,8 @@ protected override void InitializeApplication(Vault vault)
 	}
 	catch (Exception ex)
 	{
-		SysUtils.ReportErrorToEventLog(ex.Message);
+		if (!MFUtils.IsMFilesAlreadyExistsError(ex))
+			SysUtils.ReportErrorToEventLog(ex.Message);
 	}
 
 	base.InitializeApplication(vault);

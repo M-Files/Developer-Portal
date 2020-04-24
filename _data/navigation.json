@@ -514,19 +514,38 @@
 				"Title": "UI Components"
 			},
 			{
-				"Link": "/UX-Design/Navigation-patterns/",
-				"Title": "Navigation patterns"
+				"Link": "/UX-Design/Navigation-Patterns/",
+				"Title": "Navigation Patterns"
 			},
 			{
-				"Link": "/UX-Design/Icons-and-Fonts/",
-				"Title": "Icons, fonts and logo"
+				"Link": "/UX-Design/Colors/",
+				"Title": "Colors"
+			},
+			{
+				"Link": "/UX-Design/Logo/",
+				"Title": "Logo"
+			},			
+
+			{
+				"Link": "/UX-Design/Typography/",
+				"Title": "Typography"
+			},			
+			{
+				"Link": "/UX-Design/Icons/",
+				"Title": "Icons"
+			},
+
+			{
+				"Link": "/UX-Design/Data-Visualization/",
+				"Title": "Data Visualization"
 			}
+
 		]
 	},
 	{
 		"Link": "/Intelligent-Metadata-Layer/",
 		"Title": "Intelligent Metadata Layer",
-		"Icon": "mdi:memory",
+		"Icon": "mdi:memory", 
 		"Items": [{
 				"Link": "/Intelligent-Metadata-Layer/External-Repository-Connectors/",
 				"Title": "External Repository Connectors",

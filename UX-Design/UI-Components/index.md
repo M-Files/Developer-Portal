@@ -37,7 +37,7 @@ Third party tabs created using the [User Interface Extensibility Framework]({{ s
 
 ## Lists
 
-![Lists](UI-components-lists.png)
+![Lists](UI-components-lists_new.png)
 
 A `List` is the typical method for displaying a collection of multiple items such as views or objects. Lists are mostly located within the [Listing Area]({{ site.baseurl }}/UX-Design/Page-Layout/#listing-area).
 
@@ -78,9 +78,9 @@ Right above the Listing area, a `Search Bar` with search field, search button an
 
 `Search Filters` tab will be activated when search field is focused.  User will found options to enhance the search function before or after search is performed.  
 
-![search filters](UI-components-search-filters.png)
+![search filters](Search-filters.png)
 
-##### Advanced search options
+#### Advanced search options
 
 `Advanced search options` will be toggled on or off by clicking on the right most icon of the Search bar.  
 
@@ -96,7 +96,7 @@ Example of a common `Dialog` in M-Files that consists a title, an icon, a dialog
 
 Here is an example of a context menu activated by right-click on an object which provides corresponding functions.  
 
-![menus](UI-components-menus.png)
+![menus](UI-menu.png)
 
 Context menu items can be added using the [User Interface Extensibility Framework]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/).
  
@@ -108,6 +108,175 @@ Context menu items can be added using the [User Interface Extensibility Framewor
 
 ### Function Ribbon 
 
-By using function buttons on the ribbon, user are able to Follow, Pin, or add an object to their Favorites list. With the M-Files 2018 release, we also introduced the `Analyze` button. Clicking this button will execute any registered [Intelligence Services](https://www.m-files.com/user-guide/latest/eng/intelligence_services.html) for the document, and show any additional metadata suggestions on the metadata card.
+By using function buttons on the ribbon, user are able to Follow, Pin, or add an object to their Favorites list. With the M-Files release, we also introduced the `Analyze` button. Clicking this button will execute any registered [Intelligence Services](https://www.m-files.com/user-guide/latest/eng/intelligence_services.html) for the document, and show any additional metadata suggestions on the metadata card.
 
 ![Metadata forms](UI-components-function-ribbon.png)
+
+### Buttons
+
+Buttons are used to move to the next step, confirm or cancel actions.
+
+![Buttons: M-Files buttons font Segoe UI, #FFFFFF and button background #318CCC. Other buttons are default windows buttons.](UI-buttons.png){:.borderless}
+
+
+{% comment %} 
+
+## Web UI Components
+
+### Search
+Top of the page, a Search Bar with search field, search button and access to filter option can be found.
+
+![Web search](web-search.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Font-color: #333333   
+Font-size: 18px   
+Search-bar: 846 x 40 px   
+Icon-color-active: #D2DAEC   
+Icon color-inactive: #3D679F   
+Icon-size: 24 x 24 px   
+
+#### Search filter
+Filters can be acceded from the filter icon next to search bar. You can filter search objects with the filter list.
+
+![Search filter](web-search-filter.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Font-color: #222222   
+Font-size: 14px   
+Sub-font-size: 12px   
+
+### Menu
+Below log, breadcrumb and search is the main menu. Here you can acces views: Recent, Pinned, Views, others (customized views) and add new view.
+
+![Web menu](web-menu.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Font-color: #222222   
+Font-size: 20px   
+UnderLine-color: #033A82   
+Divider-color: #3D679F   
+Button-color: #3D679F   
+
+### Lists
+List view shows search results.
+
+![Web lists](web-lists.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Font-size: 14px   
+Font-color: #333333   
+Hover-first: #E5EBF2   
+Hover-second: #D2DAEC   
+
+### Preview
+
+Preview window shows preview of the selected object.
+
+### Metadata
+
+![Web metadata](web-metadata.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Font-size: 14px   
+Font-color: #333333   
+Second-Font-color: #50575D   
+Progress-Font-color: #033A82   
+
+### Tabs
+
+![Web tabs](web-tabs.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Item-background-color (active): #D2DAEC   
+Item-background-color (inactive): #FFFFFF   
+Item-box-size: 25 x 89px   
+Font-size: 14px   
+Font-color: #333333   
+Icon-size: 8 x 24px   
+Icon-color: #3D679F   
+
+### Pinned
+
+![Web pinned](web-pinned.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Pinned-box-size: 107 x 107px
+
+### Buttons
+There are few different button types:
+
+![Web buttons](web-buttons.png){:.borderless}
+
+### Dialogs
+In this section you will find information about dialogs. Note that dialogs are always 408 px or 758 wide. Height varies with content.
+
+Button sizes = 76 x 26 px 
+
+![Web dialogs](web-dialogs.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Font-size: 14px   
+Font-color: #333333   
+
+## Manage UI components
+
+### Search
+M-Files Manage search bar allows user search. Next to it is also subscription selection.
+
+![Manage search](manage-search.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Font-size: 14px   
+Font-color-search: #A1A1A1   
+Font-color-subscription: #424242    
+
+### Dialogs
+
+![Manage dialogs](manage-dialogs.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Heading-font-size: 20px   
+Heading-font-color: #000000   
+Font-size: 14px   
+Font-color: #333333  
+
+### Tables
+
+![Manage tables](manage-tables.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Font-size: 16 px   
+Font-color: #333333   
+Line-color: #CBDDE2   
+Line-color-short: #EAECED   
+
+### Buttons
+There are few different button types:
+
+![Manage buttons](manage-buttons.png){:.borderless}
+
+
+### Menu
+
+![Manage menu](manage-menu.png){:.borderless}
+
+{: .secondary}
+**Style and layout parameters:**  
+Selected-item-background: #026491   
+Font-size: 16 px   
+Font-color-selected: #FFFFFF   
+Font-color-unselected: #222222   
+
+{% endcomment %}
