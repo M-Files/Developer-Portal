@@ -3,6 +3,7 @@ layout: page
 title: Recurring tasks in Multi-Server Mode Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Recurring tasks
+requiredMFilesServerVersion: 20.4.8954.0
 ---
 
 The code listed below is available within the [M-Files Samples and Libraries GitHub repository](#).
@@ -23,7 +24,7 @@ Creating a recurring task broadly falls into three steps:
 The code below creates a [concurrent task queue](Task-Queues/Concurrent/).  More details on the specific functionality of a concurrent task queue can be found on the dedicated page.
 {:.note}
 
-```csharp
+{% highlight csharp %}
 /// <summary>
 /// The entry point for this Vault Application Framework application.
 /// </summary>
@@ -113,13 +114,13 @@ public class VaultApplication
 		this.TaskProcessor.RegisterTaskQueues();
 	}
 }
-```
+{% endhighlight %}
 
 ### Scheduling the task execution
 
 Consider the situation of a task that should be run hourly.  The first step is to locate any tasks that represent scheduled execution of this process in the future, and ensure that they are marked as cancelled.  This stops the task being processed multiple times:
 
-```csharp
+{% highlight csharp %}
 /// <summary>
 /// Cancels pre-existing hourly tasks in the waiting or in progress state
 /// and schedules a new task to process in one hour.
@@ -158,13 +159,13 @@ private void ScheduleHourlyTask()
 	if( this.Configuration.LoggingEnabled )
 		Debug.WriteLine( $"Hourly task scheduled with task id => {nextHourlyTaskId}." );
 }
-```
+{% endhighlight %}
 
 ### Recurring
 
 The task defined above will be processed in one hour by a method named `ProcessHourlyTask`, but the task itself will not repeat.  To do so we must react to the `ProcessingComplete` event and re-schedule the same task:
 
-```csharp
+{% highlight csharp %}
 /// <summary>
 /// Processes a re-occuring hourly task.
 /// </summary>
@@ -194,4 +195,4 @@ private void ProcessHourlyTask( TaskProcessorJob job )
 
 	// Do hourly work here...
 }
-```
+{% endhighlight %}

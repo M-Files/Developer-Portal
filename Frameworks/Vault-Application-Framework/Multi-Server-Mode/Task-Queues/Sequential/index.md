@@ -3,6 +3,7 @@ layout: page
 title: Sequential task queues in Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Sequential task queues
+requiredMFilesServerVersion: 20.4.8954.0
 ---
 
 The code listed below is available within the [M-Files Samples and Libraries GitHub repository](#).
@@ -27,7 +28,7 @@ Creating the task queue within the VAF is broken down into three main steps:
 
 It is good practice to expose configurable values to customize the processing of a task queue.  Below are the options used within this sample application.
 
-```csharp
+{% highlight csharp %}
 [DataContract]
 public class Configuration
 {
@@ -53,7 +54,7 @@ public class Configuration
 	)]
 	public int MaxPollingIntervalInSeconds { get; set; } = 10;
 }
-```
+{% endhighlight %}
 
 ### Registering and enabling the task queue
 
@@ -62,7 +63,7 @@ Within this step we will define a `CancellationTokenSource` for cancellations of
 The task queue registration method (`RegisterTaskQueues`) will be populated in the next step.
 {:.note}
 
-```csharp
+{% highlight csharp %}
 public class VaultApplication
 	: MFiles.VAF.Core.ConfigurableVaultApplicationBase<Configuration>
 {
@@ -112,14 +113,14 @@ public class VaultApplication
 		// TODO: Register the task queue.
 	}
 }
-```
+{% endhighlight %}
 
 Remember that it is important that the queue ID is unique to your application.
 {:.note}
 
 ### Create the sequential task processor
 
-```csharp
+{% highlight csharp %}
 /// <summary>
 /// Registers the task queue used by this application or module.
 /// </summary>
@@ -173,11 +174,11 @@ private void ProcessSequentialTask( TaskProcessorJob job )
 {
 	// TODO: Process the job itself.
 }
-```
+{% endhighlight %}
 
 ### Implement the task processing method
 
-```csharp
+{% highlight csharp %}
 /// <summary>
 /// Processes a single job.
 /// </summary>
@@ -206,7 +207,7 @@ private void ProcessSequentialTask( TaskProcessorJob job )
 	// TODO: Perform the processing.
 
 }
-```
+{% endhighlight %}
 
 ## Using custom directives
 
@@ -214,7 +215,7 @@ Each task within the queue can be provided with additional data that can be used
 
 Custom directive classes can also be used to provide additional data to the method processing the job.  In the example below, a custom directive class is used to allow details about a specific object version to be passed to the job:
 
-```csharp
+{% highlight csharp %}
 public class ObjVerExTaskQueueDirective
 	: TaskQueueDirective
 {
@@ -223,11 +224,11 @@ public class ObjVerExTaskQueueDirective
 	/// </summary>
 	public string ObjVerEx { get; set; }
 }
-```
+{% endhighlight %}
 
 This data can then be retrieved within the task processing method:
 
-```csharp
+{% highlight csharp %}
 /// <summary>
 /// Processes a single job.
 /// </summary>
@@ -249,7 +250,7 @@ private void ProcessSequentialTask( TaskProcessorJob job )
 	// TODO: Perform the processing.
 
 }
-```
+{% endhighlight %}
 
 The custom directive class must be serializable by `Newtonsoft.JSON`, as it will be converted to a JSON representation then stored as a byte array against the job.
 {:.note}
@@ -258,7 +259,7 @@ The custom directive class must be serializable by `Newtonsoft.JSON`, as it will
 
 Items can be added to the queue from elsewhere within the Vault Application Framework application.  In the example below, a task is added to the task queue, but no custom directive is used.
 
-```csharp
+{% highlight csharp %}
 // Create a task in the task queue.
 var itemId = this.TaskProcessor.CreateApplicationTaskSafe
 (
@@ -266,13 +267,13 @@ var itemId = this.TaskProcessor.CreateApplicationTaskSafe
 	VaultApplication.SequentialTaskQueueId, // The queue to add to.
 	VaultApplication.TaskTypeSequentialTask // The task type.
 );
-```
+{% endhighlight %}
 
 ### Providing data to the task via a directive
 
 If a task requires additional data then a custom directive can be provided when the object is created.  Note that the directive must be provided as a byte array.
 
-```csharp
+{% highlight csharp %}
 // Create a task in the task queue.
 var itemId = this.TaskProcessor.CreateApplicationTaskSafe
 (
@@ -281,4 +282,4 @@ var itemId = this.TaskProcessor.CreateApplicationTaskSafe
 	VaultApplication.TaskTypeSequentialTask, // The task type.
 	new ObjVerExTaskQueueDirective { ObjVerEx = item.ToString() }.ToBytes()
 );
-```
+{% endhighlight %}

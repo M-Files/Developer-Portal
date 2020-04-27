@@ -3,6 +3,7 @@ layout: page
 title: In-memory state usage in Multi-Server Mode Vault Application Framework applications
 includeInSearch: true
 breadcrumb: In-memory state
+requiredMFilesServerVersion: 20.4.8954.0
 ---
 
 **In general in-memory state (e.g. cached lists of content) should be avoided**, as it's easy to have situations where the cache on one server has different data to the cache on another server.  However, there are some situations where this may be required.  This can be achieved in a number of ways, but the recommended best practice is the use of named value storage.
@@ -14,7 +15,7 @@ breadcrumb: In-memory state
 
 This is the preferred means of persisting data like such a configuration setting or task processing history that may be shown in a UI dashboard. Taking this precaution into account, if a tolerance of being out of date due to the potential for a race condition is acceptable, the usage of the `SharedSettingsHelper` is recommended.
 
-```c#
+{% highlight csharp %}
 // Get the persisted custom status.
 CustomStatus status = SharedSettingsHelper.Get<CustomStatus>
 (
@@ -57,4 +58,4 @@ private DateTime TimeOfLastBroadcastTaskCreation
 		);
     }
 }
-```
+{% endhighlight %}
