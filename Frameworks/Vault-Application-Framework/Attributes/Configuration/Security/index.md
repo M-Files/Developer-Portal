@@ -12,7 +12,7 @@ breadcrumb: Validation
 [Version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21)
 {:.tag.available title="This functionality is available in version 2.1 of the Vault Application Framework."}
 
-The approach shown below is only compatible with [version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21) of the Vault Application Framework.
+The approach shown below is only compatible with [version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21) of the Vault Application Framework.  You must also be inheriting from the `ConfigurableVaultApplicationBase<T>` base class; if you inherit from any other base class then the security attribute will not be applied.
 {:.note.warning}
 
 ## Passwords within configuration elements
