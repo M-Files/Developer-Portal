@@ -15,11 +15,12 @@ Recurring tasks can be created through the use of a [task queue](Task-Queues).  
 
 ## Creating a recurring task
 
-Creating a recurring task broadly falls into three steps:
+Creating a recurring task broadly falls into four steps:
 
-1. Create the task processor.
-2. Scheduling the task execution.
-3. Ensure that the task runs again once the scheduled execution completes.
+1. Ensure that you implement `IUsesTaskQueue`.
+2. Create the task processor.
+3. Scheduling the task execution.
+4. Ensure that the task runs again once the scheduled execution completes.
 
 ### Create the task processor
 
