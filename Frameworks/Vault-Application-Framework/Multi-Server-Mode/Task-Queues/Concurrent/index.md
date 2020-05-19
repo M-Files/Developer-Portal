@@ -22,7 +22,7 @@ Each queue can process one or more task types, with each task type being process
 Creating the task queue within the VAF is broken down into three main steps:
 
 1. Creating the configuration options.
-2. Override the `StartOperations` method to register and enable your queue(s).
+2. Implement `IUsesTaskQueues`, and override the `StartOperations` method to register and enable your queue(s).
 3. Create the `AppTaskBatchProcessor`, providing suitable `AppTaskBatchProcessorSettings`.  This includes providing a collection of task type IDs and their associated processing methods.
 4. Implement the task processing method(s), reporting data on the job processing back to the task processor.
 
