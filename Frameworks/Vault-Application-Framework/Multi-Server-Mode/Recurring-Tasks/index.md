@@ -127,37 +127,42 @@ Consider the situation of a task that should be run hourly.  The first step is t
 /// </summary>
 private void ScheduleHourlyTask()
 {
-	// Find any tasks of the appropriate type that are already scheduled.
-	ApplicationTaskInfos tasksToCancel = TaskQueueAdministrator.FindTasks
-	(
-		this.PermanentVault,
-		VaultApplication.BackgroundOperationTaskQueueId,
-		t => t.Type == VaultApplication.TaskTypeHourlyRecurringTask,
-		new [] { MFTaskState.MFTaskStateWaiting, MFTaskState.MFTaskStateInProgress }
-	);
-
-	// Cancel the pre-existing hourly tasks.
-	foreach( ApplicationTaskInfo taskInfo in tasksToCancel )
-		this.TaskProcessor.UpdateCancelledJobInTaskQueue
+	try
+	{
+		// Find any tasks of the appropriate type that are already scheduled.
+		ApplicationTaskInfos tasksToCancel = TaskQueueAdministrator.FindTasks
 		(
-			taskInfo.ToApplicationTask(),
-			string.Empty,
-			"Superseded."
+			this.PermanentVault,
+			VaultApplication.BackgroundOperationTaskQueueId,
+			t => t.Type == VaultApplication.TaskTypeHourlyRecurringTask,
+			new [] { MFTaskState.MFTaskStateWaiting, MFTaskState.MFTaskStateInProgress }
 		);
 
-	// Schedule the task to execute in 1 hour.
-	string nextHourlyTaskId = this.TaskProcessor.CreateApplicationTaskSafe
-	(
-		true,
-		VaultApplication.BackgroundOperationTaskQueueId,
-		VaultApplication.TaskTypeHourlyRecurringTask,
-		null,
-		DateTime.Now.AddHours( 1 ).ToUniversalTime()
-	);
+		// Cancel the pre-existing hourly tasks.
+		foreach( ApplicationTaskInfo taskInfo in tasksToCancel )
+			this.TaskProcessor.UpdateCancelledJobInTaskQueue
+			(
+				taskInfo.ToApplicationTask(),
+				string.Empty,
+				"Superseded."
+			);
+	}
+	finally
+	{
+		// Schedule the task to execute in 1 hour.
+		string nextHourlyTaskId = this.TaskProcessor.CreateApplicationTaskSafe
+		(
+			true,
+			VaultApplication.BackgroundOperationTaskQueueId,
+			VaultApplication.TaskTypeHourlyRecurringTask,
+			null,
+			DateTime.Now.AddHours( 1 ).ToUniversalTime()
+		);
 
-	// Debug Logging.
-	if( this.Configuration.LoggingEnabled )
-		Debug.WriteLine( $"Hourly task scheduled with task id => {nextHourlyTaskId}." );
+		// Debug Logging.
+		if( this.Configuration.LoggingEnabled )
+			Debug.WriteLine( $"Hourly task scheduled with task id => {nextHourlyTaskId}." );
+	}
 }
 {% endhighlight %}
 

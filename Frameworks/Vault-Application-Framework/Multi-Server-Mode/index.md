@@ -19,7 +19,7 @@ Applications that are compatible with Multi-Server Mode will also install and fu
 
 ## Concepts
 
-* Note that your vault application will be run concurrently on all servers.  If there are three M-Files servers in the multi-server configuration then there will be three instances of your application running.
+* Note that your vault application may be run concurrently on all servers.  If there are three M-Files servers in the multi-server configuration then there will be up to three instances of your application running.
 
 * Where a user performs an action in one server (e.g. they create an object), that server will execute any reactive code such as event handlers or property calculations.
 

@@ -275,19 +275,12 @@ article.page h3 a {
 
 #notice
 {
-	position: fixed;
-	opacity: 0.6;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: auto;
-    margin: 10px;
-    padding: 5px 20px;
-    z-index: 12000;
     text-align: center;
     background-color: #004166;
     color: white;
 	font-size: 1em;
+	margin: 0px;
+	padding: 5px 20px;
 	border: 1px solid #CCC;
 	a
 	{

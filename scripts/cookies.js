@@ -45,8 +45,8 @@ $(document).ready(function()
 	// If we are running on the development server then show a UI.
 	if(window.location.hostname == "development.staging.motivesys.com")
 	{
-		var $notice = $('<div id="notice">This is the internal development version of the M-Files Developer Portal, and may contain content that is incomplete or inaccurate.  Please reference the <a href="https://developer.m-files.com">live M-Files Developer Portal</a> for current public documentation.</div>');
-		$body.append($notice)
+		var $notice = $('<div id="notice">This is the internal development version of the M-Files Developer Portal, and may contain content that is incomplete, or inaccurate, or not yet in public builds.  Please reference the <a href="https://developer.m-files.com">live M-Files Developer Portal</a> for current public documentation.</div>');
+		$("article.page").prepend($notice);
 	}
 
 	// If they've already accepted then die.

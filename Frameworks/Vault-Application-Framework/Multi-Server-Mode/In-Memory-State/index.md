@@ -40,9 +40,9 @@ private DateTime TimeOfLastBroadcastTaskCreation
         // Return the shared settings value.
         return SharedSettingsHelper.Get<DateTime>
 		(
-            this.PermanentVault,
-            typeof( VaultApplication ).FullName,
-            nameof( this.TimeOfLastBroadcastTaskCreation )
+			this.PermanentVault,
+			typeof( VaultApplication ).FullName,
+			nameof( this.TimeOfLastBroadcastTaskCreation )
 		);
     }
 
@@ -51,10 +51,10 @@ private DateTime TimeOfLastBroadcastTaskCreation
         // Set the shared settings value.
         SharedSettingsHelper.Set
 		(
-            this.PermanentVault,
-            typeof( VaultApplication ).FullName,
-            nameof( this.TimeOfLastBroadcastTaskCreation ),
-            value
+			this.PermanentVault,
+			typeof( VaultApplication ).FullName,
+			nameof( this.TimeOfLastBroadcastTaskCreation ),
+			value
 		);
     }
 }
