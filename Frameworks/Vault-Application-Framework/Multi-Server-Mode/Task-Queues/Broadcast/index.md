@@ -3,8 +3,10 @@ layout: page
 title: Broadcast task queues in Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Broadcast task queues
-requiredMFilesServerVersion: 20.4.8954.0
 ---
+
+The approach shown below is only compatible with version 2.2(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+{:.note.warning}
 
 The code listed below is available within the [M-Files Samples and Libraries GitHub repository](#).
 {:.note .github}
@@ -90,18 +92,27 @@ The task queue registration method (`RegisterTaskQueues`) will be populated in t
 {:.note}
 
 {% highlight csharp %}
+/// <summary>
+/// The entry point for this Vault Application Framework application.
+/// </summary>
+/// <remarks>Examples and further information available on the developer portal: http://developer.m-files.com/. </remarks>
 public class VaultApplication
-	: MFiles.VAF.Core.ConfigurableVaultApplicationBase<Configuration>
+	: MFiles.VAF.Core.ConfigurableVaultApplicationBase<Configuration>, IUsesTaskQueue
 {
 	/// <summary>
 	/// The token source for task processing cancellation.
 	/// </summary>
 	private CancellationTokenSource TokenSource { get; set; }
-
+	
 	/// <summary>
-	/// The concurrent task processor.
+	/// The broadcast task processor.
 	/// </summary>
 	public AppTaskBatchProcessor TaskProcessor { get; set; }
+
+	/// <summary>
+	/// The server that this application is running on.
+	/// </summary>
+	internal static VaultServerAttachment CurrentServer { get; private set; }
 
 	/// <summary>
 	/// The task queue ID. This should be unique for your application
@@ -124,8 +135,10 @@ public class VaultApplication
 		// Allow the base to process the start operations.
 		base.StartOperations(vaultPersistent);
 
-		// Register the task queues
-		this.RegisterTaskQueues();
+		// Set a reference to the current server reference.
+		VaultApplication.CurrentServer = vaultPersistent
+			.GetVaultServerAttachments()
+			.GetCurrent();
 
 		// Enable polling/processing of the queue.
 		this.TaskQueueManager.EnableTaskPolling(true);
@@ -218,14 +231,16 @@ private void ProcessBroadcastTask(TaskProcessorJob job)
 	this.TaskProcessor.UpdateTaskAsAssignedToProcessor( job );
 
 	// Sanity.
-	if (null == job.Data)
+	if (null == job.Data?.Value)
 	{
 		return;
 	}
 
 	// Deserialize the directive.
-	BroadcastDirective dir = TaskQueueDirective.Parse<BroadcastDirective>( job.Data );
-	if( dir.GeneratedFromGuid == this.TaskProcessor.MultiServerGuid )
+	EmailByUserPatchDirective dir = TaskQueueDirective.Parse<EmailByUserPatchDirective>( job.Data.Value );
+
+	// If this server generated it then ignore it.
+	if( dir.GeneratedFromGuid == CurrentServer.ServerID )
 	{
 		return;
 	}
@@ -269,8 +284,8 @@ private void ProcessBroadcastTask(TaskProcessorJob job)
 	// ... method body left out for clarity
 
 	// Deserialize the directive.
-	BroadcastDirective dir = TaskQueueDirective.Parse<EmailByUserPatchDirective>( job.Data );
-	if( dir.GeneratedFromGuid == this.TaskProcessor.MultiServerGuid )
+	BroadcastDirective dir = TaskQueueDirective.Parse<EmailByUserPatchDirective>( job.Data?.Value );
+	if( dir.GeneratedFromGuid == CurrentServer.ServerID )
 	{
 		return;
 	}

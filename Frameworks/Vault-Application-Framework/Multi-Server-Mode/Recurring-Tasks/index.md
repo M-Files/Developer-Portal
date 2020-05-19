@@ -3,8 +3,10 @@ layout: page
 title: Recurring tasks in Multi-Server Mode Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Recurring tasks
-requiredMFilesServerVersion: 20.4.8954.0
 ---
+
+The approach shown below is only compatible with version 2.2(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+{:.note.warning}
 
 The code listed below is available within the [M-Files Samples and Libraries GitHub repository](#).
 {:.note .github}
@@ -30,10 +32,22 @@ The code below creates a [concurrent task queue](Task-Queues/Concurrent/).  More
 /// </summary>
 /// <remarks>Examples and further information available on the developer portal: http://developer.m-files.com/. </remarks>
 public class VaultApplication
-	: MFiles.VAF.Core.ConfigurableVaultApplicationBase<Configuration>
+	: MFiles.VAF.Core.ConfigurableVaultApplicationBase<Configuration>, IUsesTaskQueue
 {
+	/// <summary>
+	/// The token source for task processing cancellation.
+	/// </summary>
 	private CancellationTokenSource TokenSource { get; set; }
+
+	/// <summary>
+	/// The concurrent task processor.
+	/// </summary>
 	public AppTaskBatchProcessor TaskProcessor { get; set; }
+
+	/// <summary>
+	/// The server that this application is running on.
+	/// </summary>
+	internal static VaultServerAttachment CurrentServer { get; private set; }
 
 	/// <summary>
 	/// The task queue ID. This should be unique for your application
@@ -56,8 +70,10 @@ public class VaultApplication
 		// Allow the base to process the start operations.
 		base.StartOperations(vaultPersistent);
 
-		// Register the task queues
-		this.RegisterTaskQueues();
+		// Set a reference to the current server reference.
+		VaultApplication.CurrentServer = vaultPersistent
+			.GetVaultServerAttachments()
+			.GetCurrent();
 
 		// Enable polling/processing of the queue.
 		this.TaskQueueManager.EnableTaskPolling(true);
@@ -93,7 +109,6 @@ public class VaultApplication
 					MaxConcurrentJobs = this.Configuration.MaxConcurrentJobs,
 					TaskHandlers = new Dictionary<string, TaskProcessorJobHandler>
 					{
-						/* Register a task type that will be processed by ProcessHourlyTask */
 						{ VaultApplication.TaskTypeHourlyRecurringTask, ProcessHourlyTask }
 					},
 					TaskQueueManager = this.TaskQueueManager,
@@ -106,7 +121,6 @@ public class VaultApplication
 
 			// Schedule the hourly task.
 			ScheduleHourlyTask();
-
 
 		}
 
@@ -135,11 +149,11 @@ private void ScheduleHourlyTask()
 			this.PermanentVault,
 			VaultApplication.BackgroundOperationTaskQueueId,
 			t => t.Type == VaultApplication.TaskTypeHourlyRecurringTask,
-			new [] { MFTaskState.MFTaskStateWaiting, MFTaskState.MFTaskStateInProgress }
+			new[] { MFTaskState.MFTaskStateWaiting, MFTaskState.MFTaskStateInProgress }
 		);
 
 		// Cancel the pre-existing hourly tasks.
-		foreach( ApplicationTaskInfo taskInfo in tasksToCancel )
+		foreach (ApplicationTaskInfo taskInfo in tasksToCancel)
 			this.TaskProcessor.UpdateCancelledJobInTaskQueue
 			(
 				taskInfo.ToApplicationTask(),
@@ -156,12 +170,12 @@ private void ScheduleHourlyTask()
 			VaultApplication.BackgroundOperationTaskQueueId,
 			VaultApplication.TaskTypeHourlyRecurringTask,
 			null,
-			DateTime.Now.AddHours( 1 ).ToUniversalTime()
+			DateTime.Now.AddHours(1).ToUniversalTime()
 		);
 
 		// Debug Logging.
-		if( this.Configuration.LoggingEnabled )
-			Debug.WriteLine( $"Hourly task scheduled with task id => {nextHourlyTaskId}." );
+		if (this.Configuration.LoggingEnabled)
+			Debug.WriteLine($"Hourly task scheduled with task id => {nextHourlyTaskId}.");
 	}
 }
 {% endhighlight %}
@@ -179,7 +193,7 @@ private void ProcessHourlyTask( TaskProcessorJob job )
 {
 	// Debug Logging.
 	if( this.Configuration.LoggingEnabled )
-		Debug.WriteLine( $"Hourly task processing with task id => {job.Data.Id}." );
+		Debug.WriteLine( $"Hourly task processing with task id => {job.Data?.Value.Id}." );
 
 	// Bind to the completed event ( called always ) of the job.
 	// That way even if the job is canceled, fails, or finishes successfully
@@ -198,6 +212,6 @@ private void ProcessHourlyTask( TaskProcessorJob job )
 	// Update has having been assigned.
 	this.TaskProcessor.UpdateTaskAsAssignedToProcessor( job );
 
-	// Do hourly work here...
+	// TODO: Do hourly work here...
 }
 {% endhighlight %}

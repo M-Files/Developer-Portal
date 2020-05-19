@@ -3,8 +3,10 @@ layout: page
 title: In-memory state usage in Multi-Server Mode Vault Application Framework applications
 includeInSearch: true
 breadcrumb: In-memory state
-requiredMFilesServerVersion: 20.4.8954.0
 ---
+
+The approach shown below is only compatible with version 2.2(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+{:.note.warning}
 
 **In general in-memory state (e.g. cached lists of content) should be avoided**, as it's easy to have situations where the cache on one server has different data to the cache on another server.  However, there are some situations where this may be required.  This can be achieved in a number of ways, but the recommended best practice is the use of named value storage.
 
@@ -35,27 +37,27 @@ SharedSettingsHelper.Set
 // Wrap both the get and set in a property.
 private DateTime TimeOfLastBroadcastTaskCreation
 {
-    get
-    {
-        // Return the shared settings value.
-        return SharedSettingsHelper.Get<DateTime>
+	get
+	{
+		// Return the shared settings value.
+		return SharedSettingsHelper.Get<DateTime>
 		(
 			this.PermanentVault,
 			typeof( VaultApplication ).FullName,
 			nameof( this.TimeOfLastBroadcastTaskCreation )
 		);
-    }
+	}
 
-    set
-    {
-        // Set the shared settings value.
-        SharedSettingsHelper.Set
+	set
+	{
+		// Set the shared settings value.
+		SharedSettingsHelper.Set
 		(
 			this.PermanentVault,
 			typeof( VaultApplication ).FullName,
 			nameof( this.TimeOfLastBroadcastTaskCreation ),
 			value
 		);
-    }
+	}
 }
 {% endhighlight %}

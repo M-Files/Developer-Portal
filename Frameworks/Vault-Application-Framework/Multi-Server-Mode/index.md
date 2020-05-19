@@ -3,8 +3,10 @@ layout: page
 title: The Vault Application Framework and M-Files Multi-Server Mode
 includeInSearch: true
 breadcrumb: Multi-Server Mode
-requiredMFilesServerVersion: 20.4.8954.0
 ---
+
+The approach shown below is only compatible with version 2.2 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+{:.note.warning}
 
 M-Files Multi-Server Mode is an architectural implementation pattern available from M-Files 20.5 onwards.
 
@@ -75,15 +77,6 @@ You will need to alter the code of any existing Vault Application Framework appl
   </extension-objects>
 </application>
 ```
-
-### The `MFiles.VAF.MultiServerMode` library
-
-The M-Files API and the Vault Application Framework provide the minimum base functionality to utilise the Multi-Server Mode.  The `MFiles.VAF.MultiServerMode` library was created to help reduce the amount of boilerplate code required to use this new functionality from within applications built on the Vault Application Framework.
-
-It is highly recommended that you utilise this library whilst building applications that target the M-Files Multi-Server Mode.  This page focuses on the use of this library, not on the core API or VAF classes and methods.
-
-To install the library, search for the `MFiles.VAF.MultiServerMode` library in nuget.  A reference to this library is included by default in the Vault Application Framework Multi-Server Mode template.
-{:.note}
 
 ### Migration of background processes to task queues
 
