@@ -29,10 +29,10 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 ## Version 2.2
 
-Version 2.2 of the Vault Application Framework is compatible with M-Files 20.4 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
+Version 2.2 of the Vault Application Framework is compatible with M-Files 20.5 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
 {:.note.warning}
 
-Alongside numerous internal bugfixes and performance work, this release brings compatibility with the [M-Files Multi-Server Mode functionality]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/).  This version can also be used on single-server implementations of M-Files, provided the M-Files version is at least 20.4.
+Alongside numerous internal bugfixes and performance work, this release brings compatibility with the [M-Files Multi-Server Mode functionality]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/).  This version can also be used on single-server implementations of M-Files, provided the M-Files version is at least 20.5.
 
 ## Version 2.1
 
