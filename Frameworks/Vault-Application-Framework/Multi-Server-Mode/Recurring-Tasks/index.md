@@ -11,7 +11,7 @@ The approach shown below is only compatible with version 2.2(and higher) of the 
 The code listed below is available within the [M-Files Samples and Libraries GitHub repository](#).
 {:.note .github}
 
-Recurring tasks can be created through the use of a [task queue](Task-Queues).  Each job should, when processed, re-schedule itself to run once it is completed.
+Recurring tasks can be created through the use of a [task queue](../Task-Queues).  Each job should, when processed, re-schedule itself to run once it is completed.
 
 ## Creating a recurring task
 
@@ -24,7 +24,7 @@ Creating a recurring task broadly falls into four steps:
 
 ### Create the task processor
 
-The code below creates a [concurrent task queue](Task-Queues/Concurrent/).  More details on the specific functionality of a concurrent task queue can be found on the dedicated page.
+The code below creates a [concurrent task queue](../Task-Queues/Concurrent/).  More details on the specific functionality of a concurrent task queue can be found on the dedicated page.
 {:.note}
 
 {% highlight csharp %}

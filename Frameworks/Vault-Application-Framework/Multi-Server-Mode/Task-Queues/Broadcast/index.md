@@ -132,13 +132,13 @@ public class VaultApplication
 	/// <param name="vaultPersistent">Non-transactional Vault object.</param>
 	public override void StartOperations(Vault vaultPersistent)
 	{
-		// Allow the base to process the start operations.
-		base.StartOperations(vaultPersistent);
-
 		// Set a reference to the current server reference.
 		VaultApplication.CurrentServer = vaultPersistent
 			.GetVaultServerAttachments()
 			.GetCurrent();
+
+		// Allow the base to process the start operations.
+		base.StartOperations(vaultPersistent);
 
 		// Enable polling/processing of the queue.
 		this.TaskQueueManager.EnableTaskPolling(true);
