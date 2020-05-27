@@ -10,7 +10,7 @@ minimumVersion: 11.2.4320.57
 ## /sharedlinks/(VaultGUID)/(SharePublicAccessKey)/content
 {:.url-with-parameters}
 
-Retrieves the (file) content of a given shared link.
+Retrieves the (file) content of a given shared link.  Note that authentication is not required to access this endpoint; provided the vault GUID and access token are valid and not expired, the endpoint will return the shared file's content.
 {:.description}
 
 ### Methods
