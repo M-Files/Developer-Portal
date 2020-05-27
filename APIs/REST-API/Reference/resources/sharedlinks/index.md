@@ -2,6 +2,7 @@
 layout: mfws
 title: Shared links
 includeInSearch: true
+minimumVersion: 11.2.4320.57
 ---
 
 # Shared Links

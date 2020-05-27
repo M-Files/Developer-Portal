@@ -2,6 +2,7 @@
 layout: mfws
 title: Download shared file
 includeInSearch: true
+minimumVersion: 11.2.4320.57
 ---
 
 # Download shared file

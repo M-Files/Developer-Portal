@@ -2,6 +2,7 @@
 layout: mfws
 title: Deletes a shared file link
 includeInSearch: true
+minimumVersion: 11.2.4320.57
 ---
 
 # Delete shared file link
