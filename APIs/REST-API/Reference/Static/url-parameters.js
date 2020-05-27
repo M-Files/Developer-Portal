@@ -29,6 +29,12 @@ var parameters = {
 	},
 	"alias" : {
 		"<alias>" : "The alias of the item to resolve."
+	},
+	"VaultGUID" : {
+		"<VaultGUID>" : "The GUID of the vault, without braces but with dashes (e.g. 93E227DC-EE63-493B-A1CF-2243B08C38B6)."
+	},
+	"SharePublicAccessKey" : {
+		"<SharePublicAccessKey>" : "The shared access key (e.g. 607fd3f2a20be7fdd6d481a8ec97f8822279e2e0bf89db2fe858a9990f4fb69b)."
 	}
 };
 
