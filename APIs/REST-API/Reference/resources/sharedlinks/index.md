@@ -36,11 +36,12 @@ Output: | [SharedLinkInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/sh
 #### Valid ShareLinkInfo configurations
 
 ObjectVersion Type | File Version Type | Version
---- | --- | ---
-MFObjVerVersionTypeUninitialized – 0 | MFFileVerVersionTypeUninitialized – 0 | -1 or latest version
-MFObjVerVersionTypeUninitialized - 0 | MFFileVerVersionTypeUninitialized – 0 | specific version
-MFObjVerVersionTypeSpecific - 4 | MFFileVerVersionTypeUninitialized – 0 | -1 or latest version
-MFObjVerVersionTypeSpecific - 4 | MFFileVerVersionTypeUninitialized - 0 | specific version
+--- | ---
+[MFObjVerVersionTypeUninitialized]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfobjverversiontype/) | [MFFileVerVersionTypeUninitialized]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffileverversiontype/) | `-1` or latest version number
+[MFObjVerVersionTypeUninitialized]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfobjverversiontype/) | [MFFileVerVersionTypeUninitialized]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffileverversiontype/) | specific version number
+[MFObjVerVersionTypeSpecific]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfobjverversiontype/) | [MFFileVerVersionTypeUninitialized]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffileverversiontype/) | `-1` or latest version number
+[MFObjVerVersionTypeSpecific]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfobjverversiontype/) | [MFFileVerVersionTypeUninitialized]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mffileverversiontype/) | specific version number
+
 *** All other combinations will not work/not supported**
 
 ### Sub-Resources
