@@ -33,8 +33,15 @@ Input: | [SharedLinkInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/sha
 Output: | [SharedLinkInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/sharedlinkinfo/)
 | Information about the new shared link (including the access key).
 
-The `Version` property for the associated `FileVer` must be set to -1.
-{:.note}
+#### Valid ShareLinkInfo configurations
+
+ObjectVersion Type | File Version Type | Version
+--- | --- | ---
+MFObjVerVersionTypeUninitialized – 0 | MFFileVerVersionTypeUninitialized – 0 | -1 or latest version
+MFObjVerVersionTypeUninitialized - 0 | MFFileVerVersionTypeUninitialized – 0 | specific version
+MFObjVerVersionTypeSpecific - 4 | MFFileVerVersionTypeUninitialized – 0 | -1 or latest version
+MFObjVerVersionTypeSpecific - 4 | MFFileVerVersionTypeUninitialized - 0 | specific version
+*** All other combinations will not work/not supported**
 
 ### Sub-Resources
 
