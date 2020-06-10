@@ -124,7 +124,7 @@
 			var icon = themes[i].icon;
 			var displayName = themes[i].display;
 			var id = themes[i].id;
-			var $themeAnchor = $('<a href="#" class="theme-toggle"><span class="iconify" data-icon="mdi:' + icon + '"></span> ' + displayName + '</a>');
+			var $themeAnchor = $('<a href="#" class="theme-toggle" aria-hidden="true" tabindex="-1"><span class="iconify" data-icon="mdi:' + icon + '"></span> ' + displayName + '</a>');
 			$themeAnchor.addClass("theme-toggle-" + escape(id));
 			$themeAnchor.data("theme-id", id);
 			$themeAnchor.data("next-theme-id", themes[(i + 1) % themes.length].id);
