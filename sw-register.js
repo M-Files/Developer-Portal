@@ -80,7 +80,7 @@ window.addEventListener("load", function()
 	registerServiceWorker();
 
 	// Create the anchor for the user to find more information out.
-	var $anchor = $("<a href='/PWA/'></a>");
+	var $anchor = $("<a href='/PWA/' aria-hidden='true' tabindex='-1'></a>");
 	if (serviceWorkerAvailable)
 	{
 		$anchor.text(" Enabled");
