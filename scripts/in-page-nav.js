@@ -2,7 +2,6 @@
     $(document).ready(function(){
 
         // Get a reference to all the page headings.
-        var $ul = $("<ul></ul>");
         var $headings = $("h2, h3, h4", $("article.page"));
 
         // If there are none then die now (show no in-page-nav).
@@ -19,6 +18,8 @@
 			
 			var $anchor = $("<a></a>")
 				.attr("href", "#" + id)
+				.attr("aria-hidden", "true")
+				.attr("tabindex", "-1")
 				.addClass("public-anchor")
 				.attr("title", $heading.text())
 				.append($("<span class='iconify' data-icon='mdi:link-variant'></span>"));
