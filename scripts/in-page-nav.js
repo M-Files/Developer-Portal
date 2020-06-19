@@ -1,4 +1,5 @@
 (function($){
+	document.body.classList.add("has-js");
     $(document).ready(function(){
 
         // Get a reference to all the page headings.

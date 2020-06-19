@@ -53,6 +53,7 @@
 
 	function setTheme(theme, force)
 	{
+
 		// If the chosen theme isn't in the list of values then default to "".
 		var chosenTheme = themes[0];
 		for(var i=0; i<themes.length; i++)

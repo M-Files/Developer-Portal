@@ -50,10 +50,6 @@ body #in-page-nav
 	}
 	ul
 	{
-		ul
-		{
-			display: none;
-		}
 		li
 		{
 			padding: 4px 0px 5px 5px;
@@ -83,10 +79,23 @@ body #in-page-nav
 						background-color: #f7faff;
 					}
 				}
-				ul
-				{
-					display: block;
-				}
+			}
+		}
+	}
+}
+body.has-js #in-page-nav
+{
+	ul
+	{
+		ul
+		{
+			display: none;
+		}
+		li.current
+		{
+			ul
+			{
+				display: block;
 			}
 		}
 	}
