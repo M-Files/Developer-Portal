@@ -53,6 +53,9 @@
 				pairs.sort(function(a, b){
 					return b.offset - a.offset;
 				})
+
+				// Force selection by clicking.
+				$navItem.click(function(){ selectSpecificInPageNavItem($navItem); });
 			})
 		};
 
@@ -63,6 +66,22 @@
 		recalculateNavItemLocations();
 
 		var $selectedNavItem = null;
+		function selectSpecificInPageNavItem($navItemToSelect)
+		{
+			// If the selection has changed then reflect it.
+			if($navItemToSelect != $selectedNavItem)
+			{
+				// Deselect, if we had one selected.
+				if($selectedNavItem != null)
+				{
+					$selectedNavItem.parents("LI").removeClass("current");
+				}
+				
+				// Select it.
+				$navItemToSelect.parents("LI").addClass("current");
+				$selectedNavItem = $navItemToSelect;
+			}
+		}
 		function selectInPageNavItem()
 		{
 			// Find one to select.
@@ -77,26 +96,13 @@
 					$navItemToSelect = o.navItem;
 				}
 			});
-
 			// Select the first if none match.
 			if($navItemToSelect == null)
 			{
 				$navItemToSelect = pairs[pairs.length-1].navItem;
 			}
-			// If the selection has changed then reflect it.
-			if($navItemToSelect != $selectedNavItem)
-			{
-				// Deselect, if we had one selected.
-				if($selectedNavItem != null)
-				{
-					$selectedNavItem.parents("LI").removeClass("current");
-				}
-				
-				// Select it.
-				$navItemToSelect.parents("LI").addClass("current");
-				$selectedNavItem = $navItemToSelect;
-			}
 
+			selectSpecificInPageNavItem($navItemToSelect);
 		}
 
 		// Set up the selection to run on window scroll.
