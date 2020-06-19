@@ -2,6 +2,7 @@
     $(document).ready(function(){
 
         // Get a reference to all the page headings.
+        var $ul = $("<ul></ul>");
         var $headings = $("h2, h3, h4", $("article.page"));
 
         // If there are none then die now (show no in-page-nav).
@@ -18,8 +19,6 @@
 			
 			var $anchor = $("<a></a>")
 				.attr("href", "#" + id)
-				.attr("aria-hidden", "true")
-				.attr("tabindex", "-1")
 				.addClass("public-anchor")
 				.attr("title", $heading.text())
 				.append($("<span class='iconify' data-icon='mdi:link-variant'></span>"));
@@ -89,11 +88,11 @@
 				// Deselect, if we had one selected.
 				if($selectedNavItem != null)
 				{
-					$selectedNavItem.removeClass("current");
+					$selectedNavItem.parents("LI").removeClass("current");
 				}
 				
 				// Select it.
-				$navItemToSelect.addClass("current");
+				$navItemToSelect.parents("LI").addClass("current");
 				$selectedNavItem = $navItemToSelect;
 			}
 
