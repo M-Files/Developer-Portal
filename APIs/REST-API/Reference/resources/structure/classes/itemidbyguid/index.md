@@ -7,7 +7,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/structure/classes/itemidbygui
 
 # Object class
 
-## /structure/classes/itemidbyguid(:guid)/item
+## /structure/classes/itemidbyguid/(:guid)/item
 {:.url-with-parameters}
 
 Gets the ID of the object class with the specified GUID.

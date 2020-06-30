@@ -15,40 +15,10 @@ breadcrumb: Validation
 The approach shown below is only compatible with [version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21) of the Vault Application Framework.  You must also be inheriting from the `ConfigurableVaultApplicationBase<T>` base class; if you inherit from any other base class then the security attribute will not be applied.
 {:.note.warning}
 
-## Passwords within configuration elements
+## Default configuration visibility
 
-Passwords within configuration objects should be marked with the `[Security(IsPassword = true)]` attribute.  When this attribute is used, values displayed in the M-Files Admin software will be obscured and displayed insead as asterisks:
-
-![An example of an obscured password in the M-Files Admin software](obscured-password.png)
-
-{% highlight csharp %}
-using System.Runtime.Serialization;
-using MFiles.VAF.Configuration;
-using MFiles.VAF.Core;
-
-namespace MyCompany.MyProduct.MyVaultApplication3
-{
-	public class VaultApplication
-		: ConfigurableVaultApplicationBase<Configuration>
-	{
-	}
-	
-	[DataContract]
-	public class Configuration
-	{
-		[DataMember]
-		public string Username { get; set; }
-
-		[DataMember]
-		[Security(IsPassword = true)]
-		public string Password { get; set; }
- 
-	}
-}
-{% endhighlight %}
-
-Note that configuration elements marked with a `[Security(IsPassword = true)]` attribute are not encrypted before being stored within Name Value Storage.  Whilst the storage location is only accessible to system administrators, it is important to note that these may be accessible by code executing with elevated rights.
-{:.note.warning}
+By default any configuration exposed using the VAF 2.1 base class will be **visible** to both vault administrators and system administrators, but will only be **editable** by system administrators.  To allow vault administrators to change this, a [Security(ChangeBy = SecurityAttribute.UserLevel.VaultAdmin)] attribute should be added to the configuration class.
+{:.note}
 
 ## Restricting who can change configuration elements
 
@@ -85,3 +55,38 @@ namespace MyCompany.MyProduct.MyVaultApplication3
 	}
 }
 {% endhighlight %}
+
+## Passwords within configuration elements
+
+Passwords within configuration objects should be marked with the `[Security(IsPassword = true)]` attribute.  When this attribute is used, values displayed in the M-Files Admin software will be obscured and displayed insead as asterisks:
+
+![An example of an obscured password in the M-Files Admin software](obscured-password.png)
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+using MFiles.VAF.Core;
+
+namespace MyCompany.MyProduct.MyVaultApplication3
+{
+	public class VaultApplication
+		: ConfigurableVaultApplicationBase<Configuration>
+	{
+	}
+	
+	[DataContract]
+	public class Configuration
+	{
+		[DataMember]
+		public string Username { get; set; }
+
+		[DataMember]
+		[Security(IsPassword = true)]
+		public string Password { get; set; }
+ 
+	}
+}
+{% endhighlight %}
+
+Note that configuration elements marked with a `[Security(IsPassword = true)]` attribute are not encrypted before being stored within Name Value Storage.  Whilst the storage location is only accessible to system administrators, it is important to note that these may be accessible by code executing with elevated rights.
+{:.note.warning}

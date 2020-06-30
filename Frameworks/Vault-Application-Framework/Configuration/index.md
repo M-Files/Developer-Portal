@@ -34,6 +34,9 @@ Using the VAF 2.1 base class will alter the Named Value Storage location used fo
 
 Version 2.1 of the Vault Application Framework continues to support the [VAF 2.0 configuration approach](Configuration/#vaf-20) approach, but adds in a base class that allows easy extension of the standard functionality.  In order to support newer items such as the [[Security] attribute](../Attributes/Configuration/Security), you **must change your implementation to use the newer approach**.  A sample on [how to convert a VAF 2.0 application to VAF 2.1]({{ site.baseurl }}/Samples-And-Libraries/Samples/Vault-Application-Framework/Upgrading-VAF2.0-To-2.1/) is also available.
 
+By default the configuration will be visible to vault administrators and system administrators, but only be editable by system administrators.  When running on the M-Files cloud this means that vault administrators can view, but not change, the configuration.  More information on using the [[Security] attribute](../Attributes/Configuration/Security) can be found on its dedicated page.
+{:.note.warning}
+
 To do this you must inherit from `ConfigurableVaultApplicationBase<T>`, instead of the older `VaultApplicationBase` class.  Common functionality such as implementing a [custom dashboard](Custom-Dashboards) can be implemented by overriding methods in the base class.
 
 {% highlight csharp %}
