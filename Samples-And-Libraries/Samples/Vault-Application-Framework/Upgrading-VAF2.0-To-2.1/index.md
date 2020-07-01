@@ -261,6 +261,9 @@ This code will not work correctly until the [Configuration](#configuration), [Va
 Note that the new base class uses a different location in Named-Value Storage to hold your application's configuration.  This means that users migrating from a VAF 2.0 build of your application to a VAF 2.1 build of your application will be reset to the default application configuration.  You must guide users on how to migrate their configuration as appropriate as part of the application upgrade.
 {:.note .warning}
 
+By default the configuration will be visible to vault administrators and system administrators, but only be editable by system administrators.  When running on the M-Files cloud this means that vault administrators can view, but not change, the configuration.  More information on using the [[Security] attribute]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/Security) can be found on its dedicated page.
+{:.note.warning}
+
 The core configuration will now work as before, but we can use the new [configuration attributes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/Security) to make the password field behave correctly in the M-Files Admin area.  To do this we must add the `[Security(IsPassword = true)]` attribute to the password property:
 
 {% highlight csharp %}
