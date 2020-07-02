@@ -124,6 +124,8 @@ $(document).ready(function()
 			}
 
 			function documentReady () {
+				var $codeBlocks = $("pre.highlight");
+				$codeBlocks.addClass("parsing");
 				hljs.initHighlighting();
 				try {
 					var blocks = document.querySelectorAll('code.hljs');
@@ -148,7 +150,8 @@ $(document).ready(function()
 					.attr("title", "Copy to clipboard")
 					.click(selectAndCopyCode);
 				
-				var $preElements = $("pre:has(>code.hljs)")
+				$codeBlocks
+					.removeClass("parsing")
 					.prepend($toggleLineNumbersElement.clone(true))
 					.prepend($copyCodeElement.clone(true));
 

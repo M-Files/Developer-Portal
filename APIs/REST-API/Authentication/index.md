@@ -85,6 +85,26 @@ var auth = new
 If no expiry information is provided then the authentication token returned will have an indefinite expiry.  Note that you **should not expect tokens without an expiry to last forever**; many situations may cause the token to become unusable.  The only way to forcibly expire an authentication token in this instance is to change the user's login credentials and restart M-Files Web Access.
 {:.note.warning}
 
+### Logging out sessions
+
+In order to allow a session to be logged out, it must be provided with a unique "Session ID" as part of the authentication token request.  The session ID can be any unique string - in the sample below it is a GUID:
+
+```csharp
+// Create the authentication details.
+var auth = new
+{
+	Username = "AlexK",
+	Password = "My Password",
+	VaultGuid = "{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}",
+	SessionID = "{fc430ff7-9bff-45aa-8402-5cbaa3da22d0}" // Can be any unique string
+};
+```
+
+In order to subsequently log out a session, execute a `DELETE` request to the [/session]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/) endpoint.
+
+You cannot log out a session unless a session ID was provided during the initial request for an authentication token.  Attempts to do so will return an exception.
+{:.note.warning}
+
 ## Cookie-based sessions
 
 Cookie-based sessions are typically used in [single-sign-on scenarios]({{ site.baseurl }}/APIs/REST-API/Authentication/Single-Sign-On/), where a request is made to an endpoint and an ASP.NET session cookie is returned.  This session cookie is then included in all future HTTP requests:

@@ -1,8 +1,8 @@
 <div id="share-links">
 	<ul>
-		<li><a href="mailto:?subject={{ page.title }}&amp;body={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" rel="noopener noreferrer"><span class="iconify" data-icon="mdi:email"></span> Email</a></li>
-		<li><a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" rel="noopener" noreferrer><span class="iconify" data-icon="mdi:twitter"></span> Twitter</a></li>
-		<li><a href="http://www.linkedin.com/cws/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" rel="noopener" noreferrer><span class="iconify" data-icon="mdi:linkedin-box"></span> LinkedIn</a></li>
-		{%- if page.comments -%} <li><a href="#"><span class="iconify" data-icon="mdi:disqus"></span> Comments</a></li>{%- endif -%}
+		<li><a href="mailto:?subject={{ page.title }}&amp;body={{ site.url }}{{ site.baseurl }}{{ page.url }}" aria-hidden="true" tabindex="-1" target="_blank" rel="noopener noreferrer"><span class="iconify" data-icon="mdi:email"></span> Email</a></li>
+		<li><a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ site.baseurl }}{{ page.url }}" aria-hidden="true" tabindex="-1" target="_blank" rel="noopener" noreferrer><span class="iconify" data-icon="mdi:twitter"></span> Twitter</a></li>
+		<li><a href="http://www.linkedin.com/cws/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" aria-hidden="true" tabindex="-1" target="_blank" rel="noopener" noreferrer><span class="iconify" data-icon="mdi:linkedin-box"></span> LinkedIn</a></li>
+		{%- if page.comments -%} <li><a href="#" aria-hidden="true" tabindex="-1"><span class="iconify" data-icon="mdi:disqus"></span> Comments</a></li>{%- endif -%}
 	</ul>
 </div>

@@ -39,7 +39,7 @@ Note that PUT and DELETE verbs may not be supported in IIS; it is recommended to
 
 {:.method}
 Output: | `HTTP 204 status code`
-| Performs a logout for the session. 
+| Performs a logout for the session. A [session ID]({{ site.baseurl }}/APIs/REST-API/Reference/structs/authentication/) must have been provided as part of the authentication token request for this to work.
 
 ### Sub-Resources
 

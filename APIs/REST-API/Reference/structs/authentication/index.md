@@ -24,3 +24,4 @@ Type | Name | Description
 `bool` | ReadOnly
 `string` | URL
 `string` | Method
+`string` | SessionID | A string (e.g. a GUID) to uniquely identify a session.  If provided then the session can be destroyed by issuing a `DELETE` request to [the session endpoint]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session).
