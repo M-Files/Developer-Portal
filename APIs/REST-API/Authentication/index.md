@@ -102,7 +102,7 @@ var auth = new
 
 In order to subsequently log out a session, execute a `DELETE` request to the [/session]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/) endpoint.
 
-You cannot log out a session unless a session ID was provided during the initial reques for an authentication token.  Attempts to do so will return an exception.
+You cannot log out a session unless a session ID was provided during the initial request for an authentication token.  Attempts to do so will return an exception.
 {:.note.warning}
 
 ## Cookie-based sessions
