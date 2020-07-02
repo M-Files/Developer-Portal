@@ -31,6 +31,8 @@ Applications that are compatible with Multi-Server Mode will also install and fu
 
 * **Background operations must not be used in applications that support Multi-Server Mode**.  Instead, you must alter your code to use one of the [task queue approaches](#task-queues) instead.
 
+* Your application must ensure that configuration changes are [pushed from the server the change was made on, to all appropriate M-Files servers](#configuration-changes)
+
 * *If you are not using the Vault Application Framework Multi-Server Mode template (e.g. you are upgrading/converting an existing application)*, then your [`appdef.xml` must be manually updated](#appdefxml-changes).
 
 ### Task queues
@@ -91,3 +93,111 @@ Details on the [types of task queues and how to migrate your code from backgroun
 In general in-memory state (e.g. cached lists of content) should be avoided, as it's easy to have situations where the cache on one server has different data to the cache on another server.  However, there are some situations where this may be required.  This can be achieved in a number of ways, but the recommended best practice is the use of named value storage.
 
 Details on the [handling in-memory state is available here](In-Memory-State).
+
+### Configuration changes
+
+When an administrator changes the configuration of a Vault Application, the "save" command is executed on the server to which the administrator happens to be connected.  In order to ensure that the configuration is correctly applied to all servers, the vault application must use a [broadcast task queue processor](Task-Queues/Broadcast/) to notify all servers of the configuration change.
+
+For flexibility, an existing broadcast task queue processor can be used for this.
+
+```csharp
+public class VaultApplication
+	: ConfigurableVaultApplicationBase<Configuration>, IUsesTaskQueue
+{
+	/// <summary>
+	/// M-Files Vault Server Attachment for this server.
+	/// </summary>
+	internal static VaultServerAttachment CurrentServer { get; private set; }
+
+	/// <summary>
+	/// Vault application task broadcast processor cancellation token source.
+	/// </summary>
+	private CancellationTokenSource BroadcastTokenSource { get; set; }
+
+	/// <summary>
+	/// Broadcast task processor.
+	/// </summary>
+	private AppTaskBatchProcessor BroadcastProcessor { get; set; }
+
+	/// <summary>
+	/// Broadcast task queue id.
+	/// </summary>
+	public const string BroadcastTaskQueueId = "Example.Broadcast.TaskQueueID";
+
+	/// <summary>
+	/// Provides the ID of the task queue to use for rebroadcasting changes to all servers.
+	/// </summary>
+	/// <returns><see cref="BroadcastTaskQueueId" /></returns>
+	public override string GetRebroadcastQueueId()
+	{
+		// We wish to re-use the above broadcast task processor / queue.
+		return this.BroadcastTaskQueueId;
+	}
+
+	#region IUsesTaskQueue Registrations.
+
+	/// <summary>
+	/// Initializes token sources and task processors / registers and opens the the task queues.
+	/// </summary>
+	public void RegisterTaskQueues()
+	{
+		// Set the current server value.
+		this.CurrentServer = this.PermanentVault.GetVaultServerAttachments()
+				.Cast<VaultServerAttachment>()
+				.First( vsa => vsa.IsCurrent );
+
+		// Now create the task processor.
+		InitializeBroadcastProcessor();
+
+		// Enable polling.
+		this.TaskQueueManager.EnableTaskPolling( true );
+	}
+
+	#endregion
+
+	/// <summary>
+	/// Initializes the broadcast task processor.
+	/// - This processor also handles the rebroadcast messages from the SaveCommand from the MFAdmin.
+	/// </summary>
+	private void InitializeBroadcastProcessor()
+	{
+		// Verify the broadcast task processor token source has been created.
+		if( this.BroadcastTokenSource == null )
+			this.BroadcastTokenSource = new CancellationTokenSource();
+
+		// Initialize the batch task processor.
+		if( this.BroadcastProcessor == null )
+			this.BroadcastProcessor = new AppTaskBatchProcessor(
+					new AppTaskBatchProcessorSettings
+					{
+						QueueDef = new TaskQueueDef
+						{
+							TaskType = TaskQueueManager.TaskType.BroadcastMessages,
+							Id = this.BroadcastTaskQueueId,
+							ProcessingBehavior = MFTaskQueueProcessingBehavior.MFProcessingBehaviorConcurrent,
+							MaximumPollingIntervalInSeconds = this.Configuration.MaxPollingIntervalInSeconds,
+							LastBroadcastId = ""
+						},
+						PermanentVault = this.PermanentVault,
+						MaxConcurrentBatches = this.Configuration.MaxConcurrentBatches,
+						MaxConcurrentJobs = this.Configuration.MaxConcurrentJobs,
+						// This does not require any task handlers, but if other broadcast tasks are used then they could be added here.
+						TaskHandlers = new Dictionary<string, TaskProcessorJobHandler>(),
+						TaskQueueManager = this.TaskQueueManager,
+						EnableAutomaticTaskUpdates = true,
+						DisableAutomaticProgressUpdates = false,
+						PollTasksOnJobCompletion = true,
+						VaultExtensionMethodProxyId = this.GetVaultExtensionMethodEventHandlerProxyName()
+					},
+					this.BroadcastTokenSource.Token );
+
+		// Register the task queues.
+		this.BroadcastProcessor.RegisterTaskQueues();
+	}
+}
+```
+
+The key items to highlight in the above code are:
+
+* When the task queue processor is created, the `VaultExtensionMethodProxyId` is passed into the associated settings object.
+* `GetRebroadcastQueueId` is overridden and the task queue ID processed by the created task queue processor is returned.  The system will then use this task queue for managing the configuration-application broadcast.
