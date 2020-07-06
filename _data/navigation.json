@@ -93,6 +93,10 @@
 					{
 						"Link": "/Built-In/VBScript/Vault-Extension-Methods/",
 						"Title": "Vault Extension Methods"
+					},
+					{
+						"Link": "/Built-In/VBScript/Vault-Reference/",
+						"Title": "Vault Reference"
 					}
 				]
 			}
@@ -500,6 +504,10 @@
 			{
 				"Link": "/Frameworks/Vault-Application-Framework/Searching/",
 				"Title": "Searching"
+			},
+			{
+				"Link": "/Frameworks/Vault-Application-Framework/Vault-Reference/",
+				"Title": "Vault Reference"
 			}
 		]
 	},
