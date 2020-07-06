@@ -29,6 +29,9 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 ## Version 2.2
 
+Version 2.2 is released as a preview 'release candidate' build.  Content on this site relating to VAF 2.2 is subject to change prior to the official release.
+{:.note.warning}
+
 Version 2.2 of the Vault Application Framework is compatible with M-Files 20.5 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
 {:.note.warning}
 
