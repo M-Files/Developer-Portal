@@ -8,13 +8,11 @@ breadcrumb: Vault Reference
 Please also read the [VBScript page on the Vault reference]({{ site.baseurl }}/Built-In/VBScript/Vault-Reference) page.
 {:.note.warning}
 
-The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html).
-
-There are two `Vault` references available within the VAF: the 
+The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html).  There are two `Vault` references available within the VAF: the transactional [environment vault reference](#environment-vault-reference) and the non-transactional [permanent vault reference](#permanent-vault-reference).
 
 ## Environment vault reference
 
-Almost all entry points to a vault application (event handlers, state actions, property calculations, property validations, etc.) are provided with an `Environment`.  This environment provides contextual information about the vault and object that caused the event (e.g. which object triggered the event handler).  The environment contains a transactional `Vault` reference, meaning any modifications to the vault contents done during the vault application running will be rolled back in the case of exceptions.
+Almost all entry points to a vault application (event handlers, state actions, property calculations, property validations, etc.) are define an `Environment` parameter.  This environment provides contextual information about the vault and object that caused the event (e.g. which object triggered the event handler).  The environment contains a transactional `Vault` reference; any modifications to the vault contents performed using this reference during the vault application executing will be rolled back in the case of exceptions.
 
 ```csharp
 [EventHandler(MFEventHandlerType.MFEventHandlerBeforeCheckInChanges)]
@@ -28,26 +26,25 @@ public void MyEventHandler(EventHandlerEnvironment env)
 	);
 
 	// If we throw an exception now then the object created above
-	// will not be committed to the server.
+	// will not be committed to the server as it was created using
+	// the transactional vault reference.
 	throw new InvalidOperationException("This cannot be done.");
 }
 ```
 
-The exception to the rule above relates to background operations and code executed within a task queue.  In these scenarios an environment vault reference is not available, so the [permanent vault reference](#permanent-vault-reference) must be used instead.
+The exception to the rule above relates to background operations and code executed within a task queue.  In these scenarios an environment vault reference is not available, so the [permanent vault reference](#permanent-vault-reference) is typically used instead.
 {:.note}
 
 ## Permanent vault reference
 
 For situations where there is no transactional vault reference available, the `this.PermanentVault` reference can be used.  The most common situations are within [background operations](#background-operations) and [task queues](#task-queues).
 
-It is recommended that the permanent vault reference is not used for making changes to the vault contents as actions outside of your direct control (e.g. event handlers) could cause your application to except and for the vault to be left in an inconsistent state.  Instead, actions can be routed over [vault extension methods](#vault-extension-methods) to provide the developer with a transactional vault reference.
+It is recommended that the permanent vault reference is not used for making changes to the vault contents, as actions outside of your direct control (e.g. event handlers) could cause ythe vault contents to be left in an inconsistent state.  Instead, actions can be routed over [vault extension methods](#vault-extension-methods) to provide the developer with a transactional vault reference.
 {:.note}
 
 ### Background operations
 
-Background operations often interact with the vault using the `this.PermanentVault` reference as no transactional/environment vault reference is available.  Care should be taken here as exceptions within the background operation can leave the vault in an inconsistent state.
-
-Consider instead calling a [vault extension method](#vault-extension-methods) to provide sections of code with transactionality.
+Background operations often interact with the vault using the `this.PermanentVault` reference as no transactional/environment vault reference is available.  Care should be taken here as exceptions within the background operation can leave the vault in an inconsistent state.  Consider instead calling a [vault extension method](#vault-extension-methods) to provide sections of code with transactionality.
 
 Note that the code executed by a background operation is not subject to standard script timeouts, but the code within a vault extension method is.  Potentially long-running background operations should not be moved in their entirety to vault extension methods as they may time out.  Instead, consider calling the vault extension method for each atomic action within the background operation, returning a status value to the background operation to identify whether each action was successful or not.
 {:.note}
@@ -63,7 +60,7 @@ protected override void StartApplication()
 	this.BackgroundOperations.StartRecurringBackgroundOperation
 	(
 		"Recurring operation",
-        TimeSpan.FromMinutes(10),
+		TimeSpan.FromMinutes(10),
 		() =>
 		{
 			// Note that there is no "env" here, so we do not have a transactional
@@ -81,7 +78,7 @@ protected override void StartApplication()
 
 Additionally, the `TaskProcessorJob` instance provided when processing an item in a job queue also contains a non-transactional vault reference.  As with the permanent vault reference, this job vault reference should be used cautiously.  Where transactionality is required, consider calling a [vault extension method](#vault-extension-methods) and move the vault interaction code into the vault extension method.
 
-Note that in [multi-server-mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode) situations, the server which executes the vault extension method may not be the vault which called the vault extension method.  You must ensure that the only data needed by the vault extension method is available via extension method's input.
+Note that in [multi-server-mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode) situations, the server which executes the vault extension method may not be the server which called the vault extension method.  You must ensure that the only data needed by the vault extension method is available via extension method's input.
 {:.note.warning}
 
 ### Vault Extension Methods
@@ -99,7 +96,7 @@ protected override void StartApplication()
 	this.BackgroundOperations.StartRecurringBackgroundOperation
 	(
 		"Recurring operation",
-        TimeSpan.FromMinutes(10),
+		TimeSpan.FromMinutes(10),
 		() =>
 		{
 			// Use the permanent vault reference to retrieve objects to process.
@@ -149,4 +146,4 @@ private string MyVaultExtensionMethod(EventHandlerEnvironment env)
 It is important to note that the `Vault` reference provided within VBScript is connected to the M-Files server as an internal administrative user.  Any operations executed against the vault using this reference will not respect the current user's permissions.  [Special consideration]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/) should be given to operations that could affect the current object's audit trail (e.g. setting the current object's properties).
 {:.note.warning}
 
-The current user's ID is available via the `env.CurrentUserID` reference.  The [current user's session information](https://www.m-files.com/api/documentation/latest/MFilesAPI~SessionInfo.html) is available via `env.Vault.SessionInfo`.  Search results can be [filtered by user permissions](){{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions) if needed.
+The current user's ID is available via the `env.CurrentUserID` reference.  The [current user's session information](https://www.m-files.com/api/documentation/latest/MFilesAPI~SessionInfo.html) is available via `env.Vault.SessionInfo`.  Search results can be [filtered by user permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions) if needed.

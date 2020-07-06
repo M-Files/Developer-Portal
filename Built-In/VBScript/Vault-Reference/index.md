@@ -22,7 +22,7 @@ The `Vault` reference is typically used to [search for objects]({{ site.baseurl 
 It is important to note that the `Vault` reference provided within VBScript is connected to the M-Files server as an internal administrative user.  Any operations executed against the vault using this reference will not respect the current user's permissions.  
 {:.note.warning}
 
-The current user's ID is available via the `CurrentUserID` VBScript variable.  The [current user's session information](https://www.m-files.com/api/documentation/latest/MFilesAPI~SessionInfo.html) is available via `Vault.SessionInfo`.  Search results can be [filtered by user permissions](){{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions) if needed.
+The current user's ID is available via the `CurrentUserID` VBScript variable.  The [current user's session information](https://www.m-files.com/api/documentation/latest/MFilesAPI~SessionInfo.html) is available via `Vault.SessionInfo`.  Search results can be [filtered by user permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions) if needed.
 
 ## Vault Application Framework
 
