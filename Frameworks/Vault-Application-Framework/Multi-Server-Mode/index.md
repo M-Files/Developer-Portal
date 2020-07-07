@@ -182,7 +182,11 @@ public class VaultApplication
 						MaxConcurrentBatches = this.Configuration.MaxConcurrentBatches,
 						MaxConcurrentJobs = this.Configuration.MaxConcurrentJobs,
 						// This does not require any task handlers, but if other broadcast tasks are used then they could be added here.
-						TaskHandlers = new Dictionary<string, TaskProcessorJobHandler>(),
+						TaskHandlers = new Dictionary<string, TaskProcessorJobHandler>()
+						{
+							// Note that we have to provide at least one task handler or the underlying call excepts.
+							{ Guid.NewGuid().ToString(), (j) => {} }
+						},
 						TaskQueueManager = this.TaskQueueManager,
 						EnableAutomaticTaskUpdates = true,
 						DisableAutomaticProgressUpdates = false,
