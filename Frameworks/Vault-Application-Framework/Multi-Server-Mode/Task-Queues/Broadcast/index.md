@@ -10,7 +10,7 @@ requiredMFilesServerVersion: 20.5
 The approach shown below is only compatible with version 2.2(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
 {:.note.warning}
 
-The code listed below is available within the [M-Files Samples and Libraries GitHub repository](#).
+The code listed below is available within the [M-Files Samples and Libraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/MultiServerMode/Samples/VAF/MultiServerMode/BroadcastTaskQueue).
 {:.note .github}
 
 Broadcast task queues are used to broadcast information generated in one M-Files server to all others in the Multi-Server Mode configuration.  This can be used to send commands for other servers to update any cached information they may have, for example.
