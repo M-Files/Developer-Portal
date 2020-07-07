@@ -131,7 +131,7 @@ public class VaultApplication
 	public override string GetRebroadcastQueueId()
 	{
 		// We wish to re-use the above broadcast task processor / queue.
-		return this.BroadcastTaskQueueId;
+		return BroadcastTaskQueueId;
 	}
 
 	#region IUsesTaskQueue Registrations.
@@ -173,7 +173,7 @@ public class VaultApplication
 						QueueDef = new TaskQueueDef
 						{
 							TaskType = TaskQueueManager.TaskType.BroadcastMessages,
-							Id = this.BroadcastTaskQueueId,
+							Id = BroadcastTaskQueueId,
 							ProcessingBehavior = MFTaskQueueProcessingBehavior.MFProcessingBehaviorConcurrent,
 							MaximumPollingIntervalInSeconds = this.Configuration.MaxPollingIntervalInSeconds,
 							LastBroadcastId = ""
