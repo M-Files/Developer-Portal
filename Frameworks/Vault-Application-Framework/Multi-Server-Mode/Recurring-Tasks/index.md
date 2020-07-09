@@ -15,6 +15,9 @@ The code listed below is available within the [M-Files Samples and Libraries Git
 
 Recurring tasks can be created through the use of a [task queue](../Task-Queues).  Each job should, when processed, re-schedule itself to run once it is completed.
 
+An alpha release of the VAF Extensions library contains a [helper object for working with recurring tasks](https://github.com/M-Files/VAF.Extensions.Community/tree/multiservermode/MFiles.VAF.Extensions/MultiServerMode/TaskQueueBackgroundOperationManager).
+{:.note}
+
 ## Creating a recurring task
 
 Creating a recurring task broadly falls into four steps:

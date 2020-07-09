@@ -45,7 +45,14 @@ Information on the various task queue types and how to use them is available on 
 
 ### Minimum code changes
 
-You will need to alter the code of any existing Vault Application Framework application to support Multi-Server M-Files implementations.  The required changes will depend on the exact structure and complexity of your application.  At a minimum you will need to [update your appdef.xml](#appdefxml-changes) to mark compatibility, but you may also need to [remove any in-memory state](#handling-of-in-memory-state) and [convert background operations to use task queues instead](#migration-of-background-processes-to-task-queues).
+You will need to alter the code of any existing Vault Application Framework application to support Multi-Server M-Files implementations.  The required changes will depend on the exact structure and complexity of your application.  At a minimum you will need to:
+
+* Update your VAF reference to target the [VAF 2.2 release candidate](https://www.nuget.org/packages/MFiles.VAF/2.2.0.5-rc),
+* *Optional* Update your VAF Extensions library reference to target the [1.1 alpha](https://www.nuget.org/packages/MFiles.VAF.Extensions/1.1.0-alpha).
+* [Update your appdef.xml](#appdefxml-changes) to mark compatibility,
+* [Remove any in-memory state](#handling-of-in-memory-state), and
+* [Convert background operations to use task queues instead](#migration-of-background-processes-to-task-queues).
+* [Implement configuration rebroadcasting](#configuration-changes).
 
 ### appdef.xml changes
 
@@ -205,3 +212,6 @@ The key items to highlight in the above code are:
 
 * When the task queue processor is created, the `VaultExtensionMethodProxyId` is passed into the associated settings object.
 * `GetRebroadcastQueueId` is overridden and the task queue ID processed by the created task queue processor is returned.  The system will then use this task queue for managing the configuration-application broadcast.
+
+An alpha release of the VAF Extensions library contains a custom [ConfigurableVaultApplicationBase](https://github.com/M-Files/VAF.Extensions.Community/blob/multiservermode/MFiles.VAF.Extensions/MultiServerMode/ConfigurableVaultApplicationBase.cs) that implements this pattern for you.
+{:.note}
