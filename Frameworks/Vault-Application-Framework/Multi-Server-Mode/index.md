@@ -50,8 +50,8 @@ You will need to alter the code of any existing Vault Application Framework appl
 * Update your VAF reference to target the [VAF 2.2 release candidate](https://www.nuget.org/packages/MFiles.VAF/2.2.0.5-rc),
 * *Optional* Update your VAF Extensions library reference to target the [1.1 alpha](https://www.nuget.org/packages/MFiles.VAF.Extensions/1.1.0-alpha).
 * [Update your appdef.xml](#appdefxml-changes) to mark compatibility,
-* [Remove any in-memory state](#handling-of-in-memory-state), and
-* [Convert background operations to use task queues instead](#migration-of-background-processes-to-task-queues).
+* [Remove any in-memory state](#handling-of-in-memory-state),
+* [Convert background operations to use task queues instead](#migration-of-background-processes-to-task-queues), and
 * [Implement configuration rebroadcasting](#configuration-changes).
 
 ### appdef.xml changes
