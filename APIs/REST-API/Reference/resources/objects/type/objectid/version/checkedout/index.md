@@ -19,7 +19,7 @@ Resource representing the check out state of the object.
 {:.method}
 
 {:.method}
-Output: | [MFCheckOutStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfcheckoutstatus/)
+Output: | [PrimitiveType]({{ site.baseurl }}/APIs/REST-API/Reference/structs/primitivetypet/)<[MFCheckOutStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfcheckoutstatus/)>
 | Retrieves the current check out status. 
 
 ### PUT
@@ -29,7 +29,7 @@ Note that PUT and DELETE verbs may not be supported in IIS; it is recommended to
 {:.remark}
 
 {:.method}
-Input: | [MFCheckOutStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfcheckoutstatus/)
+Input: | [PrimitiveType]({{ site.baseurl }}/APIs/REST-API/Reference/structs/primitivetypet/)<[MFCheckOutStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfcheckoutstatus/)>
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/), `HTTP 204`
 | Sets the check out status. This is allowed only when the object isn't checked out to someone else, that is when the check out status isn't `CheckedOut`. 
 
