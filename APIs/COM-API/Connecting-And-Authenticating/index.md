@@ -160,7 +160,8 @@ With the HTTPS protocol, specify the M-Files Server endpoint that will be used b
 
 ### Connecting via the gRPC protocol
 
-The gRPC protocol should be used when connecting to some M-Files Cloud vaults.
+The gRPC protocol should be used when connecting to some M-Files Cloud vaults.  Only a small number of cloud vaults currently require this protocol and you will be informed if you need to use this protocol when connecting.
+{:.note}
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
