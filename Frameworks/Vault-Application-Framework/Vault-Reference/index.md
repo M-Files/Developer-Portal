@@ -39,7 +39,7 @@ The exception to the rule above relates to background operations and code execut
 
 For situations where there is no transactional vault reference available, the `this.PermanentVault` reference can be used.  The most common situations are within [background operations](#background-operations) and [task queues](#task-queues).
 
-It is recommended that the permanent vault reference is not used for making changes to the vault contents, as actions outside of your direct control (e.g. event handlers) could cause ythe vault contents to be left in an inconsistent state.  Instead, actions can be routed over [vault extension methods](#vault-extension-methods) to provide the developer with a transactional vault reference.
+It is recommended that the permanent vault reference is not used for making changes to the vault contents, as actions outside of your direct control (e.g. event handlers) could cause the vault contents to be left in an inconsistent state.  Instead, actions can be routed over [vault extension methods](#vault-extension-methods) to provide the developer with a transactional vault reference.
 {:.note}
 
 ### Background operations
