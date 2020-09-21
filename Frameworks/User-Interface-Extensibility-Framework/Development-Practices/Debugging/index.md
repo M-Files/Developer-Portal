@@ -60,3 +60,16 @@ Most modern web browsers have built-in debugging tools, e.g. in [Microsoft Edge 
 
 Once a breakpoint is set, you may need to refresh the page for the correct event to be triggered.
 {:.note}
+
+## Tips and Tricks
+
+### Hiding script errors in persistent browser windows
+
+By default, errors thrown by persistent browser content will be shown within the M-Files client.  From M-Files `20.10.9510.0` and higher, errors can be hidden by setting the following setting:
+
+```reg
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+"Error Dlg Displayed On Every Error"="no"
+```
+
+This can also be configured within the Internet Options settings: `Internet Options | Advanced | Browsing | Display a notification about every script error`.
