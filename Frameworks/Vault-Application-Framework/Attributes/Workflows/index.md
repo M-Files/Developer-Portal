@@ -47,7 +47,7 @@ public bool MyStatePostConditions(StateEnvironment env, out string message)
 The `AutomaticStateTransitionTriggerAttribute` attribute marks the following method to be executed to determine whether an object should automatically transition between workflow states.
 
 ```csharp
-[AutomaticStateTransitionTrigger("MyWorkflowStateAlias")]
+[AutomaticStateTransitionTrigger("MyWorkflowStateTransitionAlias")]
 public bool MyAutomaticStateTransitionTrigger(StateTransitionEnvironment env, out int nextState)
 {
 	nextState = 101; // The Id of the state to transition to.
