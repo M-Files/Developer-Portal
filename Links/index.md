@@ -4,7 +4,7 @@ title: Links to other development resources from M-Files
 includeInSearch: true
 ---
 
-A brief statement on our [privacy policy]({{ site.baseurl }}/Privacy/) is available on our website, with further information available on our [main corporate site](https://www.m-files.com/privacy-policy-statement).
+A brief statement on our [privacy policy]({{ site.baseurl }}/Privacy/) is available on our website, with further information available on our [main corporate site](https://www.m-files.com/privacy-policy-statement).  We have also produced and published an [accessibility report](AccessibilityReport.pdf).
 
 ## Our official documentation
 
