@@ -20,6 +20,7 @@
 			
 			var $anchor = $("<a></a>")
 				.attr("href", "#" + id)
+				.attr("aria-label", $heading.text())
 				.addClass("public-anchor")
 				.attr("title", $heading.text())
 				.append($("<span class='iconify' data-icon='mdi:link-variant'></span>"));

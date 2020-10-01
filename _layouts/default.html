@@ -62,7 +62,7 @@ layout: compress
 
     {{ content }}
 
-    <aside id="sidebar" role="navigation">
+    <aside id="sidebar" role="complementary" aria-label="Navigational sidebar">
 		{% capture navigation %}{% include navigation.html %}{% endcapture %}{{ navigation | strip_newlines }}
     </aside>
 

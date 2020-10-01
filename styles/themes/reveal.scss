@@ -27,7 +27,7 @@ body.reveal
 		{
 			display: block;
 			padding: 3px;
-			background-color: #007dc6;
+			background-color: #005E94;
 			position: relative;
 			padding-left: 8px;
 		}
@@ -39,14 +39,13 @@ body.reveal
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: -200px center;
-				background-color: #1482c3;
 			}
 			&.current > a, > a:hover, > a:active
 			{
 				background-image: url("/images/light-hover.png");
 				.text
 				{
-					background-color: #1482c3;
+					background-color: #026daa;
 				}
 			}
 		}

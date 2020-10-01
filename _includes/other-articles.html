@@ -4,7 +4,7 @@
 		{%- assign children = item.AssociatedItems | default: [] -%}
 		{%- assign childCount = children | size | default: 0 -%}
 		{%- if childCount != 0 -%}
-			<nav class="other-articles" role="navigation">
+			<nav class="other-articles" role="navigation" aria-label="Articles associated with {{ item.Title }}">
 				<h1>{%- if item.Title == 'Home' -%}M-Files Developer Portal sections{%- else -%}Articles associated with "{{ item.Title }}"{%- endif -%}</h1>
 				<ul class="quicklinks">
 					{%- for child in children -%}
@@ -30,7 +30,7 @@
 		{%- assign children = item.Items | default: [] -%}
 		{%- assign childCount = children | size | default: 0 -%}
 		{%- if childCount != 0 -%}
-			<nav class="other-articles" role="navigation">
+			<nav class="other-articles" role="navigation" aria-label="Similar articles to {{ item.Title }}">
 				<h1>{%- if item.Title == 'Home' -%}M-Files Developer Portal sections{%- else -%}Similar articles to "{{ item.Title }}"{%- endif -%}</h1>
 				<ul class="quicklinks">
 					{%- for child in children -%}
@@ -63,7 +63,7 @@
 				{%- else -%}
 					{%- assign title = "Other articles" -%}
 				{%- endif -%}
-				<nav class="other-articles" role="navigation">
+				<nav class="other-articles" role="navigation" aria-label="{{ title }}">
 					<h1>{%- if item.Title == 'Home' -%}M-Files Developer Portal sections{%- else -%}{{ title }}{%- endif -%}</h1>
 					<ul class="quicklinks">
 						{%- for child in children -%}

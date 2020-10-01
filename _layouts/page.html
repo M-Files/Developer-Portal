@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="page" itemscope itemtype="http://schema.org/WebPage">
+<article class="page" itemscope itemtype="http://schema.org/WebPage" role="main">
 
 	<div id="options"></div>
 
@@ -12,25 +12,27 @@ layout: default
 
 	{% include social.html %}
 
-	<ol class="breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList" role="navigation">
+	<nav role="navigation" aria-label="Page location in site">
+		<ol class="breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
 
-		{% assign position = 1 %}
-		<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{ site.baseurl }}/"><span itemprop="name">Home</span><meta itemprop="identifier" content="{{ site.baseurl }}/" /></a><meta itemprop="position" content="{{ position }}" /></li>
-		{% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}{% for i in (1..forLoopMaxInt) %}{% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}{% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}{% for breadcrumb_page in site.pages %}{% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}{% assign j = forLoopMaxInt | plus: 0 %}
-		{% assign position = position | plus: 1 %}
-		{% if breadcrumb_page.breadcrumb != nill or breadcrumb_page.title != nill %}
-		<li {% if i == j %}class="active"{% endif %}  itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">{% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
-			<a itemprop="item" href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">
-				<span itemprop="name">{% if breadcrumb_page.breadcrumb == nil %}{{ breadcrumb_page.title }}{% else %}{{ breadcrumb_page.breadcrumb }}{% endif %}</span>
-				<meta itemprop="identifier" content="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}" />
-			</a>
-			<meta itemprop="position" content="{{ position }}" />
-		</li>{% endif %}{% endif %}{% endfor %}{% endfor %}
-	</ol>
+			{% assign position = 1 %}
+			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{ site.baseurl }}/"><span itemprop="name">Home</span><meta itemprop="identifier" content="{{ site.baseurl }}/" /></a><meta itemprop="position" content="{{ position }}" /></li>
+			{% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}{% for i in (1..forLoopMaxInt) %}{% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}{% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}{% for breadcrumb_page in site.pages %}{% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}{% assign j = forLoopMaxInt | plus: 0 %}
+			{% assign position = position | plus: 1 %}
+			{% if breadcrumb_page.breadcrumb != nill or breadcrumb_page.title != nill %}
+			<li {% if i == j %}class="active"{% endif %}  itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">{% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
+				<a itemprop="item" href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">
+					<span itemprop="name">{% if breadcrumb_page.breadcrumb == nil %}{{ breadcrumb_page.title }}{% else %}{{ breadcrumb_page.breadcrumb }}{% endif %}</span>
+					<meta itemprop="identifier" content="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}" />
+				</a>
+				<meta itemprop="position" content="{{ position }}" />
+			</li>{% endif %}{% endif %}{% endfor %}{% endfor %}
+		</ol>
+	</nav>
 
 	<div class="entry">
 
-	<article role="main">
+	<article role="article" aria-label="Page contents">
 		{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
 		{% assign inthisarticle_size = inthisarticle | size %}
 
@@ -39,7 +41,7 @@ layout: default
 		{% endif %}
 
 		{% if inthisarticle_size > 0 %}
-		<nav id="in-page-nav" role="navigation">
+		<nav id="in-page-nav" role="navigation" aria-label="In this article">
 			<div id="in-this-article">
 				<h2>In this article</h2>
 				{{ inthisarticle }}

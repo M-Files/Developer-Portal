@@ -22,11 +22,11 @@ includeInSearch: true
 {
 	animation: pulse 2s ease-in-out 0s infinite alternate;
 }
-article[role="main"]
+article[role="article"]
 {
 	display: table-row;
 }
-article[role="main"] p
+article[role="article"] p
 {
 	display: table-cell;
 	vertical-align: middle;
