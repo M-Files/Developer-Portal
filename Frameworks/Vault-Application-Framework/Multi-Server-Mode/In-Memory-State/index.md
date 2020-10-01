@@ -3,11 +3,10 @@ layout: page
 title: In-memory state usage in Multi-Server Mode Vault Application Framework applications
 includeInSearch: true
 breadcrumb: In-memory state
-prerelease: true
 requiredMFilesServerVersion: 20.5
 ---
 
-The approach shown below is only compatible with version 2.2(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+The approach shown below is only compatible with version 2.2 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
 {:.note.warning}
 
 **In general in-memory state (e.g. cached lists of content) should be avoided**, as it's easy to have situations where the cache on one server has different data to the cache on another server.  However, there are some situations where this may be required.  This can be achieved in a number of ways, but the recommended best practice is the use of named value storage.

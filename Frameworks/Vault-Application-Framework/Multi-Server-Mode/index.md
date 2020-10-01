@@ -3,7 +3,6 @@ layout: page
 title: The Vault Application Framework and M-Files Multi-Server Mode
 includeInSearch: true
 breadcrumb: Multi-Server Mode
-prerelease: true
 requiredMFilesServerVersion: 20.5
 ---
 

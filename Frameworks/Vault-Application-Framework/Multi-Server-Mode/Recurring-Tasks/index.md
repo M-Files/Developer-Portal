@@ -3,11 +3,10 @@ layout: page
 title: Recurring tasks in Multi-Server Mode Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Recurring tasks
-prerelease: true
 requiredMFilesServerVersion: 20.5
 ---
 
-The approach shown below is only compatible with version 2.2(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+The approach shown below is only compatible with version 2.2 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
 {:.note.warning}
 
 The code listed below is available within the [M-Files Samples and Libraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/MultiServerMode/Samples/VAF/MultiServerMode/RecurringTask).
@@ -15,7 +14,7 @@ The code listed below is available within the [M-Files Samples and Libraries Git
 
 Recurring tasks can be created through the use of a [task queue](../Task-Queues).  Each job should, when processed, re-schedule itself to run once it is completed.
 
-An alpha release of the VAF Extensions library contains a [helper object for working with recurring tasks](https://github.com/M-Files/VAF.Extensions.Community/tree/multiservermode/MFiles.VAF.Extensions/MultiServerMode/TaskQueueBackgroundOperationManager).
+A release of the VAF Extensions library contains a [helper object for working with recurring tasks](https://github.com/M-Files/VAF.Extensions.Community/tree/master/MFiles.VAF.Extensions/MultiServerMode/TaskQueueBackgroundOperationManager).
 {:.note}
 
 ## Creating a recurring task

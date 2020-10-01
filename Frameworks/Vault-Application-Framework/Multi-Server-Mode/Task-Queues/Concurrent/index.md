@@ -3,11 +3,10 @@ layout: page
 title: Concurrent task queues in Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Concurrent task queues
-prerelease: true
 requiredMFilesServerVersion: 20.5
 ---
 
-The approach shown below is only compatible with version 2.2(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+The approach shown below is only compatible with version 2.2 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
 {:.note.warning}
 
 The code listed below is available within the [M-Files Samples and Libraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/MultiServerMode/Samples/VAF/MultiServerMode/ConcurrentTaskQueue).
