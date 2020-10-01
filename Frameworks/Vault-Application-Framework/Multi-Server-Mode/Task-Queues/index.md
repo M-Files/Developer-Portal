@@ -49,3 +49,5 @@ this.SequentialProcessor.UpdateTaskInfo
 );
 ```
 
+The progress can be reported back as frequently as makes sense, but it is recommended that long-running tasks report their status at least every 30 seconds.
+{:.note}
