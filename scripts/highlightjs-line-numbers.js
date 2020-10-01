@@ -179,7 +179,7 @@ $(document).ready(function()
 									lines[i].length > 0 ? lines[i] : ' ');
 					}
 
-					element.innerHTML = '<table class="{0}">{1}</table>'.format(TABLE_NAME, html);
+					element.innerHTML = '<table role="presentation" class="{0}">{1}</table>'.format(TABLE_NAME, html);
 				}
 			}
 
