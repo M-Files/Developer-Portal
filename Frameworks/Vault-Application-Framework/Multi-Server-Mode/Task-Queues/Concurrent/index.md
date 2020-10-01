@@ -9,7 +9,7 @@ requiredMFilesServerVersion: 20.5
 The approach shown below is only compatible with version 2.2 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
 {:.note.warning}
 
-The code listed below is available within the [M-Files Samples and Libraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/MultiServerMode/Samples/VAF/MultiServerMode/ConcurrentTaskQueue).
+The code listed below is available within the [M-Files Samples and Libraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/Master/Samples/VAF/MultiServerMode/ConcurrentTaskQueue).
 {:.note .github}
 
 Tasks added to a concurrent task queue can be assigned to any number of M-Files servers in the Multi-Server Mode configuration, may be processed concurrently, and without regard for the order in which they were added to the queue.
