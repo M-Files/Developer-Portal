@@ -295,6 +295,10 @@
 				"Title": "Pre-Approval"
 			},
 			{
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Fast-Navigation/",
+				"Title": "Fast Navigation"
+			},
+			{
 				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio/",
 				"Title": "Visual Studio Integration"
 			}
