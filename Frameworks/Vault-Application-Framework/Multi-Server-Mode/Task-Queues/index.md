@@ -34,3 +34,18 @@ Tasks added to a [concurrent task queue](Concurrent) can be assigned to any numb
 The concept of a background operation is more awkward in situations where more than one M-Files server is involved.  As a Vault Application Framework background operation is simply a .NET `Task`, and vault actions performed by the background operation are typically run outside of a transaction, it is fairly easy for background operations to cause unexpected side-effects within the vault.
 
 To resolve this, a [recurring task](../Recurring-Tasks) should be used instead.
+
+## Reporting task status
+
+It's important that long-running tasks periodically report their status back to the system.  This can be done by calling `TaskProcessorBase<T>.UpdateTaskInfo`, providing the current task's state and any textual remarks (e.g. the percentage complete):
+
+```csharp
+this.SequentialProcessor.UpdateTaskInfo
+(
+	job,
+	MFTaskState.MFTaskStateInProgress,
+	$"The process is {percentageComplete}% complete.",
+	false
+);
+```
+

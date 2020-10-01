@@ -251,6 +251,15 @@ private void ProcessConcurrentTask( TaskProcessorJob job )
 	// TODO: Perform the processing.
 	// Note that the job.Vault reference is not running within a transaction.
 	// If transactionality is required then consider calling a vault extension method here.
+
+	// Report back progress.
+	this.TaskProcessor.UpdateTaskInfo
+	(
+		job,
+		MFTaskState.MFTaskStateInProgress,
+		$"Job processed on {CurrentServer.ServerID}",
+		false
+	);
 }
 {% endhighlight %}
 

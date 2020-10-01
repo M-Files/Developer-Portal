@@ -249,6 +249,15 @@ private void ProcessBroadcastTask(TaskProcessorJob job)
 
 	// TODO: Process the broadcast job.
 
+	// Report back progress.
+	this.TaskProcessor.UpdateTaskInfo
+	(
+		job,
+		MFTaskState.MFTaskStateInProgress,
+		$"Job processed on {CurrentServer.ServerID}",
+		false
+	);
+
 }
 {% endhighlight %}
 
