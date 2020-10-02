@@ -27,7 +27,8 @@ These events are raised automatically when the user navigates into a new view.  
 
 ### M-Files version requirements
 
-The v4 client schema is only supported in M-Files Server 20.11 and higher.  The v4 client schema also cannot be loaded in M-Files 20.4 and lower.
+The v4 client schema is only supported in M-Files 20.11 and higher.  Clients older than this version will not run any applications that target the v4 schema.
+{:.note}
 
 When enabling fast-navigation compatibility you may wish to change the `required-mfiles-version` value in the `appdef.xml` file to require M-Files 20.11 or newer:
 
