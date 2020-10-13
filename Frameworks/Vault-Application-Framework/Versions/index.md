@@ -34,6 +34,9 @@ Version 2.2 of the Vault Application Framework is compatible with M-Files 20.5 u
 
 Alongside numerous internal bugfixes and performance work, this release brings compatibility with the [M-Files Multi-Server Mode functionality]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/).  This version can also be used on single-server implementations of M-Files, provided the M-Files server version is at least 20.5.
 
+In this release, if inheriting from `ConfigurableVaultApplicationBase`, the Vault Application Framework will only find and resolve `MFIdentifier` instances created on your `Configuration` class.  If you are using `MFIdentifier` instances in other locations (e.g. directly on your `VaultApplication` class) then note that these will not automatically be resolved at vault startup.
+{:.note}
+
 ## Version 2.1
 
 Version 2.1 of the Vault Application Framework is compatible with M-Files 19.9 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
@@ -97,6 +100,18 @@ M-Files have published to partners a [Visual Studio 2015/2017 template for use w
 When you upgrade the Vault Application Framework you may need to make some small changes due to changes in class namespaces or method signatures.
 {:.note.warning}
 
+### From Version 2.1 to Version 2.2
+
+New VAF 2.2 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  Projects using the Vault Application Framework 2.1 nuget package can be manually upgraded to use the Vault Application Framework 2.2 runtime:
+
+* Right-click on the project name and select `Manage NuGet Packages...`
+* Select the existing `M-Files.VAF` reference and click the `Update` button to upgrade to the latest published 2.2 version.
+
+To upgrade your VAF 2.2 application to be compatible with M-Files Multi-Server Mode, please follow the [online conversion guidance]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/#converting-an-existing-vault-application-framework-project).
+
+If inheriting from `ConfigurableVaultApplicationBase`, the Vault Application Framework will only find and resolve `MFIdentifier` instances created on your `Configuration` class.  If you are using `MFIdentifier` instances in other locations (e.g. directly on your `VaultApplication` class) then these should be moved into your `Configuration` class to continue to be resolved automatically.  Alternatively you can call `MFIdentifier.Resolve` at runtime to manually resolve the items.
+{:.note}
+
 ### From Version 2.0 to Version 2.1
 
 New VAF 2.1 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  Projects using the existing Vault Application Framework 2.0 template need to be manually upgraded to use the Vault Application Framework 2.1 runtime:
@@ -109,7 +124,7 @@ New VAF 2.1 applications can be created using the [M-Files Online Visual Studio 
 	* `MFiles.VAF.Configuration`
 	* `MFilesAPI`
 * Right-click on the project name and select `Manage NuGet Packages...`
-* Select the existing `M-Files.VAF` reference and click the `Update` button to upgrade to the latest published version.
+* Select the existing `M-Files.VAF` reference and click the `Update` button to upgrade to the latest published 2.1 version.
 
 It is recommended to update your entry point class (typically `VaultApplication`) to [use the new base class]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/#inheriting-from-the-new-base-class).  This will require some changes to your code but is required to enable some of the new VAF 2.1 functionality.  A sample on [how to convert a VAF 2.0 application to VAF 2.1]({{ site.baseurl }}/Samples-And-Libraries/Samples/Vault-Application-Framework/Upgrading-VAF2.0-To-2.1/) is also available.
 {:.note}
