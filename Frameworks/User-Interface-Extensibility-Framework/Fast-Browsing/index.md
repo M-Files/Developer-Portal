@@ -7,6 +7,9 @@ requiredMFilesServerVersion: 20.11
 redirect_from: /Frameworks/User-Interface-Extensibility-Framework/Fast-Navigation/
 ---
 
+UI Extensibility Applications that have been updated to v4 schema, using the instructions linked above, will not work with M-Files Desktop versions older than 20.11.  It is important that all of your M-Files Desktop clients are updated to version 20.11 or later before updating your UI Extensibility applications.
+{:.note.warning}
+
 M-Files 20.11 brings changes in which the M-Files Desktop Client builds and renders the client interface.  These changes can bring significant performance improvements.  These improvements are only activated if **all** UIX applications are marked as "fast browsing compatible".  **If one or more applications is not fast browsing compatible then you may see this dialog in your M-Files Desktop Client**:
 
 ![A dialog shown if one or more UIX applications is not fast-browsing compatible](dialog.png)
