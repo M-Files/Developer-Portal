@@ -136,7 +136,9 @@ Even if your application is marked as fast-browsing-compatible, it is still poss
 If you need to check the current rendering mode then you can do so using the following code style:
 
 ```csharp
-if( MFiles.IsClientFeatureEnabled( "FastNavigationInMFShell" ) )
+// Returns true if the client is running in fast browsing mode,
+// i.e. all apps in the vault support fast browsing.
+if( shellFrame.ShellUI.FastBrowsingActive )
 {
 	shellFrame.Events.Register
 	(
