@@ -415,6 +415,15 @@
 				"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/",
 				"Title": "Visual Studio Integration",
 				"Items": [{
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.2/",
+					"Title": "VAF 2.2 Visual Studio Template"
+				},{
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.1/",
+					"Title": "VAF 2.1 Visual Studio Template"
+				},{
+					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0/",
+					"Title": "VAF 2.0 Visual Studio Template"
+				},{
 					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF1.0/",
 					"Title": "VAF 1.0 Visual Studio Template",
 					"Items":[{
@@ -422,12 +431,6 @@
 							"Title": "Using VB.NET"
 						}
 					]
-				},{
-					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.0/",
-					"Title": "VAF 2.0 Visual Studio Template"
-				},{
-					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.1/",
-					"Title": "VAF 2.1 Visual Studio Template"
 				},{
 					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/",
 					"Title": "Code Snippets"
