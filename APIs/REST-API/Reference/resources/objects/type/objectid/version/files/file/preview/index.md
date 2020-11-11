@@ -25,3 +25,4 @@ Parameters: | `?force` - If true, the server streams an empty image instead of g
 | `?size` - Specifies square dimensions. Defaults to 32. This also works with the force-parameter by forcing the empty image to have the specified dimensions.
 | `?width` - Specifies preview width. Overrides size.
 | `?height` - Specifies preview height. Overrides size.
+| `?allowIcon=true` - Returns the icon for the file if a thumbnail preview cannot be generated.
