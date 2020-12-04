@@ -122,6 +122,27 @@ Replacing the right-pane implicitly creates a tab entitled "Application", into w
 
 ## Tips and tricks
 
+### Dashboard tab icons
+
+This functionality is available in M-Files Desktop clients 20.3 and higher.
+{:.note.warning}
+
+When a tab is added to the M-Files Desktop client it will, by default, be shown with the general tab icon (four squares, arranged in a 2x2 grid).  This can be altered if the tab is showing a dashboard.  To do this you will need two files named `icon.png` and `icon-selected.png` (both 32px by 32px).  These files must be placed within a folder named the same as the dashboard ID.  `icon.png` will be shown when the tab is unselected, `icon-selected.png` will be shown when the tab is selected.
+
+For example, for this `appdef.xml` file the files would be located in a folder named `my-dashboard`:
+```xml
+...
+  <dashboards>
+		<dashboard id="my-dashboard">
+			<content>my-dashboard/my-dashboard.html</content>
+		</dashboard>
+	</dashboards>
+...
+```
+
+This functionality cannot be used with tabs that do not show dashboards, or do not yet have dashboards loaded.
+{:.note}
+
 ### Passing content to and from dashboards
 
 #### Passing content from modules to dashboards
