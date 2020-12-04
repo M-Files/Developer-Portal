@@ -132,11 +132,11 @@ When a tab is added to the M-Files Desktop client it will, by default, be shown 
 For example, for this `appdef.xml` file the files would be located in a folder named `my-dashboard`:
 ```xml
 ...
-  <dashboards>
-		<dashboard id="my-dashboard">
-			<content>my-dashboard/my-dashboard.html</content>
-		</dashboard>
-	</dashboards>
+<dashboards>
+	<dashboard id="my-dashboard">
+		<content>my-dashboard/my-dashboard.html</content>
+	</dashboard>
+</dashboards>
 ...
 ```
 
