@@ -20,7 +20,7 @@ For most applications this new behavior will not directly affect the application
 
 ## New events
 
-As the `ShellFrame`'s lifecycle cannot be used to identify when the user changes view, M-Files 20.11 adds two additional new events to the `ShellFrame`:
+As the `ShellFrame`'s lifecycle cannot be used to identify when the user changes view, M-Files 20.12 adds two additional new events to the `ShellFrame`:
 
  * `Event_ViewLocationChanged`
  * `Event_ViewLocationChangedAsync`
