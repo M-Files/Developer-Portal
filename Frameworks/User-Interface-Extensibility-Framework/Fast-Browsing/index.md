@@ -3,14 +3,14 @@ layout: page
 title: Fast browsing in the User Interface Extensibility Framework
 breadcrumb: Fast browsing
 includeInSearch: true
-requiredMFilesServerVersion: 20.11
+requiredMFilesServerVersion: 20.12
 redirect_from: /Frameworks/User-Interface-Extensibility-Framework/Fast-Navigation/
 ---
 
-UI Extensibility Applications that have been updated to v4 schema, using the instructions linked above, will not work with M-Files Desktop versions older than 20.11.  It is important that all of your M-Files Desktop clients are updated to version 20.11 or later before updating your UI Extensibility applications.
+UI Extensibility Applications that have been updated to v4 schema, using the instructions linked above, will not work with M-Files Desktop versions older than 20.12.  It is important that all of your M-Files Desktop clients are updated to version 20.12 or later before updating your UI Extensibility applications.
 {:.note.warning}
 
-M-Files 20.11 brings changes in which the M-Files Desktop Client builds and renders the client interface.  These changes can bring significant performance improvements.  These improvements are only activated if **all** UIX applications are marked as "fast browsing compatible".  **If one or more applications is not fast browsing compatible then you may see this dialog in your M-Files Desktop Client**:
+M-Files 20.12 brings changes in which the M-Files Desktop Client builds and renders the client interface.  These changes can bring significant performance improvements.  These improvements are only activated if **all** UIX applications are marked as "fast browsing compatible".  **If one or more applications is not fast browsing compatible then you may see this dialog in your M-Files Desktop Client**:
 
 ![A dialog shown if one or more UIX applications is not fast-browsing compatible](dialog.png)
 
@@ -31,13 +31,13 @@ These events are raised automatically when the user navigates into a new view.  
 
 ### M-Files version requirements
 
-The v4 client schema is only supported in M-Files 20.11 and higher.  Clients older than this version will not run any applications that target the v4 schema.
+The v4 client schema is only supported in M-Files 20.12 and higher.  Clients older than this version will not run any applications that target the v4 schema.
 {:.note}
 
 When enabling fast-browsing compatibility you may wish to change the `required-mfiles-version` value in the `appdef.xml` file to require M-Files 20.11 or newer:
 
 ```xml
-<required-mfiles-version>20.11.0.0</required-mfiles-version>
+<required-mfiles-version>20.12.0.0</required-mfiles-version>
 ```
 
 ### Altering the application
@@ -63,7 +63,7 @@ Below is a full example of an updated application definition file:
   <description></description>
   <publisher></publisher>
   <copyright></copyright>
-  <required-mfiles-version>20.11.0.0</required-mfiles-version>
+  <required-mfiles-version>20.12.0.0</required-mfiles-version>
   <optional>true</optional>
   <enabled-by-default>true</enabled-by-default>
   <platforms>
@@ -126,7 +126,7 @@ shellFrame.Events.Register
 );
 ```
 
-If the application is running on a 20.11 vault but one or more of the applications is not explicitly marked as fast-browsing-compatible, then **all** applications will run in legacy mode.  For this reason it is important that your updated application continues to function using the old event model.
+If the application is running on a 20.12 vault but one or more of the applications is not explicitly marked as fast-browsing-compatible, then **all** applications will run in legacy mode.  For this reason it is important that your updated application continues to function using the old event model.
 {:.note.warning}
 
 #### Checking the rendering mode
