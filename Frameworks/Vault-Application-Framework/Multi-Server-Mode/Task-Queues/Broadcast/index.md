@@ -313,7 +313,7 @@ The custom directive class must be serializable by `Newtonsoft.JSON`, as it will
 Items can be added to the queue from elsewhere within the Vault Application Framework application.  In the example below, a task is added to the task queue with a custom directive.
 
 {% highlight csharp %}
-var itemId = this.TaskProcessor.CreateApplicationTaskSafe
+var itemId = this.TaskProcessor.SendBroadcastMessageSafe
 (
 	true,
 	VaultApplication.BroadcastTaskQueueId,
