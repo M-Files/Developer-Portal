@@ -151,3 +151,93 @@ if( shellFrame.ShellUI.FastBrowsingActive )
 }
 
 ```
+
+### Additional considerations - an example
+
+Consider an application using an approach such as the one below.  In this code the application checks the current path and adds a tab if it matches some expected value.
+
+```javascript
+shellFrame.Events.Register( 
+      MFiles.Event.Started,
+      function () {
+            onShellFrameStarted( shellFrame )
+} );
+
+function onShellFrameStarted( shellFrame ) {
+
+// Check if we are in the special view.
+      if( shellFrame.CurrentPath === MySpecialViewPath ) {
+
+            // Create tab with dashboard for my special view.
+            // NOTE: This tab and dashboard will automatically be destroyed
+// when the shellframe location changes.
+            var myTab = shellFrame.RightPane.AddTab( "myTab", "My Tab", "_last" );
+            myTab.ShowDashboard( "myDashboard", {} );
+            myTab.Visible = true;
+            myTab.Select();
+      }
+}
+
+```
+
+If we lifted this code and adapted it so that it instead reacted to the `ViewLocationChanged` event, we could end up with a situation where the code adds multiple tabs to the ShellFrame.  This is because previously all tabs would be removed when the user navigated (and the old ShellFrame destroyed), whereas the tabs would persist with fast-browsing enabled.
+
+In this instance, instead, the code should be modified to ensure that the tab is still only added once, showing and hiding the tab as appropriate as the user navigates between views:
+
+```javascript
+shellFrame.Events.Register( 
+      MFiles.Event.Started,
+      function () {
+
+            // Listen for location changes if necessary.
+            // NOTE: We can't access members on shellframe until it has started.
+            if( shellFrame.ShellUI.FastBrowsingActive ) {
+shellFrame.Events.Register( 
+      MFiles.Event.ViewLocationChanged,
+      function () {
+            onShellFrameStarted( shellFrame )
+} );
+            }
+
+            // React to initial location of shell frame.
+            reactToPathChanging( shellFrame )
+} );
+
+// New global holding our tab if it was already created.
+// Would be better as object member, but kept simple for example.
+var myTab; 
+
+function reactToPathChanging( shellFrame ) {
+
+      // Check if we are in the special view.
+      if( shellFrame.CurrentPath === MySpecialViewPath) {
+            // We are in my special view.
+
+            // This shell frame may have visited my special view already,
+            // in which case we already would have created the tab, so we
+            // need to create it only if we haven't already.
+            if( !myTab ){
+
+                  // Create the tab and dashboard.
+myTab = shellFrame.RightPane.AddTab( "myTab", "My Tab", "_last" );
+                  myTab.ShowDashboard( "myDashboard", {} );
+            }
+
+            // Make sure the tab is visible.
+            myTab.Visible = true;
+            myTab.Select();
+
+      } else {
+
+            // We are not in my special view.
+
+            // This shell frame may have visited my special view already,
+            // so we need to make sure if myTab was created, that it isn't
+            // visible anymore now that we've left my special view.
+            if( myTab ) {
+                  myTab.Visible = false;
+            }
+}
+}
+
+```
