@@ -195,7 +195,7 @@ shellFrame.Events.Register(
 shellFrame.Events.Register( 
       MFiles.Event.ViewLocationChanged,
       function () {
-            onShellFrameStarted( shellFrame )
+            reactToPathChanging( shellFrame )
 } );
             }
 
