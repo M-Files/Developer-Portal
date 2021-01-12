@@ -3,38 +3,38 @@ ul.quicklinks
 	margin: auto 0px;
 	padding: 0px;
 	text-align: center;
-}
-ul.quicklinks li
-{
-	margin: 0px;
-	padding: 0px;
-	display: inline-block;
-}
-ul.quicklinks li .iconify
-{
-	font-size: 1.6em;
-	position: relative;
-	top: 2px;
-}
-ul.quicklinks a
-{
-	padding: 1px;
-	display: inline-block;
-	margin: 10px 5px;
-	text-decoration: none;
-	.text
+	a
 	{
-		display: block;
-		padding: 10px 15px;
+		padding: 1px !important;
+		background-image: none !important;
+		display: inline-block;
+		margin: 10px 5px;
+		text-decoration: none;
+		display: inline-block;
+		.text
+		{
+			display: block;
+			padding: 10px 15px;
+		}
 	}
-}
-ul.quicklinks a
-{
-	display: inline-block;
-}
-ul.quicklinks a,
-	ul.quicklinks a:hover,
-	ul.quicklinks a:visited
-{
-	text-decoration: none;
+	
+	li
+	{
+		margin: 0px;
+		padding: 0px;
+		display: inline-block;
+		.iconify
+		{
+			font-size: 1.6em;
+			position: relative;
+			top: 2px;
+		}
+	}
+
+	a,
+		a:hover,
+		a:visited
+	{
+		text-decoration: none;
+	}
 }
