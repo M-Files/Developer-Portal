@@ -201,7 +201,7 @@ shellFrame.Events.Register(
 
             // React to initial location of shell frame.
             reactToPathChanging( shellFrame )
-} );
+      } );
 
 // New global holding our tab if it was already created.
 // Would be better as object member, but kept simple for example.
@@ -237,7 +237,7 @@ function reactToPathChanging( shellFrame ) {
             if( myTab ) {
                   myTab.Visible = false;
             }
-}
+      }
 }
 
 ```
