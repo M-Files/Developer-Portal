@@ -45,18 +45,8 @@ namespace MFVaultApplication1
 	}
 
 	public class VaultApplication
-		: VaultApplicationBase, IUsesAdminConfigurations
+		: ConfigurableVaultApplicationBase<Configuration>
 	{
-
-		private ConfigurationNode<Configuration> config { get; set; }
-
-		/// <inheritdoc />
-		public void InitializeAdminConfigurations(IAdminConfigurations adminConfigurations)
-		{
-
-			// Add it to the configuration screen.
-			this.config = adminConfigurations.AddSimpleConfigurationNode<Configuration>("My Vault Application");
-		}
 	}
 }
 {% endhighlight %}
@@ -99,18 +89,8 @@ namespace MFVaultApplication1
 	}
 
 	public class VaultApplication
-		: VaultApplicationBase, IUsesAdminConfigurations
+		: ConfigurableVaultApplicationBase<Configuration>
 	{
-
-		private ConfigurationNode<Configuration> config { get; set; }
-
-		/// <inheritdoc />
-		public void InitializeAdminConfigurations(IAdminConfigurations adminConfigurations)
-		{
-
-			// Add it to the configuration screen.
-			this.config = adminConfigurations.AddSimpleConfigurationNode<Configuration>("My Vault Application");
-		}
 	}
 }
 {% endhighlight %}
@@ -148,18 +128,8 @@ namespace MFVaultApplication1
 	}
 
 	public class VaultApplication
-		: VaultApplicationBase, IUsesAdminConfigurations
+		: ConfigurableVaultApplicationBase<Configuration>
 	{
-
-		private ConfigurationNode<Configuration> config { get; set; }
-
-		/// <inheritdoc />
-		public void InitializeAdminConfigurations(IAdminConfigurations adminConfigurations)
-		{
-
-			// Add it to the configuration screen.
-			this.config = adminConfigurations.AddSimpleConfigurationNode<Configuration>("My Vault Application");
-		}
 	}
 }
 {% endhighlight %}
