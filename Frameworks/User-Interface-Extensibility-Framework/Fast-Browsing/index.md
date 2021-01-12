@@ -192,11 +192,11 @@ shellFrame.Events.Register(
             // Listen for location changes if necessary.
             // NOTE: We can't access members on shellframe until it has started.
             if( shellFrame.ShellUI.FastBrowsingActive ) {
-shellFrame.Events.Register( 
-      MFiles.Event.ViewLocationChanged,
-      function () {
-            reactToPathChanging( shellFrame )
-} );
+                  shellFrame.Events.Register( 
+                        MFiles.Event.ViewLocationChanged,
+                        function () {
+                              reactToPathChanging( shellFrame )
+                        } );
             }
 
             // React to initial location of shell frame.
@@ -219,7 +219,7 @@ function reactToPathChanging( shellFrame ) {
             if( !myTab ){
 
                   // Create the tab and dashboard.
-myTab = shellFrame.RightPane.AddTab( "myTab", "My Tab", "_last" );
+                  myTab = shellFrame.RightPane.AddTab( "myTab", "My Tab", "_last" );
                   myTab.ShowDashboard( "myDashboard", {} );
             }
 
