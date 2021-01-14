@@ -3,6 +3,7 @@ layout: page
 title: M-Files UX and design guidelines
 includeInSearch: true
 breadcrumb: UX guidelines
+redirect_from: /UX-Design/
 ---
 
 This document is intended to brief developers on the design principles of the M-Files UI, and to introduce the UI components used in desktop development. It targets  M-Files partners and developers who are building applications or services that need to replicate the M-Files "look and feel".

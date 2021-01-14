@@ -2,6 +2,7 @@
 layout: page
 title: Navigation patterns
 includeInSearch: true
+redirect_from: /UX-Design/Navigation-Patterns/
 ---
 
 ![Navigation patterns](navigation.png){:.borderless}
