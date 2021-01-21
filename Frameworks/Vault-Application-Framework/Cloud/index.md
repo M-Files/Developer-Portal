@@ -60,5 +60,8 @@ The validation team will check a number of items in the source code, including:
 1. The application **must not attempt to alter anything outside of the vault during the initialization routines**.
 1. The application **must not run input as code**.
 1. **Do not log errors to the Windows event log**.
+1. Your application must be [Multi-Server Mode-compatible]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) to run in the New Cloud, and is **highly recommended** for new M-Files Vault Application Development in general.  *After a short transition period this will become a mandatory requirement for all applications that are to be installed in cloud.*
+
+
 
 </div>
