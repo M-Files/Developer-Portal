@@ -105,6 +105,9 @@ h3 {
 #logo
 {	
 	display: none;
+}
+body:not(.theme-light) #logo
+{	
 	*
 	{
 		fill: white;
