@@ -511,43 +511,48 @@
 		]
 	},
 	{
-		"Link": "/UX-Design/",
-		"Title": "UX/Design guidance",
+		"Link": "/User-Experience/",
+		"Title": "User Experience",
 		"Icon": "mdi:view-dashboard",
 		"Items": [
 			{
-				"Link": "/UX-Design/Page-Layout/",
+				"Link": "/User-Experience/Page-Layout/",
 				"Title": "Page Layout"
 			},
 			{
-				"Link": "/UX-Design/UI-Components/",
+				"Link": "/User-Experience/UI-Components/",
 				"Title": "UI Components"
 			},
 			{
-				"Link": "/UX-Design/Navigation-Patterns/",
+				"Link": "/User-Experience/Navigation-Patterns/",
 				"Title": "Navigation Patterns"
 			},
 			{
-				"Link": "/UX-Design/Colors/",
+				"Link": "/User-Experience/Colors/",
 				"Title": "Colors"
 			},
 			{
-				"Link": "/UX-Design/Logo/",
+				"Link": "/User-Experience/Logo/",
 				"Title": "Logo"
 			},			
 
 			{
-				"Link": "/UX-Design/Typography/",
+				"Link": "/User-Experience/Typography/",
 				"Title": "Typography"
 			},			
 			{
-				"Link": "/UX-Design/Icons/",
+				"Link": "/User-Experience/Icons/",
 				"Title": "Icons"
 			},
 
 			{
-				"Link": "/UX-Design/Data-Visualization/",
+				"Link": "/User-Experience/Data-Visualization/",
 				"Title": "Data Visualization"
+			},
+
+			{
+				"Link": "/User-Experience/Writing-Style/",
+				"Title": "Writing Style"
 			}
 
 		]

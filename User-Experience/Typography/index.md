@@ -2,6 +2,7 @@
 layout: page
 title: Typography
 includeInSearch: true
+redirect_from: /UX-Design/Typography/
 ---
 
 Good typography is invisible, enabling users to have a seamless experience while they’re using M-Files products.

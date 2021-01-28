@@ -2,6 +2,7 @@
 layout: page
 title: Colors
 includeInSearch: true
+redirect_from: /UX-Design/Colors/
 ---
 
 ## Colors

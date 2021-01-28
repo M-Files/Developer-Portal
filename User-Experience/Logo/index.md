@@ -2,6 +2,7 @@
 layout: page
 title: Logo
 includeInSearch: true
+redirect_from: /UX-Design/Logo/
 ---
 
 ## Different logos

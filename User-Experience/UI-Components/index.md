@@ -2,6 +2,7 @@
 layout: page
 title: UI Components
 includeInSearch: true
+redirect_from: /UX-Design/UI-Components/
 ---
 
 ## Tabs

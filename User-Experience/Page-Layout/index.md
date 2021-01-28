@@ -2,6 +2,7 @@
 layout: page
 title: Page layout
 includeInSearch: true
+redirect_from: /UX-Design/Page-Layout/
 ---
 
 ![Top Pane location](2018-layout.png){:.borderless .clear}
