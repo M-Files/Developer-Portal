@@ -167,7 +167,7 @@
 		"Icon": "mdi:cloud-outline",
 		"Title": "REST API",
 		"Items": [{
-				"Link": "http://www.m-files.com/MFWS/",
+				"Link": "/APIs/REST-API/Reference/",
 				"Title": "Official API Reference ",
 				"IsExternal": true,
 				"IsOfficialReference": true
