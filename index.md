@@ -87,4 +87,4 @@ More information is available in the [Vault Application Framework section]({{ si
 
 ## Development Licences
 
-Development licences are available to M-Files resellers and members of the Certified Application Provider program.  For more information contact your Channel Account Manager or the [M-Files DevRel team](mailto:devsupport@m-files.com).  Alternatively, a 30-day trial of M-Files can be downloaded from [https://www.m-files.com/en/download-latest-version](https://www.m-files.com/en/download-latest-version).
+Development licences are available to M-Files resellers and members of the Solution Partner program.  For more information contact your Channel Account Manager or the [M-Files DevRel team](mailto:devsupport@m-files.com).  Alternatively, a 30-day trial of M-Files can be downloaded from [https://www.m-files.com/customers/product-downloads/]https://www.m-files.com/customers/product-downloads/).

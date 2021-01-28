@@ -185,6 +185,9 @@ p.note {
 	padding: 5px 10px 5px 30px;
 	margin: 5px 20px;
 	color: black; /* increase contrast */
+	a{
+		color: #03329c !important;
+	}
 	&::before {
 		content: " ";
 		white-space: pre;
