@@ -21,7 +21,7 @@ Any object type can be allowed to [have files](https://www.m-files.com/user-guid
 
 ### Object types in the REST API
 
-`Object Type` information can be accessed via the [/structure/objecttypes](http://www.m-files.com/mfws/resources/structure/objecttypes.html) endpoint.
+`Object Type` information can be accessed via the [/structure/objecttypes](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/objecttypes.html) endpoint.
 
 ### External object types
 
@@ -51,7 +51,7 @@ Information on the properties defined for each class - including whether they ar
 
 ### Classes in the REST API
 
-`Class` information can be accessed via the [/structure/classes](http://www.m-files.com/mfws/resources/structure/classes.html) endpoint.
+`Class` information can be accessed via the [/structure/classes](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/classes.html) endpoint.
 
 ## Property definitions
 
@@ -92,7 +92,7 @@ The following [data types](https://www.m-files.com/api/documentation/latest/inde
 
 ### Property definitions in the REST API
 
-`Property Definition` information can be accessed via the [/structure/properties](http://www.m-files.com/mfws/resources/structure/properties.html) endpoint.
+`Property Definition` information can be accessed via the [/structure/properties](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/properties.html) endpoint.
 
 ## Property values
 
@@ -116,17 +116,17 @@ When dealing with multiple objects, [GetPropertiesOfMultipleObjects](https://www
 
 ### Property values in the REST API
 
-Retrieving and setting property values on an object version is done via the [/objects/(type)/(objectid)/(version)/properties](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties.html) endpoint.
+Retrieving and setting property values on an object version is done via the [/objects/(type)/(objectid)/(version)/properties](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties.html) endpoint.
 
-Issuing a HTTP GET to [/objects/(type)/(objectid)/(version)/properties](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties.html) will retrieve all property values on an object version, and issuing a GET to [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html) will retrieve a single property value.
+Issuing a HTTP GET to [/objects/(type)/(objectid)/(version)/properties](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties.html) will retrieve all property values on an object version, and issuing a GET to [/objects/(type)/(objectid)/(version)/properties/(id)](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/id.html) will retrieve a single property value.
 
-Issuing a HTTP PUT to [/objects/(type)/(objectid)/(version)/properties](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties.html) will set the property values on an object version, and issuing a PUT to [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html) will set a single property value.
+Issuing a HTTP PUT to [/objects/(type)/(objectid)/(version)/properties](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties.html) will set the property values on an object version, and issuing a PUT to [/objects/(type)/(objectid)/(version)/properties/(id)](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/id.html) will set a single property value.
 
-A property can be removed by issuing a HTTP DELETE to [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html).
+A property can be removed by issuing a HTTP DELETE to [/objects/(type)/(objectid)/(version)/properties/(id)](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/id.html).
 
-When dealing with multiple objects, the [/objects/properties](http://www.m-files.com/mfws/resources/objects/properties.html) endpoint may be used.
+When dealing with multiple objects, the [/objects/properties](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/properties.html) endpoint may be used.
 
-HTTP PUT and DELETE requests may not work in some scenarios.  Instead, it is recommended that [HTTP PUT and DELETE methods are routed via the _method querystring parameter](http://www.m-files.com/mfws/compatibility.html).
+HTTP PUT and DELETE requests may not work in some scenarios.  Instead, it is recommended that [HTTP PUT and DELETE methods are routed via the _method querystring parameter](https://developer.m-files.com/APIs/REST-API/Reference/compatibility.html).
 {:.note.warning}
 
 ## Workflows
@@ -144,4 +144,4 @@ The current workflow and state of an object are held in its [property values](#p
 
 ### Workflows in the REST API
 
-`Worfklow` information can be accessed via the [/structure/workflows](http://www.m-files.com/mfws/resources/structure/workflows.html) endpoint.  Information on states within each workflow can be accessed via the [/structure/workflows/(id)/states/](http://www.m-files.com/mfws/resources/structure/workflows/id/states.html) endpoint.
+`Worfklow` information can be accessed via the [/structure/workflows](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/workflows.html) endpoint.  Information on states within each workflow can be accessed via the [/structure/workflows/(id)/states/](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/workflows/id/states.html) endpoint.

@@ -104,7 +104,7 @@ namespace WebServiceClient
 		private static List<ObjType> GetObjectTypes()
 		{
 			// Issue a request for the object types and parse them into the expected structure.
-			// The structures come from http://www.m-files.com/mfws/samples.html
+			// The structures come from https://developer.m-files.com/APIs/REST-API/Reference/samples.html
 			return restClient
 				.Get<List<ObjType>>(new RestRequest("/REST/structure/objecttypes")).Data;
 

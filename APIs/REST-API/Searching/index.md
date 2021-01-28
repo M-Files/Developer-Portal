@@ -5,7 +5,7 @@ includeInSearch: true
 breadcrumb: Searching
 ---
 
-The M-Files Web Service exposes an [endpoint](http://www.m-files.com/mfws/resources/objects.html) which can be used to execute searches against the current M-Files vault.  Searching against the vault involves providing one or more [search conditions](http://www.m-files.com/mfws/syntax.html#sect:search-encoding) via the querystring.
+The M-Files Web Service exposes an [endpoint](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects.html) which can be used to execute searches against the current M-Files vault.  Searching against the vault involves providing one or more [search conditions](https://developer.m-files.com/APIs/REST-API/Reference/syntax.html#sect:search-encoding) via the querystring.
 
 Note that, unlike the M-Files COM API, the M-Files Web Service will exclude deleted objects from the search results by default.
 
@@ -83,7 +83,7 @@ Console.WriteLine($"There were {results.Items.Count} results returned.");
 
 *Note that in all the examples below, we will only build the URL to request.  The rest of the code is assumed to be similar to the examples above.*
 
-To restrict search results by the value of a property, a querystring parameter must be constructed, the name of which depends on the property ID to query, and the value must be [correctly formatted](http://www.m-files.com/mfws/syntax.html).
+To restrict search results by the value of a property, a querystring parameter must be constructed, the name of which depends on the property ID to query, and the value must be [correctly formatted](https://developer.m-files.com/APIs/REST-API/Reference/syntax.html).
 
 #### Restricting by text properties
 
@@ -209,7 +209,7 @@ var url =
 
 ## Combining search conditions
 
-Executing a search using multiple conditions involves building up a more complex querystring to provide to the [objects endpoint](http://www.m-files.com/mfws/resources/objects.html).  Each condition is built and encoded as specified in the [search encoding table](http://www.m-files.com/mfws/syntax.html#sect:search-encoding) and the search conditions are appended to the querystring, separated by ampersands.
+Executing a search using multiple conditions involves building up a more complex querystring to provide to the [objects endpoint](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects.html).  Each condition is built and encoded as specified in the [search encoding table](https://developer.m-files.com/APIs/REST-API/Reference/syntax.html#sect:search-encoding) and the search conditions are appended to the querystring, separated by ampersands.
 
 For example, a quicksearch for the string "mfws" may be encoded as `q=mfws`, and a constraint to restrict the results only to documents as `o=0`.  Combining these two conditions together would result in a request to `/objects?q=mfws&o=0`.  Additional constraints can be added until the desired expression is complete.
 
@@ -233,7 +233,7 @@ Console.WriteLine($"There were {results.Items.Count} results returned.");
 
 ## Operators
 
-*These operators are used when searching by a property value, and are detailed [in the online documentation](http://www.m-files.com/mfws/syntax.html).*
+*These operators are used when searching by a property value, and are detailed [in the online documentation](https://developer.m-files.com/APIs/REST-API/Reference/syntax.html).*
 
 ### Available operators
 

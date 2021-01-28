@@ -16,7 +16,7 @@ Our COM API Reference provides detailed documentation on the objects, methods an
 
 Our UI Extensibility Framework documentation provides introductory information, reference documentation, and sample applications that customise the M-Files user interface.
 
-* [The M-Files REST API (Web Service)](http://www.m-files.com/mfws/)
+* [The M-Files REST API (Web Service)](https://developer.m-files.com/APIs/REST-API/Reference/)
 
 Our Web Service documentation details the supported endpoints, type and enumeration references that are needed to interact with the Web Service.
 

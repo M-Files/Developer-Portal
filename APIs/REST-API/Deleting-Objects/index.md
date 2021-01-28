@@ -14,7 +14,7 @@ When removing objects from an M-Files vault, it is important to decide whether t
 
 ## Deleting objects
 
-To delete an object, execute a HTTP PUT request to [/objects/(type)/(objectid)/deleted](http://www.m-files.com/mfws/resources/objects/type/objectid/deleted.html), with the HTTP body containing a [PrimitiveType&lt;bool&gt;](https://www.m-files.com/mfws/structs/primitivetypet.html).  The value of the primitive type should be `true` to delete the object.
+To delete an object, execute a HTTP PUT request to [/objects/(type)/(objectid)/deleted](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/deleted.html), with the HTTP body containing a [PrimitiveType&lt;bool&gt;](https://www.m-files.com/mfws/structs/primitivetypet.html).  The value of the primitive type should be `true` to delete the object.
 
 ```csharp
 // Create a HttpClient.
@@ -43,7 +43,7 @@ await client.PostAsync(new Uri("http://localhost/REST/objects/" + documentObject
 
 ## Undeleting objects
 
-To undelete an object, execute a HTTP PUT request to [/objects/(type)/(objectid)/deleted](http://www.m-files.com/mfws/resources/objects/type/objectid/deleted.html), with the HTTP body containing a [PrimitiveType&lt;bool&gt;](https://www.m-files.com/mfws/structs/primitivetypet.html).  The value of the primitive type should be `false` to undelete the object.
+To undelete an object, execute a HTTP PUT request to [/objects/(type)/(objectid)/deleted](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/deleted.html), with the HTTP body containing a [PrimitiveType&lt;bool&gt;](https://www.m-files.com/mfws/structs/primitivetypet.html).  The value of the primitive type should be `false` to undelete the object.
 
 ```csharp
 // Create a HttpClient.
@@ -72,7 +72,7 @@ await client.PostAsync(new Uri("http://localhost/REST/objects/" + documentObject
 
 ## Destroying objects
 
-Destroying one or more versions of an object is done by executing a HTTP DELETE request to [/objects/(type)/(objectid)/(version)](http://www.m-files.com/mfws/resources/objects/type/objectid/version.html).
+Destroying one or more versions of an object is done by executing a HTTP DELETE request to [/objects/(type)/(objectid)/(version)](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version.html).
 
 ### Destroying specific object versions
 
