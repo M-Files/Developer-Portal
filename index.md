@@ -79,7 +79,7 @@ More information is available in the [User Interface Extensibility Framework sec
 * Used to create server-side applications.
 * Can be used to execute .NET code in response to object (e.g before an object is checked in) or vault events (e.g. before a view is deleted).
 * Can be used to execute .NET code as an object moves through a workflow.
-* Can be used to create background operations which execute periodically.
+* Can be used to create asynchronous processes via task queues.
 * Can be used to execute .NET code to calculate property values and/or provide property value validation.
 
 More information is available in the [Vault Application Framework section]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/).
