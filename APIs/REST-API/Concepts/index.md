@@ -67,17 +67,17 @@ Value list item Ids can be viewed by selecting a value list in the section above
 
 It is possible to enumerate most structural elements of an M-Files vault directly using the M-Files Web Service.  The following endpoints are useful:
 
-* [/structure/objecttypes](http://www.m-files.com/mfws/resources/structure/objecttypes.html) - returns all "real" object types (not value lists) in the vault.
+* [/structure/objecttypes](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/objecttypes.html) - returns all "real" object types (not value lists) in the vault.
 
-* [/structure/classes](http://www.m-files.com/mfws/resources/structure/classes.html) - returns all classes in the vault, optionally for a given object type.  Can also return classes in class groups.
+* [/structure/classes](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/classes.html) - returns all classes in the vault, optionally for a given object type.  Can also return classes in class groups.
 
-* [/structure/properties](http://www.m-files.com/mfws/resources/structure/properties.html) - returns all property definitions in the vault.
+* [/structure/properties](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/properties.html) - returns all property definitions in the vault.
 
-* [/structure/classes/(id)](http://www.m-files.com/mfws/resources/structure/classes/id.html) - returns details on a specific class in the vault, including the default property definitions shown on the metadata card and whether they are mandatory or optional.
+* [/structure/classes/(id)](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/classes/id.html) - returns details on a specific class in the vault, including the default property definitions shown on the metadata card and whether they are mandatory or optional.
 
 * /valuelists - returns all value lists within the vault.
 
 * [/valuelists/(id)/items](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/valuelists/id/items/) - returns the items within a specific value list in the vault.
 
-The [/structure/objecttypes](http://www.m-files.com/mfws/resources/structure/objecttypes.html) endpoint incorrectly states that it will return value lists.
+The [/structure/objecttypes](https://developer.m-files.com/APIs/REST-API/Reference/resources/structure/objecttypes.html) endpoint incorrectly states that it will return value lists.
 {:.note}

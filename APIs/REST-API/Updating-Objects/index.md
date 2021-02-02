@@ -8,21 +8,21 @@ breadcrumb: Updating objects
 This page focuses on updating objects using the REST API.  Details on updating objects using the COM API can be found [in the dedicated page]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/).
 {:.note}
 
-The examples below are written in C# and use objects from the [downloadable code samples](http://www.m-files.com/mfws/samples.html), which contains an `MFWSStructs.cs` file.  This file contains structures that mimic the JSON structures expected by the M-Files Web Service.  These are used to simplify the creation of objects, but are not directly required for use with the Web Service.  Note the bug mentioned in the [tips and tricks](#tips-and-tricks) section below.
+The examples below are written in C# and use objects from the [downloadable code samples](https://developer.m-files.com/APIs/REST-API/Reference/samples.html), which contains an `MFWSStructs.cs` file.  This file contains structures that mimic the JSON structures expected by the M-Files Web Service.  These are used to simplify the creation of objects, but are not directly required for use with the Web Service.  Note the bug mentioned in the [tips and tricks](#tips-and-tricks) section below.
 {:.note}
 
 The code below uses [JSON.NET](http://www.newtonsoft.com/json) to serialize and deserialize objects into JSON strings.  This library is used simply to keep the code below as clean as possible, and is not required to use the M-Files Web Service.  Some samples in the official documentation use the built-in [DataContractJsonSerializer](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.json.datacontractjsonserializer(v=vs.110).aspx) class, but this can have issues with JSON-formatted dates.
 {:.note}
 
-Objects can be found and modified using endpoints underneath the [object's version endpoint](http://www.m-files.com/mfws/resources/objects/type/objectid/version.html).  Each object within M-Files is automatically versioned as it is changed by users or the M-Files system itself.  The object version endpoint represents a specific version of the object within the vault.  For example, `/objects/0/123/1` represents version 1 of a document with ID 123, and `/objects/0/456/2` represents version 2 of a document with ID 456.  The latest version of an object can always be found by replacing the `version` element of the endpoint address with the string `latest`.  For example: `/objects/0/789/latest` always refers to the latest version of an object, even as the object is changed by others within the M-Files vault.
+Objects can be found and modified using endpoints underneath the [object's version endpoint](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version.html).  Each object within M-Files is automatically versioned as it is changed by users or the M-Files system itself.  The object version endpoint represents a specific version of the object within the vault.  For example, `/objects/0/123/1` represents version 1 of a document with ID 123, and `/objects/0/456/2` represents version 2 of a document with ID 456.  The latest version of an object can always be found by replacing the `version` element of the endpoint address with the string `latest`.  For example: `/objects/0/789/latest` always refers to the latest version of an object, even as the object is changed by others within the M-Files vault.
 
 ## Setting a property value
 
-Properties for an object can be altered en-masse by making a `POST` or `PUT` request to [/objects/(type)/(objectid)/(version)/properties](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties.html).  Note that a `POST` request can be used to add specific properties to an object, whereas a `PUT` request must always include all object properties, as those not included will be removed from the object.
+Properties for an object can be altered en-masse by making a `POST` or `PUT` request to [/objects/(type)/(objectid)/(version)/properties](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties.html).  Note that a `POST` request can be used to add specific properties to an object, whereas a `PUT` request must always include all object properties, as those not included will be removed from the object.
 
-A specific property can be added, updated, or removed from an object by using the [/objects/(type)/(objectid)/(version)/properties/(id)](http://www.m-files.com/mfws/resources/objects/type/objectid/version/properties/id.html) endpoint.  In addition, some other endpoints exist (e.g. [/objects/(type)/(objectid)/(version)/comments](http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html), [/objects/(type)/(objectid)/(version)/title](http://www.m-files.com/mfws/resources/objects/type/objectid/version/title.html), and [/objects/(type)/(objectid)/(version)/workflowstate](http://www.m-files.com/mfws/resources/objects/type/objectid/version/workflowstate.html)) that allow specific M-Files properties to be updated.
+A specific property can be added, updated, or removed from an object by using the [/objects/(type)/(objectid)/(version)/properties/(id)](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/properties/id.html) endpoint.  In addition, some other endpoints exist (e.g. [/objects/(type)/(objectid)/(version)/comments](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/comments.html), [/objects/(type)/(objectid)/(version)/title](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/title.html), and [/objects/(type)/(objectid)/(version)/workflowstate](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/workflowstate.html)) that allow specific M-Files properties to be updated.
 
-Updating properties still requires the object to be checked out.  The general process should be: check out, update object, check in.  Some endpoints will automatically do this in the background (e.g. [/objects/(type)/(objectid)/(version)/comments](http://www.m-files.com/mfws/resources/objects/type/objectid/version/comments.html)), but these will be detailed in the documentation.
+Updating properties still requires the object to be checked out.  The general process should be: check out, update object, check in.  Some endpoints will automatically do this in the background (e.g. [/objects/(type)/(objectid)/(version)/comments](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/comments.html)), but these will be detailed in the documentation.
 {:.note}
 
 ```csharp
@@ -42,9 +42,9 @@ await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/comme
 
 Updating an existing file typically involves a number of steps:
 
-1. [Checking out the existing object](http://www.m-files.com/mfws/resources/objects/type/objectid/version/checkedout.html).
-2. Executing a PUT request to [replace the existing file content](http://www.m-files.com/mfws/resources/objects/type/objectid/version/files/file/content.html).
-3. [Checking in the existing object](http://www.m-files.com/mfws/resources/objects/type/objectid/version/checkedout.html).
+1. [Checking out the existing object](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout.html).
+2. Executing a PUT request to [replace the existing file content](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/content.html).
+3. [Checking in the existing object](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout.html).
 
 In the sample below we check out a document (object type 0) with ID 551, then replace the content of the file with a file from the local hard disk, then check it in again.
 
@@ -59,7 +59,7 @@ client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken")
 var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 
 // Create the content for the checkout request.
-// NOTE: 2 == "CheckedOutToMe" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
+// NOTE: 2 == "CheckedOutToMe" from https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html.
 var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
@@ -74,7 +74,7 @@ var uri =
 await client.PostAsync(uri, new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
 
 // Create the content for the checkin request.
-// NOTE: 0 == "CheckedIn" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
+// NOTE: 0 == "CheckedIn" from https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html.
 httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
@@ -83,7 +83,7 @@ Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
 	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout.aspx?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 ```
 
-The [check out status endpoint documentation](http://www.m-files.com/mfws/resources/objects/type/objectid/version/checkedout.html) states that the PUT request takes an [MFCheckOutStatus](http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html) as an input, but this must be wrapped in a [PrimitiveType](http://www.m-files.com/mfws/structs/primitivetypet.html); this is the reason that the JSON for the checkout/checkin requests contains the "Value" element and not just the check in enum value.
+The [check out status endpoint documentation](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout.html) states that the PUT request takes an [MFCheckOutStatus](https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html) as an input, but this must be wrapped in a [PrimitiveType](https://developer.m-files.com/APIs/REST-API/Reference/structs/primitivetypet.html); this is the reason that the JSON for the checkout/checkin requests contains the "Value" element and not just the check in enum value.
 {:.note}
 
 ## Adding a new file to an existing object
@@ -92,7 +92,7 @@ Adding a new file to an existing object is similar to replacing the content of a
 
 * If a file is being added to an object which is not a document ([see "Creating a New Object Type"](https://www.m-files.com/user-guide/latest/eng/New_object_type.html)) then the object type must support having files.  If not then the request will fail.
 
-* If a file is being added to an existing document, then the document may need to be converted to a [Multi-File Document (MFD)](https://www.m-files.com/user-guide/latest/eng/MFD_SFD.html) as part of the process.  Whether a document is a Multi-File-Document can be found either by checking the [ObjectVersion](http://www.m-files.com/mfws/structs/objectversion.html) (the "SingleFile" property will be true), or by checking the value of property 22 ("Single file").  This is a built-in property.
+* If a file is being added to an existing document, then the document may need to be converted to a [Multi-File Document (MFD)](https://www.m-files.com/user-guide/latest/eng/MFD_SFD.html) as part of the process.  Whether a document is a Multi-File-Document can be found either by checking the [ObjectVersion](https://developer.m-files.com/APIs/REST-API/Reference/structs/objectversion.html) (the "SingleFile" property will be true), or by checking the value of property 22 ("Single file").  This is a built-in property.
 
 ```csharp
 // Create a HttpClient.
@@ -106,7 +106,7 @@ client.DefaultRequestHeaders.Add("X-Authentication",
 var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 
 // Create the content for the checkout request.
-// NOTE: 2 == "CheckedOutToMe" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
+// NOTE: 2 == "CheckedOutToMe" from https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html.
 var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
@@ -159,7 +159,7 @@ await
 	client.PostAsync(new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/upload.aspx"), httpContent);
 
 // Create the content for the checkin request.
-// NOTE: 0 == "CheckedIn" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
+// NOTE: 0 == "CheckedIn" from https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html.
 httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
@@ -183,7 +183,7 @@ var client = new System.Net.Http.HttpClient();
 client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken");
 
 // Create the content for the checkout request.
-// NOTE: 2 == "CheckedOutToMe" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
+// NOTE: 2 == "CheckedOutToMe" from https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html.
 var httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"2\" }");
 
 // Check out the document with ID 551.
@@ -215,7 +215,7 @@ uri = new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.
 await client.PostAsync(uri);
 
 // Create the content for the checkin request.
-// NOTE: 0 == "CheckedIn" from http://www.m-files.com/mfws/enumerations/mfcheckoutstatus.html.
+// NOTE: 0 == "CheckedIn" from https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html.
 httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
@@ -228,7 +228,7 @@ Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(await (await client
 
 ### .NET
 
-* When using the [downloadable code samples](http://www.m-files.com/mfws/samples.html), the .NET version includes a set of sample classes for JSON serialization and deserialization (in both `MFWSStructs.cs` and `MFWSStructs (no DataContracts).cs`).  The `Lookup` class has a bug which causes any lookup to incorrectly point to "version 0".  This is most visible when setting the class.  To work around this, either explicitly set the [Version property of the Lookup class](http://www.m-files.com/mfws/structs/lookup.html) to -1 ("latest version"), or alter the `Lookup` class itself to define the Version property as nullable:
+* When using the [downloadable code samples](https://developer.m-files.com/APIs/REST-API/Reference/samples.html), the .NET version includes a set of sample classes for JSON serialization and deserialization (in both `MFWSStructs.cs` and `MFWSStructs (no DataContracts).cs`).  The `Lookup` class has a bug which causes any lookup to incorrectly point to "version 0".  This is most visible when setting the class.  To work around this, either explicitly set the [Version property of the Lookup class](https://developer.m-files.com/APIs/REST-API/Reference/structs/lookup.html) to -1 ("latest version"), or alter the `Lookup` class itself to define the Version property as nullable:
 
 ```csharp
 /// <summary>
@@ -269,7 +269,7 @@ public class Lookup
 
 * Using libraries such as [JSON.NET](http://www.newtonsoft.com/json) or [RestSharp](http://restsharp.org/) can simplify interacting with the M-Files Web Service.  Both libraries can easily be installed using [NuGet](https://www.nuget.org/), which is available for Visual Studio 2013 and upwards.
 
-* Failing to set the [UploadInfo](http://www.m-files.com/mfws/structs/uploadinfo.html)'s Extension property will mean that uploaded files are left with no extension.  Ensure this is set correctly after the temporary upload has completed.
+* Failing to set the [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html)'s Extension property will mean that uploaded files are left with no extension.  Ensure this is set correctly after the temporary upload has completed.
 
 * The .NET [FileInfo.Extension](https://msdn.microsoft.com/en-us/library/system.io.filesysteminfo.extension(v=vs.110).aspx) property includes the period as part of the returned value.  The UploadInfo object expects the file extension without the period.
 

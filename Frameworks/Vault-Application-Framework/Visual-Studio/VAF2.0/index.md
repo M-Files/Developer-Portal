@@ -28,9 +28,6 @@ Creating a new Vault Application Framework application can be done from within V
 
 ![Creating a new project](create-new-project.png)
 
-If you have the [VAF 1.0]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/VAF1.0/) template installed then you may notice two "Vault Application Framework" templates; ensure that you choose the 2.0 version.
-{:.note}
-
 ### An overview of the project contents
 
 ![The project contents](solution-explorer.png)

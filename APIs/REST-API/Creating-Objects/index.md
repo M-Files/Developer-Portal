@@ -9,9 +9,9 @@ redirect_from: /APIs/REST-API/Creating-And-Updating-Objects/
 This page focuses on creating objects using the REST API.  Details on creating objects using the COM API can be found [in the dedicated page]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/).
 {:.note}
 
-To create an object via the M-Files Web Service, make a POST request to [/objects/(type)](http://www.m-files.com/mfws/resources/objects/type.html).  This endpoint takes an [ObjectCreationInfo](http://www.m-files.com/mfws/structs/objectcreationinfo.html) containing information for the new object and returns an [ObjectVersion](http://www.m-files.com/mfws/structs/objectversion.html) representing the newly-created object.
+To create an object via the M-Files Web Service, make a POST request to [/objects/(type)](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type.html).  This endpoint takes an [ObjectCreationInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/objectcreationinfo.html) containing information for the new object and returns an [ObjectVersion](https://developer.m-files.com/APIs/REST-API/Reference/structs/objectversion.html) representing the newly-created object.
 
-The examples below are written in C# and use objects from the [downloadable code samples](http://www.m-files.com/mfws/samples.html), which contains an `MFWSStructs.cs` file.  This file contains structures that mimic the JSON structures expected by the M-Files Web Service.  These are used to simplify the creation of objects, but are not directly required for use with the Web Service.  Note the bug mentioned in the [tips and tricks](#tips-and-tricks) section below.
+The examples below are written in C# and use objects from the [downloadable code samples](https://developer.m-files.com/APIs/REST-API/Reference/samples.html), which contains an `MFWSStructs.cs` file.  This file contains structures that mimic the JSON structures expected by the M-Files Web Service.  These are used to simplify the creation of objects, but are not directly required for use with the Web Service.  Note the bug mentioned in the [tips and tricks](#tips-and-tricks) section below.
 {:.note}
 
 The code below uses [JSON.NET](http://www.newtonsoft.com/json) to serialize and deserialize objects into JSON strings.  This library is used simply to keep the code below as clean as possible, and is not required to use the M-Files Web Service.  Some samples in the official documentation use the built-in [DataContractJsonSerializer](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.json.datacontractjsonserializer(v=vs.110).aspx) class, but this can have issues with JSON-formatted dates.
@@ -19,7 +19,7 @@ The code below uses [JSON.NET](http://www.newtonsoft.com/json) to serialize and 
 
 ## Creating an object without files (e.g. a non-document object)
 
-To create a non-document object, execute a POST request to [/objects/(type)](http://www.m-files.com/mfws/resources/objects/type.html) with the property values for the new object.
+To create a non-document object, execute a POST request to [/objects/(type)](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type.html) with the property values for the new object.
 
 The sample code includes a dummy authentication token.  For more information on authentication, see [Authentication]({{ site.baseurl }}/APIs/REST-API/Authentication/).
 {:.note}
@@ -193,7 +193,7 @@ Date: Fri, 26 Jan 2018 09:44:34 GMT
 
 ## Creating an object with files
 
-To create an object with files, the file content must first be `POST`ed to [/files](http://www.m-files.com/mfws/resources/files.html).  The file will be saved into a temporary location on the server and an [UploadInfo](http://www.m-files.com/mfws/structs/uploadinfo.html) returned containing an ID for the temporary file.  During the file creation, these UploadInfo objects are provided as part of the [ObjectCreationInfo](http://www.m-files.com/mfws/structs/objectcreationinfo.html) and the server automatically attaches the temporary files to the new object.
+To create an object with files, the file content must first be `POST`ed to [/files](https://developer.m-files.com/APIs/REST-API/Reference/resources/files.html).  The file will be saved into a temporary location on the server and an [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html) returned containing an ID for the temporary file.  During the file creation, these UploadInfo objects are provided as part of the [ObjectCreationInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/objectcreationinfo.html) and the server automatically attaches the temporary files to the new object.
 
 ### Uploading files
 
@@ -267,7 +267,7 @@ Content-Length: 48
 }
 ```
 
-After a file is uploaded to [/files](http://www.m-files.com/mfws/resources/files.html), an [UploadInfo](http://www.m-files.com/mfws/structs/uploadinfo.html) will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
+After a file is uploaded to [/files](https://developer.m-files.com/APIs/REST-API/Reference/resources/files.html), an [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html) will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
 {:.note}
 
 ### Putting it all together
@@ -482,7 +482,7 @@ Content-Length: 1435
 
 ### .NET
 
-* When using the [downloadable code samples](http://www.m-files.com/mfws/samples.html), the .NET version includes a set of sample classes for JSON serialization and deserialization (in both `MFWSStructs.cs` and `MFWSStructs (no DataContracts).cs`).  The `Lookup` class has a bug which causes any lookup to incorrectly point to "version 0".  This is most visible when setting the class.  To work around this, either explicitly set the [Version property of the Lookup class](http://www.m-files.com/mfws/structs/lookup.html) to -1 ("latest version"), or alter the `Lookup` class itself to define the Version property as nullable:
+* When using the [downloadable code samples](https://developer.m-files.com/APIs/REST-API/Reference/samples.html), the .NET version includes a set of sample classes for JSON serialization and deserialization (in both `MFWSStructs.cs` and `MFWSStructs (no DataContracts).cs`).  The `Lookup` class has a bug which causes any lookup to incorrectly point to "version 0".  This is most visible when setting the class.  To work around this, either explicitly set the [Version property of the Lookup class](https://developer.m-files.com/APIs/REST-API/Reference/structs/lookup.html) to -1 ("latest version"), or alter the `Lookup` class itself to define the Version property as nullable:
 
 ```csharp
 /// <summary>
@@ -523,7 +523,7 @@ public class Lookup
 
 * Using libraries such as [JSON.NET](http://www.newtonsoft.com/json) or [RestSharp](http://restsharp.org/) can simplify interacting with the M-Files Web Service.  Both libraries can easily be installed using [NuGet](https://www.nuget.org/), which is available for Visual Studio 2013 and upwards.
 
-* Failing to set the [UploadInfo](http://www.m-files.com/mfws/structs/uploadinfo.html)'s Extension property will mean that uploaded files are left with no extension.  Ensure this is set correctly after the temporary upload has completed.
+* Failing to set the [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html)'s Extension property will mean that uploaded files are left with no extension.  Ensure this is set correctly after the temporary upload has completed.
 
 * The .NET [FileInfo.Extension](https://msdn.microsoft.com/en-us/library/system.io.filesysteminfo.extension(v=vs.110).aspx) property includes the period as part of the returned value.  The UploadInfo object expects the file extension without the period.
 
