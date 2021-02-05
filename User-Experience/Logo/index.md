@@ -5,7 +5,37 @@ includeInSearch: true
 redirect_from: /UX-Design/Logo/
 ---
 
-## Different logos
+
+## M-Files desktop Logo
+
+![M-Files logo](Logo-blue-background.png){:.borderless}
+
+Logo settings:
+* Width 128 pixels
+* Height 32 pixels
+* Resolution 72 dpi
+* Color depth 32 bit
+* Use transparent background, alpha channel included
+* PNG file format
+
+Distances
+* From top 14px
+* From Left 12px
+
+### Download
+
+Desktop logo (white)
+![White logo](desktop-logo-2021.png){:.borderless}
+
+<ul class="quicklinks">
+	<li class="api"><a href="{{ site.baseurl }}/UX-Design/Logo/desktop-logo-2021.png">
+	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
+	Download M-Files Desktop logo </a></li>
+</ul>
+
+## Old logo
+
+### Different logos
 
 Logo | Name | Color | Where to use
 --- | --- | --- | ---
@@ -14,20 +44,30 @@ Logo | Name | Color | Where to use
 ![Bright logo](bright-logo.png){:.borderless .leftcol} | Bright logo | #00B1EF / R = 0, G = 177, B = 239 | Marketing material, presentations etc.
 ![Black logo](black-logo.png){:.borderless .leftcol} | Black logo | #303030 / R = 48, G = 48, B = 48  | Marketing material, presentations etc.
 
-## Protected area
+### Protected area
 
 ![Protected area: 50% clearance exclusion zone](protected-area.png){:.borderless}
 
 
-## Avoid these
+### Avoid these
 
 ![Avoid stretching, complex backgrounds and different colors](avoid-these.png){:.borderless}
 
-## Distances
+### Size
 
-![Logo distance from corners 14 px from top and 12 px from left. Logo size: widith 128px, height 29px](distances.png){:.borderless}
+Logo settings:
+* Width 128 pixels
+* Height 32 pixels
+* Resolution 72 dpi
+* Color depth 32 bit
+* Use transparent background, alpha channel included
+* PNG file format
 
-## Download
+### Distances
+
+![Logo distance from corners 14 px from top and 12 px from left.](distances.png){:.borderless}
+
+### Download
 
 Desktop logo
 ![White logo](white-logo.png){:.borderless}
