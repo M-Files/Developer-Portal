@@ -4,6 +4,8 @@ title: Writing Style
 includeInSearch: true
 ---
 
+This writing style guide is intended for those who write customer-facing content for M-Files and other related products. It provides stylistic and grammatical guidelines as well as punctuation ground rules for writing clear and consistent user documentation. The style guide also includes specific guidelines for creating user interface texts. These guidelines should be followed by everyone concerned to ensure that all content is written in the same, clear, and concise manner.
+
 ## Conciseness and Consistency
 
 * Stay concise. Consider what the user absolutely needs to know and leave out any non-essential details.
