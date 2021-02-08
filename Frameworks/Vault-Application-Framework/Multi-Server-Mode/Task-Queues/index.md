@@ -10,7 +10,7 @@ The approach shown below is only compatible with version 2.2(and higher) of the 
 
 Task queues should be used in place of background operations when targeting Multi-Server Mode.  This ensures that the operations are correctly processed when multiple M-Files servers may be connected to a vault.
 
-The VAF Extensions library contains various [helper methods for creating task queues](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/MultiServerMode/ExtensionMethods/VaultApplicationBaseExtensionMethods.cs).
+The VAF Extensions library contains various [helper methods for creating task queues](https://github.com/M-Files/VAF.Extensions.Community/tree/master/MFiles.VAF.Extensions/MultiServerMode).
 {:.note}
 
 ## Task queue types
