@@ -14,7 +14,7 @@ This writing style guide is intended for those who write customer-facing content
 CORRECT | INCORRECT  
 --- | --- |
 The configurations editor lets you create metadata card configuration rules and modify settings of external repository connectors, intelligence services, and other applications that have been installed to the vault. | The configurations editor in M-Files Admin allows you to define configurations for the following features of the vault: vault settings, custom vault data, metadata card, federated authentication, intelligence services, external connectors, vault applications The configurations in the editor are hierarchical. You can select subsections of a configuration in the gray navigation area, and the scope of the configuration shown in the Configuration or the Advanced tab changes accordingly.
-Electronic signing is not be available because the necessary metadata definitions for creating signature objects have not been set. For more information, refer to the M Files user guide. | Electronic signing will not be available because the required metadata definitions for creating signature objects have not been set. In order for automatic signature objects to be created in M-Files, aliases must be created for the new object type as well as for the required property definitions. The aliases are used for creating objects at the time of signing. If you are using M-Files Compliance Kit, these definitions should already be available. Otherwise, you should create the required metadata definitions in M-Files Admin in order to activate the separate signature objects.
+Electronic signing is not available because the necessary metadata definitions for creating signature objects have not been set. For more information, refer to the M Files user guide. | Electronic signing will not be available because the required metadata definitions for creating signature objects have not been set. In order for automatic signature objects to be created in M-Files, aliases must be created for the new object type as well as for the required property definitions. The aliases are used for creating objects at the time of signing. If you are using M-Files Compliance Kit, these definitions should already be available. Otherwise, you should create the required metadata definitions in M-Files Admin in order to activate the separate signature objects.
 
 * Stay consistent. Always use the same terms for the same elements. This makes it a lot easier for the users to find their way around the user interface.
 
@@ -48,7 +48,7 @@ This section outlines the style conventions used for at M-Files.
 
 All M-Files content must be written in **Standard American English.** The most significant difference between written Standard American English and, say, written British English is that certain words are spelled differently. Pay special attention to how you spell certain words.
 
-The tables below list spelling differences of words and suffixes (word endings) between Standard American English and British English. Please note that the lists are not by any means exhaustive, but they cover some of the most common differences. Whenever you are unsure of how a word is spelled in Standard American English, consult a dictionary, such as the online dictionaries by Merriam-Webster or Macmillan.
+The tables below list spelling differences of words and suffixes (word endings) between Standard American English and British English. Please note that the lists are not by any means exhaustive, but they cover some of the most common differences. Whenever you are unsure of how a word is spelled in Standard American English, consult a dictionary, such as the online dictionaries by [Merriam-Webster]({{ site.baseurl }}/User-Experience/Writing-Style/#reference-documents) or [Macmillan]({{ site.baseurl }}/User-Experience/Writing-Style/#reference-documents).
 
 #### Words with Specific Endings
 
@@ -58,7 +58,7 @@ AMERICAN | BRITISH
 **-ization** Localization, Utilization | **-isation** Localisation, Utilisation
 **-yze** Analyze | **-yse** Analyse
 **-or** Color, Behavior | **-our** Colour, Behaviour
-**-er** Center, Caliber | **-re** Centr, Calibre
+**-er** Center, Caliber | **-re** Centre, Calibre
 **-se** License | **-ce** Licence
 **-og** Catalog | **-ogue** Catalogue
 
@@ -88,9 +88,12 @@ Elevator | Lift
 Avoid large chunks of text. Too much text in the user interface looks scary and lowers the chance of the user actually reading it.
 In documentation, the maximum number of words in a sentence is:
 * 20 in procedures
-`In M-Files Admin, go to the Advanced Vault Settings section.` 
+
+    `In M-Files Admin, go to the "Advanced Vault Settings" section.`
+
 * 25 in descriptive writing
-`You can control the workflow of the object and do a workflow state transition with the workflow-related fields at the bottom of the metadata card.` 
+
+    `You can control the workflow of the object and do a workflow state transition with the workflow-related fields at the bottom of the metadata card.` 
 
 ### Capitalization
 
@@ -98,9 +101,9 @@ Capitalization means writing a word with the first letter as an upper-case lette
 
 #### Headings
 
-Headings should use the so-called title case, in which the first letter of each major word in the heading is capitalized, including individual words in hyphenated word combinations (such as Client-Side Registry Settings). Articles (a/an/the), conjunctions, and prepositions with fewer than five letters are not capitalized unless they start the heading. Examples of conjunctions not to be capitalized are and, but, and if. Examples of prepositions not to be capitalized are at, to, for, and with.
+Headings should use the so-called _title case_, in which the first letter of each _major_ word in the heading is capitalized, including individual words in hyphenated word combinations (such as _Client-Side Registry Settings_). Articles (_a/an/the_), conjunctions, and prepositions _with fewer than five letters_ are not capitalized unless they start the heading. Examples of conjunctions not to be capitalized are _and, but,_ and _if_. Examples of prepositions not to be capitalized are _at, to, for,_ and _with_.
 
-In contrast to the title case is the sentence case, which is the standard way of capitalizing English sentences. In the sentence case, only the first letter of a sentence is capitalized and subsequent letters are in lowercase, with the exception of proper names and acronyms (see sections 4.3.2 and 4.3.3).
+In contrast to the title case is the sentence case, which is the standard way of capitalizing English sentences. In the sentence case, only the first letter of a sentence is capitalized and subsequent letters are in lowercase, with the exception of proper names and acronyms.
 
 Here are some examples of the title case:
 
@@ -112,24 +115,24 @@ Here are some examples of the title case:
 
 #### Proper Names
 
-Proper names are nouns denoting unique entities. Proper names are always capitalized and are thus orthographically distinguished from other parts of speech in sentence case. Proper names include product names (such as M-Files), organization names (such as Microsoft), place names (such as Tampere), persons (such as Jacques Anquetil) or any other names of individual entities.
+Proper names are nouns denoting unique entities. Proper names are always capitalized and are thus orthographically distinguished from other parts of speech in sentence case. Proper names include product names (such as _M-Files_), organization names (such as _Microsoft_), place names (such as _Tampere_), persons (such as _Jacques Anquetil_) or any other names of individual entities.
 
 #### Acronyms
 
-Acronyms are abbreviations formed from the initial letters or parts in a phrase or a word. Examples of acronyms include URL, laser, HDMI, tRNA and PnP. Acronyms are written in all uppercase, mixed case or lowercase, but most commonly follow the all-uppercase capitalization scheme, in which every letter in the acronym is capitalized (such as in HDMI and URL).
+Acronyms are abbreviations formed from the initial letters or parts in a phrase or a word. Examples of acronyms include _URL, laser, HDMI, tRNA,_ and _PnP_. Acronyms are written in all uppercase, mixed case or lowercase, but most commonly follow the all-uppercase capitalization scheme, in which every letter in the acronym is capitalized (such as in _HDMI_ and _URL_).
 
-Some acronyms use mixed-case capitalization, especially the ones that are derived from an existing acronym by affixing. tRNA, for instance, uses a mixed-case capitalization scheme, since it is formed by affixing "transfer" to the acronym RNA. PnP similarly uses mixed-case capitalization, since the letter "n" in the acronym stands for "and", which is commonly written in lowercase even in title case.
+Some acronyms use mixed-case capitalization, especially the ones that are derived from an existing acronym by affixing. _tRNA_, for instance, uses a mixed-case capitalization scheme, since it is formed by affixing "transfer" to the acronym RNA. PnP similarly uses mixed-case capitalization, since the letter "n" in the acronym stands for "and", which is commonly written in lowercase even in title case.
 
 If the sentence begins with an acronym that starts with a lowercase letter, do not capitalize the first letter.
 {:.note}
 
-Some commonly used acronyms have taken on an identity as regular words. Such acronyms are therefore written in all lowercase letter. Examples of such acronyms include laser and scuba.
+Some commonly used acronyms have taken on an identity as regular words. Such acronyms are therefore written in all lowercase letter. Examples of such acronyms include _laser_ and _scuba_.
 
-Do not use apostrophes (') when forming plural forms of acronyms. For example, write URLs, not URL's.
+Do not use apostrophes (') when forming plural forms of acronyms. For example, write _URLs_, not _URL's_.
 
 #### M-Files Desktop, Classic M-Files Web, and M-Files Admin
 
-Use title case for the following elements:
+Use **title case** for the following elements:
 
 * Dialog and tab titles
 
@@ -184,7 +187,7 @@ This section provides ground rules for the proper use of punctuation. These guid
 #### Colons
 
 In addition to using colons (:) normally in any body text content, add a colon after the following elements:
-* Labels calling for the user's attention like Note or Important
+* Labels calling for the user's attention like _Note_ or _Important_
 * Value and setting labels in various dialogs like in the example below
 
 ![Colons are used after following elements: Lables and various dialogs](Colons.png){:.borderless}
@@ -192,20 +195,20 @@ In addition to using colons (:) normally in any body text content, add a colon a
 #### Commas and Semicolons
 
 Rules for using commas (,) and semicolons (;):
-* Use a comma to separate three or more words, phrases, or clauses in a series. Comma must also be used before the final conjunction (and, or, or nor) in a series of three or more elements:
+* Use a comma to separate three or more words, phrases, or clauses in a series. Comma must also be used before the final conjunction (_and, or, or nor_) in a series of three or more elements:
 
-`You can find the corresponding M-Files functions can be in PowerPoint versions 2003, 2007, 2010, and 2013.`
+    `You can find the corresponding M-Files functions can be in PowerPoint versions 2003, 2007, 2010, and 2013.`
 
 * Use a comma to separate an introductory phrase from the rest of the sentence:
 
-`In M-Files, you can create multi-file or single-file documents.`
+    `In M-Files, you can create multi-file or single-file documents.`
 
 * Use a comma before a conjunction that links two independent clauses:
 
-`The server was specified in the previous field, and in this field, you specify the connection port.`
+    `The server was specified in the previous field, and in this field, you specify the connection port.`
 
-* Do not use a comma before the word that. This is today considered nonstandard in English.
-* If the items in a list are long, complex, or contain conjunctions or commas, use a semicolon (;) to separate such items if absolutely necessary.
+* Do not use a comma before the word _that_. This is today considered nonstandard in English.
+* If the items in a list are long, complex, or contain conjunctions or commas, use a **semicolon** (;) to separate such items if absolutely necessary.
 
 #### Question Marks
 
@@ -217,7 +220,7 @@ Quotation marks are used for identifying named entities, such as object or comma
 
 Use double quotes to refer to user interface elements in cases where you are unable to italicize or bold the text referring to the element. Referring to user interface elements in headings, for example, can be one such case.
 
-In the user interface, use both quotation marks and apostrophes sparingly. For example, referring to short command names does not usually require using quotation marks: Use the Refresh Now command to resynchronize the group members.
+In the user interface, use both quotation marks and apostrophes sparingly. For example, referring to short command names does not usually require using quotation marks: _Use the Refresh Now command to resynchronize the group members_.
 
 #### Dashes
 
@@ -227,15 +230,15 @@ There are two types of dashes to be used in documentation:
 
 You can create an en dash (–) by typing ALT+0150 on Windows or by typing a single hyphen between two words in Word with AutoFormat enabled. The en dash is commonly used for indicating a closed range of values. Follow these guidelines for using en dashes:
 
-* Use an en dash with no whitespace around the dash to indicate a range. Alternatively, you can use constructions such as from … to for indicating a range:
+* Use an en dash with no whitespace around the dash to indicate a range. Alternatively, you can use constructions such as _from_ … to for indicating a range:
 
-`Repeat the steps 1–4 separately for each subtask.`
+    `Repeat the steps 1–4 separately for each subtask.`
 
-`Repeat the steps from 1 to 4 separately for each subtask.`
+    `Repeat the steps from 1 to 4 separately for each subtask.`
 
 * Use the en dash to indicate a relationship between two things, for instance:
 
-`The client–server model`
+    `The client–server model`
 
 * Do not use the en dash to indicate a negative or an empty value or as a list bullet.
 
@@ -243,15 +246,15 @@ Use the hyphen (-) character in the following cases:
 
 * To separate a prefix and the word stem when the prefix ends with the same letter as the first letter of the word stem, or when adding a prefix results in an ambiguous word:
 
-`co-worker, re-elect`
+    `co-worker, re-elect`
 
-* The prefixes ex-, all-, and self- are special cases. Always use a hyphen with them:
+* The prefixes _ex-, all-,_ and _self-_ are special cases. Always use a hyphen with them:
 
-`Ex-president, all-inclusive, self-explanatory`
+    `Ex-president, all-inclusive, self-explanatory`
 
 * Use a hyphen between attributive words in compound modifiers:
 
-`Pre-shared key, user-specific settings, high-octane gasoline`
+    `Pre-shared key, user-specific settings, high-octane gasoline`
 
 #### Exclamation Points
 
@@ -303,34 +306,35 @@ Use periods after complete sentences that are not questions or exclamations and 
 
 **Periods in the M-Files Mobile Apps**
 
-Include a period only after body text in message boxes and alerts.
+Include a period only after **body text** in message boxes and alerts.
 
 ![Include a period only after body text in message boxes and alerts](Body-text.png){:.borderless}
 
-#### Ellipses¨
+#### Ellipses
 
 Do not include ellipsis (…) in user documentation even if the ellipsis is part of the user interface text.
 
 Use ellipses to indicate that something is in progress or requires further user input:
 
 * Menu items and button labels referring to actions that will require user input
-`Add…`
 
-`Make Copy…`
+    `Add…`
+
+    `Make Copy…`
 
 * Process indicators 
 
-`Searching…`
+    `Searching…`
 
-`Downloading the files…`
+    `Downloading the files…`
 
 #### Slashes
 
-Do not use a slash (/) as a substitute for the word or, that is, to indicate a choice between two or more alternatives. Use the word or instead.
+Do not use a slash (/) as a substitute for the word _or_, that is, to indicate a choice between two or more alternatives. Use the word _or_ instead.
 
 OK | NOT OK  
 --- | --- |
-By using the _Change_ state function, you can also add comments to the object while you are changing the workflow, the workflow state, or both. | By using the _Change_ state function, you can also add comments to the object while you are changing the workflow and/or workflow state.
+By using the _Change state_ function, you can also add comments to the object while you are changing the workflow, the workflow state, or both. | By using the _Change state_ function, you can also add comments to the object while you are changing the workflow and/or workflow state.
 
 ### Terminology
 
@@ -341,7 +345,7 @@ CORRECT | INCORRECT
 Sorry, but you can't use this operation for <span style="color: green">value list based properties.</span> | The operation is not supported for <span style="color: red">lookups.</span> 
 <span style="color: green">Update object permissions based on the changes</span> to the <span style="color: green">named access control list</span>  "%s". | <span style="color: red">Propagate changes</span> to the <span style="color: red">NACL</span> "%s".
 
-Do not use deictic expressions like today, here, below, above, or on the left. Their context can change. However, when you refer to any commands, buttons, or other elements in the user interface, make sure that the user does not have to guess where to find them, either.
+Do not use deictic expressions like _today, here, below, above, or on the left_. Their context can change. However, when you refer to any commands, buttons, or other elements in the user interface, make sure that the user does not have to guess where to find them, either.
 
 The table lists the correct terms to use in documentation. Please use these terms to keep the language in documentation consistent.
 
@@ -375,8 +379,9 @@ value list based property | lookup, lookup property
 Windows notification area | system tray, status area
 The **New User** dialog is opened. | The **New User** dialog appears. The **New User** dialog emerges.
 
-: A dialog is most often defined as a small window prompting for user response, whereas a window is a broader concept, essentially covering the term dialog as well.
-{:.note}
+
+: _A dialog_ is most often defined as a small window prompting for user response, whereas a _window_ is a broader concept, essentially covering the term _dialog_ as well.
+{:.note}  
 
 ### Referring to User Interface Elements
 
@@ -384,15 +389,15 @@ Use a **bolded font** when referring to any user interface elements, like button
 
 When referring to non-interactable user interface elements, use a definite article followed by the name of the element and then the type of the element:
 
-`The New User dialog is opened.`
+The **New User** dialog is opened.
 
 When referring to interactable user interface elements, use just the name of the element:
 
-`Click OK once you are done.`
+Click **OK** once you are done.
 
 Sometimes, for clarity, it can be necessary to add the user interface element as an icon as well. In these cases, add the icon in parentheses right after the name of the user interface element:
 
-`Click the Create (   ) button and then select Document... from the context menu.`
+Click the **Create** (![Create icon](create.png){:.borderless}) button and then select **Document**... from the context menu.
 
 If the icon is big, consider making the screenshot smaller.
 
@@ -410,7 +415,11 @@ Spell out the complete term the first time an abbreviation or acronym appears in
 
 Here is an example:
 
-`Organizations have traditionally relied on Virtual Private Network (VPN) technology to secure access to corporate resources (such as M-Files vaults) from outside the private network of the organization. - Together, the HTTPS encryption and the use of a pre-shared key as a second factor in authentication provide similar security as VPN but without the complexity and compatibility challenges of VPN.`
+Organizations have traditionally relied on **Virtual Private Network (VPN)** technology to secure access to corporate resources (such as M-Files vaults) from outside the private network of the organization.
+
+...
+
+Together, the HTTPS encryption and the use of a pre-shared key as a second factor in authentication provide similar security as **VPN** but without the complexity and compatibility challenges of **VPN.**
 
 Remember to include all acronyms in the glossary of the document.
 
@@ -420,7 +429,7 @@ This section provides guidelines for the form and structure of headings. The fol
 
 * Keep headings brief and to the point, and make sure that they describe the content accurately and properly.
 * Each heading must be unique. Make sure that there are no synonymous headings in a document.
-* Use the title case for first, second, and third level headings.
+* Use the [title case]({{ site.baseurl }}/User-Experience/Writing-Style/#headings) for first, second, and third level headings.
 * Use the sentence case for fourth level headings.
 * Avoid using excessive or unnecessary punctuation in headings (such as parentheses, semicolons, or exclamation marks).
 * Never add a period at the end of a heading.
@@ -431,7 +440,7 @@ Use first, second, and third level headings for structuring your document. Use a
 
 #### Heading Structure for Task Procedures
 
-Use the gerund (the –ing form that is used for forming verbal nouns from verbs) form of a verb as the subject in task headings, instead of the sentence-initial to¬-infinitive phrase or a bare infinitive. Below are examples of the correct and incorrect heading structure for task procedures. Instead of using the how to structure, use the –ing form in headings as well as in the document title.
+Use the gerund (the _–ing_ form that is used for forming verbal nouns from verbs) form of a verb as the subject in task headings, instead of the sentence-initial _to_-infinitive phrase or a bare infinitive. Below are examples of the correct and incorrect heading structure for task procedures. Instead of using the _how_ to structure, use the –_ing_ form in headings as well as in the document title.
 
 CORRECT | INCORRECT 
 --- | --- |
@@ -449,13 +458,10 @@ The rules for lists are:
 * Use ordered lists only when the sequence of the items is of special importance.
 * Use parallel structures for the items in a list to make the list easier to read. You can use, for instance, a sentence-initial gerund form in all the list items or you can comprise a list of simple noun phrases. The table gives some examples of list items with a parallel structure.
 
-PARALLEL STRUCTURES FOR LIST ITEMS |  
---- | --- |
-Noun phrases: M-Files Setup, M-Files Desktop, M-Files Desktop Settings, M-Files Server, M-Files Admin | Imperative form: 1. Open M-Files Admin. 2. Highlight Login Accounts in the tree view. 3. Click New Login Account… on the task pane.
-Gerundial phrases: Adding new licenses and removing existing licenses, Adding new user accounts and removing existing ones, Changing user details and license types, Downloading M-Files installers | Sentence fragment that begins with a verb: Multi-level interaction between several document vaults enables you to: Replicate data across several locations, Archive data from an actively used vault to an archive vault, Centralize data from several M-Files vaults to a single vault.
+![Noun phrases: M-Files Setup, M-Files Desktop, M-Files Desktop Settings, M-Files Server, M-Files Admin. Imperative form: 1. Open M-Files Admin. 2. Highlight Login Accounts in the tree view. 3. Click New Login Account… on the task pane. Gerundial phrases: Adding new licenses and removing existing licenses, Adding new user accounts and removing existing ones, Changing user details and license types, Downloading M-Files installers. Sentence fragment that begins with a verb: Multi-level interaction between several document vaults enables you to: Replicate data across several locations, Archive data from an actively used vault to an archive vault, Centralize data from several M-Files vaults to a single vault](parrel-structures.png){:.borderless}
 
 * Add a period at the end of a list item only if the list item is a full sentence, or if it continues the list-introducing sentence fragment.
-* *Begin a list item with a capital letter.
+* Begin a list item with a capital letter.
 * Add a colon after the introductory phrase.
 
 ### Procedures (Step Lists)
@@ -463,31 +469,40 @@ Gerundial phrases: Adding new licenses and removing existing licenses, Adding ne
 Use numbered lists for sequential procedure steps to indicate the order in which a task must be carried out. When writing step lists, follow these guidelines:
 * Introduce the procedure with an introductory sentence in the format `To <objective>:`. In Finnish, use the format `<Objective>:`.
 
-`English: To add a remark:`
+    English: `To add a remark:`
 
-`Finnish: Lisätäksesi huomion:`
+    Finnish: `Lisätäksesi huomion:`
 
 * If a step has sub-steps, add a nested list below the step, ordered using lowercase letters as labels, followed by a period:
 
+**EXAMPLE**
+1. Open M-Files Admin and go to a vault.
 
+    a) Open M-Files Admin. 
 
-EXAMPLE |  
---- | --- |
-1. Open M-Files Admin and go to a vault. a) Open M-Files Admin. b) In the left-side tree view, expand a connection to M-Files Server. c) In the left-side tree view, expand Document Vaults, and then expand a vault. |
+    b) In the left-side tree view, expand a connection to M-Files Server. 
+
+    c) In the left-side tree view, expand Document Vaults, and then expand a vault.
 
 * If a task has more than ten steps, try to split the task into separate, smaller tasks to make the instructions easier to follow.
 * If there are multiple ways to complete a task step, use this structure:
 
-EXAMPLE |  
---- | --- |
-1.	Complete one of these steps: Click New Login Account… on the task pane or Select Action > New Login Account… |
+**EXAMPLE**
+1.	Complete one of these steps:
+    * Click **New Login Account** on the task pane
+    
+    or
+    
+    * Select **Action > New Login Account**
 
-* If necessary, add a Result section after the step list to give a description of what to expect after they have completed the task successfully.
-* You can also add the Result section after an individual step if you consider that the results are not self-evident.
+* If necessary, add a _Result_ section after the step list to give a description of what to expect after they have completed the task successfully.
+* You can also add the _Result_ section after an individual step if you consider that the results are not self-evident.
 
-1.	Click OK.
-Result: A warning dialog is opened to tell you that the operation cannot be undone.
-2.	Click Yes to close the warning dialog and start the migration.
+1.	Click **OK.**
+    
+    **Result:** A warning dialog is opened to tell you that the operation cannot be undone.
+    
+2.	Click **Yes** to close the warning dialog and start the migration.
 
 ### Localizability
 
@@ -506,11 +521,11 @@ This section provides rules for the following linguistic elements:
 
 Proper names are nouns denoting product names, organization names, place names, persons, and any other names of individual entities. They are written using the initial capital letter.
 
-Even though proper names refer to unique entities, in some cases, it can be necessary to be more specific to make the reference to the name clearer. In these situations, pair the proper name with a superordinate grouping word, such as window or button, and with a definite article preceding the name:
+Even though proper names refer to unique entities, in some cases, it can be necessary to be more specific to make the reference to the name clearer. In these situations, pair the proper name with a superordinate grouping word, such as _window_ or _button_, and with a definite article preceding the name:
 
-* `The <proper name> <grouping word>`
+* The `<proper name>` `<grouping word>`
 
-`The New User dialog`
+    `The New User dialog`
 
 Note that an entity denoted by a proper name may belong to more than one group. In such a case, just use the grouping word you need to refer to.
 
@@ -520,19 +535,21 @@ Note that an entity denoted by a proper name may belong to more than one group. 
 
 Write the proper name with initial capital and the grouping word with lowercase letters.
 
-If the proper name is not followed by a grouping word (like in the M-Files software), do not use an article.
+If the proper name is not followed by a grouping word (like in the _M-Files software_), do not use an article.
 
-`Correct: Everything in M-Files is organized by what it is instead of where it is stored.`
 
-`Correct: Everything in the M-Files vaults is organized by what it is instead of where it is stored.`
 
-`Incorrect: Everything in the M-Files is organized by what it is instead of where it is stored.`
+<span style="color: green">Correct:</span> `Everything in M-Files is organized by what it is instead of where it is stored.`
+
+<span style="color: green">Correct:</span> `Everything in the M-Files vaults is organized by what it is instead of where it is stored.`
+
+<span style="color: red">Incorrect:</span> `Everything in the M-Files is organized by what it is instead of where it is stored.`
 
 Do not use any special formatting for proper names, such as italics or bolding.
 
 ### Genitive Case
 
-Use an apostrophe with the letter "s" at the end of a singular noun or just an apostrophe at the end of a plural noun to denote possession for animate entities. For nouns representing inanimate entities, use the of genitive instead to denote possession. If the readability suffers, you can also denote possession with "s" for nouns representing inanimate entities. With singular animate nouns ending with "s", also use the 's to denote possession.
+Use an apostrophe with the letter "s" at the end of a singular noun or just an apostrophe at the end of a plural noun to denote possession for animate entities. For nouns representing inanimate entities, use the _of_ genitive instead to denote possession. If the readability suffers, you can also denote possession with "s" for nouns representing inanimate entities. With singular animate nouns ending with "s", also use the 's to denote possession.
 
 CORRECT | INCORRECT
 --- | --- |
@@ -554,14 +571,15 @@ Switch to the passive voice only when the primary focus of the clause is not on 
 
 ### Tense
 
-Documentation is for the most part written in the present tense, or more precisely, the simple present. Note that while the present tense generally refers to actions taking place at the present time, it can also have a reference to the future, especially to an arranged future event. Indeed, the simple present tense can be used to refer to future events that are certain to happen. This is why it is a suitable tense to use in contexts such as expected results because it is seen as more assertive than the future tense.
+Documentation is for the most part written in the present tense, or more precisely, the **simple present**. Note that while the present tense generally refers to actions taking place at the present time, it can also have a reference to the future, especially to an arranged future event. Indeed, the simple present tense can be used to refer to future events that are certain to happen. This is why it is a suitable tense to use in contexts such as expected results because it is seen as more assertive than the future tense.
 
 Here is an example:
-`Click New Login Account... on the task pane.`
 
-`Correct: The New Login Account dialog is opened.`
+`Click New Login Account on the task pane.`
 
-`Incorrect: The New Login Account dialog will be opened.`
+<span style="color: green">Correct:</span> `The New Login Account dialog is opened.`
+
+<span style="color: red">Incorrect:</span> `The New Login Account dialog will be opened.`
 
 In the example, the present tense form can be regarded as an assertion, while the future tense form is more like a prediction.
 
@@ -585,7 +603,7 @@ Modifiers are words that describe nouns. Modifiers in general can be used in two
 * Premodifying position, in which the modifier is placed _before_ the word that it modifies
 * Postmodifying position, in which the modifier is placed _after_ the word that it modifies
 
-Compound modifiers are adjectives that are made up of two or more attributive words. When a compound modifier is used as a premodifier, the individual words in the compound must be joined with a hyphen. When a compound modifier is used as a postmodifier, the hyphen is not necessary, unless the word is a permanent compound and listed in the dictionary with a hyphen.
+Compound modifiers are adjectives that are made up of two or more attributive words. When a compound modifier is used as a premodifier, the individual words in the compound must be joined with a hyphen. When a compound modifier is used as a postmodifier, the hyphen is not necessary, unless the word is a _permanent_ compound and listed in the dictionary with a hyphen.
 
 COMPOUND MODIFIER AS A PREMODIFIER | COMPOUND MODIFIER AS A POSTMODIFIER
 --- | --- |
@@ -598,15 +616,15 @@ Avoid gender-specific pronouns when writing documentation. There are a number of
 
 * Use the imperative mood:
 
-`Enter your email address and your full name in the personal information fields.`
+    `Enter your email address and your full name in the personal information fields.`
 
 * Use the second person:
 
-`You can enter your email address and your full name in the personal information fields.`
+    `You can enter your email address and your full name in the personal information fields.`
 
 * Use the third-person plural forms their, them and they in place of the gender-specific her/his, her/him and she/he:
 
-`The user can enter their email address and their full name in the personal information fields.`
+    `The user can enter their email address and their full name in the personal information fields.`
 
 ### First Versus Second Person
 
@@ -636,7 +654,7 @@ _Cardinal numbers (one, 2, III)_ are used for counting things, while _ordinal nu
 
 #### Numerals
 
-The symbols used for numbers (such as 1, 2, and 3) are called numerals. 
+The symbols used for numbers (such as _1, 2,_ and _3_) are called numerals. 
 The rules for using numerals are:
 
 * Never start a sentence with a numeral. Spell out the number instead.
@@ -646,21 +664,21 @@ The rules for using numerals are:
 
 * Spell out ordinal numbers from one to nine:
 
-`First, second, third, fourth, fifth, sixth, seventh, eighth, ninth`
+    `First, second, third, fourth, fifth, sixth, seventh, eighth, ninth`
 
 * From the number 10 onwards, use a numeral and a suffix written in superscript above the numeral itself:
 
-`10th, 11th, 12th, 13th, and so forth`
+    `10th, 11th, 12th, 13th, and so forth`
 
 #### Numbers and Units of Measurement
 
 * Add a space, or ideally a non-breaking space, between a number and an abbreviation of a unit of measurement:
 
-`50 GB, 120 mm`
+    `50 GB, 120 mm`
 
 * Do not, however, use a space between a number and a symbol representing a unit of measurement:
 
-`4.7", 60%`
+    `4.7", 60%`
 
 #### Negative Numbers
 
@@ -689,13 +707,13 @@ When referring to monetary amounts, use one of these formats:
 
 * Currency symbol followed by the amount with two decimal places:
 
-`€600,000.00`
+    `€600,000.00`
 
 * Currency code followed by a space and the amount with two decimal places:
 
-`EUR 600,000.00`
+    `EUR 600,000.00`
 
-Negative amounts can be generally indicated with the words losses and deficit in descriptive texts to avoid using the minus sign (-):
+Negative amounts can be generally indicated with the words _losses_ and _deficit_ in descriptive texts to avoid using the minus sign (-):
 
 `A deficit of €600,000.00`
 
@@ -715,14 +733,14 @@ When referring to dates, use these formats:
     * dd month yyyy
     * Do not include "0" in the one-digit day notation. That is, do not write "02 September 2020".
 
-`2 September 2020`
+    `2 September 2020`
 
 * In the user interface, where the space might be limited, and in the change history table of Knowledge Base documents:
     * mm/dd
     * yyyy/mm/dd
     * In these shorter formats, include "0".
     
-`2020/09/02`
+    `2020/09/02`
 
 ## Reference Documents
 
