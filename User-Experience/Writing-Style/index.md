@@ -494,11 +494,11 @@ The rules for lists are:
         </td>
         <td>Sentence fragment that begins with a verb:<br/>
         Multi-level interaction between several document vaults enables you to:
-            <ol>
+            <ul>
                 <li>Replicate data across several locations.</li>
                 <li>Archive data from an actively used vault to an archive vault.</li>
                 <li>Centralize data from several M-Files vaults to a single vault.</li>
-            </ol>
+            </ul>
         </td>
     </tr>
 </tbody>
