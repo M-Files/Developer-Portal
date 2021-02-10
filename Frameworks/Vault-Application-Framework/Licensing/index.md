@@ -156,25 +156,25 @@ It is up to your application to decide what functionality should be disabled, an
 
 ## Creating and Installing a License File
 
-### Modifying the sample `.mlfconf` File
+### Modifying the sample `.mflconf` File
 
 #### Updating the Vault Application Framework Application GUID
 
-It is important that the application ID within the `.mlfconf` file matches the GUID of the Vault Application Framework application which it is licensing. If it does not, then the license key will not be deemed as valid.
+It is important that the application ID within the `.mflconf` file matches the GUID of the Vault Application Framework application which it is licensing. If it does not, then the license key will not be deemed as valid.
 
 The GUID for the Vault Application Framework application can be found within the `appdef.xml` file, inside the &lt;guid&gt; element.
 
-To update the application ID in the `.mlfconf` file:
+To update the application ID in the `.mflconf` file:
 
-1. Open the `.mlfconf` file in a text editor, such as Notepad.
-2. Find the JSON element that defines the `application` member. The value of the `defaultValue` property must be updated to match the ID from the `appdef.xml` file. Note that the value in the `.mlfconf` file has curly brackets ("{}") around the value.
+1. Open the `.mflconf` file in a text editor, such as Notepad.
+2. Find the JSON element that defines the `application` member. The value of the `defaultValue` property must be updated to match the ID from the `appdef.xml` file. Note that the value in the `.mflconf` file has curly brackets ("{}") around the value.
 3. Save your changes.
 
 ### Creating a License (`.lic`) File
 
-To create a license file, you will need the updated `.mlfconf` file from [Updating the Vault Application Framework GUID](#updating-the-vault-application-framework-application-guid).
+To create a license file, you will need the updated `.mflconf` file from [Updating the Vault Application Framework GUID](#updating-the-vault-application-framework-application-guid).
 
-1. Open the `LicenseGeneratorGUI.exe` application, and select the `.mlfconf` file to be used.
+1. Open the `LicenseGeneratorGUI.exe` application, and select the `.mflconf` file to be used.
 2. Enter a customer name into the options on the left-hand side of the screen.
 3. Click the `Save License...` button at the bottom-right of the screen.
 4. Choose a file name for the license file (for instance, test `license.lic`).

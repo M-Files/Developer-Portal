@@ -38,20 +38,8 @@ namespace FilteredConfigurationSample
 	/// </summary>
 	/// <remarks>Examples and further information available on the developer portal: http://developer.m-files.com/. </remarks>
 	public class VaultApplication
-		: VaultApplicationBase, IUsesAdminConfigurations
+		: ConfigurableVaultApplicationBase<Configuration>
 	{
-		public ConfigurationNode<Configuration> Configuration { get; set; }
-
-		#region Implementation of IUsesAdminConfigurations
-
-		/// <inheritdoc />
-		public void InitializeAdminConfigurations(IAdminConfigurations adminConfigurations)
-		{
-			this.Configuration = adminConfigurations
-				.AddSimpleConfigurationNode<Configuration>("My Configuration");
-		}
-
-		#endregion
 	}
 
 	[DataContract]
@@ -107,20 +95,8 @@ namespace FilteredConfigurationSample
 	/// </summary>
 	/// <remarks>Examples and further information available on the developer portal: http://developer.m-files.com/. </remarks>
 	public class VaultApplication
-		: VaultApplicationBase, IUsesAdminConfigurations
+		: ConfigurableVaultApplicationBase<Configuration>
 	{
-		public ConfigurationNode<Configuration> Configuration { get; set; }
-
-		#region Implementation of IUsesAdminConfigurations
-
-		/// <inheritdoc />
-		public void InitializeAdminConfigurations(IAdminConfigurations adminConfigurations)
-		{
-			this.Configuration = adminConfigurations
-				.AddSimpleConfigurationNode<Configuration>("My Configuration");
-		}
-
-		#endregion
 	}
 
 	[DataContract]
