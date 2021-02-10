@@ -20,8 +20,8 @@ Electronic signing is not available because the necessary metadata definitions f
 
 CORRECT | INCORRECT  
 --- | --- |
-You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span style="color: green"> context menu</span>, or by clicking the star icon on the <span style="color: green">option ribbon</span>  of the <span style="color: green">metadata card.</span> | You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span style="color: red">shortcut menu</span>, or by clicking the star icon on the <span style="color: red">toolbar</span> of the <span style="color: red">object properties pane.</span>
-This command adds the object to the <span style="color: green">Pinned tab.</span> | This command adds the object to the <span style="color: red">Pinboard.</span>
+You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="correct"> context menu</span>, or by clicking the star icon on the <span class="correct">option ribbon</span>  of the <span class="correct">metadata card.</span> | You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="incorrect">shortcut menu</span>, or by clicking the star icon on the <span class="incorrect">toolbar</span> of the <span class="incorrect">object properties pane.</span>
+This command adds the object to the <span class="correct">Pinned tab.</span> | This command adds the object to the <span class="incorrect">Pinboard.</span>
 
 ## Tone and Voice of User Interface Texts
 
@@ -35,8 +35,8 @@ This section applies to user interface texts only.
 
 CORRECT | INCORRECT  
 --- | --- |
-<span style="color: green">Sorry, but we couldn't get</span> you the most recent version. | The most recent version <span style="color: red">is unavailable.</span>
-<span style="color: green">Please try again</span> later. | The operation <span style="color: red">can be attempted again </span> at a later time.
+<span class="correct">Sorry, but we couldn't get</span> you the most recent version. | The most recent version <span class="incorrect">is unavailable.</span>
+<span class="correct">Please try again</span> later. | The operation <span class="incorrect">can be attempted again </span> at a later time.
 
 * If you have to choose, be easily understandable rather than colorful and exciting. In most cases, however, being clear does not automatically mean that you need to also sound flat and uninteresting
 
@@ -342,8 +342,8 @@ Avoid technical jargon and overly technical and abstract terms.
 
 CORRECT | INCORRECT 
 --- | --- |
-Sorry, but you can't use this operation for <span style="color: green">value list based properties.</span> | The operation is not supported for <span style="color: red">lookups.</span> 
-<span style="color: green">Update object permissions based on the changes</span> to the <span style="color: green">named access control list</span>  "%s". | <span style="color: red">Propagate changes</span> to the <span style="color: red">NACL</span> "%s".
+Sorry, but you can't use this operation for <span class="correct">value list based properties.</span> | The operation is not supported for <span class="incorrect">lookups.</span> 
+<span class="correct">Update object permissions based on the changes</span> to the <span class="correct">named access control list</span>  "%s". | <span class="incorrect">Propagate changes</span> to the <span class="incorrect">NACL</span> "%s".
 
 Do not use deictic expressions like _today, here, below, above, or on the left_. Their context can change. However, when you refer to any commands, buttons, or other elements in the user interface, make sure that the user does not have to guess where to find them, either.
 
@@ -397,7 +397,7 @@ Click **OK** once you are done.
 
 Sometimes, for clarity, it can be necessary to add the user interface element as an icon as well. In these cases, add the icon in parentheses right after the name of the user interface element:
 
-Click the **Create** (![Create icon](create.png){:.borderless}) button and then select **Document**... from the context menu.
+Click the **Create** (![Create icon](create.png){:.borderless.nomargin}) button and then select **Document**... from the context menu.
 
 If the icon is big, consider making the screenshot smaller.
 
@@ -458,7 +458,51 @@ The rules for lists are:
 * Use ordered lists only when the sequence of the items is of special importance.
 * Use parallel structures for the items in a list to make the list easier to read. You can use, for instance, a sentence-initial gerund form in all the list items or you can comprise a list of simple noun phrases. The table gives some examples of list items with a parallel structure.
 
-![Noun phrases: M-Files Setup, M-Files Desktop, M-Files Desktop Settings, M-Files Server, M-Files Admin. Imperative form: 1. Open M-Files Admin. 2. Highlight Login Accounts in the tree view. 3. Click New Login Account… on the task pane. Gerundial phrases: Adding new licenses and removing existing licenses, Adding new user accounts and removing existing ones, Changing user details and license types, Downloading M-Files installers. Sentence fragment that begins with a verb: Multi-level interaction between several document vaults enables you to: Replicate data across several locations, Archive data from an actively used vault to an archive vault, Centralize data from several M-Files vaults to a single vault](parrel-structures.png){:.borderless}
+<table>
+<thead>
+    <tr>
+        <th colspan="2">Parallel structures for list items</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Noun phrases:
+            <ul>
+                <li>M-Files Setup</li>
+                <li>M-Files Desktop</li>
+                <li>M-Files Desktop Settings</li>
+                <li>M-Files Server</li>
+                <li>M-Files Admin</li>
+            </ul>
+        </td>
+        <td>Inperative form:
+            <ol>
+                <li>Open M-Files Admin.</li>
+                <li>Highlight <b>Login Accounts</b> in the tree view.</li>
+                <li>Click <b>New Login Account...</b> on the task pane.</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>Gerundial phrases:
+            <ul>
+                <li>Adding new licenses and removing existing licenses</li>
+                <li>Adding new user accounts and removing existing ones</li>
+                <li>Changing user details and license types</li>
+                <li>Downloading M-Files installers</li>
+            </ul>
+        </td>
+        <td>Sentence fragment that begins with a verb:<br/>
+        Multi-level interaction between several document vaults enables you to:
+            <ol>
+                <li>Replicate data across several locations.</li>
+                <li>Archive data from an actively used vault to an archive vault.</li>
+                <li>Centralize data from several M-Files vaults to a single vault.</li>
+            </ol>
+        </td>
+    </tr>
+</tbody>
+</table>
 
 * Add a period at the end of a list item only if the list item is a full sentence, or if it continues the list-introducing sentence fragment.
 * Begin a list item with a capital letter.
@@ -539,11 +583,11 @@ If the proper name is not followed by a grouping word (like in the _M-Files soft
 
 
 
-<span style="color: green">Correct:</span> `Everything in M-Files is organized by what it is instead of where it is stored.`
+<span class="correct">Correct:</span> `Everything in M-Files is organized by what it is instead of where it is stored.`
 
-<span style="color: green">Correct:</span> `Everything in the M-Files vaults is organized by what it is instead of where it is stored.`
+<span class="correct">Correct:</span> `Everything in the M-Files vaults is organized by what it is instead of where it is stored.`
 
-<span style="color: red">Incorrect:</span> `Everything in the M-Files is organized by what it is instead of where it is stored.`
+<span class="incorrect">Incorrect:</span> `Everything in the M-Files is organized by what it is instead of where it is stored.`
 
 Do not use any special formatting for proper names, such as italics or bolding.
 
@@ -577,9 +621,9 @@ Here is an example:
 
 `Click New Login Account on the task pane.`
 
-<span style="color: green">Correct:</span> `The New Login Account dialog is opened.`
+<span class="correct">Correct:</span> `The New Login Account dialog is opened.`
 
-<span style="color: red">Incorrect:</span> `The New Login Account dialog will be opened.`
+<span class="incorrect">Incorrect:</span> `The New Login Account dialog will be opened.`
 
 In the example, the present tense form can be regarded as an assertion, while the future tense form is more like a prediction.
 
