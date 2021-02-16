@@ -10,7 +10,7 @@ We support three primary authentication mechanisms: credentials in HTTP headers,
 These examples use the .NET HttpWebRequest and HttpWebResponse objects directly, and uses the [JSON.NET](http://www.newtonsoft.com/json) library for serialization/deserialization.  Other libraries are available that may make interacting with REST-like web services more simplistic, such as [RestSharp](http://restsharp.org/).  Always check the license details of third-party libraries to ensure that they can be used within your projects.
 {:.note}
 
-If your cloud instance is migrated to the M-Files "New Cloud" (multi-server-mode-based) infrastructure then you may need to make an additional change to how you handle authentication tokens.  More details are available in the [M-Files New Cloud](#m-files-new-cloud) section further down.
+If your M-Files instance uses the Multi-Server Mode infrastructure (e.g. within the M-Files New Cloud) then you may need to make an additional change to how you handle authentication tokens.  More details are available in the [Multi-Server Mode Considerations](#multi-server-mode-considerations) section further down.
 {:.note.warning}
 
 ## Authentication tokens
@@ -165,15 +165,15 @@ request.Headers.Add("X-Vault", "{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
 var response = (HttpWebResponse)request.GetResponse();
 ```
 
-## M-Files New Cloud
+## Multi-Server Mode Considerations
 
-The M-Files "New Cloud" is a new cloud-based platform that is currently rolling out to our cloud customers.  This platform is based upon the M-Files [Multi-Server Mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) approach which allows multiple M-Files servers to be attached to the same vault database at the same time.  In this approach, any one of the multiple servers in the availability group may potentially respond to individual REST API calls.
+In platforms that use the M-Files [Multi-Server Mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) approach (e.g. the M-Files "New Cloud"), M-Files servers to be attached to the same vault database at the same time.  In this configuration, any one of the multiple servers in the availability group may potentially respond to individual REST API calls.
 
-The issue that developers may encounter is that authentication tokens created via a call to server A cannot be decrypted and used on servers B or C.  In this instance you will receive an error about `OAEP padding`.
+One issue that developers may encounter is that authentication tokens created via a call to server A cannot be decrypted and used on servers B or C.  In this instance you will receive an error about `OAEP padding`.
 
 To resolve this, the developer must ensure that any cookies that are provided within the HTTP response of `/server/authenticationtokens` are added to any and all subsequent REST API calls.  By doing so, future requests will be routed to the same server that provided the token, ensuring that they can be correctly used.
 
 You will still need to handle any `403` HTTP status codes that you may receive in the future and re-request an authentication token.  This could happen for the same reasons as in a single-server instance (e.g. if the token times out, or the credentials are changed on the server), but could also happen if the server used to create the token is no longer available (e.g. if it goes offline).  By re-requesting the authentication token and using the newly-provided session ID, the integration will now start to use (and continue to consistently use) a different server in the availability group.
 {:.note}
 
-These steps may not be required in future releases of the New Cloud.  This notice will be removed at that point.
+These steps may not be required in future releases of Multi-Server Mode.  This notice will be removed at that point.
