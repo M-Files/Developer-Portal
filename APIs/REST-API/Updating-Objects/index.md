@@ -38,6 +38,57 @@ await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/comme
 	new System.Net.Http.StringContent("{ \"Value\" : \"This is a test comment \"}"));
 ```
 
+### Setting the property value 
+
+When updating a property value, it is important to ensure that the [PropertyValue]({{ site.baseurl }}/APIs/REST-API/Reference/structs/propertyvalue/) object (and the [TypedValue]({{ site.baseurl }}/APIs/REST-API/Reference/structs/typedvalue/) instance within) is populated appropriately.  For almost all data types, this means correctly populating the `Value` property on the TypedValue:
+
+```csharp
+// Create a HttpClient.
+var client = new System.Net.Http.HttpClient();
+
+// Authenticate.
+client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken");
+
+// Update the name or title.
+// Note: assumes object already checked out.
+await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/properties/0.aspx?_method=PUT"),
+	new System.Net.Http.StringContent("{ \"PropertyDef\" : 0, \"TypedValue\": { \"DataType\": 0, \"Value\": \"my object name\" } }"));
+```
+
+#### Lookups
+
+For single-select lookup properties ("Choose from list"), you should instead set the `Lookup` property:
+
+```csharp
+// Create a HttpClient.
+var client = new System.Net.Http.HttpClient();
+
+// Authenticate.
+client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken");
+
+// Update the class.
+// Note: assumes object already checked out.
+await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/properties/100.aspx?_method=PUT"),
+	new System.Net.Http.StringContent("{ \"PropertyDef\" : 0, \"TypedValue\": { \"DataType\": 0, \"Lookup\": { \"Item\" : 0 } } }"));
+```
+
+#### Multi-select lookups
+
+For multi-select lookup properties ("Choose from list (multi-select)"), you should instead set the `Lookups` property:
+
+```csharp
+// Create a HttpClient.
+var client = new System.Net.Http.HttpClient();
+
+// Authenticate.
+client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken");
+
+// Update a property with two items (objects with internal ID 20 and 30).
+// Note: assumes object already checked out.
+await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/properties/12345.aspx?_method=PUT"),
+	new System.Net.Http.StringContent("{ \"PropertyDef\" : 0, \"TypedValue\": { \"DataType\": 0, \"Lookups\":  [ { \"Item\" : 20 }, \"Item\" : 30 } ] } }"));
+```
+
 ## Updating an existing file
 
 Updating an existing file typically involves a number of steps:
