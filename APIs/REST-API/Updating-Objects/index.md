@@ -69,7 +69,7 @@ client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken")
 // Update the class.
 // Note: assumes object already checked out.
 await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/properties/100.aspx?_method=PUT"),
-	new System.Net.Http.StringContent("{ \"PropertyDef\" : 0, \"TypedValue\": { \"DataType\": 9, \"Lookup\": { \"Item\" : 0 } } }"));
+	new System.Net.Http.StringContent("{ \"PropertyDef\" : 100, \"TypedValue\": { \"DataType\": 9, \"Lookup\": { \"Item\" : 0 } } }"));
 ```
 
 #### Multi-select lookups
@@ -86,7 +86,7 @@ client.DefaultRequestHeaders.Add("X-Authentication", "DummyAuthenticationToken")
 // Update a property with two items (objects with internal ID 20 and 30).
 // Note: assumes object already checked out.
 await client.PostAsync(new Uri("http://localhost/REST/objects/0/459/latest/properties/12345.aspx?_method=PUT"),
-	new System.Net.Http.StringContent("{ \"PropertyDef\" : 0, \"TypedValue\": { \"DataType\": 10, \"Lookups\":  [ { \"Item\" : 20 }, \"Item\" : 30 } ] } }"));
+	new System.Net.Http.StringContent("{ \"PropertyDef\" : 12345, \"TypedValue\": { \"DataType\": 10, \"Lookups\":  [ { \"Item\" : 20 }, \"Item\" : 30 } ] } }"));
 ```
 
 ## Updating an existing file
