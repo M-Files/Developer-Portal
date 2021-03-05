@@ -72,3 +72,21 @@ To test the application, open the M-Files Desktop client and navigate to a docum
 Whenever an application is created from the Visual Studio template, the `<guid></guid>` element in `appdef.xml` is automatically set to be a new Globally Unique IDentifier.  This GUID is used to uniquely identify each application, as each M-Files vault can only have one application with each GUID installed.
 
 If you manually create an `appdef.xml` file, or copy it from another location, you must ensure that the guid is altered to be unique.  There are a number of [online tools](https://www.bing.com/search?q=guid+generator) that can be used to generate GUIDs.  Note that the GUID should be entered into the `<guid></guid>` element without braces, but with hyphens (e.g. `<guid>f7fbe39a-2031-4b42-9856-05444ecce446</guid>`).
+
+### Downgrading the UIX template
+
+The template included in the [M-Files Online Visual Studio Template Package](https://marketplace.visualstudio.com/items?itemName=M-Files.MFilesVisualStudioExtensions) targets the [v4 schema](../Application-Definition/#v4-schema).  Applications using this schema cannot be loaded by M-Files Server 20.11 and M-Files Client 20.11 or older.  Therefore, if you must include compatibility for older releases of M-Files, you must manually alter the `appdef.xml` file that the template produces.
+
+Change this:
+```
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef-client-v4.xsd">
+```
+
+To this:
+```
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="http://www.m-files.com/schemas/appdef-client-v3.xsd">
+```
+
+If you have also added `fast-browsing-compatible` attributes to your ShellUI module declarations then you must also remove these.

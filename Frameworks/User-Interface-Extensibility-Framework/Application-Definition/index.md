@@ -9,8 +9,12 @@ The application definition/manifest file contains information that the M-Files s
 
 ## Schema Versions
 
-There are two versions of the XML that can be used, each using a different schema.  It is recommended that you use the <a href="#v3-schema">'V3' schema</a> for applications that target M-Files 2015.2 and higher.
+There are three versions of the XML that can be used, each using a different schema.  It is recommended that you target the latest version of the schema supported by the M-Files Server (and Clients) that you using.
 {:.note.warning}
+
+### V4 schema
+
+The V4 schema is supported in M-Files 20.12 and higher, and adds compatibility with [fast browsing](../Fast-Browsing/).
 
 ### V3 schema
 
