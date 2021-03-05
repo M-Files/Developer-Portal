@@ -5,16 +5,13 @@ includeInSearch: true
 breadcrumb: Visual Studio Template
 ---
 
-M-Files provides partners with a Visual Studio 2015/2017/2019 template that can be used to rapidly develop Vault Application Framework Applications using C#.
-
-When installing the template into Visual Studio 2017 and 2019, a popup will be shown stating that the template does not use the 2017 format.  This is expected, as the template is backwards compatible with Visual Studio 2015 as well.  Simply accept the popup and continue installation.
-{:.note}
+M-Files provides developers with a Visual Studio 2017/2019 template that can be used to rapidly develop Vault Application Framework Applications using C#.
 
 ## Downloading the Template
 
-The Vault Application Framework 2.1 template is part of the `M-Files Online Visual Studio template package`, which can be downloaded from the [M-Files Partner Portal](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  If you are a partner and do not have access to the M-Files Partner Portal, then please contact your Channel Account Manager.  To install the template, simply double-click on the ".vsix" file, which will then guide you through installing the templates into the version of Visual Studio that you have installed.
+The Vault Application Framework 2.1 template is part of the `M-Files Online Visual Studio template package`, which can be downloaded from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=M-Files.MFilesVisualStudioExtensions).
 
-Both Vault Application Framework 2.0 and Vault Application Framework 2.1 project templates are included in the same package.  The 2.1 runtime is only compatible with M-Files 19.9 onwards, so 2.0 should be used if targeting older installations.
+Different versions of the Vault Application Framework template are available in this package.  You should use the latest one that is compatible with the version of M-Files that you are targeting.  Older versions should only be used if targeting older installations.
 {:.note}
 
 ## Building your first application

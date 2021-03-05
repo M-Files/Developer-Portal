@@ -20,7 +20,7 @@ Multiple `MFAppPlatform.exe` processes may be listed in this window; use the Ctr
 
 Once attached to the process, you can use any of [Visual Studio's debugging features](https://msdn.microsoft.com/en-us/library/k0k771bt.aspx) to debug your code.
 
-A command button can be added to Visual Studio 2015 and Visual Studio 2017 to automate the attaching to the `MFAppPlatform.exe` processes.  See [this page for more information]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes/).
+A command button can be added to Visual Studio to automate the attaching to the `MFAppPlatform.exe` processes.  See [this page for more information]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes/).
 {:.note}
 
 ### Launching the Debugger

@@ -6,6 +6,9 @@ breadcrumb: Code Snippets
 redirect_from: /Frameworks/Vault-Application-Framework/Visual-Studio-Template/Code-Snippets/
 ---
 
+See [Installing using the Visual Studio Template Package](#installing-using-the-visual-studio-template-package).
+{:.note}
+
 [Visual Studio Code Snippets](https://msdn.microsoft.com/en-us/library/ms165392.aspx) are small blocks of reusable code that can be inserted into a code file using a context menu or set of key-presses.  Code Snippets can be used to quickly create commonly-used code structures such as methods or properties, reducing the amount of code that developers must type to do so.
 
 Code Snippets consist of a block of standardised text, and small editable sections.  When a snippet is first entered, the editable sections are highlighted and the user can overtype the values to customise the code snippet.  The developer can move between the editable elements of the snippet by pressing `Tab`, and press `Enter` or `Esc` to finish editing.
@@ -44,7 +47,7 @@ To contribute additional code snippets or to fix issues with existing code snipp
 
 ### Available Code Snippets
 
-Code Snippets are available to download from our <a href="https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Visual%20Studio%20Snippets/Vault%20Application%20Framework/Snippets/CSharp/MFilesVAF">GitHub Samples and Libraries repository</a>.  Information on how to <a href="#installing-the-vault-application-framework-code-snippets">install the code snippets</a> is in the following section.
+See [Installing using the Visual Studio Template Package](#installing-using-the-visual-studio-template-package).
 {:.note}
 
 The following code snippets exist.  Once the snippets are installed, simply type their name within a code file, select the snippet, and press `Tab` twice.
@@ -91,14 +94,14 @@ The following code snippets exist.  Once the snippets are installed, simply type
 
 ## Installing the Vault Application Framework Code Snippets
 
-### Installing using the Visual Studio installer
+### Installing using the Visual Studio Template Package
 
-[An installer for the Vault Application Framework Code Snippets is available on the Visual Studio Gallery](https://marketplace.visualstudio.com/items?itemName=M-Files.mfilescodesnippetsvaf).  Simply press the `Download` button on the gallery page, run the `.vsix` file, and it will install the Code Snippets into Visual Studio for you.
+Code Snippets are included in the [M-Files Online Visual Studio Template Package](https://marketplace.visualstudio.com/items?itemName=M-Files.MFilesVisualStudioExtensions).  Installing this package also installs the code snippets listed here.
 
-The Vault Application Framework Code Snippets can be uninstalled by opening Visual Studio, clicking `Tools`, then `Extensions and Updates...`, as with other installed extensions.
+The package can be uninstalled by opening Visual Studio, clicking `Tools`, then `Extensions and Updates...`, as with other installed extensions.
 {:.note}
 
-### Downloading the raw snippet files
+### Downloading the raw snippet files (not recommended)
 
 The raw snippet files are available for download within our [GitHub Samples and Libraries repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Visual%20Studio%20Snippets/Vault%20Application%20Framework/Snippets/CSharp/MFilesVAF).  To install the snippets manually:
 

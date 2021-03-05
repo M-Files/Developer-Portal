@@ -96,7 +96,7 @@ When you upgrade the Vault Application Framework you may need to make some small
 
 ### From Version 2.1 to Version 2.2
 
-New VAF 2.2 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  Projects using the Vault Application Framework 2.1 nuget package can be manually upgraded to use the Vault Application Framework 2.2 runtime:
+New VAF 2.2 applications can be created using the [M-Files Online Visual Studio template](https://marketplace.visualstudio.com/items?itemName=M-Files.MFilesVisualStudioExtensions).  Projects using the Vault Application Framework 2.1 nuget package can be manually upgraded to use the Vault Application Framework 2.2 runtime:
 
 * Right-click on the project name and select `Manage NuGet Packages...`
 * Select the existing `M-Files.VAF` reference and click the `Update` button to upgrade to the latest published 2.2 version.
@@ -108,7 +108,7 @@ If inheriting from `ConfigurableVaultApplicationBase`, the Vault Application Fra
 
 ### From Version 2.0 to Version 2.1
 
-New VAF 2.1 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  Projects using the existing Vault Application Framework 2.0 template need to be manually upgraded to use the Vault Application Framework 2.1 runtime:
+New VAF 2.1 applications can be created using the [M-Files Online Visual Studio template](https://marketplace.visualstudio.com/items?itemName=M-Files.MFilesVisualStudioExtensions).  Projects using the existing Vault Application Framework 2.0 template need to be manually upgraded to use the Vault Application Framework 2.1 runtime:
 
 * Open the existing project in Visual Studio.
 * Locate the `Solution Explorer` window, and find the VAF project within the solution.
@@ -125,7 +125,7 @@ It is recommended to update your entry point class (typically `VaultApplication`
 
 ### From Version 1.0 to Version 2.0
 
-New VAF 2.0 applications can be created using the [M-Files Online Visual Studio template](https://partners.cloudvault.m-files.com/Default.aspx?#CE7643CB-C9BB-4536-8187-707DB78EAF2A/object/D93538F9-B429-44DE-9840-553A67964438/latest).  To upgrade an existing VAF 1.0 application to 2.0, the following steps need to be taken.
+New VAF 2.0 applications can be created using the [M-Files Online Visual Studio template](https://marketplace.visualstudio.com/items?itemName=M-Files.MFilesVisualStudioExtensions).  To upgrade an existing VAF 1.0 application to 2.0, the following steps need to be taken.
 
 * Create a blank VAF 2.0 application from the updated template.
 	* From the new application, locate the `MFiles.VAF.dll`, `MFiles.VAF.Configuration.dll` and `MFiles.Crypto.dll` files.
