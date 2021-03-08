@@ -19,6 +19,7 @@ aside#sidebar {
 	-o-transition: left 300ms ease-in-out;
 	border-right: 1px solid #0072CE;
 	transition: left 300ms ease-in-out;
+	content-visibility: auto;
 }
 
 nav.secondary
