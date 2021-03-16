@@ -35,5 +35,5 @@ Type | Name | Description
 `string` | Title
 `bool` | VisibleAfterOperation
 
-This is related to [the ObjectVersion class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion.html) in the COM API.
+This is related to [the ObjectVersion class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersion.html) in the COM API.
 {:.remark}

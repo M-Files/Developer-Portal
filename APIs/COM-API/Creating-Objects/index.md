@@ -8,21 +8,21 @@ breadcrumb: Creating objects
 This page focuses on creating objects using the COM API.  Details on creating objects using the REST API can be found [in the dedicated page]({{ site.baseurl }}/APIs/REST-API/Creating-Objects/).
 {:.note}
 
-Creating an object is done by calling [VaultObjectOperations.CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html), [VaultObjectOperations.CreateNewObjectEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html), or [VaultObjectOperations.CreateNewObjectExQuick](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html).  The `CreateNewObject` method is the only version supported in the [User Interface Extensibility Framework on the web](https://www.m-files.com/UI_Extensibility_Framework/#ApiSupportInMFilesWeb.html).
+Creating an object is done by calling [VaultObjectOperations.CreateNewObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html), [VaultObjectOperations.CreateNewObjectEx](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html), or [VaultObjectOperations.CreateNewObjectExQuick](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html).  The `CreateNewObject` method is the only version supported in the [User Interface Extensibility Framework on the web](https://www.m-files.com/UI_Extensibility_Framework/#ApiSupportInMFilesWeb.html).
 
-`CreateNewObject` will create a new object in the M-Files vault, but **will not check it in**.  It is mandatory that you subsequently call [CheckIn](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html) so that the object is available.  When calling `CreateNewObjectEx` or `CreateNewObjectExQuick`, the `CheckIn` parameter is used to control whether or not the object should be checked in.
+`CreateNewObject` will create a new object in the M-Files vault, but **will not check it in**.  It is mandatory that you subsequently call [CheckIn](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html) so that the object is available.  When calling `CreateNewObjectEx` or `CreateNewObjectExQuick`, the `CheckIn` parameter is used to control whether or not the object should be checked in.
 {:.note.warning}
 
 To create a new object, the following information must be known:
 
-1. The ID of the [object type]({{ site.baseurl }}/Getting-Started/Vault-Structure/#object-types) that is being created.  The [MFBuiltInObjectType enumeration](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInObjectType.html) can be used for clarity when dealing with built-in object types such as `Document`.
+1. The ID of the [object type]({{ site.baseurl }}/Getting-Started/Vault-Structure/#object-types) that is being created.  The [MFBuiltInObjectType enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInObjectType.html) can be used for clarity when dealing with built-in object types such as `Document`.
 2. A collection of [property values]({{ site.baseurl }}/Getting-Started/Vault-Structure/#property-values) for the new object.  At a minimum this collection must include:
 	* A property value for the [class]({{ site.baseurl }}/Getting-Started/Vault-Structure/#classes) of the new object.
 	* A property value for the name or title of the new object.
-	* Any other properties which are [defined as mandatory](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectClass~AssociatedPropertyDefs.html) for the given class.
+	* Any other properties which are [defined as mandatory](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectClass~AssociatedPropertyDefs.html) for the given class.
 3. If appropriate, the source files to be added for the new object.  Objects - including, but not limited to `Documents` - in M-Files may have zero, one, or more files.  When creating a new object type, it can be controlled whether or not the system [should accept files for objects](https://www.m-files.com/user-guide/latest/eng/New_object_type.html).
 
-In the samples below we will ensure the object is checked in as part of the creation process.  If the object is checked in via a separate call to [CheckIn](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html) then [exception handling](#handling-exceptions) should be put in place to ensure these objects are not orphaned.
+In the samples below we will ensure the object is checked in as part of the creation process.  If the object is checked in via a separate call to [CheckIn](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html) then [exception handling](#handling-exceptions) should be put in place to ensure these objects are not orphaned.
 {:.note}
 
 ## Creating a single-file-document

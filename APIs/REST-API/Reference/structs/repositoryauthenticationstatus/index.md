@@ -15,6 +15,6 @@ Structure defining one external repository authentication status.
 Type | Name | Description
 --- | --- | ---
 `string` | AccountName | Account name used for authentication.
-[MFExtensionAuthenticationSpecialUserType](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFExtensionAuthenticationSpecialUserType.html) | ExtensionAuthenticationSpecialUserType | User type used in authentication.
+[MFExtensionAuthenticationSpecialUserType](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFExtensionAuthenticationSpecialUserType.html) | ExtensionAuthenticationSpecialUserType | User type used in authentication.
 `string` | TargetID | ID of the target repository.
 `int` | UserID | ID of the authenticated M-Files user.

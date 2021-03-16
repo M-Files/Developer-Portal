@@ -18,5 +18,5 @@ Type | Name | Description
 `string` | Name
 `int` | Version
 
-This is related to [the ObjectFile class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectFile.html) in the COM API.
+This is related to [the ObjectFile class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectFile.html) in the COM API.
 {:.remark}

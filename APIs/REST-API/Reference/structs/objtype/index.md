@@ -24,5 +24,5 @@ Type | Name | Description
 `int[]` | ReadOnlyPropertiesDuringUpdate
 `bool` | RealObjectType
 
-This is related to [the ObjType class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjType.html) in the COM API.
+This is related to [the ObjType class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjType.html) in the COM API.
 {:.remark}

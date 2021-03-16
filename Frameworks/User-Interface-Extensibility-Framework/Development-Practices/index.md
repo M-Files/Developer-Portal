@@ -11,7 +11,7 @@ M-Files supports the use of a [local folder](Local-Development-Folder) for devel
 
 ## Asynchronous API programming
 
-Whilst M-Files COM API calls are typically synchronous (i.e. the application doesn't continue until the API call completes), the M-Files [Vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html) object exposes a property named `Async` which can be used to make asynchronous calls.  Using [asynchronous calls](Asynchronous-API-Programming) - rather than synchronous calls, which wait for the process to finish before continuing - ensures that the user interface doesn't appear to "lock", and the user experience remains fluid.
+Whilst M-Files COM API calls are typically synchronous (i.e. the application doesn't continue until the API call completes), the M-Files [Vault](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault.html) object exposes a property named `Async` which can be used to make asynchronous calls.  Using [asynchronous calls](Asynchronous-API-Programming) - rather than synchronous calls, which wait for the process to finish before continuing - ensures that the user interface doesn't appear to "lock", and the user experience remains fluid.
 
 Using <a href="Asynchronous-API-Programming">asynchronous calls</a> is currently optional when <a href="Platform-Targeting/#the-m-files-desktop-client">targeting the M-Files Desktop client</a>.  It is mandatory when <a href="Platform-Targeting/#m-files-web-access">targeting M-Files Web Access</a>.
 {:.note}
@@ -47,7 +47,7 @@ Additionally, the Asynchronous API Programming page contains [a section on deali
 
 ### Optional parameters
 
-When calling an API method that defines optional parameters, values for all the optional parameters must be provided.  For example: a call to [GetProperties](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) defines one mandatory and one optional argument, however both must be provided when being called from JavaScript:
+When calling an API method that defines optional parameters, values for all the optional parameters must be provided.  For example: a call to [GetProperties](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) defines one mandatory and one optional argument, however both must be provided when being called from JavaScript:
 
 ```javascript
 // Do we need to update from the server?
@@ -64,7 +64,7 @@ An example of using this in API calls is shown [in the following section](#insta
 
 Creating search conditions from within the User Interface Extensibility Framework can be cumbersome, as the methods involved often define many optional parameters that must be provided when using them from JavaScript.
 
-One such optional argument is the [DataFunctionCall argument on SetPropertyValueExpression](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Expression~SetPropertyValueExpression.html).  The data function call can be used to modify the expression result for matching purposes, and [common usage scenarios are explained on this page](https://developer.m-files.com/APIs/COM-API/Searching/DataFunctionCall/).
+One such optional argument is the [DataFunctionCall argument on SetPropertyValueExpression](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Expression~SetPropertyValueExpression.html).  The data function call can be used to modify the expression result for matching purposes, and [common usage scenarios are explained on this page](https://developer.m-files.com/APIs/COM-API/Searching/DataFunctionCall/).
 
 Below is an example of providing an empty `DataFunctionCall` object when executing a search.  This is done when the result does not need to be modified prior to matching.
 
@@ -146,7 +146,7 @@ More information on using `DataFunctionCall` with the M-Files API can be found [
 M-Files API objects can be instantiated in the following way:
 
 ```javascript
- // Create an instance of ObjVer (https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjVer.html).
+ // Create an instance of ObjVer (https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjVer.html).
 var objVer = new MFiles.ObjVer();
 ```
 
@@ -189,7 +189,7 @@ vault.ObjectOperations.CreateNewObjectEx(
 	propertyValues);
 ```
 
-However, within JavaScript the various optional arguments for [CreateNewObjectEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html) must be provided for the call to work.
+However, within JavaScript the various optional arguments for [CreateNewObjectEx](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html) must be provided for the call to work.
 
 ```javascript
 // Create the collection of property values for a new object.
@@ -230,7 +230,7 @@ Whilst it is generally good practice to use the <a href="{{ site.baseurl }}/Fram
 
 ### Referencing enumerated values
 
-The M-Files API contains a number of enumerated values (e.g. [MFBuiltInObjectClass](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInObjectClass.html), [MFBuiltInObjectType](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInObjectType.html), [MFBuiltInPropertyDef](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html), or [MFObjectWindowMode](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFObjectWindowMode.html)).
+The M-Files API contains a number of enumerated values (e.g. [MFBuiltInObjectClass](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInObjectClass.html), [MFBuiltInObjectType](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInObjectType.html), [MFBuiltInPropertyDef](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html), or [MFObjectWindowMode](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFObjectWindowMode.html)).
 
 When using the API from within a scripting environment (e.g. [VBScript](http://developer.m-files.com/Built-In/VBScript/) or within [User Interface Extensibility Framework modules ](http://developer.m-files.com/Frameworks/User-Interface-Extensibility-Framework/Modules/)) it is typically not required to provide the name or namespace of the enumeration as part of the call.  For example, the following code is broadly equivalent in all languages:
 
@@ -255,7 +255,7 @@ var propertyValue = new MFiles.PropertyValue();
 propertyValue.PropertyDef = MFBuiltInPropertyDefClass;
 ```
 
-If an enumerated value is not available within the User Interface Extensibility Framework, you must instead reference it by its integer value.  In the example above, the value of `MFBuiltInPropertyDefClass` can be found on the [MFBuiltInPropertyDef documentation](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html), and could be instead hard-coded as the ID `100`, as below.
+If an enumerated value is not available within the User Interface Extensibility Framework, you must instead reference it by its integer value.  In the example above, the value of `MFBuiltInPropertyDefClass` can be found on the [MFBuiltInPropertyDef documentation](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html), and could be instead hard-coded as the ID `100`, as below.
 {: .note.warning}
 
 ```javascript

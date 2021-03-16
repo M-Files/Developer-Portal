@@ -32,7 +32,7 @@ Vault.ObjectPropertyOperations.SetVersionComment ObjVer, objCommentPropertyValue
 
 ### Using VBScript
 
-To resolve this, the [SetLastModificationInfoAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetLastModificationInfoAdmin.html) method can be called.  This updates the last modification information (either the user, or the date, or both), overriding the change caused by the above code:
+To resolve this, the [SetLastModificationInfoAdmin](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations~SetLastModificationInfoAdmin.html) method can be called.  This updates the last modification information (either the user, or the date, or both), overriding the change caused by the above code:
 
 ```vbscript
 Option Explicit

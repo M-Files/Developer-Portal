@@ -18,5 +18,5 @@ Type | Name | Description
 `int` | Parent
 [ViewLocation](../viewlocation/) | ViewLocation
 
-This is related to [the View class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~View.html) in the COM API.
+This is related to [the View class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~View.html) in the COM API.
 {:.remark}

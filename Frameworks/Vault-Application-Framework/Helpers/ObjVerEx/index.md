@@ -7,27 +7,27 @@ breadcrumb: ObjVerEx
 
 ## Overview
 
-`ObjVerEx` is contained in the `MFiles.VAF.Common` namespace, is returned by [MFSearchBuilder's FindEx and FindOneEx methods]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Searching/), and provides helper methods for working with an object, its properties and history.  Broadly, `ObjVerEx` wraps access to an [ObjectVersion](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion.html) and the associated [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html), as well as providing other convenience methods.
+`ObjVerEx` is contained in the `MFiles.VAF.Common` namespace, is returned by [MFSearchBuilder's FindEx and FindOneEx methods]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Searching/), and provides helper methods for working with an object, its properties and history.  Broadly, `ObjVerEx` wraps access to an [ObjectVersion](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersion.html) and the associated [PropertyValues](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues.html), as well as providing other convenience methods.
 
 This document does not detail all members.
 
 ## ObjectVersion information
 
-An in-memory copy of the object's [ObjectVersion](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion.html) can be accessed via `ObjVerEx.Info`.
+An in-memory copy of the object's [ObjectVersion](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersion.html) can be accessed via `ObjVerEx.Info`.
 
 ## Properties
 
-An in-memory copy of the object's [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html) can be accessed via `ObjVerEx.PropertyValues`, which is [lazy-loaded](https://en.wikipedia.org/wiki/Lazy_loading) as required.
+An in-memory copy of the object's [PropertyValues](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues.html) can be accessed via `ObjVerEx.PropertyValues`, which is [lazy-loaded](https://en.wikipedia.org/wiki/Lazy_loading) as required.
 
 ### SetProperty vs SaveProperty
 
-`ObjVerEx` exposes a number of convenience methods for working with [PropertyValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValue.html)s on objects.  It is important to note, though, that the function of `SetProperty` is very different to the function of `SaveProperty`.
+`ObjVerEx` exposes a number of convenience methods for working with [PropertyValue](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValue.html)s on objects.  It is important to note, though, that the function of `SetProperty` is very different to the function of `SaveProperty`.
 
 `SetProperty` updates a property value *in memory only*.  The change is not persisted to the M-Files server unless `SaveProperties` is also called.  This means that the call to `SetProperty` is very fast, and all changes to the object can be saved with one atomic call to `SaveProperties`.
 
 `SaveProperty` updates a property value both in memory *and* on the M-Files server.  Multiple calls to `SaveProperty` are discouraged as this will result in many calls back and forth to the server, which will adversely affect performance.  Instead, call `SetProperty` multiple times, then call `SaveProperties` once all changes have been made.
 
-SaveProperties will deal with calling <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetAllProperties.html">SetAllProperties</a> or <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperties.html">SetProperties</a> in the API as appropriate, depending on whether the class of the object is specified in the change set.
+SaveProperties will deal with calling <a href="https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations~SetAllProperties.html">SetAllProperties</a> or <a href="https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations~SetProperties.html">SetProperties</a> in the API as appropriate, depending on whether the class of the object is specified in the change set.
 {:.note}
 
 Calling `SaveProperty` forces the internal `Properties` collection to be re-loaded from the server.  Any changes made to the collection (e.g. by calling `SetProperty`) will be lost by this call.
@@ -35,7 +35,7 @@ Calling `SaveProperty` forces the internal `Properties` collection to be re-load
 
 ### SetCreatedBy and SetModifiedBy
 
-`SetCreatedBy` offers a shortcut mechanism to calling [SetCreationInfoAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetCreationInfoAdmin.html), allowing a user ID to be passed rather than a [TypedValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~TypedValue.html).
+`SetCreatedBy` offers a shortcut mechanism to calling [SetCreationInfoAdmin](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations~SetCreationInfoAdmin.html), allowing a user ID to be passed rather than a [TypedValue](https://www.m-files.com/api/documentation/index.html#MFilesAPI~TypedValue.html).
 
 ```csharp
 // Where "env" is the current environment passed
@@ -43,7 +43,7 @@ Calling `SaveProperty` forces the internal `Properties` collection to be re-load
 env.ObjVerEx.SetCreatedBy(env.CurrentUserID);
 ```
 
-`SetModifiedBy` offers a shortcut mechanism to calling [SetLastModificationInfoAdmin](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetLastModificationInfoAdmin.html), allowing a user ID to be passed rather than a [TypedValue](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~TypedValue.html).
+`SetModifiedBy` offers a shortcut mechanism to calling [SetLastModificationInfoAdmin](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations~SetLastModificationInfoAdmin.html), allowing a user ID to be passed rather than a [TypedValue](https://www.m-files.com/api/documentation/index.html#MFilesAPI~TypedValue.html).
 
 ```csharp
 // Where "env" is the current environment passed
@@ -67,7 +67,7 @@ There are a variety of helper methods available that aid working with properties
 
 * `AddLookup` - adds a lookup item to the `PropertyValues` collection.
 * `GetLookupID` - retrieves the ID of the item in the lookup, or -1 if the lookup is not found.
-* `GetLookups` - retrieves the property values as lookups, or an empty [Lookups](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Lookups.html) collection if the property is not found.
+* `GetLookups` - retrieves the property values as lookups, or an empty [Lookups](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Lookups.html) collection if the property is not found.
 * `SetLookup` - sets the supplied lookup value as the only value of the specified property in the `PropertyValues` collection.
 * `RemoveLookup` - removes a single lookup from the specified property value in the `PropertyValues` collection.
 * `RemoveProperty` - removes a property value from the `PropertyValues` collection.
@@ -100,12 +100,12 @@ An object can be rolled back by calling `ObjVerEx.Rollback`, and providing it wi
 
 * `ReplaceFiles` - replaces the current files on an object with the ones supplied.
 
-If an object is currently a <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion~SingleFile.html">Single File Document</a> then it must be changed to a <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~SetSingleFileObject.html">multi-file-document</a> before calling ReplaceFiles with multiple documents.
+If an object is currently a <a href="https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersion~SingleFile.html">Single File Document</a> then it must be changed to a <a href="https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~SetSingleFileObject.html">multi-file-document</a> before calling ReplaceFiles with multiple documents.
 {:.note}
 
 ## Permissions
 
-An in-memory representation of the [object's permissions](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersionPermissions.html) can be accessed via `ObjVerEx.History`, which is [lazy-loaded](https://en.wikipedia.org/wiki/Lazy_loading) as required.
+An in-memory representation of the [object's permissions](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersionPermissions.html) can be accessed via `ObjVerEx.History`, which is [lazy-loaded](https://en.wikipedia.org/wiki/Lazy_loading) as required.
 
 ## Helper Functions
 
@@ -119,8 +119,8 @@ An in-memory representation of the [object's permissions](https://www.m-files.co
 
 ### Deletion and Destruction
 
-* `Delete` - [deletes the underlying M-Files object](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DeleteObject.html).
-* `Destroy` - [destroys the underlying M-Files object](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html).
+* `Delete` - [deletes the underlying M-Files object](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~DeleteObject.html).
+* `Destroy` - [destroys the underlying M-Files object](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html).
 
 Destruction of objects cannot be undone.
 {:.note.warning}

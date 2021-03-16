@@ -8,7 +8,7 @@ A brief statement on our [privacy policy]({{ site.baseurl }}/Privacy/) is availa
 
 ## Our official documentation
 
-* [The M-Files COM API Reference](https://www.m-files.com/api/documentation/latest/index.html)
+* [The M-Files COM API Reference](https://www.m-files.com/api/documentation/index.html)
 
 Our COM API Reference provides detailed documentation on the objects, methods and properties that are exposed by the COM API.
 

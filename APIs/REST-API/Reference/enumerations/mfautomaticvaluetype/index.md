@@ -18,5 +18,5 @@ Value | Member
 3 | AutoNumberSimple 
 4 | WithVBScript 
 
-This is related to [the MFAutomaticValueType enumeration](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFAutomaticValueType.html) in the COM API.
+This is related to [the MFAutomaticValueType enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFAutomaticValueType.html) in the COM API.
 {:.remark}

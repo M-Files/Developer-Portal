@@ -50,5 +50,5 @@ Type | Name | Description
 `bool` |  VaultLoginAccountsSupported | The vault supports in-vault login accounts.
 `bool` |  WebUserInterfaceSupported | Specifies if the server can support web interface.
 
-This is related to [the ServerVaultCapabilities class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ServerVaultCapabilities.html) in the COM API.
+This is related to [the ServerVaultCapabilities class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ServerVaultCapabilities.html) in the COM API.
 {:.remark}

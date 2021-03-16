@@ -23,13 +23,13 @@ Any operation that alters the object's metadata or files causes a new version to
 
 ### ObjID
 
-The [ObjID](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjID.html) class represents a single object in the M-Files vault.  The combination of the `Type` (the internal ID of the object type) and the `ID` (the M-Files [internal ID](../Vault-Structure/InternalAndExternalIDs)) uniquely identify an object in the system.  The `ObjID` is used to reference items when the version is not important, such as for checking out an object.
+The [ObjID](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjID.html) class represents a single object in the M-Files vault.  The combination of the `Type` (the internal ID of the object type) and the `ID` (the M-Files [internal ID](../Vault-Structure/InternalAndExternalIDs)) uniquely identify an object in the system.  The `ObjID` is used to reference items when the version is not important, such as for checking out an object.
 
 ### ObjVer
 
-The [ObjVer](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjVer.html) class represents a specific version of a single object in the M-Files vault.  The combination of the `Version` number (always a positive integer, starting at 1), the `Type` and the `ID` uniquely identify a specific version of an object in the system.  The `ObjVer` is used to reference items when the version is important, such as loading the property values that were on a specific object version.
+The [ObjVer](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjVer.html) class represents a specific version of a single object in the M-Files vault.  The combination of the `Version` number (always a positive integer, starting at 1), the `Type` and the `ID` uniquely identify a specific version of an object in the system.  The `ObjVer` is used to reference items when the version is important, such as loading the property values that were on a specific object version.
 
-Object versions will be created from 1 upwards, but it is not safe to assume that all object versions are still available in the vault, nor that a specific user can necessarily see all versions.  The [GetHistory](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~GetHistory.html) API method will return the items which are available for the current user.
+Object versions will be created from 1 upwards, but it is not safe to assume that all object versions are still available in the vault, nor that a specific user can necessarily see all versions.  The [GetHistory](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~GetHistory.html) API method will return the items which are available for the current user.
 {:.note.warning}
 
 ## Managing objects using the API

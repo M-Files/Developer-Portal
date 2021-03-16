@@ -27,5 +27,5 @@ Value | Member
 13 | MultiLineText 
 14 | ACL 
 
-This is related to [the MFDataType enumeration](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFDataType.html) in the COM API.
+This is related to [the MFDataType enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFDataType.html) in the COM API.
 {:.remark}

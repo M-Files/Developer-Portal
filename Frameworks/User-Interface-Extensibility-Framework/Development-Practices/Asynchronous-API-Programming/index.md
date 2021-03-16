@@ -5,14 +5,14 @@ includeInSearch: true
 breadcrumb: Async
 ---
 
-Whilst M-Files COM API calls are typically synchronous (i.e. the application doesn't continue until the API call completes), the M-Files [Vault](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault.html) object exposes a property named `Async` which can be used to make asynchronous calls.  Using asynchronous calls - rather than synchronous calls, which wait for the process to finish before continuing - ensures that the user interface doesn't appear to "lock", and the user experience remains fluid.
+Whilst M-Files COM API calls are typically synchronous (i.e. the application doesn't continue until the API call completes), the M-Files [Vault](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault.html) object exposes a property named `Async` which can be used to make asynchronous calls.  Using asynchronous calls - rather than synchronous calls, which wait for the process to finish before continuing - ensures that the user interface doesn't appear to "lock", and the user experience remains fluid.
 
 Using asynchronous calls are currently optional when [targeting the M-Files Desktop client]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#the-m-files-desktop-client).  It is mandatory when [targeting M-Files Web Access]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#m-files-web-access).
 {:.note}
 
 ## Altering synchronous to asynchronous calls
 
-The following is a standard synchronous call to [CheckOut](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CheckOut.html).  Once the call completes, the return value of the call (the checked-out [ObjectVersion](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion.html)) is assigned to the `objectVersion` variable and the code continues.
+The following is a standard synchronous call to [CheckOut](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CheckOut.html).  Once the call completes, the return value of the call (the checked-out [ObjectVersion](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersion.html)) is assigned to the `objectVersion` variable and the code continues.
 
 ```javascript
 // Check out the object (objver) with synchronous call.
@@ -26,7 +26,7 @@ Altering code to use an asynchronous approach involves two steps:
 1. Alter the call to use `Vault.Async` rather than `Vault`.
 2. Provide one or more callback functions to handle when the asynchronous method call completes.
 
-Using an asynchronous approach, a [callback function](https://en.wikipedia.org/wiki/Callback_%28computer_programming%29#JavaScript) is passed after the standard arguments.  At some point in the future when the call to [CheckOut](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CheckOut.html) completes, the callback function is called and the return value is available as `objectVersion`.
+Using an asynchronous approach, a [callback function](https://en.wikipedia.org/wiki/Callback_%28computer_programming%29#JavaScript) is passed after the standard arguments.  At some point in the future when the call to [CheckOut](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CheckOut.html) completes, the callback function is called and the return value is available as `objectVersion`.
 
 ```javascript
 vault.Async.ObjectOperations.CheckOut( objver.ObjID,      
@@ -48,7 +48,7 @@ Each asynchronous call can be provded with up to three callback functions, in th
 
 ### The successful callback
 
-The success callback is executed if the API call completed successfully.  It always receives a single parameter which is the return value of the call.  For example: [GetProperties](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) defines two parameters (the [ObjVer](https://www.m-files.com/api/documentation/latest/MFilesAPI~ObjVer.html) to get the properties of, and the whether to update from the server or not) and returns a [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html) object, so the parameter would be a single object of type `PropertyValues`:
+The success callback is executed if the API call completed successfully.  It always receives a single parameter which is the return value of the call.  For example: [GetProperties](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) defines two parameters (the [ObjVer](https://www.m-files.com/api/documentation/MFilesAPI~ObjVer.html) to get the properties of, and the whether to update from the server or not) and returns a [PropertyValues](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues.html) object, so the parameter would be a single object of type `PropertyValues`:
 
 ```javascript
 vault.Async.ObjectPropertyOperations.GetProperties(objVer, 
@@ -117,9 +117,9 @@ vault.Async.ObjectPropertyOperations.GetProperties(objVer,
 
 ## An important note on supported object types
 
-Asynchronous calls *clone* each input parameter and the return value, therefore all object types being passed in and out of the API call must be *cloneable*.  Cloneable object types can be checked using the [M-Files COM API reference](https://www.m-files.com/api/documentation/latest/index.html) to see whether each object has a `Clone` method.
+Asynchronous calls *clone* each input parameter and the return value, therefore all object types being passed in and out of the API call must be *cloneable*.  Cloneable object types can be checked using the [M-Files COM API reference](https://www.m-files.com/api/documentation/index.html) to see whether each object has a `Clone` method.
 
-For example: [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html) has a [Clone](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues~Clone.html) method, so methods using it can be called asynchronously.  However, [SourceObjectFiles](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html) does not have a `Clone` method, so methods using it cannot be called asynchronously.
+For example: [PropertyValues](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues.html) has a [Clone](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues~Clone.html) method, so methods using it can be called asynchronously.  However, [SourceObjectFiles](https://www.m-files.com/api/documentation/index.html#MFilesAPI~SourceObjectFiles.html) does not have a `Clone` method, so methods using it cannot be called asynchronously.
 
-Note that M-Files Web Access has specific wrappers around some of these uncloneable objects; `SourceObjectFiles` <b>can</b> be used asynchronously in M-Files Web Access, but cannot be used in M-Files Desktop client.  To work around this, [check the current platform]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform) and call methods such as [CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html) synchronously on M-Files Desktop and asynchronously on M-Files Web Access.
+Note that M-Files Web Access has specific wrappers around some of these uncloneable objects; `SourceObjectFiles` <b>can</b> be used asynchronously in M-Files Web Access, but cannot be used in M-Files Desktop client.  To work around this, [check the current platform]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform) and call methods such as [CreateNewObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html) synchronously on M-Files Desktop and asynchronously on M-Files Web Access.
 {:.note}

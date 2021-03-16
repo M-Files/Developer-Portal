@@ -14,7 +14,7 @@ Updating an object (e.g. the file, its metadata, or to move it through a workflo
 2. Make the required alterations to the new version.
 3. Check in the new object version.
 
-Objects can only be checked out by one person at a time.  If another person has an object checked out, then the call to [CheckOut](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CheckOut.html) will fail and the object cannot be updated.
+Objects can only be checked out by one person at a time.  If another person has an object checked out, then the call to [CheckOut](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CheckOut.html) will fail and the object cannot be updated.
 {:.note.warning}
 
 ## Updating metadata
@@ -114,7 +114,7 @@ vault.ObjectOperations.CheckIn(checkedOutObjectVersion.ObjVer);
 
 ## Converting between single-file and multi-file
 
-Occasionally it is required to alter a document from a [single-file document to a multi-file document](https://www.m-files.com/user-guide/latest/eng/MFD_SFD.html?hl=single-file%2Cdocument).  To do this, either use [SetSingleFileObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~SetSingleFileObject.html), or alter [property 22 (MFBuiltInPropertyDefSingleFileObject)](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html).
+Occasionally it is required to alter a document from a [single-file document to a multi-file document](https://www.m-files.com/user-guide/latest/eng/MFD_SFD.html?hl=single-file%2Cdocument).  To do this, either use [SetSingleFileObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~SetSingleFileObject.html), or alter [property 22 (MFBuiltInPropertyDefSingleFileObject)](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html).
 
 In the example below we will call convert the object to a multi-file document before we add a second file to it.  If, after having added the second file, there is only one file on the object (e.g. it had no files before), then we will convert it to a single-file document.
 
@@ -177,7 +177,7 @@ vault.ObjectOperations.CheckIn(checkedOutObjectVersion.ObjVer);
 
 ## Moving an item through a workflow
 
-Workflows within M-Files are exceptionally powerful.  Objects hold information on the workflow and workflow state that they are in as properties.  To move an object through a workflow, simply update these properties.  To provide a version comment as part of the transition, or to provide electronic signature information, the [SetWorkflowState](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectPropertyOperations~SetWorkflowState.html) method must be used.
+Workflows within M-Files are exceptionally powerful.  Objects hold information on the workflow and workflow state that they are in as properties.  To move an object through a workflow, simply update these properties.  To provide a version comment as part of the transition, or to provide electronic signature information, the [SetWorkflowState](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations~SetWorkflowState.html) method must be used.
 
 When updating an object to move it through a workflow, the system will perform various actions to ensure that the transition is valid.  These include checking that moving from the current state to the new state is a valid transition, may include permissions checks to ensure that the current user can action it, or executing some server-side validation logic to ensure that the transition adheres to various business rules.  It is important to ensure that [exception handling](#handling-exceptions) is put in place to ensure that objects are not left checked out.
 {:.note}

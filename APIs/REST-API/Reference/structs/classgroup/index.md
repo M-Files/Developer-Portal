@@ -14,5 +14,5 @@ Type | Name | Description
 --- | --- | ---
 `string` | Name
 
-This is related to [the ClassGroup class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ClassGroup.html) in the COM API.
+This is related to [the ClassGroup class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ClassGroup.html) in the COM API.
 {:.remark}

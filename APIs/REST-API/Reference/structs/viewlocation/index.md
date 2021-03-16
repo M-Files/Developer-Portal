@@ -15,5 +15,5 @@ Type | Name | Description
 [TypedValue](../typedvalue/) | OverlappedFolder 
 `bool` | Overlapping
 
-This is related to [the ViewLocation class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ViewLocation.html) in the COM API.
+This is related to [the ViewLocation class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ViewLocation.html) in the COM API.
 {:.remark}

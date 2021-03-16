@@ -17,5 +17,5 @@ Type | Name | Description
 `string` | ExternalRepositoryName (for external objects only)
 `string` | ExternalRepositoryObjectID (for external objects only)
 
-This is related to [the ObjID class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjID.html) in the COM API.
+This is related to [the ObjID class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjID.html) in the COM API.
 {:.remark}

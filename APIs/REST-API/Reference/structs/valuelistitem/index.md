@@ -21,5 +21,5 @@ Type | Name | Description
 `int` | ParentID
 `int` | ValueListID
 
-This is related to [the ValueListItem class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ValueListItem.html) in the COM API.
+This is related to [the ValueListItem class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ValueListItem.html) in the COM API.
 {:.remark}

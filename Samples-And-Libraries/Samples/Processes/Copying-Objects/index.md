@@ -14,9 +14,9 @@ Full source code for this sample is available <a href="https://github.com/M-File
 Any object within M-Files consists of internal data (e.g. the object type and ID), metadata (both automated and manual), zero or more files, and an access control list.  To create a copy of an object, we must create a copy of two sets of data:
 
 1. We must copy the current object's `PropertyValues`, removing any that we do not wish to propagate to the new object (e.g. `Created`).
-2. We must copy the current object's `Files`, by downloading them from the server, creating a [SourceObjectFiles](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html) collection, and then re-attaching them to the new object.
+2. We must copy the current object's `Files`, by downloading them from the server, creating a [SourceObjectFiles](https://www.m-files.com/api/documentation/index.html#MFilesAPI~SourceObjectFiles.html) collection, and then re-attaching them to the new object.
 
-Once we have this content, we can call [CreateNewObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html), [CreateNewObjectEx](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html) or [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html) to actually create the copy.
+Once we have this content, we can call [CreateNewObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html), [CreateNewObjectEx](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectEx.html) or [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html) to actually create the copy.
 
 The code below is assumed to run as a workflow state action, as this is the typical usage scenario.
 {:.note}
@@ -25,12 +25,12 @@ The code below is assumed to run as a workflow state action, as this is the typi
 
 ### Creating a copy of the properties
 
-Within a workflow state action, the current property values are available within a workflow state action as a variable named [PropertyValues](https://www.m-files.com/user-guide/latest/eng/Variables.html), which is of type [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html).  Duplicating the content of this collection is a two-step process:
+Within a workflow state action, the current property values are available within a workflow state action as a variable named [PropertyValues](https://www.m-files.com/user-guide/latest/eng/Variables.html), which is of type [PropertyValues](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues.html).  Duplicating the content of this collection is a two-step process:
 
-1. The `PropertyValues` variable contains a [Clone method](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues~Clone.html), which can be used to create a copy of the object (line 18).
+1. The `PropertyValues` variable contains a [Clone method](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues~Clone.html), which can be used to create a copy of the object (line 18).
 2. Some properties will need to be removed from the collection, as they don't make sense to have on the new object (lines 22-23).
 
-This code removes the `MFBuiltInPropertyDefWorkflow` and `MFBuiltInPropertyDefState` built-in properties from the collection, as the new object doesn't need to be in the same workflow.  It may also be that other <a href="https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html">built-in properties</a> should be removed, such as the creation date.
+This code removes the `MFBuiltInPropertyDefWorkflow` and `MFBuiltInPropertyDefState` built-in properties from the collection, as the new object doesn't need to be in the same workflow.  It may also be that other <a href="https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html">built-in properties</a> should be removed, such as the creation date.
 {:.note}
 
 ```vbscript
@@ -59,7 +59,7 @@ Function GetNewObjectPropertyValues(oPropertyValuesToCloneFrom)
 	RemovePropertyValueIfFound objNewObjectPropertyValues, MFBuiltInPropertyDefState
 
 	' Possibly also want to remove some other built-in properties such as created and created by.
-	' Ref: https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	' Ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	
 	' Return the property values.
 	Set GetNewObjectPropertyValues = objNewObjectPropertyValues
@@ -80,11 +80,11 @@ End Sub
 
 ### Creating a copy of the files
 
-Unlike the property values, the file content is not automatically available within the event handler.  Additionally: the file data needs to be converted from [ObjectFiles](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectFiles.html) to [SourceObjectFiles](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html) to be used within the creation call.  Specifically, we must:
+Unlike the property values, the file content is not automatically available within the event handler.  Additionally: the file data needs to be converted from [ObjectFiles](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectFiles.html) to [SourceObjectFiles](https://www.m-files.com/api/documentation/index.html#MFilesAPI~SourceObjectFiles.html) to be used within the creation call.  Specifically, we must:
 
 1. Retrieve the file information (line 60).
 2. Download the files to a temporary location (line 76)
-4. Create the [SourceObjectFiles](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~SourceObjectFiles.html) collection (line 63) and populate it (lines 78-82).
+4. Create the [SourceObjectFiles](https://www.m-files.com/api/documentation/index.html#MFilesAPI~SourceObjectFiles.html) collection (line 63) and populate it (lines 78-82).
 6. *TODO: [Create the object](#creating-the-object)*
 7. Cleanup of the temporary files (lines 95-113).
 
@@ -122,7 +122,7 @@ Function GetNewObjectPropertyValues(oPropertyValuesToCloneFrom)
 	RemovePropertyValueIfFound objNewObjectPropertyValues, MFBuiltInPropertyDefState
 
 	' Possibly also want to remove some other built-in properties such as created and created by.
-	' Ref: https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	' Ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	
 	' Return the property values.
 	Set GetNewObjectPropertyValues = objNewObjectPropertyValues
@@ -206,17 +206,17 @@ End Sub
 
 ### Creating the object
 
-There are a number of API methods that can be used to create new objects, but this sample will use [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html), as it allows the object to be easily checked in with the same call.  In addition to the property and file information we have, the method defines four additional parameters:
+There are a number of API methods that can be used to create new objects, but this sample will use [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html), as it allows the object to be easily checked in with the same call.  In addition to the property and file information we have, the method defines four additional parameters:
 * `ObjectType` - the ID of the type of object to create (we can get this from `ObjVer.Type`).
 * `SFD` - a flag to note whether the object is a single file document or not.
 * `CheckIn` - whether to check the object in as part of the call
-* `AccessControlList` - the [Access Control List](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~AccessControlList.html) to apply to the new object.
+* `AccessControlList` - the [Access Control List](https://www.m-files.com/api/documentation/index.html#MFilesAPI~AccessControlList.html) to apply to the new object.
 
 To complete the code, we must:
 
 1. Decide whether the object is a single-file-document or not (lines 16-29).
 2. Decide which access control list to apply to the document (line 22).
-3. Call [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html) (line 25).
+3. Call [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html) (line 25).
 
 
 ```vbscript
@@ -263,7 +263,7 @@ Function GetNewObjectPropertyValues(oPropertyValuesToCloneFrom)
 	RemovePropertyValueIfFound objNewObjectPropertyValues, MFBuiltInPropertyDefState
 
 	' Possibly also want to remove some other built-in properties such as created and created by.
-	' Ref: https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	' Ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	
 	' Return the property values.
 	Set GetNewObjectPropertyValues = objNewObjectPropertyValues
@@ -389,7 +389,7 @@ namespace CopyingObjects
 
 To copy the properties we will:
 
-1. [Clone](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues~Clone.html) the `PropertyValues` of the current object (line 56).
+1. [Clone](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues~Clone.html) the `PropertyValues` of the current object (line 56).
 2. Remove the properties which we don't wish to be on the new object (declared lines 16-20, removed lines 59-68).
 
 ```csharp
@@ -640,7 +640,7 @@ To complete the code, we must:
 
 1. Decide whether the object is a single-file-document or not (lines 41-42).
 2. Decide which access control list to apply to the document (line 45).
-3. Call [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html) (lines 48-54).
+3. Call [CreateNewObjectExQuick](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObjectExQuick.html) (lines 48-54).
 
 ```csharp
 using System;

@@ -15,5 +15,5 @@ Value | Member
 0 | Simple
 1 | AutomaticPermissionsWithComponents
 
-This is related to [the MFACLMode enumeration](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~MFACLMode.html) in the COM API.
+This is related to [the MFACLMode enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFACLMode.html) in the COM API.
 {:.remark}

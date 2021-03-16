@@ -5,7 +5,7 @@ includeInSearch: true
 breadcrumb: MFPropertyValuesBuilder
 ---
 
-`MFPropertyValuesBuilder` is contained in the `MFiles.VAF.Common` namespace and provides helper methods for building up a collection of [PropertyValues](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~PropertyValues.html).
+`MFPropertyValuesBuilder` is contained in the `MFiles.VAF.Common` namespace and provides helper methods for building up a collection of [PropertyValues](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValues.html).
 
 ```csharp
 // Create a property values builder.

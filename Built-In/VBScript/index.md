@@ -56,7 +56,7 @@ VBScript can be used to [automate the transition between two workflow states](ht
 
 ### Vault Extension Methods
 
-VBScript can be used to create [Vault Extension Methods]({{ site.baseurl }}/Built-In/VBScript/Vault-Extension-Methods/), which are snippets of code that can be executed using [ExecuteVaultExtensionMethod](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).  These Vault Extension Methods can be executed by other VBScript, by external applications using the COM API, by [external applications using the REST API](/APIs/REST-API/Vault-Extension-Methods/), or by User Interface Extensibility Framework applications running within the M-Files desktop or web clients.
+VBScript can be used to create [Vault Extension Methods]({{ site.baseurl }}/Built-In/VBScript/Vault-Extension-Methods/), which are snippets of code that can be executed using [ExecuteVaultExtensionMethod](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).  These Vault Extension Methods can be executed by other VBScript, by external applications using the COM API, by [external applications using the REST API](/APIs/REST-API/Vault-Extension-Methods/), or by User Interface Extensibility Framework applications running within the M-Files desktop or web clients.
 
 ## Tips and tricks
 

@@ -113,7 +113,7 @@ End If
 
 ''' Retrieves the ID of a property definition from its alias.
 ''' Returns the ID or -1 if the alias is not found, or if more than one property definition uses the alias.
-' ref: https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultPropertyDefOperations~GetPropertyDefIDByAlias.html
+' ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultPropertyDefOperations~GetPropertyDefIDByAlias.html
 Function GetPropertyDefIDByAlias(oVault, sPropertyDefAlias)
 
 	GetPropertyDefIDByAlias = oVault.PropertyDefOperations.GetPropertyDefIDByAlias(sPropertyDefAlias)

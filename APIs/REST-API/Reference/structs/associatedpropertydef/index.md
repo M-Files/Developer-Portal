@@ -15,5 +15,5 @@ Type | Name | Description
 `int` | PropertyDef
 `bool` | Required
 
-This is related to [the AssociatedPropertyDef class](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~AssociatedPropertyDef.html) in the COM API.
+This is related to [the AssociatedPropertyDef class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~AssociatedPropertyDef.html) in the COM API.
 {:.remark}

@@ -25,7 +25,7 @@ When using [External Object Types]({{ site.baseurl }}/Built-In/External-Object-T
 
 ### Explicitly-set Display ID
 
-From M-Files 2015.3, the M-Files system has supported the setting of display IDs via the [VaultObjectOperations.SetExternalID method](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~SetExternalID.html), subject to the following conditions:
+From M-Files 2015.3, the M-Files system has supported the setting of display IDs via the [VaultObjectOperations.SetExternalID method](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~SetExternalID.html), subject to the following conditions:
 
 * The external ID must be unique within an object type; the same ID cannot be used for two objects.
 * The API call can only set display IDs on internal objects (i.e. an external ID cannot be set for an object type which is already external).
@@ -42,11 +42,11 @@ In order to interact with objects within the vault, the M-Files APIs require inf
 
 #### Providing values using the COM API
 
-When using the COM API, the object type ID and object ID are typically passed within an [ObjID](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjID.html) instance.  Where API calls require specific versions of objects, this information is often passed within an [ObjVer](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjVer.html) instance, which contains the object type ID, the object ID, and the version number.
+When using the COM API, the object type ID and object ID are typically passed within an [ObjID](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjID.html) instance.  Where API calls require specific versions of objects, this information is often passed within an [ObjVer](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjVer.html) instance, which contains the object type ID, the object ID, and the version number.
 
 #### Retrieving values using the COM API
 
-When using the COM API, many APIs will return an [ObjectVersion](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~ObjectVersion.html).  This class exposes the following properties:
+When using the COM API, many APIs will return an [ObjectVersion](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersion.html).  This class exposes the following properties:
 
 * `DisplayIDAvailable` - specifies whether the `DisplayID` property is available.
 * `DisplayID` - only populated if the object has an `External ID` defined..

@@ -32,25 +32,25 @@ Occasionally one vault element may be referenced by a number of scripts, each ex
 
 Resolving aliases to IDs is done using one of the following methods:
 
-* [GetPropertyDefIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultPropertyDefOperations~GetPropertyDefIDByAlias.html): retrieves the ID of a property definition by its alias.
+* [GetPropertyDefIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultPropertyDefOperations~GetPropertyDefIDByAlias.html): retrieves the ID of a property definition by its alias.
 
-* [GetObjectClassIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultClassOperations~GetObjectClassIDByAlias.html): retrieves the ID of a class by its alias.
+* [GetObjectClassIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultClassOperations~GetObjectClassIDByAlias.html): retrieves the ID of a class by its alias.
 
-* [GetNamedACLIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultNamedACLOperations~GetNamedACLIDByAlias.html): retrieves the ID of a named ACL by its alias.
+* [GetNamedACLIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultNamedACLOperations~GetNamedACLIDByAlias.html): retrieves the ID of a named ACL by its alias.
 
-* [GetObjectTypeIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultObjectTypeOperations~GetObjectTypeIDByAlias.html): retrieves the ID of an object type by its alias.
+* [GetObjectTypeIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectTypeOperations~GetObjectTypeIDByAlias.html): retrieves the ID of an object type by its alias.
 
-* [GetUserGroupIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultUserGroupOperations~GetUserGroupIDByAlias.html): retrieves the ID of a user group by its alias.
+* [GetUserGroupIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultUserGroupOperations~GetUserGroupIDByAlias.html): retrieves the ID of a user group by its alias.
 
-* [GetValueListIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultValueListOperations~GetValueListIDByAlias.html): retrieves the ID of a value list by its alias.
+* [GetValueListIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultValueListOperations~GetValueListIDByAlias.html): retrieves the ID of a value list by its alias.
 
-* [GetWorkflowIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultWorkflowOperations~GetWorkflowIDByAlias.html): retrieves the ID of a workflow by its alias.
+* [GetWorkflowIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultWorkflowOperations~GetWorkflowIDByAlias.html): retrieves the ID of a workflow by its alias.
 
-* [GetWorkflowStateIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultWorkflowOperations~GetWorkflowStateIDByAlias.html): retrieves the ID of a workflow state by its alias.
+* [GetWorkflowStateIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultWorkflowOperations~GetWorkflowStateIDByAlias.html): retrieves the ID of a workflow state by its alias.
 
-* [GetWorkflowStateTransitionIDByAlias](https://www.m-files.com/api/documentation/latest/MFilesAPI~VaultWorkflowOperations~GetWorkflowStateTransitionIDByAlias.html): retrieves the ID of a workflow state transition by its alias.
+* [GetWorkflowStateTransitionIDByAlias](https://www.m-files.com/api/documentation/MFilesAPI~VaultWorkflowOperations~GetWorkflowStateTransitionIDByAlias.html): retrieves the ID of a workflow state transition by its alias.
 
-* [GetMetadataStructureItemIDByAlias](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~Vault~GetMetadataStructureItemIDByAlias.html): retrieves the ID of a vault structure element by its alias.
+* [GetMetadataStructureItemIDByAlias](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault~GetMetadataStructureItemIDByAlias.html): retrieves the ID of a vault structure element by its alias.
 
 The code above could, instead, be written as below:
 

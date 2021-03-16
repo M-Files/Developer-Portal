@@ -79,7 +79,7 @@ If you do not have an M-Files server running locally, the `install-application.p
 
 #### Deploying to remote M-Files servers
 
-Unfortunately, the PowerShell script cannot directly deploy to remote servers, as the call to [InstallCustomApplication](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultCustomApplicationManagementOperations~InstallCustomApplication.html) requires that the path be a path that the M-Files server can resolve.
+Unfortunately, the PowerShell script cannot directly deploy to remote servers, as the call to [InstallCustomApplication](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultCustomApplicationManagementOperations~InstallCustomApplication.html) requires that the path be a path that the M-Files server can resolve.
 
 It may be possible to alter the PowerShell script to copy the application to a remote system before attempting installation.  Doing so is beyond the scope of this article.
 

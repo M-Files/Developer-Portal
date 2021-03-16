@@ -14,7 +14,7 @@ When removing objects from an M-Files vault, it is important to decide whether t
 
 ## Deleting objects
 
-Destroying one or more versions of an object is done by calling [DeleteObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DeleteObject.html).
+Destroying one or more versions of an object is done by calling [DeleteObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~DeleteObject.html).
 
 ```csharp
 // Which vault are we connecting to?
@@ -47,7 +47,7 @@ vault.ObjectOperations.DeleteObject(objID);
 
 ## Undeleting objects
 
-Objects that are deleted can be undeleted by administrative users either using the M-Files Desktop client, or by calling [UndeleteObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~UndeleteObject.html).
+Objects that are deleted can be undeleted by administrative users either using the M-Files Desktop client, or by calling [UndeleteObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~UndeleteObject.html).
 
 ```csharp
 // Which vault are we connecting to?
@@ -80,7 +80,7 @@ vault.ObjectOperations.UndeleteObject(objID);
 
 ## Destroying objects
 
-Destroying one or more versions of an object is done by calling [DestroyObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html).
+Destroying one or more versions of an object is done by calling [DestroyObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html).
 
 ### Destroying specific object versions
 
@@ -88,7 +88,7 @@ Objects within M-Files have at least one version, typically more than one.  Thes
 
 ![An example of object versions]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/history-fixed.png)
 
-To permanently destroy a specific version of an object - leaving all other versions available - call [DestroyObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html), ensuring that `DestroyAllVersions` is set to `false`, and `ObjectVersion` is set to the version number that needs to be destroyed.
+To permanently destroy a specific version of an object - leaving all other versions available - call [DestroyObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html), ensuring that `DestroyAllVersions` is set to `false`, and `ObjectVersion` is set to the version number that needs to be destroyed.
 
 ```csharp
 // Which vault are we connecting to?
@@ -124,7 +124,7 @@ vault.ObjectOperations.DestroyObject(
 
 ### Destroying all versions of an object
 
-To permanently destroy all versions of an object call [DestroyObject](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html), ensuring that `DestroyAllVersions` is set to `true`, and `ObjectVersion` is set to `-1`.
+To permanently destroy all versions of an object call [DestroyObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~DestroyObject.html), ensuring that `DestroyAllVersions` is set to `true`, and `ObjectVersion` is set to `-1`.
 
 ```csharp
 // Which vault are we connecting to?
