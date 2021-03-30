@@ -50,7 +50,7 @@ The application definition file (`appdef.xml`) requires two changes:
 
 1. The referenced schema must be changed to `http://www.m-files.com/schemas/appdef-client-v4.xsd`.
 2. Any and all `ShellUI` module elements should have a `fast-browsing-compatible` attribute added with a value of `true`.
-3. **If upgrading from the [v1 schema](../Application-Definition):** Ensure that you add the <platforms> and <platform> elements as appropriate (example below).
+3. **If upgrading from the [v1 schema](../Application-Definition):** Ensure that you add the &lt;platforms&gt; and &lt;platform&gt; elements as appropriate (example below).
 
 Below is a full example of an updated application definition file:
 
