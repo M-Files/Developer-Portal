@@ -58,5 +58,27 @@
     "theme_color": "#0064ad",
     "background_color": "#0064ad",
 	"display": "standalone",
-	"gcm_sender_id": "103953800507"
+	"gcm_sender_id": "103953800507",
+    "shortcuts" : [
+        {
+            "name" :"M-Files Developer Portal",
+            "url" : "/"
+        },
+        {
+            "name" :"M-Files COM API",
+            "url" : "/APIs/COM-API/"
+        },
+        {
+            "name" :"M-Files Web Service / REST API",
+            "url" : "/APIs/REST-API/"
+        },
+        {
+            "name" :"M-Files Vault Application Framework",
+            "url" : "/Frameworks/Vault-Application-Framework/"
+        },
+        {
+            "name" :"M-Files User Interface Extensibility Framework",
+            "url" : "/Frameworks/User-Interface-Extensibility-Framework/"
+        }
+    ]
 }
