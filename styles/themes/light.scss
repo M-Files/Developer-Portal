@@ -34,6 +34,7 @@ body.theme-light
 		background-color: #0072CE;
 		color: #ecf0f1;
 	}
+	#logo { background-color: $background-color; }
 
 	&.reveal
 	{	aside#sidebar
