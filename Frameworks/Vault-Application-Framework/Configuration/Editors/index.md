@@ -25,7 +25,7 @@ The following editors are available to use:
 * [Date picker](#date-picker), for selecting dates.
 * [Time picker](#time-picker), for selecting times.
 * [Timestamp picker](#timestamp-picker), for selecting time stamps.
-* [Color picker](#color-picker), for selecting dates.
+* [Color picker](#color-picker), for selecting colors.
 * [Value editor](#value-editor), for entering values for property values.
 
 In addition, the `JsonConfEditor` attribute can be used to set the following values on each editor:
