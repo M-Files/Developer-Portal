@@ -423,3 +423,6 @@ public class Configuration
 	public TypedValueSetter Value { get; set; }
 }
 {% endhighlight %}
+
+The `Value` property is linked to the `Property` property via the `PropertyDefReferencePath` that is provided in the `ValueSetter` attribute.  This contains a JSPath selector from the current object to the associated property.  JSPath is also used when [showing and hiding configuration elements](../Showing-And-Hiding/).
+{:.note}
