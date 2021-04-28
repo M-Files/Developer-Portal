@@ -262,7 +262,10 @@ It is also possible to provide a set of values at runtime, instead of hard-codin
 
 {% highlight csharp %}
 using System.Runtime.Serialization;
+using MFilesAPI;
 using MFiles.VAF.Configuration;
+using MFiles.VAF.Configuration.AdminConfigurations;
+using MFiles.VAF.Configuration.JsonEditor;
 
 /// <summary>
 /// Retrieves the object types from the vault, filterd to only show ones
@@ -300,7 +303,7 @@ public class Configuration
 }
 {% endhighlight %}
 
-Options provided this way are rendered into the configuration schema, so are only refreshed when the configuration itself is reloaded (i.e. by right-clicking on the application name in the tree on the left and selecting 'Refresh').  As a result this cannot provide truly dynamic options.  Also: providing large numbers of options will significantly affect the performance of the configuration editor.
+Options provided this way are rendered into the configuration schema, so are only refreshed when the configuration itself is reloaded (i.e. by right-clicking on the "Configurations" node in the tree on the left and selecting 'Refresh').  As a result this cannot provide truly dynamic options.  Also: providing large numbers of options will significantly affect the performance of the configuration editor.
 {:.note}
 
 
