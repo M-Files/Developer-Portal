@@ -26,6 +26,7 @@ The following editors are available to use:
 * [Time picker](#time-picker), for selecting times.
 * [Timestamp picker](#timestamp-picker), for selecting time stamps.
 * [Color picker](#color-picker), for selecting dates.
+* [Value editor](#value-editor), for entering values for property values.
 
 In addition, the `JsonConfEditor` attribute can be used to set the following values on each editor:
 
@@ -400,3 +401,25 @@ public class Configuration
 
 The member should be declared as a `string` and will receive the color formatted as a color hex reference (e.g. `#010101`).
 {:.note}
+
+## Value editor
+
+A value editor is a little different to the above editors in that it requires two linked configurable items to work.  In the example below the `Property` property allows the user to select a specific property definition from the vault, and the `Value` property will react to that selection and show an appropriate editor.  As an example: if the user selects a textual property definition then the value editor will show a text entry.  Alternatively: if the user selects a lookup-based property definition then the value editor will allow the user to select value(s) from the appropriate list.
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+
+[DataContract]
+public class Configuration
+{
+	[MFPropertyDef]
+	[DataMember]
+	public MFIdentifier Property { get; set; }
+
+	[ValueSetter(
+			AllowedModes = new[] { TypedValueSettingMode.Dynamic, TypedValueSettingMode.Static, TypedValueSettingMode.SetToNULL },
+			PropertyDefReferencePath = ".parent._children{.key == 'Property' }")]
+	public TypedValueSetter Value { get; set; }
+}
+{% endhighlight %}
