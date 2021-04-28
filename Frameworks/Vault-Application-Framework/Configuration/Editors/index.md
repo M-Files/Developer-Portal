@@ -19,7 +19,8 @@ The following editors are available to use:
 * [Text editor](#text-editor), for string values.
 * [Numeric editors](#numeric-editors).
 * [MFIdentifier](#mfidentifier-selector) selector, allowing users to select elements from the M-Files vault configuration, such as classes or property definitions.
-* [Enumerations](#enumerations-editor) (to choose from a pre-defined static list of values).
+* [Enumerations](#enumerations-editor) to choose from a pre-defined static list of values from an enumeration.
+* [Dropdown list](#dropdown-list-editor) to choose from a list of values.
 * A [Placeholder editor](#placeholder-editor), to allow the user to create a text template that will be filled with metadata.
 * A [Search Conditions editor](#search-conditions-editor) to allow the user to specify search conditions for use by the vault application.
 * [Date picker](#date-picker), for selecting dates.
@@ -222,7 +223,9 @@ public class Configuration
 
 ![Using the MFBuiltInPropertyDef editor](MFBuiltInPropertyDefEditor.png)
 
-## Dropdown list
+## Dropdown list editor
+
+### Hard-coded
 
 By using the `JsonConfEditor` attribute and a `TypeEditor` value of `options`, the configuration can define a set of custom dropdown options shown to the user.
 
@@ -249,8 +252,57 @@ public class Configuration
 
 ![Using the dropdown list editor](DropdownListEditor.png)
 
-In most situations, the use of an [enumerated value](#enumerations-editor) may be better.
+In many situations, the use of an [enumerated value](#enumerations-editor) may be better.
 {:.note}
+
+### Stable values option provider
+
+It is also possible to provide a set of values at runtime, instead of hard-coding these into a JSON collection.  This can be done by using a class that implements `IStableValueOptionsProvider`:
+
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+
+/// <summary>
+/// Retrieves the object types from the vault, filterd to only show ones
+// that are loaded from an external source.
+/// </summary>
+class ExternalObjectTypeOptions : IStableValueOptionsProvider
+{
+	/// <inheritdoc />
+	public IEnumerable<ValueOption> GetOptions( IConfigurationRequestContext context )
+	{
+		foreach( ObjTypeAdmin ota in context.Vault.ObjectTypeOperations.GetObjectTypesAdmin() )
+		{
+			// If it is internal then skip it.
+			if( !ota.ObjectType.External )
+				continue;
+
+			// Return the value option.
+			yield return new ValueOption
+			{
+				Label = ota.ObjectType.NameSingular,
+				Value = ota.ObjectType.GUID  // always reference by GUID
+			};
+		}
+	}
+}
+
+[DataContract]
+public class Configuration
+{
+	[DataMember]
+	[MFObjType]
+	[JsonConfEditor( TypeEditor = "options" )]
+	[ValueOptions( typeof( ExternalObjectTypeOptions ) )]
+	public MFIdentifier ExternalObjectType { get; set; }
+}
+{% endhighlight %}
+
+Options provided this way are rendered into the configuration schema, so are only refreshed when the configuration itself is reloaded (i.e. by right-clicking on the application name in the tree on the left and selecting 'Refresh').  As a result this cannot provide truly dynamic options.  Also: providing large numbers of options will significantly affect the performance of the configuration editor.
+{:.note}
+
 
 ## Placeholder editor
 
