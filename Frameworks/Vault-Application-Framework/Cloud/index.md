@@ -50,7 +50,7 @@ The validation team will check a number of items in the source code, including:
 	1. Note that many cloud implementations use shared environments, so any intensive operation might be cause for concern.
 1. The application **must not access the file system**, aside from utilizing short-lived temporary files.  Treat the filesystem as transient as changes will be lost as the host machine is upgraded/migrated.
 	1. The application **should not access the registry**.
-	1. Use temporary folders for storing temporary files.
+	1. Use temporary folders for storing temporary files (use the [SysUtils]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/SysUtils/#temporary-file-management) class to obtain temporary files and folders).
 	1. **Temporary files, handles, and other resources must be properly disposed of**.
 	1. File operations (upload/download) using the M-Files API are typically restricted.
 1. The application **must not attempt to access or modify any server-level settings in M-Files** (login accounts, scheduled jobs, etc.).
