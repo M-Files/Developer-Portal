@@ -223,6 +223,30 @@ public class Configuration
 
 ![Using the MFBuiltInPropertyDef editor](MFBuiltInPropertyDefEditor.png)
 
+For your own enumerations, values can be decorated with `[JsonConfEditor]` to provide human-readable alternatives:
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+
+[DataContract]
+public class Configuration
+{
+	[DataMember]
+	public MyEnum SelectedValue { get; set; }
+}
+public enum MyEnum
+{
+	// "hello" will be shown instead of "Value1".
+	[JsonConfEditor(Label = "hello")]
+	Value1 = 0,
+
+	// "world" will be shown instead of "Value2".
+	[JsonConfEditor(Label = "world")]
+	Value2 = 1
+}
+{% endhighlight %}
+
 ## Dropdown list editor
 
 ### Hard-coded
