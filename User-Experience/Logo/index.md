@@ -32,7 +32,7 @@ Desktop logo (white)
 ![White logo](desktop-logo-2021.png){:.borderless}
 
 <ul class="quicklinks">
-	<li class="api"><a href="{{ site.baseurl }}/UX-Design/Logo/desktop-logo-2021.png">
+	<li class="api"><a href="{{ site.baseurl }}/User-Experience/Logo/desktop-logo-2021.png">
 	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
 	Download M-Files Desktop logo </a></li>
 </ul>
