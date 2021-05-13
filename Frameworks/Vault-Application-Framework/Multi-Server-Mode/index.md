@@ -215,5 +215,5 @@ The key items to highlight in the above code are:
 * When the task queue processor is created, the `VaultExtensionMethodProxyId` is passed into the associated settings object.
 * `GetRebroadcastQueueId` is overridden and the task queue ID processed by the created task queue processor is returned.  The system will then use this task queue for managing the configuration-application broadcast.
 
-An alpha release of the VAF Extensions library contains a custom [ConfigurableVaultApplicationBase](https://github.com/M-Files/VAF.Extensions.Community/blob/multiservermode/MFiles.VAF.Extensions/MultiServerMode/ConfigurableVaultApplicationBase.cs) that implements this pattern for you.
+The VAF Extensions library contains a custom [ConfigurableVaultApplicationBase](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/ConfigurableVaultApplicationBase.cs) that implements this pattern for you.
 {:.note}
