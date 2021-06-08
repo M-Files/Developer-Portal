@@ -54,3 +54,6 @@ public bool MyAutomaticStateTransitionTrigger(StateTransitionEnvironment env, ou
 	return false;
 }
 ```
+
+M-Files evaluates the state transition trigger every 60 minutes, and every time the object is changed.
+{:.note}
