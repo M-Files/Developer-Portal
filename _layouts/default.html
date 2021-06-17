@@ -47,9 +47,14 @@ layout: compress
 {% else %}
 	{% assign bodycssClass = "has-in-page-nav" %}
 {% endif %}
+{% if page.legacy %}
+	{% assign isLegacy = "legacy" %}
+{% else %}
+	{% assign isLegacy = "" %}
+{% endif %}
 
 
-<body class="reveal {{bodycssClass}}">
+<body class="reveal {{bodycssClass}} {{isLegacy}}">
 
 	<script src="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}"></script>
 		
@@ -74,6 +79,7 @@ layout: compress
 	<script defer src="{{ site.baseurl }}/scripts/external-links.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/cookies.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/reveal.js?{{ site.github.build_revision }}"></script>
+	<script defer src="{{ site.baseurl }}/scripts/legacy.js?{{ site.github.build_revision }}"></script>
 	<script src="{{ site.baseurl }}/scripts/iconify.js?{{ site.github.build_revision }}"></script>
 
 	<script>

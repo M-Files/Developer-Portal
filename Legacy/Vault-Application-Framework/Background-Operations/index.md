@@ -3,10 +3,10 @@ layout: page
 title: Running Background Operations using the Vault Application Framework
 includeInSearch: true
 breadcrumb: Background Operations
+redirect_from: /Frameworks/Vault-Application-Framework/Background-Operations/
+legacy: true
+latest_version: /Frameworks/Vault-Application-Framework/Multi-Server-Mode/
 ---
-
-Background operations are not supported in [M-Files Multi-Server Mode](../Multi-Server-Mode) and will be deprecated in future versions of the Vault Application Framework.  It is recommended that existing background operations are converted to use a [recurring task instead](../Multi-Server-Mode/Recurring-Tasks/).
-{:.note.warning}
 
 Most operations within M-Files are blocking (or synchronous): they must complete prior to the overall operation completing.  For example: a workflow state action script must complete before the object "save" operation is complete.  This can cause the user interface to "lock" whilst the scripts execute, and can provide a bad user experience.  Whilst this is sometimes required (e.g. processing a state pre-condition to ensure that the object can be moved to that state), other long-running processes can move to asynchronous execution, providing a better user experience.
 

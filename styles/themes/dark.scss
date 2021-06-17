@@ -10,6 +10,20 @@ body.theme-dark
 	background-color: $background-color;
 	color: #CDCDCD;
 
+	@keyframes glow-dark {
+		to {
+			 border-color: red;
+		-webkit-box-shadow: 0 0 15px palevioletred;
+		   -moz-box-shadow: 0 0 15px palevioletred;
+				box-shadow: 0 0 15px palevioletred;
+		}
+	}
+
+	&.legacy p.note.warning.legacy{
+		animation-name: glow-dark;
+		-webkit-animation-name: glow-dark;
+	}
+
 	aside#sidebar
 	{
 		background-color: $background-color;
