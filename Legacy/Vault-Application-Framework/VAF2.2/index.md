@@ -3,6 +3,9 @@ layout: page
 title: The Vault Application Framework Visual Studio Template
 includeInSearch: true
 breadcrumb: Visual Studio Template
+redirect_from: /Frameworks/Vault-Application-Framework/Visual-Studio-Template/VAF2.2/
+legacy: true
+latest_version: /Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.3/
 ---
 
 M-Files provides developers with a Visual Studio 2017/2019 template that can be used to rapidly develop Vault Application Framework Applications using C#.

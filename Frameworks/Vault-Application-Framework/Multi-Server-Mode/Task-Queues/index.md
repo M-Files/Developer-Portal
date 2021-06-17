@@ -37,17 +37,22 @@ To resolve this, a [recurring task](../Recurring-Tasks) should be used instead.
 
 ## Reporting task status
 
-It's important that long-running tasks periodically report their status back to the system.  This can be done by calling `TaskProcessorBase<T>.UpdateTaskInfo`, providing the current task's state and any textual remarks (e.g. the percentage complete):
+It's important that tasks periodically report their status back to the system.  This can be done by calling `ITaskProcessingJob<T>.UpdateTaskInfo`, providing the current task's state and any textual remarks (e.g. the percentage complete):
 
 ```csharp
-this.SequentialProcessor.UpdateTaskInfo
-(
-	job,
-	MFTaskState.MFTaskStateInProgress,
-	$"The process is {percentageComplete}% complete.",
-	false
-);
+[TaskProcessor(QueueId, TaskType)]
+public void ProcessObjectHandler(ITaskProcessingJob<TaskDirective> job)
+{
+	for(var i=0; i<100, i++)
+	{
+		job.Update
+		(
+			percentComplete: i,
+			details: $"Processing object {i} / 100"
+		);
+	}
+}
 ```
 
-The progress can be reported back as frequently as makes sense, but it is recommended that long-running tasks report their status at least every 30 seconds.
+The progress should be reported back as frequently as possible.
 {:.note}
