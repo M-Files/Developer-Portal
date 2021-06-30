@@ -165,9 +165,9 @@ request.Headers.Add("X-Vault", "{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
 var response = (HttpWebResponse)request.GetResponse();
 ```
 
-### Connecting via OAuth
+## Connecting via OAuth
 
-Connecting via OAuth is a more complex approach than above, but adds additional security to the overall authentication process.  Authenticating using OAuth typically involves a number of steps:
+Connecting via OAuth is a more complex approach than above, but adds additional security to the overall authentication process.  The instructions below assume that the vault/server is already correctly configured, and that you can log in using OAuth through the M-Files Web client.  Authenticating using OAuth typically involves a number of steps:
 
 1. Obtain an access token to use for authentication. _Note: this step is typically required although if you already have a valid token from another process then you may be able to skip this step._
 	1. Load the plugin information from M-Files and retrieve the OAuth configuration details.
@@ -179,7 +179,7 @@ Connecting via OAuth is a more complex approach than above, but adds additional 
 An example application can be seen here: [https://github.com/M-Files/MFilesSamplesAndLibraries/blob/master/Samples/OAuth/RESTAPI/MainWindow.xaml.cs](https://github.com/M-Files/MFilesSamplesAndLibraries/blob/master/Samples/OAuth/RESTAPI/MainWindow.xaml.cs)
 {:.note}
 
-#### Obtaining an access token
+### Obtaining an access token
 
 Retrieve the OAuth plugin information:
 
@@ -385,6 +385,8 @@ private async Task<OAuth2TokenResponse> ProcessRedirectUri(Uri redirectUri)
 	return response.Data;
 }
 ```
+
+### Connecting using a token
 
 Once we have the access token we can connect to the vault:
 
