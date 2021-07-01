@@ -404,6 +404,9 @@ One issue that developers may encounter is that authentication tokens created vi
 
 To resolve this, the developer must ensure that any cookies that are provided within the HTTP response of `/server/authenticationtokens` are added to any and all subsequent REST API calls.  By doing so, future requests will be routed to the same server that provided the token, ensuring that they can be correctly used.
 
+See [MFWSClient.Authentication.cs](https://github.com/M-Files/Libraries.MFWSClient/blob/master/MFaaP.MFWSClient/MFWSClient.Authentication.cs) in [MFWSClient](https://github.com/M-Files/Libraries.MFWSClient) (C# M-Files Web Service Wrapper) as an example of setting up cookies with CookieContainer.
+{:.note}
+
 You will still need to handle any `403` HTTP status codes that you may receive in the future and re-request an authentication token.  This could happen for the same reasons as in a single-server instance (e.g. if the token times out, or the credentials are changed on the server), but could also happen if the server used to create the token is no longer available (e.g. if it goes offline).  By re-requesting the authentication token and using the newly-provided session ID, the integration will now start to use (and continue to consistently use) a different server in the availability group.
 {:.note}
 
