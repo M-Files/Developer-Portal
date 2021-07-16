@@ -57,7 +57,7 @@ layout: default
 			<div class="description">{{ page.excerpt | markdownify  }}</div>
 		{% endif %}
 
-		{% if inthisarticle_size > 0 %}
+		{% if inthisarticle_size > 0 and page.noInnerLinks != true %}
 		<nav id="in-page-nav" role="navigation" aria-label="In this article">
 			<div id="in-this-article">
 				<h2>In this article</h2>

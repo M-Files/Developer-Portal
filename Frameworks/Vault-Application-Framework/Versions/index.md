@@ -6,31 +6,36 @@ includeInSearch: true
 
 ## Feature Compatibility Matrix
 
-Feature | [Version 1.0](#version-10) | [Version 2.0](#version-20) | [Version 2.1](#version-21) | [Version 2.2](#version-22)
+Feature | [Version 1.0](#version-10) | [Version 2.0](#version-20) | [Version 2.1](#version-21) | [Version 2.2](#version-22) | [Version 2.3](#version-23)
 --- | ---
-[Automatic State Transitions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#automatic-state-transitions) | Yes | Yes | Yes | Yes
-[Background Operations]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Background-Operations/) | Yes | Yes | Yes | Yes
-[Configuration](../Configuration) | Yes[*](#name-value-storage-configuration) | Yes[*](#configuration-compatibility) | Yes[*](#configuration-compatibility) | Yes[*](#configuration-compatibility)
-[Configuration commands and buttons](../Configuration/Commands) | - | - | Yes | Yes
-[Event Handlers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/) | Yes | Yes | Yes | Yes
-[File helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#mffilehelper) | - | Yes | Yes | Yes
-[Licensing](../Licensing) | - | Yes | Yes | Yes
-[ObjVerEx]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#objverex) | Yes | Yes | Yes | Yes
-[Property Calculation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation) | Yes | Yes | Yes | Yes
-[Property Validation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-validation) | Yes | Yes | Yes | Yes
-[Search helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Searching/#introducing-mfsearchbuilder) | Yes | Yes | Yes | Yes
-[System helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#sysutils) | Yes | Yes | Yes | Yes
-[Url helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#urlhelper) | - | Yes | Yes | Yes
-[Vault Extension Methods]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/) | Yes | Yes | Yes | Yes
-Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-pre-conditions) and [Post-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-post-conditions)Conditions | Yes | Yes | Yes | Yes
-[Workflow State Actions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions) | Yes | Yes | Yes | Yes
-[Multi-Server Mode helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) | - | - | - | Yes
+Minimum M-Files Server Version | 2015 | 2015.3 | 19.9 | 20.5 | 20.5
+[Automatic State Transitions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#automatic-state-transitions) | Yes | Yes | Yes | Yes | Yes
+[Background Operations]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Background-Operations/) | Yes | Yes | Yes | Yes | Yes
+[Configuration](../Configuration) | Yes | Yes | Yes | Yes | Yes
+[Configuration commands and buttons](../Configuration/Commands) | - | - | Yes | Yes | Yes
+[Event Handlers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/) | Yes | Yes | Yes | Yes | Yes
+[File helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#mffilehelper) | - | Yes | Yes | Yes | Yes
+[Licensing](../Licensing) | - | Yes | Yes | Yes | Yes
+[ObjVerEx]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#objverex) | Yes | Yes | Yes | Yes | Yes
+[Property Calculation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation) | Yes | Yes | Yes | Yes | Yes
+[Property Validation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-validation) | Yes | Yes | Yes | Yes | Yes
+[Search helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Searching/#introducing-mfsearchbuilder) | Yes | Yes | Yes | Yes | Yes
+[System helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#sysutils) | Yes | Yes | Yes | Yes | Yes
+[Url helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#urlhelper) | - | Yes | Yes | Yes | Yes
+[Vault Extension Methods]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/) | Yes | Yes | Yes | Yes | Yes
+Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-pre-conditions) and [Post-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-post-conditions)Conditions | Yes | Yes | Yes | Yes | Yes
+[Workflow State Actions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions) | Yes | Yes | Yes | Yes | Yes
+[Multi-Server Mode helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) | - | - | - | Yes | Yes
 --- | ---
+
+## Version 2.3
+
+This release brings huge improvements around the utilisation of task queues.  These improvements include improved stability and retry logic/control, but the primary visible improvement is the removal of almost all boilerplate code required to implement and use [task queues]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/).  The [previous method]({{ site.baseurl }}/Legacy/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/) for using task queues is still available, but you may wish to consider migrating to the new approach.
+
+Note that when upgrading existing projects to VAF 2.3 you will need to re-install the Newtonsoft.JSON package.  More details [are below](#from-version-22-to-version-23).
+{:.note}
 
 ## Version 2.2
-
-Version 2.2 of the Vault Application Framework is compatible with M-Files 20.5 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
-{:.note.warning}
 
 Alongside numerous internal bugfixes and performance work, this release brings compatibility with the [M-Files Multi-Server Mode functionality]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/).  This version can also be used on single-server implementations of M-Files, provided the M-Files server version is at least 20.5.
 
@@ -38,9 +43,6 @@ In this release, if inheriting from `ConfigurableVaultApplicationBase`, the Vaul
 {:.note}
 
 ## Version 2.1
-
-Version 2.1 of the Vault Application Framework is compatible with M-Files 19.9 upwards.  To target earlier versions of M-Files, please use an earlier version of the Vault Application Framework.
-{:.note.warning}
 
 Alongside numerous internal bugfixes and performance work, this release brings four new major features:
 
@@ -59,9 +61,6 @@ In addition, please note that there are two changes in method signatures from [v
 
 ## Version 2.0
 
-Version 2.0 of the Vault Application Framework is compatible with M-Files 2015.3 upwards.  Please see the [note below](#configuration-compatibility) regarding configuration compatibility with M-Files 2015.3.
-{:.note.warning}
-
 Alongside numerous internal bugfixes and performance work, this release brings two new major features:
 
 * [Licensing](../Licensing)
@@ -70,9 +69,12 @@ Alongside numerous internal bugfixes and performance work, this release brings t
 
 ### Configuration compatibility
 
-Version 2.0 of the Vault Application Framework introduces a new pattern for exposing [application-specific configuration into the M-Files 2018 Admin interface](../Configuration).  As M-Files 2015.3 (and earlier) do not contain this section within the M-Files Admin interface, it is recommended that the [earlier configuration approach](#name-value-storage-configuration) (which continues to work in Version 2.0) is used for compatibility with M-Files 2015.3 systems.
+Version 2.0 of the Vault Application Framework introduces a new pattern for exposing [application-specific configuration into the M-Files Admin](../Configuration).  As M-Files 2015.3 (and earlier) do not contain this section within the M-Files Admin interface, it is recommended that the [earlier configuration approach](#name-value-storage-configuration) (which continues to work in Version 2.0) is used where compatibility is required with legacy versions.
 
 Version 2.1 of the Vault Application Framework extends this configuration ability, allowing [developers to instruct the user interface to mask values that are entered (e.g. passwords), to restrict sections of configuration so that only server administrators (not vault administrators) can change the values](../Attributes/Configuration/Security), and to add [buttons to the dashboard which run server-side code](../Configuration/Custom-Dashboards/#using-commands-within-dashboards).
+
+It is recommended that you use the [new approach to configuration](../Configuration) for new VAF applications, and upgrade older approaches where possible.
+{:.warning}
 
 ## Version 1.0
 
@@ -93,6 +95,14 @@ The 2.0 release of the framework introduced another approach which integrates wi
 
 When you upgrade the Vault Application Framework you may need to make some small changes due to changes in class namespaces or method signatures.
 {:.note.warning}
+
+### From Version 2.2 to Version 2.3
+
+Due to a change in the way in which references are used, upgrading from VAF 2.2 (or older) to VAF 2.3 may cause the application to not be able to find the `Newtonsoft.JSON` DLL.  New projects created from the VAF 2.3 Visual Studio template are not affected.  **When upgrading an existing project to VAF 2.3, you must**:
+
+* Click the `Tools` menu in Visual Studio, select `NuGet Package Manager`, and then `Package Manager Console`
+* In the NuGet Package Manager Console, ensure that the "Default Project" is your VAF project.
+* Enter the following command: `Update-Package -id Newtonsoft.JSON -reinstall`.  This will reinstall the current version of the package to the project.
 
 ### From Version 2.1 to Version 2.2
 

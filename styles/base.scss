@@ -247,7 +247,7 @@ body.legacy
 		transform: rotate(45deg);
 		z-index: 10000;
 		margin: 0px;
-		a{
+		a, a:link, a:visited{
 			color: white;
 		}
 	}
