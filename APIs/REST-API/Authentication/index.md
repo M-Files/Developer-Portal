@@ -165,6 +165,237 @@ request.Headers.Add("X-Vault", "{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
 var response = (HttpWebResponse)request.GetResponse();
 ```
 
+## Connecting via OAuth
+
+Connecting via OAuth is a more complex approach than above, but adds additional security to the overall authentication process.  The instructions below assume that the vault/server is already correctly configured, and that you can log in using OAuth through the M-Files Web client.  Authenticating using OAuth typically involves a number of steps:
+
+1. Obtain an access token to use for authentication. _Note: this step is typically required although if you already have a valid token from another process then you may be able to skip this step._
+	1. Load the plugin information from M-Files and retrieve the OAuth configuration details.
+	2. Display a web browser allowing the user to authenticate to their identity provider.
+	3. When the authentication is complete, retrieve the authorization token.
+	4. Swap the authorization token for an access token.
+2. Connect to the vault using the access token.  M-Files will confirm identity with the provider.
+
+An example application can be seen here: [https://github.com/M-Files/MFilesSamplesAndLibraries/blob/master/Samples/OAuth/RESTAPI/MainWindow.xaml.cs](https://github.com/M-Files/MFilesSamplesAndLibraries/blob/master/Samples/OAuth/RESTAPI/MainWindow.xaml.cs)
+{:.note}
+
+### Obtaining an access token
+
+Retrieve the OAuth plugin information:
+
+```csharp
+// Create a RestSharp "RestClient", which we'll use for connecting.
+// Note: the base url is of the form "https://m-files.mycompany.com".
+this.client = new RestClient(baseUri);
+
+// Attempt to get the OAuth details.
+List<PluginInfoConfiguration> pluginInfoCollection = null;
+{
+	var response = this.client.Execute<List<PluginInfoConfiguration>>(new RestRequest("/REST/server/authenticationprotocols.aspx", Method.GET));
+	pluginInfoCollection = response.Data;
+
+	// Save the response cookies, for MSM compatibility.
+	this.client.CookieContainer = this.client.CookieContainer ?? new System.Net.CookieContainer();
+	if (null != response.Cookies)
+		foreach (var cookie in response.Cookies)
+			this.client.CookieContainer.Add(baseUri, new System.Net.Cookie(cookie.Name, cookie.Value, cookie.Path, cookie.Domain));
+}
+if (0 == pluginInfoCollection.Count)
+{
+	MessageBox.Show("No authentication plugins configured");
+	return;
+}
+this.oAuthPluginInfo = pluginInfoCollection
+	.FirstOrDefault(info => info.IsOAuthPlugin());
+
+if (null == this.oAuthPluginInfo)
+{
+	MessageBox.Show("OAuth is not configured on the vault/server.");
+	return;
+}
+
+/// <summary>
+/// Returns whether the plugin is an OAuth plugin.
+/// </summary>
+/// <param name="plugin">The plugin details.</param>
+/// <returns>true if the plugin represents an OAuth configuration.</returns>
+public static bool IsOAuthPlugin(this PluginInfoConfiguration plugin)
+{
+	return plugin?.AssemblyName == "MFiles.AuthenticationProviders.OAuth";
+}
+```
+
+Generate an authorization URI and show a web browser so that the user can authenticate:
+
+```csharp
+// Navigate to the OAuth screen.
+var state = Guid.NewGuid().ToString("B");
+this.oAuthPluginInfo.Configuration["state"] = state;
+this.webBrowser.Navigate($"{this.oAuthPluginInfo.GenerateAuthorizationUri(state)}");
+
+// Show the web browser.
+this.webBrowser.Visibility = Visibility.Visible;
+
+/// <summary>
+/// Retrieves the redirect URI that should be used for authentication.
+/// </summary>
+/// <param name="plugin">The OAuth authentication plugin details.</param>
+/// <returns>The redirect URI.</returns>
+public static string GetAppropriateRedirectUri
+(
+	this PluginInfoConfiguration plugin
+)
+{
+	// Sanity.
+	if (null == plugin)
+		throw new ArgumentNullException(nameof(plugin));
+
+	return plugin.Configuration.GetValueOrNull("RedirectURIForNative")
+		?? plugin.Configuration.GetValueOrNull("RedirectURIForMobile")
+		?? plugin.Configuration.GetValueOrNull("RedirectURIForWeb")
+		?? plugin.Configuration.GetValueOrNull("RedirectURIForWOPI")
+		?? "http://localhost";
+}
+
+/// <summary>
+/// Generates a valid authorization URI for use when doing OAuth authentication.
+/// </summary>
+/// <param name="plugin">The OAuth authentication plugin details.</param>
+/// <param name="state">The state - must not be empty/null - used to passed to the authorization endpoint.</param>
+/// <param name="forceLogin">If true then the user will be forced to log in, even if they have already authenticated recently.</param>
+/// <returns>The URI that can be shown in a browser to undertake the OAuth flow.</returns>
+public static Uri GenerateAuthorizationUri
+(
+	this PluginInfoConfiguration plugin,
+	string state,
+	bool forceLogin = false
+)
+{
+	// Sanity.
+	if (null == plugin)
+		throw new ArgumentNullException(nameof(plugin));
+	if (string.IsNullOrWhiteSpace(state))
+		throw new ArgumentNullException(nameof(state));
+	if (false == plugin.IsOAuthPlugin())
+		throw new ArgumentException("The authentication plugin does not refer to an OAuth authentication type", nameof(plugin));
+	var promptType = forceLogin ? "login" : null;
+	var redirectUri = plugin.GetAppropriateRedirectUri();
+
+	// Build up the URI with mandatory data.
+	var uriBuilder = new UriBuilder(plugin.Configuration.GetValueOrNull("AuthorizationEndpoint")?.ToString());
+	uriBuilder.SetQueryParam("client_id", plugin.Configuration.GetValueOrNull("ClientID")?.ToString());
+	uriBuilder.SetQueryParam("redirect_uri", redirectUri);
+	uriBuilder.SetQueryParam("response_type", "code");
+
+	// Add the optional items, if set.
+	uriBuilder.SetQueryParamIfNotNullOrWhitespace("scope", plugin.Configuration.GetValueOrNull("Scope")?.ToString());
+	uriBuilder.SetQueryParamIfNotNullOrWhitespace("state", state);
+	uriBuilder.SetQueryParamIfNotNullOrWhitespace("prompt", promptType);
+	uriBuilder.SetQueryParamIfNotNullOrWhitespace("resource", plugin.Configuration.GetValueOrNull("Resource")?.ToString());
+
+	// Return the generated URI.
+	return uriBuilder.Uri;
+}
+
+```
+
+When the user completes the authentication process, the web browser will be redirected across to the redirection URI provided earlier.  This navigation must be intercepted, and the authorization code retrieved from the querystring.  The authorization code can then be swapped for an access token:
+
+```csharp
+private async void webBrowser_Navigating(object sender, NavigatingCancelEventArgs e)
+{
+	// Sanity.
+	if (null == this.oAuthPluginInfo)
+		return;
+
+	// We only want to react if it is being redirected to thte redirect Uri.
+	if (!e.Uri.ToString().StartsWith(this.oAuthPluginInfo.GetAppropriateRedirectUri()))
+		return;
+
+	// We need to handle it.
+	e.Cancel = true;
+	this.webBrowser.Visibility = Visibility.Hidden;
+
+	// Parse the tokens.
+	var tokens = await this.ProcessRedirectUri(e.Uri);
+}
+private async Task<OAuth2TokenResponse> ProcessRedirectUri(Uri redirectUri)
+{
+	// Does this represent an error?
+	var queryParams = new UriBuilder(redirectUri).GetQueryParamsDictionary();
+	if (queryParams.ContainsKey("error"))
+	{
+		throw new InvalidOperationException
+		(
+			$"Exception {queryParams["error"]} returned by authorisation endpoint."
+		);
+	}
+
+	// Check that the state was correct (not tampered with).
+	if (this.oAuthPluginInfo.Configuration["state"]?.ToString() != queryParams["state"])
+	{
+		throw new InvalidOperationException
+		(
+			"The state returned by the authorisation endpoint was not correct."
+		);
+	}
+
+	// Retrieve the authorisation code from the URI.
+	var code = queryParams.ContainsKey("code") ? queryParams["code"] : null;
+
+	// Convert the authorisation code to tokens.
+
+	// Create the request, adding the mandatory items.
+	var tokenEndpoint = new Uri(this.oAuthPluginInfo.GetTokenEndpoint(), uriKind: UriKind.Absolute);
+	var request = new RestSharp.RestRequest(tokenEndpoint.PathAndQuery, RestSharp.Method.POST);
+	request.AddParameter("code", code);
+	request.AddParameter("grant_type", "authorization_code");
+	request.AddParameter("redirect_uri", this.oAuthPluginInfo.GetAppropriateRedirectUri());
+
+	// Add the client id.  If there's a realm then use that here too.
+	{
+		var siteRealm = this.oAuthPluginInfo.GetSiteRealm();
+		var clientId = this.oAuthPluginInfo.GetClientID();
+		request.AddParameter
+		(
+			"client_id",
+			string.IsNullOrWhiteSpace(siteRealm)
+				? clientId // If no site realm is supplied, just pass the client ID.
+				: $"{clientId}@{siteRealm}" // Otherwise pass client ID @ site realm.
+		);
+	}
+
+	// Add the optional bits.
+	request
+		.AddParameterIfNotNullOrWhitespace("resource", this.oAuthPluginInfo.GetResource())
+		.AddParameterIfNotNullOrWhitespace("scope", this.oAuthPluginInfo.GetScope())
+		.AddParameterIfNotNullOrWhitespace("client_secret", this.oAuthPluginInfo.GetClientSecret());
+
+	// Execute the HTTP request.
+	var restClient = new RestSharp.RestClient(tokenEndpoint.GetLeftPart(UriPartial.Authority));
+	var response = await restClient.ExecutePostAsync<OAuth2TokenResponse>(request);
+
+	// Validate response.
+	if (null == response.Data)
+		throw new InvalidOperationException("OAuth token not received from endpoint. Response: " + response.Content);
+	else if (response.Data.TokenType != "Bearer")
+		throw new InvalidOperationException("Token type was not bearer. Response: " + response.Content);
+
+	// Return the access token data.
+	return response.Data;
+}
+```
+
+### Connecting using a token
+
+Once we have the access token we can connect to the vault:
+
+```csharp
+// Add the auth token to the default headers.
+this.client.AddDefaultHeader("Authorization", "Bearer " + tokens.AccessToken);
+this.client.AddDefaultHeader("X-Vault", this.oAuthPluginInfo.VaultGuid);
+```
+
 ## Multi-Server Mode Considerations
 
 In platforms that use the M-Files [Multi-Server Mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) approach (e.g. the M-Files "New Cloud"), M-Files servers to be attached to the same vault database at the same time.  In this configuration, any one of the multiple servers in the availability group may potentially respond to individual REST API calls.
@@ -172,6 +403,9 @@ In platforms that use the M-Files [Multi-Server Mode]({{ site.baseurl }}/Framewo
 One issue that developers may encounter is that authentication tokens created via a call to server A cannot be decrypted and used on servers B or C.  In this instance you will receive an error about `OAEP padding`.
 
 To resolve this, the developer must ensure that any cookies that are provided within the HTTP response of `/server/authenticationtokens` are added to any and all subsequent REST API calls.  By doing so, future requests will be routed to the same server that provided the token, ensuring that they can be correctly used.
+
+See [MFWSClient.Authentication.cs](https://github.com/M-Files/Libraries.MFWSClient/blob/master/MFaaP.MFWSClient/MFWSClient.Authentication.cs) in [MFWSClient](https://github.com/M-Files/Libraries.MFWSClient) (C# M-Files Web Service Wrapper) as an example of setting up cookies with CookieContainer.
+{:.note}
 
 You will still need to handle any `403` HTTP status codes that you may receive in the future and re-request an authentication token.  This could happen for the same reasons as in a single-server instance (e.g. if the token times out, or the credentials are changed on the server), but could also happen if the server used to create the token is no longer available (e.g. if it goes offline).  By re-requesting the authentication token and using the newly-provided session ID, the integration will now start to use (and continue to consistently use) a different server in the availability group.
 {:.note}
