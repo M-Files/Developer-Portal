@@ -6,7 +6,7 @@ breadcrumb: Visual Studio Template
 excerpt: M-Files provides developers with a Visual Studio 2017/2019 template that can be used to develop Intelligent Metadata Layer External Repository Connectors using C#.
 ---
 
-This template is temporarily unavailable.  It will be added to the `M-Files Online Visual Studio template package`, which can be downloaded from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=M-Files.MFilesVisualStudioExtensions), later in 2021.
+M-Files provides developers with Visual Studio 2017/2019 templates that can be used to rapidly develop Intelligent Metadata Layer Applications using C#.  The template below is part of the M-Files Visual Studio Template Package, which can be downloaded from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=M-Files.MFilesVisualStudioExtensions).
 {:.note}
 
 Testing of Intelligent Metadata Layer components requires that you are running a version of M-Files that includes the IML Core licence component.  This is typically not included in development licences.
