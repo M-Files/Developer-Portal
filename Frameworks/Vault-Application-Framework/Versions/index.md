@@ -32,7 +32,7 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 This release brings huge improvements around the utilisation of task queues.  These improvements include improved stability and retry logic/control, but the primary visible improvement is the removal of almost all boilerplate code required to implement and use [task queues]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/).  The [previous method]({{ site.baseurl }}/Legacy/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/) for using task queues is still available, but you may wish to consider migrating to the new approach.
 
-Note that when upgrading existing projects to VAF 2.3 you will need to re-install the Newtonsoft.JSON package.  More details [are below](#from-version-22-to-version-23).
+Note that when upgrading existing projects to VAF 2.3 you will need to re-install the `Newtonsoft.JSON` package and potentially alter long-running task queue processes.  More details [are below](#from-version-22-to-version-23).
 {:.note}
 
 ## Version 2.2
@@ -98,11 +98,19 @@ When you upgrade the Vault Application Framework you may need to make some small
 
 ### From Version 2.2 to Version 2.3
 
+#### Newtonsoft.JSON reinstallation
+
 Due to a change in the way in which references are used, upgrading from VAF 2.2 (or older) to VAF 2.3 may cause the application to not be able to find the `Newtonsoft.JSON` DLL.  New projects created from the VAF 2.3 Visual Studio template are not affected.  **When upgrading an existing project to VAF 2.3, you must**:
 
 * Click the `Tools` menu in Visual Studio, select `NuGet Package Manager`, and then `Package Manager Console`
 * In the NuGet Package Manager Console, ensure that the "Default Project" is your VAF project.
 * Enter the following command: `Update-Package -id Newtonsoft.JSON -reinstall`.  This will reinstall the current version of the package to the project.
+
+#### Long-running task queue processing
+
+In older approaches (e.g. background operations, or VAF 2.2-style task queue processing), the duration of the operation/task could be significant.  When using the VAF 2.3-style task queue processing, by default each task is processed within a transaction.  **This means that each task must complete in under 90 seconds**.
+
+Long-running tasks should be split into shorter ones (e.g. instead of searching for, then processing, lots of objects at once, have one task processor associated with locating items to process, and a separate task processor to process each individual object).  For situations with very long-running tasks, where the tasks cannot be broken down into smaller processes, consider [changing the task processor's transaction mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Serer-Mode/Task-Queues/#long-running-tasks).
 
 ### From Version 2.1 to Version 2.2
 
