@@ -6,7 +6,7 @@ breadcrumb: Multi-Server Mode
 requiredMFilesServerVersion: 20.5
 ---
 
-The approach shown below is only compatible with version 2.2 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+The approach shown below is only compatible with version 2.3 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
 {:.note.warning}
 
 M-Files Multi-Server Mode is an architectural implementation pattern available from M-Files 20.5 onwards.
@@ -17,10 +17,12 @@ M-Files Multi-Server Mode instead allows multiple servers to concurrently have t
 
 This change in architecture impacts Vault Application Framework applications: **in order for your Vault Application Framework application to run on M-Files Multi-Server Mode, you must make some changes to the structure of the application**.
 
-Applications that are compatible with Multi-Server Mode will also install and function correctly in single-server environments, provided they are running M-Files 20.5 or higher.  If compatibility with Multi-Server Mode is anticipated in the future, it is recommended that you use the approaches listed on this page from the start.
+Applications that are compatible with Multi-Server Mode will also install and function correctly in single-server environments, provided they are running M-Files 20.5 or higher.  It is recommended that you use the approaches listed on this page for all new M-Files Developments.
 {:.note}
 
 ## Concepts
+
+* Installing an application on one server will automatically install it onto the other servers.
 
 * Note that your vault application may be run concurrently on all servers.  If there are three M-Files servers in the multi-server configuration then there will be up to three instances of your application running.
 
@@ -40,6 +42,12 @@ Task queues should be used in place of background operations when targeting Mult
 
 Information on the various task queue types and how to use them is available on the [page dedicated to task queues](Task-Queues).
 
+There are three primary types of task queue:
+
+* [Broadcast task queues](Task-Queues/Broadcast) contain instructions that should be broadcast to all servers in the availability group.
+* [Sequential task queues](Task-Queues/Sequential) contain a list of instructions that should be executed on-by-one, starting at the first one added and working down to the latest one added.
+* [Concurrent task queues](Task-Queues/Concurrent) contain a list of instructions that can potentially be executed concurrently.  The order in which the server(s) execute the tasks is not guaranteed.
+
 ## Converting an existing Vault Application Framework project
 
 If inheriting from `ConfigurableVaultApplicationBase`, the Vault Application Framework will only find and resolve `MFIdentifier` instances created on your `Configuration` class.  If you are using `MFIdentifier` instances in other locations (e.g. directly on your `VaultApplication` class) then these should be moved into your `Configuration` class to continue to be resolved automatically.  Alternatively you can call `MFIdentifier.Resolve` at runtime to manually resolve the items.
@@ -49,12 +57,11 @@ If inheriting from `ConfigurableVaultApplicationBase`, the Vault Application Fra
 
 You will need to alter the code of any existing Vault Application Framework application to support Multi-Server M-Files implementations.  The required changes will depend on the exact structure and complexity of your application.  At a minimum you will need to:
 
-* Update your VAF reference to target the [VAF 2.2](https://www.nuget.org/packages/MFiles.VAF),
-* *Optional* Update your VAF Extensions library reference to target the [1.1 release branch](https://www.nuget.org/packages/MFiles.VAF.Extensions).
+* Update your VAF reference to target the [VAF 2.3](https://www.nuget.org/packages/MFiles.VAF),
+* *Optional* Update your VAF Extensions library reference to target the [1.2 release branch](https://www.nuget.org/packages/MFiles.VAF.Extensions).
 * [Update your appdef.xml](#appdefxml-changes) to mark compatibility,
 * [Remove any in-memory state](#handling-of-in-memory-state),
 * [Convert background operations to use task queues instead](#migration-of-background-processes-to-task-queues), and
-* [Implement configuration rebroadcasting](#configuration-changes).
 
 ### appdef.xml changes
 
@@ -102,118 +109,3 @@ Details on the [types of task queues and how to migrate your code from backgroun
 In general in-memory state (e.g. cached lists of content) should be avoided, as it's easy to have situations where the cache on one server has different data to the cache on another server.  However, there are some situations where this may be required.  This can be achieved in a number of ways, but the recommended best practice is the use of named value storage.
 
 Details on the [handling in-memory state is available here](In-Memory-State).
-
-### Configuration changes
-
-When an administrator changes the configuration of a Vault Application, the "save" command is executed on the server to which the administrator happens to be connected.  In order to ensure that the configuration is correctly applied to all servers, the vault application must use a [broadcast task queue processor](Task-Queues/Broadcast/) to notify all servers of the configuration change.
-
-For flexibility, an existing broadcast task queue processor can be used for this.
-
-```csharp
-public class VaultApplication
-	: ConfigurableVaultApplicationBase<Configuration>, IUsesTaskQueue
-{
-	/// <summary>
-	/// M-Files Vault Server Attachment for this server.
-	/// </summary>
-	internal static VaultServerAttachment CurrentServer { get; private set; }
-
-	/// <summary>
-	/// Vault application task broadcast processor cancellation token source.
-	/// </summary>
-	private CancellationTokenSource BroadcastTokenSource { get; set; }
-
-	/// <summary>
-	/// Broadcast task processor.
-	/// </summary>
-	private AppTaskBatchProcessor BroadcastProcessor { get; set; }
-
-	/// <summary>
-	/// Broadcast task queue id.
-	/// </summary>
-	public const string BroadcastTaskQueueId = "Example.Broadcast.TaskQueueID";
-
-	/// <summary>
-	/// Provides the ID of the task queue to use for rebroadcasting changes to all servers.
-	/// </summary>
-	/// <returns><see cref="BroadcastTaskQueueId" /></returns>
-	public override string GetRebroadcastQueueId()
-	{
-		// We wish to re-use the above broadcast task processor / queue.
-		return BroadcastTaskQueueId;
-	}
-
-	#region IUsesTaskQueue Registrations.
-
-	/// <summary>
-	/// Initializes token sources and task processors / registers and opens the the task queues.
-	/// </summary>
-	public void RegisterTaskQueues()
-	{
-		// Set the current server value.
-		this.CurrentServer = this.PermanentVault.GetVaultServerAttachments()
-				.Cast<VaultServerAttachment>()
-				.First( vsa => vsa.IsCurrent );
-
-		// Now create the task processor.
-		InitializeBroadcastProcessor();
-
-		// Enable polling.
-		this.TaskQueueManager.EnableTaskPolling( true );
-	}
-
-	#endregion
-
-	/// <summary>
-	/// Initializes the broadcast task processor.
-	/// - This processor also handles the rebroadcast messages from the SaveCommand from the MFAdmin.
-	/// </summary>
-	private void InitializeBroadcastProcessor()
-	{
-		// Verify the broadcast task processor token source has been created.
-		if( this.BroadcastTokenSource == null )
-			this.BroadcastTokenSource = new CancellationTokenSource();
-
-		// Initialize the batch task processor.
-		if( this.BroadcastProcessor == null )
-			this.BroadcastProcessor = new AppTaskBatchProcessor(
-					new AppTaskBatchProcessorSettings
-					{
-						QueueDef = new TaskQueueDef
-						{
-							TaskType = TaskQueueManager.TaskType.BroadcastMessages,
-							Id = BroadcastTaskQueueId,
-							ProcessingBehavior = MFTaskQueueProcessingBehavior.MFProcessingBehaviorConcurrent,
-							MaximumPollingIntervalInSeconds = this.Configuration.MaxPollingIntervalInSeconds,
-							LastBroadcastId = ""
-						},
-						PermanentVault = this.PermanentVault,
-						MaxConcurrentBatches = this.Configuration.MaxConcurrentBatches,
-						MaxConcurrentJobs = this.Configuration.MaxConcurrentJobs,
-						// This does not require any task handlers, but if other broadcast tasks are used then they could be added here.
-						TaskHandlers = new Dictionary<string, TaskProcessorJobHandler>()
-						{
-							// Note that we have to provide at least one task handler or the underlying call excepts.
-							{ Guid.NewGuid().ToString(), (j) => {} }
-						},
-						TaskQueueManager = this.TaskQueueManager,
-						EnableAutomaticTaskUpdates = true,
-						DisableAutomaticProgressUpdates = false,
-						PollTasksOnJobCompletion = true,
-						VaultExtensionMethodProxyId = this.GetVaultExtensionMethodEventHandlerProxyName()
-					},
-					this.BroadcastTokenSource.Token );
-
-		// Register the task queues.
-		this.BroadcastProcessor.RegisterTaskQueues();
-	}
-}
-```
-
-The key items to highlight in the above code are:
-
-* When the task queue processor is created, the `VaultExtensionMethodProxyId` is passed into the associated settings object.
-* `GetRebroadcastQueueId` is overridden and the task queue ID processed by the created task queue processor is returned.  The system will then use this task queue for managing the configuration-application broadcast.
-
-The VAF Extensions library contains a custom [ConfigurableVaultApplicationBase](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/ConfigurableVaultApplicationBase.cs) that implements this pattern for you.
-{:.note}
