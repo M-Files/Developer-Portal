@@ -17,6 +17,6 @@ Current user session information.
 {:.method}
 
 {:.method}
-Output: | `string`
+Output: |  [PrimitiveType]({{ site.baseurl }}/APIs/REST-API/Reference/structs/primitivetypet/)<`string`>
 | Retrieves the authentication token for the current session. 
 
