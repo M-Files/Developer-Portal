@@ -56,10 +56,10 @@ public void ProcessObjectHandler(ITaskProcessingJob<TaskDirective> job)
 		// TODO: Process the object.
 	}
 	job.Update
-		(
-			percentComplete: 100,
-			details: $"Completed"
-		);
+	(
+		percentComplete: 100,
+		details: $"Completed"
+	);
 }
 ```
 
@@ -68,4 +68,131 @@ The progress should be reported back as frequently as possible, but the system w
 
 ## Handling exceptions
 
+As a developer you can choose what effect different exceptions raised within your code will have on the task itself.  This is done by mapping the exception type to an expected `TaskProcessingJobResult`.  In the example below, any `InvalidOperationException` thrown by the task processing will be considered fatal:
+
+```csharp
+[TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]
+[TaskExceptionBehavior(TaskProcessingJobResult.Fatal, typeof(InvalidOperationException))]
+public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
+{
+	if (rnd.Next(1, 4) == 2)
+		throw new InvalidOperationException("These are my exception details");
+}
+```
+
 ## Long-running tasks
+
+By default, when using the VAF 2.3 `TaskManager` approach, individual tasks are processed within a transaction.  This provides numerous benefits, but also restricts the duration that the processing of each task can take.  All operations within a single transaction are limited to a maximum of 90 seconds.
+
+### Splitting into smaller tasks
+
+Long-running tasks should be broken into multiple smaller steps.  Consider this old-style code:
+
+```csharp
+/// <inheritdoc />
+protected override void StartApplication()
+{
+	this.BackgroundOperations.StartRecurringBackgroundOperation
+	(
+		"Export data to external system",
+		TimeSpan.FromSeconds(10), () =>
+		{
+			// Execute a search to find all objects in state ABCD.
+			var results = ...;
+
+			// Process each object we found above.
+			foreach(var item in results)
+			{
+				// Send the item to the external system.
+				this.SendToExternalSystem(item);
+
+				// Update the object, moving it to the next workflow state.
+				// ...
+			}
+		}
+	);
+}
+```
+
+This code, which executes every ten seconds, may take a long time to run depending on how many objects are in the required state.  It also needs to consider exception trapping to ensure that no objects are left in a checked-out state should the code fail to complete for some reason.
+
+When converting this to use task queues, a better approach would be use a task queue and process each item individually:
+
+```csharp
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
+{
+
+	[TaskQueue]
+	public const string QueueId = "sampleApplication.VaultApplication";
+	public const string ExportSingleItemToRemoteSystemTaskType = "ExportSingleItemToRemoteSystemTaskType";
+
+	[StateAction("WorkflowStateAliasForStateABCD")]
+	public void HandleStateABCD(StateEnvironment env)
+	{
+		// When the object hits this state, add a task for it.
+		this.TaskManager.AddTask
+		(
+			env.Vault,
+			QueueId,
+			ExportSingleItemToRemoteSystemTaskType,
+			// Directives allow you to pass serializable data to and from the task.
+			directive: new ObjIDTaskDirective(env.ObjVer.ObjID)
+		)
+	}
+
+	[TaskProcessor(QueueId, ExportSingleItemToRemoteSystemTaskType)]
+	public void ExportSingleItemToRemoteSystem(ITaskProcessingJob<ObjIDTaskDirective> job)
+	{
+		// Get the object ID.
+		if(false == job.Directive.TryGetObjID(out ObjID objID))
+			return;
+
+		// Send the item to the external system.
+		this.SendToExternalSystem(objID);
+
+		// Update the object, moving it to the next workflow state.
+		// ...
+	}
+}
+```
+
+The sample above uses a custom task directive to provide the task processor with information about which object needs to be processed.  You can create your own task directives by inheriting from `TaskDirective` an ensuring that your directive is serializable.  The directive used above, `ObjIDTaskDirective`, is part of the [VAF Extensions](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/Directives/ObjIDTaskDirective.cs) library.
+{:.note}
+
+### Opting out of transactional safety
+
+In situations where a single task may take a significant amount of time - for example: doing large file manipulation or consolidation - you may need to alter the transaction mode used by the task processor.  There are three available transaction modes:
+
+* `TransactionMode.Full`: each task is run in a single, dedicated, transaction where all vault operations and the saving of the final task are fully committed on success, or fully rolled-back on failure.  Subject to timeouts.  **This is the default mode.**
+* `TransactionMode.Unsafe`: tasks are run outside of a transaction.  Each vault operation is committed independently.  The developer is solely responsible in ensuring that the vault is left in a suitable state in case of exceptions or other unexpected situations.  Not subject to any timeouts.
+* `TransactionMode.Hybrid`: each task is run outside of a transaction, but must call `ITaskProcessingJob<TDirective>.Commit` to commit the process.  The commit method is executed within a transaction and is subject to a timeout.
+
+```csharp
+[TaskProcessor
+(
+	QueueId, 
+	ImportDataFromRemoteSystemTaskType,
+	TransactionMode = TransactionMode.Hybrid
+)]
+public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
+{
+	// Process the item somehow.
+	// This runs outside of the transaction, so limit
+	// your interaction with the vault accordingly.
+	job.Update(percentComplete: 0, details: "Running");
+	for (var i = 0; i < 100; i++)
+	{
+		System.Threading.Thread.Sleep(rnd.Next(100, 2000));
+		job.Update(percentComplete: i, details: $"Running ({i}/100)");
+	}
+	job.Update(percentComplete: 100, details: "Completed");
+
+	// Mark it as complete in the vault.
+	job.Commit((v) =>
+	{
+		// Make any updates to the vault here, within a transaction.
+	});
+	
+}
+```
