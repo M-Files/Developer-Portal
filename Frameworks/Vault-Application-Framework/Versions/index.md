@@ -30,7 +30,7 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 ## Version 2.3
 
-This release brings huge improvements around the utilisation of task queues.  These improvements include improved stability and retry logic/control, but the primary visible improvement is the removal of almost all boilerplate code required to implement and use [task queues]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/).  The [previous method]({{ site.baseurl }}/Legacy/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/) for using task queues is still available, but you may wish to consider migrating to the new approach.
+This release brings huge improvements around the utilisation of task queues.  These improvements include improved stability and retry logic/control, but the primary visible improvement is the removal of almost all boilerplate code required to implement and use [task queues]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Task-Queues/).  The [previous method]({{ site.baseurl }}/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/) for using task queues is still available, but you may wish to consider migrating to the new approach.
 
 Note that when upgrading existing projects to VAF 2.3 you will need to re-install the `Newtonsoft.JSON` package and potentially alter long-running task queue processes.  More details [are below](#from-version-22-to-version-23).
 {:.note}
