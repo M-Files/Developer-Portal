@@ -32,8 +32,6 @@ Applications that are compatible with Multi-Server Mode will also install and fu
 
 * **Background operations must not be used in applications that support Multi-Server Mode**.  Instead, you must alter your code to use one of the [task queue approaches](#task-queues) instead.
 
-* Your application must ensure that configuration changes are [pushed from the server the change was made on, to all appropriate M-Files servers](#configuration-changes)
-
 * *If you are not using the Vault Application Framework Multi-Server Mode template (e.g. you are upgrading/converting an existing application)*, then your [`appdef.xml` must be manually updated](#appdefxml-changes).
 
 ### Task queues
@@ -41,6 +39,7 @@ Applications that are compatible with Multi-Server Mode will also install and fu
 Task queues should be used in place of background operations when targeting Multi-Server Mode.  This ensures that the operations are correctly processed when multiple M-Files servers may be connected to a vault.
 
 Information on the various task queue types and how to use them is available on the [page dedicated to task queues](Task-Queues).
+{:.note}
 
 There are three primary types of task queue:
 
