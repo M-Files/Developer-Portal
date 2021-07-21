@@ -80,6 +80,30 @@ public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
 }
 ```
 
+It is also possible to map M-Files COM API error codes to task processing results:
+
+```csharp
+[TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]
+[TaskExceptionBehavior(TaskProcessingJobResult.Fatal, MFErrorCodes.NotFound1, MFErrorCodes.NotFound2)]
+public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
+{
+	// Try and load an object; if it's not found then the job will be marked as fatal.
+	var obj = new ObjVerEx(job.Vault, 0, 123, 5);
+
+	// ...
+}
+```
+
+There are 7 potential task processing results that exceptions can be mapped to:
+
+* `TaskProcessingJobResult.Abort`: Indicates the task should not be updated further, so it automatically gets restored to the `MFTaskState.MFTaskStateWaiting` state.
+* `TaskProcessingJobResult.Fatal`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, and **may not** be re-queued.
+* `TaskProcessingJobResult.Fail`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, but **may** be re-queued.
+* `TaskProcessingJobResult.Requeue`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, and **must** be re-queued.
+* `TaskProcessingJobResult.Retry`:  Indicates the task may be reprocessed immediately, and left in the `MFTaskState.MFTaskStateInProgress` state.
+* `TaskProcessingJobResult.Cancel`:  Indicates the task should be marked canceled in the vault, and not processed any further.
+* `TaskProcessingJobResult.Complete`:  Indicates the task my be set to `MFTaskState.MFTaskStateCompleted`.
+
 ## Long-running tasks
 
 By default, when using the VAF 2.3 `TaskManager` approach, individual tasks are processed within a transaction.  This provides numerous benefits, but also restricts the duration that the processing of each task can take.  All operations within a single transaction are limited to a maximum of 90 seconds.
