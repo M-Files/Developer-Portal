@@ -7,7 +7,7 @@ redirect_from:
  - /Frameworks/Vault-Application-Framework/Visual-Studio-Template/VAF2.1/
  - /Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.1/
 legacy: true
-latest_version: /Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.3/
+latest_version: /Frameworks/Vault-Application-Framework/Visual-Studio/Template/
 ---
 
 M-Files provides developers with a Visual Studio 2017/2019 template that can be used to rapidly develop Vault Application Framework Applications using C#.

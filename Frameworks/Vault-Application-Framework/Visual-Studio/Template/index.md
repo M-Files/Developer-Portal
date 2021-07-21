@@ -23,7 +23,7 @@ If you do not have M-Files installed on the same machine as Visual Studio, then 
 
 ### Creating an application from the template
 
-Creating a new Vault Application Framework application can be done from within Visual Studio by clicking `File`, `New`, `Project`, then selecting `M-Files Vault Application 2.2` From the list of Visual C# templates:
+Creating a new Vault Application Framework application can be done from within Visual Studio by clicking `File`, `New`, `Project`, then selecting `M-Files Vault Application 2.3` From the list of Visual C# templates:
 
 ![Creating a new project](create-new-project.png)
 
