@@ -482,15 +482,6 @@
 				"Link": "/Frameworks/Vault-Application-Framework/Task-Queues/",
 				"Title": "Task Queues",
 				"Items": [{
-					"Link": "/Frameworks/Vault-Application-Framework/Task-Queues/Broadcast/",
-					"Title": "Broadcast"
-				},{
-					"Link": "/Frameworks/Vault-Application-Framework/Task-Queues/Concurrent/",
-					"Title": "Concurrent"
-				},{
-					"Link": "/Frameworks/Vault-Application-Framework/Task-Queues/Sequential/",
-					"Title": "Sequential"
-				},{
 					"Link": "/Frameworks/Vault-Application-Framework/Task-Queues/Recurring-Tasks/",
 					"Title": "Recurring Tasks"
 				}]

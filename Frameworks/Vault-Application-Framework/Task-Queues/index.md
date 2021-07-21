@@ -3,10 +3,20 @@ layout: page
 title: Task queues in Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Task queues
-redirect_from: /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/
+redirect_from:
+  - /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/
+  - /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Broadcast/
+  - /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Sequential/
+  - /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Concurrent/
+  - /Frameworks/Vault-Application-Framework/Task-Queues/Broadcast/
+  - /Frameworks/Vault-Application-Framework/Task-Queues/Sequential/
+  - /Frameworks/Vault-Application-Framework/Task-Queues/Concurrent/
 ---
 
 The approach shown below is only compatible with version 2.3 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
+{:.note.warning}
+
+By default task processing that uses the approach described on these pages will operate within a transaction, so must complete within 90 seconds.  This is different to historic approaches where the task processing executed outside of a transaction.  Long-running processes should be split into smaller processes that can run within the alloted time period.  Where this cannot be done, the [transaction mode](#long-running-tasks) can be changed.  *This does not affect [background operations]({{ site.baseurl }}/Legacy/Vault-Application-Framework/Background-Operations), or tasks using the [VAF 2.2 approach]({{ site.baseurl }}/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode) that are using the VAF 2.3 runtime (although both of these should be removed during upgrades).*
 {:.note.warning}
 
 Task queues should be used in place of background operations when targeting Multi-Server Mode.  This ensures that the operations are correctly processed when multiple M-Files servers may be connected to a vault.
@@ -18,17 +28,130 @@ The VAF Extensions library contains various [helper methods working with task qu
 
 Before creating a task queue, you must decide which type of queue is most appropriate for your situation: sequential, concurrent, or broadcast.
 
+The samples below use a [custom task directive](#custom-directives) to provide the task processor with information about which object needs to be processed.  You can create your own task directives by inheriting from `TaskDirective` an ensuring that your directive is serializable.  The directive used above, `ObjIDTaskDirective`, is part of the [VAF Extensions](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/Directives/ObjIDTaskDirective.cs) library.
+{:.note}
+
 ### Sequential task queues
 
-Tasks added to a [sequential task queue](Sequential) will be processed in the order in which they were added; if tasks 1, 2, then 3 are added to the queue then the tasks will be processed one at a time and the processing order is guaranteed to be 1, 2, 3.
+Tasks added to a sequential task queue will be processed in the order in which they were added; if tasks 1, 2, then 3 are added to the queue then the tasks will be processed one at a time and the processing order is guaranteed to be 1, 2, 3.
+
+#### Creating a sequential queue and task processor, and adding tasks
+
+```csharp
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
+{
+
+	// Sequential processing; all tasks will be executed one-by-one, in the order they were added to the queue.
+	[TaskQueue(Behavior = MFTaskQueueProcessingBehavior.MFProcessingBehaviorSequential)]
+	public const string QueueId = "sampleApplication.VaultApplication";
+	public const string UploadToRemoteSystemTaskType = "UploadToRemoteSystem";
+
+	[StateAction("WorkflowStateAliasForStateABCD")]
+	public void HandleStateABCD(StateEnvironment env)
+	{
+		// When the object hits this state, add a task for it.
+		this.TaskManager.AddTask
+		(
+			env.Vault,
+			QueueId,
+			UploadToRemoteSystemTaskType,
+			// Directives allow you to pass serializable data to and from the task.
+			directive: new ObjIDTaskDirective(env.ObjVer.ObjID)
+		)
+	}
+
+	[TaskProcessor(QueueId, UploadToRemoteSystemTaskType)]
+	public void UploadToRemoteSystem(ITaskProcessingJob<ObjIDTaskDirective> job)
+	{
+		// Get the object ID.
+		if(false == job.Directive.TryGetObjID(out ObjID objID))
+			return;
+
+		// TODO: Send the item to the external system.
+
+		// TODO: Update the object, moving it to the next workflow state.
+	}
+}
+```
 
 ### Concurrent task queues
 
-Tasks added to a [concurrent task queue](Concurrent) can be assigned to any server in the availability group, may be processed concurrently, and without regard for the order in which they were added to the queue.
+Tasks added to a concurrent task queue can be assigned to one of any number of M-Files servers in the availability group, may be processed concurrently, and without regard for the order in which they were added to the queue.
+
+#### Creating a concurrent queue and task processor, and adding tasks
+
+```csharp
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
+{
+
+	// Concurrent processing, allowing up to ten tasks to run at one time on each server.
+	[TaskQueue(Behavior = MFTaskQueueProcessingBehavior.MFProcessingBehaviorConcurrent, MaxConcurrency = 10)]
+	public const string QueueId = "sampleApplication.VaultApplication";
+	public const string UploadToRemoteSystemTaskType = "UploadToRemoteSystem";
+
+	[StateAction("WorkflowStateAliasForStateABCD")]
+	public void HandleStateABCD(StateEnvironment env)
+	{
+		// When the object hits this state, add a task for it.
+		this.TaskManager.AddTask
+		(
+			env.Vault,
+			QueueId,
+			UploadToRemoteSystemTaskType,
+			// Directives allow you to pass serializable data to and from the task.
+			directive: new ObjIDTaskDirective(env.ObjVer.ObjID)
+		)
+	}
+
+	[TaskProcessor(QueueId, UploadToRemoteSystemTaskType)]
+	public void UploadToRemoteSystem(ITaskProcessingJob<ObjIDTaskDirective> job)
+	{
+		// Get the object ID.
+		if(false == job.Directive.TryGetObjID(out ObjID objID))
+			return;
+
+		// TODO: Send the item to the external system.
+
+		// TODO: Update the object, moving it to the next workflow state.
+	}
+}
+```
 
 ### Broadcast task queues
 
-[Broadcast task queues](Broadcast) are used to broadcast information generated in one M-Files server to all others in the availability group.  This can be used to send commands for other servers to update any cached information they may have, for example.
+Broadcast task queues are used to broadcast information generated in one M-Files server to all others in the Multi-Server Mode configuration.  This can be used to send commands for other servers to update any cached information they may have, for example.
+
+#### Creating a task processor and broadcasting to all servers
+
+```csharp
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
+{
+
+	[TaskQueue]
+	public const string BroadcastQueueId = "sampleApplication.ExampleBroadcastQueue";
+	public const string BroadcastTaskType = "BroadcastType";
+
+	// Dummy vault extension method to send the broadcast; this could
+	// actually be done by a command on a dashboard, or a state action, etc.
+	[VaultExtensionMethod("SendBroadcast",
+		RequiredVaultAccess = MFVaultAccess.MFVaultAccessChangeMetaDataStructure)]
+	private string SendBroadcast(EventHandlerEnvironment env)
+	{
+		this.TaskManager.SendBroadcast(env.Vault, BroadcastQueueId, BroadcastTaskType);
+		return "Successful";
+	}
+
+	[TaskProcessor(BroadcastQueueId, BroadcastTaskType)]
+	public void BroadcastProcessor(ITaskProcessingJob<TaskDirective> job)
+	{ 
+		// TODO: Handle the broadcast.
+	}
+
+}
+```
 
 ## Reporting task status
 
@@ -337,6 +460,3 @@ public class VaultApplication
 The concept of a background operation is more awkward in situations where more than one M-Files server is involved.  As a Vault Application Framework background operation is simply a .NET `Task`, and vault actions performed by the background operation are typically run outside of a transaction, it is fairly easy for background operations to cause unexpected side-effects within the vault.
 
 To resolve this, a [recurring task](Recurring-Tasks) should be used instead.
-
-By default task processing that uses the approach described on these pages will operate within a transaction, so must complete within 90 seconds.  This is different to historic approaches where the task processing executed outside of a transaction.  Long-running processes should be split into smaller processes that can run within the alloted time period.  Where this cannot be done, the [transaction mode](#long-running-tasks) can be changed.  *This does not affect [background operations]({{ site.baseurl }}/Legacy/Vault-Application-Framework/Background-Operations), or tasks using the [VAF 2.2 approach]({{ site.baseurl }}/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode) that are using the VAF 2.3 runtime (although both of these should be removed during upgrades).*
-{:.note.warning}
