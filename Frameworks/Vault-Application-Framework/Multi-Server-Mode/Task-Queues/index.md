@@ -181,7 +181,7 @@ public class VaultApplication
 }
 ```
 
-The sample above uses a custom task directive to provide the task processor with information about which object needs to be processed.  You can create your own task directives by inheriting from `TaskDirective` an ensuring that your directive is serializable.  The directive used above, `ObjIDTaskDirective`, is part of the [VAF Extensions](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/Directives/ObjIDTaskDirective.cs) library.
+The sample above uses a [custom task directive](#custom-directives) to provide the task processor with information about which object needs to be processed.  You can create your own task directives by inheriting from `TaskDirective` an ensuring that your directive is serializable.  The directive used above, `ObjIDTaskDirective`, is part of the [VAF Extensions](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/Directives/ObjIDTaskDirective.cs) library.
 {:.note}
 
 ### Opting out of transactional safety
@@ -218,5 +218,111 @@ public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
 		// Make any updates to the vault here, within a transaction.
 	});
 	
+}
+```
+## Custom directives
+
+Each task can be provided with additional data that can be used during the processing of the job.  These objects must inherit from `TaskDirective`, must be serializable by `Newtonsoft.JSON`, and are automatically provided to the processing method.
+
+### Declaring a custom directive type
+
+Below is an example of a custom directive that represents a single object in the vault.  The members on the class are simple data types (integers) to support serialization, and the class provides some helper functions to easily convert to and from the appropriate M-Files API type.
+
+The important points to remember are:
+
+1. The class must inherit from `TaskDirective`.
+2. The class must be able to be serialized (and deserialized) by `Newtonsoft.Json`.
+
+```csharp
+/// <summary>
+/// A <see cref="TaskDirective"/> that represents a single <see cref="ObjID"/>.
+/// </summary>
+public class ObjIDTaskDirective
+	: TaskDirective
+{
+	/// <summary>
+	/// The internal ID of the object (unique within one object type).
+	/// </summary>
+	public int ObjectID { get; set; }
+
+	/// <summary>
+	/// The ID of the object type.
+	/// </summary>
+	public int ObjectTypeID { get; set; }
+
+	/// <summary>
+	/// Instantiates an <see cref="ObjIDTaskDirective"/>.
+	/// </summary>
+	public ObjIDTaskDirective() { }
+
+	/// <summary>
+	/// Instantiates an <see cref="ObjIDTaskDirective"/> representing <paramref name="objID"/>.
+	/// </summary>
+	/// <param name="objID">The object to represent.</param>
+	public ObjIDTaskDirective(ObjID objID)
+		: this()
+	{
+		if (null == objID)
+			throw new ArgumentNullException(nameof(objID));
+		this.ObjectID = objID.ID;
+		this.ObjectTypeID = objID.Type;
+	}
+
+	/// <summary>
+	/// Attempts to set <paramref name="objID"/> from
+	/// <see cref="ObjectTypeID"/> and <see cref="ObjectID"/>.
+	/// </summary>
+	/// <param name="objID">The object ID.</param>
+	/// <returns><see langword="true"/> if successful.</returns>
+	public bool TryGetObjID(out ObjID objID)
+	{
+		objID = new ObjID();
+		objID.SetIDs(this.ObjectTypeID, this.ObjectID);
+		return true;
+	}
+}
+```
+
+This specific example is adapted from the [VAF Extensions library](https://github.com/M-Files/VAF.Extensions.Community/).  You may consider using this library in your implementations rather than copying this implementation.
+{:.note}
+
+### Using the custom directive within a task processor
+
+To alter your task processor to use a custom directive type, change the method signature from `ITaskProcessingJob<TaskDirective>` to `ITaskProcessingJob<CustomDirectiveType>`.  The example below uses the `ObjIDTaskDirective` declared [above](#declaring-a-custom-directive-type):
+
+```csharp
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
+{
+
+	[TaskQueue]
+	public const string QueueId = "sampleApplication.VaultApplication";
+	public const string ExportSingleItemToRemoteSystemTaskType = "ExportSingleItemToRemoteSystemTaskType";
+
+	[StateAction("WorkflowStateAliasForStateABCD")]
+	public void HandleStateABCD(StateEnvironment env)
+	{
+		// When the object hits this state, add a task for it.
+		this.TaskManager.AddTask
+		(
+			env.Vault,
+			QueueId,
+			ExportSingleItemToRemoteSystemTaskType,
+			directive: new ObjIDTaskDirective(env.ObjVer.ObjID)
+		)
+	}
+
+	[TaskProcessor(QueueId, ExportSingleItemToRemoteSystemTaskType)]
+	public void ExportSingleItemToRemoteSystem(ITaskProcessingJob<ObjIDTaskDirective> job)
+	{
+		// NOTE: "job.Directive" will never be null, but it may be an empty instance
+		// of the task directive type if, for example, no directive were passed.
+
+		// Get the object ID.
+		if(false == job.Directive.TryGetObjID(out ObjID objID))
+			return;
+			
+		// TODO: Process the object.
+	}
 }
 ```
