@@ -11,9 +11,6 @@ latest_version: /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Q
 The approach shown below is only compatible with version 2.2 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
 {:.note.warning}
 
-The code listed below is available within the [M-Files Samples and Libraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/VAF/MultiServerMode/SequentialTaskQueue).
-{:.note .github}
-
 Tasks added to a sequential task queue will be processed in the order in which they were added; if tasks 1, 2, then 3 are added to the queue then the tasks will be processed one at a time and the processing order is guaranteed to be 1, 2, 3.
 
 Task queues are uniquely identified by a `Queue ID`.  This ID can be used to interact with the queue from other applications, through the M-Files COM API object model.
