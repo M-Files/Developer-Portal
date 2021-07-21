@@ -12,6 +12,8 @@ redirect_from:
 The approach shown below is only compatible with version 2.3 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
 {:.note.warning}
 
+Unlike previous approaches such as background operations, [task queues](../) themselves do not directly have a concept of recurring tasks.  Instead you must use the `Completed` event from one task execution to schedule the subsequent execution.  This is possible using the [VAF directly](#using-the-native-functionality), or can be done using helper attributes from the [VAF Extensions library](#using-the-vaf-extensions-library).
+
 ## Using the native functionality
 
 To recur a task you must do two things:
@@ -24,7 +26,7 @@ public class VaultApplication
 	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
 {
 
-	[TaskQueue(Behavior = MFTaskQueueProcessingBehavior.MFProcessingBehaviorConcurrent, MaxConcurrency = 10)]
+	[TaskQueue]
 	public const string QueueId = "sampleApplication.VaultApplication";
 	public const string ImportDataFromRemoteSystemTaskType = "ImportDataFromRemoteSystem";
 
