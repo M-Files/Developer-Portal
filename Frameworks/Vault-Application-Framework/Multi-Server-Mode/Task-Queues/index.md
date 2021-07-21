@@ -119,7 +119,8 @@ protected override void StartApplication()
 	this.BackgroundOperations.StartRecurringBackgroundOperation
 	(
 		"Export data to external system",
-		TimeSpan.FromSeconds(10), () =>
+		TimeSpan.FromSeconds(10),
+		() =>
 		{
 			// Execute a search to find all objects in state ABCD.
 			var results = ...;
@@ -216,6 +217,7 @@ public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
 	job.Commit((v) =>
 	{
 		// Make any updates to the vault here, within a transaction.
+		// Note: code here is subject to a timeout.
 	});
 	
 }
@@ -276,7 +278,18 @@ public class ObjIDTaskDirective
 	/// <returns><see langword="true"/> if successful.</returns>
 	public bool TryGetObjID(out ObjID objID)
 	{
+		// Set the ObjID instance.
 		objID = new ObjID();
+
+		// If we do not have a valid object type ID then return false.
+		if(0 > this.ObjectTypeID)
+			return false;
+
+		// If we do not have a valid object ID then return false.
+		if(0 == this.ObjectID)
+			return false;
+
+		// We can't guarantee that the object exists, but it seems reasonable.
 		objID.SetIDs(this.ObjectTypeID, this.ObjectID);
 		return true;
 	}
