@@ -35,13 +35,23 @@ public class VaultApplication
 		if (null == this.TaskManager)
 			return;
 
+		// Cancel anything that's scheduled.
+		this.CancelFutureExecutions(QueueId, ImportDataFromRemoteSystemTaskType);
+
+		// Schedule an execution for now.
+		this.TaskManager.AddTask(this.PermanentVault, QueueId, ImportDataFromRemoteSystemTaskType);
+	}
+
+	protected virtual void CancelFutureExecutions(string queueId, string taskType = null)
+	{
+
 		// Get all future executions of this type in this queue.
 		List<TaskInfo<TaskDirective>> futureExecutions = new List<TaskInfo<TaskDirective>>();
 		{
 			var query = new TaskQuery();
-			query.Queue(QueueId);
-			if (false == string.IsNullOrWhiteSpace(ImportDataFromRemoteSystemTaskType))
-				query.TaskType(ImportDataFromRemoteSystemTaskType);
+			query.Queue(queueId);
+			if (false == string.IsNullOrWhiteSpace(taskType))
+				query.TaskType(taskType);
 			query.TaskState(MFTaskState.MFTaskStateWaiting);
 
 			futureExecutions = query
@@ -64,9 +74,6 @@ public class VaultApplication
 				SysUtils.ReportInfoToEventLog($"Could not cancel task with id {execution.TaskId}");
 			}
 		}
-
-		// Schedule an execution for now.
-		this.TaskManager.AddTask(this.PermanentVault, QueueId, ImportDataFromRemoteSystemTaskType);
 	}
 
 	[TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]
@@ -75,6 +82,10 @@ public class VaultApplication
 		// Add a handler to re-schedule the job when it completes.
 		job.Completed += (a, b) =>
 		{
+			// Cancel anything scheduled.
+			this.CancelFutureExecutions(QueueId, ImportDataFromRemoteSystemTaskType);
+
+			// Schedule the next execution.
 			this.TaskManager.AddTask
 			(
 				this.PermanentVault,
@@ -141,7 +152,6 @@ public class VaultApplication
 	public const string ImportDataFromRemoteSystemTaskType = "ImportDataFromRemoteSystem";
 
 	[TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]
-	[ShowOnDashboard("Import data from web service", ShowRunCommand = true)]
 	public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
 	{
 		// TODO: Connect to the remote system and import data.
