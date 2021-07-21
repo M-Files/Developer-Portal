@@ -145,7 +145,7 @@ public class Configuration
 
 ### Recurring on a schedule
 
-The below code exposes a schedule (`ImportDataSchedule`) on the application's configuration page.  The schedule defaults to running at 3am every day, but can be altered by an administrator.  By using the `[ScheduledOperationConfiguration]` attribute, the application will automatically ensure that the appropriate task processor is configured to run every ten minutes.
+The below code exposes a schedule (`ImportDataSchedule`) on the application's configuration page.  The schedule defaults to running at 3am every day, but can be altered by an administrator.  By using the `[RecurringOperationConfiguration]` attribute, the application will automatically ensure that the appropriate task processor is configured to run every ten minutes.
 
 ```csharp
 public class VaultApplication
@@ -167,7 +167,7 @@ public class Configuration
 {
 	// The import will run daily at 3am but can be configured via the M-Files Admin software.
 	[DataMember]
-	[ScheduledOperationConfiguration(VaultApplication.QueueId, VaultApplication.ImportDataFromRemoteSystemTaskType)]
+	[RecurringOperationConfiguration(VaultApplication.QueueId, VaultApplication.ImportDataFromRemoteSystemTaskType)]
 	public Schedule ImportDataSchedule { get; set; } = new Schedule()
 	{
 		Enabled = true,
@@ -184,3 +184,41 @@ public class Configuration
 	};
 }
 ```
+
+### Allowing an administrator to swap between an interval and a schedule
+
+The below code exposes a `Frequency` on the application's configuration page, which defaults to an interval of every hour.  Therefore, by default, the processor will automatically be run every hour.  The administrator, however, can change this to either a different interval or a different schedule; they could easily change the processor to only run once per day at 3am.
+
+```csharp
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
+{
+
+	[TaskQueue]
+	public const string QueueId = "sampleApplication.VaultApplication";
+	public const string ImportDataFromRemoteSystemTaskType = "ImportDataFromRemoteSystem";
+
+	[TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]
+	public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
+	{
+		// TODO: Connect to the remote system and import data.
+	}
+}
+[DataContract]
+public class Configuration
+{
+	// The import will run every hour  but can be configured via the M-Files Admin software.
+	[DataMember]
+	[RecurringOperationConfiguration
+	(
+		VaultApplication.QueueId,
+		VaultApplication.ImportDataFromRemoteSystemTaskType,
+		Label = "Import Frequency",
+		DefaultValue = "Once per hour"
+	)]
+	public Frequency Frequency { get; set; } = TimeSpan.FromHours(1);
+}
+```
+
+The `Frequency` instance can be set to a TimeSpan (in which case the default is to run on an interval) or a Schedule (in which case the default is to run according to that schedule).  You may consider setting a `DefaultValue` in the attribute that describes the default frequency.
+{:.note}
