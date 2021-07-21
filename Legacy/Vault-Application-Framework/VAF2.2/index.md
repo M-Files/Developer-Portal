@@ -3,7 +3,9 @@ layout: page
 title: The Vault Application Framework Visual Studio Template
 includeInSearch: true
 breadcrumb: Visual Studio Template
-redirect_from: /Frameworks/Vault-Application-Framework/Visual-Studio-Template/VAF2.2/
+redirect_from:
+ - /Frameworks/Vault-Application-Framework/Visual-Studio-Template/VAF2.2/
+ - /Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.2/
 legacy: true
 latest_version: /Frameworks/Vault-Application-Framework/Visual-Studio/VAF2.3/
 ---
