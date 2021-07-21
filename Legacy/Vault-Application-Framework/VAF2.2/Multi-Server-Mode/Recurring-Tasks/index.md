@@ -4,6 +4,8 @@ title: Recurring tasks in Multi-Server Mode Vault Application Framework applicat
 includeInSearch: true
 breadcrumb: Recurring tasks
 requiredMFilesServerVersion: 20.5
+legacy: true
+latest_version: /Frameworks/Vault-Application-Framework/Task-Queues/Recurring-Tasks/
 ---
 
 The approach shown below is only compatible with version 2.2 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.

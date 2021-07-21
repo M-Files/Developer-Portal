@@ -38,14 +38,14 @@ Applications that are compatible with Multi-Server Mode will also install and fu
 
 Task queues should be used in place of background operations when targeting Multi-Server Mode.  This ensures that the operations are correctly processed when multiple M-Files servers may be connected to a vault.
 
-Information on the various task queue types and how to use them is available on the [page dedicated to task queues](Task-Queues).
+Information on the various task queue types and how to use them is available on the [page dedicated to task queues](../Task-Queues).
 {:.note}
 
 There are three primary types of task queue:
 
-* [Broadcast task queues](Task-Queues/Broadcast) contain instructions that should be broadcast to all servers in the availability group.
-* [Sequential task queues](Task-Queues/Sequential) contain a list of instructions that should be executed on-by-one, starting at the first one added and working down to the latest one added.
-* [Concurrent task queues](Task-Queues/Concurrent) contain a list of instructions that can potentially be executed concurrently.  The order in which the server(s) execute the tasks is not guaranteed.
+* [Broadcast task queues](../Task-Queues/Broadcast) contain instructions that should be broadcast to all servers in the availability group.
+* [Sequential task queues](../Task-Queues/Sequential) contain a list of instructions that should be executed on-by-one, starting at the first one added and working down to the latest one added.
+* [Concurrent task queues](../Task-Queues/Concurrent) contain a list of instructions that can potentially be executed concurrently.  The order in which the server(s) execute the tasks is not guaranteed.
 
 ## Converting an existing Vault Application Framework project
 
@@ -101,7 +101,7 @@ You will need to alter the code of any existing Vault Application Framework appl
 
 The concept of a background operation is more awkward in situations where more than one M-Files server is involved.  As a Vault Application Framework background operation is simply a .NET `Task`, and vault actions performed by the background operation are typically run outside of a transaction, it is fairly easy for background operations to cause unexpected side-effects within the vault.
 
-Details on the [types of task queues and how to migrate your code from background processes to task queues is available here](Recurring-Tasks).
+Details on the [types of task queues and how to migrate your code from background processes to task queues is available here](../Task-Queues/Recurring-Tasks).
 
 ### Handling of in-memory state
 

@@ -4,6 +4,7 @@ title: Broadcast task queues in Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Broadcast task queues
 requiredMFilesServerVersion: 20.5
+redirect_from: /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Broadcast/
 ---
 
 The approach shown below is only compatible with version 2.3 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.

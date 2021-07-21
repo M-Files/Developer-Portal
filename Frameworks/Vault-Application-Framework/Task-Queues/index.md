@@ -3,6 +3,7 @@ layout: page
 title: Task queues in Multi-Server Mode Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Task queues
+redirect_from: /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Sequential/
 ---
 
 The approach shown below is only compatible with version 2.3 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
