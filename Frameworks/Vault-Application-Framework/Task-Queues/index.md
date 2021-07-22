@@ -28,7 +28,7 @@ The VAF Extensions library contains various [helper methods working with task qu
 
 Before creating a task queue, you must decide which type of queue is most appropriate for your situation: sequential, concurrent, or broadcast.
 
-The samples below use a [custom task directive](#custom-directives) to provide the task processor with information about which object needs to be processed.  You can create your own task directives by inheriting from `TaskDirective` an ensuring that your directive is serializable.  The directive used above, `ObjIDTaskDirective`, is part of the [VAF Extensions](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/Directives/ObjIDTaskDirective.cs) library.
+The samples below use a [custom task directive](#custom-directives) to provide the task processor with information about which object needs to be processed.  You can create your own task directives by inheriting from `TaskDirective` an ensuring that your directive is serializable.  The directive used, `ObjIDTaskDirective`, is part of the [VAF Extensions](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/Directives/ObjIDTaskDirective.cs) library.
 {:.note}
 
 ### Sequential task queues
