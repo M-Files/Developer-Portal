@@ -4,10 +4,8 @@ title: The Vault Application Framework and M-Files Multi-Server Mode
 includeInSearch: true
 breadcrumb: Multi-Server Mode
 requiredMFilesServerVersion: 20.5
+requiredVaultApplicationFrameworkVersion: 20.5
 ---
-
-The approach shown below is only compatible with version 2.3 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
-{:.note.warning}
 
 M-Files Multi-Server Mode is an architectural implementation pattern available from M-Files 20.5 onwards.
 

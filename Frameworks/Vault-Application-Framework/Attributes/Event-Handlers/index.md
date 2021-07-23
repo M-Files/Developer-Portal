@@ -5,8 +5,6 @@ includeInSearch: true
 breadcrumb: Event Handlers
 ---
 
-## EventHandlerAttribute
-
 The `EventHandlerAttribute` attribute marks the following method to be executed when a specific M-Files event occurs.  Almost all document vault events can be handled.  Information about the object being processed (e.g. being checked in) is available in `env.ObjVer` and `env.ObjVerEx`, if appropriate.
 
 ```csharp

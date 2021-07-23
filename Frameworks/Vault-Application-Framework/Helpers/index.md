@@ -5,8 +5,6 @@ includeInSearch: true
 breadcrumb: Helpers
 ---
 
-## Overview
-
 ## Version 2.0
 
 The helper functions available in the VAF 1.0 are also available in VAF 2.0.

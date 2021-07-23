@@ -3,6 +3,8 @@ layout: page
 title: Task queues in Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Task queues
+requiredMFilesServerVersion: 20.5
+requiredVaultApplicationFrameworkVersion: 2.3
 redirect_from:
   - /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/
   - /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/Broadcast/
@@ -12,9 +14,6 @@ redirect_from:
   - /Frameworks/Vault-Application-Framework/Task-Queues/Sequential/
   - /Frameworks/Vault-Application-Framework/Task-Queues/Concurrent/
 ---
-
-The approach shown below is only compatible with version 2.3 (and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
-{:.note.warning}
 
 By default task processing that uses the approach described on these pages will operate within a transaction, so must complete within 90 seconds.  This is different to historic approaches where the task processing executed outside of a transaction.  Long-running processes should be split into smaller processes that can run within the alloted time period.  Where this cannot be done, the [transaction mode](#long-running-tasks) can be changed.  *This does not affect [background operations]({{ site.baseurl }}/Legacy/Vault-Application-Framework/Background-Operations), or tasks using the [VAF 2.2 approach]({{ site.baseurl }}/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode) that are using the VAF 2.3 runtime (although both of these should be removed during upgrades).*
 {:.note.warning}

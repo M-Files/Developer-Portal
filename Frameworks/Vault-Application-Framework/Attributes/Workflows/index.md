@@ -5,6 +5,8 @@ includeInSearch: true
 breadcrumb: Workflows
 ---
 
+The following attributes can be use to associated C# methods with workflow-related functionality within the M-Files vault.
+
 ## Workflow State Actions
 
 The `StateActionAttribute` attribute marks the following method to be executed when an object reaches a state in a workflow.

@@ -5,10 +5,8 @@ includeInSearch: true
 breadcrumb: Task queues
 legacy: true
 latest_version: /Frameworks/Vault-Application-Framework/Multi-Server-Mode/Task-Queues/
+requiredVaultApplicationFrameworkVersion: 2.2
 ---
-
-The approach shown below is only compatible with version 2.2(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 20.5 or higher.
-{:.note.warning}
 
 Task queues should be used in place of background operations when targeting Multi-Server Mode.  This ensures that the operations are correctly processed when multiple M-Files servers may be connected to a vault.
 

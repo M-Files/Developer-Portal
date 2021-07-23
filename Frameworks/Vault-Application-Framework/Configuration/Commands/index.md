@@ -3,17 +3,8 @@ layout: page
 title: Commands
 includeInSearch: true
 breadcrumb: Commands
+requiredVaultApplicationFrameworkVersion: 2.1
 ---
-
-[Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
-{:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework."}
-[Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
-{:.tag.unavailable title="This functionality is NOT available in version 2.0 of the Vault Application Framework."}
-[Version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21)
-{:.tag.available title="This functionality is available in version 2.1 of the Vault Application Framework."}
-
-The approach shown below is only compatible with version 2.1(and higher) of the Vault Application Framework, where the target audience runs M-Files Online 19.9 or higher.
-{:.note.warning}
 
 Commands are used to define a server-side function that can be executed from within the M-Files Admin configuration section.  Commands are typically then shown within the [configuration area header](#displaying-commands-in-the-header), the [domain menu](#creating-context-menu-items-for-the-domain-menu), the [configuration menu](#displaying-context-menu-itms-for-the-configuration-menu), or within [custom dashboards](../Custom-Dashboards/#using-commands-within-dashboards).  This page focuses on command usage outside of custom dashboards.
 

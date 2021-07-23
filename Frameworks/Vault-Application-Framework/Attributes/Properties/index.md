@@ -5,6 +5,8 @@ includeInSearch: true
 breadcrumb: Properties
 ---
 
+The following attributes can be use to associated C# methods with property-related functionality within the M-Files vault.
+
 ## Property Calculation
 
 The `PropertyAutomaticNumberingAttribute` attribute marks the following method to be executed to calculate a custom automatic number for an object (see [Customized automatic numbering (VBScript)](https://www.m-files.com/user-guide/latest/eng/Automatic_values.html)).

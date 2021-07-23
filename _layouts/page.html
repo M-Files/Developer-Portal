@@ -50,6 +50,22 @@ layout: default
 	<div class="entry">
 
 	<article role="article" aria-label="Page contents">
+
+		{% if page.requiredMFilesServerVersion != nill or page.requiredVaultApplicationFrameworkVersion != nill %}
+		<div class="compatibility">
+			<h2>Compatibility</h2>
+			<p>The content of this page can only be used if the following condition(s) are all met:</p>
+			<ul>
+				{% if page.requiredMFilesServerVersion != nill %}
+					<li>You must be running <strong>M-Files {{ page.requiredMFilesServerVersion }}</strong> or higher.</li>
+				{% endif %}
+				{% if page.requiredVaultApplicationFrameworkVersion != nill %}
+					<li>You must target the <strong>Vault Application Framework {{ page.requiredVaultApplicationFrameworkVersion }}</strong> or higher.</li>
+				{% endif %}
+			</ul>
+		</div>
+		{% endif %}
+
 		{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
 		{% assign inthisarticle_size = inthisarticle | size %}
 
@@ -66,17 +82,14 @@ layout: default
 		</nav>
 		{% endif %}
 
-		{% if page.requiredMFilesServerVersion != nill %}
-			<p class="note prerelease">Please note that this page content requires M-Files server {{ page.requiredMFilesServerVersion }} or higher.</p>
-		{% endif %}
-
 		{% if page.prerelease %}
 			<p class="note prerelease">Please note that this page content refers to a pre-release version of software.  Please read the information below thoroughly for more information.</p>
 			{% endif %}
 		{% if page.stubPage %}
 			<p class="note stub">Please note that this page content is not complete.</p>
 		{% endif %}
-
+		
+		<h2>Overview</h2>
 		{{ content }}
 	</article>
 

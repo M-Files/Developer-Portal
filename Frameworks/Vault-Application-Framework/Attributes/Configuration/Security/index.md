@@ -3,17 +3,11 @@ layout: page
 title: Configuration Security
 includeInSearch: true
 breadcrumb: Validation
+requiredVaultApplicationFrameworkVersion: 2.1
 ---
 
-[Version 1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-10)
-{:.tag.unavailable title="This functionality is NOT available in version 1.0 of the Vault Application Framework."}
-[Version 2]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-20)
-{:.tag.unavailable title="This functionality is NOT available in version 2.0 of the Vault Application Framework."}
-[Version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21)
-{:.tag.available title="This functionality is available in version 2.1 of the Vault Application Framework."}
-
-The approach shown below is only compatible with [version 2.1]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Versions/#version-21) of the Vault Application Framework.  You must also be inheriting from the `ConfigurableVaultApplicationBase<T>` base class; if you inherit from any other base class then the security attribute will not be applied.
-{:.note.warning}
+If you are not inheriting from `ConfigurableVaultApplicationBase<T>` then the below approach will not work.  The correct base class should automatically be used when creating new applications from the Visual Studio templates.
+{:.note}
 
 ## Default configuration visibility
 
