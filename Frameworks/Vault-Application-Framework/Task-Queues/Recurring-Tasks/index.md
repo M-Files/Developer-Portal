@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Recurring tasks in Multi-Server Mode Vault Application Framework applications
+title: Recurring tasks in Vault Application Framework applications
 includeInSearch: true
 breadcrumb: Recurring tasks
 requiredMFilesServerVersion: 20.5
