@@ -32,7 +32,6 @@ body.theme-dark
 			background-color: $background-color;
 		}
 	}
-	#logo { background-color: $background-color; }
 	form.search button
 	{
 		background-color: #0072CE;
@@ -246,6 +245,7 @@ body.theme-dark
 		#logo
 		{
 			background-color: $background-color;
+			background: linear-gradient(180deg, $background-color 0%, $background-color 90%, rgba($background-color, 0) 100%);
 		}
 	}
 }

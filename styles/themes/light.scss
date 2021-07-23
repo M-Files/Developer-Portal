@@ -34,7 +34,6 @@ body.theme-light
 		background-color: #0072CE;
 		color: #ecf0f1;
 	}
-	#logo { background-color: $background-color; }
 
 	&.reveal
 	{	aside#sidebar
@@ -128,6 +127,7 @@ body.theme-light
 		#logo
 		{
 			background-color: $background-color;
+			background: linear-gradient(180deg, $background-color 0%, $background-color 90%, rgba($background-color, 0) 100%);
 		}
 	}
 }
