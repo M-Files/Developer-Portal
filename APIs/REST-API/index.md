@@ -11,7 +11,7 @@ The [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/) is a REST-li
 
 * The MFWS supports most "user" operations but cannot (natively) be used to undertake administrative operations.
 
-* Code interacting with the MFWS is not directly dependent on the M-Files sever version; as the sever and MFWS are updated, it is unlikely that your code will require further changes.
+* Code interacting with the MFWS is not directly dependent on the M-Files sever version; as the server and MFWS are updated, it is unlikely that your code will require further changes.
 
 ## Setup
 
