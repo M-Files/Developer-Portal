@@ -25,5 +25,5 @@ Note that this call simply initiates the refresh process, which could continue f
 
 {:.method}
 Input: | [MFRefreshStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfrefreshstatus/)
-Output: | [MFRefreshStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfrefreshstatus/)
+Output: | [PrimitiveType]({{ site.baseurl }}/APIs/REST-API/Reference/structs/primitivetypet/)<[MFRefreshStatus]({{ site.baseurl }}/APIs/REST-API/Reference/enumerations/mfrefreshstatus/)>
 | Sets the refresh status to either Full or Quick.
