@@ -498,3 +498,55 @@ public class Configuration
 
 The `Value` property is linked to the `Property` property via the `PropertyDefReferencePath` that is provided in the `ValueSetter` attribute.  This contains a JSPath selector from the current object to the associated property.  JSPath is also used when [showing and hiding configuration elements](../Showing-And-Hiding/).
 {:.note}
+
+### Using the value
+
+To retrieve the configured value, you must inspect the mode that was selected by the user and react accordingly:
+
+```csharp
+switch(this.Configuration.Value.Mode)
+{
+	case TypedValueSettingMode.SetToNULL:
+	{
+		
+		var nullValue = new TypedValue();
+		nullValue.SetValueToNULL(propertyDataType);
+		break;
+
+	}
+	case TypedValueSettingMode.Static:
+	{
+		
+		// Retrieve the static value that was entered.
+		// Note: the type will depend on the property value.
+		var staticValue = this.Configuration.Value.TypedValue.ToApiObject(vault, false);
+		break;
+
+	}
+	case TypedValueSettingMode.DynamicValue:
+	{
+		
+		// Resolve string value by expanding placeholders in the context of an ObjVerEx.
+		string value = myObjVerEx.ExpandPlaceholderText( this.Configuration.Value.DynamicValue );
+
+		// Or resolve lookup values related to an object.
+		IEnumerable<Lookup> lookups =
+			myObjVerEx.ExpandPlaceholders( this.Configuration.Value.DynamicValue ).GetExpandedValues<Lookup>();
+
+		// Or resolve other objects related to an object.
+		IEnumerable<ObjVerEx> lookups =
+			myObjVerEx.ExpandPlaceholders( this.Configuration.Value.DynamicValue ).GetExpandedValues<ObjVerEx>();
+
+		// Or resolve individual expanded values of any type using generics...
+		var stringValues = myObjVerEx.ExpandPlaceholders( this.Configuration.Value.DynamicValue ).GetExpandedValues<string>();
+		var intValues = myObjVerEx.ExpandPlaceholders( this.Configuration.Value.DynamicValue ).GetExpandedValues<int>();
+		var boolValues = myObjVerEx.ExpandPlaceholders( this.Configuration.Value.DynamicValue ).GetExpandedValues<bool>();
+		var dateValues = myObjVerEx.ExpandPlaceholders( this.Configuration.Value.DynamicValue ).GetExpandedValues<DateTime>();
+
+	}
+		break;
+}
+```
+
+You can restrict the modes available to the user by altering the `AvailableModes` within the associated `[ValueSetter]` attribute.
+{:.note}
