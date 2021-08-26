@@ -496,6 +496,7 @@ public class Configuration
 	[DataMember]
 	public MFIdentifier Property { get; set; }
 
+	[DataMember]
 	[ValueSetter(
 			AllowedModes = new[] { TypedValueSettingMode.Dynamic, TypedValueSettingMode.Static, TypedValueSettingMode.SetToNULL },
 			PropertyDefReferencePath = ".parent._children{.key == 'Property' }")]
