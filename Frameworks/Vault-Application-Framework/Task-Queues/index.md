@@ -326,7 +326,7 @@ public class VaultApplication
 	public const string QueueId = "sampleApplication.VaultApplication";
 	public const string ProcessManyObjectsTaskType = "ProcessManyObjects";
 
-	[TaskProcessor(QueueId, ProcessManyObjectsTaskType, TransactionMode = TransactionMode.Full)]
+	[TaskProcessor(QueueId, ProcessManyObjectsTaskType, TransactionMode = TransactionMode.Unsafe)]
 	public void ProcessManyObjects(ITaskProcessingJob<ObjIDTaskDirective> job)
 	{
 		// This can take as long as is needed.  If the task is cancelled (e.g. during vault shutdown)
