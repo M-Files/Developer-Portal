@@ -69,6 +69,11 @@ public class VaultApplication
 		// TODO: Send the item to the external system.
 
 		// TODO: Update the object, moving it to the next workflow state.
+		// Note: failing to call job.Commit will cause an exception.
+		job.Commit((transactionalVault) =>
+		{
+			// ...do any work using the transactional vault reference.
+		})
 	}
 }
 ```
@@ -113,6 +118,11 @@ public class VaultApplication
 		// TODO: Send the item to the external system.
 
 		// TODO: Update the object, moving it to the next workflow state.
+		// Note: failing to call job.Commit will cause an exception.
+		job.Commit((transactionalVault) =>
+		{
+			// ...do any work using the transactional vault reference.
+		})
 	}
 }
 ```
@@ -166,7 +176,13 @@ public void ProcessObjectHandler(ITaskProcessingJob<TaskDirective> job)
 			percentComplete: i,
 			details: $"Processing object {i} / 100"
 		);
+
 		// TODO: Process the object.
+		// Note: failing to call job.Commit will cause an exception.
+		job.Commit((transactionalVault) =>
+		{
+			// ...do any work using the transactional vault reference.
+		})
 	}
 	job.Update
 	(
@@ -217,44 +233,23 @@ There are 7 potential task processing results that exceptions can be mapped to:
 * `TaskProcessingJobResult.Cancel`:  Indicates the task should be marked canceled in the vault, and not processed any further.
 * `TaskProcessingJobResult.Complete`:  Indicates the task my be set to `MFTaskState.MFTaskStateCompleted`.
 
-## Long-running tasks
+## Transaction modes
 
-By default, when using the VAF 2.3 `TaskManager` approach, individual tasks are processed within a transaction.  This provides numerous benefits, but also restricts the duration that the processing of each task can take.  All operations within a single transaction are limited to a maximum of 90 seconds.
+By default, when using the VAF 2.3 `TaskManager` approach, individual tasks are in the `Hybrid` transaction mode.  This provides flexibility that the overall operation can take as long as is needed, but transactional safety for all vault operations executed within the `Commit` action.  The `Commit` action is executed within a transaction, and therefore limited to a maximum of 90 seconds.
+{:.note}
 
-### Splitting into smaller tasks
+There are three available transaction modes:
 
-Long-running tasks should be broken into multiple smaller steps.  Consider this old-style code:
+* `TransactionMode.Hybrid`: each task is run outside of a transaction, but must call `ITaskProcessingJob<TDirective>.Commit` to commit the process.  The commit method is executed within a transaction and is subject to a timeout.  **This is the default mode.**
+* `TransactionMode.Full`: each task is run in a single, dedicated, transaction where all vault operations and the saving of the final task are fully committed on success, or fully rolled-back on failure.  Subject to timeouts.
+* `TransactionMode.Unsafe`: tasks are run outside of a transaction.  Each vault operation is committed independently.  The developer is solely responsible in ensuring that the vault is left in a suitable state in case of exceptions or other unexpected situations.  Not subject to any timeouts.
 
-```csharp
-/// <inheritdoc />
-protected override void StartApplication()
-{
-	this.BackgroundOperations.StartRecurringBackgroundOperation
-	(
-		"Export data to external system",
-		TimeSpan.FromSeconds(10),
-		() =>
-		{
-			// Execute a search to find all objects in state ABCD.
-			var results = ...;
+When using a `Hybrid` or `Unsafe` transaction mode, the `job.Vault` reference will return the permanent vault reference.  Operations done using this reference are committed immediately to the vault and **will not be rolled back in case of the job not completing successfully**, even if the task is re-queued and re-run at a later date.  It is imperative that developers utilise the correct vault reference for the operation that is being performed.
+{:.note.warning}
 
-			// Process each object we found above.
-			foreach(var item in results)
-			{
-				// Send the item to the external system.
-				this.SendToExternalSystem(item);
+### Using the 'Hybrid' (default) transaction mode
 
-				// Update the object, moving it to the next workflow state.
-				// ...
-			}
-		}
-	);
-}
-```
-
-This code, which executes every ten seconds, may take a long time to run depending on how many objects are in the required state.  It also needs to consider exception trapping to ensure that no objects are left in a checked-out state should the code fail to complete for some reason.
-
-When converting this to use task queues, a better approach would be use a task queue and process each item individually:
+In the `Hybrid` transaction mode, the bulk of the operation is executed outside of a transaction, but the code must call `job.Commit` before it completes.  If the operation finishes running and has not called `job.Commit` then it is considered to have failed.
 
 ```csharp
 public class VaultApplication
@@ -263,81 +258,107 @@ public class VaultApplication
 
 	[TaskQueue]
 	public const string QueueId = "sampleApplication.VaultApplication";
-	public const string ExportSingleItemToRemoteSystemTaskType = "ExportSingleItemToRemoteSystemTaskType";
+	public const string UploadToRemoteSystemTaskType = "UploadToRemoteSystem";
 
-	[StateAction("WorkflowStateAliasForStateABCD")]
-	public void HandleStateABCD(StateEnvironment env)
-	{
-		// When the object hits this state, add a task for it.
-		this.TaskManager.AddTask
-		(
-			env.Vault,
-			QueueId,
-			ExportSingleItemToRemoteSystemTaskType,
-			// Directives allow you to pass serializable data to and from the task.
-			directive: new ObjIDTaskDirective(env.ObjVer.ObjID)
-		)
-	}
-
-	[TaskProcessor(QueueId, ExportSingleItemToRemoteSystemTaskType)]
-	public void ExportSingleItemToRemoteSystem(ITaskProcessingJob<ObjIDTaskDirective> job)
+	[TaskProcessor(QueueId, UploadToRemoteSystemTaskType)]
+	public void UploadToRemoteSystem(ITaskProcessingJob<ObjIDTaskDirective> job)
 	{
 		// Get the object ID.
 		if(false == job.Directive.TryGetObjID(out ObjID objID))
 			return;
 
-		// Send the item to the external system.
-		this.SendToExternalSystem(objID);
+		// TODO: Send the item to the external system.
+		// This can take as long as is needed.  If the task is cancelled (e.g. during vault shutdown)
+		// then the system will re-run it when it is next able to do so.
 
-		// Update the object, moving it to the next workflow state.
-		// ...
+		// WARNING: the "job.Vault" reference here is *not* transactional so should not be used for writing.
+
+		// TODO: Update the object, moving it to the next workflow state.
+		// Note: failing to call job.Commit will cause an exception.
+		job.Commit((transactionalVault) =>
+		{
+			// ...do any work using the transactional vault reference.
+			// The action provided to the "Commit" method will be executed within a transaction
+			// and must complete within 90 seconds.
+		})
 	}
 }
 ```
 
-The sample above uses a [custom task directive](#custom-directives) to provide the task processor with information about which object needs to be processed.  You can create your own task directives by inheriting from `TaskDirective` an ensuring that your directive is serializable.  The directive used above, `ObjIDTaskDirective`, is part of the [VAF Extensions](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/Directives/ObjIDTaskDirective.cs) library.
-{:.note}
+### Using the 'Full' transaction mode
 
-### Opting out of transactional safety
-
-In situations where a single task may take a significant amount of time - for example: doing large file manipulation or consolidation - you may need to alter the transaction mode used by the task processor.  There are three available transaction modes:
-
-* `TransactionMode.Full`: each task is run in a single, dedicated, transaction where all vault operations and the saving of the final task are fully committed on success, or fully rolled-back on failure.  Subject to timeouts.  **This is the default mode.**
-* `TransactionMode.Unsafe`: tasks are run outside of a transaction.  Each vault operation is committed independently.  The developer is solely responsible in ensuring that the vault is left in a suitable state in case of exceptions or other unexpected situations.  Not subject to any timeouts.
-* `TransactionMode.Hybrid`: each task is run outside of a transaction, but must call `ITaskProcessingJob<TDirective>.Commit` to commit the process.  The commit method is executed within a transaction and is subject to a timeout.
+In the `Full` transaction mode, the processing of each individual task is executed within a transaction and must complete within 90 seconds.  The `job.Vault` reference is a transactional vault reference.
 
 ```csharp
-[TaskProcessor
-(
-	QueueId, 
-	ImportDataFromRemoteSystemTaskType,
-	TransactionMode = TransactionMode.Hybrid
-)]
-public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
 {
-	// Process the item somehow.
-	// This runs outside of the transaction, so limit
-	// your interaction with the vault accordingly.
-	job.Update(percentComplete: 0, details: "Running");
-	for (var i = 0; i < 100; i++)
-	{
-		System.Threading.Thread.Sleep(rnd.Next(100, 2000));
-		job.Update(percentComplete: i, details: $"Running ({i}/100)");
-	}
-	job.Update(percentComplete: 100, details: "Completed");
 
-	// Mark it as complete in the vault.
-	job.Commit((v) =>
+	[TaskQueue]
+	public const string QueueId = "sampleApplication.VaultApplication";
+	public const string ProcessObjectTaskType = "ProcessObject";
+
+	[TaskProcessor(QueueId, ProcessObjectTaskType, TransactionMode = TransactionMode.Full)]
+	public void ProcessObject(ITaskProcessingJob<ObjIDTaskDirective> job)
 	{
-		// Make any updates to the vault here, within a transaction.
-		// Note: code here is subject to a timeout.
-	});
-	
+		// Get the object ID.
+		if(false == job.Directive.TryGetObjID(out ObjID objID))
+			return;
+
+		// Perform any operation using the transactional "job.Vault" reference.
+		// If the job is cancelled for whatever reason then all operations done
+		// using this reference will be rolled back.
+	}
 }
 ```
+
+### Using the 'Unsafe' transaction mode
+
+The `Unsafe` transaction mode should be used with extreme caution.  It is recommended that most operations use the `Hybrid` mode, or `Full` for very short-lived individual operations.
+{:.note.warning}
+
+```csharp
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
+{
+
+	[TaskQueue]
+	public const string QueueId = "sampleApplication.VaultApplication";
+	public const string ProcessManyObjectsTaskType = "ProcessManyObjects";
+
+	[TaskProcessor(QueueId, ProcessManyObjectsTaskType, TransactionMode = TransactionMode.Full)]
+	public void ProcessManyObjects(ITaskProcessingJob<ObjIDTaskDirective> job)
+	{
+		// This can take as long as is needed.  If the task is cancelled (e.g. during vault shutdown)
+		// then the system will re-run it when it is next able to do so.
+
+		// WARNING: the "job.Vault" reference here is *not* transactional so should not be used for writing.
+
+ 		// Execute a search (reading), using the permanent vault.
+		var searchResults = new MFSearchBuilder(job.Vault).FindEx();
+
+		// The transaction runner can be used to enable transactional safety for sections of code.
+		var transactionRunner = this.GetTransactionRunner();
+
+		// Iterate over the items and process them.
+		foreach(var item in searchResults)
+		{
+			// Process each item in its own transaction.
+			transactionRunner.Run((transactionalVault) =>
+			{
+				// Ensure any data is up-to-date.
+				item.Refresh();
+
+				// TODO: Process the item.
+			})
+		}
+	}
+}
+```
+
 ## Custom directives
 
-Each task can be provided with additional data that can be used during the processing of the job.  These objects must inherit from `TaskDirective`, must be serializable by `Newtonsoft.JSON`, and are automatically provided to the processing method.
+Each task can be provided with additional data that can be used during the processing of the job.  These objects must inherit from `TaskDirective`, must be serializable by `Newtonsoft.JSON`, have appropriate `[DataContract]` and `[DataMember]` attributes, and are automatically provided to the processing method.
 
 ### Declaring a custom directive type
 
@@ -347,22 +368,26 @@ The important points to remember are:
 
 1. The class must inherit from `TaskDirective`.
 2. The class must be able to be serialized (and deserialized) by `Newtonsoft.Json`.
+3. The class must have the `[DataContract]` attribute, and members marked with `[DataMember]` as appropriate.
 
 ```csharp
 /// <summary>
 /// A <see cref="TaskDirective"/> that represents a single <see cref="ObjID"/>.
 /// </summary>
+[DataContract]
 public class ObjIDTaskDirective
 	: TaskDirective
 {
 	/// <summary>
 	/// The internal ID of the object (unique within one object type).
 	/// </summary>
+	[DataMember]
 	public int ObjectID { get; set; }
 
 	/// <summary>
 	/// The ID of the object type.
 	/// </summary>
+	[DataMember]
 	public int ObjectTypeID { get; set; }
 
 	/// <summary>
