@@ -19,7 +19,7 @@ Task queues should be used in place of background operations when targeting Mult
 
 The VAF Extensions library contains various [helper methods working with task queues](https://github.com/M-Files/VAF.Extensions.Community/tree/master/MFiles.VAF.Extensions#using-vaf-23-task-processors).  These include methods for recurring tasks that should be run [on a schedule](https://github.com/M-Files/VAF.Extensions.Community/tree/master/MFiles.VAF.Extensions#automatically-running-task-processors) or [after an interval](https://github.com/M-Files/VAF.Extensions.Community/tree/master/MFiles.VAF.Extensions#after-a-time-interval).
 
-By default task processing that uses the approach described on these pages will operate within a transaction, so must complete within 90 seconds.  This is different to historic approaches where the task processing executed outside of a transaction.  Long-running processes should be split into smaller processes that can run within the alloted time period.  Where this cannot be done, the [transaction mode](#long-running-tasks) can be changed.  *This does not affect [background operations]({{ site.baseurl }}/Legacy/Vault-Application-Framework/Background-Operations), or tasks using the [VAF 2.2 approach]({{ site.baseurl }}/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode) that are using the VAF 2.3 runtime (although both of these should be removed during upgrades).*
+By default task processing that uses the approach described on these pages will operate using the [`Hybrid` transaction mode](#using-the-hybrid-default-transaction-mode).  *This does not affect [background operations]({{ site.baseurl }}/Legacy/Vault-Application-Framework/Background-Operations), or tasks using the [VAF 2.2 approach]({{ site.baseurl }}/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode) that are using the VAF 2.3 runtime (although both of these should be removed during upgrades).*
 {:.note.warning}
 
 ## Task queue types
@@ -31,7 +31,10 @@ The samples below use a [custom task directive](#custom-directives) to provide t
 
 ### Sequential task queues
 
-Tasks added to a sequential task queue will be processed in the order in which they were added; if tasks 1, 2, then 3 are added to the queue then the tasks will be processed one at a time and the processing order is guaranteed to be 1, 2, 3.
+Tasks added to a sequential task queue will be processed in the order in which they were added; if tasks 1, 2, then 3 are added to the queue then the tasks will be processed one at a time and the processing order is typically 1, 2, 3.
+
+If an explicit `ActivationTime` is set then this can affect the processing order; tasks will not be processed until the activation time is reached.
+{:.note}
 
 #### Creating a sequential queue and task processor, and adding tasks
 
@@ -129,17 +132,17 @@ public class VaultApplication
 
 ### Broadcast task queues
 
-Broadcast task queues are used to broadcast information generated in one M-Files server to all others in the Multi-Server Mode configuration.  This can be used to send commands for other servers to update any cached information they may have, for example.
+Broadcast task queues are used to broadcast information generated in one M-Files server to all others in the Multi-Server Mode configuration.  This can be used to send commands for other servers to update any cached information they may have, for example.  Processing of broadcast tasks should be fast, as they block the task processor.
 
 #### Creating a task processor and broadcasting to all servers
+
+The `[BroadcastProcessor]` attribute can be used to define broadcast processors that use the default broadcast queue.  This is recommended practice.
+{:.note}
 
 ```csharp
 public class VaultApplication
 	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
 {
-
-	[TaskQueue]
-	public const string BroadcastQueueId = "sampleApplication.ExampleBroadcastQueue";
 	public const string BroadcastTaskType = "BroadcastType";
 
 	// Dummy vault extension method to send the broadcast; this could
@@ -152,7 +155,26 @@ public class VaultApplication
 		return "Successful";
 	}
 
-	[TaskProcessor(BroadcastQueueId, BroadcastTaskType)]
+	[BroadcastProcessor(BroadcastTaskType)]
+	public void BroadcastProcessor(ITaskProcessingJob<TaskDirective> job)
+	{ 
+		// TODO: Handle the broadcast.
+	}
+
+}
+```
+
+##### Filtering broadcasts
+
+The `FilterMode` can be used to filter which broadcasts are processed by the processor.  In the example below the processor will not be called for broadcasts that originated from the current server.
+
+```csharp
+public class VaultApplication
+	: MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<Configuration>
+{
+	public const string BroadcastTaskType = "BroadcastType";
+
+	[BroadcastProcessor(BroadcastTaskType, FilterMode = BroadcastFilterMode.FromOtherServersOnly)]
 	public void BroadcastProcessor(ITaskProcessingJob<TaskDirective> job)
 	{ 
 		// TODO: Handle the broadcast.
@@ -163,7 +185,7 @@ public class VaultApplication
 
 ## Reporting task status
 
-It's important that tasks periodically report their status back to the system.  This can be done by calling `ITaskProcessingJob<T>.UpdateTaskInfo`, providing the current task's state and any textual remarks (e.g. the percentage complete):
+Tasks can  periodically report their status back to the system.  This can be done by calling `ITaskProcessingJob<T>.UpdateTaskInfo`, providing the current task's state and any textual remarks (e.g. the percentage complete):
 
 ```csharp
 [TaskProcessor(QueueId, TaskType)]
@@ -192,7 +214,7 @@ public void ProcessObjectHandler(ITaskProcessingJob<TaskDirective> job)
 }
 ```
 
-The progress should be reported back as frequently as possible, but the system will only push changes back to the vault every 10 seconds or when the task completes.
+The progress can be reported back as frequently as possible, but the system will only push changes back to the vault every 10 seconds or when the task completes.
 {:.note}
 
 ## Handling exceptions
@@ -235,8 +257,11 @@ There are 7 potential task processing results that exceptions can be mapped to:
 
 ## Transaction modes
 
-By default, when using the VAF 2.3 `TaskManager` approach, individual tasks are in the `Hybrid` transaction mode.  This provides flexibility that the overall operation can take as long as is needed, but transactional safety for all vault operations executed within the `Commit` action.  The `Commit` action is executed within a transaction, and therefore limited to a maximum of 90 seconds.
+By default, when using the VAF 2.3 `TaskManager` approach, individual tasks are in the `Hybrid` transaction mode.  This provides flexibility that the overall operation can take as long as is needed, but transactional safety for all vault operations executed within the `Commit` action.  The `Commit` action is executed within a transaction, and therefore limited to a default maximum of 90 seconds.
 {:.note}
+
+If code that runs within a transaction exceeds the configured transaction duration then the task will be failed and may be re-run.  It is important that transactional code completes as quickly as possible.  Long-running transactions have impacts upon the general server performance and may cause conflicts and deadlocks.  Note that code that runs quickly in development environments may perform significantly differently in production vaults.
+{:.note.warning}
 
 There are three available transaction modes:
 
@@ -278,8 +303,7 @@ public class VaultApplication
 		job.Commit((transactionalVault) =>
 		{
 			// ...do any work using the transactional vault reference.
-			// The action provided to the "Commit" method will be executed within a transaction
-			// and must complete within 90 seconds.
+			// The action provided to the "Commit" method will be executed within a transaction.
 		})
 	}
 }
@@ -287,7 +311,7 @@ public class VaultApplication
 
 ### Using the 'Full' transaction mode
 
-In the `Full` transaction mode, the processing of each individual task is executed within a transaction and must complete within 90 seconds.  The `job.Vault` reference is a transactional vault reference.
+In the `Full` transaction mode, the processing of each individual task is executed within a transaction.  The `job.Vault` reference is a transactional vault reference.
 
 ```csharp
 public class VaultApplication
