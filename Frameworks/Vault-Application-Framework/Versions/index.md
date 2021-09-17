@@ -106,11 +106,9 @@ Due to a change in the way in which references are used, upgrading from VAF 2.2 
 * In the NuGet Package Manager Console, ensure that the "Default Project" is your VAF project.
 * Enter the following command: `Update-Package -id Newtonsoft.JSON -reinstall`.  This will reinstall the current version of the package to the project.
 
-#### Long-running task queue processing
+#### Migrate to VAF 2.3 task queues
 
-In older approaches (e.g. background operations, or VAF 2.2-style task queue processing), the duration of the operation/task could be significant.  When using the VAF 2.3-style task queue processing, by default each task is processed within a transaction.  **This means that each task must complete in under 90 seconds**.
-
-Long-running tasks should be split into shorter ones (e.g. instead of searching for, then processing, lots of objects at once, have one task processor associated with locating items to process, and a separate task processor to process each individual object).  For situations with very long-running tasks, where the tasks cannot be broken down into smaller processes, consider [changing the task processor's transaction mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Serer-Mode/Task-Queues/#long-running-tasks).
+Migrate older background operations, or VAF 2.2-style task queues, across to the new VAF 2.3 approach.  Note that in VAF 2.3 the task processors run, by default, in [`Hybrid` transaction mode](/Frameworks/Vault-Application-Framework/Task-Queues/#using-the-hybrid-default-transaction-mode).
 
 ### From Version 2.1 to Version 2.2
 
