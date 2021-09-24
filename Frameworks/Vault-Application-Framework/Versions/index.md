@@ -108,7 +108,7 @@ Due to a change in the way in which references are used, upgrading from VAF 2.2 
 
 #### Migrate to VAF 2.3 task queues
 
-Migrate older background operations, or VAF 2.2-style task queues, across to the new VAF 2.3 approach.  Note that in VAF 2.3 the task processors run, by default, in [`Hybrid` transaction mode](/Frameworks/Vault-Application-Framework/Task-Queues/#using-the-hybrid-default-transaction-mode).
+Migrate older background operations, or VAF 2.2-style task queues, across to the new [VAF 2.3 approach]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Task-Queues/).  Note that in VAF 2.3 the task processors run, by default, in [`Hybrid` transaction mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Task-Queues/#using-the-hybrid-default-transaction-mode).
 
 ### From Version 2.1 to Version 2.2
 
