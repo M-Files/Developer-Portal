@@ -198,14 +198,14 @@ public void ProcessObjectHandler(ITaskProcessingJob<TaskDirective> job)
 			percentComplete: i,
 			details: $"Processing object {i} / 100"
 		);
-
-		// TODO: Process the object.
-		// Note: failing to call job.Commit will cause an exception.
-		job.Commit((transactionalVault) =>
-		{
-			// ...do any work using the transactional vault reference.
-		})
 	}
+
+	// Make any commits to the vault.
+	// Note: failing to call job.Commit will cause an exception.
+	job.Commit((transactionalVault) =>
+	{
+		// ...do any work using the transactional vault reference.
+	})
 	job.Update
 	(
 		percentComplete: 100,
