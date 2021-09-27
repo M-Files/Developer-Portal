@@ -219,6 +219,32 @@ The progress can be reported back as frequently as possible, but the system will
 
 ## Handling exceptions
 
+There are 7 potential task processing results that exceptions can use:
+
+* `TaskProcessingJobResult.Abort`: Indicates the task should not be updated further, so it automatically gets restored to the `MFTaskState.MFTaskStateWaiting` state.
+* `TaskProcessingJobResult.Fatal`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, and **may not** be re-queued.
+* `TaskProcessingJobResult.Fail`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, but **may** be re-queued.
+* `TaskProcessingJobResult.Requeue`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, and **must** be re-queued.
+* `TaskProcessingJobResult.Retry`:  Indicates the task may be reprocessed immediately, and left in the `MFTaskState.MFTaskStateInProgress` state.
+* `TaskProcessingJobResult.Cancel`:  Indicates the task should be marked canceled in the vault, and not processed any further.
+* `TaskProcessingJobResult.Complete`:  Indicates the task my be set to `MFTaskState.MFTaskStateCompleted`.
+
+### By throwing exceptions
+
+To control how the task is re-processed (or not, as appropriate), often the easiest approach is to throw an instance of `AppTaskException` and provide the correct `TaskPRocessingJobResult`:
+
+```csharp
+[TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]
+[TaskExceptionBehavior(TaskProcessingJobResult.Fatal, typeof(InvalidOperationException))]
+public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
+{
+	if (rnd.Next(1, 4) == 2)
+		throw new AppTaskException(TaskProcessingJobResult.Fail, "Failed because of random number");
+}
+```
+
+### By mapping exception types or M-Files error codes
+
 As a developer you can choose what effect different exceptions raised within your code will have on the task itself.  This is done by mapping the exception type to an expected `TaskProcessingJobResult`.  In the example below, any `InvalidOperationException` thrown by the task processing will be considered fatal:
 
 ```csharp
@@ -244,16 +270,6 @@ public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
 	// ...
 }
 ```
-
-There are 7 potential task processing results that exceptions can be mapped to:
-
-* `TaskProcessingJobResult.Abort`: Indicates the task should not be updated further, so it automatically gets restored to the `MFTaskState.MFTaskStateWaiting` state.
-* `TaskProcessingJobResult.Fatal`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, and **may not** be re-queued.
-* `TaskProcessingJobResult.Fail`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, but **may** be re-queued.
-* `TaskProcessingJobResult.Requeue`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, and **must** be re-queued.
-* `TaskProcessingJobResult.Retry`:  Indicates the task may be reprocessed immediately, and left in the `MFTaskState.MFTaskStateInProgress` state.
-* `TaskProcessingJobResult.Cancel`:  Indicates the task should be marked canceled in the vault, and not processed any further.
-* `TaskProcessingJobResult.Complete`:  Indicates the task my be set to `MFTaskState.MFTaskStateCompleted`.
 
 ## Transaction modes
 
