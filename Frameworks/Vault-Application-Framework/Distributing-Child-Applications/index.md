@@ -9,7 +9,7 @@ A server-side [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-
 ## Approach
 
 1. Create your Vault Application Framework application and note the `guid` that it is assigned within the `appdef.xml` file.
-2. Update your User Interface Extensibility Framework application's `appdef.xml` file, ensuring that the [v3 schema]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/) is used, and add a [master application guid]({{ site.baseurl}}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/Master-Application-Guid/) containing the value found above.
+2. Update your User Interface Extensibility Framework application's `appdef.xml` file, ensuring that the [v3 schema]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/) (or higher) is used, and add a [master application guid]({{ site.baseurl}}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/Master-Application-Guid/) containing the value found above.
 3. Build the User Interface Extensibility Framework application, and produce a deployable `.zip` or `.mfappx` file.
 4. Add the UIX application to the Vault Application Framework solution, ensuring that it is set to copy to the output directory.
 	1. Right-click on the Vault Application Framework solution name and select `Add`, then `Existing Item...`.
