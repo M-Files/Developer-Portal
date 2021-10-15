@@ -48,7 +48,7 @@ The packages configuration file details the [Nuget packages that are required](h
 
 ![The default application](default-application.png)
 
-The template automatically creates a `VaultApplication` class, which is the entry point to your application.  This class derives from the VAF 2.2 base class and defines that the `Configuration` class is used for [configuration]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/#vaf-22).
+The template automatically creates a `VaultApplication` class, which is the entry point to your application.  This class derives from the VAF base class and defines that the `Configuration` class is used for [configuration]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Configuration/#vaf-22).
 
 To customise this default application, check out our samples and libraries or other tutorials.
 
@@ -74,4 +74,4 @@ Please also see the tips and tricks for the [VAF 2.2](/Frameworks/Vault-Applicat
 
 ### Nuget packages and versions
 
-The Vault Application Framework 2.3 release requires Newtonsoft.Json (JSON.NET) version 10.0.3.
+The Vault Application Framework 2.3 release requires Newtonsoft.Json (JSON.NET) version 10.0.3.  It also relies upon a number of other M-Files-deployed NuGet packages.
