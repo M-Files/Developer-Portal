@@ -59,7 +59,7 @@ public class VaultApplication
 			UploadToRemoteSystemTaskType,
 			// Directives allow you to pass serializable data to and from the task.
 			directive: new ObjIDTaskDirective(env.ObjVer.ObjID)
-		)
+		);
 	}
 
 	[TaskProcessor(QueueId, UploadToRemoteSystemTaskType)]
@@ -76,7 +76,7 @@ public class VaultApplication
 		job.Commit((transactionalVault) =>
 		{
 			// ...do any work using the transactional vault reference.
-		})
+		});
 	}
 }
 ```
@@ -108,7 +108,7 @@ public class VaultApplication
 			UploadToRemoteSystemTaskType,
 			// Directives allow you to pass serializable data to and from the task.
 			directive: new ObjIDTaskDirective(env.ObjVer.ObjID)
-		)
+		);
 	}
 
 	[TaskProcessor(QueueId, UploadToRemoteSystemTaskType)]
@@ -125,7 +125,7 @@ public class VaultApplication
 		job.Commit((transactionalVault) =>
 		{
 			// ...do any work using the transactional vault reference.
-		})
+		});
 	}
 }
 ```
@@ -205,7 +205,7 @@ public void ProcessObjectHandler(ITaskProcessingJob<TaskDirective> job)
 	job.Commit((transactionalVault) =>
 	{
 		// ...do any work using the transactional vault reference.
-	})
+	});
 	job.Update
 	(
 		percentComplete: 100,
@@ -320,7 +320,7 @@ public class VaultApplication
 		{
 			// ...do any work using the transactional vault reference.
 			// The action provided to the "Commit" method will be executed within a transaction.
-		})
+		});
 	}
 }
 ```
@@ -390,7 +390,7 @@ public class VaultApplication
 				item.Refresh();
 
 				// TODO: Process the item.
-			})
+			});
 		}
 	}
 }

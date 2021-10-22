@@ -136,7 +136,7 @@ public class Configuration
 {
 	// The import will run every 10 minutes but can be configured via the M-Files Admin software.
 	[DataMember]
-	[RecurringOperationConfiguration(VaultApplication.QueueId, VaultApplication.ImportDataFromRemoteSystemTaskType)]
+	[RecurringOperationConfiguration(VaultApplication.QueueId, VaultApplication.ImportDataFromRemoteSystemTaskType, Editor="time")]
 	public TimeSpan Interval { get; set; } = new TimeSpan(0, 10, 0);
 }
 ```
