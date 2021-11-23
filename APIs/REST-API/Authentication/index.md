@@ -85,7 +85,7 @@ var auth = new
 };
 ```
 
-If no expiry information is provided then the authentication token returned will have an indefinite expiry.  Note that you **should not expect tokens without an expiry to last forever**; many situations may cause the token to become unusable.  The only way to forcibly expire an authentication token in this instance is to change the user's login credentials and restart M-Files Web Access.
+If no expiry information is provided then the authentication token returned will have an indeterminate expiry.  Note that you **should write code to handle a 403 returned by the token having expired**, as many situations may cause the token to become unusable.  Without an expiration datetime, the only way to forcibly expire an authentication token is to change the user's login credentials and restart M-Files Web Access.
 {:.note.warning}
 
 ### Logging out sessions
