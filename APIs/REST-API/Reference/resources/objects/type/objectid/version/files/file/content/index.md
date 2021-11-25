@@ -32,6 +32,7 @@ The `format` querystring parameter can be one of the following values:
 * `displaypdfonly` - Converts the file to a display-only PDF with printing and copying disabled (supported in M-Files 20.1.8669.0 and higher).
 
 Note: larger files may not be able to be converted to PDF, depending upon the server configuration.
+{:.remark}
 
 ### PUT
 {:.method}
