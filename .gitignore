@@ -12,3 +12,10 @@ debug.log
 firebase-debug.log
 deploy-to-staging.bat
 deploy-to-staging-monitoring.bat
+.vs
+obj
+LastBuild.log
+SearchHelp.aspx
+SearchHelp.inc.php
+SearchHelp.php
+Web.Config

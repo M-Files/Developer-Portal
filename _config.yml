@@ -89,3 +89,4 @@ exclude:
   - ruby
   - .firebaserc
   - firebase-debug.log
+  - Frameworks/Vault-Application-Framework/Sandcastle
