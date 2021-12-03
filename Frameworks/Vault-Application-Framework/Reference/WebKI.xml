@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
-  <HelpKINode Title=" namespace" Url="html/N_.htm" />
   <HelpKINode Title=" to FullTextSearchFlagsJA conversion" Url="html/M_MFiles_VAF_Configuration_JsonAdaptor_FullTextSearchFlagsJA_op_Implicit_1.htm" />
   <HelpKINode Title=" to MFIdentifier conversion">
     <HelpKINode Title="MFIdentifier&#160;Implicit Conversion (MFBuiltInDocumentClass to MFIdentifier)" Url="html/M_MFiles_VAF_Configuration_MFIdentifier_op_Implicit_1.htm" />
@@ -17,7 +16,6 @@
   <HelpKINode Title="AbstractMenuCommandLocation class">
     <HelpKINode Title="AbstractMenuCommandLocation Class" Url="html/T_MFiles_VAF_Configuration_Domain_AbstractMenuCommandLocation.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AbstractMenuCommandLocation__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_AbstractMenuCommandLocation.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_AbstractMenuCommandLocation.htm" />
   </HelpKINode>
   <HelpKINode Title="AbstractMenuCommandLocation.AbstractMenuCommandLocation constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AbstractMenuCommandLocation__ctor.htm" />
@@ -77,7 +75,6 @@
   <HelpKINode Title="AccessDenied2 field" Url="html/F_MFiles_VAF_Common_MFErrorCodes_AccessDenied2.htm" />
   <HelpKINode Title="Accessibility class">
     <HelpKINode Title="Accessibility Class" Url="html/T_MFiles_VAF_Common_Accessibility.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_Accessibility.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Common_Accessibility.htm" />
   </HelpKINode>
   <HelpKINode Title="Accessibility.CanChangePermissions property" Url="html/P_MFiles_VAF_Common_Accessibility_CanChangePermissions.htm" />
@@ -97,7 +94,6 @@
   <HelpKINode Title="ActivationTimestamp property" Url="html/P_MFiles_VAF_Common_ApplicationTaskQueue_ApplicationTask_ActivationTimestamp.htm" />
   <HelpKINode Title="Active property" Url="html/P_MFiles_VAF_MultiserverMode_ProcessingReport_1_Active.htm" />
   <HelpKINode Title="ActiveTask structure">
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_ApplicationTaskQueue_TaskQueueManager_ActiveTask.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Common_ApplicationTaskQueue_TaskQueueManager_ActiveTask.htm" />
   </HelpKINode>
   <HelpKINode Title="ActivityID field" Url="html/F_MFiles_VAF_ScriptEnvironment_ActivityID.htm" />
@@ -119,7 +115,6 @@
     <HelpKINode Title="TextContext.Add Method " Url="html/Overload_MFiles_VAF_Placeholders_TextContext_Add.htm" />
     <HelpKINode Title="TimeContext.Add Method " Url="html/Overload_MFiles_VAF_Placeholders_TimeContext_Add.htm" />
     <HelpKINode Title="TimestampContext.Add Method " Url="html/Overload_MFiles_VAF_Placeholders_TimestampContext_Add.htm" />
-    <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Add Method " Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects_Add.htm" />
     <HelpKINode Title="ValueListItemContext.Add Method " Url="html/Overload_MFiles_VAF_Placeholders_ValueListItemContext_Add.htm" />
   </HelpKINode>
   <HelpKINode Title="AddAnyPropertyCondition method" Url="html/M_MFiles_VAF_Common_SearchConditionsExtender_AddAnyPropertyCondition.htm" />
@@ -129,7 +124,6 @@
   <HelpKINode Title="AddDomain class">
     <HelpKINode Title="AddDomain Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_AddDomain.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_AddDomain__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_AddDomain.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_AddDomain.htm" />
   </HelpKINode>
   <HelpKINode Title="AddDomain enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -212,7 +206,6 @@
   <HelpKINode Title="AdfsProviderConfiguration class">
     <HelpKINode Title="AdfsProviderConfiguration Class" Url="html/T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AdfsProviderConfiguration.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AdfsProviderConfiguration__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AdfsProviderConfiguration.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AdfsProviderConfiguration.htm" />
   </HelpKINode>
   <HelpKINode Title="AdfsProviderConfiguration.ADFSEndpointUserName property" Url="html/P_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AdfsProviderConfiguration_ADFSEndpointUserName.htm" />
@@ -320,7 +313,6 @@
   <HelpKINode Title="Append enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_DashboardUpdateMode.htm" />
   <HelpKINode Title="AppendChild method" Url="html/M_MFiles_VAF_Placeholders_PlaceholderTemplateNode_AppendChild.htm" />
   <HelpKINode Title="AppEventHandlerPriorities class">
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Core_EventHandlerExecutionOrderPreserver_AppEventHandlerPriorities.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Core_EventHandlerExecutionOrderPreserver_AppEventHandlerPriorities.htm" />
   </HelpKINode>
   <HelpKINode Title="Application property" Url="html/P_MFiles_VAF_Configuration_LicenseContentBase_Application.htm" />
@@ -461,7 +453,6 @@
   <HelpKINode Title="AppTaskException class">
     <HelpKINode Title="AppTaskException Class" Url="html/T_MFiles_VAF_AppTasks_AppTaskException.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MFiles_VAF_AppTasks_AppTaskException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_MFiles_VAF_AppTasks_AppTaskException.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_AppTasks_AppTaskException.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_AppTasks_AppTaskException.htm" />
   </HelpKINode>
@@ -661,7 +652,6 @@
   <HelpKINode Title="AsyncProcessingOperationArgs(Of T) class">
     <HelpKINode Title="AsyncProcessingOperationArgs(T) Class" Url="html/T_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1.htm" />
   </HelpKINode>
   <HelpKINode Title="AsyncProcessingOperationArgs(Of T).AsyncProcessingOperationArgs constructor" Url="html/M_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1__ctor.htm" />
@@ -669,7 +659,6 @@
   <HelpKINode Title="AsyncProcessingOperationArgs&lt;T&gt; class">
     <HelpKINode Title="AsyncProcessingOperationArgs(T) Class" Url="html/T_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1.htm" />
   </HelpKINode>
   <HelpKINode Title="AsyncProcessingOperationArgs&lt;T&gt;.AsyncProcessingOperationArgs constructor" Url="html/M_MFiles_VAF_MultiserverMode_AsyncProcessingOperationArgs_1__ctor.htm" />
@@ -690,7 +679,6 @@
   <HelpKINode Title="AuthenticateUser class">
     <HelpKINode Title="AuthenticateUser Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_AuthenticateUser.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_AuthenticateUser__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_AuthenticateUser.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_AuthenticateUser.htm" />
   </HelpKINode>
   <HelpKINode Title="AuthenticateUser enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -703,7 +691,6 @@
   <HelpKINode Title="AuthenticationProvidersConfiguration class">
     <HelpKINode Title="AuthenticationProvidersConfiguration Class" Url="html/T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AuthenticationProvidersConfiguration.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AuthenticationProvidersConfiguration__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AuthenticationProvidersConfiguration.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AuthenticationProvidersConfiguration.htm" />
   </HelpKINode>
   <HelpKINode Title="AuthenticationProvidersConfiguration.AdfsProviders property" Url="html/P_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_AuthenticationProvidersConfiguration_AdfsProviders.htm" />
@@ -721,7 +708,6 @@
   <HelpKINode Title="AuthenticationRequest class">
     <HelpKINode Title="AuthenticationRequest Class" Url="html/T_MFiles_VAF_Configuration_Domain_AuthenticationRequest.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AuthenticationRequest__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_AuthenticationRequest.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_AuthenticationRequest.htm" />
   </HelpKINode>
   <HelpKINode Title="AuthenticationRequest.AccountIdentifier property" Url="html/P_MFiles_VAF_Configuration_Domain_AuthenticationRequest_AccountIdentifier.htm" />
@@ -786,7 +772,6 @@
   <HelpKINode Title="AvailabilityGroupStatusSettings class">
     <HelpKINode Title="AvailabilityGroupStatusSettings Class" Url="html/T_MFiles_VAF_MultiserverMode_AvailabilityGroupStatusSettings.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_AvailabilityGroupStatusSettings__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_AvailabilityGroupStatusSettings.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_AvailabilityGroupStatusSettings.htm" />
   </HelpKINode>
   <HelpKINode Title="AvailabilityGroupStatusSettings.AvailabilityGroupStatusSettings constructor" Url="html/M_MFiles_VAF_MultiserverMode_AvailabilityGroupStatusSettings__ctor.htm" />
@@ -863,7 +848,6 @@
     <HelpKINode Title="BackgroundOperationStatus Class" Url="html/T_MFiles_VAF_Common_BackgroundOperationStatus.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_BackgroundOperationStatus__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Common_BackgroundOperationStatus.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_BackgroundOperationStatus.htm" />
   </HelpKINode>
   <HelpKINode Title="BackgroundOperationStatus.BackgroundOperationStatus constructor" Url="html/M_MFiles_VAF_Common_BackgroundOperationStatus__ctor.htm" />
   <HelpKINode Title="BackgroundOperationStatus.Cancelled field" Url="html/F_MFiles_VAF_Common_BackgroundOperationStatus_Cancelled.htm" />
@@ -881,7 +865,6 @@
   <HelpKINode Title="BasicAuthenticationProviderConfiguration class">
     <HelpKINode Title="BasicAuthenticationProviderConfiguration Class" Url="html/T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_BasicAuthenticationProviderConfiguration.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_BasicAuthenticationProviderConfiguration__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_BasicAuthenticationProviderConfiguration.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_BasicAuthenticationProviderConfiguration.htm" />
   </HelpKINode>
   <HelpKINode Title="BasicAuthenticationProviderConfiguration.Assembly property" Url="html/P_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_BasicAuthenticationProviderConfiguration_Assembly.htm" />
@@ -935,7 +918,6 @@
   <HelpKINode Title="BatchProcessorChildJobArgs class">
     <HelpKINode Title="BatchProcessorChildJobArgs Class" Url="html/T_MFiles_VAF_MultiserverMode_BatchProcessorChildJobArgs.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_BatchProcessorChildJobArgs__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_BatchProcessorChildJobArgs.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_BatchProcessorChildJobArgs.htm" />
   </HelpKINode>
   <HelpKINode Title="BatchProcessorChildJobArgs.BatchProcessorChildJobArgs constructor" Url="html/M_MFiles_VAF_MultiserverMode_BatchProcessorChildJobArgs__ctor.htm" />
@@ -961,7 +943,6 @@
   <HelpKINode Title="BatchProcessorJobArgs class">
     <HelpKINode Title="BatchProcessorJobArgs Class" Url="html/T_MFiles_VAF_MultiserverMode_BatchProcessorJobArgs.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_BatchProcessorJobArgs__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_BatchProcessorJobArgs.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_BatchProcessorJobArgs.htm" />
   </HelpKINode>
   <HelpKINode Title="BatchProcessorJobArgs.BatchProcessorJobArgs constructor" Url="html/M_MFiles_VAF_MultiserverMode_BatchProcessorJobArgs__ctor.htm" />
@@ -1042,16 +1023,16 @@
   <HelpKINode Title="BroadcastDirective class">
     <HelpKINode Title="BroadcastDirective Class" Url="html/T_MFiles_VAF_MultiserverMode_BroadcastDirective.htm" />
     <HelpKINode Title="BroadcastDirective Class" Url="html/T_MFiles_VAF_AppTasks_BroadcastDirective.htm" />
-    <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_AppTasks_BroadcastDirective__ctor.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_BroadcastDirective__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_AppTasks_BroadcastDirective__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_BroadcastDirective.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_AppTasks_BroadcastDirective.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_AppTasks_BroadcastDirective.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_BroadcastDirective.htm" />
   </HelpKINode>
   <HelpKINode Title="BroadcastDirective.BroadcastDirective constructor">
-    <HelpKINode Title="BroadcastDirective Constructor " Url="html/M_MFiles_VAF_AppTasks_BroadcastDirective__ctor.htm" />
     <HelpKINode Title="BroadcastDirective Constructor " Url="html/M_MFiles_VAF_MultiserverMode_BroadcastDirective__ctor.htm" />
+    <HelpKINode Title="BroadcastDirective Constructor " Url="html/M_MFiles_VAF_AppTasks_BroadcastDirective__ctor.htm" />
   </HelpKINode>
   <HelpKINode Title="BroadcastDirective.GeneratedFromGuid property">
     <HelpKINode Title="BroadcastDirective.GeneratedFromGuid Property " Url="html/P_MFiles_VAF_MultiserverMode_BroadcastDirective_GeneratedFromGuid.htm" />
@@ -1102,7 +1083,6 @@
   <HelpKINode Title="BroadcastProcessorAttribute class">
     <HelpKINode Title="BroadcastProcessorAttribute Class" Url="html/T_MFiles_VAF_AppTasks_BroadcastProcessorAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MFiles_VAF_AppTasks_BroadcastProcessorAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_AppTasks_BroadcastProcessorAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_AppTasks_BroadcastProcessorAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="BroadcastProcessorAttribute.BroadcastProcessorAttribute constructor" Url="html/Overload_MFiles_VAF_AppTasks_BroadcastProcessorAttribute__ctor.htm" />
@@ -1139,7 +1119,6 @@
   <HelpKINode Title="ButtonBarCommandLocation class">
     <HelpKINode Title="ButtonBarCommandLocation Class" Url="html/T_MFiles_VAF_Configuration_Domain_ButtonBarCommandLocation.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ButtonBarCommandLocation__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ButtonBarCommandLocation.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ButtonBarCommandLocation.htm" />
   </HelpKINode>
   <HelpKINode Title="ButtonBarCommandLocation.ButtonBarCommandLocation constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ButtonBarCommandLocation__ctor.htm" />
@@ -1230,7 +1209,6 @@
   <HelpKINode Title="CancellableOperationArgs(Of T) class">
     <HelpKINode Title="CancellableOperationArgs(T) Class" Url="html/T_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1.htm" />
   </HelpKINode>
   <HelpKINode Title="CancellableOperationArgs(Of T).CancellableOperationArgs constructor" Url="html/M_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1__ctor.htm" />
@@ -1238,7 +1216,6 @@
   <HelpKINode Title="CancellableOperationArgs&lt;T&gt; class">
     <HelpKINode Title="CancellableOperationArgs(T) Class" Url="html/T_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1.htm" />
   </HelpKINode>
   <HelpKINode Title="CancellableOperationArgs&lt;T&gt;.CancellableOperationArgs constructor" Url="html/M_MFiles_VAF_MultiserverMode_CancellableOperationArgs_1__ctor.htm" />
@@ -1460,7 +1437,6 @@
     <HelpKINode Title="TextContext.Clone Method " Url="html/M_MFiles_VAF_Placeholders_TextContext_Clone.htm" />
     <HelpKINode Title="TimeContext.Clone Method " Url="html/M_MFiles_VAF_Placeholders_TimeContext_Clone.htm" />
     <HelpKINode Title="TimestampContext.Clone Method " Url="html/M_MFiles_VAF_Placeholders_TimestampContext_Clone.htm" />
-    <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Clone Method " Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects_Clone.htm" />
     <HelpKINode Title="ValueListItemContext.Clone Method " Url="html/M_MFiles_VAF_Placeholders_ValueListItemContext_Clone.htm" />
   </HelpKINode>
   <HelpKINode Title="CloneContainer property" Url="html/P_MFiles_VAF_MultiserverMode_CloneContainerArgs_1_CloneContainer.htm" />
@@ -1489,7 +1465,6 @@
   <HelpKINode Title="CloneContainerArgs(Of T) class">
     <HelpKINode Title="CloneContainerArgs(T) Class" Url="html/T_MFiles_VAF_MultiserverMode_CloneContainerArgs_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_CloneContainerArgs_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_CloneContainerArgs_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_CloneContainerArgs_1.htm" />
   </HelpKINode>
   <HelpKINode Title="CloneContainerArgs(Of T).CloneContainer property" Url="html/P_MFiles_VAF_MultiserverMode_CloneContainerArgs_1_CloneContainer.htm" />
@@ -1498,7 +1473,6 @@
   <HelpKINode Title="CloneContainerArgs&lt;T&gt; class">
     <HelpKINode Title="CloneContainerArgs(T) Class" Url="html/T_MFiles_VAF_MultiserverMode_CloneContainerArgs_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_CloneContainerArgs_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_CloneContainerArgs_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_CloneContainerArgs_1.htm" />
   </HelpKINode>
   <HelpKINode Title="CloneContainerArgs&lt;T&gt;.CloneContainer property" Url="html/P_MFiles_VAF_MultiserverMode_CloneContainerArgs_1_CloneContainer.htm" />
@@ -1754,7 +1728,6 @@
   <HelpKINode Title="ConfigurationDomainCommandResponse class">
     <HelpKINode Title="ConfigurationDomainCommandResponse Class" Url="html/T_MFiles_VAF_Configuration_Domain_ConfigurationDomainCommandResponse.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ConfigurationDomainCommandResponse__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ConfigurationDomainCommandResponse.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ConfigurationDomainCommandResponse.htm" />
   </HelpKINode>
   <HelpKINode Title="ConfigurationDomainCommandResponse.ConfigurationDomainCommandResponse constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ConfigurationDomainCommandResponse__ctor.htm" />
@@ -1787,7 +1760,6 @@
   <HelpKINode Title="ConfigurationDomainOrSource class">
     <HelpKINode Title="ConfigurationDomainOrSource Class" Url="html/T_MFiles_VAF_Configuration_Domain_ConfigurationDomainOrSource.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ConfigurationDomainOrSource__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ConfigurationDomainOrSource.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ConfigurationDomainOrSource.htm" />
     <HelpKINode Title="type conversions" Url="html/Operators_T_MFiles_VAF_Configuration_Domain_ConfigurationDomainOrSource.htm" />
   </HelpKINode>
@@ -1809,7 +1781,6 @@
   <HelpKINode Title="ConfigurationMenuCommandLocation class">
     <HelpKINode Title="ConfigurationMenuCommandLocation Class" Url="html/T_MFiles_VAF_Configuration_Domain_ConfigurationMenuCommandLocation.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ConfigurationMenuCommandLocation__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ConfigurationMenuCommandLocation.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ConfigurationMenuCommandLocation.htm" />
   </HelpKINode>
   <HelpKINode Title="ConfigurationMenuCommandLocation.ConfigurationMenuCommandLocation constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ConfigurationMenuCommandLocation__ctor.htm" />
@@ -2026,7 +1997,6 @@
     <HelpKINode Title="ExpansionContext(T).Count Property " Url="html/P_MFiles_VAF_Placeholders_ExpansionContext_1_Count.htm" />
     <HelpKINode Title="IExpansionContext.Count Property " Url="html/P_MFiles_VAF_Placeholders_IExpansionContext_Count.htm" />
     <HelpKINode Title="PendingTasks.Count Property " Url="html/P_MFiles_VAF_MultiserverMode_PendingTasks_Count.htm" />
-    <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Count Property " Url="html/P_VAFObjectVersionAndPropertiesOfMultipleObjects_Count.htm" />
   </HelpKINode>
   <HelpKINode Title="CountPlaceholder class">
     <HelpKINode Title="CountPlaceholder Class" Url="html/T_MFiles_VAF_Placeholders_Commands_CountPlaceholder.htm" />
@@ -2043,7 +2013,6 @@
   <HelpKINode Title="Create method">
     <HelpKINode Title="AutoTempFile.Create Method " Url="html/M_MFiles_VAF_Common_AutoTempFile_Create.htm" />
     <HelpKINode Title="AutoTempFolder.Create Method " Url="html/M_MFiles_VAF_Common_AutoTempFolder_Create.htm" />
-    <HelpKINode Title="FormattableStringFactory.Create Method " Url="html/Overload_System_Runtime_CompilerServices_FormattableStringFactory_Create.htm" />
   </HelpKINode>
   <HelpKINode Title="CreateAdminConfigurationManager method" Url="html/M_MFiles_VAF_VaultApplicationBase_CreateAdminConfigurationManager.htm" />
   <HelpKINode Title="CreateApplicationTaskSafe method" Url="html/M_MFiles_VAF_MultiserverMode_TaskProcessorBase_1_CreateApplicationTaskSafe.htm" />
@@ -2209,7 +2178,6 @@
   <HelpKINode Title="CustomDomainCommand class">
     <HelpKINode Title="CustomDomainCommand Class" Url="html/T_MFiles_VAF_Configuration_AdminConfigurations_CustomDomainCommand.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_AdminConfigurations_CustomDomainCommand__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_AdminConfigurations_CustomDomainCommand.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_AdminConfigurations_CustomDomainCommand.htm" />
   </HelpKINode>
   <HelpKINode Title="CustomDomainCommand.Blocking property" Url="html/P_MFiles_VAF_Configuration_AdminConfigurations_CustomDomainCommand_Blocking.htm" />
@@ -2468,10 +2436,10 @@
   <HelpKINode Title="DateDiff method" Url="html/M_MFiles_VAF_Common_ReferenceTree_ProcessCmd_DateDiff.htm" />
   <HelpKINode Title="DateRangeIntersects method" Url="html/M_MFiles_VAF_Common_SearchConditionsExtender_DateRangeIntersects.htm" />
   <HelpKINode Title="DateTimeExtensions class">
-    <HelpKINode Title="DateTimeExtensions Class" Url="html/T_MFiles_VAF_Configuration_DateTimeExtensions.htm" />
     <HelpKINode Title="DateTimeExtensions Class" Url="html/T_MFiles_VAF_MultiserverMode_DateTimeExtensions.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_DateTimeExtensions.htm" />
+    <HelpKINode Title="DateTimeExtensions Class" Url="html/T_MFiles_VAF_Configuration_DateTimeExtensions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_DateTimeExtensions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_DateTimeExtensions.htm" />
   </HelpKINode>
   <HelpKINode Title="DateTimeExtensions.FormatDateTime method" Url="html/M_MFiles_VAF_MultiserverMode_DateTimeExtensions_FormatDateTime.htm" />
   <HelpKINode Title="DateTimeExtensions.ToDateTime method" Url="html/M_MFiles_VAF_Configuration_DateTimeExtensions_ToDateTime.htm" />
@@ -2536,7 +2504,6 @@
   <HelpKINode Title="DefaultConfigurationRequestContextEx class">
     <HelpKINode Title="DefaultConfigurationRequestContextEx Class" Url="html/T_MFiles_VAF_Configuration_AdminConfigurations_DefaultConfigurationRequestContextEx.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_AdminConfigurations_DefaultConfigurationRequestContextEx__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_AdminConfigurations_DefaultConfigurationRequestContextEx.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_AdminConfigurations_DefaultConfigurationRequestContextEx.htm" />
   </HelpKINode>
   <HelpKINode Title="DefaultConfigurationRequestContextEx.CurrentUserID property" Url="html/P_MFiles_VAF_Configuration_AdminConfigurations_DefaultConfigurationRequestContextEx_CurrentUserID.htm" />
@@ -2692,7 +2659,6 @@
   <HelpKINode Title="DomainMenuCommandLocation class">
     <HelpKINode Title="DomainMenuCommandLocation Class" Url="html/T_MFiles_VAF_Configuration_Domain_DomainMenuCommandLocation.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_DomainMenuCommandLocation__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_DomainMenuCommandLocation.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_DomainMenuCommandLocation.htm" />
   </HelpKINode>
   <HelpKINode Title="DomainMenuCommandLocation.Container property" Url="html/P_MFiles_VAF_Configuration_Domain_DomainMenuCommandLocation_Container.htm" />
@@ -2711,16 +2677,12 @@
   <HelpKINode Title="DomainNodeNotFoundException class">
     <HelpKINode Title="DomainNodeNotFoundException Class" Url="html/T_MFiles_VAF_Configuration_AdminConfigurations_DomainNodeNotFoundException.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_AdminConfigurations_DomainNodeNotFoundException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_MFiles_VAF_Configuration_AdminConfigurations_DomainNodeNotFoundException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_AdminConfigurations_DomainNodeNotFoundException.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_AdminConfigurations_DomainNodeNotFoundException.htm" />
   </HelpKINode>
   <HelpKINode Title="DomainNodeNotFoundException.DomainNodeNotFoundException constructor" Url="html/M_MFiles_VAF_Configuration_AdminConfigurations_DomainNodeNotFoundException__ctor.htm" />
   <HelpKINode Title="DomainStatus enumeration" Url="html/T_MFiles_VAF_Configuration_Domain_DomainStatus.htm" />
   <HelpKINode Title="DomainStatusSummary class">
     <HelpKINode Title="DomainStatusSummary Class" Url="html/T_MFiles_VAF_Configuration_Domain_DomainStatusSummary.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_DomainStatusSummary__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_DomainStatusSummary.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_DomainStatusSummary.htm" />
   </HelpKINode>
   <HelpKINode Title="DomainStatusSummary.Description property" Url="html/P_MFiles_VAF_Configuration_Domain_DomainStatusSummary_Description.htm" />
@@ -2785,7 +2747,6 @@
   <HelpKINode Title="DynamicPropertyValueSetter class">
     <HelpKINode Title="DynamicPropertyValueSetter Class" Url="html/T_MFiles_VAF_Configuration_DynamicPropertyValueSetter.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_DynamicPropertyValueSetter__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_DynamicPropertyValueSetter.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_DynamicPropertyValueSetter.htm" />
   </HelpKINode>
   <HelpKINode Title="DynamicPropertyValueSetter.DynamicPropertyValueSetter constructor" Url="html/M_MFiles_VAF_Configuration_DynamicPropertyValueSetter__ctor.htm" />
@@ -2807,7 +2768,6 @@
   <HelpKINode Title="EmptyContextIssue class">
     <HelpKINode Title="EmptyContextIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_EmptyContextIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_EmptyContextIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_EmptyContextIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_EmptyContextIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="EmptyContextIssue.EmptyContextIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_EmptyContextIssue__ctor.htm" />
@@ -2982,15 +2942,15 @@
   <HelpKINode Title="EnvironmentBase.VaultSharedVariablesExternal property" Url="html/P_MFiles_VAF_Common_EnvironmentBase_VaultSharedVariablesExternal.htm" />
   <HelpKINode Title="EqualityCompareOptions enumeration" Url="html/T_MFiles_VAF_Common_EqualityCompareOptions.htm" />
   <HelpKINode Title="Equals method">
+    <HelpKINode Title="MetadataStructureValidator.ReferenceEqualityComparer.Equals Method " Url="html/M_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer_Equals.htm" />
     <HelpKINode Title="MFIdentifier.Equals Method " Url="html/Overload_MFiles_VAF_Configuration_MFIdentifier_Equals.htm" />
-    <HelpKINode Title="ObjIDEqualityComparer.Equals Method " Url="html/Overload_MFiles_VAF_Common_ObjIDEqualityComparer_Equals.htm" />
-    <HelpKINode Title="ObjVerEqualityComparer.Equals Method " Url="html/Overload_MFiles_VAF_Common_ObjVerEqualityComparer_Equals.htm" />
+    <HelpKINode Title="ObjIDEqualityComparer.Equals Method " Url="html/M_MFiles_VAF_Common_ObjIDEqualityComparer_Equals.htm" />
+    <HelpKINode Title="ObjVerEqualityComparer.Equals Method " Url="html/M_MFiles_VAF_Common_ObjVerEqualityComparer_Equals.htm" />
     <HelpKINode Title="ObjVerEx.Equals Method " Url="html/Overload_MFiles_VAF_Common_ObjVerEx_Equals.htm" />
-    <HelpKINode Title="ObjVerIDEqualityComparer.Equals Method " Url="html/Overload_MFiles_VAF_Common_ObjVerIDEqualityComparer_Equals.htm" />
-    <HelpKINode Title="ReferenceEqualityComparer.Equals Method " Url="html/Overload_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer_Equals.htm" />
-    <HelpKINode Title="TypedValueEqualityComparer.Equals Method " Url="html/Overload_MFiles_VAF_Common_TypedValueEqualityComparer_Equals.htm" />
-    <HelpKINode Title="UserAccountEqualityComparer.Equals Method " Url="html/Overload_MFiles_VAF_Common_UserAccountEqualityComparer_Equals.htm" />
-    <HelpKINode Title="UserGroupEqualityComparer.Equals Method " Url="html/Overload_MFiles_VAF_Common_UserGroupEqualityComparer_Equals.htm" />
+    <HelpKINode Title="ObjVerIDEqualityComparer.Equals Method " Url="html/M_MFiles_VAF_Common_ObjVerIDEqualityComparer_Equals.htm" />
+    <HelpKINode Title="TypedValueEqualityComparer.Equals Method " Url="html/M_MFiles_VAF_Common_TypedValueEqualityComparer_Equals.htm" />
+    <HelpKINode Title="UserAccountEqualityComparer.Equals Method " Url="html/M_MFiles_VAF_Common_UserAccountEqualityComparer_Equals.htm" />
+    <HelpKINode Title="UserGroupEqualityComparer.Equals Method " Url="html/M_MFiles_VAF_Common_UserGroupEqualityComparer_Equals.htm" />
     <HelpKINode Title="ValidationResultForValidation.DetailItem.Equals Method " Url="html/M_MFiles_VAF_Configuration_ValidationResultForValidation_DetailItem_Equals.htm" />
   </HelpKINode>
   <HelpKINode Title="Error enumeration member">
@@ -3143,13 +3103,11 @@
   <HelpKINode Title="EventHandlerMethodInfo.Priority property" Url="html/P_MFiles_VAF_EventHandlerMethodInfo_Priority.htm" />
   <HelpKINode Title="eventHandlerMethods field" Url="html/F_MFiles_VAF_VaultApplicationBase_eventHandlerMethods.htm" />
   <HelpKINode Title="EventHandlerPriority class">
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Core_EventHandlerExecutionOrderPreserver_EventHandlerPriority.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Core_EventHandlerExecutionOrderPreserver_EventHandlerPriority.htm" />
   </HelpKINode>
   <HelpKINode Title="EventHandlerRequestContext class">
     <HelpKINode Title="EventHandlerRequestContext Class" Url="html/T_MFiles_VAF_AdminConfigurations_EventHandlerRequestContext.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_AdminConfigurations_EventHandlerRequestContext__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_AdminConfigurations_EventHandlerRequestContext.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_AdminConfigurations_EventHandlerRequestContext.htm" />
   </HelpKINode>
   <HelpKINode Title="EventHandlerRequestContext.CurrentUserID property" Url="html/P_MFiles_VAF_AdminConfigurations_EventHandlerRequestContext_CurrentUserID.htm" />
@@ -3476,7 +3434,6 @@
   <HelpKINode Title="ExtendedVaultExtensionMethodCall class">
     <HelpKINode Title="ExtendedVaultExtensionMethodCall Class" Url="html/T_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodCall.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodCall__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodCall.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodCall.htm" />
   </HelpKINode>
   <HelpKINode Title="ExtendedVaultExtensionMethodCall.ApplicationGuid property" Url="html/P_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodCall_ApplicationGuid.htm" />
@@ -3488,7 +3445,6 @@
   <HelpKINode Title="ExtendedVaultExtensionMethodSource class">
     <HelpKINode Title="ExtendedVaultExtensionMethodSource Class" Url="html/T_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodSource.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodSource__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodSource.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodSource.htm" />
   </HelpKINode>
   <HelpKINode Title="ExtendedVaultExtensionMethodSource.ExtendedVaultExtensionMethodSource constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ExtendedVaultExtensionMethodSource__ctor.htm" />
@@ -3546,7 +3502,6 @@
   <HelpKINode Title="FailedArgs(Of T) class">
     <HelpKINode Title="FailedArgs(T) Class" Url="html/T_MFiles_VAF_MultiserverMode_FailedArgs_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_FailedArgs_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_FailedArgs_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_FailedArgs_1.htm" />
   </HelpKINode>
   <HelpKINode Title="FailedArgs(Of T).BaseArgs property" Url="html/P_MFiles_VAF_MultiserverMode_FailedArgs_1_BaseArgs.htm" />
@@ -3555,7 +3510,6 @@
   <HelpKINode Title="FailedArgs&lt;T&gt; class">
     <HelpKINode Title="FailedArgs(T) Class" Url="html/T_MFiles_VAF_MultiserverMode_FailedArgs_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_FailedArgs_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_FailedArgs_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_FailedArgs_1.htm" />
   </HelpKINode>
   <HelpKINode Title="FailedArgs&lt;T&gt;.BaseArgs property" Url="html/P_MFiles_VAF_MultiserverMode_FailedArgs_1_BaseArgs.htm" />
@@ -3732,20 +3686,6 @@
     <HelpKINode Title="IApplicationLicenseContent.FormatError Property " Url="html/P_MFiles_VAF_Configuration_IApplicationLicenseContent_FormatError.htm" />
     <HelpKINode Title="LicenseContentBase.FormatError Property " Url="html/P_MFiles_VAF_Configuration_LicenseContentBase_FormatError.htm" />
   </HelpKINode>
-  <HelpKINode Title="FormattableString class">
-    <HelpKINode Title="FormattableString Class" Url="html/T_System_FormattableString.htm" />
-    <HelpKINode Title="constructor" Url="html/M_System_FormattableString__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_System_FormattableString.htm" />
-  </HelpKINode>
-  <HelpKINode Title="FormattableString.FormattableString constructor" Url="html/M_System_FormattableString__ctor.htm" />
-  <HelpKINode Title="FormattableString.ToString method" Url="html/Overload_System_FormattableString_ToString.htm" />
-  <HelpKINode Title="FormattableStringFactory class">
-    <HelpKINode Title="FormattableStringFactory Class" Url="html/T_System_Runtime_CompilerServices_FormattableStringFactory.htm" />
-    <HelpKINode Title="constructor" Url="html/M_System_Runtime_CompilerServices_FormattableStringFactory__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_System_Runtime_CompilerServices_FormattableStringFactory.htm" />
-  </HelpKINode>
-  <HelpKINode Title="FormattableStringFactory.Create method" Url="html/Overload_System_Runtime_CompilerServices_FormattableStringFactory_Create.htm" />
-  <HelpKINode Title="FormattableStringFactory.FormattableStringFactory constructor" Url="html/M_System_Runtime_CompilerServices_FormattableStringFactory__ctor.htm" />
   <HelpKINode Title="Found property" Url="html/P_MFiles_VAF_Core_EventHandlerExecutionOrderPreserver_EventHandlerPriority_Found.htm" />
   <HelpKINode Title="FoundItemAction method">
     <HelpKINode Title="ValidationResultBase.FoundItemAction Method " Url="html/M_MFiles_VAF_Configuration_ValidationResultBase_FoundItemAction.htm" />
@@ -3801,8 +3741,8 @@
     <HelpKINode Title="StatusStub.Generate Method " Url="html/M_MFiles_VAF_Configuration_Domain_Dashboards_StatusStub_Generate.htm" />
   </HelpKINode>
   <HelpKINode Title="GeneratedFromGuid property">
-    <HelpKINode Title="BroadcastDirective.GeneratedFromGuid Property " Url="html/P_MFiles_VAF_MultiserverMode_BroadcastDirective_GeneratedFromGuid.htm" />
     <HelpKINode Title="BroadcastDirective.GeneratedFromGuid Property " Url="html/P_MFiles_VAF_AppTasks_BroadcastDirective_GeneratedFromGuid.htm" />
+    <HelpKINode Title="BroadcastDirective.GeneratedFromGuid Property " Url="html/P_MFiles_VAF_MultiserverMode_BroadcastDirective_GeneratedFromGuid.htm" />
     <HelpKINode Title="TaskDirective.GeneratedFromGuid Property " Url="html/P_MFiles_VAF_AppTasks_TaskDirective_GeneratedFromGuid.htm" />
   </HelpKINode>
   <HelpKINode Title="GeneratedFromMachineName property">
@@ -3956,7 +3896,6 @@
     <HelpKINode Title="ExpansionContext(T).GetEnumerator Method " Url="html/M_MFiles_VAF_Placeholders_ExpansionContext_1_GetEnumerator.htm" />
     <HelpKINode Title="ReferenceTree.TreeMap.GetEnumerator Method " Url="html/M_MFiles_VAF_Common_ReferenceTree_TreeMap_GetEnumerator.htm" />
     <HelpKINode Title="ReferenceTrees.GetEnumerator Method " Url="html/M_MFiles_VAF_Common_ReferenceTrees_GetEnumerator.htm" />
-    <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.GetEnumerator Method " Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects_GetEnumerator.htm" />
   </HelpKINode>
   <HelpKINode Title="GetEnumLabel method" Url="html/M_MFiles_VAF_Configuration_JsonEditor_SchemaGenerator_GetEnumLabel.htm" />
   <HelpKINode Title="GetEnumName method" Url="html/M_MFiles_VAF_Configuration_JsonAdaptor_MFEnumJsonConverter_GetEnumName.htm" />
@@ -4000,15 +3939,15 @@
     <HelpKINode Title="StaticContextPlaceholderProvider.GetHandler Method " Url="html/M_MFiles_VAF_Placeholders_Commands_StaticContextPlaceholderProvider_GetHandler.htm" />
   </HelpKINode>
   <HelpKINode Title="GetHashCode method">
+    <HelpKINode Title="MetadataStructureValidator.ReferenceEqualityComparer.GetHashCode Method " Url="html/M_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer_GetHashCode.htm" />
     <HelpKINode Title="MFIdentifier.GetHashCode Method " Url="html/M_MFiles_VAF_Configuration_MFIdentifier_GetHashCode.htm" />
-    <HelpKINode Title="ObjIDEqualityComparer.GetHashCode Method " Url="html/Overload_MFiles_VAF_Common_ObjIDEqualityComparer_GetHashCode.htm" />
-    <HelpKINode Title="ObjVerEqualityComparer.GetHashCode Method " Url="html/Overload_MFiles_VAF_Common_ObjVerEqualityComparer_GetHashCode.htm" />
+    <HelpKINode Title="ObjIDEqualityComparer.GetHashCode Method " Url="html/M_MFiles_VAF_Common_ObjIDEqualityComparer_GetHashCode.htm" />
+    <HelpKINode Title="ObjVerEqualityComparer.GetHashCode Method " Url="html/M_MFiles_VAF_Common_ObjVerEqualityComparer_GetHashCode.htm" />
     <HelpKINode Title="ObjVerEx.GetHashCode Method " Url="html/M_MFiles_VAF_Common_ObjVerEx_GetHashCode.htm" />
-    <HelpKINode Title="ObjVerIDEqualityComparer.GetHashCode Method " Url="html/Overload_MFiles_VAF_Common_ObjVerIDEqualityComparer_GetHashCode.htm" />
-    <HelpKINode Title="ReferenceEqualityComparer.GetHashCode Method " Url="html/Overload_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer_GetHashCode.htm" />
-    <HelpKINode Title="TypedValueEqualityComparer.GetHashCode Method " Url="html/Overload_MFiles_VAF_Common_TypedValueEqualityComparer_GetHashCode.htm" />
-    <HelpKINode Title="UserAccountEqualityComparer.GetHashCode Method " Url="html/Overload_MFiles_VAF_Common_UserAccountEqualityComparer_GetHashCode.htm" />
-    <HelpKINode Title="UserGroupEqualityComparer.GetHashCode Method " Url="html/Overload_MFiles_VAF_Common_UserGroupEqualityComparer_GetHashCode.htm" />
+    <HelpKINode Title="ObjVerIDEqualityComparer.GetHashCode Method " Url="html/M_MFiles_VAF_Common_ObjVerIDEqualityComparer_GetHashCode.htm" />
+    <HelpKINode Title="TypedValueEqualityComparer.GetHashCode Method " Url="html/M_MFiles_VAF_Common_TypedValueEqualityComparer_GetHashCode.htm" />
+    <HelpKINode Title="UserAccountEqualityComparer.GetHashCode Method " Url="html/M_MFiles_VAF_Common_UserAccountEqualityComparer_GetHashCode.htm" />
+    <HelpKINode Title="UserGroupEqualityComparer.GetHashCode Method " Url="html/M_MFiles_VAF_Common_UserGroupEqualityComparer_GetHashCode.htm" />
     <HelpKINode Title="ValidationResultForValidation.DetailItem.GetHashCode Method " Url="html/M_MFiles_VAF_Configuration_ValidationResultForValidation_DetailItem_GetHashCode.htm" />
   </HelpKINode>
   <HelpKINode Title="GetHistory method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultObjectOperations_GetHistory.htm" />
@@ -4136,8 +4075,8 @@
     <HelpKINode Title="MetadataStructureCache.GetObjectTypeAdmin Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetObjectTypeAdmin.htm" />
   </HelpKINode>
   <HelpKINode Title="GetObjectTypeIdByAlias method">
-    <HelpKINode Title="MetadataStructureCache.GetObjectTypeIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetObjectTypeIdByAlias.htm" />
     <HelpKINode Title="IMetadataStructureCache.GetObjectTypeIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_IMetadataStructureCache_GetObjectTypeIdByAlias.htm" />
+    <HelpKINode Title="MetadataStructureCache.GetObjectTypeIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetObjectTypeIdByAlias.htm" />
   </HelpKINode>
   <HelpKINode Title="GetObjectTypeIDByAlias method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultObjectTypeOperations_GetObjectTypeIDByAlias.htm" />
   <HelpKINode Title="GetObjectTypeIDByGUID method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultObjectTypeOperations_GetObjectTypeIDByGUID.htm" />
@@ -4200,8 +4139,8 @@
     <HelpKINode Title="MetadataStructureCache.GetPropertyDefAdmin Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetPropertyDefAdmin.htm" />
   </HelpKINode>
   <HelpKINode Title="GetPropertyDefIdByAlias method">
-    <HelpKINode Title="IMetadataStructureCache.GetPropertyDefIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_IMetadataStructureCache_GetPropertyDefIdByAlias.htm" />
     <HelpKINode Title="MetadataStructureCache.GetPropertyDefIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetPropertyDefIdByAlias.htm" />
+    <HelpKINode Title="IMetadataStructureCache.GetPropertyDefIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_IMetadataStructureCache_GetPropertyDefIdByAlias.htm" />
   </HelpKINode>
   <HelpKINode Title="GetPropertyDefIDByAlias method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultPropertyDefOperations_GetPropertyDefIDByAlias.htm" />
   <HelpKINode Title="GetPropertyDefIDByGUID method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultPropertyDefOperations_GetPropertyDefIDByGUID.htm" />
@@ -4358,11 +4297,11 @@
     <HelpKINode Title="MetadataCacheVaultUserGroupOperations.GetUserGroupAdmin Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultUserGroupOperations_GetUserGroupAdmin.htm" />
     <HelpKINode Title="MetadataStructureCache.GetUserGroupAdmin Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetUserGroupAdmin.htm" />
   </HelpKINode>
+  <HelpKINode Title="GetUserGroupIDByAlias method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultUserGroupOperations_GetUserGroupIDByAlias.htm" />
   <HelpKINode Title="GetUserGroupIdByAlias method">
     <HelpKINode Title="IMetadataStructureCache.GetUserGroupIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_IMetadataStructureCache_GetUserGroupIdByAlias.htm" />
     <HelpKINode Title="MetadataStructureCache.GetUserGroupIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetUserGroupIdByAlias.htm" />
   </HelpKINode>
-  <HelpKINode Title="GetUserGroupIDByAlias method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultUserGroupOperations_GetUserGroupIDByAlias.htm" />
   <HelpKINode Title="GetUserGroupIdByGuid method">
     <HelpKINode Title="IMetadataStructureCache.GetUserGroupIdByGuid Method " Url="html/M_MFiles_VAF_MetadataCache_IMetadataStructureCache_GetUserGroupIdByGuid.htm" />
     <HelpKINode Title="MetadataStructureCache.GetUserGroupIdByGuid Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetUserGroupIdByGuid.htm" />
@@ -4407,8 +4346,8 @@
   <HelpKINode Title="GetWorkflowsAsValueListItems method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultWorkflowOperations_GetWorkflowsAsValueListItems.htm" />
   <HelpKINode Title="GetWorkflowsForClient method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultWorkflowOperations_GetWorkflowsForClient.htm" />
   <HelpKINode Title="GetWorkflowStateIdByAlias method">
-    <HelpKINode Title="MetadataStructureCache.GetWorkflowStateIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetWorkflowStateIdByAlias.htm" />
     <HelpKINode Title="IMetadataStructureCache.GetWorkflowStateIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_IMetadataStructureCache_GetWorkflowStateIdByAlias.htm" />
+    <HelpKINode Title="MetadataStructureCache.GetWorkflowStateIdByAlias Method " Url="html/M_MFiles_VAF_MetadataCache_MetadataStructureCache_GetWorkflowStateIdByAlias.htm" />
   </HelpKINode>
   <HelpKINode Title="GetWorkflowStateIDByAlias method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultWorkflowOperations_GetWorkflowStateIDByAlias.htm" />
   <HelpKINode Title="GetWorkflowStateIDByGUID method" Url="html/M_MFiles_VAF_MetadataCache_MetadataCacheVaultWorkflowOperations_GetWorkflowStateIDByGUID.htm" />
@@ -4425,7 +4364,6 @@
   <HelpKINode Title="GroupLenLimit class">
     <HelpKINode Title="GroupLenLimit Class" Url="html/T_MFiles_VAF_Configuration_GroupLenLimit.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_GroupLenLimit__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_GroupLenLimit.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_GroupLenLimit.htm" />
   </HelpKINode>
   <HelpKINode Title="GroupLenLimit.Group property" Url="html/P_MFiles_VAF_Configuration_GroupLenLimit_Group.htm" />
@@ -4441,9 +4379,9 @@
   </HelpKINode>
   <HelpKINode Title="Guid field" Url="html/F_MFiles_VAF_Common_ApplicationDefinition_ApplicationDefinitionData_ElementNames_Guid.htm" />
   <HelpKINode Title="Guid property">
-    <HelpKINode Title="BatchProcessorJob.Guid Property " Url="html/P_MFiles_VAF_MultiserverMode_BatchProcessorJob_Guid.htm" />
     <HelpKINode Title="ApplicationDefinition.ApplicationDefinitionData.Guid Property " Url="html/P_MFiles_VAF_Common_ApplicationDefinition_ApplicationDefinitionData_Guid.htm" />
     <HelpKINode Title="ApplicationDefinition.Guid Property " Url="html/P_MFiles_VAF_Common_ApplicationDefinition_Guid.htm" />
+    <HelpKINode Title="BatchProcessorJob.Guid Property " Url="html/P_MFiles_VAF_MultiserverMode_BatchProcessorJob_Guid.htm" />
     <HelpKINode Title="EventHandlerExecutionOrderPreserver.AppEventHandlerPriorities.Guid Property " Url="html/P_MFiles_VAF_Core_EventHandlerExecutionOrderPreserver_AppEventHandlerPriorities_Guid.htm" />
   </HelpKINode>
   <HelpKINode Title="GUID property" Url="html/P_MFiles_VAF_Configuration_MFIdentifier_Guid.htm" />
@@ -4762,22 +4700,22 @@
     <HelpKINode Title="ValidationResultForValidation.DetailItem.Id Field" Url="html/F_MFiles_VAF_Configuration_ValidationResultForValidation_DetailItem_Id.htm" />
   </HelpKINode>
   <HelpKINode Title="ID property">
-    <HelpKINode Title="DashboardList.ID Property " Url="html/P_MFiles_VAF_Configuration_Domain_Dashboards_DashboardList_ID.htm" />
     <HelpKINode Title="ConfigurationDomain.ID Property " Url="html/P_MFiles_VAF_Configuration_Domain_ConfigurationDomain_ID.htm" />
     <HelpKINode Title="ConfigurationDomainCommand.ID Property " Url="html/P_MFiles_VAF_Configuration_Interfaces_Domain_ConfigurationDomainCommand_ID.htm" />
     <HelpKINode Title="CustomDomainCommand.ID Property " Url="html/P_MFiles_VAF_Configuration_AdminConfigurations_CustomDomainCommand_ID.htm" />
+    <HelpKINode Title="DashboardList.ID Property " Url="html/P_MFiles_VAF_Configuration_Domain_Dashboards_DashboardList_ID.htm" />
     <HelpKINode Title="DashboardListItem.ID Property " Url="html/P_MFiles_VAF_Configuration_Domain_Dashboards_DashboardListItem_ID.htm" />
-    <HelpKINode Title="DashboardPanel.ID Property " Url="html/P_MFiles_VAF_Configuration_Domain_Dashboards_DashboardPanel_ID.htm" />
-    <HelpKINode Title="IConfigurationDomainCommand.ID Property " Url="html/P_MFiles_VAF_Configuration_Interfaces_Domain_IConfigurationDomainCommand_ID.htm" />
     <HelpKINode Title="JsonLookupItemAdaptor.ID Property " Url="html/P_MFiles_VAF_Configuration_JsonAdaptor_JsonLookupItemAdaptor_ID.htm" />
     <HelpKINode Title="MFIdentifier.ID Property " Url="html/P_MFiles_VAF_Configuration_MFIdentifier_ID.htm" />
     <HelpKINode Title="ObjVerEx.ID Property " Url="html/P_MFiles_VAF_Common_ObjVerEx_ID.htm" />
+    <HelpKINode Title="DashboardPanel.ID Property " Url="html/P_MFiles_VAF_Configuration_Domain_Dashboards_DashboardPanel_ID.htm" />
+    <HelpKINode Title="IConfigurationDomainCommand.ID Property " Url="html/P_MFiles_VAF_Configuration_Interfaces_Domain_IConfigurationDomainCommand_ID.htm" />
   </HelpKINode>
   <HelpKINode Title="Id property">
     <HelpKINode Title="ApplicationTask.Id Property " Url="html/P_MFiles_VAF_Common_ApplicationTaskQueue_ApplicationTask_Id.htm" />
-    <HelpKINode Title="ITaskQueueProcessor.Id Property " Url="html/P_MFiles_VAF_AppTasks_ITaskQueueProcessor_Id.htm" />
     <HelpKINode Title="TaskManager.Id Property " Url="html/P_MFiles_VAF_AppTasks_TaskManager_Id.htm" />
     <HelpKINode Title="TaskQueueDef.Id Property " Url="html/P_MFiles_VAF_MultiserverMode_TaskQueueDef_Id.htm" />
+    <HelpKINode Title="ITaskQueueProcessor.Id Property " Url="html/P_MFiles_VAF_AppTasks_ITaskQueueProcessor_Id.htm" />
   </HelpKINode>
   <HelpKINode Title="IDashboardContent interface">
     <HelpKINode Title="IDashboardContent Interface" Url="html/T_MFiles_VAF_Configuration_Domain_Dashboards_IDashboardContent.htm" />
@@ -5067,14 +5005,12 @@
   <HelpKINode Title="IncompatibleContextIssue class">
     <HelpKINode Title="IncompatibleContextIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_IncompatibleContextIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_IncompatibleContextIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_IncompatibleContextIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_IncompatibleContextIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="IncompatibleContextIssue.IncompatibleContextIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_IncompatibleContextIssue__ctor.htm" />
   <HelpKINode Title="IncompatibleLevelsIssue class">
     <HelpKINode Title="IncompatibleLevelsIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_IncompatibleLevelsIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_IncompatibleLevelsIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_IncompatibleLevelsIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_IncompatibleLevelsIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="IncompatibleLevelsIssue.IncompatibleLevelsIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_IncompatibleLevelsIssue__ctor.htm" />
@@ -5257,21 +5193,18 @@
   <HelpKINode Title="InvalidCommandTypeIssue class">
     <HelpKINode Title="InvalidCommandTypeIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_InvalidCommandTypeIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_InvalidCommandTypeIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_InvalidCommandTypeIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_InvalidCommandTypeIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="InvalidCommandTypeIssue.InvalidCommandTypeIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_InvalidCommandTypeIssue__ctor.htm" />
   <HelpKINode Title="InvalidExpansionContextIssue class">
     <HelpKINode Title="InvalidExpansionContextIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_InvalidExpansionContextIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_InvalidExpansionContextIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_InvalidExpansionContextIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_InvalidExpansionContextIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="InvalidExpansionContextIssue.InvalidExpansionContextIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_InvalidExpansionContextIssue__ctor.htm" />
   <HelpKINode Title="InvalidLevelPositionIssue class">
     <HelpKINode Title="InvalidLevelPositionIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_InvalidLevelPositionIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_InvalidLevelPositionIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_InvalidLevelPositionIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_InvalidLevelPositionIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="InvalidLevelPositionIssue.InvalidLevelPositionIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_InvalidLevelPositionIssue__ctor.htm" />
@@ -5659,7 +5592,6 @@
     <HelpKINode Title="ExpansionContext(T).Item Property " Url="html/P_MFiles_VAF_Placeholders_ExpansionContext_1_Item.htm" />
     <HelpKINode Title="LookupJA.Item Property " Url="html/P_MFiles_VAF_Configuration_JsonAdaptor_LookupJA_Item.htm" />
     <HelpKINode Title="ReferenceTrees.Item Property " Url="html/P_MFiles_VAF_Common_ReferenceTrees_Item.htm" />
-    <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Item Property " Url="html/P_VAFObjectVersionAndPropertiesOfMultipleObjects_Item.htm" />
   </HelpKINode>
   <HelpKINode Title="ItemGUID property" Url="html/P_MFiles_VAF_Configuration_JsonAdaptor_LookupJA_ItemGUID.htm" />
   <HelpKINode Title="Items enumeration member" Url="html/T_MFiles_VAF_Configuration_JsonMapping_JsonListMappingMode.htm" />
@@ -5734,7 +5666,6 @@
   <HelpKINode Title="JsonAdminComment class">
     <HelpKINode Title="JsonAdminComment Class" Url="html/T_MFiles_VAF_Configuration_JsonMapping_JsonAdminComment.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_JsonMapping_JsonAdminComment__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_JsonMapping_JsonAdminComment.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_JsonMapping_JsonAdminComment.htm" />
   </HelpKINode>
   <HelpKINode Title="JsonAdminComment.Comment property" Url="html/P_MFiles_VAF_Configuration_JsonMapping_JsonAdminComment_Comment.htm" />
@@ -5753,7 +5684,6 @@
   <HelpKINode Title="JsonConfBitFlagLabelsAttribute class">
     <HelpKINode Title="JsonConfBitFlagLabelsAttribute Class" Url="html/T_MFiles_VAF_Configuration_JsonConfBitFlagLabelsAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_JsonConfBitFlagLabelsAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_JsonConfBitFlagLabelsAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_JsonConfBitFlagLabelsAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="JsonConfBitFlagLabelsAttribute.JsonConfBitFlagLabelsAttribute constructor" Url="html/M_MFiles_VAF_Configuration_JsonConfBitFlagLabelsAttribute__ctor.htm" />
@@ -5915,7 +5845,6 @@
   <HelpKINode Title="JsonMappingAttribute class">
     <HelpKINode Title="JsonMappingAttribute Class" Url="html/T_MFiles_VAF_Configuration_JsonMapping_JsonMappingAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_JsonMapping_JsonMappingAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_JsonMapping_JsonMappingAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_JsonMapping_JsonMappingAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="JsonMappingAttribute.Absolute property" Url="html/P_MFiles_VAF_Configuration_JsonMapping_JsonMappingAttribute_Absolute.htm" />
@@ -6028,7 +5957,6 @@
   <HelpKINode Title="LdapProviderConfiguration class">
     <HelpKINode Title="LdapProviderConfiguration Class" Url="html/T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_LdapProviderConfiguration.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_LdapProviderConfiguration__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_LdapProviderConfiguration.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_LdapProviderConfiguration.htm" />
   </HelpKINode>
   <HelpKINode Title="LdapProviderConfiguration.Assembly property" Url="html/P_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_LdapProviderConfiguration_Assembly.htm" />
@@ -6098,7 +6026,6 @@
     <HelpKINode Title="LevelInfo Class" Url="html/T_MFiles_VAF_Placeholders_LevelInfo.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_LevelInfo__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Placeholders_LevelInfo.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_LevelInfo.htm" />
   </HelpKINode>
   <HelpKINode Title="LevelInfo.Command field" Url="html/F_MFiles_VAF_Placeholders_LevelInfo_Command.htm" />
   <HelpKINode Title="LevelInfo.Handler field" Url="html/F_MFiles_VAF_Placeholders_LevelInfo_Handler.htm" />
@@ -6271,7 +6198,6 @@
   <HelpKINode Title="LoadConfiguration class">
     <HelpKINode Title="LoadConfiguration Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_LoadConfiguration.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_LoadConfiguration__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_LoadConfiguration.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_LoadConfiguration.htm" />
   </HelpKINode>
   <HelpKINode Title="LoadConfiguration enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -6434,7 +6360,6 @@
   <HelpKINode Title="MapObjectToArrayAttribute class">
     <HelpKINode Title="MapObjectToArrayAttribute Class" Url="html/T_MFiles_VAF_Configuration_JsonMapping_MapObjectToArrayAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_JsonMapping_MapObjectToArrayAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_JsonMapping_MapObjectToArrayAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_JsonMapping_MapObjectToArrayAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MapObjectToArrayAttribute.MapObjectToArrayAttribute constructor" Url="html/M_MFiles_VAF_Configuration_JsonMapping_MapObjectToArrayAttribute__ctor.htm" />
@@ -6510,7 +6435,6 @@
     <HelpKINode Title="MenuIcon Class" Url="html/T_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon.htm" />
   </HelpKINode>
   <HelpKINode Title="MenuIcon.Alert field" Url="html/F_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon_Alert.htm" />
   <HelpKINode Title="MenuIcon.ArrowRefresh1E field" Url="html/F_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon_ArrowRefresh1E.htm" />
@@ -6955,7 +6879,6 @@
   <HelpKINode Title="MetadataElements property" Url="html/P_MFiles_VAF_Configuration_ValidationResultForUpgrade_MetadataElements.htm" />
   <HelpKINode Title="MetadataItemParams structure">
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Configuration_ValidationResultForUpgrade_MetadataItemParams.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_ValidationResultForUpgrade_MetadataItemParams.htm" />
   </HelpKINode>
   <HelpKINode Title="MetadataStructureCache class">
     <HelpKINode Title="MetadataStructureCache Class" Url="html/T_MFiles_VAF_MetadataCache_MetadataStructureCache.htm" />
@@ -7057,8 +6980,8 @@
     <HelpKINode Title="MetadataStructureValidator.ReferenceEqualityComparer Class" Url="html/T_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer__ctor.htm" />
   </HelpKINode>
-  <HelpKINode Title="MetadataStructureValidator.ReferenceEqualityComparer.Equals method" Url="html/Overload_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer_Equals.htm" />
-  <HelpKINode Title="MetadataStructureValidator.ReferenceEqualityComparer.GetHashCode method" Url="html/Overload_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer_GetHashCode.htm" />
+  <HelpKINode Title="MetadataStructureValidator.ReferenceEqualityComparer.Equals method" Url="html/M_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer_Equals.htm" />
+  <HelpKINode Title="MetadataStructureValidator.ReferenceEqualityComparer.GetHashCode method" Url="html/M_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer_GetHashCode.htm" />
   <HelpKINode Title="MetadataStructureValidator.ReferenceEqualityComparer.ReferenceEqualityComparer constructor" Url="html/M_MFiles_VAF_Configuration_MetadataStructureValidator_ReferenceEqualityComparer__ctor.htm" />
   <HelpKINode Title="MetadataStructureValidator.TemporaryConfiguration class">
     <HelpKINode Title="MetadataStructureValidator.TemporaryConfiguration Class" Url="html/T_MFiles_VAF_Configuration_MetadataStructureValidator_TemporaryConfiguration.htm" />
@@ -7094,7 +7017,6 @@
     <HelpKINode Title="MethodSourceDefinition Class" Url="html/T_MFiles_VAF_Configuration_Interfaces_Domain_MethodSourceDefinition.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MFiles_VAF_Configuration_Interfaces_Domain_MethodSourceDefinition__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Configuration_Interfaces_Domain_MethodSourceDefinition.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Interfaces_Domain_MethodSourceDefinition.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Interfaces_Domain_MethodSourceDefinition.htm" />
   </HelpKINode>
   <HelpKINode Title="MethodSourceDefinition.MethodSourceDefinition constructor" Url="html/Overload_MFiles_VAF_Configuration_Interfaces_Domain_MethodSourceDefinition__ctor.htm" />
@@ -7115,7 +7037,6 @@
     <HelpKINode Title="MFClassAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFClassAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFClassAttribute__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Configuration_MFClassAttribute.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFClassAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFClassAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFClassAttribute.AssociatedProperties field" Url="html/F_MFiles_VAF_Configuration_MFClassAttribute_AssociatedProperties.htm" />
@@ -7125,7 +7046,6 @@
   <HelpKINode Title="MFClassGroupAttribute class">
     <HelpKINode Title="MFClassGroupAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFClassGroupAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFClassGroupAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFClassGroupAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFClassGroupAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFClassGroupAttribute.MFClassGroupAttribute constructor" Url="html/M_MFiles_VAF_Configuration_MFClassGroupAttribute__ctor.htm" />
@@ -7143,7 +7063,6 @@
   <HelpKINode Title="MFDeprecatedAttribute class">
     <HelpKINode Title="MFDeprecatedAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFDeprecatedAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MFiles_VAF_Configuration_MFDeprecatedAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFDeprecatedAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFDeprecatedAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFDeprecatedAttribute.IsError property" Url="html/P_MFiles_VAF_Configuration_MFDeprecatedAttribute_IsError.htm" />
@@ -8104,7 +8023,6 @@
   <HelpKINode Title="MFObjTypeAttribute class">
     <HelpKINode Title="MFObjTypeAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFObjTypeAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFObjTypeAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFObjTypeAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFObjTypeAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFObjTypeAttribute.MFObjTypeAttribute constructor" Url="html/M_MFiles_VAF_Configuration_MFObjTypeAttribute__ctor.htm" />
@@ -8184,7 +8102,6 @@
   <HelpKINode Title="MFSkipAttribute class">
     <HelpKINode Title="MFSkipAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFSkipAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFSkipAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFSkipAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFSkipAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFSkipAttribute.MFSkipAttribute constructor" Url="html/M_MFiles_VAF_Configuration_MFSkipAttribute__ctor.htm" />
@@ -8234,7 +8151,6 @@
   <HelpKINode Title="MFUserGroupAttribute class">
     <HelpKINode Title="MFUserGroupAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFUserGroupAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFUserGroupAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFUserGroupAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFUserGroupAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFUserGroupAttribute.MFUserGroupAttribute constructor" Url="html/M_MFiles_VAF_Configuration_MFUserGroupAttribute__ctor.htm" />
@@ -8296,7 +8212,6 @@
   <HelpKINode Title="MFValueListAttribute class">
     <HelpKINode Title="MFValueListAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFValueListAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFValueListAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFValueListAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFValueListAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFValueListAttribute.AllowObjTypes property" Url="html/P_MFiles_VAF_Configuration_MFValueListAttribute_AllowObjTypes.htm" />
@@ -8305,7 +8220,6 @@
   <HelpKINode Title="MFValueListItemAttribute class">
     <HelpKINode Title="MFValueListItemAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFValueListItemAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFValueListItemAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFValueListItemAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFValueListItemAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFValueListItemAttribute.MFValueListItemAttribute constructor" Url="html/M_MFiles_VAF_Configuration_MFValueListItemAttribute__ctor.htm" />
@@ -8313,14 +8227,12 @@
   <HelpKINode Title="MFViewAttribute class">
     <HelpKINode Title="MFViewAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFViewAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFViewAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFViewAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFViewAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFViewAttribute.MFViewAttribute constructor" Url="html/M_MFiles_VAF_Configuration_MFViewAttribute__ctor.htm" />
   <HelpKINode Title="MFWorkflowAttribute class">
     <HelpKINode Title="MFWorkflowAttribute Class" Url="html/T_MFiles_VAF_Configuration_MFWorkflowAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_MFWorkflowAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_MFWorkflowAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_MFWorkflowAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="MFWorkflowAttribute.MFWorkflowAttribute constructor" Url="html/M_MFiles_VAF_Configuration_MFWorkflowAttribute__ctor.htm" />
@@ -8405,8 +8317,6 @@
   <HelpKINode Title="ModuleValidationException class">
     <HelpKINode Title="ModuleValidationException Class" Url="html/T_MFiles_VAF_Common_ModuleValidationException.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_ModuleValidationException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_MFiles_VAF_Common_ModuleValidationException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_ModuleValidationException.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Common_ModuleValidationException.htm" />
   </HelpKINode>
   <HelpKINode Title="ModuleValidationException.ErrorModules property" Url="html/P_MFiles_VAF_Common_ModuleValidationException_ErrorModules.htm" />
@@ -8480,7 +8390,6 @@
   <HelpKINode Title="NamedValueNamespaceSource class">
     <HelpKINode Title="NamedValueNamespaceSource Class" Url="html/T_MFiles_VAF_Configuration_Domain_NamedValueNamespaceSource.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_NamedValueNamespaceSource__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_NamedValueNamespaceSource.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_NamedValueNamespaceSource.htm" />
   </HelpKINode>
   <HelpKINode Title="NamedValueNamespaceSource.NamedValueNamespaceSource constructor" Url="html/M_MFiles_VAF_Configuration_Domain_NamedValueNamespaceSource__ctor.htm" />
@@ -8557,9 +8466,6 @@
   <HelpKINode Title="NotFoundException class">
     <HelpKINode Title="NotFoundException Class" Url="html/T_MFiles_VAF_Common_NotFoundException.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_NotFoundException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_MFiles_VAF_Common_NotFoundException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_NotFoundException.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Common_NotFoundException.htm" />
   </HelpKINode>
   <HelpKINode Title="NotFoundException.NotFoundException constructor" Url="html/M_MFiles_VAF_Common_NotFoundException__ctor.htm" />
   <HelpKINode Title="Notice field" Url="html/F_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon_Notice.htm" />
@@ -8579,7 +8485,6 @@
   <HelpKINode Title="OAuthProviderConfiguration class">
     <HelpKINode Title="OAuthProviderConfiguration Class" Url="html/T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_OAuthProviderConfiguration.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_OAuthProviderConfiguration__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_OAuthProviderConfiguration.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_OAuthProviderConfiguration.htm" />
   </HelpKINode>
   <HelpKINode Title="OAuthProviderConfiguration.Assembly property" Url="html/P_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_OAuthProviderConfiguration_Assembly.htm" />
@@ -8694,11 +8599,11 @@
   </HelpKINode>
   <HelpKINode Title="ObjectVersionsExtensionMethods.ToLookups method" Url="html/M_MFiles_VAF_Common_ObjectVersionsExtensionMethods_ToLookups.htm" />
   <HelpKINode Title="ObjectVersionsExtensionMethods.ToObjVerExs method" Url="html/M_MFiles_VAF_Common_ObjectVersionsExtensionMethods_ToObjVerExs.htm" />
-  <HelpKINode Title="OBJID enumeration member" Url="html/T_MFiles_VAF_Common_ReferenceTree_SimplePlaceholder.htm" />
   <HelpKINode Title="ObjID enumeration member">
     <HelpKINode Title="MFIdentifier.SetAsType Enumeration" Url="html/T_MFiles_VAF_Configuration_MFIdentifier_SetAsType.htm" />
     <HelpKINode Title="MFStructureReferenceAttribute.MFStructureReferenceType Enumeration" Url="html/T_MFiles_VAF_Configuration_MFStructureReferenceAttribute_MFStructureReferenceType.htm" />
   </HelpKINode>
+  <HelpKINode Title="OBJID enumeration member" Url="html/T_MFiles_VAF_Common_ReferenceTree_SimplePlaceholder.htm" />
   <HelpKINode Title="ObjID property">
     <HelpKINode Title="JsonLookupItemAdaptor.ObjID Property " Url="html/P_MFiles_VAF_Configuration_JsonAdaptor_JsonLookupItemAdaptor_ObjID.htm" />
     <HelpKINode Title="MFIdentifier.ObjID Property " Url="html/P_MFiles_VAF_Configuration_MFIdentifier_ObjID.htm" />
@@ -8709,8 +8614,8 @@
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_ObjIDEqualityComparer__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_ObjIDEqualityComparer.htm" />
   </HelpKINode>
-  <HelpKINode Title="ObjIDEqualityComparer.Equals method" Url="html/Overload_MFiles_VAF_Common_ObjIDEqualityComparer_Equals.htm" />
-  <HelpKINode Title="ObjIDEqualityComparer.GetHashCode method" Url="html/Overload_MFiles_VAF_Common_ObjIDEqualityComparer_GetHashCode.htm" />
+  <HelpKINode Title="ObjIDEqualityComparer.Equals method" Url="html/M_MFiles_VAF_Common_ObjIDEqualityComparer_Equals.htm" />
+  <HelpKINode Title="ObjIDEqualityComparer.GetHashCode method" Url="html/M_MFiles_VAF_Common_ObjIDEqualityComparer_GetHashCode.htm" />
   <HelpKINode Title="ObjIDEqualityComparer.ObjIDEqualityComparer constructor" Url="html/M_MFiles_VAF_Common_ObjIDEqualityComparer__ctor.htm" />
   <HelpKINode Title="ObjIDExtensionMethods class">
     <HelpKINode Title="ObjIDExtensionMethods Class" Url="html/T_MFiles_VAF_Common_ObjIDExtensionMethods.htm" />
@@ -8819,8 +8724,8 @@
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_ObjVerEqualityComparer__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_ObjVerEqualityComparer.htm" />
   </HelpKINode>
-  <HelpKINode Title="ObjVerEqualityComparer.Equals method" Url="html/Overload_MFiles_VAF_Common_ObjVerEqualityComparer_Equals.htm" />
-  <HelpKINode Title="ObjVerEqualityComparer.GetHashCode method" Url="html/Overload_MFiles_VAF_Common_ObjVerEqualityComparer_GetHashCode.htm" />
+  <HelpKINode Title="ObjVerEqualityComparer.Equals method" Url="html/M_MFiles_VAF_Common_ObjVerEqualityComparer_Equals.htm" />
+  <HelpKINode Title="ObjVerEqualityComparer.GetHashCode method" Url="html/M_MFiles_VAF_Common_ObjVerEqualityComparer_GetHashCode.htm" />
   <HelpKINode Title="ObjVerEqualityComparer.ObjVerEqualityComparer constructor" Url="html/M_MFiles_VAF_Common_ObjVerEqualityComparer__ctor.htm" />
   <HelpKINode Title="ObjVerEx class">
     <HelpKINode Title="ObjVerEx Class" Url="html/T_MFiles_VAF_Common_ObjVerEx.htm" />
@@ -8969,8 +8874,8 @@
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_ObjVerIDEqualityComparer__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_ObjVerIDEqualityComparer.htm" />
   </HelpKINode>
-  <HelpKINode Title="ObjVerIDEqualityComparer.Equals method" Url="html/Overload_MFiles_VAF_Common_ObjVerIDEqualityComparer_Equals.htm" />
-  <HelpKINode Title="ObjVerIDEqualityComparer.GetHashCode method" Url="html/Overload_MFiles_VAF_Common_ObjVerIDEqualityComparer_GetHashCode.htm" />
+  <HelpKINode Title="ObjVerIDEqualityComparer.Equals method" Url="html/M_MFiles_VAF_Common_ObjVerIDEqualityComparer_Equals.htm" />
+  <HelpKINode Title="ObjVerIDEqualityComparer.GetHashCode method" Url="html/M_MFiles_VAF_Common_ObjVerIDEqualityComparer_GetHashCode.htm" />
   <HelpKINode Title="ObjVerIDEqualityComparer.ObjVerIDEqualityComparer constructor" Url="html/M_MFiles_VAF_Common_ObjVerIDEqualityComparer__ctor.htm" />
   <HelpKINode Title="ObjVerRegEx field" Url="html/F_MFiles_VAF_Configuration_MFIdentifierFormatConstants_ObjVerRegEx.htm" />
   <HelpKINode Title="ObjVerString method" Url="html/M_MFiles_VAF_Common_MFUtils_ObjVerString.htm" />
@@ -9221,7 +9126,6 @@
   <HelpKINode Title="PlaceholderExpansionIssue class">
     <HelpKINode Title="PlaceholderExpansionIssue Class" Url="html/T_MFiles_VAF_Placeholders_PlaceholderExpansionIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_PlaceholderExpansionIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_PlaceholderExpansionIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_PlaceholderExpansionIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="PlaceholderExpansionIssue.Message property" Url="html/P_MFiles_VAF_Placeholders_PlaceholderExpansionIssue_Message.htm" />
@@ -9285,7 +9189,6 @@
   <HelpKINode Title="PlaceholderTemplateIssue class">
     <HelpKINode Title="PlaceholderTemplateIssue Class" Url="html/T_MFiles_VAF_Placeholders_PlaceholderTemplateIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_PlaceholderTemplateIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_PlaceholderTemplateIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_PlaceholderTemplateIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="PlaceholderTemplateIssue.Message property" Url="html/P_MFiles_VAF_Placeholders_PlaceholderTemplateIssue_Message.htm" />
@@ -9324,7 +9227,6 @@
   <HelpKINode Title="PlaceholderTemplateSettings class">
     <HelpKINode Title="PlaceholderTemplateSettings Class" Url="html/T_MFiles_VAF_Placeholders_PlaceholderTemplateSettings.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_PlaceholderTemplateSettings__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_PlaceholderTemplateSettings.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_PlaceholderTemplateSettings.htm" />
   </HelpKINode>
   <HelpKINode Title="PlaceholderTemplateSettings.CommandProviders property" Url="html/P_MFiles_VAF_Placeholders_PlaceholderTemplateSettings_CommandProviders.htm" />
@@ -9696,7 +9598,6 @@
   <HelpKINode Title="PropertyValueChange class">
     <HelpKINode Title="PropertyValueChange Class" Url="html/T_MFiles_VAF_Common_PropertyValueChange.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_PropertyValueChange__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_PropertyValueChange.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Common_PropertyValueChange.htm" />
   </HelpKINode>
   <HelpKINode Title="PropertyValueChange.ChangeType property" Url="html/P_MFiles_VAF_Common_PropertyValueChange_ChangeType.htm" />
@@ -9739,7 +9640,6 @@
   <HelpKINode Title="PropertyValueSetter class">
     <HelpKINode Title="PropertyValueSetter Class" Url="html/T_MFiles_VAF_Configuration_PropertyValueSetter.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_PropertyValueSetter__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_PropertyValueSetter.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_PropertyValueSetter.htm" />
   </HelpKINode>
   <HelpKINode Title="PropertyValueSetter.Property property" Url="html/P_MFiles_VAF_Configuration_PropertyValueSetter_Property.htm" />
@@ -9781,7 +9681,6 @@
   <HelpKINode Title="ProviderTerm class">
     <HelpKINode Title="ProviderTerm Class" Url="html/T_MFiles_VAF_Configuration_IntelligenceServices_ProviderTerm.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_IntelligenceServices_ProviderTerm__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_IntelligenceServices_ProviderTerm.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_IntelligenceServices_ProviderTerm.htm" />
   </HelpKINode>
   <HelpKINode Title="ProviderTerm.InstanceTerms property" Url="html/P_MFiles_VAF_Configuration_IntelligenceServices_ProviderTerm_InstanceTerms.htm" />
@@ -9935,7 +9834,6 @@
   <HelpKINode Title="RefreshDashboard class">
     <HelpKINode Title="RefreshDashboard Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_RefreshDashboard.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_RefreshDashboard__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_RefreshDashboard.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_RefreshDashboard.htm" />
   </HelpKINode>
   <HelpKINode Title="RefreshDashboard enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -9950,7 +9848,6 @@
   <HelpKINode Title="RefreshMetadataCache class">
     <HelpKINode Title="RefreshMetadataCache Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_RefreshMetadataCache.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_RefreshMetadataCache__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_RefreshMetadataCache.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_RefreshMetadataCache.htm" />
   </HelpKINode>
   <HelpKINode Title="RefreshMetadataCache enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -10103,7 +10000,6 @@
   <HelpKINode Title="ReloadDomain class">
     <HelpKINode Title="ReloadDomain Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_ReloadDomain.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_ReloadDomain__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_ReloadDomain.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_ReloadDomain.htm" />
   </HelpKINode>
   <HelpKINode Title="ReloadDomain enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -10119,14 +10015,12 @@
     <HelpKINode Title="MFPropertyValuesBuilder.Remove Method " Url="html/Overload_MFiles_VAF_Common_MFPropertyValuesBuilder_Remove.htm" />
     <HelpKINode Title="PendingTasks.Remove Method " Url="html/M_MFiles_VAF_MultiserverMode_PendingTasks_Remove.htm" />
     <HelpKINode Title="StringsExtensions.Remove Method " Url="html/M_MFiles_VAF_Common_StringsExtensions_Remove.htm" />
-    <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Remove Method " Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects_Remove.htm" />
   </HelpKINode>
   <HelpKINode Title="RemoveAt method" Url="html/M_MFiles_VAF_Placeholders_ExpansionContext_1_RemoveAt.htm" />
   <HelpKINode Title="Removed enumeration member" Url="html/T_MFiles_VAF_Common_PropertyValueChangeType.htm" />
   <HelpKINode Title="RemoveDomain class">
     <HelpKINode Title="RemoveDomain Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_RemoveDomain.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_RemoveDomain__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_RemoveDomain.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_RemoveDomain.htm" />
   </HelpKINode>
   <HelpKINode Title="RemoveDomain enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -10309,7 +10203,6 @@
   <HelpKINode Title="RestoredComException class">
     <HelpKINode Title="RestoredComException Class" Url="html/T_MFiles_VAF_Core_RestoredComException.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MFiles_VAF_Core_RestoredComException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_MFiles_VAF_Core_RestoredComException.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Core_RestoredComException.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Core_RestoredComException.htm" />
   </HelpKINode>
@@ -10342,7 +10235,6 @@
   <HelpKINode Title="RevalidateDomain class">
     <HelpKINode Title="RevalidateDomain Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_RevalidateDomain.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_RevalidateDomain__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_RevalidateDomain.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_RevalidateDomain.htm" />
   </HelpKINode>
   <HelpKINode Title="RevalidateDomain enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -10423,7 +10315,6 @@
   <HelpKINode Title="SamlProviderConfiguration class">
     <HelpKINode Title="SamlProviderConfiguration Class" Url="html/T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_SamlProviderConfiguration.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_SamlProviderConfiguration__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_SamlProviderConfiguration.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_SamlProviderConfiguration.htm" />
   </HelpKINode>
   <HelpKINode Title="SamlProviderConfiguration.Assembly property" Url="html/P_MFiles_VAF_Configuration_Domain_AuthenticationProviderConfiguration_SamlProviderConfiguration_Assembly.htm" />
@@ -10513,7 +10404,6 @@
   <HelpKINode Title="SchemaOrSource class">
     <HelpKINode Title="SchemaOrSource Class" Url="html/T_MFiles_VAF_Configuration_Domain_SchemaOrSource.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_SchemaOrSource__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_SchemaOrSource.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_SchemaOrSource.htm" />
     <HelpKINode Title="type conversions" Url="html/Operators_T_MFiles_VAF_Configuration_Domain_SchemaOrSource.htm" />
   </HelpKINode>
@@ -10525,7 +10415,6 @@
     <HelpKINode Title="ScriptAttributeBase Class" Url="html/T_MFiles_VAF_Common_ScriptAttributeBase.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_ScriptAttributeBase__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Common_ScriptAttributeBase.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_ScriptAttributeBase.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Common_ScriptAttributeBase.htm" />
   </HelpKINode>
   <HelpKINode Title="ScriptAttributeBase.Class property" Url="html/P_MFiles_VAF_Common_ScriptAttributeBase_Class.htm" />
@@ -10537,9 +10426,6 @@
   <HelpKINode Title="ScriptCancellationException class">
     <HelpKINode Title="ScriptCancellationException Class" Url="html/T_MFiles_VAF_ScriptCancellationException.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_ScriptCancellationException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_MFiles_VAF_ScriptCancellationException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_ScriptCancellationException.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_ScriptCancellationException.htm" />
   </HelpKINode>
   <HelpKINode Title="ScriptCancellationException.ScriptCancellationException constructor" Url="html/M_MFiles_VAF_ScriptCancellationException__ctor.htm" />
   <HelpKINode Title="ScriptCancelled property" Url="html/P_MFiles_VAF_ScriptResult_ScriptCancelled.htm" />
@@ -10589,7 +10475,6 @@
   <HelpKINode Title="ScriptResult class">
     <HelpKINode Title="ScriptResult Class" Url="html/T_MFiles_VAF_ScriptResult.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_ScriptResult__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_ScriptResult.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_ScriptResult.htm" />
   </HelpKINode>
   <HelpKINode Title="ScriptResult.AllowAutomaticStateTransition property" Url="html/P_MFiles_VAF_ScriptResult_AllowAutomaticStateTransition.htm" />
@@ -10719,7 +10604,6 @@
   <HelpKINode Title="SecuritySettings&lt;TConfig&gt;.StripPasswords method" Url="html/Overload_MFiles_VAF_Configuration_SecuritySettings_1_StripPasswords.htm" />
   <HelpKINode Title="SECURITY_ATTRIBUTES structure">
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Common_RegistryHelper_SECURITY_ATTRIBUTES.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_RegistryHelper_SECURITY_ATTRIBUTES.htm" />
   </HelpKINode>
   <HelpKINode Title="SeekEnd field" Url="html/F_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon_SeekEnd.htm" />
   <HelpKINode Title="SeekFirst field" Url="html/F_MFiles_VAF_Configuration_AdminConfigurations_MenuIcon_SeekFirst.htm" />
@@ -10909,7 +10793,6 @@
   <HelpKINode Title="ShowMessage class">
     <HelpKINode Title="ShowMessage Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_ShowMessage.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_ShowMessage__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_ShowMessage.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_ShowMessage.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowMessage enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -10920,7 +10803,6 @@
   <HelpKINode Title="ShowModalDashboard class">
     <HelpKINode Title="ShowModalDashboard Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_ShowModalDashboard.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_ShowModalDashboard__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_ShowModalDashboard.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_ShowModalDashboard.htm" />
   </HelpKINode>
   <HelpKINode Title="ShowModalDashboard enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -10971,13 +10853,11 @@
     <HelpKINode Title="UpdateDomain.SortPriority Property " Url="html/P_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDomain_SortPriority.htm" />
   </HelpKINode>
   <HelpKINode Title="SortWeightedHandler class">
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Core_EventHandlerExecutionOrderPreserver_SortWeightedHandler.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Core_EventHandlerExecutionOrderPreserver_SortWeightedHandler.htm" />
   </HelpKINode>
   <HelpKINode Title="Source class">
     <HelpKINode Title="Source Class" Url="html/T_MFiles_VAF_Configuration_Interfaces_Domain_Source.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Interfaces_Domain_Source__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Interfaces_Domain_Source.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Interfaces_Domain_Source.htm" />
   </HelpKINode>
   <HelpKINode Title="source field" Url="html/F_MFiles_VAF_Configuration_Interfaces_Domain_SourceDefinition_source.htm" />
@@ -10999,7 +10879,6 @@
     <HelpKINode Title="SourceDefinition Class" Url="html/T_MFiles_VAF_Configuration_Interfaces_Domain_SourceDefinition.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MFiles_VAF_Configuration_Interfaces_Domain_SourceDefinition__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Configuration_Interfaces_Domain_SourceDefinition.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Interfaces_Domain_SourceDefinition.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Interfaces_Domain_SourceDefinition.htm" />
   </HelpKINode>
   <HelpKINode Title="SourceDefinition to ConfigurationDomainOrSource conversion" Url="html/M_MFiles_VAF_Configuration_Domain_ConfigurationDomainOrSource_op_Implicit_2.htm" />
@@ -11396,7 +11275,6 @@
   <HelpKINode Title="SubTermMap class">
     <HelpKINode Title="SubTermMap Class" Url="html/T_MFiles_VAF_Configuration_IntelligenceServices_SubTermMap.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_IntelligenceServices_SubTermMap__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_IntelligenceServices_SubTermMap.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_IntelligenceServices_SubTermMap.htm" />
   </HelpKINode>
   <HelpKINode Title="SubTermMap.MFValue property" Url="html/P_MFiles_VAF_Configuration_IntelligenceServices_SubTermMap_MFValue.htm" />
@@ -11414,7 +11292,6 @@
   <HelpKINode Title="Summary field" Url="html/F_MFiles_VAF_Configuration_ValidationResultForValidation_Results_Summary.htm" />
   <HelpKINode Title="SummaryModule class">
     <HelpKINode Title="fields" Url="html/Fields_T_MFiles_VAF_Configuration_ValidationResultForValidation_SummaryModule.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_ValidationResultForValidation_SummaryModule.htm" />
   </HelpKINode>
   <HelpKINode Title="supportedCultures field" Url="html/F_MFiles_VAF_Configuration_TranslatableContent_supportedCultures.htm" />
   <HelpKINode Title="SupportedTypes property">
@@ -11448,10 +11325,6 @@
     <HelpKINode Title="VaultGuidPlaceholder.SupportedTypes Property " Url="html/P_MFiles_VAF_Placeholders_Commands_VaultGuidPlaceholder_SupportedTypes.htm" />
     <HelpKINode Title="VaultNamePlaceholder.SupportedTypes Property " Url="html/P_MFiles_VAF_Placeholders_Commands_VaultNamePlaceholder_SupportedTypes.htm" />
   </HelpKINode>
-  <HelpKINode Title="System namespace" Url="html/N_System.htm" />
-  <HelpKINode Title="System.FormattableString class" Url="html/T_System_FormattableString.htm" />
-  <HelpKINode Title="System.Runtime.CompilerServices namespace" Url="html/N_System_Runtime_CompilerServices.htm" />
-  <HelpKINode Title="System.Runtime.CompilerServices.FormattableStringFactory class" Url="html/T_System_Runtime_CompilerServices_FormattableStringFactory.htm" />
   <HelpKINode Title="SystemAdmin enumeration member" Url="html/T_MFiles_VAF_Configuration_SecurityAttribute_UserLevel.htm" />
   <HelpKINode Title="SystemNative enumeration member" Url="html/T_MFiles_VAF_Common_RegistryHelper_RegistryAccessFlags.htm" />
   <HelpKINode Title="SysUtils class">
@@ -11670,7 +11543,6 @@
   <HelpKINode Title="TaskManagerEventArgs class">
     <HelpKINode Title="TaskManagerEventArgs Class" Url="html/T_MFiles_VAF_AppTasks_TaskManagerEventArgs.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_AppTasks_TaskManagerEventArgs__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_AppTasks_TaskManagerEventArgs.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_AppTasks_TaskManagerEventArgs.htm" />
   </HelpKINode>
   <HelpKINode Title="TaskManagerEventArgs.Broadcasts property" Url="html/P_MFiles_VAF_AppTasks_TaskManagerEventArgs_Broadcasts.htm" />
@@ -11691,7 +11563,6 @@
   <HelpKINode Title="TaskProcessingJobEventArgs class">
     <HelpKINode Title="TaskProcessingJobEventArgs Class" Url="html/T_MFiles_VAF_AppTasks_TaskProcessingJobEventArgs.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_AppTasks_TaskProcessingJobEventArgs__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_AppTasks_TaskProcessingJobEventArgs.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_AppTasks_TaskProcessingJobEventArgs.htm" />
   </HelpKINode>
   <HelpKINode Title="TaskProcessingJobEventArgs.Exception property" Url="html/P_MFiles_VAF_AppTasks_TaskProcessingJobEventArgs_Exception.htm" />
@@ -11891,7 +11762,6 @@
   <HelpKINode Title="TaskProcessorJobArgs class">
     <HelpKINode Title="TaskProcessorJobArgs Class" Url="html/T_MFiles_VAF_MultiserverMode_TaskProcessorJobArgs.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_TaskProcessorJobArgs__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_TaskProcessorJobArgs.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_TaskProcessorJobArgs.htm" />
   </HelpKINode>
   <HelpKINode Title="TaskProcessorJobArgs.Operation property" Url="html/P_MFiles_VAF_MultiserverMode_TaskProcessorJobArgs_Operation.htm" />
@@ -11959,7 +11829,6 @@
   <HelpKINode Title="TaskQueueDef class">
     <HelpKINode Title="TaskQueueDef Class" Url="html/T_MFiles_VAF_MultiserverMode_TaskQueueDef.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_MultiserverMode_TaskQueueDef__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_MultiserverMode_TaskQueueDef.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_MultiserverMode_TaskQueueDef.htm" />
   </HelpKINode>
   <HelpKINode Title="TaskQueueDef.Id property" Url="html/P_MFiles_VAF_MultiserverMode_TaskQueueDef_Id.htm" />
@@ -12116,7 +11985,6 @@
   <HelpKINode Title="TermMap class">
     <HelpKINode Title="TermMap Class" Url="html/T_MFiles_VAF_Configuration_IntelligenceServices_TermMap.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_IntelligenceServices_TermMap__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_IntelligenceServices_TermMap.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_IntelligenceServices_TermMap.htm" />
   </HelpKINode>
   <HelpKINode Title="TermMap.InstanceTerms property" Url="html/P_MFiles_VAF_Configuration_IntelligenceServices_TermMap_InstanceTerms.htm" />
@@ -12231,11 +12099,11 @@
   <HelpKINode Title="TimeContext.SafeCast&lt;T2&gt; method" Url="html/M_MFiles_VAF_Placeholders_TimeContext_SafeCast__1.htm" />
   <HelpKINode Title="TimeContext.TimeContext constructor" Url="html/M_MFiles_VAF_Placeholders_TimeContext__ctor.htm" />
   <HelpKINode Title="TimeContext.UniqueValues method" Url="html/M_MFiles_VAF_Placeholders_TimeContext_UniqueValues.htm" />
-  <HelpKINode Title="TIMESTAMP enumeration member" Url="html/T_MFiles_VAF_Common_ReferenceTree_SimplePlaceholder.htm" />
   <HelpKINode Title="Timestamp enumeration member">
     <HelpKINode Title="ExpansionContextType Enumeration" Url="html/T_MFiles_VAF_Placeholders_ExpansionContextType.htm" />
     <HelpKINode Title="JsonValueAdaptor.ValueProperty Enumeration" Url="html/T_MFiles_VAF_Configuration_JsonAdaptor_JsonValueAdaptor_ValueProperty.htm" />
   </HelpKINode>
+  <HelpKINode Title="TIMESTAMP enumeration member" Url="html/T_MFiles_VAF_Common_ReferenceTree_SimplePlaceholder.htm" />
   <HelpKINode Title="Timestamp property" Url="html/P_MFiles_VAF_Configuration_JsonAdaptor_JsonValueAdaptor_Timestamp.htm" />
   <HelpKINode Title="TimestampContext class">
     <HelpKINode Title="TimestampContext Class" Url="html/T_MFiles_VAF_Placeholders_TimestampContext.htm" />
@@ -12343,7 +12211,6 @@
   <HelpKINode Title="ToParagraphs method" Url="html/M_MFiles_VAF_Configuration_Domain_Dashboards_DashboardHelper_ToParagraphs.htm" />
   <HelpKINode Title="ToState property" Url="html/P_MFiles_VAF_Configuration_MFStateTransitionAttribute_ToState.htm" />
   <HelpKINode Title="ToString method">
-    <HelpKINode Title="FormattableString.ToString Method " Url="html/Overload_System_FormattableString_ToString.htm" />
     <HelpKINode Title="HtmlString.ToString Method " Url="html/M_MFiles_VAF_Configuration_Domain_Dashboards_HtmlString_ToString.htm" />
     <HelpKINode Title="IApplicationLicense.ToString Method " Url="html/M_MFiles_VAF_IApplicationLicense_ToString.htm" />
     <HelpKINode Title="IApplicationLicenseContent.ToString Method " Url="html/M_MFiles_VAF_Configuration_IApplicationLicenseContent_ToString.htm" />
@@ -12526,7 +12393,6 @@
   <HelpKINode Title="TranslatableValue class">
     <HelpKINode Title="TranslatableValue Class" Url="html/T_MFiles_VAF_Configuration_TranslatableValue.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MFiles_VAF_Configuration_TranslatableValue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_TranslatableValue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_TranslatableValue.htm" />
   </HelpKINode>
   <HelpKINode Title="TranslatableValue property" Url="html/P_MFiles_VAF_Configuration_TypedValueSetter_TranslatableValue.htm" />
@@ -12644,8 +12510,8 @@
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_TypedValueEqualityComparer__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_TypedValueEqualityComparer.htm" />
   </HelpKINode>
-  <HelpKINode Title="TypedValueEqualityComparer.Equals method" Url="html/Overload_MFiles_VAF_Common_TypedValueEqualityComparer_Equals.htm" />
-  <HelpKINode Title="TypedValueEqualityComparer.GetHashCode method" Url="html/Overload_MFiles_VAF_Common_TypedValueEqualityComparer_GetHashCode.htm" />
+  <HelpKINode Title="TypedValueEqualityComparer.Equals method" Url="html/M_MFiles_VAF_Common_TypedValueEqualityComparer_Equals.htm" />
+  <HelpKINode Title="TypedValueEqualityComparer.GetHashCode method" Url="html/M_MFiles_VAF_Common_TypedValueEqualityComparer_GetHashCode.htm" />
   <HelpKINode Title="TypedValueEqualityComparer.TypedValueEqualityComparer constructor" Url="html/M_MFiles_VAF_Common_TypedValueEqualityComparer__ctor.htm" />
   <HelpKINode Title="TypedValueExtensionMethods class">
     <HelpKINode Title="TypedValueExtensionMethods Class" Url="html/T_MFiles_VAF_Common_TypedValueExtensionMethods.htm" />
@@ -12671,7 +12537,6 @@
   <HelpKINode Title="TypedValueSetter class">
     <HelpKINode Title="TypedValueSetter Class" Url="html/T_MFiles_VAF_Configuration_TypedValueSetter.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_TypedValueSetter__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_TypedValueSetter.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_TypedValueSetter.htm" />
     <HelpKINode Title="type conversions" Url="html/Operators_T_MFiles_VAF_Configuration_TypedValueSetter.htm" />
   </HelpKINode>
@@ -12718,12 +12583,12 @@
     <HelpKINode Title="VaultApplicationBase.Uninitialize Method " Url="html/M_MFiles_VAF_VaultApplicationBase_Uninitialize.htm" />
   </HelpKINode>
   <HelpKINode Title="UninitializeApplication method" Url="html/M_MFiles_VAF_VaultApplicationBase_UninitializeApplication.htm" />
+  <HelpKINode Title="Uninitialized enumeration member" Url="html/T_MFiles_VAF_ApplicationRunningStatus.htm" />
   <HelpKINode Title="UNINITIALIZED enumeration member">
-    <HelpKINode Title="ReferenceTree.SimplePlaceholder Enumeration" Url="html/T_MFiles_VAF_Common_ReferenceTree_SimplePlaceholder.htm" />
     <HelpKINode Title="ReferenceTree.ComplexReference Enumeration" Url="html/T_MFiles_VAF_Common_ReferenceTree_ComplexReference.htm" />
     <HelpKINode Title="ReferenceTree.PropertyReference Enumeration" Url="html/T_MFiles_VAF_Common_ReferenceTree_PropertyReference.htm" />
+    <HelpKINode Title="ReferenceTree.SimplePlaceholder Enumeration" Url="html/T_MFiles_VAF_Common_ReferenceTree_SimplePlaceholder.htm" />
   </HelpKINode>
-  <HelpKINode Title="Uninitialized enumeration member" Url="html/T_MFiles_VAF_ApplicationRunningStatus.htm" />
   <HelpKINode Title="UninitializeImpl method">
     <HelpKINode Title="ModularVaultApplicationBase.UninitializeImpl Method " Url="html/M_MFiles_VAF_ModularVaultApplicationBase_UninitializeImpl.htm" />
     <HelpKINode Title="VaultApplicationBase.UninitializeImpl Method " Url="html/M_MFiles_VAF_VaultApplicationBase_UninitializeImpl.htm" />
@@ -12765,7 +12630,6 @@
   <HelpKINode Title="UnknownCommandIssue class">
     <HelpKINode Title="UnknownCommandIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_UnknownCommandIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnknownCommandIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_UnknownCommandIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_UnknownCommandIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="UnknownCommandIssue.UnknownCommandIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnknownCommandIssue__ctor.htm" />
@@ -12796,7 +12660,6 @@
   <HelpKINode Title="UnresolvedClassIssue class">
     <HelpKINode Title="UnresolvedClassIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_UnresolvedClassIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnresolvedClassIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_UnresolvedClassIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_UnresolvedClassIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="UnresolvedClassIssue.UnresolvedClassIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnresolvedClassIssue__ctor.htm" />
@@ -12804,21 +12667,18 @@
   <HelpKINode Title="UnresolvedObjTypeIssue class">
     <HelpKINode Title="UnresolvedObjTypeIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_UnresolvedObjTypeIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnresolvedObjTypeIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_UnresolvedObjTypeIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_UnresolvedObjTypeIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="UnresolvedObjTypeIssue.UnresolvedObjTypeIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnresolvedObjTypeIssue__ctor.htm" />
   <HelpKINode Title="UnresolvedPropertyDefIssue class">
     <HelpKINode Title="UnresolvedPropertyDefIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_UnresolvedPropertyDefIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnresolvedPropertyDefIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_UnresolvedPropertyDefIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_UnresolvedPropertyDefIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="UnresolvedPropertyDefIssue.UnresolvedPropertyDefIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnresolvedPropertyDefIssue__ctor.htm" />
   <HelpKINode Title="UnresolvedStateIssue class">
     <HelpKINode Title="UnresolvedStateIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_UnresolvedStateIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnresolvedStateIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_UnresolvedStateIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_UnresolvedStateIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="UnresolvedStateIssue.UnresolvedStateIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_UnresolvedStateIssue__ctor.htm" />
@@ -12833,7 +12693,6 @@
   <HelpKINode Title="UpdateCommands class">
     <HelpKINode Title="UpdateCommands Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateCommands.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateCommands__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateCommands.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateCommands.htm" />
   </HelpKINode>
   <HelpKINode Title="UpdateCommands enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -12848,7 +12707,6 @@
   <HelpKINode Title="UpdateDashboardContent class">
     <HelpKINode Title="UpdateDashboardContent Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDashboardContent.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDashboardContent__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDashboardContent.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDashboardContent.htm" />
   </HelpKINode>
   <HelpKINode Title="UpdateDashboardContent enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -12860,7 +12718,6 @@
   <HelpKINode Title="UpdateDomain class">
     <HelpKINode Title="UpdateDomain Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDomain.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDomain__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDomain.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateDomain.htm" />
   </HelpKINode>
   <HelpKINode Title="UpdateDomain enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -12894,7 +12751,6 @@
   <HelpKINode Title="UpdateStatusSummary class">
     <HelpKINode Title="UpdateStatusSummary Class" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateStatusSummary.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateStatusSummary__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateStatusSummary.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ClientDirective_UpdateStatusSummary.htm" />
   </HelpKINode>
   <HelpKINode Title="UpdateStatusSummary enumeration member" Url="html/T_MFiles_VAF_Configuration_Domain_ClientDirectiveType.htm" />
@@ -12921,7 +12777,6 @@
   <HelpKINode Title="UpgradeDetail class">
     <HelpKINode Title="UpgradeDetail Class" Url="html/T_MFiles_VAF_Module_ConfigurationUpgrader_UpgradeDetail.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Module_ConfigurationUpgrader_UpgradeDetail__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Module_ConfigurationUpgrader_UpgradeDetail.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Module_ConfigurationUpgrader_UpgradeDetail.htm" />
   </HelpKINode>
   <HelpKINode Title="UpgradeDetail.JSPath property" Url="html/P_MFiles_VAF_Module_ConfigurationUpgrader_UpgradeDetail_JSPath.htm" />
@@ -12983,8 +12838,8 @@
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_UserAccountEqualityComparer__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_UserAccountEqualityComparer.htm" />
   </HelpKINode>
-  <HelpKINode Title="UserAccountEqualityComparer.Equals method" Url="html/Overload_MFiles_VAF_Common_UserAccountEqualityComparer_Equals.htm" />
-  <HelpKINode Title="UserAccountEqualityComparer.GetHashCode method" Url="html/Overload_MFiles_VAF_Common_UserAccountEqualityComparer_GetHashCode.htm" />
+  <HelpKINode Title="UserAccountEqualityComparer.Equals method" Url="html/M_MFiles_VAF_Common_UserAccountEqualityComparer_Equals.htm" />
+  <HelpKINode Title="UserAccountEqualityComparer.GetHashCode method" Url="html/M_MFiles_VAF_Common_UserAccountEqualityComparer_GetHashCode.htm" />
   <HelpKINode Title="UserAccountEqualityComparer.UserAccountEqualityComparer constructor" Url="html/M_MFiles_VAF_Common_UserAccountEqualityComparer__ctor.htm" />
   <HelpKINode Title="UserAccountExternal property" Url="html/P_MFiles_VAF_Common_EventHandlerEnvironment_UserAccountExternal.htm" />
   <HelpKINode Title="UserCausedWorkflowStatePlaceholder class">
@@ -13023,19 +12878,19 @@
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Common_UserGroupEqualityComparer__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Common_UserGroupEqualityComparer.htm" />
   </HelpKINode>
-  <HelpKINode Title="UserGroupEqualityComparer.Equals method" Url="html/Overload_MFiles_VAF_Common_UserGroupEqualityComparer_Equals.htm" />
-  <HelpKINode Title="UserGroupEqualityComparer.GetHashCode method" Url="html/Overload_MFiles_VAF_Common_UserGroupEqualityComparer_GetHashCode.htm" />
+  <HelpKINode Title="UserGroupEqualityComparer.Equals method" Url="html/M_MFiles_VAF_Common_UserGroupEqualityComparer_Equals.htm" />
+  <HelpKINode Title="UserGroupEqualityComparer.GetHashCode method" Url="html/M_MFiles_VAF_Common_UserGroupEqualityComparer_GetHashCode.htm" />
   <HelpKINode Title="UserGroupEqualityComparer.UserGroupEqualityComparer constructor" Url="html/M_MFiles_VAF_Common_UserGroupEqualityComparer__ctor.htm" />
   <HelpKINode Title="UserGroupFound method" Url="html/M_MFiles_VAF_Configuration_ValidationResultBase_UserGroupFound.htm" />
   <HelpKINode Title="userGroupIdByAlias field" Url="html/F_MFiles_VAF_MetadataCache_MetadataStructureCache_userGroupIdByAlias.htm" />
   <HelpKINode Title="userGroupIdByGuid field" Url="html/F_MFiles_VAF_MetadataCache_MetadataStructureCache_userGroupIdByGuid.htm" />
   <HelpKINode Title="UserGroupMissing method" Url="html/M_MFiles_VAF_Configuration_ValidationResultBase_UserGroupMissing.htm" />
   <HelpKINode Title="UserGroupOperations property" Url="html/P_MFiles_VAF_MetadataCache_MetadataCacheVault_UserGroupOperations.htm" />
+  <HelpKINode Title="UserID property" Url="html/P_MFiles_VAF_MultiserverMode_BroadcastDirective_UserID.htm" />
   <HelpKINode Title="UserId property">
     <HelpKINode Title="BroadcastDirective.UserId Property " Url="html/P_MFiles_VAF_AppTasks_BroadcastDirective_UserId.htm" />
     <HelpKINode Title="TaskDirective.UserId Property " Url="html/P_MFiles_VAF_AppTasks_TaskDirective_UserId.htm" />
   </HelpKINode>
-  <HelpKINode Title="UserID property" Url="html/P_MFiles_VAF_MultiserverMode_BroadcastDirective_UserID.htm" />
   <HelpKINode Title="userIdByGuid field" Url="html/F_MFiles_VAF_MetadataCache_MetadataStructureCache_userIdByGuid.htm" />
   <HelpKINode Title="UserOperations property" Url="html/P_MFiles_VAF_MetadataCache_MetadataCacheVault_UserOperations.htm" />
   <HelpKINode Title="UserOperationsEx property" Url="html/P_MFiles_VAF_MetadataCache_MetadataCacheVault_UserOperationsEx.htm" />
@@ -13060,19 +12915,6 @@
   <HelpKINode Title="Util.ChangeJsonKeyStringValue method" Url="html/M_MFiles_Crypto_Util_ChangeJsonKeyStringValue.htm" />
   <HelpKINode Title="Util.ReadJsonKeyStringValue method" Url="html/M_MFiles_Crypto_Util_ReadJsonKeyStringValue.htm" />
   <HelpKINode Title="Util.Util constructor" Url="html/M_MFiles_Crypto_Util__ctor.htm" />
-  <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects class">
-    <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects Class" Url="html/T_VAFObjectVersionAndPropertiesOfMultipleObjects.htm" />
-    <HelpKINode Title="constructor" Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_VAFObjectVersionAndPropertiesOfMultipleObjects.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_VAFObjectVersionAndPropertiesOfMultipleObjects.htm" />
-  </HelpKINode>
-  <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Add method" Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects_Add.htm" />
-  <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Clone method" Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects_Clone.htm" />
-  <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Count property" Url="html/P_VAFObjectVersionAndPropertiesOfMultipleObjects_Count.htm" />
-  <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.GetEnumerator method" Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects_GetEnumerator.htm" />
-  <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Item property" Url="html/P_VAFObjectVersionAndPropertiesOfMultipleObjects_Item.htm" />
-  <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.Remove method" Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects_Remove.htm" />
-  <HelpKINode Title="VAFObjectVersionAndPropertiesOfMultipleObjects.VAFObjectVersionAndPropertiesOfMultipleObjects constructor" Url="html/M_VAFObjectVersionAndPropertiesOfMultipleObjects__ctor.htm" />
   <HelpKINode Title="Valid field" Url="html/F_MFiles_VAF_Configuration_ValidationResultForValidation_SummaryModule_Valid.htm" />
   <HelpKINode Title="Valid method">
     <HelpKINode Title="BasicModuleConfiguration.Valid Method " Url="html/M_MFiles_VAF_Module_BasicModuleConfiguration_Valid.htm" />
@@ -13142,7 +12984,6 @@
   <HelpKINode Title="ValidationFinding class">
     <HelpKINode Title="ValidationFinding Class" Url="html/T_MFiles_VAF_Configuration_ValidationFinding.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MFiles_VAF_Configuration_ValidationFinding__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_ValidationFinding.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_ValidationFinding.htm" />
   </HelpKINode>
   <HelpKINode Title="ValidationFinding.Category property" Url="html/P_MFiles_VAF_Configuration_ValidationFinding_Category.htm" />
@@ -13156,9 +12997,6 @@
   <HelpKINode Title="ValidationInterruptedException class">
     <HelpKINode Title="ValidationInterruptedException Class" Url="html/T_MFiles_VAF_Configuration_ValidationInterruptedException.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_ValidationInterruptedException__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_MFiles_VAF_Configuration_ValidationInterruptedException.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_ValidationInterruptedException.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_ValidationInterruptedException.htm" />
   </HelpKINode>
   <HelpKINode Title="ValidationInterruptedException.ValidationInterruptedException constructor" Url="html/M_MFiles_VAF_Configuration_ValidationInterruptedException__ctor.htm" />
   <HelpKINode Title="validationMethod field" Url="html/F_MFiles_VAF_PropertyMethodInfo_validationMethod.htm" />
@@ -13374,7 +13212,6 @@
   <HelpKINode Title="ValueListsNotSupportedIssue class">
     <HelpKINode Title="ValueListsNotSupportedIssue Class" Url="html/T_MFiles_VAF_Placeholders_Issues_ValueListsNotSupportedIssue.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_ValueListsNotSupportedIssue__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Placeholders_Issues_ValueListsNotSupportedIssue.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Placeholders_Issues_ValueListsNotSupportedIssue.htm" />
   </HelpKINode>
   <HelpKINode Title="ValueListsNotSupportedIssue.ValueListsNotSupportedIssue constructor" Url="html/M_MFiles_VAF_Placeholders_Issues_ValueListsNotSupportedIssue__ctor.htm" />
@@ -13382,7 +13219,6 @@
   <HelpKINode Title="ValueOption class">
     <HelpKINode Title="ValueOption Class" Url="html/T_MFiles_VAF_Configuration_JsonEditor_ValueOption.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_JsonEditor_ValueOption__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_JsonEditor_ValueOption.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_JsonEditor_ValueOption.htm" />
   </HelpKINode>
   <HelpKINode Title="ValueOption.HelpText property" Url="html/P_MFiles_VAF_Configuration_JsonEditor_ValueOption_HelpText.htm" />
@@ -13402,7 +13238,6 @@
   <HelpKINode Title="ValueOrValueSource(Of TValueType) class">
     <HelpKINode Title="ValueOrValueSource(TValueType) Class" Url="html/T_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1.htm" />
   </HelpKINode>
   <HelpKINode Title="ValueOrValueSource(Of TValueType).HasSource property" Url="html/P_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1_HasSource.htm" />
@@ -13414,7 +13249,6 @@
   <HelpKINode Title="ValueOrValueSource&lt;TValueType&gt; class">
     <HelpKINode Title="ValueOrValueSource(TValueType) Class" Url="html/T_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1.htm" />
   </HelpKINode>
   <HelpKINode Title="ValueOrValueSource&lt;TValueType&gt;.HasSource property" Url="html/P_MFiles_VAF_Configuration_Domain_ValueOrValueSource_1_HasSource.htm" />
@@ -13619,7 +13453,6 @@
   <HelpKINode Title="VaultApplicationBase.vaultExtensionMethods field" Url="html/F_MFiles_VAF_VaultApplicationBase_vaultExtensionMethods.htm" />
   <HelpKINode Title="VaultApplicationHealthReport structure">
     <HelpKINode Title="VaultApplicationHealthReport Structure" Url="html/T_MFiles_VAF_Configuration_Domain_Dashboards_VaultApplicationHealthReport.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_Dashboards_VaultApplicationHealthReport.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_Dashboards_VaultApplicationHealthReport.htm" />
   </HelpKINode>
   <HelpKINode Title="VaultApplicationHealthReport.HostName property" Url="html/P_MFiles_VAF_Configuration_Domain_Dashboards_VaultApplicationHealthReport_HostName.htm" />
@@ -13630,7 +13463,6 @@
   <HelpKINode Title="VaultElementReferenceAttribute class">
     <HelpKINode Title="VaultElementReferenceAttribute Class" Url="html/T_MFiles_VAF_Configuration_VaultElementReferenceAttribute.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_VaultElementReferenceAttribute__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_VaultElementReferenceAttribute.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_VaultElementReferenceAttribute.htm" />
   </HelpKINode>
   <HelpKINode Title="VaultElementReferenceAttribute.AllowEmpty property" Url="html/P_MFiles_VAF_Configuration_VaultElementReferenceAttribute_AllowEmpty.htm" />
@@ -13656,7 +13488,6 @@
   <HelpKINode Title="VaultExtensionMethodCall class">
     <HelpKINode Title="VaultExtensionMethodCall Class" Url="html/T_MFiles_VAF_Configuration_Domain_VaultExtensionMethodCall.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_VaultExtensionMethodCall__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_VaultExtensionMethodCall.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_VaultExtensionMethodCall.htm" />
   </HelpKINode>
   <HelpKINode Title="VaultExtensionMethodCall.Map property" Url="html/P_MFiles_VAF_Configuration_Domain_VaultExtensionMethodCall_Map.htm" />
@@ -13688,7 +13519,6 @@
   <HelpKINode Title="VaultExtensionMethodSource class">
     <HelpKINode Title="VaultExtensionMethodSource Class" Url="html/T_MFiles_VAF_Configuration_Domain_VaultExtensionMethodSource.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_Domain_VaultExtensionMethodSource__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_Domain_VaultExtensionMethodSource.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_Domain_VaultExtensionMethodSource.htm" />
   </HelpKINode>
   <HelpKINode Title="VaultExtensionMethodSource.Read property" Url="html/P_MFiles_VAF_Configuration_Domain_VaultExtensionMethodSource_Read.htm" />
@@ -13804,7 +13634,6 @@
   <HelpKINode Title="WalkerControl class">
     <HelpKINode Title="WalkerControl Class" Url="html/T_MFiles_VAF_Configuration_JsonMapping_WalkerControl.htm" />
     <HelpKINode Title="constructor" Url="html/M_MFiles_VAF_Configuration_JsonMapping_WalkerControl__ctor.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_MFiles_VAF_Configuration_JsonMapping_WalkerControl.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MFiles_VAF_Configuration_JsonMapping_WalkerControl.htm" />
   </HelpKINode>
   <HelpKINode Title="WalkerControl.Cancel property" Url="html/P_MFiles_VAF_Configuration_JsonMapping_WalkerControl_Cancel.htm" />
