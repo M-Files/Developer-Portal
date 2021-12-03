@@ -44,14 +44,14 @@
     <Preliminary>False</Preliminary>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.Crypto.dll" />
-      <DocumentationSource sourceFile="..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.Configuration.dll" />
-      <DocumentationSource sourceFile="..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.Configuration.xml" />
-      <DocumentationSource sourceFile="..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.Configuration.Interfaces.dll" />
-      <DocumentationSource sourceFile="..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.Configuration.Interfaces.xml" />
-      <DocumentationSource sourceFile="..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.dll" />
-      <DocumentationSource sourceFile="..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.xml" />
-      <DocumentationSource sourceFile="..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\Interop.MFilesAPI.dll" />
+      <DocumentationSource sourceFile="lib\MFiles.Crypto.dll" />
+      <DocumentationSource sourceFile="lib\MFiles.VAF.Configuration.dll" />
+      <DocumentationSource sourceFile="lib\MFiles.VAF.Configuration.xml" />
+      <DocumentationSource sourceFile="lib\MFiles.VAF.Configuration.Interfaces.dll" />
+      <DocumentationSource sourceFile="lib\MFiles.VAF.Configuration.Interfaces.xml" />
+      <DocumentationSource sourceFile="lib\MFiles.VAF.dll" />
+      <DocumentationSource sourceFile="lib\MFiles.VAF.xml" />
+      <DocumentationSource sourceFile="lib\Interop.MFilesAPI.dll" />
     </DocumentationSources>
     <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected, NonBrowsable</VisibleItems>
     <ApiFilter>
@@ -143,23 +143,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.MFilesAPI, Version=7.0.0.0, Culture=neutral, PublicKeyToken=f1b4733f444f7ad0">
-      <HintPath>..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\Interop.MFilesAPI.dll</HintPath>
+      <HintPath>lib\Interop.MFilesAPI.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MFiles.Crypto, Version=21.8.10524.1, Culture=neutral, PublicKeyToken=fa007b370d17fe5e">
-      <HintPath>..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.Crypto.dll</HintPath>
+      <HintPath>lib\MFiles.Crypto.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MFiles.VAF, Version=2.3.623.2, Culture=neutral, PublicKeyToken=fa007b370d17fe5e">
-      <HintPath>..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.dll</HintPath>
+      <HintPath>lib\MFiles.VAF.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MFiles.VAF.Configuration, Version=21.8.10524.1, Culture=neutral, PublicKeyToken=fa007b370d17fe5e">
-      <HintPath>..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.Configuration.dll</HintPath>
+      <HintPath>lib\MFiles.VAF.Configuration.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MFiles.VAF.Configuration.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fa007b370d17fe5e">
-      <HintPath>..\..\Users\craig.hawker\Desktop\extensionstest2\extensionstest2\bin\Debug\MFiles.VAF.Configuration.Interfaces.dll</HintPath>
+      <HintPath>lib\MFiles.VAF.Configuration.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
