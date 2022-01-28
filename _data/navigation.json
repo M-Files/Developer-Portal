@@ -467,6 +467,10 @@
 				"Title": "Licensing"
 			},
 			{
+				"Link": "/Frameworks/Vault-Application-Framework/Logging/",
+				"Title": "Logging"
+			},
+			{
 				"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/",
 				"Title": "Multi-Server Mode",
 				"Items": [{
