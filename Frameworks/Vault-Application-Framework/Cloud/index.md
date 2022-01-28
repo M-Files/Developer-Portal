@@ -10,9 +10,9 @@ This page refers to running Vault Application Framework applications within the 
 
 ## Available cloud architectures
 
-M-Files Cloud offers two distinct architectures: New Cloud and Legacy Cloud.  In addition: within each architecture a vault can be configured within an isolated/dedicated instance (e.g. one server/container per vault/customer), or within a shared instance (e.g. many vaults/customers on one server).  **It is important to know which architecture you are targeting, as the different architectures have slightly different restrictions and implications for validation**.
+M-Files Cloud offers two distinct architectures: New Cloud and Classic Cloud.  In addition: within each architecture a vault can be configured within an isolated/dedicated instance (e.g. one server/container per vault/customer), or within a shared instance (e.g. many vaults/customers on one server).  **It is important to know which architecture you are targeting, as the different architectures have slightly different restrictions and implications for validation**.
 
-Feature | Dedicated M-Files Legacy Cloud | Shared M-Files Legacy Cloud | Isolated M-Files New Cloud | Shared M-Files New Cloud
+Feature | Dedicated M-Files Classic Cloud | Shared M-Files Classic Cloud | Isolated M-Files New Cloud | Shared M-Files New Cloud
 --- | --- | ---
 Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | No | No | Yes | Yes
 Can execute [signed applications](#code-signing) | Yes | Yes | Yes | Yes
