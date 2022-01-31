@@ -189,6 +189,26 @@ Database targets write log data into a target OLEDB database.  The database targ
 
  **NOT PART OF INITIAL DELIVERY**
 
+ #### Visual Studio Output Window
+
+The framework supports the easy logging of information to the Visual Studio Debug Window via the `LogManager.EnableLoggingToAttachedDebugger` and `LogManager.DisableLoggingToAttachedDebugger` methods.  This can be very useful when initially developing an application.
+
+To start logging to this target, call the appropriate method during your application initialization, e.g.:
+
+ ```csharp
+publci VaultApplication()
+{
+#if DEBUG
+	// Enable logging to any attached debugger, but do not launch the debugger.
+	LogManager.EnableLoggingToAttachedDebugger(new AttachedDebuggerLoggingSettings(){
+		LaunchDebugger = true, // If true, will pop up the "Attach a debugger" dialog at this point.
+		MinimumLogLevel = LogLevel.Debug,
+		MaximumLogLevel = LogLevel.Fatal
+	});
+#endif
+}
+ ```
+
 ### Log sensitivity
 
 Log sensitivity filters work by allowing developers to pass structured objects into the logging framework, and for the logging framework to decide how to render that content appropriately.  Logging sensitivity filters do not attempt to parse log strings to remove information.  It is imperative that application developers implement logging as described below for the logging sensitivity filters to correctly work.  It is strongly recommended that you test that your log messages are correctly being filtered before deploying any application.
