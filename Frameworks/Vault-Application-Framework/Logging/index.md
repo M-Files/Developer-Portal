@@ -118,7 +118,7 @@ The default log target logs to a standardized location on disk.  The default log
 
 In on-premises implementations this is to to a `Logs` directory inside the Windows temporary folder, e.g. `C:\Windows\Logs\`.  Inside this folder it will create a folder with the GUID of the vault, within that a folder with the GUID of the application, within that a folder with the GUID of the server ID, and within that it will create text files according to the configured log rotation/archival settings (e.g. `C:\Windows\Temp\logs\2722f9ab-b96b-4db5-b1a1-8e0618d289b7\6502bb5f-a696-4faa-848a-3f7d5847e00b\f8063303-4501-44b1-8f92-8441959263b3\current.log`).
 
-In M-Files Cloud implementations this is to a persistent storage location.
+In M-Files Cloud implementations this is to a persistent storage location.  Note that files in this storage location may be removed by operational processes such as service breaks, or archived due to size or age.  For this reason logs should be considered as temporary and transient, not for long-term use.
 
 The default log target additionally copies the `appdef.xml` file from the vault application into the log location.  This can be used to more easily identify the application that the logs are for.
 {:.note}
