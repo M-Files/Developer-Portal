@@ -201,11 +201,15 @@ public VaultApplication()
 {
 #if DEBUG
 	// Enable logging to any attached debugger, but do not launch the debugger.
-	LogManager.EnableLoggingToAttachedDebugger(new AttachedDebuggerLoggingSettings(){
-		LaunchDebugger = false, // If true, will pop up the "Attach a debugger" dialog at this point.
-		MinimumLogLevel = LogLevel.Debug,
-		MaximumLogLevel = LogLevel.Fatal
-	});
+	LogManager.EnableLoggingToAttachedDebugger
+	(
+		new AttachedDebuggerLoggingSettings()
+		{
+			LaunchDebugger = false, // If true, will pop up the "Attach a debugger" dialog at this point.
+			MinimumLogLevel = LogLevel.Debug,
+			MaximumLogLevel = LogLevel.Fatal
+		}
+	);
 #endif
 }
  ```
