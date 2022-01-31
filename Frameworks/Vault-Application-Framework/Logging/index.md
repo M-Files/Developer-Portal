@@ -87,6 +87,7 @@ The logging framework supports a number of targets initially, with the potential
 * [File targets](#file-targets),
 * [Event log targets](#event-log-targets),
 * [Database targets](#database-targets)
+* [Visual Studio Output Window](#visual-studio-output-window)
 
 The targets are configured within M-Files Admin.  Each target typically supports the following common properties:
 
@@ -196,7 +197,7 @@ The framework supports the easy logging of information to the Visual Studio Debu
 To start logging to this target, call the appropriate method during your application initialization, e.g.:
 
  ```csharp
-publci VaultApplication()
+public VaultApplication()
 {
 #if DEBUG
 	// Enable logging to any attached debugger, but do not launch the debugger.
