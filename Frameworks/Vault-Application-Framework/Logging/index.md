@@ -5,7 +5,17 @@ includeInSearch: true
 breadcrumb: Vault Application Framework Logging
 ---
 
+The logging framework is designed for diagnostics, not for auditing.  Information within the log files is controlled partially by the application developer and partially by the administrator configuring logging options, therefore the log files may not contain all available information.  Additionally: log files may be removed or made unavailable without warning for operational reasons.
+{:.note.warning}
+
 The creation of log files is an important step in diagnosing the behavior (or misbehavior) of any application.  M-Files has released a package - `MFiles.VaultApplications.Logging` - which can be used to easily implement logging within Vault Applications (VAF and IML) in both on-premises and cloud infrastructures.  When utilized within the M-Files Cloud infrastructure, logs created using this framework can be made available via the `M-Files Manage` web interface.
+
+## What should be logged?
+
+Care should be taken by application developers that logs do not contain personally-identifiable or other potentially sensitive information.  Application developers may use [log sensitivity filters](#log-sensitivity) to allow administrators to configure whether common content such as object titles should be included in logs.  M-Files Cloud customers that do not wish for any logs to be held within the M-Files Cloud infrastructure may choose to log to other cloud-based log targets such as [Application Insights](#application-insights).
+{:.note.warning}
+
+**THIS NEEDS SOME ACTUAL CONTENT, NOT JUST WARNINGS**
 
 ## General structure
 
@@ -175,7 +185,14 @@ Database targets write log data into a target OLEDB database.  The database targ
 
  **THIS NEEDS MORE EXAMPLES**
 
+ #### Application Insights
+
+ **NOT PART OF INITIAL DELIVERY**
+
 ### Log sensitivity
+
+Log sensitivity filters work by allowing developers to pass structured objects into the logging framework, and for the logging framework to decide how to render that content appropriately.  Logging sensitivity filters to not attempt to parse log strings to remove information.  It is imperative that application developers implement logging as described below for the logging sensitivity filters to correctly work.  It is strongly recommended that you test that your log messages are correctly being filtered before deploying any application.
+{:.note}
 
 Logs may, by their nature, contain information which may have privacy or commercial sensitivities; imagine situations where a log is being generated about a file that's being converted to PDF, and the log includes a file named `Upcoming Redundancies.docx`.  The logging framework supports this concept by allowing each log to be allocated a `Sensitivity Level`.  This sensitivity level describes how some information should be logged within the vault.
 
@@ -192,9 +209,6 @@ this.Logger?.Trace($"Starting conversion of {env.ObjVerEx} to PDF...");
 The resulting log message would depend on the sensitity level:
 `Starting conversion of 'hello world.docx (0-123-1)'` (if the sensitivity level allows document titles to be shown)
 `Starting conversion of (0-123-1)` (if the sensitivity level does not allow document titles to be shown)
-
-The logging library contains built-in sensitivity filters for `ObjectVersion`, `ObjectVersionAndProperties`, and `PropertyValue`.  The VAF Extensions library contains a built-in sensitivity filter for `ObjVerEx`.  Sensitivity filters can be added by inheriting from `MFiles.VaultApplications.Logging.Sensitivity.LogSensitivityFilterBase<TType>` (where `TType` is the type that your filter handles); simply creating the class and deploying it with your vault application is sufficient for it to be used.
-{:.note}
 
 #### Supported logging syntaxes for log sensitivity
 
@@ -227,6 +241,17 @@ this.Logger?.Trace("My message " + myObjectVersion.Title); // DO NOT DO THIS!
 this.Logger?.Trace(string.format("My message {0}", myObjectVersion); // DO NOT DO THIS!
 this.Logger?.Trace(string.format("My message {0}", myObjectVersion.Title); // DO NOT DO THIS!
 ```
+
+#### Custom log sensitivity filters
+
+The logging library contains built-in sensitivity filters for `ObjectVersion`, `ObjectVersionAndProperties`, and `PropertyValue`.  The VAF Extensions library contains a built-in sensitivity filter for `ObjVerEx`.
+
+To create a custom log sensitivity filter:
+
+1. Create a class that inherits from  `MFiles.VaultApplications.Logging.Sensitivity.LogSensitivityFilterBase<TType>` (where `TType` is the type that your filter handles).
+2. The system can only cope with a single filter being registered for any given type.  If you are looking to override a built-in sensitivity filter (e.g. to add your own for `ObjectVersion`), then:
+  1. Add the [DoNotAutomaticallyRegister] attribute to your class to stop the system automatically finding and registering it.
+  2. After the log manager is initialized, call `LogSensitivityFilterFactory.Default.Register`, passing an instance of the log sensitivity filter and ensuring that `overwriteExistingRegistrations` is true.
 
 ### Logging exclusions
 
