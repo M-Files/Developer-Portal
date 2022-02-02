@@ -216,7 +216,7 @@ public VaultApplication()
 
 ### Log sensitivity
 
-Log sensitivity filters work by allowing developers to pass structured objects into the logging framework, and for the logging framework to decide how to render that content appropriately.  Logging sensitivity filters do not attempt to parse log strings to remove information.  It is imperative that application developers implement logging as described below for the logging sensitivity filters to correctly work.  It is strongly recommended that you test that your log messages are correctly being filtered before deploying any application.
+Log sensitivity filters work by allowing developers to pass structured objects into the logging framework, and for the logging framework to decide how to render that content appropriately.  **Logging sensitivity filters do not attempt to parse log strings to remove information.**  It is imperative that application developers implement logging as described below for the logging sensitivity filters to correctly work.  It is strongly recommended that you test that your log messages are correctly being filtered before deploying any application.
 {:.note}
 
 Logs may, by their nature, contain information which may have privacy or commercial sensitivities; imagine situations where a log is being generated about a file that's being converted to PDF, and the log includes a file named `Upcoming Redundancies.docx`.  The logging framework supports this concept by allowing each log to be allocated a `Sensitivity Level`.  This sensitivity level describes how some information should be logged within the vault.
@@ -259,12 +259,13 @@ These logging syntaxes produce simple strings and will not be filtered.  It is a
 ```csharp
 // Contatenating strings.
 this.Logger?.Trace("My message " + myObjectVersion.Title); // DO NOT DO THIS!
-```
 
-```csharp
 // Explicitly using string.format
-this.Logger?.Trace(string.format("My message {0}", myObjectVersion); // DO NOT DO THIS!
-this.Logger?.Trace(string.format("My message {0}", myObjectVersion.Title); // DO NOT DO THIS!
+this.Logger?.Trace(string.format("My message {0}", myObjectVersion)); // DO NOT DO THIS!
+this.Logger?.Trace(string.format("My message {0}", myObjectVersion.Title)); // DO NOT DO THIS!
+
+// Using a formattable string, but passing the title directly
+this.Logger?.Trace($"My message {myObjectVersion.Title}"); // DO NOT DO THIS!
 ```
 
 #### Custom log sensitivity filters
