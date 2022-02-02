@@ -19,7 +19,7 @@ Care should be taken by application developers that logs do not contain personal
 
 ## General structure
 
-The `MFiles.VaultApplications.Logging` framework is available via a nuget package which can be referenced from your vault applications.  If using the [VAF Extensions library](#using-the-vaf-extensions-library) version `22.2.6-preview` or higher, this package will be included for you automatically.
+The `MFiles.VaultApplications.Logging` framework is available via a nuget package which can be referenced from your vault applications.  If using the [VAF Extensions library](#using-the-vaf-extensions-library) version `22.2.7-preview` or higher, this package will be included for you automatically.
 
 Each class in your application should expose a [Logger](#loggers), which your application should use to log messages at a [appropriate levels](#log-levels).  At runtime the application can be configured to output some or all of these log messages to one or more enabled [Targets](#targets); depending upon the architecture and client requirements, these targets could be files on disk, the Windows Event Log, email, or some other suitable area.
 
@@ -304,7 +304,7 @@ It is strongly recommended that applications utilize the [VAF Extensions library
 
 There are three steps to using the logging framework with the VAF Extensions library:
 
-1. Ensure that you are referencing at least version `22.2.6-preview` with nuget.  Update your reference if you are targeting an earlier version.
+1. Ensure that you are referencing at least version `22.2.7-preview` with nuget.  Update your reference if you are targeting an earlier version.
 2. Ensure that you are using the `MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<TConfiguration>` base class.
 3. Alter your configuration to inherit from `MFiles.VAF.Extensions.Configuration.ConfigurationBase` (or alternative; see below), to expose the logging configuration.
 
