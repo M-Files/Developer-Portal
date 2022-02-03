@@ -112,6 +112,7 @@ The default log target is supported within the [M-Files Cloud](../Cloud) infrast
 {:.note}
 
 The default log target logs to a standardized location on disk.  The default log target supports the following properties:
+
 * `Enabled` - changeable by vault administrators and system administrators
 * `Minimum Log Level` - changeable by vault administrators and system administrators
 * `Maximum Log Level` - changeable by vault administrators and system administrators
@@ -137,6 +138,7 @@ Custom file target locations are **not** supported within the [M-Files Cloud](..
 {:.note.warning}
 
 File targets log to custom locations on disk.  The file log target supports the following properties:
+
 * `Name` - changeable by vault administrators and system administrators
 * `Enabled` - changeable by vault administrators and system administrators
 * `Minimum Log Level` - changeable by vault administrators and system administrators
@@ -158,6 +160,7 @@ Event log targets are **not** supported within the [M-Files Cloud](../Cloud) inf
 {:.note.warning}
 
 Event log targets write to the Windows Event Log.  The Event Log target supports the following properties:
+
 * `Name` - changeable by vault administrators and system administrators
 * `Enabled` - changeable by vault administrators and system administrators
 * `Minimum Log Level` - changeable by vault administrators and system administrators
@@ -180,6 +183,7 @@ Database targets are supported within the [M-Files Cloud](../Cloud) infrastructu
 {:.note.warning}
 
 Database targets write log data into a target OLEDB database.  The database target supports the following properties:
+
 * `Name` - changeable by vault administrators and system administrators
 * `Enabled` - changeable by vault administrators and system administrators
 * `Minimum Log Level` - changeable by vault administrators and system administrators
@@ -199,12 +203,13 @@ Database targets write log data into a target OLEDB database.  The database targ
 
 ![Configuring a database target](targets-database.png)
 
- #### Mail targets
+#### Mail targets
 
 Mail targets are supported within the [M-Files Cloud](../Cloud) infrastructure.
 {:.note.warning}
 
 Database targets write log data into a target OLEDB database.  The database target supports the following properties:
+
 * `Name` - changeable by vault administrators and system administrators
 * `Enabled` - changeable by vault administrators and system administrators
 * `Minimum Log Level` - changeable by vault administrators and system administrators
@@ -228,7 +233,7 @@ Database targets write log data into a target OLEDB database.  The database targ
 
 ![Configuring a mail target](targets-mail.png)
 
- #### Visual Studio Output Window
+#### Visual Studio Output Window
 
 The framework supports the easy logging of information to the Visual Studio Debug window via the `LogManager.EnableLoggingToAttachedDebugger` and `LogManager.DisableLoggingToAttachedDebugger` methods.  This can be very useful when initially developing an application.
 
@@ -256,11 +261,11 @@ public VaultApplication()
 
 ![Viewing log messages in Visual Studio](targets-visualstudio.png)
 
- #### Future targets
+#### Future targets
 
  M-Files are currently considering adding support for additional targets, including:
 
- ##### Application Insights
+##### Application Insights
 
  Application Insights is a feature of Azure Monitor that provides extensible application performance management (APM) and monitoring for applications
 
@@ -274,7 +279,6 @@ Logs may, by their nature, contain information which may have privacy or commerc
 Each target can have its sensitivity set to one of three levels: `Minimum sensitivity` (default), `Maximum sensitivity`, or `Custom`.  If `Custom` is selected then the user can choose which flags should be passed to the sensitivity filter:
 
 ![Setting custom target sensitivity levels](sensitivity-custom.png)
-
 
 When a log message is written to disk, it is passed through a `sensitivity filter`.  This filter will look at the arguments being rendered into the string, along with the target sensitivity level, and choose how the value should be rendered.  Consider this code:
 
@@ -329,8 +333,8 @@ To create a custom log sensitivity filter:
 
 1. Create a class that inherits from  `MFiles.VaultApplications.Logging.Sensitivity.LogSensitivityFilterBase<TType>` (where `TType` is the type that your filter handles).
 2. The system can only cope with a single filter being registered for any given type.  If you are looking to override a built-in sensitivity filter (e.g. to add your own for `ObjectVersion`), then:
-  1. Add the [DoNotAutomaticallyRegister] attribute to your class to stop the system automatically finding and registering it.
-  2. After the log manager is initialized, call `LogSensitivityFilterFactory.Default.Register`, passing an instance of the log sensitivity filter and ensuring that `overwriteExistingRegistrations` is true.
+	1. Add the [DoNotAutomaticallyRegister] attribute to your class to stop the system automatically finding and registering it.
+	2. After the log manager is initialized, call `LogSensitivityFilterFactory.Default.Register`, passing an instance of the log sensitivity filter and ensuring that `overwriteExistingRegistrations` is true.
 
 ### Logging exclusions
 
@@ -522,5 +526,3 @@ namespace Samples.VAF
 	}
 }
 ```
-
-
