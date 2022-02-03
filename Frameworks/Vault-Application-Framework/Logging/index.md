@@ -99,7 +99,7 @@ The targets are configured within M-Files Admin.  Each target typically supports
 * `Maximum Log Level` - the maximum log level (inclusive) that is logged to this target
 * `Advanced`
   * `Layout` - an instruction on how the log message (and other environmental information) should be formatted in the target.  In the current implementation these use the [NLog implementation](https://github.com/nlog/nlog/wiki/Configuration-file#layouts-and-layout-renderers), with some additional [custom layout renderers](#custom-layout-renderers)
-  * `Sensitivity` - details on the [sensitivity level](#log-sensitivity) that should be applied to this target
+  * `Log Sensitivity` - details on the [sensitivity level](#log-sensitivity) that should be applied to this target
 
 ![An example of configuring the log targets](targets.png)
 
@@ -120,7 +120,7 @@ The default log target logs to a standardized location on disk.  The default log
   * `Layout` - changeable by vault administrators and system administrators
   * `Keep File Open` - changeable by system administrators
   * `Allow Concurrent Writes` - changeable by system administrators
-  * `Sensitivity` - changeable by vault administrators and system administrators
+  * `Log Sensitivity` - changeable by vault administrators and system administrators
 
 In on-premises implementations this is to to a `Logs` directory inside the Windows temporary folder, e.g. `C:\Windows\Logs\`.  Inside this folder it will create a folder with the GUID of the vault, within that a folder with the GUID of the application, within that a folder with the GUID of the server ID, and within that it will create text files according to the configured log rotation/archival settings (e.g. `C:\Windows\Temp\logs\2722f9ab-b96b-4db5-b1a1-8e0618d289b7\6502bb5f-a696-4faa-848a-3f7d5847e00b\f8063303-4501-44b1-8f92-8441959263b3\current.log`).
 
@@ -148,7 +148,7 @@ File targets log to custom locations on disk.  The file log target supports the 
   * `Layout` - changeable by vault administrators and system administrators
   * `Keep File Open` - changeable by system administrators
   * `Allow Concurrent Writes` - changeable by system administrators
-  * `Sensitivity` - changeable by vault administrators and system administrators
+  * `Log Sensitivity` - changeable by vault administrators and system administrators
 
 ![Configuring a file target](targets-file.png)
 
@@ -170,7 +170,7 @@ Event log targets write to the Windows Event Log.  The Event Log target supports
   * `Layout` - changeable by vault administrators and system administrators
   * `Maximum Message Size` - changeable by system administrators
   * `Overflow Action` - changeable by system administrators
-  * `Sensitivity` - changeable by vault administrators and system administrators
+  * `Log Sensitivity` - changeable by vault administrators and system administrators
 
 ![Configuring an event log target](targets-eventlog.png)
 
@@ -191,7 +191,7 @@ Database targets write log data into a target OLEDB database.  The database targ
 * `Parameters` - changeable by vault administrators and system administrators
 * `Advanced`
   * `Layout` - changeable by vault administrators and system administrators
-  * `Sensitivity` - changeable by vault administrators and system administrators
+  * `Log Sensitivity` - changeable by vault administrators and system administrators
 
  When using a database target, the `Command Text` property sets the SQL statement to use (e.g. `insert into dbo.Log (MachineName, Logged, Level, Message, Logger, Callsite, Exception) values ( @MachineName, @Logged, @Level, @Message, @Logger, @Callsite, @Exception )`).  Each parameter in the command text (e.g. `@MachineName`) is then created in the `Parameters` collection, and assigned data from the event itself.
 
@@ -200,6 +200,33 @@ Database targets write log data into a target OLEDB database.  The database targ
 ![Configuring a database target](targets-database.png)
 
  #### Mail targets
+
+Mail targets are supported within the [M-Files Cloud](../Cloud) infrastructure.
+{:.note.warning}
+
+Database targets write log data into a target OLEDB database.  The database target supports the following properties:
+* `Name` - changeable by vault administrators and system administrators
+* `Enabled` - changeable by vault administrators and system administrators
+* `Minimum Log Level` - changeable by vault administrators and system administrators
+* `Maximum Log Level` - changeable by vault administrators and system administrators
+* `Subject` - changeable by vault administrators and system administrators
+* `From` / `To` / `CC` / `BCC` - changeable by vault administrators and system administrators
+* `SMTP Configuration`
+  * `Server Address` - changeable by vault administrators and system administrators
+  * `Use Encrypted Connection` - changeable by vault administrators and system administrators
+  * `Port` - changeable by vault administrators and system administrators
+  * `Authentication Mode` - changeable by vault administrators and system administrators
+  * `Use Local Pickup Folder` - changeable by system administrators
+* `Advanced`
+  * `Layout` - changeable by vault administrators and system administrators
+  * `Encoding` - changeable by vault administrators and system administrators
+  * `Header` - changeable by vault administrators and system administrators
+  * `Footer` - changeable by vault administrators and system administrators
+  * `Add Newlines Between Messages` - changeable by vault administrators and system administrators
+  * `Replace Newlines with HTML Breaks` - changeable by vault administrators and system administrators
+  * `Log Sensitivity` - changeable by vault administrators and system administrators
+
+![Configuring a mail target](targets-mail.png)
 
  #### Visual Studio Output Window
 
@@ -231,9 +258,11 @@ public VaultApplication()
 
  #### Future targets
 
+ M-Files are currently considering adding support for additional targets, including:
+
  ##### Application Insights
 
- **NOT PART OF INITIAL DELIVERY**
+ Application Insights is a feature of Azure Monitor that provides extensible application performance management (APM) and monitoring for applications
 
 ### Log sensitivity
 
