@@ -15,7 +15,9 @@ The creation of log files is an important step in diagnosing the behavior (or mi
 Care should be taken by application developers that logs do not contain personally-identifiable or other potentially sensitive information.  Application developers may use [log sensitivity filters](#log-sensitivity) to allow administrators to configure whether common content such as object titles should be included in logs.  M-Files Cloud customers that do not wish for any logs to be held within the M-Files Cloud infrastructure may choose to log to other cloud-based log targets such as [Application Insights](#application-insights).
 {:.note.warning}
 
-**THIS NEEDS SOME ACTUAL CONTENT, NOT JUST WARNINGS**
+It is important to get into the habit of adding logging to your applications as you build them.  By doing this, and using the appropriate [log level](#log-levels), you will build applications whose logging is flexible and can be scaled up or down as needed to diagnose problems.
+
+Care should be taken when implementing logging so that the information in the logs does not constitute a security or privacy risk.  When writing log statements consider using a syntax that supports [log sensitivity](#log-sensitivity), allowing vault administrators to decide whether information such as object titles should be included in the resulting logs or not.
 
 ## General structure
 
@@ -81,12 +83,13 @@ NLog provides some guidance on how to [use different log levels](https://github.
 
 ### Targets
 
-The logging framework supports a number of targets initially, with the potential for more to be supported in the future.  Currently the four supported targets are:
+The logging framework supports a number of targets initially, with the potential for more to be supported in the future.  The supported targets are currently:
 
 * The [default log target](#default-log-target),
 * [File targets](#file-targets),
 * [Event log targets](#event-log-targets),
-* [Database targets](#database-targets)
+* [Database targets](#database-targets),
+* [Mail targets](#mail-targets)
 * [Visual Studio Output Window](#visual-studio-output-window)
 
 The targets are configured within M-Files Admin.  Each target typically supports the following common properties:
@@ -97,6 +100,8 @@ The targets are configured within M-Files Admin.  Each target typically supports
 * `Advanced`
   * `Layout` - an instruction on how the log message (and other environmental information) should be formatted in the target.  In the current implementation these use the [NLog implementation](https://github.com/nlog/nlog/wiki/Configuration-file#layouts-and-layout-renderers), with some additional [custom layout renderers](#custom-layout-renderers)
   * `Sensitivity` - details on the [sensitivity level](#log-sensitivity) that should be applied to this target
+
+![An example of configuring the log targets](targets.png)
 
 Some targets can only be configured by system administrators.  Often these targets are incompatible with cloud infrastructures.  More details are available in each target's dedicated documentation below.
 {:.note.warning}
@@ -124,6 +129,8 @@ In M-Files Cloud implementations this is to a persistent storage location.  Note
 The default log target additionally copies the `appdef.xml` file from the vault application into the log location.  This can be used to more easily identify the application that the logs are for.
 {:.note}
 
+![Configuring the default target](targets-default.png)
+
 #### File targets
 
 Custom file target locations are **not** supported within the [M-Files Cloud](../Cloud) infrastructure.
@@ -142,6 +149,8 @@ File targets log to custom locations on disk.  The file log target supports the 
   * `Keep File Open` - changeable by system administrators
   * `Allow Concurrent Writes` - changeable by system administrators
   * `Sensitivity` - changeable by vault administrators and system administrators
+
+![Configuring a file target](targets-file.png)
 
 #### Event log targets
 
@@ -162,6 +171,8 @@ Event log targets write to the Windows Event Log.  The Event Log target supports
   * `Maximum Message Size` - changeable by system administrators
   * `Overflow Action` - changeable by system administrators
   * `Sensitivity` - changeable by vault administrators and system administrators
+
+![Configuring an event log target](targets-eventlog.png)
 
 #### Database targets
 
@@ -186,13 +197,13 @@ Database targets write log data into a target OLEDB database.  The database targ
 
  **THIS NEEDS MORE EXAMPLES**
 
- #### Application Insights
+![Configuring a database target](targets-database.png)
 
- **NOT PART OF INITIAL DELIVERY**
+ #### Mail targets
 
  #### Visual Studio Output Window
 
-The framework supports the easy logging of information to the Visual Studio Debug Window via the `LogManager.EnableLoggingToAttachedDebugger` and `LogManager.DisableLoggingToAttachedDebugger` methods.  This can be very useful when initially developing an application.
+The framework supports the easy logging of information to the Visual Studio Debug window via the `LogManager.EnableLoggingToAttachedDebugger` and `LogManager.DisableLoggingToAttachedDebugger` methods.  This can be very useful when initially developing an application.
 
 To start logging to this target, call the appropriate method during your application initialization, e.g.:
 
@@ -214,6 +225,16 @@ public VaultApplication()
 }
  ```
 
+ Once attached, log messages can be found in the Debug window in Visual Studio:
+
+![Viewing log messages in Visual Studio](targets-visualstudio.png)
+
+ #### Future targets
+
+ ##### Application Insights
+
+ **NOT PART OF INITIAL DELIVERY**
+
 ### Log sensitivity
 
 Log sensitivity filters work by allowing developers to pass structured objects into the logging framework, and for the logging framework to decide how to render that content appropriately.  **Logging sensitivity filters do not attempt to parse log strings to remove information.**  It is imperative that application developers implement logging as described below for the logging sensitivity filters to correctly work.  It is strongly recommended that you test that your log messages are correctly being filtered before deploying any application.
@@ -221,7 +242,10 @@ Log sensitivity filters work by allowing developers to pass structured objects i
 
 Logs may, by their nature, contain information which may have privacy or commercial sensitivities; imagine situations where a log is being generated about a file that's being converted to PDF, and the log includes a file named `Upcoming Redundancies.docx`.  The logging framework supports this concept by allowing each log to be allocated a `Sensitivity Level`.  This sensitivity level describes how some information should be logged within the vault.
 
-**SHOW A PICTURE HERE OF HOW TO SET THE SENSITIVITY LEVELS**
+Each target can have its sensitivity set to one of three levels: `Minimum sensitivity` (default), `Maximum sensitivity`, or `Custom`.  If `Custom` is selected then the user can choose which flags should be passed to the sensitivity filter:
+
+![Setting custom target sensitivity levels](sensitivity-custom.png)
+
 
 When a log message is written to disk, it is passed through a `sensitivity filter`.  This filter will look at the arguments being rendered into the string, along with the target sensitivity level, and choose how the value should be rendered.  Consider this code:
 
@@ -370,7 +394,104 @@ Note that the logging configuration itself could be held anywhere in your config
 
 ### Implementing the functionality yourself
 
-*To be written*
+If you cannot use the VAF Extensions, then using the logging framework from a plain Vault Application is also possible.  The example below uses the VAF 2.3 and older versions of the framework may need some additional changes:
 
+```csharp
+using MFiles.VAF.AppTasks;
+using MFiles.VAF.Configuration;
+using MFiles.VAF.Extensions;
+using MFiles.VAF.Extensions.Dashboards;
+using MFiles.VaultApplications.Logging;
+using MFiles.VaultApplications.Logging.Resources;
+using MFilesAPI;
+using System.Collections.Generic;
+
+namespace Samples.VAF
+{
+	public class VaultApplication
+		: ConfigurableVaultApplicationBase<Configuration>
+	{
+
+		/// <summary>
+		/// Registers a task queue with ID "LoggingTaskQueue".
+		/// </summary>
+		// Note: this queue ID must be unique to this application!
+		[TaskQueue]
+		public const string TaskQueueID = "LoggingTaskQueue";
+		public const string TaskType = "LoggingTestType";
+
+		/// <summary>
+		/// Processes items of type <see cref="TaskType" /> on queue <see cref="TaskQueueID" />
+		/// </summary>
+		[TaskProcessor(TaskQueueID, TaskType, TransactionMode = TransactionMode.Unsafe)]
+		[ShowOnDashboard("Log something", ShowRunCommand = true)]
+		public void MyTaskProcessor(ITaskProcessingJob<TaskDirective> job)
+		{
+			this.Logger.Info($"Hello, world");
+		}
+
+		#region Boilerplate required
+
+		public ILogger Logger { get; private set; }
+
+		protected override void StartApplication()
+		{
+			base.StartApplication();
+
+#if DEBUG
+			// Enable logging to any attached debugger, but do not launch the debugger.
+			LogManager.EnableLoggingToAttachedDebugger(launchDebugger: false);
+#endif
+
+			LogManager.Initialize(this.PermanentVault, this.Configuration?.GetLoggingConfiguration());
+			this.Logger = LogManager.GetLogger(this.GetType());
+			this.Logger?.Info("Logging started");
+
+		}
+
+		protected override void UninitializeApplication(Vault vault)
+		{
+			this.Logger?.Info("Logging stopping");
+			LogManager.Shutdown();
+			base.UninitializeApplication(vault);
+		}
+
+		protected override void OnConfigurationUpdated(Configuration oldConfiguration, bool updateExternals)
+		{
+			this.Logger?.Info("Logging configuration updating");
+			base.OnConfigurationUpdated(oldConfiguration, updateExternals);
+			LogManager.UpdateConfiguration(this.Configuration?.GetLoggingConfiguration());
+			this.Logger?.Info("Logging configuration updated");
+		}
+
+		/// <inheritdoc />
+		// Sets up the combined resource manager so that the strings from the logging
+		// exceptions and configuration work.
+		protected override SecureConfigurationManager<Configuration> GetConfigurationManager()
+		{
+			var configurationManager = base.GetConfigurationManager();
+
+			// Set the resource manager for the configuration manager.
+			var combinedResourceManager = new CombinedResourceManager(true, configurationManager.ResourceManager);
+
+			// Set the resource manager for the configuration.
+			configurationManager.ResourceManager = combinedResourceManager;
+			return configurationManager;
+		}
+
+		protected override IEnumerable<ValidationFinding> CustomValidation(Vault vault, Configuration config)
+		{
+			foreach(var finding in base.CustomValidation(vault, config) ?? new ValidationFinding[0])
+				yield return finding;
+			foreach(var finding in config?.GetLoggingConfiguration()?.GetValidationFindings() ?? new ValidationFinding[0])
+				yield return finding;
+		}
+
+		#endregion
+
+
+	}
+}
+```
 
 
