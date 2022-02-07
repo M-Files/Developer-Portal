@@ -565,6 +565,21 @@
 			}]
 	},
 	{
+		"Link": "/Logging/",
+		"Icon": "mdi:file-document-outline",
+		"Title": "Logging",
+		"Items": [{
+			"Link": "/Logging/Sensitivity/",
+			"Title": "Log Sensitivity"
+		},{
+			"Link": "/Logging/Targets/",
+			"Title": "Targets"
+		},{
+			"Link": "/Logging/Vault-Application-Framework/",
+			"Title": "Vault Application Framework"
+		}]
+	},
+	{
 		"Link": "/Samples-And-Libraries/",
 		"Icon": "mdi:github-circle",
 		"Title": "Samples and Libraries",
@@ -648,7 +663,7 @@
 						"Items": [{
 								"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/Upgrading-VAF2.0-To-2.1/",
 								"Title": "Upgrading from VAF 2.0 to 2.1"
-							},
+							}
 						]
 					},
 					{
