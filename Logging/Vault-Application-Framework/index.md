@@ -7,6 +7,9 @@ prerelease: true
 redirect_from: /Frameworks/Vault-Application-Framework/Logging/
 ---
 
+This page contains information that is specific to implementing logging within the Vault Application Framework, but does not cover the logging framework in general.  Ensure that you read the [logging page](../) and others in the section thoroughly.
+{:.note.warning}
+
 It is strongly recommended that applications utilize the [VAF Extensions library](#using-the-vaf-extensions-library) when implemented logging, as this library deals with initializing the logging framework, ensuring that configuration is validated and applied, and rendering the logging configuration to the application's dashboard.
 {:.note}
 

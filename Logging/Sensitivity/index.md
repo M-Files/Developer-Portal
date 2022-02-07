@@ -6,6 +6,9 @@ breadcrumb: Log Sensitivity
 prerelease: true
 ---
 
+This page contains information that is specific to the log sensitivity, but does not cover the logging framework in general.  Ensure that you read the [logging page](../) and others in the section thoroughly.
+{:.note.warning}
+
 Log sensitivity filters work by allowing developers to pass structured objects into the logging framework, and for the logging framework to decide how to render that content appropriately.  **Logging sensitivity filters do not attempt to parse log strings to remove information.**  It is imperative that application developers implement logging as described below for the logging sensitivity filters to correctly work.  It is strongly recommended that you test that your log messages are correctly being filtered before deploying any application.
 {:.note}
 

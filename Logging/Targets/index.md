@@ -6,6 +6,9 @@ breadcrumb: Targets
 prerelease: true
 ---
 
+This page contains information that is specific to the available log targets, but does not cover the logging framework in general.  Ensure that you read the [logging page](../) and others in the section thoroughly.
+{:.note.warning}
+
 The logging framework supports a number of targets initially, with the potential for more to be supported in the future.  The supported targets are currently:
 
 * The [default log target](#default-log-target),
