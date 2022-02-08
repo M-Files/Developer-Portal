@@ -10,13 +10,16 @@ This page refers to running Vault Application Framework applications within the 
 
 ## Available cloud architectures
 
-M-Files Cloud offers two distinct architectures: New Cloud and Classic Cloud.  In addition: within each architecture a vault can be configured within an isolated/dedicated instance (e.g. one server/container per vault/customer), or within a shared instance (e.g. many vaults/customers on one server).  **It is important to know which architecture you are targeting, as the different architectures have slightly different restrictions and implications for validation**.
+M-Files Cloud offers two distinct architectures: New Cloud and Classic Cloud.  In addition: within each architecture a vault can be configured within an isolated/dedicated instance (e.g. one server/container per vault/customer), or within a shared instance (e.g. many vaults/customers on one server).
 
-Feature | Dedicated M-Files Classic Cloud | Shared M-Files Classic Cloud | Isolated M-Files New Cloud | Shared M-Files New Cloud
+M-Files is actively migrating customers from Classic Cloud to New Cloud.  **Applications - including changes to existing applications - submitted for validation that are not multi-server-mode-compatible will be rejected**.
+{:.note}
+
+Feature | Shared M-Files Classic Cloud | Shared M-Files New Cloud | Dedicated M-Files Classic Cloud | Isolated M-Files New Cloud
 --- | --- | ---
-Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | No | No | Yes | Yes
+Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | No | Yes | No | Yes
 Can execute [signed applications](#code-signing) | Yes | Yes | Yes | Yes
-Custom code requires [validation](#code-validation) to run | Yes | Yes | No | Yes
+Custom code requires [validation](#code-validation) to run | Yes | Yes | Yes | No
 
 ## Code signing
 
@@ -68,6 +71,7 @@ The validation team will check a number of items in the source code, including:
 
 <div class="checklist" markdown="1">
 
+1. Your application must be [Multi-Server-Mode-compatible]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) to run in the New Cloud.  In order to ensure that vaults can be migrated to the newer infrastructure, **all newly-submitted vault applications must be multi-server-mode compatible**.
 1. The application **must not attempt to modify any Windows-level settings**.
 1. The application **must not install any Windows applications or reboot the server**.
 1. The application **must not excessively use server resources**, even in dedicated environments.
@@ -85,6 +89,5 @@ The validation team will check a number of items in the source code, including:
 1. The application **must not run input as code**.
 1. **Do not log errors to the Windows event log**.
 1. Ensure that you are using the latest public VAF release.  If you are using the VAF Extensions library then this should be the latest appropriate version.
-1. Your application must be [Multi-Server-Mode-compatible]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) to run in the New Cloud.  In order to ensure that vaults can be migrated to the newer infrastructure, all newly-submitted vault applications must be multi-server-mode compatible..
 
 </div>
