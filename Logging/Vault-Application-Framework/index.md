@@ -17,7 +17,7 @@ It is strongly recommended that applications utilize the [VAF Extensions library
 
 There are three steps to using the logging framework with the VAF Extensions library:
 
-1. Ensure that you are referencing at least version `22.2.8-preview` with nuget.  Update your reference if you are targeting an earlier version.
+1. Ensure that you are referencing at least version `22.2.9-preview` with nuget.  Update your reference if you are targeting an earlier version.
 2. Ensure that you are using the `MFiles.VAF.Extensions.ConfigurableVaultApplicationBase<TConfiguration>` base class.
 3. Alter your configuration to inherit from `MFiles.VAF.Extensions.Configuration.ConfigurationBase` (or alternative; see below), to expose the logging configuration.
 
