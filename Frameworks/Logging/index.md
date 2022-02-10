@@ -4,6 +4,7 @@ title: Logging
 includeInSearch: true
 breadcrumb: Logging
 prerelease: true
+redirect_from: /Logging/
 ---
 
 The logging framework is designed for diagnostics, not for auditing.  Information within the log files is controlled partially by the application developer and partially by the administrator configuring logging options, therefore the log files may not contain all available information.  Additionally: log files may be removed or made unavailable without warning for operational reasons.

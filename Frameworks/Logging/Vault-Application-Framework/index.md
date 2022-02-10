@@ -4,7 +4,9 @@ title: Logging in the Vault Application Framework
 includeInSearch: true
 breadcrumb: VAF
 prerelease: true
-redirect_from: /Frameworks/Vault-Application-Framework/Logging/
+redirect_from:
+  - /Frameworks/Vault-Application-Framework/Logging/
+  - /Logging/Vault-Application-Framework/
 ---
 
 This page contains information that is specific to implementing logging within the Vault Application Framework, but does not cover the logging framework in general.  Ensure that you read the [logging page](../) and others in the section thoroughly.

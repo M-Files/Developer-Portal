@@ -4,6 +4,7 @@ title: Logging Targets
 includeInSearch: true
 breadcrumb: Targets
 prerelease: true
+redirect_from: /Logging/Targets/
 ---
 
 This page contains information that is specific to the available log targets, but does not cover the logging framework in general.  Ensure that you read the [logging page](../) and others in the section thoroughly.

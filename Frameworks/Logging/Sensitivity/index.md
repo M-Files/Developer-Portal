@@ -4,6 +4,7 @@ title: Log Sensitivity
 includeInSearch: true
 breadcrumb: Log Sensitivity
 prerelease: true
+redirect_from: /Logging/Sensitivity/
 ---
 
 This page contains information that is specific to the log sensitivity, but does not cover the logging framework in general.  Ensure that you read the [logging page](../) and others in the section thoroughly.

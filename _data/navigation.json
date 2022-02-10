@@ -497,6 +497,20 @@
 		]
 	},
 	{
+		"Link": "/Frameworks/Logging/",
+		"Title": "Logging",
+		"Items": [{
+			"Link": "/Frameworks/Logging/Sensitivity/",
+			"Title": "Log Sensitivity"
+		},{
+			"Link": "/Frameworks/Logging/Targets/",
+			"Title": "Targets"
+		},{
+			"Link": "/Frameworks/Logging/Vault-Application-Framework/",
+			"Title": "Vault Application Framework"
+		}]
+	},
+	{
 		"Link": "/User-Experience/",
 		"Title": "User Experience",
 		"Icon": "mdi:view-dashboard",
@@ -563,21 +577,6 @@
 					"Title": "Visual Studio Integration"
 				}]
 			}]
-	},
-	{
-		"Link": "/Logging/",
-		"Icon": "mdi:file-document-outline",
-		"Title": "Logging",
-		"Items": [{
-			"Link": "/Logging/Sensitivity/",
-			"Title": "Log Sensitivity"
-		},{
-			"Link": "/Logging/Targets/",
-			"Title": "Targets"
-		},{
-			"Link": "/Logging/Vault-Application-Framework/",
-			"Title": "Vault Application Framework"
-		}]
 	},
 	{
 		"Link": "/Samples-And-Libraries/",
