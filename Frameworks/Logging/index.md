@@ -14,6 +14,44 @@ The creation of log files is an important step in diagnosing the behavior (or mi
 
 The framework can be used from both [Vault Application Framework](Vault-Application-Framework) and Intelligent Metadata Layer applications.
 
+## Getting started
+
+The M-Files Vault Application Logging Framework is available as a [nuget package](https://www.nuget.org/packages/MFiles.VaultApplications.Logging/) which can be installed into your vault applications.  **It is strongly recommended that you follow the specific guidance for [Vault Application Framework](Vault-Application-Framework) and Intelligent Metadata Layer applications.**
+{:.note.warning}
+
+For the framework to work, you must perform the following two actions:
+
+1. Create a "logger" instance from `LogManager`.
+2. Call `LogManager.Initialize` from your code, providing it with a valid vault reference and configuration.
+
+An example application may look something like this:
+
+```csharp
+using MFiles.VaultApplications.Logging;
+using MFiles.VaultApplications.Logging.NLog;
+namespace myApplication
+{
+	public partial class VaultApplication
+	{
+		// Each class should have its own logger.
+		private ILogger Logger { get; set; }
+		public VaultApplication()
+		{
+			// Populate the logger instance.
+			this.Logger = LogManager.GetLogger(this.GetType());
+		}
+		protected override void StartApplication()
+		{
+			// Initializing the log manager configures the vault-specific layout renderers (e.g. "${vault-guid}").
+			// The optional configuration can be used to define where logs should be stored.
+			// NOTE: it is best practice to load this from the configuration,
+			// as shown on the technology-specific pages, e.g. https://developer.m-files.com/Frameworks/Logging/Vault-Application-Framework/
+			LogManager.Initialize(this.PermanentVault, new NLogLoggingConfiguration());
+		}
+	}
+}
+```
+
 ## What should be logged?
 
 Care should be taken by application developers that logs do not contain personally-identifiable or other potentially sensitive information.  Application developers may use [log sensitivity filters](#log-sensitivity) to allow administrators to configure whether common content such as object titles should be included in logs.  M-Files Cloud customers that do not wish for any logs to be held within the M-Files Cloud infrastructure may choose to log to other cloud-based log targets such as [Application Insights](#application-insights).
