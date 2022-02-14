@@ -90,5 +90,6 @@ The validation team will check a number of items in the source code, including:
 1. The application **must not run input as code**.
 1. **Do not log errors to the Windows event log**.
 1. Ensure that you are using the latest public VAF release.  If you are using the VAF Extensions library then this should be the latest appropriate version.
+1. Logging should be undertaken using the [M-Files Vault Application Logging Framework](/Frameworks/Logging/).
 
 </div>
