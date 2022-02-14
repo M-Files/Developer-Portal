@@ -14,7 +14,11 @@ M-Files 20.12 brings changes in which the M-Files Desktop Client builds and rend
 
 ![A dialog shown if one or more UIX applications is not fast-browsing compatible](dialog.png)
 
-The primary difference between the legacy rendering mode and fast-browsing mode is that the [lifecycle](https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html) for the [ShellFrame](https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html) instance has changed.  In the legacy rendering mode, a `ShellFrame` instance would be created every time you entered a view, then destroyed when navigating to a new view.  This meant that all UI components that were attached to the `ShellFrame` (such as commands, tabs, etc.) needed to be re-created when the user navigated between views.  In fast-browsing mode the `ShellFrame` is created once - during the `ShellUI` startup process - and is not re-created when navigating between views.
+The primary difference between the legacy rendering mode and fast-browsing mode is that the [lifecycle](https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html) for the [ShellFrame](https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html) instance has changed.
+
+In the legacy rendering mode, a `ShellFrame` instance would be created every time you entered a view, then destroyed when navigating to a new view.  This meant that all UI components that were attached to the `ShellFrame` (such as commands, tabs, etc.) needed to be re-created when the user navigated between views.
+
+In fast-browsing mode the `ShellFrame` is created once - during the `ShellUI` startup process - and is not typically re-created when navigating between views.  The `ShellFrame` instance is created during the `ShellUI` startup process, during offline/online transitions and, in rare cases, during navigation.
 
 For most applications this new behavior will not directly affect the application's functionality.  Some applications - those that rely on the previous `ShellFrame` lifecycle - may need alterations to correctly function in fast-browsing mode.
 
@@ -26,6 +30,8 @@ As the `ShellFrame`'s lifecycle cannot be used to identify when the user changes
  * `Event_ViewLocationChangedAsync`
 
 These events are raised automatically when the user navigates into a new view.  The `Async` event is recommended to be used when the handler logic is more complex and should not block the user interface.
+
+If registering to `Event_ContentChanged` within `Event_ViewLocationChanged`, it is possible that you will receive multiple callbacks before the listing is completely ready.  These callbacks may include no items in the list.  Using `Event_ViewLocationChangedAsync` should ensure that your code is only called when the listing is ready.
 
 ## Converting applications to fast-browsing compatible
 
@@ -87,7 +93,7 @@ Below is a full example of an updated application definition file:
 
 The typical use-case which requires modification is when an application uses the  `ShellFrame`'s `Started` event to check the current path.  This may be the case if your application only shows a tab in a certain view, for example.  Code similar to the following is of concern:
 
-```csharp
+```javascript
 shellFrame.Events.Register
 (
 	MFiles.Event.Started,
@@ -98,6 +104,26 @@ shellFrame.Events.Register
 );
 ```
 
+Another typical use-case where the application requires changes is when the application uses the ShellListing's Started event to react to shell listings. Code similar to following is of concern as the ShellListing is not recreated when navigating between views:
+
+```javascript
+function OnNewShellUI( shellUI ) {
+    return {
+        OnNewShellFrame: function ( shellFrame ) {
+            return {
+                OnNewShellListing: function ( shellListing ) {
+                    return {
+                        OnStarted: function () {
+                            shellFrame.ShowMessage("ShellListing.Count: " + shellListing.Items.Count);
+                        }
+                    };
+                }
+            };
+        }
+    };
+}
+```
+
 In the legacy rendering mode this would be executed every time the user went into a view; in the fast-browsing mode this would be executed only when the user first opened the M-Files interface.
 {:.note}
 
@@ -105,7 +131,7 @@ In the legacy rendering mode this would be executed every time the user went int
 
 The `ShellFrame` `Started` event will still fire when the user first opens M-Files but, from then on, the `ViewLocationChanged` event will fire instead.  To behave in the same way, code must now be written as:
 
-```csharp
+```javascript
 function reactToPathChanging()
 {
 	// Show the current path
@@ -127,8 +153,47 @@ shellFrame.Events.Register
 );
 ```
 
-If the application is running on a 20.12 vault but one or more of the applications is not explicitly marked as fast-browsing-compatible, then **all** applications will run in legacy mode.  For this reason it is important that your updated application continues to function using the old event model.
+And the code for the OnShellListing case must be written as:
+
+```javascript
+function OnNewShellUI( shellUI ) {
+    return {
+        OnNewShellFrame: function ( shellFrame ) {
+            return {
+                OnNewShellListing: function (shellListing) {
+                    return {
+                        OnStarted: function () {
+                            shellFrame.ShowMessage("ShellListing.Count: " + shellListing.Items.Count);
+                        }
+                    };
+                },
+                OnViewLocationChangedAsync: function () {
+
+                    // Register to ContentChanged event in ViewLocationChangedAsync event, so that the
+                    // first ContentChanged event includes the full listing.
+                    var event = shellFrame.Listing.Events.Register(Event_ContentChanged, function ( shellItems ) {
+
+                        // Do the work related to listing.
+                        shellFrame.ShowMessage("ShellListing.Count " + shellItems.Count);
+
+                        // Unregister the event so that this function triggers only once per view. Note also that
+                        // if we do not unregister the event, it is not unregistered automatically when changing
+                        // the view as the ShellFrame persists. As a result, we would have multiple registrations
+                        // leading to multiple messages after changing views.
+                        shellFrame.Listing.Events.Unregister( event );
+                    });
+                }
+            };
+        }
+    };
+}
+```
+
+If the application is running on a 20.12 (or later) vault but one or more of the applications is not explicitly marked as fast-browsing-compatible, then **all** applications will run in legacy mode.  For this reason it is important that your updated application continues to function using the old event model.  Note that the old event model is also needed when first entering M-Files and when performing online/offline transitions.
 {:.note.warning}
+
+For  most applications, all the ShellFrame related components should be created when the ShellFrame is created. There is usually no need to create these components from the new events, but if there is, do note that the components persist until the ShellFrame is recreated. 
+{:.note}
 
 #### Checking the rendering mode
 
@@ -171,7 +236,7 @@ function onShellFrameStarted( shellFrame ) {
 
             // Create tab with dashboard for my special view.
             // NOTE: This tab and dashboard will automatically be destroyed
-// when the shellframe location changes.
+            // when the shellframe location changes.
             var myTab = shellFrame.RightPane.AddTab( "myTab", "My Tab", "_last" );
             myTab.ShowDashboard( "myDashboard", {} );
             myTab.Visible = true;
@@ -206,6 +271,11 @@ shellFrame.Events.Register(
 
 // New global holding our tab if it was already created.
 // Would be better as object member, but kept simple for example.
+// NOTE: myTab is initialized when there is a new ShellFrame. If
+// myTab was defined outside the scope of the ShellFrame (in 
+// ShellUI scope), it would need to be reinitialized with a new 
+// ShellFrame as the tab that it is referring to is destroyed in
+// ShellFrame recreation.
 var myTab; 
 
 function reactToPathChanging( shellFrame ) {
