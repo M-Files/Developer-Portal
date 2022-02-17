@@ -74,7 +74,7 @@ public class MyConfiguration
 	public NLogLoggingConfiguration MyLoggingConfiguration { get; set; } = new NLogLoggingConfiguration();
 
 	/// <inheritdoc />
-	public ILoggingConfiguration GetLoggingConfiguration()
+	ILoggingConfiguration MFiles.VAF.Extensions.Configuration.IConfigurationWithLoggingConfiguration.GetLoggingConfiguration()
 		=> this.MyLoggingConfiguration;
 }
 ```
@@ -170,7 +170,7 @@ namespace Samples.VAF
 			var configurationManager = base.GetConfigurationManager();
 
 			// Set the resource manager for the configuration manager.
-			var combinedResourceManager = new CombinedResourceManager(true, configurationManager.ResourceManager);
+			var combinedResourceManager = new CombinedResourceManager(configurationManager.ResourceManager);
 
 			// Set the resource manager for the configuration.
 			configurationManager.ResourceManager = combinedResourceManager;
