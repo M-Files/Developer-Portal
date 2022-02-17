@@ -95,9 +95,18 @@ using MFiles.VaultApplications.Logging;
 using MFiles.VaultApplications.Logging.Resources;
 using MFilesAPI;
 using System.Collections.Generic;
+using MFiles.VaultApplications.Logging.NLog;
+using System.Runtime.Serialization;
 
 namespace Samples.VAF
 {
+    [DataContract]
+    public class Configuration
+    {
+        [DataMember]
+        public NLogLoggingConfiguration LoggingConfiguration { get; set; } = new NLogLoggingConfiguration();
+    }
+
 	public class VaultApplication
 		: ConfigurableVaultApplicationBase<Configuration>
 	{
@@ -132,8 +141,7 @@ namespace Samples.VAF
 			// Enable logging to any attached debugger, but do not launch the debugger.
 			LogManager.EnableLoggingToAttachedDebugger(launchDebugger: false);
 #endif
-
-			LogManager.Initialize(this.PermanentVault, this.Configuration?.GetLoggingConfiguration());
+			LogManager.Initialize(this.PermanentVault, this.Configuration?.LoggingConfiguration);
 			this.Logger = LogManager.GetLogger(this.GetType());
 			this.Logger?.Info("Logging started");
 
@@ -150,7 +158,7 @@ namespace Samples.VAF
 		{
 			this.Logger?.Info("Logging configuration updating");
 			base.OnConfigurationUpdated(oldConfiguration, updateExternals);
-			LogManager.UpdateConfiguration(this.Configuration?.GetLoggingConfiguration());
+			LogManager.UpdateConfiguration(this.Configuration?.LoggingConfiguration);
 			this.Logger?.Info("Logging configuration updated");
 		}
 
@@ -162,7 +170,7 @@ namespace Samples.VAF
 			var configurationManager = base.GetConfigurationManager();
 
 			// Set the resource manager for the configuration manager.
-			var combinedResourceManager = new CombinedResourceManager(configurationManager.ResourceManager);
+			var combinedResourceManager = new CombinedResourceManager(true, configurationManager.ResourceManager);
 
 			// Set the resource manager for the configuration.
 			configurationManager.ResourceManager = combinedResourceManager;
@@ -171,9 +179,9 @@ namespace Samples.VAF
 
 		protected override IEnumerable<ValidationFinding> CustomValidation(Vault vault, Configuration config)
 		{
-			foreach(var finding in base.CustomValidation(vault, config) ?? new ValidationFinding[0])
+			foreach (var finding in base.CustomValidation(vault, config) ?? new ValidationFinding[0])
 				yield return finding;
-			foreach(var finding in config?.GetLoggingConfiguration()?.GetValidationFindings() ?? new ValidationFinding[0])
+			foreach (var finding in config?.LoggingConfiguration?.GetValidationFindings() ?? new ValidationFinding[0])
 				yield return finding;
 		}
 
