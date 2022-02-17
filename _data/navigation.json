@@ -467,6 +467,10 @@
 				"Title": "Licensing"
 			},
 			{
+				"Link": "/Frameworks/Vault-Application-Framework/Logging/",
+				"Title": "Logging"
+			},
+			{
 				"Link": "/Frameworks/Vault-Application-Framework/Multi-Server-Mode/",
 				"Title": "Multi-Server Mode",
 				"Items": [{
@@ -491,6 +495,21 @@
 				"Title": "Vault Reference"
 			}
 		]
+	},
+	{
+		"Link": "/Frameworks/Logging/",
+		"Title": "Logging",
+		"Icon": "mdi:file-document-outline",
+		"Items": [{
+			"Link": "/Frameworks/Logging/Sensitivity/",
+			"Title": "Log Sensitivity"
+		},{
+			"Link": "/Frameworks/Logging/Targets/",
+			"Title": "Targets"
+		},{
+			"Link": "/Frameworks/Logging/Vault-Application-Framework/",
+			"Title": "Vault Application Framework"
+		}]
 	},
 	{
 		"Link": "/User-Experience/",
@@ -644,7 +663,7 @@
 						"Items": [{
 								"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/Upgrading-VAF2.0-To-2.1/",
 								"Title": "Upgrading from VAF 2.0 to 2.1"
-							},
+							}
 						]
 					},
 					{
