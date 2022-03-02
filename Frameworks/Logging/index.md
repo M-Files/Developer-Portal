@@ -168,36 +168,36 @@ Logging exclusions can be useful if you wish to log more verbose messages, but w
 The logger name can include a star ("*") as a wildcard character to match multiple loggers.  e.g. `MFiles.VaultApplications.Logger.*` would match all log entries caused by the library itself.
 {:.note}
 
-### Scope
+### Context
 
 By default, log messages contain the name of the logger (the name of the class that instantiated the logger), as well as the message that was logged.  In situations where there may be many simultaneous ongoing processes, or where classes may be used from a variety of different places, this may not be sufficient information to understand what is going on.
 
-Scope allows you to provide additional context to the log.  When you add scope, it can be logged into the target alongside the message.  Consider this code:
+When you add context, it can be logged into the target alongside the message.  Consider this code:
 
 ```csharp
 this.Logger?.Trace("Starting MyClass.MyMethod");
-using (var scope = this.Logger?.BeginLoggingScope($"Processing {myObjectVersion}"))
+using (var context = this.Logger?.BeginLoggingContext($"Processing {myObjectVersion}"))
 {
-	scope?.Info("Process complete");
+	context?.Info("Process complete");
 }
 this.Logger?.Trace("Ending MyClass.MyMethod");
 ```
 
-In the above example, the scope provides context as to which object is being processed.  The log messages are then written using the scope instance itself.  The above may result in the following log line (note how "Processing 0-123-1" (the scope) has been logged into the text file):
+In the above example, the context provides information as to which object is being processed.  The log messages are then written using the context instance itself.  The above may result in the following log line (note how "Processing 0-123-1" (the context) has been logged into the text file):
 
 ```text
 2022-03-02 10:27:52.5088 (v0.1) MyTestApplication.VaultApplication Processing 0-123-1 Info: Process complete
 ```
 
-Scope can also be nested, in which case scope messages are concatenated in the resulting log content:
+Scope can also be nested, in which case context messages are concatenated in the resulting log content:
 
 ```csharp
-using (var outerScope = this.Logger?.BeginLoggingScope($"Processing {myObjectVersion}"))
+using (var outerContext = this.Logger?.BeginLoggingContext($"Processing {myObjectVersion}"))
 {
-    outerScope?.Info("2");
-    using (var innerScope = outerScope?.BeginLoggingScope($"Cleanup"))
+    outerContext?.Info("2");
+    using (var innerContext = outerContext?.BeginLoggingContext($"Cleanup"))
     {
-        innerScope?.Info($"Process complete");
+        innerContext?.Info($"Process complete");
     }
 }
 ```
@@ -206,29 +206,29 @@ using (var outerScope = this.Logger?.BeginLoggingScope($"Processing {myObjectVer
 2022-03-02 10:27:52.5088 (v0.1) MyTestApplication.VaultApplication Processing 0-123-1;Cleanup Info: Process complete
 ```
 
-Note that scope messages passed to the `BeginLoggingScope` method are subject to [log sensitivity](sensitivity).
+Note that context messages passed to the `BeginLoggingContext` method are subject to [log sensitivity](sensitivity).
 {:.note}
 
-#### Providing scope to other methods
+#### Providing context to other methods
 
-In situations where functionality may call methods in other classes, it is sometimes useful to pass the current scope across so that log messages can render the correct scope.  Consider this example:
+In situations where functionality may call methods in other classes, it is sometimes useful to pass the current context across so that log messages can render the correct context.  Consider this example:
 
 ```csharp
 var myModule = new MyModule();
-using (var scope = this.Logger?.BeginLoggingScope($"Processing {myObjectVersion}"))
+using (var context = this.Logger?.BeginLoggingContext($"Processing {myObjectVersion}"))
 {
-	myModule.Process(myObjectVersion, scope);
+	myModule.Process(myObjectVersion, context);
 }
 ```
 
-To support this, the `Process` method can take an optional parameter of the current logging scope:
+To support this, the `Process` method can take an optional parameter of the current logging context:
 
 ```csharp
-public void Process(ObjectVersion objectVersion, ILoggingScope externalScope = null)
+public void Process(ObjectVersion objectVersion, ILoggingContext externalLoggingContext = null)
 {
-    using (var myScope = this.Logger?.BeginLoggingScope(externalScope, "MyProcessor"))
+    using (var context = this.Logger?.BeginLoggingContext(externalLoggingContext, "MyProcessor"))
     {
-        myScope.Info("Object processed");
+        context.Info("Object processed");
     }
 }
 ```
@@ -242,7 +242,7 @@ The logging library supports several custom layout renderers in addition to the 
 * `${application-version}` - renders the current application version, if available.
 * `${server-guid}` - renders the current server GUID [in "D" format](https://docs.microsoft.com/en-us/dotnet/api/system.guid.tostring).
 * `${vault-guid}` - renders the current vault GUID [in "D" format](https://docs.microsoft.com/en-us/dotnet/api/system.guid.tostring).
-* `${scope}` - renders any current [scope](#scope) data.
+* `${log-context}` - renders any current [context](#context) information.
 
 ## Vault Application Framework applications
 
