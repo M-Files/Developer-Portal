@@ -189,7 +189,7 @@ In the above example, the context provides information as to which object is bei
 2022-03-02 10:27:52.5088 (v0.1) MyTestApplication.VaultApplication Processing 0-123-1 Info: Process complete
 ```
 
-Scope can also be nested, in which case context messages are concatenated in the resulting log content:
+Context can also be nested, in which case context messages are concatenated in the resulting log content:
 
 ```csharp
 using (var outerContext = this.Logger?.BeginLoggingContext($"Processing {myObjectVersion}"))
