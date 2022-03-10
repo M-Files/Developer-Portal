@@ -380,17 +380,28 @@ public class VaultApplication
 		// The transaction runner can be used to enable transactional safety for sections of code.
 		var transactionRunner = this.GetTransactionRunner();
 
+		// TODO: Update the job status.
+
 		// Iterate over the items and process them.
 		foreach(var item in searchResults)
 		{
 			// Process each item in its own transaction.
-			transactionRunner.Run((transactionalVault) =>
+			try
 			{
-				// Ensure any data is up-to-date.
-				item.Refresh();
+				transactionRunner.Run((transactionalVault) =>
+				{
+					// Ensure any data is up-to-date and using the transactional vault.
+					var transactionalObjVerEx = new ObjVerEx(transactionalVault, item.Info, item.Properties);
 
-				// TODO: Process the item.
-			});
+					// TODO: Process the item.
+
+					// TODO: Update the job status.
+				});
+			}
+			catch
+			{
+				// TODO: Report out any exception.
+			}
 		}
 	}
 }
