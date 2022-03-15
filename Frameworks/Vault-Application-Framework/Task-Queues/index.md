@@ -156,7 +156,7 @@ public class VaultApplication
 	}
 
 	[BroadcastProcessor(BroadcastTaskType)]
-	public void BroadcastProcessor(ITaskProcessingJob<TaskDirective> job)
+	public void BroadcastProcessor(IBroadcastProcessingJob<TaskDirective> job)
 	{ 
 		// TODO: Handle the broadcast.
 	}
@@ -175,7 +175,7 @@ public class VaultApplication
 	public const string BroadcastTaskType = "BroadcastType";
 
 	[BroadcastProcessor(BroadcastTaskType, FilterMode = BroadcastFilterMode.FromOtherServersOnly)]
-	public void BroadcastProcessor(ITaskProcessingJob<TaskDirective> job)
+	public void BroadcastProcessor(IBroadcastProcessingJob<TaskDirective> job)
 	{ 
 		// TODO: Handle the broadcast.
 	}
