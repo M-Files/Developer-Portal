@@ -175,7 +175,7 @@ public class VaultApplication
 	public const string BroadcastTaskType = "BroadcastType";
 
 	[BroadcastProcessor(BroadcastTaskType, FilterMode = BroadcastFilterMode.FromOtherServersOnly)]
-	public void BroadcastProcessor(IBroadcastProcessingJob<TaskDirective> job)
+	public void BroadcastProcessor(IBroadcastProcessingJob<BroadcastDirective> job)
 	{ 
 		// TODO: Handle the broadcast.
 	}
@@ -189,7 +189,7 @@ Tasks can  periodically report their status back to the system.  This can be don
 
 ```csharp
 [TaskProcessor(QueueId, TaskType)]
-public void ProcessObjectHandler(ITaskProcessingJob<TaskDirective> job)
+public void ProcessObjectHandler(ITaskProcessingJob<BroadcastDirective> job)
 {
 	for(var i=1; i<=100, i++)
 	{
