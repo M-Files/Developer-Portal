@@ -71,6 +71,7 @@ public class MyConfiguration
 	: MFiles.VAF.Extensions.Configuration.IConfigurationWithLoggingConfiguration
 {
 	[DataMember]
+	[Security(ChangeBy = SecurityAttribute.UserLevel.VaultAdmin, ViewBy = SecurityAttribute.UserLevel.VaultAdmin)]
 	public NLogLoggingConfiguration MyLoggingConfiguration { get; set; } = new NLogLoggingConfiguration();
 
 	/// <inheritdoc />
@@ -104,6 +105,7 @@ namespace Samples.VAF
     public class Configuration
     {
         [DataMember]
+		[Security(ChangeBy = SecurityAttribute.UserLevel.VaultAdmin, ViewBy = SecurityAttribute.UserLevel.VaultAdmin)]
         public NLogLoggingConfiguration LoggingConfiguration { get; set; } = new NLogLoggingConfiguration();
     }
 
