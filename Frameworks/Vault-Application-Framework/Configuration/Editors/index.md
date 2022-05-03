@@ -551,3 +551,56 @@ switch(this.Configuration.Value.Mode)
 
 You can restrict the modes available to the user by altering the `AvailableModes` within the associated `[ValueSetter]` attribute.
 {:.note}
+
+## Tips and tricks
+
+### [RequireWhen]
+
+The `RequireWhenAttribute` can be used to define a property that is required when some other logic is met.  In the example below, `SomeProperty` is marked as required when the module itself is enabled.  To enable this, a class must be defined which implements `IConditionalRequirement`, as shown below.
+
+```csharp
+	public class RequiredIfModuleEnabled
+		: IConditionalRequirement
+	{
+		public string Description => "This property is required because the module is enabled.";
+		public string JsPath => ".parent._children{.key == 'Enabled' && .value == true }";
+		public bool IsRequired(object conf)
+		{
+			var typedConf = conf as ModuleConfiguration;
+			return typedConf?.Enabled ?? false;
+		}
+	}
+
+	[DataContract]
+	public class Configuration
+	{
+		[DataMember]
+		public ModuleConfiguration Module1 { get; set; }
+		
+		[DataMember]
+		public ModuleConfiguration Module2 { get; set; }
+
+		[DataMember]
+		public ModuleConfiguration Module3 { get; set; }
+	}
+
+	[DataContract]
+	public class ModuleConfiguration
+	{
+
+		[DataMember]
+		public bool Enabled { get; set; }
+
+		[MFPropertyDef(AllowEmpty = true)]
+		[DataMember]
+		[JsonConfEditor
+		(
+			Hidden = true, 
+			ShowWhen = ".parent._children{.key == 'Enabled' && .value == true }"
+		)]
+
+		[RequireWhen(typeof(RequiredIfModuleEnabled))]
+		public MFIdentifier SomeProperty { get; set; }
+
+	}
+```
