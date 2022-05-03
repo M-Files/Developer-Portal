@@ -3,7 +3,6 @@ layout: page
 title: Log Sensitivity
 includeInSearch: true
 breadcrumb: Log Sensitivity
-prerelease: true
 redirect_from: /Logging/Sensitivity/
 ---
 

@@ -3,7 +3,6 @@ layout: page
 title: Logging
 includeInSearch: true
 breadcrumb: Logging
-prerelease: true
 redirect_from: /Logging/
 ---
 
@@ -63,7 +62,7 @@ Care should be taken when implementing logging so that the information in the lo
 
 ## General structure
 
-The `MFiles.VaultApplications.Logging` framework is available via a nuget package which can be referenced from your vault applications.  If using the [VAF Extensions library](#using-the-vaf-extensions-library) version `22.2.8-preview` or higher, this package will be included for you automatically.
+The `MFiles.VaultApplications.Logging` framework is available via a nuget package which can be referenced from your vault applications.  If using the latest releases of the [VAF Extensions library](#using-the-vaf-extensions-library), this package will be included for you automatically.
 
 Each class in your application should expose a [Logger](#loggers), which your application should use to log messages at a [appropriate levels](#log-levels).  At runtime the application can be configured to output some or all of these log messages to one or more enabled [Targets](#targets); depending upon the architecture and client requirements, these targets could be files on disk, the Windows Event Log, email, or some other suitable area.
 

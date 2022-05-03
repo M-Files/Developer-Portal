@@ -3,7 +3,6 @@ layout: page
 title: Logging Targets
 includeInSearch: true
 breadcrumb: Targets
-prerelease: true
 redirect_from: /Logging/Targets/
 ---
 
