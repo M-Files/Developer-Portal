@@ -128,8 +128,6 @@ Database targets write log data into a target OLEDB database.  The database targ
 
  When using a database target, the `Command Text` property sets the SQL statement to use (e.g. `insert into dbo.Log (MachineName, Logged, Level, Message, Logger, Callsite, Exception) values ( @MachineName, @Logged, @Level, @Message, @Logger, @Callsite, @Exception )`).  Each parameter in the command text (e.g. `@MachineName`) is then created in the `Parameters` collection, and assigned data from the event itself.
 
- **THIS NEEDS MORE EXAMPLES**
-
 ![Configuring a database target](targets-database.png)
 
 ## Mail targets
@@ -137,7 +135,7 @@ Database targets write log data into a target OLEDB database.  The database targ
 Mail targets are supported within the [M-Files Cloud](../Cloud) infrastructure.
 {:.note.warning}
 
-Database targets write log data into a target OLEDB database.  The database target supports the following properties:
+Mail targets send log data to a mail server.  The mail target supports the following properties:
 
 * `Name` - changeable by vault administrators and system administrators
 * `Enabled` - changeable by vault administrators and system administrators
