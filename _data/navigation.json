@@ -299,15 +299,8 @@
 				"Title": "Fast Browsing"
 			},
 			{
-				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Tools/",
-				"Title": "Developer Tools",
-				"Items" : [{
-					"Link": "/Frameworks/User-Interface-Extensibility-Framework/Tools/Visual-Studio/",
-					"Title": "Visual Studio Integration"
-				},{
-					"Link": "/Frameworks/User-Interface-Extensibility-Framework/Tools/Other-IDEs/",
-					"Title": "Other IDEs (e.g. JetBrains Rider / VSCode)"
-				}]
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio/",
+				"Title": "Visual Studio Integration"
 			}
 		]
 	},
@@ -419,17 +412,24 @@
 				"Title": "Distributing child applications"
 			},
 			{
-				"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/",
-				"Title": "Visual Studio Integration",
-				"Items": [{
-					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/Template/",
-					"Title": "Visual Studio Template"
+				"Link": "/Frameworks/Vault-Application-Framework/Tools/",
+				"Title": "Developer Tools",
+				"Items" : [{
+					"Link": "/Frameworks/Vault-Application-Framework/Tools/Visual-Studio/",
+					"Title": "Visual Studio Integration",
+					"Items": [{
+						"Link": "/Frameworks/Vault-Application-Framework/Tools/Visual-Studio/Template/",
+						"Title": "Visual Studio Template"
+					},{
+						"Link": "/Frameworks/Vault-Application-Framework/Tools/Visual-Studio/Code-Snippets/",
+						"Title": "Code Snippets"
+					},{
+						"Link": "/Frameworks/Vault-Application-Framework/Tools/Visual-Studio/Attach-To-Processes/",
+						"Title": "Attach to VAF Processes button"
+					}]
 				},{
-					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/",
-					"Title": "Code Snippets"
-				},{
-					"Link": "/Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes/",
-					"Title": "Attach to VAF Processes button"
+					"Link": "/Frameworks/User-Interface-Extensibility-Framework/Tools/Other-IDEs/",
+					"Title": "Other IDEs (e.g. JetBrains Rider / VSCode)"
 				}]
 			},
 			{
