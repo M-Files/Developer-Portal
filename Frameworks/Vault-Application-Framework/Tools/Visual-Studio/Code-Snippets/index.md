@@ -3,7 +3,9 @@ layout: page
 title: Vault Application Framework code snippets for Visual Studio
 includeInSearch: true
 breadcrumb: Code Snippets
-redirect_from: /Frameworks/Vault-Application-Framework/Visual-Studio-Template/Code-Snippets/
+redirect_from:
+ - /Frameworks/Vault-Application-Framework/Visual-Studio-Template/Code-Snippets/
+ - /Frameworks/Vault-Application-Framework/Visual-Studio/Code-Snippets/
 ---
 
 See [Installing using the Visual Studio Template Package](#installing-using-the-visual-studio-template-package).

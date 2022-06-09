@@ -299,8 +299,15 @@
 				"Title": "Fast Browsing"
 			},
 			{
-				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio/",
-				"Title": "Visual Studio Integration"
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Tools/",
+				"Title": "Developer Tools",
+				"Items" : [{
+					"Link": "/Frameworks/User-Interface-Extensibility-Framework/Tools/Visual-Studio/",
+					"Title": "Visual Studio Integration"
+				},{
+					"Link": "/Frameworks/User-Interface-Extensibility-Framework/Tools/Other-IDEs/",
+					"Title": "Other IDEs (e.g. JetBrains Rider / VSCode)"
+				}]
 			}
 		]
 	},
