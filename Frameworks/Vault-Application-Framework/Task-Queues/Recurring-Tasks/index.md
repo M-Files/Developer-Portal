@@ -33,16 +33,31 @@ public class VaultApplication
 	{
 		// Allow the task manager to be initialized.
 		base.InitializeTaskManager();
+	}
 
-		// If we do not have a task manager then die.
-		if (null == this.TaskManager)
-			return;
 
-		// Cancel anything that's scheduled.
-		this.CancelFutureExecutions(QueueId, ImportDataFromRemoteSystemTaskType);
+	/// <inheritdoc />
+	public override void StartOperations(Vault vaultPersistent)
+	{
 
-		// Schedule an execution for now.
-		this.TaskManager.AddTask(this.PermanentVault, QueueId, ImportDataFromRemoteSystemTaskType);
+		// Initialize the application.
+		base.StartOperations(vaultPersistent);
+
+		// Ensure that our recurring configuration is updated.
+		try
+		{
+			// Cancel anything that's scheduled.
+			this.CancelFutureExecutions(QueueId, ImportDataFromRemoteSystemTaskType);
+
+			// Schedule an execution for now.
+			this.TaskManager.AddTask(this.PermanentVault, QueueId, ImportDataFromRemoteSystemTaskType);
+		}
+		catch(Exception e)
+		{
+			SysUtils.ReportInfoToEventLog($"Could not re-schedule tasks");
+		}
+
+
 	}
 
 	protected virtual void CancelFutureExecutions(string queueId, string taskType = null)
