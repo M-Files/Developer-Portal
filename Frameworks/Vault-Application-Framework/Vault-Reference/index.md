@@ -8,18 +8,17 @@ breadcrumb: Vault Reference
 Please also read the [VBScript page on the Vault reference]({{ site.baseurl }}/Built-In/VBScript/Vault-Reference) page.
 {:.note.warning}
 
-The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault.html).  There are two `Vault` references available within the VAF: the transactional [environment vault reference](#environment-vault-reference) and the non-transactional [permanent vault reference](#permanent-vault-reference).
+The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault.html).  There are two types of `Vault` reference available within the VAF: transactional and non-transactional.
+
+Changes made using a transactional vault reference are automatically rolled back if the transaction subsequently fails.  Changes made using a non-transactional vault reference are not automatically rolled back if the transaction subsequently fails; the developer must handle exceptions and ensure that any changes are undone.  If available, you should always make changes using a transactional vault reference.
 
 ## Task queues
 
-Additionally, the `TaskProcessorJob` instance provided when processing an item in a job queue also contains a vault reference.  This vault reference may or may not be transactional depending upon the [task processor transaction mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Task-Queues/#transaction-modes).
-
-Note that in [multi-server-mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode) situations, the server which executes the task may not be the server which queued it.  You can pass information to the task using a [directive]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Task-Queues/#custom-directives).
-{:.note.warning}
+The `TaskProcessorJob` instance provided when processing an item in a job queue also contains a vault reference.  This vault reference may or may not be transactional depending upon the [task processor transaction mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Task-Queues/#transaction-modes).
 
 ## Environment vault reference
 
-Almost all entry points to a vault application (event handlers, state actions, property calculations, property validations, etc.) are define an `Environment` parameter.  This environment provides contextual information about the vault and object that caused the event (e.g. which object triggered the event handler).  The environment contains a transactional `Vault` reference; any modifications to the vault contents performed using this reference during the vault application executing will be rolled back in the case of exceptions.
+Almost all entry points to a vault application (event handlers, state actions, property calculations, property validations, etc.) define an `Environment` parameter.  This environment provides contextual information about the vault and object that caused the event (e.g. which object triggered the event handler).  The environment contains a transactional `Vault` reference; any modifications to the vault contents performed using this reference during the vault application executing will be rolled back in the case of exceptions.
 
 ```csharp
 [EventHandler(MFEventHandlerType.MFEventHandlerBeforeCheckInChanges)]
