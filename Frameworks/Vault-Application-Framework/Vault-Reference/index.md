@@ -41,6 +41,24 @@ public void MyEventHandler(EventHandlerEnvironment env)
 The exception to the rule above relates to background operations and code executed within a task queue.  In these scenarios an environment vault reference is not available, so the [permanent vault reference](#permanent-vault-reference) is typically used instead.
 {:.note}
 
+## Auditing
+
+[Special consideration]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/) should be given to operations that could affect the current object's audit trail (e.g. setting the current object's properties).
+
+## Security
+
+It is important to note that the `Vault` reference provided within VBScript is connected to the M-Files server as an internal administrative user.  Any operations executed against the vault using this reference will not respect the current user's permissions.  [Special consideration]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/) should be given to operations that could affect the current object's audit trail (e.g. setting the current object's properties).
+{:.note.warning}
+
+The current user's ID is available via the `env.CurrentUserID` reference.  The [current user's session information](https://www.m-files.com/api/documentation/MFilesAPI~SessionInfo.html) is available via `env.Vault.SessionInfo`.  Search results can be [filtered by user permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions) if needed.
+
+## Permanent vault reference
+
+For situations where there is no transactional vault reference available or needed, the `this.PermanentVault` reference can be used.  The most common situations are when using [unsafe task processors](#task-queues).
+
+It is recommended that the permanent vault reference is not used for making changes to the vault contents, as actions outside of your direct control (e.g. event handlers) could cause the vault contents to be left in an inconsistent state.  Instead, actions can be routed over [the transaction runner](#using-the-transaction-runner) to provide the developer with a transactional vault reference.
+{:.note}
+
 ### Using the transaction runner
 
 In recent versions of the Vault Application Framework, the `transaction runner` can be used to execute sections of code within their own transaction.  This can be done in situations where, for example, a long-running task is being processed outside of a transaction, but a small section of code needs transactional safety.
@@ -81,21 +99,3 @@ public void ProcessManyObjects(ITaskProcessingJob<ObjIDTaskDirective> job)
 	}
 }
 ```
-
-## Auditing
-
-[Special consideration]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/) should be given to operations that could affect the current object's audit trail (e.g. setting the current object's properties).
-
-## Security
-
-It is important to note that the `Vault` reference provided within VBScript is connected to the M-Files server as an internal administrative user.  Any operations executed against the vault using this reference will not respect the current user's permissions.  [Special consideration]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/) should be given to operations that could affect the current object's audit trail (e.g. setting the current object's properties).
-{:.note.warning}
-
-The current user's ID is available via the `env.CurrentUserID` reference.  The [current user's session information](https://www.m-files.com/api/documentation/MFilesAPI~SessionInfo.html) is available via `env.Vault.SessionInfo`.  Search results can be [filtered by user permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions) if needed.
-
-## Permanent vault reference
-
-For situations where there is no transactional vault reference available or needed, the `this.PermanentVault` reference can be used.  The most common situations are within [background operations](#background-operations) and [task queues](#task-queues).
-
-It is recommended that the permanent vault reference is not used for making changes to the vault contents, as actions outside of your direct control (e.g. event handlers) could cause the vault contents to be left in an inconsistent state.  Instead, actions can be routed over [vault extension methods](#vault-extension-methods) to provide the developer with a transactional vault reference.
-{:.note}
