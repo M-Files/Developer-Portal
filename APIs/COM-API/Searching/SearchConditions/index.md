@@ -719,3 +719,26 @@ var lookup = new MFilesAPI.Lookup()
 // Set the value.
 condition.TypedValue.SetValue(MFDataType.MFDatatypeLookup, lookup);
 ```
+
+## Including items only from one External Repository
+
+```csharp
+var searchConditions = new SearchConditions();
+{
+	var condition = new SearchCondition();
+	condition.Expression.SetPropertyValueExpression((int)MFBuiltInPropertyDef.MFBuiltInPropertyDefRepository, MFParentChildBehavior.MFParentChildBehaviorNone);
+	condition.ConditionType = MFConditionType.MFConditionTypeEqual;
+	var lookup = new Lookup();
+	lookup.ExternalRepositoryName = "fab9955d73324fd3bbaa4ac591d85c2a"; // The connection ID, shown in the configuration.
+	condition.TypedValue.SetValue(MFDataType.MFDatatypeLookup, lookup);
+	searchConditions.Add(-1, condition);
+}
+
+// Ensure that the flag includes `MFSearchFlags.MFSearchFlagIncludeUnmanagedObjects`.
+foreach (var result in vault.ObjectSearchOperations.SearchForObjectsByConditionsEx(searchConditions, MFSearchFlags.MFSearchFlagIncludeUnmanagedObjects, false, MaxResultCount: 0, SearchTimeoutInSeconds: 0).Cast<ObjectVersion>())
+{
+	if (string.IsNullOrWhiteSpace(result.ObjVer.ObjID.ExternalRepositoryName))
+		continue;
+	Console.WriteLine($"{result.Title} ({result.ObjVer.ObjID.ExternalRepositoryName})");
+}
+```
