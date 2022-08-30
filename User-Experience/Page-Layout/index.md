@@ -30,13 +30,14 @@ The `Top Pane` is a full-width header located above the content areas of the app
 * The account panel (to log out, to alter notification settings, and to log in/out of external repositories)
 
 **Style and layout parameters:**   
-Background-color: #318ccc
-Margin: 24px
-Logo-size: 98x24px
-Font: Segoe UI, size 14, regular, line height 20
-Font-color: #ffffff, #767676
-Icon-size: 24x24px
-Search-size: 434x34px
+
+* Background-color: #318ccc
+* Margin: 24px
+* Logo-size: 98x24px
+* Font: Segoe UI, size 14, regular, line height 20
+* Font-color: #ffffff, #767676
+* Icon-size: 24x24px
+* Search-size: 434x34px
 
 ### Listing Area
 
@@ -45,11 +46,12 @@ Search-size: 434x34px
 The Listing Area occupies the left half of the application underneath the [Top Pane](#top-pane). It lists all views, files and other objects when navigating views or searching. It can also show pinned objects.
 
 **Style and layout parameters:**   
-Padding: 10px 24px 10px 24px
-Font-size: 14px
-Font-color: #363A40
-Background-color: #eeeeee
-Background-color (listing area): #ffffff
+
+* Padding: 10px 24px 10px 24px
+* Font-size: 14px
+* Font-color: #363A40
+* Background-color: #eeeeee
+* Background-color (listing area): #ffffff
 
 ### Pinned
 
@@ -58,15 +60,16 @@ Background-color (listing area): #ffffff
 Clicking the Pinned from navigation replaces the Left Pane with a pinboard, where users can create a personal collection of links to objects and views. The contents of the pinboard are also available using the M-Files mobile applications.
 
 **Style and layout parameters:**
-Background-color: #eeeeee
-Background-color (Pin board): #ffffff
-Padding: 24px
-Font-color: #363A40
-Font-size: 14px
-Cell-size: 293 x 52px
-Cell-icon-size: 16 x 16px
-Cell-margin: 16px
-Cell-background-color: f4f4f4
+
+* Background-color: #eeeeee
+* Background-color (Pin board): #ffffff
+* Padding: 24px
+* Font-color: #363A40
+* Font-size: 14px
+* Cell-size: 293 x 52px
+* Cell-icon-size: 16 x 16px
+* Cell-margin: 16px
+* Cell-background-color: f4f4f4
 
 ### Bottom Pane
 
@@ -75,8 +78,9 @@ Cell-background-color: f4f4f4
 The `Bottom Pane` actually is a sub area within the [Listing Area](#listing-area). It provides an alternate location for content to be shown, e.g. the [selected object's metadata](#metadata-form). It may also contain elements such as the multiple-vault search. Additionally, the contents of the bottom can be customised using the [User Interface Extensibility Framework]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/#replacing-the-right-or-bottom-panes).
 
 **Style and layout parameters:**   
-Background-color: # eeeeee
-Background-color(content): #ffffff
+
+* Background-color: # eeeeee
+* Background-color(content): #ffffff
 
 ### Right Pane
 
@@ -85,9 +89,10 @@ Background-color(content): #ffffff
 The `Right Pane` plays an important role in offering detailed control options over object properties, previews, search and personalization. Its contents switch contextually according to the selected object or current function. Additionally, the contents of the right pane can be customised using the [User Interface Extensibility Framework]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/#within-a-custom-tab) to show additional tabs of content. 
 
 **Style and layout parameters:**   
-Background-color: #eeeeee
-Background-color(content): #fffff
-Padding: 24px
+
+* Background-color: #eeeeee
+* Background-color(content): #fffff
+* Padding: 24px
 
 ### Header
 
@@ -96,14 +101,15 @@ Padding: 24px
 The Right Pane Header is the top most part inside the [Right Pane](#right-pane). Often it is used to show the vital information of the selected item, such as the object ID, version, and checkout information.
 
 **Style and layout parameters:**   
-Background-color: #eeeeee
-Background-color (header): #ffffff
-Padding: 24px
-Height: 130px
-Font-color: # 363A40
-Font-color (secondary): #767676
-Font-size (heading): 20px
-Font-size (subheading): 14px
+
+* Background-color: #eeeeee
+* Background-color (header): #ffffff
+* Padding: 24px
+* Height: 130px
+* Font-color: # 363A40
+* Font-color (secondary): #767676
+* Font-size (heading): 20px
+* Font-size (subheading): 14px
 
 ### Object Tools Ribbon
 
@@ -111,12 +117,13 @@ Font-size (subheading): 14px
 
 The `Right Pane Object Tools Ribbon` shows buttons to execute common object-specific functions, such as flag and pin object.
 
-**Style and layout parameters:** 
-Background-color: #f4f4f4
-Padding: 6px 24px 6px 24px
-Height: 32px
-Icons-size: 16 x 16px
-Font-color: #318ccc
+**Style and layout parameters:**
+
+* Background-color: #f4f4f4
+* Padding: 6px 24px 6px 24px
+* Height: 32px
+* Icons-size: 16 x 16px
+* Font-color: #318ccc
 
 ### Metadata Form
 
@@ -125,13 +132,14 @@ Font-color: #318ccc
 The Metadata Form displays the properties of the selected object. Depending on your access rights, you may also be able to edit some of the properties. The layout is largely driven by the class of the selected object, but can be customised using [Metadata Card Configuration rules]({{ site.baseurl }}/Built-In/Metadata-Card-Configuration/).
 
 **Style and layout parameters:**   
-Background-color: #eeeeee
-Background-color (metadata): #ffffff
-Padding: 16px 24px 0px 24px
-Font-size: 14px
-Font-color (name): #767676
-Font-color (value): #363a40
-Font-color (link): # 0072c6
+
+* Background-color: #eeeeee
+* Background-color (metadata): #ffffff
+* Padding: 16px 24px 0px 24px
+* Font-size: 14px
+* Font-color (name): #767676
+* Font-color (value): #363a40
+* Font-color (link): # 0072c6
 
 ### Task Pane  
 
@@ -140,15 +148,16 @@ Font-color (link): # 0072c6
 The Task Pane is where quick shortcuts are collected. The Task Pane can be collapsed and expanded by clicking of the handle on its right side. The task pane is kept for backwards compatibility.
 
 **Style and layout parameters:**   
-Background-color: #ffffff
-Width: 200px
-Font-color: #363A40
-Font-size: 14px
-Font-size (Group header): 14px
-Cell-icon-size: 16px
-Cell-padding: 10px 16px
-Cell-background-color: #ffffff
-Cell-background-color (Group header): #E0E0E1
+
+* Background-color: #ffffff
+* Width: 200px
+* Font-color: #363A40
+* Font-size: 14px
+* Font-size (Group header): 14px
+* Cell-icon-size: 16px
+* Cell-padding: 10px 16px
+* Cell-background-color: #ffffff
+* Cell-background-color (Group header): #E0E0E1
 
 ## Layout Controls  
 
@@ -164,8 +173,9 @@ Some panels have more flexibility with their layout. For example: both the [Righ
 
 ![Expanding the Task Pane](Page-layout-control-divider-taskpane.png)
 
-**Style and layout parameters:**   
-Background-color: #eeeeee
-Handle-width: 16px
-Handle-color: # fffff
-Handle-height: 86px
+**Style and layout parameters:**  
+
+* Background-color: #eeeeee
+* Handle-width: 16px
+* Handle-color: # fffff
+* Handle-height: 86px
