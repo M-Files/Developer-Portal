@@ -1,21 +1,5 @@
 h4, h5, h6 {margin-bottom:0.6em;}
 
-/* format the borderless pictures */
-body>article img.borderless {
-    box-sizing: border-box;
-    border-width: 0px;
-    padding: 0px;
-    margin: 0px 20px 0px 0px;
-    max-width: 100%;
-	&.clear
-	{
-		margin-bottom: 1em;
-	}
-	&.nomargin{
-		margin-right: 0px;
-	}	
-}
-
 /* allow clear the floating of images in the UX design section */
 footer, .clear, h2, h3, h5, body>article *.clear::after
 {
