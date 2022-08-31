@@ -11,8 +11,9 @@ redirect_from: /UX-Design/Logo/
 ![M-Files logo](Logo-blue-background.png){:.borderless}
 
 Logo settings:
-* Width 128 pixels
-* Height 32 pixels
+
+* Width 98 px
+* Height 24 px
 * Resolution 72 dpi
 * Color depth 32 bit
 * Use transparent background, alpha channel included
@@ -20,19 +21,18 @@ Logo settings:
 
 ### Distances
 
-Distances
-* From top 14px
-* From Left 12px
+* From top 24px
+* From Left 24px
 
-![Logo distance from corners 14 px from top and 12 px from left.](distances.png){:.borderless}
+![Logo usage](Logo usage.png){:.borderless}
 
 ### Download
 
-Desktop logo (white)
-![White logo](desktop-logo-2021.png){:.borderless}
-
 <ul class="quicklinks">
-	<li class="api"><a href="{{ site.baseurl }}/User-Experience/Logo/desktop-logo-2021.png">
+	<li class="api"><a href="{{ site.baseurl }}/User-Experience/Logo/M-Files logo white.png">
 	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
-	Download M-Files Desktop logo </a></li>
+	Download M-Files Desktop logo (png) </a></li>
+	<li class="api"><a href="{{ site.baseurl }}/User-Experience/Logo/M-Files logo white.svg">
+	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
+	Download M-Files Desktop logo (svg) </a></li>
 </ul>
