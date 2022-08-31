@@ -7,7 +7,7 @@ redirect_from: /UX-Design/UI-Components/
 
 ## Menu
 
-![Menu](Menu-tabs.png)
+![Menu](Menu.png)
 
 Located in top pane, Menu provides direct access to views and other main functions. From menu you can access All, Recent, Assigned, Checked Out and Pinned.
 
@@ -98,6 +98,6 @@ By using function buttons on the ribbon, user are able to Follow and Pin objects
 
 ### Buttons
 
-![Buttons](Buttons){:.borderless}
+![Buttons](Buttons.png){:.borderless}
 
 Buttons are used to move to the next step, confirm or cancel actions.
