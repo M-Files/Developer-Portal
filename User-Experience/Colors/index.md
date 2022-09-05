@@ -5,6 +5,8 @@ includeInSearch: true
 redirect_from: /UX-Design/Colors/
 ---
 
+This page describes the various colors used by M-Files clients.
+
 ## Colors
 
 Color | Color name  | Color code  | Where to use

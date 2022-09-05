@@ -5,19 +5,21 @@ includeInSearch: true
 redirect_from: /UX-Design/UI-Components/
 ---
 
+This page describes the various UI components used by M-Files clients, their function, and common styling parameters.
+
 ## Menu
 
 ![Menu](Menu.png)
 
 Located in top pane, Menu provides direct access to views and other main functions. From menu you can access All, Recent, Assigned, Checked Out and Pinned.
 
-{: .secondary}
 **Style and layout parameters:**  
-Color (inactive): #363A40
-Color (active): #318CCC
-Font-size: 16px
-Line: 4px
-Line color: #EEEEEE
+
+* Color (inactive): #363A40
+* Color (active): #318CCC
+* Font-size: 16px
+* Line: 4px
+* Line color: #EEEEEE
 
 ## Lists
 
@@ -25,16 +27,16 @@ Line color: #EEEEEE
 
 A List is the typical method for displaying a collection of multiple items such as views or objects. Lists are mostly located within the [Listing Area]({{ site.baseurl }}/UX-Design/Page-Layout/#listing-area).
 
-{: .secondary}
 **Style and layout parameters:**  
-Row-height: 36px
-Font-color (heading): #363A40
-Font-size (heading): 14px
-Padding-left (heading): 24px:
-Font-color (listing): #363A40
-Font-size (listing): 14px
-Padding-left (listing): 24px:
-Icon-size: 16px
+
+* Row-height: 36px
+* Font-color (heading): #363A40
+* Font-size (heading): 14px
+* Padding-left (heading): 24px:
+* Font-color (listing): #363A40
+* Font-size (listing): 14px
+* Padding-left (listing): 24px:
+* Icon-size: 16px
 
 ### List grouping header
 
@@ -42,11 +44,11 @@ Icon-size: 16px
 
 A List Grouping can be used to organize listed objects, grouping them by object type or a specific metadata property. The grouping appears as a header component with textual title and expanding/collapsing control on right side.
 
-{: .secondary}
 **Style and layout parameters:**  
-Background-color: #ffffff
-Font-color: #363A40
-Font-size: 14px
+
+* Background-color: #ffffff
+* Font-color: #363A40
+* Font-size: 14px
 
 ## Search 
 

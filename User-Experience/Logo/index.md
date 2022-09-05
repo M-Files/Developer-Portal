@@ -5,6 +5,7 @@ includeInSearch: true
 redirect_from: /UX-Design/Logo/
 ---
 
+Access a copy of the M-Files logo, and details on how it should be used.
 
 ## M-Files desktop Logo
 
