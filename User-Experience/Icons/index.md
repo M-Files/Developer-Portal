@@ -5,6 +5,8 @@ includeInSearch: true
 redirect_from: /UX-Design/Icons/
 ---
 
+![Icons](Icon-banner.png)
+
 The M-Files icon set is evolving towards simplicity. The target is to allow users to easily and quickly recognise structures and operations through visual presentation. 
 
 <ul class="quicklinks">

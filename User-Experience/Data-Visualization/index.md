@@ -34,7 +34,7 @@ Font colors |  |
 
 Typography used in data visualization is Segoe UI.
 
-![Typography in data visualization. Main title size 22px color #333333. Percent number size 18px color #FFFFFF.](typography.png){:.borderless }
+![Typography in data visualization. Main title size 22px color #333333. Percent number size 18px color #FFFFFF.](Chart-typography.png){:.borderless }
 
 ## Chart design
 
