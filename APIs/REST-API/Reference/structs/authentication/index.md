@@ -17,7 +17,6 @@ Type | Name | Description
 `string` | Username
 `string` | Password
 `string` | Domain
-`bool` | WindowsUser
 `string` | ComputerName
 `string` | VaultGuid
 `DateTime?` | Expiration

@@ -17,7 +17,6 @@ public class AuthenticationSample
 		{
 			Username = username,
 			Password = password,
-			WindowsUser = false,  // Change to 'true' if using Windows-credentials.
 			VaultGuid = vaultGuid  // Use GUID format with {braces}.
 		};
 
