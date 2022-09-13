@@ -27,9 +27,6 @@ Header | Description
 X-Username | Plain text username.
 X-Password | Plain text password.
 --- | ---
-X-WindowsUser | Value of `true` if M-Files should authenticate the username and password against Windows domain. Omit this header or use the value of `false` to authenticate the user as M-Files user.
-X-Domain | Windows domain for Windows authentication. The header value can be empty or the header can be omitted to use the default domain.
---- | ---
 X-Authentication | Encrypted authentication token. This can be requested through [/server/authenticationtokens]({{ site.baseurl }}/APIs/REST-API/Reference/resources/server/authenticationtokens/) and [/session/authenticationtoken]({{ site.baseurl }}/APIs/REST-API/Reference/resources/session/authenticationtoken/) resources.
 --- | ---
 X-Vault | Document vault GUID. Application-level resources such as [the document vault list]({{ site.baseurl }}/APIs/REST-API/Reference/resources/server/vaults/) can be accessed even if this header is missing.
@@ -50,7 +47,6 @@ Header | Query parameter
 --- | ---
 X-Username | username
 X-Password | password
-X-WindowsUser | windowsuser
 X-Domain | domain
 X-Authentication | auth
 X-Vault | vault
