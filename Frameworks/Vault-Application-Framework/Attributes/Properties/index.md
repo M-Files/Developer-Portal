@@ -11,6 +11,9 @@ The following attributes can be use to associated C# methods with property-relat
 
 The `PropertyAutomaticNumberingAttribute` attribute marks the following method to be executed to calculate a custom automatic number for an object (see [Customized automatic numbering (VBScript)](https://www.m-files.com/user-guide/latest/eng/Automatic_values.html)).
 
+Note that M-Files only supports customized automatic numbering for text and integer data types.
+{:.note}
+
 ```csharp
 [PropertyAutomaticNumbering("MyPropertyDefinitionAlias")]
 public TypedValue MyPropertyAutomaticNumber(PropertyEnvironment env)
