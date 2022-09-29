@@ -105,7 +105,7 @@ If an object is currently a <a href="https://www.m-files.com/api/documentation/i
 
 ## Permissions
 
-An in-memory representation of the [object's permissions](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersionPermissions.html) can be accessed via `ObjVerEx.History`, which is [lazy-loaded](https://en.wikipedia.org/wiki/Lazy_loading) as required.
+An in-memory representation of the [object's permissions](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectVersionPermissions.html) can be accessed via `ObjVerEx.Permissions`, which is [lazy-loaded](https://en.wikipedia.org/wiki/Lazy_loading) as required.
 
 ## Helper Functions
 
