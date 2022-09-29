@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+	<link rel="stylesheet" type="text/css" href="template/packages/core-ax/css/m-files.content.css">
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />" --><meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ItemTitle%%</title>" --><title>Embedding Shell Listings and File Previewers in Dashboards</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="Embedding Shell Listings and File Previewers in Dashboards"/><!--DXMETADATA end-->    
+    
+
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui.min.css"></link><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:{"dynamictoc":{"initialNodeId":"n0","initialNodeContainer":"c0"},"currentLocale":"-","isFrameless":false,"responsive":{"isEnabled":true},"navigationKind":"frames","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="Dashboards are UI Extensibility Framework components that are used to provide the user interface for extensibility applications. Dashboards run on browser control that can host ActiveX controls as a part of the user interface. M-Files provides some b" /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/m-files.content.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+<link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="82057dc9-cf41-4eb2-b001-653db5bb405a"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="-1"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="13"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+
+    <!--DXMETADATA start type="CustomHeadContent" --><!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+    <div id="i-header-content" class="i-header-content">
+        <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files UI Extensibility Framework<!--DXMETADATA end--></div>
+        <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Embedding Shell Listings and File Previewers in Dashboards<!--DXMETADATA end--></div></div>
+    </div>
+    <div id="i-after-header-content" class="i-after-header-content">
+        <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+        <!--DXMETADATA start type="IsWebOutputRootPageLinkEnabled" format="<a href='#' class="i-page-link" class="i-view-in-frame-link" title='$$VIEW_WITH_NAVIGATION_TOOLS_TIP$$' style='display: none' data-root-page='%%WebOutputRootPage%%%%OutputFileExtension%%' target='_top'>$$VIEW_WITH_NAVIGATION_TOOLS_TEXT$$</a>" --><!--DXMETADATA end-->
+    </div>
+    <!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container"><table><tr><td>
+<a href="FrontPage.html">M-Files UI Extensibility Framework</a>
+ > Technical Articles
+ > Embedding Shell Listings and File Previewers in Dashboards</td></tr></table></div><!--DXMETADATA end -->
+    
+    
+    <div id="i-body-content" class="i-body-content">
+        <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>Dashboards are UI Extensibility Framework components that are used to provide the user interface for extensibility applications. Dashboards run on browser control that can host ActiveX controls as a part of the user interface. M-Files provides some built-in ActiveX controls that can be used to customize the M-Files look and feel.</p>
+
+<p>ActiveX controls are created in HTML code with <em>&lt;object&gt;</em> tag, with <em>classid</em> attribute set to component's CLSID. Because each M-Files version has different CLSID for its components, a fixed CLSID must not be used, but the component's CLSID must be referred as a named constant. Therefore the HTML code for ActiveX controls usually needs to be constructed dynamically.</p>
+
+<p>&nbsp;</p>
+
+<p>Currently available built-in ActiveX controls and their class ID constants:</p>
+
+<ul>
+    <li>Shell Listing: <em>MFiles.CLSID.ShellListingCtrl</em></li>
+
+    <li>File previewer: <em>MFiles.CLSID.PreviewerCtrl</em></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Embedding Additional Listings</strong></p>
+
+<p>In addition to the normal shell listing, additional listing object can be created and displayed on dashboards.&nbsp;The ActiveX control implements&nbsp;the <em>AttachToListingWindow</em> method, that is used to attach the ActiveX control with the listing object. The listing (content) object to attach&nbsp;can be created with&nbsp;<a href="MFClientScript~IShellFrame~CreateAdditionalListingForPath.html" data-auto-update-caption="true">CreateAdditionalListingForPath Method</a>&nbsp;or&nbsp;<a href="MFClientScript~IShellFrame~CreateAdditionalListingForView.html" data-auto-update-caption="true">CreateAdditionalListingForView Method</a>.</p>
+
+<div class="i-filtered-content-IDL" data-title="IDL" data-itemid="IDL">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>The ShellListingCtrl.AttachToListingWindow method</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+<span style="COLOR: #0000ff">void</span> AttachToListingWindow(
+ [ <span style="COLOR: #0000ff">in</span> ] IUnknown* shellListing
+);
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>The code below illustrates how to create the ShellListingCtrl ActiveX object dynamically in HTML code. It utilizes jQuery library for HTML DOM modifications.</p>
+
+<p id="widget_034a403c-addd-4b0e-93ef-394063dcce38" class="InnovaContentWidget" contenteditable="false" style="BORDER-TOP: white 2px solid; MARGIN-TOP: 2px; BORDER-BOTTOM: white 1px solid" data-widget-layout="block" data-source-widget-type="" data-widget-type="Colorized Example Code"></p>
+
+<div class="WidgetContent">
+    <div class="FilteredContentCS">
+        <table class="SyntaxTable">
+            <tbody>
+                <tr>
+                    <th><span id="Title" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px">Creating ShellListingCtrl object dynamically</span> <span id="LanguageName" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px">HTML</span></th>
+
+                    <th>
+                        <div class="CopyCodeWrapper">
+                            <span class="CopyCode">Copy Code</span>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td class="code" colspan="2">
+                        <span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "<a href="http://www.w3.org/TR/html4/strict.dtd">http://www.w3.org/TR/html4/strict.dtd</a>"&gt;<br />
+                        &lt;html&gt;<br />
+                        &lt;head&gt;<br />
+                        &nbsp;&lt;title&gt;&lt;/title&gt;<br />
+                        &nbsp;&lt;meta http-equiv="content-type" content="text/html;charset=UTF-8"&gt;</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&lt;!-- Include the jQuery Core library --&gt;<br />
+                        &nbsp;&lt;script type="text/javascript" src="jquery-ui-1.10.0.custom/js/jquery-1.9.0.js"&gt;&lt;/script&gt;</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&lt;!-- Dashboard implementation --&gt;<br />
+                        &nbsp;&lt;script type="text/javascript"&gt;</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&nbsp;"use strict";</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&nbsp;/**<br />
+                        &nbsp;&nbsp; * Gets called when a new dashboard object is created.<br />
+                        &nbsp;&nbsp; *<br />
+                        &nbsp;&nbsp; * @param { dashboard } The newly created dashboard.<br />
+                        &nbsp;&nbsp; */<br />
+                        &nbsp;&nbsp;function OnNewDashboard( dashboard ) {</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&nbsp;&nbsp;// Register a handler to listen to the started event.<br />
+                        &nbsp;&nbsp;&nbsp;dashboard.Events.Register( MFiles.Event.Started, getDashboardStartedHandler( dashboard ) );<br />
+                        &nbsp;&nbsp;}</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&nbsp;/**<br />
+                        &nbsp;&nbsp; * Returns the event handler to handle the "started" event of a dashboard.<br />
+                        &nbsp;&nbsp; *<br />
+                        &nbsp;&nbsp; * @param { dashboard } The current dashboard object.<br />
+                        &nbsp;&nbsp; */<br />
+                        &nbsp;&nbsp;function getDashboardStartedHandler( dashboard ) {</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&nbsp;&nbsp;// Return the event handler.<br />
+                        &nbsp;&nbsp;&nbsp;return function() {</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&nbsp;&nbsp;&nbsp;// Create new listing object. The shell frame was passed as a custom data.<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;var shellFrame = dashboard.CustomData;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;var listing = shellFrame.CreateAdditionalListingForPath( "Checked Out to Me\\" );</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&nbsp;&nbsp;&nbsp;// Add the ActiveX control to the DOM.<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;$( "#mf-listing" ).html( "&lt;object classid='clsid:" + MFiles.CLSID.ShellListingCtrl + "' style='width: 400px; height: 300px;'&gt; &lt;/object&gt;" );<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;var docListCtrl = $( "#mf-listing object" ).get( 0 );</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&nbsp;&nbsp;&nbsp;// Attach the listing to the ActiveX control.<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;docListCtrl.AttachToListingWindow( listing );<br />
+                        &nbsp;&nbsp;&nbsp;};<br />
+                        &nbsp;&nbsp;}</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&nbsp;&lt;/script&gt;</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&lt;/head&gt;</span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white"></span></p>
+
+                        <p><span id="Content" class="WidgetProperty" contenteditable="true" style="BORDER-TOP: rgb(224,224,224) 1px dotted; BORDER-RIGHT: rgb(224,224,224) 1px dotted; WIDTH: 100%; VERTICAL-ALIGN: top; BORDER-BOTTOM: rgb(224,224,224) 1px dotted; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LEFT: 5px; BORDER-LEFT: rgb(224,224,224) 1px dotted; PADDING-RIGHT: 4px; BACKGROUND-COLOR: white">&lt;!-- The dashboard content --&gt;<br />
+                        &lt;body&gt;<br />
+                        &nbsp;Checked out to me:<br />
+                        &nbsp;&lt;div id="mf-listing"&gt;&lt;/div&gt;<br />
+                        &lt;/body&gt;<br />
+                        &lt;/html&gt;</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<p></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Embedding File Previewers</strong></p>
+
+<p>&nbsp;</p>
+
+<p>File previewer ActiveX component can display file content previews for any supported file format for files in M-Files or on local disk. It should be&nbsp;created dynamically by using <em>MFiles.CLSID.PreviewerCtrl</em> as class ID, in similar manner like the <em>ShellListCtrl</em> is created above.</p>
+
+<p>The PreviewCtrl ActiveX object exposes following methods:</p>
+
+<div class="i-filtered-content-IDL" data-title="IDL" data-itemid="IDL">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>Example Title</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+HRESULT ShowFilePreview(
+ [ <span style="COLOR: #0000ff">in</span> ] BSTR bstrFilenameWithAbsolutePath
+);
+HRESULT ClearPreview();
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>&nbsp;</p><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+        
+    </div>
+    <div id="i-footer-content" class="i-footer-content">
+        <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2022 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
+<a href="mailto:support@m-files.com?subject=M-Files UI Extensibility Framework: Documentation Feedback">Send feedback</a>
+    </div>
+    
+
+    <!--DXMETADATA start type="IsNew" format="<script type=""text/javascript"">setIsNew = true;</script>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<script type=""text/javascript"">setIsResponsiveEnabled = true;</script>" --><script type="text/javascript">setIsResponsiveEnabled = true;</script><!--DXMETADATA end-->
+    <script type="text/javascript">
+        $(function() {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.isNew = !(typeof setIsNew === "undefined");
+            documentInstance.isResponsiveEnabled = !(typeof setIsResponsiveEnabled === "undefined");
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+	<link rel="stylesheet" type="text/css" href="template/packages/core-ax/css/m-files.content.css">
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />" --><meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ItemTitle%%</title>" --><title>Using ShellUI Module</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="Using ShellUI Module"/><!--DXMETADATA end-->    
+    
+
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui.min.css"></link><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:{"dynamictoc":{"initialNodeId":"n0","initialNodeContainer":"c0"},"currentLocale":"-","isFrameless":false,"responsive":{"isEnabled":true},"navigationKind":"frames","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="Shell Object Lifetimes
+
+The main object of ShellUI module, the ShellUI object, lives as long as the shell window or any of its descent window lives. The lifetime of the shell window begins when the user navigates or opens a window with Windows Expl" /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/m-files.content.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+<link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="bea200ce-7a04-47a8-9f7c-dcb226fbb721"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="-1"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="1"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+
+    <!--DXMETADATA start type="CustomHeadContent" --><!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+    <div id="i-header-content" class="i-header-content">
+        <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files UI Extensibility Framework<!--DXMETADATA end--></div>
+        <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Using ShellUI Module<!--DXMETADATA end--></div></div>
+    </div>
+    <div id="i-after-header-content" class="i-after-header-content">
+        <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+        <!--DXMETADATA start type="IsWebOutputRootPageLinkEnabled" format="<a href='#' class="i-page-link" class="i-view-in-frame-link" title='$$VIEW_WITH_NAVIGATION_TOOLS_TIP$$' style='display: none' data-root-page='%%WebOutputRootPage%%%%OutputFileExtension%%' target='_top'>$$VIEW_WITH_NAVIGATION_TOOLS_TEXT$$</a>" --><!--DXMETADATA end-->
+    </div>
+    <!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container"><table><tr><td>
+<a href="FrontPage.html">M-Files UI Extensibility Framework</a>
+ > Technical Articles
+ > Using ShellUI Module</td></tr></table></div><!--DXMETADATA end -->
+    
+    
+    <div id="i-body-content" class="i-body-content">
+        <!--DXMETADATA start type="TopicSection" name="BodyText"--><h3 style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; PAGE-BREAK-AFTER: avoid; COLOR: rgb(79,129,189); FONT: bold 13pt/19px Cambria, serif; MARGIN: 10pt 0cm 0pt 36.85pt; LETTER-SPACING: normal; TEXT-INDENT: -36.85pt; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span><span lang="EN-US" xml:lang="EN-US">Shell Object Lifetimes</span></span></h3>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The main object of<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span><span class="Apple-converted-space">&nbsp;</span>module, the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span><span class="Apple-converted-space">&nbsp;</span>object, lives as long as the shell window or any of its descent window lives. The lifetime of the shell window begins when the user navigates or opens a window with Windows Explorer, and points the window to the document vault on M-Files drive. The<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span><span class="Apple-converted-space">&nbsp;</span>is preserved as long as the window is used to point a folder on M-Files drive. The user may open a descend window to the document vault, like history or relationships window, so that these windows share the same<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span><span class="Apple-converted-space">&nbsp;</span>object. The<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span><span class="Apple-converted-space">&nbsp;</span>object gets decommissioned when the user navigates out from the document vault, or closes all windows.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">If the user has two parallel and independent Windows Explorer windows, both windows have their own<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span>. Only descend windows share the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span><span class="Apple-converted-space">&nbsp;</span>object.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object represents the inner area of the Windows Explorer window. The<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>is actually a container object for shell panes (tasks pane, search pane, side panes), the shell listing, and for shell commands. The<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object is not preserved when navigating between folders (views), but is re-created every time the folder changes. Therefore the application module must trace the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object creations and destructions constantly, and re-apply the modifications done for<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>every time it changes.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">Respectively, a new<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object appears when a new embedded shell frame is created. For example, the relationships window contains three tabs, each containing individual listing content view. Therefore three<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>objects are created when the relationships window is opened.</span></p>
+
+<h2 style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; PAGE-BREAK-AFTER: avoid; COLOR: rgb(79,129,189); FONT: bold 13pt/19px Cambria, serif; MARGIN: 10pt 0cm 0pt 36.85pt; LETTER-SPACING: normal; TEXT-INDENT: -36.85pt; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><a name="_Toc335987887"></a><a name="_Toc334716048"></a><a name="_Toc334785012"></a><a name="_Toc334785679"></a><span><span class="SpellE"><span lang="EN-US" xml:lang="EN-US">ShellFrame</span></span></span><span><span lang="EN-US" xml:lang="EN-US"><span class="Apple-converted-space">&nbsp;</span>Types and Characteristics</span></span></h2>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The creation of a new<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>window is notified with<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">Event_NewShellframe</span><span class="Apple-converted-space">&nbsp;</span>event (<span class="SpellE"><i>OnNewShellFrame</i></span>). However the new<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object may appear in various<span class="Apple-converted-space">&nbsp;</span><span class="GramE">situations,</span><span class="Apple-converted-space">&nbsp;</span>and the application may be interested to customize only certain instances of shell frame objects.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">There are other events that can be used to react only to certain types of shell frame objects. The table below lists all events that are sent with different shell frame contexts.</span></p>
+
+<table class="MsoNormalTable" style='FONT-FAMILY: "Times New Roman"; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; MARGIN-LEFT: 59.8pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px' cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr>
+            <td style="BORDER-LEFT-STYLE: none; BORDER-TOP: black 1pt solid; WIDTH: 175.5pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="234">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Event</span></b></p>
+            </td>
+
+            <td style="BORDER-LEFT-STYLE: none; BORDER-TOP: black 1pt solid; WIDTH: 281.2pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="375">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Triggered for</span></b></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 175.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="234">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span class="SpellE"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Event_NewShellFrame</span></span></p>
+
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">(<span class="SpellE">OnNewShellFrame</span>)</span></p>
+            </td>
+
+            <td style="WIDTH: 281.2pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="375">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Any shell frame</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 175.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="234">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span class="SpellE"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Event_NewNormalShellFrame</span></span></p>
+
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">(<span class="SpellE">OnNewNormalShellFrame</span>)</span></p>
+            </td>
+
+            <td style="WIDTH: 281.2pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="375">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Normal shell frames, i.e. no shell frames in common dialogs, no embedded shell frames</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 175.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="234">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span class="SpellE"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Event_NewCommonDialogShellFrame</span></span></p>
+
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">(<span class="SpellE">OnNewCommonDialogShellFrame</span>)</span></p>
+            </td>
+
+            <td style="WIDTH: 281.2pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="375">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Shell frames in common dialogs only</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; WIDTH: 175.5pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="234">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span class="SpellE"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Event_NewEmbeddedShellFrame</span></span></p>
+
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">(<span class="SpellE">OnNewEmbeddedShellFrame</span>)</span></p>
+            </td>
+
+            <td style="BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; WIDTH: 281.2pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="375">
+                <p class="MsoListParagraph" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal"><span lang="EN-US" style='FONT-SIZE: 12pt; FONT-FAMILY: "Browallia New", sans-serif; COLOR: black' xml:lang="EN-US">Embedded shell frames only (e.g. history window, relationships window,<span class="SpellE">subobjects</span><span class="Apple-converted-space">&nbsp;</span>window, clear local cache window, etc.)</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 74pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal">&nbsp;</p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">Certain<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>types cannot host search pane or tasks pane. The side pane availability can be verified with<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>ITaskPane</i></span><i>::Available</i><span class="Apple-converted-space">&nbsp;</span>and<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>ISearchPane</i></span><i>::Available properties</i>.</span></p>
+
+<h2 style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; PAGE-BREAK-AFTER: avoid; COLOR: rgb(79,129,189); FONT: bold 13pt/19px Cambria, serif; MARGIN: 10pt 0cm 0pt 36.85pt; LETTER-SPACING: normal; TEXT-INDENT: -36.85pt; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><a name="_Toc335987888"></a><a name="_Toc334716049"></a><a name="_Toc334785013"></a><a name="_Toc334785680"></a><a name="_Toc335987889"></a><a name="_Toc334716050"></a><a name="_Toc334785014"></a><a name="_Toc334785681"></a><span><span lang="EN-US" xml:lang="EN-US">Limiting the Shell Commands Availability</span></span></h2>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">Application that uses the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span><span class="Apple-converted-space">&nbsp;</span>module can change the state of M-Files built-in commands. The built-in commands can be seen in Windows Explorer menus, in context menu, and on tasks pane. The application can disable or hide the command label in some or all command locations. If the command is hidden entirely from all locations, it is excluded out and its keyboard shortcut behavior is blocked, too.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The application can only decrease the command availability, i.e. active commands can be disabled (grayed) or<span class="Apple-converted-space">&nbsp;</span><span class="GramE">hidden,</span><span class="Apple-converted-space">&nbsp;</span>and inactive commands can be only hidden. Disabled commands cannot be made active.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">Command states are accessed via<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ICommands</span><span class="Apple-converted-space">&nbsp;</span>interface of<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object. Note that because the commands are specific for shell frame, their states need to be re-set each time the shell frame changes. The code below entirely hides the checkout command from right-button menu.</span></p>
+
+<div style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: windowtext 1pt solid; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; MARGIN-LEFT: 65.2pt; BORDER-LEFT: windowtext 1pt solid; LETTER-SPACING: normal; PADDING-RIGHT: 4pt; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">{</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">// Here the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame</span><span class="Apple-converted-space">&nbsp;</span>refers to<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">IShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">// Hide the checkout command from context menu.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE">shellFrame.Commands.SetCommandState</span></span><span class="GramE">(</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span class="SpellE">BuiltinCommand_CheckOut</span>,<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">CommandLocation_ContextMenu</span>,<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">CommandState_<span class="GramE">Hidden</span></span><span class="GramE"><span class="Apple-converted-space">&nbsp;</span>)</span>;</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">}</span></p>
+</div>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal">&nbsp;</p>
+
+<h2 style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; PAGE-BREAK-AFTER: avoid; COLOR: rgb(79,129,189); FONT: bold 13pt/19px Cambria, serif; MARGIN: 10pt 0cm 0pt 36.85pt; LETTER-SPACING: normal; TEXT-INDENT: -36.85pt; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><a name="_Toc335987890"></a><a name="_Toc334716051"></a><a name="_Toc334785015"></a><a name="_Toc334785682"></a><span><span lang="EN-US" xml:lang="EN-US">Displaying Own Commands</span></span></h2>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">ShellUI</span><span class="Apple-converted-space">&nbsp;</span>module can add own commands (custom commands) to show in M-Files user interface. Commands can be added to context menu (right-button menu), and to task pane. The command location in context menu can be chosen from pre-set placeholders. On tasks pane the command can be added to either one of the built-in groups, or to new group.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The code below adds a custom command, and appends it to context menu and task pane.</span></p>
+
+<div style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: windowtext 1pt solid; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; MARGIN-LEFT: 65.2pt; BORDER-LEFT: windowtext 1pt solid; LETTER-SPACING: normal; PADDING-RIGHT: 4pt; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">{</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">// Here the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame</span><span class="Apple-converted-space">&nbsp;</span>refers to<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">IShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">//<span class="Apple-converted-space">&nbsp;</span><span class="GramE">Create</span><span class="Apple-converted-space">&nbsp;</span>new command.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE"><span style="COLOR: blue">var</span></span></span><span class="Apple-converted-space">&nbsp;</span><span class="SpellE">commandId</span><span class="Apple-converted-space">&nbsp;</span>=<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame.Commands.CreateCustomCommand</span>(<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: maroon">"Custom Command"</span><span class="Apple-converted-space">&nbsp;</span>);</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt">&nbsp;</p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">//<span class="Apple-converted-space">&nbsp;</span><span class="GramE">Append</span><span class="Apple-converted-space">&nbsp;</span>the command to context menu.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE">shellFrame.Commands.AddCustomCommandToMenu</span></span><span class="GramE">(</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE">commandId</span></span>,<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">MenuLocation_ContextMenu_Bottom</span>, 0 );</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt">&nbsp;</p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">//<span class="Apple-converted-space">&nbsp;</span><span class="GramE">Append</span><span class="Apple-converted-space">&nbsp;</span>the command to built-in task pane group.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE">shellFrame.TaskPane.AddCustomCommandToGroup</span></span><span class="GramE">(</span><span class="Apple-converted-space">&nbsp;</span><span class="SpellE">commandId</span>,<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">TaskPaneGroup_GoTo</span>, 0 );</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">}</span></p>
+</div>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal">&nbsp;</p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The custom command state can be altered in similar manner with built-in commands, using<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>ICommands</i></span><i>::<span class="SpellE">SetCommandState</span></i><span class="Apple-converted-space">&nbsp;</span>method. The custom command activation can be handled by implementing an event handler for custom commands, as implemented in code below.</span></p>
+
+<div style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: windowtext 1pt solid; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; MARGIN-LEFT: 65.2pt; BORDER-LEFT: windowtext 1pt solid; LETTER-SPACING: normal; PADDING-RIGHT: 4pt; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">{</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">// Here the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame</span><span class="Apple-converted-space">&nbsp;</span>refers to<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">IShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">//<span class="Apple-converted-space">&nbsp;</span><span class="GramE">Add</span><span class="Apple-converted-space">&nbsp;</span>custom command handler.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame.Commands.Events.OnCustomCommand</span><span class="Apple-converted-space">&nbsp;</span>=<span class="Apple-converted-space">&nbsp;</span><span class="GramE"><span style="COLOR: blue">function</span>(</span><span class="Apple-converted-space">&nbsp;</span><span class="SpellE">activatedCommandId</span><span class="Apple-converted-space">&nbsp;</span>) {</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="GramE"><span style="COLOR: blue">if</span>(</span><span class="Apple-converted-space">&nbsp;</span><span class="SpellE">activatedCommandId</span><span class="Apple-converted-space">&nbsp;</span>==<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">commandId</span><span class="Apple-converted-space">&nbsp;</span>)</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">// Handle custom command</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp; }</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">}</span></p>
+</div>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal">&nbsp;</p>
+
+<h2 style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; PAGE-BREAK-AFTER: avoid; COLOR: rgb(79,129,189); FONT: bold 13pt/19px Cambria, serif; MARGIN: 10pt 0cm 0pt 36.85pt; LETTER-SPACING: normal; TEXT-INDENT: -36.85pt; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span><span lang="EN-US" xml:lang="EN-US">Listing Content and Selection</span></span></h2>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span class="SpellE"><span lang="EN-US" xml:lang="EN-US">ShellUI</span></span><span lang="EN-US" xml:lang="EN-US"><span class="Apple-converted-space">&nbsp;</span>module can access the listing content and the current selection in the listing view. It doesn’t matter if the listing is actually visible or replaced with a dashboard or report, the listing still exists under the graphics.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">Listing-related actions like reading the content and selecting an item can be performed with methods in<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>IShellListing</i></span><span class="Apple-converted-space">&nbsp;</span>interface. For example, the code below loops through all selected objects.</span></p>
+
+<div style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: windowtext 1pt solid; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; MARGIN-LEFT: 65.2pt; BORDER-LEFT: windowtext 1pt solid; LETTER-SPACING: normal; PADDING-RIGHT: 4pt; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">{</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">// Here the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame</span><span class="Apple-converted-space">&nbsp;</span>variable refers to<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">IShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">// Loop all selected objects.</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE"><span style="COLOR: blue">var</span></span></span><span class="Apple-converted-space">&nbsp;</span><span class="SpellE">selectedItems</span><span class="Apple-converted-space">&nbsp;</span>=<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame.ActiveListing.CurrentSelection</span>;</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="GramE"><span style="COLOR: blue">for</span>(</span><span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span style="COLOR: blue">var</span></span><span class="Apple-converted-space">&nbsp;</span>i = 1; i &lt;=<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">selectedItems.ObjectVersions.Count</span>; ++i )</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp; {</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE"><span style="COLOR: blue">var</span></span></span><span class="Apple-converted-space">&nbsp;</span><span class="SpellE">objectversion</span><span class="Apple-converted-space">&nbsp;</span>=<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">selectedItems.ObjectVersions.Item</span>( i );</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: rgb(0,100,0)">/// ...</span></span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp; }</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">}</span></p>
+</div>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal">&nbsp;</p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">If the application is interested about the shell listing content, it may wish to handle<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>Event_ContentChanged</i></span><span class="Apple-converted-space">&nbsp;</span>events. This event occurs every time when there is a change in the listing content. E.g. a new items appear, old items get removed, a node expands or collapses, or existing item data changes. The event is not sent synchronously but after a timer interval, in order to avoid too many event notifications.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">If the application is interested about selected item, it should track the listing selection. There are two selection-related events:</span></p>
+
+<p class="MsoListParagraph" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 36pt; LETTER-SPACING: normal; TEXT-INDENT: -18pt; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">-</span><span lang="EN-US" style='FONT-SIZE: 7pt; FONT-FAMILY: "Times New Roman", serif; LINE-HEIGHT: 10px' xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span></span><span class="SpellE"><i><span lang="EN-US" xml:lang="EN-US">Event_SelectionChanged</span></i></span><span lang="EN-US" xml:lang="EN-US"><span class="Apple-converted-space">&nbsp;</span>is sent when a listing item gets selected, or selected item is unselected.<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>Event_SelectedItemsChanged</i></span><span class="Apple-converted-space">&nbsp;</span>is sent when a selected item data changes (properties are changed etc.).</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">These events are not sent synchronously but after a timer interval, in order to avoid too many event notifications.</span></p>
+
+<h2 style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; PAGE-BREAK-AFTER: avoid; COLOR: rgb(79,129,189); FONT: bold 13pt/19px Cambria, serif; MARGIN: 10pt 0cm 0pt 36.85pt; LETTER-SPACING: normal; TEXT-INDENT: -36.85pt; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span><span lang="EN-US" xml:lang="EN-US">Shell Navigation</span></span></h2>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span class="SpellE"><span lang="EN-US" xml:lang="EN-US">ShellUI</span></span><span lang="EN-US" xml:lang="EN-US"><span class="Apple-converted-space">&nbsp;</span>module can request the shell to navigate to another folder. See<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>IShellFrame</i></span><i>::<span class="SpellE">NavigateToParent</span></i><span class="Apple-converted-space">&nbsp;</span>method and<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>IShellFrame</i></span><i>::<span class="SpellE">CurrentPath</span></i><span class="Apple-converted-space">&nbsp;</span>property.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The application can also navigate to a view by selecting and activating a view item in the listing. See<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE"><i>IShellListing</i></span></span><span class="GramE"><i><span class="Apple-converted-space">&nbsp;</span>::</i></span><span class="SpellE"><i>ActivateSelected</i></span>.</span></p><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+        
+    </div>
+    <div id="i-footer-content" class="i-footer-content">
+        <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2022 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
+<a href="mailto:support@m-files.com?subject=M-Files UI Extensibility Framework: Documentation Feedback">Send feedback</a>
+    </div>
+    
+
+    <!--DXMETADATA start type="IsNew" format="<script type=""text/javascript"">setIsNew = true;</script>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<script type=""text/javascript"">setIsResponsiveEnabled = true;</script>" --><script type="text/javascript">setIsResponsiveEnabled = true;</script><!--DXMETADATA end-->
+    <script type="text/javascript">
+        $(function() {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.isNew = !(typeof setIsNew === "undefined");
+            documentInstance.isResponsiveEnabled = !(typeof setIsResponsiveEnabled === "undefined");
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>
