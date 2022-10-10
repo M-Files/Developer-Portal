@@ -1,0 +1,608 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+	<link rel="stylesheet" type="text/css" href="template/packages/core-ax/css/m-files.content.css">
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />" --><meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ItemTitle%%</title>" --><title>Showing Message Boxes</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="Showing Message Boxes"/><!--DXMETADATA end-->    
+    
+
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui.min.css"></link><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:{"dynamictoc":{"initialNodeId":"n0","initialNodeContainer":"c0"},"currentLocale":"-","isFrameless":false,"responsive":{"isEnabled":true},"navigationKind":"frames","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="Simple and customized message boxes can be displayed in various interfaces by using ShowMessage method. This method can take either single string or object as a parameter. If an object is passed, it defines the behavior of the message box." /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/m-files.content.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+<link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="8fd64d26-c7be-4da8-a3a1-d42ea7b5d0bb"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="-1"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="4"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+
+    <!--DXMETADATA start type="CustomHeadContent" --><!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+    <div id="i-header-content" class="i-header-content">
+        <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files UI Extensibility Framework<!--DXMETADATA end--></div>
+        <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Showing Message Boxes<!--DXMETADATA end--></div></div>
+    </div>
+    <div id="i-after-header-content" class="i-after-header-content">
+        <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+        <!--DXMETADATA start type="IsWebOutputRootPageLinkEnabled" format="<a href='#' class="i-page-link" class="i-view-in-frame-link" title='$$VIEW_WITH_NAVIGATION_TOOLS_TIP$$' style='display: none' data-root-page='%%WebOutputRootPage%%%%OutputFileExtension%%' target='_top'>$$VIEW_WITH_NAVIGATION_TOOLS_TEXT$$</a>" --><!--DXMETADATA end-->
+    </div>
+    <!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container"><table><tr><td>
+<a href="FrontPage.html">M-Files UI Extensibility Framework</a>
+ > Technical Articles
+ > Showing Message Boxes</td></tr></table></div><!--DXMETADATA end -->
+    
+    
+    <div id="i-body-content" class="i-body-content">
+        <!--DXMETADATA start type="TopicSection" name="BodyText"--><p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">Simple and customized message boxes can be displayed in various interfaces by using<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><i>ShowMessage</i></span><span class="Apple-converted-space">&nbsp;</span>method. This method can take either single string or object as a parameter. If an object is passed, it defines the behavior of the message box.</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The code below shows two message boxes, one with just basic text, and another with two option buttons.</span></p>
+
+<div style="BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: windowtext 1pt solid; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: windowtext 1pt solid; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); PADDING-BOTTOM: 1pt; PADDING-TOP: 1pt; PADDING-LEFT: 4pt; MARGIN-LEFT: 65.2pt; BORDER-LEFT: windowtext 1pt solid; LETTER-SPACING: normal; PADDING-RIGHT: 4pt; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px">
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">// Here the<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame</span><span class="Apple-converted-space">&nbsp;</span>refers to<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">IShellFrame</span><span class="Apple-converted-space">&nbsp;</span>object.</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt">&nbsp;</p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">// Simple message.</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span class="SpellE"><span class="GramE"><span lang="EN-US" xml:lang="EN-US">shellFrame.ShowMessage</span></span></span><span class="GramE"><span lang="EN-US" xml:lang="EN-US">(</span></span><span lang="EN-US" xml:lang="EN-US"><span class="Apple-converted-space">&nbsp;</span><span style="COLOR: maroon">"Hello"</span><span class="Apple-converted-space">&nbsp;</span>);</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt">&nbsp;</p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">//<span class="Apple-converted-space">&nbsp;</span><span class="GramE">Customized</span><span class="Apple-converted-space">&nbsp;</span>message with two input buttons.</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span class="SpellE"><span class="GramE"><span lang="EN-US" style="COLOR: blue" xml:lang="EN-US">var</span></span></span><span lang="EN-US" xml:lang="EN-US"><span class="Apple-converted-space">&nbsp;</span><span class="SpellE">clickedButton</span><span class="Apple-converted-space">&nbsp;</span>=<span class="Apple-converted-space">&nbsp;</span><span class="SpellE">shellFrame.ShowMessage</span>(</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp; {</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span></span><span class="SpellE"><span class="GramE"><span lang="FR" xml:lang="FR">caption</span></span></span><span lang="FR" xml:lang="FR">:<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: maroon">"<span class="SpellE">MyApp</span>"</span>,</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="FR" xml:lang="FR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="GramE">message</span>:<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: maroon">"<span class="SpellE">Quit</span><span class="Apple-converted-space">&nbsp;</span>or Continue?"</span>,</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="FR" xml:lang="FR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE">icon</span></span>:<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: maroon">"question"</span>,</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="FR" xml:lang="FR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span></span><span lang="EN-US" xml:lang="EN-US">button1_title:<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: maroon">"Quit"</span>,</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; button2_title:<span class="Apple-converted-space">&nbsp;</span><span style="COLOR: maroon">"Continue"</span>,</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE">defaultButton</span></span>: 2,</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE">timeOutButton</span></span>: 1,</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span><span class="SpellE"><span class="GramE">timeOut</span></span>: 15</span></p>
+
+    <p class="Code" style="FONT-SIZE: 8pt; FONT-FAMILY: Consolas; MARGIN: 0cm 0cm 0pt"><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp; } );</span></p>
+</div>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal">&nbsp;</p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The message boxes look like this:</span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 51pt; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span><img id="_x0000_i1026" border="0" name="_x0000_i1026" alt="Description: Description: C:\Users\metari\Documents\wwwpage\DevGuide_files\image013.jpg" src="http://www.m-files.com/UI_Extensibility_Framework/DevGuide_files/image013.jpg" width="109" height="94" /></span><span lang="EN-US" xml:lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Apple-converted-space">&nbsp;</span></span><span><img id="_x0000_i1025" border="0" name="_x0000_i1025" alt="Description: Description: C:\Users\metari\Documents\wwwpage\DevGuide_files\image014.jpg" src="http://www.m-files.com/UI_Extensibility_Framework/DevGuide_files/image014.jpg" width="153" height="94" /></span></p>
+
+<p class="MsoNormal" style="WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(0,0,0); FONT: 11pt/16px Calibri, sans-serif; MARGIN: 0cm 0cm 10pt 14.2pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; font-size-adjust: none; font-stretch: normal"><span lang="EN-US" xml:lang="EN-US">The list below explains supported attributes.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<table class="MsoNormalTable" style="FONT-FAMILY: 'Times New Roman'; WIDTH: 489.05pt; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; MARGIN-LEFT: 59.8pt; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px" cellspacing="0" cellpadding="0" width="652" border="0">
+    <tbody>
+        <tr>
+            <td style="BORDER-LEFT-STYLE: none; BORDER-TOP: black 1pt solid; WIDTH: 146.5pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Name</span></p>
+            </td>
+
+            <td style="BORDER-LEFT-STYLE: none; BORDER-TOP: black 1pt solid; WIDTH: 50.5pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Type</span></p>
+            </td>
+
+            <td style="BORDER-LEFT-STYLE: none; BORDER-TOP: black 1pt solid; WIDTH: 45.25pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">In/Out</span></p>
+            </td>
+
+            <td style="BORDER-LEFT-STYLE: none; BORDER-TOP: black 1pt solid; WIDTH: 184.75pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Value</span></p>
+            </td>
+
+            <td style="BORDER-LEFT-STYLE: none; BORDER-TOP: black 1pt solid; WIDTH: 62.05pt; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Default</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">caption</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">String</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">The message window caption text</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">"M-Files"</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">message</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">String</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">The message window content text</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">&lt;empty&gt;</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">icon</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">String</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">One "error", "warning", "information" or "question"</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">"warning"</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">button1_title</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">String</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Button 1 title</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Ok</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">button1_enabled</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Boolean</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Button 1 enabled state</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">true</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">button2_title</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">String</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Button 2 title</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">&lt;empty&gt;</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">button2_enabled</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Boolean</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 178.95pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="239">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Button 2 enabled state</span></p>
+            </td>
+
+            <td style="WIDTH: 67.85pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="90" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">true</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">button3_title</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">String</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Button 3 title</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">&lt;empty&gt;</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">button3_enabled</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Boolean</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Button 3 enabled state</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">true</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">button4_title</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">String</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Button 4 title</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">&lt;empty&gt;</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">button4_enabled</span></b></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Boolean</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Button 4 enabled state</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">true</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span class="SpellE"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">defaultButton</span></b></span></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Number</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">The index of the default button, 1-4</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">1</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span class="SpellE"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">cancelButton</span></b></span></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Number</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">The index of the cancel button, 1-4</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">0 (no cancel)</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span class="SpellE"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">timeOutButton</span></b></span></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Number</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">The index of the button that is activated on timeout, 1-4</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">0</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span class="SpellE"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">timeOut</span></b></span></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Number</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Automatic dialog close timeout in seconds, 1..n seconds&nbsp;</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">0</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span class="SpellE"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">timeout_deactivateOnFocusChange</span></b></span></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Boolean</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">True if the timer ceases when the focus in the message box changes</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">true</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span class="SpellE"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">checkbox_title</span></b></span></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">String</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">The checkbox title</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; BACKGROUND: silver; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">&lt;empty&gt;</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span class="SpellE"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">checkbox_enabled</span></b></span></p>
+            </td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Boolean</span></p>
+            </td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in</span></p>
+            </td>
+
+            <td style="WIDTH: 184.75pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">True if the checkbox is enabled (i.e. not grayed)</span></p>
+            </td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">true</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; WIDTH: 146.5pt; BACKGROUND: silver; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="195">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span class="SpellE"><b><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">checkbox_checked</span></b></span></p>
+            </td>
+
+            <td style="BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; WIDTH: 50.5pt; BACKGROUND: silver; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="67">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">Boolean</span></p>
+            </td>
+
+            <td style="BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; WIDTH: 45.25pt; BACKGROUND: silver; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="60">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">in/out</span></p>
+            </td>
+
+            <td style="BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; WIDTH: 184.75pt; BACKGROUND: silver; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="246" colspan="2">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">On input: True if the checkbox is initially checked. On output: receives true if the checkbox is checked by the user.</span></p>
+            </td>
+
+            <td style="BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; WIDTH: 62.05pt; BACKGROUND: silver; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; BORDER-RIGHT-STYLE: none; PADDING-LEFT: 5.4pt; PADDING-RIGHT: 5.4pt" valign="top" width="83">
+                <p class="MsoNormal" style="FONT-SIZE: 11pt; FONT-FAMILY: Calibri, sans-serif; MARGIN: 0cm 0cm 0pt 14.2pt; LINE-HEIGHT: normal"><span lang="EN-US" style="FONT-FAMILY: 'Browallia New', sans-serif; COLOR: black" xml:lang="EN-US">false</span></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="WIDTH: 146.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm" width="195"></td>
+
+            <td style="WIDTH: 50.5pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm" width="67"></td>
+
+            <td style="WIDTH: 45.25pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm" width="60"></td>
+
+            <td style="WIDTH: 178.95pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm" width="239"></td>
+
+            <td style="WIDTH: 5.8pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm" width="8"></td>
+
+            <td style="WIDTH: 62.05pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm" width="83"></td>
+        </tr>
+    </tbody>
+</table>
+
+<p><br class="Apple-interchange-newline" /></p><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><div class="i-see-also-link">
+<a href="MFClientScript~IDashboard~ShowMessage.html">Dashboard.ShowMessage</a></div>
+<div class="i-see-also-link">
+<a href="MFClientScript~IShellFrame~ShowMessage.html">ShellUI.ShowMessage</a></div>
+<div class="i-see-also-link">
+<a href="MFClientScript~IVaultUI~ShowMessage.html">VaultUI.ShowMessage</a></div>
+
+</div><!--DXMETADATA end-->
+        
+    </div>
+    <div id="i-footer-content" class="i-footer-content">
+        <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2022 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
+<a href="mailto:support@m-files.com?subject=M-Files UI Extensibility Framework: Documentation Feedback">Send feedback</a>
+    </div>
+    
+
+    <!--DXMETADATA start type="IsNew" format="<script type=""text/javascript"">setIsNew = true;</script>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<script type=""text/javascript"">setIsResponsiveEnabled = true;</script>" --><script type="text/javascript">setIsResponsiveEnabled = true;</script><!--DXMETADATA end-->
+    <script type="text/javascript">
+        $(function() {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.isNew = !(typeof setIsNew === "undefined");
+            documentInstance.isResponsiveEnabled = !(typeof setIsResponsiveEnabled === "undefined");
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

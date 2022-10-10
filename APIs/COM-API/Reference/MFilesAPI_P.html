@@ -1,0 +1,616 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+	<link rel="stylesheet" type="text/css" href="template/packages/core-ax/css/m-files.content.css">
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />" --><meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Phrase" Name="Project_Overview" format="<title>%%Phrase%%</title>" --><title>Project Overview</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Phrase" Name="Project_Overview" format="<meta name=""Title"" content=""%%Phrase%%""/>" --><meta name="Title" content="Project Overview"/><!--DXMETADATA end-->    
+    
+
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery-1.11.3.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui-1.11.4.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui-1.11.4.css"></link><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:{"dynamictoc":{"initialNodeId":"n0","initialNodeContainer":"c0"},"currentLocale":"-","isFrameless":false,"responsive":{"isEnabled":true},"navigationKind":"frames","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-ax" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-ax/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-ax" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-ax/dx.com.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-ax/dx.com.mshv1.css"" data-responsive-mobile=""template/packages/core-ax/dx.com.mobile.css"" data-responsive-tablet=""template/packages/core-ax/dx.com.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-ax/css/dx.com.css"  data-mshv2-stylesheet="/template/packages/core-ax/dx.com.mshv2.css" data-mshv1-stylesheet="/template/packages/core-ax/dx.com.mshv1.css" data-responsive-mobile="template/packages/core-ax/dx.com.mobile.css" data-responsive-tablet="template/packages/core-ax/dx.com.tablet.css"></link>
+<link rel="stylesheet" type="text/css" href="template/packages/core-ax/css/m-files.content.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-ax" filetype="script"--><script src="template/packages/plugins-ax/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-ax" filetype="script"--><script src="template/packages/core-ax/script/dx.com.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="MFilesAPI_P"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="M-Files API 22.6.11519.0
+
+M-Files API is a collection of classes and operation interfaces. Each class represents a feature or data item of the M-Files system. With the API, you can access, modify and create documents stored in an M-Files vault. You" /><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="-1"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="Stylesheets" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+
+    <!--DXMETADATA start type="CustomHeadContent" --><!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+    <div id="i-header-content" class="i-header-content">
+        <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files API 22.6.11519.0<!--DXMETADATA end--></div>
+        <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="Phrase" name="Project_Overview" -->Project Overview<!--DXMETADATA end--></div></div>
+    </div>
+    <div id="i-after-header-content" class="i-after-header-content">
+        <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+        <!--DXMETADATA start type="IsWebOutputRootPageLinkEnabled" format="<a href='#' class="i-page-link" class="i-view-in-frame-link" title='$$VIEW_WITH_NAVIGATION_TOOLS_TIP$$' style='display: none' data-root-page='%%WebOutputRootPage%%%%OutputFileExtension%%' target='_top'>$$VIEW_WITH_NAVIGATION_TOOLS_TEXT$$</a>" --><!--DXMETADATA end-->
+    </div>
+    <!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><!--DXMETADATA end -->
+    
+    
+    <div id="i-body-content" class="i-body-content">
+        <!--DXMETADATA start type="Description" source="vbproject" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=description,caption=$$Description$$%%<div class=""i-description-content"">%%description%%</div></div>" --><div class="i-section-heading" id="i-description-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Description</span></div><div id="i-description-section-content" class="i-section-content"><div class="i-description-content">M-Files API 22.6.11519.0
+
+<p>M-Files API is a collection of classes and operation interfaces. Each class represents a feature or data item of the M-Files system. With the API, you can access, modify and create documents stored in&nbsp;an M-Files vault. You can also perform searches and display documents and other objects, access and modify the metadata associated with documents,&nbsp;access and modify document workflows, and much more.</p>
+
+<div class="i-box i-box-note">
+    <p><span>You can also make use of the&nbsp;M-Files&nbsp;Web Service API for programmatic access to&nbsp;M-Files&nbsp;through a REST-like interface, or the <span>M-Files UI Extensibility Framework for developing external add-ins (M-Files Applications) to modify M-Files Desktop behavior.</span></span></p>
+
+    <p><span><span>Follow these links for the documentation:</span></span></p>
+
+    <ul>
+        <li><span><span><span><a href="https://www.m-files.com/mfws/" target="_blank">M-Files Web Service API (REST API)</a></span></span></span></li>
+
+        <li><a href="https://www.m-files.com/UI_Extensibility_Framework" target="_blank">M-Files UI Extensibility Framework</a></li>
+    </ul>
+</div>
+
+<p>The operation mode of the M-Files API is chosen by the top-level access class; environments with the M-Files client application installed can use the M-Files API in the client mode and access the <a href="MFilesAPI~MFilesClientApplication.html">MFilesClientApplication</a> interface. If the M-Files API is used in an environment without the M-Files client application, the M-Files server can be accessed directly by using the&nbsp;<a href="MFilesAPI~MFilesServerApplication.html">MFilesServerApplication</a> interface.</p>
+
+<p>The main functionality is built around the <a href="MFilesAPI~Vault.html">vault</a> object, which can be acquired&nbsp;by using&nbsp;either application interface. The vault object contains various operation interfaces, which can be used to perform operations or to access other support objects.</p>
+
+<p>&nbsp;</p>
+
+<p><img border="0" alt="" src="Pictures/MFilesApi-Classes.png" /></p>
+
+<p><em>Navigability among the M-Files API classes. The diagram does not contain&nbsp;all of the classes and has been simplified for clarity.</em></p>
+
+<p>For M-Files API samples, visit <a onclick="window.open('https://www.m-files.com/api?utm_source=m-files&amp;utm_medium=software&amp;utm_campaign=m-files-software-user','_blank');window.close();return false" href="https://www.m-files.com/api">https://www.m-files.com/api</a>.</p>
+
+<h1 style="HEIGHT: 23px; WIDTH: 1004px; PADDING-LEFT: 0px; MARGIN-LEFT: 0px">Objects and Methods for Administrative Operations</h1>
+
+<p>Objects and methods that have their name postfixed with "Admin" (such as <a href="MFilesAPI~ObjTypeAdmin.html">ObjTypeAdmin</a> and <a href="MFilesAPI~VaultWorkflowOperations~AddWorkflowAdmin.html">VaultWorkflowOperations.AddWorkflowAdmin</a>) provide functionality specifically available in M-Files Admin.</p></div></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="Diagram" source="Project" HideIfNoRoot="true" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=objectmodel,caption=$$Object_Model$$%%%%taggedcomment:source=project,id=##PROJECT_OVERVIEW_BEFORE_DIAGRAM%%%%Diagram%%%%taggedcomment:source=project,id=##PROJECT_OVERVIEW_AFTER_DIAGRAM%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=form" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=forms,caption=$$FormModules$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=usercontrol" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=usercontrols,caption=$$UserControls$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=userdocument" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=userdocuments,caption=$$UserDocuments$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=class_notinterface" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=classes,caption=$$ClassModules$$%%%%filtereditemlist%%</div>" --><div class="i-section-heading" id="i-classes-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Classes</span></div><div id="i-classes-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>Class Module</th><th>Description</th></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlEntry.html">AccessControlEntry</a></td><td class="i-description">The AccessControlEntry class represents an access control entry (ACE).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlEntryContainer.html">AccessControlEntryContainer</a></td><td class="i-description">The AccessControlEntryContainer class represents a collection of access control entries (ACEs).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlEntryData.html">AccessControlEntryData</a></td><td class="i-description">The AccessControlEntryData class represents an access control entry (ACE) permissions.The AccessControlEntryData class represents the permissions part in an access control entry.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlEntryKey.html">AccessControlEntryKey</a></td><td class="i-description">The AccessControlEntryKey class represents an access control entry (ACE) keys.The AccessControlEntryKey class specifies the&nbsp;user or user group&nbsp;for an access control entry.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlEntryKeys.html">AccessControlEntryKeys</a></td><td class="i-description">The AccessControlEntryKeys class represents a collection of access control entry (ACE) keys.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlList.html">AccessControlList</a></td><td class="i-description">The AccessControlList class represents an access control list (ACL).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlListComponent.html">AccessControlListComponent</a></td><td class="i-description">The AccessControlListComponent class represents an access control list (ACL) component.
+
+<p>The AccessControlListComponent specifies a&nbsp;set of entries within an access control list.</p>
+
+<p>The entries within the component have a common source such as the object itself in the case of a custom component or a property value in the case of automatic components.</p></td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlListComponentContainer.html">AccessControlListComponentContainer</a></td><td class="i-description">The AccessControlListComponentContainer class represents a collection of access control list (ACL) components.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlListComponentKey.html">AccessControlListComponentKey</a></td><td class="i-description">The AccessControlListComponentKey class represents an automatic access control list (ACL) component source.The AccessControlListComponentKey class identifies a component by it's source.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlListComponentKeys.html">AccessControlListComponentKeys</a></td><td class="i-description">The AccessControlListComponentKeys class represents a collection of automatic access control list (ACL) component sources.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AccessControlLists.html">AccessControlLists</a></td><td class="i-description">AccessControlLists is a collection AccessControlList objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ActionConvertToPDF.html">ActionConvertToPDF</a></td><td class="i-description">The ActionConvertToPDF class represents a convert to PDF action in a workflow state.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ActionCreateAssignment.html">ActionCreateAssignment</a></td><td class="i-description">The ActionCreateAssignment class represents a create assignment action in a workflow state.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ActionDefinition.html">ActionDefinition</a></td><td class="i-description">The 'ActionDefinition' class contains type-specific action details.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ActionDefinitions.html">ActionDefinitions</a></td><td class="i-description">The 'ActionDefinitions' class represents a collection of action descriptions.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ActionSendNotification.html">ActionSendNotification</a></td><td class="i-description">The ActionSendNotification class represents a send notification action in a workflow state.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ActionSetPermissions.html">ActionSetPermissions</a></td><td class="i-description">The ActionSetPermissions class represents a set permissions action in a workflow state.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ActionSetProperties.html">ActionSetProperties</a></td><td class="i-description">The ActionSetProperties class represents a set properties action in a workflow state.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AdditionalClassInfo.html">AdditionalClassInfo</a></td><td class="i-description">The 'AdditionalClassInfo' class contains type-specific details of an object class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AdditionalFolder.html">AdditionalFolder</a></td><td class="i-description">The AdditionalFolder class represents a separate location for the vault's file data.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AdditionalFolders.html">AdditionalFolders</a></td><td class="i-description">A collection of additional folders.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ApplicationBroadcastMessage.html">ApplicationBroadcastMessage</a></td><td class="i-description">A data object for storing broadcast message data.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ApplicationBroadcastMessages.html">ApplicationBroadcastMessages</a></td><td class="i-description">"ApplicationBroadcastMessagess" is a collection of "ApplicationBroadcastMessage" objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ApplicationTaskInfo.html">ApplicationTaskInfo</a></td><td class="i-description">A data object for storing task data.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ApplicationTaskInfos.html">ApplicationTaskInfos</a></td><td class="i-description">"ApplicationTaskInfos" is a collection of "ApplicationTaskInfo" objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ApprovalAssignmentClassInfo.html">ApprovalAssignmentClassInfo</a></td><td class="i-description">The 'ApprovalAssignmentClassInfo' class contains assignment-specific details of an approval assignment object class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ArchiveOldVersionsJob.html">ArchiveOldVersionsJob</a></td><td class="i-description">The ArchiveOldVersionsJob class represents a job that moves old versions of objects to a content package.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AssignmentClassInfo.html">AssignmentClassInfo</a></td><td class="i-description">The 'AssignmentClassInfo' class contains assignment-specific details of an assignment object class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AssociatedPropertyDef.html">AssociatedPropertyDef</a></td><td class="i-description">The AssociatedPropertyDef class represents the property definition of a class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AssociatedPropertyDefs.html">AssociatedPropertyDefs</a></td><td class="i-description">A collection of property definitions associated with the class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AttachVaultOptions.html">AttachVaultOptions</a></td><td class="i-description">The 'AttachVaultOptions' class represents options for attaching vaults.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AuthenticationResult.html">AuthenticationResult</a></td><td class="i-description">The 'AuthenticationResult' class represents the description for an authentication attempt's result.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AuthenticationResultIntermediate.html">AuthenticationResultIntermediate</a></td><td class="i-description">The 'AuthenticationResultIntermediate' class represents the description for an authentication attempt's intermediate result.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AuthenticationResultServerFinal.html">AuthenticationResultServerFinal</a></td><td class="i-description">The 'AuthenticationResultServerFinal' class represents the description for a server authentication attempt's final result.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AuthenticationResultVaultFinal.html">AuthenticationResultVaultFinal</a></td><td class="i-description">The 'AuthenticationResultVaultFinal' class represents the description for a vault authentication attempt's final result.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AutomaticMetadataResult.html">AutomaticMetadataResult</a></td><td class="i-description">The 'AutomaticMetadataResult' class represents the output data from the automatic metadata retrieval operation.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AutomaticPermissions.html">AutomaticPermissions</a></td><td class="i-description">Specifies the automatic ACL for a value list item.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~AutomaticValue.html">AutomaticValue</a></td><td class="i-description">The AutomaticValue class represents an automatic value specification.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~BackupJob.html">BackupJob</a></td><td class="i-description">A class that represents a backup job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~BooleanValue.html">BooleanValue</a></td><td class="i-description">A class that represents a simple boolean value.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ClassGroup.html">ClassGroup</a></td><td class="i-description">A class group contains a set of classes.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ClassGroups.html">ClassGroups</a></td><td class="i-description">A collection of ClassGroup objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ClientCapabilities.html">ClientCapabilities</a></td><td class="i-description">A data object for specifying the capabilities of an M-Files client instance.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ConnectionData.html">ConnectionData</a></td><td class="i-description">A data object for specifying the M-Files server connection details.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~CopyVaultJob.html">CopyVaultJob</a></td><td class="i-description">The CopyVaultJob class represents a copy vault job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~CopyVaultJobOutputInfo.html">CopyVaultJobOutputInfo</a></td><td class="i-description">The CopyVaultJobOutputInfo class represents the results of a copy vault job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~CustomApplication.html">CustomApplication</a></td><td class="i-description">The CustomApplication class represents an application installed in the vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~CustomApplications.html">CustomApplications</a></td><td class="i-description">CustomApplications is a collection of CustomApplication objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~DailyTrigger.html">DailyTrigger</a></td><td class="i-description">The DailyTrigger class represents daily trigger.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~DataFunctionCall.html">DataFunctionCall</a></td><td class="i-description">An object for managing data functions. Used with the Expression class.
+
+<p>An object for managing <a href="MFilesAPI~Expression.html">Expression</a> object data functions.&nbsp;&nbsp;</p></td></tr>
+<tr><td class=i-link><a href="MFilesAPI~DataSet.html">DataSet</a></td><td class="i-description">The DataSet class represents a set of data that can be exported from a vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~DataSetExportingStatus.html">DataSetExportingStatus</a></td><td class="i-description">The DataSetExportingStatus class represents the current state of a data set export operation.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~DataSets.html">DataSets</a></td><td class="i-description">A collection of data sets.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~DefaultProperties.html">DefaultProperties</a></td><td class="i-description">DefaultProperties is a collection of DefaultProperty objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~DefaultProperty.html">DefaultProperty</a></td><td class="i-description">The DefaultProperty class represents a default property specification.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~EmailMessageInformation.html">EmailMessageInformation</a></td><td class="i-description">A class that represents information collected from an e-mail message.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~EventHandler.html">EventHandler</a></td><td class="i-description">The EventHandler class represents an event handler.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~EventHandlers.html">EventHandlers</a></td><td class="i-description">A collection of event handlers.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExportContentJob.html">ExportContentJob</a></td><td class="i-description">The ExportContentJob class represents a content export job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExportStructureItem.html">ExportStructureItem</a></td><td class="i-description">The ExportStructureItem class represents a metadata structure element that is exported from the vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExportStructureItems.html">ExportStructureItems</a></td><td class="i-description">The ExportStructureItems class represents a collection of metadata structure elements that are exported from the vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Expression.html">Expression</a></td><td class="i-description">The Expression class represents an expression that can be evaluated.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExpressionEx.html">ExpressionEx</a></td><td class="i-description">The ExpressionEx class represents an extended expression.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExpressionExs.html">ExpressionExs</a></td><td class="i-description">ExpressionExs is a collection of ExpressionEx objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Expressions.html">Expressions</a></td><td class="i-description">Expressions is a collection of Expression objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExtensionAuthenticationResponse.html">ExtensionAuthenticationResponse</a></td><td class="i-description">The 'ExtensionAuthenticationResponse' class represents an extension authentication response.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExtensionAuthenticationStatus.html">ExtensionAuthenticationStatus</a></td><td class="i-description">The 'ExtensionAuthenticationStatus' class represents an extension authentication status.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExtensionAuthenticationStatuses.html">ExtensionAuthenticationStatuses</a></td><td class="i-description">The 'ExtensionAuthenticationStatuses' class represents extension authentication statuses.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExtensionAuthenticationTarget.html">ExtensionAuthenticationTarget</a></td><td class="i-description">The 'ExtensionAuthenticationTarget' class represents an extension authentication target.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExtensionAuthenticationTargets.html">ExtensionAuthenticationTargets</a></td><td class="i-description">The 'ExtensionAuthenticationTargets' class represents extension authentication targets.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExternalObjectTypePluginInfo.html">ExternalObjectTypePluginInfo</a></td><td class="i-description">A data object for storing information about external object type plugin.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExternalObjectTypePluginInfos.html">ExternalObjectTypePluginInfos</a></td><td class="i-description">"ExternalObjectTypePluginInfos" is a collection of "ExternalObjectTypePluginInfo" objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExternalView.html">ExternalView</a></td><td class="i-description">The 'ExternalView' class represents an external view.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ExternalViewID.html">ExternalViewID</a></td><td class="i-description">The 'ExternalViewID' class represents an external view.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FileClass.html">FileClass</a></td><td class="i-description">The FileClass class represents a creatable file type in Windows.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FileClasses.html">FileClasses</a></td><td class="i-description">FileClasses is a collection of FileClass objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FileDownloadSession.html">FileDownloadSession</a></td><td class="i-description">The FileDownloadSession class represents a file download session.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FileInformation.html">FileInformation</a></td><td class="i-description">A class that represents information extracted from a file.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FileSize.html">FileSize</a></td><td class="i-description">The FileSize class represents the size of an object file.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FileVer.html">FileVer</a></td><td class="i-description">The FileVer class represents a single file version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FileVers.html">FileVers</a></td><td class="i-description">The FileVers class represents the collection of FileVer objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderContentItem.html">FolderContentItem</a></td><td class="i-description">A class that represents a single folder content item.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderContentItems.html">FolderContentItems</a></td><td class="i-description">A collection of folder content items.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderData.html">FolderData</a></td><td class="i-description">The FolderData class represents a folder data.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderDef.html">FolderDef</a></td><td class="i-description">A class that represents a folder definition.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderDefs.html">FolderDefs</a></td><td class="i-description">Collection of folder definitions.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderID.html">FolderID</a></td><td class="i-description">The FolderID class represents a folder ID.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderListingColumn.html">FolderListingColumn</a></td><td class="i-description">The 'FolderListingColumn' class represents a single column setting of a folder listing.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderListingColumns.html">FolderListingColumns</a></td><td class="i-description">The 'FolderListingColumns' collection represents a set of column settings for a folder listing.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderListingColumnSorting.html">FolderListingColumnSorting</a></td><td class="i-description">The 'FolderListingColumnSorting' class represents a single column sorting setting for a folder listing.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderListingColumnSortings.html">FolderListingColumnSortings</a></td><td class="i-description">The 'FolderListingColumnSortings' collection represents a set of column sorting settings for a folder listing.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderListingUIState.html">FolderListingUIState</a></td><td class="i-description">The 'FolderListingUIState' class represents the UI settings for a listing within the settings for an M-Files folder.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderNameListing.html">FolderNameListing</a></td><td class="i-description">The FolderNameListing class represents a folder name collection.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~FolderUIState.html">FolderUIState</a></td><td class="i-description">The 'FolderUIState' class represents the UI settings of a single M-Files folder.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~IDRange.html">IDRange</a></td><td class="i-description">The IDRange class represents minimum and maximum IDs of the range</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~IDs.html">IDs</a></td><td class="i-description">IDs is a collection of IDs of any type.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Impersonation.html">Impersonation</a></td><td class="i-description">A class that defines an impersonation.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ImportContentJob.html">ImportContentJob</a></td><td class="i-description">The ImportContentJob class represents a content import job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~IndirectPropertyID.html">IndirectPropertyID</a></td><td class="i-description">The IndirectPropertyID class represents a multi-level property ID.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~IndirectPropertyIDLevel.html">IndirectPropertyIDLevel</a></td><td class="i-description">The IndirectPropertyIDLevel class represents a single level of a multi-level property ID.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~IServerDataPushSink.html">IServerDataPushSink</a></td><td class="i-description">An interface that implements data sink for server requests.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~KeyNamePair.html">KeyNamePair</a></td><td class="i-description">The KeyNamePair class represents a key name pair.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~KeyNamePairs.html">KeyNamePairs</a></td><td class="i-description">The KeyNamePairs class is a collection of KeyNamePair objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Language.html">Language</a></td><td class="i-description">The Language class represents a single vault language.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~LanguageDetectionResult.html">LanguageDetectionResult</a></td><td class="i-description">The "LanguageDetectionResult" class contains the results of a call used for detecting the language of plain text content.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Languages.html">Languages</a></td><td class="i-description">A collection of languages.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~LicenseStatus.html">LicenseStatus</a></td><td class="i-description">A class that represents the status of the license.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~LoginAccount.html">LoginAccount</a></td><td class="i-description">The LoginAccount class represents a login in the server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~LoginAccountPersonalInformation.html">LoginAccountPersonalInformation</a></td><td class="i-description">The LoginAccountPersonalInformation class represents the personal information of a login account.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~LoginAccounts.html">LoginAccounts</a></td><td class="i-description">The LoginAccounts class is a collection of LoginAccount objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Lookup.html">Lookup</a></td><td class="i-description">Lookup specifies a single lookup value.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Lookups.html">Lookups</a></td><td class="i-description">Lookups is a collection of lookups and can represent the values of a multi-select lookup.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~MetadataStructureAliases.html">MetadataStructureAliases</a></td><td class="i-description">The StructureAliases class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~MetadataStructureSelector.html">MetadataStructureSelector</a></td><td class="i-description">The 'MetadataStructureSelector' class represents a metadata structure element selection rule for the content to be exported from the vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~MetadataStructureSelectors.html">MetadataStructureSelectors</a></td><td class="i-description">The 'MetadataStructureSelectors' class represents a collection of metadata structure selection elements.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~MFilesClientApplication.html">MFilesClientApplication</a></td><td class="i-description">The MFilesClientApplication class represents connection to the client.
+
+<p>The MFilesClientApplication class represents an M-Files Client application.</p>
+
+<p>The MFilesClientApplication class is the high-level object of the M-Files API component. This is the first object you create when writing an application that interacts with&nbsp;Windows Explorer&nbsp;using M-Files API.</p></td></tr>
+<tr><td class=i-link><a href="MFilesAPI~MFilesServerApplication.html">MFilesServerApplication</a></td><td class="i-description">The MFilesServerApplication class represents the M-Files server
+
+<p>The MFilesServerApplication class represents an M-Files&nbsp;API interface for the M-Files server.</p>
+
+<p>The MFilesServerApplication class is the high-level object of the M-Files API component. This is the first object you create when writing an application that interacts directly with the M-Files server.</p></td></tr>
+<tr><td class=i-link><a href="MFilesAPI~MFilesVersion.html">MFilesVersion</a></td><td class="i-description">The MFilesVersion class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~MonthlyDateTrigger.html">MonthlyDateTrigger</a></td><td class="i-description">The MonthlyDateTrigger class represents monthly date trigger.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~MonthlyDOWTrigger.html">MonthlyDOWTrigger</a></td><td class="i-description">The MonthlyDOWTrigger class represents monthly DOW trigger.The MonthlyDOWTrigger class represents a monthly day-of-the-week trigger.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~NamedACL.html">NamedACL</a></td><td class="i-description">The NamedACL class encapsulates the data of a named access control list (ACL).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~NamedACLAdmin.html">NamedACLAdmin</a></td><td class="i-description">The NamedACL class encapsulates the data of a named access control list (ACL) (for administrative operations).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~NamedACLs.html">NamedACLs</a></td><td class="i-description">NamedACLs is a collection of NamedACL objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~NamedACLsAdmin.html">NamedACLsAdmin</a></td><td class="i-description">NamedACLsAdmin is a collection of NamedACLAdmin objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~NamedValueNamespace.html">NamedValueNamespace</a></td><td class="i-description">The 'NamedValueNamespace' class represents the namespace and its named values.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~NamedValueNamespaces.html">NamedValueNamespaces</a></td><td class="i-description">The 'NamedValueNamespaces' class represents a collection of namespaces.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~NamedValues.html">NamedValues</a></td><td class="i-description">A collection of named values.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Number.html">Number</a></td><td class="i-description">A class that represents a simple integer value.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectClass.html">ObjectClass</a></td><td class="i-description">The ObjectClass class represents an object class.
+
+<p>Object classes&nbsp;are used for categorizing objects. The class of an object&nbsp;determines which metadata&nbsp;should be&nbsp;specified for the object. An object class automatically provides the object with certain properties that have been specified for the object class. Some of these properties are obligatory and must be filled in while creating a new M-Files object of this class, whereas others accept an empty (NULL) value.</p></td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectClassAdmin.html">ObjectClassAdmin</a></td><td class="i-description">The ObjectClassAdmin class represents an object class (for administrative operations).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectClasses.html">ObjectClasses</a></td><td class="i-description">ObjectClassCollection is a collection of ObjectClass objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectClassesAdmin.html">ObjectClassesAdmin</a></td><td class="i-description">ObjectClassesAdmin is a collection of ObjectClassAdmin objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectCreationInfo.html">ObjectCreationInfo</a></td><td class="i-description">The ObjectCreationInfo class is used for specifying the initial state of the new metadata card.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectFile.html">ObjectFile</a></td><td class="i-description">The ObjectFile class represents an object file.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectFileAndObjVer.html">ObjectFileAndObjVer</a></td><td class="i-description">The ObjectFileAndObjVer class represents a reference to an object file and an object version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectFileAndObjVerOfMultipleFiles.html">ObjectFileAndObjVerOfMultipleFiles</a></td><td class="i-description">ObjectFileAndObjVerOfMultipleFiles is a collection of ObjectFileAndObjVer objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectFiles.html">ObjectFiles</a></td><td class="i-description">ObjectFiles is a collection of ObjectFile objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectSearchResults.html">ObjectSearchResults</a></td><td class="i-description">ObjectSearchResults is a collection of search results represented by ObjectVersion objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectTypeTargetForBrowsing.html">ObjectTypeTargetForBrowsing</a></td><td class="i-description">The ObjectTypeTargetForBrowsing class represents the target object for showing objects related to another object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectTypeTargetsForBrowsing.html">ObjectTypeTargetsForBrowsing</a></td><td class="i-description">ObjectTypeTargetsForBrowsing is a collection of ObjectTypeTargetForBrowsing objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersion.html">ObjectVersion</a></td><td class="i-description">The ObjectVersionData class represents object version data.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionAndProperties.html">ObjectVersionAndProperties</a></td><td class="i-description">The ObjectVersionAndProperties class is collection of properties and information on the object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionAndPropertiesOfMultipleObjects.html">ObjectVersionAndPropertiesOfMultipleObjects</a></td><td class="i-description">ObjectVersionAndPropertiesOfMultipleObjects is a collection of ObjectVersionAndProperties collections. Each ObjectVersionAndProperties collection represents the property values of one object version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionData.html">ObjectVersionData</a></td><td class="i-description">The "ObjectVersionData" class contains the object version data.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionDataRequest.html">ObjectVersionDataRequest</a></td><td class="i-description">"ObjectVersionDataRequest" class contains the information about which data of the object version is requested.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionDataResult.html">ObjectVersionDataResult</a></td><td class="i-description">"ObjectVersionDataResult" class contains the results of call used to get object data.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionDataResults.html">ObjectVersionDataResults</a></td><td class="i-description">ObjectVersionDataResults is a collection of ObjectVersionDataResult objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionFile.html">ObjectVersionFile</a></td><td class="i-description">The ObjectVersionFile class represents a file of an object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionPermissions.html">ObjectVersionPermissions</a></td><td class="i-description">The ObjectVersionPermissions class represents the permissions for an object version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersions.html">ObjectVersions</a></td><td class="i-description">ObjectVersions is a collection of ObjectVersionData objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectVersionWorkflowState.html">ObjectVersionWorkflowState</a></td><td class="i-description">The ObjectVersionWorkflowState class represents the state of a workflow for an object version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjectWindowResult.html">ObjectWindowResult</a></td><td class="i-description">The ObjectWindowResult class encapsulates the return values of showing the metadata card.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjID.html">ObjID</a></td><td class="i-description">The ObjID class represents an object ID.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjIDs.html">ObjIDs</a></td><td class="i-description">ObjIDs is a collection of ObjID objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjOrFileVer.html">ObjOrFileVer</a></td><td class="i-description">The ObjOrFileVer class represents an object version or file version of an object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjOrFileVers.html">ObjOrFileVers</a></td><td class="i-description">The ObjOrFileVers class represents the collection of ObjOrFileVer objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjType.html">ObjType</a></td><td class="i-description">The ObjectType class represents an object type.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjTypeAdmin.html">ObjTypeAdmin</a></td><td class="i-description">The ObjTypeAdmin class represents an object type (for administrative operations).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjTypeColumnMapping.html">ObjTypeColumnMapping</a></td><td class="i-description">The ObjTypeColumnMapping class represents a column mapping in an object type definition.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjTypeColumnMappings.html">ObjTypeColumnMappings</a></td><td class="i-description">ObjTypeColumnMappings is a collection of ObjTypeColumnMapping objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjTypes.html">ObjTypes</a></td><td class="i-description">ObjTypes is a collection of ObjType objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjTypesAdmin.html">ObjTypesAdmin</a></td><td class="i-description">ObjTypesAdmin is a collection of ObjTypeAdmin objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjVer.html">ObjVer</a></td><td class="i-description">The ObjVer class represents an object version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjVers.html">ObjVers</a></td><td class="i-description">ObjVers is a collection of ObjVer objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ObjVerVersion.html">ObjVerVersion</a></td><td class="i-description">The 'ObjVerVersion' class represents an object objVerVersion.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCROptions.html">OCROptions</a></td><td class="i-description">The OCROptions class represents customizable options for OCR operation.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCRPage.html">OCRPage</a></td><td class="i-description">The OCRPage class represents a single page that contains OCR zones to be recognized.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCRPageResult.html">OCRPageResult</a></td><td class="i-description">The OCRPageResult class represents the result for a single page in OCR operation, containing results for all recognized zones on the page.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCRPageResults.html">OCRPageResults</a></td><td class="i-description">A collection of OCR page results.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCRPages.html">OCRPages</a></td><td class="i-description">A collection of OCR pages.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCRZone.html">OCRZone</a></td><td class="i-description">The OCRZone class represents a single recognition zone in OCR operation.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCRZoneResult.html">OCRZoneResult</a></td><td class="i-description">The OCRZoneResult class represents the result for single recognized OCR zone.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCRZoneResults.html">OCRZoneResults</a></td><td class="i-description">A collection of OCR zone results.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OCRZones.html">OCRZones</a></td><td class="i-description">A collection of OCR zones.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OptimizeVaultJob.html">OptimizeVaultJob</a></td><td class="i-description">The OptimizeVaultJob class represents an optimize vault job on the server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~OwnerPropertyDef.html">OwnerPropertyDef</a></td><td class="i-description">The OwnerPropertyDef class represents an owner property definition of an object type.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PluginInfo.html">PluginInfo</a></td><td class="i-description">The PluginInfo class represents description of a plugin.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PluginInfos.html">PluginInfos</a></td><td class="i-description">The PluginInfos class represents a collection of plugin descriptions.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyDef.html">PropertyDef</a></td><td class="i-description">The PropertyDef class represents a property definition.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyDefAdmin.html">PropertyDefAdmin</a></td><td class="i-description">The PropertyDefAdmin class represents a property definition (for administrative operations).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyDefOrObjectType.html">PropertyDefOrObjectType</a></td><td class="i-description">PropertyDefOrObjectTypes object that defines an ID of a property def or object type.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyDefOrObjectTypes.html">PropertyDefOrObjectTypes</a></td><td class="i-description">PropertyDefOrObjectTypes is a collection PropertyDefOrObjectType objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyDefs.html">PropertyDefs</a></td><td class="i-description">PropertyDefs is a collection of PropertyDef objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyDefsAdmin.html">PropertyDefsAdmin</a></td><td class="i-description">PropertyDefsAdmin is a collection of PropertyDefAdmin objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValue.html">PropertyValue</a></td><td class="i-description">The PropertyValue class represents a property value.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValueForDisplay.html">PropertyValueForDisplay</a></td><td class="i-description">The PropertyValueForDisplay class represents a property value for display purposes.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValueIconClue.html">PropertyValueIconClue</a></td><td class="i-description">PropertyValueIconClue object indicates a property value of an object that has an icon associated with the selected value list item.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValueIconClues.html">PropertyValueIconClues</a></td><td class="i-description">PropertyValueIconClues is a collection of PropertyValueIconClue objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValues.html">PropertyValues</a></td><td class="i-description">PropertyValues is a collection of PropertyValue objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValuesForDisplay.html">PropertyValuesForDisplay</a></td><td class="i-description">PropertyValuesForDisplay is a collection of PropertyValueForDisplay objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValuesOfMultipleObjects.html">PropertyValuesOfMultipleObjects</a></td><td class="i-description">PropertyValuesOfMultipleObjects is a collection of PropertyValues collections. Each PropertyValues collection represents the property values of one object version. Use PropertyValuesOfMultipleObjectsEx for more options.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValuesOfMultipleObjectsEx.html">PropertyValuesOfMultipleObjectsEx</a></td><td class="i-description">PropertyValuesOfMultipleObjectsEx is a collection of PropertyValues collections. Each PropertyValues collection represents the property values of one object version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValuesOfMultipleObjectsForDisplay.html">PropertyValuesOfMultipleObjectsForDisplay</a></td><td class="i-description">'PropertyValuesOfMultipleObjectsForDisplay' is a collection of 'PropertyValuesForDisplay' collections.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValueSuggestion.html">PropertyValueSuggestion</a></td><td class="i-description">The 'PropertyValueSuggestion' class represents the single property value that is a candidate for object metadata.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValueSuggestions.html">PropertyValueSuggestions</a></td><td class="i-description">The 'PropertyValueSuggestions' class represents a collection of property values that are candidates for object metadata.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValuesWithIconClues.html">PropertyValuesWithIconClues</a></td><td class="i-description">Property values with their icon clues.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~PropertyValuesWithIconCluesOfMultipleObjects.html">PropertyValuesWithIconCluesOfMultipleObjects</a></td><td class="i-description">Property values with their icon clues of multiple objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ReportAccessCredentials.html">ReportAccessCredentials</a></td><td class="i-description">The ReportAccessCredentials contains the credentials that are used when accessing reports using M-Files user account.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~RestoreJob.html">RestoreJob</a></td><td class="i-description">A class that represents a restore job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ScheduledJob.html">ScheduledJob</a></td><td class="i-description">A class that represents a single scheduled job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ScheduledJobOutputInfo.html">ScheduledJobOutputInfo</a></td><td class="i-description">A class that represents the results of a scheduled job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ScheduledJobRunInfo.html">ScheduledJobRunInfo</a></td><td class="i-description">The ScheduledJobRunInfo class represents the state of a scheduled job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ScheduledJobs.html">ScheduledJobs</a></td><td class="i-description">The ScheduledJobs class represents a collection of scheduled jobs.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ScheduledJobTrigger.html">ScheduledJobTrigger</a></td><td class="i-description">The ScheduledJobTrigger class represents a trigger of a scheduled job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ScheduledJobTriggers.html">ScheduledJobTriggers</a></td><td class="i-description">The ScheduledJobTriggers class represents a collection of triggers of a scheduled job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SearchCondition.html">SearchCondition</a></td><td class="i-description">The SearchCondition class is used for accessing and setting a single search condition.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SearchConditionEx.html">SearchConditionEx</a></td><td class="i-description">The SearchConditionEx class represents an extended search condition.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SearchConditionExs.html">SearchConditionExs</a></td><td class="i-description">SearchConditionExs is a collection of SearchConditionEx objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SearchConditions.html">SearchConditions</a></td><td class="i-description">SearchConditions is a collection of SearchCondition objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SearchCriteria.html">SearchCriteria</a></td><td class="i-description">The SearchCriteria class represents search conditions used in searches in Windows Explorer.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SearchDef.html">SearchDef</a></td><td class="i-description">A class that represents a search definition.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SemanticAliases.html">SemanticAliases</a></td><td class="i-description">The SemanticAliases class represents the semantic aliases of a metadata structure element.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ServerLicenseManagementOperations.html">ServerLicenseManagementOperations</a></td><td class="i-description">A group of methods for administering license on the server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ServerLoginAccountOperations.html">ServerLoginAccountOperations</a></td><td class="i-description">The ServerLoginAccountOperations class represents the available login account operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ServerManagementOperations.html">ServerManagementOperations</a></td><td class="i-description">A group of methods for administering server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ServerScheduledJobManagementOperations.html">ServerScheduledJobManagementOperations</a></td><td class="i-description">The ServerScheduledJobManagementOperations class represents the available scheduled job management operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ServerVaultCapabilities.html">ServerVaultCapabilities</a></td><td class="i-description">A data object for specifying the capabilities of an M-Files server and a vault on server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ServerVaultManagementOperations.html">ServerVaultManagementOperations</a></td><td class="i-description">A group of methods for administering vaults.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ServerWOPIOperations.html">ServerWOPIOperations</a></td><td class="i-description">Methods for accessing the server WOPI operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SessionInfo.html">SessionInfo</a></td><td class="i-description">The SessionInfo class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SetPropertiesParams.html">SetPropertiesParams</a></td><td class="i-description">SetPropertiesParams collection represents the parameters for setting the properties of one object version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SetPropertiesParamsOfMultipleObjects.html">SetPropertiesParamsOfMultipleObjects</a></td><td class="i-description">SetPropertiesParamsOfMultipleObjects is a collection of SetPropertiesParams collections. Each SetPropertiesParams collection represents the parameters for setting the properties of one object version.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SharedFileInfo.html">SharedFileInfo</a></td><td class="i-description">The 'SharedFileInfo' class represents a description of a public file.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SharedLinkInfo.html">SharedLinkInfo</a></td><td class="i-description">The 'SharedLinkInfo' class represents a description of a public link.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SharedLinkInfos.html">SharedLinkInfos</a></td><td class="i-description">The 'SharedLinkInfos' class represents a collection of public link descriptions.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SharedLinkPublicOperations.html">SharedLinkPublicOperations</a></td><td class="i-description">A group of methods for accessing publicly shared files.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SignaturePromptInfo.html">SignaturePromptInfo</a></td><td class="i-description">The 'SignaturePromptInfo' class contains fixed prompt details of an electronic signature.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SignaturePromptInfoMetadataBased.html">SignaturePromptInfoMetadataBased</a></td><td class="i-description">The 'SignaturePromptInfoMetadataBased' class contains metadata-based prompt details of an electronic signature.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SignaturePromptInfos.html">SignaturePromptInfos</a></td><td class="i-description">The 'SignaturePromptInfos' class represents a collection of electronic signature prompt information descriptions.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SignaturePromptInfoSelectable.html">SignaturePromptInfoSelectable</a></td><td class="i-description">The 'SignaturePromptInfoSelectable' class contains user-selectable prompt details of an electronic signature.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SignatureSettings.html">SignatureSettings</a></td><td class="i-description">The SignatureSettings class represents signature settings for a state transition in a workflow.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SourceObjectFile.html">SourceObjectFile</a></td><td class="i-description">The SourceObjectFile class encapsulates information that is needed when adding a new file to an object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a></td><td class="i-description">SourceObjectFiles is a collection of SourceObjectFile objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~SQLDatabase.html">SQLDatabase</a></td><td class="i-description">The SQLDatabase class represents the SQL Database.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~State.html">State</a></td><td class="i-description">The State class represents a workflow state.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StateAdmin.html">StateAdmin</a></td><td class="i-description">The StateAdmin class represents a workflow state (for administrative operations).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StateConditions.html">StateConditions</a></td><td class="i-description">The StateConditions class represents the conditions of a workflow state.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~States.html">States</a></td><td class="i-description">States is a collection of State objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StatesAdmin.html">StatesAdmin</a></td><td class="i-description">StatesAdmin is a collection of StateAdmin objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StateTransition.html">StateTransition</a></td><td class="i-description">The StateTransition class represents a state transition in a workflow.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StateTransitionForClient.html">StateTransitionForClient</a></td><td class="i-description">The 'StateTransitionForClient' class represents a state transition in a workflow.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StateTransitions.html">StateTransitions</a></td><td class="i-description">StateTransitions is a collection of StateTransition objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StateTransitionsForClient.html">StateTransitionsForClient</a></td><td class="i-description">The 'StateTransitionsForClient' class is a collection of 'StateTransitionForClient' objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StringData.html">StringData</a></td><td class="i-description">A class that represents structured JSON or XML data as a string.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Strings.html">Strings</a></td><td class="i-description">The Strings class represents a collection of strings.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StructureAlias.html">StructureAlias</a></td><td class="i-description">The StructureAlias class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~StructureAliases.html">StructureAliases</a></td><td class="i-description">The StructureAliases class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TaskAssignmentClassInfo.html">TaskAssignmentClassInfo</a></td><td class="i-description">The 'TaskAssignmentClassInfo' class contains assignment-specific details of a task assignment object class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TemporarySearchView.html">TemporarySearchView</a></td><td class="i-description">The TemporarySearchView class represents a temporary search view.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Timestamp.html">Timestamp</a></td><td class="i-description">The Timestamp class represents the Timestamp.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TimeZoneInformation.html">TimeZoneInformation</a></td><td class="i-description">The TimeZoneInformation class.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TraditionalFolder.html">TraditionalFolder</a></td><td class="i-description">The TraditionalFolder class represents a traditional folder.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TraditionalFolderContents.html">TraditionalFolderContents</a></td><td class="i-description">The TraditionalFolderContents class represents the contents of a traditional folder.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TraditionalFolders.html">TraditionalFolders</a></td><td class="i-description">TraditionalFolders is a collection of TraditionalFolder objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TriggerType.html">TriggerType</a></td><td class="i-description">The TriggerType class represents the type of a trigger.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TypedValue.html">TypedValue</a></td><td class="i-description">A 'typed value' represents a value, such as text, number, date or a lookup item.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~TypedValues.html">TypedValues</a></td><td class="i-description">The TypedValue class represents a typed value collection.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserAccount.html">UserAccount</a></td><td class="i-description">The UserAccount class represents a user account.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserAccounts.html">UserAccounts</a></td><td class="i-description">UserAccounts is a collection of UserAccount objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserGroup.html">UserGroup</a></td><td class="i-description">A user group can contain users and other user groups.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserGroupAdmin.html">UserGroupAdmin</a></td><td class="i-description">A user group can contain users and other user groups (for administrative operations).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserGroups.html">UserGroups</a></td><td class="i-description">UserGroups is a collection of UserGroup objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserOrUserGroupID.html">UserOrUserGroupID</a></td><td class="i-description">The UserOrUserGroupID class represents a user or user group ID.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserOrUserGroupIDEx.html">UserOrUserGroupIDEx</a></td><td class="i-description">The UserOrUserGroupIDEx class represents a user or user group ID.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserOrUserGroupIDExs.html">UserOrUserGroupIDExs</a></td><td class="i-description">The UserOrUserGroupIDExs class represents a collection of user or user group IDs.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~UserOrUserGroupIDs.html">UserOrUserGroupIDs</a></td><td class="i-description">The UserOrUserGroupIDs class represents a collection of user or user group IDs.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Validation.html">Validation</a></td><td class="i-description">The Validation class represents the validation specification for, e.g., a property definition.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ValueListItem.html">ValueListItem</a></td><td class="i-description">A value list item is one item in a value list.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ValueListItems.html">ValueListItems</a></td><td class="i-description">ValueListItems is a collection of ValueListItem objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ValueListItemSearchResults.html">ValueListItemSearchResults</a></td><td class="i-description">The ValueListItemSearchResults class represents value list item search results.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ValueListItemSearchResultsWithPermissions.html">ValueListItemSearchResultsWithPermissions</a></td><td class="i-description">ValueListItemSearchResultsWithPermissions encapsulates value list item search results and their permissions.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ValueListItemsWithPermissions.html">ValueListItemsWithPermissions</a></td><td class="i-description">ValueListItemsWithPermissions encapsulates value list items and their permissions.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Vault.html">Vault</a></td><td class="i-description">The Vault class represents the document vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultApplicationTaskOperations.html">VaultApplicationTaskOperations</a></td><td class="i-description">The "VaultApplicationTaskOperations" class is an interface for accessing the application task queue operations on the server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultAutomaticMetadataOperations.html">VaultAutomaticMetadataOperations</a></td><td class="i-description">'VaultAutomaticMetadataOperations' is an interface for working with automatically detected metadata.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultClassGroupOperations.html">VaultClassGroupOperations</a></td><td class="i-description">The VaultClassGroupOperations class represents the available class group operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultClassOperations.html">VaultClassOperations</a></td><td class="i-description">The VaultClassOperations class represents the available class operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultClientOperations.html">VaultClientOperations</a></td><td class="i-description">The VaultClientOperations class represents the available client operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultConnection.html">VaultConnection</a></td><td class="i-description">The VaultConnection class represents a document vault connection that is available to the current Windows user.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultConnections.html">VaultConnections</a></td><td class="i-description">VaultConnections is a collection of VaultConnection objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultCustomApplicationManagementOperations.html">VaultCustomApplicationManagementOperations</a></td><td class="i-description">VaultCustomApplicationManagementOperations is an interface for managing custom applications in a vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultDataSetOperations.html">VaultDataSetOperations</a></td><td class="i-description">VaultDataSetOperations is an interface to get, trigger the refreshing of, and monitor data sets.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultDocumentComparisonOperations.html">VaultDocumentComparisonOperations</a></td><td class="i-description">The "VaultDocumentComparisonOperations" class is an interface for accessing the document comparison operations on the server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultElectronicSignatureOperations.html">VaultElectronicSignatureOperations</a></td><td class="i-description">VaultElectronicSignatureOperations is an interface for working with electronic signatures.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultEventLogOperations.html">VaultEventLogOperations</a></td><td class="i-description">VaultEventLogOperations is an interface to access event logs.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultExtensionAuthenticationOperations.html">VaultExtensionAuthenticationOperations</a></td><td class="i-description">The 'VaultExtensionAuthenticationOperations' class represents the available extension authentication operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultExtensionMethodOperations.html">VaultExtensionMethodOperations</a></td><td class="i-description">The 'VaultExtensionMethodOperations' is an interface for executing vault extension methods.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultExternalObjectOperations.html">VaultExternalObjectOperations</a></td><td class="i-description">A group of methods for handling external objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultLoginAccountOperations.html">VaultLoginAccountOperations</a></td><td class="i-description">The 'VaultLoginAccountOperations' class represents the available login account operations for a vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultManagementOperations.html">VaultManagementOperations</a></td><td class="i-description">A group of methods for administering the vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultManagementOperationsAccess.html">VaultManagementOperationsAccess</a></td><td class="i-description">A group of methods for administering vaults.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultNamedACLOperations.html">VaultNamedACLOperations</a></td><td class="i-description">The VaultNamedACLOperations class represents the available named access control list operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultNamedValueStorageOperations.html">VaultNamedValueStorageOperations</a></td><td class="i-description">VaultNamedValueStorageOperations is an interface to get, set and remove stored named values.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultNotificationOperations.html">VaultNotificationOperations</a></td><td class="i-description">The 'VaultNotificationOperations' is an interface for sending notifications to the users of the vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultObjectFileOperations.html">VaultObjectFileOperations</a></td><td class="i-description">A group of methods for creating and modifying object files.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultObjectOperations.html">VaultObjectOperations</a></td><td class="i-description">A group of methods for creating and modifying objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultObjectPropertyOperations.html">VaultObjectPropertyOperations</a></td><td class="i-description">A group of methods for updating and modifying the properties of an object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultObjectSearchOperations.html">VaultObjectSearchOperations</a></td><td class="i-description">The VaultObjectSearchOperations class represents the available object search operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultObjectTypeOperations.html">VaultObjectTypeOperations</a></td><td class="i-description">A group of methods for creating and modifying object types.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultOnServer.html">VaultOnServer</a></td><td class="i-description">The VaultOnServer class represents a vault in the server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultProperties.html">VaultProperties</a></td><td class="i-description">A class that represents a vault on server.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultPropertyDefOperations.html">VaultPropertyDefOperations</a></td><td class="i-description">A group of methods for creating and modifying property definitions.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultScheduledJobManagementOperations.html">VaultScheduledJobManagementOperations</a></td><td class="i-description">VaultScheduledJobManagementOperations is an interface for managing scheduled jobs in a vault.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultServerAttachment.html">VaultServerAttachment</a></td><td class="i-description">A data object for storing information about which servers the vault is attached to.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultServerAttachments.html">VaultServerAttachments</a></td><td class="i-description">"VaultServerAttachments" is a collection of "VaultServerAttachment" objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultServerDataPushOperations.html">VaultServerDataPushOperations</a></td><td class="i-description">The 'VaultServerDataPushOperations' class is an interface for establishing a communication channel to M-Files server that enables the server data push.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultSharedLinkOperations.html">VaultSharedLinkOperations</a></td><td class="i-description">The 'VaultSharedLinkOperations' class represents the available public link operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultsOnServer.html">VaultsOnServer</a></td><td class="i-description">VaultsOnServer is a collection of VaultOnServer objects.ventlog</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultTraditionalFolderOperations.html">VaultTraditionalFolderOperations</a></td><td class="i-description">The VaultTraditionalFolderOperations class represents the available traditional folder operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultUserGroupOperations.html">VaultUserGroupOperations</a></td><td class="i-description">The VaultUserGroupOperations class represents the available user group operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultUserOperations.html">VaultUserOperations</a></td><td class="i-description">The VaultUserOperations class represents the available user operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultUserOperationsEx.html">VaultUserOperationsEx</a></td><td class="i-description">The VaultUserOperationsEx class represents additional user operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultUserSettingOperations.html">VaultUserSettingOperations</a></td><td class="i-description">The VaultUserSettingOperations class represents the user setting operations available for the current user.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultValueListItemOperations.html">VaultValueListItemOperations</a></td><td class="i-description">The VaultValueListItemOperations class represents the available value list item operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultValueListOperations.html">VaultValueListOperations</a></td><td class="i-description">The VaultValueListOperations class represents the available value list operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultViewOperations.html">VaultViewOperations</a></td><td class="i-description">The VaultViewOperations class represents the available view operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultWOPIOperations.html">VaultWOPIOperations</a></td><td class="i-description">Methods for accessing the vault WOPI operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VaultWorkflowOperations.html">VaultWorkflowOperations</a></td><td class="i-description">The VaultWorkflowOperations class represents the available workflow operations.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VerifyVaultJob.html">VerifyVaultJob</a></td><td class="i-description">The VerifyVaultJob class represents a vault verification job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VerifyVaultJobOutput.html">VerifyVaultJobOutput</a></td><td class="i-description">The VerifyVaultJobOutput class represents the output of a vault verification job.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VersionComment.html">VersionComment</a></td><td class="i-description">The VersionComment class represents a version comment of an object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~VersionComments.html">VersionComments</a></td><td class="i-description">VersionComments is a collection of VersionComment objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~View.html">View</a></td><td class="i-description">The View class represents a view.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~ViewLocation.html">ViewLocation</a></td><td class="i-description">A class representing the location of a view in folder structure.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Views.html">Views</a></td><td class="i-description">Views is a collection of View objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~WeeklyTrigger.html">WeeklyTrigger</a></td><td class="i-description">The WeeklyTrigger class represents weekly trigger.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~WOPIClientAdditionalData.html">WOPIClientAdditionalData</a></td><td class="i-description">The WOPI client additional data object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~WOPILock.html">WOPILock</a></td><td class="i-description">The WOPI lock object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~WOPIUserSession.html">WOPIUserSession</a></td><td class="i-description">The WOPI user session object.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Workflow.html">Workflow</a></td><td class="i-description">A class that represents a single workflow.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~WorkflowAdmin.html">WorkflowAdmin</a></td><td class="i-description">The WorkflowAdmin class represents a single workflow (for administrative operations).</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~Workflows.html">Workflows</a></td><td class="i-description">A collection of workflows.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~WorkflowsAdmin.html">WorkflowsAdmin</a></td><td class="i-description">WorkflowsAdmin is a collection of WorkflowAdmin objects.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~XMLSearchResult.html">XMLSearchResult</a></td><td class="i-description">The XMLSearchResult class represents search results in XML format.</td></tr>
+</table></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=class_interface" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=interfaces,caption=$$Interfaces$$%%%%filtereditemlist%%</div>" --><div class="i-section-heading" id="i-interfaces-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Interfaces</span></div><div id="i-interfaces-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>Class Module</th><th>Description</th></tr>
+<tr><td class=i-link><a href="MFilesAPI~IObjectComparer.html">IObjectComparer</a></td><td class="i-description">An interface for providing a comparison function for sorting object collections.</td></tr>
+<tr><td class=i-link><a href="MFilesAPI~IObjectFileComparer.html">IObjectFileComparer</a></td><td class="i-description">An interface for providing a comparison function for sorting object file collections.</td></tr>
+</table></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=standard" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=modules,caption=$$StandardModules$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=propertypage" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=property pages,caption=$$PropertyPages$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=designer" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=designers,caption=$$DesignerModules$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MODULE_LIST" namespace="module" source="Item" filter="type=other" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=other,caption=$$OtherModules$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="ITEM_LIST_WITH_HEADER" namespace="enumeration" source="Item" filter="scope=public" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=publicenumerations,caption=$$Public$$ $$Enumerations$$%%%%filtereditemlist%%</div>" --><div class="i-section-heading" id="i-publicenumerations-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Enumerations</span></div><div id="i-publicenumerations-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>Enumeration</th><th>Description</th></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFACLComponentOverrideAccess.html">MFACLComponentOverrideAccess</A></td><td class="i-description">ACL component override access privileges.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFACLEnforcingMode.html">MFACLEnforcingMode</A></td><td class="i-description">Defines how the provided ACL is selected as input for ACL enforcing.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFACLMode.html">MFACLMode</A></td><td class="i-description">Available ACL modes.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFActionType.html">MFActionType</A></td><td class="i-description">Action type values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFAdditionalClassInfoType.html">MFAdditionalClassInfoType</A></td><td class="i-description">Additional class information type values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFApplicationLicenseStatus.html">MFApplicationLicenseStatus</A></td><td class="i-description">Vault application license status values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFAssignmentType.html">MFAssignmentType</A></td><td class="i-description">Assignment types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFAttachVaultOptionsFlag.html">MFAttachVaultOptionsFlag</A></td><td class="i-description">Bit flags that provide information about attach vault options.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFAuthType.html">MFAuthType</A></td><td class="i-description">Available authentication types for logging into the document vault.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFAutomaticPermissionsOperationOptions.html">MFAutomaticPermissionsOperationOptions</A></td><td class="i-description">Options for change automatic permissions operation.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFAutomaticValueType.html">MFAutomaticValueType</A></td><td class="i-description">Available automatic value types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFAutoStateTransitionMode.html">MFAutoStateTransitionMode</A></td><td class="i-description">Automatic state transition modes.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBackupType.html">MFBackupType</A></td><td class="i-description">Available backup types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBuiltInDocumentClass.html">MFBuiltInDocumentClass</A></td><td class="i-description">Document classes readily available in the system.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBuiltInMetadataStructureItemID.html">MFBuiltInMetadataStructureItemID</A></td><td class="i-description">Metadata structure item IDs readily available in the system.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBuiltInObjectClass.html">MFBuiltInObjectClass</A></td><td class="i-description">Generic class identification codes.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBuiltInObjectType.html">MFBuiltInObjectType</A></td><td class="i-description">Object types readily available in the system.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBuiltInPropertyDef.html">MFBuiltInPropertyDef</A></td><td class="i-description">Property definitions readily available in the system.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBuiltInUserGroup.html">MFBuiltInUserGroup</A></td><td class="i-description">User groups readily available in the system.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBuiltInValueList.html">MFBuiltInValueList</A></td><td class="i-description">Value lists readily available in the system.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFBuiltInView.html">MFBuiltInView</A></td><td class="i-description">Views that are readily available in the system.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFClientType.html">MFClientType</A></td><td class="i-description">M-Files client application type identifier.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFConditionType.html">MFConditionType</A></td><td class="i-description">Available condition types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFContentType.html">MFContentType</A></td><td class="i-description">Content type definitions.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFCustomApplicationType.html">MFCustomApplicationType</A></td><td class="i-description">Custom application type.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFDataFunction.html">MFDataFunction</A></td><td class="i-description">Functions that operate on a property value.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFDataType.html">MFDataType</A></td><td class="i-description">Data type definitions.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFDBEngine.html">MFDBEngine</A></td><td class="i-description">Database engine type.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFDefaultPropertyType.html">MFDefaultPropertyType</A></td><td class="i-description">Available default property types when importing objects from external sources.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFDependencyRelation.html">MFDependencyRelation</A></td><td class="i-description">Dependency relation types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFEmailField.html">MFEmailField</A></td><td class="i-description">E-mail field types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFEmailImportance.html">MFEmailImportance</A></td><td class="i-description">E-mail importance values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFEmailSensitivity.html">MFEmailSensitivity</A></td><td class="i-description">E-mail sensitivity values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFEventHandlerType.html">MFEventHandlerType</A></td><td class="i-description">Event handler type.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFExportContentFlag.html">MFExportContentFlag</A></td><td class="i-description">Bit flags that provide information about a content export job.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFExpressionExFlag.html">MFExpressionExFlag</A></td><td class="i-description">Flags that provide additional information on the expression in the context of a view definition.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFExpressionType.html">MFExpressionType</A></td><td class="i-description">Expression type definitions.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFExtApplicationPlatform.html">MFExtApplicationPlatform</A></td><td class="i-description">Extension application platform values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFExtensionAuthenticationSpecialUserType.html">MFExtensionAuthenticationSpecialUserType</A></td><td class="i-description">Special user type for extension authentication.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFExternalDBRefreshType.html">MFExternalDBRefreshType</A></td><td class="i-description">Available refresh methods for refreshing external value lists and object types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFacetFilterStatusFlags.html">MFFacetFilterStatusFlags</A></td><td class="i-description">Facet filter status flags (bitfield flags). Affects facet searching.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFacetSearchFlags.html">MFFacetSearchFlags</A></td><td class="i-description">Facet search flags (bitfield flags). Affects facet searching.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFileDataStorage.html">MFFileDataStorage</A></td><td class="i-description">File data storage type of a vault.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFileFormat.html">MFFileFormat</A></td><td class="i-description">File format for download.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFileInformationType.html">MFFileInformationType</A></td><td class="i-description">File information type values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFileOpenMethod.html">MFFileOpenMethod</A></td><td class="i-description">Available methods for opening an object file in an application.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFileProperty.html">MFFileProperty</A></td><td class="i-description">Windows file properties.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFileSizePrecision.html">MFFileSizePrecision</A></td><td class="i-description">File size precision.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFileValueType.html">MFFileValueType</A></td><td class="i-description">Available conditions regarding file information.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFileVerVersionType.html">MFFileVerVersionType</A></td><td class="i-description">Indirect file version type enumeration.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFolderColumnId.html">MFFolderColumnId</A></td><td class="i-description">Reserved IDs for folder columns. If the columns represents a true property definition value, the property definition is is used as column id.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFolderContentItemType.html">MFFolderContentItemType</A></td><td class="i-description">Folder content item types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFolderDefType.html">MFFolderDefType</A></td><td class="i-description">Folder definition types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFolderListingAlgorithm.html">MFFolderListingAlgorithm</A></td><td class="i-description">Folder listing algorithm. Used to optimize property folder listings on intermediate view levels.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFolderListingColumnFlags.html">MFFolderListingColumnFlags</A></td><td class="i-description">Folder listing column flags.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFolderListingItemGroupingMode.html">MFFolderListingItemGroupingMode</A></td><td class="i-description">Folder listing item grouping mode. Some modes can be combined.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFolderListingViewMode.html">MFFolderListingViewMode</A></td><td class="i-description">Folder listing view modes.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFolderUIStateLocationType.html">MFFolderUIStateLocationType</A></td><td class="i-description">Folder location types for UI state settings.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFormattingType.html">MFFormattingType</A></td><td class="i-description">Available formatting types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFFullTextSearchFlags.html">MFFullTextSearchFlags</A></td><td class="i-description">Full-text search flags (bitfield flags).</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFHistoryRetrievalMode.html">MFHistoryRetrievalMode</A></td><td class="i-description">The mode of operation while retrieving history information.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFilesURLType.html">MFilesURLType</A></td><td class="i-description">Available M-Files URL types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFImpersonationType.html">MFImpersonationType</A></td><td class="i-description">Enumeration for the impersonation types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFImportContentFlag.html">MFImportContentFlag</A></td><td class="i-description">Bit flags that provide information about a content import job.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFIndirectPropertyIDLevelType.html">MFIndirectPropertyIDLevelType</A></td><td class="i-description">Indirect property ID level types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFLatestSpecificBehavior.html">MFLatestSpecificBehavior</A></td><td class="i-description">Specifies how the object version parameter is treated.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFLicenseType.html">MFLicenseType</A></td><td class="i-description">Available license types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFLoginAccountType.html">MFLoginAccountType</A></td><td class="i-description">Available account types of logins.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFLoginServerRole.html">MFLoginServerRole</A></td><td class="i-description">Flags for various user roles in server operations.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFMetadataStructureItem.html">MFMetadataStructureItem</A></td><td class="i-description">Types of metadata structure elements.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFMetadataStructureSelectorFlags.html">MFMetadataStructureSelectorFlags</A></td><td class="i-description">Metadata structure selector flags.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFMetadataSyncFormat.html">MFMetadataSyncFormat</A></td><td class="i-description">Property formats in synchronizing file content with current metadata.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFNamedACLType.html">MFNamedACLType</A></td><td class="i-description">Named ACL types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFNamedValueType.html">MFNamedValueType</A></td><td class="i-description">Named value types in named value storage operations.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectAccess.html">MFObjectAccess</A></td><td class="i-description">Available object access privileges.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectCapabilityFlag.html">MFObjectCapabilityFlag</A></td><td class="i-description">Bit flags that describe the capabilities of an object.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectDataRequestErrorTolerance.html">MFObjectDataRequestErrorTolerance</A></td><td class="i-description">The available error tolerance modes for object data requests.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectDataRequestFlags.html">MFObjectDataRequestFlags</A></td><td class="i-description">Object data request flags (bitfield flags) describe what type of object data is requested.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectDataRequestVersionType.html">MFObjectDataRequestVersionType</A></td><td class="i-description">The available version types for object data requests.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectOperationFlags.html">MFObjectOperationFlags</A></td><td class="i-description">Object operation flags.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectTypeAccess.html">MFObjectTypeAccess</A></td><td class="i-description">Available object type access privileges.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectVersionFlag.html">MFObjectVersionFlag</A></td><td class="i-description">Bit flags that provide additional information on the object version.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectWindowMode.html">MFObjectWindowMode</A></td><td class="i-description">Available metadata card modes.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjectWindowResultCode.html">MFObjectWindowResultCode</A></td><td class="i-description">The user's response to the metadata card.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFObjVerVersionType.html">MFObjVerVersionType</A></td><td class="i-description">Indirect version type enumeration.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFOCRDimensionUnit.html">MFOCRDimensionUnit</A></td><td class="i-description">Dimension units in optical character recognition (OCR) operation.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFOCRLanguage.html">MFOCRLanguage</A></td><td class="i-description">Language hints in optical character recognition (OCR) operation.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFOCRZoneRecognitionMode.html">MFOCRZoneRecognitionMode</A></td><td class="i-description">Zone recognition modes in optical character recognition (OCR) operation.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFOfflineTransitionResultFlags.html">MFOfflineTransitionResultFlags</A></td><td class="i-description">Status flags for an offline transition.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFOnlineTransitionResultFlags.html">MFOnlineTransitionResultFlags</A></td><td class="i-description">Status flags for an online transition.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFParentChildBehavior.html">MFParentChildBehavior</A></td><td class="i-description">Parent-child behavior enumeration (affects searching and view levels).</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFPasswordHashAlgorithm.html">MFPasswordHashAlgorithm</A></td><td class="i-description">Password hash algorithm identifier.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFPermission.html">MFPermission</A></td><td class="i-description">Access control entry rights.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFPermissionsExpressionType.html">MFPermissionsExpressionType</A></td><td class="i-description">Available types of permission expressions.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFPredefinedSearchFilterType.html">MFPredefinedSearchFilterType</A></td><td class="i-description">Definition for various predefined filters that the user can select on the search bar.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFProductMode.html">MFProductMode</A></td><td class="i-description">Available product modes.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFPropertyDefAccess.html">MFPropertyDefAccess</A></td><td class="i-description">Available property definition access privileges.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFRelationshipsMode.html">MFRelationshipsMode</A></td><td class="i-description">Available relationships modes.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFScheduledJobType.html">MFScheduledJobType</A></td><td class="i-description">Types of scheduled jobs available for server maintenance.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFSearchFlags.html">MFSearchFlags</A></td><td class="i-description">Search flags (bitfield flags). Affects searching and view levels.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFServerConnection.html">MFServerConnection</A></td><td class="i-description">States of the server connection and authentication.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFSharedLinkType.html">MFSharedLinkType</A></td><td class="i-description">The type of the shared link pointing to a document.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFSignaturePromptInfoType.html">MFSignaturePromptInfoType</A></td><td class="i-description">Electronic signature prompt information type values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFSoftwarePlatformType.html">MFSoftwarePlatformType</A></td><td class="i-description">Platform indicators for the API.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFSpecialObjectFlag.html">MFSpecialObjectFlag</A></td><td class="i-description">Bit flags that indicate special objects such as shortcuts and conflicts.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFStatusType.html">MFStatusType</A></td><td class="i-description">Available conditions related to status information.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFStringDataType.html">MFStringDataType</A></td><td class="i-description">String data type values.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFTaskQueueProcessingBehavior.html">MFTaskQueueProcessingBehavior</A></td><td class="i-description">Specifies how tasks are processed in a task queue.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFTaskState.html">MFTaskState</A></td><td class="i-description">The possible states of an asynchronous task.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFTextContentExtractionFlags.html">MFTextContentExtractionFlags</A></td><td class="i-description">Bitfield flags for the content extraction process when retrieving the text content of a file.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFTriggerMonth.html">MFTriggerMonth</A></td><td class="i-description">Defines the months as used in triggers.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFTriggerType.html">MFTriggerType</A></td><td class="i-description">Defines the types of triggers associated with a scheduled job.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFTriggerWeekDay.html">MFTriggerWeekDay</A></td><td class="i-description">Defines the weekdays as used in triggers.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFTriggerWeekOfMonth.html">MFTriggerWeekOfMonth</A></td><td class="i-description">Defines a week of a month as used in triggers.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFUpdateType.html">MFUpdateType</A></td><td class="i-description">Available update types for property definitions.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFUserAccountVaultRole.html">MFUserAccountVaultRole</A></td><td class="i-description">Flags for the various user roles for accessing a vault.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFUserOrUserGroupType.html">MFUserOrUserGroupType</A></td><td class="i-description">Types of users or user groups.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFValidationType.html">MFValidationType</A></td><td class="i-description">Available validation types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFValueListItemPropertyDef.html">MFValueListItemPropertyDef</A></td><td class="i-description">Pseudo property definitions of the value list items.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFValueListSortingType.html">MFValueListSortingType</A></td><td class="i-description">Available sort modes for value lists.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFVaultAccess.html">MFVaultAccess</A></td><td class="i-description">Available vault access rights.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFVaultConnectionTestResult.html">MFVaultConnectionTestResult</A></td><td class="i-description">Result codes of a vault connection test.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFViewCategory.html">MFViewCategory</A></td><td class="i-description">Available view categories.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFViewFlag.html">MFViewFlag</A></td><td class="i-description">Flags that provide additional information about the view.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFViewType.html">MFViewType</A></td><td class="i-description">View types.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFWOPIActionType.html">MFWOPIActionType</A></td><td class="i-description">The WOPI action type.</td></tr>
+<tr><td class=i-link><A href="MFilesAPI~MFWOPITokenType.html">MFWOPITokenType</A></td><td class="i-description">The WOPI Token type.</td></tr>
+</table></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="ITEM_LIST_WITH_HEADER" namespace="enumeration" source="Item" filter="scope=private" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=privateenumerations,caption=$$Private$$ $$Enumerations$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="ITEM_LIST_WITH_HEADER" namespace="structure" source="Item" filter="scope=public" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=publicstructures,caption=$$Public$$ $$Structures$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="ITEM_LIST_WITH_HEADER" namespace="structure" source="Item" filter="scope=private" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=privatestructures,caption=$$Private$$ $$Structures$$%%%%filtereditemlist%%</div>" --><!--DXMETADATA end -->
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=remarks,caption=$$Remarks$$%%%%comment%%</div>" --><!--DXMETADATA end -->
+        <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORIZED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""$$See_Also$$%%designlist:tagidentifier=##SEEALSO,itemtype=See Also%%""%%<p id=dxseealsocontent>%%filtereditemlist%%</p></div>" --><!--DXMETADATA end -->
+    </div>
+    <div id="i-footer-content" class="i-footer-content">
+        <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2022 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><a href="mailto:support@m-files.com?subject=M-Files API Documentation Feedback: MFilesAPI.html">Send comments</a><!--DXMETADATA end-->
+    </div>
+    
+
+    <!--DXMETADATA start type="IsNew" format="<script type=""text/javascript"">setIsNew = true;</script>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<script type=""text/javascript"">setIsResponsiveEnabled = true;</script>" --><script type="text/javascript">setIsResponsiveEnabled = true;</script><!--DXMETADATA end-->
+    <script type="text/javascript">
+        $(function() {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.isNew = !(typeof setIsNew === "undefined");
+            documentInstance.isResponsiveEnabled = !(typeof setIsResponsiveEnabled === "undefined");
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

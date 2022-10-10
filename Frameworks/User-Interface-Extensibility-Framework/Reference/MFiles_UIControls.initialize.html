@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+	<link rel="stylesheet" type="text/css" href="template/packages/core-ax/css/m-files.content.css">
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />" --><meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ItemTitle%%</title>" --><title>initialize Method</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="initialize Method"/><!--DXMETADATA end-->    
+    
+
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui.min.css"></link><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:{"dynamictoc":{"initialNodeId":"n0","initialNodeContainer":"c0"},"currentLocale":"-","isFrameless":false,"responsive":{"isEnabled":true},"navigationKind":"frames","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="
+     Description
+
+
+
+    Initializes the UI Control Library for the dashboard.
+
+
+
+     Parameters
+
+
+
+    dashboard : IDashboard [ in ]" /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/m-files.content.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+<link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="f7d8a8fb-f4cd-473b-81f9-95f24059785f"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+
+    <!--DXMETADATA start type="CustomHeadContent" --><!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+    <div id="i-header-content" class="i-header-content">
+        <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files UI Extensibility Framework<!--DXMETADATA end--></div>
+        <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->initialize Method<!--DXMETADATA end--></div></div>
+    </div>
+    <div id="i-after-header-content" class="i-after-header-content">
+        <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+        <!--DXMETADATA start type="IsWebOutputRootPageLinkEnabled" format="<a href='#' class="i-page-link" class="i-view-in-frame-link" title='$$VIEW_WITH_NAVIGATION_TOOLS_TIP$$' style='display: none' data-root-page='%%WebOutputRootPage%%%%OutputFileExtension%%' target='_top'>$$VIEW_WITH_NAVIGATION_TOOLS_TEXT$$</a>" --><!--DXMETADATA end-->
+    </div>
+    <!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><!--DXMETADATA end -->
+    
+    
+    <div id="i-body-content" class="i-body-content">
+        <!--DXMETADATA start type="TopicSection" name="BodyText"--><div id="fca6e0a6-c1ef-438f-b96e-bcd6ec26ccb1SectionHeading" class="SectionHeading">
+    <span class="SectionHeadingIcon"><span class="Hidden">&nbsp;</span></span><span class="SectionHeadingText">Description</span>
+</div>
+
+<div id="fca6e0a6-c1ef-438f-b96e-bcd6ec26ccb1SectionContent" class="SectionContent">
+    Initializes the UI Control Library for the dashboard.
+</div>
+
+<div id="c1db0686-59c8-417e-a00b-9c932dca2689SectionHeading" class="SectionHeading">
+    <span class="SectionHeadingIcon"><span class="Hidden">&nbsp;</span></span><span class="SectionHeadingText">Parameters</span>
+</div>
+
+<div id="c1db0686-59c8-417e-a00b-9c932dca2689SectionContent" class="SectionContent">
+    <p><em>dashboard&nbsp;: <a href="MFClientScript~IDashboard.html">IDashboard</a></em> [ in ]</p>
+
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+        <p>The main shellUI object.</p>
+    </blockquote>
+
+    <p><em>callbacks&nbsp;: Object</em> [ in ]</p>
+
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+        <p>Contains callback methods for the dashboard.</p>
+
+        <innovasys:widgetproperty layout="block" name="Content">
+            <p><strong><em>onInitialize</em> Method [ optional ]</strong></p>
+
+            <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                <p>Called when the dashboard has been initialized. You can use functions of <em>environment</em> object after this call.</p>
+
+                <innovasys:widgetproperty layout="block" name="Content">
+                    <p><em>environment : <a href="Dashboard Controls Environment.html">DashboardEnv</a>&nbsp;</em>[ in ]</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>The dashboard environment object.</p>
+                    </blockquote>
+                </innovasys:widgetproperty>
+            </blockquote>
+        </innovasys:widgetproperty>
+
+        <innovasys:widgetproperty layout="block" name="Content">
+            <p><strong><em>onEnableControls</em> Method [ optional ]</strong></p>
+
+            <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                <p>Called when the control buttons (i.e. save and close buttons) are enabled.</p>
+            </blockquote>
+        </innovasys:widgetproperty>
+
+        <innovasys:widgetproperty layout="block" name="Content">
+            <p><strong><em>onDisableControls</em> Method [ optional ]</strong></p>
+
+            <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                <p>Called when the control buttons (i.e. save and close buttons) are disabled.</p>
+            </blockquote>
+        </innovasys:widgetproperty>
+
+        <innovasys:widgetproperty layout="block" name="Content">
+            <p><strong><em>onSave</em> Method [ optional ]</strong></p>
+
+            <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                <p>Called when the user has clicked the save button.</p>
+
+                <innovasys:widgetproperty layout="block" name="Content">
+                    <p><em>objectVersionAndProperties : IObjectVersionAndProperties</em> [ in ]</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>Contains the object and its original property values. Null if there is no original object.</p>
+                    </blockquote>
+
+                    <p><em>propertyValues : IPropertyValues</em> [ in ]</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>Contains the current property values.</p>
+                    </blockquote>
+                </innovasys:widgetproperty>
+
+                <innovasys:widgetproperty layout="block" name="Content">
+                    <p>Return Type</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>Boolean; false cancel the saving operation.</p>
+                    </blockquote>
+                </innovasys:widgetproperty>
+            </blockquote>
+        </innovasys:widgetproperty>
+
+        <innovasys:widgetproperty layout="block" name="Content">
+            <p><strong><em>onClose</em> Method [ optional ]</strong></p>
+
+            <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                <p>Called when the user has clicked Close button.</p>
+
+                <innovasys:widgetproperty layout="block" name="Content">
+                    <p>Return Type</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>Boolean; false cancel the closing operation.</p>
+                    </blockquote>
+                </innovasys:widgetproperty>
+            </blockquote>
+        </innovasys:widgetproperty>
+
+        <innovasys:widgetproperty layout="block" name="Content">
+            <p><strong><em>onEdit</em> Method [ optional ]</strong></p>
+
+            <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                <p>Called when user starts to edit a property value.</p>
+
+                <innovasys:widgetproperty layout="block" name="Content">
+                    <p>Return Type</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>Boolean; false prevent the editing.</p>
+                    </blockquote>
+                </innovasys:widgetproperty>
+            </blockquote>
+        </innovasys:widgetproperty>
+
+        <innovasys:widgetproperty layout="block" name="Content">
+            <p><strong><em>onPropertyValueChange</em> Method [ optional ]</strong></p>
+
+            <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                <p>Called when the user is finishing the editing of an individual control.</p>
+
+                <innovasys:widgetproperty layout="block" name="Content">
+                    <p><em>propertyValue : IPropertyValue</em> [ in ]</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>The new propery value.</p>
+                    </blockquote>
+                </innovasys:widgetproperty>
+
+                <innovasys:widgetproperty layout="block" name="Content">
+                    <p>Return Type</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>Boolean; false prevent the change.</p>
+                    </blockquote>
+                </innovasys:widgetproperty>
+            </blockquote>
+        </innovasys:widgetproperty>
+
+        <innovasys:widgetproperty layout="block" name="Content">
+            <p><strong><em>onUpdateDashboard</em> Method [ optional ]</strong></p>
+
+            <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                <p>Called when the dashboard is about to update, possibly due changed selection or changed metadata.</p>
+
+                <innovasys:widgetproperty layout="block" name="Content">
+                    <p><em>objectVersionAndProperties : IObjectVersionAndProperties</em> [ in ]</p>
+
+                    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+                        <p>Contains the new object and its property values.</p>
+                    </blockquote>
+                </innovasys:widgetproperty>
+            </blockquote>
+        </innovasys:widgetproperty>
+    </blockquote>
+</div>
+
+<div id="37bf4c5e-fe06-4629-b752-764e8e81745bSectionHeading" class="SectionHeading">
+    <span class="SectionHeadingIcon"><span class="Hidden">&nbsp;</span></span><span class="SectionHeadingText">Remarks</span>
+</div>
+
+<div id="37bf4c5e-fe06-4629-b752-764e8e81745bSectionContent" class="SectionContent">
+    Type your Collapsible Section text here.
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+        
+    </div>
+    <div id="i-footer-content" class="i-footer-content">
+        <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2022 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
+<a href="mailto:support@m-files.com?subject=M-Files UI Extensibility Framework: Documentation Feedback">Send feedback</a>
+    </div>
+    
+
+    <!--DXMETADATA start type="IsNew" format="<script type=""text/javascript"">setIsNew = true;</script>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<script type=""text/javascript"">setIsResponsiveEnabled = true;</script>" --><script type="text/javascript">setIsResponsiveEnabled = true;</script><!--DXMETADATA end-->
+    <script type="text/javascript">
+        $(function() {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.isNew = !(typeof setIsNew === "undefined");
+            documentInstance.isResponsiveEnabled = !(typeof setIsResponsiveEnabled === "undefined");
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>

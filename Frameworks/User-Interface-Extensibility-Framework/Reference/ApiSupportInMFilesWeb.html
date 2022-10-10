@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+	<link rel="stylesheet" type="text/css" href="template/packages/core-ax/css/m-files.content.css">
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />" --><meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="ItemTitle" format="<title>%%ItemTitle%%</title>" --><title>Supported M-Files API Components in the Classic M-Files Web</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="ItemTitle" format="<meta name=""Title"" content=""%%ItemTitleNoQuotes%%""/>" --><meta name="Title" content="Supported M-Files API Components in the Classic M-Files Web"/><!--DXMETADATA end-->    
+    
+
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/default/jquery.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/default/jquery-ui.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/default/jquery-ui.min.css"></link><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TemplateSettingsJson" format="<script type=""text/javascript"">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:%%TemplateSettingsJson%%});</script>" --><script type="text/javascript">var Innovasys=(Innovasys||{});$.extend(true,Innovasys,{settings:{versions:{popupContainer:'#i-after-header-content'}}},{settings:{"dynamictoc":{"initialNodeId":"n0","initialNodeContainer":"c0"},"currentLocale":"-","isFrameless":false,"responsive":{"isEnabled":true},"navigationKind":"frames","versions":{"locale":{"currentId":"-"}}}});</script><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="This topic lists all the M-Files API components available for use in an M-Files Web environment. The supported vault operation specific methods are listed as a separate section at the bottom of the page. The listings apply for M-Files 2015.2 and abov" /><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-topics/css/default/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-topics/topics.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-topics/topics.mshv1.css"" data-responsive-mobile=""template/packages/core-topics/topics.mobile.css"" data-responsive-tablet=""template/packages/core-topics/topics.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/m-files.content.css"  data-mshv2-stylesheet="/template/packages/core-topics/topics.mshv2.css" data-mshv1-stylesheet="/template/packages/core-topics/topics.mshv1.css" data-responsive-mobile="template/packages/core-topics/topics.mobile.css" data-responsive-tablet="template/packages/core-topics/topics.tablet.css"></link>
+<link rel="stylesheet" type="text/css" href="template/packages/core-topics/css/topics.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-topics" filetype="script"--><script src="template/packages/plugins-topics/script/default/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-topics" filetype="script"--><script src="template/packages/core-topics/script/topics.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="5674147f-7717-43db-b8c4-7f9606c15738"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="95f0b760-8889-4d4f-960a-e8a2d5672e58"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocOrdinal" format="<meta name=""Microsoft.Help.TocOrder"" content=""%%TocOrdinal%%""/>" --><meta name="Microsoft.Help.TocOrder" content="4"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.F1" content=""/>
+    <meta name="Microsoft.Help.ContentType" content="Concepts" />
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+
+    <!--DXMETADATA start type="CustomHeadContent" --><!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+    <div id="i-header-content" class="i-header-content">
+        <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files UI Extensibility Framework<!--DXMETADATA end--></div>
+        <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="ItemTitle" -->Supported M-Files API Components in the Classic M-Files Web<!--DXMETADATA end--></div></div>
+    </div>
+    <div id="i-after-header-content" class="i-after-header-content">
+        <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end -->
+        <!--DXMETADATA start type="IsWebOutputRootPageLinkEnabled" format="<a href='#' class="i-page-link" class="i-view-in-frame-link" title='$$VIEW_WITH_NAVIGATION_TOOLS_TIP$$' style='display: none' data-root-page='%%WebOutputRootPage%%%%OutputFileExtension%%' target='_top'>$$VIEW_WITH_NAVIGATION_TOOLS_TEXT$$</a>" --><!--DXMETADATA end-->
+    </div>
+    <!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container"><table><tr><td>
+<a href="FrontPage.html">M-Files UI Extensibility Framework</a>
+ > Supported M-Files API Components in the Classic M-Files Web</td></tr></table></div><!--DXMETADATA end -->
+    
+    
+    <div id="i-body-content" class="i-body-content">
+        <!--DXMETADATA start type="TopicSection" name="BodyText"--><p>This topic lists all the M-Files API components available for use in an M-Files Web environment. The supported vault operation specific methods are listed as a separate section at the bottom of the page. The listings apply for M-Files 2015.2 and above.</p>
+
+<div class="i-box i-box-note">
+    When&nbsp;your UI Extensibility application is running in the M-Files Web client, M-Files API calls from the application must be made in the&nbsp;<a href="CallingAsyncMFilesAPI.html">asynchronous mode</a>.
+</div>
+
+<h1>Supported Components</h1>
+
+<p>In cases where no 2<sup>nd</sup> level bullets have been defined, all the components of the API object are supported.</p>
+
+<ul>
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~PropertyValue.html" target="_blank">PropertyValue</a>
+
+        <ul>
+            <li>GetValueAsLocalizedText</li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~PropertyValues.html" target="_blank">PropertyValues</a>
+
+        <ul>
+            <li>Add</li>
+
+            <li>Remove</li>
+
+            <li>Item</li>
+
+            <li>SearchForProperty</li>
+
+            <li>IndexOf</li>
+
+            <li>Count</li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjVer.html" target="_blank">ObjVer</a>
+
+        <ul>
+            <li>SetIDs</li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjVers.html" target="_blank">ObjVers</a>
+
+        <ul>
+            <li>GetAllDistinctObjIDs</li>
+        </ul>
+    </li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~FileVer.html" target="_blank">FileVer</a></li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjID.html" target="_blank">ObjID</a>
+
+        <ul>
+            <li>SetIDs</li>
+        </ul>
+    </li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~SourceObjectFile.html" target="_blank">SourceObjectFile</a></li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~SourceObjectFiles.html" target="_blank">SourceObjectFiles</a>
+
+        <ul>
+            <li>Add</li>
+
+            <li>Remove</li>
+
+            <li>Item</li>
+
+            <li>AddEmptyFile</li>
+
+            <li>AddFile</li>
+
+            <li>Count</li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~FileClasses.html" target="_blank">FileClasses</a>
+
+        <ul>
+            <li>Add</li>
+
+            <li>Remove</li>
+
+            <li>Item</li>
+
+            <li>Count</li>
+        </ul>
+    </li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~SearchCondition.html" target="_blank">SearchCondition</a></li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~SearchConditions.html" target="_blank">SearchConditions</a></li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~Expression.html" target="_blank">Expression</a>
+
+        <ul>
+            <li>SetStatusValueExpression</li>
+
+            <li>SetPropertyValueExpression</li>
+
+            <li>SetTypedValueExpression</li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~TypedValue.html" target="_blank">TypedValue</a>
+
+        <ul>
+            <li>SetValueToMultiSelectLookup</li>
+
+            <li>SetValueToLookup</li>
+
+            <li>SetValueToNULL</li>
+
+            <li>SetValue</li>
+
+            <li>GetValueAsLocalizedText</li>
+
+            <li>GetValueAsLookups</li>
+
+            <li>GetValueAsLookup</li>
+
+            <li>IsNULL</li>
+
+            <li>GetLookupID</li>
+
+            <li>GetValueAsTimestamp</li>
+
+            <li>CompareTo (support for text and multi-line text properties only)</li>
+        </ul>
+    </li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~FolderDef.html" target="_blank">FolderDef</a></li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~FolderDefs.html" target="_blank">FolderDefs</a>
+
+        <ul>
+            <li>Add</li>
+
+            <li>Item</li>
+
+            <li>Count</li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~FileClass.html" target="_blank">FileClass</a>
+
+        <ul>
+            <li>LoadByExtension</li>
+
+            <li>LoadByFileClass</li>
+
+            <li>SetFileClassInfo</li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjectCreationInfo.html" target="_blank">ObjectCreationInfo</a>
+
+        <ul>
+            <li>GetDisableObjectCreation</li>
+
+            <li>GetExtension</li>
+
+            <li>GetMetadataCardTitle</li>
+
+            <li>GetObjectType</li>
+
+            <li>GetSelectableFileClasses</li>
+
+            <li>GetSelectedFileClass</li>
+
+            <li>GetSingleFileDocument</li>
+
+            <li>GetSourceFiles</li>
+
+            <li>GetTemplate</li>
+
+            <li>GetTitle</li>
+
+            <li>GetTitleAsText</li>
+
+            <li>GetUseAsDefaults</li>
+
+            <li>SetDisableObjectCreation</li>
+
+            <li>SetExtension</li>
+
+            <li>SetMetadataCardTitle</li>
+
+            <li>SetObjectType</li>
+
+            <li>SetSelectableFileClasses</li>
+
+            <li>SetSelectedFileClass</li>
+
+            <li>SetSingleFileDocument</li>
+
+            <li>SetSourceFiles</li>
+
+            <li>SetTemplate</li>
+
+            <li>SetTitle</li>
+
+            <li>SetTitleAsDatatypeText</li>
+
+            <li>GetUseAsDefaults</li>
+        </ul>
+    </li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~Lookup.html" target="_blank">Lookup</a></li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~Lookups.html" target="_blank">Lookups</a>
+
+        <ul>
+            <li>Item</li>
+
+            <li>Remove</li>
+
+            <li>Add</li>
+
+            <li>GetLookupByItem</li>
+
+            <li>GetLookupIndexByItem</li>
+
+            <li>Count</li>
+        </ul>
+    </li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjectVersionAndProperties.html" target="_blank">ObjectVersionAndProperties</a></li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjectFiles.html" target="_blank">ObjectFiles</a>
+
+        <ul>
+            <li>Item</li>
+
+            <li>Add</li>
+
+            <li>Count</li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjectVersions.html" target="_blank">ObjectVersions</a>
+
+        <ul>
+            <li>Item</li>
+
+            <li>GetAsObjVers</li>
+        </ul>
+    </li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjOrFileVer.html" target="_blank">ObjOrFileVer</a></li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjOrFileVers.html" target="_blank">ObjOrFileVers</a></li>
+
+    <li>
+        <a href="http://www.m-files.com/api/documentation/#MFilesAPI~NamedValues.html" target="_blank">NamedValues</a>
+
+        <ul>
+            <li>Value</li>
+        </ul>
+    </li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjectVersionAndPropertiesOfMultipleObjects.html" target="_blank">ObjectVersionAndPropertiesOfMultipleObjects</a></li>
+
+    <li><a href="http://www.m-files.com/api/documentation/#MFilesAPI~ObjectVersionWorkflowState.html" target="_blank">ObjectVersionWorkflowState</a></li>
+</ul>
+
+<h1>Vault Operation Specific Methods</h1>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultClassOperations.html" target="_blank">Class Operations</a></h5>
+
+<ul>
+    <li>GetObjectClassIDByAlias</li>
+
+    <li>GetObjectClassIDByGUID</li>
+
+    <li>GetObjectClass</li>
+
+    <li>GetAllObjectClasses</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultClientOperations.html" target="_blank">Client Operations</a></h5>
+
+<ul>
+    <li>IsOffline
+
+        <p class="Note"><strong>Note</strong>: M-Files Web does not currently support offline mode for vaults. "IsOffline" is always returned as "false".</p>
+    </li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultExtensionMethodOperations.html" target="_blank">Extension Method Operations</a></h5>
+
+<ul>
+    <li>ExecuteVaultExtensionMethod</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultNamedACLOperations.html" target="_blank">Named ACL Operations</a></h5>
+
+<ul>
+    <li>GetNamedACLIDByAlias</li>
+
+    <li>GetNamedACL</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultNamedValueStorageOperations.html" target="_blank">Named Value Storage Operations</a></h5>
+
+<ul>
+    <li>GetNamedValues</li>
+
+    <li>SetNamedValues</li>
+
+    <li>RemoveNamedValues</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultObjectFileOperations.html" target="_blank">Object File Operations</a></h5>
+
+<ul>
+    <li>AddEmptyFile</li>
+
+    <li>UploadFromDataURI</li>
+
+    <li>OpenFileInDefaultApplication
+
+        <ul>
+            <li>Opens a file using&nbsp;a Java applet or&nbsp;a native API.</li>
+        </ul>
+    </li>
+
+    <li>GetFiles</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultObjectOperations.html" target="_blank">Object Operations</a></h5>
+
+<ul>
+    <li>GetObjectVersionAndProperties</li>
+
+    <li>GetObjectInfo</li>
+
+    <li>GetHistory</li>
+
+    <li>GetLatestObjVer</li>
+
+    <li>GetMFilesURLForObject</li>
+
+    <li>CreateNewObject</li>
+
+    <li>CheckIn</li>
+
+    <li>RemoveObject</li>
+
+    <li>AddFavorite</li>
+
+    <li>RemoveFavorite</li>
+
+    <li>GetObjectPermissions</li>
+
+    <li>ShowNewObjectWindow</li>
+
+    <li>ShowEditObjectWindow</li>
+
+    <li>CheckOut</li>
+
+    <li>UndoCheckout</li>
+
+    <li>GetObjIDByGUID</li>
+
+    <li>ShowBasicEditObjectWindow</li>
+
+    <li>ShowPrefilledNewObjectWindow</li>
+
+    <li>GetLatestObjectVersionAndProperties</li>
+
+    <li>ChangePermissionsToNamedACL</li>
+
+    <li>IsCheckedOut</li>
+
+    <li>CheckInMultipleObjects</li>
+
+    <li>CheckOutMultipleObjects</li>
+
+    <li>UndoCheckoutMultipleObjects</li>
+
+    <li>GetObjectVersionAndPropertiesofMultipleObjects</li>
+
+    <li>MatchesSearchConditions</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultObjectPropertyOperations.html" target="_blank">Property Operations</a></h5>
+
+<ul>
+    <li>SetProperty</li>
+
+    <li>SetProperties</li>
+
+    <li>GetPropertiesOfMultipleObjects</li>
+
+    <li>GetPropertiesWithIconClues</li>
+
+    <li>GetProperties</li>
+
+    <li>GetWorkflowState</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultObjectSearchOperations.html" target="_blank">Search Operations</a></h5>
+
+<ul>
+    <li>SearchForObjectsByConditions</li>
+
+    <li>SearchForObjectsByConditionsEx</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultObjectTypeOperations.html" target="_blank">Object Type Operations</a></h5>
+
+<ul>
+    <li>GetObjectTypeIDByGUID</li>
+
+    <li>GetObjectTypeIDByAlias</li>
+
+    <li>GetObjectType</li>
+
+    <li>GetObjectTypes</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultPropertyDefOperations.html" target="_blank">Property Definition Operations</a></h5>
+
+<ul>
+    <li>GetPropertyDefIDByAlias</li>
+
+    <li>GetPropertyDefIDByGUID</li>
+
+    <li>GetPropertyDef</li>
+
+    <li>GetPropertyDefs</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultValueListItemOperations.html" target="_blank">Value List Item Operations</a></h5>
+
+<ul>
+    <li>GetValueListItemByID</li>
+
+    <li>GetValueListItems</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultValueListOperations.html" target="_blank">ValueListOperations</a></h5>
+
+<ul>
+    <li>GetValueList</li>
+
+    <li>GetValueLists</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultViewOperations.html" target="_blank">View Operations</a></h5>
+
+<ul>
+    <li>GetView</li>
+
+    <li>GetFolderUIStateForFolder</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultWorkflowOperations.html" target="_blank">Workflow Operations</a></h5>
+
+<ul>
+    <li>GetWorkflowIDByAlias</li>
+
+    <li>GetWorkflowIDByGUID</li>
+
+    <li>GetWorkflowStateIDByAlias</li>
+
+    <li>GetWorkflowStateIDByGUID</li>
+
+    <li>GetWorkflowStatesEx</li>
+
+    <li>GetWorkflowStates</li>
+
+    <li>GetWorkflowsForClient</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~VaultUserSettingOperations.html" target="_blank">User Setting Operations</a></h5>
+
+<ul>
+    <li>GetVaultLanguage</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~SessionInfo.html" target="_blank">Session Information</a></h5>
+
+<ul>
+    <li>CheckObjectAccess</li>
+</ul>
+
+<h5><a href="http://www.m-files.com/api/documentation/#MFilesAPI~Vault.html" target="_blank">Vault</a></h5>
+
+<ul>
+    <li>GetMetadataStructureItemIDByAlias</li>
+
+    <li>SessionInfo</li>
+
+    <li>VaultLanguages</li>
+</ul><!--DXMETADATA end-->
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORISED_LINKS" namespace="linkcategory" source="Item" filter="" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""%%phrase:name=SeeAlso%%%%designlist:tagidentifier=seealso,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><!--DXMETADATA end-->
+        
+    </div>
+    <div id="i-footer-content" class="i-footer-content">
+        <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2022 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
+<a href="mailto:support@m-files.com?subject=M-Files UI Extensibility Framework: Documentation Feedback">Send feedback</a>
+    </div>
+    
+
+    <!--DXMETADATA start type="IsNew" format="<script type=""text/javascript"">setIsNew = true;</script>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<script type=""text/javascript"">setIsResponsiveEnabled = true;</script>" --><script type="text/javascript">setIsResponsiveEnabled = true;</script><!--DXMETADATA end-->
+    <script type="text/javascript">
+        $(function() {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.isNew = !(typeof setIsNew === "undefined");
+            documentInstance.isResponsiveEnabled = !(typeof setIsResponsiveEnabled === "undefined");
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>
