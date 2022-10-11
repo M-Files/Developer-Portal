@@ -230,7 +230,7 @@ There are 7 potential task processing results that exceptions can use:
 * `TaskProcessingJobResult.Complete`:  Indicates the task was successfully completed.
 
 The default retry limit is 3, and the default requeue limit is 5.  These can be altered in the `[TaskProcessor]` declaration.
-{:.note}
+{:.note} 
 
 ### By throwing exceptions
 
