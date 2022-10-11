@@ -234,11 +234,10 @@ The default retry limit is 3, and the default requeue limit is 5.  These can be 
 
 ### By throwing exceptions
 
-To control how the task is re-processed (or not, as appropriate), often the easiest approach is to throw an instance of `AppTaskException` and provide the correct `TaskPRocessingJobResult`:
+To control how the task is re-processed (or not, as appropriate), often the easiest approach is to throw an instance of `AppTaskException` and provide the correct `TaskProcessingJobResult`:
 
 ```csharp
 [TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]
-[TaskExceptionBehavior(TaskProcessingJobResult.Fatal, typeof(InvalidOperationException))]
 public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
 {
 	if (rnd.Next(1, 4) == 2)
