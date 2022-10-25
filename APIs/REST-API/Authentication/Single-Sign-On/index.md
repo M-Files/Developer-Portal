@@ -48,9 +48,11 @@ Please note, though:
 * The session ID cookie has a limited timespan and may require refreshing if the timeout elapses.
 * The session ID cookie may become invalidated due to server activity (e.g. a server restart) and may require refreshing prior to the expected timeout.
 
-### A C# Sample class
+### A C# Sample console application
 
-This is meant for information only and is not considered production-quality.  This sample uses the Newtonsoft.JSON library to avoid having to parse the JSON response.  Please confirm the licenses for any third party libraries prior to their use.
+The below application is a sample .NET 5.0 console application.  It is designed to show the concept, not to be an example of a production-quality approach.
+
+This sample uses the Newtonsoft.JSON library to avoid having to parse the JSON response.  Please confirm the licenses for any third party libraries prior to their use.
 {:.note}
 
 ```csharp
