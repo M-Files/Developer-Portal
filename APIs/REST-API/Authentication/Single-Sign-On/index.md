@@ -148,7 +148,14 @@ namespace TestWindowsSSO
 
     /// <summary>
     // Based on M-Files API.
-    // </summary>
+    /// </summary>
+    /// <remarks>
+    /// This is copied from a more full implementation here:
+	/// https://github.com/M-Files/Libraries.MFWSClient/blob/master/MFaaP.MFWSClient/MFWSStructs.cs
+	/// The MFWSClient sample library provides an example of how to access the MFWS via code.
+	/// Its implementation of this single sign on approach (using the RestSharp library) is here:
+	/// https://github.com/M-Files/Libraries.MFWSClient/blob/master/MFaaP.MFWSClient/MFWSClient.Authentication.cs#L113
+    /// </remarks>
     public class ObjType
     {
         /// <summary>
