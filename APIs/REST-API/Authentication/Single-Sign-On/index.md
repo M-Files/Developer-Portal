@@ -50,70 +50,186 @@ Please note, though:
 
 ### A C# Sample class
 
-This is meant for information only and is not considered production-quality.
+This is meant for information only and is not considered production-quality.  This sample uses the Newtonsoft.JSON library to avoid having to parse the JSON response.  Please confirm the licenses for any third party libraries prior to their use.
 {:.note}
 
 ```csharp
 using System;
 using System.Collections.Generic;
 using System.Net;
-using MFiles.Mfws.Structs;
-using RestSharp;
+using System.Threading.Tasks;
 
-namespace WebServiceClient
+namespace TestWindowsSSO
 {
 	class Program
 	{
+        /// <summary>
+        ///  The client handler to use with the http client.
+        /// </summary>
+        private static readonly System.Net.Http.HttpClientHandler clientHandler
+            = new System.Net.Http.HttpClientHandler()
+            {
+                // The cookie container is used to persist cookies from the SSO request.
+                UseCookies = true,
+                CookieContainer = new CookieContainer(),
 
-		private static IRestClient restClient = new RestClient("http://localhost");
+                // Default credentials means login automatically if we can.
+                UseDefaultCredentials = true,
+                Credentials = CredentialCache.DefaultNetworkCredentials                
+            };
 
-		static void Main(string[] args)
+        /// <summary>
+        /// The http client to use to make requests.
+        /// </summary>
+        private static readonly System.Net.Http.HttpClient httpClient 
+            = new System.Net.Http.HttpClient
+            (
+                handler: clientHandler
+            );
+
+		static void Main( string[] args )
 		{
+            var task = Task.Run(async () =>
+            {
+                // Authenticate to the sample vault.
+                await AuthenticateUsingSSO(Guid.Parse("{2722F9AB-B96B-4DB5-B1A1-8E0618D289B7}"));
 
-			// Authenticate to the sample vault.
-			AuthenticateUsingSSO("C840BE1A-5B47-4AC0-8EF7-835C166C8E24");
-
-			// Get the object types.
-			var objectTypes = GetObjectTypes();
-			Console.WriteLine($"Got {objectTypes.Count} object types.");
-
+                // Get the object types.
+                var objectTypes = await GetObjectTypes();
+                Console.WriteLine($"Got {objectTypes.Count} object types.");
+            });
+            task.Wait();
 		}
 
-		private static void AuthenticateUsingSSO(string vaultGuid)
+		private static async Task AuthenticateUsingSSO( Guid vaultGuid )
 		{
+            // Make a request to the SSO endpoint.
+            var request = new System.Net.Http.HttpRequestMessage
+            (
+                System.Net.Http.HttpMethod.Post,
+                $"http://localhost/WebServiceSSO.aspx?popup=1&vault={vaultGuid.ToString("B")}"
+            );
+            var response = await httpClient.SendAsync(request);
 
-			// Build a request to WebServiceSSO.aspx.
-			var request = new RestRequest($"/WebServiceSSO.aspx?popup=1&vault={vaultGuid}")
-			{
-				Credentials = CredentialCache.DefaultNetworkCredentials
-			};
+			// TODO: We are assuming that the call worked.
 
-			// Execute the request.
-			var response = restClient.Get(request);
+            // Copy all cookies into the client handler.
+            // This includes the ASP.NET session cookie which will
+            // subsequently be used for authentication.
+            if (response.Headers.Contains("Set-Cookie"))
+            {
+                foreach (var cookieHeader in response.Headers.GetValues("Set-Cookie"))
+                {
+                    clientHandler.CookieContainer.SetCookies(new Uri("http://localhost"), cookieHeader);
+                }
+            }
 
-			// Populate our cookie container with the cookies (i.e. session tokens)
-			// returned by the request to WebServiceSSO.aspx.
-			restClient.CookieContainer = new CookieContainer();
-			foreach (var cookie in response.Cookies)
-			{
-				restClient.CookieContainer.Add(new Cookie(cookie.Name, cookie.Value, cookie.Path, cookie.Domain));
-			}
+        }
+
+		private static async Task<List<ObjType>> GetObjectTypes()
+		{
+            // Issue a request for the object types and parse them into the expected structure.
+            // The structures come from https://developer.m-files.com/APIs/REST-API/Reference/samples.html
+            var request = new System.Net.Http.HttpRequestMessage
+            (
+                System.Net.Http.HttpMethod.Get,
+                $"http://localhost/REST/structure/objecttypes"
+            );
+            var response = await httpClient.SendAsync(request);
+
+            // TODO: We are assuming the call worked.
+
+            // Parse out the results.
+            // This sample uses Newtonsoft; you could use another approach.
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<ObjType>>(await response.Content.ReadAsStringAsync());
 
 		}
-
-		private static List<ObjType> GetObjectTypes()
-		{
-			// Issue a request for the object types and parse them into the expected structure.
-			// The structures come from https://developer.m-files.com/APIs/REST-API/Reference/samples.html
-			return restClient
-				.Get<List<ObjType>>(new RestRequest("/REST/structure/objecttypes")).Data;
-
-		}
-
 	}
+
+    /// <summary>
+    // Based on M-Files API.
+    // </summary>
+    public class ObjType
+    {
+        /// <summary>
+        /// Default constructor, empty.
+        /// </summary>
+        public ObjType()
+        {
+        }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public bool AllowAdding { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public bool CanHaveFiles { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public int DefaultPropertyDef { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public bool External { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public int ID { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public string NamePlural { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public int OwnerPropertyDef { get; set; }
+
+        /// <summary>
+        /// Is this ValueList a sublist of another (eg, does this ValueList have an owner)?
+        /// </summary>
+        public bool HasOwner { get; set; }
+
+        /// <summary>
+        /// If HasOwner is true, Owner will yield the ID of the Owner ValueList.
+        /// </summary>
+		public int Owner { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public List<int> ReadOnlyPropertiesDuringInsert { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public List<int> ReadOnlyPropertiesDuringUpdate { get; set; }
+
+        /// <summary>
+        /// Based on M-Files API.
+        /// </summary>
+        public bool RealObjectType { get; set; }
+
+        /// <summary>
+        /// Specifies whether this object type is hierarchical (has an internal hierarchy).
+        /// </summary>
+        /// <remarks>ref: https://www.m-files.com/api/documentation/latest/MFilesAPI~ObjType~Hierarchical.html</remarks>
+        public bool Hierarchial { get; set; }
+
+    }
 }
 
 ```
-
-This sample uses the <a href="http://restsharp.org/">RestSharp</a> library to avoid boilerplate HTTP request and parsing code.  Please confirm the licenses for any third party libraries prior to their use.
-{:.note}
