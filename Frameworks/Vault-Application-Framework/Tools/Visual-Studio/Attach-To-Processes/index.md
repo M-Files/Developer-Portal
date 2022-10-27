@@ -5,6 +5,7 @@ includeInSearch: true
 breadcrumb: Attach to processes
 redirect_from:
  - /Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Process/
+ - /Frameworks/Vault-Application-Framework/Visual-Studio/Attach-To-Processes/
 ---
 
 [Manually attaching to processes]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Development-Practices/Debugging/) whilst debugging Vault Application Framework applications can become tedious.  Instead, [Visual Commander](https://vlasovstudio.com/visual-commander/) - a free extension for Visual Studio - can be used to create a button which will perform the process instead.
