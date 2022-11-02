@@ -6,9 +6,9 @@ breadcrumb: UX guidelines
 redirect_from: /UX-Design/
 ---
 
-This document is intended to brief developers on the design principles of the M-Files UI, and to introduce the UI components used in desktop development. It targets  M-Files partners and developers who are building applications or services that need to replicate the M-Files "look and feel".
+This document is intended to brief developers on the design principles of the M-Files UI, and to introduce the UI components used in desktop development. It targets M-Files partners and developers who are building applications or services that need to replicate the M-Files "look and feel".
 
-M-Files Online contains an updated user interface in the desktop client. The following design principles have been followed throughout the design process:
+## Design DNA
 
 <style type="text/css">
 	article[role=main] .block
@@ -16,6 +16,10 @@ M-Files Online contains an updated user interface in the desktop client. The fol
 		border: 1px solid #C8C8C8;
 		padding: 20px;
 		margin: 10px;
+	}
+	article[role=main] .block img
+	{
+		border: 0px;
 	}
 	article[role=main] .block h1
 	{
@@ -75,30 +79,59 @@ M-Files Online contains an updated user interface in the desktop client. The fol
 <div class="row">
 
 <article class="block">
-	<img src="engaging.png" alt="Engaging" class="borderless" />
-	<h1>Engaging</h1>
-	<p>A product is "engaging" simply if the user wishes to come back to the application or product to continue using it.  One of the most important factors is to make onboarding as awesome an experience as possible. An engaging product is intuitive and easy to use, whilst fulfilling the purpose it was created for.  M-Files has been designed to be familiar and to be responsive and easily to use.</p>
+	<img src="Superpowers.png" alt="Sense of Superpowers" />
+	<h1>Sense of Superpowers</h1>
+	<p>Give Users a Sense of Superpowers. Ideally, system should hide the "machine" to the background and make tasks and events appear fast and easy to the user. Minimize manual clicks and automate events whenever possible. Aim to guess what the user wants next. We want to leave the users with a feeling of increased brain power through higher efficiency and less wasted time.</p>
+</article>
+
+</div>
+
+</div>
+
+<div class="table">
+
+<div class="row">
+
+<article class="block">
+	<img src="Get-started-fast.png" alt="Get Started Fast" />
+	<h1>Get Started Fast</h1>
+	<p>Let users get started fast with the core tasks. Most often used tasks and functions should feel easy and fast to get started with. Recurring events should be assisted through AI-based algorithms, taking away manual work. Metadata-related forms and templates should be easy to get over with, while reassuring user that all necessary information is filled in.</p>
 </article>
 
 <article class="block">
-	<img src="familiar.png" alt="Familiar" class="borderless" />
-	<h1>Familiar</h1>
-	<p>The more familiar we are with something, the less cost for our cognitive processes to kick in and figure out how to respond. Familiarity leads to automatic response. The "+" symbol, often used to symbolize creation/addition of a new item is another classic example of design incorporating familiar concepts.  Using familiar patterns, icons, and presentational styles is a great way to look native, even if you're not.</p>
+	<img src="Elevated-focus.png" alt="Elevated focus" />
+	<h1>Elevated focus</h1>
+	<p>Provide the users with an elevated focus of their work. Show the actions and events relevant to the moment, while also offering a clear prediction of what is coming up next. Information representation is classified through time, context, and relationships. Clear visual hierarchy helps user to follow her/his status at all times.</p>
 </article>
 
 </div>
 <div class="row">
 
 <article class="block">
-	<img src="personal.png" alt="Personal" class="borderless" />
-	<h1>Personal</h1>
-	<p>Customization, in this context, allows users to configure the look and feel according to their needs. This can be reflected in changes to the order of icons, color, or even <a href="/Built-In/Theming/">application themes</a>, etc.  M-Files allows personalization through the use of <a href="https://www.m-files.com/user-guide/latest/eng/New_view.html#new_view">individual user views</a>, the <a href="https://www.m-files.com/user-guide/latest/eng/task_area.html?hl=favorites#task_area__section_F1548BD48D564D35A685D69F2413D73F">favourites list</a> and the <a href="https://www.m-files.com/user-guide/latest/eng/the_pinned_tab.html?hl=pinned">pinboard</a>, all of which are available on desktop, web and mobile.</p>
+	<img src="Visual-hierarchy.png" alt="Visual Clarity" />
+	<h1>Visual Clarity</h1>
+	<p>Ensure strong visual clarity and information hierarchy. Our product is functionally very capable. Therefore, it is highly important to avoid sense of complexity through careful design of the UI. Keep the UI elements simple, avoid visual clutter, and always build a clear visual hierarchy. Infographics, animations, context-based menus, and dialogues are used to make usage easier, not for eye candy.</p>
 </article>
 
 <article class="block">
-	<img src="easy-to-use.png" alt="Easy to use" class="borderless" />
-	<h1>Easy to use</h1>
-	<p>Easy to use products allow users to navigate and find everything they need without any external help or problems.  M-Files uses application standards and light features to make the use as easy as possible.</p>
+	<img src="Guiding-interactions.png" alt="Guiding Interactions" />
+	<h1>Guiding Interactions</h1>
+	<p>Interactions should guide the user actively. Our product should adapt to user actions and guide them actively and through clear visual cues. Alarms, required workflow actions or change of workflow events should be highlighted, triggering action. UI should also give clear feedback on the user actions, growing the sense of security and control.</p>
+</article>
+
+</div>
+<div class="row">
+
+<article class="block">
+	<img src="Consistency.png" alt="Consistency" />
+	<h1>Consistency</h1>
+	<p>Interactions across all M-Files systems are recognizable. Main clients and embedded UI's should all have consistency both in visual and in interaction. They should be recognized with each other. Plugins like logins, electronic signatures etc. should work like industry standards, making user adaptation easier. Recovery from user errors should also be standardized and secure.</p>
+</article>
+
+<article class="block">
+	<img src="Reward.png" alt="Daily Hook &amp; Reward" />
+	<h1>Daily Hook &amp; Reward</h1>
+	<p>Offer the user with a daily hook and reward. Users are investing time and effort to our product every day. If this investment goes without rewarding, they will not return to the product willingly. Build simple hooks and rewards that make the user feel happy, gratified, and empowered. Aim for meaningful rewards to release serotonin, not dopamine in the user's brain.</p>
 </article>
 
 </div>

@@ -1,21 +1,5 @@
 h4, h5, h6 {margin-bottom:0.6em;}
 
-/* format the borderless pictures */
-body>article img.borderless {
-    box-sizing: border-box;
-    border-width: 0px;
-    padding: 0px;
-    margin: 0px 20px 0px 0px;
-    max-width: 100%;
-	&.clear
-	{
-		margin-bottom: 1em;
-	}
-	&.nomargin{
-		margin-right: 0px;
-	}	
-}
-
 /* allow clear the floating of images in the UX design section */
 footer, .clear, h2, h3, h5, body>article *.clear::after
 {
@@ -31,24 +15,4 @@ span.correct
 span.incorrect
 {
 	color: red;
-}
-
-@media screen and (min-width: 610px)
-{ 
-	/* allow laying out of image to the left of text */
-	*.rightcol
-	{
-		margin-left: 215px;
-	}
-	img.leftcol
-	{
-		margin-left: -215px;
-		float: left;
-	}
-	h4.rightcol
-	{
-		/* sperate h4 from paragraph above */
-		margin-top: 2em;
-	}
-
 }
