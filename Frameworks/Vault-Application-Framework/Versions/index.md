@@ -6,7 +6,7 @@ includeInSearch: true
 
 ## Feature Compatibility Matrix
 
-Feature | [Version 1.0](#version-10) | [Version 2.0](#version-20) | [Version 2.1](#version-21) | [Version 2.2](#version-22) | [Version 2.3](#version-23) | [Version 22.12](#version-2212)
+Feature / Version | [1.0](#version-10) | [2.0](#version-20) | [2.1](#version-21) | [2.2](#version-22) | [2.3](#version-23) | [22.12](#version-2212)
 --- | ---
 Minimum M-Files Server Version | 2015 | 2015.3 | 19.9 | 20.5 | 20.5 | 22.3
 Minimum .NET Framework Version | 4.5 | 4.5 | 4.5 | 4.5 | 4.5 | 4.7.2
@@ -17,6 +17,7 @@ Minimum .NET Framework Version | 4.5 | 4.5 | 4.5 | 4.5 | 4.5 | 4.7.2
 [Event Handlers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/) | Yes | Yes | Yes | Yes | Yes | Yes
 [File helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#mffilehelper) | - | Yes | Yes | Yes | Yes | Yes
 [Licensing](../Licensing) | - | Yes | Yes | Yes | Yes | Yes
+[Logging]({{ site.baseurl }}/Frameworks/Logging/Vault-Application-Framework/) | - | - | - | - | - | Yes[*](#version-2212-logging)
 [ObjVerEx]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#objverex) | Yes | Yes | Yes | Yes | Yes | Yes
 [Property Calculation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation) | Yes | Yes | Yes | Yes | Yes | Yes
 [Property Validation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-validation) | Yes | Yes | Yes | Yes | Yes | Yes
@@ -39,8 +40,11 @@ This release brings a number of changes:
 
 It is strongly recommended that you consider using the open-source [VAF Extensions](https://www.nuget.org/packages/MFiles.VAF.Extensions/) package.  This will ensure that common functionality such as logging is correctly configured, provides useful short-hand helper methods for common functionality, as well as providing useful "dashboard" functionality such as exposing task queues.  More details on the functionality in the library is available in its [GitHub repository](https://github.com/M-Files/VAF.Extensions.Community).
 
+### Version 22.12 Logging
+
+Version 22.12 brings significant amounts of the Vault Application Logging framework into the VAF itself.  For developers **not** using the [VAF Extensions](https://github.com/M-Files/VAF.Extensions.Community/), note that the separate `MFiles.VAF.Configuration.Logging.NLog` package is needed.
+
 If you are using the logging library then note that some method signatures have changed.  More details [are below](#from-version-23-to-version-2212).
-{:.note}
 
 ## Version 2.3
 
