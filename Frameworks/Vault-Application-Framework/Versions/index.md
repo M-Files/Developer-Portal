@@ -6,27 +6,41 @@ includeInSearch: true
 
 ## Feature Compatibility Matrix
 
-Feature | [Version 1.0](#version-10) | [Version 2.0](#version-20) | [Version 2.1](#version-21) | [Version 2.2](#version-22) | [Version 2.3](#version-23)
+Feature | [Version 1.0](#version-10) | [Version 2.0](#version-20) | [Version 2.1](#version-21) | [Version 2.2](#version-22) | [Version 2.3](#version-23) | [Version 22.12](#version-2212)
 --- | ---
-Minimum M-Files Server Version | 2015 | 2015.3 | 19.9 | 20.5 | 20.5
-[Automatic State Transitions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#automatic-state-transitions) | Yes | Yes | Yes | Yes | Yes
-[Background Operations]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Background-Operations/) | Yes | Yes | Yes | Yes | Yes
-[Configuration](../Configuration) | Yes | Yes | Yes | Yes | Yes
-[Configuration commands and buttons](../Configuration/Commands) | - | - | Yes | Yes | Yes
-[Event Handlers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/) | Yes | Yes | Yes | Yes | Yes
-[File helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#mffilehelper) | - | Yes | Yes | Yes | Yes
-[Licensing](../Licensing) | - | Yes | Yes | Yes | Yes
-[ObjVerEx]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#objverex) | Yes | Yes | Yes | Yes | Yes
-[Property Calculation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation) | Yes | Yes | Yes | Yes | Yes
-[Property Validation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-validation) | Yes | Yes | Yes | Yes | Yes
-[Search helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Searching/#introducing-mfsearchbuilder) | Yes | Yes | Yes | Yes | Yes
-[System helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#sysutils) | Yes | Yes | Yes | Yes | Yes
-[Url helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#urlhelper) | - | Yes | Yes | Yes | Yes
-[Vault Extension Methods]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/) | Yes | Yes | Yes | Yes | Yes
-Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-pre-conditions) and [Post-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-post-conditions)Conditions | Yes | Yes | Yes | Yes | Yes
-[Workflow State Actions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions) | Yes | Yes | Yes | Yes | Yes
-[Multi-Server Mode helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) | - | - | - | Yes | Yes
+Minimum M-Files Server Version | 2015 | 2015.3 | 19.9 | 20.5 | 20.5 | 22.3
+Minimum .NET Framework Version | 4.5 | 4.5 | 4.5 | 4.5 | 4.5 | 4.7.2
+[Automatic State Transitions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#automatic-state-transitions) | Yes | Yes | Yes | Yes | Yes | Yes
+[Background Operations]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Background-Operations/) | Yes | Yes | Yes | Yes | Yes | Yes
+[Configuration](../Configuration) | Yes | Yes | Yes | Yes | Yes | Yes
+[Configuration commands and buttons](../Configuration/Commands) | - | - | Yes | Yes | Yes | Yes
+[Event Handlers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Event-Handlers/) | Yes | Yes | Yes | Yes | Yes | Yes
+[File helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#mffilehelper) | - | Yes | Yes | Yes | Yes | Yes
+[Licensing](../Licensing) | - | Yes | Yes | Yes | Yes | Yes
+[ObjVerEx]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#objverex) | Yes | Yes | Yes | Yes | Yes | Yes
+[Property Calculation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-calculation) | Yes | Yes | Yes | Yes | Yes | Yes
+[Property Validation]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Properties/#property-validation) | Yes | Yes | Yes | Yes | Yes | Yes
+[Search helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Searching/#introducing-mfsearchbuilder) | Yes | Yes | Yes | Yes | Yes | Yes
+[System helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#sysutils) | Yes | Yes | Yes | Yes | Yes | Yes
+[Url helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/#urlhelper) | - | Yes | Yes | Yes | Yes | Yes
+[Vault Extension Methods]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/) | Yes | Yes | Yes | Yes | Yes | Yes
+Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-pre-conditions) and [Post-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#state-post-conditions)Conditions | Yes | Yes | Yes | Yes | Yes | Yes
+[Workflow State Actions]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Workflows/#workflow-state-actions) | Yes | Yes | Yes | Yes | Yes | Yes
+[Multi-Server Mode helpers]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) | - | - | - | Yes | Yes | Yes
 --- | ---
+
+## Version 22.12
+
+This release brings a number of changes:
+
+* This is the first VAF release to target the .NET Framework 4.7.2 runtime.  You will need to update any applications to target the 4.7.2 runtime before you can upgrade.
+* This release merges in functionality from the previous M-Files Vault Application Logging library, so you do not need to manually reference this library any more.
+* The VAF runtime now uses CalVer versioning, rather than SemVer.
+
+It is strongly recommended that you consider using the open-source [VAF Extensions](https://www.nuget.org/packages/MFiles.VAF.Extensions/) package.  This will ensure that common functionality such as logging is correctly configured, provides useful short-hand helper methods for common functionality, as well as providing useful "dashboard" functionality such as exposing task queues.  More details on the functionality in the library is available in its [GitHub repository](https://github.com/M-Files/VAF.Extensions.Community).
+
+If you are using the logging library then note that some method signatures have changed.  More details [are below](#from-version-23-to-version-2212).
+{:.note}
 
 ## Version 2.3
 
@@ -95,6 +109,95 @@ The 2.0 release of the framework introduced another approach which integrates wi
 
 When you upgrade the Vault Application Framework you may need to make some small changes due to changes in class namespaces or method signatures.
 {:.note.warning}
+
+### From Version 2.3 to Version 22.12
+
+1. Ensure that your vault application is targeting .NET Framework 4.7.2 or 4.8.  To do this, right-click on the project in Visual Studio and select `Properties` and change the target framework version.
+2. *Follow the instructions below to update the reference.  This depends on whether you are using the VAF Extensions or not.*
+3. The namespace `MFiles.VaultApplication.Logging` has changed to `MFiles.VAF.Configuration.Logging`.  Change any `using` statements to use the new namespace location.
+4. Note that the basic string-based logging methods (e.g. `Logger.Info("hello {0}", worldVar);`) are no longer available, and interpolated strings should be used instead (e.g. `Logger.Info($"hello {worldVar}"`)).
+
+#### If using VAF Extensions
+
+0. *Ensure you have undertaken step 1 above.*
+1. Right-click on the project in Visual Studio and select `Manage NuGet references...`.  Within the "Installed" tab, locate the VAF Extensions reference and upgrade it to the latest release (>=22.12).  This will upgrade other referenced packages at the same time.
+2. If, after upgrading the VAF Extensions, the M-Files Vault Application Logging Framework is also still installed, uninstall it.
+3. *Continue from step 3 above.*
+
+#### If not using VAF Extensions
+
+The VAF Extensions library automatically wires up a lot of logging functionality.  It is recommended that you use this library instead of implementing it manually.  The below is included for reference only.
+{.note}
+
+0. *Ensure you have undertaken step 1 above.*
+1. Right-click on the project in Visual Studio and select `Manage NuGet references...`.  Within the "Installed" tab:
+	* Locate the installed M-Files Vault Application Logging framework and remove it.
+	* Locate the M-Files VAF reference and upgrade it to the latest release (>=22.12).
+	* Search for the `MFiles.VAF.Configuration.Logging.NLog` package and install it.
+2. Within your project, create a log manager and return the default sensitivity filters.  An example is shown below.
+3. Locate your VaultApplication class's default constructor (or add one) and ensure that the `LogManager.Current` instance is set to an instance of your log manager.
+4. *Continue from step 3 above.*
+
+##### Example log manager
+
+```csharp
+using MFiles.VAF.AppTasks;
+using MFiles.VAF.Configuration;
+using MFiles.VAF.Configuration.Logging;
+using MFiles.VAF.Configuration.Logging.NLog;
+using MFiles.VAF.Extensions.Logging.Sensitivity.Filters;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyVaultApplication
+{
+	public class MyLogManager
+		: NLogLogManager
+	{
+		/// <summary>
+		/// Returns the default sensitivity filters to be used by this log manager.
+		/// </summary>
+		/// <returns>The default list of sensitivity filters.</returns>
+		public override List<ILogSensitivityFilter> GetDefaultSensitivityFilters()
+		{
+			// Extend defaults with those from VAF.
+			List<ILogSensitivityFilter> filters = base.GetDefaultSensitivityFilters();
+			filters.Add(new EventHandlerEnvironmentLogSensitivityFilter());
+			filters.Add(new TaskManagerEventArgsSensitivityFilter());
+			filters.Add(new ObjVerExLogSensitivityFilter());
+			return filters;
+		}
+
+		/// <summary>
+		/// Returns the default properties that should be exposed as layout renderers by this log manager.
+		/// </summary>
+		/// <returns>The default properties.</returns>
+		public override List<string> GetDefaultMFilesScopePropertiesForLayout()
+		{
+			// Extend defaults with those from VAF.
+			List<string> props = base.GetDefaultMFilesScopePropertiesForLayout();
+			props.Add(AppTaskLogContextKeys.TaskQueue);
+			props.Add(AppTaskLogContextKeys.TaskType);
+			props.Add(AppTaskLogContextKeys.TaskId);
+			props.Add(AppTaskLogContextKeys.BroadcastIds);
+			return props;
+		}
+	}
+}
+
+```
+
+##### Example of how to set LogManager.Current
+
+```csharp
+public VaultApplication()
+{
+	MFiles.VAF.Configuration.Logging.LogManager.Current = new MyLogManager();
+}
+```
 
 ### From Version 2.2 to Version 2.3
 
