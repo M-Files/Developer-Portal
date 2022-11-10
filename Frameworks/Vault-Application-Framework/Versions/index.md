@@ -130,7 +130,7 @@ VERSION 22.12 IS CURRENTLY IN PREVIEW AND SHOULD NOT BE USED IN PRODUCTION ENVIR
 #### If using VAF Extensions
 
 0. *Ensure you have undertaken step 1 above.*
-1. Right-click on the project in Visual Studio and select `Manage NuGet references...`.  Within the "Installed" tab, locate the VAF Extensions reference and upgrade it to the latest release (>=22.12).  This will upgrade other referenced packages at the same time.
+1. Right-click on the project in Visual Studio and select `Manage NuGet references...`.  Within the "Installed" tab, locate the VAF Extensions reference and upgrade it to the latest release (`>=22.11.49-prerelease`).  This will upgrade other referenced packages at the same time.
 2. If, after upgrading the VAF Extensions, the M-Files Vault Application Logging Framework is also still installed, uninstall it.
 3. *Continue from step 3 above.*
 
