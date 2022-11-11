@@ -13,6 +13,13 @@ The creation of log files is an important step in diagnosing the behavior (or mi
 
 The framework can be used from both [Vault Application Framework](Vault-Application-Framework) and Intelligent Metadata Layer applications.
 
+## VAF Version 22.12
+
+VAFVERSION 22.12 IS CURRENTLY IN PREVIEW AND SHOULD NOT BE USED IN PRODUCTION ENVIRONMENTS.
+{:.note.warning}
+
+A preview of the next version of the Vault Application Framework is currently available.  This version changes how logging is implemented.  It is recommended that you read the notes on the [Vault Application Framework](Vault-Application-Framework/#vaf-2212) page.
+
 ## Getting started
 
 The M-Files Vault Application Logging Framework is available as a [nuget package](https://www.nuget.org/packages/MFiles.VaultApplications.Logging/) which can be installed into your vault applications.  **It is strongly recommended that you follow the specific guidance for [Vault Application Framework](Vault-Application-Framework) and Intelligent Metadata Layer applications.**
