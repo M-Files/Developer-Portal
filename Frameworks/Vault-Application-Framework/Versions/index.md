@@ -124,14 +124,14 @@ When you upgrade the Vault Application Framework you may need to make some small
 #### If using VAF Extensions
 
 0. *Ensure you have undertaken step 1 above.*
-1. Right-click on the project in Visual Studio and select `Manage NuGet references...`.  Within the "Installed" tab, locate the VAF Extensions reference and upgrade it to the latest release (`>=22.11.49-prerelease`).  This will upgrade other referenced packages at the same time.
+1. Right-click on the project in Visual Studio and select `Manage NuGet references...`.  Within the "Installed" tab, locate the VAF Extensions reference and upgrade it to the latest release (`>=22.12.52`).  This will upgrade other referenced packages at the same time.
 2. If, after upgrading the VAF Extensions, the M-Files Vault Application Logging Framework is also still installed, uninstall it.
 3. *Continue from step 3 above.*
 
 #### If not using VAF Extensions
 
 The VAF Extensions library automatically wires up a lot of logging functionality.  It is recommended that you use this library instead of implementing it manually.  The below is included for reference only.
-{.note}
+{:.note}
 
 0. *Ensure you have undertaken step 1 above.*
 1. Right-click on the project in Visual Studio and select `Manage NuGet references...`.  Within the "Installed" tab:
