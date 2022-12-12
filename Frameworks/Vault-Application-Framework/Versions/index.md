@@ -32,9 +32,6 @@ Workflow [Pre-]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attrib
 
 ## Version 22.12
 
-VERSION 22.12 IS CURRENTLY IN PREVIEW AND SHOULD NOT BE USED IN PRODUCTION ENVIRONMENTS.
-{:.note.warning}
-
 This release brings a number of changes:
 
 * This is the first VAF release to target the .NET Framework 4.7.2 runtime.  You will need to update any applications to target the 4.7.2 runtime before you can upgrade.
@@ -118,9 +115,6 @@ When you upgrade the Vault Application Framework you may need to make some small
 {:.note.warning}
 
 ### From Version 2.3 to Version 22.12
-
-VERSION 22.12 IS CURRENTLY IN PREVIEW AND SHOULD NOT BE USED IN PRODUCTION ENVIRONMENTS.
-{:.note.warning}
 
 1. Ensure that your vault application is targeting .NET Framework 4.7.2 or 4.8.  To do this, right-click on the project in Visual Studio and select `Properties` and change the target framework version.
 2. *Follow the instructions below to update the reference.  This depends on whether you are using the VAF Extensions or not.*

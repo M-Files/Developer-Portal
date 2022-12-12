@@ -15,9 +15,6 @@ The framework can be used from both [Vault Application Framework](Vault-Applicat
 
 ## VAF Version 22.12
 
-VAFVERSION 22.12 IS CURRENTLY IN PREVIEW AND SHOULD NOT BE USED IN PRODUCTION ENVIRONMENTS.
-{:.note.warning}
-
 A preview of the next version of the Vault Application Framework is currently available.  This version changes how logging is implemented.  It is recommended that you read the notes on the [Vault Application Framework](Vault-Application-Framework/#vaf-2212) page.
 
 ## Getting started

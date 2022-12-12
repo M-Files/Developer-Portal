@@ -16,9 +16,6 @@ It is strongly recommended that applications utilize the [VAF Extensions library
 
 ## VAF 22.12
 
-VAF VERSION 22.12 IS CURRENTLY IN PREVIEW AND SHOULD NOT BE USED IN PRODUCTION ENVIRONMENTS.
-{:.note.warning}
-
 To get started with the new approach, please read the documentation on the [VAF upgrade page](/Frameworks/Vault-Application-Framework/Versions/#from-version-23-to-version-2212).
 
 ### Differences to previous versions
