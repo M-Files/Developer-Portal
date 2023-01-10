@@ -409,5 +409,3 @@ See [MFWSClient.Authentication.cs](https://github.com/M-Files/Libraries.MFWSClie
 
 You will still need to handle any `403` HTTP status codes that you may receive in the future and re-request an authentication token.  This could happen for the same reasons as in a single-server instance (e.g. if the token times out, or the credentials are changed on the server), but could also happen if the server used to create the token is no longer available (e.g. if it goes offline).  By re-requesting the authentication token and using the newly-provided session ID, the integration will now start to use (and continue to consistently use) a different server in the availability group.
 {:.note}
-
-These steps may not be required in future releases of Multi-Server Mode.  This notice will be removed at that point.
