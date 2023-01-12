@@ -508,6 +508,9 @@
 		"Title": "Logging",
 		"Icon": "mdi:file-document-outline",
 		"Items": [{
+			"Link": "/Frameworks/Logging/Layout-Renderers/",
+			"Title": "Layout Renderers"
+		},{
 			"Link": "/Frameworks/Logging/Sensitivity/",
 			"Title": "Log Sensitivity"
 		},{
