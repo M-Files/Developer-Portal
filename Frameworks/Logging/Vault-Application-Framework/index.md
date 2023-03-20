@@ -38,7 +38,7 @@ Once done, you can then use the logger from within your code:
 
 ```csharp
 using MFiles.VAF.Extensions.Dashboards;
-using MFiles.VaultApplications.Logging;
+using MFiles.VAF.Configuration.Logging;
 namespace extensionstest2
 {
 	public class VaultApplication
@@ -103,7 +103,7 @@ using MFiles.VAF.AppTasks;
 using MFiles.VAF.Configuration;
 using MFiles.VAF.Extensions;
 using MFiles.VAF.Extensions.Dashboards;
-using MFiles.VaultApplications.Logging;
+using MFiles.VAF.Configuration.Logging;
 using MFiles.VaultApplications.Logging.Resources;
 using MFilesAPI;
 using System.Collections.Generic;
