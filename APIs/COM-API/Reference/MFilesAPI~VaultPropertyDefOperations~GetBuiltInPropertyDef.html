@@ -49,7 +49,7 @@
     </div>
     <div id="i-header-content" class="i-header-content">
         <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
-            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files API 23.2.12340.6<!--DXMETADATA end--></div>
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files API 23.3.12441.9<!--DXMETADATA end--></div>
         <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="PageItemTitle" -->GetBuiltInPropertyDef Method<!--DXMETADATA end--></div></div>
     </div>
     <div id="i-after-header-content" class="i-after-header-content">
@@ -88,6 +88,7 @@ Specifies the built-in property definition.
 <tr><td class="i-member-name">MFBuiltInPropertyDefComment</td><td class="i-description">Comment text for the object version. Same as MFBuiltInPropertyDefVersionComment.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefCompleted</td><td class="i-description">Specifies whether or not the assignment has been completed.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefCompletedBy</td><td class="i-description">A list of users who have completed the current assignment.</td></tr>
+<tr><td class="i-member-name">MFBuiltInPropertyDefConflictedVersion</td><td class="i-description">The version where the conflict happened.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefConflictResolved</td><td class="i-description">The date and time a conflict was last resolved in favor of the object.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefCreated</td><td class="i-description">The creation date and time of an object.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefCreatedBy</td><td class="i-description">Identifies the user who created the object.</td></tr>
@@ -96,8 +97,11 @@ Specifies the built-in property definition.
 <tr><td class="i-member-name">MFBuiltInPropertyDefDeleted</td><td class="i-description">The deletion date and time of the object.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefDeletedBy</td><td class="i-description">Identifies the user who deleted the object.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefDeletionStatusChanged</td><td class="i-description">The date and time of the last change to the deletion status of the object.</td></tr>
+<tr><td class="i-member-name">MFBuiltInPropertyDefEditAccessToUserGroups</td><td class="i-description">List of users groups that have edit access to document.</td></tr>
+<tr><td class="i-member-name">MFBuiltInPropertyDefEditAccessToUsers</td><td class="i-description">List of users that have edit access to document.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefEmailConversationID</td><td class="i-description">The conversation ID of an email.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefFavoriteView</td><td class="i-description">The 'favorite views' where the object should be shown.</td></tr>
+<tr><td class="i-member-name">MFBuiltInPropertyDefIncompleteMetadata</td><td class="i-description">Incomplete metadata.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefInReplyTo</td><td class="i-description">E-mail in-reply-to internet header value.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefInReplyToReference</td><td class="i-description">E-mail in-reply-to references between documents belonging to the same conversation.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefIsTemplate</td><td class="i-description">A Boolean property identifying whether the object is a template.</td></tr>
@@ -110,10 +114,14 @@ Specifies the built-in property definition.
 <tr><td class="i-member-name">MFBuiltInPropertyDefMonitoredBy</td><td class="i-description">A list of users who are monitoring the current assignment.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefNameOrTitle</td><td class="i-description">The name or title property definition.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefObjectChanged</td><td class="i-description">The date and time of the last change to the object.</td></tr>
+<tr><td class="i-member-name">MFBuiltInPropertyDefObjectChangedForExport</td><td class="i-description">The last time the object had either a versioning or non-versioning change for content exporting.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefObjectID</td><td class="i-description">This special value is used for referring to Object ID in ObjectTypeColumnMapping.TargetPropertyDef.</td></tr>
+<tr><td class="i-member-name">MFBuiltInPropertyDefObjectVersionChangedForExport</td><td class="i-description">The last time the object version had a change for content exporting.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefOriginalPath</td><td class="i-description">The location from which the object was imported to M-Files.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefOriginalPath2</td><td class="i-description">The location from which the object was imported to M-Files (continued).</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefOriginalPath3</td><td class="i-description">The location from which the object was imported to M-Files (continued).</td></tr>
+<tr><td class="i-member-name">MFBuiltInPropertyDefReadAccessToUserGroups</td><td class="i-description">List of user groups that have read access to document.</td></tr>
+<tr><td class="i-member-name">MFBuiltInPropertyDefReadAccessToUsers</td><td class="i-description">List of users that have read access to document.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefReference</td><td class="i-description">A list of referenced documents.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefRejectedBy</td><td class="i-description">A list of users who have rejected the current assignment.</td></tr>
 <tr><td class="i-member-name">MFBuiltInPropertyDefReportPlacement</td><td class="i-description">Report placement.</td></tr>
