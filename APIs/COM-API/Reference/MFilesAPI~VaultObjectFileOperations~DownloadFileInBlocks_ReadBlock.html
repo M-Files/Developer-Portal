@@ -68,7 +68,7 @@
 The identifier of the download operation returned by <a href="MFilesAPI~VaultObjectFileOperations~DownloadFileInBlocks_Begin.html">DownloadFileInBlocks_Begin</a>.
 </div>
 <div id="BlockSizePopupContent" class="i-popup-content">
-The number of bytes to be read. For the download session to be closed, the combined size of the blocks must exceed the actual size of the file.&nbsp; The block size should not be more than 4MB (4,194,304). Before M-Files 23.3, using a block size of larger than 4MB may cause unexpected behavior, including exceptions, depending upon the underlying storage.&nbsp;From M-Files 23.3, M-Files will interpret block sizes larger than 4MB to indicate a block size of 4MB.
+The number of bytes to be read. For the download session to be closed, the combined size of the blocks must exceed the actual size of the file.&nbsp; The block size should not be more than 4MB (4,194,304). Before M-Files 23.3, using a block size of larger than 4MB may cause unexpected behavior, including exceptions, depending upon the underlying storage.&nbsp;From M-Files 23.3, M-Files will throw an exception if the block size is larger than 4MB.
 </div>
 <div id="OffsetPopupContent" class="i-popup-content">
 The byte offset from the beginning of the file as a 64-bit integer.
@@ -85,7 +85,7 @@ The byte offset from the beginning of the file as a 64-bit integer.
 <dt><I>DownloadID</I></dt>
 <dd>The identifier of the download operation returned by <a href="MFilesAPI~VaultObjectFileOperations~DownloadFileInBlocks_Begin.html">DownloadFileInBlocks_Begin</a>.</dd>
 <dt><I>BlockSize</I></dt>
-<dd>The number of bytes to be read. For the download session to be closed, the combined size of the blocks must exceed the actual size of the file.&nbsp; The block size should not be more than 4MB (4,194,304). Before M-Files 23.3, using a block size of larger than 4MB may cause unexpected behavior, including exceptions, depending upon the underlying storage.&nbsp;From M-Files 23.3, M-Files will interpret block sizes larger than 4MB to indicate a block size of 4MB.</dd>
+<dd>The number of bytes to be read. For the download session to be closed, the combined size of the blocks must exceed the actual size of the file.&nbsp; The block size should not be more than 4MB (4,194,304). Before M-Files 23.3, using a block size of larger than 4MB may cause unexpected behavior, including exceptions, depending upon the underlying storage.&nbsp;From M-Files 23.3, M-Files will throw an exception if the block size is larger than 4MB.</dd>
 <dt><I>Offset</I></dt>
 <dd>The byte offset from the beginning of the file as a 64-bit integer.</dd>
 </dl></div><!--DXMETADATA end -->
