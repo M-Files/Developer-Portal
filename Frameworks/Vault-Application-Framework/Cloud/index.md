@@ -94,7 +94,7 @@ The validation team will check a number of items in the source code, including:
 
 </div>
 
-## Notes
+## Vault Application Framework Licensing
 
 Note that Vault Application Framework licensing has limitations when running within the M-Files Cloud infrastructure.  This is because the license assigned to the M-Files server is generic with larger user limits than the specific license that the customer may have.
 
