@@ -93,3 +93,13 @@ The validation team will check a number of items in the source code, including:
 1. Logging should be undertaken using the [M-Files Vault Application Logging Framework](/Frameworks/Logging/).
 
 </div>
+
+## Notes
+
+Note that Vault Application Framework licensing has limitations when running within the M-Files Cloud infrastructure.  This is because the license assigned to the M-Files server is generic with larger user limits than the specific license that the customer may have.
+
+Specifically:
+
+* You cannot restrict the VAF application license use by the customer's serial number.
+* You cannot restrict the VAF application license use by the number of users.
+* You **should** restrict the VAF licesne by the vault GUID.

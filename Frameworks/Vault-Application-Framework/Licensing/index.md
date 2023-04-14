@@ -366,3 +366,8 @@ To
   // ...
 }
 ```
+
+## Notes on M-Files Cloud
+
+Note that the M-Files Cloud infrastructure has some additional constraints on how licenses can and cannot be used.  These are detailed in the [dedicated page](../Cloud/).
+{:.note.warning}
