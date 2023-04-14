@@ -102,4 +102,4 @@ Specifically:
 
 * You cannot restrict the VAF application license use by the customer's serial number.
 * You cannot restrict the VAF application license use by the number of users.
-* You **should** restrict the VAF licesne by the vault GUID.
+* You **should** restrict the VAF license by the vault GUID.
