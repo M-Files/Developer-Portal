@@ -53,7 +53,7 @@ namespace extensionstest2
 		[ShowOnDashboard("Import data", ShowRunCommand = true)]
 		public void ProcessBackgroundTask(ITaskProcessingJob<TaskDirective> job)
 		{
-			this.Logger.Info("hello world");
+			this.Logger.Info($"hello world");
 		}
 
 	}
