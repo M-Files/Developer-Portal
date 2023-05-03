@@ -11,7 +11,7 @@ M-Files provides developers with Visual Studio 2019/2022 templates that can be u
 
 ## Visual Studio Vault Application Framework project template
 
-The Vault Application Framework 22.12 project template was released in late 2021, and can be used to create applications for M-Files 20.5 upwards.  A [detailed walkthrough shows how to use the VAF 2.3 template](Template).
+The Vault Application Framework 22.12 project template was released in late 2021, and can be used to create applications for M-Files 20.5 upwards.  A [detailed walkthrough shows how to use the template within Visual Studio](Template).
 
 ## Legacy templates
 
