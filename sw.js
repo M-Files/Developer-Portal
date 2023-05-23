@@ -44,17 +44,17 @@ var checkResponse = function(request){
 };
 
 var addToCache = function(request){
-	return caches.open('pwa-offline').then(function (cache) {
-		return fetch(request.clone())
-			.then(function (response) {
+	return fetch(request.clone())
+		.then(function (response) {
+			return caches.open('pwa-offline').then(function (cache) {
 				return cache.put(request, response);
-			})
-			.catch(function(error)
-			{
-				console.log("Exception requesting file: " + error)
-				return Promise.reject("no match");
 			});
-	});
+		})
+		.catch(function(error)
+		{
+			console.log("Exception requesting file: " + error)
+			return Promise.reject("no match");
+		});
 };
 
 var returnFromCache = function(request){

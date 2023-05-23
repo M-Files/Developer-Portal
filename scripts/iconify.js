@@ -1,4 +1,4 @@
-Iconify.preloadImages([
+Iconify.loadIcons([
 	'mdi:home',
 	'mdi:play-outline',
 	'mdi:script-text-outline',
