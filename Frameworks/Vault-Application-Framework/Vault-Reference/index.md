@@ -8,11 +8,15 @@ breadcrumb: Vault Reference
 Please also read the [VBScript page on the Vault reference]({{ site.baseurl }}/Built-In/VBScript/Vault-Reference) page.
 {:.note.warning}
 
-The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault.html).  There are two types of `Vault` reference available within the VAF: transactional and non-transactional.
+The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault.html).
+
+There are two types of `Vault` reference available within the VAF: transactional and non-transactional.
+
+A singular user operation (e.g. "create this object") may involve multiple changes within the underlying database tables.  In order to ensure that these are rolled back consistently in case of exceptions, M-Files will create a database transaction.  When code is run because of one of these object changes (e.g. an object being modified), M-Files will provide the code with a vault reference that uses this in-process database transaction.  Your code can then use to make changes that should also be rolled back if the transaction itself fails.
 
 ### Transactional vault references
 
-In many places in the VAF you will encounter a "transactional vault reference".  This vault reference is provided to enable you, the developer, to perform actions within the vault that will be rolled back if the transaction fails.
+In many places in the VAF you will encounter a "transactional vault reference".  This vault reference is provided to enable you, the developer, to perform actions within the vault that will be rolled back if the transaction fails.  This transactional vault reference is often part of the "Environment" that is passed into your event handler or state action.
 
 The transactional vault reference is designed to have a short lifespan:
 
