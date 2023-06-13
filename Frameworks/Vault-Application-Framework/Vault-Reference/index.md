@@ -10,7 +10,19 @@ Please also read the [VBScript page on the Vault reference]({{ site.baseurl }}/B
 
 The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault.html).  There are two types of `Vault` reference available within the VAF: transactional and non-transactional.
 
-Changes made using a transactional vault reference are automatically rolled back if the transaction subsequently fails.  Changes made using a non-transactional vault reference are not automatically rolled back if the transaction subsequently fails; the developer must handle exceptions and ensure that any changes are undone.  If available, you should always make changes using a transactional vault reference.
+### Transactional vault references
+
+In many places in the VAF you will encounter a "transactional vault reference".  This vault reference is provided to enable you, the developer, to perform actions within the vault that will be rolled back if the transaction fails.
+
+The transactional vault reference is designed to have a short lifespan:
+
+* The transactional vault instance must not be used from parallel threads.
+* The transactional vault instance should not be persisted, or attempted to be used, beyond the lifetime of the event that created the transaction.  As an example: you cannot persist a reference to a transactional vault from an event handler and then use it in a subsequent task queue processing.
+
+Changes made using a non-transactional vault reference are not automatically rolled back if the transaction subsequently fails; the developer must handle exceptions and ensure that any changes are undone.
+
+If available, you should always make changes using a transactional vault reference.
+{:.note}
 
 ## Task queues
 
@@ -38,7 +50,7 @@ public void MyEventHandler(EventHandlerEnvironment env)
 }
 ```
 
-The exception to the rule above relates to background operations and code executed within a task queue.  In these scenarios an environment vault reference is not available, so the [permanent vault reference](#permanent-vault-reference) is typically used instead.
+The exception to the rule above relates to background operations and code executed within a task queue.  In these scenarios an environment vault reference is not available, so the [permanent vault reference](#permanent-vault-reference) may be used, or the `transaction runner` used to create a transaction in which the creation can run.
 {:.note}
 
 ## Auditing
