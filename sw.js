@@ -44,8 +44,9 @@ var checkResponse = function(request){
 };
 
 var addToCache = function(request){
-	try{
-		return fetch(request.clone())
+	if(request.bodyUsed || !request.url.startsWith("https://developer.m-files.com"))
+		return Promise.resolve();
+	return fetch(request.clone())
 		.then(function (response) {
 			return caches.open('pwa-offline').then(function (cache) {
 				return cache.put(request, response);
@@ -56,10 +57,6 @@ var addToCache = function(request){
 			console.log("Exception requesting file: " + error)
 			return Promise.reject("no match");
 		});
-	}
-	catch{
-		return Promise.reject("Exception cloning request.");
-	}
 };
 
 var returnFromCache = function(request){
