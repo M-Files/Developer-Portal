@@ -16,6 +16,29 @@ The [2.0 release of the Vault Application Framework]({{ site.baseurl }}/Framewor
 
 ![The M-Files 2018 Configuration area](configuration-area.png)
 
+## Overview
+
+By defining a configuration class within your vault application, M-Files will automatically (in VAF 2.0 and higher) provide an interface for administrators to alter how your application runs.  This gives you the ability to define an application that can be configured to run different ways.
+
+The configuration class itself is decorated with standard .NET [DataContract] and [DataMember] classes, and the configuration is persisted to the vault as JSON.  When the vault starts this configuration is loaded and provided to the application, and when the configuration is changed via the M-Files Admin, the updated configuration is automatically made available to the vault application.
+
+A sample configuration class may look something like this:
+
+```csharp
+[DataContract]
+public class Configuration
+{
+	// This shows a text box that the value can be entered into.
+	[DataMember]
+	public string MyTextValue { get; set;}
+}
+```
+
+There are multiple [configuration editors](Editors) available to allow different types of data to be configured.  Some of these editors can be further customized by using additional attributes such as [JsonConfEditor]; these are described in the relevant place in the configuration.
+
+Note that [DataContract] and [DataMember] are used to serialize and deserialize the configuration to the vault.  If the configuration fails to deserialize properly then your application may not start properly.  You should **never** use [DataMember(IsRequired = true)] in your configuration, as this will cause an empty configuration to fail loading, and may cause obscure errors in your code.
+{:.note.warning}
+
 ## VAF 2.1
 
 ### Inheriting from the new base class
