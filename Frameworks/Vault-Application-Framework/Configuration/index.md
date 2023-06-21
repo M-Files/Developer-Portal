@@ -31,6 +31,14 @@ public class Configuration
 	// This shows a text box that the value can be entered into.
 	[DataMember]
 	public string MyTextValue { get; set;}
+
+
+	//// NEVER DO THIS:
+	//// If the configuration cannot be deserialized (e.g. this property is missing, which
+	//// it always will be when the application is first installed) then the configuration
+	//// itself will be null, causing odd issues in your application.
+	//[DataMember(IsRequired = true)]
+	//public string MyTextValue2 { get; set;}
 }
 ```
 
