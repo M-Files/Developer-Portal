@@ -396,6 +396,9 @@ this.client.AddDefaultHeader("Authorization", "Bearer " + tokens.AccessToken);
 this.client.AddDefaultHeader("X-Vault", this.oAuthPluginInfo.VaultGuid);
 ```
 
+Note that the plugin configuration may contain a flag named `UseIdTokenAsAccessToken`.  If this is set, and it is set to true, then the ID Token returned by the OAuth process should be used in the Authorization header, instead of the Access Token shown above.
+{:.note}
+
 ## Multi-Server Mode Considerations
 
 In platforms that use the M-Files [Multi-Server Mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) approach (e.g. the M-Files "New Cloud"), M-Files servers to be attached to the same vault database at the same time.  In this configuration, any one of the multiple servers in the availability group may potentially respond to individual REST API calls.
