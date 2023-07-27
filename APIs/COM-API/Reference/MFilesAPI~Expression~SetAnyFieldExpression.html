@@ -89,7 +89,38 @@
 
 <p>When using a full-text search, the&nbsp;<a href="MFilesAPI~SearchCondition~ConditionType.html">ConditionType</a> in the parent SearchCondition object needs to be <em>MFConditionTypeContains</em>.</p>
 
-<p>You can combine multiple search flags with a bitwise-OR operator.</p></div><!--DXMETADATA end -->
+<p>You can combine multiple search flags with a bitwise-OR operator.</p>
+
+<p>When using the&nbsp;Smart Search index, either the&nbsp;<em>MFFullTextSearchFlagsTypeAllWords</em> or MFFullTextSearchFlagsTypeAnyWords flag needs to be present in the expression, e.g.:</p>
+
+<div class="i-filtered-content-CS" data-title="CS" data-itemid="CS">
+    <table class="i-syntax-table">
+        <tbody>
+            <tr>
+                <th>Full Text search using Smart Search index</th>
+
+                <th>
+                    <div class="i-copy-code-wrapper">
+                        <span class="i-copy-code">Copy Code</span>
+                    </div>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="i-code" colspan="2">
+                    <pre>
+conditionText.Expression.SetAnyFieldExpression
+(
+    MFFullTextSearchFlags.MFFullTextSearchFlagsLookInFileData
+    | MFFullTextSearchFlags.MFFullTextSearchFlagsLookInMetaData
+    | MFFullTextSearchFlags.MFFullTextSearchFlagsTypeAllWords
+);
+</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div></div><!--DXMETADATA end -->
             <!--DXMETADATA start type="sourcecode" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=source,caption=$$Source_Code$$%%<table border=0 cellpadding=0 cellspacing=0 class=sourcecode><tr><td nowrap>%%sourcecode%%</td></tr></table></div>" --><!--DXMETADATA end -->
             <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=""$$Example$$%%designlist:tagidentifier=##EXAMPLECODE,itemtype=Example%%""%%%%comment%%" --><!--DXMETADATA end -->
             <!--DXMETADATA start type="FilteredItemList" scrap="EXAMPLEGROUP_LIST" namespace="ExampleGroup" source="Item" filter="type=inline" condition="content:content=""%%GroupExamples%%"",operator=""="",value=""True""" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%taggedcomment:source=item,id=##EXAMPLEINTRO,blankformat=""%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=$$Example$$%%"",format= %%%%filtereditemlist%%</div>" blankformat="%%taggedcomment:source=item,id=##EXAMPLEINTRO,format=</div>%%" --><!--DXMETADATA end -->
