@@ -72,13 +72,12 @@ condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "ESTT");
 For Smart Search, either the `MFFullTextSearchFlagsTypeAllWords` or `MFFullTextSearchFlagsTypeAnyWords` flag needs to be present in the expression otherwise an error will be thrown.
 {:.note}
 
-``csharp
+```csharp
 // When using the Smart Search index, 'MFFullTextSearchFlagsTypeAllWords' or 'MFFullTextSearchFlagsTypeAnyWords'
 // must be present in the flags.
 conditionText.Expression.SetAnyFieldExpression(MFFullTextSearchFlags.MFFullTextSearchFlagsLookInFileData
                 | MFFullTextSearchFlags.MFFullTextSearchFlagsLookInMetaData 
                 | MFFullTextSearchFlags.MFFullTextSearchFlagsTypeAllWords );
-
 ```
 
 ## Searching by file type
