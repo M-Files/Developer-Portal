@@ -362,7 +362,11 @@
 				"Title": "Configuration",
 				"Items": [{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Editors/",
-						"Title": "Configuration value editors"
+						"Title": "Configuration value editors",
+						"Items": [{
+							"Link": "/Frameworks/Vault-Application-Framework/Configuration/Editors/IStableValueOptionsProvider/",
+							"Title": "IStableValueOptionsProvider"
+						}]
 					},
 					{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Hierarchical-Configuration/",
