@@ -6,7 +6,7 @@ includeInSearch: true
 
 Where you need to provide a set of values for a dropdown, but do not wish to hard-code the values, you can implement `IStableValueOptionsProvider`.  This interface enables you generate options at runtime from code.
 
-Note that options provided here are cached by the configuration editor and are expected to be **stable across applications**; if you wish to use an implementation of `IStableValueOptionsProvider` in a shared class library and provide different values for application A to those in application B, please ensure that you read the [from within a class library](from-within-a-class-library) section below.
+Note that options provided here are cached by the configuration editor and are expected to be **stable across applications**; if you wish to use an implementation of `IStableValueOptionsProvider` in a shared class library and provide different values for application A to those in application B, please ensure that you read the [from within a class library](#from-within-a-class-library) section below.
 {:.note.warning}
 
 ## Basic usage
