@@ -145,7 +145,7 @@ var response = (HttpWebResponse)request.GetResponse();
 This method is not recommended.  Instead, obtain an authentication token so that raw credentials are not passed in all your HTTP requests.
 {:.note.warning}
 
-The M-Files Web Service documentation details the available [authentication request parameters](https://www.m-files.com/mfws/parameters.html), which are then included in your subsequent HTTP requests:
+The M-Files Web Service documentation details the available [authentication request parameters](/APIs/REST-API/Reference/parameters/), which are then included in your subsequent HTTP requests:
 
 ```csharp
 // Create a web request pointing at the endpoint that returns all items in the root view.
