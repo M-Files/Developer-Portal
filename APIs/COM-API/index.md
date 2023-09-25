@@ -7,7 +7,7 @@ breadcrumb: COM/.NET API
 
 The [M-Files COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) can be used from any software that can interact with COM. This is our most comprehensive API and provides interfaces for most "user" and "administrative" functions.  The API is available on both 32-bit and 64-bit versions and is typically referenced from your code by adding a reference to it within Visual Studio:
 
-![Adding a reference to the COM API](https://www.m-files.com/api/documentation/Pictures/GettingStarted_VisualBasic.PNG)
+![Adding a reference to the COM API](hhttps://developer.m-files.com/APIs/COM-API/Reference/Pictures/GettingStarted_VisualBasic.PNG)
 
 The API can be used to create almost any solution that retrieve or process information within an M-Files vault, such as:
 

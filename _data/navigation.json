@@ -107,7 +107,7 @@
 		"Icon": "mdi:circle-outline",
 		"Title": "COM API",
 		"Items": [{
-				"Link": "https://www.m-files.com/api/documentation/index.html",
+				"Link": "https://developer.m-files.com/APIs/COM-API/Reference/",
 				"Title": "Official API Reference ",
 				"IsExternal": true,
 				"IsOfficialReference": true
