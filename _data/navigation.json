@@ -108,7 +108,7 @@
 		"Title": "COM API",
 		"Items": [{
 				"Link": "https://developer.m-files.com/APIs/COM-API/Reference/",
-				"Title": "Official API Reference ",
+				"Title": "Official API Reference",
 				"IsExternal": true,
 				"IsOfficialReference": true
 			},
