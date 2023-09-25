@@ -15,5 +15,5 @@ Type | Name | Description
 `int` | PropertyDef
 [TypedValue](../typedvalue/) | TypedValue
 
-This is related to [the PropertyValue class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValue.html) in the COM API.
+This is related to [the PropertyValue class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~PropertyValue.html) in the COM API.
 {:.remark}

@@ -18,5 +18,5 @@ Type | Name | Description
 `int` | Item
 `int` | Version
 
-This is related to [the Lookup class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Lookup.html) in the COM API.
+This is related to [the Lookup class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~Lookup.html) in the COM API.
 {:.remark}

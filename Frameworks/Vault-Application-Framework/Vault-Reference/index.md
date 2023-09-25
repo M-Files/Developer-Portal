@@ -8,7 +8,7 @@ breadcrumb: Vault Reference
 Please also read the [VBScript page on the Vault reference]({{ site.baseurl }}/Built-In/VBScript/Vault-Reference) page.
 {:.note.warning}
 
-The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Vault.html).
+The `Vault` reference is the primary method of interacting with contents of an M-Files vault.  It is an instance of the [Vault COM API class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~Vault.html).
 
 There are two types of `Vault` reference available within the VAF: transactional and non-transactional.
 
@@ -66,7 +66,7 @@ The exception to the rule above relates to background operations and code execut
 It is important to note that the `Vault` reference provided within VBScript is connected to the M-Files server as an internal administrative user.  Any operations executed against the vault using this reference will not respect the current user's permissions.  [Special consideration]({{ site.baseurl }}/Built-In/VBScript/Audit-Trail-And-Scripting/) should be given to operations that could affect the current object's audit trail (e.g. setting the current object's properties).
 {:.note.warning}
 
-The current user's ID is available via the `env.CurrentUserID` reference.  The [current user's session information](https://www.m-files.com/api/documentation/MFilesAPI~SessionInfo.html) is available via `env.Vault.SessionInfo`.  Search results can be [filtered by user permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions) if needed.
+The current user's ID is available via the `env.CurrentUserID` reference.  The [current user's session information](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~SessionInfo.html) is available via `env.Vault.SessionInfo`.  Search results can be [filtered by user permissions]({{ site.baseurl }}/APIs/COM-API/Searching/SearchConditions/#restricting-the-search-results-by-user-permissions) if needed.
 
 ## Permanent vault reference
 

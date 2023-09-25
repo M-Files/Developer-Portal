@@ -17,5 +17,5 @@ Type | Name | Description
 `int` | NamePropertyDef
 `int` | Workflow
 
-This is related to [the ObjectClass class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectClass.html) in the COM API.
+This is related to [the ObjectClass class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ObjectClass.html) in the COM API.
 {:.remark}

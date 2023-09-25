@@ -427,29 +427,29 @@ function createAssignmentObject(shellFrame)
 	var propertyValues = new MFiles.PropertyValues();
 
 	// Class property value.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInObjectClass.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInObjectClass.html
 	var classPropertyValue = new MFiles.PropertyValue();
 	classPropertyValue.PropertyDef = MFBuiltInPropertyDefClass;
 	classPropertyValue.Value.SetValue( MFDatatypeLookup, -100 ); // MFBuiltInObjectClassGenericAssignment not defined in MFWA.
 	propertyValues.Add( -1, classPropertyValue );
 
 	// Name or title property.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	var nameOrTitlePropertyValue = new MFiles.PropertyValue();
 	nameOrTitlePropertyValue.PropertyDef = MFBuiltInPropertyDefNameOrTitle;
 	nameOrTitlePropertyValue.Value.SetValue( MFDatatypeText, "Assignment" );
 	propertyValues.Add( -1, nameOrTitlePropertyValue );
 
 	// Single-file-document property.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	var singleFileDocumentPropertyValue = new MFiles.PropertyValue();
 	singleFileDocumentPropertyValue.PropertyDef = MFBuiltInPropertyDefSingleFileObject;
 	singleFileDocumentPropertyValue.Value.SetValue( MFDatatypeBoolean, false );
 	propertyValues.Add( -1, singleFileDocumentPropertyValue );
 
 	// Assigned to property.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	var assignedToPropertyValue = new MFiles.PropertyValue();
 	assignedToPropertyValue.PropertyDef = MFBuiltInPropertyDefAssignedTo;
 	var userLookups = new MFiles.Lookups();
@@ -474,7 +474,7 @@ function createAssignmentObject(shellFrame)
 			selectedItem.ObjVer.Type );
 
 		// Get the default property definition of this object type.
-		// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjType~DefaultPropertyDef.html
+		// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ObjType~DefaultPropertyDef.html
 		var defaultPropertyDef = objectType.DefaultPropertyDef;
 
 		// Do we have a property value already?
@@ -522,7 +522,7 @@ function createAssignmentObject(shellFrame)
 	}
 
 	// Create the default values for the assignment.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInObjectType.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInObjectType.html
 	var assignmentObjectTypeId = 10; // MFBuiltInObjectTypeAssignment not defined in MFWA.
 	var sourceObjectFiles = new MFiles.SourceObjectFiles();
 	var accessControlList = new MFiles.AccessControlList();
@@ -583,12 +583,12 @@ In addition, it is also recommended to provide both a <a href="{{ site.baseurl }
 
 The specific sections of code to change are:
 
-1. The code which retrieves the [default property definition for an object type](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectTypeOperations~GetObjectType.html) (used to create the relationships from assignment to object).
-2. The call to [CreateNewObject](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html).
-3. The call to [CheckIn](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html).
+1. The code which retrieves the [default property definition for an object type](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectTypeOperations~GetObjectType.html) (used to create the relationships from assignment to object).
+2. The call to [CreateNewObject](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectOperations~CreateNewObject.html).
+3. The call to [CheckIn](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html).
 4. We will supply a 16x16 pixel `.png` icon for the command if we are executing within the web.  [.ico file support is significant but less than png](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).  In addition, a `.png` of the correct size may be significantly smaller than an `.ico` file which may contain multiple image sizes (lines 46-56).
 
-Note that <a href="https://www.m-files.com/api/documentation/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 316-350).
+Note that <a href="https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 316-350).
 {:.note}
 
 ```javascript
@@ -767,7 +767,7 @@ function retrieveRelationshipPropertyValues(shellFrame, selectedItems, callback)
 		return function(objectType)
 		{
 			// Get the default property definition of this object type.
-			// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjType~DefaultPropertyDef.html
+			// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ObjType~DefaultPropertyDef.html
 			var defaultPropertyDef = objectType.DefaultPropertyDef;
 
 			// Do we have a property value already?
@@ -852,29 +852,29 @@ function createAssignmentObject(shellFrame)
 	var propertyValues = new MFiles.PropertyValues();
 
 	// Class property value.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInObjectClass.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInObjectClass.html
 	var classPropertyValue = new MFiles.PropertyValue();
 	classPropertyValue.PropertyDef = MFBuiltInPropertyDefClass;
 	classPropertyValue.Value.SetValue( MFDatatypeLookup, -100 ); // MFBuiltInObjectClassGenericAssignment not defined in MFWA.
 	propertyValues.Add( -1, classPropertyValue );
 
 	// Name or title property.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	var nameOrTitlePropertyValue = new MFiles.PropertyValue();
 	nameOrTitlePropertyValue.PropertyDef = MFBuiltInPropertyDefNameOrTitle;
 	nameOrTitlePropertyValue.Value.SetValue( MFDatatypeText, "Assignment" );
 	propertyValues.Add( -1, nameOrTitlePropertyValue );
 
 	// Single-file-document property.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	var singleFileDocumentPropertyValue = new MFiles.PropertyValue();
 	singleFileDocumentPropertyValue.PropertyDef = MFBuiltInPropertyDefSingleFileObject;
 	singleFileDocumentPropertyValue.Value.SetValue( MFDatatypeBoolean, false );
 	propertyValues.Add( -1, singleFileDocumentPropertyValue );
 
 	// Assigned to property.
-	// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html
+	// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html
 	var assignedToPropertyValue = new MFiles.PropertyValue();
 	assignedToPropertyValue.PropertyDef = MFBuiltInPropertyDefAssignedTo;
 	var userLookups = new MFiles.Lookups();

@@ -17,5 +17,5 @@ Value | Member
 2 | SpecificWindowsUser 
 3 | SpecificMFilesUser 
 
-This is related to [the MFAuthType enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFAuthType.html) in the COM API.
+This is related to [the MFAuthType enumeration](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFAuthType.html) in the COM API.
 {:.remark}

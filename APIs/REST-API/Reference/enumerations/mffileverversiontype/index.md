@@ -16,5 +16,5 @@ Value | Member
 2 | MFFileVerVersionTypeAny 
 3 | MFFileVerVersionTypeSpecific 
 
-This is related to [the MFFileVerVersionType enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFFileVerVersionType.html) in the COM API.
+This is related to [the MFFileVerVersionType enumeration](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFFileVerVersionType.html) in the COM API.
 {:.remark}

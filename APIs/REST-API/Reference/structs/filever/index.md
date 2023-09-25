@@ -17,5 +17,5 @@ Type | Name | Description
 `string` | ExternalRepositoryFileVersionID (for external objects only)
 [MFFileVersionType](../../enumerations/mffileversiontype/) | FileVersionType
 
-This is related to [the FileVer class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~FileVer.html) in the COM API.
+This is related to [the FileVer class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~FileVer.html) in the COM API.
 {:.remark}

@@ -18,7 +18,7 @@ private string MyVaultExtensionMethod(EventHandlerEnvironment env)
 }
 ```
 
-Access can be restricted to the extension method by altering the value of `RequiredVaultAccess`.  The Vault Application Framework will ensure that any user calling this extension method has this level of access to the system prior to executing the method.  The default for `RequiredVaultAccess` is [MFVaultAccessChangeFullControlRole](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFVaultAccess.html), which effectively limits the access to administrators-only.
+Access can be restricted to the extension method by altering the value of `RequiredVaultAccess`.  The Vault Application Framework will ensure that any user calling this extension method has this level of access to the system prior to executing the method.  The default for `RequiredVaultAccess` is [MFVaultAccessChangeFullControlRole](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFVaultAccess.html), which effectively limits the access to administrators-only.
 
 In the code sample provided, the name of the vault extension method (provided as a string in the attribute declaration) and the name of the actual method are the same, but this is not required.
 {:.note}

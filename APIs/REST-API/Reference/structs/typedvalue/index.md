@@ -23,5 +23,5 @@ Type | Name | Description
 `string` | SortingKey | Provides a key that can be used to sort [TypedValues](.) 
 `string` | SerializedValue | Provides the typed value in a serialized format suitable to be used in URIs. 
 
-This is related to [the TypedValue class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~TypedValue.html) in the COM API.
+This is related to [the TypedValue class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~TypedValue.html) in the COM API.
 {:.remark}

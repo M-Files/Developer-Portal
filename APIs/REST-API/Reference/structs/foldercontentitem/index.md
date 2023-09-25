@@ -18,5 +18,5 @@ Type | Name | Description
 [Lookup](../lookup/) | TraditionalFolder
 [View](../view/) | View
 
-This is related to [the FolderContentItem class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~FolderContentItem.html) in the COM API.
+This is related to [the FolderContentItem class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~FolderContentItem.html) in the COM API.
 {:.remark}

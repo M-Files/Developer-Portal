@@ -235,7 +235,7 @@ namespace TestWindowsSSO
 		/// <summary>
 		/// Specifies whether this object type is hierarchical (has an internal hierarchy).
 		/// </summary>
-		/// <remarks>ref: https://www.m-files.com/api/documentation/latest/MFilesAPI~ObjType~Hierarchical.html</remarks>
+		/// <remarks>ref: https://developer.m-files.com/APIs/COM-API/Reference/latest/MFilesAPI~ObjType~Hierarchical.html</remarks>
 		public bool Hierarchial { get; set; }
 
 	}

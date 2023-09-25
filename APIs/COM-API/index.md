@@ -20,7 +20,7 @@ The COM API requires the same version of the API on the client machine as the se
 
 ## API modes (client vs. server)
 
-The primary focus of creating a connection to the server is to retrieve a [Vault](https://www.m-files.com/api/documentation/MFilesAPI~Vault.html) object.  The Vault object can then be used to query content from the vault, or to process it in some manner.
+The primary focus of creating a connection to the server is to retrieve a [Vault](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~Vault.html) object.  The Vault object can then be used to query content from the vault, or to process it in some manner.
 
 The API can be used in either "server" or "client" mode. Some API methods are only available in one of the modes.
 
@@ -34,40 +34,40 @@ The API can be used in either "server" or "client" mode. Some API methods are on
 
 For finding the vault structure:
 
-* [VaultObjectTypeOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectTypeOperations.html) - used to retrieve information about the [object types](https://www.m-files.com/user-guide/latest/eng/Object_types.html) configured in the vault.
-* [VaultClassOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultClassOperations.html) - used to retrieve information about the [classes](https://www.m-files.com/user-guide/latest/eng/Classes.html) configured in the vault.
-* [VaultClassGroupOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultClassGroupOperations.html) - used to retrieve information about the [document class groups](https://www.m-files.com/user-guide/latest/eng/Class_groups.html) configured in the vault.
-* [VaultPropertyDefOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultPropertyDefOperations.html) - used to retrieve information about the [property definitions](https://www.m-files.com/user-guide/latest/eng/Property_definitions.html) configured in the vault.
-* [VaultValueListOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultValueListOperations.html) - used to retrieve information about the [value lists](https://www.m-files.com/user-guide/latest/eng/Value_lists.html) configured within the vault.
-* [VaultValueListItemOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultValueListItemOperations.html) - used to retrieve information about items within value lists configured within the vault.
-* [VaultWorkflowOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultWorkflowOperations.html) - used to retrieve information about workflows and workflow states within the vault.
+* [VaultObjectTypeOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectTypeOperations.html) - used to retrieve information about the [object types](https://www.m-files.com/user-guide/latest/eng/Object_types.html) configured in the vault.
+* [VaultClassOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultClassOperations.html) - used to retrieve information about the [classes](https://www.m-files.com/user-guide/latest/eng/Classes.html) configured in the vault.
+* [VaultClassGroupOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultClassGroupOperations.html) - used to retrieve information about the [document class groups](https://www.m-files.com/user-guide/latest/eng/Class_groups.html) configured in the vault.
+* [VaultPropertyDefOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultPropertyDefOperations.html) - used to retrieve information about the [property definitions](https://www.m-files.com/user-guide/latest/eng/Property_definitions.html) configured in the vault.
+* [VaultValueListOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultValueListOperations.html) - used to retrieve information about the [value lists](https://www.m-files.com/user-guide/latest/eng/Value_lists.html) configured within the vault.
+* [VaultValueListItemOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultValueListItemOperations.html) - used to retrieve information about items within value lists configured within the vault.
+* [VaultWorkflowOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultWorkflowOperations.html) - used to retrieve information about workflows and workflow states within the vault.
 
 For finding objects:
 
-* [VaultObjectSearchOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectSearchOperations.html) - used to search the vault for matching objects.
-* [VaultViewOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultViewOperations.html) - used to enumerate the contents of views to find objects.
+* [VaultObjectSearchOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectSearchOperations.html) - used to search the vault for matching objects.
+* [VaultViewOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultViewOperations.html) - used to enumerate the contents of views to find objects.
 
 More information on searching for objects can be found in the [dedicated pages]({{ site.baseurl }}/APIs/COM-API/Searching/).
 {:.note}
 
 For working with objects (finding properties, checking in and out, manipulating files, etc.)
 
-* [VaultObjectOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations.html) - used to load, check out, check in, or process objects within the vault.
-* [VaultObjectPropertyOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations.html) - used to load or alter property values (i.e. metadata items) of objects within the vault.
-* [VaultObjectFileOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectFileOperations.html) - used to retrieve or alter files on objects within the vault.
+* [VaultObjectOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectOperations.html) - used to load, check out, check in, or process objects within the vault.
+* [VaultObjectPropertyOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectPropertyOperations.html) - used to load or alter property values (i.e. metadata items) of objects within the vault.
+* [VaultObjectFileOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations.html) - used to retrieve or alter files on objects within the vault.
 
 ### Administrative operations
 
 For working with the vault structure:
 
-* [VaultObjectTypeOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectTypeOperations.html) - used to manage the [object types](https://www.m-files.com/user-guide/latest/eng/Object_types.html) configured in the vault.
-* [VaultClassOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultClassOperations.html) - used to manage the [classes](https://www.m-files.com/user-guide/latest/eng/Classes.html) configured in the vault.
-* [VaultClassGroupOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultClassGroupOperations.html) - used to manage the [document class groups](https://www.m-files.com/user-guide/latest/eng/Class_groups.html) configured in the vault.
-* [VaultPropertyDefOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultPropertyDefOperations.html) - used to manage the [property definitions](https://www.m-files.com/user-guide/latest/eng/Property_definitions.html) configured in the vault.
-* [VaultValueListOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultValueListOperations.html) - used to manage the [value lists](https://www.m-files.com/user-guide/latest/eng/Value_lists.html) configured within the vault.
-* [VaultValueListItemOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultValueListItemOperations.html) - used to manage items within value lists configured within the vault.
-* [VaultWorkflowOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultWorkflowOperations.html) - used to manage workflows and workflow states within the vault.
-* [VaultUserOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultUserOperations.html) - used to retrieve and manage users within the vault.
-* [VaultUserGroupOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultUserGroupOperations.html) - used to retrieve and manage user groups within the vault.
-* [VaultNotificationOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultNotificationOperations.html) - used to send custom notifications.
-* [VaultLoginAccountOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultLoginAccountOperations.html) - used to retrieve and manage login accounts within the server.
+* [VaultObjectTypeOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectTypeOperations.html) - used to manage the [object types](https://www.m-files.com/user-guide/latest/eng/Object_types.html) configured in the vault.
+* [VaultClassOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultClassOperations.html) - used to manage the [classes](https://www.m-files.com/user-guide/latest/eng/Classes.html) configured in the vault.
+* [VaultClassGroupOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultClassGroupOperations.html) - used to manage the [document class groups](https://www.m-files.com/user-guide/latest/eng/Class_groups.html) configured in the vault.
+* [VaultPropertyDefOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultPropertyDefOperations.html) - used to manage the [property definitions](https://www.m-files.com/user-guide/latest/eng/Property_definitions.html) configured in the vault.
+* [VaultValueListOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultValueListOperations.html) - used to manage the [value lists](https://www.m-files.com/user-guide/latest/eng/Value_lists.html) configured within the vault.
+* [VaultValueListItemOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultValueListItemOperations.html) - used to manage items within value lists configured within the vault.
+* [VaultWorkflowOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultWorkflowOperations.html) - used to manage workflows and workflow states within the vault.
+* [VaultUserOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultUserOperations.html) - used to retrieve and manage users within the vault.
+* [VaultUserGroupOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultUserGroupOperations.html) - used to retrieve and manage user groups within the vault.
+* [VaultNotificationOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultNotificationOperations.html) - used to send custom notifications.
+* [VaultLoginAccountOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultLoginAccountOperations.html) - used to retrieve and manage login accounts within the server.

@@ -16,5 +16,5 @@ Value | Member
 1 | Completed 
 2 | HasRelatedObjects 
 
-This is related to [the MFObjectVersionFlag enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFObjectVersionFlag.html) in the COM API.
+This is related to [the MFObjectVersionFlag enumeration](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFObjectVersionFlag.html) in the COM API.
 {:.remark}

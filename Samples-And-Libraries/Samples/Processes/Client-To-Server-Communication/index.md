@@ -20,7 +20,7 @@ To create the vault extension method:
 2. Right-click on the vault name and selet `Event Handlers` (vault extension methods are created within the same section as event handlers).
 3. Click `Add Event Handler...` and create a new vault extension method.
 	1. Choose `Vault extension method` from the `Select event` dropdown.
-	2. Provide an appropriate name.  This name will be used to [execute the vault extension method](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).
+	2. Provide an appropriate name.  This name will be used to [execute the vault extension method](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).
 4. Select the new vault extension method and click `Edit Code`
 
 ![The vault extension method being created](add-extension-method.png)
@@ -190,7 +190,7 @@ function getShellFrameStartedHandler(shellFrame) {
 
 						// Call the extension method passing the string "hello" as the parameter.
 						// Note: this is called async for compatibility with M-Files Web Access.
-						// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html
+						// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html
 						shellFrame.ShellUI.Vault.Async.ExtensionMethodOperations.ExecuteVaultExtensionMethod(
 							VBScriptVaultExtensionName, // The name of the extension method to execute.
 							"hello", // The input (string) to pass it.
@@ -205,7 +205,7 @@ function getShellFrameStartedHandler(shellFrame) {
 
 						// Call the extension method passing the string "world" as the parameter.
 						// Note: this is called async for compatibility with M-Files Web Access.
-						// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html
+						// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html
 						shellFrame.ShellUI.Vault.Async.ExtensionMethodOperations.ExecuteVaultExtensionMethod(
 							VAFVaultExtensionName, // The name of the extension method to execute.
 							"world", // The input (string) to pass it.

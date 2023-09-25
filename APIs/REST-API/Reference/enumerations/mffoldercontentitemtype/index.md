@@ -19,5 +19,5 @@ Value | Member
 4 | ObjectVersion 
 5 | ExternalViewFolder
 
-This is related to [the MFFolderContentItemType enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFFolderContentItemType.html) in the COM API.
+This is related to [the MFFolderContentItemType enumeration](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFFolderContentItemType.html) in the COM API.
 {:.remark}

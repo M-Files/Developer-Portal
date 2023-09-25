@@ -16,5 +16,5 @@ Type | Name | Description
 `string` | Name
 `int` | ObjectClass
 
-This is related to [the Workflow class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Workflow.html) in the COM API.
+This is related to [the Workflow class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~Workflow.html) in the COM API.
 {:.remark}
