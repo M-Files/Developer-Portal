@@ -11,11 +11,11 @@ This page describes the various colors used by M-Files clients.
 
 Color | Color name  | Color code  | Where to use
 --- | --- | --- |
-![Main blue](Main-blue.png){:.borderless } | Main blue | #318CCC | Primary product color, buttons, backgrounds, links, highlights
+![Main blue](main-blue.png){:.borderless } | Main blue | #318CCC | Primary product color, buttons, backgrounds, links, highlights
 ![Light blue](Light-blue.png){:.borderless } | Light blue | #E0EEF7 | Ribbon edit state
 ![White](White.png){:.borderless } | Main white | #FFFFFF | Background, font, input fields
-![Gray 1](Gray1.png){:.borderless } | Gray 1 | #363A40 | Main font
-![Gray 2](Gray2.png){:.borderless } | Gray 2 | #767676 | Secondary font
+![Gray 1](gray1.png){:.borderless } | Gray 1 | #363A40 | Main font
+![Gray 2](gray2.png){:.borderless } | Gray 2 | #767676 | Secondary font
 ![Light gray 1](Light-gray1.png){:.borderless } | Light gray 1 | #676767 | Selection, dividers
 ![Light gray 2](Light-gray2.png){:.borderless } | Light gray 2 | #EEEEEE | Background
 ![Light gray 3](Light-gray3.png){:.borderless } | Light gray 3 | #F4F4F4 | Hover
@@ -37,7 +37,7 @@ Color | Color name  | Color code  | Where to use
 
 ### Metadata colors
 
-![Metadata colors](Metadata-colors.png){:.borderless}
+![Metadata colors](metadata-colors.png){:.borderless}
 
 1.	FFFFFF
 2.	#363A40
