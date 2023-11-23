@@ -34,52 +34,6 @@ body.theme-light
 		background-color: #0072CE;
 		color: #ecf0f1;
 	}
-
-	&.reveal
-	{	aside#sidebar
-		{
-			color: #53565A;
-		}
-		aside#sidebar ul li
-		{
-			&.current > a >.text, > a >.text
-			{
-				background-color: $background-color;
-			}
-			> a,
-				> a:visited
-			{
-				background-color: $background-color;
-				color: #53565A;
-			}
-			> a.current, > a:hover, > a:active
-			{
-				background-color: $reveal-highlight;
-				> .text
-				{
-					background-color: $reveal-background;
-				}
-			}
-		}
-
-		ul.quicklinks a
-		{
-			background-color: $background-color;
-			border: 0px;
-			-webkit-transition: none;
-			-moz-transition: none;
-			-o-transition: none;
-			transition: none;
-			&:hover, &:active
-			{
-				.text
-				{
-					background-color: $reveal-background;
-				}
-			}
-
-		}
-	}
 	form.search input#query
 	{
 		&:focus

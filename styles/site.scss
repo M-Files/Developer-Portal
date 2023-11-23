@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "colours";
+@import "mixins";
 @import "base";
 @import "buttons";
 @import "header";
@@ -22,7 +24,6 @@
 
 @import "tags.scss";
 @import "other-articles.scss";
-@import "themes/reveal.scss";
 @media screen and (min-width: 500px)
 {
 	@import "min-width-500px/base";

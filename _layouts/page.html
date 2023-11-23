@@ -49,6 +49,18 @@ layout: default
 
 	<div class="entry">
 
+		{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
+		{% assign inthisarticle_size = inthisarticle | size %}
+
+		{% if inthisarticle_size > 0 and page.noInnerLinks != true %}
+		<nav id="in-page-nav" role="navigation" aria-label="In this article">
+			<div id="in-this-article">
+				<h2>In this article</h2>
+				{{ inthisarticle }}
+			</div>
+		</nav>
+		{% endif %}
+
 	<article role="article" aria-label="Page contents">
 
 		{% if page.requiredMFilesServerVersion != nill or page.requiredVaultApplicationFrameworkVersion != nill %}
@@ -64,18 +76,6 @@ layout: default
 				{% endif %}
 			</ul>
 		</div>
-		{% endif %}
-
-		{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
-		{% assign inthisarticle_size = inthisarticle | size %}
-
-		{% if inthisarticle_size > 0 and page.noInnerLinks != true %}
-		<nav id="in-page-nav" role="navigation" aria-label="In this article">
-			<div id="in-this-article">
-				<h2>In this article</h2>
-				{{ inthisarticle }}
-			</div>
-		</nav>
 		{% endif %}
 
 		{% if page.prerelease %}

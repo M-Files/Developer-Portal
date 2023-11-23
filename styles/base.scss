@@ -5,8 +5,8 @@ html {
 }
 
 body {
-    background-color: white;
-    color: #53565A;
+    background-color: var(--background-color);
+    color: var(--text-color);
 	font-family: "Segoe UI VSS (Regular)","Segoe UI","-apple-system",BlinkMacSystemFont,Roboto,"Helvetica Neue",Helvetica,Ubuntu,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 	font-size: 14px;
 }
@@ -172,6 +172,14 @@ body>article.page>h1 {
 	margin: 0px 0px 10px 0px;
 }
 
+article[role=article]{
+	@include widget;
+}
+nav.other-articles
+{
+	@include widget;
+}
+
 @keyframes glow {
     to {
          border-color: red;
@@ -334,10 +342,10 @@ p.note.prerelease
 	}
 }
 
-body article.page
-{
-	border-right-color: #EEE;
-}
+// body article.page
+// {
+// 	border-right-color: #EEE;
+// }
 
 /* make the links in warnings a little darker, just to make them contrast better */
 article.page .note.warning a {

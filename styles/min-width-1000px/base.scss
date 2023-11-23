@@ -41,8 +41,7 @@ body > aside#sidebar
 	padding: 10px 0;
 	top: 0px;
 	z-index: 11000;
-	background-color: #0072CE;
-	background: linear-gradient(180deg, #0072CEFF 0%, #0072CEFF 90%, #0072CE00 100%);
+	background-color: var(--sidebar-background-color);
 }
 aside#sidebar div.search
 {
@@ -64,6 +63,7 @@ aside#sidebar form.search
     #in-page-nav
     {
 		left: 430px;
+		@include widget;
 	}
 	
 	/* hide the blue header */

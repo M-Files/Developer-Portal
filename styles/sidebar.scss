@@ -7,7 +7,7 @@ aside#sidebar {
     bottom: -1px;
     width: 100%;
     z-index: 10002;
-    background-color: #0072CE;
+    background-color: var(--sidebar-background-color);
     color: white;
     box-shadow: 5px 0 5px -5px #333;
     overflow: hidden;
@@ -17,7 +17,7 @@ aside#sidebar {
     -webkit-transition: left 300ms ease-in-out;
     -moz-transition: left 300ms ease-in-out;
 	-o-transition: left 300ms ease-in-out;
-	border-right: 1px solid #0072CE;
+	border-right: 1px solid var(--sidebar-background-color);
 	transition: left 300ms ease-in-out;
 	content-visibility: auto;
 }
@@ -187,6 +187,13 @@ aside#sidebar > nav > ul
 		{
 			padding-left: 4px;
 		}
+		.text
+		{
+			display: block;
+			padding: 3px;
+			position: relative;
+			padding-left: 8px;
+		}
 	}
 	> li
 	{
@@ -197,7 +204,10 @@ aside#sidebar > nav > ul
 		}
 		> a > span.text
 		{
+			padding: 3px;
 			padding-left: 27px !important;
+			display: block;
+			position: relative;
 			> .iconify
 			{
 				position: absolute;

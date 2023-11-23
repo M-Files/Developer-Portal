@@ -1,13 +1,13 @@
 ---
 ---
 
-$background-color: #37373D;
 $reveal-background: #37373d;
 $reveal-highlight: #63636b;
 
 body.theme-dark
 {
-	background-color: $background-color;
+	--background-color: #37373D;
+	background-color: var(--background-color);
 	color: #CDCDCD;
 
 	@keyframes glow-dark {
@@ -26,10 +26,10 @@ body.theme-dark
 
 	aside#sidebar
 	{
-		background-color: $background-color;
+		background-color: var(--background-color);
 		div.search
 		{
-			background-color: $background-color;
+			background-color: var(--background-color);
 		}
 	}
 	form.search button
@@ -167,56 +167,6 @@ body.theme-dark
 	{
 		color: $reveal-background;
 	}
-
-	&.reveal
-	{	
-		.text,
-			ul.quicklinks a .text
-		{
-			background-color: $reveal-background;
-		}
-		
-		aside#sidebar ul li,
-			#in-page-nav ul > li
-		{
-			&.current > a >.text, > a >.text
-			{
-				background-color: $reveal-background;
-			}
-			> a,
-				> a:visited
-			{
-				background-color: #3c3c42;
-				color: #DDD;
-			}
-			> a.current, > a:hover, > a:active
-			{
-				background-color: $reveal-highlight;
-				> .text
-				{
-					background-color: #3c3c42;
-				}
-			}
-		}
-		
-		ul.quicklinks a
-		{
-			background-color: $reveal-highlight;
-			border: 0px;
-			-webkit-transition: none;
-			-moz-transition: none;
-			-o-transition: none;
-			transition: none;
-			&:hover, &:active
-			{
-				.text
-				{
-					background-color: #3c3c42;
-				}
-			}
-
-		}
-	}
 	form.search input#query
 	{
 		background-color: black;
@@ -244,8 +194,8 @@ body.theme-dark
 	{
 		#logo
 		{
-			background-color: $background-color;
-			background: linear-gradient(180deg, $background-color 0%, $background-color 90%, rgba($background-color, 0) 100%);
+			background-color: var(--background-color);
+			background: linear-gradient(180deg, var(--background-color) 0%, var(--background-color) 90%, rgba(var(--background-color), 0) 100%);
 		}
 	}
 }
