@@ -5,9 +5,12 @@ includeInSearch: true
 breadcrumb: COM/.NET API
 ---
 
-The [M-Files COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) can be used from any software that can interact with COM. This is our most comprehensive API and provides interfaces for most "user" and "administrative" functions.  The API is available on both 32-bit and 64-bit versions and is typically referenced from your code by adding a reference to it within Visual Studio:
+The [M-Files COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) can be used from any software that can interact with COM. This is our most comprehensive API and provides interfaces for most "user" and "administrative" functions.  The API is available on both 32-bit and 64-bit versions and is typically referenced from your code by adding a [reference to the nuget package](https://www.nuget.org/packages/Interop.MFilesAPI/) within your project:
 
-![Adding a reference to the COM API](https://developer.m-files.com/APIs/COM-API/Reference/Pictures/GettingStarted_VisualBasic.PNG)
+![Adding a reference to the COM API](add-reference.png)
+
+Note that the COM API nuget package is the recommended mechanism to add a reference a project, but deploying the nuget package itself is not sufficient to run applications that use it.  You must still ensure that the machine running the application has an element of M-Files(M-Files Desktop, M-Files Server, or M-Files Server Tools) installed for the application to work.
+{:.note}
 
 The API can be used to create almost any solution that retrieve or process information within an M-Files vault, such as:
 
