@@ -121,7 +121,7 @@ var checkedOutObjectVersion  = Newtonsoft.Json.JsonConvert.DeserializeObject<Obj
 // Upload the file.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 var uri =
-	new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/files/{checkedOutObjectVersion.Files[0].ID}/content.aspx?_method=PUT");
+	new Uri($"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}0/{checkedOutObjectVersion.ObjVer.ID}/files/{checkedOutObjectVersion.Files[0].ID}/content.aspx?_method=PUT");
 await client.PostAsync(uri, new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
 
 // Create the content for the checkin request.
@@ -131,7 +131,7 @@ httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 // Check in the object.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
-	await (await client.PostAsync(new Uri("http://localhost/REST/objects/0/551/latest/checkedout.aspx?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
+	await (await client.PostAsync(new Uri($"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}/{checkedOutObjectVersion.ObjVer.ID}/latest/checkedout.aspx?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 ```
 
 The [check out status endpoint documentation](https://developer.m-files.com/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout.html) states that the PUT request takes an [MFCheckOutStatus](https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html) as an input, but this must be wrapped in a [PrimitiveType](https://developer.m-files.com/APIs/REST-API/Reference/structs/primitivetypet.html); this is the reason that the JSON for the checkout/checkin requests contains the "Value" element and not just the check in enum value.
@@ -184,7 +184,7 @@ if (checkedOutObjectVersion.SingleFile)
 	// Update the property.
 	// NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 	uri =
-		new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22.aspx?_method=PUT");
+		new Uri($"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22.aspx?_method=PUT");
 	await client.PostAsync(uri, httpContent);
 }
 
@@ -207,7 +207,7 @@ httpContent = new System.Net.Http.StringContent(Newtonsoft.Json.JsonConvert.Seri
 // Add the file.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 await
-	client.PostAsync(new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/upload.aspx"), httpContent);
+	client.PostAsync(new Uri($"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/upload.aspx"), httpContent);
 
 // Create the content for the checkin request.
 // NOTE: 0 == "CheckedIn" from https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html.
@@ -216,7 +216,7 @@ httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 // Check in the object.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(
-	await (await client.PostAsync(new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout.aspx?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
+	await (await client.PostAsync(new Uri($"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/checkedout.aspx?_method=PUT"), httpContent)).Content.ReadAsStringAsync());
 ```
 
 There are a number of endpoints that can be used to add files to an existing object.  The approach above uses the same pattern as creating a new object.
@@ -257,12 +257,12 @@ httpContent = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(new 
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 Uri uri =
 	new Uri(
-		$"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22.aspx?_method=PUT");
+		$"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/properties/22.aspx?_method=PUT");
 await client.PostAsync(uri, httpContent);
 
 // Delete the first file.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
-uri = new Uri($"http://localhost/REST/objects/0/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/{checkedOutObjectVersion.Files[0].ID}.aspx?_method=DELETE");
+uri = new Uri($"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/{checkedOutObjectVersion.Files[0].ID}.aspx?_method=DELETE");
 await client.PostAsync(uri);
 
 // Create the content for the checkin request.
@@ -271,7 +271,7 @@ httpContent = new System.Net.Http.StringContent("{ \"Value\" : \"0\" }");
 
 // Check in the object.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
-uri = new Uri($"http://localhost/REST/objects/0/551/{checkedOutObjectVersion.ObjVer.Version}/checkedout.aspx?_method=PUT")
+uri = new Uri($"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/checkedout.aspx?_method=PUT")
 Newtonsoft.Json.JsonConvert.DeserializeObject<ObjectVersion>(await (await client.PostAsync(uri, httpContent)).Content.ReadAsStringAsync());
 ```
 
