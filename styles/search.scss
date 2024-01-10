@@ -16,7 +16,8 @@ form.search button
 	margin: 0px;
 	background-color: transparent;
 	color: black;
-	border-radius: 0px;
+	border-top-right-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
 }
 article.page form.search
 {
@@ -37,6 +38,7 @@ form.search input#query
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
+	@include has-border-radius();
 }
 form.search button span.label
 {

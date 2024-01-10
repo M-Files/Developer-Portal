@@ -1,7 +1,12 @@
+$borderRadius: 24px;
+
+@mixin has-border-radius{
+	border-radius: $borderRadius;
+}
 @mixin widget
 {
 	background-color: white;
     padding: 5px 20px 20px 20px;
-    border-radius: 24px;
 	margin: 5px 0px;
+	@include has-border-radius();
 }

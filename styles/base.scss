@@ -108,14 +108,6 @@ body:not(.theme-light) #logo
 	}
 }
 
-article[role=main] h1,
-	article[role=main] h2,
-	article[role=main] h3,
-	article[role=main] h4
-{
-	border-bottom: 1px solid #EEE;
-}
-
 article.page li
 {
 	margin: 10px auto;
@@ -170,14 +162,6 @@ body>article.page>h1 {
 	border-bottom: 2px solid #EEE;
 	padding: 10px 0px;
 	margin: 0px 0px 10px 0px;
-}
-
-article[role=article]{
-	@include widget;
-}
-nav.other-articles
-{
-	@include widget;
 }
 
 @keyframes glow {

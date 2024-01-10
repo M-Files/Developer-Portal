@@ -28,6 +28,9 @@ body.theme-light
 		{
 			background-color: $background-color;
 		}
+		ul li a{
+			color: var(--text-color);
+		}
 	}
 	form.search button
 	{
