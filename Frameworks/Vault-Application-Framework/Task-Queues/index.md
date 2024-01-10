@@ -156,7 +156,7 @@ public class VaultApplication
 	}
 
 	[BroadcastProcessor(BroadcastTaskType)]
-	public void BroadcastProcessor(IBroadcastProcessingJob<TaskDirective> job)
+	public void BroadcastProcessor(IBroadcastProcessingJob<BroadcastDirective> job)
 	{ 
 		// TODO: Handle the broadcast.
 	}
