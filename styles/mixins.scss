@@ -10,3 +10,21 @@ $borderRadius: 24px;
 	margin: 5px 0px;
 	@include has-border-radius();
 }
+@mixin button{
+	margin: 8px;
+	border-radius: 16px;
+	background-color: white;
+	border: 1px solid #6C728B;
+	color: #6C728B;
+	a{
+		color: #6C728B;
+		.text{
+			display: block;
+			padding: 5px 15px 10px 15px;
+			svg
+			{
+				top: 5px;
+			}
+		}
+	}
+}

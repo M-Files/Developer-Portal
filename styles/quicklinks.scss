@@ -8,14 +8,8 @@ ul.quicklinks
 		padding: 1px !important;
 		background-image: none !important;
 		display: inline-block;
-		margin: 10px 5px;
 		text-decoration: none;
 		display: inline-block;
-		.text
-		{
-			display: block;
-			padding: 10px 15px;
-		}
 	}
 	
 	li
@@ -29,6 +23,7 @@ ul.quicklinks
 			position: relative;
 			top: 2px;
 		}
+		@include button();
 	}
 
 	a,
