@@ -30,6 +30,7 @@ body #in-page-nav h1
 }
 body #in-page-nav
 {
+	@include widget;
 	h1
 	{
 		font-size: 0.9em;
