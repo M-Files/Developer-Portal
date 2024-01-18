@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="b960c88d-dc9a-517f-08e7-ca494494fa28.htm">App<wbr />Task<wbr />Batch<wbr />Processor</a>
+    </li>
+    <li>
+      <a href="2867eb73-5ef9-654d-0ec1-90c10da512cd.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="b0140646-0136-8cdb-6ac5-533b7336a783" href="b0140646-0136-8cdb-6ac5-533b7336a783.htm">Aggregate<wbr />Active<wbr />Batches</a>
+    </li>
+    <li>
+      <a id="9eb75cf3-fc23-6312-7b47-a8f326a0e665" href="9eb75cf3-fc23-6312-7b47-a8f326a0e665.htm">Aggregate<wbr />Active<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="f03e23dc-7fbb-d027-b147-696d98045a39" href="f03e23dc-7fbb-d027-b147-696d98045a39.htm">Can<wbr />Accept<wbr />New<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="1c76b3f4-b9cd-e37f-0239-e95060518afb" class="has-submenu" href="1c76b3f4-b9cd-e37f-0239-e95060518afb.htm">
+        <span data-tocFile="../toc/IDDCB0AB0A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Cancel<wbr />All</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1a7d09bc-863a-6c16-dba3-e83af02173e8" href="1a7d09bc-863a-6c16-dba3-e83af02173e8.htm">On<wbr />Batch<wbr />Added</a>
+    </li>
+    <li>
+      <a id="3535f8c9-9aa1-7461-4397-24c54ac5b85f" href="3535f8c9-9aa1-7461-4397-24c54ac5b85f.htm">On<wbr />Batch<wbr />Created</a>
+    </li>
+    <li>
+      <a id="1340e838-2d5f-61a6-3968-80673f2c1bcf" href="1340e838-2d5f-61a6-3968-80673f2c1bcf.htm">Process<wbr />Batch</a>
+    </li>
+    <li>
+      <a id="b925f9b2-4b00-a615-93f5-9b5a34d319de" href="b925f9b2-4b00-a615-93f5-9b5a34d319de.htm">Process<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="02248c19-6454-dcce-0cd0-ee2bac065dea" href="02248c19-6454-dcce-0cd0-ee2bac065dea.htm">Update<wbr />Progress<wbr />For<wbr />Active<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="80af41aa-1499-8717-774b-7acfbc97d918" class="has-submenu" href="80af41aa-1499-8717-774b-7acfbc97d918.htm">
+        <span data-tocFile="../toc/IDJCB0AB0A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Wait<wbr />All</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

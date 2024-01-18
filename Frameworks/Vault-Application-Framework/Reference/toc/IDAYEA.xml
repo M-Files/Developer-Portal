@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="0070b6da-5095-3e60-9251-30cef3a163f3.htm">IEvent<wbr />Handler<wbr />Environment</a>
+    </li>
+    <li>
+      <a href="b2417521-5283-1756-720f-1f14869720a7.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="39fd53e5-cdcc-5538-6951-9d61d531e158" href="39fd53e5-cdcc-5538-6951-9d61d531e158.htm">Event<wbr />Type</a>
+    </li>
+    <li>
+      <a id="3485bb36-65d6-840a-df6b-d807eb74df6b" href="3485bb36-65d6-840a-df6b-d807eb74df6b.htm">Input<wbr />Params</a>
+    </li>
+    <li>
+      <a id="28aba119-a867-e5b5-574f-9d1480efe81a" href="28aba119-a867-e5b5-574f-9d1480efe81a.htm">Is<wbr />Object<wbr />Event</a>
+    </li>
+    <li>
+      <a id="9d2d3702-b924-bdcc-c37e-1b45d13576b6" href="9d2d3702-b924-bdcc-c37e-1b45d13576b6.htm">Is<wbr />Record<wbr />Object</a>
+    </li>
+    <li>
+      <a id="91e9bed6-b54e-b685-57a3-0489f2b7d14c" href="91e9bed6-b54e-b685-57a3-0489f2b7d14c.htm">Is<wbr />Template<wbr />Object</a>
+    </li>
+    <li>
+      <a id="adbfb7b0-2a60-3057-81c5-b742514582cd" href="adbfb7b0-2a60-3057-81c5-b742514582cd.htm">Property<wbr />Values</a>
+    </li>
+  </tocItems>
+</toc>

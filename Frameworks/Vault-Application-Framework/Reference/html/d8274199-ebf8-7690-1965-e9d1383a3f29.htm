@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>ClientOperations Class</title>
+    <meta name="Title" content="ClientOperations" />
+    <meta name="Help.Id" content="T:MFiles.VAF.Configuration.AdminConfigurations.ClientOperations" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration.AdminConfigurations" />
+    <meta name="guid" content="d8274199-ebf8-7690-1965-e9d1383a3f29" />
+    <meta name="Description" content="Provides a simple interface for updating the MFAdmin configuration interface. Instances of this class are created by for node requests that can return proper responses." />
+    <meta name="tocFile" content="../toc/IDHA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Client<wbr />Operations Class</h1>
+            <div class="summary">
+            Provides a simple interface for updating the MFAdmin configuration interface.
+            
+            Instances of this class are created by <a href="cd945b9f-2f46-318e-d719-6b2ca8259cf6.htm">AdminConfigurationManagerBase</a> for
+            node requests that can return proper responses. The appropriate node methods or 
+            custom command methods are then passed the instance so the MFAdmin interface can
+            be informed of any changes made on the server.
+            
+            Each client operation method generates one or more directives that are then passed back
+            to MFAdmin at the end of the request.
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="c7b49528-2711-1f51-8e0a-57128c6bdc8a.htm">MFiles.VAF.Configuration.AdminConfigurations</a><br /><strong>Assembly:</strong> MFiles.VAF.Configuration (in MFiles.VAF.Configuration.dll) Version: 23.12.13247.3<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ClientOperations</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">ClientOperations</span></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDCEASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="697d2220-c8da-fb03-26f9-6423178e2f53.htm">ClientOperations</a>
+                  </td>
+                  <td>
+            Constructor.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDREASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="b55152cb-b005-be89-96b5-c93072a69658.htm">Context</a>
+                  </td>
+                  <td>
+            The context of the request that this interface will provide a response to.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3dd961f7-dd85-ef43-a659-ca33abe06fe4.htm">DefaultNodeLocation</a>
+                  </td>
+                  <td>
+            The configuration domain node this response is for.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ac62da1b-a23d-41f3-9a4d-d1083a00a80e.htm">Directives</a>
+                  </td>
+                  <td>
+            The list of directives to be sent to the client as the response.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6fdf48b8-5355-5afc-c429-e660599e61d5.htm">Manager</a>
+                  </td>
+                  <td>
+            The manager responsible for the nodes that can be modified through this interface.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDDEASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="19d4de61-396b-11d9-90a3-e76ed4336d61.htm">AddSubNode</a>
+                  </td>
+                  <td>
+            Inserts a node into the client underneath the parent node.
+            This will have no effect if the paren't nodes have not yet loaded.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="eff82b65-f622-502f-66e8-3bf6ce1b8885.htm">AuthenticateUser</a>
+                  </td>
+                  <td>
+            Instructs MFAdmin to authenticate a user.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="aaba8eb8-9658-ae37-e408-2d4d32261ce9.htm">GetResponse</a>
+                  </td>
+                  <td>
+            Provides a command response with the applicable client operations that have been called.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cabaf0f6-b38a-7f28-d2a1-8124c5e76b9f.htm">LoadConfiguration</a>
+                  </td>
+                  <td>
+            Sets the configuration text for a domain in the client.
+            Be wary! This can overwrite unsaved changes the user has made.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="db39a0cc-7453-70d8-73a3-d786f07420fb.htm">RefreshDashboard</a>
+                  </td>
+                  <td>
+            Invalidates a node's dashboard, forcing it to refresh if it is currently viewed,
+            or the next time a user tries to view it.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f02ce2b2-8257-f88f-9b64-a00341ab35fc.htm">RefreshMetadataCache</a>
+                  </td>
+                  <td>
+            Forces the MFAdmin configurator to refresh it's metadata structure cache.
+            It is wise to call this if a command has changes the metaddata structure of the vault.
+            (e.g. Add, remove, update object types, classes, property defs, workflows, etc...).
+            This can take significant time on the client, so use this sparingly!
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="384b14dc-8851-918c-742b-cd8ef7411665.htm">ReloadDomain</a>
+                  </td>
+                  <td>
+            Completely reloads a domain in the MFAdmin configurator, 
+            but only if the parent domain has been loaded.
+            Use this carefully, as it can be very destructive, and users can lose unsaved changes.
+            Consider UpdateDomain instead, to try and make updates in place.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="10b1dd46-3f0b-2ddb-23d8-9b02f7f6e801.htm">RemoveNode</a>
+                  </td>
+                  <td>
+            Removes a node from the client.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ceef7378-cb7c-50af-af39-f686bd5a4569.htm">RevalidateDomain</a>
+                  </td>
+                  <td>
+            Forces a domain on the client to re-run server validation.
+            If the configuration or vault structure has changed, this may be wise to call.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="258d3e3c-725d-79f9-f646-4a80e0eedaf6.htm">ShowMessage</a>
+                  </td>
+                  <td>
+            Shows an informational message to the user.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="388cb1ba-3deb-4ec9-f3ca-cd6281e5dac5.htm">UpdateCommands</a>
+                  </td>
+                  <td>
+            Udpates the list of avaliable commands.
+            The updated list is retrieved from the corresponding node method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ba721aad-b77c-cc00-1569-c01df8fa77d0.htm">UpdateDashboard(IDashboardContent, String, DashboardUpdateMode)</a>
+                  </td>
+                  <td>
+            Updates the default node's dashboard. Either completely, or a targeted section.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1b6737e6-4166-649c-39ba-ff3c192c0256.htm">UpdateDashboard(String, String, DashboardUpdateMode)</a>
+                  </td>
+                  <td>
+            Updates the default node's dashboard. Either completely, or a targeted section.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9cff5e5b-b67c-0f30-d00b-85caa297dfc5.htm">UpdateDomain</a>
+                  </td>
+                  <td>
+            Refreshes information about the node.
+            This allows for basic node information like
+            DisplayName, Description and Priority to be updated,
+            and also updates the nodes status and commands if those
+            are supported.
+            
+            The updated values are gathered from the node itself via
+            applicable interface methods.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="eab6bf77-52d1-c811-4423-84577df8180e.htm">UpdateStatus</a>
+                  </td>
+                  <td>
+            Updates the nodes status in MFAdmin.
+            Consider using <a href="9cff5e5b-b67c-0f30-d00b-85caa297dfc5.htm">UpdateDomain(DomainNodeLocation)</a> if other information
+            and/or commands are being updated as well.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Extension Methods</h2>
+            <div id="IDAEASection">
+              <table id="ExtensionList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="f0f310a1-82ba-f6d9-0a8e-d60b496a067a.htm">PromptDownloadFile</a>
+                  </td>
+                  <td>
+                    <br />(Defined by <a href="27a58938-51db-2079-b2df-1a1020422a1e.htm">ClientOperationsExtensionMethods</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f19322a8-2e57-ea2b-1180-ed77cff9dac5.htm">PromptFileUpload</a>
+                  </td>
+                  <td>
+                    <br />(Defined by <a href="27a58938-51db-2079-b2df-1a1020422a1e.htm">ClientOperationsExtensionMethods</a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="c7b49528-2711-1f51-8e0a-57128c6bdc8a.htm">MFiles.VAF.Configuration.AdminConfigurations Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">Extension Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

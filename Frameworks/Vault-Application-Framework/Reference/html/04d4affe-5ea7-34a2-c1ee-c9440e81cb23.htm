@@ -1,0 +1,1267 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>VaultApplicationBase Class</title>
+    <meta name="Title" content="VaultApplicationBase" />
+    <meta name="Help.Id" content="T:MFiles.VAF.VaultApplicationBase" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF" />
+    <meta name="guid" content="04d4affe-5ea7-34a2-c1ee-c9440e81cb23" />
+    <meta name="Description" content="Vault application entry point" />
+    <meta name="tocFile" content="../toc/IDBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Vault<wbr />Application<wbr />Base Class</h1>
+            <div class="summary">
+            Vault application entry point
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.VAF</a><br /><strong>Assembly:</strong> MFiles.VAF (in MFiles.VAF.dll) Version: 24.1.706.1<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">VaultApplicationBase</span> : <span class="identifier">MethodSource</span>, 
+	<span class="identifier">IVaultApplication</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="3c536b7b-5ed3-7a7a-6337-45701704790c.htm">MethodSource</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">VaultApplicationBase</span></dd></dl><dl class="inheritanceHierarchy"><dt>Derived</dt><dd><div><a href="6f3335fe-9b9f-cb7c-d211-b78acfec50cf.htm">MFiles.VAF.Core<span id="LST7D27BDC_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ConfigurableVaultApplicationBase<span id="LST7D27BDC_1" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSecureConfiguration<span id="LST7D27BDC_2" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a></div><div><a href="460912a6-acff-b836-88cd-0073c355a5d4.htm">MFiles.VAF<span id="LST7D27BDC_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ModularVaultApplicationBase</a></div></dd></dl><dl class="implementsList"><dt>Implements</dt><dd><a href="98904933-bcf7-60f5-2ea0-d30c8ce9415c.htm">IVaultApplication</a></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDOFASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="4838120d-3fda-c423-fcc8-25e4dd6d2e9a.htm">VaultApplicationBase</a>
+                  </td>
+                  <td>
+            Constructor.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="ID0QD0FASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="5ee1b47e-b7ba-1f7e-d0c2-29b72c890536.htm">AdminConfigurationsManager</a>
+                  </td>
+                  <td>
+            Admin Configuration Manager to handle the wire-up between M-Files Admin and Dashboard Nodes.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="eab49ca1-86e9-2ccc-b63b-f17a2ff592d5.htm">ApplicationDefinition</a>
+                  </td>
+                  <td>
+            The application definition information.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d43b3e3b-9d86-deae-d401-0bc9f4eb767d.htm">ApplicationRunningStatus</a>
+                  </td>
+                  <td>
+            Returns the application running status. Indicates if the application is starting, stopping or running normally.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f66c9a7b-d50e-8152-66d0-8b2d8859867b.htm">AuthenticationData</a>
+                  </td>
+                  <td>
+            The optional authentication data for the application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="81762f98-3ace-3654-6249-9fbafa805d47.htm">AvailabilityGroupStatusWriter</a>
+                  </td>
+                  <td>
+            Multi-server availability group status reporter.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="bdaea563-c8f4-8d38-fe3d-0b5c9e48f38c.htm">BackgroundOperations</a>
+                  </td>
+                  <td>
+            A manager for creating background operations.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="dae2df12-4571-35eb-e616-626277fe1844.htm">ConfigurationStorage</a>
+                  </td>
+                  <td>
+            The configuration storage object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="43adeb2c-3009-07c4-3d53-376bd476908b.htm">EventSourceIdentifier</a>
+                  </td>
+                  <td>
+            Returns the vault application event source identifier that is used when logging to Windows event log.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="39412b45-8b50-5bf2-c91a-5959e80bf9cc.htm">ExecutionTracer</a>
+                  </td>
+                  <td>
+            The execution tracer object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="39b1fdd6-043b-0b0c-1319-71ab589444eb.htm">InitialLoadComplete</a>
+                  </td>
+                  <td>
+            True after the Initialize() method has been executed.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="82e4c32f-b03e-c59c-3da7-1244ea222cf4.htm">KillProcessOnStartOperationsException</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f199b4d7-91fc-8cd3-18a7-d1caffceea05.htm">License</a>
+                  </td>
+                  <td>
+            The optional license of the application.
+            Set this in inherited class constructor to get license.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ffcd1dc8-72a3-3e30-aea6-eaa133a1b6af.htm">LogContextHelper</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1d63eede-0325-382b-a072-a159582da4af.htm">MetadataStructureValidationResult</a>
+                  </td>
+                  <td>
+            The results from the metadata structure validation.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="35da7deb-cc8c-a227-0b67-05963b215556.htm">MetadataStructureValidator</a>
+                  </td>
+                  <td>
+            The metadata structure validator object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c4b644d7-5056-ca04-fbd9-fba31d6e1f20.htm">PermanentVault</a>
+                  </td>
+                  <td>
+            The permanent vault object, runs as MFServer user.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="801627bf-e3ba-7487-f8ff-7c9ff1bc0e30.htm">TaskManager</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fa346923-cc0d-ebb0-c0a2-801552a12597.htm">TaskQueueResolver</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ae8847b6-86cf-de0d-168d-7d1f27b90fa5.htm">ValidationRecursionLimit</a>
+                  </td>
+                  <td>
+            The number of levels the valdiator is allowed to traverse
+            before throwing an exception.
+            This value protects against infinite recursion loops, but may need to
+            be increased for applications with deeply nested configuration settings.
+            
+            Note: Using some built-in types may significantly increase the configuration
+            depth, like SearchConditionsJA.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDNFASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="449a00a0-a9d9-8f5d-78c6-5cbbeef609cb.htm">AddVaultExtensionMethod</a>
+                  </td>
+                  <td>
+            Adds a vault extension method that does not have a separate event handler proxy.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="acd1ffd7-f0ee-b7fe-703a-d6822bd83629.htm">AnonymousExtensionMethodsSupported</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="395dd9d7-14e7-65d6-dab6-29bef7f4f3e9.htm">AssertApplicationInStableState</a>
+                  </td>
+                  <td>
+            Throws an exception if the application is in a state where it 
+            cannot properly handle server events.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="28787d5b-d1aa-db13-fe23-0ce65f69146a.htm">ClearAutomaticallyGeneratedScripts</a>
+                  </td>
+                  <td>
+            Clears the automatically generated scripts that are no longer used from the metadata structure (from property definitions and workflow states).
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="08b59a3a-3389-051c-89a5-12384e34dfa7.htm">CollectUnusedHandlers</a>
+                  </td>
+                  <td>
+            Method for collecting extension method names which are unused.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="00449ef2-a05e-08be-1df6-d939f6192a8a.htm">ConvertToLocalVault</a>
+                  </td>
+                  <td>
+            Overridable factory method for local vault objects. Converts the vault object to locally used and possibly 
+            stored vault object. This method allows the implementations to improve the performance by using
+            in-process vault. Overriding functionality may e.g. implement local caching features to the vault.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ef31410a-adbd-6f99-f32c-557beef4742e.htm">CreateAdminConfigurationManager</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the admin configuration manager object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ace4ccd9-2dea-8f20-d6d1-71c88e8a86bc.htm">CreateConfigurationStorage</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the configuration storage object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d92313e2-c7d3-c446-993c-d9ce6ac1a15c.htm">CreateEventHandlerMethodInfo</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the event handler method info.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="69fdcf63-7030-e8fd-4e4d-13f1a0e08372.htm">CreateExecutionTracer</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the execution tracer object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b8c2b209-6c31-ed9f-1ddb-fcd943cc6ebc.htm">CreateMetadataStructureCacheEventSink</a>
+                  </td>
+                  <td>
+            Creates the metadata structure cache event sink that can be used to update the cache based on events. Currently
+            only updating the users, user groups and logins is supported.
+            - The default setting is to disable all event driven caches, so we return a null value.
+            - To enable event driven caches, override to return a `new MetadataStructureCacheEventSink( cache );`
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1203fb24-6b16-8ccb-ca09-b6fb0b1c353a.htm">CreateMetadataStructureValidator</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the metadata structure validator component.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="600a7fc4-a6c6-c5e4-1a3e-7b8ec7251822.htm">CreatePropertyMethodInfo</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the property method info.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1eed8552-40be-de6f-d459-b63776b872a0.htm">CreateStateMethodInfo</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the state method info.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7f8f31fe-d449-3ad7-0a6b-af8de87291f4.htm">CreateStateTransitionMethodInfo</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the state transition method info.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="81c24fb3-6a6b-9b3d-0dca-9453c4935cd0.htm">CreateTaskManager</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="dba5831c-b4fe-5be7-f9df-e04b573ed893.htm">CreateVaultAnonymousExtensionMethodInfo</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="bb6c4507-4954-34d9-5f82-6df2762aafe5.htm">CreateVaultExtensionMethodInfo</a>
+                  </td>
+                  <td>
+            Overridable factory method to create the vault extension method info.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="173ef424-47d4-77f9-3068-a422ea88ee83.htm">EvaluateAutomaticStateTransitionTrigger</a>
+                  </td>
+                  <td>
+            Invokes the registered automatic state transition condition handlers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8fd45503-9efd-bdb7-0110-faf9f9e5d8b8.htm">EvaluateStatePostConditions</a>
+                  </td>
+                  <td>
+            Invokes all the state post-condition evaluation handlers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6764d676-8362-0d8a-b079-77724b1487d4.htm">EvaluateStatePreConditions</a>
+                  </td>
+                  <td>
+            Invokes all the state precondition evaluation handlers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="96bfca77-12e3-f1c7-bcf4-89f046cef90c.htm">EventHandlerBelongsToThisVaultApplication</a>
+                  </td>
+                  <td>
+            Check if the event handler belongs to this application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="06b90bcb-af1e-ec57-cfc1-70efbad90c41.htm">ExecuteAnonymousVaultExtensionMethod</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d544bc48-3031-9b9d-f259-5e58746dd9f7.htm">ExecuteVaultExtensionMethod</a>
+                  </td>
+                  <td>
+            Executes the defined vault extension method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="59485d49-ab2f-d91c-c2c4-5c473dd48436.htm">GetApplicationLicenseDetails</a>
+                  </td>
+                  <td>
+            Called by platform to request the license details text, either currently loaded or the given license.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fac57dff-83db-0290-3962-5cad89f59aca.htm">GetApplicationLicenseStatus</a>
+                  </td>
+                  <td>
+            Called to request the status information of the application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="562809b3-489a-a2c2-4d24-8ee3ce8981a4.htm">GetDelegateScriptTemplate</a>
+                  </td>
+                  <td>
+            Method for reading the VBScript template from the resources.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c5afd584-c5a6-86b8-b41a-affad27e387a.htm">GetEventHandlerDelegateScript</a>
+                  </td>
+                  <td>
+            Method for retrieving the VBScript delegation code for the certain event type.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2dd91ee0-dbc0-7177-89c4-0897a12252af.htm">GetEventHandlerEnvironment</a>
+                  </td>
+                  <td>
+            Creates the local event handler environment.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="72edf4fb-f0c7-bb8c-a72a-8313c29510a5.htm">GetEventHandlerExecutionOrderPreserver</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="17880d3a-857b-d803-2c93-b7bcb14838c9.htm">GetEventHandlerPrefix</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3259b2fd-0ae6-4358-d1a8-29c05707f3ff.htm">GetMetadataStructureCache</a>
+                  </td>
+                  <td>
+            Creates the metadata structure cache for the given vault. If the caching is not desired then
+            this method should be overridden and it should return null.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="01e4029c-e34a-c58d-514a-b2a4cf5ccb6f.htm">GetMethodsByAttribute<span id="LST7D27BDC_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST7D27BDC_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
+                  </td>
+                  <td>
+            Returns a collection of the methods decorated with the given attribute.
+            <br />(Inherited from <a href="3c536b7b-5ed3-7a7a-6337-45701704790c.htm">MethodSource</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="45b0636a-e344-edd0-01e9-3e8c3bf1a80b.htm">GetPrivateMethodSources</a>
+                  </td>
+                  <td>
+            Gets private method sources
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="530d60d2-bc87-6f07-c9c6-f3b89d210e8d.htm">GetPropertyAutomaticNumber</a>
+                  </td>
+                  <td>
+            Invokes the property customized automatic numbering handler.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8df8058e-5b1e-9236-2031-f88d0f31d3e4.htm">GetPropertyCustomValue</a>
+                  </td>
+                  <td>
+            Invokes the property custom value calculation handler.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3ba91c6c-7a7c-89de-2041-748a150d3ef2.htm">GetPropertyEnvironment</a>
+                  </td>
+                  <td>
+            Creates the local property environment.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="44ad0f54-87ab-e875-e3e1-5712fa0c2c83.htm">GetPropertyHandlerDelegateScript</a>
+                  </td>
+                  <td>
+            Method for retrieving the VBScript delegation code for the certain state.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="bdc525f4-104f-376b-b222-4b66139647ad.htm">GetStateEnvironment</a>
+                  </td>
+                  <td>
+            Creates the local state environment.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4fe1ff3e-f9e6-697e-668f-27abd1f1db51.htm">GetStateHandlerDelegateScript</a>
+                  </td>
+                  <td>
+            Method for retrieving the VBScript delegation code for the certain state.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="760181b4-eff4-117b-947e-99b9fac464f7.htm">GetStateTransitionEnvironment</a>
+                  </td>
+                  <td>
+            Creates the local state environment.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5e4c0993-a710-2d7c-b729-6c8c5aeac1b9.htm">GetStateTransitionHandlerDelegateScript</a>
+                  </td>
+                  <td>
+            Method for retrieving the VBScript delegation code for a certain state transition.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f4b6dba8-af5e-b813-9110-804e631b0145.htm">GetTransactionRunner</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="146be7bb-1f33-d56e-50ce-dd5c528e1acf.htm">GetVaultExtensionMethodDelegateScript</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4b218e7f-cb12-64f9-4d55-82f3de3d16f4.htm">GetVaultExtensionMethodEventHandlerProxyName</a>
+                  </td>
+                  <td>
+            Returns the name for the vault extension method event handler proxy of this Vault Application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="78658b59-fbf9-2e24-9f48-74c64c098025.htm">Initialize</a>
+                  </td>
+                  <td>
+            Initializes the vault application in the specified vault. The method e.g. installs required event
+            delegating scripts in the vault.
+            - NOTE: Once this method releases the vault object will have been disposed.
+            - When overriding this method in classes that extend this one, any logic that
+            - needs to use that vault must be processed before the base.Initialize() method is
+            - called. Alternatively you can place the logic inside an override of the
+            - InitializeImpl() method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9d8485f0-a749-24ac-0b82-076f7bc2263c.htm">InitializeApplication</a>
+                  </td>
+                  <td>
+            Protected overridable for the child classes to override instead of Initialize.
+            InitializeApplication can be used to make changes to the vault structure.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c937a268-b15c-8d1b-b50e-4a682b4bbf71.htm">InitializeAvailabilityGroupStatusWriter</a>
+                  </td>
+                  <td>
+            Protected overridable for the child classes to override so they can pass in their own settings.
+            PermanentVault is initialized and should be used as the vault connection.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d1144426-07e3-2945-f94f-7b2c757fab21.htm">InitializeImpl</a>
+                  </td>
+                  <td>
+            Reload clear the internal data structures and loads the modules and their event handlers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f85e1bca-4424-53cf-002c-cac87b24b523.htm">InitializeTaskManager</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f53fe774-c165-de71-d71d-c0d3bcadc966.htm">InitializeTaskQueueResolver</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="612ee5cc-c711-d968-79ad-4185d94fa081.htm">Install</a>
+                  </td>
+                  <td>
+            Installs the application.
+            - NOTE: Once this method releases the vault object will have been disposed.
+            - When overriding this method in classes that extend this one, any logic that
+            - needs to use that vault must be processed before the base.Install() method is
+            - called. Alternatively you can place the logic inside an override of the
+            - InstallApplication() method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="39dfe583-d806-b0f0-4fb3-d132d15271ca.htm">InstallApplication</a>
+                  </td>
+                  <td>
+            Protected overridable for the child classes to override instead of Install.
+            InstallApplication can be used to prevent installation of the application.
+            InstallApplication should also install any additional required components.
+            InstallApplication cannot make changes to the vault structure.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="22254982-e2cd-3d1e-0b0c-550a430b20a9.htm">InstallEventHandlerAndVaultExtensionMethodDelegateScripts</a>
+                  </td>
+                  <td>
+            Generates and installs the VBScript delegate scripts for event handlers defined in the application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9fd1ff2c-e7b0-9673-0db3-119975fd18bf.htm">InstallHandlerDelegateScripts</a>
+                  </td>
+                  <td>
+            Generates and installs the VBScript delegate scripts for all handlers that are defined in the application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="50a96d19-9734-d3fb-d64f-3d7d22f45ad6.htm">InstallPropertyHandlerDelegateScripts</a>
+                  </td>
+                  <td>
+            Generates and installs the VBScript delegate scripts for property handlers defined in the application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="07aa9229-8bb8-e4df-1be2-b4fd7f5361ac.htm">InstallStateAndStateTransitionHandlerDelegateScripts</a>
+                  </td>
+                  <td>
+            Generates and installs the VBScript delegate scripts for state handlers defined in the application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d0ee73c8-5176-e1cf-c773-f1004ebbde93.htm">IsAnonymousExtensionMethodSupported</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a079336b-be07-e2f0-79be-f87668c9bba4.htm">IsGeneratedAutomatically</a>
+                  </td>
+                  <td>
+            Checks if the given script is generated automatically. This is decided by the existence of a line with certain content.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="208cf394-a800-5f35-c193-9368b9d560b8.htm">IsHandlerDefinedForProperty</a>
+                  </td>
+                  <td>
+            Checks if the  has handler(s) of the given type.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ec614538-ce45-0306-9f26-b5e171d2aaa3.htm">IsHandlerDefinedForState</a>
+                  </td>
+                  <td>
+            Checks if the state has handler(s) of the given type.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="222cbbcd-ce27-f268-403d-389217a70db0.htm">IsHandlerDefinedForStateTransition</a>
+                  </td>
+                  <td>
+            Checks if the state has handler(s) of the given type.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6ab62268-cfb0-3f37-9766-3dd8552d81d2.htm">LoadHandlerMethods</a>
+                  </td>
+                  <td>
+            Finds and caches all event handler methods and vault extension methods in the assembly. The methods are decorated with specific attributes.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="da5e13a4-1277-e4a0-467f-9f08ef3c4bf3.htm">NewEnvironment</a>
+                  </td>
+                  <td>
+            Returns a new Event Handler environment, to be populated in the event handler script.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b7e069e6-8c2d-0f5f-5cc0-a3ad452e7b06.htm">PopulateConfigurationObjects(Vault)</a>
+                  </td>
+                  <td>
+            Searches the vault application for marked configuration objects (MFConfiguration attribute) and loads and validates them.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="28f45092-b712-9a9d-07a4-cb9d4ee8dfaa.htm">PopulateConfigurationObjects(Vault, Object)</a>
+                  </td>
+                  <td>
+            Populates a configuration objects from single host object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0c230a16-dee4-d0bb-eb59-4fc5e81db7d7.htm">PopulateConfigurationObjectsAndValidate</a>
+                  </td>
+                  <td>
+            Populates and validates objects marked with MFConfiguration attribute.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8d22bace-5d43-09ef-a992-17a3764c4fa5.htm">RegisterEventHandlers</a>
+                  </td>
+                  <td>
+            Registers the specified event handler method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4fa2adab-0b32-9a0e-9827-64e02b6c35cb.htm">RegisterHandlers<span id="LST7D27BDC_6" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST7D27BDC_7" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
+                  </td>
+                  <td>
+            Generic method for collecting all methods from the given source that are decorated with the specified attribute type.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="58e40ee5-6500-2ae2-ec5e-c22b12ffbb77.htm">RegisterMethodsFromSource</a>
+                  </td>
+                  <td>
+            Registers all methods from the specified source.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1215a9ac-75a3-0e81-d02c-ae2ce506e623.htm">RegisterPropertyHandler</a>
+                  </td>
+                  <td>
+            Registers the specified property handler method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4f63f400-0730-ff8b-23cb-e5baed9b58be.htm">RegisterStateHandler</a>
+                  </td>
+                  <td>
+            Registers the specified state handler method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6b7b4aac-6531-fea3-c7fd-dfa4922106ba.htm">RegisterStateTransitionHandler</a>
+                  </td>
+                  <td>
+            Registers the specified state transition handler method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="39dd5315-7ff2-7aa0-2451-dc9d460f1c35.htm">RegisterVaultAnonymousExtensionMethodHandler</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1b112e74-a8f0-7c7a-a576-04ae8d23bf6c.htm">RegisterVaultExtensionMethodHandler</a>
+                  </td>
+                  <td>
+            Registers the specified vault extension method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fe0f8240-88b1-315c-e246-9194a48a923d.htm">ReinitializeMetadataStructureCache</a>
+                  </td>
+                  <td>
+            Reinitialize the metadata structure cache.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b88f8e99-1b52-ac7e-4707-bff9fea3e6bf.htm">RemoveVaultExtensionMethod</a>
+                  </td>
+                  <td>
+            Removes a vault extension method that does not have a separate event handler proxy.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ef0cecf8-7e3b-5416-9890-c512e8513788.htm">ReportMetadataStructureValidationErrors</a>
+                  </td>
+                  <td>
+            Handles the validation results. By default only outputs errors to event log.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="228436f1-54c3-36eb-d362-3e68afe91148.htm">Run</a>
+                  </td>
+                  <td>
+            Invokes all methods that have the MFEventHandlerAttribute and are applicable to this event.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6bf86fe9-3b12-a08a-fc62-cba1af58e32f.htm">RunStateAction</a>
+                  </td>
+                  <td>
+            Invokes the state run action handlers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f20d3b0e-5ae8-f296-6d96-cd941133e256.htm">SetApplicationLicense</a>
+                  </td>
+                  <td>
+            Setting in new license content.
+            Gets called after application instantiation before Initialize(), 
+            and also when a new license is applyed from MF-Admin.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f3cc8e5f-c3a2-d022-9e5e-4545980f163c.htm">SetAuthenticationData</a>
+                  </td>
+                  <td>
+            Sets the authentication data for the vault application.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="118fadad-8186-ff1d-0e1f-11832d159af6.htm">SetCallingThreadCulture</a>
+                  </td>
+                  <td>
+            Sets the current thread culture according to the current user's culture.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e66246af-a778-19c9-f232-1c2d7a9f0749.htm">SetEventHandlers</a>
+                  </td>
+                  <td>
+            Overridable method for setting event handlers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fca67ee9-67a7-abe1-7476-ba71a68cf224.htm">ShouldUpdateScript</a>
+                  </td>
+                  <td>
+            Checks if the script should be updated. The script should be updated only if the old script was automatically generated
+            and the new script differs from the old one.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7bc1c61b-d874-dba5-238f-a91a9dc6bf48.htm">StartApplication</a>
+                  </td>
+                  <td>
+            Protected overridable for the child classes to override instead of StartOperations. PermanentVault is initialized and should be used as the vault connection.
+            StartApplication should be used to start recurring background operations.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4bbcf941-1667-4711-c0c6-b677b46321b6.htm">StartOperations</a>
+                  </td>
+                  <td>
+            Starts the vault operations in the specified vault. The method e.g. begins to use the vault in a background job.
+            - NOTE: Once this method releases the vault object will have been disposed.
+            - When overriding this method in classes that extend this one, any logic that
+            - needs to use that vault must be processed before the base.StartOperations() method is
+            - called. Alternatively you can place the logic inside an override of the
+            - StartApplication() method or inside the RegisterTaskQueues() method for
+            - Vault applications that implement the IUsesTaskQueue interface.
+            - ADDITIONAL NOTE: The PermanentVault reference will still be available.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1699318b-81a8-d395-570f-cd710f1f4b26.htm">StartTaskQueueProcessing</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fb524cf6-0bda-31b2-7b16-5f5ba3fac070.htm">TraceCustomEvent</a>
+                  </td>
+                  <td>
+            Adds a custom event to the execution tracer.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="eef7f73d-e1d6-4173-3a41-d418ebc7ccc4.htm">Uninitialize</a>
+                  </td>
+                  <td>
+            Un-initializes the vault application in the specified vault.
+            - NOTE: Once this method releases the vault object will have been disposed.
+            - When overriding this method in classes that extend this one, any logic that
+            - needs to use that vault must be processed before the base.Uninitialize() method is
+            - called. Alternatively you can place the logic inside an override of the
+            - UninitializeApplication() method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1bda2b38-8841-65cd-5193-367c5a5bf93d.htm">UninitializeApplication</a>
+                  </td>
+                  <td>
+            Protected overridable for the child classes to override instead of Uninitialize.
+            UninitializeApplication can be used make changes in the vault structure.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0294723c-018b-a68c-3604-a3eac4e4d39a.htm">UninitializeImpl</a>
+                  </td>
+                  <td>
+            Un-initializes the vault application in the specified vault.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="15e28647-182e-38fd-8aaa-a84d7f9f1731.htm">Uninstall</a>
+                  </td>
+                  <td>
+            Uninstall the application.
+            - NOTE: Once this method releases the vault object will have been disposed.
+            - When overriding this method in classes that extend this one, any logic that
+            - needs to use that vault must be processed before the base.Uninstall() method is
+            - called. Alternatively you can place the logic inside an override of the
+            - UninstallApplication() method.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4b1839b0-c41b-436e-b5ce-a149595bd14e.htm">UninstallApplication</a>
+                  </td>
+                  <td>
+            Protected overridable for the child classes to override instead of Uninitialize.
+            UninstallApplication can be used to prevent uninstallation of the application.
+            UninstallApplication should also uninstall any additional required components, that were installed by the InstallApplication-method.
+            UninstallApplication cannot make changes to the vault structure.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="91c7c9c9-dced-5bf5-1089-ead0a1a2e232.htm">UpdatePropertyDefScripts</a>
+                  </td>
+                  <td>
+            Overridable method for updating property definition scripts.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="800401c2-55e2-6064-d212-d67bbe7f23ca.htm">UpdateWorkflowScripts</a>
+                  </td>
+                  <td>
+            Overridable method for updating a workflow scripts.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7213e299-4ed3-f8c9-2c84-06a2cc491b6a.htm">ValidateMetadataStructure</a>
+                  </td>
+                  <td>
+            Validates the application and all types in the same assembly.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="eb037004-876f-1fdd-ce7e-3623f5bd40c7.htm">ValidatePropertyValue</a>
+                  </td>
+                  <td>
+            Invokes all property validation handlers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="18c9d851-e481-4c5f-2869-efada15de22e.htm">VaultActionNotification</a>
+                  </td>
+                  <td> </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Fields</h2>
+            <div id="IDAFASection">
+              <table id="FieldList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="1178a06e-918d-3c03-459d-87fbe3f4ebe9.htm">anonymousMethods</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fbadebac-7ba5-5e78-faef-83c8b65c580f.htm">applicationRunningStatus</a>
+                  </td>
+                  <td>
+            Indicates the application running status. This is volatile because the value can be accessed from multiple threads to avoid caching delays -- the enumeration read and write itself is atomic.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="31deabdd-0838-cf3e-60ed-2b46261925e6.htm">cacheEventSink</a>
+                  </td>
+                  <td>
+            The vault listeners registered to update the metadatastructurecache backing vault instances.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ead330e4-dd82-c7a0-7e6d-ff391ffad716.htm">eventHandlerMethods</a>
+                  </td>
+                  <td>
+            Collections of the event handling methods.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6962b8f1-b3b2-d990-d67c-b1eb8688d90d.htm">eventSourceIdentifier</a>
+                  </td>
+                  <td>
+            The application event source identifier that is used in conjunction with the Windows event log.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="027b9d1b-3700-5aeb-e574-a7827159a3b5.htm">MaxTimeToWaitBackgroundOperationsAtUninitialization</a>
+                  </td>
+                  <td>
+            Defines how long the background operations can be waited at uninitialization.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d67928e1-bacf-376c-c327-c30d714b9507.htm">MultiserverHealthStatusNamespace</a>
+                  </td>
+                  <td>
+            Namespace holds the multi-server mode health status entries (one per host machine).
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4945d4a8-0088-e355-9b9c-6bbfe2ab23b7.htm">propertyMethods</a>
+                  </td>
+                  <td>
+            Collection of property extension methods by property.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2432221f-3aac-cd2a-d1bc-88906f695970.htm">stateMethods</a>
+                  </td>
+                  <td>
+            Collection of state extension methods by state.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0ca315d5-fc07-3dfa-ea07-81ea011df78f.htm">stateTransitionMethods</a>
+                  </td>
+                  <td>
+            Collection of state transition extension methods by state.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="bd34137f-e21c-6316-26b4-c1e8a756115b.htm">unusedAnonymousMethodNames</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c1a78c59-ed50-9625-a38d-2195a5412620.htm">unusedVaultExtensionNames</a>
+                  </td>
+                  <td>
+            List of vault extension method names which are known but not used.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="39bed846-9641-b957-0078-59f107272ffc.htm">vaultExtensionMethods</a>
+                  </td>
+                  <td>
+            Collection of vault extension methods by name.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.VAF Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">Fields</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

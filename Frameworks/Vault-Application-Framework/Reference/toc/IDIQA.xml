@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="1b750e8f-026b-4beb-8b13-f46c40701db8.htm">Lookups<wbr />JA</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="30abfc54-a808-e0aa-1d2f-18f9bef723a0" class="has-submenu" href="30abfc54-a808-e0aa-1d2f-18f9bef723a0.htm">
+        <span data-tocFile="../toc/IDAIQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d68b2d67-b3b7-741b-d327-4f6f5313afca" href="d68b2d67-b3b7-741b-d327-4f6f5313afca.htm">Properties</a>
+    </li>
+    <li>
+      <a id="073428a7-8e97-5b2b-c81d-52eff93ef63e" class="has-submenu" href="073428a7-8e97-5b2b-c81d-52eff93ef63e.htm">
+        <span data-tocFile="../toc/IDCIQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

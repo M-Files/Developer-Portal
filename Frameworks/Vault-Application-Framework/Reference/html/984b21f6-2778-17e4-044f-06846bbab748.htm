@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>MFJsonCollectionAdaptor&lt;T, IT, TI&gt; Class</title>
+    <meta name="Title" content="MFJsonCollectionAdaptor&lt;T, IT, TI&gt;" />
+    <meta name="Help.Id" content="T:MFiles.VAF.Configuration.JsonAdaptor.MFJsonCollectionAdaptor`3" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration.JsonAdaptor" />
+    <meta name="guid" content="984b21f6-2778-17e4-044f-06846bbab748" />
+    <meta name="Description" content="Abstract class implementing JSON compatible adaptors for MFilesAPI collections." />
+    <meta name="tocFile" content="../toc/IDQA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>MFJson<wbr />Collection<wbr />Adaptor<span id="LST55C22AC3_0" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="typeparameter">T</span>, <span class="typeparameter">IT</span>, <span class="typeparameter">TI</span><span id="LST55C22AC3_1" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span> Class</h1>
+            <div class="summary">
+            Abstract class implementing JSON compatible adaptors for MFilesAPI collections.
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.VAF.Configuration.JsonAdaptor</a><br /><strong>Assembly:</strong> MFiles.VAF.Configuration (in MFiles.VAF.Configuration.dll) Version: 23.12.13247.3<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">[<span class="identifier">SerializableAttribute</span>]
+<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="identifier">MFJsonCollectionAdaptor</span>&lt;T, IT, TI&gt; : <span class="identifier">Collection</span>&lt;IT&gt;, 
+	<span class="identifier">IMFJsonAdaptor</span>&lt;T&gt;
+<span class="keyword">where</span> IT : <span class="identifier">Object</span>, <span class="identifier">IMFJsonAdaptor</span>&lt;TI&gt;
+</code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_2" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_3" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">MFJsonCollectionAdaptor<span id="LST55C22AC3_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T, IT, TI<span id="LST55C22AC3_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></span></dd></dl><dl class="inheritanceHierarchy"><dt>Derived</dt><dd><div><a href="1b750e8f-026b-4beb-8b13-f46c40701db8.htm">MFiles.VAF.Configuration.JsonAdaptor<span id="LST55C22AC3_6" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>LookupsJA</a></div><div><a href="9829fee7-6e12-e0b1-a261-05e845e3c790.htm">MFiles.VAF.Configuration.JsonAdaptor<span id="LST55C22AC3_7" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>PropertyDefOrObjectTypesJA</a></div><div><a href="829f84ed-ca31-ad29-d414-3575ffc4479c.htm">MFiles.VAF.Configuration.JsonAdaptor<span id="LST55C22AC3_8" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>SearchConditionsJA</a></div></dd></dl><dl class="implementsList"><dt>Implements</dt><dd><a href="70c54f77-01cd-b9d2-1dc2-2acb810346d9.htm">IMFJsonAdaptor</a><span id="LST55C22AC3_9" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">T</span></span><span id="LST55C22AC3_10" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span></dd></dl><h4>Type Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">T</span></dt><dd>The api type with with this json adaptor is compatible.</dd><dt class="has-text-weight-normal"><span class="parameter">IT</span></dt><dd>The item type which this collection contains.</dd><dt class="has-text-weight-normal"><span class="parameter">TI</span></dt><dd>The item type which the adapted API type contains.</dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDAAGASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="b3dd48a1-ee60-a43d-3ed0-a3c85c402f87.htm">MFJsonCollectionAdaptor<span id="LST55C22AC3_11" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T, IT, TI<span id="LST55C22AC3_12" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST55C22AC3_13" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td>
+            Simple constructor.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="07cd6b56-9881-17b8-5417-b5e30e304d4f.htm">MFJsonCollectionAdaptor<span id="LST55C22AC3_14" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T, IT, TI<span id="LST55C22AC3_15" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span>(T)</a>
+                  </td>
+                  <td>
+            Constructor that initializes itself with an existing api object.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDSGASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.count#System_Collections_ObjectModel_Collection_1_Count" target="_blank" rel="noopener noreferrer">Count</a>
+                  </td>
+                  <td>Gets the number of elements actually contained in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_16" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_17" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_18" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_19" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.item#System_Collections_ObjectModel_Collection_1_Item_System_Int32_" target="_blank" rel="noopener noreferrer">Item</a>
+                  </td>
+                  <td>Gets or sets the element at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_20" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_21" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.items#System_Collections_ObjectModel_Collection_1_Items" target="_blank" rel="noopener noreferrer">Items</a>
+                  </td>
+                  <td>Gets a <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1" target="_blank" rel="noopener noreferrer">IList<span id="LST55C22AC3_22" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_23" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> wrapper around the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_24" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_25" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_26" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_27" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDBGASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.add#System_Collections_ObjectModel_Collection_1_Add__0_" target="_blank" rel="noopener noreferrer">Add</a>
+                  </td>
+                  <td>Adds an object to the end of the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_28" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_29" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>. <br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_30" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_31" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.clear#System_Collections_ObjectModel_Collection_1_Clear" target="_blank" rel="noopener noreferrer">Clear</a>
+                  </td>
+                  <td>Removes all elements from the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_32" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_33" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_34" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_35" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.clearitems#System_Collections_ObjectModel_Collection_1_ClearItems" target="_blank" rel="noopener noreferrer">ClearItems</a>
+                  </td>
+                  <td>Removes all elements from the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_36" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_37" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_38" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_39" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.contains#System_Collections_ObjectModel_Collection_1_Contains__0_" target="_blank" rel="noopener noreferrer">Contains</a>
+                  </td>
+                  <td>Determines whether an element is in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_40" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_41" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_42" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_43" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.copyto#System_Collections_ObjectModel_Collection_1_CopyTo__0___System_Int32_" target="_blank" rel="noopener noreferrer">CopyTo</a>
+                  </td>
+                  <td>Copies the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_44" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_45" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> to a compatible one-dimensional <a href="https://docs.microsoft.com/dotnet/api/system.array" target="_blank" rel="noopener noreferrer">Array</a>, starting at the specified index of the target array.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_46" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_47" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.getenumerator#System_Collections_ObjectModel_Collection_1_GetEnumerator" target="_blank" rel="noopener noreferrer">GetEnumerator</a>
+                  </td>
+                  <td>Returns an enumerator that iterates through the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_48" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_49" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_50" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_51" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.indexof#System_Collections_ObjectModel_Collection_1_IndexOf__0_" target="_blank" rel="noopener noreferrer">IndexOf</a>
+                  </td>
+                  <td>Searches for the specified object and returns the zero-based index of the first occurrence within the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_52" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_53" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_54" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_55" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.insert#System_Collections_ObjectModel_Collection_1_Insert_System_Int32__0_" target="_blank" rel="noopener noreferrer">Insert</a>
+                  </td>
+                  <td>Inserts an element into the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_56" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_57" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_58" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_59" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.insertitem#System_Collections_ObjectModel_Collection_1_InsertItem_System_Int32__0_" target="_blank" rel="noopener noreferrer">InsertItem</a>
+                  </td>
+                  <td>Inserts an element into the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_60" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_61" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_62" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_63" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="602652b2-66d3-ea2e-5b1a-6b42b6222de4.htm">LoadApiObject</a>
+                  </td>
+                  <td>
+            (Re-)Initializes this adaptor object to be the equivalent of the passed API object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.remove#System_Collections_ObjectModel_Collection_1_Remove__0_" target="_blank" rel="noopener noreferrer">Remove</a>
+                  </td>
+                  <td>Removes the first occurrence of a specific object from the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_64" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_65" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_66" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_67" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.removeat#System_Collections_ObjectModel_Collection_1_RemoveAt_System_Int32_" target="_blank" rel="noopener noreferrer">RemoveAt</a>
+                  </td>
+                  <td>Removes the element at the specified index of the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_68" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_69" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_70" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_71" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.removeitem#System_Collections_ObjectModel_Collection_1_RemoveItem_System_Int32_" target="_blank" rel="noopener noreferrer">RemoveItem</a>
+                  </td>
+                  <td>Removes the element at the specified index of the <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection<span id="LST55C22AC3_72" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST55C22AC3_73" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_74" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_75" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1.setitem#System_Collections_ObjectModel_Collection_1_SetItem_System_Int32__0_" target="_blank" rel="noopener noreferrer">SetItem</a>
+                  </td>
+                  <td>Replaces the element at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.collection-1" target="_blank" rel="noopener noreferrer">Collection</a><span id="LST55C22AC3_76" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="selflink"><span class="typeparameter">IT</span></span><span id="LST55C22AC3_77" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a4486f1a-2767-9398-205f-2bb9711f140b.htm">ToApiObject</a>
+                  </td>
+                  <td>
+            Converts this JsonCompatible object to an equivalent API object. 
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="641befc2-3759-f3af-3d87-ac93a7c10ccc.htm">ToJson</a>
+                  </td>
+                  <td>
+            Serialize the object to a json string.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2f6add05-4f9a-49d4-a659-3a782343a3b1.htm">Validate</a>
+                  </td>
+                  <td>
+            Performs validation checks on the object and sub-objects and returns
+            any findings.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.VAF.Configuration.JsonAdaptor Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

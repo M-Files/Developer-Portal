@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="cb74f91b-35d8-3463-99aa-4cb9d83d6f20.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Dashboards</a>
+    </li>
+    <li>
+      <a href="e32b76ce-b062-fb08-df2e-68290c1ee2d5.htm">Dashboard<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="00af2c8e-e741-596e-e1b2-863bcb8e4274.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="1426f9ac-fabd-2790-c582-de53d551b9eb" href="1426f9ac-fabd-2790-c582-de53d551b9eb.htm">Add<wbr />Class</a>
+    </li>
+    <li>
+      <a id="3bed15c1-7175-d753-b109-7ab0e09673aa" href="3bed15c1-7175-d753-b109-7ab0e09673aa.htm">Add<wbr />Refresh<wbr />Content<wbr />Behavior</a>
+    </li>
+    <li>
+      <a id="94892334-b65a-3b19-9dea-5f1b4aa76bc8" href="94892334-b65a-3b19-9dea-5f1b4aa76bc8.htm">Add<wbr />Run<wbr />Domain<wbr />Command<wbr />Behavior</a>
+    </li>
+    <li>
+      <a id="9255f695-5ef2-195f-64bc-19884f0ab398" class="has-submenu" href="9255f695-5ef2-195f-64bc-19884f0ab398.htm">
+        <span data-tocFile="../toc/IDDAIMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Add<wbr />Select<wbr />Node<wbr />Behavior</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="cf115b8e-c9c4-2f40-e483-0dde7c4afb06" href="cf115b8e-c9c4-2f40-e483-0dde7c4afb06.htm">Add<wbr />Style</a>
+    </li>
+    <li>
+      <a id="4c13378b-ed5e-ecf5-4806-d501d287e843" class="has-submenu" href="4c13378b-ed5e-ecf5-4806-d501d287e843.htm">
+        <span data-tocFile="../toc/IDFAIMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Create<wbr />Domain<wbr />Command</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bacbcf80-1faf-7ab3-0638-524bb2d454b3" href="bacbcf80-1faf-7ab3-0638-524bb2d454b3.htm">Create<wbr />Domain<wbr />Status<wbr />Dashboard</a>
+    </li>
+    <li>
+      <a id="33fda300-8f5d-a51f-f2fd-5d362fcf88f6" href="33fda300-8f5d-a51f-f2fd-5d362fcf88f6.htm">Create<wbr />Element</a>
+    </li>
+    <li>
+      <a id="fe155f29-74c0-f962-e382-ad2727c9d557" href="fe155f29-74c0-f962-e382-ad2727c9d557.htm">Create<wbr />Fragment</a>
+    </li>
+    <li>
+      <a id="5f2060b1-d3ab-9489-ca9a-9d8e0c5b0c90" class="has-submenu" href="5f2060b1-d3ab-9489-ca9a-9d8e0c5b0c90.htm">
+        <span data-tocFile="../toc/IDJAIMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Create<wbr />Select<wbr />Configuration<wbr />Node<wbr />Command</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b461cce8-d905-967c-5241-0bec26f6446b" class="has-submenu" href="b461cce8-d905-967c-5241-0bec26f6446b.htm">
+        <span data-tocFile="../toc/IDKAIMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Create<wbr />Select<wbr />Domain<wbr />Node<wbr />Command</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d2fd281a-b730-b0e8-c70b-523523bd2c84" href="d2fd281a-b730-b0e8-c70b-523523bd2c84.htm">Create<wbr />Sub<wbr />Domain<wbr />List<wbr />Item</a>
+    </li>
+    <li>
+      <a id="a4bde86a-08f1-3cd4-6626-58fa8d316a1a" href="a4bde86a-08f1-3cd4-6626-58fa8d316a1a.htm">Format<wbr />Dashboard<wbr />Content<wbr />String</a>
+    </li>
+    <li>
+      <a id="ed24b49e-e8ed-f39e-be8f-2bdcee97de24" href="ed24b49e-e8ed-f39e-be8f-2bdcee97de24.htm">Get<wbr />Configuration<wbr />Path</a>
+    </li>
+    <li>
+      <a id="ec693f1a-15c0-5658-2f20-c54241876912" href="ec693f1a-15c0-5658-2f20-c54241876912.htm">Get<wbr />Status<wbr />Icon<wbr />Class</a>
+    </li>
+    <li>
+      <a id="68da9373-c1ef-7858-55b9-2e2b1e586771" href="68da9373-c1ef-7858-55b9-2e2b1e586771.htm">Image<wbr />File<wbr />To<wbr />Data<wbr />Uri</a>
+    </li>
+    <li>
+      <a id="497e9724-b32e-deac-ec5d-0a33b0dbd58d" href="497e9724-b32e-deac-ec5d-0a33b0dbd58d.htm">To<wbr />Paragraphs</a>
+    </li>
+    <li>
+      <a id="0bebb1cf-538e-cd00-79dc-cc16721a0212" href="0bebb1cf-538e-cd00-79dc-cc16721a0212.htm">To<wbr />Xml<wbr />Fragment</a>
+    </li>
+    <li>
+      <a id="457e558b-d59e-390f-2f01-7d4cdc80b2c1" href="457e558b-d59e-390f-2f01-7d4cdc80b2c1.htm">To<wbr />Xml<wbr />String</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+    <li>
+      <a href="144d87ad-c6b3-472f-3a92-5ede723a867c.htm">Data<wbr />Member<wbr />Info</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="010d482a-411d-c3db-4a76-2ca0f614069a" href="010d482a-411d-c3db-4a76-2ca0f614069a.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="ecb7de14-c6af-2eef-e30b-61afca0bd1d6" class="has-submenu" href="ecb7de14-c6af-2eef-e30b-61afca0bd1d6.htm">
+        <span data-tocFile="../toc/IDBASA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="5efd953b-f97f-5575-739f-5b14eb22aabb" class="has-submenu" href="5efd953b-f97f-5575-739f-5b14eb22aabb.htm">
+        <span data-tocFile="../toc/IDCASA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

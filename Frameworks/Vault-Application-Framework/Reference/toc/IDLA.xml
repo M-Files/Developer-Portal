@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="3407303a-b429-b8e1-4adb-33dbfee1d514.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Client<wbr />Directive</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="d12720d5-bd8b-5e6a-488d-0111de9ec5ac" class="has-submenu" href="d12720d5-bd8b-5e6a-488d-0111de9ec5ac.htm">
+        <span data-tocFile="../toc/IDALA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Add<wbr />Domain</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="71a4700d-deec-387c-ed0f-9ee8afe37f1c" class="has-submenu" href="71a4700d-deec-387c-ed0f-9ee8afe37f1c.htm">
+        <span data-tocFile="../toc/IDBLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Authenticate<wbr />User</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="777db6f4-9600-6fe5-5dfb-064a024e3eb9" href="777db6f4-9600-6fe5-5dfb-064a024e3eb9.htm">Dashboard<wbr />Update<wbr />Mode</a>
+    </li>
+    <li>
+      <a id="06fac651-2fbd-9163-4e62-5d27b860edd5" class="has-submenu" href="06fac651-2fbd-9163-4e62-5d27b860edd5.htm">
+        <span data-tocFile="../toc/IDDLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Load<wbr />Configuration</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="cd9ed5d5-66ef-9898-f52c-35554c38b864" class="has-submenu" href="cd9ed5d5-66ef-9898-f52c-35554c38b864.htm">
+        <span data-tocFile="../toc/IDELA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Prompt<wbr />Download<wbr />File</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="cf73bf91-1e48-d359-d791-27104f20dd66" class="has-submenu" href="cf73bf91-1e48-d359-d791-27104f20dd66.htm">
+        <span data-tocFile="../toc/IDFLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Prompt<wbr />Upload<wbr />File</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f5a365f1-0c97-3f59-7d22-e596d8bfff76" class="has-submenu" href="f5a365f1-0c97-3f59-7d22-e596d8bfff76.htm">
+        <span data-tocFile="../toc/IDGLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Refresh<wbr />Dashboard</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="040ba226-92b9-bade-b9e2-65a98b8090cf" class="has-submenu" href="040ba226-92b9-bade-b9e2-65a98b8090cf.htm">
+        <span data-tocFile="../toc/IDHLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Refresh<wbr />Metadata<wbr />Cache</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="0701f4d9-86cb-f505-a1e3-9e3569faa6cf" class="has-submenu" href="0701f4d9-86cb-f505-a1e3-9e3569faa6cf.htm">
+        <span data-tocFile="../toc/IDILA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Reload<wbr />Domain</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="379f611a-09b7-ee25-8107-0f57a2c248b2" class="has-submenu" href="379f611a-09b7-ee25-8107-0f57a2c248b2.htm">
+        <span data-tocFile="../toc/IDJLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Remove<wbr />Domain</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="6f823096-fc22-00bb-dd08-95ebd51df27e" class="has-submenu" href="6f823096-fc22-00bb-dd08-95ebd51df27e.htm">
+        <span data-tocFile="../toc/IDKLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Revalidate<wbr />Domain</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1510f583-c595-d284-a19a-34cd366acc11" class="has-submenu" href="1510f583-c595-d284-a19a-34cd366acc11.htm">
+        <span data-tocFile="../toc/IDLLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Show<wbr />Message</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4b066206-1fbb-3d9e-5918-db3b5b6f0042" class="has-submenu" href="4b066206-1fbb-3d9e-5918-db3b5b6f0042.htm">
+        <span data-tocFile="../toc/IDMLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Show<wbr />Modal<wbr />Dashboard</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3c8db0e2-aec9-e90d-b3b9-57fe1d6745c9" class="has-submenu" href="3c8db0e2-aec9-e90d-b3b9-57fe1d6745c9.htm">
+        <span data-tocFile="../toc/IDNLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Update<wbr />Commands</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d119981a-34a3-ee08-d39d-ba631e027a4a" class="has-submenu" href="d119981a-34a3-ee08-d39d-ba631e027a4a.htm">
+        <span data-tocFile="../toc/IDOLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Update<wbr />Dashboard<wbr />Content</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="50e18c55-c410-ec24-3e89-634dedcff600" class="has-submenu" href="50e18c55-c410-ec24-3e89-634dedcff600.htm">
+        <span data-tocFile="../toc/IDPLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Update<wbr />Domain</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9834a06e-82c1-a6fb-8fd5-10d2624c3e44" class="has-submenu" href="9834a06e-82c1-a6fb-8fd5-10d2624c3e44.htm">
+        <span data-tocFile="../toc/IDQLA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Update<wbr />Status<wbr />Summary</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

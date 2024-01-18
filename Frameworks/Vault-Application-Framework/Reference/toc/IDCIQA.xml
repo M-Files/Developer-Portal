@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="1b750e8f-026b-4beb-8b13-f46c40701db8.htm">Lookups<wbr />JA</a>
+    </li>
+    <li>
+      <a href="073428a7-8e97-5b2b-c81d-52eff93ef63e.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="03846470-a56b-0bfa-a010-879b3f97b1f3" href="03846470-a56b-0bfa-a010-879b3f97b1f3.htm">Load<wbr />Api<wbr />Object</a>
+    </li>
+    <li>
+      <a id="01cdf168-a75c-441c-c812-cf2447734a34" class="has-submenu" href="01cdf168-a75c-441c-c812-cf2447734a34.htm">
+        <span data-tocFile="../toc/IDBCIQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>To<wbr />Api<wbr />Object</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="74cfcbf8-d539-388b-4af0-3b9efe982aaa" href="74cfcbf8-d539-388b-4af0-3b9efe982aaa.htm">Try<wbr />Adapt</a>
+    </li>
+  </tocItems>
+</toc>

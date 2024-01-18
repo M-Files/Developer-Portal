@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d685572d-372e-40a9-f473-712980cc0948.htm">MFiles.<wbr />VAF.<wbr />Common.<wbr />Application<wbr />Task<wbr />Queue</a>
+    </li>
+    <li>
+      <a href="48286b98-3841-4932-f5c0-79bb304788ee.htm">Application<wbr />Task</a>
+    </li>
+    <li>
+      <a href="69abb8d9-e8fa-4aa0-81b3-13db0380b38e.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="df4100e0-617e-3681-ebd2-26eb72b762e7" href="df4100e0-617e-3681-ebd2-26eb72b762e7.htm">Activation<wbr />Timestamp</a>
+    </li>
+    <li>
+      <a id="53cfa191-bba0-1f8a-ba80-71ef726960ea" href="53cfa191-bba0-1f8a-ba80-71ef726960ea.htm">Data</a>
+    </li>
+    <li>
+      <a id="d7b1af0b-c8e0-f089-7eaf-e195888b78ad" href="d7b1af0b-c8e0-f089-7eaf-e195888b78ad.htm">Id</a>
+    </li>
+    <li>
+      <a id="0a3269be-6b66-97ae-c9e3-c7969e351d16" href="0a3269be-6b66-97ae-c9e3-c7969e351d16.htm">Is<wbr />Broadcast<wbr />Message</a>
+    </li>
+    <li>
+      <a id="8e16722f-1e04-e0dd-7893-0c4dff3ab78e" href="8e16722f-1e04-e0dd-7893-0c4dff3ab78e.htm">Latest<wbr />Activity<wbr />Timestamp</a>
+    </li>
+    <li>
+      <a id="885ddbbc-7981-0b89-72c9-eca6f3940caf" href="885ddbbc-7981-0b89-72c9-eca6f3940caf.htm">Progress</a>
+    </li>
+    <li>
+      <a id="003358ae-f32d-ad8d-5f26-355310b96040" href="003358ae-f32d-ad8d-5f26-355310b96040.htm">Queue<wbr />Id</a>
+    </li>
+    <li>
+      <a id="0d6f57d2-ad78-c0fe-6736-9e5b738a3552" href="0d6f57d2-ad78-c0fe-6736-9e5b738a3552.htm">State</a>
+    </li>
+    <li>
+      <a id="d3a4eaff-668b-d0b0-8411-50eea775cd97" href="d3a4eaff-668b-d0b0-8411-50eea775cd97.htm">Type</a>
+    </li>
+  </tocItems>
+</toc>

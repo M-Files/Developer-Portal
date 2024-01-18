@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="7a19ec7b-db92-a939-45eb-aec2565c4bc8.htm">MFiles.<wbr />VAF.<wbr />Module.<wbr />Configuration<wbr />Upgrader</a>
+    </li>
+    <li>
+      <a href="ec1cc0ed-a190-6b53-503e-502f2cfd9403.htm">IConfiguration<wbr />Upgrader</a>
+    </li>
+    <li>
+      <a href="b5f600ff-59e3-8849-9281-a015d5539ecb.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7286238d-e01b-a1c7-9123-2c958d965dda" href="7286238d-e01b-a1c7-9123-2c958d965dda.htm">Get<wbr />Upgrade<wbr />Actions</a>
+    </li>
+    <li>
+      <a id="5d758dbf-064d-1898-aaa2-25c6511828cf" href="5d758dbf-064d-1898-aaa2-25c6511828cf.htm">Register<wbr />Action</a>
+    </li>
+    <li>
+      <a id="6e7e3693-5b8c-6c5a-a2c7-fac8f9a68453" href="6e7e3693-5b8c-6c5a-a2c7-fac8f9a68453.htm">Upgrade</a>
+    </li>
+  </tocItems>
+</toc>

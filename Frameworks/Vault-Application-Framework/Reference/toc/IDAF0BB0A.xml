@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="e2daa5db-6efb-d77a-37a9-52208147c81e.htm">Command<wbr />Providers</a>
+    </li>
+    <li>
+      <a href="49e89911-b8fe-746f-f97d-bf7d8dd03ef6.htm">Constructors</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="f925d4cc-a0f9-5057-3494-7d36072e5340" href="f925d4cc-a0f9-5057-3494-7d36072e5340.htm">Command<wbr />Providers</a>
+    </li>
+    <li>
+      <a id="b03152de-91e5-2fdb-3da5-9e1d945431a8" href="b03152de-91e5-2fdb-3da5-9e1d945431a8.htm">Command<wbr />Providers(<wbr />IEnumerable&lt;IPlaceholder<wbr />Command<wbr />Provider&gt;)</a>
+    </li>
+    <li>
+      <a id="05113ce6-fbae-1252-dafa-fef574749316" href="05113ce6-fbae-1252-dafa-fef574749316.htm">Command<wbr />Providers(<wbr />IPlaceholder<wbr />Command<wbr />Provider[])</a>
+    </li>
+  </tocItems>
+</toc>

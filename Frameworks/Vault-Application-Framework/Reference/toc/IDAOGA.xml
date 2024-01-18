@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="fd299750-25e7-20f0-edee-e2ec051f1d82.htm">IConfiguration<wbr />Storage</a>
+    </li>
+    <li>
+      <a href="6883e229-0b74-8f2a-7d22-a5c670c0d054.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3dd16042-95ea-80d1-b8b4-664f017e08ce" class="has-submenu" href="3dd16042-95ea-80d1-b8b4-664f017e08ce.htm">
+        <span data-tocFile="../toc/IDAAOGA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Deserialize</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c6f25abe-5be2-d5c1-00cd-4da396ce156e" class="has-submenu" href="c6f25abe-5be2-d5c1-00cd-4da396ce156e.htm">
+        <span data-tocFile="../toc/IDBAOGA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Load</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bb1a67c1-b795-50ba-9d77-055302793e4b" href="bb1a67c1-b795-50ba-9d77-055302793e4b.htm">Populate&lt;T&gt;</a>
+    </li>
+    <li>
+      <a id="863dcbe3-f501-58a3-9348-fcedfbeae6f5" class="has-submenu" href="863dcbe3-f501-58a3-9348-fcedfbeae6f5.htm">
+        <span data-tocFile="../toc/IDDAOGA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Read<wbr />Configuration<wbr />Data</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e8039e7a-180f-e6d4-75d9-409085e56316" href="e8039e7a-180f-e6d4-75d9-409085e56316.htm">Save&lt;T&gt;</a>
+    </li>
+    <li>
+      <a id="32bdc838-5685-4258-d16e-1382ee04648d" href="32bdc838-5685-4258-d16e-1382ee04648d.htm">Save<wbr />Configuration<wbr />Data</a>
+    </li>
+    <li>
+      <a id="4b5ea7ad-0606-1e63-39ae-8b1d870d0d4c" href="4b5ea7ad-0606-1e63-39ae-8b1d870d0d4c.htm">Serialize&lt;T&gt;</a>
+    </li>
+  </tocItems>
+</toc>

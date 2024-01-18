@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d41e9076-94fb-7a2b-ef26-67714f92a887.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain</a>
+    </li>
+    <li>
+      <a href="47ce752f-be16-cbae-6ddf-2d28e4d7c04a.htm">Value<wbr />Or<wbr />Value<wbr />Source<wbr />Json<wbr />Converter</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="967a10b5-70d9-db03-97f1-0e5c663f45b5" href="967a10b5-70d9-db03-97f1-0e5c663f45b5.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="c2253241-ed1e-758b-5494-7cd658b412a3" class="has-submenu" href="c2253241-ed1e-758b-5494-7cd658b412a3.htm">
+        <span data-tocFile="../toc/IDBXIA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="307ece17-8762-287a-1922-7ad1446f6ffe" class="has-submenu" href="307ece17-8762-287a-1922-7ad1446f6ffe.htm">
+        <span data-tocFile="../toc/IDCXIA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

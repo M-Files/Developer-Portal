@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="75a03b3d-c244-f807-1d48-81366332dc56.htm">MFiles.<wbr />VAF.<wbr />Module</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="feaeefed-61d4-014b-8232-56894d24938b" class="has-submenu" href="feaeefed-61d4-014b-8232-56894d24938b.htm">
+        <span data-tocFile="../toc/IDA5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Basic<wbr />Module</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="735a3594-fa1a-1599-decf-40d514c10635" class="has-submenu" href="735a3594-fa1a-1599-decf-40d514c10635.htm">
+        <span data-tocFile="../toc/IDB5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Basic<wbr />Module<wbr />Configuration</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="0fb679ea-f997-1856-24c9-398f61af944d" class="has-submenu" href="0fb679ea-f997-1856-24c9-398f61af944d.htm">
+        <span data-tocFile="../toc/IDC5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IModule</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="26230025-e03c-82be-6646-06738b33a93c" class="has-submenu" href="26230025-e03c-82be-6646-06738b33a93c.htm">
+        <span data-tocFile="../toc/IDD5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IModule<wbr />Configuration</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4ebec61a-fbf1-f1e3-5b3a-eb0dcb35da0c" class="has-submenu" href="4ebec61a-fbf1-f1e3-5b3a-eb0dcb35da0c.htm">
+        <span data-tocFile="../toc/IDE5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IModule<wbr />Loader</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d6825231-bdf0-9481-ee29-7bda0a356229" class="has-submenu" href="d6825231-bdf0-9481-ee29-7bda0a356229.htm">
+        <span data-tocFile="../toc/IDF5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IModule<wbr />Manager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="27c5fc4e-745f-2397-9870-1919399c255e" class="has-submenu" href="27c5fc4e-745f-2397-9870-1919399c255e.htm">
+        <span data-tocFile="../toc/IDG5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Module<wbr />Configuration<wbr />Validator</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

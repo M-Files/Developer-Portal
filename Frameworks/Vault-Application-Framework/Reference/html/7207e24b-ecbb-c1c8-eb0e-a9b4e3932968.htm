@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>ConfigurationDomainNode Methods</title>
+    <meta name="Title" content="Methods" />
+    <meta name="Help.Id" content="Methods.T:MFiles.VAF.Configuration.AdminConfigurations.ConfigurationDomainNode" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration.AdminConfigurations" />
+    <meta name="guid" content="7207e24b-ecbb-c1c8-eb0e-a9b4e3932968" />
+    <meta name="tocFile" content="../toc/IDFHA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Configuration<wbr />Domain<wbr />Node Methods</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDCDASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities</a>
+                  </td>
+                  <td>
+            Describes the capabilities this node has.
+            The capabilities returned correspond to which
+            interface methods are implemented/ok to call.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e04c2a26-4905-81c5-e83c-74d3656acd39.htm">GetCommands</a>
+                  </td>
+                  <td>
+            Provides the commands that can be shown and/or run for this node.
+            Only safe to call if <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities<span id="LST50F19669_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">Commands</a> flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="47957c28-3e60-71ab-d9e7-4c6d2e442b32.htm">GetConfiguration</a>
+                  </td>
+                  <td>
+            Gets the current/stored configuration value for the node.
+            Only safe to call if <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities<span id="LST50F19669_1" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">Configuration</a> flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c4c16d3c-7f4f-7afb-ec87-28e0a1bec930.htm">GetConfigurationSchema</a>
+                  </td>
+                  <td>
+            Gets the schema describing the structure of the configuration.
+            Only safe to call if <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities<span id="LST50F19669_2" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">Schema</a> flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="77a1af0a-69e2-6477-4034-79f4a2b8f918.htm">GetDashboardContent</a>
+                  </td>
+                  <td>
+            Provides the html for a custom dashboard to display for the node.
+            Only safe to call if <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities<span id="LST50F19669_3" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">StatusDashboard</a> flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3bae69bd-6bab-3362-bbc1-bc955d1bf00c.htm">GetDescription</a>
+                  </td>
+                  <td>
+            Provides a description of the domain.
+            Currently displayed in the domain header area, and in some
+            default dashboards.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e01a61d2-f46d-3e13-ff1f-97ff2d24dcea.htm">GetID</a>
+                  </td>
+                  <td>
+            Provides the static id for the node.
+            This value should at least be unique amongst siblings.
+            IDs cannot have spaces, newlines or periods.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7b4ddacc-ce72-a700-daec-6e0ce5121a9d.htm">GetName</a>
+                  </td>
+                  <td>
+            Gets the human readable name for the domain.
+            Can be localized.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3d55541e-b6fc-9b8f-35e6-5cf822c261d1.htm">GetSortPriority</a>
+                  </td>
+                  <td>
+            Controls the order in which the node appears amongst siblings.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4441fcb5-e186-49c0-cd33-891ce9d9c15a.htm">GetStatusSummary</a>
+                  </td>
+                  <td>
+            Provides a status summary for the node.
+            Only safe to call if <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities<span id="LST50F19669_4" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">StatusSummary</a> flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8650bb64-5eb7-6a50-fad6-0d156e55ca6c.htm">GetSubDomainNodes</a>
+                  </td>
+                  <td>
+            Provides a list of sub domain nodes to appear as children of this node.
+            Only safe to call if <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities<span id="LST50F19669_5" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">SubDomains</a> flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fd43f841-8311-08c3-c99a-bf72f57bd82b.htm">SaveConfiguration</a>
+                  </td>
+                  <td>
+            Saves a new configuration value for the node.
+            Only safe to call if <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities<span id="LST50F19669_6" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">Configuration</a> flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="94a0a731-328a-cc29-888f-981e82c2947d.htm">Validate</a>
+                  </td>
+                  <td>
+            Validates the node along with the current, or passed configuration text.
+            Only safe to call if <a href="ef472216-fef3-8d7a-3311-4e242ffe6f10.htm">GetCapabilities<span id="LST50F19669_7" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">Validation</a> flag.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Extension Methods</h2>
+            <div id="IDADASection">
+              <table id="ExtensionList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="966c3f32-9aa2-c511-3e39-ca5ec1347c86.htm">AssertCapable</a>
+                  </td>
+                  <td>
+            Throws an exception if a node does not support a certain capability.
+            <br />(Defined by <a href="7883856d-069c-d193-bba8-c95181a5e208.htm">ConfigurationDomainNodeExtensionMethods</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="42245a2c-b052-a1e5-0811-ca4db9cb8e18.htm">IsCapable</a>
+                  </td>
+                  <td>
+            Determines whether a node supports a certain capability.
+            Capabilities correspond to interface methods that are
+            valid to call on a node.
+            <br />(Defined by <a href="7883856d-069c-d193-bba8-c95181a5e208.htm">ConfigurationDomainNodeExtensionMethods</a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="6a5709ec-97c0-2e4b-5b3c-8f017efbf890.htm">ConfigurationDomainNode Class</a>
+              </div>
+              <div>
+                <a href="c7b49528-2711-1f51-8e0a-57128c6bdc8a.htm">MFiles.VAF.Configuration.AdminConfigurations Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">Extension Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

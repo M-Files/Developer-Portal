@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">Async<wbr />Processing<wbr />Operation&lt;T&gt;</a>
+    </li>
+    <li>
+      <a href="33ce04e1-3b7e-bd5f-e1fb-08077dcb63e1.htm">Events</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="036be18b-0467-c6c6-bfcd-6cbfb549e198" href="036be18b-0467-c6c6-bfcd-6cbfb549e198.htm">Processing<wbr />Completed</a>
+    </li>
+    <li>
+      <a id="7111b2ed-8490-7fdb-e203-b8141d5aa54f" href="7111b2ed-8490-7fdb-e203-b8141d5aa54f.htm">Processing<wbr />Failed</a>
+    </li>
+    <li>
+      <a id="cf77323b-46c0-a22c-983a-07e0d874cdc3" href="cf77323b-46c0-a22c-983a-07e0d874cdc3.htm">Processing<wbr />Started</a>
+    </li>
+  </tocItems>
+</toc>

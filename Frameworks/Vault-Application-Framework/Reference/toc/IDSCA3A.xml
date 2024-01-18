@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c7f378bb-95b1-5476-eb54-f682b91c3b53.htm">MFiles.<wbr />VAF.<wbr />Core</a>
+    </li>
+    <li>
+      <a href="6f3335fe-9b9f-cb7c-d211-b78acfec50cf.htm">Configurable<wbr />Vault<wbr />Application<wbr />Base&lt;TSecure<wbr />Configuration&gt;</a>
+    </li>
+    <li>
+      <a href="0f76be2d-6d49-3866-9f26-a4d91e3cf226.htm">Methods</a>
+    </li>
+    <li>
+      <a href="0f3e23b8-156b-6d0c-048d-4eaee699f4e5.htm">On<wbr />Configuration<wbr />Updated</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="504d8898-3b3e-0f71-a7cd-6c6a61cf57cf" href="504d8898-3b3e-0f71-a7cd-6c6a61cf57cf.htm">On<wbr />Configuration<wbr />Updated(<wbr />TSecure<wbr />Configuration, Boolean)</a>
+    </li>
+    <li>
+      <a id="e9a3592c-107f-20c7-e428-15bb11e6cd94" href="e9a3592c-107f-20c7-e428-15bb11e6cd94.htm">On<wbr />Configuration<wbr />Updated(<wbr />TSecure<wbr />Configuration, Boolean, Boolean)</a>
+    </li>
+  </tocItems>
+</toc>

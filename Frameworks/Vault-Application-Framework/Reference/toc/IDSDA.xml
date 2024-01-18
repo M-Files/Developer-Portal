@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="9b6368e9-dbbc-620d-977d-80e1abbdafe4.htm">Task<wbr />Cancellation<wbr />Broadcast<wbr />Directive</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c7f8d97c-c342-3fbc-1b83-b8aab77d9157" href="c7f8d97c-c342-3fbc-1b83-b8aab77d9157.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="2ed45ec3-1343-ef04-65f2-6923684a1834" class="has-submenu" href="2ed45ec3-1343-ef04-65f2-6923684a1834.htm">
+        <span data-tocFile="../toc/IDBSDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d15193c7-16e2-5b00-2ddd-2b86f6ca24ac" href="d15193c7-16e2-5b00-2ddd-2b86f6ca24ac.htm">Methods</a>
+    </li>
+  </tocItems>
+</toc>

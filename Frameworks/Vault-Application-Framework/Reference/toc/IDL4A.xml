@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="baa11ef2-26f7-26c8-7b15-ecd802663520.htm">MFiles.<wbr />VAF.<wbr />Metadata<wbr />Cache</a>
+    </li>
+    <li>
+      <a href="e1d3d8d7-512b-63d1-cbf7-eb622c1fda1a.htm">Metadata<wbr />Structure<wbr />Cache</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="a53f0372-ac20-c558-d6bf-0a69902695b9" href="a53f0372-ac20-c558-d6bf-0a69902695b9.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="28b5bd6f-cb44-6250-a956-3127a9fe1a79" class="has-submenu" href="28b5bd6f-cb44-6250-a956-3127a9fe1a79.htm">
+        <span data-tocFile="../toc/IDBL4A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c6e1712a-2597-81ed-0daa-f769f7891261" class="has-submenu" href="c6e1712a-2597-81ed-0daa-f769f7891261.htm">
+        <span data-tocFile="../toc/IDCL4A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

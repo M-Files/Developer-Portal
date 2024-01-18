@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="19e75645-b7a2-4757-eb32-76c33f80442b.htm">MFIdentifier</a>
+    </li>
+    <li>
+      <a href="a25771a8-f454-229a-f898-e2c34c502c91.htm">Operators</a>
+    </li>
+    <li>
+      <a href="aa50768d-1405-1f10-0882-948337cb133c.htm">Implicit</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="45ba7301-fc09-64a1-2250-a93527346edc" href="45ba7301-fc09-64a1-2250-a93527346edc.htm">Implicit Conversion (Int<wbr />32 to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="ef8197b3-bea1-8933-fffc-747cf107e9da" href="ef8197b3-bea1-8933-fffc-747cf107e9da.htm">Implicit Conversion (Int<wbr />64 to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="57e2a532-6cd3-f7e3-03bb-0356e974a4f4" href="57e2a532-6cd3-f7e3-03bb-0356e974a4f4.htm">Implicit Conversion (MFBuilt<wbr />In<wbr />Document<wbr />Class to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="ac49c4f0-b389-3d3d-c83b-10bdd5b020d3" href="ac49c4f0-b389-3d3d-c83b-10bdd5b020d3.htm">Implicit Conversion (MFBuilt<wbr />In<wbr />Object<wbr />Class to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="114d25fa-0331-5fb6-97bf-17bdf98a5dc6" href="114d25fa-0331-5fb6-97bf-17bdf98a5dc6.htm">Implicit Conversion (MFBuilt<wbr />In<wbr />Object<wbr />Type to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="2a3cc2a1-b1bf-462e-5ba4-f83f3b801131" href="2a3cc2a1-b1bf-462e-5ba4-f83f3b801131.htm">Implicit Conversion (MFBuilt<wbr />In<wbr />Property<wbr />Def to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="fecb788a-ee01-bc41-ffba-7e19209902e1" href="fecb788a-ee01-bc41-ffba-7e19209902e1.htm">Implicit Conversion (MFBuilt<wbr />In<wbr />User<wbr />Group to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="501aaae3-575c-4225-359a-1786eb3f590e" href="501aaae3-575c-4225-359a-1786eb3f590e.htm">Implicit Conversion (MFBuilt<wbr />In<wbr />Value<wbr />List to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="91709d23-690c-0fee-b186-e61493481f4f" href="91709d23-690c-0fee-b186-e61493481f4f.htm">Implicit Conversion (MFBuilt<wbr />In<wbr />View to MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="a7c46e95-22cb-5cac-9dd0-29c78bcde898" href="a7c46e95-22cb-5cac-9dd0-29c78bcde898.htm">Implicit Conversion (MFIdentifier to Int<wbr />32)</a>
+    </li>
+    <li>
+      <a id="96773b9d-e772-4b6c-571d-a44ad917ee8d" href="96773b9d-e772-4b6c-571d-a44ad917ee8d.htm">Implicit Conversion (String to MFIdentifier)</a>
+    </li>
+  </tocItems>
+</toc>

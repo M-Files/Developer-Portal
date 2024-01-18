@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="422585de-dd0b-dd2b-ca29-c805e273347d.htm">IThread<wbr />Context<wbr />Manager</a>
+    </li>
+    <li>
+      <a href="ea04d5f4-e064-5cba-439e-deab26218cc0.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="2b3ecd24-e94b-0844-c54a-6ebd94d9af46" href="2b3ecd24-e94b-0844-c54a-6ebd94d9af46.htm">Get<wbr />All</a>
+    </li>
+    <li>
+      <a id="e958787a-ecdf-9823-13d0-3c405bb9eed8" class="has-submenu" href="e958787a-ecdf-9823-13d0-3c405bb9eed8.htm">
+        <span data-tocFile="../toc/IDBAPVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Set</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="451cf395-8963-9453-7d57-cd0241b8ba55" href="451cf395-8963-9453-7d57-cd0241b8ba55.htm">Try<wbr />Get</a>
+    </li>
+  </tocItems>
+</toc>

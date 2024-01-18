@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="3b799f11-1a06-f9e0-4a41-b5a3f16361cd.htm">ILog<wbr />Sensitivity<wbr />Filter&lt;TSupported<wbr />Type&gt;</a>
+    </li>
+    <li>
+      <a href="f6f4b17d-a76e-f547-b4b2-9abb9f2ff3f6.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4ea6e50e-4c7f-80c5-320d-b4b652ec0eea" class="has-submenu" href="4ea6e50e-4c7f-80c5-320d-b4b652ec0eea.htm">
+        <span data-tocFile="../toc/IDABNVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Filter<wbr />Value<wbr />For<wbr />Logging</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

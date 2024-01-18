@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>ApplicationDefinition.ApplicationDefinitionData Class</title>
+    <meta name="Title" content="ApplicationDefinition.ApplicationDefinitionData" />
+    <meta name="Help.Id" content="T:MFiles.VAF.Common.ApplicationDefinition.ApplicationDefinitionData" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Common" />
+    <meta name="guid" content="0b3c816a-d3e1-0ccc-649d-20887c3390ff" />
+    <meta name="Description" content="The internal data representation in appdef.xml." />
+    <meta name="tocFile" content="../toc/IDEA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Application<wbr />Definition<span id="LSTA54B6529_0" data-languageSpecificText="cpp=::|nu=."></span>Application<wbr />Definition<wbr />Data Class</h1>
+            <div class="summary">
+            The internal data representation in appdef.xml.
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.VAF.Common</a><br /><strong>Assembly:</strong> MFiles.VAF (in MFiles.VAF.dll) Version: 24.1.706.1<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ApplicationDefinitionData</span> : <span class="identifier">IXmlSerializable</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">ApplicationDefinition<span id="LSTA54B6529_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ApplicationDefinitionData</span></dd></dl><dl class="implementsList"><dt>Implements</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.xml.serialization.ixmlserializable" target="_blank" rel="noopener noreferrer">IXmlSerializable</a></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDAFASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="471a7927-a2d0-2482-5d8e-80704607b86a.htm">ApplicationDefinition<span id="LSTA54B6529_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ApplicationDefinitionData</a>
+                  </td>
+                  <td>
+            Default constructor needed by the serialization.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDEFASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="fdd479a0-c993-8d3a-0697-533643b03227.htm">Copyright</a>
+                  </td>
+                  <td>
+            The application's copyright text.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a4d45c95-3d34-8cfa-edf2-55dfec4e2393.htm">Description</a>
+                  </td>
+                  <td>
+            The application's description.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="571871f6-9b1b-1085-35eb-e387855dffc4.htm">EventHandlerExtensionObjectName</a>
+                  </td>
+                  <td>
+            The name of the application's extension object that is responsible of the event handling and dispatching.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ee63979e-4a2b-cf97-5afd-befdde37b545.htm">Guid</a>
+                  </td>
+                  <td>
+            The application's GUID. Mandatory.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="65890f21-5c26-075d-fb22-3bfa1e506bd4.htm">MasterApplicationGuid</a>
+                  </td>
+                  <td>
+            The master application's GUID.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8c7ce1c3-449f-0be1-4655-8bd5e2c3774f.htm">MultiServerCompatible</a>
+                  </td>
+                  <td>
+            The multi-server mode compatibility flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="92e7118b-e2cc-4882-e507-2da01a8b1a38.htm">Name</a>
+                  </td>
+                  <td>
+            The application's name. Mandatory.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8fd7cca1-4a5b-96ee-9632-02d21a19ba69.htm">Publisher</a>
+                  </td>
+                  <td>
+            The application's publisher information.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c310be9a-4204-36e7-2aa7-77f5cc5a4c28.htm">RequiredMFilesVersion</a>
+                  </td>
+                  <td>
+            The required M-Files version.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="41052017-4b95-4d10-f54b-aa97438b26fc.htm">Version</a>
+                  </td>
+                  <td>
+            The application's version. Mandatory.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDBFASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="4cd629e1-0d5e-07a8-455c-98567ef0303c.htm">GetSchema</a>
+                  </td>
+                  <td>
+            Method for returning the schema. Documentation says that this needs to return null.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2e3c5239-9275-c80c-c570-9323a92e85bd.htm">ReadXml</a>
+                  </td>
+                  <td>
+            ReadXML deserializes the class using the given XmlReader.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="debe6c0d-a90e-6d27-941f-8e78b6257c69.htm">WriteXml</a>
+                  </td>
+                  <td>
+            Method for serializing the class. Not implemented.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.VAF.Common Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

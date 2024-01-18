@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="d253904e-6a40-559f-10ae-1dff7dbc30d9.htm">Task<wbr />Processor<wbr />Job</a>
+    </li>
+    <li>
+      <a href="095e64dc-e5b2-64f2-fd1b-a760d9752009.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="8a45c79a-f48e-d89c-aaf2-f46e3b028c65" href="8a45c79a-f48e-d89c-aaf2-f46e3b028c65.htm">App<wbr />Task<wbr />Activation<wbr />Timestamp</a>
+    </li>
+    <li>
+      <a id="89495331-d14f-bbcd-1297-d647ec1165f9" href="89495331-d14f-bbcd-1297-d647ec1165f9.htm">App<wbr />Task<wbr />Data</a>
+    </li>
+    <li>
+      <a id="1b78f06e-82f1-f6fa-e6e0-ec967652c087" href="1b78f06e-82f1-f6fa-e6e0-ec967652c087.htm">App<wbr />Task<wbr />Id</a>
+    </li>
+    <li>
+      <a id="c2852015-5d2e-02f5-d44e-4b0c682ba3e2" href="c2852015-5d2e-02f5-d44e-4b0c682ba3e2.htm">App<wbr />Task<wbr />Is<wbr />Broadcast<wbr />Message</a>
+    </li>
+    <li>
+      <a id="ad1fca0a-6e17-29a4-9f46-aa036ab6f3a7" href="ad1fca0a-6e17-29a4-9f46-aa036ab6f3a7.htm">App<wbr />Task<wbr />Is<wbr />Null</a>
+    </li>
+    <li>
+      <a id="0a1f95a8-8a89-01fc-b539-a7f1c7ebe065" href="0a1f95a8-8a89-01fc-b539-a7f1c7ebe065.htm">App<wbr />Task<wbr />Latest<wbr />Activity<wbr />Timestamp</a>
+    </li>
+    <li>
+      <a id="86a3ac7e-839d-9713-cc25-46b4023a0a38" href="86a3ac7e-839d-9713-cc25-46b4023a0a38.htm">App<wbr />Task<wbr />Queue<wbr />Id</a>
+    </li>
+    <li>
+      <a id="a5fd4002-1e61-4e87-cd1f-b44aa35319d8" href="a5fd4002-1e61-4e87-cd1f-b44aa35319d8.htm">App<wbr />Task<wbr />State</a>
+    </li>
+    <li>
+      <a id="5d7032de-54f0-eb74-4466-5f7e1e4f77d1" href="5d7032de-54f0-eb74-4466-5f7e1e4f77d1.htm">App<wbr />Task<wbr />Type</a>
+    </li>
+    <li>
+      <a id="04a0989f-8fdf-c702-4d62-4d5a82b2c4fb" href="04a0989f-8fdf-c702-4d62-4d5a82b2c4fb.htm">Queue<wbr />Def</a>
+    </li>
+    <li>
+      <a id="cc7c1c42-cfc7-ff9f-41e0-05a27f6ed2e5" href="cc7c1c42-cfc7-ff9f-41e0-05a27f6ed2e5.htm">Task<wbr />Handler</a>
+    </li>
+    <li>
+      <a id="ab29c410-6c47-aa66-49b4-536ecbd8cc9e" href="ab29c410-6c47-aa66-49b4-536ecbd8cc9e.htm">Vault</a>
+    </li>
+  </tocItems>
+</toc>

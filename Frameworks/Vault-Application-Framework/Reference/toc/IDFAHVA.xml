@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="c93409f6-9d1b-caf4-4b17-f423b8d4e572.htm">ILogger<wbr />Extension<wbr />Methods</a>
+    </li>
+    <li>
+      <a href="f7b3e6b7-37df-6614-bce0-90ccd31e4f9d.htm">Methods</a>
+    </li>
+    <li>
+      <a href="16282ebf-ba5c-216b-22fb-0a821f7fcd1a.htm">Log<wbr />Format</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4e06a716-a6de-0660-68f7-fe388674fc38" href="4e06a716-a6de-0660-68f7-fe388674fc38.htm">Log<wbr />Format(<wbr />ILogger, Log<wbr />Level, String, Object, Object[])</a>
+    </li>
+    <li>
+      <a id="fc13bc1a-6fe7-40fd-8007-fd042d60ec99" href="fc13bc1a-6fe7-40fd-8007-fd042d60ec99.htm">Log<wbr />Format(<wbr />ILogger, Exception, Log<wbr />Level, String, Object, Object[])</a>
+    </li>
+  </tocItems>
+</toc>

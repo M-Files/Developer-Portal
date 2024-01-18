@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="eef14b0d-8a7b-5346-a105-ed530ef4cb09.htm">Integer<wbr />Context</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="f92a92c7-09a3-b6d7-6c5d-ab9c409a9bc3" class="has-submenu" href="f92a92c7-09a3-b6d7-6c5d-ab9c409a9bc3.htm">
+        <span data-tocFile="../toc/IDAW0BB0A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="37554985-4e7e-0d64-db8b-152f2d88be7b" class="has-submenu" href="37554985-4e7e-0d64-db8b-152f2d88be7b.htm">
+        <span data-tocFile="../toc/IDBW0BB0A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="fa7265be-cf2d-1d86-91cc-5da3182656c1" class="has-submenu" href="fa7265be-cf2d-1d86-91cc-5da3182656c1.htm">
+        <span data-tocFile="../toc/IDCW0BB0A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="34e8b76c-8a9d-87b7-b30d-71c39962cc32" class="has-submenu" href="34e8b76c-8a9d-87b7-b30d-71c39962cc32.htm">
+        <span data-tocFile="../toc/IDDW0BB0A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Operators</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

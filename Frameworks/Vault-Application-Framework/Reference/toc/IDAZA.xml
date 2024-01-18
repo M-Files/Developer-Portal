@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="40813806-5464-e212-77c3-73b127d3c164.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Resource<wbr />Editor</a>
+    </li>
+    <li>
+      <a href="d4620d6b-0e74-6154-7cbd-435669ba1ba4.htm">IResource<wbr />Handler</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="f89eb3f9-3ddd-339a-5219-76dc5023f768" class="has-submenu" href="f89eb3f9-3ddd-339a-5219-76dc5023f768.htm">
+        <span data-tocFile="../toc/IDAAZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="5c9e2531-c84f-5a48-e8e0-72b6a69dcfe8" class="has-submenu" href="5c9e2531-c84f-5a48-e8e0-72b6a69dcfe8.htm">
+        <span data-tocFile="../toc/IDBAZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

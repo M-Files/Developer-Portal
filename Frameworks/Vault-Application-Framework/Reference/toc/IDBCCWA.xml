@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="6cd7a669-d464-de8d-d6f5-9c56ea2c5728.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging.<wbr />Sensitivity<wbr />Filters</a>
+    </li>
+    <li>
+      <a href="721a8c1e-c36f-2133-3920-87b89b26f492.htm">Log<wbr />Sensitivity<wbr />Filter<wbr />Base&lt;TSupported<wbr />Type&gt;</a>
+    </li>
+    <li>
+      <a href="5f9efd7c-22cd-1fd6-f674-c4d37a3f64e2.htm">Methods</a>
+    </li>
+    <li>
+      <a href="c2c93009-9d03-916a-56c9-0af9cd195d29.htm">Filter<wbr />Value<wbr />For<wbr />Logging</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0bfb0ae3-fa97-9554-54d2-4a5e81e208a1" href="0bfb0ae3-fa97-9554-54d2-4a5e81e208a1.htm">Filter<wbr />Value<wbr />For<wbr />Logging(<wbr />TSupported<wbr />Type, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, String)</a>
+    </li>
+    <li>
+      <a id="8de2c3d4-03ab-684a-4d57-976fdb9f2e22" href="8de2c3d4-03ab-684a-4d57-976fdb9f2e22.htm">Filter<wbr />Value<wbr />For<wbr />Logging(<wbr />Object, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, String)</a>
+    </li>
+    <li>
+      <a id="620d8eaf-677b-36b8-a8d0-8a72cebfb8c5" href="620d8eaf-677b-36b8-a8d0-8a72cebfb8c5.htm">Filter<wbr />Value<wbr />For<wbr />Logging(<wbr />TSupported<wbr />Type, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, String, IFormat<wbr />Provider)</a>
+    </li>
+    <li>
+      <a id="500e3575-defe-a36e-0d29-21535c773481" href="500e3575-defe-a36e-0d29-21535c773481.htm">Filter<wbr />Value<wbr />For<wbr />Logging(<wbr />Object, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, String, IFormat<wbr />Provider)</a>
+    </li>
+  </tocItems>
+</toc>

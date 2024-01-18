@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="4be9bcb2-13b2-4e61-9dc3-74e1eb0babb0.htm">Security<wbr />Settings&lt;TConfig&gt;</a>
+    </li>
+    <li>
+      <a href="456ffdfc-3d2e-a3f3-5113-fe01466ca21e.htm">Methods</a>
+    </li>
+    <li>
+      <a href="ee65b900-1364-18ea-bdab-80f216beba8c.htm">Strip<wbr />Passwords</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="aa987227-3db4-12dd-3fa4-ba233d2242e7" href="aa987227-3db4-12dd-3fa4-ba233d2242e7.htm">Strip<wbr />Passwords(<wbr />IConfiguration<wbr />Request<wbr />Context, JObject)</a>
+    </li>
+    <li>
+      <a id="54b87131-f599-204a-2acd-243ac0494a67" href="54b87131-f599-204a-2acd-243ac0494a67.htm">Strip<wbr />Passwords(<wbr />Security<wbr />Attribute.<wbr />User<wbr />Level, JObject)</a>
+    </li>
+  </tocItems>
+</toc>

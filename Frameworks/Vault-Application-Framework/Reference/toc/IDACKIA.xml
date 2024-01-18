@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d41e9076-94fb-7a2b-ef26-67714f92a887.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain</a>
+    </li>
+    <li>
+      <a href="6e23c603-8d36-9531-b53e-fba453481b59.htm">Configuration<wbr />Domain<wbr />Or<wbr />Source</a>
+    </li>
+    <li>
+      <a href="33f11988-5d93-65ec-4d77-d93ebc1f2705.htm">Operators</a>
+    </li>
+    <li>
+      <a href="441290ca-2ccc-f608-8a09-a0cf593abafc.htm">Implicit</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="a4014e3c-e16f-4f7f-5f19-8405c3990945" href="a4014e3c-e16f-4f7f-5f19-8405c3990945.htm">Implicit Conversion (Configuration<wbr />Domain to Configuration<wbr />Domain<wbr />Or<wbr />Source)</a>
+    </li>
+    <li>
+      <a id="63063d60-2b78-92d1-6d59-b1bbaaa4b0b9" href="63063d60-2b78-92d1-6d59-b1bbaaa4b0b9.htm">Implicit Conversion (Source to Configuration<wbr />Domain<wbr />Or<wbr />Source)</a>
+    </li>
+    <li>
+      <a id="17bb17cf-5d14-b911-5c8a-0c81aa105d1d" href="17bb17cf-5d14-b911-5c8a-0c81aa105d1d.htm">Implicit Conversion (Source<wbr />Definition to Configuration<wbr />Domain<wbr />Or<wbr />Source)</a>
+    </li>
+  </tocItems>
+</toc>

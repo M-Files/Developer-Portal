@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="6cd7a669-d464-de8d-d6f5-9c56ea2c5728.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging.<wbr />Sensitivity<wbr />Filters</a>
+    </li>
+    <li>
+      <a href="b3168161-fb7b-8234-acb9-84b969a2132e.htm">Object<wbr />Version<wbr />Log<wbr />Sensitivity<wbr />Filter</a>
+    </li>
+    <li>
+      <a href="3f67952f-98d1-7d32-7ba5-0e905e083bb9.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0533265c-98f0-4f52-1d8d-936922a78bfa" class="has-submenu" href="0533265c-98f0-4f52-1d8d-936922a78bfa.htm">
+        <span data-tocFile="../toc/IDACKWA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Filter<wbr />Value<wbr />For<wbr />Logging</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c4b4fe7f-c990-cc6a-2baa-fe9a5c51db37" href="c4b4fe7f-c990-cc6a-2baa-fe9a5c51db37.htm">Get<wbr />Obj<wbr />Ver<wbr />Filter</a>
+    </li>
+    <li>
+      <a id="3245c6aa-23e2-25a9-bab5-bd32060def02" href="3245c6aa-23e2-25a9-bab5-bd32060def02.htm">Get<wbr />Supported<wbr />Custom<wbr />Flags</a>
+    </li>
+  </tocItems>
+</toc>

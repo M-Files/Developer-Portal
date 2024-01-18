@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+    <li>
+      <a href="56611772-bf95-154f-0b03-e118a3aa975d.htm">Json<wbr />Mapping<wbr />Attribute</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="52b5ad5c-c723-50d2-966e-d9729c39b50b" href="52b5ad5c-c723-50d2-966e-d9729c39b50b.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="0cfb70a8-ab3d-3f2c-da6a-3c4725e0ad54" class="has-submenu" href="0cfb70a8-ab3d-3f2c-da6a-3c4725e0ad54.htm">
+        <span data-tocFile="../toc/IDBMSA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="efd4be8a-36cb-84ee-4e84-404bb3c8cc54.htm">Task<wbr />Processor<wbr />Job<wbr />Extension<wbr />Methods</a>
+    </li>
+    <li>
+      <a href="5d25a661-631e-0d1c-ad0f-6ec36ef74068.htm">Methods</a>
+    </li>
+    <li>
+      <a href="c8211081-8a4f-f7e5-6efe-d5d10de39f91.htm">Commit<wbr />Cancellation</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="b15340fe-3147-5c0a-6713-cb55951e00b8" href="b15340fe-3147-5c0a-6713-cb55951e00b8.htm">Commit<wbr />Cancellation&lt;TDirective&gt;(<wbr />ITask<wbr />Processing<wbr />Job&lt;TDirective&gt;, Action&lt;Vault&gt;)</a>
+    </li>
+    <li>
+      <a id="d0350731-7330-a335-7679-6e221b8a863b" href="d0350731-7330-a335-7679-6e221b8a863b.htm">Commit<wbr />Cancellation&lt;TDirective&gt;(<wbr />ITask<wbr />Processing<wbr />Job&lt;TDirective&gt;, Exception, Action&lt;Vault&gt;)</a>
+    </li>
+  </tocItems>
+</toc>

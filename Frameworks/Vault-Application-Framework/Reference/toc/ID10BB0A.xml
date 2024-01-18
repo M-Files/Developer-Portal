@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="ec5d23da-ef38-3a86-da98-db624ec46d0f.htm">IProperty<wbr />Value<wbr />Command<wbr />Handler</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="baf2b0cf-2398-0c0e-06d5-e77ebe2a81e7" class="has-submenu" href="baf2b0cf-2398-0c0e-06d5-e77ebe2a81e7.htm">
+        <span data-tocFile="../toc/IDA10BB0A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="95326b50-b1c8-01a7-8d72-839205aff082" href="95326b50-b1c8-01a7-8d72-839205aff082.htm">Methods</a>
+    </li>
+  </tocItems>
+</toc>

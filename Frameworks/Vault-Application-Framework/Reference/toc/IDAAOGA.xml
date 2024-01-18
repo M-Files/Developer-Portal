@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="fd299750-25e7-20f0-edee-e2ec051f1d82.htm">IConfiguration<wbr />Storage</a>
+    </li>
+    <li>
+      <a href="6883e229-0b74-8f2a-7d22-a5c670c0d054.htm">Methods</a>
+    </li>
+    <li>
+      <a href="3dd16042-95ea-80d1-b8b4-664f017e08ce.htm">Deserialize</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="f7711a19-766e-168c-5118-653114190502" href="f7711a19-766e-168c-5118-653114190502.htm">Deserialize&lt;T&gt;(<wbr />String)</a>
+    </li>
+    <li>
+      <a id="9681e26f-3d96-99d1-d6a6-1bb758f1ab19" href="9681e26f-3d96-99d1-d6a6-1bb758f1ab19.htm">Deserialize&lt;T&gt;(<wbr />String, T)</a>
+    </li>
+    <li>
+      <a id="6821252d-d545-1f8e-c73c-f828d11a9691" href="6821252d-d545-1f8e-c73c-f828d11a9691.htm">Deserialize(<wbr />Type, String)</a>
+    </li>
+  </tocItems>
+</toc>

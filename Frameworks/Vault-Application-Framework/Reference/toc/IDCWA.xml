@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="6cd7a669-d464-de8d-d6f5-9c56ea2c5728.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging.<wbr />Sensitivity<wbr />Filters</a>
+    </li>
+    <li>
+      <a href="721a8c1e-c36f-2133-3920-87b89b26f492.htm">Log<wbr />Sensitivity<wbr />Filter<wbr />Base&lt;TSupported<wbr />Type&gt;</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c4790f3c-9940-83d5-5f6d-36fb01a5fa1c" href="c4790f3c-9940-83d5-5f6d-36fb01a5fa1c.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="5f3351b0-9676-b37f-ea61-7196ab17f264" href="5f3351b0-9676-b37f-ea61-7196ab17f264.htm">Properties</a>
+    </li>
+    <li>
+      <a id="5f9efd7c-22cd-1fd6-f674-c4d37a3f64e2" class="has-submenu" href="5f9efd7c-22cd-1fd6-f674-c4d37a3f64e2.htm">
+        <span data-tocFile="../toc/IDCCWA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

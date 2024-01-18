@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="0ec4fc68-8488-de10-2d80-484532f45844.htm">Auto<wbr />Temp<wbr />File</a>
+    </li>
+    <li>
+      <a href="60e164fe-39bd-558f-ca71-0f3b8f5bbaad.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="10e31557-6e5c-d20e-3277-e28df4920c8f" href="10e31557-6e5c-d20e-3277-e28df4920c8f.htm">Attach</a>
+    </li>
+    <li>
+      <a id="0e4615b7-035b-8f9d-7b1a-2df7ff2b3d85" href="0e4615b7-035b-8f9d-7b1a-2df7ff2b3d85.htm">Create</a>
+    </li>
+    <li>
+      <a id="90447007-be9d-5270-fc4e-73c61e4ff8d2" href="90447007-be9d-5270-fc4e-73c61e4ff8d2.htm">Detach</a>
+    </li>
+    <li>
+      <a id="ad6acb5f-614f-c95d-c02a-00ba6af55635" class="has-submenu" href="ad6acb5f-614f-c95d-c02a-00ba6af55635.htm">
+        <span data-tocFile="../toc/IDDBGEA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dispose</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="fbf9e8ed-8d4d-f6f4-15d0-cd059efff004" href="fbf9e8ed-8d4d-f6f4-15d0-cd059efff004.htm">Finalize</a>
+    </li>
+  </tocItems>
+</toc>

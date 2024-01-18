@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c7f378bb-95b1-5476-eb54-f682b91c3b53.htm">MFiles.<wbr />VAF.<wbr />Core</a>
+    </li>
+    <li>
+      <a href="335d8716-7ada-6f85-f910-d0a6dad4066e.htm">Legacy<wbr />Configurable<wbr />Vault<wbr />Application<wbr />Base&lt;TSecure<wbr />Configuration&gt;</a>
+    </li>
+    <li>
+      <a href="310ccf58-febd-fd91-e5d0-57582f9e2429.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="526c6faa-ccd7-5118-23fc-c229c85634e7" href="526c6faa-ccd7-5118-23fc-c229c85634e7.htm">Broadcast<wbr />Vault<wbr />Extension<wbr />Method<wbr />Call</a>
+    </li>
+    <li>
+      <a id="829dd24b-28ae-0d5d-9be4-bd70e9ac8292" href="829dd24b-28ae-0d5d-9be4-bd70e9ac8292.htm">Can<wbr />Rebroadcast<wbr />Vault<wbr />Extention<wbr />Method<wbr />Calls</a>
+    </li>
+    <li>
+      <a id="51fd84df-3222-b553-a087-94b08bc20b95" href="51fd84df-3222-b553-a087-94b08bc20b95.htm">Get<wbr />Rebroadcast<wbr />Queue<wbr />Id</a>
+    </li>
+    <li>
+      <a id="a11c7c3d-c260-ebb7-25c0-0bafaa301876" href="a11c7c3d-c260-ebb7-25c0-0bafaa301876.htm">Initialize<wbr />Task<wbr />Manager</a>
+    </li>
+    <li>
+      <a id="90f07f0f-ec05-20bd-6750-95bbce0ad8b0" href="90f07f0f-ec05-20bd-6750-95bbce0ad8b0.htm">Initialize<wbr />Task<wbr />Queue<wbr />Manager</a>
+    </li>
+    <li>
+      <a id="fe9c9dae-3c8e-834a-08d3-ce0df9369b24" class="has-submenu" href="fe9c9dae-3c8e-834a-08d3-ce0df9369b24.htm">
+        <span data-tocFile="../toc/IDFCI3A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>On<wbr />Configuration<wbr />Updated</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b051ae8f-d437-c908-8e25-7eef8dd9bcaf" href="b051ae8f-d437-c908-8e25-7eef8dd9bcaf.htm">Save<wbr />Configuration</a>
+    </li>
+  </tocItems>
+</toc>

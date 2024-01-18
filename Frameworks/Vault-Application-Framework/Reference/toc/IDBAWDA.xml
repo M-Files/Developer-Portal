@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="58860159-a1e5-a84d-eb1b-bb27c435a5f6.htm">Task<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="f1522ab0-9906-90d2-e694-d03e136f45fe.htm">Methods</a>
+    </li>
+    <li>
+      <a href="7a17daa0-ec97-c781-ba32-4c9199083eba.htm">Get<wbr />Task<wbr />IDs</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="9d293b53-5472-026d-c494-841bc043a2e0" href="9d293b53-5472-026d-c494-841bc043a2e0.htm">Get<wbr />Task<wbr />IDs(<wbr />Vault, String)</a>
+    </li>
+    <li>
+      <a id="87c02cc2-4401-3769-0c52-23a90a3122ab" href="87c02cc2-4401-3769-0c52-23a90a3122ab.htm">Get<wbr />Task<wbr />IDs(<wbr />Vault, String, MFTask<wbr />State[])</a>
+    </li>
+  </tocItems>
+</toc>

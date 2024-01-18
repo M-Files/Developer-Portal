@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="7e94f25d-4a60-a01d-707d-9720b1ae3b09.htm">Full<wbr />Text<wbr />Search<wbr />Flags<wbr />JA</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="11df7f97-bdd5-567a-ae0b-0be79aa1aedc" class="has-submenu" href="11df7f97-bdd5-567a-ae0b-0be79aa1aedc.htm">
+        <span data-tocFile="../toc/IDABQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bbfbf5ed-f383-8dd5-8af5-427bd9144dc4" class="has-submenu" href="bbfbf5ed-f383-8dd5-8af5-427bd9144dc4.htm">
+        <span data-tocFile="../toc/IDBBQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="8f560adf-4ad6-a459-6965-026dedfdbaee" class="has-submenu" href="8f560adf-4ad6-a459-6965-026dedfdbaee.htm">
+        <span data-tocFile="../toc/IDCBQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b0d1302c-ed06-ee6e-54a1-f42c21310521" class="has-submenu" href="b0d1302c-ed06-ee6e-54a1-f42c21310521.htm">
+        <span data-tocFile="../toc/IDDBQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Operators</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

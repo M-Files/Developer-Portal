@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d685572d-372e-40a9-f473-712980cc0948.htm">MFiles.<wbr />VAF.<wbr />Common.<wbr />Application<wbr />Task<wbr />Queue</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="48286b98-3841-4932-f5c0-79bb304788ee" class="has-submenu" href="48286b98-3841-4932-f5c0-79bb304788ee.htm">
+        <span data-tocFile="../toc/IDAFA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Application<wbr />Task</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="2d9cfdc7-430a-d777-aad3-0d642eda274d" class="has-submenu" href="2d9cfdc7-430a-d777-aad3-0d642eda274d.htm">
+        <span data-tocFile="../toc/IDBFA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Application<wbr />Task<wbr />Extensions</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="fc40c343-0b25-2491-c28a-5344e0d28525" class="has-submenu" href="fc40c343-0b25-2491-c28a-5344e0d28525.htm">
+        <span data-tocFile="../toc/IDCFA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IApplication<wbr />Task<wbr />Processor</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1fc4bb39-0c1d-7d5d-a506-23d8b2c80eca" class="has-submenu" href="1fc4bb39-0c1d-7d5d-a506-23d8b2c80eca.htm">
+        <span data-tocFile="../toc/IDDFA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IUses<wbr />Task<wbr />Queue</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="0b6a2ec8-1852-526e-9c42-516760ac1e56" class="has-submenu" href="0b6a2ec8-1852-526e-9c42-516760ac1e56.htm">
+        <span data-tocFile="../toc/IDEFA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Queue<wbr />Administrator</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e26bbeeb-60e1-3432-9d84-65a0f3ab5a3e" href="e26bbeeb-60e1-3432-9d84-65a0f3ab5a3e.htm">Task<wbr />Queue<wbr />Administrator.<wbr />Task<wbr />Filter</a>
+    </li>
+    <li>
+      <a id="c7774a2e-e53f-5b75-5aac-56c5e888bd3f" class="has-submenu" href="c7774a2e-e53f-5b75-5aac-56c5e888bd3f.htm">
+        <span data-tocFile="../toc/IDGFA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Queue<wbr />Manager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="04c5bf27-e9f9-1e1d-e153-91f1844c6637" class="has-submenu" href="04c5bf27-e9f9-1e1d-e153-91f1844c6637.htm">
+        <span data-tocFile="../toc/IDHFA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Queue<wbr />Manager.<wbr />Active<wbr />Task</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="991179ed-fe52-a901-4c3b-d6b0addffc2b" class="has-submenu" href="991179ed-fe52-a901-4c3b-d6b0addffc2b.htm">
+        <span data-tocFile="../toc/IDIFA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Queue<wbr />Manager.<wbr />Task<wbr />Queue</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="876450e6-e064-e7c8-dd6a-7187acf135d5" href="876450e6-e064-e7c8-dd6a-7187acf135d5.htm">Task<wbr />Queue<wbr />Manager.<wbr />Task<wbr />Type</a>
+    </li>
+  </tocItems>
+</toc>

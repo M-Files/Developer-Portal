@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+    <li>
+      <a href="98c2d90c-9160-3ca2-c9f3-30e0c63cbdac.htm">Crypto<wbr />RSA</a>
+    </li>
+    <li>
+      <a href="e6544046-a0d2-2176-5689-c69e037ef43d.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="32b9b03f-ce5c-0ce7-d856-f1b1ddec7854" href="32b9b03f-ce5c-0ce7-d856-f1b1ddec7854.htm">Decrypt</a>
+    </li>
+    <li>
+      <a id="0561dae5-5568-135c-975d-e98c2b9fe772" href="0561dae5-5568-135c-975d-e98c2b9fe772.htm">Encrypt</a>
+    </li>
+    <li>
+      <a id="b5828e1e-a011-ee6e-650e-1f6d669e75a1" class="has-submenu" href="b5828e1e-a011-ee6e-650e-1f6d669e75a1.htm">
+        <span data-tocFile="../toc/IDCBBAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Sign</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="cf301bc9-cc0c-2696-496b-e279d7ed344c" href="cf301bc9-cc0c-2696-496b-e279d7ed344c.htm">Sign<wbr />Json</a>
+    </li>
+    <li>
+      <a id="a54f6155-99b1-aff6-fc8f-02b33b8295c6" href="a54f6155-99b1-aff6-fc8f-02b33b8295c6.htm">Test<wbr />Key</a>
+    </li>
+    <li>
+      <a id="df8446fb-8e3d-61f4-23b8-1ecffb5694b6" href="df8446fb-8e3d-61f4-23b8-1ecffb5694b6.htm">Verify<wbr />Json<wbr />Signature</a>
+    </li>
+    <li>
+      <a id="b074094a-3db4-50f7-ea6e-6298642b513b" class="has-submenu" href="b074094a-3db4-50f7-ea6e-6298642b513b.htm">
+        <span data-tocFile="../toc/IDGBBAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Verify<wbr />Signature</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

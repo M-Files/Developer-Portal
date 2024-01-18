@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+    <li>
+      <a href="e7be07de-a1c9-f27f-5259-293286a850d9.htm">Json<wbr />Admin<wbr />Comment<wbr />Preserver</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="994a3a2b-7cd4-cb91-9797-53736c0855f7" href="994a3a2b-7cd4-cb91-9797-53736c0855f7.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="071f0e33-8cd8-d270-1103-b3857d63bc47" class="has-submenu" href="071f0e33-8cd8-d270-1103-b3857d63bc47.htm">
+        <span data-tocFile="../toc/IDBHSA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

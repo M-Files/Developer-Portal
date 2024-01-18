@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="810aa968-82bb-35bc-c8e1-815faa323c4f.htm">Task<wbr />Exception<wbr />Behavior<wbr />Attribute</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="b81b7ebe-bee3-e1e4-3a38-ef92c924ddc7" class="has-submenu" href="b81b7ebe-bee3-e1e4-3a38-ef92c924ddc7.htm">
+        <span data-tocFile="../toc/IDAUDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d588f1e7-dd4e-061d-5e38-a3031591f46c" class="has-submenu" href="d588f1e7-dd4e-061d-5e38-a3031591f46c.htm">
+        <span data-tocFile="../toc/IDBUDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="05c06c37-21ff-102b-fde7-f96ba1df4073" class="has-submenu" href="05c06c37-21ff-102b-fde7-f96ba1df4073.htm">
+        <span data-tocFile="../toc/IDCUDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

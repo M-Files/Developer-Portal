@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="baa11ef2-26f7-26c8-7b15-ecd802663520.htm">MFiles.<wbr />VAF.<wbr />Metadata<wbr />Cache</a>
+    </li>
+    <li>
+      <a href="a9b17d75-8ffd-e2b8-1376-5d85694b925d.htm">Metadata<wbr />Cache<wbr />Vault</a>
+    </li>
+    <li>
+      <a href="0b2416c1-23b4-397b-0f1c-b3d4a36bcde3.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="61c4a514-c059-1047-41a9-448b2336d528" href="61c4a514-c059-1047-41a9-448b2336d528.htm">Change<wbr />Password</a>
+    </li>
+    <li>
+      <a id="7e74c240-0a80-37c4-099e-bc0b66feecfe" href="7e74c240-0a80-37c4-099e-bc0b66feecfe.htm">Clone<wbr />For<wbr />Parallel<wbr />Activity</a>
+    </li>
+    <li>
+      <a id="7a98cfef-e51b-5538-b2dc-f254b91c1afd" href="7a98cfef-e51b-5538-b2dc-f254b91c1afd.htm">Clone<wbr />From</a>
+    </li>
+    <li>
+      <a id="6a0bc785-489b-5cab-5ae0-5d7a93cc0af1" href="6a0bc785-489b-5cab-5ae0-5d7a93cc0af1.htm">Detach<wbr />Session</a>
+    </li>
+    <li>
+      <a id="fcbf80dd-2ce7-45d9-8804-d1ba0d6678a3" href="fcbf80dd-2ce7-45d9-8804-d1ba0d6678a3.htm">Disconnect<wbr />Device</a>
+    </li>
+    <li>
+      <a id="92392d0e-305a-45cb-4b4a-737d3d0876e4" href="92392d0e-305a-45cb-4b4a-737d3d0876e4.htm">Does<wbr />License<wbr />Have<wbr />Feature</a>
+    </li>
+    <li>
+      <a id="89017b24-0f4a-0076-1e40-b30f2cc8b990" href="89017b24-0f4a-0076-1e40-b30f2cc8b990.htm">Get<wbr />All<wbr />Translations</a>
+    </li>
+    <li>
+      <a id="8539446b-4096-236e-4f4a-c82a360e1a0b" href="8539446b-4096-236e-4f4a-c82a360e1a0b.htm">Get<wbr />GUID</a>
+    </li>
+    <li>
+      <a id="833021d0-d007-dd41-75ad-6acb7077d5fa" href="833021d0-d007-dd41-75ad-6acb7077d5fa.htm">Get<wbr />Metadata<wbr />Structure<wbr />Item<wbr />IDBy<wbr />Alias</a>
+    </li>
+    <li>
+      <a id="f59e5075-f17c-5a6c-2f7f-bc2d3999d888" href="f59e5075-f17c-5a6c-2f7f-bc2d3999d888.htm">Get<wbr />Metadata<wbr />Structure<wbr />Item<wbr />IDs<wbr />By<wbr />Aliases</a>
+    </li>
+    <li>
+      <a id="e2a74596-0758-1cb5-b6f6-2f421ae058ec" href="e2a74596-0758-1cb5-b6f6-2f421ae058ec.htm">Get<wbr />Metadata<wbr />Structure<wbr />Version<wbr />ID</a>
+    </li>
+    <li>
+      <a id="afbd2233-4238-8210-16b0-30f604562dec" href="afbd2233-4238-8210-16b0-30f604562dec.htm">Get<wbr />MFiles<wbr />URLFor<wbr />Vault<wbr />Root</a>
+    </li>
+    <li>
+      <a id="e3c16ae2-e935-6cf9-b6ec-2fdd5f376eba" href="e3c16ae2-e935-6cf9-b6ec-2fdd5f376eba.htm">Get<wbr />Server<wbr />License<wbr />Status</a>
+    </li>
+    <li>
+      <a id="0a1ae859-dbbc-c4d5-818f-a19ce996430e" href="0a1ae859-dbbc-c4d5-818f-a19ce996430e.htm">Get<wbr />Server<wbr />Version<wbr />Of<wbr />Vault</a>
+    </li>
+    <li>
+      <a id="b610a9c3-6c0c-a703-916a-baa49b8d6bfa" href="b610a9c3-6c0c-a703-916a-baa49b8d6bfa.htm">Get<wbr />State<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="ed518f49-3216-6317-9f29-d7183f417c0c" href="ed518f49-3216-6317-9f29-d7183f417c0c.htm">Get<wbr />Vault<wbr />Server<wbr />Attachments</a>
+    </li>
+    <li>
+      <a id="9ae649f5-a199-2bb4-ffb4-352986ff25b5" href="9ae649f5-a199-2bb4-ffb4-352986ff25b5.htm">Initialize</a>
+    </li>
+    <li>
+      <a id="4d1779c4-0015-2a87-9f67-b4ccae46186b" href="4d1779c4-0015-2a87-9f67-b4ccae46186b.htm">Log<wbr />Out<wbr />Silent</a>
+    </li>
+    <li>
+      <a id="2cfa7142-ff4a-9554-6bd3-9d7f37d01bda" href="2cfa7142-ff4a-9554-6bd3-9d7f37d01bda.htm">Log<wbr />Out<wbr />With<wbr />Dialogs</a>
+    </li>
+    <li>
+      <a id="08967748-9b31-03c9-b389-f4c5daec6cbf" href="08967748-9b31-03c9-b389-f4c5daec6cbf.htm">Restart</a>
+    </li>
+    <li>
+      <a id="cee49973-37bf-4392-7a02-1594ce197ff4" href="cee49973-37bf-4392-7a02-1594ce197ff4.htm">Test<wbr />Connection<wbr />To<wbr />Server</a>
+    </li>
+    <li>
+      <a id="dd4dd57c-ba7d-3c92-e81e-33c07e2a8746" href="dd4dd57c-ba7d-3c92-e81e-33c07e2a8746.htm">Test<wbr />Connection<wbr />To<wbr />Vault</a>
+    </li>
+    <li>
+      <a id="c2ea90b7-d0ff-d4ca-2f93-d2afaab6238b" href="c2ea90b7-d0ff-d4ca-2f93-d2afaab6238b.htm">Test<wbr />Connection<wbr />To<wbr />Vault<wbr />With<wbr />Timeout</a>
+    </li>
+    <li>
+      <a id="a1ddc984-facd-04dd-c71d-773a39c95004" href="a1ddc984-facd-04dd-c71d-773a39c95004.htm">Wrap</a>
+    </li>
+  </tocItems>
+</toc>

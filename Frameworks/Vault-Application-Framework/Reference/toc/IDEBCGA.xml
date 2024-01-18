@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="c6af8418-76ce-6d81-976d-f081e1e0d0b2.htm">Configuration<wbr />Storage<wbr />In<wbr />Vault</a>
+    </li>
+    <li>
+      <a href="eddb399d-843c-7747-4f15-5c4c75b12b3d.htm">Methods</a>
+    </li>
+    <li>
+      <a href="6fc8c0b7-c34f-489f-e176-8b7ac16ca48f.htm">Read<wbr />Configuration<wbr />Data</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="275a75d2-12bf-43fd-afbf-ee3c4170d1d0" href="275a75d2-12bf-43fd-afbf-ee3c4170d1d0.htm">Read<wbr />Configuration<wbr />Data(<wbr />Vault, String, String)</a>
+    </li>
+    <li>
+      <a id="7954d2fb-738e-ab01-e877-1df5e0e5ef53" href="7954d2fb-738e-ab01-e877-1df5e0e5ef53.htm">Read<wbr />Configuration<wbr />Data(<wbr />Vault, String, String, String)</a>
+    </li>
+  </tocItems>
+</toc>

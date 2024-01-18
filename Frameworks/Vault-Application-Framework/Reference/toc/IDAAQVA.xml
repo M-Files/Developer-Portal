@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="5682877c-3a33-dd24-cc54-fdd697a4fabf.htm">IWrappable<wbr />Logger</a>
+    </li>
+    <li>
+      <a href="638ccb80-458d-2ce1-cdac-cfbaaa3ffbc3.htm">Methods</a>
+    </li>
+    <li>
+      <a href="e9145964-8244-7b85-a426-0dc8b2c5402e.htm">Log</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="2e64b71b-b30a-b4c2-5561-b95233df9d16" href="2e64b71b-b30a-b4c2-5561-b95233df9d16.htm">Log(<wbr />Type, Exception, Log<wbr />Level, Formattable<wbr />String[])</a>
+    </li>
+  </tocItems>
+</toc>

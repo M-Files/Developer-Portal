@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="baa11ef2-26f7-26c8-7b15-ecd802663520.htm">MFiles.<wbr />VAF.<wbr />Metadata<wbr />Cache</a>
+    </li>
+    <li>
+      <a href="09f352b4-265f-d3f2-036a-0efe21baa203.htm">Metadata<wbr />Cache<wbr />Vault<wbr />User<wbr />Group<wbr />Operations</a>
+    </li>
+    <li>
+      <a href="a2247fd1-20fb-7eb7-fe3b-bd660ffbe28c.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3702b06a-07c1-db72-41f7-05bc7cc35cb1" href="3702b06a-07c1-db72-41f7-05bc7cc35cb1.htm">Add<wbr />Or<wbr />Undelete<wbr />User<wbr />Group</a>
+    </li>
+    <li>
+      <a id="a770d1a8-71fe-5b82-a368-47385db2cfb0" href="a770d1a8-71fe-5b82-a368-47385db2cfb0.htm">Add<wbr />User<wbr />Group_<wbr />DEPRECATED</a>
+    </li>
+    <li>
+      <a id="481c6919-d5d2-a465-dcbe-29a44f389e47" href="481c6919-d5d2-a465-dcbe-29a44f389e47.htm">Add<wbr />User<wbr />Group<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="e36b5629-8642-016a-00d0-5a98b8022559" href="e36b5629-8642-016a-00d0-5a98b8022559.htm">Get<wbr />Groups<wbr />Of<wbr />User<wbr />Or<wbr />Group</a>
+    </li>
+    <li>
+      <a id="a9373e0d-946f-a60c-1794-8494a3b3e05c" href="a9373e0d-946f-a60c-1794-8494a3b3e05c.htm">Get<wbr />User<wbr />Containers<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="2b3b95d5-9a11-3b6d-08ec-b74cde6adb1d" href="2b3b95d5-9a11-3b6d-08ec-b74cde6adb1d.htm">Get<wbr />User<wbr />Group</a>
+    </li>
+    <li>
+      <a id="f22a33db-f1bf-6851-10af-150190581193" href="f22a33db-f1bf-6851-10af-150190581193.htm">Get<wbr />User<wbr />Group<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="3927b793-44f4-0dd9-78bf-a1f2f75eebb7" href="3927b793-44f4-0dd9-78bf-a1f2f75eebb7.htm">Get<wbr />User<wbr />Group<wbr />IDBy<wbr />Alias</a>
+    </li>
+    <li>
+      <a id="caa9e864-412e-5d01-9526-9496518d96ed" href="caa9e864-412e-5d01-9526-9496518d96ed.htm">Get<wbr />User<wbr />Group<wbr />IDBy<wbr />GUID</a>
+    </li>
+    <li>
+      <a id="26eeeef6-416d-57e8-fa93-026a741424d5" href="26eeeef6-416d-57e8-fa93-026a741424d5.htm">Get<wbr />User<wbr />Group<wbr />List</a>
+    </li>
+    <li>
+      <a id="783397ab-3f8a-370a-07c2-eaf71d69db1e" href="783397ab-3f8a-370a-07c2-eaf71d69db1e.htm">Get<wbr />User<wbr />Groups</a>
+    </li>
+    <li>
+      <a id="ece046c0-0919-9d3d-cca7-ef89b5a254cc" href="ece046c0-0919-9d3d-cca7-ef89b5a254cc.htm">Get<wbr />User<wbr />Groups<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="b176f64e-8c4e-dd1c-1134-9df4d256e874" href="b176f64e-8c4e-dd1c-1134-9df4d256e874.htm">Initialize</a>
+    </li>
+    <li>
+      <a id="5620ce45-eeb0-dc79-de19-e983ceaa43c7" href="5620ce45-eeb0-dc79-de19-e983ceaa43c7.htm">Remove<wbr />User<wbr />Group<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="7b433af1-e1c3-552a-d470-aafc61766816" href="7b433af1-e1c3-552a-d470-aafc61766816.htm">Update<wbr />User<wbr />Group_<wbr />DEPRECATED</a>
+    </li>
+    <li>
+      <a id="1c331eeb-ddb7-ac9d-929e-a95c1a3403d5" href="1c331eeb-ddb7-ac9d-929e-a95c1a3403d5.htm">Update<wbr />User<wbr />Group<wbr />Admin</a>
+    </li>
+  </tocItems>
+</toc>

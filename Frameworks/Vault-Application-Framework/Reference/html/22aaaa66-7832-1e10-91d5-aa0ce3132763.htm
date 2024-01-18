@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>SequentialTaskProcessor Methods</title>
+    <meta name="Title" content="Methods" />
+    <meta name="Help.Id" content="Methods.T:MFiles.VAF.MultiserverMode.SequentialTaskProcessor" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.MultiserverMode" />
+    <meta name="guid" content="22aaaa66-7832-1e10-91d5-aa0ce3132763" />
+    <meta name="tocFile" content="../toc/ID10AB0A.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Sequential<wbr />Task<wbr />Processor Methods</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDADASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="989ca4e3-b685-ec12-3038-dd52fcb00ca4.htm">AllowNewTaskRequests<span id="LST7692C868_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td>
+            This will denote if new tasks can be accepted by the task processor.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_1" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_2" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5fbfb551-04dd-1aff-fb8d-11039b510bfc.htm">AllowNewTaskRequests(Boolean)</a>
+                  </td>
+                  <td>
+            This will update the allow new task requests getter method <a href="989ca4e3-b685-ec12-3038-dd52fcb00ca4.htm">AllowNewTaskRequests<span id="LST7692C868_3" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>.
+            Note that this may or may not actually change the value, since multiple requests may be required
+            to actually toggle the value since it may be used in multiple threads.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c4bf06c5-9799-06c9-5be7-1f35550f8c30.htm">BroadcastVaultExtensionMethodCall(Int32, Vault, List<span id="LST7692C868_6" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String<span id="LST7692C868_7" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>
+            Re-Broadcast the broadcast message so all servers.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_8" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_9" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ab8ac374-53ec-b1bc-dca1-0f3496c97f36.htm">CanAcceptNewTasks</a>
+                  </td>
+                  <td>
+            Function used to determine if the application task processor can accept any new tasks.
+            <br />(Overrides <a href="ae79ef50-245c-ff5d-665e-01841ac5b539.htm">TaskProcessorBase<span id="LST7692C868_10" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_11" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST7692C868_12" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CanAcceptNewTasks<span id="LST7692C868_13" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7c53259f-951f-ca7b-2ff4-909f05c3f4e8.htm">CanCancelTask</a>
+                  </td>
+                  <td>
+            Determines if the app task can be canceled .
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_14" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_15" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9f52ea61-2433-225e-319a-b337836d313d.htm">Cancel</a>
+                  </td>
+                  <td>
+            Requests cancellation of the operation.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST7692C868_16" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST7692C868_17" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cd6a40e6-2fad-087a-8cd9-195675c41e99.htm">CancelAfter</a>
+                  </td>
+                  <td>
+            Requests cancellation of the operation.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST7692C868_18" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST7692C868_19" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="08081088-a7b3-0dcf-d7a6-94820f6b6437.htm">CanUpdateProgress</a>
+                  </td>
+                  <td>
+            Determines if the app task can have its progress updated.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_20" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_21" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0fcb6963-5a7f-e9b1-5d3e-524a7013e6dc.htm">CreateApplicationTaskSafe</a>
+                  </td>
+                  <td>
+            Helper method used to create a task in the task queue, accounting for the potential that the task
+            queue has been destroyed.
+            - If the task queue is not found, the RegisterTaskQueue() method is called, then the create task
+            is attempted a 2nd time.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_22" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_23" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="eda350ba-8cd3-69de-75c5-0caba459d442.htm">CreateApplicationTaskSafeInTransaction</a>
+                  </td>
+                  <td>
+            Helper method used to create a task in the task queue, accounting for the potential that the task
+            queue has been destroyed.
+            - If the task queue is not found, the RegisterTaskQueue() method is called, then the create task
+            is attempted a 2nd time.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_24" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_25" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8fb719e1-af58-9b5a-52f3-41e2f1e382f8.htm">GetActiveJobReference</a>
+                  </td>
+                  <td>
+            Grants access to the active job reference held by this object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="82ea03df-9d08-324b-87ce-aaba2c4ca75c.htm">GetLatestTaskInfo</a>
+                  </td>
+                  <td>
+            Resolves the latest task info, by id from the server.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_26" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_27" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6a0e603f-ce65-cf85-c91b-5589149d9492.htm">InjectBuiltInHandlers</a>
+                  </td>
+                  <td>
+            Injects built in task handlers.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_28" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_29" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4534d210-dbcf-dc3f-4248-2098025de49f.htm">OnCancellationRequested</a>
+                  </td>
+                  <td>
+            Cancellation requested event invocation.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST7692C868_30" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST7692C868_31" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0ae0d257-072c-9c84-9b4f-76a24e6bc3a5.htm">OnJobCreated</a>
+                  </td>
+                  <td>
+            Job created event invocation.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_32" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_33" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="53b0dc3b-1f07-75f5-2800-d6cfbbb8e350.htm">ProcessTasks</a>
+                  </td>
+                  <td>
+            Task collection processor.
+            <br />(Overrides <a href="1a44e6c8-2f40-cf04-6ca1-2a367aa4c910.htm">TaskProcessorBase<span id="LST7692C868_34" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_35" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST7692C868_36" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ProcessTasks(Vault, IEnumerable<span id="LST7692C868_37" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>ApplicationTask<span id="LST7692C868_38" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, CancellationToken)</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8977dbbb-dfbc-f5a9-aa56-bcdfa7f7c896.htm">RegisterTaskQueues</a>
+                  </td>
+                  <td>
+            Verifies that the task queue is open.
+            - Opens the queue if it is found to be missing.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_39" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_40" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="282e31a7-c1b1-6249-d90e-8eedbf6b1c3d.htm">ResetCancellationToken</a>
+                  </td>
+                  <td>
+            Resets the cancellation token source.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST7692C868_41" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST7692C868_42" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9a76c986-ec76-08d8-a581-335419877ba8.htm">SendBroadcastMessageSafe</a>
+                  </td>
+                  <td>
+            Helper method used to send an application task queue broadcast message,
+            accounting for the potential that the task queue has been destroyed.
+            - If the task queue is not found, the RegisterTaskQueue() method is called, then the message creation
+            - is attempted a 2nd time.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_43" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_44" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b0524739-76d1-04c4-a934-7fee0ba2d6e5.htm">SendBroadcastMessageSafeInTransaction</a>
+                  </td>
+                  <td>
+            Helper method used to send an application task queue broadcast message,
+            accounting for the potential that the task queue has been destroyed.
+            - If the task queue is not found, the RegisterTaskQueue() method is called, then the message creation
+            - is attempted a 2nd time.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_45" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_46" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="386433c1-8506-1539-edf2-0811fe1a917d.htm">TaskHandler_VaultExtMethodCaller</a>
+                  </td>
+                  <td>
+            Generic vault extension method caller.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_47" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_48" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cceb330c-d689-3a9a-b670-8de4690162f5.htm">ThrowIfCancellationRequested</a>
+                  </td>
+                  <td>
+            If cancellation has been requested:
+            - The CancellationRequest event is fired.
+            - Then the cancellation exception is thrown.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST7692C868_49" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST7692C868_50" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6bff37b2-33c2-f155-07be-4484a25404f1.htm">ThrowIfNull</a>
+                  </td>
+                  <td>
+            Asserts the passed object is not null.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST7692C868_51" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST7692C868_52" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="97263810-ec5f-7f58-b5b0-514226cb1e5c.htm">TriggerCancellationRequested</a>
+                  </td>
+                  <td>
+            Triggers the cancellation requested event, for any registered listeners.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST7692C868_53" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST7692C868_54" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2d65199e-d3e7-ebb6-d8f1-ac474ba69cb9.htm">TriggerPolling</a>
+                  </td>
+                  <td>
+            Triggers polling right away for the TaskQueueManager.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_55" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_56" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="edd8c19f-4afa-07df-3583-8158baf8ec7f.htm">TryGetStatusInfo</a>
+                  </td>
+                  <td>
+            Resolves the status info, when available.
+            - Null otherwise.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_57" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_58" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d081f891-5562-a145-6e05-6624c3e237c5.htm">TryGetTraceInfo</a>
+                  </td>
+                  <td>
+            Resolves the trace info, when available and configured to do so.
+            - Null otherwise.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_59" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_60" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="901a9b3f-7a34-0012-b302-d428fe2b2863.htm">UnregisterTaskQueues</a>
+                  </td>
+                  <td>
+            Detaches the task queue in the settings object for this processor from monitoring by the TaskQueueMonitor.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_61" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_62" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2f78c967-a7f2-595a-8c8d-d427fe9ce215.htm">UpdateCancelledJobInTaskQueue(ApplicationTask, String, String, Boolean)</a>
+                  </td>
+                  <td>
+            Updates the passed job as having been cancelled in the task queue.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_63" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_64" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e297d9e0-aa04-50c0-fe75-a413ac320f25.htm">UpdateCancelledJobInTaskQueue(TaskProcessorJob, String, String, Boolean)</a>
+                  </td>
+                  <td>
+            Updates the passed job as having been cancelled in the task queue.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_65" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_66" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="95571628-6daf-9468-dafc-3b5f0a5b352f.htm">UpdateCompletedJobInTaskQueue(ApplicationTask, String, String, Boolean)</a>
+                  </td>
+                  <td>
+            Updates the completed app task in the task queue.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_67" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_68" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5e3e9d2a-9a43-8f17-2f2c-906081a61dad.htm">UpdateCompletedJobInTaskQueue(TaskProcessorJob, String, String, Boolean)</a>
+                  </td>
+                  <td>
+            Updates the completed app task in the task queue.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_69" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_70" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="aa3334af-c808-3616-e8eb-9aa22858c5e7.htm">UpdateFailedJobInTaskQueue(ApplicationTask, String, Exception, String, Boolean)</a>
+                  </td>
+                  <td>
+            Updates the task in the application task queue, with failed info.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_71" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_72" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1955f313-9985-4d8c-68f1-6baf62cfddbf.htm">UpdateFailedJobInTaskQueue(TaskProcessorJob, String, Exception, String, Boolean)</a>
+                  </td>
+                  <td>
+            Updates the task in the application task queue, with failed info.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_73" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_74" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ccc9e3cf-f025-c2de-df3b-0f5077e1b3b4.htm">UpdateProgressForActiveTasks</a>
+                  </td>
+                  <td>
+            Forces an update of the active task every time the CanAcceptNewTasks() method returns false.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9615164a-8627-9ed5-f237-1f407ba76a1f.htm">UpdateTaskAsAssignedToProcessor</a>
+                  </td>
+                  <td>
+            Update task info as having been assigned implementation.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_75" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_76" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0c770a89-dda9-83aa-796e-452086b715dd.htm">UpdateTaskInfo(ApplicationTask, MFTaskState, String, Boolean)</a>
+                  </td>
+                  <td>
+            Updates the task info inside the task queue for the passed application task.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_77" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_78" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="65d9ea4e-af4c-2f68-2f53-19aa0d5c2c30.htm">UpdateTaskInfo(TaskProcessorJob, MFTaskState, String, Boolean)</a>
+                  </td>
+                  <td>
+            Update task info implementation.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_79" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_80" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c13291e6-f218-845e-85dc-f8998859835c.htm">UpdateTasksInProgress</a>
+                  </td>
+                  <td>
+            Updates the progress in the task queue.
+            - This check is part of the required keep alive updates to the task queue.
+            <br />(Inherited from <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST7692C868_81" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_82" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d90e343d-4232-074b-f787-0339b91f1c10.htm">WaitAll</a>
+                  </td>
+                  <td>
+            Waits for the active job to complete.
+            <br />(Overrides <a href="c7a25d18-e87a-b613-9a5a-2d9667d6c68a.htm">TaskProcessorBase<span id="LST7692C868_83" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST7692C868_84" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST7692C868_85" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>WaitAll<span id="LST7692C868_86" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="54df8d80-a099-44ce-fabe-aed1f5156089.htm">SequentialTaskProcessor Class</a>
+              </div>
+              <div>
+                <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.VAF.MultiserverMode Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d41e9076-94fb-7a2b-ef26-67714f92a887.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain</a>
+    </li>
+    <li>
+      <a href="f3abba2e-0dab-53c7-1efc-5e74fec275d3.htm">Configuration<wbr />Domain</a>
+    </li>
+    <li>
+      <a href="9df88805-1939-c8c6-aedf-6bc5de071d43.htm">Methods</a>
+    </li>
+    <li>
+      <a href="702c977f-c5d1-f0ee-a71a-0907084fcc8e.htm">Register<wbr />Domain</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3f3872bf-a694-3800-1130-7b46f98c5c1c" href="3f3872bf-a694-3800-1130-7b46f98c5c1c.htm">Register<wbr />Domain(<wbr />Vault, String, Configuration<wbr />Domain)</a>
+    </li>
+    <li>
+      <a id="e893077a-1298-fabf-ff04-01cf1cb2b5f1" href="e893077a-1298-fabf-ff04-01cf1cb2b5f1.htm">Register<wbr />Domain(<wbr />Vault, String, String, Configuration<wbr />Domain<wbr />Or<wbr />Source)</a>
+    </li>
+    <li>
+      <a id="21e0f86c-74e3-e166-a7e7-95dc9256f790" href="21e0f86c-74e3-e166-a7e7-95dc9256f790.htm">Register<wbr />Domain(<wbr />Vault, String, String, Source<wbr />Definition)</a>
+    </li>
+  </tocItems>
+</toc>

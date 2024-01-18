@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.<wbr />VAF</a>
+    </li>
+    <li>
+      <a href="460912a6-acff-b836-88cd-0073c355a5d4.htm">Modular<wbr />Vault<wbr />Application<wbr />Base</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="11e6a1d9-3767-e7dd-f1d5-7ff1a7c2019d" href="11e6a1d9-3767-e7dd-f1d5-7ff1a7c2019d.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="bc718589-f06c-6a65-f958-348904229c6b" class="has-submenu" href="bc718589-f06c-6a65-f958-348904229c6b.htm">
+        <span data-tocFile="../toc/IDBXBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3a70643f-8b65-825a-e847-6062f9f3ef44" class="has-submenu" href="3a70643f-8b65-825a-e847-6062f9f3ef44.htm">
+        <span data-tocFile="../toc/IDCXBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b35c5e10-7c62-8e1a-43c6-c4c9821e58c9" class="has-submenu" href="b35c5e10-7c62-8e1a-43c6-c4c9821e58c9.htm">
+        <span data-tocFile="../toc/IDDXBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Fields</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

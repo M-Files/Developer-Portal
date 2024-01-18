@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="6cd7a669-d464-de8d-d6f5-9c56ea2c5728.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging.<wbr />Sensitivity<wbr />Filters</a>
+    </li>
+    <li>
+      <a href="ffb1a918-71e9-34e5-d643-ca7fea1df26d.htm">Log<wbr />Sensitivity<wbr />Filter<wbr />Base</a>
+    </li>
+    <li>
+      <a href="d9a8c9d4-3d15-460e-9a51-d8e23f8f66f6.htm">Methods</a>
+    </li>
+    <li>
+      <a href="1efba79e-369c-8697-3942-49380f332992.htm">Filter<wbr />Value<wbr />For<wbr />Logging</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="6a08f2d0-e30a-5668-b24c-f45856a4a278" href="6a08f2d0-e30a-5668-b24c-f45856a4a278.htm">Filter<wbr />Value<wbr />For<wbr />Logging(<wbr />Object, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, String)</a>
+    </li>
+    <li>
+      <a id="bb8c1693-e7f9-5d4f-d00f-ea2073e30cc2" href="bb8c1693-e7f9-5d4f-d00f-ea2073e30cc2.htm">Filter<wbr />Value<wbr />For<wbr />Logging(<wbr />Object, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, String, IFormat<wbr />Provider)</a>
+    </li>
+  </tocItems>
+</toc>

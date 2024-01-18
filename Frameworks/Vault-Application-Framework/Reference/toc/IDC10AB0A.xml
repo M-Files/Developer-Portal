@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="54df8d80-a099-44ce-fabe-aed1f5156089.htm">Sequential<wbr />Task<wbr />Processor</a>
+    </li>
+    <li>
+      <a href="22aaaa66-7832-1e10-91d5-aa0ce3132763.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="ab8ac374-53ec-b1bc-dca1-0f3496c97f36" href="ab8ac374-53ec-b1bc-dca1-0f3496c97f36.htm">Can<wbr />Accept<wbr />New<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="8fb719e1-af58-9b5a-52f3-41e2f1e382f8" href="8fb719e1-af58-9b5a-52f3-41e2f1e382f8.htm">Get<wbr />Active<wbr />Job<wbr />Reference</a>
+    </li>
+    <li>
+      <a id="53b0dc3b-1f07-75f5-2800-d6cfbbb8e350" href="53b0dc3b-1f07-75f5-2800-d6cfbbb8e350.htm">Process<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="ccc9e3cf-f025-c2de-df3b-0f5077e1b3b4" href="ccc9e3cf-f025-c2de-df3b-0f5077e1b3b4.htm">Update<wbr />Progress<wbr />For<wbr />Active<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="d90e343d-4232-074b-f787-0339b91f1c10" href="d90e343d-4232-074b-f787-0339b91f1c10.htm">Wait<wbr />All</a>
+    </li>
+  </tocItems>
+</toc>

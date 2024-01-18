@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+    <li>
+      <a href="93ba1a9a-9ea9-4454-7d3e-3866e8c2dae3.htm">Json<wbr />Admin<wbr />Comment</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="34600bb4-b865-bf1c-534d-a33401fc7d82" href="34600bb4-b865-bf1c-534d-a33401fc7d82.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="e0315099-2406-abba-d375-8bbe5aa4ec75" class="has-submenu" href="e0315099-2406-abba-d375-8bbe5aa4ec75.htm">
+        <span data-tocFile="../toc/IDBGSA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

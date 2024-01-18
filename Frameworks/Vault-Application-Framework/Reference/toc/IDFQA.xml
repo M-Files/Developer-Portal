@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="d7b1065b-5e41-8400-5e3f-7a83bdcb0146.htm">Json<wbr />Value<wbr />Adaptor</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c463276d-50f7-d9e4-87a0-69e554d9248a" class="has-submenu" href="c463276d-50f7-d9e4-87a0-69e554d9248a.htm">
+        <span data-tocFile="../toc/IDAFQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="24067a62-5e8d-222c-d7d1-2544380abecd" class="has-submenu" href="24067a62-5e8d-222c-d7d1-2544380abecd.htm">
+        <span data-tocFile="../toc/IDBFQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="18385a35-ba1c-2d8f-4949-0903b558111f" class="has-submenu" href="18385a35-ba1c-2d8f-4949-0903b558111f.htm">
+        <span data-tocFile="../toc/IDCFQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

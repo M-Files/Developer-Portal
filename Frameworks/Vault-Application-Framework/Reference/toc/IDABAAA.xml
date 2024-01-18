@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+    <li>
+      <a href="9c9ed616-c279-6ea3-48d1-3d2fc437590c.htm">Crypto<wbr />AES</a>
+    </li>
+    <li>
+      <a href="a3b5a6fe-40f2-60cf-fd5b-f61d42fd5968.htm">Methods</a>
+    </li>
+    <li>
+      <a href="7d09f109-64c2-f805-0cfb-ad3ae16c3727.htm">Decrypt<wbr />Data</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="988fda3c-2601-43a3-a738-8c329802afbd" href="988fda3c-2601-43a3-a738-8c329802afbd.htm">Decrypt<wbr />Data(<wbr />Byte[], Rfc<wbr />2898Derive<wbr />Bytes)</a>
+    </li>
+    <li>
+      <a id="1bc3f7e5-028a-662b-a0c2-07a84cccffd4" href="1bc3f7e5-028a-662b-a0c2-07a84cccffd4.htm">Decrypt<wbr />Data(<wbr />Byte[], String)</a>
+    </li>
+    <li>
+      <a id="44238ca5-c9ec-ed90-200b-c33651864618" href="44238ca5-c9ec-ed90-200b-c33651864618.htm">Decrypt<wbr />Data(<wbr />Byte[], String, Byte[])</a>
+    </li>
+  </tocItems>
+</toc>

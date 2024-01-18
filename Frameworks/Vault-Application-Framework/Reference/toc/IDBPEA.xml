@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="eb4d6dbb-fe69-7100-80f0-29ff722ab49d.htm">Environment<wbr />Base</a>
+    </li>
+    <li>
+      <a href="55817b93-b446-6dff-4954-13fc3aee7da5.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="00b60d18-7dad-76f5-8dd0-6cffeaedf9e3" href="00b60d18-7dad-76f5-8dd0-6cffeaedf9e3.htm">Activity<wbr />ID</a>
+    </li>
+    <li>
+      <a id="9a5dae88-8365-8fd7-c477-8c6ac49e01b5" href="9a5dae88-8365-8fd7-c477-8c6ac49e01b5.htm">Activity<wbr />IDExternal</a>
+    </li>
+    <li>
+      <a id="753a6f00-a08e-80ae-2b7e-406a1f6e331b" href="753a6f00-a08e-80ae-2b7e-406a1f6e331b.htm">Current<wbr />Transaction<wbr />ID</a>
+    </li>
+    <li>
+      <a id="363ed6ce-4986-21f4-ffb0-962fa3c89a92" href="363ed6ce-4986-21f4-ffb0-962fa3c89a92.htm">Current<wbr />Transaction<wbr />IDExternal</a>
+    </li>
+    <li>
+      <a id="ed7dcbc5-4837-4704-b253-7c8677f7118b" href="ed7dcbc5-4837-4704-b253-7c8677f7118b.htm">Current<wbr />User<wbr />ID</a>
+    </li>
+    <li>
+      <a id="4e5bff26-f12d-fc69-ecbe-a615c62fa134" href="4e5bff26-f12d-fc69-ecbe-a615c62fa134.htm">Current<wbr />User<wbr />Session<wbr />Info</a>
+    </li>
+    <li>
+      <a id="9d30523a-856c-4f62-ff38-6abe2c7798cb" href="9d30523a-856c-4f62-ff38-6abe2c7798cb.htm">Current<wbr />User<wbr />Session<wbr />Info<wbr />External</a>
+    </li>
+    <li>
+      <a id="4fe38c27-8243-3b41-48c2-c91cfae99f0c" href="4fe38c27-8243-3b41-48c2-c91cfae99f0c.htm">Display<wbr />ID</a>
+    </li>
+    <li>
+      <a id="3a7d7bfa-4998-85e1-801b-b7e73c5d3daf" href="3a7d7bfa-4998-85e1-801b-b7e73c5d3daf.htm">Master<wbr />Transaction<wbr />ID</a>
+    </li>
+    <li>
+      <a id="89caa4ed-22a1-f053-f400-88f31963e2f5" href="89caa4ed-22a1-f053-f400-88f31963e2f5.htm">Master<wbr />Transaction<wbr />IDExternal</a>
+    </li>
+    <li>
+      <a id="91d87ad7-80a1-7b8b-e4b9-5d647e28eaf0" href="91d87ad7-80a1-7b8b-e4b9-5d647e28eaf0.htm">Obj<wbr />Ver</a>
+    </li>
+    <li>
+      <a id="fdf70b7c-2420-9e4b-cd5c-3657e43b7aec" href="fdf70b7c-2420-9e4b-cd5c-3657e43b7aec.htm">Obj<wbr />Ver<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="9eff656b-ed1a-8675-6369-65ee0048fdb9" href="9eff656b-ed1a-8675-6369-65ee0048fdb9.htm">Obj<wbr />Ver<wbr />External</a>
+    </li>
+    <li>
+      <a id="1d137a9e-8d4d-01ed-9dc8-71f2f33fc8cd" href="1d137a9e-8d4d-01ed-9dc8-71f2f33fc8cd.htm">Parent<wbr />Transaction<wbr />ID</a>
+    </li>
+    <li>
+      <a id="454fec40-a666-8b3a-f8b5-1a2dec2f29fc" href="454fec40-a666-8b3a-f8b5-1a2dec2f29fc.htm">Parent<wbr />Transaction<wbr />IDExternal</a>
+    </li>
+    <li>
+      <a id="3f97f467-5d4d-214c-7cde-74178ef654ad" href="3f97f467-5d4d-214c-7cde-74178ef654ad.htm">Savepoint<wbr />Variables</a>
+    </li>
+    <li>
+      <a id="39b2c9a1-f648-27bf-fa6d-a8af241306df" href="39b2c9a1-f648-27bf-fa6d-a8af241306df.htm">Savepoint<wbr />Variables<wbr />External</a>
+    </li>
+    <li>
+      <a id="9a041252-8627-ce87-dd8a-4a8894409152" href="9a041252-8627-ce87-dd8a-4a8894409152.htm">Transaction<wbr />Cache</a>
+    </li>
+    <li>
+      <a id="6dcea2ad-92e4-64dc-51e5-9982e1f33518" href="6dcea2ad-92e4-64dc-51e5-9982e1f33518.htm">Transaction<wbr />Cache<wbr />External</a>
+    </li>
+    <li>
+      <a id="34eda128-32d7-fa98-43c4-dc3de8a39b88" href="34eda128-32d7-fa98-43c4-dc3de8a39b88.htm">Vault</a>
+    </li>
+    <li>
+      <a id="1005def6-35e9-4314-89c7-28a685ffb4f0" href="1005def6-35e9-4314-89c7-28a685ffb4f0.htm">Vault<wbr />Shared<wbr />Variables</a>
+    </li>
+    <li>
+      <a id="2ba9d905-bbe4-d4b7-2ad9-a5f9a3884abf" href="2ba9d905-bbe4-d4b7-2ad9-a5f9a3884abf.htm">Vault<wbr />Shared<wbr />Variables<wbr />External</a>
+    </li>
+  </tocItems>
+</toc>

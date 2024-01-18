@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="cb74f91b-35d8-3463-99aa-4cb9d83d6f20.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Dashboards</a>
+    </li>
+    <li>
+      <a href="65aae94a-2890-8a96-c6f2-98ebbf901e38.htm">Html<wbr />String</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="1f20cee8-3d9e-f411-b178-48aa161e95f2" class="has-submenu" href="1f20cee8-3d9e-f411-b178-48aa161e95f2.htm">
+        <span data-tocFile="../toc/IDAQMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e76b9d6b-3555-9c3a-5e10-e15ff2174b11" class="has-submenu" href="e76b9d6b-3555-9c3a-5e10-e15ff2174b11.htm">
+        <span data-tocFile="../toc/IDBQMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d41e9076-94fb-7a2b-ef26-67714f92a887.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain</a>
+    </li>
+    <li>
+      <a href="9d565d0c-65e0-7b97-38e5-f15a2891ea61.htm">Domain<wbr />Menu<wbr />Command<wbr />Location</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="afcfd2e4-dbdc-cbe7-cd9e-f08c8cb022e5" href="afcfd2e4-dbdc-cbe7-cd9e-f08c8cb022e5.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="13554d3c-f49b-728a-7f6f-ce02eeadf60d" class="has-submenu" href="13554d3c-f49b-728a-7f6f-ce02eeadf60d.htm">
+        <span data-tocFile="../toc/IDBNIA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

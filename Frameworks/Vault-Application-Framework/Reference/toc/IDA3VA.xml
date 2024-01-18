@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="05bb57e5-122f-7aeb-42ea-ace27e31a50c.htm">Sensitive<wbr />Data</a>
+    </li>
+    <li>
+      <a href="1077dcfe-67ff-f192-db56-891dc36bad59.htm">Constructors</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="5cea77c3-e580-7a78-84aa-665fc14ccbd7" href="5cea77c3-e580-7a78-84aa-665fc14ccbd7.htm">Sensitive<wbr />Data(<wbr />Object, Sensitivity<wbr />Flag[])</a>
+    </li>
+    <li>
+      <a id="48975591-550a-b262-f1c8-c08e20e14f74" href="48975591-550a-b262-f1c8-c08e20e14f74.htm">Sensitive<wbr />Data(<wbr />Object, IEnumerable&lt;Sensitivity<wbr />Flag&gt;)</a>
+    </li>
+    <li>
+      <a id="04b6c308-2f5b-7aa0-4a36-e067cde2ee6e" href="04b6c308-2f5b-7aa0-4a36-e067cde2ee6e.htm">Sensitive<wbr />Data(<wbr />Object, Sensitivity<wbr />Flag<wbr />Behavior, Sensitivity<wbr />Flag[])</a>
+    </li>
+    <li>
+      <a id="1e9e3759-74d4-6d5a-6f4a-d87d2b6acabd" href="1e9e3759-74d4-6d5a-6f4a-d87d2b6acabd.htm">Sensitive<wbr />Data(<wbr />Object, Sensitivity<wbr />Flag<wbr />Behavior, IEnumerable&lt;Sensitivity<wbr />Flag&gt;)</a>
+    </li>
+  </tocItems>
+</toc>

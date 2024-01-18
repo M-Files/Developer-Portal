@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="cabb0106-84b7-2ae2-de59-413b860bb794.htm">Placeholder<wbr />Command<wbr />Handler</a>
+    </li>
+    <li>
+      <a href="5acfd794-ee82-ddb6-75ab-29118986b0c3.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="78aa2db1-6942-3f25-e0a0-9d8febdbfca6" href="78aa2db1-6942-3f25-e0a0-9d8febdbfca6.htm">Class<wbr />Visible<wbr />To<wbr />User</a>
+    </li>
+    <li>
+      <a id="a480ec50-64b7-7cfa-bd4d-7e0f43bec8ed" href="a480ec50-64b7-7cfa-bd4d-7e0f43bec8ed.htm">Expand</a>
+    </li>
+    <li>
+      <a id="09656095-f19d-2b42-2365-2160d381f374" href="09656095-f19d-2b42-2365-2160d381f374.htm">Get<wbr />Client<wbr />Command<wbr />Generator</a>
+    </li>
+    <li>
+      <a id="dee33ddf-ed49-92b6-3cdf-e9204f42ba36" href="dee33ddf-ed49-92b6-3cdf-e9204f42ba36.htm">Get<wbr />Client<wbr />Definitions</a>
+    </li>
+    <li>
+      <a id="68c9935c-e280-e1f3-884b-f98360b32c84" href="68c9935c-e280-e1f3-884b-f98360b32c84.htm">Get<wbr />Resolved<wbr />Structure<wbr />References</a>
+    </li>
+    <li>
+      <a id="37c9e1dc-ab55-839a-959e-69d4ea6849e0" href="37c9e1dc-ab55-839a-959e-69d4ea6849e0.htm">Get<wbr />Supported<wbr />Types</a>
+    </li>
+    <li>
+      <a id="24ecc6e9-0d51-c78f-5276-a07086f2a26f" href="24ecc6e9-0d51-c78f-5276-a07086f2a26f.htm">Init</a>
+    </li>
+    <li>
+      <a id="4bccac37-dc66-1477-411c-e646b0afa936" href="4bccac37-dc66-1477-411c-e646b0afa936.htm">Initialize</a>
+    </li>
+    <li>
+      <a id="37437b18-7af9-6ad2-639c-23133dcadc4e" href="37437b18-7af9-6ad2-639c-23133dcadc4e.htm">Obj<wbr />Type<wbr />Visible<wbr />To<wbr />User</a>
+    </li>
+    <li>
+      <a id="66345644-61b7-0693-50dc-f9c3a02e720d" href="66345644-61b7-0693-50dc-f9c3a02e720d.htm">Property<wbr />Visible<wbr />To<wbr />User</a>
+    </li>
+    <li>
+      <a id="8e0e8bdf-0a2b-ebbe-2021-2d149514e7d3" href="8e0e8bdf-0a2b-ebbe-2021-2d149514e7d3.htm">Value<wbr />List<wbr />Item<wbr />Visible<wbr />To<wbr />User</a>
+    </li>
+  </tocItems>
+</toc>

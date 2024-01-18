@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="3407303a-b429-b8e1-4adb-33dbfee1d514.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Client<wbr />Directive</a>
+    </li>
+    <li>
+      <a href="0701f4d9-86cb-f505-a1e3-9e3569faa6cf.htm">Reload<wbr />Domain</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="62e3c39a-7443-13ec-5d97-1facdd1da229" href="62e3c39a-7443-13ec-5d97-1facdd1da229.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="57caabff-793c-662f-9ccf-1ff86d00c432" class="has-submenu" href="57caabff-793c-662f-9ccf-1ff86d00c432.htm">
+        <span data-tocFile="../toc/IDBILA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

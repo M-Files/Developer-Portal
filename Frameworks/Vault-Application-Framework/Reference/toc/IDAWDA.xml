@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="58860159-a1e5-a84d-eb1b-bb27c435a5f6.htm">Task<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="f1522ab0-9906-90d2-e694-d03e136f45fe.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="9bad5681-a166-cc06-ff61-9baf58a6f7e5" href="9bad5681-a166-cc06-ff61-9baf58a6f7e5.htm">Get<wbr />Task</a>
+    </li>
+    <li>
+      <a id="7a17daa0-ec97-c781-ba32-4c9199083eba" class="has-submenu" href="7a17daa0-ec97-c781-ba32-4c9199083eba.htm">
+        <span data-tocFile="../toc/IDBAWDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Get<wbr />Task<wbr />IDs</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c3066d6c-f764-b04d-04c7-ff6ac8530d1b" class="has-submenu" href="c3066d6c-f764-b04d-04c7-ff6ac8530d1b.htm">
+        <span data-tocFile="../toc/IDCAWDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Get<wbr />Tasks</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f5d70579-9daf-7392-f476-ce3db34e4778" class="has-submenu" href="f5d70579-9daf-7392-f476-ce3db34e4778.htm">
+        <span data-tocFile="../toc/IDDAWDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />States<wbr />To<wbr />IDs</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

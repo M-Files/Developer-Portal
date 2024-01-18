@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="7829c967-6d0f-5f56-cf78-60521632d773.htm">ILogger</a>
+    </li>
+    <li>
+      <a href="29bf6768-cb89-dc6a-4391-f02d00ad291c.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="fab1bf1c-4afc-8df3-188c-c1d92206708b" class="has-submenu" href="fab1bf1c-4afc-8df3-188c-c1d92206708b.htm">
+        <span data-tocFile="../toc/IDAAGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Begin<wbr />Logging<wbr />Context</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f543a0e2-067c-5ef3-72dd-c2898d6762e7" class="has-submenu" href="f543a0e2-067c-5ef3-72dd-c2898d6762e7.htm">
+        <span data-tocFile="../toc/IDBAGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Debug</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="53e1d932-5898-b734-31cf-c53c0b4ea5bb" class="has-submenu" href="53e1d932-5898-b734-31cf-c53c0b4ea5bb.htm">
+        <span data-tocFile="../toc/IDCAGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Error</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bd9cdeaa-bb26-99b6-0553-687c912b0d8f" class="has-submenu" href="bd9cdeaa-bb26-99b6-0553-687c912b0d8f.htm">
+        <span data-tocFile="../toc/IDDAGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Fatal</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="30ffe8f1-c90c-0c56-7ffe-2f726e0b2626" class="has-submenu" href="30ffe8f1-c90c-0c56-7ffe-2f726e0b2626.htm">
+        <span data-tocFile="../toc/IDEAGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Info</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="fb942f9e-baaa-fe75-5a70-d8a26d78f225" class="has-submenu" href="fb942f9e-baaa-fe75-5a70-d8a26d78f225.htm">
+        <span data-tocFile="../toc/IDFAGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Log</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e7dc38f9-d059-5dde-e01e-510be4c74bd9" class="has-submenu" href="e7dc38f9-d059-5dde-e01e-510be4c74bd9.htm">
+        <span data-tocFile="../toc/IDGAGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Trace</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="cbabe832-b69e-af02-8b1d-32af398149f2" class="has-submenu" href="cbabe832-b69e-af02-8b1d-32af398149f2.htm">
+        <span data-tocFile="../toc/IDHAGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Warn</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

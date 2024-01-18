@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d685572d-372e-40a9-f473-712980cc0948.htm">MFiles.<wbr />VAF.<wbr />Common.<wbr />Application<wbr />Task<wbr />Queue</a>
+    </li>
+    <li>
+      <a href="fc40c343-0b25-2491-c28a-5344e0d28525.htm">IApplication<wbr />Task<wbr />Processor</a>
+    </li>
+    <li>
+      <a href="dd308ef0-6b73-a5ca-ab90-fdb5695b4ad3.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="b03b6645-f6e2-5df8-be86-40402fee6025" href="b03b6645-f6e2-5df8-be86-40402fee6025.htm">Can<wbr />Accept<wbr />New<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="3c83aa67-a42b-b542-dc03-8ba9a4d563b6" href="3c83aa67-a42b-b542-dc03-8ba9a4d563b6.htm">Process<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="aa75df5d-ddb2-3f80-d5e0-22edba3faf9c" href="aa75df5d-ddb2-3f80-d5e0-22edba3faf9c.htm">Wait<wbr />All</a>
+    </li>
+  </tocItems>
+</toc>

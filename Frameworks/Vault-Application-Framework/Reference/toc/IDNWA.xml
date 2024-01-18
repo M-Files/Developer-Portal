@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="6cd7a669-d464-de8d-d6f5-9c56ea2c5728.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging.<wbr />Sensitivity<wbr />Filters</a>
+    </li>
+    <li>
+      <a href="987f26d0-7ebc-454b-daa5-9dd69c452520.htm">Property<wbr />Value<wbr />Log<wbr />Sensitivity<wbr />Filter</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="b1ffc1dc-5054-b1e8-28de-139e9fd53078" href="b1ffc1dc-5054-b1e8-28de-139e9fd53078.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="cf217afa-5116-2993-4953-0599820a1c86" href="cf217afa-5116-2993-4953-0599820a1c86.htm">Properties</a>
+    </li>
+    <li>
+      <a id="5836b822-1823-96c8-967d-541a7294b3ca" class="has-submenu" href="5836b822-1823-96c8-967d-541a7294b3ca.htm">
+        <span data-tocFile="../toc/IDCNWA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

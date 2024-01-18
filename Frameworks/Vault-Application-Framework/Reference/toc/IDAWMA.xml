@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="cb74f91b-35d8-3463-99aa-4cb9d83d6f20.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Dashboards</a>
+    </li>
+    <li>
+      <a href="7f72cbfa-42e3-e4fc-ef68-cc108f86379e.htm">Status<wbr />Dashboard<wbr />Content<wbr />Extension<wbr />Methods</a>
+    </li>
+    <li>
+      <a href="a02bf5d5-68c1-9c09-de6f-95f37447a9ee.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="ef31d4e4-42cf-e647-e0b4-e7070b627fc4" class="has-submenu" href="ef31d4e4-42cf-e647-e0b4-e7070b627fc4.htm">
+        <span data-tocFile="../toc/IDAAWMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Add<wbr />Content</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4782a147-2c3b-ad95-8545-752449923df5" class="has-submenu" href="4782a147-2c3b-ad95-8545-752449923df5.htm">
+        <span data-tocFile="../toc/IDBAWMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Set<wbr />Inner<wbr />Content</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="67d0241d-c96f-2cd7-a04b-7823ee775560.htm">Task<wbr />Queue<wbr />Resolver</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="94131851-41f4-4201-67db-c892307eabd5" href="94131851-41f4-4201-67db-c892307eabd5.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="b11f25f2-0655-a5a1-4cb4-d04753bd54cf" class="has-submenu" href="b11f25f2-0655-a5a1-4cb4-d04753bd54cf.htm">
+        <span data-tocFile="../toc/IDB0IB0DA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d41e9076-94fb-7a2b-ef26-67714f92a887.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain</a>
+    </li>
+    <li>
+      <a href="f3abba2e-0dab-53c7-1efc-5e74fec275d3.htm">Configuration<wbr />Domain</a>
+    </li>
+    <li>
+      <a href="9df88805-1939-c8c6-aedf-6bc5de071d43.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="62b4a267-f841-2f44-cc1d-37bba30e59f4" href="62b4a267-f841-2f44-cc1d-37bba30e59f4.htm">Clear<wbr />Domain<wbr />Registrations</a>
+    </li>
+    <li>
+      <a id="702c977f-c5d1-f0ee-a71a-0907084fcc8e" class="has-submenu" href="702c977f-c5d1-f0ee-a71a-0907084fcc8e.htm">
+        <span data-tocFile="../toc/IDBCFIA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Register<wbr />Domain</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c959532e-75b9-b1ae-ac0c-25fa7ef53e12" class="has-submenu" href="c959532e-75b9-b1ae-ac0c-25fa7ef53e12.htm">
+        <span data-tocFile="../toc/IDCCFIA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Unregister<wbr />Domain</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

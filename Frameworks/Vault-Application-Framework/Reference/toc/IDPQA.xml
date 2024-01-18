@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="829f84ed-ca31-ad29-d414-3575ffc4479c.htm">Search<wbr />Conditions<wbr />JA</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="e5fe12c1-ced2-2003-8d04-6a0461da4890" class="has-submenu" href="e5fe12c1-ced2-2003-8d04-6a0461da4890.htm">
+        <span data-tocFile="../toc/IDAPQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a783cb04-a43c-114d-356a-a427c6044083" href="a783cb04-a43c-114d-356a-a427c6044083.htm">Properties</a>
+    </li>
+    <li>
+      <a id="51b5527b-b605-20fc-9f15-63753a29a82c" class="has-submenu" href="51b5527b-b605-20fc-9f15-63753a29a82c.htm">
+        <span data-tocFile="../toc/IDCPQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="19e75645-b7a2-4757-eb32-76c33f80442b.htm">MFIdentifier</a>
+    </li>
+    <li>
+      <a href="561a5946-416b-89a6-22a5-933caf93f87f.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="d4c0ff75-a003-f2c5-b0d1-0c5a4664ee31" href="d4c0ff75-a003-f2c5-b0d1-0c5a4664ee31.htm">_Resolve</a>
+    </li>
+    <li>
+      <a id="18d9369a-50b7-c42b-e514-ae2c4be98136" class="has-submenu" href="18d9369a-50b7-c42b-e514-ae2c4be98136.htm">
+        <span data-tocFile="../toc/IDBC0HB0GA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Equals</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="63d5abf3-7997-08be-1c8e-058bf0a937ff" href="63d5abf3-7997-08be-1c8e-058bf0a937ff.htm">Get<wbr />Hash<wbr />Code</a>
+    </li>
+    <li>
+      <a id="1ea9ef5e-3b44-f71a-cd76-06bd0f88689b" href="1ea9ef5e-3b44-f71a-cd76-06bd0f88689b.htm">Get<wbr />Unresolved<wbr />Type</a>
+    </li>
+    <li>
+      <a id="e2e97b13-9a02-5b57-761d-abc3338d3c70" href="e2e97b13-9a02-5b57-761d-abc3338d3c70.htm">Is<wbr />Null<wbr />Or<wbr />Empty</a>
+    </li>
+    <li>
+      <a id="c39c3e99-483a-f4d6-9f03-754516e8f652" href="c39c3e99-483a-f4d6-9f03-754516e8f652.htm">Is<wbr />Null<wbr />Or<wbr />Unresolved</a>
+    </li>
+    <li>
+      <a id="99dc90fe-2264-6bb5-a5fe-5690994d6dbd" href="99dc90fe-2264-6bb5-a5fe-5690994d6dbd.htm">Is<wbr />Obj<wbr />IDString</a>
+    </li>
+    <li>
+      <a id="483914f5-2d4e-e677-b3b3-758a600d8975" href="483914f5-2d4e-e677-b3b3-758a600d8975.htm">Is<wbr />Obj<wbr />Ver<wbr />String</a>
+    </li>
+    <li>
+      <a id="365e0af0-cdc1-5d54-c754-e131828ced2b" href="365e0af0-cdc1-5d54-c754-e131828ced2b.htm">Is<wbr />Valid<wbr />Guid</a>
+    </li>
+    <li>
+      <a id="245fc0af-c23b-8b08-f72c-5edc7667ec69" href="245fc0af-c23b-8b08-f72c-5edc7667ec69.htm">Parse<wbr />Obj<wbr />IDString</a>
+    </li>
+    <li>
+      <a id="82b2a66e-7f15-ac4a-296a-5bfdbee3d0ad" class="has-submenu" href="82b2a66e-7f15-ac4a-296a-5bfdbee3d0ad.htm">
+        <span data-tocFile="../toc/IDKC0HB0GA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resolve</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="6c730cce-22db-f5da-f362-3d42aaee32d2" href="6c730cce-22db-f5da-f362-3d42aaee32d2.htm">Resolve<wbr />ID</a>
+    </li>
+    <li>
+      <a id="96ec668b-25bf-1e26-3d24-bce8089519ea" href="96ec668b-25bf-1e26-3d24-bce8089519ea.htm">Set</a>
+    </li>
+    <li>
+      <a id="c95ce1d5-5880-a85b-5ce0-3f889dad2994" href="c95ce1d5-5880-a85b-5ce0-3f889dad2994.htm">Set<wbr />As<wbr />ID</a>
+    </li>
+    <li>
+      <a id="0a9c0380-94c2-66e2-b96b-f243bbe53d50" href="0a9c0380-94c2-66e2-b96b-f243bbe53d50.htm">Should<wbr />Serialize<wbr />Alias</a>
+    </li>
+    <li>
+      <a id="a4274f44-8cf3-ecce-3cca-5e07de000cfc" href="a4274f44-8cf3-ecce-3cca-5e07de000cfc.htm">Should<wbr />Serialize<wbr />ID</a>
+    </li>
+    <li>
+      <a id="f1729576-a0a5-371d-3a44-ad4a002a540b" href="f1729576-a0a5-371d-3a44-ad4a002a540b.htm">To<wbr />String</a>
+    </li>
+  </tocItems>
+</toc>

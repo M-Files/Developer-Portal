@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a927114c-8614-2427-a3c1-64e94e6ff8cb.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping.<wbr />Mappers</a>
+    </li>
+    <li>
+      <a href="ed6bbc0a-4cf2-8e3b-7e32-bbe34e557136.htm">Object<wbr />To<wbr />Array<wbr />Mapper</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="8880a65e-6965-9536-9d01-6a66f5b08c4b" href="8880a65e-6965-9536-9d01-6a66f5b08c4b.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="930778ed-80e8-ed07-5768-43b757cb30bc" class="has-submenu" href="930778ed-80e8-ed07-5768-43b757cb30bc.htm">
+        <span data-tocFile="../toc/IDBDUA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

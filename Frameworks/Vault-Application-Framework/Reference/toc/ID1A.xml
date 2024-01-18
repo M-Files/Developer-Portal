@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="59d32316-452c-1353-a54b-d86b63139a14.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Resources</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="911debde-fd3c-4be2-152b-aee70db4d9c4" class="has-submenu" href="911debde-fd3c-4be2-152b-aee70db4d9c4.htm">
+        <span data-tocFile="../toc/IDA1A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Combined<wbr />Resource<wbr />Manager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1cbb124b-5eb8-3855-4ae6-7ea5c345f57d" class="has-submenu" href="1cbb124b-5eb8-3855-4ae6-7ea5c345f57d.htm">
+        <span data-tocFile="../toc/IDB1A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resource<wbr />Manager<wbr />Provider<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c17ce837-7e0c-f58c-2623-52554f034dbf" class="has-submenu" href="c17ce837-7e0c-f58c-2623-52554f034dbf.htm">
+        <span data-tocFile="../toc/IDC1A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Uses<wbr />Vaf<wbr />Configuration<wbr />Resource<wbr />Manager<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

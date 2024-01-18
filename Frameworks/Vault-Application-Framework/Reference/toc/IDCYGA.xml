@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="58df9712-0a5b-12ee-4450-5ab357a6ee1c.htm">Json<wbr />Conf<wbr />Flag<wbr />Converter</a>
+    </li>
+    <li>
+      <a href="06487cf9-448e-78df-adc7-dd190e6a0a2a.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0d7d269b-610f-81f5-52e7-141446b12c04" href="0d7d269b-610f-81f5-52e7-141446b12c04.htm">Can<wbr />Convert</a>
+    </li>
+    <li>
+      <a id="19aa0ec8-cf9a-08f8-2e23-6cc1496c4641" class="has-submenu" href="19aa0ec8-cf9a-08f8-2e23-6cc1496c4641.htm">
+        <span data-tocFile="../toc/IDBCYGA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Convert<wbr />Flag<wbr />Object</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4f448f28-4046-af13-e549-3168ddd79f46" href="4f448f28-4046-af13-e549-3168ddd79f46.htm">Convert<wbr />Flags</a>
+    </li>
+    <li>
+      <a id="9ea77c10-5306-fea1-e050-5ec22cdd26eb" href="9ea77c10-5306-fea1-e050-5ec22cdd26eb.htm">Get<wbr />Flag<wbr />Property<wbr />Name</a>
+    </li>
+    <li>
+      <a id="23dc376b-2856-3845-a4f2-8619e41f71e9" href="23dc376b-2856-3845-a4f2-8619e41f71e9.htm">Read<wbr />Json</a>
+    </li>
+    <li>
+      <a id="b104cf42-cb8c-368f-1b45-a388a8aa5592" href="b104cf42-cb8c-368f-1b45-a388a8aa5592.htm">Write<wbr />Json</a>
+    </li>
+  </tocItems>
+</toc>

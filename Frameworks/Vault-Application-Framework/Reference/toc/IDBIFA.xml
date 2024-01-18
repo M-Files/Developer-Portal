@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="d685572d-372e-40a9-f473-712980cc0948.htm">MFiles.<wbr />VAF.<wbr />Common.<wbr />Application<wbr />Task<wbr />Queue</a>
+    </li>
+    <li>
+      <a href="991179ed-fe52-a901-4c3b-d6b0addffc2b.htm">Task<wbr />Queue<wbr />Manager.<wbr />Task<wbr />Queue</a>
+    </li>
+    <li>
+      <a href="44847f2d-9ac0-aabb-166d-0c00d47f835d.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="fb377668-ce61-061c-aa2f-31f2dd83c546" href="fb377668-ce61-061c-aa2f-31f2dd83c546.htm">Last<wbr />Broadcast<wbr />Id</a>
+    </li>
+    <li>
+      <a id="76edaa29-d457-bcbb-816f-4f282d04296d" href="76edaa29-d457-bcbb-816f-4f282d04296d.htm">Maximum<wbr />Polling<wbr />Interval<wbr />In<wbr />Seconds</a>
+    </li>
+    <li>
+      <a id="3391a776-3aa4-0a69-e87c-1e5fcca806c9" href="3391a776-3aa4-0a69-e87c-1e5fcca806c9.htm">Name</a>
+    </li>
+    <li>
+      <a id="d2931262-d917-ed63-57f7-c2b9f77aa3ce" href="d2931262-d917-ed63-57f7-c2b9f77aa3ce.htm">Processing<wbr />Behavior</a>
+    </li>
+    <li>
+      <a id="1ad9692b-d8a1-411b-9b0d-6544bb7716b0" href="1ad9692b-d8a1-411b-9b0d-6544bb7716b0.htm">Task<wbr />Processor</a>
+    </li>
+    <li>
+      <a id="273333ca-3569-015f-7683-af9ad5721269" href="273333ca-3569-015f-7683-af9ad5721269.htm">Task<wbr />Type</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">Async<wbr />Processing<wbr />Operation&lt;T&gt;</a>
+    </li>
+    <li>
+      <a href="3ba2b910-c49b-ee26-4a71-8a99b18497ab.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7df00667-7b15-779b-56c3-14f3bb7cd4b3" href="7df00667-7b15-779b-56c3-14f3bb7cd4b3.htm">On<wbr />Cancellation<wbr />Requested</a>
+    </li>
+    <li>
+      <a id="98e32112-7ab9-2341-b771-3e380bd57f82" href="98e32112-7ab9-2341-b771-3e380bd57f82.htm">On<wbr />Processing<wbr />Completed</a>
+    </li>
+    <li>
+      <a id="9239fe8d-6059-808f-af81-9cdae5465eb4" href="9239fe8d-6059-808f-af81-9cdae5465eb4.htm">On<wbr />Processing<wbr />Failed</a>
+    </li>
+    <li>
+      <a id="9181b7ec-eb31-c67d-3870-b3b589a7001e" href="9181b7ec-eb31-c67d-3870-b3b589a7001e.htm">On<wbr />Processing<wbr />Started</a>
+    </li>
+    <li>
+      <a id="770e9e21-513a-03eb-c069-43ac152c504e" href="770e9e21-513a-03eb-c069-43ac152c504e.htm">Throw<wbr />If<wbr />Less<wbr />Than<wbr />One</a>
+    </li>
+  </tocItems>
+</toc>

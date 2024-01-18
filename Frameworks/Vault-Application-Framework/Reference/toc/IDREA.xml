@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="79e34c63-f090-da69-625c-1e1501f3cac1.htm">Event<wbr />Handler<wbr />Attribute</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4b9fe345-0dff-63d7-0e88-4842e1e93f0e" href="4b9fe345-0dff-63d7-0e88-4842e1e93f0e.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="1d210465-c8c8-0953-8aef-01a52f3c5784" class="has-submenu" href="1d210465-c8c8-0953-8aef-01a52f3c5784.htm">
+        <span data-tocFile="../toc/IDBREA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="89f7bafc-eb51-e14e-091b-c46802e6adad" class="has-submenu" href="89f7bafc-eb51-e14e-091b-c46802e6adad.htm">
+        <span data-tocFile="../toc/IDCREA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="7d78a5f8-0764-640d-dbbd-937c29ab13ff" href="7d78a5f8-0764-640d-dbbd-937c29ab13ff.htm">Fields</a>
+    </li>
+  </tocItems>
+</toc>

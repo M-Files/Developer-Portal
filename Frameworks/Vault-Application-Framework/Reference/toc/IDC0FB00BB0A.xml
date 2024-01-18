@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="a272bde9-2b3b-6fe2-481e-c81452bdbbd6.htm">Placeholder<wbr />Formatter</a>
+    </li>
+    <li>
+      <a href="3d812e2b-247b-a84c-54a9-c08e7672ca00.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c370ecfb-4014-28d2-bf4d-6c1e2e5d1e3e" href="c370ecfb-4014-28d2-bf4d-6c1e2e5d1e3e.htm">Concatenate</a>
+    </li>
+    <li>
+      <a id="1cacb61b-fb51-2c6e-f220-06103f4931f2" href="1cacb61b-fb51-2c6e-f220-06103f4931f2.htm">First<wbr />Non<wbr />Empty<wbr />String</a>
+    </li>
+    <li>
+      <a id="7e827372-11d4-58e1-3805-666ab0af9e2d" href="7e827372-11d4-58e1-3805-666ab0af9e2d.htm">Format</a>
+    </li>
+    <li>
+      <a id="40c18883-96d3-e217-201f-37941fcb93e3" href="40c18883-96d3-e217-201f-37941fcb93e3.htm">Format<wbr />Dates</a>
+    </li>
+    <li>
+      <a id="a9242a27-0113-db52-9dae-9eaf3a09f5d2" href="a9242a27-0113-db52-9dae-9eaf3a09f5d2.htm">Format<wbr />File<wbr />Values</a>
+    </li>
+    <li>
+      <a id="40809ccd-0645-3f01-a97f-f4164286676f" href="40809ccd-0645-3f01-a97f-f4164286676f.htm">Format<wbr />Floats</a>
+    </li>
+    <li>
+      <a id="093309ec-0ae9-6fe8-96fc-45aef2dcf860" href="093309ec-0ae9-6fe8-96fc-45aef2dcf860.htm">Format<wbr />Integers</a>
+    </li>
+    <li>
+      <a id="91c27c03-3629-fcd6-9dc7-00abae2adc26" href="91c27c03-3629-fcd6-9dc7-00abae2adc26.htm">Format<wbr />Objects</a>
+    </li>
+    <li>
+      <a id="ddc70751-a0ab-ec67-b394-b91ba30199eb" href="ddc70751-a0ab-ec67-b394-b91ba30199eb.htm">Format<wbr />Property<wbr />Values</a>
+    </li>
+    <li>
+      <a id="d79ad7be-3796-470a-e873-47e2e1129ccc" href="d79ad7be-3796-470a-e873-47e2e1129ccc.htm">Format<wbr />Times</a>
+    </li>
+    <li>
+      <a id="9013d665-0fa0-d70e-fd26-9527dd728b10" href="9013d665-0fa0-d70e-fd26-9527dd728b10.htm">Format<wbr />Timestamps</a>
+    </li>
+    <li>
+      <a id="7379b521-b0f2-6912-f480-fd5fc75234e2" href="7379b521-b0f2-6912-f480-fd5fc75234e2.htm">Format<wbr />Typed<wbr />Values</a>
+    </li>
+    <li>
+      <a id="1a73f993-d3b3-b595-ca04-3be3d9ba7e3d" href="1a73f993-d3b3-b595-ca04-3be3d9ba7e3d.htm">Format<wbr />Value<wbr />List<wbr />Items</a>
+    </li>
+    <li>
+      <a id="4c782c38-c53b-7d3b-d129-63f6d1e9cb0c" href="4c782c38-c53b-7d3b-d129-63f6d1e9cb0c.htm">Get<wbr />Culture</a>
+    </li>
+    <li>
+      <a id="1688931e-0e8b-2f2f-7889-694d2e9ceaad" href="1688931e-0e8b-2f2f-7889-694d2e9ceaad.htm">Get<wbr />Separator</a>
+    </li>
+    <li>
+      <a id="cb34cfb0-864e-a8aa-1672-f9594287dac4" href="cb34cfb0-864e-a8aa-1672-f9594287dac4.htm">Use<wbr />Legacy<wbr />Formatting</a>
+    </li>
+  </tocItems>
+</toc>

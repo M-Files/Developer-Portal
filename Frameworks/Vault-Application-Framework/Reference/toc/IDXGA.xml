@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="c4d72f96-6f8d-d980-192d-f87016e301ec.htm">Json<wbr />Conf<wbr />Editor<wbr />Attribute</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="20e5e6d6-6449-1256-a145-caeaf42af448" href="20e5e6d6-6449-1256-a145-caeaf42af448.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="b2fdb222-2bd7-fd75-8c5f-9d9ddbf4d427" class="has-submenu" href="b2fdb222-2bd7-fd75-8c5f-9d9ddbf4d427.htm">
+        <span data-tocFile="../toc/IDBXGA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3c14e4e6-2879-b462-976c-ab80bba70376" class="has-submenu" href="3c14e4e6-2879-b462-976c-ab80bba70376.htm">
+        <span data-tocFile="../toc/IDCXGA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

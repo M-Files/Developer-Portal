@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>IModule Methods</title>
+    <meta name="Title" content="Methods" />
+    <meta name="Help.Id" content="Methods.T:MFiles.VAF.Module.IModule" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Module" />
+    <meta name="guid" content="0ceb7d39-cdeb-b866-38c2-cf005a388206" />
+    <meta name="tocFile" content="../toc/IDC5A.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>IModule Methods</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDADASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="4649766a-0089-8b20-750f-fbd599da341f.htm">GetConfigKey</a>
+                  </td>
+                  <td>
+            Resolves the default configuration key for configurations of this module.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="094caec5-8391-4983-784d-5635dd9651e1.htm">GetMethodsByAttribute<span id="LSTF09CA4E9_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTF09CA4E9_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
+                  </td>
+                  <td>
+            Returns a collection of methods decorated with the given attribute.
+            <br />(Inherited from <a href="73ceb73b-4724-c792-f592-288dd8060b4e.htm">IMethodSource</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0fb83421-cfd7-cef0-8ee2-21337b71fe68.htm">GetModuleDescription</a>
+                  </td>
+                  <td>
+            Returns the module description.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="af5798aa-eb4a-6b39-dabc-32616b0e62d9.htm">GetModuleName</a>
+                  </td>
+                  <td>
+            Returns the module name for UI.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ebfbbdde-d894-2c19-45db-894ee742c8f6.htm">Initialize</a>
+                  </td>
+                  <td>
+            Used for module initialization that may include dependencies on other modules.
+            It is automatically called by the Configuration Manager after all modules are loaded.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c4730de6-2743-2981-1cea-d2f5ad4b31ed.htm">LoadConfiguration</a>
+                  </td>
+                  <td>
+            LoadConfiguration loads the configuration of the owner module from the vault.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1ceed8bf-8cff-687d-a4c3-dff0efce1fa1.htm">Start</a>
+                  </td>
+                  <td>
+            Used for indicating the module start. It is automatically called by the Configuration
+            Manager after all modules are initialized.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3e996bcd-35a0-53bc-edbc-3605eb723c61.htm">Stop</a>
+                  </td>
+                  <td>
+            Used for indicating the module stop. It is automatically called by the Configuration
+            Manager for all modules before are initialized.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="bcaa23e2-5fad-5d9f-aa27-d3afa7c0c31a.htm">Uninitialize</a>
+                  </td>
+                  <td>
+            Used for indicating the module un-initialization.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="17aa37fd-6ee0-2542-7831-57e87d30ed54.htm">UnloadConfiguration</a>
+                  </td>
+                  <td>
+            Removes the configuration.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b8465162-7b8b-d7ca-03cf-e7453e9b95b4.htm">ValidateConfiguration</a>
+                  </td>
+                  <td>
+            Method to Validate the modules configuration in this vault.
+            Updates the configurations IsValid.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="28a8e149-e5df-ae47-6848-41b825dd9df1.htm">ValidateConfigurationSyntax</a>
+                  </td>
+                  <td>
+            Validates the configuration data syntax without touching running configuration.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="0fb679ea-f997-1856-24c9-398f61af944d.htm">IModule Interface</a>
+              </div>
+              <div>
+                <a href="75a03b3d-c244-f807-1d48-81366332dc56.htm">MFiles.VAF.Module Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

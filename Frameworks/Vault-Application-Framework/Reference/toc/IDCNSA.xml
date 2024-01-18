@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+    <li>
+      <a href="c92f028d-bb9e-b91c-9711-c30c09a57f82.htm">Json<wbr />Path<wbr />Info</a>
+    </li>
+    <li>
+      <a href="e17c033f-fb5c-322b-ae21-f044826a23b0.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="bff1c3a3-2c85-dee6-503e-395efc4028ed" href="bff1c3a3-2c85-dee6-503e-395efc4028ed.htm">Get<wbr />Path<wbr />Matcher</a>
+    </li>
+    <li>
+      <a id="be0f0221-407e-e1ef-3add-98bf76215699" href="be0f0221-407e-e1ef-3add-98bf76215699.htm">Get<wbr />Segments</a>
+    </li>
+    <li>
+      <a id="a8536804-4cee-0c2f-51e9-df5b19234af1" href="a8536804-4cee-0c2f-51e9-df5b19234af1.htm">Get<wbr />Token<wbr />Search<wbr />Path</a>
+    </li>
+    <li>
+      <a id="d6ea7e40-be59-378e-d42a-1dc9b7d8e1a7" class="has-submenu" href="d6ea7e40-be59-378e-d42a-1dc9b7d8e1a7.htm">
+        <span data-tocFile="../toc/IDDCNSA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resolve<wbr />Placeholders</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d1a378d7-ebd4-59e9-c365-27c5862ad5ed" href="d1a378d7-ebd4-59e9-c365-27c5862ad5ed.htm">Resolve<wbr />Placeholder<wbr />Values<wbr />From<wbr />Path</a>
+    </li>
+    <li>
+      <a id="871d514b-7999-9362-8e80-af06e89adb8e" href="871d514b-7999-9362-8e80-af06e89adb8e.htm">Resolve<wbr />Segment<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a id="921df998-df28-b127-9c24-339da8b51247" href="921df998-df28-b127-9c24-339da8b51247.htm">Resolve<wbr />Segment<wbr />Placeholder<wbr />Values</a>
+    </li>
+    <li>
+      <a id="2198eda6-1d5d-1b3f-6328-05755b1df96c" href="2198eda6-1d5d-1b3f-6328-05755b1df96c.htm">Resolve<wbr />Segments<wbr />With<wbr />Wild<wbr />Card<wbr />Array<wbr />Indexes</a>
+    </li>
+    <li>
+      <a id="f8db8a56-1a07-40fb-1729-be6a7b4aa131" href="f8db8a56-1a07-40fb-1729-be6a7b4aa131.htm">Resolve<wbr />Settable<wbr />Path</a>
+    </li>
+    <li>
+      <a id="41decd5c-7a1d-0953-88a5-edc031310fbe" href="41decd5c-7a1d-0953-88a5-edc031310fbe.htm">Segment<wbr />Has<wbr />Array<wbr />Wild<wbr />Card</a>
+    </li>
+    <li>
+      <a id="2c27d75f-fcd3-90c5-b3d6-616f06c4e342" href="2c27d75f-fcd3-90c5-b3d6-616f06c4e342.htm">Select<wbr />Matching<wbr />Tokens</a>
+    </li>
+    <li>
+      <a id="1fc39331-5604-db60-5ffe-eb1747add705" href="1fc39331-5604-db60-5ffe-eb1747add705.htm">Set<wbr />Path<wbr />Indexes</a>
+    </li>
+  </tocItems>
+</toc>

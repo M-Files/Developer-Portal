@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+    <li>
+      <a href="98c2d90c-9160-3ca2-c9f3-30e0c63cbdac.htm">Crypto<wbr />RSA</a>
+    </li>
+    <li>
+      <a href="e6544046-a0d2-2176-5689-c69e037ef43d.htm">Methods</a>
+    </li>
+    <li>
+      <a href="b074094a-3db4-50f7-ea6e-6298642b513b.htm">Verify<wbr />Signature</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3d7d4d81-3ce6-11e7-7470-41b5039c800f" href="3d7d4d81-3ce6-11e7-7470-41b5039c800f.htm">Verify<wbr />Signature(<wbr />Byte[], Byte[], String, Object)</a>
+    </li>
+    <li>
+      <a id="a2129477-ad69-fca5-d05e-6eaa5c3c31a1" href="a2129477-ad69-fca5-d05e-6eaa5c3c31a1.htm">Verify<wbr />Signature(<wbr />String, Byte[], String, Object)</a>
+    </li>
+    <li>
+      <a id="81a5bae5-993d-54a9-9db9-725d9ec4cc66" href="81a5bae5-993d-54a9-9db9-725d9ec4cc66.htm">Verify<wbr />Signature(<wbr />String, String, String, Object)</a>
+    </li>
+  </tocItems>
+</toc>

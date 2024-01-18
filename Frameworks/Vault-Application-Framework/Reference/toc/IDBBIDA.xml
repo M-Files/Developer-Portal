@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="800d11b4-d2a2-0cc7-a0ca-5c3ecef6b802.htm">Directive<wbr />Validator</a>
+    </li>
+    <li>
+      <a href="17ade56f-f4ae-a273-436c-07cbb2defbec.htm">Methods</a>
+    </li>
+    <li>
+      <a href="09dfd03f-f119-255e-f043-5440bf66ab4f.htm">Get<wbr />Directives<wbr />Missing<wbr />Data<wbr />Contract<wbr />Attribute</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c084d1be-9b1c-6622-4a7b-08e9b06ee392" href="c084d1be-9b1c-6622-4a7b-08e9b06ee392.htm">Get<wbr />Directives<wbr />Missing<wbr />Data<wbr />Contract<wbr />Attribute(<wbr />IEnumerable&lt;Processor&gt;)</a>
+    </li>
+    <li>
+      <a id="aebbfaf3-eb3a-46f2-8ec4-6da9d1ce8028" href="aebbfaf3-eb3a-46f2-8ec4-6da9d1ce8028.htm">Get<wbr />Directives<wbr />Missing<wbr />Data<wbr />Contract<wbr />Attribute(<wbr />Task<wbr />Manager)</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>MFiles.VAF.Configuration.JsonMapping.Converters Namespace</title>
+    <meta name="Title" content="MFiles.VAF.Configuration.JsonMapping.Converters" />
+    <meta name="Help.Id" content="N:MFiles.VAF.Configuration.JsonMapping.Converters" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration.JsonMapping.Converters" />
+    <meta name="guid" content="96ac650a-5e21-6511-9a25-fe07665273c1" />
+    <meta name="tocFile" content="../toc/IDA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping.<wbr />Converters Namespace</h1>
+            <div class="summary"> </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Classes</h2>
+            <div id="IDACASection">
+              <table id="classList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="ee43dab1-d671-c50d-7794-dcc9f5f51afe.htm">ArrayToObjectConverter<span id="LSTABEEE538_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TObject<span id="LSTABEEE538_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Converts an array to an object, by mapping each array item to a
+            correspondingly ordered data member.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0b0412ba-ab24-25bb-7b31-d6466dabea35.htm">EnumNameToValueConverter<span id="LSTABEEE538_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TObject<span id="LSTABEEE538_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Converts an enum name into the enum value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="af2d27cd-8a8f-8544-6534-afa84d5e2959.htm">EnumValueToNameConverter<span id="LSTABEEE538_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TObject<span id="LSTABEEE538_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Converts an enum value into the enum name.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="082b40e6-ea4a-38f8-2053-09a84efc8f93.htm">IDToMFIdentiferConverter</a>
+                  </td>
+                  <td>
+            Converts an structure element ID value in a source JSON structure to an
+            MFIdentifier in a target JSON structure.
+            If the source JSON contains a ghost property that contains the original
+            references for the structure elements, the reference will be used instead
+            of the id.
+            The ghost property will be named using the name of the property that contains
+            the id value, followed by "-OriginalReferences". Typically the ghost properties
+            are generated by this convert's companion: <a href="c4e1701c-21c7-5a78-300f-14a6f36bb8ce.htm">MFIdentiferToIDConverter</a>.
+            
+            For example:
+            {
+              classID: &lt;id&gt;
+              classID-OriginalReferences: &lt;reference&gt;
+            }
+            
+            or 
+            
+            {
+              classIDs: [ &lt;id1&gt;, &lt;id2&gt;, &lt;id3&gt;]
+              classID-OriginalReferences:: [ &lt;reference1&gt;, &lt;reference2&gt;, &lt;reference3&gt;]
+            }
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c4e1701c-21c7-5a78-300f-14a6f36bb8ce.htm">MFIdentiferToIDConverter</a>
+                  </td>
+                  <td>
+            Converts an structure element reference value in a source JSON structure to an
+            explicit ID in a target JSON structure.
+            A ghost property will be added to the target JSON structure to preserve the
+            original references used for the item.
+            The ghost property will be named using the name of the property that contains
+            the id value, followed by "-OriginalReferences". Typically the ghost properties
+            can be converted back to references by the <a href="082b40e6-ea4a-38f8-2053-09a84efc8f93.htm">IDToMFIdentiferConverter</a>.
+            
+            For example the source json:
+            {
+              ObjType: "ObjType1",
+              Classes: [ "Class1", "Class2" ]
+            }
+            
+            might get converted to a target like so:
+            
+            {
+              objTypeID: 110,
+              objTypeID-OriginalReferences: "ObjType1",
+              classIDs: [ 2, 4 ],
+              classIDs-OriginalReferences: [ "Class1", "Class2" ]
+            }
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2c093cb7-eda2-1e62-d865-e2cbdcae7fb6.htm">ObjectToArrayConverter<span id="LSTABEEE538_6" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TObject<span id="LSTABEEE538_7" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Converts an object to an array, by mapping each data member
+            property in order to an array structure.
+            </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Classes</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

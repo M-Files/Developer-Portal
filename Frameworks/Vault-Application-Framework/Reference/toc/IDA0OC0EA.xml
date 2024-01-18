@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="e10391f0-2244-6223-2681-dc90cd4a8b5d.htm">Reference<wbr />Trees</a>
+    </li>
+    <li>
+      <a href="53d3c57e-be78-b1ed-50c3-71263ec4cb53.htm">Constructors</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="91f003f7-5784-64da-afef-cc0d2597ba6a" href="91f003f7-5784-64da-afef-cc0d2597ba6a.htm">Reference<wbr />Trees(<wbr />Vault, String, Property<wbr />Values, Reference<wbr />Tree.<wbr />Tree<wbr />Map, Reference<wbr />Tree.<wbr />Resolution<wbr />Type, Boolean)</a>
+    </li>
+    <li>
+      <a id="19689964-f6fa-7488-99e9-b6d8c015a141" href="19689964-f6fa-7488-99e9-b6d8c015a141.htm">Reference<wbr />Trees(<wbr />Vault, String, Property<wbr />Values, Reference<wbr />Tree.<wbr />Tree<wbr />Map[], Reference<wbr />Tree.<wbr />Resolution<wbr />Type, Boolean)</a>
+    </li>
+    <li>
+      <a id="efe9a378-c6ff-c19e-e55c-5b91a88ff0de" href="efe9a378-c6ff-c19e-e55c-5b91a88ff0de.htm">Reference<wbr />Trees(<wbr />Vault, String, Property<wbr />Values, String, Reference<wbr />Tree.<wbr />Resolution<wbr />Type, Boolean)</a>
+    </li>
+  </tocItems>
+</toc>

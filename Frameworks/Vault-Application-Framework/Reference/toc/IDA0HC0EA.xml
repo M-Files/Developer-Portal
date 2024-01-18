@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="e6376b85-c31c-bf71-faf4-2707a28a2eb0.htm">Reference<wbr />Tree.<wbr />MFDynamic<wbr />Identifier</a>
+    </li>
+    <li>
+      <a href="71ea4a50-149f-794e-a509-004b5c46f4cc.htm">Constructors</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="1c1f9bb6-5e2e-ada0-8f7e-4a7eddc8a87a" href="1c1f9bb6-5e2e-ada0-8f7e-4a7eddc8a87a.htm">Reference<wbr />Tree.<wbr />MFDynamic<wbr />Identifier(<wbr />Reference<wbr />Tree.<wbr />Complex<wbr />Reference, String, Boolean)</a>
+    </li>
+    <li>
+      <a id="dd405fe0-a39f-e85f-e475-08238f999cdf" href="dd405fe0-a39f-e85f-e475-08238f999cdf.htm">Reference<wbr />Tree.<wbr />MFDynamic<wbr />Identifier(<wbr />Reference<wbr />Tree.<wbr />Simple<wbr />Placeholder, String, Boolean)</a>
+    </li>
+    <li>
+      <a id="b1ed4e3a-49aa-af2e-d830-34bb0d3ccb63" href="b1ed4e3a-49aa-af2e-d830-34bb0d3ccb63.htm">Reference<wbr />Tree.<wbr />MFDynamic<wbr />Identifier(<wbr />Vault, Reference<wbr />Tree.<wbr />Property<wbr />Reference, String, Boolean)</a>
+    </li>
+  </tocItems>
+</toc>

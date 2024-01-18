@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c7f378bb-95b1-5476-eb54-f682b91c3b53.htm">MFiles.<wbr />VAF.<wbr />Core</a>
+    </li>
+    <li>
+      <a href="5d800812-3344-35c0-f184-146b40c44518.htm">Script<wbr />Event<wbr />Scope<wbr />Logger</a>
+    </li>
+    <li>
+      <a href="433ae165-7f45-91e2-2896-029b86d97b73.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="aa4ecef9-4f8d-bb7d-e337-a73924b6c031" href="aa4ecef9-4f8d-bb7d-e337-a73924b6c031.htm">Get<wbr />Auto<wbr />Number<wbr />Property<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="a96a260d-2a44-6196-cadb-c71fef3c565f" href="a96a260d-2a44-6196-cadb-c71fef3c565f.htm">Get<wbr />Auto<wbr />Number<wbr />Property<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="9a1a4300-8fb9-555c-aafc-78237591e860" href="9a1a4300-8fb9-555c-aafc-78237591e860.htm">Get<wbr />Custom<wbr />Property<wbr />Value<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="aab32803-c468-4bf4-afca-8918512f0c52" href="aab32803-c468-4bf4-afca-8918512f0c52.htm">Get<wbr />Custom<wbr />Property<wbr />Value<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="f43412f5-94f2-0c8c-b2c0-fd9cd42e9a4f" href="f43412f5-94f2-0c8c-b2c0-fd9cd42e9a4f.htm">Get<wbr />Environment<wbr />Base<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="61dd4c22-9802-f824-92d6-6e8a8a14e4b9" href="61dd4c22-9802-f824-92d6-6e8a8a14e4b9.htm">Get<wbr />Event<wbr />Handler<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="be210d6f-69ab-78b7-6de3-a23fbb76243c" href="be210d6f-69ab-78b7-6de3-a23fbb76243c.htm">Get<wbr />Event<wbr />Handler<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="f3f222bc-fe6a-32e5-2139-6bd31a1eba97" href="f3f222bc-fe6a-32e5-2139-6bd31a1eba97.htm">Get<wbr />Extension<wbr />Method<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="c5fa450f-2d0d-ba88-122e-7daedee76e47" href="c5fa450f-2d0d-ba88-122e-7daedee76e47.htm">Get<wbr />Extension<wbr />Method<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="352d0e9a-aa77-df7f-25b0-7e0510050696" href="352d0e9a-aa77-df7f-25b0-7e0510050696.htm">Get<wbr />Property<wbr />Validation<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="54c1a35c-d083-7485-d6c3-ea4fd2b2d165" href="54c1a35c-d083-7485-d6c3-ea4fd2b2d165.htm">Get<wbr />Property<wbr />Validation<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="98d67c4d-bbae-0a6d-6a2e-665dbe6a12c5" href="98d67c4d-bbae-0a6d-6a2e-665dbe6a12c5.htm">Get<wbr />State<wbr />Action<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="ba62d0ed-92d1-d63b-05ad-54837707e9a8" href="ba62d0ed-92d1-d63b-05ad-54837707e9a8.htm">Get<wbr />State<wbr />Action<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="e92832d2-b62f-4aa3-9879-187fd101921f" href="e92832d2-b62f-4aa3-9879-187fd101921f.htm">Get<wbr />State<wbr />Post<wbr />Condition<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="182a9b0b-9b76-bb31-ff58-3e560e56a275" href="182a9b0b-9b76-bb31-ff58-3e560e56a275.htm">Get<wbr />State<wbr />Post<wbr />Condition<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="ddede287-5645-89f7-17a5-55e336ee4b63" href="ddede287-5645-89f7-17a5-55e336ee4b63.htm">Get<wbr />State<wbr />Pre<wbr />Condition<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="63b4c39d-fecd-6fbf-264a-959d1146e362" href="63b4c39d-fecd-6fbf-264a-959d1146e362.htm">Get<wbr />State<wbr />Pre<wbr />Condition<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="c3416e44-76d2-90d0-0c62-807734a83ac1" href="c3416e44-76d2-90d0-0c62-807734a83ac1.htm">Get<wbr />Transition<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="316ec42e-b687-73be-4deb-6736118c251e" href="316ec42e-b687-73be-4deb-6736118c251e.htm">Get<wbr />Transition<wbr />Log<wbr />Message</a>
+    </li>
+    <li>
+      <a id="38f0fd24-5a68-5ccf-517f-0f5851b46346" href="38f0fd24-5a68-5ccf-517f-0f5851b46346.htm">Set<wbr />Auto<wbr />Number<wbr />Property<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="f96c7fb1-6f73-832f-b80d-770732211608" href="f96c7fb1-6f73-832f-b80d-770732211608.htm">Set<wbr />Custom<wbr />Property<wbr />Value<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="500be536-cf3f-3316-1097-9d8d90062e81" href="500be536-cf3f-3316-1097-9d8d90062e81.htm">Set<wbr />Event<wbr />Handler<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="9e5b1373-b91b-b3d2-01d0-e56f4fc08034" href="9e5b1373-b91b-b3d2-01d0-e56f4fc08034.htm">Set<wbr />Extension<wbr />Method<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="66ad6d83-0a5a-d472-a7f7-b9fdfa834624" href="66ad6d83-0a5a-d472-a7f7-b9fdfa834624.htm">Set<wbr />Property<wbr />Validation<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="35d5c8b4-aa04-a1e7-21a2-15c4f4fe7ac8" href="35d5c8b4-aa04-a1e7-21a2-15c4f4fe7ac8.htm">Set<wbr />State<wbr />Action<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="691acd84-1ec5-eed8-a56f-b094384df7d8" href="691acd84-1ec5-eed8-a56f-b094384df7d8.htm">Set<wbr />State<wbr />Post<wbr />Condition<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="80138c80-b7be-c48d-8389-08a290d0e727" href="80138c80-b7be-c48d-8389-08a290d0e727.htm">Set<wbr />State<wbr />Pre<wbr />Condition<wbr />Log<wbr />Context</a>
+    </li>
+    <li>
+      <a id="460c046d-2d13-61e3-da63-39f5c38f3c87" href="460c046d-2d13-61e3-da63-39f5c38f3c87.htm">Set<wbr />Transition<wbr />Log<wbr />Context</a>
+    </li>
+  </tocItems>
+</toc>

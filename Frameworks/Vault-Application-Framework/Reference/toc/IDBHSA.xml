@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+    <li>
+      <a href="e7be07de-a1c9-f27f-5259-293286a850d9.htm">Json<wbr />Admin<wbr />Comment<wbr />Preserver</a>
+    </li>
+    <li>
+      <a href="071f0e33-8cd8-d270-1103-b3857d63bc47.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7d67722a-ad23-87ae-0a8e-1dbdc18cf721" href="7d67722a-ad23-87ae-0a8e-1dbdc18cf721.htm">Get<wbr />Admin<wbr />Comments</a>
+    </li>
+    <li>
+      <a id="0fe85d26-c1d4-d5db-87da-f4eb29f7f256" href="0fe85d26-c1d4-d5db-87da-f4eb29f7f256.htm">Get<wbr />Preserved<wbr />Comments</a>
+    </li>
+    <li>
+      <a id="971cc307-39f8-800d-743f-7065fea244e0" class="has-submenu" href="971cc307-39f8-800d-743f-7065fea244e0.htm">
+        <span data-tocFile="../toc/IDCBHSA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Preserve<wbr />Comments</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bce91e33-237e-983f-16f5-fcdba13309ec" class="has-submenu" href="bce91e33-237e-983f-16f5-fcdba13309ec.htm">
+        <span data-tocFile="../toc/IDDBHSA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Restore<wbr />Comments</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="a07c148a-f461-a703-94be-ecff2c34c2fc" class="has-submenu" href="a07c148a-f461-a703-94be-ecff2c34c2fc.htm">
+        <span data-tocFile="../toc/IDAVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Attached<wbr />Debugger<wbr />Logging<wbr />Settings</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="512be3a7-396d-1393-2ddd-1a516d6344cf" class="has-submenu" href="512be3a7-396d-1393-2ddd-1a516d6344cf.htm">
+        <span data-tocFile="../toc/IDBVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Do<wbr />Not<wbr />Automatically<wbr />Register<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="60d0a8bf-ae0c-0170-d770-35e251c32dcc" class="has-submenu" href="60d0a8bf-ae0c-0170-d770-35e251c32dcc.htm">
+        <span data-tocFile="../toc/IDCVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Empty<wbr />Context</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e205ff1a-72ab-534e-74e4-0e5556c567e9" class="has-submenu" href="e205ff1a-72ab-534e-74e4-0e5556c567e9.htm">
+        <span data-tocFile="../toc/IDDVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Event<wbr />Handler<wbr />Environment<wbr />Log<wbr />Sensitivity<wbr />Filter</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="01af5751-89dd-ce60-d2a2-4ab4c54da24e" class="has-submenu" href="01af5751-89dd-ce60-d2a2-4ab4c54da24e.htm">
+        <span data-tocFile="../toc/IDEVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Formattable<wbr />String<wbr />Extension<wbr />Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="492c2802-97c2-6edf-30ac-bd4ed677adf6" class="has-submenu" href="492c2802-97c2-6edf-30ac-bd4ed677adf6.htm">
+        <span data-tocFile="../toc/IDFVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IGlobal<wbr />Context<wbr />Manager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="7829c967-6d0f-5f56-cf78-60521632d773" class="has-submenu" href="7829c967-6d0f-5f56-cf78-60521632d773.htm">
+        <span data-tocFile="../toc/IDGVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILogger</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c93409f6-9d1b-caf4-4b17-f423b8d4e572" class="has-submenu" href="c93409f6-9d1b-caf4-4b17-f423b8d4e572.htm">
+        <span data-tocFile="../toc/IDHVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILogger<wbr />Extension<wbr />Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a3688f5f-291e-cc84-6751-bdffc1bd89a2" class="has-submenu" href="a3688f5f-291e-cc84-6751-bdffc1bd89a2.htm">
+        <span data-tocFile="../toc/IDIVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILogging<wbr />Configuration</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="60e1208b-5933-0c75-72ff-d5892f976a75" class="has-submenu" href="60e1208b-5933-0c75-72ff-d5892f976a75.htm">
+        <span data-tocFile="../toc/IDJVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILogging<wbr />Context</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="becf3872-25e0-c2f4-6d00-d10aa9159974" class="has-submenu" href="becf3872-25e0-c2f4-6d00-d10aa9159974.htm">
+        <span data-tocFile="../toc/IDKVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILog<wbr />Manager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="8c8eda93-7e21-ae6f-7be9-ee32cb9a8116" class="has-submenu" href="8c8eda93-7e21-ae6f-7be9-ee32cb9a8116.htm">
+        <span data-tocFile="../toc/IDLVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILog<wbr />Manager&lt;TConfiguration&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="edf6ab36-f743-3d69-d575-1638bc0dde3d" class="has-submenu" href="edf6ab36-f743-3d69-d575-1638bc0dde3d.htm">
+        <span data-tocFile="../toc/IDMVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILog<wbr />Sensitivity<wbr />Filter</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3b799f11-1a06-f9e0-4a41-b5a3f16361cd" class="has-submenu" href="3b799f11-1a06-f9e0-4a41-b5a3f16361cd.htm">
+        <span data-tocFile="../toc/IDNVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILog<wbr />Sensitivity<wbr />Filter&lt;TSupported<wbr />Type&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f6243473-5f46-1b62-1954-e3691d618dbd" class="has-submenu" href="f6243473-5f46-1b62-1954-e3691d618dbd.htm">
+        <span data-tocFile="../toc/IDOVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ILog<wbr />Target<wbr />Configuration</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="422585de-dd0b-dd2b-ca29-c805e273347d" class="has-submenu" href="422585de-dd0b-dd2b-ca29-c805e273347d.htm">
+        <span data-tocFile="../toc/IDPVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IThread<wbr />Context<wbr />Manager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="5682877c-3a33-dd24-cc54-fdd697a4fabf" class="has-submenu" href="5682877c-3a33-dd24-cc54-fdd697a4fabf.htm">
+        <span data-tocFile="../toc/IDQVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IWrappable<wbr />Logger</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="95a388a3-5c83-60fc-f7c5-9c2dba39a280" class="has-submenu" href="95a388a3-5c83-60fc-f7c5-9c2dba39a280.htm">
+        <span data-tocFile="../toc/IDRVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Log<wbr />Context<wbr />Keys</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3da6dc6b-065f-ce9e-ee15-95178c94cf77" class="has-submenu" href="3da6dc6b-065f-ce9e-ee15-95178c94cf77.htm">
+        <span data-tocFile="../toc/IDSVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Loggable<wbr />Base</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="61b02184-ee3d-1b44-873b-bbe5edcd9209" class="has-submenu" href="61b02184-ee3d-1b44-873b-bbe5edcd9209.htm">
+        <span data-tocFile="../toc/IDTVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Logger<wbr />Base</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="6fe25da5-fd37-5e10-a872-b2cc6cf22b5f" href="6fe25da5-fd37-5e10-a872-b2cc6cf22b5f.htm">Log<wbr />Level</a>
+    </li>
+    <li>
+      <a id="942788b9-fd8d-6c92-da24-2b5a722b5196" class="has-submenu" href="942788b9-fd8d-6c92-da24-2b5a722b5196.htm">
+        <span data-tocFile="../toc/IDVVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Log<wbr />Manager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="6f4c05a1-b1c3-5aa1-a7b8-d4028c0fbbc6" class="has-submenu" href="6f4c05a1-b1c3-5aa1-a7b8-d4028c0fbbc6.htm">
+        <span data-tocFile="../toc/IDWVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Log<wbr />Manager<wbr />Base</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1e5e338a-feae-6f4f-79ee-3964cd8d81e4" class="has-submenu" href="1e5e338a-feae-6f4f-79ee-3964cd8d81e4.htm">
+        <span data-tocFile="../toc/IDXVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Log<wbr />Manager<wbr />Base&lt;TConfiguration&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="458875a6-e53a-779f-1033-1a4680d3a6d1" href="458875a6-e53a-779f-1033-1a4680d3a6d1.htm">Log<wbr />Sensitivity</a>
+    </li>
+    <li>
+      <a id="4d2b7a8e-62d9-0cfe-2fc2-82e6cfa9a3e5" class="has-submenu" href="4d2b7a8e-62d9-0cfe-2fc2-82e6cfa9a3e5.htm">
+        <span data-tocFile="../toc/IDZVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Log<wbr />Sensitivity<wbr />Custom<wbr />Formatter</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4194bb71-0f32-894a-abdd-76b1e155537a" class="has-submenu" href="4194bb71-0f32-894a-abdd-76b1e155537a.htm">
+        <span data-tocFile="../toc/ID1VA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Log<wbr />Sensitivity<wbr />Filter<wbr />Factory</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="15ad723e-61b1-694a-b070-bf9ce648bc0d" class="has-submenu" href="15ad723e-61b1-694a-b070-bf9ce648bc0d.htm">
+        <span data-tocFile="../toc/ID2VA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Null<wbr />Logger</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="05bb57e5-122f-7aeb-42ea-ace27e31a50c" class="has-submenu" href="05bb57e5-122f-7aeb-42ea-ace27e31a50c.htm">
+        <span data-tocFile="../toc/ID3VA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Sensitive<wbr />Data</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="08f39d60-70cd-c70f-edd6-40d9b9aa6851" class="has-submenu" href="08f39d60-70cd-c70f-edd6-40d9b9aa6851.htm">
+        <span data-tocFile="../toc/ID4VA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Sensitivity<wbr />Flag</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="863485e8-0b9a-6cb7-356b-48785354a4da" class="has-submenu" href="863485e8-0b9a-6cb7-356b-48785354a4da.htm">
+        <span data-tocFile="../toc/ID5VA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Sensitivity<wbr />Flag.<wbr />Ids</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="77f2f6f5-63af-6d26-5e3f-bb27f3335451" href="77f2f6f5-63af-6d26-5e3f-bb27f3335451.htm">Sensitivity<wbr />Flag<wbr />Behavior</a>
+    </li>
+    <li>
+      <a id="4b8924f3-04d0-60af-a25c-228b6a146c97" class="has-submenu" href="4b8924f3-04d0-60af-a25c-228b6a146c97.htm">
+        <span data-tocFile="../toc/ID0AB0VA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Manager<wbr />Event<wbr />Args<wbr />Sensitivity<wbr />Filter</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

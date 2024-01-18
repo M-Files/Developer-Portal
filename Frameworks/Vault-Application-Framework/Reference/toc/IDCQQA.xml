@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="3a17ff6f-fa81-c468-0ba9-4d658d7d949d.htm">Typed<wbr />Value<wbr />JA</a>
+    </li>
+    <li>
+      <a href="619e3d26-fe3c-0f9c-a2af-0ea53abea50d.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="9a49766c-2ba7-d905-293f-4df6e4a3513b" href="9a49766c-2ba7-d905-293f-4df6e4a3513b.htm">From<wbr />Json</a>
+    </li>
+    <li>
+      <a id="a6ec6b82-dd1e-4c5e-6d73-833dbc56a510" href="a6ec6b82-dd1e-4c5e-6d73-833dbc56a510.htm">Load<wbr />Api<wbr />Object</a>
+    </li>
+    <li>
+      <a id="7c598682-008f-b683-7ef9-134dc9bb268c" class="has-submenu" href="7c598682-008f-b683-7ef9-134dc9bb268c.htm">
+        <span data-tocFile="../toc/IDCCQQA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>To<wbr />Api<wbr />Object</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="15e36bff-ef10-26df-7553-e8d3a0d9bb56" href="15e36bff-ef10-26df-7553-e8d3a0d9bb56.htm">Validate</a>
+    </li>
+  </tocItems>
+</toc>

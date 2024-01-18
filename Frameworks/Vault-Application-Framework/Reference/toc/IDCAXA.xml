@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5752451c-9e08-a553-cfab-00722e8c4f41.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Nvs</a>
+    </li>
+    <li>
+      <a href="35d1a04d-2efd-1004-0d2f-2e871c45bba5.htm">Nvs<wbr />Key</a>
+    </li>
+    <li>
+      <a href="6079f51e-7de0-bacb-3557-9f7f9847fed8.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="39ee844f-42f2-c510-f7c3-0d351155f22b" class="has-submenu" href="39ee844f-42f2-c510-f7c3-0d351155f22b.htm">
+        <span data-tocFile="../toc/IDACAXA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Equals</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="eef57147-dd47-d013-1df4-14d800206819" class="has-submenu" href="eef57147-dd47-d013-1df4-14d800206819.htm">
+        <span data-tocFile="../toc/IDBCAXA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Get<wbr />Hash<wbr />Code</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b5ae64b7-0e2c-7f39-ee24-80046fc0909a" href="b5ae64b7-0e2c-7f39-ee24-80046fc0909a.htm">Is<wbr />Set</a>
+    </li>
+    <li>
+      <a id="cdc3989e-bc97-7d27-84b7-56f8c3d6a81c" href="cdc3989e-bc97-7d27-84b7-56f8c3d6a81c.htm">Read</a>
+    </li>
+    <li>
+      <a id="8a7f849e-fc33-9d36-5957-4eb6cdf6dba4" href="8a7f849e-fc33-9d36-5957-4eb6cdf6dba4.htm">To<wbr />String</a>
+    </li>
+  </tocItems>
+</toc>

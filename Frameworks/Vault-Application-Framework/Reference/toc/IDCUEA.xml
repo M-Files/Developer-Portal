@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="3b5b9a4d-e4f3-57e5-0494-ce176c5aa81a.htm">Flagged<wbr />Feature<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="dfa263e8-836f-eee6-5651-854d4f6af274.htm">Fields</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="37a86b1a-7fc5-a320-ea20-b438ad60b8e6" href="37a86b1a-7fc5-a320-ea20-b438ad60b8e6.htm">BINARY_<wbr />EXEC_<wbr />MODE_<wbr />REGISTER_<wbr />LABEL</a>
+    </li>
+    <li>
+      <a id="521a7b9c-ccb1-8bbe-ad62-c0accc283297" href="521a7b9c-ccb1-8bbe-ad62-c0accc283297.htm">REG_<wbr />CLIENT_<wbr />FF_<wbr />KEY_<wbr />SEGMENT</a>
+    </li>
+    <li>
+      <a id="281a7fd6-9140-a107-f40b-9a04d14da1ee" href="281a7fd6-9140-a107-f40b-9a04d14da1ee.htm">REG_<wbr />SERVER_<wbr />FF_<wbr />KEY_<wbr />SEGMENT</a>
+    </li>
+    <li>
+      <a id="fe7f216c-1baa-c3dc-2d9c-adb986b65fee" href="fe7f216c-1baa-c3dc-2d9c-adb986b65fee.htm">REG_<wbr />SERVERTOOLS_<wbr />FF_<wbr />KEY_<wbr />SEGMENT</a>
+    </li>
+  </tocItems>
+</toc>

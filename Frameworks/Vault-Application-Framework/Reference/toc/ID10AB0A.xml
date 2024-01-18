@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="54df8d80-a099-44ce-fabe-aed1f5156089.htm">Sequential<wbr />Task<wbr />Processor</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3a071f2c-76c6-d6c6-da62-3a6419a14a53" href="3a071f2c-76c6-d6c6-da62-3a6419a14a53.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="da56bb49-0f44-0bae-4c9b-7024daed7208" href="da56bb49-0f44-0bae-4c9b-7024daed7208.htm">Properties</a>
+    </li>
+    <li>
+      <a id="22aaaa66-7832-1e10-91d5-aa0ce3132763" class="has-submenu" href="22aaaa66-7832-1e10-91d5-aa0ce3132763.htm">
+        <span data-tocFile="../toc/IDC10AB0A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9718ae48-1570-f05c-1270-60ed83cd38f9" href="9718ae48-1570-f05c-1270-60ed83cd38f9.htm">Events</a>
+    </li>
+  </tocItems>
+</toc>

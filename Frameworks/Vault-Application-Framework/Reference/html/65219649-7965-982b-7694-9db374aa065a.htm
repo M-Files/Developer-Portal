@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>DateContext Methods</title>
+    <meta name="Title" content="Methods" />
+    <meta name="Help.Id" content="Methods.T:MFiles.VAF.Placeholders.DateContext" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Placeholders" />
+    <meta name="guid" content="65219649-7965-982b-7694-9db374aa065a" />
+    <meta name="tocFile" content="../toc/IDG0BB0A.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Date<wbr />Context Methods</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDBDASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="8e4ab69d-bae2-bf15-5f82-d81908d33f08.htm">Add(DateTime)</a>
+                  </td>
+                  <td>
+            Adds a raw value to the context (wraps it in a typedValue).
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0d7a0eb1-ac9f-0f41-67b6-3465dcad8d0f.htm">Add(T)</a>
+                  </td>
+                  <td>
+             Adds an item to the list. Ignores null values.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="02c33656-eb76-b49b-b185-bc6c663158ec.htm">AssertValidItem</a>
+                  </td>
+                  <td>
+            Ensures an item is valid before it is added to the list.
+            Delegated to by the IList methods that add a value to the list.
+            <br />(Inherited from <a href="c0eb6144-fb43-6172-7b9d-70812ebb3e5a.htm">TypedValueContext</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c687d88a-8800-0fc9-a4ac-108167e07a4c.htm">Clear</a>
+                  </td>
+                  <td>
+            Removes all items from the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="356aedd4-e093-c961-b388-acd11a8bded7.htm">Clone</a>
+                  </td>
+                  <td>
+            Returns a new instance of this context type with the same values.
+            <br />(Overrides <a href="ffea47da-d1bb-3399-18e1-3fb0b64a332e.htm">ExpansionContext<span id="LSTF70BBB6A_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LSTF70BBB6A_6" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>Clone<span id="LSTF70BBB6A_7" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="19aa29ba-0940-62b6-14b5-1f8be6c0f416.htm">Contains</a>
+                  </td>
+                  <td>
+            Determines whether the item is present in the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_8" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_9" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d089cffc-60c8-dbdf-e37f-901ffcf47395.htm">CopyTo</a>
+                  </td>
+                  <td>
+            Copies the elements of the list to an Array, starting at a particular Array index.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_10" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_11" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4be9da61-31a3-d300-83eb-7c1bdc7e0e38.htm">GetEnumerator</a>
+                  </td>
+                  <td>
+            Returns an enumerator that iterates through each item of the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_12" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_13" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8f2daa00-2582-8e6c-4302-b8f055396d24.htm">IndexOf</a>
+                  </td>
+                  <td>
+            Determines the index of a specific item.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_14" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_15" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8aa113c4-e28f-4f15-2ac1-03f77ac5b149.htm">Insert</a>
+                  </td>
+                  <td>
+            Inserts an item at the specified index.
+            Ignores null values.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_16" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_17" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8e6ea837-f3c9-85bc-6791-3b9955164a60.htm">Remove</a>
+                  </td>
+                  <td>
+            Removes an item from the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_18" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_19" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f1189214-14a2-e620-4660-ef4c9eafadbe.htm">RemoveAt</a>
+                  </td>
+                  <td>
+            Removes the item at the specified index.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LSTF70BBB6A_20" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_21" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3c6512c9-e186-ed6d-2356-e9c892d2ab5e.htm">SafeCast<span id="LSTF70BBB6A_22" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T2<span id="LSTF70BBB6A_23" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
+                  </td>
+                  <td>
+            Casts the context to an enumerable list of type T safely.
+            If the cast is not valid, null is returned.
+            <br />(Overrides <a href="e36c62d2-1024-0edd-e1b0-08530ef6f1cc.htm">ExpansionContext<span id="LSTF70BBB6A_24" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_25" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LSTF70BBB6A_26" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>SafeCast<span id="LSTF70BBB6A_27" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T2<span id="LSTF70BBB6A_28" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span><span id="LSTF70BBB6A_29" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="747622e4-7656-1e99-24ca-a27c16c3c6a5.htm">ToDateTimes</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="798e3bf4-fb6a-9dd4-6d27-8029912bdb54.htm">UniqueValues</a>
+                  </td>
+                  <td>
+            Returns a new instance of this context type with duplicate values removed.
+            <br />(Overrides <a href="75869e21-acce-e006-85f0-b4264c09a425.htm">ExpansionContext<span id="LSTF70BBB6A_30" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTF70BBB6A_31" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LSTF70BBB6A_32" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UniqueValues<span id="LSTF70BBB6A_33" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="a944a2f5-294a-e96d-4899-de6010d5e1a4.htm">DateContext Class</a>
+              </div>
+              <div>
+                <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.VAF.Placeholders Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

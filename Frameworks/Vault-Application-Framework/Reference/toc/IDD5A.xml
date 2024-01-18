@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="75a03b3d-c244-f807-1d48-81366332dc56.htm">MFiles.<wbr />VAF.<wbr />Module</a>
+    </li>
+    <li>
+      <a href="26230025-e03c-82be-6646-06738b33a93c.htm">IModule<wbr />Configuration</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="37316214-f4b1-8008-8289-cc2bd2d4ee4f" class="has-submenu" href="37316214-f4b1-8008-8289-cc2bd2d4ee4f.htm">
+        <span data-tocFile="../toc/IDAD5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="ce53beb6-4dd6-c001-46f8-f011715f8c8d" class="has-submenu" href="ce53beb6-4dd6-c001-46f8-f011715f8c8d.htm">
+        <span data-tocFile="../toc/IDBD5A.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

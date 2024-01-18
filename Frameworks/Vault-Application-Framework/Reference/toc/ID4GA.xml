@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="bb5efd00-ad70-9514-92ed-6fbbf7e1d1b0.htm">License<wbr />Decoder</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="9adb6f73-e58d-853e-f3dc-aab94849733a" class="has-submenu" href="9adb6f73-e58d-853e-f3dc-aab94849733a.htm">
+        <span data-tocFile="../toc/IDA4GA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="025a208a-a850-05b3-d3e6-53b596525ec1" class="has-submenu" href="025a208a-a850-05b3-d3e6-53b596525ec1.htm">
+        <span data-tocFile="../toc/IDB4GA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="29d14508-48c9-017b-3418-9b071b969c48" class="has-submenu" href="29d14508-48c9-017b-3418-9b071b969c48.htm">
+        <span data-tocFile="../toc/IDC4GA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

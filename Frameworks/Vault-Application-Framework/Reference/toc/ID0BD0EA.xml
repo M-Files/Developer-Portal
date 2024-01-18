@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="02fc0557-b03c-1304-91d5-1872efb2c5b7.htm">State<wbr />Transition<wbr />Environment</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4991d652-5ed9-ffb7-aaa6-d04c3672953a" href="4991d652-5ed9-ffb7-aaa6-d04c3672953a.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="3c726122-7308-d9dd-0d30-d30b663d7620" class="has-submenu" href="3c726122-7308-d9dd-0d30-d30b663d7620.htm">
+        <span data-tocFile="../toc/IDB0BD0EA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="7441684d-0fc5-5bd5-6e43-96fed41e73c1" href="7441684d-0fc5-5bd5-6e43-96fed41e73c1.htm">Methods</a>
+    </li>
+  </tocItems>
+</toc>

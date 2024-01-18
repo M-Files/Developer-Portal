@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="a4a142d6-9295-2315-fc2d-c9cc6bdfbda4.htm">Task<wbr />Manager</a>
+    </li>
+    <li>
+      <a href="03a6d2c3-ffac-303f-2a5c-cd0ed64fd2b5.htm">Events</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c52ba50b-4f4a-c1de-4522-b6072440ecff" href="c52ba50b-4f4a-c1de-4522-b6072440ecff.htm">Broadcast<wbr />Event</a>
+    </li>
+    <li>
+      <a id="f6267843-f7c1-cb68-cba6-1957cee6e930" href="f6267843-f7c1-cb68-cba6-1957cee6e930.htm">Life<wbr />Cycle<wbr />Event</a>
+    </li>
+    <li>
+      <a id="c246513d-f0a5-6271-201d-9aeeb90752d2" href="c246513d-f0a5-6271-201d-9aeeb90752d2.htm">Poll<wbr />Event</a>
+    </li>
+    <li>
+      <a id="34532b7d-97f8-cc73-7bb7-414e88ee025f" href="34532b7d-97f8-cc73-7bb7-414e88ee025f.htm">Process<wbr />Loop<wbr />Event</a>
+    </li>
+    <li>
+      <a id="8b5caf05-1d79-0165-3b77-fee935acc096" href="8b5caf05-1d79-0165-3b77-fee935acc096.htm">Queue<wbr />Event</a>
+    </li>
+    <li>
+      <a id="353c38d4-ae45-b9b6-a9df-d4a315146e95" href="353c38d4-ae45-b9b6-a9df-d4a315146e95.htm">Task<wbr />Event</a>
+    </li>
+  </tocItems>
+</toc>

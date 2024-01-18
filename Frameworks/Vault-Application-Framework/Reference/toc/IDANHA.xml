@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c7b49528-2711-1f51-8e0a-57128c6bdc8a.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Admin<wbr />Configurations</a>
+    </li>
+    <li>
+      <a href="13c853b1-0fe2-84dd-d1f2-08298586bb53.htm">IConfiguration<wbr />Domain<wbr />Node</a>
+    </li>
+    <li>
+      <a href="2ca8f467-d2a4-ed02-ba6d-e5c9b68d0c1e.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7f56443f-a708-a790-1e34-f7c57c5606cf" href="7f56443f-a708-a790-1e34-f7c57c5606cf.htm">Get<wbr />Capabilities</a>
+    </li>
+    <li>
+      <a id="4b9f697f-e6de-802a-ed65-3a7d2c683f36" href="4b9f697f-e6de-802a-ed65-3a7d2c683f36.htm">Get<wbr />Commands</a>
+    </li>
+    <li>
+      <a id="bab5f4cc-86d8-5817-aec1-105d2ea94c3e" href="bab5f4cc-86d8-5817-aec1-105d2ea94c3e.htm">Get<wbr />Configuration</a>
+    </li>
+    <li>
+      <a id="914b4ef2-82d5-7f78-2267-3b100dd0b0e3" href="914b4ef2-82d5-7f78-2267-3b100dd0b0e3.htm">Get<wbr />Configuration<wbr />Schema</a>
+    </li>
+    <li>
+      <a id="09706871-d1fc-11f1-b0c8-1220948cdc49" href="09706871-d1fc-11f1-b0c8-1220948cdc49.htm">Get<wbr />Dashboard<wbr />Content</a>
+    </li>
+    <li>
+      <a id="7a89d212-4d94-61c5-9b42-582a348d4999" href="7a89d212-4d94-61c5-9b42-582a348d4999.htm">Get<wbr />Description</a>
+    </li>
+    <li>
+      <a id="87df2b26-7e57-ee28-b48f-a191f889e60f" href="87df2b26-7e57-ee28-b48f-a191f889e60f.htm">Get<wbr />ID</a>
+    </li>
+    <li>
+      <a id="c4eadd12-5de8-8ff3-3f82-a8a6715e037e" href="c4eadd12-5de8-8ff3-3f82-a8a6715e037e.htm">Get<wbr />Name</a>
+    </li>
+    <li>
+      <a id="2b4f15fa-c7dc-cb45-ae35-40c65bea3620" href="2b4f15fa-c7dc-cb45-ae35-40c65bea3620.htm">Get<wbr />Sort<wbr />Priority</a>
+    </li>
+    <li>
+      <a id="2d0f5312-95b4-1d82-722b-e8a3f219a0d4" href="2d0f5312-95b4-1d82-722b-e8a3f219a0d4.htm">Get<wbr />Status<wbr />Summary</a>
+    </li>
+    <li>
+      <a id="655a0443-e3fb-1843-c4f8-4e2fe84a3390" href="655a0443-e3fb-1843-c4f8-4e2fe84a3390.htm">Get<wbr />Sub<wbr />Domain<wbr />Nodes</a>
+    </li>
+    <li>
+      <a id="124599ff-84ea-37fa-5e1c-e88c13d6a3c9" href="124599ff-84ea-37fa-5e1c-e88c13d6a3c9.htm">Save<wbr />Configuration</a>
+    </li>
+    <li>
+      <a id="3d365416-e4cd-44e9-501e-ac0fc3acf3dd" href="3d365416-e4cd-44e9-501e-ac0fc3acf3dd.htm">Validate</a>
+    </li>
+  </tocItems>
+</toc>

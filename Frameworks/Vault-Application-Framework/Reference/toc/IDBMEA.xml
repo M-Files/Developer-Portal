@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="87c8b192-30ac-ed4b-6aff-cdb6b424b43a.htm">Background<wbr />Operation<wbr />Status</a>
+    </li>
+    <li>
+      <a href="e2583d40-7176-693f-68e3-5ed6b5d83c4f.htm">Fields</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="673ac7d0-ac81-dc5c-3e9c-d85118198d33" href="673ac7d0-ac81-dc5c-3e9c-d85118198d33.htm">Cancelled</a>
+    </li>
+    <li>
+      <a id="7cd47397-bd8e-2c39-ce2e-eee9f307637a" href="7cd47397-bd8e-2c39-ce2e-eee9f307637a.htm">Interval</a>
+    </li>
+    <li>
+      <a id="4c9dcbf0-d113-18f6-2b11-ea1a550db0d8" href="4c9dcbf0-d113-18f6-2b11-ea1a550db0d8.htm">Next<wbr />Run<wbr />Scheduled</a>
+    </li>
+    <li>
+      <a id="9f408c85-e7d7-7610-59dc-8f149fecddd3" href="9f408c85-e7d7-7610-59dc-8f149fecddd3.htm">Previous<wbr />Run<wbr />Finished</a>
+    </li>
+    <li>
+      <a id="aa5d8e19-5cac-0325-c251-ea95fa7dd237" href="aa5d8e19-5cac-0325-c251-ea95fa7dd237.htm">Previous<wbr />Run<wbr />Started</a>
+    </li>
+    <li>
+      <a id="6cb1f830-2025-39c8-5b32-deed1a4cb1d4" href="6cb1f830-2025-39c8-5b32-deed1a4cb1d4.htm">Recurring</a>
+    </li>
+    <li>
+      <a id="ca773831-7161-c6f7-be50-d89b7689fc97" href="ca773831-7161-c6f7-be50-d89b7689fc97.htm">Run<wbr />Count</a>
+    </li>
+    <li>
+      <a id="4c1d7ca9-54db-7c05-18cb-8735bd13f097" href="4c1d7ca9-54db-7c05-18cb-8735bd13f097.htm">Run<wbr />Once<wbr />Request<wbr />Count</a>
+    </li>
+    <li>
+      <a id="bb008c89-c0e1-0b28-6407-34a676978de9" href="bb008c89-c0e1-0b28-6407-34a676978de9.htm">State</a>
+    </li>
+  </tocItems>
+</toc>

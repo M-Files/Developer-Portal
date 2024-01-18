@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="91795330-3dc0-5040-6a62-ef190584060b.htm">MFiles.<wbr />VAF.<wbr />Placeholders.<wbr />Commands</a>
+    </li>
+    <li>
+      <a href="a682a686-0ab1-9499-3139-4f1c81dc1490.htm">MFiles<wbr />Url<wbr />Placeholder<wbr />Command<wbr />Provider</a>
+    </li>
+    <li>
+      <a href="01828fb3-8862-ebe4-2e64-477e5acd011f.htm">Constructors</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="511df036-258f-e77f-b4d8-230aff17df03" href="511df036-258f-e77f-b4d8-230aff17df03.htm">MFiles<wbr />Url<wbr />Placeholder<wbr />Command<wbr />Provider(<wbr />String, Url<wbr />Target<wbr />Platform, Boolean, MFiles<wbr />URLType)</a>
+    </li>
+    <li>
+      <a id="23d14ba8-2109-595e-65cc-8fcb4ce45bdd" href="23d14ba8-2109-595e-65cc-8fcb4ce45bdd.htm">MFiles<wbr />Url<wbr />Placeholder<wbr />Command<wbr />Provider(<wbr />String, String, Url<wbr />Target<wbr />Platform, Boolean, MFiles<wbr />URLType)</a>
+    </li>
+  </tocItems>
+</toc>

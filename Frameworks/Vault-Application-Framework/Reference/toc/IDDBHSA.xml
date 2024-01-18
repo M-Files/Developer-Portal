@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+    <li>
+      <a href="e7be07de-a1c9-f27f-5259-293286a850d9.htm">Json<wbr />Admin<wbr />Comment<wbr />Preserver</a>
+    </li>
+    <li>
+      <a href="071f0e33-8cd8-d270-1103-b3857d63bc47.htm">Methods</a>
+    </li>
+    <li>
+      <a href="bce91e33-237e-983f-16f5-fcdba13309ec.htm">Restore<wbr />Comments</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="754e5593-dbb2-a91c-54a5-5d876f81395e" href="754e5593-dbb2-a91c-54a5-5d876f81395e.htm">Restore<wbr />Comments(<wbr />IEnumerable&lt;Json<wbr />Admin<wbr />Comment&gt;, JObject)</a>
+    </li>
+    <li>
+      <a id="19c67eea-7126-6ddd-b43d-196ee8312930" href="19c67eea-7126-6ddd-b43d-196ee8312930.htm">Restore<wbr />Comments(<wbr />JObject, JObject, String)</a>
+    </li>
+  </tocItems>
+</toc>

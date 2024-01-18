@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="40813806-5464-e212-77c3-73b127d3c164.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Resource<wbr />Editor</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="d4620d6b-0e74-6154-7cbd-435669ba1ba4" class="has-submenu" href="d4620d6b-0e74-6154-7cbd-435669ba1ba4.htm">
+        <span data-tocFile="../toc/IDAZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IResource<wbr />Handler</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bf09cb7c-b3e4-944a-f1e0-76dd723ad3a7" class="has-submenu" href="bf09cb7c-b3e4-944a-f1e0-76dd723ad3a7.htm">
+        <span data-tocFile="../toc/IDBZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Nvs<wbr />Resource<wbr />Handler</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="97c95c73-2605-c9d0-f4e1-afceec5b504f" href="97c95c73-2605-c9d0-f4e1-afceec5b504f.htm">Resource<wbr />Content<wbr />Type</a>
+    </li>
+    <li>
+      <a id="7cf65f29-0539-1200-75ec-3365fc2d3e8b" class="has-submenu" href="7cf65f29-0539-1200-75ec-3365fc2d3e8b.htm">
+        <span data-tocFile="../toc/IDDZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resource<wbr />Data</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b86e2027-efa3-c066-8c70-e78ee1d65f39" class="has-submenu" href="b86e2027-efa3-c066-8c70-e78ee1d65f39.htm">
+        <span data-tocFile="../toc/IDEZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resource<wbr />Editor<wbr />Plugin</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a3e81649-080f-13bc-83c0-8898a7a6a89f" class="has-submenu" href="a3e81649-080f-13bc-83c0-8898a7a6a89f.htm">
+        <span data-tocFile="../toc/IDFZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resource<wbr />Editor<wbr />Plugin.<wbr />Commands</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f748651f-23a7-4705-65f0-3c60b9bfb9b6" class="has-submenu" href="f748651f-23a7-4705-65f0-3c60b9bfb9b6.htm">
+        <span data-tocFile="../toc/IDGZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resource<wbr />Editor<wbr />Settings</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="2b2685a9-5507-3885-8538-77f10cbc3fc6" class="has-submenu" href="2b2685a9-5507-3885-8538-77f10cbc3fc6.htm">
+        <span data-tocFile="../toc/IDHZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resource<wbr />Metadata</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d122e2e4-e4b0-7ce5-5991-c87cf881b08b" class="has-submenu" href="d122e2e4-e4b0-7ce5-5991-c87cf881b08b.htm">
+        <span data-tocFile="../toc/IDIZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resource<wbr />Metadata.<wbr />Reserved<wbr />Keys</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4e69e15e-1a10-040e-0f41-5d59de1e2d20" class="has-submenu" href="4e69e15e-1a10-040e-0f41-5d59de1e2d20.htm">
+        <span data-tocFile="../toc/IDJZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Resource<wbr />Type</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

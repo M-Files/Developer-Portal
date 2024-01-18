@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.<wbr />VAF</a>
+    </li>
+    <li>
+      <a href="d991213f-cf21-7642-d66d-dcd23355b2e0.htm">Event<wbr />Tracing<wbr />For<wbr />Windows<wbr />Event<wbr />Source</a>
+    </li>
+    <li>
+      <a href="d6e65d2d-4b86-5474-2998-1bc1d45a8f81.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="2abdee56-7ec3-c70a-4ec0-2f87b31e26ad" href="2abdee56-7ec3-c70a-4ec0-2f87b31e26ad.htm">Trace<wbr />After<wbr />Automatic<wbr />State<wbr />Transition<wbr />Trigger</a>
+    </li>
+    <li>
+      <a id="9474fd15-e79b-f558-74f3-e02a9ca6869b" href="9474fd15-e79b-f558-74f3-e02a9ca6869b.htm">Trace<wbr />After<wbr />Event</a>
+    </li>
+    <li>
+      <a id="affbaee8-4b2d-86d8-d6b8-249c30f40094" href="affbaee8-4b2d-86d8-d6b8-249c30f40094.htm">Trace<wbr />After<wbr />Extension<wbr />Method</a>
+    </li>
+    <li>
+      <a id="f2987553-b134-a02c-f586-4ecae39281b3" href="f2987553-b134-a02c-f586-4ecae39281b3.htm">Trace<wbr />After<wbr />Property<wbr />Customized<wbr />Automatic<wbr />Numbering</a>
+    </li>
+    <li>
+      <a id="9df9dbae-0415-1b54-3daf-b190efaabe7f" href="9df9dbae-0415-1b54-3daf-b190efaabe7f.htm">Trace<wbr />After<wbr />Property<wbr />Custom<wbr />Value<wbr />Calculation</a>
+    </li>
+    <li>
+      <a id="ff13965a-2bb6-1b2a-a69d-ee4d7af45a18" href="ff13965a-2bb6-1b2a-a69d-ee4d7af45a18.htm">Trace<wbr />After<wbr />Property<wbr />Value<wbr />Validation</a>
+    </li>
+    <li>
+      <a id="a67f9438-c054-31c9-832e-3be6cd682516" href="a67f9438-c054-31c9-832e-3be6cd682516.htm">Trace<wbr />After<wbr />State<wbr />Post<wbr />Conditions</a>
+    </li>
+    <li>
+      <a id="c6139023-dbea-46b5-4a16-a4068be6b8c1" href="c6139023-dbea-46b5-4a16-a4068be6b8c1.htm">Trace<wbr />After<wbr />State<wbr />Pre<wbr />Conditions</a>
+    </li>
+    <li>
+      <a id="c77b64ec-4d90-92dd-4a34-9e180a81b256" href="c77b64ec-4d90-92dd-4a34-9e180a81b256.htm">Trace<wbr />After<wbr />State<wbr />Run<wbr />Action</a>
+    </li>
+    <li>
+      <a id="957fbb2f-6cd7-2c0c-db62-0452409b95e4" href="957fbb2f-6cd7-2c0c-db62-0452409b95e4.htm">Trace<wbr />Before<wbr />Automatic<wbr />State<wbr />Transition<wbr />Trigger</a>
+    </li>
+    <li>
+      <a id="8a1a8621-f871-2106-fbeb-1a15dccd75f8" href="8a1a8621-f871-2106-fbeb-1a15dccd75f8.htm">Trace<wbr />Before<wbr />Event</a>
+    </li>
+    <li>
+      <a id="f7d266f5-7d41-6ad4-5287-16256043c928" href="f7d266f5-7d41-6ad4-5287-16256043c928.htm">Trace<wbr />Before<wbr />Extension<wbr />Method</a>
+    </li>
+    <li>
+      <a id="a9626510-caf5-fdf7-a5a5-a2dcdf7cc227" href="a9626510-caf5-fdf7-a5a5-a2dcdf7cc227.htm">Trace<wbr />Before<wbr />Property<wbr />Customized<wbr />Automatic<wbr />Numbering</a>
+    </li>
+    <li>
+      <a id="0b32861c-916c-0e55-dade-85ff4d905b4b" href="0b32861c-916c-0e55-dade-85ff4d905b4b.htm">Trace<wbr />Before<wbr />Property<wbr />Custom<wbr />Value<wbr />Calculation</a>
+    </li>
+    <li>
+      <a id="f1c5ee1e-61ee-11c3-2f71-e142dd16c2e3" href="f1c5ee1e-61ee-11c3-2f71-e142dd16c2e3.htm">Trace<wbr />Before<wbr />Property<wbr />Value<wbr />Validation</a>
+    </li>
+    <li>
+      <a id="55931bb3-3776-dfb3-31ac-ad3cf28853b4" href="55931bb3-3776-dfb3-31ac-ad3cf28853b4.htm">Trace<wbr />Before<wbr />State<wbr />Post<wbr />Conditions</a>
+    </li>
+    <li>
+      <a id="85688827-a3a1-4c91-a51f-21116edfa3fb" href="85688827-a3a1-4c91-a51f-21116edfa3fb.htm">Trace<wbr />Before<wbr />State<wbr />Pre<wbr />Conditions</a>
+    </li>
+    <li>
+      <a id="6d1bceb8-84ac-286f-bb43-6c50c6f9bc18" href="6d1bceb8-84ac-286f-bb43-6c50c6f9bc18.htm">Trace<wbr />Before<wbr />State<wbr />Run<wbr />Action</a>
+    </li>
+    <li>
+      <a id="95e905ac-a1c4-8117-233e-c30c0da8f57c" href="95e905ac-a1c4-8117-233e-c30c0da8f57c.htm">Trace<wbr />Custom<wbr />Event</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="4194bb71-0f32-894a-abdd-76b1e155537a.htm">Log<wbr />Sensitivity<wbr />Filter<wbr />Factory</a>
+    </li>
+    <li>
+      <a href="c479e3fb-d35b-853f-ffb0-b66537c07e05.htm">Methods</a>
+    </li>
+    <li>
+      <a href="a9c6ee5d-70b8-f5b9-e547-e5b8b6c5ac3c.htm">Try<wbr />Get<wbr />Filter</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="497eceed-b0c1-b7e0-d4dd-be62215a8766" href="497eceed-b0c1-b7e0-d4dd-be62215a8766.htm">Try<wbr />Get<wbr />Filter&lt;TType&gt;(<wbr />ILog<wbr />Sensitivity<wbr />Filter&lt;TType&gt;)</a>
+    </li>
+    <li>
+      <a id="9461b9d9-7f20-f4e8-fa02-9ec4a3af531c" href="9461b9d9-7f20-f4e8-fa02-9ec4a3af531c.htm">Try<wbr />Get<wbr />Filter(<wbr />Type, ILog<wbr />Sensitivity<wbr />Filter, Boolean)</a>
+    </li>
+  </tocItems>
+</toc>

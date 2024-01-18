@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="cb74f91b-35d8-3463-99aa-4cb9d83d6f20.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Dashboards</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="17f4802c-17c3-5c4d-c16d-5d0427e3ae38" class="has-submenu" href="17f4802c-17c3-5c4d-c16d-5d0427e3ae38.htm">
+        <span data-tocFile="../toc/IDAMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Availability<wbr />Group<wbr />Status<wbr />List</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="59d5afc4-350f-0f8f-2f1d-ef23585444af" class="has-submenu" href="59d5afc4-350f-0f8f-2f1d-ef23585444af.htm">
+        <span data-tocFile="../toc/IDBMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Command</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="be040026-38a9-2cd8-6c7c-e86adb6a2369" href="be040026-38a9-2cd8-6c7c-e86adb6a2369.htm">Dashboard<wbr />Command<wbr />Style</a>
+    </li>
+    <li>
+      <a id="b58cd6e2-854c-ad9d-1481-c7766c0c03db" class="has-submenu" href="b58cd6e2-854c-ad9d-1481-c7766c0c03db.htm">
+        <span data-tocFile="../toc/IDDMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Content<wbr />Collection</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9d4ec983-1db1-bece-4771-48e17edeefec" class="has-submenu" href="9d4ec983-1db1-bece-4771-48e17edeefec.htm">
+        <span data-tocFile="../toc/IDEMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Custom<wbr />Content</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d289f0cb-7b4c-1d93-9346-9626dbf6e6c4" class="has-submenu" href="d289f0cb-7b4c-1d93-9346-9626dbf6e6c4.htm">
+        <span data-tocFile="../toc/IDFMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Domain<wbr />Command</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d6ac205b-f06e-d2b5-c22c-f2124cead112" class="has-submenu" href="d6ac205b-f06e-d2b5-c22c-f2124cead112.htm">
+        <span data-tocFile="../toc/IDGMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Format<wbr />Provider</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f77ae5a8-2a6f-f52e-2d59-1646c19b4ee7" class="has-submenu" href="f77ae5a8-2a6f-f52e-2d59-1646c19b4ee7.htm">
+        <span data-tocFile="../toc/IDHMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Fragment</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e32b76ce-b062-fb08-df2e-68290c1ee2d5" class="has-submenu" href="e32b76ce-b062-fb08-df2e-68290c1ee2d5.htm">
+        <span data-tocFile="../toc/IDIMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Helper</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="db487d3e-66fd-cba5-c1ac-e93fc049e4e2" class="has-submenu" href="db487d3e-66fd-cba5-c1ac-e93fc049e4e2.htm">
+        <span data-tocFile="../toc/IDJMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Helper.<wbr />Custom<wbr />Attributes</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f8107902-a43f-cfc5-2b84-f0de0fa0025b" class="has-submenu" href="f8107902-a43f-cfc5-2b84-f0de0fa0025b.htm">
+        <span data-tocFile="../toc/IDKMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Link</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="31be3eae-0b0d-5802-8d07-46b732560ed0" class="has-submenu" href="31be3eae-0b0d-5802-8d07-46b732560ed0.htm">
+        <span data-tocFile="../toc/IDLMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />List</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c596b40c-f8b3-2cba-d1d3-3bc779bc14c8" class="has-submenu" href="c596b40c-f8b3-2cba-d1d3-3bc779bc14c8.htm">
+        <span data-tocFile="../toc/IDMMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />List<wbr />Item</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c06d86e3-0b1c-6fd7-37ca-b80b3bf3ff52" class="has-submenu" href="c06d86e3-0b1c-6fd7-37ca-b80b3bf3ff52.htm">
+        <span data-tocFile="../toc/IDNMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Panel</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1ff4f80e-cd0b-fc7a-a579-b8265412a5bc" class="has-submenu" href="1ff4f80e-cd0b-fc7a-a579-b8265412a5bc.htm">
+        <span data-tocFile="../toc/IDOMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Dashboard<wbr />Text</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="99ccedb2-6379-d341-eb6e-7120de8184e9" href="99ccedb2-6379-d341-eb6e-7120de8184e9.htm">Html<wbr />Content<wbr />Generator</a>
+    </li>
+    <li>
+      <a id="65aae94a-2890-8a96-c6f2-98ebbf901e38" class="has-submenu" href="65aae94a-2890-8a96-c6f2-98ebbf901e38.htm">
+        <span data-tocFile="../toc/IDQMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Html<wbr />String</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f4070327-ae21-7d2d-5153-3c56578d2049" href="f4070327-ae21-7d2d-5153-3c56578d2049.htm">Icon<wbr />Size</a>
+    </li>
+    <li>
+      <a id="8a129302-eb83-1cc8-4744-a5806250bdcc" class="has-submenu" href="8a129302-eb83-1cc8-4744-a5806250bdcc.htm">
+        <span data-tocFile="../toc/IDSMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IDashboard<wbr />Content</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="cf42fbaf-88bf-a8ef-99d2-a03c75140825" href="cf42fbaf-88bf-a8ef-99d2-a03c75140825.htm">Panel<wbr />Background</a>
+    </li>
+    <li>
+      <a id="111d7459-7bd8-5b33-821c-1f1e4c0066dd" class="has-submenu" href="111d7459-7bd8-5b33-821c-1f1e4c0066dd.htm">
+        <span data-tocFile="../toc/IDUMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Select<wbr />Tree<wbr />Node<wbr />Command</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="dff1b6b0-f75e-f2f1-11b5-ae40870ebd4f" class="has-submenu" href="dff1b6b0-f75e-f2f1-11b5-ae40870ebd4f.htm">
+        <span data-tocFile="../toc/IDVMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Status<wbr />Dashboard</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="7f72cbfa-42e3-e4fc-ef68-cc108f86379e" class="has-submenu" href="7f72cbfa-42e3-e4fc-ef68-cc108f86379e.htm">
+        <span data-tocFile="../toc/IDWMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Status<wbr />Dashboard<wbr />Content<wbr />Extension<wbr />Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="ee66cc40-483b-e5cb-eba0-316300f69783" class="has-submenu" href="ee66cc40-483b-e5cb-eba0-316300f69783.htm">
+        <span data-tocFile="../toc/IDXMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Status<wbr />Stub</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="2522253d-420d-bf7d-3059-acd8d1b43334" class="has-submenu" href="2522253d-420d-bf7d-3059-acd8d1b43334.htm">
+        <span data-tocFile="../toc/IDYMA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Vault<wbr />Application<wbr />Health<wbr />Report</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b294a53c-b198-9337-3f6d-dcbe1da96c42" href="b294a53c-b198-9337-3f6d-dcbe1da96c42.htm">Xml<wbr />Content<wbr />Generator</a>
+    </li>
+  </tocItems>
+</toc>

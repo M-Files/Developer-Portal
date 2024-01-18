@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>JsonValueAdaptor Properties</title>
+    <meta name="Title" content="Properties" />
+    <meta name="Help.Id" content="Properties.T:MFiles.VAF.Configuration.JsonAdaptor.JsonValueAdaptor" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration.JsonAdaptor" />
+    <meta name="guid" content="24067a62-5e8d-222c-d7d1-2544380abecd" />
+    <meta name="tocFile" content="../toc/IDFQA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Json<wbr />Value<wbr />Adaptor Properties</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDADASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="180e4c48-0329-007d-42e3-2890c067bac0.htm">Boolean</a>
+                  </td>
+                  <td>
+            Boolean value.
+            Only available when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Boolean</a></span>
+            Will only be serialized if available.
+            
+            Accepts <a href="https://docs.microsoft.com/dotnet/api/system.boolean" target="_blank" rel="noopener noreferrer">Boolean</a> and values that are implicitly cast to it.		
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="749ad854-ca30-bad6-1933-02999cd17239.htm">Date</a>
+                  </td>
+                  <td>
+            Date value.
+            Only available (not null) when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Date</a></span>
+            Will only be serialized if available.
+            
+            Accepts <a href="https://docs.microsoft.com/dotnet/api/system.datetime" target="_blank" rel="noopener noreferrer">DateTime</a> and strings that can be parsed to it.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b3327763-74b6-95a8-a77e-68f94b280a33.htm">Float</a>
+                  </td>
+                  <td>
+            Float value.
+            Only available when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Float</a></span>
+            Will only be serialized if available.
+            
+            Accepts <a href="https://docs.microsoft.com/dotnet/api/system.double" target="_blank" rel="noopener noreferrer">Double</a> and values that are implicitly cast to it.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8bcc4d6b-ab8d-bc73-4653-3f16bbda4e7f.htm">Integer</a>
+                  </td>
+                  <td>
+            Integer value.
+            Only available when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Integer</a></span>
+            Will only be serialized if available.
+            
+            Accepts <a href="https://docs.microsoft.com/dotnet/api/system.int64" target="_blank" rel="noopener noreferrer">Int64</a> and values that are implicitly cast to it.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="397f01a3-81e0-9b12-bd5a-dd13ac5d2041.htm">IsNull</a>
+                  </td>
+                  <td>
+            Indicates when the value is considered null.
+            Only available when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_4" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Null</a></span>
+            Will only be serialized if available, and in those cases, it is always set to <span class="code">true</span>.
+            
+            Setting the value to <span class="code">false</span> will have no effect on the object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="30e5d4d8-715c-78a2-fa4d-2daf79322117.htm">Lookup</a>
+                  </td>
+                  <td>
+            Lookup value.
+            Only available (not null) when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_5" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Date</a></span>
+            Will only be serialized if available.
+            
+            Accepts all types adaptable via <a href="5474c31b-3920-555c-10c1-84670060c696.htm">TryAdapt(Object, LookupJA<span id="LST6414EC8B_6" data-languageSpecificText="cpp=%"></span>)</a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ddeb1365-7c9d-cb1e-ce30-306951539c6a.htm">Lookups</a>
+                  </td>
+                  <td>
+            Lookups value.
+            Only available (not null) when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_7" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Lookups</a></span>
+            Will only be serialized if available.
+            
+            Accepts all types adaptable via <a href="74cfcbf8-d539-388b-4af0-3b9efe982aaa.htm">TryAdapt(Object, LookupsJA<span id="LST6414EC8B_8" data-languageSpecificText="cpp=%"></span>)</a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2390543e-c2b7-3de2-283d-384d581aec63.htm">Text</a>
+                  </td>
+                  <td>
+            Text value.
+            Only available when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_9" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Text</a></span>
+            Will only be serialized if available.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="14f15a94-4639-1561-98c9-3b2605e8fe2d.htm">Time</a>
+                  </td>
+                  <td>
+            Time value.
+            Only available (not null) when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_10" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Time</a></span>
+            Will only be serialized if available.
+            
+            Accepts <a href="https://docs.microsoft.com/dotnet/api/system.datetime" target="_blank" rel="noopener noreferrer">DateTime</a> and strings that can be parsed to it.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="89ed167e-74aa-dc25-af17-cfaa563559e9.htm">Timestamp</a>
+                  </td>
+                  <td>
+            Timestamp value.
+            Only available (not null) when <span class="code"><a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">JsonValueAdaptor<span id="LST6414EC8B_11" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ValueProperty</a> = <a href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Timestamp</a></span>
+            Will only be serialized if available.
+            
+            Accepts <a href="https://docs.microsoft.com/dotnet/api/system.datetime" target="_blank" rel="noopener noreferrer">DateTime</a> and strings that can be parsed to it.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7a05458d-6c3f-c608-9293-eb5485e95348.htm">Value</a>
+                  </td>
+                  <td>
+            The underlying value of the object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c75a9043-4500-25b0-ad31-8427e384fa2f.htm">valueProperty</a>
+                  </td>
+                  <td>
+            Indicates the property that will be serialized for the current value.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="d7b1065b-5e41-8400-5e3f-7a83bdcb0146.htm">JsonValueAdaptor Class</a>
+              </div>
+              <div>
+                <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.VAF.Configuration.JsonAdaptor Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

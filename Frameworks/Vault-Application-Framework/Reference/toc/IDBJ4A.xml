@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="baa11ef2-26f7-26c8-7b15-ecd802663520.htm">MFiles.<wbr />VAF.<wbr />Metadata<wbr />Cache</a>
+    </li>
+    <li>
+      <a href="5323c36e-f6f3-26cd-59f4-a9a65ec3e596.htm">Metadata<wbr />Cache<wbr />Vault<wbr />User<wbr />Operations</a>
+    </li>
+    <li>
+      <a href="9b9adeb6-e2a7-84be-e3ed-fd9551b11410.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="5fa14efc-4f9e-761f-06b5-ca174b99926d" href="5fa14efc-4f9e-761f-06b5-ca174b99926d.htm">Add<wbr />Or<wbr />Undelete<wbr />User<wbr />Account</a>
+    </li>
+    <li>
+      <a id="ee42a138-8256-4c2f-01a1-dd94e1484366" href="ee42a138-8256-4c2f-01a1-dd94e1484366.htm">Add<wbr />User<wbr />Account</a>
+    </li>
+    <li>
+      <a id="f62b89a0-c2a2-7742-cfb0-8b0f657ae644" href="f62b89a0-c2a2-7742-cfb0-8b0f657ae644.htm">Add<wbr />User<wbr />Account_<wbr />DEPRECATED</a>
+    </li>
+    <li>
+      <a id="5e49d9fd-ac6a-9b7e-b983-98e5b78a89b0" href="5e49d9fd-ac6a-9b7e-b983-98e5b78a89b0.htm">Get<wbr />Login<wbr />Account<wbr />Of<wbr />User</a>
+    </li>
+    <li>
+      <a id="c632a085-802f-7745-cee5-3d128d2ce099" href="c632a085-802f-7745-cee5-3d128d2ce099.htm">Get<wbr />Login<wbr />Account<wbr />Of<wbr />User<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="0e8756b0-5519-42ca-fb3f-edace95d81c0" href="0e8756b0-5519-42ca-fb3f-edace95d81c0.htm">Get<wbr />Login<wbr />Accounts</a>
+    </li>
+    <li>
+      <a id="0e5339aa-c215-8c6b-e9bf-632890c4ec94" href="0e5339aa-c215-8c6b-e9bf-632890c4ec94.htm">Get<wbr />User<wbr />Account</a>
+    </li>
+    <li>
+      <a id="c1924b59-a429-72ca-8437-dceaf1506bf1" href="c1924b59-a429-72ca-8437-dceaf1506bf1.htm">Get<wbr />User<wbr />Accounts</a>
+    </li>
+    <li>
+      <a id="ec740847-a906-536f-7a98-624a5cef09b4" href="ec740847-a906-536f-7a98-624a5cef09b4.htm">Get<wbr />User<wbr />IDBy<wbr />GUID</a>
+    </li>
+    <li>
+      <a id="bca67c0e-e96a-8890-d26a-1be66f6ba664" href="bca67c0e-e96a-8890-d26a-1be66f6ba664.htm">Get<wbr />User<wbr />List</a>
+    </li>
+    <li>
+      <a id="126bcba4-125d-ccc0-363d-fc972b5e6585" href="126bcba4-125d-ccc0-363d-fc972b5e6585.htm">Initialize</a>
+    </li>
+    <li>
+      <a id="ec1c2816-c97e-6006-d2cc-c0808c63425b" href="ec1c2816-c97e-6006-d2cc-c0808c63425b.htm">Modify<wbr />User<wbr />Account</a>
+    </li>
+    <li>
+      <a id="2442ecdd-27db-47e6-d415-c4204c977a2a" href="2442ecdd-27db-47e6-d415-c4204c977a2a.htm">Remove<wbr />User<wbr />Account</a>
+    </li>
+    <li>
+      <a id="0dd2aa9d-8b1f-d537-0403-bb6ca60f4083" href="0dd2aa9d-8b1f-d537-0403-bb6ca60f4083.htm">Undelete<wbr />User<wbr />Account<wbr />By<wbr />GUID</a>
+    </li>
+  </tocItems>
+</toc>

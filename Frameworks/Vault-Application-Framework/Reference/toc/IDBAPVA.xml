@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="422585de-dd0b-dd2b-ca29-c805e273347d.htm">IThread<wbr />Context<wbr />Manager</a>
+    </li>
+    <li>
+      <a href="ea04d5f4-e064-5cba-439e-deab26218cc0.htm">Methods</a>
+    </li>
+    <li>
+      <a href="e958787a-ecdf-9823-13d0-3c405bb9eed8.htm">Set</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="44409675-bcd5-b8de-d0f7-09db782f977b" href="44409675-bcd5-b8de-d0f7-09db782f977b.htm">Set(<wbr />IRead<wbr />Only<wbr />Collection&lt;Key<wbr />Value<wbr />Pair&lt;String, Object&gt;&gt;)</a>
+    </li>
+    <li>
+      <a id="599bf01b-9c70-d364-6ccc-f390205a970f" href="599bf01b-9c70-d364-6ccc-f390205a970f.htm">Set(<wbr />String, Object)</a>
+    </li>
+  </tocItems>
+</toc>

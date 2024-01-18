@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+    <li>
+      <a href="9c9ed616-c279-6ea3-48d1-3d2fc437590c.htm">Crypto<wbr />AES</a>
+    </li>
+    <li>
+      <a href="a3b5a6fe-40f2-60cf-fd5b-f61d42fd5968.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7d09f109-64c2-f805-0cfb-ad3ae16c3727" class="has-submenu" href="7d09f109-64c2-f805-0cfb-ad3ae16c3727.htm">
+        <span data-tocFile="../toc/IDABAAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Decrypt<wbr />Data</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="182d3795-47e8-8eef-486f-45b90b3e914d" class="has-submenu" href="182d3795-47e8-8eef-486f-45b90b3e914d.htm">
+        <span data-tocFile="../toc/IDBBAAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Decrypt<wbr />Data<wbr />As<wbr />Bytes</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="6d34926b-82db-893a-64a4-6aa5fe78016d" class="has-submenu" href="6d34926b-82db-893a-64a4-6aa5fe78016d.htm">
+        <span data-tocFile="../toc/IDCBAAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Decrypt<wbr />String</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9df6086a-196e-7af1-c4f9-8fc1de4fe986" href="9df6086a-196e-7af1-c4f9-8fc1de4fe986.htm">Decrypt<wbr />Text<wbr />With<wbr />Key</a>
+    </li>
+    <li>
+      <a id="7f197561-32a2-3738-4c33-903286fd756d" href="7f197561-32a2-3738-4c33-903286fd756d.htm">Decrypt<wbr />Text<wbr />With<wbr />Key_<wbr />Aes<wbr />Crypto</a>
+    </li>
+    <li>
+      <a id="876930ec-b935-d772-847b-27ce3ea949fe" href="876930ec-b935-d772-847b-27ce3ea949fe.htm">Decrypt<wbr />Text<wbr />With<wbr />Key_<wbr />Rijndael</a>
+    </li>
+    <li>
+      <a id="73b1cb52-de06-a494-c891-4ef9ad12d071" class="has-submenu" href="73b1cb52-de06-a494-c891-4ef9ad12d071.htm">
+        <span data-tocFile="../toc/IDGBAAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Encrypt<wbr />String</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1d3ab6f0-d537-73ad-2265-38343f3242f5" href="1d3ab6f0-d537-73ad-2265-38343f3242f5.htm">Encrypt<wbr />Text<wbr />With<wbr />Key</a>
+    </li>
+    <li>
+      <a id="c309c011-c051-3247-61b6-b0527b58edc8" href="c309c011-c051-3247-61b6-b0527b58edc8.htm">Encrypt<wbr />Text<wbr />With<wbr />Key_<wbr />Aes<wbr />Crypto</a>
+    </li>
+    <li>
+      <a id="5c2fc81a-3140-6a14-40ed-1367c7f934c6" href="5c2fc81a-3140-6a14-40ed-1367c7f934c6.htm">Encrypt<wbr />Text<wbr />With<wbr />Key_<wbr />Rijndael</a>
+    </li>
+  </tocItems>
+</toc>

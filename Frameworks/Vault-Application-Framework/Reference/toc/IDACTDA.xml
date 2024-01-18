@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="9382bf0a-1e96-e547-7f3a-f7e20e8a337c.htm">Task<wbr />Directive</a>
+    </li>
+    <li>
+      <a href="d7677d59-59a6-0c0e-ef9c-50f2607c8860.htm">Methods</a>
+    </li>
+    <li>
+      <a href="12a662ff-178a-6002-5234-62b6263dc18a.htm">Parse</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="6ffc9383-1cc3-cd6b-f9e9-1f56606c7cd7" href="6ffc9383-1cc3-cd6b-f9e9-1f56606c7cd7.htm">Parse&lt;T&gt;(<wbr />Byte[])</a>
+    </li>
+    <li>
+      <a id="1d22b2f2-4c63-ddfe-6c29-236251885071" href="1d22b2f2-4c63-ddfe-6c29-236251885071.htm">Parse&lt;T&gt;(<wbr />String)</a>
+    </li>
+    <li>
+      <a id="88e73dc1-f078-456c-08fd-22d035bfede2" href="88e73dc1-f078-456c-08fd-22d035bfede2.htm">Parse(<wbr />Byte[], Type)</a>
+    </li>
+    <li>
+      <a id="4bdf7659-ea23-979b-ba2f-00d0290962f6" href="4bdf7659-ea23-979b-ba2f-00d0290962f6.htm">Parse(<wbr />String, Type)</a>
+    </li>
+  </tocItems>
+</toc>

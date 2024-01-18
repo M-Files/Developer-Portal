@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="e205ff1a-72ab-534e-74e4-0e5556c567e9.htm">Event<wbr />Handler<wbr />Environment<wbr />Log<wbr />Sensitivity<wbr />Filter</a>
+    </li>
+    <li>
+      <a href="ee5ef744-d897-400e-7766-b7a42b7208bd.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="90a04793-1262-67a1-f726-4897b470425f" class="has-submenu" href="90a04793-1262-67a1-f726-4897b470425f.htm">
+        <span data-tocFile="../toc/IDACDVA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Filter<wbr />Value<wbr />For<wbr />Logging</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="2820dafd-80e8-3463-925d-eebdb9efc155" href="2820dafd-80e8-3463-925d-eebdb9efc155.htm">Get<wbr />Login<wbr />Filter</a>
+    </li>
+    <li>
+      <a id="bd1cc074-459a-6d4e-8c14-151399ae561a" href="bd1cc074-459a-6d4e-8c14-151399ae561a.htm">Get<wbr />Obj<wbr />Id<wbr />Filter</a>
+    </li>
+    <li>
+      <a id="3c45fe17-79b9-f483-90e0-47484890ffe0" href="3c45fe17-79b9-f483-90e0-47484890ffe0.htm">Get<wbr />Obj<wbr />Ver<wbr />Filter</a>
+    </li>
+    <li>
+      <a id="6a6d21d4-59ed-9125-6a8c-255daeb78042" href="6a6d21d4-59ed-9125-6a8c-255daeb78042.htm">Get<wbr />Supported<wbr />Custom<wbr />Flags</a>
+    </li>
+    <li>
+      <a id="83aece49-585b-3fba-25b7-dee56d21293e" href="83aece49-585b-3fba-25b7-dee56d21293e.htm">Get<wbr />User<wbr />Filter</a>
+    </li>
+    <li>
+      <a id="080db770-60b6-1dfb-f2b3-ddb4efdfcb60" href="080db770-60b6-1dfb-f2b3-ddb4efdfcb60.htm">Get<wbr />Vli<wbr />Filter</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="baa11ef2-26f7-26c8-7b15-ecd802663520.htm">MFiles.<wbr />VAF.<wbr />Metadata<wbr />Cache</a>
+    </li>
+    <li>
+      <a href="4bdb6374-f7eb-8846-51d5-404344695c70.htm">Metadata<wbr />Cache<wbr />Vault<wbr />Object<wbr />Operations</a>
+    </li>
+    <li>
+      <a href="32b41386-8d4a-3617-ac12-ca32c7022b78.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="f2483f3f-9b51-96ed-fdb6-6158982a3d6b" href="f2483f3f-9b51-96ed-fdb6-6158982a3d6b.htm">Add<wbr />Favorite</a>
+    </li>
+    <li>
+      <a id="2ac239c5-8647-c641-a85c-00c7ad23ef9f" href="2ac239c5-8647-c641-a85c-00c7ad23ef9f.htm">Add<wbr />Favorites</a>
+    </li>
+    <li>
+      <a id="d83befa6-e7a6-c74b-3f3c-d0727fad154a" href="d83befa6-e7a6-c74b-3f3c-d0727fad154a.htm">Change<wbr />Permissions<wbr />To<wbr />ACL</a>
+    </li>
+    <li>
+      <a id="b47d32c9-6f86-a9fb-75e2-8abcb4bc2851" href="b47d32c9-6f86-a9fb-75e2-8abcb4bc2851.htm">Change<wbr />Permissions<wbr />To<wbr />Named<wbr />ACL</a>
+    </li>
+    <li>
+      <a id="6db4dd49-aa35-a4bb-cd30-ec73ec12b256" href="6db4dd49-aa35-a4bb-cd30-ec73ec12b256.htm">Check<wbr />In</a>
+    </li>
+    <li>
+      <a id="286ee08b-45d6-72ed-a943-38140dbcbe8c" href="286ee08b-45d6-72ed-a943-38140dbcbe8c.htm">Check<wbr />In<wbr />Multiple<wbr />Objects</a>
+    </li>
+    <li>
+      <a id="6112d6e4-2117-ea23-989e-943e18f11a4d" href="6112d6e4-2117-ea23-989e-943e18f11a4d.htm">Check<wbr />Out</a>
+    </li>
+    <li>
+      <a id="e736c3e2-5517-a53c-05f3-30c1d4e8b848" href="e736c3e2-5517-a53c-05f3-30c1d4e8b848.htm">Check<wbr />Out<wbr />Multiple<wbr />Objects</a>
+    </li>
+    <li>
+      <a id="609beb6e-8245-0ac9-0068-7a50ecd3ae8b" href="609beb6e-8245-0ac9-0068-7a50ecd3ae8b.htm">Compare<wbr />With<wbr />Another<wbr />Document</a>
+    </li>
+    <li>
+      <a id="a617f2d7-b4db-206f-1a04-92564558df4a" href="a617f2d7-b4db-206f-1a04-92564558df4a.htm">Compare<wbr />With<wbr />Another<wbr />Version</a>
+    </li>
+    <li>
+      <a id="6a27d3cb-9b4f-2c60-afb6-3f720c162d91" href="6a27d3cb-9b4f-2c60-afb6-3f720c162d91.htm">Compare<wbr />With<wbr />Another<wbr />Version<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="2556ecf6-1f59-9cdd-76e8-61d940fd9a68" href="2556ecf6-1f59-9cdd-76e8-61d940fd9a68.htm">Compare<wbr />With<wbr />Previous<wbr />Version</a>
+    </li>
+    <li>
+      <a id="6317f46c-d0b7-7256-0aac-58f988db9863" href="6317f46c-d0b7-7256-0aac-58f988db9863.htm">Compare<wbr />With<wbr />Previous<wbr />Version<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="ea448c73-e766-f7aa-9202-23bf5d10d4c0" href="ea448c73-e766-f7aa-9202-23bf5d10d4c0.htm">Copy<wbr />Conflict<wbr />Object<wbr />As<wbr />New<wbr />Version<wbr />To<wbr />Base<wbr />Object</a>
+    </li>
+    <li>
+      <a id="5665d01d-7223-e851-28f8-33bf2edd8499" href="5665d01d-7223-e851-28f8-33bf2edd8499.htm">Create<wbr />New<wbr />Assignment</a>
+    </li>
+    <li>
+      <a id="24495038-11d0-d2c7-8a06-6f6792390e5f" href="24495038-11d0-d2c7-8a06-6f6792390e5f.htm">Create<wbr />New<wbr />Empty<wbr />Single<wbr />File<wbr />Document</a>
+    </li>
+    <li>
+      <a id="dd031135-002c-b53e-6e5e-44d4258bb56c" href="dd031135-002c-b53e-6e5e-44d4258bb56c.htm">Create<wbr />New<wbr />Object</a>
+    </li>
+    <li>
+      <a id="97fec02f-a9da-345c-576d-491d2186162a" href="97fec02f-a9da-345c-576d-491d2186162a.htm">Create<wbr />New<wbr />Object<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="d17e0a5d-d137-6c5d-a8c9-89af8b1e4be6" href="d17e0a5d-d137-6c5d-a8c9-89af8b1e4be6.htm">Create<wbr />New<wbr />Object<wbr />Ex<wbr />Quick</a>
+    </li>
+    <li>
+      <a id="88938175-e213-6491-0241-275fb2573bcd" href="88938175-e213-6491-0241-275fb2573bcd.htm">Create<wbr />New<wbr />SFDObject</a>
+    </li>
+    <li>
+      <a id="4daf68a5-0527-67bd-fba8-f9b4d5cd04bf" href="4daf68a5-0527-67bd-fba8-f9b4d5cd04bf.htm">Create<wbr />New<wbr />SFDObject<wbr />Quick</a>
+    </li>
+    <li>
+      <a id="82484d08-603a-95e3-1607-60769047e124" href="82484d08-603a-95e3-1607-60769047e124.htm">Delayed<wbr />Check<wbr />In</a>
+    </li>
+    <li>
+      <a id="78b7f24b-771c-4570-c95e-ade0a2648cc4" href="78b7f24b-771c-4570-c95e-ade0a2648cc4.htm">Delete<wbr />Object</a>
+    </li>
+    <li>
+      <a id="d9a2b09b-7b2e-5558-5c50-7c4a64a54525" href="d9a2b09b-7b2e-5558-5c50-7c4a64a54525.htm">Destroy<wbr />Object</a>
+    </li>
+    <li>
+      <a id="97514986-b11c-a1d7-e7e0-f344d3cc5a0b" href="97514986-b11c-a1d7-e7e0-f344d3cc5a0b.htm">Destroy<wbr />Object<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="27a1a8dc-c7e3-56dc-f1db-c6e144536695" href="27a1a8dc-c7e3-56dc-f1db-c6e144536695.htm">Destroy<wbr />Objects</a>
+    </li>
+    <li>
+      <a id="f83571dd-fa01-6da5-b242-f948774383e7" href="f83571dd-fa01-6da5-b242-f948774383e7.htm">Follow<wbr />Object</a>
+    </li>
+    <li>
+      <a id="10ef637d-4729-538f-86dc-026ea8578846" href="10ef637d-4729-538f-86dc-026ea8578846.htm">Force<wbr />Undo<wbr />Checkout</a>
+    </li>
+    <li>
+      <a id="9cd9d637-1937-53c2-6bba-6f1e8dd531f3" href="9cd9d637-1937-53c2-6bba-6f1e8dd531f3.htm">Get<wbr />Collection<wbr />Members</a>
+    </li>
+    <li>
+      <a id="01af35c1-22a3-fb92-9e30-80b5865534d8" href="01af35c1-22a3-fb92-9e30-80b5865534d8.htm">Get<wbr />History</a>
+    </li>
+    <li>
+      <a id="a955bf7d-051d-e402-6ba6-943e6826e473" href="a955bf7d-051d-e402-6ba6-943e6826e473.htm">Get<wbr />History<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="8d751e8c-a79e-8c6c-1d4f-76e4cb4b7f35" href="8d751e8c-a79e-8c6c-1d4f-76e4cb4b7f35.htm">Get<wbr />Latest<wbr />Object<wbr />Version<wbr />And<wbr />Properties</a>
+    </li>
+    <li>
+      <a id="3a44ad6a-d3de-d470-d00a-fd9e0401ef10" href="3a44ad6a-d3de-d470-d00a-fd9e0401ef10.htm">Get<wbr />Latest<wbr />Obj<wbr />Ver</a>
+    </li>
+    <li>
+      <a id="f84fea15-8a64-05e4-46cc-75a06ba1f060" href="f84fea15-8a64-05e4-46cc-75a06ba1f060.htm">Get<wbr />Latest<wbr />Obj<wbr />Ver<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="9fd438d4-0be5-588a-88e5-948cd3b7e320" href="9fd438d4-0be5-588a-88e5-948cd3b7e320.htm">Get<wbr />Link<wbr />URLFor<wbr />Object<wbr />Or<wbr />File</a>
+    </li>
+    <li>
+      <a id="23a9df39-2683-5518-7ebc-571a47ebb65b" href="23a9df39-2683-5518-7ebc-571a47ebb65b.htm">Get<wbr />MFiles<wbr />URLFor<wbr />Object</a>
+    </li>
+    <li>
+      <a id="2922d19d-ba6c-2872-2c1a-922424ef55d6" href="2922d19d-ba6c-2872-2c1a-922424ef55d6.htm">Get<wbr />MFiles<wbr />URLFor<wbr />Object<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="4a08b7c8-a34c-5817-992b-c1d24de32f2c" href="4a08b7c8-a34c-5817-992b-c1d24de32f2c.htm">Get<wbr />MFiles<wbr />URLFor<wbr />Object<wbr />Or<wbr />File</a>
+    </li>
+    <li>
+      <a id="a876a85a-905d-d73c-b079-91f67c991e9c" href="a876a85a-905d-d73c-b079-91f67c991e9c.htm">Get<wbr />MFiles<wbr />URLFor<wbr />Object<wbr />Or<wbr />File<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="3ed02c64-33f4-84b0-406f-ad35819f9c0e" href="3ed02c64-33f4-84b0-406f-ad35819f9c0e.htm">Get<wbr />Object<wbr />Data<wbr />Of<wbr />Multiple<wbr />Objects</a>
+    </li>
+    <li>
+      <a id="df0beafa-ae99-0141-803d-08c87fb556b9" href="df0beafa-ae99-0141-803d-08c87fb556b9.htm">Get<wbr />Object<wbr />GUID</a>
+    </li>
+    <li>
+      <a id="7a2a8f39-c4bf-1887-ea64-c4ae954e2cdf" href="7a2a8f39-c4bf-1887-ea64-c4ae954e2cdf.htm">Get<wbr />Object<wbr />Info</a>
+    </li>
+    <li>
+      <a id="e4d45115-1c30-8d12-d711-e338df4858ba" href="e4d45115-1c30-8d12-d711-e338df4858ba.htm">Get<wbr />Object<wbr />Info<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="35d746f4-b06b-5580-4822-ffe1f23e30b5" href="35d746f4-b06b-5580-4822-ffe1f23e30b5.htm">Get<wbr />Object<wbr />Locations<wbr />In<wbr />View</a>
+    </li>
+    <li>
+      <a id="234b5262-cbb4-7ebb-b36c-073f6dafa115" href="234b5262-cbb4-7ebb-b36c-073f6dafa115.htm">Get<wbr />Object<wbr />Permissions</a>
+    </li>
+    <li>
+      <a id="c203a917-32d4-d8cb-f4d8-225315826ac1" href="c203a917-32d4-d8cb-f4d8-225315826ac1.htm">Get<wbr />Object<wbr />Version<wbr />And<wbr />Properties</a>
+    </li>
+    <li>
+      <a id="501d7721-4c03-c2a6-d272-7b4c7144a077" href="501d7721-4c03-c2a6-d272-7b4c7144a077.htm">Get<wbr />Object<wbr />Version<wbr />And<wbr />Properties<wbr />Of<wbr />Multiple<wbr />Objects</a>
+    </li>
+    <li>
+      <a id="c9c8dcea-d74b-1313-dd35-575b622e8b8c" href="c9c8dcea-d74b-1313-dd35-575b622e8b8c.htm">Get<wbr />Obj<wbr />IDBy<wbr />GUID</a>
+    </li>
+    <li>
+      <a id="0e63f83a-913c-aee9-f4c6-6e168d7035c8" href="0e63f83a-913c-aee9-f4c6-6e168d7035c8.htm">Get<wbr />Obj<wbr />IDBy<wbr />Original<wbr />Obj<wbr />ID</a>
+    </li>
+    <li>
+      <a id="75ca5ee1-c26d-3ce4-76b7-fde806923115" href="75ca5ee1-c26d-3ce4-76b7-fde806923115.htm">Get<wbr />Offline<wbr />Availability</a>
+    </li>
+    <li>
+      <a id="5195c6a1-d80f-5f35-89ae-475fc11a0f5a" href="5195c6a1-d80f-5f35-89ae-475fc11a0f5a.htm">Get<wbr />Offline<wbr />Obj<wbr />IDs</a>
+    </li>
+    <li>
+      <a id="6d369b00-1f8f-b156-fa4c-25511acb34c9" href="6d369b00-1f8f-b156-fa4c-25511acb34c9.htm">Get<wbr />Related<wbr />Object<wbr />Info</a>
+    </li>
+    <li>
+      <a id="48ff34ab-964e-496a-c9e1-772eb8837fdd" href="48ff34ab-964e-496a-c9e1-772eb8837fdd.htm">Get<wbr />Relationships</a>
+    </li>
+    <li>
+      <a id="40c9cfb8-0c2e-8d39-1571-f1cf0c1c804a" href="40c9cfb8-0c2e-8d39-1571-f1cf0c1c804a.htm">Get<wbr />Relationships<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="02f9643f-a0b1-7684-a4c5-36ae7d205808" href="02f9643f-a0b1-7684-a4c5-36ae7d205808.htm">Get<wbr />Short<wbr />Object<wbr />Path</a>
+    </li>
+    <li>
+      <a id="bb8447c9-885c-4644-5073-e611eb4726e6" href="bb8447c9-885c-4644-5073-e611eb4726e6.htm">Get<wbr />Thumbnail<wbr />As<wbr />Bytes</a>
+    </li>
+    <li>
+      <a id="5121b905-018b-2541-fd4d-c5600c49c6bc" href="5121b905-018b-2541-fd4d-c5600c49c6bc.htm">Get<wbr />Thumbnail<wbr />Of<wbr />Type<wbr />As<wbr />Bytes</a>
+    </li>
+    <li>
+      <a id="f36fd155-5672-223f-2f84-738d2449bc42" href="f36fd155-5672-223f-2f84-738d2449bc42.htm">Initialize</a>
+    </li>
+    <li>
+      <a id="05253a1c-d1e7-bdef-bbc2-4a519749fce7" href="05253a1c-d1e7-bdef-bbc2-4a519749fce7.htm">Is<wbr />Checked<wbr />Out</a>
+    </li>
+    <li>
+      <a id="a5d549d1-6224-713e-d301-cf890d89981e" href="a5d549d1-6224-713e-d301-cf890d89981e.htm">Is<wbr />Object<wbr />Checked<wbr />Out</a>
+    </li>
+    <li>
+      <a id="3af8dfc7-49b4-90db-70f8-774a36d7f3a0" href="3af8dfc7-49b4-90db-70f8-774a36d7f3a0.htm">Is<wbr />Object<wbr />Checked<wbr />Out<wbr />To<wbr />This<wbr />User<wbr />On<wbr />This<wbr />Computer</a>
+    </li>
+    <li>
+      <a id="3b0c658b-86d4-4334-d674-2613ac7acd27" href="3b0c658b-86d4-4334-d674-2613ac7acd27.htm">Is<wbr />Object<wbr />Followed</a>
+    </li>
+    <li>
+      <a id="50d35088-a09f-286c-74e3-670c1aaa47f3" href="50d35088-a09f-286c-74e3-670c1aaa47f3.htm">Is<wbr />Single<wbr />File<wbr />Object</a>
+    </li>
+    <li>
+      <a id="79b12d66-6930-32ec-8f66-a325228f444c" href="79b12d66-6930-32ec-8f66-a325228f444c.htm">Matches<wbr />Search<wbr />Conditions</a>
+    </li>
+    <li>
+      <a id="ce03f1fb-9bed-0c05-76be-071df64b2a14" href="ce03f1fb-9bed-0c05-76be-071df64b2a14.htm">Matches<wbr />Search<wbr />Conditions<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="550c0ffd-52eb-0c23-afef-3d1acc20bcd4" href="550c0ffd-52eb-0c23-afef-3d1acc20bcd4.htm">Notify<wbr />Object<wbr />Access</a>
+    </li>
+    <li>
+      <a id="ebe294da-9083-6a64-dd90-6672c076c3ab" href="ebe294da-9083-6a64-dd90-6672c076c3ab.htm">Propose<wbr />Check<wbr />Out<wbr />For<wbr />File</a>
+    </li>
+    <li>
+      <a id="6e66e401-86b6-e01a-bfd6-fabf0b4e2445" href="6e66e401-86b6-e01a-bfd6-fabf0b4e2445.htm">Reject<wbr />Check<wbr />In<wbr />Reminder</a>
+    </li>
+    <li>
+      <a id="14a1f2a4-3630-18f8-eb1c-c666dc2d05f9" href="14a1f2a4-3630-18f8-eb1c-c666dc2d05f9.htm">Remove<wbr />Favorite</a>
+    </li>
+    <li>
+      <a id="deb65ff0-a0ee-5199-ba16-f2554b345468" href="deb65ff0-a0ee-5199-ba16-f2554b345468.htm">Remove<wbr />Favorites</a>
+    </li>
+    <li>
+      <a id="ff24bc7f-4b45-66d2-1709-fbb87539c7f6" href="ff24bc7f-4b45-66d2-1709-fbb87539c7f6.htm">Remove<wbr />Object</a>
+    </li>
+    <li>
+      <a id="00704bd6-349f-e22d-afd9-6a5d00fa2ffa" href="00704bd6-349f-e22d-afd9-6a5d00fa2ffa.htm">Resolve<wbr />Conflict</a>
+    </li>
+    <li>
+      <a id="adfbfeaf-deea-e643-33b6-191c4753e1ae" href="adfbfeaf-deea-e643-33b6-191c4753e1ae.htm">Rollback</a>
+    </li>
+    <li>
+      <a id="7d7d42b8-e597-3b7b-26ba-6bd04608f6de" href="7d7d42b8-e597-3b7b-26ba-6bd04608f6de.htm">Rollback<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="17a2141b-84b5-13ff-efe5-b40a4a49aa22" href="17a2141b-84b5-13ff-efe5-b40a4a49aa22.htm">Set<wbr />External<wbr />ID</a>
+    </li>
+    <li>
+      <a id="87fad3c3-703a-6ef4-78b6-fee0fc303e44" href="87fad3c3-703a-6ef4-78b6-fee0fc303e44.htm">Set<wbr />Object<wbr />GUID</a>
+    </li>
+    <li>
+      <a id="1e26b747-73ea-a433-4efc-3916a24f0936" href="1e26b747-73ea-a433-4efc-3916a24f0936.htm">Set<wbr />Offline<wbr />Availability</a>
+    </li>
+    <li>
+      <a id="7aad27e0-a4ad-cced-1ab4-e0dbb08c25cd" href="7aad27e0-a4ad-cced-1ab4-e0dbb08c25cd.htm">Set<wbr />Single<wbr />File<wbr />Object</a>
+    </li>
+    <li>
+      <a id="1e34cb42-4129-df0a-9690-6a273e5e01ad" href="1e34cb42-4129-df0a-9690-6a273e5e01ad.htm">Show<wbr />Basic<wbr />Edit<wbr />Object<wbr />Window</a>
+    </li>
+    <li>
+      <a id="7427ccf0-0783-5870-53d3-b7561dcc5d89" href="7427ccf0-0783-5870-53d3-b7561dcc5d89.htm">Show<wbr />Basic<wbr />New<wbr />Object<wbr />Window</a>
+    </li>
+    <li>
+      <a id="8983f236-fc6b-6377-dd05-e76c7f976591" href="8983f236-fc6b-6377-dd05-e76c7f976591.htm">Show<wbr />Change<wbr />State<wbr />Dialog<wbr />Modal</a>
+    </li>
+    <li>
+      <a id="40caf66f-40b6-fa58-9523-7d2ba21198d8" href="40caf66f-40b6-fa58-9523-7d2ba21198d8.htm">Show<wbr />Check<wbr />In<wbr />Reminder</a>
+    </li>
+    <li>
+      <a id="09f7b6a8-270d-cab4-ace1-dd9fdfb0e414" href="09f7b6a8-270d-cab4-ace1-dd9fdfb0e414.htm">Show<wbr />Check<wbr />In<wbr />Reminder<wbr />Dialog<wbr />Modal</a>
+    </li>
+    <li>
+      <a id="79e169f3-d74b-24bc-51bd-d0ed2335e4f8" href="79e169f3-d74b-24bc-51bd-d0ed2335e4f8.htm">Show<wbr />Checkout<wbr />Prompt</a>
+    </li>
+    <li>
+      <a id="706f9edf-fea3-3a87-dd7a-ac6221df449b" href="706f9edf-fea3-3a87-dd7a-ac6221df449b.htm">Show<wbr />Collection<wbr />Members<wbr />Dialog</a>
+    </li>
+    <li>
+      <a id="a427f165-8fa7-8fca-b915-8ea075cebd16" href="a427f165-8fa7-8fca-b915-8ea075cebd16.htm">Show<wbr />Comments<wbr />Dialog<wbr />Modal</a>
+    </li>
+    <li>
+      <a id="aa38c729-145a-a900-f7a0-da7abd89aed3" href="aa38c729-145a-a900-f7a0-da7abd89aed3.htm">Show<wbr />Edit<wbr />Object<wbr />Window</a>
+    </li>
+    <li>
+      <a id="25829830-43b9-8682-71d8-e0b3282acdea" href="25829830-43b9-8682-71d8-e0b3282acdea.htm">Show<wbr />History<wbr />Dialog<wbr />Modal</a>
+    </li>
+    <li>
+      <a id="71374fdf-6d35-7dc1-1c6c-72ecfa7133e9" href="71374fdf-6d35-7dc1-1c6c-72ecfa7133e9.htm">Show<wbr />New<wbr />Object<wbr />Window</a>
+    </li>
+    <li>
+      <a id="99745849-19a7-6b2b-32ba-d37d111db19c" href="99745849-19a7-6b2b-32ba-d37d111db19c.htm">Show<wbr />Prefilled<wbr />New<wbr />Object<wbr />Window</a>
+    </li>
+    <li>
+      <a id="260e811a-1530-c903-41c8-27a7b5c47f80" href="260e811a-1530-c903-41c8-27a7b5c47f80.htm">Show<wbr />Related<wbr />Objects</a>
+    </li>
+    <li>
+      <a id="36d7d3d9-80ae-c5bd-bf34-585a6e199ec9" href="36d7d3d9-80ae-c5bd-bf34-585a6e199ec9.htm">Show<wbr />Relationships<wbr />Dialog</a>
+    </li>
+    <li>
+      <a id="bf23518b-d06e-0c7e-a3e2-739b5cdfa77d" href="bf23518b-d06e-0c7e-a3e2-739b5cdfa77d.htm">Show<wbr />Select<wbr />Object<wbr />History<wbr />Dialog<wbr />Modal</a>
+    </li>
+    <li>
+      <a id="cadd745d-b021-cdaf-d8f0-c8605de4785c" href="cadd745d-b021-cdaf-d8f0-c8605de4785c.htm">Show<wbr />Sub<wbr />Objects<wbr />Dialog<wbr />Modal</a>
+    </li>
+    <li>
+      <a id="6f500774-5447-ccb2-737e-21db8f23f5b4" href="6f500774-5447-ccb2-737e-21db8f23f5b4.htm">Undelete<wbr />Object</a>
+    </li>
+    <li>
+      <a id="a6ce288c-1467-57f4-a8b3-a424c8270318" href="a6ce288c-1467-57f4-a8b3-a424c8270318.htm">Undo<wbr />Checkout</a>
+    </li>
+    <li>
+      <a id="11187539-acee-7976-b68b-f59e55377a7a" href="11187539-acee-7976-b68b-f59e55377a7a.htm">Undo<wbr />Checkout<wbr />Multiple<wbr />Objects</a>
+    </li>
+  </tocItems>
+</toc>

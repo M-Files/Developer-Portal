@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="7829c967-6d0f-5f56-cf78-60521632d773.htm">ILogger</a>
+    </li>
+    <li>
+      <a href="29bf6768-cb89-dc6a-4391-f02d00ad291c.htm">Methods</a>
+    </li>
+    <li>
+      <a href="fab1bf1c-4afc-8df3-188c-c1d92206708b.htm">Begin<wbr />Logging<wbr />Context</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="08e10ecf-5d0c-aac7-8fa5-b2430b98d23e" href="08e10ecf-5d0c-aac7-8fa5-b2430b98d23e.htm">Begin<wbr />Logging<wbr />Context(<wbr />Formattable<wbr />String[])</a>
+    </li>
+    <li>
+      <a id="1fbfbc2e-2f34-5827-d772-73d0dd6f87b4" href="1fbfbc2e-2f34-5827-d772-73d0dd6f87b4.htm">Begin<wbr />Logging<wbr />Context(<wbr />ILogging<wbr />Context, Formattable<wbr />String[])</a>
+    </li>
+  </tocItems>
+</toc>

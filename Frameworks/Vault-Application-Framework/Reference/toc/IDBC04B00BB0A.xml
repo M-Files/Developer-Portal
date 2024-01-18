@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="b43cf69c-a100-0c26-58e6-4dad75c4ef4d.htm">Value<wbr />List<wbr />Item<wbr />Context</a>
+    </li>
+    <li>
+      <a href="af8f07bd-b87d-db69-978b-2b51c99b529a.htm">Methods</a>
+    </li>
+    <li>
+      <a href="02471115-faac-70c7-f911-8e31a9423892.htm">Add<wbr />Range</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="55adc7dc-e79d-01b8-4154-7157aa35b1b9" href="55adc7dc-e79d-01b8-4154-7157aa35b1b9.htm">Add<wbr />Range(<wbr />Nullable&lt;Int<wbr />32&gt;[])</a>
+    </li>
+    <li>
+      <a id="c4f13cd6-cb88-d2f9-78aa-fc460dd8b05d" href="c4f13cd6-cb88-d2f9-78aa-fc460dd8b05d.htm">Add<wbr />Range(<wbr />Typed<wbr />Value[])</a>
+    </li>
+  </tocItems>
+</toc>

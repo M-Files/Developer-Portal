@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="e3e02e4f-a1cb-911b-a27a-fe11399e0d74.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Interfaces.<wbr />Domain</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7581826a-34f5-40a7-3a48-19c1a545da2f" href="7581826a-34f5-40a7-3a48-19c1a545da2f.htm">Command<wbr />Container</a>
+    </li>
+    <li>
+      <a id="c76e7bdd-b213-78a4-507b-607da3c7654c" class="has-submenu" href="c76e7bdd-b213-78a4-507b-607da3c7654c.htm">
+        <span data-tocFile="../toc/IDBPA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Configuration<wbr />Domain<wbr />Command</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="17325947-3213-79be-73bd-6e67c78aca36" class="has-submenu" href="17325947-3213-79be-73bd-6e67c78aca36.htm">
+        <span data-tocFile="../toc/IDCPA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ICommand<wbr />Location</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="edc64ef5-f780-3b04-f236-aeff893b29d4" class="has-submenu" href="edc64ef5-f780-3b04-f236-aeff893b29d4.htm">
+        <span data-tocFile="../toc/IDDPA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IConfiguration<wbr />Domain<wbr />Command</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="afd81905-9b1a-c846-92e4-5eac79132c90" href="afd81905-9b1a-c846-92e4-5eac79132c90.htm">IMethod<wbr />Source</a>
+    </li>
+    <li>
+      <a id="e92e5d6b-e356-ab10-c0ed-4adfb4c2339c" class="has-submenu" href="e92e5d6b-e356-ab10-c0ed-4adfb4c2339c.htm">
+        <span data-tocFile="../toc/IDFPA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Method<wbr />Source<wbr />Definition</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="fa79c67b-dc0a-d330-b5af-7da7a87c2d7c" class="has-submenu" href="fa79c67b-dc0a-d330-b5af-7da7a87c2d7c.htm">
+        <span data-tocFile="../toc/IDGPA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Source</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4d842217-bb3e-9c53-8d1d-f5694c1b6410" class="has-submenu" href="4d842217-bb3e-9c53-8d1d-f5694c1b6410.htm">
+        <span data-tocFile="../toc/IDHPA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Source<wbr />Definition</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

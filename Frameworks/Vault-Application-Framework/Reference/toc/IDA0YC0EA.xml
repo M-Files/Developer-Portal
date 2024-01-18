@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="8a01a4e8-b21f-588a-54c6-7fc477efe833.htm">Search<wbr />Conditions<wbr />Extender</a>
+    </li>
+    <li>
+      <a href="be961f93-3b00-3aed-8538-548a21c87d41.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="536b20ff-cffa-b210-7dc8-d98043c4bbfb" href="536b20ff-cffa-b210-7dc8-d98043c4bbfb.htm">Add<wbr />Any<wbr />Property<wbr />Condition</a>
+    </li>
+    <li>
+      <a id="f197a001-bce5-a269-b7ab-029d96433917" class="has-submenu" href="f197a001-bce5-a269-b7ab-029d96433917.htm">
+        <span data-tocFile="../toc/IDBA0YC0EA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Add<wbr />Property<wbr />Condition</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="360c0f2c-746d-e4f9-493f-8387703248e9" href="360c0f2c-746d-e4f9-493f-8387703248e9.htm">Add<wbr />Status<wbr />Condition</a>
+    </li>
+    <li>
+      <a id="e3266eb2-89e4-7164-e8dd-7ba88d20cfb5" href="e3266eb2-89e4-7164-e8dd-7ba88d20cfb5.htm">Between<wbr />Dates</a>
+    </li>
+    <li>
+      <a id="7dfd6c30-5616-7abd-e5d9-257b46de3521" href="7dfd6c30-5616-7abd-e5d9-257b46de3521.htm">Date<wbr />Range<wbr />Intersects</a>
+    </li>
+    <li>
+      <a id="6b3a16a0-a24a-5083-7bab-56c3f98a1eaf" href="6b3a16a0-a24a-5083-7bab-56c3f98a1eaf.htm">exclude<wbr />Deleted</a>
+    </li>
+    <li>
+      <a id="ff031594-f807-c275-0257-91d6027a2817" href="ff031594-f807-c275-0257-91d6027a2817.htm">Is<wbr />Match</a>
+    </li>
+    <li>
+      <a id="67aa0fe5-e88c-3dbf-b66a-820aefbc66b2" href="67aa0fe5-e88c-3dbf-b66a-820aefbc66b2.htm">Name<wbr />Or<wbr />Title</a>
+    </li>
+    <li>
+      <a id="b727d5e3-cf0e-db06-c6d3-3f8aa865fcf4" href="b727d5e3-cf0e-db06-c6d3-3f8aa865fcf4.htm">Not<wbr />Object<wbr />ID</a>
+    </li>
+    <li>
+      <a id="1f109431-ea01-666b-e955-e3325829cad1" class="has-submenu" href="1f109431-ea01-666b-e955-e3325829cad1.htm">
+        <span data-tocFile="../toc/IDJA0YC0EA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Object<wbr />Class<wbr />ID</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="17cde25e-2cfc-ac47-f9fa-630f7dd25211" href="17cde25e-2cfc-ac47-f9fa-630f7dd25211.htm">Object<wbr />ID</a>
+    </li>
+    <li>
+      <a id="6c5b0d9b-14c6-4ed4-0b90-4341d0405883" href="6c5b0d9b-14c6-4ed4-0b90-4341d0405883.htm">Object<wbr />Type<wbr />ID</a>
+    </li>
+    <li>
+      <a id="ac64277f-3ce9-8055-43c4-dda6ec2b7f66" href="ac64277f-3ce9-8055-43c4-dda6ec2b7f66.htm">Try<wbr />Get<wbr />Underlying<wbr />Value<wbr />List</a>
+    </li>
+    <li>
+      <a id="dc1fe76d-bce4-404d-c412-1e10666413ea" href="dc1fe76d-bce4-404d-c412-1e10666413ea.htm">Validate</a>
+    </li>
+  </tocItems>
+</toc>

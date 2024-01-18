@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="dd22af2c-e0ad-be00-57f7-ff91c975cf44.htm">Task<wbr />Info&lt;TDirective&gt;</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c744c576-1321-4b89-a9a7-26c9cf39dd61" class="has-submenu" href="c744c576-1321-4b89-a9a7-26c9cf39dd61.htm">
+        <span data-tocFile="../toc/IDAYDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c667d0c6-d642-671d-6431-0b6ba07da64c" class="has-submenu" href="c667d0c6-d642-671d-6431-0b6ba07da64c.htm">
+        <span data-tocFile="../toc/IDBYDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="748f68be-bdae-232d-eb51-c207d9c0c995" class="has-submenu" href="748f68be-bdae-232d-eb51-c207d9c0c995.htm">
+        <span data-tocFile="../toc/IDCYDA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

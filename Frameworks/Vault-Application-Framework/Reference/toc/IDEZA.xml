@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="40813806-5464-e212-77c3-73b127d3c164.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Resource<wbr />Editor</a>
+    </li>
+    <li>
+      <a href="b86e2027-efa3-c066-8c70-e78ee1d65f39.htm">Resource<wbr />Editor<wbr />Plugin</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="5602aee4-802c-c70f-0a68-93066b10a87a" href="5602aee4-802c-c70f-0a68-93066b10a87a.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="6e1c8c5f-f84e-6ebd-2067-4b4bdc1d8a1e" class="has-submenu" href="6e1c8c5f-f84e-6ebd-2067-4b4bdc1d8a1e.htm">
+        <span data-tocFile="../toc/IDBEZA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">Expansion<wbr />Context&lt;T&gt;</a>
+    </li>
+    <li>
+      <a href="88d9867f-e4bf-42ad-177b-09c8fb198d69.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0d7a0eb1-ac9f-0f41-67b6-3465dcad8d0f" href="0d7a0eb1-ac9f-0f41-67b6-3465dcad8d0f.htm">Add</a>
+    </li>
+    <li>
+      <a id="5c9b1e90-65a0-a459-27cd-eb290f51d751" href="5c9b1e90-65a0-a459-27cd-eb290f51d751.htm">Assert<wbr />Valid<wbr />Item</a>
+    </li>
+    <li>
+      <a id="c687d88a-8800-0fc9-a4ac-108167e07a4c" href="c687d88a-8800-0fc9-a4ac-108167e07a4c.htm">Clear</a>
+    </li>
+    <li>
+      <a id="ffea47da-d1bb-3399-18e1-3fb0b64a332e" href="ffea47da-d1bb-3399-18e1-3fb0b64a332e.htm">Clone</a>
+    </li>
+    <li>
+      <a id="19aa29ba-0940-62b6-14b5-1f8be6c0f416" href="19aa29ba-0940-62b6-14b5-1f8be6c0f416.htm">Contains</a>
+    </li>
+    <li>
+      <a id="d089cffc-60c8-dbdf-e37f-901ffcf47395" href="d089cffc-60c8-dbdf-e37f-901ffcf47395.htm">Copy<wbr />To</a>
+    </li>
+    <li>
+      <a id="4be9da61-31a3-d300-83eb-7c1bdc7e0e38" href="4be9da61-31a3-d300-83eb-7c1bdc7e0e38.htm">Get<wbr />Enumerator</a>
+    </li>
+    <li>
+      <a id="8f2daa00-2582-8e6c-4302-b8f055396d24" href="8f2daa00-2582-8e6c-4302-b8f055396d24.htm">Index<wbr />Of</a>
+    </li>
+    <li>
+      <a id="8aa113c4-e28f-4f15-2ac1-03f77ac5b149" href="8aa113c4-e28f-4f15-2ac1-03f77ac5b149.htm">Insert</a>
+    </li>
+    <li>
+      <a id="8e6ea837-f3c9-85bc-6791-3b9955164a60" href="8e6ea837-f3c9-85bc-6791-3b9955164a60.htm">Remove</a>
+    </li>
+    <li>
+      <a id="f1189214-14a2-e620-4660-ef4c9eafadbe" href="f1189214-14a2-e620-4660-ef4c9eafadbe.htm">Remove<wbr />At</a>
+    </li>
+    <li>
+      <a id="e36c62d2-1024-0edd-e1b0-08530ef6f1cc" href="e36c62d2-1024-0edd-e1b0-08530ef6f1cc.htm">Safe<wbr />Cast&lt;T<wbr />2&gt;</a>
+    </li>
+    <li>
+      <a id="75869e21-acce-e006-85f0-b4264c09a425" href="75869e21-acce-e006-85f0-b4264c09a425.htm">Unique<wbr />Values</a>
+    </li>
+  </tocItems>
+</toc>
