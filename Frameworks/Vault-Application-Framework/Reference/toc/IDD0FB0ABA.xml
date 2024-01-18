@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.<wbr />VAF</a>
+    </li>
+    <li>
+      <a href="04d4affe-5ea7-34a2-c1ee-c9440e81cb23.htm">Vault<wbr />Application<wbr />Base</a>
+    </li>
+    <li>
+      <a href="b40aa6f3-4893-1ed0-d6a0-aad76d7e30a3.htm">Fields</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="1178a06e-918d-3c03-459d-87fbe3f4ebe9" href="1178a06e-918d-3c03-459d-87fbe3f4ebe9.htm">anonymous<wbr />Methods</a>
+    </li>
+    <li>
+      <a id="fbadebac-7ba5-5e78-faef-83c8b65c580f" href="fbadebac-7ba5-5e78-faef-83c8b65c580f.htm">application<wbr />Running<wbr />Status</a>
+    </li>
+    <li>
+      <a id="31deabdd-0838-cf3e-60ed-2b46261925e6" href="31deabdd-0838-cf3e-60ed-2b46261925e6.htm">cache<wbr />Event<wbr />Sink</a>
+    </li>
+    <li>
+      <a id="ead330e4-dd82-c7a0-7e6d-ff391ffad716" href="ead330e4-dd82-c7a0-7e6d-ff391ffad716.htm">event<wbr />Handler<wbr />Methods</a>
+    </li>
+    <li>
+      <a id="6962b8f1-b3b2-d990-d67c-b1eb8688d90d" href="6962b8f1-b3b2-d990-d67c-b1eb8688d90d.htm">event<wbr />Source<wbr />Identifier</a>
+    </li>
+    <li>
+      <a id="027b9d1b-3700-5aeb-e574-a7827159a3b5" href="027b9d1b-3700-5aeb-e574-a7827159a3b5.htm">Max<wbr />Time<wbr />To<wbr />Wait<wbr />Background<wbr />Operations<wbr />At<wbr />Uninitialization</a>
+    </li>
+    <li>
+      <a id="d67928e1-bacf-376c-c327-c30d714b9507" href="d67928e1-bacf-376c-c327-c30d714b9507.htm">Multiserver<wbr />Health<wbr />Status<wbr />Namespace</a>
+    </li>
+    <li>
+      <a id="4945d4a8-0088-e355-9b9c-6bbfe2ab23b7" href="4945d4a8-0088-e355-9b9c-6bbfe2ab23b7.htm">property<wbr />Methods</a>
+    </li>
+    <li>
+      <a id="2432221f-3aac-cd2a-d1bc-88906f695970" href="2432221f-3aac-cd2a-d1bc-88906f695970.htm">state<wbr />Methods</a>
+    </li>
+    <li>
+      <a id="0ca315d5-fc07-3dfa-ea07-81ea011df78f" href="0ca315d5-fc07-3dfa-ea07-81ea011df78f.htm">state<wbr />Transition<wbr />Methods</a>
+    </li>
+    <li>
+      <a id="bd34137f-e21c-6316-26b4-c1e8a756115b" href="bd34137f-e21c-6316-26b4-c1e8a756115b.htm">unused<wbr />Anonymous<wbr />Method<wbr />Names</a>
+    </li>
+    <li>
+      <a id="c1a78c59-ed50-9625-a38d-2195a5412620" href="c1a78c59-ed50-9625-a38d-2195a5412620.htm">unused<wbr />Vault<wbr />Extension<wbr />Names</a>
+    </li>
+    <li>
+      <a id="39bed846-9641-b957-0078-59f107272ffc" href="39bed846-9641-b957-0078-59f107272ffc.htm">vault<wbr />Extension<wbr />Methods</a>
+    </li>
+  </tocItems>
+</toc>

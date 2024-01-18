@@ -8,21 +8,32 @@
       <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
     </li>
     <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
       <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.<wbr />VAF</a>
     </li>
     <li>
-      <a href="a80d9b34-8fcf-29c9-856d-36246e2c0591.htm">Anonymous<wbr />Extension<wbr />Method<wbr />Result</a>
-    </li>
-    <li>
-      <a href="7bd699fa-e2da-1cd9-3599-e1ecaa563f00.htm">Methods</a>
+      <a href="d8766222-15c8-ac15-c39c-ebdaf5618d97.htm">Assembly<wbr />Locator</a>
     </li>
   </breadcrumbs>
   <tocItems>
     <li>
-      <a id="79e10397-dea7-4258-4b3b-3197d57ee661" href="79e10397-dea7-4258-4b3b-3197d57ee661.htm">Get<wbr />Output<wbr />Bytes</a>
+      <a id="6357de0d-490d-e5af-c9cc-0a0aba9ad51f" href="6357de0d-490d-e5af-c9cc-0a0aba9ad51f.htm">Constructor</a>
     </li>
     <li>
-      <a id="90d4dc4d-c039-f1db-9bff-e2eb41dbf382" href="90d4dc4d-c039-f1db-9bff-e2eb41dbf382.htm">Get<wbr />Output<wbr />Header<wbr />Value</a>
+      <a id="c4a42b2c-4222-35bc-aacb-4b169d917ad2" class="has-submenu" href="c4a42b2c-4222-35bc-aacb-4b169d917ad2.htm">
+        <span data-tocFile="../toc/IDBCABA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="0fbd10a3-2856-b108-c394-408b64d02482" class="has-submenu" href="0fbd10a3-2856-b108-c394-408b64d02482.htm">
+        <span data-tocFile="../toc/IDCCABA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
   </tocItems>
 </toc>

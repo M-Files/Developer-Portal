@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="6cd7a669-d464-de8d-d6f5-9c56ea2c5728.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging.<wbr />Sensitivity<wbr />Filters</a>
+    </li>
+    <li>
+      <a href="721a8c1e-c36f-2133-3920-87b89b26f492.htm">Log<wbr />Sensitivity<wbr />Filter<wbr />Base&lt;TSupported<wbr />Type&gt;</a>
+    </li>
+    <li>
+      <a href="5f9efd7c-22cd-1fd6-f674-c4d37a3f64e2.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="180a9011-370c-6b06-41b0-ba65487eaaa8" class="has-submenu" href="180a9011-370c-6b06-41b0-ba65487eaaa8.htm">
+        <span data-tocFile="../toc/IDACCQEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Can<wbr />Log</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c2c93009-9d03-916a-56c9-0af9cd195d29" class="has-submenu" href="c2c93009-9d03-916a-56c9-0af9cd195d29.htm">
+        <span data-tocFile="../toc/IDBCCQEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Filter<wbr />Value<wbr />For<wbr />Logging</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e4b5a09d-2a9f-217a-1d75-caae85bfe349" href="e4b5a09d-2a9f-217a-1d75-caae85bfe349.htm">Resolve<wbr />Delegate<wbr />Filter&lt;TDelegate<wbr />Type&gt;</a>
+    </li>
+  </tocItems>
+</toc>

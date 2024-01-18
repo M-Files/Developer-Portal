@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="144d87ad-c6b3-472f-3a92-5ede723a867c" class="has-submenu" href="144d87ad-c6b3-472f-3a92-5ede723a867c.htm">
+        <span data-tocFile="../toc/IDAMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Data<wbr />Member<wbr />Info</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="2df97861-6fb9-3f0a-7115-14b9e469e903" class="has-submenu" href="2df97861-6fb9-3f0a-7115-14b9e469e903.htm">
+        <span data-tocFile="../toc/IDBMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Data<wbr />Member<wbr />Walker</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="230492e3-8bf9-fbdb-5312-cef2c1612f23" class="has-submenu" href="230492e3-8bf9-fbdb-5312-cef2c1612f23.htm">
+        <span data-tocFile="../toc/IDCMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IJson<wbr />Value<wbr />Converter</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1a751456-42ed-bd57-cbac-aa0c8ed0a1d2" class="has-submenu" href="1a751456-42ed-bd57-cbac-aa0c8ed0a1d2.htm">
+        <span data-tocFile="../toc/IDDMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IJson<wbr />Value<wbr />Mapper</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="dd3cc28b-e9ec-2bbd-69da-f0879b0794c3" class="has-submenu" href="dd3cc28b-e9ec-2bbd-69da-f0879b0794c3.htm">
+        <span data-tocFile="../toc/IDEMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IMFIdentifer<wbr />Resolver</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e6a123c9-aeb4-1887-9348-8874a3f499e5" class="has-submenu" href="e6a123c9-aeb4-1887-9348-8874a3f499e5.htm">
+        <span data-tocFile="../toc/IDFMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>JObject<wbr />Helper</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="93ba1a9a-9ea9-4454-7d3e-3866e8c2dae3" class="has-submenu" href="93ba1a9a-9ea9-4454-7d3e-3866e8c2dae3.htm">
+        <span data-tocFile="../toc/IDGMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Admin<wbr />Comment</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e7be07de-a1c9-f27f-5259-293286a850d9" class="has-submenu" href="e7be07de-a1c9-f27f-5259-293286a850d9.htm">
+        <span data-tocFile="../toc/IDHMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Admin<wbr />Comment<wbr />Preserver</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="da872142-c26d-22c1-2b51-997a3a641c5d" href="da872142-c26d-22c1-2b51-997a3a641c5d.htm">Json<wbr />Conf<wbr />Data<wbr />Member<wbr />Walker<wbr />Callback</a>
+    </li>
+    <li>
+      <a id="6d14f7c2-1ded-3503-ae1e-f75260bd2d4b" href="6d14f7c2-1ded-3503-ae1e-f75260bd2d4b.htm">Json<wbr />List<wbr />Mapping<wbr />Mode</a>
+    </li>
+    <li>
+      <a id="21b021dc-042d-3fff-86df-3b9a9278c2b6" class="has-submenu" href="21b021dc-042d-3fff-86df-3b9a9278c2b6.htm">
+        <span data-tocFile="../toc/IDKMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Map</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="85253d1d-734f-f20d-e544-f7745245f893" class="has-submenu" href="85253d1d-734f-f20d-e544-f7745245f893.htm">
+        <span data-tocFile="../toc/IDLMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Map<wbr />Generator</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="56611772-bf95-154f-0b03-e118a3aa975d" class="has-submenu" href="56611772-bf95-154f-0b03-e118a3aa975d.htm">
+        <span data-tocFile="../toc/IDMMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Mapping<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c92f028d-bb9e-b91c-9711-c30c09a57f82" class="has-submenu" href="c92f028d-bb9e-b91c-9711-c30c09a57f82.htm">
+        <span data-tocFile="../toc/IDNMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Path<wbr />Info</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="2a6ad0ac-41eb-127b-32dd-42522d9c10e2" class="has-submenu" href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">
+        <span data-tocFile="../toc/IDOMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Value<wbr />Mapping</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="2ac826d0-d140-3bff-be48-cdd15758c360" class="has-submenu" href="2ac826d0-d140-3bff-be48-cdd15758c360.htm">
+        <span data-tocFile="../toc/IDPMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Map<wbr />Object<wbr />To<wbr />Array<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9bcdaa8a-ee8d-0b30-9736-f98ec54451bf" class="has-submenu" href="9bcdaa8a-ee8d-0b30-9736-f98ec54451bf.htm">
+        <span data-tocFile="../toc/IDQMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFIdentifer<wbr />Resolver</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="923b3d74-6666-9de9-21af-04c85ac073ea" class="has-submenu" href="923b3d74-6666-9de9-21af-04c85ac073ea.htm">
+        <span data-tocFile="../toc/IDRMEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Walker<wbr />Control</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

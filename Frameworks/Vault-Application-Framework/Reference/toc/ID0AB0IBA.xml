@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="fc9b667a-b066-9b02-37d4-1ad599b221ea.htm">Task<wbr />Processor<wbr />Job<wbr />Args</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="111b93cf-b467-44e5-8290-b48f7f978533" href="111b93cf-b467-44e5-8290-b48f7f978533.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="09f68c16-a863-f0c9-c415-700a1f7321b2" class="has-submenu" href="09f68c16-a863-f0c9-c415-700a1f7321b2.htm">
+        <span data-tocFile="../toc/IDB0AB0IBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

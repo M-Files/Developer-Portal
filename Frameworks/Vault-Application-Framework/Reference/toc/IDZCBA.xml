@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="a4a142d6-9295-2315-fc2d-c9cc6bdfbda4.htm">Task<wbr />Manager</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0cf8934d-4969-f643-44b2-2a698b790000" href="0cf8934d-4969-f643-44b2-2a698b790000.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="bf081cdf-5e87-5492-fe06-3b40ed235241" class="has-submenu" href="bf081cdf-5e87-5492-fe06-3b40ed235241.htm">
+        <span data-tocFile="../toc/IDBZCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="911965fc-4bbd-8b8d-a267-977a5559f045" class="has-submenu" href="911965fc-4bbd-8b8d-a267-977a5559f045.htm">
+        <span data-tocFile="../toc/IDCZCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="03a6d2c3-ffac-303f-2a5c-cd0ed64fd2b5" class="has-submenu" href="03a6d2c3-ffac-303f-2a5c-cd0ed64fd2b5.htm">
+        <span data-tocFile="../toc/IDDZCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Events</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b33cf6b3-8599-4a0f-7304-367407459bf2" class="has-submenu" href="b33cf6b3-8599-4a0f-7304-367407459bf2.htm">
+        <span data-tocFile="../toc/IDEZCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Fields</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

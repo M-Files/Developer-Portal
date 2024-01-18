@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="0e140ec7-72d8-8487-4621-71f612335dc8.htm">Task<wbr />Processor</a>
+    </li>
+    <li>
+      <a href="e523cbb3-f681-0a18-bbcd-6af1a884909d.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="1f455d1e-74c8-62af-bc45-3bc44b3278ca" href="1f455d1e-74c8-62af-bc45-3bc44b3278ca.htm">Get<wbr />Settings</a>
+    </li>
+    <li>
+      <a id="545e10e3-a4bc-d94b-8708-267ea49f27a0" href="545e10e3-a4bc-d94b-8708-267ea49f27a0.htm">Get<wbr />Task<wbr />Info</a>
+    </li>
+    <li>
+      <a id="614e24a1-8cc4-b720-4767-1a6cc88ae2bb" href="614e24a1-8cc4-b720-4767-1a6cc88ae2bb.htm">Get<wbr />Task<wbr />Info<wbr />Impl</a>
+    </li>
+    <li>
+      <a id="717ea1b5-3080-9534-b4e4-8acb62503e3b" href="717ea1b5-3080-9534-b4e4-8acb62503e3b.htm">Parse<wbr />Directive</a>
+    </li>
+    <li>
+      <a id="00622891-08b4-d2c4-1d06-cc99f5929e50" href="00622891-08b4-d2c4-1d06-cc99f5929e50.htm">Parse<wbr />Directive<wbr />Impl</a>
+    </li>
+    <li>
+      <a id="96c063b6-052a-9157-7a82-dee6111bc429" href="96c063b6-052a-9157-7a82-dee6111bc429.htm">Resolve<wbr />Exception<wbr />Behavior</a>
+    </li>
+    <li>
+      <a id="9a4fbe5e-3f97-a363-7372-8df287a8c66d" href="9a4fbe5e-3f97-a363-7372-8df287a8c66d.htm">Update<wbr />Settings</a>
+    </li>
+  </tocItems>
+</toc>

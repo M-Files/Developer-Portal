@@ -8,29 +8,292 @@
       <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
     </li>
     <li>
-      <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.<wbr />VAF</a>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
     </li>
     <li>
-      <a href="d8766222-15c8-ac15-c39c-ebdaf5618d97.htm">Assembly<wbr />Locator</a>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
     </li>
   </breadcrumbs>
   <tocItems>
     <li>
-      <a id="6357de0d-490d-e5af-c9cc-0a0aba9ad51f" href="6357de0d-490d-e5af-c9cc-0a0aba9ad51f.htm">Constructor</a>
+      <a id="23344a3c-7b79-c81c-8fbb-ddae57eca443" class="has-submenu" href="23344a3c-7b79-c81c-8fbb-ddae57eca443.htm">
+        <span data-tocFile="../toc/IDACBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>App<wbr />Task<wbr />Exception</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="c4a42b2c-4222-35bc-aacb-4b169d917ad2" class="has-submenu" href="c4a42b2c-4222-35bc-aacb-4b169d917ad2.htm">
+      <a id="ce9d5f2c-d861-a674-72b9-bdb05d077ab5" class="has-submenu" href="ce9d5f2c-d861-a674-72b9-bdb05d077ab5.htm">
         <span data-tocFile="../toc/IDBCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
           <i class="fa fa-angle-right"> </i>
-        </span>Properties</a>
+        </span>App<wbr />Task<wbr />Log<wbr />Context<wbr />Keys</a>
       <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="0fbd10a3-2856-b108-c394-408b64d02482" class="has-submenu" href="0fbd10a3-2856-b108-c394-408b64d02482.htm">
+      <a id="dd5f591d-c290-5f31-bf2a-3dcf60f36604" class="has-submenu" href="dd5f591d-c290-5f31-bf2a-3dcf60f36604.htm">
         <span data-tocFile="../toc/IDCCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
           <i class="fa fa-angle-right"> </i>
-        </span>Methods</a>
+        </span>Broadcast<wbr />Directive</a>
       <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b07262dc-19cc-c46f-baa7-5aea52754d34" href="b07262dc-19cc-c46f-baa7-5aea52754d34.htm">Broadcast<wbr />Filter<wbr />Mode</a>
+    </li>
+    <li>
+      <a id="1f6f3581-a1ec-88b6-f68e-2f00cfff3b2c" class="has-submenu" href="1f6f3581-a1ec-88b6-f68e-2f00cfff3b2c.htm">
+        <span data-tocFile="../toc/IDECBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Broadcast<wbr />Processor</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="89f5ac0b-f02e-0dfd-bddb-6e36fb45f80e" href="89f5ac0b-f02e-0dfd-bddb-6e36fb45f80e.htm">Broadcast<wbr />Processor.<wbr />Handler&lt;TDirective&gt;</a>
+    </li>
+    <li>
+      <a id="4d453e2f-1efc-97a9-1d0c-216435438081" class="has-submenu" href="4d453e2f-1efc-97a9-1d0c-216435438081.htm">
+        <span data-tocFile="../toc/IDGCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Broadcast<wbr />Processor&lt;TDirective&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="0c7f69fb-9e07-467c-ae2f-138b139b9cbf" class="has-submenu" href="0c7f69fb-9e07-467c-ae2f-138b139b9cbf.htm">
+        <span data-tocFile="../toc/IDHCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Broadcast<wbr />Processor<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="800d11b4-d2a2-0cc7-a0ca-5c3ecef6b802" class="has-submenu" href="800d11b4-d2a2-0cc7-a0ca-5c3ecef6b802.htm">
+        <span data-tocFile="../toc/IDICBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Directive<wbr />Validator</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="587c4ec0-5812-569d-0fee-58fd31082beb" class="has-submenu" href="587c4ec0-5812-569d-0fee-58fd31082beb.htm">
+        <span data-tocFile="../toc/IDJCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IBroadcast<wbr />Processing<wbr />Job</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b30f6866-8a16-cd45-64e7-5ef3ac882e63" class="has-submenu" href="b30f6866-8a16-cd45-64e7-5ef3ac882e63.htm">
+        <span data-tocFile="../toc/IDKCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IBroadcast<wbr />Processing<wbr />Job&lt;TDirective&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="8d2286e6-32a7-8a87-ed08-670de12e1406" class="has-submenu" href="8d2286e6-32a7-8a87-ed08-670de12e1406.htm">
+        <span data-tocFile="../toc/IDLCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IReceived<wbr />Broadcast</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="cb51f7fe-6c08-2d5b-335b-dbe07c4ee7c3" class="has-submenu" href="cb51f7fe-6c08-2d5b-335b-dbe07c4ee7c3.htm">
+        <span data-tocFile="../toc/IDMCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IReceived<wbr />Broadcast&lt;TDirective&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="adc02f73-dd0c-81a4-b62d-8f4ff87e2d7c" class="has-submenu" href="adc02f73-dd0c-81a4-b62d-8f4ff87e2d7c.htm">
+        <span data-tocFile="../toc/IDNCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ITask<wbr />Processing<wbr />Job&lt;TDirective&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="fdcaf046-e291-df5e-2b7d-65eb336a4430" class="has-submenu" href="fdcaf046-e291-df5e-2b7d-65eb336a4430.htm">
+        <span data-tocFile="../toc/IDOCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>ITask<wbr />Queue<wbr />Processor</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="33e5205d-b607-d092-b923-1cec8ff7aad4" href="33e5205d-b607-d092-b923-1cec8ff7aad4.htm">Job<wbr />Throw<wbr />On<wbr />Update<wbr />Flags</a>
+    </li>
+    <li>
+      <a id="75b796ac-906a-4a6c-848e-026e9430c60e" class="has-submenu" href="75b796ac-906a-4a6c-848e-026e9430c60e.htm">
+        <span data-tocFile="../toc/IDQCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Processor</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a5d3c41f-0ce3-6d06-eda5-cbbb89cef822" class="has-submenu" href="a5d3c41f-0ce3-6d06-eda5-cbbb89cef822.htm">
+        <span data-tocFile="../toc/IDRCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Stoppable</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9b6368e9-dbbc-620d-977d-80e1abbdafe4" class="has-submenu" href="9b6368e9-dbbc-620d-977d-80e1abbdafe4.htm">
+        <span data-tocFile="../toc/IDSCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Cancellation<wbr />Broadcast<wbr />Directive</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9382bf0a-1e96-e547-7f3a-f7e20e8a337c" class="has-submenu" href="9382bf0a-1e96-e547-7f3a-f7e20e8a337c.htm">
+        <span data-tocFile="../toc/IDTCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Directive</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="810aa968-82bb-35bc-c8e1-815faa323c4f" class="has-submenu" href="810aa968-82bb-35bc-c8e1-815faa323c4f.htm">
+        <span data-tocFile="../toc/IDUCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Exception<wbr />Behavior<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="74417d6e-3add-0fce-f787-585c5824e1a6" class="has-submenu" href="74417d6e-3add-0fce-f787-585c5824e1a6.htm">
+        <span data-tocFile="../toc/IDVCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Exception<wbr />Settings</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="58860159-a1e5-a84d-eb1b-bb27c435a5f6" class="has-submenu" href="58860159-a1e5-a84d-eb1b-bb27c435a5f6.htm">
+        <span data-tocFile="../toc/IDWCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Helper</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="17e7e81e-b672-9e88-f6fb-573620d09f87" class="has-submenu" href="17e7e81e-b672-9e88-f6fb-573620d09f87.htm">
+        <span data-tocFile="../toc/IDXCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Info</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="dd22af2c-e0ad-be00-57f7-ff91c975cf44" class="has-submenu" href="dd22af2c-e0ad-be00-57f7-ff91c975cf44.htm">
+        <span data-tocFile="../toc/IDYCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Info&lt;TDirective&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a4a142d6-9295-2315-fc2d-c9cc6bdfbda4" class="has-submenu" href="a4a142d6-9295-2315-fc2d-c9cc6bdfbda4.htm">
+        <span data-tocFile="../toc/IDZCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Manager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3535887b-9831-e289-9b46-71ba492142bb" class="has-submenu" href="3535887b-9831-e289-9b46-71ba492142bb.htm">
+        <span data-tocFile="../toc/ID1CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Manager<wbr />Event<wbr />Args</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b29cb399-69c0-7de4-1baf-9f26b1f87d27" href="b29cb399-69c0-7de4-1baf-9f26b1f87d27.htm">Task<wbr />Manager<wbr />Event<wbr />Type</a>
+    </li>
+    <li>
+      <a id="e9f3d73d-a958-6428-0b71-1658b3335721" class="has-submenu" href="e9f3d73d-a958-6428-0b71-1658b3335721.htm">
+        <span data-tocFile="../toc/ID3CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Pager</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="7c393728-5d7c-029c-3ca6-c1d72253cae6" class="has-submenu" href="7c393728-5d7c-029c-3ca6-c1d72253cae6.htm">
+        <span data-tocFile="../toc/ID4CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Processing<wbr />Job<wbr />Event<wbr />Args</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="13f6232f-4619-aaae-d915-c8c79d8be637" href="13f6232f-4619-aaae-d915-c8c79d8be637.htm">Task<wbr />Processing<wbr />Job<wbr />Result</a>
+    </li>
+    <li>
+      <a id="67f140b7-828e-a081-63a4-2e45ab45696b" class="has-submenu" href="67f140b7-828e-a081-63a4-2e45ab45696b.htm">
+        <span data-tocFile="../toc/ID6CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Processing<wbr />Job<wbr />Status</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="0e140ec7-72d8-8487-4621-71f612335dc8" class="has-submenu" href="0e140ec7-72d8-8487-4621-71f612335dc8.htm">
+        <span data-tocFile="../toc/ID0AB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Processor</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a72d1477-a9db-3a23-f705-87248f0ecf4e" href="a72d1477-a9db-3a23-f705-87248f0ecf4e.htm">Task<wbr />Processor.<wbr />Handler&lt;TDirective&gt;</a>
+    </li>
+    <li>
+      <a id="0753625d-ca24-d45f-d8e3-aa64b6a663e0" class="has-submenu" href="0753625d-ca24-d45f-d8e3-aa64b6a663e0.htm">
+        <span data-tocFile="../toc/ID0CB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Processor&lt;TDirective&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1451bb73-3d22-1b37-e208-a7566c4899b0" class="has-submenu" href="1451bb73-3d22-1b37-e208-a7566c4899b0.htm">
+        <span data-tocFile="../toc/ID0DB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Processor<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="efd4be8a-36cb-84ee-4e84-404bb3c8cc54" class="has-submenu" href="efd4be8a-36cb-84ee-4e84-404bb3c8cc54.htm">
+        <span data-tocFile="../toc/ID0EB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Processor<wbr />Job<wbr />Extension<wbr />Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="dd4e130a-eb4a-288c-a34a-b4e89c4220db" class="has-submenu" href="dd4e130a-eb4a-288c-a34a-b4e89c4220db.htm">
+        <span data-tocFile="../toc/ID0FB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Processor<wbr />Settings</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b2e1f055-f7ca-e948-ea2c-547b02ac87bc" class="has-submenu" href="b2e1f055-f7ca-e948-ea2c-547b02ac87bc.htm">
+        <span data-tocFile="../toc/ID0GB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Query</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f78b2efb-e332-e0ba-d6ec-c8d5b2856546" class="has-submenu" href="f78b2efb-e332-e0ba-d6ec-c8d5b2856546.htm">
+        <span data-tocFile="../toc/ID0HB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Queue<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="67d0241d-c96f-2cd7-a04b-7823ee775560" class="has-submenu" href="67d0241d-c96f-2cd7-a04b-7823ee775560.htm">
+        <span data-tocFile="../toc/ID0IB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Queue<wbr />Resolver</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4b263323-5c49-a877-5408-509280454018" class="has-submenu" href="4b263323-5c49-a877-5408-509280454018.htm">
+        <span data-tocFile="../toc/ID0JB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Queue<wbr />Settings</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="feb1d578-0a32-b85c-1df1-fdf3a0cf5a0f" class="has-submenu" href="feb1d578-0a32-b85c-1df1-fdf3a0cf5a0f.htm">
+        <span data-tocFile="../toc/ID0KB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Task<wbr />Status<wbr />Helper</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="8350b093-6d3b-14d0-978c-0dd4abcdac04" href="8350b093-6d3b-14d0-978c-0dd4abcdac04.htm">Transaction<wbr />Mode</a>
     </li>
   </tocItems>
 </toc>

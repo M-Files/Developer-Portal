@@ -8,72 +8,99 @@
       <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
     </li>
     <li>
-      <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.<wbr />VAF</a>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
     </li>
     <li>
-      <a href="d991213f-cf21-7642-d66d-dcd23355b2e0.htm">Event<wbr />Tracing<wbr />For<wbr />Windows<wbr />Event<wbr />Source</a>
+      <a href="de1211d2-82b7-6900-ca1e-00cbe5205c09.htm">MFiles.<wbr />VAF.<wbr />Placeholders Namespaces</a>
     </li>
     <li>
-      <a href="d6e65d2d-4b86-5474-2998-1bc1d45a8f81.htm">Methods</a>
+      <a href="e23eb889-4de0-736e-44cb-7deb2bfc6115.htm">MFiles.<wbr />VAF.<wbr />Placeholders.<wbr />Issues</a>
     </li>
   </breadcrumbs>
   <tocItems>
     <li>
-      <a id="2abdee56-7ec3-c70a-4ec0-2f87b31e26ad" href="2abdee56-7ec3-c70a-4ec0-2f87b31e26ad.htm">Trace<wbr />After<wbr />Automatic<wbr />State<wbr />Transition<wbr />Trigger</a>
+      <a id="0b6eb37f-3d6b-bb69-7fd8-a22f32e6fe3b" class="has-submenu" href="0b6eb37f-3d6b-bb69-7fd8-a22f32e6fe3b.htm">
+        <span data-tocFile="../toc/IDACJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Empty<wbr />Context<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="9474fd15-e79b-f558-74f3-e02a9ca6869b" href="9474fd15-e79b-f558-74f3-e02a9ca6869b.htm">Trace<wbr />After<wbr />Event</a>
+      <a id="f6c61647-8c84-e367-c345-7debc03edafc" class="has-submenu" href="f6c61647-8c84-e367-c345-7debc03edafc.htm">
+        <span data-tocFile="../toc/IDBCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Incompatible<wbr />Context<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="affbaee8-4b2d-86d8-d6b8-249c30f40094" href="affbaee8-4b2d-86d8-d6b8-249c30f40094.htm">Trace<wbr />After<wbr />Extension<wbr />Method</a>
+      <a id="255a7bae-4b57-92b8-0a9e-6168263e5268" class="has-submenu" href="255a7bae-4b57-92b8-0a9e-6168263e5268.htm">
+        <span data-tocFile="../toc/IDCCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Incompatible<wbr />Levels<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="f2987553-b134-a02c-f586-4ecae39281b3" href="f2987553-b134-a02c-f586-4ecae39281b3.htm">Trace<wbr />After<wbr />Property<wbr />Customized<wbr />Automatic<wbr />Numbering</a>
+      <a id="faf04846-8a0c-5368-0570-611c20498f4f" class="has-submenu" href="faf04846-8a0c-5368-0570-611c20498f4f.htm">
+        <span data-tocFile="../toc/IDDCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Invalid<wbr />Command<wbr />Type<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="9df9dbae-0415-1b54-3daf-b190efaabe7f" href="9df9dbae-0415-1b54-3daf-b190efaabe7f.htm">Trace<wbr />After<wbr />Property<wbr />Custom<wbr />Value<wbr />Calculation</a>
+      <a id="222542fb-bea4-e1d6-f046-4e271dc90ae9" class="has-submenu" href="222542fb-bea4-e1d6-f046-4e271dc90ae9.htm">
+        <span data-tocFile="../toc/IDECJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Invalid<wbr />Expansion<wbr />Context<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="ff13965a-2bb6-1b2a-a69d-ee4d7af45a18" href="ff13965a-2bb6-1b2a-a69d-ee4d7af45a18.htm">Trace<wbr />After<wbr />Property<wbr />Value<wbr />Validation</a>
+      <a id="9204a485-c477-6072-9865-43ed17636b84" class="has-submenu" href="9204a485-c477-6072-9865-43ed17636b84.htm">
+        <span data-tocFile="../toc/IDFCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Invalid<wbr />Level<wbr />Position<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="a67f9438-c054-31c9-832e-3be6cd682516" href="a67f9438-c054-31c9-832e-3be6cd682516.htm">Trace<wbr />After<wbr />State<wbr />Post<wbr />Conditions</a>
+      <a id="cd27c197-9adf-abbe-9278-763e168bfa8c" class="has-submenu" href="cd27c197-9adf-abbe-9278-763e168bfa8c.htm">
+        <span data-tocFile="../toc/IDGCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Unknown<wbr />Command<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="c6139023-dbea-46b5-4a16-a4068be6b8c1" href="c6139023-dbea-46b5-4a16-a4068be6b8c1.htm">Trace<wbr />After<wbr />State<wbr />Pre<wbr />Conditions</a>
+      <a id="f58641bb-734e-581a-db8b-937dac7d6e24" class="has-submenu" href="f58641bb-734e-581a-db8b-937dac7d6e24.htm">
+        <span data-tocFile="../toc/IDHCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Unresolved<wbr />Class<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="c77b64ec-4d90-92dd-4a34-9e180a81b256" href="c77b64ec-4d90-92dd-4a34-9e180a81b256.htm">Trace<wbr />After<wbr />State<wbr />Run<wbr />Action</a>
+      <a id="114095f3-3714-e9c5-6345-6fe9066b9863" class="has-submenu" href="114095f3-3714-e9c5-6345-6fe9066b9863.htm">
+        <span data-tocFile="../toc/IDICJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Unresolved<wbr />Obj<wbr />Type<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="957fbb2f-6cd7-2c0c-db62-0452409b95e4" href="957fbb2f-6cd7-2c0c-db62-0452409b95e4.htm">Trace<wbr />Before<wbr />Automatic<wbr />State<wbr />Transition<wbr />Trigger</a>
+      <a id="fad47518-16ff-dee5-6b4d-b86f8c57f099" class="has-submenu" href="fad47518-16ff-dee5-6b4d-b86f8c57f099.htm">
+        <span data-tocFile="../toc/IDJCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Unresolved<wbr />Property<wbr />Def<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="8a1a8621-f871-2106-fbeb-1a15dccd75f8" href="8a1a8621-f871-2106-fbeb-1a15dccd75f8.htm">Trace<wbr />Before<wbr />Event</a>
+      <a id="86572734-5a3b-805a-8eef-7e686478620f" class="has-submenu" href="86572734-5a3b-805a-8eef-7e686478620f.htm">
+        <span data-tocFile="../toc/IDKCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Unresolved<wbr />State<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="f7d266f5-7d41-6ad4-5287-16256043c928" href="f7d266f5-7d41-6ad4-5287-16256043c928.htm">Trace<wbr />Before<wbr />Extension<wbr />Method</a>
-    </li>
-    <li>
-      <a id="a9626510-caf5-fdf7-a5a5-a2dcdf7cc227" href="a9626510-caf5-fdf7-a5a5-a2dcdf7cc227.htm">Trace<wbr />Before<wbr />Property<wbr />Customized<wbr />Automatic<wbr />Numbering</a>
-    </li>
-    <li>
-      <a id="0b32861c-916c-0e55-dade-85ff4d905b4b" href="0b32861c-916c-0e55-dade-85ff4d905b4b.htm">Trace<wbr />Before<wbr />Property<wbr />Custom<wbr />Value<wbr />Calculation</a>
-    </li>
-    <li>
-      <a id="f1c5ee1e-61ee-11c3-2f71-e142dd16c2e3" href="f1c5ee1e-61ee-11c3-2f71-e142dd16c2e3.htm">Trace<wbr />Before<wbr />Property<wbr />Value<wbr />Validation</a>
-    </li>
-    <li>
-      <a id="55931bb3-3776-dfb3-31ac-ad3cf28853b4" href="55931bb3-3776-dfb3-31ac-ad3cf28853b4.htm">Trace<wbr />Before<wbr />State<wbr />Post<wbr />Conditions</a>
-    </li>
-    <li>
-      <a id="85688827-a3a1-4c91-a51f-21116edfa3fb" href="85688827-a3a1-4c91-a51f-21116edfa3fb.htm">Trace<wbr />Before<wbr />State<wbr />Pre<wbr />Conditions</a>
-    </li>
-    <li>
-      <a id="6d1bceb8-84ac-286f-bb43-6c50c6f9bc18" href="6d1bceb8-84ac-286f-bb43-6c50c6f9bc18.htm">Trace<wbr />Before<wbr />State<wbr />Run<wbr />Action</a>
-    </li>
-    <li>
-      <a id="95e905ac-a1c4-8117-233e-c30c0da8f57c" href="95e905ac-a1c4-8117-233e-c30c0da8f57c.htm">Trace<wbr />Custom<wbr />Event</a>
+      <a id="1893cb43-b3e9-9863-7e6c-164a93c0da7a" class="has-submenu" href="1893cb43-b3e9-9863-7e6c-164a93c0da7a.htm">
+        <span data-tocFile="../toc/IDLCJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Value<wbr />Lists<wbr />Not<wbr />Supported<wbr />Issue</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
   </tocItems>
 </toc>

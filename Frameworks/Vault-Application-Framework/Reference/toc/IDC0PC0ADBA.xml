@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="001f02dd-352e-5792-2b89-d6714779baaa.htm">Registry<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="18164681-8636-2c31-455c-3e2d9893b4ac.htm">Fields</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="8b37a3a0-aece-6e37-4980-2e03270dd932" href="8b37a3a0-aece-6e37-4980-2e03270dd932.htm">ADVAPI<wbr />32_<wbr />DLL</a>
+    </li>
+    <li>
+      <a id="be4079f3-beb6-c255-5533-b608c3cbe96a" href="be4079f3-beb6-c255-5533-b608c3cbe96a.htm">ERROR_<wbr />FILE_<wbr />NOT_<wbr />FOUND</a>
+    </li>
+    <li>
+      <a id="34c5417f-54d3-fb3a-6fa2-2b1705616506" href="34c5417f-54d3-fb3a-6fa2-2b1705616506.htm">ERROR_<wbr />MORE_<wbr />DATA</a>
+    </li>
+    <li>
+      <a id="0d7d096c-797a-7ba1-8f13-daf9318f9744" href="0d7d096c-797a-7ba1-8f13-daf9318f9744.htm">ERROR_<wbr />NO_<wbr />MORE_<wbr />ITEMS</a>
+    </li>
+    <li>
+      <a id="e60c4c9e-9008-e3b7-0cad-0c715c97bec5" href="e60c4c9e-9008-e3b7-0cad-0c715c97bec5.htm">ERROR_<wbr />SUCCESS</a>
+    </li>
+    <li>
+      <a id="1648f573-a5b0-acdf-047a-e670eae9982f" href="1648f573-a5b0-acdf-047a-e670eae9982f.htm">HKEY_<wbr />LOCAL_<wbr />MACHINE</a>
+    </li>
+    <li>
+      <a id="67e3cced-83fa-5bed-12a7-1553319fdd90" href="67e3cced-83fa-5bed-12a7-1553319fdd90.htm">KERNEL<wbr />32_<wbr />DLL</a>
+    </li>
+    <li>
+      <a id="75153c84-3244-144d-0b22-1d77a90a30f3" href="75153c84-3244-144d-0b22-1d77a90a30f3.htm">REG_<wbr />BINARY</a>
+    </li>
+    <li>
+      <a id="97cb5971-241c-cc25-f6ec-ced133cf4223" href="97cb5971-241c-cc25-f6ec-ced133cf4223.htm">REG_<wbr />DWORD</a>
+    </li>
+    <li>
+      <a id="f4617536-db4f-d738-d829-a106d94be6ab" href="f4617536-db4f-d738-d829-a106d94be6ab.htm">REG_<wbr />DWORD_<wbr />BIG_<wbr />ENDIAN</a>
+    </li>
+    <li>
+      <a id="c14473fe-7ce6-1d15-1168-ce357efdaba1" href="c14473fe-7ce6-1d15-1168-ce357efdaba1.htm">REG_<wbr />DWORD_<wbr />LITTLE_<wbr />ENDIAN</a>
+    </li>
+    <li>
+      <a id="80673677-dc9f-bc47-d8e2-b0e7c715ac26" href="80673677-dc9f-bc47-d8e2-b0e7c715ac26.htm">REG_<wbr />EXPAND_<wbr />SZ</a>
+    </li>
+    <li>
+      <a id="6631dddd-5072-1694-e387-2fb314f6fd65" href="6631dddd-5072-1694-e387-2fb314f6fd65.htm">REG_<wbr />LINK</a>
+    </li>
+    <li>
+      <a id="2f5336fa-2a59-f640-ba7a-5fcdfe714089" href="2f5336fa-2a59-f640-ba7a-5fcdfe714089.htm">REG_<wbr />MULTI_<wbr />SZ</a>
+    </li>
+    <li>
+      <a id="49f19ff4-9e17-0a83-10e0-6356fbbcb6f6" href="49f19ff4-9e17-0a83-10e0-6356fbbcb6f6.htm">REG_<wbr />NONE</a>
+    </li>
+    <li>
+      <a id="05a22621-f062-6053-e590-8920fd0e07b3" href="05a22621-f062-6053-e590-8920fd0e07b3.htm">REG_<wbr />SZ</a>
+    </li>
+    <li>
+      <a id="5f60f35e-7aa5-d260-915f-5248211b63a9" href="5f60f35e-7aa5-d260-915f-5248211b63a9.htm">USER<wbr />32_<wbr />DLL</a>
+    </li>
+  </tocItems>
+</toc>

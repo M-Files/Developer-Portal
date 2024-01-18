@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="e02daeb8-c306-9504-d921-7b26606fe222.htm">MFiles.<wbr />VAF.<wbr />Module Namespaces</a>
+    </li>
+    <li>
+      <a href="7a19ec7b-db92-a939-45eb-aec2565c4bc8.htm">MFiles.<wbr />VAF.<wbr />Module.<wbr />Configuration<wbr />Upgrader</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="6a2c4dfb-aabc-4fef-4035-beee2c7c0e5b" class="has-submenu" href="6a2c4dfb-aabc-4fef-4035-beee2c7c0e5b.htm">
+        <span data-tocFile="../toc/IDABHBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IConfiguration<wbr />Upgrade<wbr />Action</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="ccad289d-b804-c174-93bc-e58fe715e159" class="has-submenu" href="ccad289d-b804-c174-93bc-e58fe715e159.htm">
+        <span data-tocFile="../toc/IDBBHBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IConfiguration<wbr />Upgrade<wbr />Action<wbr />Result</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="ec1cc0ed-a190-6b53-503e-502f2cfd9403" class="has-submenu" href="ec1cc0ed-a190-6b53-503e-502f2cfd9403.htm">
+        <span data-tocFile="../toc/IDCBHBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IConfiguration<wbr />Upgrader</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="8be23474-3b25-4c53-3cc3-fa73cea56607" class="has-submenu" href="8be23474-3b25-4c53-3cc3-fa73cea56607.htm">
+        <span data-tocFile="../toc/IDDBHBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IConfiguration<wbr />Upgrade<wbr />Results</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3480a181-ae4a-974f-0267-cf3a55ec38ab" class="has-submenu" href="3480a181-ae4a-974f-0267-cf3a55ec38ab.htm">
+        <span data-tocFile="../toc/IDEBHBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Upgrade<wbr />Detail</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="7ba76e7d-b04f-84c0-30ec-3cee1df3da52" href="7ba76e7d-b04f-84c0-30ec-3cee1df3da52.htm">Upgrade<wbr />State</a>
+    </li>
+  </tocItems>
+</toc>

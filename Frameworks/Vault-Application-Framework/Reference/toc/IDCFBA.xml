@@ -8,27 +8,25 @@
       <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
     </li>
     <li>
-      <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.<wbr />VAF</a>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
     </li>
     <li>
-      <a href="986262ab-cd80-04ac-28b2-8698e61fc3b2.htm">Dynamic<wbr />Module<wbr />Loader</a>
+      <a href="c7f378bb-95b1-5476-eb54-f682b91c3b53.htm">MFiles.<wbr />VAF.<wbr />Core</a>
     </li>
     <li>
-      <a href="7e9bf23c-9531-76cb-807a-aa202efdf92e.htm">Fields</a>
+      <a href="49cc37a2-622a-5971-f700-ee36ea5da4a9.htm">Event<wbr />Handler<wbr />Execution<wbr />Order<wbr />Preserver.<wbr />App<wbr />Event<wbr />Handler<wbr />Priorities</a>
     </li>
   </breadcrumbs>
   <tocItems>
     <li>
-      <a id="e1ffaf28-6a93-68c4-0a19-37f968712d12" href="e1ffaf28-6a93-68c4-0a19-37f968712d12.htm">assembly<wbr />Folder</a>
+      <a id="a922a634-0589-3f3e-a60e-f96bcb89389e" href="a922a634-0589-3f3e-a60e-f96bcb89389e.htm">Constructor</a>
     </li>
     <li>
-      <a id="13a32c80-2456-1749-b76a-326b2a724d1b" href="13a32c80-2456-1749-b76a-326b2a724d1b.htm">locator</a>
-    </li>
-    <li>
-      <a id="f68a38fa-428a-5a39-7c33-562458ef94cd" href="f68a38fa-428a-5a39-7c33-562458ef94cd.htm">main<wbr />Assembly</a>
-    </li>
-    <li>
-      <a id="bd84fef1-8f5b-7694-88c0-9bbe80b542b1" href="bd84fef1-8f5b-7694-88c0-9bbe80b542b1.htm">manager</a>
+      <a id="b619789e-8954-6d89-fee6-b33d17b127f2" class="has-submenu" href="b619789e-8954-6d89-fee6-b33d17b127f2.htm">
+        <span data-tocFile="../toc/IDBCFBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
   </tocItems>
 </toc>

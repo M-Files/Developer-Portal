@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="3407303a-b429-b8e1-4adb-33dbfee1d514.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Client<wbr />Directive</a>
+    </li>
+    <li>
+      <a href="cd9ed5d5-66ef-9898-f52c-35554c38b864.htm">Prompt<wbr />Download<wbr />File</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7897d67c-f7de-6b3d-b022-67bd699be788" href="7897d67c-f7de-6b3d-b022-67bd699be788.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="4b1ebef1-47a8-5980-91fb-0091b683ef17" class="has-submenu" href="4b1ebef1-47a8-5980-91fb-0091b683ef17.htm">
+        <span data-tocFile="../toc/IDBEFEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping</a>
+    </li>
+    <li>
+      <a href="85253d1d-734f-f20d-e544-f7745245f893.htm">Json<wbr />Map<wbr />Generator</a>
+    </li>
+    <li>
+      <a href="9c39070c-bad2-69cb-eb5b-f61d6f485e86.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="de718edd-61b8-0490-bff2-b43b31111159" href="de718edd-61b8-0490-bff2-b43b31111159.htm">Generate</a>
+    </li>
+    <li>
+      <a id="e46cf2b5-a566-0d38-e8ff-7ccb586eb451" href="e46cf2b5-a566-0d38-e8ff-7ccb586eb451.htm">Get<wbr />Data<wbr />Member<wbr />Source<wbr />Path</a>
+    </li>
+    <li>
+      <a id="7821d4b7-d83e-87c8-9cc4-ceee0937b909" href="7821d4b7-d83e-87c8-9cc4-ceee0937b909.htm">Get<wbr />Data<wbr />Member<wbr />Target<wbr />Path</a>
+    </li>
+    <li>
+      <a id="a68b0637-93c3-7e88-bc82-2b2553d880a6" href="a68b0637-93c3-7e88-bc82-2b2553d880a6.htm">Get<wbr />Mapping<wbr />Attribute</a>
+    </li>
+  </tocItems>
+</toc>

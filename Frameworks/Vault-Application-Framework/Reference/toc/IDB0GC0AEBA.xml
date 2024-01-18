@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="4be9bcb2-13b2-4e61-9dc3-74e1eb0babb0.htm">Security<wbr />Settings&lt;TConfig&gt;</a>
+    </li>
+    <li>
+      <a href="456ffdfc-3d2e-a3f3-5113-fe01466ca21e.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="da7bb1bc-628e-ab4e-14d6-675e399469d3" class="has-submenu" href="da7bb1bc-628e-ab4e-14d6-675e399469d3.htm">
+        <span data-tocFile="../toc/IDAB0GC0AEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Enforce<wbr />Security<wbr />Attribute</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="ee65b900-1364-18ea-bdab-80f216beba8c" class="has-submenu" href="ee65b900-1364-18ea-bdab-80f216beba8c.htm">
+        <span data-tocFile="../toc/IDBB0GC0AEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Strip<wbr />Passwords</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

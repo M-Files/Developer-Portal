@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">Task<wbr />Processor<wbr />Base&lt;TSettings&gt;</a>
+    </li>
+    <li>
+      <a href="c6816385-c5ac-fc37-d298-7d2daee5abc4.htm">Methods</a>
+    </li>
+    <li>
+      <a href="88dc1131-2143-a4fe-6330-2e76bd5d55fd.htm">Update<wbr />Completed<wbr />Job<wbr />In<wbr />Task<wbr />Queue</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="95571628-6daf-9468-dafc-3b5f0a5b352f" href="95571628-6daf-9468-dafc-3b5f0a5b352f.htm">Update<wbr />Completed<wbr />Job<wbr />In<wbr />Task<wbr />Queue(<wbr />Application<wbr />Task, String, String, Boolean)</a>
+    </li>
+    <li>
+      <a id="5e3e9d2a-9a43-8f17-2f2c-906081a61dad" href="5e3e9d2a-9a43-8f17-2f2c-906081a61dad.htm">Update<wbr />Completed<wbr />Job<wbr />In<wbr />Task<wbr />Queue(<wbr />Task<wbr />Processor<wbr />Job, String, String, Boolean)</a>
+    </li>
+  </tocItems>
+</toc>

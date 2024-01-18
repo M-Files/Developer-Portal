@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="f29c2fec-efec-0a82-b351-a3a15252ed9b.htm">License<wbr />Content<wbr />Base</a>
+    </li>
+    <li>
+      <a href="5f716f47-4592-5afc-aff3-e4de1ecf7613.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="eab956ba-7e58-856a-665a-5d86850dee73" href="eab956ba-7e58-856a-665a-5d86850dee73.htm">Application</a>
+    </li>
+    <li>
+      <a id="5f3ea58b-e8fd-d52c-9ab5-c45bbc0e9c0a" href="5f3ea58b-e8fd-d52c-9ab5-c45bbc0e9c0a.htm">Concurrent<wbr />Users</a>
+    </li>
+    <li>
+      <a id="22740e30-29a8-084c-5d5e-7d24a67feba2" href="22740e30-29a8-084c-5d5e-7d24a67feba2.htm">Description</a>
+    </li>
+    <li>
+      <a id="c180f3dd-a046-2293-7d84-a0c77707fe90" href="c180f3dd-a046-2293-7d84-a0c77707fe90.htm">Errors</a>
+    </li>
+    <li>
+      <a id="65622d6a-0d20-fb77-9458-6ddb574658df" href="65622d6a-0d20-fb77-9458-6ddb574658df.htm">Format<wbr />Error</a>
+    </li>
+    <li>
+      <a id="1a6e97f4-0310-fefb-5fe0-2a82545937a9" href="1a6e97f4-0310-fefb-5fe0-2a82545937a9.htm">Grace<wbr />Days</a>
+    </li>
+    <li>
+      <a id="a633cb62-b41d-ded8-4ae3-5b09152ea644" href="a633cb62-b41d-ded8-4ae3-5b09152ea644.htm">Groups</a>
+    </li>
+    <li>
+      <a id="8d172eaa-6e2a-4f8a-40cc-fa5f97d1dc3d" href="8d172eaa-6e2a-4f8a-40cc-fa5f97d1dc3d.htm">Infos</a>
+    </li>
+    <li>
+      <a id="2517ac31-996c-b9d6-8e20-b0fc65b43986" href="2517ac31-996c-b9d6-8e20-b0fc65b43986.htm">Is<wbr />Empty</a>
+    </li>
+    <li>
+      <a id="9d38867a-4ed9-ab45-e2fe-a24bf488c133" href="9d38867a-4ed9-ab45-e2fe-a24bf488c133.htm">Is<wbr />Evaluated</a>
+    </li>
+    <li>
+      <a id="214ff4ee-3f4c-b3f9-d123-45fb82166d00" href="214ff4ee-3f4c-b3f9-d123-45fb82166d00.htm">Is<wbr />Trial</a>
+    </li>
+    <li>
+      <a id="d3959dac-bd14-69ea-eb79-3679cf04b1d5" href="d3959dac-bd14-69ea-eb79-3679cf04b1d5.htm">Is<wbr />Valid</a>
+    </li>
+    <li>
+      <a id="0698b774-04ff-0b49-6a28-6e5e608e7262" href="0698b774-04ff-0b49-6a28-6e5e608e7262.htm">Licensed<wbr />To</a>
+    </li>
+    <li>
+      <a id="2acd834d-17cb-cbcf-ee88-83f6328a371b" href="2acd834d-17cb-cbcf-ee88-83f6328a371b.htm">License<wbr />Expire<wbr />Date</a>
+    </li>
+    <li>
+      <a id="e9a1dd27-2d88-07af-f981-dd3d7cb8f72a" href="e9a1dd27-2d88-07af-f981-dd3d7cb8f72a.htm">License<wbr />Status</a>
+    </li>
+    <li>
+      <a id="9737dcba-89ae-9952-baca-673f5c428f1c" href="9737dcba-89ae-9952-baca-673f5c428f1c.htm">License<wbr />Version</a>
+    </li>
+    <li>
+      <a id="ec1cedf8-4407-9661-2dd3-189acf722c00" href="ec1cedf8-4407-9661-2dd3-189acf722c00.htm">Maintenance<wbr />Expire<wbr />Date</a>
+    </li>
+    <li>
+      <a id="afda9b66-aee7-8a5e-ad4d-9e89264351ee" href="afda9b66-aee7-8a5e-ad4d-9e89264351ee.htm">MFiles<wbr />Serial<wbr />Number</a>
+    </li>
+    <li>
+      <a id="6fba411c-fc44-6c19-faa4-6600d0a61b5f" href="6fba411c-fc44-6c19-faa4-6600d0a61b5f.htm">Modules</a>
+    </li>
+    <li>
+      <a id="6e91f133-90a9-7963-bb39-89f3d6f5bfa0" href="6e91f133-90a9-7963-bb39-89f3d6f5bfa0.htm">Named<wbr />Users</a>
+    </li>
+    <li>
+      <a id="64e80ee9-2c45-b556-a22d-895d0ac0bb71" href="64e80ee9-2c45-b556-a22d-895d0ac0bb71.htm">Read<wbr />Only<wbr />Users</a>
+    </li>
+    <li>
+      <a id="32e53ebe-87de-f95c-985b-64c4577d01c9" href="32e53ebe-87de-f95c-985b-64c4577d01c9.htm">Serial<wbr />Number</a>
+    </li>
+    <li>
+      <a id="841d16db-f1d5-52d8-9895-b461d27d1593" href="841d16db-f1d5-52d8-9895-b461d27d1593.htm">Server<wbr />Versions</a>
+    </li>
+    <li>
+      <a id="46947648-126b-31c4-9ba1-456d8eecb410" href="46947648-126b-31c4-9ba1-456d8eecb410.htm">Vaults</a>
+    </li>
+  </tocItems>
+</toc>

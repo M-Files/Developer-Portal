@@ -8,72 +8,35 @@
       <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
     </li>
     <li>
-      <a href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">MFiles.<wbr />VAF</a>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
     </li>
     <li>
-      <a href="edef2a09-cb8e-20b4-3d18-4419e7c08bb3.htm">Event<wbr />Tracing<wbr />For<wbr />Windows</a>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
     </li>
     <li>
-      <a href="e8cb7243-8a5e-9536-b093-a6914c80cbcb.htm">Methods</a>
+      <a href="b960c88d-dc9a-517f-08e7-ca494494fa28.htm">App<wbr />Task<wbr />Batch<wbr />Processor</a>
     </li>
   </breadcrumbs>
   <tocItems>
     <li>
-      <a id="361f5b6b-d692-4834-fbad-498f9942564c" href="361f5b6b-d692-4834-fbad-498f9942564c.htm">Trace<wbr />After<wbr />Automatic<wbr />State<wbr />Transition<wbr />Trigger</a>
+      <a id="a39f89f2-187e-ceb9-826b-b4c71dd22261" href="a39f89f2-187e-ceb9-826b-b4c71dd22261.htm">Constructor</a>
     </li>
     <li>
-      <a id="fdb747bc-3abd-ddb3-1918-aebec8f63844" href="fdb747bc-3abd-ddb3-1918-aebec8f63844.htm">Trace<wbr />After<wbr />Event</a>
+      <a id="e7b8bd0f-7dc2-5ccc-c80f-f917cc01a5da" href="e7b8bd0f-7dc2-5ccc-c80f-f917cc01a5da.htm">Properties</a>
     </li>
     <li>
-      <a id="ca2c2f45-0caa-f319-bbd3-1459480fda34" href="ca2c2f45-0caa-f319-bbd3-1459480fda34.htm">Trace<wbr />After<wbr />Extension<wbr />Method</a>
+      <a id="2867eb73-5ef9-654d-0ec1-90c10da512cd" class="has-submenu" href="2867eb73-5ef9-654d-0ec1-90c10da512cd.htm">
+        <span data-tocFile="../toc/IDCBIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
     <li>
-      <a id="4303dade-fd80-7b9a-9ec5-c653cdfb42fb" href="4303dade-fd80-7b9a-9ec5-c653cdfb42fb.htm">Trace<wbr />After<wbr />Property<wbr />Customized<wbr />Automatic<wbr />Numbering</a>
-    </li>
-    <li>
-      <a id="b4fd7c53-0cad-f401-99e2-61ba9e948b89" href="b4fd7c53-0cad-f401-99e2-61ba9e948b89.htm">Trace<wbr />After<wbr />Property<wbr />Custom<wbr />Value<wbr />Calculation</a>
-    </li>
-    <li>
-      <a id="d8759d81-5df0-7248-579f-1b498bd15134" href="d8759d81-5df0-7248-579f-1b498bd15134.htm">Trace<wbr />After<wbr />Property<wbr />Value<wbr />Validation</a>
-    </li>
-    <li>
-      <a id="6b3e05de-99b4-0264-bd47-2a7fcfce42b8" href="6b3e05de-99b4-0264-bd47-2a7fcfce42b8.htm">Trace<wbr />After<wbr />State<wbr />Post<wbr />Conditions</a>
-    </li>
-    <li>
-      <a id="e3190c20-106d-db09-5998-e589341f4c1d" href="e3190c20-106d-db09-5998-e589341f4c1d.htm">Trace<wbr />After<wbr />State<wbr />Pre<wbr />Conditions</a>
-    </li>
-    <li>
-      <a id="abba7e8c-3082-3611-bc1f-234aa4ab5f23" href="abba7e8c-3082-3611-bc1f-234aa4ab5f23.htm">Trace<wbr />After<wbr />State<wbr />Run<wbr />Action</a>
-    </li>
-    <li>
-      <a id="6acf0f94-b04b-cfa3-9c3e-84b55d0abae7" href="6acf0f94-b04b-cfa3-9c3e-84b55d0abae7.htm">Trace<wbr />Before<wbr />Automatic<wbr />State<wbr />Transition<wbr />Trigger</a>
-    </li>
-    <li>
-      <a id="827f936b-b0c6-3216-ff89-b233793ed91b" href="827f936b-b0c6-3216-ff89-b233793ed91b.htm">Trace<wbr />Before<wbr />Event</a>
-    </li>
-    <li>
-      <a id="a29edd5e-af92-b40c-18a2-4b33d774f66f" href="a29edd5e-af92-b40c-18a2-4b33d774f66f.htm">Trace<wbr />Before<wbr />Extension<wbr />Method</a>
-    </li>
-    <li>
-      <a id="b1138673-8d30-90dd-4d84-681e82771267" href="b1138673-8d30-90dd-4d84-681e82771267.htm">Trace<wbr />Before<wbr />Property<wbr />Customized<wbr />Automatic<wbr />Numbering</a>
-    </li>
-    <li>
-      <a id="ccc970be-9ea4-456b-8177-ff9d20fd833c" href="ccc970be-9ea4-456b-8177-ff9d20fd833c.htm">Trace<wbr />Before<wbr />Property<wbr />Custom<wbr />Value<wbr />Calculation</a>
-    </li>
-    <li>
-      <a id="02af7725-e0d8-c59b-e9fb-c3f8049b86e8" href="02af7725-e0d8-c59b-e9fb-c3f8049b86e8.htm">Trace<wbr />Before<wbr />Property<wbr />Value<wbr />Validation</a>
-    </li>
-    <li>
-      <a id="ef9fe920-0b2b-593c-e8b9-b78b73ba8b9b" href="ef9fe920-0b2b-593c-e8b9-b78b73ba8b9b.htm">Trace<wbr />Before<wbr />State<wbr />Post<wbr />Conditions</a>
-    </li>
-    <li>
-      <a id="9024055a-aecb-6d0a-3d9e-490d396b3bac" href="9024055a-aecb-6d0a-3d9e-490d396b3bac.htm">Trace<wbr />Before<wbr />State<wbr />Pre<wbr />Conditions</a>
-    </li>
-    <li>
-      <a id="a5f71bea-fb09-bf7e-eae6-5b3ad7e7f836" href="a5f71bea-fb09-bf7e-eae6-5b3ad7e7f836.htm">Trace<wbr />Before<wbr />State<wbr />Run<wbr />Action</a>
-    </li>
-    <li>
-      <a id="ac142cf6-8444-4dc0-338b-cca18c049be1" href="ac142cf6-8444-4dc0-338b-cca18c049be1.htm">Trace<wbr />Custom<wbr />Event</a>
+      <a id="932a06d8-2e3a-ae78-0f92-7407021ad5f1" class="has-submenu" href="932a06d8-2e3a-ae78-0f92-7407021ad5f1.htm">
+        <span data-tocFile="../toc/IDDBIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Events</a>
+      <ul class="toc-menu is-hidden"> </ul>
     </li>
   </tocItems>
 </toc>

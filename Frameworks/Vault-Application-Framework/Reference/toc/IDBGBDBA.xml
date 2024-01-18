@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="d685572d-372e-40a9-f473-712980cc0948.htm">MFiles.<wbr />VAF.<wbr />Common.<wbr />Application<wbr />Task<wbr />Queue</a>
+    </li>
+    <li>
+      <a href="c7774a2e-e53f-5b75-5aac-56c5e888bd3f.htm">Task<wbr />Queue<wbr />Manager</a>
+    </li>
+    <li>
+      <a href="6395cedb-e667-bc13-62d5-08a7cc95daad.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="27124c0e-b7ad-0b53-37a7-91e5ecb76eea" href="27124c0e-b7ad-0b53-37a7-91e5ecb76eea.htm">Delay<wbr />Ms<wbr />After<wbr />Transactional<wbr />Broadcast<wbr />Task<wbr />Creation</a>
+    </li>
+    <li>
+      <a id="7da2ff8d-6f6f-e335-fc0b-c5853154ca3a" href="7da2ff8d-6f6f-e335-fc0b-c5853154ca3a.htm">Manager<wbr />Token<wbr />Source</a>
+    </li>
+    <li>
+      <a id="f1bad6f1-13a3-376a-f614-e0c0a6f480fb" href="f1bad6f1-13a3-376a-f614-e0c0a6f480fb.htm">Persistent<wbr />Vault</a>
+    </li>
+    <li>
+      <a id="5dfb4087-19c7-897b-1207-25a3cdb3f4aa" href="5dfb4087-19c7-897b-1207-25a3cdb3f4aa.htm">Polling<wbr />Enabled<wbr />Lock</a>
+    </li>
+    <li>
+      <a id="62db5552-c260-2c1e-b234-2f158d050c24" href="62db5552-c260-2c1e-b234-2f158d050c24.htm">Polling<wbr />Interval<wbr />In<wbr />Seconds</a>
+    </li>
+    <li>
+      <a id="4ba70eea-5fb0-defd-bb4d-5eb3668e6f18" href="4ba70eea-5fb0-defd-bb4d-5eb3668e6f18.htm">Transactional<wbr />Broadcast<wbr />Creation<wbr />Queue</a>
+    </li>
+    <li>
+      <a id="f731e3fa-a11a-894f-5e03-63cef12d6eb1" href="f731e3fa-a11a-894f-5e03-63cef12d6eb1.htm">Transactional<wbr />Broadcast<wbr />Processor</a>
+    </li>
+  </tocItems>
+</toc>

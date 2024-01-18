@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="adc02f73-dd0c-81a4-b62d-8f4ff87e2d7c.htm">ITask<wbr />Processing<wbr />Job&lt;TDirective&gt;</a>
+    </li>
+    <li>
+      <a href="ca9b4804-c275-650b-a423-0d24d0da427c.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c1233bcf-c0ff-8a7b-1177-8802099e9318" href="c1233bcf-c0ff-8a7b-1177-8802099e9318.htm">Commit</a>
+    </li>
+    <li>
+      <a id="e48ac67d-240c-68ed-b1ce-ce3cedf3f32d" href="e48ac67d-240c-68ed-b1ce-ce3cedf3f32d.htm">Get<wbr />Status</a>
+    </li>
+    <li>
+      <a id="e5153342-dabb-c9d8-2fac-4e781930d45a" href="e5153342-dabb-c9d8-2fac-4e781930d45a.htm">Throw<wbr />If<wbr />Job<wbr />Abort<wbr />Requested</a>
+    </li>
+    <li>
+      <a id="0534501b-57e1-6820-582b-ec2097cd2179" href="0534501b-57e1-6820-582b-ec2097cd2179.htm">Throw<wbr />If<wbr />Task<wbr />Cancellation<wbr />Requested</a>
+    </li>
+    <li>
+      <a id="d27f740c-1b2d-b5cc-387c-9efd2617d725" href="d27f740c-1b2d-b5cc-387c-9efd2617d725.htm">Transaction</a>
+    </li>
+    <li>
+      <a id="0fa28ddb-e896-1bfc-f956-f04e9e9dbca0" href="0fa28ddb-e896-1bfc-f956-f04e9e9dbca0.htm">Update</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="e02daeb8-c306-9504-d921-7b26606fe222.htm">MFiles.<wbr />VAF.<wbr />Module Namespaces</a>
+    </li>
+    <li>
+      <a href="75a03b3d-c244-f807-1d48-81366332dc56.htm">MFiles.<wbr />VAF.<wbr />Module</a>
+    </li>
+    <li>
+      <a href="0fb679ea-f997-1856-24c9-398f61af944d.htm">IModule</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="6c39bf29-0dcb-773c-10ac-97563a599c80" class="has-submenu" href="6c39bf29-0dcb-773c-10ac-97563a599c80.htm">
+        <span data-tocFile="../toc/IDACAHBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="0ceb7d39-cdeb-b866-38c2-cf005a388206" class="has-submenu" href="0ceb7d39-cdeb-b866-38c2-cf005a388206.htm">
+        <span data-tocFile="../toc/IDBCAHBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

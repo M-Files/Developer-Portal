@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="de1211d2-82b7-6900-ca1e-00cbe5205c09.htm">MFiles.<wbr />VAF.<wbr />Placeholders Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="5663eb60-8b05-789b-046b-5f2481e8687e.htm">Placeholder<wbr />Validator</a>
+    </li>
+    <li>
+      <a href="d07e505d-8e25-418b-4b96-f3f2af24c344.htm">Methods</a>
+    </li>
+    <li>
+      <a href="d6e0d087-b960-1504-60a2-b42ffe9626d4.htm">Validate<wbr />Placeholder</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="cf568e1d-b4c6-54a8-76de-a4b6ba51f69d" href="cf568e1d-b4c6-54a8-76de-a4b6ba51f69d.htm">Validate<wbr />Placeholder(<wbr />Translatable<wbr />Content, String, Boolean, Boolean)</a>
+    </li>
+    <li>
+      <a id="7decae7d-c32a-69d7-62f5-c32395a1625d" href="7decae7d-c32a-69d7-62f5-c32395a1625d.htm">Validate<wbr />Placeholder(<wbr />String, String, Boolean, Boolean, Expansion<wbr />Context<wbr />Type[], Int<wbr />32[])</a>
+    </li>
+  </tocItems>
+</toc>

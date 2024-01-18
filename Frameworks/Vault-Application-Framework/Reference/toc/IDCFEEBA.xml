@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="cf5318eb-e319-6f2a-d14c-a552b4644ab1.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Client</a>
+    </li>
+    <li>
+      <a href="456c4708-b5c6-b8fe-2598-920c58a93de8.htm">Vault<wbr />Configuration<wbr />Domain<wbr />Operations</a>
+    </li>
+    <li>
+      <a href="51816ee3-cfbb-3491-2dbf-8ac0dc7cc887.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3ed129d4-7210-cc6b-ffab-25f57439e655" class="has-submenu" href="3ed129d4-7210-cc6b-ffab-25f57439e655.htm">
+        <span data-tocFile="../toc/IDACFEEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Call<wbr />Extension<wbr />Method</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="7035a554-f82f-af22-0e0a-71a8d2d7aae8" href="7035a554-f82f-af22-0e0a-71a8d2d7aae8.htm">Execute<wbr />Command</a>
+    </li>
+    <li>
+      <a id="b9689f41-732f-883c-89dd-f4a7a47e615f" href="b9689f41-732f-883c-89dd-f4a7a47e615f.htm">Get<wbr />Advanced<wbr />Vault<wbr />Settings<wbr />Domain</a>
+    </li>
+    <li>
+      <a id="cb178221-fc62-1abc-1a09-42438f36eb87" href="cb178221-fc62-1abc-1a09-42438f36eb87.htm">Get<wbr />Metadata<wbr />Card<wbr />Configuration<wbr />Domain</a>
+    </li>
+    <li>
+      <a id="b3a8bc7f-afba-0b10-d37b-0361a49ce68e" href="b3a8bc7f-afba-0b10-d37b-0361a49ce68e.htm">Get<wbr />Registered<wbr />Configuration<wbr />Domains</a>
+    </li>
+    <li>
+      <a id="71956657-717a-0dfc-280a-f8b1fc2e848a" href="71956657-717a-0dfc-280a-f8b1fc2e848a.htm">Get<wbr />Registered<wbr />Configuration<wbr />Domains<wbr />Json</a>
+    </li>
+    <li>
+      <a id="2add1707-3b9f-83c6-dd0b-90a896211f1d" href="2add1707-3b9f-83c6-dd0b-90a896211f1d.htm">Load<wbr />Commands</a>
+    </li>
+    <li>
+      <a id="c7e2894d-96e7-25c7-afb9-41f862a72ebd" href="c7e2894d-96e7-25c7-afb9-41f862a72ebd.htm">Load<wbr />Configuration</a>
+    </li>
+    <li>
+      <a id="2daebabc-7878-bd15-aab2-ca91780430e1" href="2daebabc-7878-bd15-aab2-ca91780430e1.htm">Load<wbr />Domain</a>
+    </li>
+    <li>
+      <a id="84057b5c-d287-aafb-6498-9458c361045a" href="84057b5c-d287-aafb-6498-9458c361045a.htm">Load<wbr />From<wbr />Source</a>
+    </li>
+    <li>
+      <a id="f25d7960-1023-61f4-f367-42ecab708909" href="f25d7960-1023-61f4-f367-42ecab708909.htm">Load<wbr />Schema</a>
+    </li>
+    <li>
+      <a id="9888e795-afb0-e42c-48d3-256c48b134a5" href="9888e795-afb0-e42c-48d3-256c48b134a5.htm">Load<wbr />Status<wbr />Dashboard</a>
+    </li>
+    <li>
+      <a id="2df4d8f2-29c0-dca9-6ec1-b88519646f59" href="2df4d8f2-29c0-dca9-6ec1-b88519646f59.htm">Load<wbr />Status<wbr />Summary</a>
+    </li>
+    <li>
+      <a id="7ec38a67-b7e1-a2ce-198c-7a9515c615ad" href="7ec38a67-b7e1-a2ce-198c-7a9515c615ad.htm">Load<wbr />Sub<wbr />Domains</a>
+    </li>
+    <li>
+      <a id="2b16a0dd-606f-4706-bc52-1a4446a21444" class="has-submenu" href="2b16a0dd-606f-4706-bc52-1a4446a21444.htm">
+        <span data-tocFile="../toc/IDOCFEEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Load<wbr />Value<wbr />From<wbr />Source<wbr />Recurse</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4e0624b5-bd4d-b797-3684-60c22efc37ef" class="has-submenu" href="4e0624b5-bd4d-b797-3684-60c22efc37ef.htm">
+        <span data-tocFile="../toc/IDPCFEEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Load<wbr />Via<wbr />Extension<wbr />Method</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c50a3039-c306-6876-3c88-719105c82c28" class="has-submenu" href="c50a3039-c306-6876-3c88-719105c82c28.htm">
+        <span data-tocFile="../toc/IDQCFEEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Merge<wbr />Extension<wbr />Method<wbr />Args</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="2098bdd9-f81f-ecdb-abaa-cfa48b3b2589" href="2098bdd9-f81f-ecdb-abaa-cfa48b3b2589.htm">Resolve<wbr />Domain<wbr />Capabilities</a>
+    </li>
+    <li>
+      <a id="f52861dc-0c77-f3cc-831e-7583e6ce4f64" href="f52861dc-0c77-f3cc-831e-7583e6ce4f64.htm">Save<wbr />Configuration</a>
+    </li>
+    <li>
+      <a id="f508a030-a995-4c33-2190-5c1fec5fa5b5" class="has-submenu" href="f508a030-a995-4c33-2190-5c1fec5fa5b5.htm">
+        <span data-tocFile="../toc/IDTCFEEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Validate</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="19e59031-03f5-9191-6fb7-7c29a34cbb95" href="19e59031-03f5-9191-6fb7-7c29a34cbb95.htm">Write<wbr />To<wbr />Source</a>
+    </li>
+    <li>
+      <a id="ebe3606c-ec07-8fa9-b8e2-b59561ec9f32" href="ebe3606c-ec07-8fa9-b8e2-b59561ec9f32.htm">Write<wbr />Via<wbr />Extended<wbr />Extension<wbr />Method</a>
+    </li>
+    <li>
+      <a id="e90a0412-8acb-52cf-fa71-c83cbe25a961" href="e90a0412-8acb-52cf-fa71-c83cbe25a961.htm">Write<wbr />Via<wbr />Extension<wbr />Method</a>
+    </li>
+  </tocItems>
+</toc>

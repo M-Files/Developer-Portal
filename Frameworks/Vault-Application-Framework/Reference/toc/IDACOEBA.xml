@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a927114c-8614-2427-a3c1-64e94e6ff8cb.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping.<wbr />Mappers</a>
+    </li>
+    <li>
+      <a href="1879f9ea-cac9-e961-71e8-832dd35b9caa.htm">MFIdentifier<wbr />To<wbr />IDMapper</a>
+    </li>
+    <li>
+      <a href="9477df2d-63cd-674e-40cc-c78f211e8302.htm">Constructors</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="39f230ef-ac25-0a19-8235-99ff9f84da61" href="39f230ef-ac25-0a19-8235-99ff9f84da61.htm">MFIdentifier<wbr />To<wbr />IDMapper(<wbr />IMFIdentifer<wbr />Resolver)</a>
+    </li>
+    <li>
+      <a id="c60cb5e7-602f-3322-db66-15137c4adaf4" href="c60cb5e7-602f-3322-db66-15137c4adaf4.htm">MFIdentifier<wbr />To<wbr />IDMapper(<wbr />Vault)</a>
+    </li>
+  </tocItems>
+</toc>

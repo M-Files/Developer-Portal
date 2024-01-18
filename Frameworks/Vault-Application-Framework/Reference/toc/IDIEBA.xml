@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="0edc324e-b169-bb16-76a9-004d92a1d9ed.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Intelligence<wbr />Services</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="678ff0a7-b769-c1a7-310a-8a43eefb037a" class="has-submenu" href="678ff0a7-b769-c1a7-310a-8a43eefb037a.htm">
+        <span data-tocFile="../toc/IDAIEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Provider<wbr />Term</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a33bd135-e724-99d6-87d6-df7a947ff1aa" class="has-submenu" href="a33bd135-e724-99d6-87d6-df7a947ff1aa.htm">
+        <span data-tocFile="../toc/IDBIEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Sub<wbr />Term<wbr />Map</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1059523f-f850-2e20-030d-f021e7ca0193" class="has-submenu" href="1059523f-f850-2e20-030d-f021e7ca0193.htm">
+        <span data-tocFile="../toc/IDCIEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Term<wbr />Map</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1841615e-fc8b-cb97-b2f3-6408ff869dea" href="1841615e-fc8b-cb97-b2f3-6408ff869dea.htm">Term<wbr />Mode</a>
+    </li>
+  </tocItems>
+</toc>

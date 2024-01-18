@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="67d0241d-c96f-2cd7-a04b-7823ee775560.htm">Task<wbr />Queue<wbr />Resolver</a>
+    </li>
+    <li>
+      <a href="b11f25f2-0655-a5a1-4cb4-d04753bd54cf.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="e5d786b6-d389-8bf1-d9e3-d6bf1fcc3165" href="e5d786b6-d389-8bf1-d9e3-d6bf1fcc3165.htm">Get<wbr />Broadcast<wbr />Processor<wbr />Method<wbr />Info</a>
+    </li>
+    <li>
+      <a id="d99abbbe-ad7b-5793-345e-1557d12f35fc" href="d99abbbe-ad7b-5793-345e-1557d12f35fc.htm">Get<wbr />Broadcast<wbr />Processors</a>
+    </li>
+    <li>
+      <a id="845277aa-4dcb-7ce3-3724-a21f2b3274f9" href="845277aa-4dcb-7ce3-3724-a21f2b3274f9.htm">Get<wbr />Broadcast<wbr />Processor<wbr />Settings</a>
+    </li>
+    <li>
+      <a id="ea69ac79-043a-ce76-5a3c-e1021e5d3ea0" href="ea69ac79-043a-ce76-5a3c-e1021e5d3ea0.htm">Get<wbr />Broadcast<wbr />Types</a>
+    </li>
+    <li>
+      <a id="5e4fa81d-4899-db0f-efeb-fd6c20361cb8" href="5e4fa81d-4899-db0f-efeb-fd6c20361cb8.htm">Get<wbr />Processors</a>
+    </li>
+    <li>
+      <a id="428f74cd-bb6d-54c4-6390-a76b4532b6b4" href="428f74cd-bb6d-54c4-6390-a76b4532b6b4.htm">Get<wbr />Queue<wbr />Field<wbr />Info</a>
+    </li>
+    <li>
+      <a id="89e59cab-8e29-2c74-3fac-353804bb4939" href="89e59cab-8e29-2c74-3fac-353804bb4939.htm">Get<wbr />Queues</a>
+    </li>
+    <li>
+      <a id="04121e80-7cf2-9d49-2db6-1d9a97030aa8" href="04121e80-7cf2-9d49-2db6-1d9a97030aa8.htm">Get<wbr />Queue<wbr />Settings</a>
+    </li>
+    <li>
+      <a id="aab44558-958b-0e1c-af96-003b1dafea26" href="aab44558-958b-0e1c-af96-003b1dafea26.htm">Get<wbr />Task<wbr />Processor<wbr />Method<wbr />Info</a>
+    </li>
+    <li>
+      <a id="0a4b093b-cce3-1aa9-9f47-56ca31223b7c" href="0a4b093b-cce3-1aa9-9f47-56ca31223b7c.htm">Get<wbr />Task<wbr />Processors</a>
+    </li>
+    <li>
+      <a id="81c3f74f-a51c-9058-c24e-7f127ed58010" href="81c3f74f-a51c-9058-c24e-7f127ed58010.htm">Get<wbr />Task<wbr />Processor<wbr />Settings</a>
+    </li>
+    <li>
+      <a id="722e5365-0231-e88a-1513-cbf6901775ae" href="722e5365-0231-e88a-1513-cbf6901775ae.htm">Get<wbr />Task<wbr />Types</a>
+    </li>
+    <li>
+      <a id="74e3d2c4-9f57-4f6f-cca4-428c1919becc" class="has-submenu" href="74e3d2c4-9f57-4f6f-cca4-428c1919becc.htm">
+        <span data-tocFile="../toc/IDMB0IB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Include</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="77fc26e5-2d29-b005-add0-30c9c7cbf46d" href="77fc26e5-2d29-b005-add0-30c9c7cbf46d.htm">Is<wbr />Broadcast<wbr />Processor<wbr />Defined</a>
+    </li>
+    <li>
+      <a id="7a21af5c-688d-3f96-589b-798610876fd9" href="7a21af5c-688d-3f96-589b-798610876fd9.htm">Is<wbr />Queue<wbr />Defined</a>
+    </li>
+    <li>
+      <a id="a1a5461f-1ac7-ff15-3e35-48fddbb13290" href="a1a5461f-1ac7-ff15-3e35-48fddbb13290.htm">Is<wbr />Task<wbr />Processor<wbr />Defined</a>
+    </li>
+    <li>
+      <a id="b5aa01f2-4c09-cc4f-679c-94d61ee2e7ae" href="b5aa01f2-4c09-cc4f-679c-94d61ee2e7ae.htm">Register<wbr />All</a>
+    </li>
+    <li>
+      <a id="b356e920-5698-14db-4730-5a222f293eb3" href="b356e920-5698-14db-4730-5a222f293eb3.htm">Register<wbr />Queue</a>
+    </li>
+  </tocItems>
+</toc>

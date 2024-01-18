@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="40813806-5464-e212-77c3-73b127d3c164.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Resource<wbr />Editor</a>
+    </li>
+    <li>
+      <a href="2b2685a9-5507-3885-8538-77f10cbc3fc6.htm">Resource<wbr />Metadata</a>
+    </li>
+    <li>
+      <a href="0451383f-b666-b19f-edb2-c1f2d77a4887.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="2db72bbf-d540-2235-e84e-03c9d5686def" href="2db72bbf-d540-2235-e84e-03c9d5686def.htm">Deserialize</a>
+    </li>
+    <li>
+      <a id="b20be031-9e5c-d4c6-bd0b-5399325a469d" href="b20be031-9e5c-d4c6-bd0b-5399325a469d.htm">Get<wbr />Date</a>
+    </li>
+    <li>
+      <a id="b68ce817-fb1f-07bf-9cf1-d389ba8e84ce" href="b68ce817-fb1f-07bf-9cf1-d389ba8e84ce.htm">Get<wbr />Long</a>
+    </li>
+    <li>
+      <a id="b87a9e9d-1a54-754f-a206-12d16789ed3d" href="b87a9e9d-1a54-754f-a206-12d16789ed3d.htm">Get<wbr />Value</a>
+    </li>
+    <li>
+      <a id="5d6b317c-9ae7-08af-6c92-3138c3260cc1" href="5d6b317c-9ae7-08af-6c92-3138c3260cc1.htm">Serialize</a>
+    </li>
+    <li>
+      <a id="61877924-b7ad-624d-2d4d-79dbb167613c" href="61877924-b7ad-624d-2d4d-79dbb167613c.htm">Set<wbr />Date</a>
+    </li>
+    <li>
+      <a id="757dd19d-46be-d60c-333d-8d0a6fdcecbe" href="757dd19d-46be-d60c-333d-8d0a6fdcecbe.htm">Set<wbr />Long</a>
+    </li>
+    <li>
+      <a id="5faa61b8-12c9-1b15-a919-f946c91dae4f" href="5faa61b8-12c9-1b15-a919-f946c91dae4f.htm">Set<wbr />Value</a>
+    </li>
+  </tocItems>
+</toc>

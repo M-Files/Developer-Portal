@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="baa11ef2-26f7-26c8-7b15-ecd802663520.htm">MFiles.<wbr />VAF.<wbr />Metadata<wbr />Cache</a>
+    </li>
+    <li>
+      <a href="4b0bface-1d4d-8740-e3aa-97c6630ac04b.htm">Metadata<wbr />Cache<wbr />Vault<wbr />Class<wbr />Operations</a>
+    </li>
+    <li>
+      <a href="0114a452-7daa-38c5-39fe-9737d2fb3468.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="86e8740e-216f-3f9a-f452-d15d7f6c9e0f" href="86e8740e-216f-3f9a-f452-d15d7f6c9e0f.htm">Add<wbr />Object<wbr />Class<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="7ad61f6c-6937-5673-6c66-c05dddf5e946" href="7ad61f6c-6937-5673-6c66-c05dddf5e946.htm">Get<wbr />All<wbr />Object<wbr />Classes</a>
+    </li>
+    <li>
+      <a id="1d2d9911-6c42-cc63-e595-3f1a33aadf0b" href="1d2d9911-6c42-cc63-e595-3f1a33aadf0b.htm">Get<wbr />All<wbr />Object<wbr />Classes<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="0cc8df41-e401-d878-d3c5-37bc8cb1a69d" href="0cc8df41-e401-d878-d3c5-37bc8cb1a69d.htm">Get<wbr />Object<wbr />Class</a>
+    </li>
+    <li>
+      <a id="5975c2d1-7a51-5c54-c984-1d24b3cb48cb" href="5975c2d1-7a51-5c54-c984-1d24b3cb48cb.htm">Get<wbr />Object<wbr />Class<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="41587bbe-41fe-e846-cb1a-0d2432fc7f05" href="41587bbe-41fe-e846-cb1a-0d2432fc7f05.htm">Get<wbr />Object<wbr />Classes</a>
+    </li>
+    <li>
+      <a id="387b772a-b915-3a90-9660-b2695fed0813" href="387b772a-b915-3a90-9660-b2695fed0813.htm">Get<wbr />Object<wbr />Classes<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="15212d61-b885-1fd0-cd04-3ae06eadde65" href="15212d61-b885-1fd0-cd04-3ae06eadde65.htm">Get<wbr />Object<wbr />Class<wbr />IDBy<wbr />Alias</a>
+    </li>
+    <li>
+      <a id="cb51b55d-1cb0-20ba-9943-ac77b21aed93" href="cb51b55d-1cb0-20ba-9943-ac77b21aed93.htm">Get<wbr />Object<wbr />Class<wbr />IDBy<wbr />GUID</a>
+    </li>
+    <li>
+      <a id="bf6cbd61-845f-b829-8a83-2ff1ec8878ce" href="bf6cbd61-845f-b829-8a83-2ff1ec8878ce.htm">Initialize</a>
+    </li>
+    <li>
+      <a id="5572b5d1-a45a-ac5a-f41b-89f254ff11e5" href="5572b5d1-a45a-ac5a-f41b-89f254ff11e5.htm">Remove<wbr />Object<wbr />Class<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="7344fa48-1404-a2c2-378e-b3e8e99bd545" href="7344fa48-1404-a2c2-378e-b3e8e99bd545.htm">Update<wbr />Object<wbr />Class<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="4bbd84ef-05c6-3222-0c59-2c4205218c08" href="4bbd84ef-05c6-3222-0c59-2c4205218c08.htm">Update<wbr />Object<wbr />Names</a>
+    </li>
+  </tocItems>
+</toc>

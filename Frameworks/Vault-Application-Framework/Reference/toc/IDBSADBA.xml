@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="9d65d25f-47f6-7a78-8164-191e856f3a34.htm">Event<wbr />Handler<wbr />Environment</a>
+    </li>
+    <li>
+      <a href="86832386-4d89-12a3-daca-cc3b4e564786.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7d435142-9986-29f4-deda-a2ae009376c5" href="7d435142-9986-29f4-deda-a2ae009376c5.htm">Event<wbr />Type</a>
+    </li>
+    <li>
+      <a id="b2bbfa2a-c489-8ab4-0031-1cd2acea9649" href="b2bbfa2a-c489-8ab4-0031-1cd2acea9649.htm">File<wbr />Transfer<wbr />Session<wbr />ID</a>
+    </li>
+    <li>
+      <a id="cdd97b5a-8437-d9a3-ece0-b4ee8059e30f" href="cdd97b5a-8437-d9a3-ece0-b4ee8059e30f.htm">File<wbr />Ver</a>
+    </li>
+    <li>
+      <a id="7f84a817-bb41-c386-6113-ddc363307b46" href="7f84a817-bb41-c386-6113-ddc363307b46.htm">File<wbr />Ver<wbr />External</a>
+    </li>
+    <li>
+      <a id="1d7981a0-395b-bae7-7ea6-0e70646c777f" href="1d7981a0-395b-bae7-7ea6-0e70646c777f.htm">Group<wbr />ID</a>
+    </li>
+    <li>
+      <a id="5bab9688-1327-366d-fe24-10b35ab78fe1" href="5bab9688-1327-366d-fe24-10b35ab78fe1.htm">Input</a>
+    </li>
+    <li>
+      <a id="04a51678-0b1a-603b-e3aa-711917d74745" href="04a51678-0b1a-603b-e3aa-711917d74745.htm">Input<wbr />Bytes</a>
+    </li>
+    <li>
+      <a id="bf752c34-328d-19be-f6a1-ced862271cdf" href="bf752c34-328d-19be-f6a1-ced862271cdf.htm">Input<wbr />Http<wbr />Headers</a>
+    </li>
+    <li>
+      <a id="1530da0b-0ad0-65f6-9d17-2b28110e0f24" href="1530da0b-0ad0-65f6-9d17-2b28110e0f24.htm">Input<wbr />Http<wbr />Method</a>
+    </li>
+    <li>
+      <a id="555051cf-ad04-8160-2a5a-1cdf2e2e4f42" href="555051cf-ad04-8160-2a5a-1cdf2e2e4f42.htm">Input<wbr />Params</a>
+    </li>
+    <li>
+      <a id="691512e9-85a4-8327-80a1-21772a5c5d18" href="691512e9-85a4-8327-80a1-21772a5c5d18.htm">Input<wbr />Query<wbr />String</a>
+    </li>
+    <li>
+      <a id="a0656479-e3f8-df56-cbb8-fe6976262e3f" href="a0656479-e3f8-df56-cbb8-fe6976262e3f.htm">Is<wbr />Cancellable</a>
+    </li>
+    <li>
+      <a id="2d7b7253-f19f-8bf5-0ddb-415bd3a30c08" href="2d7b7253-f19f-8bf5-0ddb-415bd3a30c08.htm">Is<wbr />Object<wbr />Event</a>
+    </li>
+    <li>
+      <a id="c8afe744-5b01-120b-5d6f-9d7ba3a80b55" href="c8afe744-5b01-120b-5d6f-9d7ba3a80b55.htm">Is<wbr />Record<wbr />Object</a>
+    </li>
+    <li>
+      <a id="d2dfcf97-4acd-884f-8ecb-4a66140fd37f" href="d2dfcf97-4acd-884f-8ecb-4a66140fd37f.htm">Is<wbr />Template<wbr />Object</a>
+    </li>
+    <li>
+      <a id="3e4bc2f6-f849-1103-decf-0efc39cf0a55" href="3e4bc2f6-f849-1103-decf-0efc39cf0a55.htm">Logged<wbr />Out<wbr />User<wbr />ID</a>
+    </li>
+    <li>
+      <a id="7465e99f-af96-ffef-6ab1-21542ec42528" href="7465e99f-af96-ffef-6ab1-21542ec42528.htm">Login<wbr />Account</a>
+    </li>
+    <li>
+      <a id="f64ca9c0-6edb-511c-bff7-b76da2709e67" href="f64ca9c0-6edb-511c-bff7-b76da2709e67.htm">Login<wbr />Account<wbr />External</a>
+    </li>
+    <li>
+      <a id="f665672c-14a5-73f2-59db-e826946331cc" href="f665672c-14a5-73f2-59db-e826946331cc.htm">Member<wbr />ID</a>
+    </li>
+    <li>
+      <a id="4e4fd7cd-cbbb-ca63-8d25-8676d2deb087" href="4e4fd7cd-cbbb-ca63-8d25-8676d2deb087.htm">Object<wbr />Access<wbr />Control<wbr />List</a>
+    </li>
+    <li>
+      <a id="da3054c6-d5e3-5a69-1b6e-63507077a9a3" href="da3054c6-d5e3-5a69-1b6e-63507077a9a3.htm">Object<wbr />Access<wbr />Control<wbr />List<wbr />External</a>
+    </li>
+    <li>
+      <a id="8a374339-50b6-095c-d80c-f8870da81ff4" href="8a374339-50b6-095c-d80c-f8870da81ff4.htm">Obj<wbr />ID</a>
+    </li>
+    <li>
+      <a id="e3165941-ece5-2e6e-929c-83d5ed0ec867" href="e3165941-ece5-2e6e-929c-83d5ed0ec867.htm">Obj<wbr />Id<wbr />External</a>
+    </li>
+    <li>
+      <a id="a3c9eb4d-dfbf-bb80-39ba-1fe34700af87" href="a3c9eb4d-dfbf-bb80-39ba-1fe34700af87.htm">Property<wbr />Values</a>
+    </li>
+    <li>
+      <a id="4115a834-03cf-48ff-95c7-f272b919d7f3" href="4115a834-03cf-48ff-95c7-f272b919d7f3.htm">Property<wbr />Values<wbr />External</a>
+    </li>
+    <li>
+      <a id="e08c6b6d-322a-a43a-c971-d9ae8b610fa8" href="e08c6b6d-322a-a43a-c971-d9ae8b610fa8.htm">Restored<wbr />Versions</a>
+    </li>
+    <li>
+      <a id="7053fc1a-3621-4e8f-5524-de0c5506957c" href="7053fc1a-3621-4e8f-5524-de0c5506957c.htm">Restored<wbr />Versions<wbr />External</a>
+    </li>
+    <li>
+      <a id="b8a4a8c1-fcca-2848-e874-74f23c13fc6d" href="b8a4a8c1-fcca-2848-e874-74f23c13fc6d.htm">Type</a>
+    </li>
+    <li>
+      <a id="1240f455-2977-b885-a9b6-a47eaa42ec0b" href="1240f455-2977-b885-a9b6-a47eaa42ec0b.htm">User<wbr />Account</a>
+    </li>
+    <li>
+      <a id="f26ea5db-bed8-d7ea-0537-e7225bfd92b2" href="f26ea5db-bed8-d7ea-0537-e7225bfd92b2.htm">User<wbr />Account<wbr />External</a>
+    </li>
+    <li>
+      <a id="cd7fa0db-4f60-ae2d-5cd9-ab54d21a59c7" href="cd7fa0db-4f60-ae2d-5cd9-ab54d21a59c7.htm">User<wbr />Group<wbr />Admin</a>
+    </li>
+    <li>
+      <a id="1fc99d92-68a5-a5da-e31a-9e16dcfe5113" href="1fc99d92-68a5-a5da-e31a-9e16dcfe5113.htm">User<wbr />Group<wbr />Admin<wbr />External</a>
+    </li>
+    <li>
+      <a id="445c0b12-8bba-a0c9-b8a5-085e899a43c0" href="445c0b12-8bba-a0c9-b8a5-085e899a43c0.htm">Value<wbr />List<wbr />Item</a>
+    </li>
+    <li>
+      <a id="d1f0609d-3d0a-c3b7-f82d-2361cb7bab5f" href="d1f0609d-3d0a-c3b7-f82d-2361cb7bab5f.htm">Value<wbr />List<wbr />Item<wbr />External</a>
+    </li>
+    <li>
+      <a id="982b5859-89af-ef74-8bfd-0f5b72bd834d" href="982b5859-89af-ef74-8bfd-0f5b72bd834d.htm">Vault<wbr />Extension<wbr />Method<wbr />Name</a>
+    </li>
+    <li>
+      <a id="130264b9-9d25-86ff-0d98-282210ac91d1" href="130264b9-9d25-86ff-0d98-282210ac91d1.htm">View</a>
+    </li>
+    <li>
+      <a id="3692047d-d546-2d03-d05e-f33c845e9052" href="3692047d-d546-2d03-d05e-f33c845e9052.htm">View<wbr />External</a>
+    </li>
+  </tocItems>
+</toc>
