@@ -14,7 +14,7 @@ The application must use the <a href="{{ site.baseurl }}/Frameworks/User-Interfa
 
 There are currently two supported platforms:
 * `Desktop` (i.e. the code should execute within the M-Files Desktop client), and
-* `Web` (i.e. the code should be executed within the M-Files Web Access).
+* `Web` (i.e. the code should be executed within the M-Files Classic Web).
 
 The platform that each application supports is defined within the [application definition file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/), in the following ways:
 
@@ -50,7 +50,7 @@ The entire <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-F
 </application>
 ```
 
-### Declaring compatibility with only M-Files Web Access
+### Declaring compatibility with only M-Files Classic Web
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,9 +109,9 @@ The entire <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-F
 </application>
 ```
 
-## Targeting M-Files Web Access
+## Targeting M-Files Classic Web (aka M-Files Web Access, or MFWA)
 
-Unlike User Extensibility Framework applications running on the M-Files Desktop client - which have full access to the [M-Files COM API model]({{ site.baseurl }}/APIs/COM-API/) (in [client mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server)) - applications that run within M-Files Web Access have additional constraints:
+Unlike User Extensibility Framework applications running on the M-Files Desktop client - which have full access to the [M-Files COM API model]({{ site.baseurl }}/APIs/COM-API/) (in [client mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server)) - applications that run within M-Files Classic Web have additional constraints:
 
 * [Asynchronous method calls]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/) are required (they are optional when targeting M-Files Desktop).
 * Only a [subset of User Interface Extensibility Framework components is supported in M-Files Web](https://www.m-files.com/UI_Extensibility_Framework/index.html#UIExtSupportInMFilesWeb.html).  If a required UIX component is not available in M-Files Web then your application cannot run on the web.
@@ -121,4 +121,4 @@ Unlike User Extensibility Framework applications running on the M-Files Desktop 
 
 The current platform can be checked programmatically by inspecting `MFiles.CurrentApplicationPlatform`.
 
-On M-Files Web Access, `MFiles.CurrentApplicationPlatform` returns `2`.  On M-Files Desktop, `MFiles.CurrentApplicationPlatform` returns `1`.  In versions of M-Files Desktop less than 12.0.6658.0, the value is incorrectly returned as `undefined`.
+On M-Files Classic Web, `MFiles.CurrentApplicationPlatform` returns `2`.  On M-Files Desktop, `MFiles.CurrentApplicationPlatform` returns `1`.  In versions of M-Files Desktop less than 12.0.6658.0, the value is incorrectly returned as `undefined`.

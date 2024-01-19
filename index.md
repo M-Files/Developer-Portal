@@ -51,7 +51,7 @@ More information is available in the [COM API section](/APIs/COM-API/).
 
 ### The M-Files Web Service (MFWS)
 
-* A REST-like web service that is available from within M-Files Web Access.
+* A REST-like web service that is available from within M-Files Classic Web.
 * Can be called from any environment that can make HTTP requests (e.g. mobile), and is not limited to Windows operating systems.
 * Connections to the MFWS are done via HTTPS.
 * Supports most "user" operations, but cannot be used to undertake "administrative" functions.
@@ -62,7 +62,7 @@ More information is available in the [REST API section]({{ site.baseurl }}/APIs/
 
 ## Our Frameworks
 
-M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
+M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Classic Web.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
 
 ### User Interface Extensibility Framework (UIX)
 

@@ -16,7 +16,7 @@ There are three prerequisities for using MFWS: A HTTP client, MFWS URL and M-Fil
 
 The HTTP client depends on the programming platform and doesn't necessarily mean a web browser. [WebClient](http://msdn.microsoft.com/en-us/library/system.net.webclient.aspx) is available for .NET framework and [HttpURLConnection](http://docs.oracle.com/javase/6/docs/api/java/net/HttpURLConnection.html) can be used in Java. Browser applications can perform the HTTP requests using the raw [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest) or a wrapper around this such as jQuery's [\$.ajax](http://api.jquery.com/jQuery.ajax/). If such HTTP API isn't available a raw network socket API will do as well.
 
-The MFWS URL and the credentials are M-Files installation specific. The easiest way to acquire the URL is to configure M-Files Web Access, which comes with the web service. If M-Files Web Access is configured at http://example.org/m-files, the MFWS URL is http://example.org/m-files/REST. For the credentials please contact your M-Files administrator.
+The MFWS URL and the credentials are M-Files installation specific. The easiest way to acquire the URL is to configure M-Files Classic Web, which comes with the web service. If M-Files Classic Web is configured at http://example.org/m-files, the MFWS URL is http://example.org/m-files/REST. For the credentials please contact your M-Files administrator.
 
 ## Authenticating
 
@@ -74,7 +74,7 @@ Once the authentication has been performed it is possible to access information 
 	</div>
 </div>
 
-Testing resource reading is easy with the browser itself. You can log in to M-Files Web Access to establish the session. After this the GET-resources can be read with normal HTTP requests. However some browsers demand XML representation which MFWS is currently unable to provide for all resources. At least Internet Explorer 9 is able to read the resources in JSON format.
+Testing resource reading is easy with the browser itself. You can log in to M-Files Classic Web to establish the session. After this the GET-resources can be read with normal HTTP requests. However some browsers demand XML representation which MFWS is currently unable to provide for all resources. At least Internet Explorer 9 is able to read the resources in JSON format.
 {:.remark}
 
 ## Writing the resources
@@ -102,7 +102,7 @@ Just like reading resources, modifying them by deleting or editing existing ones
 	</div>
 </div>
 
-Especially older IIS versions (5.1, 6.0) make it harder to use non GET or POST verbs with ASP.Net applications. While M-Files Web Service supports pure PUT and DELETE requests, the default IIS configuration for M-Files Web Access doesn't enable PUT and DELETE requests for IIS. For this reason M-Files Web Service supports a `?\_method=VERB` query parameter which is the recommended way to communicate the PUT and DELETE intents. See [compatibility]({{ site.baseurl }}/APIs/REST-API/#iis-compatibility) for more information on this. [Example below](#example-4) shows a PUT request on the [check-out state]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout/) resource.
+Especially older IIS versions (5.1, 6.0) make it harder to use non GET or POST verbs with ASP.Net applications. While M-Files Web Service supports pure PUT and DELETE requests, the default IIS configuration for M-Files Classic Web doesn't enable PUT and DELETE requests for IIS. For this reason M-Files Web Service supports a `?\_method=VERB` query parameter which is the recommended way to communicate the PUT and DELETE intents. See [compatibility]({{ site.baseurl }}/APIs/REST-API/#iis-compatibility) for more information on this. [Example below](#example-4) shows a PUT request on the [check-out state]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/checkedout/) resource.
 {:.remark}
 
 <div class="sample" id="example-4">

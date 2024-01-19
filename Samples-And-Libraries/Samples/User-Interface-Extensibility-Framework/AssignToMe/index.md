@@ -279,10 +279,10 @@ We will:
 The code below uses the API in the standard synchronous manner.  The next section - <a href="{{ site.baseurl }}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/#enabling-compatibility-with-m-files-web-access">enabling compatibility with M-Files Web</a> - will alter it to use an asynchronous approach.
 {:.note}
 
-We have to execute `CreateNewObject` and `CheckIn` separately (rather than calling `CreateNewObjectEx`, which will check it in for us) as <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html">only CreateNewObject is supported in M-Files Web Access</a>.
+We have to execute `CreateNewObject` and `CheckIn` separately (rather than calling `CreateNewObjectEx`, which will check it in for us) as <a href="https://www.m-files.com/UI_Extensibility_Framework/index.html#ApiSupportInMFilesWeb.html">only CreateNewObject is supported in M-Files Classic Web</a>.
 {:.note}
 
-We will use enumeration values by name, where possible, to avoid [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants).  Unfortunately some values are not available within M-Files Web Access, and are referred to by number for compatibility.
+We will use enumeration values by name, where possible, to avoid [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants).  Unfortunately some values are not available within M-Files Classic Web, and are referred to by number for compatibility.
 {:.note.warning}
 
 ```javascript
@@ -542,11 +542,11 @@ function createAssignmentObject(shellFrame)
 }
 ```
 
-## Enabling compatibility with M-Files Web Access
+## Enabling compatibility with M-Files Classic Web
 
 ### Altering the application definition file
 
-Firstly, we need to alter the application definition file to [declare compatibility with both M-Files Desktop and M-Files Web Access]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#declaring-compatibility-with-both-platforms):
+Firstly, we need to alter the application definition file to [declare compatibility with both M-Files Desktop and M-Files Classic Web]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#declaring-compatibility-with-both-platforms):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -573,7 +573,7 @@ Firstly, we need to alter the application definition file to [declare compatibil
 
 ### Altering the module
 
-When creating code to run on the M-Files Desktop client, using [an asynchronous programming style]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/) is optional (but recommended).  For our code to execute within M-Files Web Access, it **must** use the asynchronous programming style.  In order to alter our above (synchronous) code to execute in an asynchronous manner, two changes must be made to all API calls:
+When creating code to run on the M-Files Desktop client, using [an asynchronous programming style]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/) is optional (but recommended).  For our code to execute within M-Files Classic Web, it **must** use the asynchronous programming style.  In order to alter our above (synchronous) code to execute in an asynchronous manner, two changes must be made to all API calls:
 
 1. API calls must use the `Async` object (e.g. change `Vault.ObjectOperations.CheckOut` to `Vault.Async.ObjectOperations.CheckOut`).
 2. API calls do not directly return values; the return value can be accessed in a [callback function](/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#the-successful-callback) which must be provided in addition to any standard arguments.
@@ -588,7 +588,7 @@ The specific sections of code to change are:
 3. The call to [CheckIn](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectOperations~CheckIn.html).
 4. We will supply a 16x16 pixel `.png` icon for the command if we are executing within the web.  [.ico file support is significant but less than png](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).  In addition, a `.png` of the correct size may be significantly smaller than an `.ico` file which may contain multiple image sizes (lines 46-56).
 
-Note that <a href="https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Web Access (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 316-350).
+Note that <a href="https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SourceObjectFiles.html">SourceObjectFiles</a> does not <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/#an-important-note-on-supported-object-types">support cloning, so cannot be called in an asynchronous manner on the M-Files Desktop client</a>.  To resolve this we will <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#checking-the-current-platform">check the platform that the code is executing on</a> and use an asynchronous call on M-Files Classic Web (which handles this for us), and a synchronous call on the M-Files Desktop client (lines 316-350).
 {:.note}
 
 ```javascript
@@ -967,7 +967,7 @@ Once the button has been clicked, an assignment is created for the current user 
 
 ![Assignment created](desktop-assignment.png)
 
-### Testing the application in M-Files Web Access
+### Testing the application in M-Files Classic Web
 
 The command/button appears in the task area, and is shown/hidden as items are selected.  Selecting items and clicking `Assign to me` shows a message that the operation was successful.
 

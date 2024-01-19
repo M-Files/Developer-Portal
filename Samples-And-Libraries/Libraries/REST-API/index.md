@@ -12,7 +12,7 @@ All M-Files Samples and Libraries are available in our [public GitHub repository
 
 ## REST API Wrapper (.NET)
 
-This library aims to provide an easy-to-use .NET wrapper for the [M-Files Web Service]({{ site.baseurl }}/APIs/REST-API/), which is part of the [M-Files Web Access](https://www.m-files.com/user-guide/latest/eng/Configure_M-Files_Web_Access.html).
+This library aims to provide an easy-to-use .NET wrapper for the [M-Files Web Service]({{ site.baseurl }}/APIs/REST-API/), which is part of the [M-Files Classic Web](https://www.m-files.com/user-guide/latest/eng/Configure_M-Files_Web_Access.html).
 
 * [Authentication](https://github.com/M-Files/Libraries.MFWSClient#authentication) ([using M-Files or Windows credentials](https://github.com/M-Files/Libraries.MFWSClient#authenticating-using-credentials), or using [Single Sign On](https://github.com/M-Files/Libraries.MFWSClient#authenticating-using-windows-single-sign-on)).
 * [Searching](https://github.com/M-Files/Libraries.MFWSClient#searching) ([quick search](https://github.com/M-Files/Libraries.MFWSClient#quick-search), or [complex searches](https://github.com/M-Files/Libraries.MFWSClient#advanced--complex-search)).

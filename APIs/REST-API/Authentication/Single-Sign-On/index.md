@@ -5,17 +5,17 @@ includeInSearch: true
 breadcrumb: Single Sign On
 ---
 
-Single Sign-On is a mechanism to allow authenticated users to interact with network resources without explicitly authenticating with each one individually.  M-Files Web Access, and therefore the M-Files Web Service, supports Single Sign-On, but requires some manual steps to enable and configure.
-This document details those steps and provides a sample C# class which shows the process of signing into the M-Files Web Access and using the token received to authenticate to the M-Files Web Service and execute further queries.
+Single Sign-On is a mechanism to allow authenticated users to interact with network resources without explicitly authenticating with each one individually.  M-Files Classic Web, and therefore the M-Files Web Service, supports Single Sign-On, but requires some manual steps to enable and configure.
+This document details those steps and provides a sample C# class which shows the process of signing into the M-Files Classic Web and using the token received to authenticate to the M-Files Web Service and execute further queries.
 
-## Configuring IIS and M-Files Web Access
+## Configuring IIS and M-Files Classic Web
 
-This document does not deal with setting up M-Files Web Access.  More information is available in the [Web and Mobile Access](https://www.m-files.com/user-guide/latest/eng/Configure_M-Files_Web_Access.html) section of the online user guide.
+This document does not deal with setting up M-Files Classic Web.  More information is available in the [Web and Mobile Access](https://www.m-files.com/user-guide/latest/eng/Configure_M-Files_Web_Access.html) section of the online user guide.
 {:.note}
 
 ### Enabling Windows Authentication within IIS
 
-Firstly, open IIS on the server running M-Files Web Access, select the web site that M-Files Web Access is running within, and double-click on the `Authentication` section:
+Firstly, open IIS on the server running M-Files Classic Web, select the web site that M-Files Classic Web is running within, and double-click on the `Authentication` section:
 
 ![Open the Authentication section](iis-1.png)
 
@@ -23,15 +23,15 @@ Ensure that `Windows Authentication` is set to `Enabled`:
 
 ![Enable Windows Authentication](iis-2.png)
 
-### Configuring M-Files Web Access to allow SSO
+### Configuring M-Files Classic Web to allow SSO
 
-By default, M-Files Web Access does not allow Single Sign-On authentication.  Single Sign-On can be enabled alongside standard ("forms-based") authentication using the M-Files Web Access Configuration page.
-To do this, open a web browser and go to `http://myserver/Configuration.aspx`.  This web page allows a server administrator to configure how M-Files Web Access functions, and to enable or disable functionality such as Single Sign-On.
+By default, M-Files Classic Web does not allow Single Sign-On authentication.  Single Sign-On can be enabled alongside standard ("forms-based") authentication using the M-Files Classic Web Configuration page.
+To do this, open a web browser and go to `http://myserver/Configuration.aspx`.  This web page allows a server administrator to configure how M-Files Classic Web functions, and to enable or disable functionality such as Single Sign-On.
 Select `General` on the left, then enable `Windows SSO`:
 
 ![Enable Windows Single Sign On within MFWA](mfwa-1.png)
 
-It is recommended that these changes are tested in a demonstration/test environment prior to changing any live system, as incorrect settings may lead to M-Files Web Access (and therefore the M-Files Web Service) becoming inaccessible.
+It is recommended that these changes are tested in a demonstration/test environment prior to changing any live system, as incorrect settings may lead to M-Files Classic Web (and therefore the M-Files Web Service) becoming inaccessible.
 {:.note}
 
 ## Using Single Sign-On from an application
