@@ -250,7 +250,6 @@ Property | Type | Shown in M-Files Admin | Automatically Enforced
 NamedUsers | `Integer` | Yes | If set, requires that the number of named user license in the M-Files Server license is less than this value.
 ConcurrentUsers | `Integer` | Yes | If set, requires that the number of concurrent user license in the M-Files Server license is less than this value.
 ReadOnlyUsers | `Integer` | Yes | If set, requires that the number of read-only user license in the M-Files Server license is less than this value.
-Groups | Array of objects: | | Group (`string` - the user group alias)<br/>Len (`integer`) | If set, requires that the number of members in each of the defined user groups is not greater than the defined length.
 
 The application GUID, the M-Files Serial Number, the vault GUID, expiration days, server numbers, and user limitations are all checked as part of the base implementation; simply providing values for these in JSON enables the checks.
 {:.note}
