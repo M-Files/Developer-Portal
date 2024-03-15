@@ -160,8 +160,6 @@ It is now possible for VAF versions >= 23.10.699.0 to communicate the commands a
 
 Defining custom commands and custom environments are considered adavanced usage, and are covered in that section.
 
-## Built-In Placeholders
-
 ## Advanced Usage
 
 ### 1. Custom Placeholder Environment
