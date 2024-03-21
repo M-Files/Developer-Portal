@@ -7,6 +7,13 @@ $reveal-highlight: rgb(155, 153, 153);
 
 body.theme-light
 {
+	#logo
+	{	
+		*
+		{
+			fill: var(--text-color);
+		}
+	}
 	a svg path, a:visited svg path
 	{
 		fill: #0072CE;
@@ -84,7 +91,6 @@ body.theme-light
 		#logo
 		{
 			background-color: $background-color;
-			background: linear-gradient(180deg, $background-color 0%, $background-color 90%, rgba($background-color, 0) 100%);
 		}
 	}
 }
