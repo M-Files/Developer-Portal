@@ -12,7 +12,7 @@
 			stylesheets: [
 				"/styles/themes/light.css"
 			]
-		},
+		}/*,
 		{
 			id : "dark",
 			display : "Dark",
@@ -20,7 +20,7 @@
 			stylesheets: [
 				"/styles/themes/dark.css"
 			]
-		}];
+		}*/];
 	function setThemeCookie(theme)
 	{
 		// Set the cookie
