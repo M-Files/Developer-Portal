@@ -47,11 +47,6 @@ body > article.page
 		}
 	}
 }
-article[role=main]
-{
-	/* Remove dashed border under article */
-	border: none;
-}
 a.public-anchor
 {
 	/* Hide the anchors for in-page-linking */

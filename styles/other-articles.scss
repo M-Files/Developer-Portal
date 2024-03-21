@@ -4,28 +4,7 @@ article::after
 	display: block;
 	clear: left;
 }
-article[role=main]
-{
-	border-bottom: 3px dashed #CCC;
-}
 nav.other-articles
 {
-	margin: 15px 0px 5px 0px;
-	border-top-width: 0px;
-	padding-bottom: 10px;
-	border: 2px solid #0072CE;
-	h1
-	{
-		font-size: 0.9em;
-		margin: 0px;
-		margin-bottom: 5px;
-		padding: 5px 10px;
-		border: 0px;
-		letter-spacing: 0px;
-		font-weight: normal;
-		color: white;
-		background-color: #0072CE;
-		position: initial;
-		left: 0px;
-	}
+	@include widget;
 }

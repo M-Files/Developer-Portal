@@ -16,7 +16,7 @@ $borderRadius: 24px;
 	background-color: white;
 	border: 1px solid #6C728B;
 	color: #6C728B;
-	a{
+	a, a:visited, a:link, a:active{
 		color: #6C728B;
 		.text{
 			display: block;

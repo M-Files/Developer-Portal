@@ -1,37 +1,13 @@
 ---
 layout: page
 title: Offline
-includeInSearch: true
+includeInSearch: false
+noInnerLinks: true
 ---
 
-<style type="text/css">
-@keyframes pulse
-{
-	from
-	{
-		transform: scale(1);
-		-webkit-transform: scale(1);
-	}
-	to
-	{
-		transform: scale(0.9);
-		-webkit-transform: scale(0.9);
-	}
-}
-.pulse
-{
-	animation: pulse 2s ease-in-out 0s infinite alternate;
-}
-article[role="article"]
-{
-	display: table-row;
-}
-article[role="article"] p
-{
-	display: table-cell;
-	vertical-align: middle;
-	padding: 10px;
-}
-</style>
+![Sorry, but we can't find that content](/images/404.svg)
+{:.no-border}
 
-Unfortunately you are offline and this file is not in your cache.  Please go online to view this content.
+Sorry, we can't find that page that you're looking for, or you are offline.
+
+You can try again by going [back to the homepage]({{ site.baseurl }}/), or use our [search]({{ site.baseurl }}/Search/).

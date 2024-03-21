@@ -8,7 +8,9 @@ body.theme-dark
 {
 	--background-color: #37373D;
 	background-color: var(--background-color);
-	color: #CDCDCD;
+	#options{
+		color: #cdcdcd;
+	}
 
 	@keyframes glow-dark {
 		to {
@@ -45,24 +47,6 @@ body.theme-dark
 		aside#sidebar ul li > a:hover
 	{
 		background-color: #3F3f3f;
-	}
-	article.page ul.quicklinks
-	{
-		a, a:visited
-		{
-			color: #CDCDCD;
-		}
-	}
-	article.page .breadcrumb li:not(:last-child)::after
-	{
-		color: #CDCDCD;
-	}
-	article.page a,
-		article.page a:visited,
-		footer a,
-		footer a:visited
-	{
-		color: #85d2ff;
 	}
 	body article.page .breadcrumb a
 	{
@@ -109,12 +93,9 @@ body.theme-dark
 		border-color: rgba(189, 113, 0, 1);
 	}
 
-	article.page>h1,
-		article[role=main] h1,
-		article[role=main] h2,
-		article[role=main] h3,
-		article[role=main] h4
+	article.page>h1
 	{
+		color: #cdcdcd;
 		border-color: #444;
 	}
 
@@ -156,7 +137,6 @@ body.theme-dark
 	{
 		.iconify
 		{
-			color: #CDCDCD;
 			&.incompatible
 			{
 				color: $reveal-highlight;
