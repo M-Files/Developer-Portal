@@ -23,9 +23,6 @@ Custom code requires [validation](#code-validation) to run | Yes | Yes | Yes | N
 
 ## Code signing
 
-Code signing will be available in 2022.
-{:.note.warning}
-
 Applications which are signed can be installed on shared M-Files instances without validation.  First-party applications such as the M-Files Compliance Kit are provided as signed packages.  Custom code can be signed by submitting it for [validation](#code-validation).
 
 ## Code validation

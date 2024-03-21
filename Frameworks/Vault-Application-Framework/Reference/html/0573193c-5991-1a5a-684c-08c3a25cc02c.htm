@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>BatchProcessorJob Class</title>
+    <meta name="Title" content="BatchProcessorJob" />
+    <meta name="Help.Id" content="T:MFiles.VAF.MultiserverMode.BatchProcessorJob" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.MultiserverMode" />
+    <meta name="guid" content="0573193c-5991-1a5a-684c-08c3a25cc02c" />
+    <meta name="Description" content="The batch processor job class is the async processing operations specific to 's that are being processed by a . This class: - Has a guid identifier. - Holds a reference to the vault. - Contains a processing report." />
+    <meta name="tocFile" content="../toc/IDIBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Batch<wbr />Processor<wbr />Job Class</h1>
+            <div class="summary">
+             The batch processor job class is the async processing operations specific to <a href="d253904e-6a40-559f-10ae-1dff7dbc30d9.htm">TaskProcessorJob</a>'s
+             that are being processed by a <a href="fc40c343-0b25-2491-c28a-5344e0d28525.htm">IApplicationTaskProcessor</a>.
+            
+             This class:
+             - Has a guid identifier.
+             - Holds a reference to the vault.
+             - Contains a processing report.
+             - Exposes events [ ChildJobCreated ]
+             </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.VAF.MultiserverMode</a><br /><strong>Assembly:</strong> MFiles.VAF (in MFiles.VAF.dll) Version: 24.1.706.1<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">BatchProcessorJob</span> : <span class="identifier">AsyncProcessingOperation</span>&lt;<span class="identifier">AppTaskProcessingReport</span>&gt;</code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation</a><span id="LST4B53DA37_0" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="e43ee33b-ac43-f65b-e6f7-6ea4a840794e.htm">AppTaskProcessingReport</a><span id="LST4B53DA37_1" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation</a><span id="LST4B53DA37_2" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="e43ee33b-ac43-f65b-e6f7-6ea4a840794e.htm">AppTaskProcessingReport</a><span id="LST4B53DA37_3" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">BatchProcessorJob</span></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDKEASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="ccbe2e4d-2dcb-ea83-5881-ee6144fd62ee.htm">BatchProcessorJob</a>
+                  </td>
+                  <td>
+            Self initializing constructor.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDYEASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="c62b9480-49d3-1bf5-a69c-001c23fa2e3c.htm">Data</a>
+                  </td>
+                  <td>
+            Data value clone container.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="51d0841f-d10c-e01c-3482-43355f41eb96.htm">FailureException</a>
+                  </td>
+                  <td>
+            Holds the failure exception, if the processing had an un-handled failure.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_6" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_7" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8b743730-ea07-9972-4ec6-5c1e5c2acdc6.htm">Guid</a>
+                  </td>
+                  <td>
+            Identifier for this operation.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="830790b5-34a8-52a5-0216-8f0037ff5496.htm">IsBroadcastJob</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1ccfdb41-cffe-7d61-a502-46b492b2d23b.htm">JobState</a>
+                  </td>
+                  <td>
+            Processing state of the async job.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_8" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_9" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d282af08-e5b8-0849-d10d-9e707b0ec1f7.htm">LinkedTokenSource</a>
+                  </td>
+                  <td>
+            Protected linked cancellation token source.
+            - Used to request cancellation of the process.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_10" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_11" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f2bd9a63-7618-5f35-1a75-d17fe337c56a.htm">Task</a>
+                  </td>
+                  <td>
+            The system task that processes this operation.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_12" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_13" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="23b24ab4-d8fb-527b-8531-2e55c8ec5864.htm">Token</a>
+                  </td>
+                  <td>
+            Linked cancellation token.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_14" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_15" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDFEASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="9f52ea61-2433-225e-319a-b337836d313d.htm">Cancel</a>
+                  </td>
+                  <td>
+            Requests cancellation of the operation.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_16" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_17" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="bb60eaca-5c51-189b-8a16-5868344035f3.htm">CancelActiveJob</a>
+                  </td>
+                  <td>
+            Cancels an active job, by app task id.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cd6a40e6-2fad-087a-8cd9-195675c41e99.htm">CancelAfter</a>
+                  </td>
+                  <td>
+            Requests cancellation of the operation.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_18" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_19" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4ea535f5-29a2-b6f4-1604-0cfb381d11b9.htm">ContainsFailures</a>
+                  </td>
+                  <td>
+            True when the processing report contains any failed operations.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="27cbb74f-b51a-08d5-2e82-d1665dbd5d49.htm">IsActive</a>
+                  </td>
+                  <td>
+            Resolves the is active flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7df00667-7b15-779b-56c3-14f3bb7cd4b3.htm">OnCancellationRequested</a>
+                  </td>
+                  <td>
+            Override the cancellation requested method to ensure only items with a valid state are updated.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_20" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_21" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="943b771c-f843-8ed1-a202-0d20d5d2171c.htm">OnChildJobCreated</a>
+                  </td>
+                  <td>
+            Child job created event invoker.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="98e32112-7ab9-2341-b771-3e380bd57f82.htm">OnProcessingCompleted</a>
+                  </td>
+                  <td>
+            Processing completed event invocation.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_22" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_23" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9239fe8d-6059-808f-af81-9cdae5465eb4.htm">OnProcessingFailed</a>
+                  </td>
+                  <td>
+            Processing failed event invoker.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_24" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_25" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9181b7ec-eb31-c67d-3870-b3b589a7001e.htm">OnProcessingStarted</a>
+                  </td>
+                  <td>
+            Processing started event invocation.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_26" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_27" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cd1a2fda-e33e-90b9-f7a4-d61d1da6a872.htm">Process</a>
+                  </td>
+                  <td>
+            Begins processing all passed operations.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="757ed2f0-2ea3-5a16-8f0a-8706e5a7dec0.htm">ProcessChildJob</a>
+                  </td>
+                  <td>
+            Processes an individual child job.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="282e31a7-c1b1-6249-d90e-8eedbf6b1c3d.htm">ResetCancellationToken</a>
+                  </td>
+                  <td>
+            Resets the cancellation token source.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_28" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_29" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cceb330c-d689-3a9a-b670-8de4690162f5.htm">ThrowIfCancellationRequested</a>
+                  </td>
+                  <td>
+            If cancellation has been requested:
+            - The CancellationRequest event is fired.
+            - Then the cancellation exception is thrown.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_30" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_31" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="770e9e21-513a-03eb-c069-43ac152c504e.htm">ThrowIfLessThanOne</a>
+                  </td>
+                  <td>
+            Asserts the passed value is greater than zero.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_32" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_33" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6bff37b2-33c2-f155-07be-4484a25404f1.htm">ThrowIfNull</a>
+                  </td>
+                  <td>
+            Asserts the passed object is not null.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_34" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_35" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="97263810-ec5f-7f58-b5b0-514226cb1e5c.htm">TriggerCancellationRequested</a>
+                  </td>
+                  <td>
+            Triggers the cancellation requested event, for any registered listeners.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_36" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_37" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2d3e11d9-3860-7309-16ae-5ef13ae747c6.htm">WaitAll</a>
+                  </td>
+                  <td>
+            Waits for all child tasks to exit.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Events</h2>
+            <div id="IDAEASection">
+              <table id="EventList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="12db33de-accf-27fb-4b39-fadec4ce4683.htm">CancellationRequested</a>
+                  </td>
+                  <td>
+            Event fired on cancellation requested.
+            <br />(Inherited from <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST4B53DA37_38" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_39" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="69d6706f-4298-9610-f7d6-23420ce790a8.htm">ChildJobCreated</a>
+                  </td>
+                  <td>
+            Child job created event.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="036be18b-0467-c6c6-bfcd-6cbfb549e198.htm">ProcessingCompleted</a>
+                  </td>
+                  <td>
+            Event fired on processing completed without failure.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_40" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_41" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7111b2ed-8490-7fdb-e203-b8141d5aa54f.htm">ProcessingFailed</a>
+                  </td>
+                  <td>
+            Event fired on processing failure.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_42" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_43" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cf77323b-46c0-a22c-983a-07e0d874cdc3.htm">ProcessingStarted</a>
+                  </td>
+                  <td>
+            Processing has started event.
+            <br />(Inherited from <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST4B53DA37_44" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST4B53DA37_45" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.VAF.MultiserverMode Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">Events</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

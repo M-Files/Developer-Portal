@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="de1211d2-82b7-6900-ca1e-00cbe5205c09.htm">MFiles.<wbr />VAF.<wbr />Placeholders Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="5432ca4f-cb02-34bd-765b-31e9f188c979.htm">Obj<wbr />Ver<wbr />Ex<wbr />Read<wbr />Cache</a>
+    </li>
+    <li>
+      <a href="dd28a35c-635f-46c9-6b46-0f052220d652.htm">Methods</a>
+    </li>
+    <li>
+      <a href="176089cb-6c52-85ea-222c-aac813b8981c.htm">Resolve</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="11d47b45-e79a-cc19-f57b-16683e2a08a6" href="11d47b45-e79a-cc19-f57b-16683e2a08a6.htm">Resolve(<wbr />IEnumerable&lt;Lookup&gt;, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="04e1f16d-605d-9e4e-4c54-582dd72f3bc4" href="04e1f16d-605d-9e4e-4c54-582dd72f3bc4.htm">Resolve(<wbr />IEnumerable&lt;Obj<wbr />ID&gt;, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="e8b2a901-5a3d-e3cf-5bfd-7fe9669127b9" href="e8b2a901-5a3d-e3cf-5bfd-7fe9669127b9.htm">Resolve(<wbr />IEnumerable&lt;Obj<wbr />Ver&gt;, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="2464f1a8-2639-324f-902c-1c94ffff3146" href="2464f1a8-2639-324f-902c-1c94ffff3146.htm">Resolve(<wbr />Lookup, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="7d94e42a-3777-f8dc-836b-ea931d5d0456" href="7d94e42a-3777-f8dc-836b-ea931d5d0456.htm">Resolve(<wbr />Lookups, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="26e0036b-dd57-4654-be24-e33a03e08b5c" href="26e0036b-dd57-4654-be24-e33a03e08b5c.htm">Resolve(<wbr />Obj<wbr />ID, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="1082e704-754b-3283-de1f-75428dd4a807" href="1082e704-754b-3283-de1f-75428dd4a807.htm">Resolve(<wbr />Obj<wbr />IDs, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="422c5f78-ccee-caef-1ca7-b2d40ebf344c" href="422c5f78-ccee-caef-1ca7-b2d40ebf344c.htm">Resolve(<wbr />Obj<wbr />Ver, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="294c479d-8c92-9119-137a-eb06ca4b71bb" href="294c479d-8c92-9119-137a-eb06ca4b71bb.htm">Resolve(<wbr />Obj<wbr />Vers, Session<wbr />Info)</a>
+    </li>
+    <li>
+      <a id="3d87d399-7bfc-ac1d-c2e9-e508f643df49" href="3d87d399-7bfc-ac1d-c2e9-e508f643df49.htm">Resolve(<wbr />IEnumerable&lt;Obj<wbr />Ver<wbr />Ex&gt;, Session<wbr />Info, Boolean)</a>
+    </li>
+  </tocItems>
+</toc>

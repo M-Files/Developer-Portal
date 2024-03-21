@@ -17,7 +17,7 @@ M-Files Web Service requires .NET Framework 4 and IIS 5.1 or newer on the server
 M-Files Web Service requires .NET Framework 4 and IIS 5.1 or newer on the server. Older IIS versions (5.1 and 6.0) use file extensions to map incoming HTTP requests to different extensions such as ASP.Net. M-Files Web Service supports `.aspx` and `.ashx` extensions for all resource URIs. These make it easier to invoke the resources in case the web service is hosted on top of IIS 5.1 or IIS 6.0 server and have no real effect on the actual resource. 
 
 
-When writing an application that might be consuming M-Files Web Service from an older IIS server, do use either `.aspx` or `.ashx` extension in the requests. This makes it easier to configure the server and enables the default M-Files Web Access deployment to be used.
+When writing an application that might be consuming M-Files Web Service from an older IIS server, do use either `.aspx` or `.ashx` extension in the requests. This makes it easier to configure the server and enables the default M-Files Classic Web deployment to be used.
 {:.remark}
 
 ### HTTP methods
@@ -42,7 +42,7 @@ Use the `_method` parameter to invoke `PUT` and `DELETE` methods over `POST`. Th
 
 ### REST path in a query parameter
 
-Some third party components only support web services with a single URL and insist on passing all parameters as query parameters. M-Files Web Service can be used by such components by hosting it within an `.ashx` handler. The M-Files Web Access includes `MFWS.ashx` handler for such purposes. This handler is able to invoke any M-Files Web Service resource by passing the resource path in the `restPath` query parameter. [Table 2](#table-2) below shows M-Files Web Service requests using MFWS.ashx handler.
+Some third party components only support web services with a single URL and insist on passing all parameters as query parameters. M-Files Web Service can be used by such components by hosting it within an `.ashx` handler. The M-Files Classic Web includes `MFWS.ashx` handler for such purposes. This handler is able to invoke any M-Files Web Service resource by passing the resource path in the `restPath` query parameter. [Table 2](#table-2) below shows M-Files Web Service requests using MFWS.ashx handler.
 
 <div class="caption">
 	<span class="caption-label">Table 2:</span>

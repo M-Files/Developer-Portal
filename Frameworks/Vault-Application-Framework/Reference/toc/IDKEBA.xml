@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0adb97c5-5b85-11b9-1075-483106af6d81" class="has-submenu" href="0adb97c5-5b85-11b9-1075-483106af6d81.htm">
+        <span data-tocFile="../toc/IDAKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Expression<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="7e94f25d-4a60-a01d-707d-9720b1ae3b09" class="has-submenu" href="7e94f25d-4a60-a01d-707d-9720b1ae3b09.htm">
+        <span data-tocFile="../toc/IDBKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Full<wbr />Text<wbr />Search<wbr />Flags<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="70c54f77-01cd-b9d2-1dc2-2acb810346d9" class="has-submenu" href="70c54f77-01cd-b9d2-1dc2-2acb810346d9.htm">
+        <span data-tocFile="../toc/IDCKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>IMFJson<wbr />Adaptor&lt;T&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="dd81f57a-a68c-25a8-cfa1-5b097fc96ee2" class="has-submenu" href="dd81f57a-a68c-25a8-cfa1-5b097fc96ee2.htm">
+        <span data-tocFile="../toc/IDDKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Lookup<wbr />Item<wbr />Adaptor</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="28e27e77-e5ef-931f-7243-1bbb0f720aa3" class="has-submenu" href="28e27e77-e5ef-931f-7243-1bbb0f720aa3.htm">
+        <span data-tocFile="../toc/IDEKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Lookup<wbr />Item<wbr />Adaptor<wbr />Json<wbr />Converter</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d7b1065b-5e41-8400-5e3f-7a83bdcb0146" class="has-submenu" href="d7b1065b-5e41-8400-5e3f-7a83bdcb0146.htm">
+        <span data-tocFile="../toc/IDFKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Json<wbr />Value<wbr />Adaptor</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="75b384cb-831a-8297-0523-f44164ef34b8" href="75b384cb-831a-8297-0523-f44164ef34b8.htm">Json<wbr />Value<wbr />Adaptor.<wbr />Value<wbr />Property</a>
+    </li>
+    <li>
+      <a id="7f0d2381-efb6-f962-b517-710504a0649d" class="has-submenu" href="7f0d2381-efb6-f962-b517-710504a0649d.htm">
+        <span data-tocFile="../toc/IDHKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Lookup<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="1b750e8f-026b-4beb-8b13-f46c40701db8" class="has-submenu" href="1b750e8f-026b-4beb-8b13-f46c40701db8.htm">
+        <span data-tocFile="../toc/IDIKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Lookups<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="89438806-3fef-e181-61a2-9eb0f998dc74" class="has-submenu" href="89438806-3fef-e181-61a2-9eb0f998dc74.htm">
+        <span data-tocFile="../toc/IDJKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFEnum<wbr />Json<wbr />Converter</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="984b21f6-2778-17e4-044f-06846bbab748" class="has-submenu" href="984b21f6-2778-17e4-044f-06846bbab748.htm">
+        <span data-tocFile="../toc/IDKKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFJson<wbr />Collection<wbr />Adaptor&lt;T, IT, TI&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c157d805-fbdd-5a9f-27e2-4285a0e2e9df" class="has-submenu" href="c157d805-fbdd-5a9f-27e2-4285a0e2e9df.htm">
+        <span data-tocFile="../toc/IDLKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFJson<wbr />Object<wbr />Adaptor&lt;T&gt;</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a717174e-7c41-64f0-01eb-654556e6e8e5" class="has-submenu" href="a717174e-7c41-64f0-01eb-654556e6e8e5.htm">
+        <span data-tocFile="../toc/IDMKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Property<wbr />Def<wbr />Or<wbr />Object<wbr />Type<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9829fee7-6e12-e0b1-a261-05e845e3c790" class="has-submenu" href="9829fee7-6e12-e0b1-a261-05e845e3c790.htm">
+        <span data-tocFile="../toc/IDNKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Property<wbr />Def<wbr />Or<wbr />Object<wbr />Types<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="5761e5e1-25c7-e2da-8a5e-3575ff904421" class="has-submenu" href="5761e5e1-25c7-e2da-8a5e-3575ff904421.htm">
+        <span data-tocFile="../toc/IDOKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Search<wbr />Condition<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="829f84ed-ca31-ad29-d414-3575ffc4479c" class="has-submenu" href="829f84ed-ca31-ad29-d414-3575ffc4479c.htm">
+        <span data-tocFile="../toc/IDPKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Search<wbr />Conditions<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3a17ff6f-fa81-c468-0ba9-4d658d7d949d" class="has-submenu" href="3a17ff6f-fa81-c468-0ba9-4d658d7d949d.htm">
+        <span data-tocFile="../toc/IDQKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Typed<wbr />Value<wbr />JA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

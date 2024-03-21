@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="cb74f91b-35d8-3463-99aa-4cb9d83d6f20.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Dashboards</a>
+    </li>
+    <li>
+      <a href="7f72cbfa-42e3-e4fc-ef68-cc108f86379e.htm">Status<wbr />Dashboard<wbr />Content<wbr />Extension<wbr />Methods</a>
+    </li>
+    <li>
+      <a href="a02bf5d5-68c1-9c09-de6f-95f37447a9ee.htm">Methods</a>
+    </li>
+    <li>
+      <a href="ef31d4e4-42cf-e647-e0b4-e7070b627fc4.htm">Add<wbr />Content</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="bcbde600-3ae3-cce9-b3e6-15939052258f" href="bcbde600-3ae3-cce9-b3e6-15939052258f.htm">Add<wbr />Content(<wbr />Dashboard<wbr />Fragment, Formattable<wbr />String)</a>
+    </li>
+    <li>
+      <a id="41333270-068a-8f7a-0934-19be0f8bb2d0" href="41333270-068a-8f7a-0934-19be0f8bb2d0.htm">Add<wbr />Content(<wbr />Status<wbr />Dashboard, IDashboard<wbr />Content)</a>
+    </li>
+    <li>
+      <a id="0272ff84-ea9b-4d5b-3156-ba318bbef386" href="0272ff84-ea9b-4d5b-3156-ba318bbef386.htm">Add<wbr />Content(<wbr />Status<wbr />Dashboard, Formattable<wbr />String)</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="b960c88d-dc9a-517f-08e7-ca494494fa28.htm">App<wbr />Task<wbr />Batch<wbr />Processor</a>
+    </li>
+    <li>
+      <a href="2867eb73-5ef9-654d-0ec1-90c10da512cd.htm">Methods</a>
+    </li>
+    <li>
+      <a href="1c76b3f4-b9cd-e37f-0239-e95060518afb.htm">Cancel<wbr />All</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="8e5d9e0f-c12d-aa60-a134-6c29f8430a3e" href="8e5d9e0f-c12d-aa60-a134-6c29f8430a3e.htm">Cancel<wbr />All</a>
+    </li>
+    <li>
+      <a id="d6dc654c-0a4e-1ac1-06c9-dd0a6f32e425" href="d6dc654c-0a4e-1ac1-06c9-dd0a6f32e425.htm">Cancel<wbr />All(<wbr />Int<wbr />32)</a>
+    </li>
+    <li>
+      <a id="7d820eeb-9a52-431b-d372-b143d0f35100" href="7d820eeb-9a52-431b-d372-b143d0f35100.htm">Cancel<wbr />All(<wbr />Time<wbr />Span)</a>
+    </li>
+  </tocItems>
+</toc>

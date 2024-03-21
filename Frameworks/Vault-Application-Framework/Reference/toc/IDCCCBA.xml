@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="dd5f591d-c290-5f31-bf2a-3dcf60f36604.htm">Broadcast<wbr />Directive</a>
+    </li>
+    <li>
+      <a href="ead5b3a1-b9bd-b803-862d-0904bb589bf8.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="247339cc-9f06-eb36-5cda-129a9162aa17" class="has-submenu" href="247339cc-9f06-eb36-5cda-129a9162aa17.htm">
+        <span data-tocFile="../toc/IDACCCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Parse</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="692fa743-6ca8-da89-38ee-0b0335026db6" href="692fa743-6ca8-da89-38ee-0b0335026db6.htm">To<wbr />Bytes</a>
+    </li>
+    <li>
+      <a id="ebcabdd6-464d-eb41-db49-2f98065de4e3" href="ebcabdd6-464d-eb41-db49-2f98065de4e3.htm">To<wbr />Json</a>
+    </li>
+  </tocItems>
+</toc>

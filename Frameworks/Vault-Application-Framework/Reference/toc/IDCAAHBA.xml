@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="e02daeb8-c306-9504-d921-7b26606fe222.htm">MFiles.<wbr />VAF.<wbr />Module Namespaces</a>
+    </li>
+    <li>
+      <a href="75a03b3d-c244-f807-1d48-81366332dc56.htm">MFiles.<wbr />VAF.<wbr />Module</a>
+    </li>
+    <li>
+      <a href="feaeefed-61d4-014b-8232-56894d24938b.htm">Basic<wbr />Module</a>
+    </li>
+    <li>
+      <a href="af06c695-41ab-483e-f917-c3478b33dd1b.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="362f59bf-29bf-baf1-3536-8257e82a9030" href="362f59bf-29bf-baf1-3536-8257e82a9030.htm">Get<wbr />Config<wbr />Key</a>
+    </li>
+    <li>
+      <a id="c2d9b692-e589-afbb-4c9e-3330e83da2c2" href="c2d9b692-e589-afbb-4c9e-3330e83da2c2.htm">Get<wbr />Methods<wbr />By<wbr />Attribute&lt;T&gt;</a>
+    </li>
+    <li>
+      <a id="0b6e70dc-d7ec-40de-2c95-a3e65d3e7682" href="0b6e70dc-d7ec-40de-2c95-a3e65d3e7682.htm">Get<wbr />Module<wbr />Description</a>
+    </li>
+    <li>
+      <a id="48df990c-f7c7-c690-16f0-e05e0736dfc6" href="48df990c-f7c7-c690-16f0-e05e0736dfc6.htm">Get<wbr />Module<wbr />Name</a>
+    </li>
+    <li>
+      <a id="24a5ee8e-509b-3b47-d6e1-30dde360305c" href="24a5ee8e-509b-3b47-d6e1-30dde360305c.htm">Initialize</a>
+    </li>
+    <li>
+      <a id="2668aa4a-92bc-169d-db75-17d5d46629ff" href="2668aa4a-92bc-169d-db75-17d5d46629ff.htm">Load<wbr />Configuration</a>
+    </li>
+    <li>
+      <a id="e8b54018-eb23-c4f6-e32e-a89f9752ff52" href="e8b54018-eb23-c4f6-e32e-a89f9752ff52.htm">Move<wbr />Configuration<wbr />Namespace</a>
+    </li>
+    <li>
+      <a id="6ad8fd23-f4df-abeb-8054-93f437199bd8" href="6ad8fd23-f4df-abeb-8054-93f437199bd8.htm">Register<wbr />Task<wbr />Queue</a>
+    </li>
+    <li>
+      <a id="f8cc9ec8-c9a3-92a3-3050-427af38bc67d" href="f8cc9ec8-c9a3-92a3-3050-427af38bc67d.htm">Start</a>
+    </li>
+    <li>
+      <a id="1f7cdc6b-5c6a-35a7-9419-41c2dc87b22a" href="1f7cdc6b-5c6a-35a7-9419-41c2dc87b22a.htm">Stop</a>
+    </li>
+    <li>
+      <a id="c09bb621-3c50-2f06-8259-981c6ec45648" href="c09bb621-3c50-2f06-8259-981c6ec45648.htm">Uninitialize</a>
+    </li>
+    <li>
+      <a id="5e8e6cbb-9e66-8db1-f992-f7872e6024e2" href="5e8e6cbb-9e66-8db1-f992-f7872e6024e2.htm">Unload<wbr />Configuration</a>
+    </li>
+    <li>
+      <a id="163d58fd-45bc-4b30-d822-6537762b85b0" href="163d58fd-45bc-4b30-d822-6537762b85b0.htm">Validate<wbr />Configuration</a>
+    </li>
+    <li>
+      <a id="5dabdf69-50d9-e265-ed13-688449192644" href="5dabdf69-50d9-e265-ed13-688449192644.htm">Validate<wbr />Configuration<wbr />Syntax</a>
+    </li>
+  </tocItems>
+</toc>

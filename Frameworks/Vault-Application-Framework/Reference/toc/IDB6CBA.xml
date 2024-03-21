@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="67f140b7-828e-a081-63a4-2e45ab45696b.htm">Task<wbr />Processing<wbr />Job<wbr />Status</a>
+    </li>
+    <li>
+      <a href="d713e6c7-edb5-f9c1-bfd0-79b17b7274ea.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="eefcc68a-3481-d649-58e7-5994557eec0c" href="eefcc68a-3481-d649-58e7-5994557eec0c.htm">Data</a>
+    </li>
+    <li>
+      <a id="8df5269b-9728-d453-ba12-311d3977d1e6" href="8df5269b-9728-d453-ba12-311d3977d1e6.htm">Details</a>
+    </li>
+    <li>
+      <a id="140292bf-87f5-d182-d781-7e907a8f960c" href="140292bf-87f5-d182-d781-7e907a8f960c.htm">Ended<wbr />At</a>
+    </li>
+    <li>
+      <a id="fc5be6a9-93bf-1514-71db-c698770d3970" href="fc5be6a9-93bf-1514-71db-c698770d3970.htm">Error<wbr />Message</a>
+    </li>
+    <li>
+      <a id="09da3a81-0ddf-47ec-121b-3f054a8b39aa" href="09da3a81-0ddf-47ec-121b-3f054a8b39aa.htm">Last<wbr />Retry<wbr />Started</a>
+    </li>
+    <li>
+      <a id="0791bfec-113f-df1f-4a11-d1c2ec396e24" href="0791bfec-113f-df1f-4a11-d1c2ec396e24.htm">Last<wbr />Saved<wbr />At</a>
+    </li>
+    <li>
+      <a id="79f06f9a-ceab-ad5d-b940-ea4bb21d2bc1" href="79f06f9a-ceab-ad5d-b940-ea4bb21d2bc1.htm">Last<wbr />Updated<wbr />At</a>
+    </li>
+    <li>
+      <a id="973f7cbd-c665-31bf-99bd-0485112cc882" href="973f7cbd-c665-31bf-99bd-0485112cc882.htm">Percent<wbr />Complete</a>
+    </li>
+    <li>
+      <a id="3c22696d-40c0-1937-d987-d6429f11013c" href="3c22696d-40c0-1937-d987-d6429f11013c.htm">Processor<wbr />Updates</a>
+    </li>
+    <li>
+      <a id="017af4e2-bf1a-5cdf-39e5-cf56f96ad5b6" href="017af4e2-bf1a-5cdf-39e5-cf56f96ad5b6.htm">Requeued<wbr />To<wbr />Task</a>
+    </li>
+    <li>
+      <a id="afd05d7f-fec5-78ba-f387-6ea28db95b29" href="afd05d7f-fec5-78ba-f387-6ea28db95b29.htm">Reserved<wbr />At</a>
+    </li>
+    <li>
+      <a id="c36a4305-d8c1-55dc-6cac-f72efacab5d8" href="c36a4305-d8c1-55dc-6cac-f72efacab5d8.htm">Retry<wbr />Count</a>
+    </li>
+    <li>
+      <a id="f4110597-18c3-5cc2-4c6e-b073c4afbaaf" href="f4110597-18c3-5cc2-4c6e-b073c4afbaaf.htm">Server<wbr />Guid</a>
+    </li>
+    <li>
+      <a id="19be52e2-358a-1da8-eb9e-5bb293024dd4" href="19be52e2-358a-1da8-eb9e-5bb293024dd4.htm">Server<wbr />Name</a>
+    </li>
+    <li>
+      <a id="04b7261f-79cc-fb6c-8322-0fd2ad4f93bc" href="04b7261f-79cc-fb6c-8322-0fd2ad4f93bc.htm">Server<wbr />Updates</a>
+    </li>
+    <li>
+      <a id="7d0d6ea1-01b4-7157-9d28-d5b71994277c" href="7d0d6ea1-01b4-7157-9d28-d5b71994277c.htm">Stack<wbr />Trace</a>
+    </li>
+  </tocItems>
+</toc>

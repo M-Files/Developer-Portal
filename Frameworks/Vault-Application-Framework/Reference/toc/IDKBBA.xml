@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="0e4841e0-3121-cacc-d27d-9308d69311a9.htm">MFiles.<wbr />VAF.<wbr />Admin<wbr />Configurations</a>
+    </li>
+    <li>
+      <a href="69824067-ef2c-2950-d664-4bf945a12625.htm">IUses<wbr />Admin<wbr />Configurations</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="f5f26000-ba74-d6d0-bb36-681440074b63" class="has-submenu" href="f5f26000-ba74-d6d0-bb36-681440074b63.htm">
+        <span data-tocFile="../toc/IDAKBBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+    <li>
+      <a href="98c2d90c-9160-3ca2-c9f3-30e0c63cbdac.htm">Crypto<wbr />RSA</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="66ad9d59-4437-02d8-e46c-b18579f02f20" href="66ad9d59-4437-02d8-e46c-b18579f02f20.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="e6544046-a0d2-2176-5689-c69e037ef43d" class="has-submenu" href="e6544046-a0d2-2176-5689-c69e037ef43d.htm">
+        <span data-tocFile="../toc/IDBBAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="4b206172-ba26-2ad5-a03c-177f01cab7be" class="has-submenu" href="4b206172-ba26-2ad5-a03c-177f01cab7be.htm">
+        <span data-tocFile="../toc/IDCBAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Fields</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

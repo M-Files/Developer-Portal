@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>JsonLookupItemAdaptor Properties</title>
+    <meta name="Title" content="Properties" />
+    <meta name="Help.Id" content="Properties.T:MFiles.VAF.Configuration.JsonAdaptor.JsonLookupItemAdaptor" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration.JsonAdaptor" />
+    <meta name="guid" content="55569a5e-f26b-9ae8-f927-538e6ea3ea5e" />
+    <meta name="tocFile" content="../toc/IDDKEBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Json<wbr />Lookup<wbr />Item<wbr />Adaptor Properties</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDADASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="b6bbbbd7-ce6d-3b1f-828e-de76297d091e.htm">ClassGroup</a>
+                  </td>
+                  <td>
+            A reference to a class group.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemClassGroup</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5824d1f9-8cac-9f66-10cd-d604cbfd0801.htm">ID</a>
+                  </td>
+                  <td>
+            A reference to a value of an unknow structure type.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemNone</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="497a1ca3-4990-1ad8-05c0-10ce43c8fc4e.htm">NamedACL</a>
+                  </td>
+                  <td>
+            A reference to a named ACL.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemNamedACL</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="710c9af3-c342-fa84-8e31-713e245f6ce8.htm">ObjectClass</a>
+                  </td>
+                  <td>
+            A reference to a class.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemClass</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="20383849-0213-7228-bbb2-dedd14a8faf7.htm">ObjID</a>
+                  </td>
+                  <td>
+            Alias of <a href="0a1b2ffc-7fae-957b-80e9-de0857d7d29c.htm">ValueListItem</a>.
+            Will never be serialized.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="811d343c-1eb6-d8aa-bcc2-7b160d9f3ac7.htm">ObjType</a>
+                  </td>
+                  <td>
+            A reference to an object type.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemObjectType</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a340ea0a-8216-13a6-53e1-bb8679db00fb.htm">PropertyDef</a>
+                  </td>
+                  <td>
+            A reference to a property def.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemPropertyDef</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fda5aca6-8f9a-14cf-e1ef-f0619c44fd21.htm">Reference</a>
+                  </td>
+                  <td>
+            The reference currently set in the object. Available regardless of <a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b20ec545-e600-4e56-0bd0-73aed4137ad2.htm">State</a>
+                  </td>
+                  <td>
+            A reference to a state.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemState</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a>
+                  </td>
+                  <td>
+            The type of structure item the current reference refers to.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1da59fed-edc4-7180-8a47-072f92a3ae8e.htm">Transition</a>
+                  </td>
+                  <td>
+            A reference to a state transition.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemStateTransition</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="15db3cb6-3801-09ad-feb3-17be2af3595c.htm">Type</a>
+                  </td>
+                  <td>
+            The MFilesAPI type that the <a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> corresponds to used
+            for resolving id's with <a href="19e75645-b7a2-4757-eb32-76c33f80442b.htm">MFIdentifier</a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f27854ca-4a01-5255-2af4-e5238d332b59.htm">User</a>
+                  </td>
+                  <td>
+            A reference to a user.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemUser</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4b631ef1-f54f-3424-dc6e-70a0a07f05b0.htm">UserGroup</a>
+                  </td>
+                  <td>
+            A reference to a user group.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemUserGroup</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="50994b8c-3e94-ab4c-f2fd-dd9d6b71fe8c.htm">ValueList</a>
+                  </td>
+                  <td>
+            A reference to a value list.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemValueList</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0a1b2ffc-7fae-957b-80e9-de0857d7d29c.htm">ValueListItem</a>
+                  </td>
+                  <td>
+            A reference to a value list item.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemValueListItem</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="aa27dfc4-735b-21b0-5716-953adaa5ced0.htm">View</a>
+                  </td>
+                  <td>
+            A reference to a view.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemViewDef</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d9841e17-9460-d3a6-c746-02debe0eb37c.htm">Workflow</a>
+                  </td>
+                  <td>
+            A reference to a workflow.
+            Only available when <span class="code"><a href="3d20ad6e-720b-72ea-6b12-ed72fa50610e.htm">StructureType</a> = <span class="noLink">MFMetadataStructureItemWorkflow</span></span>
+            Will not be serialized if unavailable.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="dd81f57a-a68c-25a8-cfa1-5b097fc96ee2.htm">JsonLookupItemAdaptor Class</a>
+              </div>
+              <div>
+                <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.VAF.Configuration.JsonAdaptor Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

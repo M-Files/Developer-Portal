@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="a4a142d6-9295-2315-fc2d-c9cc6bdfbda4.htm">Task<wbr />Manager</a>
+    </li>
+    <li>
+      <a href="911965fc-4bbd-8b8d-a267-977a5559f045.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="d523476a-af36-1948-4ec9-f55ead3ea591" href="d523476a-af36-1948-4ec9-f55ead3ea591.htm">Add<wbr />Task</a>
+    </li>
+    <li>
+      <a id="d85539aa-6ea3-0665-015d-4636b8be0cb1" href="d85539aa-6ea3-0665-015d-4636b8be0cb1.htm">Begin<wbr />Shutdown<wbr />Async</a>
+    </li>
+    <li>
+      <a id="69782548-d117-81a9-70f5-1dca9faf462b" href="69782548-d117-81a9-70f5-1dca9faf462b.htm">Cancel<wbr />Active<wbr />Task</a>
+    </li>
+    <li>
+      <a id="abc3dffd-ea39-ed2f-3011-7d4016ab3b51" href="abc3dffd-ea39-ed2f-3011-7d4016ab3b51.htm">Cancel<wbr />Waiting<wbr />Task</a>
+    </li>
+    <li>
+      <a id="df58bb56-8ccf-481d-6d33-8fee09bed333" href="df58bb56-8ccf-481d-6d33-8fee09bed333.htm">Cancel<wbr />Waiting<wbr />Tasks</a>
+    </li>
+    <li>
+      <a id="18dff9df-1fe5-eb81-1f90-3e4b93530e12" href="18dff9df-1fe5-eb81-1f90-3e4b93530e12.htm">Detach<wbr />All<wbr />Queues<wbr />Async</a>
+    </li>
+    <li>
+      <a id="578aa511-c86c-7ab4-7de2-50495de90fa0" href="578aa511-c86c-7ab4-7de2-50495de90fa0.htm">Detach<wbr />Queue<wbr />Async</a>
+    </li>
+    <li>
+      <a id="bfda3ef7-be2a-b635-289e-2423873aebcc" href="bfda3ef7-be2a-b635-289e-2423873aebcc.htm">Get<wbr />Active<wbr />Task<wbr />Ids</a>
+    </li>
+    <li>
+      <a id="63e8513f-51ec-1e3f-dda8-d083e911e5aa" href="63e8513f-51ec-1e3f-dda8-d083e911e5aa.htm">Get<wbr />Broadcast<wbr />Processor</a>
+    </li>
+    <li>
+      <a id="6fd08beb-cc25-e821-6c52-dc1ce9a5d80e" href="6fd08beb-cc25-e821-6c52-dc1ce9a5d80e.htm">Get<wbr />Default<wbr />Broadcast<wbr />Queue<wbr />Id</a>
+    </li>
+    <li>
+      <a id="742ef208-2c1b-2cf2-8d1f-5129398021f8" href="742ef208-2c1b-2cf2-8d1f-5129398021f8.htm">Get<wbr />Queue</a>
+    </li>
+    <li>
+      <a id="deb7302b-ac27-9d32-550b-2da1d7c667c8" href="deb7302b-ac27-9d32-550b-2da1d7c667c8.htm">Get<wbr />Queue<wbr />Ids</a>
+    </li>
+    <li>
+      <a id="aec89287-13bf-f54e-33d0-6c6e419f8683" href="aec89287-13bf-f54e-33d0-6c6e419f8683.htm">Get<wbr />Queues</a>
+    </li>
+    <li>
+      <a id="912a0870-6f09-c681-a670-0bc2a42b6a77" href="912a0870-6f09-c681-a670-0bc2a42b6a77.htm">Get<wbr />Task<wbr />Processor</a>
+    </li>
+    <li>
+      <a id="f1c3361c-db46-201c-628d-c2e779779e27" href="f1c3361c-db46-201c-628d-c2e779779e27.htm">Is<wbr />Processing</a>
+    </li>
+    <li>
+      <a id="1cf29370-8f8e-2e59-db2c-b7025932bf24" href="1cf29370-8f8e-2e59-db2c-b7025932bf24.htm">Is<wbr />Queue<wbr />Registered</a>
+    </li>
+    <li>
+      <a id="f1c7524d-749c-3e98-ca98-62e3779d3e1a" href="f1c7524d-749c-3e98-ca98-62e3779d3e1a.htm">Is<wbr />Queue<wbr />Shutting<wbr />Down</a>
+    </li>
+    <li>
+      <a id="e8a1b4e8-80bd-7d9f-e147-0f2756279424" href="e8a1b4e8-80bd-7d9f-e147-0f2756279424.htm">Is<wbr />Supported</a>
+    </li>
+    <li>
+      <a id="de9a5de0-631e-9013-5333-4c1b11800a41" href="de9a5de0-631e-9013-5333-4c1b11800a41.htm">Log<wbr />Event</a>
+    </li>
+    <li>
+      <a id="8c058746-a31e-873d-46a7-e4e1c5c900d1" href="8c058746-a31e-873d-46a7-e4e1c5c900d1.htm">On<wbr />Shutdown<wbr />Completed</a>
+    </li>
+    <li>
+      <a id="0b2f8a0a-4f70-fba5-aa45-94f1968a398f" href="0b2f8a0a-4f70-fba5-aa45-94f1968a398f.htm">Poll</a>
+    </li>
+    <li>
+      <a id="98e5333f-1b6d-ce42-3206-772cfcecaef8" href="98e5333f-1b6d-ce42-3206-772cfcecaef8.htm">Register<wbr />Broadcast<wbr />Processors</a>
+    </li>
+    <li>
+      <a id="c6850022-f34a-1f28-d369-1208a8ceaab7" href="c6850022-f34a-1f28-d369-1208a8ceaab7.htm">Register<wbr />Queue</a>
+    </li>
+    <li>
+      <a id="70bbc75d-64da-e42c-9e13-62815f2dca45" class="has-submenu" href="70bbc75d-64da-e42c-9e13-62815f2dca45.htm">
+        <span data-tocFile="../toc/IDXCZCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Send<wbr />Broadcast</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f35e287d-7bdb-430f-bafd-8ba8a97e2afa" href="f35e287d-7bdb-430f-bafd-8ba8a97e2afa.htm">Start<wbr />Processing</a>
+    </li>
+    <li>
+      <a id="4e5271a9-76c9-ee8b-047d-214d4f84397c" href="4e5271a9-76c9-ee8b-047d-214d4f84397c.htm">Task<wbr />Cancellation<wbr />Broadcast<wbr />Handler</a>
+    </li>
+  </tocItems>
+</toc>

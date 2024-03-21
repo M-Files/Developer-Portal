@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="6cd7a669-d464-de8d-d6f5-9c56ea2c5728.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging.<wbr />Sensitivity<wbr />Filters</a>
+    </li>
+    <li>
+      <a href="987f26d0-7ebc-454b-daa5-9dd69c452520.htm">Property<wbr />Value<wbr />Log<wbr />Sensitivity<wbr />Filter</a>
+    </li>
+    <li>
+      <a href="5836b822-1823-96c8-967d-541a7294b3ca.htm">Methods</a>
+    </li>
+    <li>
+      <a href="35cf0795-35a2-0f94-e2f1-2903b83cfa11.htm">Filter<wbr />Value<wbr />For<wbr />Logging</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3eb28d28-6494-85d0-4768-ffaa691e5994" href="3eb28d28-6494-85d0-4768-ffaa691e5994.htm">Filter<wbr />Value<wbr />For<wbr />Logging(<wbr />IProperty<wbr />Value, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, String, IFormat<wbr />Provider)</a>
+    </li>
+  </tocItems>
+</toc>

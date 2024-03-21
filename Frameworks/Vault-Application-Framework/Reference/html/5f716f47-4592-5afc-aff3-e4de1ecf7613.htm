@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>LicenseContentBase Properties</title>
+    <meta name="Title" content="Properties" />
+    <meta name="Help.Id" content="Properties.T:MFiles.VAF.Configuration.LicenseContentBase" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration" />
+    <meta name="guid" content="5f716f47-4592-5afc-aff3-e4de1ecf7613" />
+    <meta name="tocFile" content="../toc/ID3AEBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>License<wbr />Content<wbr />Base Properties</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDADASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="eab956ba-7e58-856a-665a-5d86850dee73.htm">Application</a>
+                  </td>
+                  <td>
+            Identification of the application (GUID).
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5f3ea58b-e8fd-d52c-9ab5-c45bbc0e9c0a.htm">ConcurrentUsers</a>
+                  </td>
+                  <td>
+            Number of Concurrent user licenses allowed in Server license.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="22740e30-29a8-084c-5d5e-7d24a67feba2.htm">Description</a>
+                  </td>
+                  <td>
+            Description of the application/license.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c180f3dd-a046-2293-7d84-a0c77707fe90.htm">Errors</a>
+                  </td>
+                  <td>
+            List of our errors.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="65622d6a-0d20-fb77-9458-6ddb574658df.htm">FormatError</a>
+                  </td>
+                  <td>
+            Had we format error from deserializing or smth.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1a6e97f4-0310-fefb-5fe0-2a82545937a9.htm">GraceDays</a>
+                  </td>
+                  <td>
+            Number of days to consider grace period after the expiracy.
+            Unset/zero value to not use any grace.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a633cb62-b41d-ded8-4ae3-5b09152ea644.htm">Groups</a>
+                  </td>
+                  <td>
+            List of user group max-length requirements.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8d172eaa-6e2a-4f8a-40cc-fa5f97d1dc3d.htm">Infos</a>
+                  </td>
+                  <td>
+            List of our infos.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2517ac31-996c-b9d6-8e20-b0fc65b43986.htm">IsEmpty</a>
+                  </td>
+                  <td>
+            Are we empty.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9d38867a-4ed9-ab45-e2fe-a24bf488c133.htm">IsEvaluated</a>
+                  </td>
+                  <td>
+            Is our instance evaluated.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="214ff4ee-3f4c-b3f9-d123-45fb82166d00.htm">IsTrial</a>
+                  </td>
+                  <td>
+            Is this a trial license.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d3959dac-bd14-69ea-eb79-3679cf04b1d5.htm">IsValid</a>
+                  </td>
+                  <td>
+            Overall validity value.
+            This is not read from license directly.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0698b774-04ff-0b49-6a28-6e5e608e7262.htm">LicensedTo</a>
+                  </td>
+                  <td>
+            Licensee name.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2acd834d-17cb-cbcf-ee88-83f6328a371b.htm">LicenseExpireDate</a>
+                  </td>
+                  <td>
+            Last date of license validity.
+            "dd.mm.yyyy" (date,month,year) format.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e9a1dd27-2d88-07af-f981-dd3d7cb8f72a.htm">LicenseStatus</a>
+                  </td>
+                  <td>
+            The contents license status.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9737dcba-89ae-9952-baca-673f5c428f1c.htm">LicenseVersion</a>
+                  </td>
+                  <td>
+            Version of this license format.
+            Usefull after version difference becomes relevant.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ec1cedf8-4407-9661-2dd3-189acf722c00.htm">MaintenanceExpireDate</a>
+                  </td>
+                  <td>
+            Last date of Maintenance subscription validity.
+            "dd.mm.yyyy" (date,month,year) format.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="afda9b66-aee7-8a5e-ad4d-9e89264351ee.htm">MFilesSerialNumber</a>
+                  </td>
+                  <td>
+            Only work in server with this license number.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6fba411c-fc44-6c19-faa4-6600d0a61b5f.htm">Modules</a>
+                  </td>
+                  <td>
+            List of modules covered in this license.
+            Usefull for ModularVaultApplication.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6e91f133-90a9-7963-bb39-89f3d6f5bfa0.htm">NamedUsers</a>
+                  </td>
+                  <td>
+            Number of Named user licenses allowed in Server license.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="64e80ee9-2c45-b556-a22d-895d0ac0bb71.htm">ReadOnlyUsers</a>
+                  </td>
+                  <td>
+            Number of Readonly user licenses allowed in Server license.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="32e53ebe-87de-f95c-985b-64c4577d01c9.htm">SerialNumber</a>
+                  </td>
+                  <td>
+            Serial number of the license.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="841d16db-f1d5-52d8-9895-b461d27d1593.htm">ServerVersions</a>
+                  </td>
+                  <td>
+            Exclusive list of allowed server versions.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="46947648-126b-31c4-9ba1-456d8eecb410.htm">Vaults</a>
+                  </td>
+                  <td>
+            Identification of the vaults this license is only allowed in.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="f29c2fec-efec-0a82-b351-a3a15252ed9b.htm">LicenseContentBase Class</a>
+              </div>
+              <div>
+                <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.VAF.Configuration Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

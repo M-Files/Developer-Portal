@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="7829c967-6d0f-5f56-cf78-60521632d773.htm">ILogger</a>
+    </li>
+    <li>
+      <a href="29bf6768-cb89-dc6a-4391-f02d00ad291c.htm">Methods</a>
+    </li>
+    <li>
+      <a href="53e1d932-5898-b734-31cf-c53c0b4ea5bb.htm">Error</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="e309962d-467a-f0df-8909-fbc1928150af" href="e309962d-467a-f0df-8909-fbc1928150af.htm">Error(<wbr />Formattable<wbr />String[])</a>
+    </li>
+    <li>
+      <a id="ba9caa92-47ac-4021-6119-f8005fcb5edc" href="ba9caa92-47ac-4021-6119-f8005fcb5edc.htm">Error(<wbr />Exception, Formattable<wbr />String[])</a>
+    </li>
+  </tocItems>
+</toc>

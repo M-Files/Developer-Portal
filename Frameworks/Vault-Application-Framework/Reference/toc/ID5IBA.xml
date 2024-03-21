@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="83697a0f-c594-6691-d926-13750d3cf651.htm">Task<wbr />Processor<wbr />Base&lt;TSettings&gt;.<wbr />Built<wbr />In<wbr />Task<wbr />Handler<wbr />IDs</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0150a1f9-68cc-0b61-71af-bc46ccdee1a9" class="has-submenu" href="0150a1f9-68cc-0b61-71af-bc46ccdee1a9.htm">
+        <span data-tocFile="../toc/IDA5IBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Fields</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

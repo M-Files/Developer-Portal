@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+    <li>
+      <a href="9c9ed616-c279-6ea3-48d1-3d2fc437590c.htm">Crypto<wbr />AES</a>
+    </li>
+    <li>
+      <a href="a3b5a6fe-40f2-60cf-fd5b-f61d42fd5968.htm">Methods</a>
+    </li>
+    <li>
+      <a href="73b1cb52-de06-a494-c891-4ef9ad12d071.htm">Encrypt<wbr />String</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="a697ae4b-6461-c22b-2496-f3acc61c946b" href="a697ae4b-6461-c22b-2496-f3acc61c946b.htm">Encrypt<wbr />String(<wbr />Byte[], String)</a>
+    </li>
+    <li>
+      <a id="530e3c37-c77b-c89b-b749-578f74aa0e9e" href="530e3c37-c77b-c89b-b749-578f74aa0e9e.htm">Encrypt<wbr />String(<wbr />String, Rfc<wbr />2898Derive<wbr />Bytes)</a>
+    </li>
+    <li>
+      <a id="eaf3e4c3-375f-65cf-ed8f-c94c1b0a5d7f" href="eaf3e4c3-375f-65cf-ed8f-c94c1b0a5d7f.htm">Encrypt<wbr />String(<wbr />String, String)</a>
+    </li>
+    <li>
+      <a id="9724dec9-7658-e53d-fe0f-aa81cd14336f" href="9724dec9-7658-e53d-fe0f-aa81cd14336f.htm">Encrypt<wbr />String(<wbr />String, String, Byte[])</a>
+    </li>
+  </tocItems>
+</toc>

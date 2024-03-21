@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>MFiles.VAF.MultiserverMode Namespace</title>
+    <meta name="Title" content="MFiles.VAF.MultiserverMode" />
+    <meta name="Help.Id" content="N:MFiles.VAF.MultiserverMode" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.MultiserverMode" />
+    <meta name="guid" content="972fe331-93e6-8784-fda5-27881793d2f6" />
+    <meta name="tocFile" content="../toc/IDBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode Namespace</h1>
+            <div class="summary"> </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Classes</h2>
+            <div id="IDACASection">
+              <table id="classList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="95c8d1d2-9dd4-13af-bec6-4467ebd8747d.htm">ApplicationTaskOperation</a>
+                  </td>
+                  <td>
+             The application task operation class is used to process an individual <a href="48286b98-3841-4932-f5c0-79bb304788ee.htm">ApplicationTask</a>.
+             - This class exists primarily to implement the <a href="4634242b-df1a-c0d0-1e6e-a60f504fa645.htm">Process<span id="LST8B3B26E9_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>() method, using the
+             - <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST8B3B26E9_1" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_2" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> as the base structure that provides the needed events.
+             
+             The class:
+             - Is cancellable.
+             - Exposes events [
+            			<a href="cf77323b-46c0-a22c-983a-07e0d874cdc3.htm">ProcessingStarted</a>,
+            			<a href="036be18b-0467-c6c6-bfcd-6cbfb549e198.htm">ProcessingCompleted</a>,
+            			<a href="7111b2ed-8490-7fdb-e203-b8141d5aa54f.htm">ProcessingFailed</a>,
+            			<a href="12db33de-accf-27fb-4b39-fadec4ce4683.htm">CancellationRequested</a>,
+            		].
+             - Holds a reference to:
+             -- The <a href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task" target="_blank" rel="noopener noreferrer">Task</a> that will execute the application task handler.
+             -- The <a href="48286b98-3841-4932-f5c0-79bb304788ee.htm">ApplicationTask</a> from the application task queue in the vault that is being processed.
+             -- The <a href="51d0841f-d10c-e01c-3482-43355f41eb96.htm">FailureException</a>, when processing experiences an unhandled
+             -- exception from inside the <a href="cbeecd6c-6273-b6bc-4d01-f7dcbc48161d.htm">TaskHandler</a>.
+            
+             Note:
+             The <a href="4634242b-df1a-c0d0-1e6e-a60f504fa645.htm">Process<span id="LST8B3B26E9_3" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>() method handles all errors.
+             Unhandled exceptions inside the TaskHandler delegate are exposed via the
+             <a href="7111b2ed-8490-7fdb-e203-b8141d5aa54f.htm">ProcessingFailed</a> event.
+             </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b960c88d-dc9a-517f-08e7-ca494494fa28.htm">AppTaskBatchProcessor</a>
+                  </td>
+                  <td>
+             The application task processor handles the batch processing of application tasks as
+             <a href="d253904e-6a40-559f-10ae-1dff7dbc30d9.htm">TaskProcessorJob</a>'s.
+            
+             The <a href="c7774a2e-e53f-5b75-5aac-56c5e888bd3f.htm">TaskQueueManager</a> object delegates tasks to this task processor via the
+             <a href="3c83aa67-a42b-b542-dc03-8ba9a4d563b6.htm">ProcessTasks(Vault, IEnumerable<span id="LST8B3B26E9_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>ApplicationTask<span id="LST8B3B26E9_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, CancellationToken)</a>() method.
+             
+             - Registers the task queue passed in via the settings with the <a href="c7774a2e-e53f-5b75-5aac-56c5e888bd3f.htm">TaskQueueManager</a>.
+             - Enables task polling of the <a href="c7774a2e-e53f-5b75-5aac-56c5e888bd3f.htm">TaskQueueManager</a>.
+             - Exposes events [ <a href="b514bcd5-a1d0-d366-f772-7845b7830c45.htm">BatchAdded</a> ]
+             -- <a href="b514bcd5-a1d0-d366-f772-7845b7830c45.htm">BatchAdded</a> =&gt; This event receives a <a href="d253904e-6a40-559f-10ae-1dff7dbc30d9.htm">TaskProcessorJob</a> a.k.a. a batchJob.
+             --- The individual batch job exposes life-cycle events
+            		[
+            			<a href="cf77323b-46c0-a22c-983a-07e0d874cdc3.htm">ProcessingStarted</a>,
+            			<a href="036be18b-0467-c6c6-bfcd-6cbfb549e198.htm">ProcessingCompleted</a>,
+            			<a href="7111b2ed-8490-7fdb-e203-b8141d5aa54f.htm">ProcessingFailed</a>,
+            			<a href="12db33de-accf-27fb-4b39-fadec4ce4683.htm">CancellationRequested</a>,
+            		]
+             --- These events can be used to keep local cached data in sync for
+             --- vault applications or modules that need that sort of live updated info.
+             </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f739cddc-0754-7f0b-f1b5-34090ae9f18f.htm">AppTaskBatchProcessorSettings</a>
+                  </td>
+                  <td>
+            Application task batch processor settings.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e43ee33b-ac43-f65b-e6f7-6ea4a840794e.htm">AppTaskProcessingReport</a>
+                  </td>
+                  <td>
+            Application task processing report.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="87903ba9-6a08-85bb-a810-a8f06b964016.htm">AppTaskProcessorSettings</a>
+                  </td>
+                  <td>
+                    <a href="48286b98-3841-4932-f5c0-79bb304788ee.htm">ApplicationTask</a> processor settings object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a8aa3537-3709-6a98-fa8c-07a39ffc2347.htm">AppTaskUpdateInfo</a>
+                  </td>
+                  <td>
+                    <a href="48286b98-3841-4932-f5c0-79bb304788ee.htm">ApplicationTask</a> generic progress update info object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2461327c-ab14-94f1-62b1-cc1e6d871118.htm">AsyncProcessingOperation<span id="LST8B3B26E9_6" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_7" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            The async processing operation class is a generic class, that provides the
+            basic events and properties that an async processing operation should have.
+            
+            This class provides only the properties and events, all implementing classes
+            are required to handle the actual execution and processing, while triggering
+            the events provided by this class as needed.
+            
+            - Is cancellable.
+            - Holds a standardized processing state.
+            		<a href="cf77323b-46c0-a22c-983a-07e0d874cdc3.htm">ProcessingStarted</a>,
+            		<a href="036be18b-0467-c6c6-bfcd-6cbfb549e198.htm">ProcessingCompleted</a>,
+            		<a href="7111b2ed-8490-7fdb-e203-b8141d5aa54f.htm">ProcessingFailed</a>,
+            		<a href="12db33de-accf-27fb-4b39-fadec4ce4683.htm">CancellationRequested</a>,
+            - Fires events on the change of each processing state.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="35cb3f94-2021-05e9-1fcd-6a3c56814f65.htm">AsyncProcessingOperationArgs<span id="LST8B3B26E9_8" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_9" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Event args class for the async processing operation events.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1fdba37e-2f8e-a84d-a70b-3de2a77af94c.htm">AvailabilityGroupStatusSettings</a>
+                  </td>
+                  <td>
+            Settings object used to get and set the availability group status of a server.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="43d6bf58-2554-a6ab-afe8-4cf53b711103.htm">AvailabilityGroupStatusWriter</a>
+                  </td>
+                  <td>
+            Multi-server mode availability group health status writer.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e0ea644d-c7be-4997-60e4-a27b6b78becf.htm">BatchProcessorChildJobArgs</a>
+                  </td>
+                  <td>
+            Event args of the batch processors child jobs.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0573193c-5991-1a5a-684c-08c3a25cc02c.htm">BatchProcessorJob</a>
+                  </td>
+                  <td>
+             The batch processor job class is the async processing operations specific to <a href="d253904e-6a40-559f-10ae-1dff7dbc30d9.htm">TaskProcessorJob</a>'s
+             that are being processed by a <a href="fc40c343-0b25-2491-c28a-5344e0d28525.htm">IApplicationTaskProcessor</a>.
+            
+             This class:
+             - Has a guid identifier.
+             - Holds a reference to the vault.
+             - Contains a processing report.
+             - Exposes events [ ChildJobCreated ]
+             </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="25624735-0ca4-c902-1ed0-6f8b31d166c7.htm">BatchProcessorJobArgs</a>
+                  </td>
+                  <td>
+            Event args for the batch processor job events.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="16d39346-32e6-fe76-f0ba-f51ce5814df2.htm">BroadcastDirective</a>
+                  </td>
+                  <td>
+            Broadcast action directive.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">CancellableOperation<span id="LST8B3B26E9_10" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_11" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+             Class that can be cancelled.
+             - The class holds a reference to the system threaded <a href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task" target="_blank" rel="noopener noreferrer">Task</a> that will
+             - process the cancellable logic.
+            
+             - Holds a cancellation token source linked to the token passed via the constructor.
+             </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8589ae50-1a9e-5a58-a2dc-727d4841d1d2.htm">CancellableOperationArgs<span id="LST8B3B26E9_12" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_13" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Event args class for the cancellable operation events.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6cb3dd95-c022-8f0c-51a1-f5680590601b.htm">CloneContainer<span id="LST8B3B26E9_14" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_15" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Clone values are used to ensure this is thread safe.
+            
+            - Each <a href="7ebb49be-b492-94c8-d1f5-e12a40609249.htm">Value</a> read operation returns a clone copy of the data.
+            
+            - Each <span class="noLink">Update(DataUpdater<span id="LST8B3B26E9_16" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>UTP<span id="LST8B3B26E9_17" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</span> call receives a clone copy
+            - of the data and stores a clone copy of the returned result.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9635606a-ebe8-b430-3748-b1e73d44655b.htm">CloneContainerArgs<span id="LST8B3B26E9_18" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_19" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Clone container event args object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1ec1e05d-988a-d496-8677-0d23abc689a4.htm">DateTimeExtensions</a>
+                  </td>
+                  <td>
+            Provides to string formatting extensions for the DateTime type.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="20be9448-2195-e28a-23ae-242d833be163.htm">FailedArgs<span id="LST8B3B26E9_20" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_21" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Event args for a failed operations
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f285d390-e77d-884c-a3bd-cc5f6a3740c9.htm">FailureInfo</a>
+                  </td>
+                  <td>
+            Failure info class.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="bcbeb80f-781f-4dfa-89ac-3538884e55f1.htm">PendingTasks</a>
+                  </td>
+                  <td>
+            Pending tasks wrapper class.
+            - Allows for prioritization of broadcast tasks.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e3ef9243-8919-0be3-78a2-5f237f5d5158.htm">ProcessingReport<span id="LST8B3B26E9_22" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_23" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Processing results report object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="54df8d80-a099-44ce-fabe-aed1f5156089.htm">SequentialTaskProcessor</a>
+                  </td>
+                  <td>
+            Sequential application task processor.
+            - Processes one task at a time.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5e1cc553-253a-dc4b-fe8e-195bb9de7644.htm">SharedSettingsHelper</a>
+                  </td>
+                  <td>
+            Shared setting helper class. Used to Get / Set shared setting for task queue into NamedValueStorage.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="80cf9785-ca74-a1a9-ea2f-6ea29cfb1a9c.htm">TaskProcessorBase<span id="LST8B3B26E9_24" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST8B3B26E9_25" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+             Application task processor base class.
+            
+             The <a href="c7774a2e-e53f-5b75-5aac-56c5e888bd3f.htm">TaskQueueManager</a> object delegates tasks to this task processor via the
+             <a href="3c83aa67-a42b-b542-dc03-8ba9a4d563b6.htm">ProcessTasks(Vault, IEnumerable<span id="LST8B3B26E9_26" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>ApplicationTask<span id="LST8B3B26E9_27" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, CancellationToken)</a>() method.
+             
+             Exposes event, <a href="247fb68f-994a-44a4-d738-26a338daa12e.htm">JobCreated</a>.
+             </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="83697a0f-c594-6691-d926-13750d3cf651.htm">TaskProcessorBase<span id="LST8B3B26E9_28" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>TSettings<span id="LST8B3B26E9_29" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST8B3B26E9_30" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>BuiltInTaskHandlerIDs</a>
+                  </td>
+                  <td>
+            Built in task handler IDs.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d253904e-6a40-559f-10ae-1dff7dbc30d9.htm">TaskProcessorJob</a>
+                  </td>
+                  <td>
+             The task processor job class is the async processing operations specific to <a href="48286b98-3841-4932-f5c0-79bb304788ee.htm">ApplicationTask</a>'s
+             that are being processed by a <a href="fc40c343-0b25-2491-c28a-5344e0d28525.htm">IApplicationTaskProcessor</a>.
+            
+             This class:
+             - Has a guid identifier.
+             - Holds a reference to the vault.
+             - Contains a processing report.
+             - Exposes the immutable properties of the Application Task, so they are available without accessing the COM object.
+             </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fc9b667a-b066-9b02-37d4-1ad599b221ea.htm">TaskProcessorJobArgs</a>
+                  </td>
+                  <td>
+            Event args for the task processor job.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="02dedd64-9829-ec9f-3589-f3cfce93d8f9.htm">TaskQueueDef</a>
+                  </td>
+                  <td>
+            Application task queue definition.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ed5d4827-8c5a-3fe2-b7a3-b98af3a178cd.htm">TaskQueueDirective</a>
+                  </td>
+                  <td>
+            Task queue directive abstract base class.
+            - Directives used for task queue processing should ( but are not
+            - required to ) extend from this class.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="408711c0-2fc1-3c84-167d-2b6031081a33.htm">VaultExtMethodCallerDirective</a>
+                  </td>
+                  <td>
+            Generic broadcast directive that contains only a handler type and a data
+            item[] that will be passed as the input param's in the vault extension method call.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Interfaces</h2>
+            <div id="IDVCASection">
+              <table id="interfaceList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="3f19b23a-bef8-b5dc-044a-8893e3ea3598.htm">IDeepCloneable</a>
+                  </td>
+                  <td>
+            Defines an interface for objects that can been deep cloned.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Delegates</h2>
+            <div id="IDUCASection">
+              <table id="delegateList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="3aefc5de-1cd9-d54e-0123-c6fd6f2390dc.htm">DataUpdater<span id="LST8B3B26E9_31" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST8B3B26E9_32" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>
+                  </td>
+                  <td>
+            Delegate for updating the data value. Receives a clone copy of the data object and returns
+            the value to be set as the data value.	/// </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cbeecd6c-6273-b6bc-4d01-f7dcbc48161d.htm">TaskHandler</a>
+                  </td>
+                  <td>
+            Delegate used to process an individual application task.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="68a3926f-74e9-6b2c-0f38-837f08e11f09.htm">TaskProcessorJobHandler</a>
+                  </td>
+                  <td>
+            Delegate used to process an individual application task, wrapper as a <a href="d253904e-6a40-559f-10ae-1dff7dbc30d9.htm">TaskProcessorJob</a>.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Enumerations</h2>
+            <div id="IDXCASection">
+              <table id="enumerationList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="0bd67978-f085-d307-2376-81b1b6a160a1.htm">ProcessingJobState</a>
+                  </td>
+                  <td>
+            Async processing operation, processing state.
+            </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Classes</a>
+                </li>
+                <li>
+                  <a class="quickLink">Interfaces</a>
+                </li>
+                <li>
+                  <a class="quickLink">Delegates</a>
+                </li>
+                <li>
+                  <a class="quickLink">Enumerations</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="b2e1f055-f7ca-e948-ea2c-547b02ac87bc.htm">Task<wbr />Query</a>
+    </li>
+    <li>
+      <a href="eac467f5-94b0-403c-f893-0bbb7717736d.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4182df6d-7231-5c33-2908-61c1230517cd" class="has-submenu" href="4182df6d-7231-5c33-2908-61c1230517cd.htm">
+        <span data-tocFile="../toc/IDAC0GB0CBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Find<wbr />Tasks</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="af878d02-fcc6-895b-7ddc-0367d4dbe3eb" href="af878d02-fcc6-895b-7ddc-0367d4dbe3eb.htm">Queue</a>
+    </li>
+    <li>
+      <a id="b95799b8-8eb7-3b44-8304-3a55a4e46960" href="b95799b8-8eb7-3b44-8304-3a55a4e46960.htm">Task<wbr />State</a>
+    </li>
+    <li>
+      <a id="75267978-e966-4543-d3ab-8bcc81708c2a" href="75267978-e966-4543-d3ab-8bcc81708c2a.htm">Task<wbr />Type</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="c70fbc56-39e8-68df-02f5-e84b61405d71.htm">Metadata<wbr />Structure<wbr />Validator</a>
+    </li>
+    <li>
+      <a href="2360ef21-8970-4243-b8c8-74f04f38cc65.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="48719090-0773-e298-b208-c2a377256ccf" href="48719090-0773-e298-b208-c2a377256ccf.htm">Check<wbr />And<wbr />Process<wbr />Deprecated<wbr />Member</a>
+    </li>
+    <li>
+      <a id="1b6c3a51-0d6e-dd41-6194-6ab6766651fb" href="1b6c3a51-0d6e-dd41-6194-6ab6766651fb.htm">Get<wbr />Children</a>
+    </li>
+    <li>
+      <a id="ef6b96a2-9282-2fef-b48c-6ce938a55209" href="ef6b96a2-9282-2fef-b48c-6ce938a55209.htm">Get<wbr />Identifier</a>
+    </li>
+    <li>
+      <a id="0c6a342e-75c2-5668-debe-a8c5b319bb59" href="0c6a342e-75c2-5668-debe-a8c5b319bb59.htm">Get<wbr />Member<wbr />Label</a>
+    </li>
+    <li>
+      <a id="288b3c8e-12d5-c746-7427-05c3fc68ddf8" href="288b3c8e-12d5-c746-7427-05c3fc68ddf8.htm">Get<wbr />Reference<wbr />As<wbr />Identifier</a>
+    </li>
+    <li>
+      <a id="bf38d7a0-ff19-94fa-659f-89d8270144a6" href="bf38d7a0-ff19-94fa-659f-89d8270144a6.htm">Get<wbr />Schema<wbr />Member<wbr />Name</a>
+    </li>
+    <li>
+      <a id="c8365cf4-89d7-3a1d-bb99-5fb5f093861e" href="c8365cf4-89d7-3a1d-bb99-5fb5f093861e.htm">Get<wbr />Value</a>
+    </li>
+    <li>
+      <a id="8b949222-b8e4-0fee-57c5-d52852e2b86c" class="has-submenu" href="8b949222-b8e4-0fee-57c5-d52852e2b86c.htm">
+        <span data-tocFile="../toc/IDHB6AEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Is<wbr />Valid</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="b0d9a902-2a15-87f3-6f29-c8f7aa11b8f6" href="b0d9a902-2a15-87f3-6f29-c8f7aa11b8f6.htm">Items</a>
+    </li>
+    <li>
+      <a id="c77528b9-9181-90cf-1f9b-42104c9e3947" href="c77528b9-9181-90cf-1f9b-42104c9e3947.htm">Try<wbr />Get<wbr />Property<wbr />Def</a>
+    </li>
+    <li>
+      <a id="a77e5b3a-f2e5-54ef-6582-73738d1e1787" class="has-submenu" href="a77e5b3a-f2e5-54ef-6582-73738d1e1787.htm">
+        <span data-tocFile="../toc/IDKB6AEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Validate<wbr />Item</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="ded47359-01a0-120f-b342-7b2c7a464591" href="ded47359-01a0-120f-b342-7b2c7a464591.htm">Validate<wbr />Item<wbr />Internal</a>
+    </li>
+  </tocItems>
+</toc>

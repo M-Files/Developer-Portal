@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="7f0d2381-efb6-f962-b517-710504a0649d.htm">Lookup<wbr />JA</a>
+    </li>
+    <li>
+      <a href="d83b9221-60b7-f4dd-e5fa-ea6ee38bc182.htm">Operators</a>
+    </li>
+    <li>
+      <a href="59a17fcd-ab43-245e-b3a8-a74dbde32001.htm">Implicit</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7c099e1a-3e6b-78ef-e983-6f626dd994f8" href="7c099e1a-3e6b-78ef-e983-6f626dd994f8.htm">Implicit Conversion (Int<wbr />32 to Lookup<wbr />JA)</a>
+    </li>
+    <li>
+      <a id="8a6d0e2f-673f-2292-6f3d-da6ad486f191" href="8a6d0e2f-673f-2292-6f3d-da6ad486f191.htm">Implicit Conversion (String to Lookup<wbr />JA)</a>
+    </li>
+  </tocItems>
+</toc>

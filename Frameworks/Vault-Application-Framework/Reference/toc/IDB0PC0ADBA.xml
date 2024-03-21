@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="001f02dd-352e-5792-2b89-d6714779baaa.htm">Registry<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="4560cd89-f26d-bb30-db74-ee4eed9e23e6.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="38660a30-58bd-f07d-b261-b02287802672" href="38660a30-58bd-f07d-b261-b02287802672.htm">Create<wbr />Key</a>
+    </li>
+    <li>
+      <a id="6cbb8bca-38b2-7b5b-dd30-408a35378b33" class="has-submenu" href="6cbb8bca-38b2-7b5b-dd30-408a35378b33.htm">
+        <span data-tocFile="../toc/IDBB0PC0ADBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Delete<wbr />Reg<wbr />Key</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="6389551e-1861-97ba-b883-c4256b3a9753" href="6389551e-1861-97ba-b883-c4256b3a9753.htm">Delete<wbr />Reg<wbr />Key<wbr />Ex_<wbr />Wrapper</a>
+    </li>
+    <li>
+      <a id="ca512bc0-513c-6b49-7a62-862e43e9ef4e" href="ca512bc0-513c-6b49-7a62-862e43e9ef4e.htm">Delete<wbr />Reg<wbr />Value</a>
+    </li>
+    <li>
+      <a id="77656736-e235-ec3f-5c63-0b32da12207b" href="77656736-e235-ec3f-5c63-0b32da12207b.htm">Enum<wbr />Subkey<wbr />By<wbr />Index</a>
+    </li>
+    <li>
+      <a id="136da762-824d-e5a7-69bd-b601ccd2318e" href="136da762-824d-e5a7-69bd-b601ccd2318e.htm">Enum<wbr />Subkeys</a>
+    </li>
+    <li>
+      <a id="1b6c2f17-0389-2ddd-8e44-49857d3854c0" href="1b6c2f17-0389-2ddd-8e44-49857d3854c0.htm">Get<wbr />Proc<wbr />Address</a>
+    </li>
+    <li>
+      <a id="4ff2a7c8-fe6b-9395-02ee-8d2b6a5ec468" href="4ff2a7c8-fe6b-9395-02ee-8d2b6a5ec468.htm">Is<wbr />Wow<wbr />64Process</a>
+    </li>
+    <li>
+      <a id="dfe6f5d9-5c68-bbae-b3d2-b5594db3891b" href="dfe6f5d9-5c68-bbae-b3d2-b5594db3891b.htm">Open<wbr />Key</a>
+    </li>
+    <li>
+      <a id="9cf45d4f-526a-d8a7-b03c-e5d5eada6382" class="has-submenu" href="9cf45d4f-526a-d8a7-b03c-e5d5eada6382.htm">
+        <span data-tocFile="../toc/IDJB0PC0ADBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Read<wbr />Reg<wbr />Value</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e0365461-c309-16da-8e7d-f1757c67690a" href="e0365461-c309-16da-8e7d-f1757c67690a.htm">Reg<wbr />Close<wbr />Key</a>
+    </li>
+    <li>
+      <a id="2547adf1-ecc6-298a-e9ff-f4d8f5801d9a" href="2547adf1-ecc6-298a-e9ff-f4d8f5801d9a.htm">Reg<wbr />Delete<wbr />Key</a>
+    </li>
+    <li>
+      <a id="076a1e7e-fe9a-90f1-ff1f-91529bd5c5b7" href="076a1e7e-fe9a-90f1-ff1f-91529bd5c5b7.htm">Reg<wbr />Delete<wbr />Key<wbr />Ex</a>
+    </li>
+    <li>
+      <a id="9d2f113f-0e65-eaad-761b-32f6f92ed1d6" href="9d2f113f-0e65-eaad-761b-32f6f92ed1d6.htm">Reg<wbr />Delete<wbr />Value</a>
+    </li>
+    <li>
+      <a id="afa551bc-f983-8f8d-8bd7-f6239a020470" href="afa551bc-f983-8f8d-8bd7-f6239a020470.htm">Write<wbr />Reg<wbr />Value</a>
+    </li>
+  </tocItems>
+</toc>

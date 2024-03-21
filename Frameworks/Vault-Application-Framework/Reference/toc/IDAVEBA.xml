@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="c7a4b809-7fc8-39be-0288-7f4784fdf274.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Validation</a>
+    </li>
+    <li>
+      <a href="040ca125-958d-300e-c79d-d827df3259f9.htm">IConditional<wbr />Requirement</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="ff734ecc-6c3b-7858-ffa6-02e0acd6f2cd" class="has-submenu" href="ff734ecc-6c3b-7858-ffa6-02e0acd6f2cd.htm">
+        <span data-tocFile="../toc/IDAAVEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="5557394d-d52c-89b5-9030-f98db7b9b427" class="has-submenu" href="5557394d-d52c-89b5-9030-f98db7b9b427.htm">
+        <span data-tocFile="../toc/IDBAVEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

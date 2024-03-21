@@ -391,6 +391,10 @@
 					{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Custom-Validation/",
 						"Title": "Custom validation"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Placeholders/",
+						"Title": "Placeholders"
 					}
 				]
 			},

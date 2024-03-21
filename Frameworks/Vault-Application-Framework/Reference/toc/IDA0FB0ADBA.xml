@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="4066f50f-4a82-148a-607f-2e7af51207cf.htm">MFError<wbr />Codes</a>
+    </li>
+    <li>
+      <a href="d29438ed-6461-5d4f-3243-e043c80310c2.htm">Fields</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="d68e8f0b-6a72-0be7-9c95-b775ed1d583e" href="d68e8f0b-6a72-0be7-9c95-b775ed1d583e.htm">Access<wbr />Denied</a>
+    </li>
+    <li>
+      <a id="484ad3fd-981c-e029-d5f2-f65fc0fc8dd3" href="484ad3fd-981c-e029-d5f2-f65fc0fc8dd3.htm">Access<wbr />Denied<wbr />2</a>
+    </li>
+    <li>
+      <a id="ef682178-ac4b-525a-b38c-f3179f0929fb" href="ef682178-ac4b-525a-b38c-f3179f0929fb.htm">Already<wbr />Checked<wbr />Out</a>
+    </li>
+    <li>
+      <a id="924a13cd-bea7-fdaa-86c0-073c078a5d04" href="924a13cd-bea7-fdaa-86c0-073c078a5d04.htm">Already<wbr />Exists</a>
+    </li>
+    <li>
+      <a id="7416cefa-43bd-6d4c-8a80-9652eb3b991c" href="7416cefa-43bd-6d4c-8a80-9652eb3b991c.htm">Already<wbr />Exists<wbr />2</a>
+    </li>
+    <li>
+      <a id="c4478436-e669-7fde-9d38-a2d945566387" href="c4478436-e669-7fde-9d38-a2d945566387.htm">File<wbr />Not<wbr />Found</a>
+    </li>
+    <li>
+      <a id="5175a82f-9879-3266-b3c6-8f4ff5f9e7be" href="5175a82f-9879-3266-b3c6-8f4ff5f9e7be.htm">Invalid<wbr />Arg</a>
+    </li>
+    <li>
+      <a id="9564c981-dac4-6e1b-8e0f-61e7ec6fb3f1" href="9564c981-dac4-6e1b-8e0f-61e7ec6fb3f1.htm">Invalid<wbr />Session</a>
+    </li>
+    <li>
+      <a id="eb0f8298-b2e6-e573-90f9-b03c304d54c9" href="eb0f8298-b2e6-e573-90f9-b03c304d54c9.htm">Lock<wbr />Conflict</a>
+    </li>
+    <li>
+      <a id="3e6abb00-dde8-7be5-44da-8ea70807b3a3" href="3e6abb00-dde8-7be5-44da-8ea70807b3a3.htm">Not<wbr />Found<wbr />1</a>
+    </li>
+    <li>
+      <a id="60a5b3bf-44df-2fd1-f7f6-728bd88a58e9" href="60a5b3bf-44df-2fd1-f7f6-728bd88a58e9.htm">Not<wbr />Found<wbr />2</a>
+    </li>
+    <li>
+      <a id="fd6a1620-fcdc-1be4-f2e9-77e24ee4efc8" href="fd6a1620-fcdc-1be4-f2e9-77e24ee4efc8.htm">Object<wbr />Locked</a>
+    </li>
+    <li>
+      <a id="72f39bbb-b151-21f9-29ce-26070922f711" href="72f39bbb-b151-21f9-29ce-26070922f711.htm">Remote<wbr />Procedure<wbr />Call<wbr />Failed</a>
+    </li>
+    <li>
+      <a id="245dc468-9def-7c7b-07fa-de898a4ba704" href="245dc468-9def-7c7b-07fa-de898a4ba704.htm">Rpc<wbr />Server<wbr />Unavailable</a>
+    </li>
+    <li>
+      <a id="915e70ec-31de-48dd-592e-0c7c798b5045" href="915e70ec-31de-48dd-592e-0c7c798b5045.htm">Vault<wbr />Seperated<wbr />From<wbr />Rcw</a>
+    </li>
+  </tocItems>
+</toc>

@@ -44,5 +44,5 @@ Linking directly to a view by ID and, optionally, virtual folder.
 
 Full details and samples are available in the [Creating M-Files Web URLs](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/A20AFDD6-9F0E-42FB-AA30-D2347142B51C/latest) document, available in our online knowledgebase.
 
-Linking to objects, files or views will require the user to log into the M-Files Web Access, if appropriate, prior to accessing the relevant item.
+Linking to objects, files or views will require the user to log into the M-Files Classic Web, if appropriate, prior to accessing the relevant item.
 {:.note}

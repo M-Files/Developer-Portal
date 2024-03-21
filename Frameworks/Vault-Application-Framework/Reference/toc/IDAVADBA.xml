@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="ce508f97-1392-b133-4550-9a1d9e09d395.htm">IAccess<wbr />Cache</a>
+    </li>
+    <li>
+      <a href="80689ce7-5dea-3d98-6b57-6a6b337cd09e.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="31b3cc85-8ba0-7bec-3e83-0495037a3801" href="31b3cc85-8ba0-7bec-3e83-0495037a3801.htm">Get<wbr />Cache</a>
+    </li>
+    <li>
+      <a id="56b7d30a-031b-0372-88b7-c19fd9150c26" href="56b7d30a-031b-0372-88b7-c19fd9150c26.htm">Get<wbr />Class<wbr />Access</a>
+    </li>
+    <li>
+      <a id="846adc3c-4fc1-705b-450b-748d2d710c8d" href="846adc3c-4fc1-705b-450b-748d2d710c8d.htm">Get<wbr />Named<wbr />ACLAccess</a>
+    </li>
+    <li>
+      <a id="b3bf3c5b-09f4-13ff-a50e-bfe85f9db637" href="b3bf3c5b-09f4-13ff-a50e-bfe85f9db637.htm">Get<wbr />Object<wbr />Access</a>
+    </li>
+    <li>
+      <a id="f2d4daab-15d1-3c4c-72b1-97cc26a1ad27" href="f2d4daab-15d1-3c4c-72b1-97cc26a1ad27.htm">Get<wbr />Obj<wbr />Ver<wbr />Ex<wbr />Permissions</a>
+    </li>
+    <li>
+      <a id="b92a86ca-171f-a740-cabe-ce67f85a87ec" href="b92a86ca-171f-a740-cabe-ce67f85a87ec.htm">Get<wbr />Property<wbr />Access</a>
+    </li>
+  </tocItems>
+</toc>

@@ -263,7 +263,7 @@ await client.PostAsync(uri, httpContent);
 // Delete the first file.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
 uri = new Uri($"http://localhost/REST/objects/{checkedOutObjectVersion.ObjVer.Type}/{checkedOutObjectVersion.ObjVer.ID}/{checkedOutObjectVersion.ObjVer.Version}/files/{checkedOutObjectVersion.Files[0].ID}.aspx?_method=DELETE");
-await client.PostAsync(uri);
+await client.PostAsync(uri, null);
 
 // Create the content for the checkin request.
 // NOTE: 0 == "CheckedIn" from https://developer.m-files.com/APIs/REST-API/Reference/enumerations/mfcheckoutstatus.html.

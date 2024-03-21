@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="de1211d2-82b7-6900-ca1e-00cbe5205c09.htm">MFiles.<wbr />VAF.<wbr />Placeholders Namespaces</a>
+    </li>
+    <li>
+      <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.<wbr />VAF.<wbr />Placeholders</a>
+    </li>
+    <li>
+      <a href="a944a2f5-294a-e96d-4899-de6010d5e1a4.htm">Date<wbr />Context</a>
+    </li>
+    <li>
+      <a href="65219649-7965-982b-7694-9db374aa065a.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3c7f6f26-59aa-bf35-2c5e-21ba51a6ffaa" class="has-submenu" href="3c7f6f26-59aa-bf35-2c5e-21ba51a6ffaa.htm">
+        <span data-tocFile="../toc/IDACGAJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Add</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="356aedd4-e093-c961-b388-acd11a8bded7" href="356aedd4-e093-c961-b388-acd11a8bded7.htm">Clone</a>
+    </li>
+    <li>
+      <a id="3c6512c9-e186-ed6d-2356-e9c892d2ab5e" href="3c6512c9-e186-ed6d-2356-e9c892d2ab5e.htm">Safe<wbr />Cast&lt;T<wbr />2&gt;</a>
+    </li>
+    <li>
+      <a id="747622e4-7656-1e99-24ca-a27c16c3c6a5" href="747622e4-7656-1e99-24ca-a27c16c3c6a5.htm">To<wbr />Date<wbr />Times</a>
+    </li>
+    <li>
+      <a id="798e3bf4-fb6a-9dd4-6d27-8029912bdb54" href="798e3bf4-fb6a-9dd4-6d27-8029912bdb54.htm">Unique<wbr />Values</a>
+    </li>
+  </tocItems>
+</toc>

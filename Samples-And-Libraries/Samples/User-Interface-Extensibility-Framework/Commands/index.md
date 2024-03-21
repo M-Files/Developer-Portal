@@ -265,7 +265,7 @@ To set an icon for the command:
 Setting an icon only works if the command is shown in the task area.  Icons will not be shown for items in the context menu.
 {:.note}
 
-To maximise browser compatibility, it is recommended that a 16x16 `.png` file is used as the icon within the M-Files Web Access.  If your application is targetting the M-Files Web Access then please [see this page for information on recommended changes]({{ site.baseurl}}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/#altering-the-module).
+To maximise browser compatibility, it is recommended that a 16x16 `.png` file is used as the icon within the M-Files Classic Web.  If your application is targetting the M-Files Classic Web then please [see this page for information on recommended changes]({{ site.baseurl}}/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/#altering-the-module).
 {:.note.warning}
 
 ```javascript

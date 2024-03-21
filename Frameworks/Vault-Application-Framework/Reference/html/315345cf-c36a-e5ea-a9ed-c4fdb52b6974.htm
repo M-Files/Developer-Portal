@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>TaskQueueManager Methods</title>
+    <meta name="Title" content="Methods" />
+    <meta name="Help.Id" content="Methods.T:MFiles.VAF.Common.ApplicationTaskQueue.TaskQueueManager" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Common.ApplicationTaskQueue" />
+    <meta name="guid" content="315345cf-c36a-e5ea-a9ed-c4fdb52b6974" />
+    <meta name="tocFile" content="../toc/IDGBDBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Task<wbr />Queue<wbr />Manager Methods</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDADASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="ea526075-7f97-eb51-417d-ca57e5280178.htm">AddScheduledTask</a>
+                  </td>
+                  <td>
+            En-queues the scheduled task into the Multi-Server Mode, AsyncTaskQueue.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7c6f6999-c67c-fee3-ec91-c3cb5d8c9ebb.htm">AddTask</a>
+                  </td>
+                  <td>
+            En-queues the task into the Multi-Server Mode, AsyncTaskQueue.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f7eb5f63-6096-e71e-453b-0c8b73c3981a.htm">DetachTaskQueue</a>
+                  </td>
+                  <td>
+            Detaches a task queue wrapper from task delegation by this task queue manager instance.
+            - Does not modify the task queue in the server.
+            - Un-registers the TaskQueue object and its associated handlers inside the task queue manager.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8c69b16a-10fd-bf99-82a7-ae51a459d207.htm">Dispose</a>
+                  </td>
+                  <td>
+            IDisposable implementation.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b15c4eba-2692-4849-5ca6-8c04b0cce3f0.htm">EnableTaskPolling</a>
+                  </td>
+                  <td>
+            Enables or disables the task queue polling. By default the polling is
+            enabled and starts when the first queue gets opened.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1a75a859-3c66-d4bd-d61d-c455472fea3a.htm">GetBroadcastTasks</a>
+                  </td>
+                  <td>
+            Resolves a collection of broadcast messages, wrapped as a List{ApplicationTask}.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="eaaace2c-9897-fbc3-0528-4cf315940aa5.htm">GetLatestBroadcastMessageIdentifier</a>
+                  </td>
+                  <td>
+            Resolves the latest broadcast id for the passed queue identifier.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ff017ac6-aaf2-c01d-ef5a-62db27d4ddd9.htm">GetLatestBroadcastMessageIdentifiers</a>
+                  </td>
+                  <td>
+            Resolves the latest broadcast ids for the passed queue identifiers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5e62ccf9-d2df-2241-3619-8156cb126b01.htm">GetNewBroadcastMessages</a>
+                  </td>
+                  <td>
+            Gets new broadcast messages from the server.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d061dd44-c067-b482-cc74-296e08f9ea1e.htm">GetTaskInfoTasks</a>
+                  </td>
+                  <td>
+            Resolves a collection of application task info's, wrapped as a List{ApplicationTask}.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2d740842-e1d5-8db0-07b3-8c4453d3e568.htm">OnPollingTimeElapsed</a>
+                  </td>
+                  <td>
+            Polling timer handler.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1289f4c5-350c-b90e-e6ca-f04aca88fe41.htm">OpenTaskQueue</a>
+                  </td>
+                  <td>
+            Registers a task queue wrapper and opens the task queue in the server.
+            - Opens the task queue in the server.
+            - Registers the TaskQueue object and its associated handlers inside the task queue manager.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="997d5cd1-340b-2e05-f64b-a2223c55acb0.htm">PollTasks</a>
+                  </td>
+                  <td>
+            Polls the server and reserves tasks for processing as well as gets new broadcast messages.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2849ffe9-1d3a-b455-43f0-846ec20cbd3c.htm">ReserveTasksForProcessing</a>
+                  </td>
+                  <td>
+            Reserve tasks for processing from the server.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a09e9da4-4c12-98ba-91b1-30fbde58be28.htm">SendBroadcastMessage</a>
+                  </td>
+                  <td>
+            Sends a broadcast message to the passed task queue.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a1fdea1c-540f-81bd-a2bd-a632ae944269.htm">TransactionalBroadcastJobProcessor</a>
+                  </td>
+                  <td>
+            Processes the app task to create a broadcast message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="591b4947-5458-48e9-66a6-59fafbfe774b.htm">TriggerPolling</a>
+                  </td>
+                  <td>
+            Triggers polling right away (when enabled).
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="320b7b27-d65e-2265-96eb-8d57cbfa0863.htm">UpdateTask</a>
+                  </td>
+                  <td>
+            Updates the state and progress values for a task in the server.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0cf607c0-15cf-e897-49f9-1bb579496262.htm">WaitAll<span id="LSTC853F6BB_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td>
+            Waits for all Tasks that are still Running to complete.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="67d2ffb5-257f-8d46-379a-1a572cd94bf1.htm">WaitAll(TimeSpan)</a>
+                  </td>
+                  <td>
+            Waits for all Tasks that are still Running to complete.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="c7774a2e-e53f-5b75-5aac-56c5e888bd3f.htm">TaskQueueManager Class</a>
+              </div>
+              <div>
+                <a href="d685572d-372e-40a9-f473-712980cc0948.htm">MFiles.VAF.Common.ApplicationTaskQueue Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

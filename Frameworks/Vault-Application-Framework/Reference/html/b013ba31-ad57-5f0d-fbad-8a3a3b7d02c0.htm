@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>ObjVerExPermissions Class</title>
+    <meta name="Title" content="ObjVerExPermissions" />
+    <meta name="Help.Id" content="T:MFiles.VAF.Common.ObjVerExPermissions" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Common" />
+    <meta name="guid" content="b013ba31-ad57-5f0d-fbad-8a3a3b7d02c0" />
+    <meta name="Description" content="Permissions wrapper for an ." />
+    <meta name="tocFile" content="../toc/IDADBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Obj<wbr />Ver<wbr />Ex<wbr />Permissions Class</h1>
+            <div class="summary">
+            Permissions <a href="7b600440-66e0-7b31-2d79-fdb13dd2ff13.htm">Accessibility</a> wrapper for an <a href="921b018e-2c4f-106b-b642-fd378fda0138.htm">ObjVerEx</a>.
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.VAF.Common</a><br /><strong>Assembly:</strong> MFiles.VAF (in MFiles.VAF.dll) Version: 24.1.706.1<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">ObjVerExPermissions</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">ObjVerExPermissions</span></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDAAEASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="09bd7109-a832-026c-7c45-0325adc670e4.htm">ObjVerExPermissions(ObjVerEx, UserOrUserGroupID)</a>
+                  </td>
+                  <td>
+            Constructor Overload accepting a <span class="noLink">UserOrUserGroupID</span>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="28685176-0ab9-d4a5-666b-1e15bcd00d41.htm">ObjVerExPermissions(ObjVerEx, Int32, Boolean)</a>
+                  </td>
+                  <td>
+            Default ObjVerEx Permissions Constructor.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDCEASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="12be76ee-dee5-3181-0eb8-ba4d174b00b0.htm">CanAttachObject</a>
+                  </td>
+                  <td>
+            Checks the attach object access for the passed user or group against this object version.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="47dfa58c-05d6-6669-9489-ae4f85d3da54.htm">CanChangePermissions</a>
+                  </td>
+                  <td>
+            Checks the change permissions access for the passed user or group against this object version.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="dc952944-b8fa-9414-325b-0e3a61c5c739.htm">CanDelete</a>
+                  </td>
+                  <td>
+            Checks the delete access for the passed user or group against this object version.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c5c44bfd-f43d-693f-450d-21e745c74af4.htm">CanEdit</a>
+                  </td>
+                  <td>
+            Checks the edit access for the passed user or group against this object version.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b8ab7c44-584a-5f9d-bf6c-f1bf67226f3f.htm">CanRead</a>
+                  </td>
+                  <td>
+            Checks the read access for the passed user or group against this object version.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="de3e7d18-f147-4c7f-bbf5-aad2fc547c41.htm">Class</a>
+                  </td>
+                  <td>
+                    <a href="7b600440-66e0-7b31-2d79-fdb13dd2ff13.htm">Accessibility</a> for this <span class="noLink">ObjectClass</span>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b47c2811-e3e8-4f31-e80a-329a096989e4.htm">IsGroup</a>
+                  </td>
+                  <td>
+                    <span class="noLink">UserAccount</span> or <span class="noLink">UserGroup</span> Flag.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="75608f2b-5b63-d6d2-5962-f093be6f4b12.htm">Object</a>
+                  </td>
+                  <td>
+                    <a href="7b600440-66e0-7b31-2d79-fdb13dd2ff13.htm">Accessibility</a> for this <span class="noLink">ObjType</span>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4a87df3c-1da9-e9cf-17c3-3cd758902380.htm">ObjVerEx</a>
+                  </td>
+                  <td>
+            Source <a href="921b018e-2c4f-106b-b642-fd378fda0138.htm">ObjVerEx</a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ae3e2078-b616-a968-430f-e79ac97f1ce2.htm">Properties</a>
+                  </td>
+                  <td>
+                    <a href="7b600440-66e0-7b31-2d79-fdb13dd2ff13.htm">Accessibility</a> for all <span class="noLink">PropertyDef</span>s found on this <a href="921b018e-2c4f-106b-b642-fd378fda0138.htm">ObjVerEx</a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4a9b1a21-6afd-ca64-7331-43b63273cc16.htm">UserOrGroupID</a>
+                  </td>
+                  <td>
+                    <span class="noLink">UserAccount</span> or <span class="noLink">UserGroup</span> ID.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDABEASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="9666bdac-66aa-40b2-33d8-d35c0fec9965.htm">ToString<span id="LST6CD8FD4A_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td>
+            Returns a object access report as a string.
+            <br />(Overrides <a href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString" target="_blank" rel="noopener noreferrer">Object<span id="LST6CD8FD4A_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ToString<span id="LST6CD8FD4A_2" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6ffa4e10-feb9-1543-8608-1793f806f8c0.htm">ToString(Boolean)</a>
+                  </td>
+                  <td>
+            Returns a object access report as a string.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.VAF.Common Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

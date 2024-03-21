@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="098ac8b9-3baf-b68e-7872-18cc76e08d1c.htm">Translatable<wbr />Content</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="2e994eb1-0d05-23fa-79cb-3ff75670ebb6" class="has-submenu" href="2e994eb1-0d05-23fa-79cb-3ff75670ebb6.htm">
+        <span data-tocFile="../toc/IDA0JC0AEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="98a86590-0806-7fd3-f880-f5f7dfbeba69" href="98a86590-0806-7fd3-f880-f5f7dfbeba69.htm">Properties</a>
+    </li>
+    <li>
+      <a id="098d7a32-addf-2a6d-c1cc-665ceabe41d2" class="has-submenu" href="098d7a32-addf-2a6d-c1cc-665ceabe41d2.htm">
+        <span data-tocFile="../toc/IDC0JC0AEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="9a1d8ea3-8fbb-ddd8-8cb9-9bcb6ba50a1e" class="has-submenu" href="9a1d8ea3-8fbb-ddd8-8cb9-9bcb6ba50a1e.htm">
+        <span data-tocFile="../toc/IDD0JC0AEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Fields</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>
