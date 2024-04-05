@@ -1,0 +1,132 @@
+@function nightSky($weight: 100)
+{
+	$c: #0A1541;
+	@if $weight == 80{
+		$c: #3B4467;
+	}
+	@if $weight == 60{
+		$c: #6C728D;
+	}
+	@if $weight == 40{
+		$c: #9DA1B3;
+	}
+	@if $weight == 20{
+		$c: #CED0D9;
+	}
+	@if $weight == 10{
+		$c: #E6E8EC;
+	}
+	@if $weight == 5{
+		$c: #F3F3F6;
+	}
+	@return $c;
+}
+@function blueMoment($weight: 100)
+{
+	$c: #006EEF;
+	@if $weight == 80{
+		$c: #338BF2;
+	}
+	@if $weight == 60{
+		$c: #66A8F5;
+	}
+	@if $weight == 40{
+		$c: #99C5F9;
+	}
+	@if $weight == 20{
+		$c: #CCE2FC;
+	}
+	@if $weight == 10{
+		$c: #E5F0FD;
+	}
+	@if $weight == 5{
+		$c: #F2F8FE;
+	}
+	@return $c;
+}
+@function deepBlue($weight: 100)
+{
+	$c: #001F88;
+	@if $weight == 80{
+		$c: #334CA0;
+	}
+	@if $weight == 60{
+		$c: #6679B8;
+	}
+	@if $weight == 40{
+		$c: #99A5CF;
+	}
+	@if $weight == 20{
+		$c: #CCD2E7;
+	}
+	@if $weight == 10{
+		$c: #E5E9F3;
+	}
+	@if $weight == 5{
+		$c: #F2F4F9;
+	}
+	@return $c;
+}
+@function evergreen($weight: 100)
+{
+	$c: #0C685D;
+	@if $weight == 80{
+		$c: #3D867D;
+	}
+	@if $weight == 60{
+		$c: #6DA49E;
+	}
+	@if $weight == 40{
+		$c: #9EC3BE;
+	}
+	@if $weight == 20{
+		$c: #CEE1DF;
+	}
+	@if $weight == 10{
+		$c: #E7F0EF;
+	}
+	@if $weight == 5{
+		$c: #F3F8F7;
+	}
+	@return $c;
+}
+@function dark()
+{
+	@return #000000;
+}
+@function white()
+{
+	@return #FFFFFF;
+}
+@function highlightYellow()
+{
+	@return #FFFFAF;
+}
+@function blue()
+{
+	@return #006EEF;
+}
+@function cyan(){
+	@return #15A0C8;
+}
+@function purple(){
+	@return #7253C8;
+}
+@function green(){
+	@return #00AB47;
+}
+@function red(){
+	@return #D50000;
+}
+@function orange(){
+	@return #F56900;
+}
+@function yellow(){
+	@return #C28900;
+}
+@function grey(){
+	@return #6C728D;
+}
+@mixin boxShadow(){
+	box-shadow: 4px 4px 10px 0px #0000001A
+}

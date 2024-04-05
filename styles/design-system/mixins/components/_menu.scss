@@ -1,0 +1,44 @@
+@use "../fonts" as fonts;
+@use "../colours" as colours;
+
+@mixin menu(){
+    border-radius: 8px;
+	@include colours.boxShadow();
+    background-color: colours.white();
+    border: 1px solid colours.nightSky(20);
+}
+
+@mixin menu-item(){
+    padding: 8px 16px;
+    min-width: 200px;
+    text-align: left;
+    @include fonts.font-body1();
+    cursor: pointer;
+    a, a:link, a:hover, a:visited{
+        color: colours.nightSky();
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover{
+        background-color: colours.deepBlue(5);
+    }
+    &:active{
+        background-color: colours.deepBlue(20);
+    }
+    &.separator-bottom
+    {
+        border-bottom: 1px solid colours.nightSky(20); 
+        padding-bottom: 16px;
+    }
+    &.separator-bottom + li{
+        padding-top: 16px;
+    }
+    &:first-child{ border-top-left-radius: 8px; border-top-right-radius: 8px; padding-top: 16px; }
+    &:last-child{ border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; padding-bottom: 16px; }
+}
+
+@mixin separator(){
+
+}

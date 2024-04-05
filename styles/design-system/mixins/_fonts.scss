@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@mixin font-body(){
+	font-family: "Open Sans", sans-serif;
+}
+
+@mixin font-heading(){
+	font-family: "Figtree", sans-serif;
+}
+
+@mixin font-heading1(){
+	font-size: 60px;
+	line-height: 72px;
+}
+
+@mixin font-heading2(){
+	font-size: 48px;
+	line-height: 60px;
+}
+
+@mixin font-heading3(){
+	font-size: 34px;
+	line-height: 40px;
+}
+
+@mixin font-heading4(){
+	font-size: 24px;
+	line-height: 32px;
+}
+
+@mixin font-heading5(){
+	font-size: 20px;
+	line-height: 28px;
+}
+
+@mixin font-heading6(){
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@mixin font-heading7(){
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin font-body1(){
+	@include font-body;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin font-body2(){
+	@include font-body;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@mixin tag(){
+	@include font-body1;
+}
+
+@mixin tag-small(){
+	@include tag;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+html, body {
+	@include font-body1;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+	@include font-heading;
+}
+
+h1{ @include font-heading1; }
+h2{ @include font-heading2; }
+h3{ @include font-heading3; }
+h4{ @include font-heading4; }
+h5{ @include font-heading5; }
+h6{ @include font-heading6; }
+h7{ @include font-heading7; }

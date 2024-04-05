@@ -1,0 +1,26 @@
+@use "../../variables" as variables;
+@use "../fonts" as fonts;
+@use "../colours" as colours;
+
+@mixin widget(){
+	background-color: colours.white();
+	border: 0px;
+	color: colours.nightSky();
+	border-radius: variables.$borderradius;
+	padding: 20px;
+	margin: 10px 0px;
+	@include colours.boxShadow();
+	h2{ 
+		@include fonts.font-heading5;
+		margin-bottom: 20px;
+		a, a:link, a:hover, a:visited{
+			color: colours.nightSky();
+			text-decoration: none;
+		}
+	}
+	h3{ 
+		@include fonts.font-heading6;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+}
