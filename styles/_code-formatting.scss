@@ -1,3 +1,6 @@
+@use "design-system/mixins/_colours" as colours;
+@use "design-system/mixins/_fonts" as fonts;
+
 pre {
     position: relative;
 	border: 1px solid #CCC;
@@ -5,19 +8,18 @@ pre {
 
 code.highlighter-rouge
 {
-    display: inline-block;
     padding: 0px 5px;
-    background-color: lightyellow;
-    border: 1px solid gold;
+    background-color: colours.highlightYellow();
+    border: 1px solid colours.yellow();
 	margin: 0px 2px;
 	font-family: 'Courier New', Courier, monospace;
+    text-wrap: nowrap;
 }
 
 pre>code.hljs,
 	pre>code.language-txt,
 	pre>code.language-reg {
-	padding: 0.5em;
-    border-top: 32px solid #EEE;
+    border-top: 32px solid colours.nightSky(5);
 	display: block;
 	overflow-x: auto;
 }
@@ -116,11 +118,6 @@ code.language-reg::before {
 .disableLineNumbers .toggleLineNumbers .btn
 {
 	background-color: transparent;
-}
-
-code.hljs
-{
-	padding-top: 2em;
 }
 
 .toggleLineNumbers i.btn::before {

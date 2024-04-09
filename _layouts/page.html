@@ -6,6 +6,24 @@ layout: default
 	<div class="entry">
 		<div class="scroll">
 			<div id="options"></div>
+			
+			{% if page.legacy %}
+			
+				<div id="legacy-wrapper">
+                    <div class="legacy">
+                        <h2>Warning - legacy content</h2>
+                        <p class="note warning legacy">
+                            You are not viewing the latest version of this guidance.  The information on this page is for reference only, and should not be used with new M-Files developments.
+                            <div class="buttons">
+                                <button class="close" type="button">Show me the legacy version</button>
+                                <a href="{{page.latest_version}}" class="button latest primary">Show me the latest version</a>
+                            </div>
+                        </p>
+                    </div>
+				</div>
+
+			{% endif %}
+            
             <div class="hero">
             
                 <h1 itemprop="headline">{{ page.title }}</h1>
@@ -30,23 +48,6 @@ layout: default
             </div>
 			
 			{% include social.html %}
-			
-			{% if page.legacy %}
-
-
-				<div class="legacy-banner"><a href="{{ site.baseurl }}/Legacy/">Legacy functionality</a></div>
-			
-				<div class="legacy">
-					<p class="note warning legacy">
-						You are not viewing the latest version of this guidance.  The information on this page is for legacy reference only, and should not be used with new M-Files developments.
-						<span class="buttons">
-							<button class="close">Show me the legacy version</button>
-							<a href="{{page.latest_version}}" class="button latest">Show me the latest version</a>
-						</span>
-					</p>
-				</div>
-
-			{% endif %}
 
 			{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
 			{% assign inthisarticle_size = inthisarticle | size %}
