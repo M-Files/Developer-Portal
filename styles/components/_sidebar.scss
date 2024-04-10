@@ -1,0 +1,40 @@
+@import "sidebar/treeview";
+
+body{
+
+	aside#sidebar{
+		display: none;
+		position: fixed;
+		top: 68px;
+		left: 0px;
+		width: 300px;
+		padding: 0px 20px;
+		bottom: 0px;
+		overflow: auto;
+		background-color: colours.nightSky();
+	}
+
+	&.sidebar-expanded{
+		aside#sidebar{
+			display: block;
+		}
+	}
+	nav.secondary li {
+		a, a:visited, a:active, a:hover{
+			color: colours.white();
+            display: block;
+            padding: 7px 0px 7px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+		}
+	}
+}
+@media screen and (min-width: 1000px) {
+	body{
+		aside#sidebar{
+			display: block;
+			grid-column: 1;
+			width: 250px;
+		}
+	}
+}

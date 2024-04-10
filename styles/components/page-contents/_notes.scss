@@ -1,0 +1,56 @@
+
+@use "../../design-system/_variables" as variables;
+@use "../../design-system/icons" as icons;
+@use "../../design-system/mixins/_colours" as colours;
+@use "../../design-system/mixins/_fonts" as fonts;
+@use "../../design-system/mixins/components/_widget" as widgets;
+@use "../../design-system/mixins/components/buttons" as buttons;
+
+body{
+
+	p.note {
+		background-color: colours.nightSky(5);
+		position: relative;
+		padding: 7px 10px 5px 30px;
+		margin: 20px 0px;
+		border-radius: variables.$borderradius_small;
+		min-height: 24px;
+		&::before {
+			content: " ";
+			white-space: pre;
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			background-image: icons.information();
+			position: absolute;
+			background-position: center center;
+			background-repeat: no-repeat;
+			left: 4px;
+			top: 4px;
+		}
+	}
+	
+	p.note.warning,
+		p.note.stub,
+		p.note.prerelease,
+		p.note.prerelease
+	{
+		&.stub
+		{
+			font-style: italic;
+		}
+		&.warning::before, &.stub::before {
+			background-image: icons.warning();
+		}
+	}
+	
+	p.note.hint
+	{
+		background-color: rgba(224, 237, 222, 1);
+		border: 1px solid rgb(64, 146, 89);
+		&::before
+		{
+			background-image: icons.hint();
+		}
+	}
+}

@@ -1,0 +1,55 @@
+@use "../colours" as colours;
+@use "../fonts" as fonts;
+@use "../../variables" as variables;
+
+@mixin table(){
+    border: 1px solid #CCC;
+    border-collapse: separate;
+    border-radius: variables.$borderradius_small;
+    tr{
+        min-height: 44px;
+        td, th{
+            padding: 12px;
+        }
+        &:hover{
+            td, th{
+                background-color: colours.deepBlue(5);
+            }
+        }
+    }
+
+    /* sort out the border radiuses on the corners... */
+    >tr:first-child, *:first-child > tr:first-child{ 
+        td:first-child, th:first-child{ 
+            border-top-left-radius: variables.$borderradius_small;
+        }
+        td:last-child, th:last-child{
+            border-top-right-radius: variables.$borderradius_small;
+        }
+    }
+    >tr:last-child, *:last-child > tr:last-child{ 
+        td:first-child, th:first-child{ 
+            border-bottom-left-radius: variables.$borderradius_small;
+        }
+        td:last-child, th:last-child{
+            border-bottom-right-radius: variables.$borderradius_small;
+        }
+    }
+
+    tbody{
+        tr{
+            td, th{
+                border-top: 1px solid colours.nightSky(20);
+            }
+        }
+    }
+    thead{
+        tr{
+            td, th{
+                background-color: colours.nightSky(5);
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    }
+}

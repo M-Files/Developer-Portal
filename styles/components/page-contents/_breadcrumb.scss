@@ -1,0 +1,22 @@
+
+@use "../../design-system/_variables" as variables;
+@use "../../design-system/mixins/_colours" as colours;
+@use "../../design-system/mixins/_fonts" as fonts;
+@use "../../design-system/mixins/components/_widget" as widgets;
+@use "../../design-system/mixins/components/buttons" as buttons;
+
+body article.page{
+	.breadcrumb{
+		li{
+			display: inline;
+			margin: 0px;
+			a{
+				text-decoration: none;
+				color: colours.nightSky();
+			}
+		}
+		li:not(:first-child):before{
+			content: " | ";
+		}
+	}
+}

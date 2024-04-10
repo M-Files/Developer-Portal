@@ -1,0 +1,111 @@
+
+@use "../design-system/_variables" as variables;
+@use "../design-system/mixins/_colours" as colours;
+@use "../design-system/mixins/_fonts" as fonts;
+@use "../design-system/mixins/components/_widget" as widgets;
+@use "../design-system/mixins/components/buttons" as buttons;
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+body{
+    
+	header{
+		grid-row: 1;
+		display: grid;
+		grid-template-columns: min-content min-content auto min-content;
+		grid-template-rows: auto;
+		align-items: center;
+		justify-items: left;
+		padding: 0px 28px;
+		min-height: 68px;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		height: 68px;
+		background-color: colours.nightSky();
+		z-index: 100;
+		#hamburger
+		{
+			grid-column: 1;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+			justify-self: center;
+			cursor: pointer;
+			path{ fill: white; }
+		}
+		#logo{ grid-column: 2; margin-right: 40px; }
+		.search{
+			justify-self: right;
+			grid-column: 4;
+			input#query{
+				display: none;
+			}
+			button[type=submit]{
+				background-color: transparent;
+				padding: 0px;
+				display: grid;
+				text-align: center;
+				align-items: center;
+				justify-items: center;
+				grid-template-columns: auto 0px;
+				color: colours.white();
+				min-width: auto;
+				width: 52px;
+				height: 32px;
+				span.label{ display: none; }
+				&:hover{
+					border-color: colours.white();
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 700px) {
+	body{
+		header{
+			.search{
+				position: relative;
+				width: 300px;
+				height: 32px;
+				color: colours.nightSky(60);
+				input#query{
+					display: block;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					right: 0px;
+					bottom: 0px;
+					border-radius: variables.$borderradius;
+					border: 0px;
+					padding: 10px 55px 10px 20px;
+				}
+				button[type=submit]{
+					position: absolute;
+					top: 0px;
+					right: 0px;
+					bottom: 0px;
+					border: 0px;
+					color: colours.nightSky(60);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	body{
+		header{
+			#hamburger { display: none; }
+		}
+	}
+}

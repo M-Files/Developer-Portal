@@ -1,0 +1,64 @@
+
+@use "../../design-system/_variables" as variables;
+@use "../../design-system/icons" as icons;
+@use "../../design-system/mixins/_colours" as colours;
+@use "../../design-system/mixins/_fonts" as fonts;
+@use "../../design-system/mixins/components/_widget" as widgets;
+@use "../../design-system/mixins/components/buttons" as buttons;
+
+body{
+	.treeview{
+		ul{
+			padding-left: 14px;
+		}
+		li{
+			display: none;
+			position: relative;
+			margin: 4px 0px;
+			svg.expandCollapseIcon{
+				position: absolute;
+				top: 10px;
+				left: 5px;
+				cursor: pointer;
+			}
+			&.expanded{
+				> svg.expandCollapseIcon{
+					rotate: 90deg;
+				}
+			}
+			a{
+				display: block;
+				padding: 7px 0px 7px 24px;
+				text-decoration: none;
+				border-radius: variables.$borderradius_small;
+			}
+			a, a:visited, a:active, a:hover{
+				color: colours.white();
+			}
+			&.current:not(:hover) > a {
+				background-color: colours.deepBlue(40);
+				color: colours.nightSky();
+			}
+			&:hover > a{
+				background-color: colours.deepBlue(80);
+			}
+		}
+		> li, li.expanded > ul > li{
+			display: block;
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	body{
+		.treeview{
+			li{ display: none; }
+			> li, li.expanded > ul > li{
+				display: block;
+			}
+			ul{
+				padding-left: 14px;
+			}
+		}
+	}
+}

@@ -718,6 +718,9 @@
 						"Link": "/Legacy/Vault-Application-Framework/Visual-Studio/",
 						"Title": "Visual Studio Integration",
 						"Items": [{
+							"Link": "/Legacy/Vault-Application-Framework/Visual-Studio/VAF2.2/",
+							"Title": "VAF 2.2 Visual Studio Template"
+						},{
 							"Link": "/Legacy/Vault-Application-Framework/Visual-Studio/VAF2.1/",
 							"Title": "VAF 2.1 Visual Studio Template"
 						},{
@@ -728,27 +731,6 @@
 					{
 						"Link": "/Legacy/Vault-Application-Framework/Background-Operations/",
 						"Title": "Background Operations"
-					},
-					{
-						"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/",
-						"Title": "VAF 2.2 Multi-Server Mode",
-						"Items": [{
-								"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/",
-								"Title": "Task Queues",
-								"Items": [{
-									"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/Broadcast/",
-									"Title": "Broadcast"
-								},{
-									"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/Concurrent/",
-									"Title": "Concurrent"
-								},{
-									"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/Sequential/",
-									"Title": "Sequential"
-								}]
-							},{
-								"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Recurring-Tasks/",
-								"Title": "Recurring Tasks"
-							}]
 					}]
 			}
 		]
