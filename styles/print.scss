@@ -1,3 +1,57 @@
 ---
 ---
 
+@use "design-system/mixins/_fonts" as fonts;
+
+@page{size:auto}
+
+body{
+	@include fonts.font-body1();
+    font-size: 80%;
+
+	h1, h2, h3, h4, h5, h6, h7, h8 {
+		@include fonts.font-heading;
+	}
+
+    a[rel~=external]::after
+    {
+        content:" (" attr(href) ")";
+        text-decoration:underline;
+    }
+
+    header {
+        #hamburger, .search{
+            display: none;
+        }
+        #logo{
+            path{
+                fill: #000 !important;
+            }
+        }
+    }
+    pre{
+        white-space:pre-wrap;
+        word-wrap:break-word;
+        page-break-inside:avoid;
+        page-break-after:auto
+    }
+    img{
+        page-break-inside: avoid
+    }
+
+    #share-links, 
+        #options,
+        .breadcrumb, 
+        .other-articles,
+        .copyCode,
+        .toggleLineNumbers, 
+        .public-anchor,
+        aside#sidebar,
+        footer > section.links{
+        display: none;
+    }
+
+    .hljs-ln td.hljs-ln-numbers{
+        padding-right: 5px;
+    }
+}
