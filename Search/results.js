@@ -5,7 +5,11 @@ $(document).ready(function()
             site = location.protocol + "//" + location.host;
 
         query.setFromURL('query');
-        $("input#query").val(query.get());
+        var q = query.get();
+        $("input#query").val(q);
+        if(!q || !q.length == 0)
+            return;
+        
     var data = query.getData();
 
     var searchIndex,
@@ -28,7 +32,7 @@ $(document).ready(function()
         });
 
         // search for the query and store the results as an array
-        results = searchIndex.search(query.get());
+        results = searchIndex.search(q);
         
         // add the title of each post into each result, too (this doesn't come standard with lunr.js)
         for(var result in results) {

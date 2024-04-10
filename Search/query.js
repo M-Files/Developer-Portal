@@ -49,7 +49,7 @@
 
   // when we initialize a query, we have the option of giving it a query string
   function Query(q) {
-    if(typeof q !== 'undefined' && typeof q === 'string') {
+    if(typeof q !== 'undefined' && typeof q === 'string' && q.length > 0) {
       this.q = q;
     }
   }
