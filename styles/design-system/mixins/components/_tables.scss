@@ -3,7 +3,7 @@
 @use "../../variables" as variables;
 
 @mixin table(){
-    border: 1px solid #CCC;
+    border: 1px solid colours.nightSky(20);
     border-collapse: separate;
     border-radius: variables.$borderradius_small;
     tr{

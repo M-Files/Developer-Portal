@@ -5,7 +5,8 @@
 
 pre {
     position: relative;
-	border: 1px solid #CCC;
+	border: 1px solid colours.nightSky(20);
+    border-radius: 8px;
 	&.highlight.parsing
 	{
 		display: none;
@@ -22,8 +23,8 @@ pre {
 	user-select: none;
 
 	text-align: right;
-	color: #ccc;
-	border-right: 1px solid #CCC;
+	color: colours.nightSky(60);
+	border-right: 1px solid colours.nightSky(20);
 	vertical-align: top;
 	padding-right: 5px;
 
@@ -51,6 +52,7 @@ pre>code.hljs,
     border-top: 32px solid colours.nightSky(5);
 	display: block;
 	overflow-x: auto;
+    border-radius: 8px;
 }
 
 code::before {
@@ -59,6 +61,7 @@ code::before {
     position: absolute;
     top: 8px;
 	right: 8px;
+	color: colours.nightSky();
 }
 
 code.language-reg::before {
@@ -114,7 +117,7 @@ code.language-reg::before {
     top: 5px;
 	left: 8px;
 	font-size: 1.5em;
-	color: #333;
+	color: colours.nightSky(60);
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
