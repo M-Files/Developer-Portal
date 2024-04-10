@@ -3,12 +3,9 @@
 
 @use "reset.css";
 
-@use "design-system/_variables" as variables;
 @use "design-system/icons" as icons;
 @use "design-system/mixins/_colours" as colours;
 @use "design-system/mixins/_fonts" as fonts;
-@use "design-system/mixins/components/_widget" as widgets;
-@use "design-system/mixins/components/buttons" as buttons;
 
 @import "components/scrollbar";
 @import "components/footer";
@@ -37,6 +34,8 @@ body{
 	h5{ @include fonts.font-heading5; }
 	h6{ @include fonts.font-heading6; }
 	h7{ @include fonts.font-heading7; }
+
+	p { margin: 12px 0px;}
 
 	a, a:visited, a:link, a:active{
 		color: colours.blueMoment();
@@ -107,5 +106,4 @@ body{
 }
 
 
-@import "_code-formatting.scss";
 @import "themes/_themes";
