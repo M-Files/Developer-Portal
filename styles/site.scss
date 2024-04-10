@@ -18,12 +18,26 @@
 @import "components/tables";
 @import "components/page-contents";
 
+
 body{
 	min-width: 500px;
 	background-color: colours.nightSky();
 	color: colours.white();
 	overflow: hidden;
 	@include fonts.font-body1();
+
+	h1, h2, h3, h4, h5, h6, h7, h8 {
+		@include fonts.font-heading;
+	}
+
+	h1{ @include fonts.font-heading1; }
+	h2{ @include fonts.font-heading2; }
+	h3{ @include fonts.font-heading3; }
+	h4{ @include fonts.font-heading4; }
+	h5{ @include fonts.font-heading5; }
+	h6{ @include fonts.font-heading6; }
+	h7{ @include fonts.font-heading7; }
+
 	a, a:visited, a:link, a:active{
 		color: colours.blueMoment();
 		text-decoration: none;
@@ -80,7 +94,10 @@ body{
 			top: 70px;
 			right: 15px;
 			width: 292px;
-			height: calc(100vh - 130px);
+			#in-this-article{
+				height: calc(100vh - 130px);
+				overflow-y: auto;
+			}
 		}
 	}
 }

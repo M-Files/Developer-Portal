@@ -64,19 +64,3 @@
 	font-size: 12px;
 	line-height: 20px;
 }
-
-html, body {
-	@include font-body1;
-}
-
-h1, h2, h3, h4, h5, h6, h7, h8 {
-	@include font-heading;
-}
-
-h1{ @include font-heading1; }
-h2{ @include font-heading2; }
-h3{ @include font-heading3; }
-h4{ @include font-heading4; }
-h5{ @include font-heading5; }
-h6{ @include font-heading6; }
-h7{ @include font-heading7; }
