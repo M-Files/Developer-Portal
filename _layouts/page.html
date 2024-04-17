@@ -45,7 +45,7 @@ layout: default
 				</nav>
             </div>
 			
-			{% include social.html %}
+			{% include_cached social.html %}
 
 			{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
 			{% assign inthisarticle_size = inthisarticle | size %}
@@ -95,10 +95,6 @@ layout: default
             {% assign other_size = other | size %}
             {% if other_size > 0 %}
                 {{ other | strip_newlines }}
-            {% endif %}
-        
-            {% if page.comments %} 
-            {% include disqus.html %}
             {% endif %}
 </article>
 

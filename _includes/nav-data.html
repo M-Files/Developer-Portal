@@ -6,16 +6,14 @@
 		{%- capture children -%}{%- include nav-data.html items=item.Items sub=true -%}{%- endcapture -%}
 		{%- assign link = item.Link -%}
 		{%- assign starting = link | slice: 0, 4 -%}
-		<li{% if item.Link == navurl %} class="current"{% endif %}>
-			<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{% if item.IsExternal %} target="_blank" rel="noopener"{% endif %}{% if item.ID %} id="{{ item.ID }}"{% endif %}>
+		<li{% if item.Link == navurl %} class="current"{% endif %}><a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{% if item.IsExternal %} target="_blank" rel="noopener"{% endif %}{% if item.ID %} id="{{ item.ID }}"{% endif %}>
 				<span class="text">
 					{{ item.Title }}
 					{%- if item.IsOfficialReference -%}<span class="iconify" data-icon="mdi:bookmark-check"></span>{%- endif -%}
 					{%- if item.IsGitHubLink -%}<span class="iconify" data-icon="mdi:github-circle"></span>{%- endif -%}
 				</span>
 			</a>
-			{{ children }}
-		</li>
+			{{ children }}</li>
 	{%- endfor -%}
 	</ul>
 {%- endif -%}

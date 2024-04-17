@@ -1,6 +1,9 @@
-
+{%- assign navurl = page.url | remove: 'index.html' -%}
+{%- capture match -%}<li><a href="{{ navurl }}">{%- endcapture -%}
+{%- capture replaceWith -%}<li class="current"><a href="{{ navurl }}">{%- endcapture -%}
 <nav class="primary" role="navigation" aria-label="Primary site navigation">
-    {%- include nav-data.html items=site.data.navigation -%}
+    {%- capture nav -%}{%- include_cached nav-data.html items=site.data.navigation -%}{%- endcapture -%}
+    {{ nav | replace_first: match, replaceWith }}
 </nav>
 <nav class="secondary" role="navigation" aria-label="Secondary site navigation">
     <ul>
