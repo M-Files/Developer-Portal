@@ -17,11 +17,13 @@
 
 
 body{
-	min-width: 500px;
-	background-color: colours.nightSky();
+	min-width: 490px;
+	background-color: colours.nightSky(5);
 	color: colours.white();
-	overflow: hidden;
 	@include fonts.font-body1();
+	display: grid;
+	grid-template-rows: 68px 20px auto auto;
+	grid-template-columns: 20px auto 20px;
 
 	strong{
 		font-weight: 400;
@@ -75,9 +77,9 @@ body{
 }
 @media screen and (min-width: 1000px) {
 	body{
-		article.page{
-			margin-left: 291px;
-			> .entry div.hero{
+		article.page, footer{
+			margin-left: 275px;
+			div.hero{
 				min-height: 300px;
 			}
 		}
@@ -94,13 +96,17 @@ body{
 		}
 		#in-page-nav{
 			position: fixed;
-			top: 70px;
-			right: 15px;
-			width: 292px;
+			top: 77px;
+			left: 290px;
+			width: 290px;
+			bottom: 5px;
 			#in-this-article{
 				height: calc(100vh - 130px);
 				overflow-y: auto;
 			}
+		}
+		article.page, footer{
+			margin-left: 610px;
 		}
 	}
 }

@@ -20,6 +20,7 @@ body{
 				top: 10px;
 				left: 5px;
 				cursor: pointer;
+				path{ fill: colours.nightSky(); }
 			}
 			&.expanded{
 				> svg.expandCollapseIcon{
@@ -33,14 +34,10 @@ body{
 				border-radius: variables.$borderradius_small;
 			}
 			a, a:visited, a:active, a:hover{
-				color: colours.white();
-			}
-			&.current:not(:hover) > a {
-				background-color: colours.deepBlue(40);
 				color: colours.nightSky();
 			}
-			&:hover > a{
-				background-color: colours.deepBlue(80);
+			&.current > a {
+				font-weight: 600;
 			}
 		}
 		> li, li.expanded > ul > li{

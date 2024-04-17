@@ -5,20 +5,6 @@ includeInSearch: true
 excerpt: This website complements and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.
 ---
 
-## Quick links
-
-* [COM API]({{ site.baseurl }}/APIs/COM-API/)
-* [REST API]({{ site.baseurl }}/APIs/REST-API/)
-* [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/)
-* [User Interface Extensibility Framework]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/)
-* [External Object Type Data Sources]({{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/)
-* [Metadata Card Configuration]({{ site.baseurl }}/Built-In/Metadata-Card-Configuration/)
-* [UX/Design guidance]({{ site.baseurl}}/UX-Design/)
-* [M-Files URLs]({{ site.baseurl }}/Built-In/URLs/)
-* [VBScript]({{ site.baseurl }}/Built-In/VBScript/)
-* [Samples]({{ site.baseurl }}/Samples-And-Libraries/Samples)
-* [Libraries]({{ site.baseurl }}/Samples-And-Libraries/Libraries)
-
 ## M-Files as a Platform
 
 M-Files' powerful approach to Enterprise Content Management allows businesses to work with what content is, instead of where it's saved.  This powerful metadata-based approach can be used to easily design, build and deploy systems that support businesses in almost any sector, of almost any size.  Whilst M-Files' out-of-the-box functionality allows deep integration with various platforms and technologies, it also has a broad set of developer-orientated APIs and frameworks which can be used to extend this even further.

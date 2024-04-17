@@ -23,7 +23,7 @@ body{
 		grid-template-rows: auto;
 		align-items: center;
 		justify-items: left;
-		padding: 0px 28px;
+		padding: 10px 28px;
 		min-height: 68px;
 		position: fixed;
 		top: 0px;
@@ -31,7 +31,9 @@ body{
 		right: 0px;
 		height: 68px;
 		background-color: colours.nightSky();
-		z-index: 100;
+		box-sizing: border-box;
+		z-index: 150;
+
 		#hamburger
 		{
 			grid-column: 1;

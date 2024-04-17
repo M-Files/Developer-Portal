@@ -1,3 +1,5 @@
+@use "../design-system/_variables" as variables;
+@use "../design-system/mixins/_colours" as colours;
 @import "sidebar/treeview";
 
 body{
@@ -8,20 +10,23 @@ body{
 		top: 68px;
 		left: 0px;
 		width: 300px;
-		padding: 0px 20px;
+		padding: 10px 20px 0px 10px;
 		bottom: 0px;
 		overflow: auto;
-		background-color: colours.nightSky();
+		background-color: colours.deepBlue(10);
+		border-top-left-radius: variables.$borderradius;
+		z-index: 115;
 	}
 
 	&.sidebar-expanded{
 		aside#sidebar{
 			display: block;
+			z-index: 200;
 		}
 	}
 	nav.secondary li {
 		a, a:visited, a:active, a:hover{
-			color: colours.white();
+			color: colours.nightSky();
             display: block;
             padding: 7px 0px 7px 24px;
             text-decoration: none;
