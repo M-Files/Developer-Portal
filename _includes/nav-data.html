@@ -6,7 +6,7 @@
 		{%- capture children -%}{%- include nav-data.html items=item.Items sub=true -%}{%- endcapture -%}
 		{%- assign link = item.Link -%}
 		{%- assign starting = link | slice: 0, 4 -%}
-		<li{% if item.Link == navurl %} class="expanded current"{% endif %}{% if children contains "expanded current" %} class="expanded"{% endif %}>
+		<li{% if item.Link == navurl %} class="current"{% endif %}>
 			<a href="{%- if starting == 'http' -%}{{ link }}{%- else -%}{{ link | prepend: site.baseurl }}{%- endif -%}"{% if item.IsExternal %} target="_blank" rel="noopener"{% endif %}{% if item.ID %} id="{{ item.ID }}"{% endif %}>
 				<span class="text">
 					{{ item.Title }}

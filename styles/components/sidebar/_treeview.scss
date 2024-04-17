@@ -22,11 +22,6 @@ body{
 				cursor: pointer;
 				path{ fill: colours.nightSky(); }
 			}
-			&.expanded{
-				> svg.expandCollapseIcon{
-					rotate: 90deg;
-				}
-			}
 			a{
 				display: block;
 				padding: 7px 0px 7px 24px;
@@ -40,8 +35,21 @@ body{
 				font-weight: 600;
 			}
 		}
-		> li, li.expanded > ul > li{
-			display: block;
+		> li,
+			li:has(li.current) > ul > li,
+			li.current > ul > li,
+			li.expanded > ul > li{
+				display: block;
+		}
+		li.collapsed > ul > li{
+			display: none !important;
+		}
+		li.expanded, li.current, li:has(li.current){
+			&:not(.collapsed){
+				> svg.expandCollapseIcon{
+					rotate: 90deg;
+				}
+			}
 		}
 	}
 }
