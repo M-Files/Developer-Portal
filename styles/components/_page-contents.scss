@@ -107,7 +107,7 @@ body{
 				li{
 					@include widgets.widget();
 					margin: 0px;
-					display: inline-block;
+					display: inline-grid;
 					a{
 						text-decoration: none;
 						color: colours.nightSky();
@@ -115,6 +115,8 @@ body{
 						background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.0711 23.0711L21.0007 16.1414C21.0788 16.0633 21.0788 15.9367 21.0007 15.8586L14.0711 8.92893' stroke='%236C728D' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
 						background-repeat: no-repeat;
 						background-position: center right;
+						align-self: center;
+						padding-right: 20px;
 					}
 				}
 			}

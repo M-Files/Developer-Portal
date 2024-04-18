@@ -108,6 +108,31 @@ body{
 		article.page, footer{
 			margin-left: 610px;
 		}
+		&.alt-in-page-nav{
+			aside#sidebar{
+				border-right: 1px solid colours.nightSky(20);
+			}
+			#in-page-nav{
+				position: fixed;
+				top: 68px;
+				left: 281px;
+				width: 281px;
+				bottom: 0px;
+				background-color: colours.deepBlue(5) !important;
+				box-shadow: none !important;
+				border-right: 1px solid colours.nightSky(20) !important;
+				border-radius: 0px !important;
+				margin: 0px !important;
+				overflow: auto;
+				#in-this-article{
+					height: auto;
+					overflow-y: hidden;
+				}
+			}
+			article.page, footer{
+				margin-left: 600px;
+			}
+		}
 	}
 }
 

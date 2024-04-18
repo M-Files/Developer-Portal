@@ -1,24 +1,18 @@
 
 @use "../design-system/_variables" as variables;
 @use "../design-system/mixins/_colours" as colours;
-@use "../design-system/mixins/_fonts" as fonts;
-@use "../design-system/mixins/components/_widget" as widgets;
-@use "../design-system/mixins/components/buttons" as buttons;
 
-// ::-webkit-scrollbar {
-// 	width: 8px;
-// 	height: 8px;
-//     background: colours.nightSky(5);
-// }
-// ::-webkit-scrollbar * {
-//     background: transparent;
-// }
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #E6E8EC;
+}
 ::-webkit-scrollbar-thumb
 {
- 	border-radius: 20px;
+ 	border-radius: variables.$borderradius_small;
     background: colours.nightSky();
 }
-// #sidebar::-webkit-scrollbar-thumb
-// {
-//     background: colours.nightSky(5);
-// }
