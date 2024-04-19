@@ -16,7 +16,7 @@ body article.page{
 			}
 		}
 		li:not(:first-child):before{
-			content: " | ";
+			content: " > ";
 		}
 	}
 }
