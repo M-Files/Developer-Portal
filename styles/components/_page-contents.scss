@@ -44,7 +44,7 @@ body{
 		grid-column: 2;
 		grid-row: 3;
 		z-index: 120;
-		h2 { scroll-margin-top: 80px; }
+		h2, h3, h4 { scroll-margin-top: 80px; }
 
 		h1{
 			@include fonts.font-heading3();
@@ -185,16 +185,7 @@ body{
 		}
 	}
 }
-@media screen and (min-width: 1000px) {
-	body{
-		article.page, footer{
-			margin-left: 275px;
-		}
-	}
-}
-
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
 	body{
 		nav#in-page-nav{
 			position: fixed;
@@ -237,6 +228,13 @@ body{
 		}
 		article.page, footer{
 			margin-right: 320px;
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+	body{
+		article.page, footer{
+			margin-left: 275px;
 		}
 	}
 }

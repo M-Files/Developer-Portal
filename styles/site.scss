@@ -77,12 +77,6 @@ body{
 }
 @media screen and (min-width: 1000px) {
 	body{
-		article.page, footer{
-			margin-left: 275px;
-			div.hero{
-				min-height: 300px;
-			}
-		}
 	}
 }
 @media screen and (min-width: 1300px) {
@@ -91,9 +85,6 @@ body{
 }
 @media screen and (min-width: 1500px) {
 	body{
-		.scroll{
-			padding-right: 340px;
-		}
 	}
 }
 

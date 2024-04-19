@@ -11,22 +11,21 @@ body{
 	p.note {
 		@include widgets.widget();
 		position: relative;
-		padding: 7px 10px 5px 30px;
+		padding: 18px 18px 18px 34px;
 		margin: 20px 0px;
 		border-radius: variables.$borderradius_small;
 		min-height: 24px;
 		&::before {
-			content: " ";
+			content: "Note:";
+			position: relative;
+			left: -20px;
+			padding-left: 20px;
+			line-height: 24px;
 			white-space: pre;
-			width: 24px;
-			height: 24px;
-			display: inline-block;
+			display: block;
 			background-image: icons.information();
-			position: absolute;
-			background-position: center center;
+			background-position: left center;
 			background-repeat: no-repeat;
-			left: 4px;
-			top: 4px;
 		}
 	}
 	
@@ -40,6 +39,7 @@ body{
 			font-style: italic;
 		}
 		&.warning::before, &.stub::before {
+			content: "Warning:";
 			background-image: icons.warning();
 		}
 	}
@@ -50,6 +50,7 @@ body{
 		border: 1px solid rgb(64, 146, 89);
 		&::before
 		{
+			content: "Hint: ";
 			background-image: icons.hint();
 		}
 	}
