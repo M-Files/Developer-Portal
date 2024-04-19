@@ -9,7 +9,7 @@
 body{
 
 	p.note {
-		background-color: colours.nightSky(5);
+		@include widgets.widget();
 		position: relative;
 		padding: 7px 10px 5px 30px;
 		margin: 20px 0px;

@@ -94,45 +94,6 @@ body{
 		.scroll{
 			padding-right: 340px;
 		}
-		#in-page-nav{
-			position: fixed;
-			top: 77px;
-			left: 290px;
-			width: 290px;
-			bottom: 5px;
-			#in-this-article{
-				height: calc(100vh - 130px);
-				overflow-y: auto;
-			}
-		}
-		article.page, footer{
-			margin-left: 610px;
-		}
-		&.alt-in-page-nav{
-			aside#sidebar{
-				border-right: 1px solid colours.nightSky(20);
-			}
-			#in-page-nav{
-				position: fixed;
-				top: 68px;
-				left: 281px;
-				width: 281px;
-				bottom: 0px;
-				background-color: colours.deepBlue(5) !important;
-				box-shadow: none !important;
-				border-right: 1px solid colours.nightSky(20) !important;
-				border-radius: 0px !important;
-				margin: 0px !important;
-				overflow: auto;
-				#in-this-article{
-					height: auto;
-					overflow-y: hidden;
-				}
-			}
-			article.page, footer{
-				margin-left: 600px;
-			}
-		}
 	}
 }
 
