@@ -14,7 +14,7 @@ body{
 
 
 	&::before{
-		position: fixed;
+		position: absolute;
 		top: 68px;
 		left: 0px;
 		height: 20px;
@@ -25,7 +25,7 @@ body{
 		z-index: 100;
 	}
 	&::after{
-		position: fixed;
+		position: absolute;
 		top: 68px;
 		left: 0px;
 		height: 20px;
@@ -39,7 +39,8 @@ body{
 
 	article.page{
 		grid-column: 2;
-		grid-row: 3;
+		grid-row: 2;
+		padding: 20px;
 		z-index: 120;
 		h2, h3, h4 { scroll-margin-top: 80px; }
 
@@ -68,38 +69,6 @@ body{
 			margin: 16px 0px;
 			pre > code.hljs{
 				overflow-x: auto;
-			}
-		}
-		nav#in-page-nav, article[role=article], div.hero, div.legacy{
-			h2{ 
-				@include fonts.font-heading5;
-				margin-bottom: 20px;
-				a, a:link, a:hover, a:visited{
-					color: colours.nightSky();
-					text-decoration: none;
-				}
-			}
-			h3{ 
-				@include fonts.font-heading6;
-				margin-bottom: 10px;
-				font-weight: bold;
-			}
-		}
-		nav#in-page-nav, article[role=article], nav.other-articles, div.hero, div.legacy
-		{
-			h2:not(:first-of-type){
-				margin-top:20px;
-			}
-		}
-
-		nav#in-page-nav{
-			.border{
-				display: none;
-			}
-			li{
-				> a, > a:hover, > a:visited, > a:link{
-					color: colours.nightSky();
-				}
 			}
 		}
 
@@ -152,6 +121,39 @@ body{
 			list-style-type: decimal;
 		}
 	}
+	nav#in-page-nav, article[role=article], div.hero, div.legacy{
+		h2{ 
+			@include fonts.font-heading5;
+			margin-bottom: 20px;
+			a, a:link, a:hover, a:visited{
+				color: colours.nightSky();
+				text-decoration: none;
+			}
+		}
+		h3{ 
+			@include fonts.font-heading6;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+	}
+	nav#in-page-nav, article[role=article], nav.other-articles, div.hero, div.legacy
+	{
+		h2:not(:first-of-type){
+			margin-top:20px;
+		}
+	}
+
+	nav#in-page-nav{
+		display: none;
+		.border{
+			display: none;
+		}
+		li{
+			> a, > a:hover, > a:visited, > a:link{
+				color: colours.nightSky();
+			}
+		}
+	}
 
     
 	
@@ -186,11 +188,12 @@ body{
 @media screen and (min-width: 800px) {
 	body{
 		nav#in-page-nav{
+			display: block;
 			position: fixed;
-			top: 77px;
+			top: 87px;
 			right: 0px;
 			left: auto;
-			width: 310px;
+			width: 280px;
 			bottom: 0px;
 			#in-this-article{
 				overflow-y: auto;
@@ -225,14 +228,12 @@ body{
 			}
 		}
 		article.page, footer{
-			margin-right: 320px;
 		}
 	}
 }
 @media screen and (min-width: 1200px) {
 	body{
 		article.page, footer{
-			margin-left: 275px;
 		}
 	}
 }

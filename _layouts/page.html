@@ -2,6 +2,18 @@
 layout: default
 ---
 
+{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
+{% assign inthisarticle_size = inthisarticle | size %}
+
+{% if inthisarticle_size > 0 and page.noInnerLinks != true %}
+<nav id="in-page-nav" role="navigation" aria-label="In this article">
+	<div id="in-this-article">
+		<h2>On this page</h2>
+		{{ inthisarticle }}
+	</div>
+</nav>
+{% endif %}
+
 <article class="page" itemscope itemtype="http://schema.org/WebPage" role="main">
 			<div id="options"></div>
 			
@@ -43,18 +55,6 @@ layout: default
 			</nav>
 			
 			{% include_cached social.html %}
-
-			{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
-			{% assign inthisarticle_size = inthisarticle | size %}
-
-			{% if inthisarticle_size > 0 and page.noInnerLinks != true %}
-			<nav id="in-page-nav" role="navigation" aria-label="In this article">
-				<div id="in-this-article">
-					<h2>On this page</h2>
-					{{ inthisarticle }}
-				</div>
-			</nav>
-			{% endif %}
 
 			<article role="article" aria-label="Page contents">
 
