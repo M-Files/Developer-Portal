@@ -116,7 +116,7 @@ body{
 		ul, ol:not(.breadcrumb){
 			list-style-type: disc;
 		}
-		ol{
+		ol, ol:not(.breadcrumb){
 			list-style-type: decimal;
 		}
 	}
