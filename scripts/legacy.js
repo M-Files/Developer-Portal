@@ -8,13 +8,13 @@
 	
 	// Shows the lightbox-style full-screen legacy statement.
 	function fullscreenLegacy(){
-		$legacyStatement.addClass("shown");
+		$legacyStatement.addClass("full-screen-accept");
 	}
 
 	// Collapses the legacy statement.
 	function collapseLegacy()
 	{
-		$legacyStatement.removeClass("shown");
+		$legacyStatement.removeClass("full-screen-accept");
 	}
 
 	// When the close button is clicked, collapse the statement.

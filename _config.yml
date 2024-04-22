@@ -83,3 +83,4 @@ exclude:
   - LICENSE
   - CNAME
   - ruby
+  - debug-deploy.log
