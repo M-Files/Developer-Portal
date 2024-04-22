@@ -168,7 +168,7 @@
 		"Title": "REST API",
 		"Items": [{
 				"Link": "/APIs/REST-API/Reference/",
-				"Title": "Official API Reference ",
+				"Title": "Official API Reference",
 				"IsExternal": true,
 				"IsOfficialReference": true
 			},
@@ -232,7 +232,7 @@
 		"Title": "UI Extensibility Framework",
 		"Items": [{
 				"Link": "https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html",
-				"Title": "Official Reference ",
+				"Title": "Official Reference",
 				"IsExternal": true,
 				"IsOfficialReference": true
 			},
@@ -310,7 +310,7 @@
 		"Title": "Vault Application Framework",
 		"Items": [{
 				"Link": "/Frameworks/Vault-Application-Framework/Reference/",
-				"Title": "Official Reference ",
+				"Title": "Official Reference",
 				"IsExternal": true,
 				"IsOfficialReference": true
 			},{

@@ -27,6 +27,24 @@ body{
 				padding: 7px 0px 7px 24px;
 				text-decoration: none;
 				border-radius: variables.$borderradius_small;
+				span.icon
+				{
+					width: 16px;
+					height: 16px;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: contain;
+					display: inline-block;
+					position: relative;
+					top: 3px;
+					left: 5px;
+					&.official-reference{
+						background-image: icons.officialReference()
+					}
+					&.github{
+						background-image: icons.github()
+					}
+				}
 			}
 			a, a:visited, a:active, a:hover{
 				color: colours.nightSky();
