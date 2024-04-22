@@ -15,6 +15,7 @@
 @import "components/tables";
 @import "components/page-contents";
 
+html { scroll-behavior: smooth; } 
 
 body{
 	min-width: 490px;

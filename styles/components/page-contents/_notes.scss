@@ -30,6 +30,10 @@ body{
 			background-repeat: no-repeat;
 		}
 	}
+
+	#notice p.note{
+		margin-top: 0;
+	}
 	
 	p.note.warning,
 		p.note.stub,
