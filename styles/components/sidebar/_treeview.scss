@@ -31,7 +31,7 @@ body{
 			a, a:visited, a:active, a:hover{
 				color: colours.nightSky();
 			}
-			&.current > a {
+			&.current > a, &:has(li.current) > a {
 				font-weight: 600;
 			}
 		}
