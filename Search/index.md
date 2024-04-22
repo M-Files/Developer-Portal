@@ -5,6 +5,7 @@ noInnerLinks: true
 ---
 
 <form class="search" action="/Search/" method="get">
+  <label for="query-2">Search for:</label>
     <input type="text" class="search-box" id="query-2" name="query" autocomplete="off" placeholder="Search..." />
     <input type="submit" value="Search" />
 </form>
