@@ -10,6 +10,8 @@ body{
 
 	p.note {
 		@include widgets.widget();
+		box-shadow: none;
+		background-color: colours.deepBlue(5);
 		position: relative;
 		padding: 18px 18px 18px 34px;
 		margin: 20px 0px;

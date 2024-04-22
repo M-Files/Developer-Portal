@@ -18,8 +18,8 @@
 
 body{
 	min-width: 490px;
-	background-color: colours.nightSky(5);
-	color: colours.white();
+	background-color: colours.white();
+	color: colours.nightSky();
 	@include fonts.font-body1();
 	display: grid;
 	grid-template-rows: 68px 20px auto auto;

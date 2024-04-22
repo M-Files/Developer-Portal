@@ -44,6 +44,10 @@ body{
 		li.collapsed > ul > li{
 			display: none !important;
 		}
+		li.current > a{
+			background-color: colours.deepBlue(10);
+			border-radius: variables.$borderradius_small;
+		}
 		li.expanded, li.current, li:has(li.current){
 			&:not(.collapsed){
 				> svg.expandCollapseIcon{

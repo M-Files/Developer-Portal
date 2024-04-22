@@ -13,10 +13,9 @@ body{
 		padding: 10px 20px 0px 10px;
 		bottom: 0px;
 		overflow: auto;
-		background-color: colours.deepBlue(10);
+		background-color: colours.deepBlue(5);
 		border-top-left-radius: variables.$borderradius;
 		z-index: 115;
-		border-right: 1px solid colours.nightSky(20);
 	}
 
 	&.sidebar-expanded{
