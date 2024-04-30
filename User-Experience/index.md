@@ -10,7 +10,7 @@ This document is intended to brief developers on the design principles of the M-
 
 ## Design DNA
 
-<style type="text/css">
+<!-- <style type="text/css">
 	article[role=main] .block
 	{
 		border: 1px solid #C8C8C8;
@@ -72,7 +72,7 @@ This document is intended to brief developers on the design principles of the M-
 		display: table-row;
 	}
 }
-</style>
+</style> -->
 
 <div class="table">
 

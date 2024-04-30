@@ -11,15 +11,15 @@ This page describes the various UI components used by M-Files clients, their fun
 
 ![Menu](Menu.png)
 
-Located in top pane, Menu provides direct access to views and other main functions. From menu you can access All, Recent, Assigned, Checked Out and Pinned.
+Located in the top pane, Menu provides direct access to views and other main functions. From menu you can access All, Recent, Assigned, Checked Out and Pinned.
 
 **Style and layout parameters:**  
 
-* Color (inactive): #363A40
-* Color (active): #318CCC
-* Font-size: 16px
-* Line: 4px
-* Line color: #EEEEEE
+*	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}Text-color (inactive): #0A1541
+*	{: .swatch style="--hex-color: #ffffff" title="#ffffff"}Text-color (active): #ffffff
+*	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}Highlight-color: #0A1541
+*	Font-size: 16px
+{:.swatches}
 
 ## Lists
 
@@ -29,26 +29,28 @@ A List is the typical method for displaying a collection of multiple items such 
 
 **Style and layout parameters:**  
 
-* Row-height: 36px
-* Font-color (heading): #363A40
-* Font-size (heading): 14px
-* Padding-left (heading): 24px:
-* Font-color (listing): #363A40
-* Font-size (listing): 14px
-* Padding-left (listing): 24px:
-* Icon-size: 16px
+*	Row-height: 36px
+*	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}Font-color (heading): # 0A1541
+*	Font-size (heading): 14px
+*	Padding-left (heading): 24px:
+*	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}Font-color (listing): # 0A1541
+*	Font-size (listing): 14px
+*	Padding-left (listing): 24px:
+*	Icon-size: 16px
+{:.swatches}
 
 ### List grouping header
 
-![List grouping](UI-components-list-grouping.png){:.borderless}
+![List grouping](UI-components-list-grouping.png)
 
 A List Grouping can be used to organize listed objects, grouping them by object type or a specific metadata property. The grouping appears as a header component with textual title and expanding/collapsing control on right side.
 
 **Style and layout parameters:**  
 
-* Background-color: #ffffff
-* Font-color: #363A40
+* {: .swatch style="--hex-color: #ffffff" title="#ffffff"}Background-color: #ffffff
+* {: .swatch style="--hex-color: #0A1541" title="#0A1541"}Font-color: #0A1541
 * Font-size: 14px
+{:.swatches}
 
 ## Search 
 
@@ -64,7 +66,7 @@ In top pane, a Search Bar with search field, search button and access to Advance
 
 ![Search filter](Search-filter.png)
 
-Search Filters tab will be activated when search field is focused. User will found options to enhance the search function before or after search is performed.
+Search Filters tab will be activated when search field is focused. User will find options to enhance the search function before or after search is performed.
 
 #### Advanced search options
 
@@ -100,6 +102,7 @@ By using function buttons on the ribbon, user are able to Follow and Pin objects
 
 ### Buttons
 
-![Buttons](Buttons.png){:.borderless}
+![Buttons](Buttons1.png)
+![Buttons](Buttons2.png)
 
 Buttons are used to move to the next step, confirm or cancel actions.

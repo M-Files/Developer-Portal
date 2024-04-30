@@ -9,7 +9,7 @@ Access a copy of the M-Files logo, and details on how it should be used.
 
 ## M-Files desktop Logo
 
-![M-Files logo](Logo-blue-background.png){:.borderless}
+![M-Files logo](Logo-blue-background.png)
 
 Logo settings:
 
@@ -25,7 +25,7 @@ Logo settings:
 * From top 24px
 * From Left 24px
 
-![Logo usage](Logo usage.png){:.borderless}
+![Logo usage](Logo usage.png)
 
 ### Download
 

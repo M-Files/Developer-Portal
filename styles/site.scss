@@ -68,6 +68,54 @@ body{
 			}
 		}
 	}
+	p.color{
+		display: grid;
+		grid-template-columns: 100px 100px min-content auto;
+		align-items: center;
+		gap: 16px;
+		&:before {
+			display: grid;
+			grid-column: 1;
+			content: " ";
+			width: 100px;
+			height: 100px;
+			background-color: var(--hex-color);
+			content: attr(data-hex);
+			border-radius: 20px;
+			align-items: center;
+			justify-items: center;
+			color: white;
+		}
+		&.invert:before{
+			color: #0A1541;
+		}
+		&:after {
+			display: block;
+			grid-column: 4;
+			content: attr(data-where);
+		}
+	}
+	.swatch:before {
+		display: inline-block;
+		content: " ";
+		background-color: var(--hex-color);
+		width: 1em;
+		height: 1em;
+		border-radius: 4px;
+		margin: 0px 4px;
+		border: 1px solid black;
+		position: absolute;
+		left: -0.5em;
+		top: 2px;
+	}
+	.swatches > li{
+		position: relative;
+		padding-left: calc(1em + 4px);
+		> .swatch:before{
+			left: -0.5em;
+			top: 2px;
+		}
+	} 
 }
 
 @media screen and (min-width: 800px) {
