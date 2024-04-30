@@ -95,25 +95,39 @@ body{
 			content: attr(data-where);
 		}
 	}
-	.swatch:before {
-	}
-	.swatches > li{
-		position: relative;
-		&.swatch{
-			list-style-type: none;
-			&:before{
-				display: inline-block;
-				content: " ";
-				background-color: var(--hex-color);
-				width: 1em;
-				height: 1em;
-				border-radius: 4px;
-				margin: 0px 4px;
-				border: 1px solid black;
-				position: absolute;
-				left: calc(-1em - 12px);
-				top: 2px;
+	ul.swatches, ol.swatches{
+		> li{
+			position: relative;
+			&.swatch{
+				&:before{
+					display: inline-block;
+					content: " ";
+					background-color: var(--hex-color);
+					width: 1em;
+					height: 1em;
+					border-radius: 4px;
+					margin: 0px 4px;
+					border: 1px solid black;
+					position: absolute;
+					left: calc(-0.5em + 4px);
+					top: 2px;
+				}
 			}
+		}
+	}
+	ul.swatches{
+		> li{
+			&.swatch{
+				list-style-type: none;
+				&:before{
+					left: calc(-1em - 12px);
+				}
+			}
+		}
+	}
+	ol.swatches{
+		> li{
+			padding-left: calc(1em + 8px);
 		}
 	}
 }
