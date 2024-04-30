@@ -120,3 +120,21 @@ Highlight Yellow
 5.	{: .swatch style="--hex-color: #6C728D" title="#6C728D"}#6C728D
 6.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}#0A1541
 {:.swatches}
+
+### Accessibility principles
+
+Contrast and color use are vital to accessibility and important in M-Files design. Users, including users with visual disabilities, must be able to perceive content and visual elements on the screen.
+
+Minimum level AA requirements:
+
+The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
+
+•	Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;
+•	Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+•	Logotypes: Text that is part of a logo or brand name has no contrast requirement.
+
+Source: [https://www.w3.org/](https://www.w3.org/)
+
+![At least a 4.5:1 contrast ratio is needed](contrast.png)
+
+WebAIM contrast checker: [https://webaim.org/resources/contrastchecker/](https://webaim.org/resources/contrastchecker/)

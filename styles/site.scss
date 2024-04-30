@@ -96,26 +96,26 @@ body{
 		}
 	}
 	.swatch:before {
-		display: inline-block;
-		content: " ";
-		background-color: var(--hex-color);
-		width: 1em;
-		height: 1em;
-		border-radius: 4px;
-		margin: 0px 4px;
-		border: 1px solid black;
-		position: absolute;
-		left: -0.5em;
-		top: 2px;
 	}
 	.swatches > li{
 		position: relative;
-		padding-left: calc(1em + 4px);
-		> .swatch:before{
-			left: -0.5em;
-			top: 2px;
+		&.swatch{
+			list-style-type: none;
+			&:before{
+				display: inline-block;
+				content: " ";
+				background-color: var(--hex-color);
+				width: 1em;
+				height: 1em;
+				border-radius: 4px;
+				margin: 0px 4px;
+				border: 1px solid black;
+				position: absolute;
+				left: calc(-1em - 12px);
+				top: 2px;
+			}
 		}
-	} 
+	}
 }
 
 @media screen and (min-width: 800px) {
