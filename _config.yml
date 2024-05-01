@@ -84,9 +84,11 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
+  - LICENSE.md
   - CNAME
   - ruby
   - .firebaserc
   - firebase-debug.log
-  - Frameworks/Vault-Application-Framework/Sandcastle
+  - Readme.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
