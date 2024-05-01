@@ -80,7 +80,12 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
+  - LICENSE.md
   - CNAME
   - ruby
+  - .firebaserc
+  - firebase-debug.log
+  - Readme.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
   - debug-deploy.log
