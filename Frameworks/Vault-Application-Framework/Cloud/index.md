@@ -10,16 +10,13 @@ This page refers to running Vault Application Framework applications within the 
 
 ## Available cloud architectures
 
-M-Files Cloud offers two distinct architectures: New Cloud and Classic Cloud.  In addition: within each architecture a vault can be configured within an isolated/dedicated instance (e.g. one server/container per vault/customer), or within a shared instance (e.g. many vaults/customers on one server).
+M-Files Cloud offers two distinct architectures: isolated (e.g. one server/container per customer) or within a shared instance (e.g. many vaults/customers on one server).
 
-M-Files is actively migrating customers from Classic Cloud to New Cloud.  **Applications - including changes to existing applications - submitted for validation that are not multi-server-mode-compatible will be rejected**.
-{:.note}
-
-Feature | Shared M-Files Classic Cloud | Shared M-Files New Cloud | Dedicated M-Files Classic Cloud | Isolated M-Files New Cloud
+Feature | Shared M-Files Cloud | Isolated M-Files Cloud
 --- | --- | ---
-Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | No | Yes | No | Yes
-Can execute [signed applications](#code-signing) | Yes | Yes | Yes | Yes
-Custom code requires [validation](#code-validation) to run | Yes | Yes | Yes | No
+Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | Yes | Yes
+Can execute [signed applications](#code-signing) | Yes | Yes
+Custom code requires [validation](#code-validation) to run | Yes | No
 
 ## Code signing
 
@@ -36,7 +33,6 @@ In order to maintain a high quality of service for customers within our Cloud in
 * **The validation team will require the source code to your VAF applications, including the source code of any libraries** .  Common libraries (e.g. Newtonsoft) can be referenced from nuget.  Libraries provided by a trusted entity (e.g. libraries signed by Microsoft or other reputable sources) may be accepted without source code.  If in doubt, please contact us prior to initiating the validation process.  We reserve the right to make minor changes to enable validation to pass.
 * **Source code will be stored in our version control systems**.  You may be asked to authorize this to comply with our internal security requirements.  Ensure that your source code does not include any credentials.
 * **The validation team will compile the code themselves**, and it is this compiled code which will be installed to the server.  Ensure that all solution files, project files, resources, imagery, libraries or other references are included in the supplied package.  Good practice is to take the package you are delivering onto another machine and attempt to compile it using just the files in the package.  If it does not compile for you there then it will not compile for us here.
-* **Unless specified, the application will be installed into the vault as soon as possible after validation**.  This will require the vault be restarted, which may result in a small time when the vault is unavailable.  To request a specific time when this installation occurs, please liaise with the validation team.  Note that installations are typically only undertaken during the working hours of the validation team assigned.
 
 Once an application has passed validation, a [signed version](#code-signing) of the code will be provided to the party who submitted the code.  This signed application can then be installed into any vault within the M-Files Cloud.  Third parties creating reusable applications that can be run in multiple vaults may consider validating their code package in order to receive a signed version that can easily be installed by clients into any vault.
 {:.note}
