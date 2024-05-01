@@ -17,6 +17,9 @@ body{
 		margin: 20px 0px;
 		border-radius: variables.$borderradius_small;
 		min-height: 24px;
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+		color-adjust: exact;
 		&::before {
 			content: "Note:";
 			position: relative;
@@ -25,6 +28,9 @@ body{
 			line-height: 24px;
 			white-space: pre;
 			display: block;
+			-webkit-print-color-adjust: exact;
+			print-color-adjust: exact;
+			color-adjust: exact;
 			background-image: icons.information();
 			background-position: left center;
 			background-repeat: no-repeat;

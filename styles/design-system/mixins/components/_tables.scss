@@ -5,6 +5,7 @@
 @mixin table(){
     border: 1px solid colours.nightSky(20);
     border-collapse: separate;
+    border-spacing: 0;
     border-radius: variables.$borderradius_small;
     tr{
         min-height: 44px;
@@ -49,6 +50,9 @@
                 background-color: colours.nightSky(5);
                 font-weight: bold;
                 text-align: left;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color-adjust: exact;
             }
         }
     }
