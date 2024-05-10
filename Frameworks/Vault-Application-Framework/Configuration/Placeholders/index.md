@@ -1,4 +1,8 @@
-﻿# Placeholders
+---
+layout: page
+title: Placeholders
+includeInSearch: true
+---
 
 ## Introduction
 
@@ -404,13 +408,13 @@ public class Configuration
 // TimestampFormat: "D"
 // Template: "Modified: %PROPERTY_21%, Value: %PROPERTY_{PD.Value}.FORMAT_{C}%"
 conf.ExpandPlaceholderTemplate( objVerEx ); 
-// -> "Modified: Dienstag, 12. März 2024, Value: 600,00 €"
+// -> "Modified: Dienstag, 12. M?rz 2024, Value: 600,00 ?"
 
 // Override TimestampFormat defined in configuration/settings with FORMAT command. 
 // (Underscores are used for spaces, literal underscores must be escaped with backslash.)
 // Template: "Modified: %PROPERTY_21.FORMAT_{ddd,_dd\_MMM\_yy}%, Value: %PROPERTY_{PD.Value}.FORMAT_{C}%"
 conf.ExpandPlaceholderTemplate( objVerEx ); 
-// -> "Modified: : Di, 12_Mrz_24, Value: 600,00 €"
+// -> "Modified: : Di, 12_Mrz_24, Value: 600,00 ?"
 
 ```
 
