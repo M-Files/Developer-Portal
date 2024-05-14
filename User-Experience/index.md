@@ -11,86 +11,37 @@ This document is intended to brief developers on the design principles of the M-
 ## Design DNA
 
 <style type="text/css">
-	article[role=main] .block
-	{
-		border: 1px solid #C8C8C8;
-		padding: 20px;
-		margin: 10px;
-	}
-	article[role=main] .block img
-	{
-		border: 0px;
-	}
-	article[role=main] .block h1
-	{
-		font-size: 1.5em;
-		padding: 10px 0px;
-		border-bottom: 2px solid #007CC6;
-		margin: 0px;
-	}
-@media screen and (max-width: 719px)
-{
-	article[role=main] .block
-	{
-		position: relative;
-		padding-left: 160px;
-	}
-	article[role=main] .block img
-	{
-		position: absolute;
-		left: 15px;
-		top: 20px;
-	}
-	article[role=main] .block h1
-	{
-		padding-top: 0px;
-	}
+
+article.block{
+	display: grid;
+	grid-template-columns: 128px auto;
+	grid-template-rows: auto auto;
+	gap: 12px;
+    margin: 36px 0px;
+    padding: 36px 0px;
+    border-top: 1px solid #3B4467;
 }
-@media screen and (min-width: 720px)
-{
-	article[role=main] .block
-	{
-		display: table-cell;
-		margin: 0px;
-	}
-	article[role=main] .block img
-	{
-		display: block;
-		margin: 0px auto;
-	}
-	article[role=main] .block h1
-	{
-		text-align: center;
-	}
-	.table
-	{
-		display: table;
-		border-spacing: 10px;
-	}
-	.row
-	{
-		display: table-row;
-	}
+article.block img{
+	grid-column: 1;
+	grid-row: 1 / 3;
 }
+article.block h1{
+	grid-column: 2;
+	grid-row: 1;
+}
+article.block p{
+	grid-column: 2;
+	grid-row: 2;
+}
+
+
 </style>
-
-<div class="table">
-
-<div class="row">
 
 <article class="block">
 	<img src="Superpowers.png" alt="Sense of Superpowers" />
 	<h1>Sense of Superpowers</h1>
 	<p>Give Users a Sense of Superpowers. Ideally, system should hide the "machine" to the background and make tasks and events appear fast and easy to the user. Minimize manual clicks and automate events whenever possible. Aim to guess what the user wants next. We want to leave the users with a feeling of increased brain power through higher efficiency and less wasted time.</p>
 </article>
-
-</div>
-
-</div>
-
-<div class="table">
-
-<div class="row">
 
 <article class="block">
 	<img src="Get-started-fast.png" alt="Get Started Fast" />
@@ -104,9 +55,6 @@ This document is intended to brief developers on the design principles of the M-
 	<p>Provide the users with an elevated focus of their work. Show the actions and events relevant to the moment, while also offering a clear prediction of what is coming up next. Information representation is classified through time, context, and relationships. Clear visual hierarchy helps user to follow her/his status at all times.</p>
 </article>
 
-</div>
-<div class="row">
-
 <article class="block">
 	<img src="Visual-hierarchy.png" alt="Visual Clarity" />
 	<h1>Visual Clarity</h1>
@@ -119,9 +67,6 @@ This document is intended to brief developers on the design principles of the M-
 	<p>Interactions should guide the user actively. Our product should adapt to user actions and guide them actively and through clear visual cues. Alarms, required workflow actions or change of workflow events should be highlighted, triggering action. UI should also give clear feedback on the user actions, growing the sense of security and control.</p>
 </article>
 
-</div>
-<div class="row">
-
 <article class="block">
 	<img src="Consistency.png" alt="Consistency" />
 	<h1>Consistency</h1>
@@ -133,7 +78,3 @@ This document is intended to brief developers on the design principles of the M-
 	<h1>Daily Hook &amp; Reward</h1>
 	<p>Offer the user with a daily hook and reward. Users are investing time and effort to our product every day. If this investment goes without rewarding, they will not return to the product willingly. Build simple hooks and rewards that make the user feel happy, gratified, and empowered. Aim for meaningful rewards to release serotonin, not dopamine in the user's brain.</p>
 </article>
-
-</div>
-
-</div>

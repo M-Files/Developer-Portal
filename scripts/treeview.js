@@ -1,11 +1,13 @@
 (function($){
-    var $document = $(document);
-	var $body = $("body");
 	// This has to have the svg here as it gets swapped out otherwise and the later click handlers don't fire.
-    var $expandCollapseIcon = $('<svg class="iconify expandCollapseIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42z" fill="white"/></svg>');
+    var $expandCollapseIcon = $('<svg class="expandCollapseIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42z" fill="white"/></svg>');
     function expandCollapse($node)
     {
         $node.toggleClass("expanded");
+        if($node.hasClass("expanded"))
+            $node.removeClass("collapsed");
+        else
+            $node.addClass("collapsed");
     }
     function setupNode($node)
     {
@@ -25,6 +27,8 @@
 				return false;
 			})
 		}
+        if($node.hasClass("current") || $node.has(".current").length > 0)
+            $node.addClass("expanded");
     }
     $("ul.treeview li").each(function(i, o)
     {

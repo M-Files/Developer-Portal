@@ -1,23 +1,13 @@
-<div class="search" itemscope itemtype="http://schema.org/WebSite">
-	<meta itemprop="url" content="http://developer.m-files.com/"/>
-	<meta itemprop="name" content="M-Files Developer Portal"/>
-	<form class="search" action="/Search/" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-	<meta itemprop="target" content="http://developer.m-files.com/Search/?query={query}"/>
-		<input type="text" itemprop="query-input" class="search-box" id="query" name="query" autocomplete="off" placeholder="Search..." aria-label="Search Query" required />
-		<button class="btn btn-default btn-block" type="submit" aria-label="Perform Search">
-			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M18.125 18.125L12.5884 12.5M12.5884 12.5C13.6936 11.3727 14.375 9.82841 14.375 8.125C14.375 4.67322 11.5768 1.875 8.125 1.875C4.67322 1.875 1.875 4.67322 1.875 8.125C1.875 11.5768 4.67322 14.375 8.125 14.375C9.87337 14.375 11.4541 13.6571 12.5884 12.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-				</svg>				
-				<span class="label">search</span>
-			</button>
-	</form>
-</div>
+{%- assign navurl = page.url | remove: 'index.html' -%}
+{%- capture match -%}<li><a href="{{ navurl }}">{%- endcapture -%}
+{%- capture replaceWith -%}<li class="current"><a href="{{ navurl }}">{%- endcapture -%}
 <nav class="primary" role="navigation" aria-label="Primary site navigation">
-    {%- include nav-data.html items=site.data.navigation -%}
+    {%- capture nav -%}{%- include_cached nav-data.html items=site.data.navigation -%}{%- endcapture -%}
+    {{ nav | replace_first: match, replaceWith }}
 </nav>
 <nav class="secondary" role="navigation" aria-label="Secondary site navigation">
     <ul>
-        <li><a href="mailto:devsupport@m-files.com"><span class="text"><span class="iconify" data-icon="mdi:comment-text-multiple-outline"></span>Feedback</span></a></li>
-        <li><a href="{{ site.baseurl }}/Links"><span class="text">Links<span class="iconify" data-icon="mdi:link-variant"></span></span></a></li>
+        <li><a href="https://community.m-files.com">Feedback</a></li>
+        <li><a href="{{ site.baseurl }}/Links">Links</a></li>
     </ul>
 </nav>

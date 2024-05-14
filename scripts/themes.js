@@ -94,23 +94,6 @@
 		document.body.classList.add("theme-" + chosenTheme.id);
 
 	}
-
-	// Append all theme stylesheets.
-	for(var e=0; e<themes.length; e++)
-	{
-		var chosenTheme = themes[e];
-		for(var i=0; i<chosenTheme.stylesheets.length; i++)
-		{
-			// Modify the DOM.
-			var link = document.createElement("link");
-			link.type = "text/css";
-			link.media = "screen";
-			link.rel = "stylesheet";
-			link.className = "theme theme-" + chosenTheme.id;
-			link.href = chosenTheme.stylesheets[i];
-			document.head.appendChild(link);
-		}
-	}
 	// Set the currently-selected theme.
 	setTheme(getThemeCookie() + "", true);
 

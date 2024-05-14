@@ -1,0 +1,120 @@
+@use "../colours" as colours;
+@use "../fonts" as fonts;
+
+@mixin button($type: "primary", $leftIcon: "", $rightIcon: ""){
+    @include fonts.font-body1();
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 6px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+    min-width: 67px;
+    display: inline-grid;
+    grid-template-columns: auto max-content auto;
+    align-items: center;
+    text-align: center;
+
+    // Style it according to the type.
+    @if $type == "primary"{
+        background-color: colours.blueMoment();
+        color: colours.white();
+
+        &:disabled, .disabled{
+            border-color: colours.nightSky(20);
+            background-color: colours.nightSky(20);
+            color: colours.white();
+        }
+        &:hover{
+            background-color: colours.deepBlue(80);
+            border-color: colours.deepBlue(80);
+            color: colours.white();
+        }
+        &:focus:not(:active){
+            border-color: colours.blueMoment();
+        }
+        &:active{
+            border-color: colours.deepBlue();
+            background: colours.deepBlue();
+            color: colours.white();
+        }
+    }
+    @if $type == "secondary"{
+        background-color: colours.white();
+        color: colours.nightSky();
+        border-color: colours.nightSky(40);
+
+        &:disabled, .disabled{
+            border-color: colours.nightSky(20);
+            background-color: colours.nightSky(20);
+            color: colours.white();
+        }
+        &:hover{
+            background-color: colours.nightSky(60);
+            border-color: colours.nightSky(60);
+            color: colours.white();
+        }
+        &:focus:not(:active){
+            border-color: colours.blueMoment();
+        }
+        &:active{
+            border-color: colours.nightSky(80);
+            background: colours.nightSky(80);
+            color: colours.white();
+        }
+    }
+    @if $type == "tertiary"{
+        color: colours.blueMoment();
+
+        &:disabled, .disabled{
+            border-color: colours.nightSky(20);
+            color: colours.nightSky(20);
+        }
+        &:hover{
+            background-color: colours.nightSky(10);
+            border-color: colours.nightSky(10);
+        }
+        &:focus:not(:active){
+            border-color: colours.blueMoment();
+        }
+        &:active{
+            border-color: colours.nightSky(80);
+            background: colours.nightSky(80);
+            color: colours.white();
+        }
+    }
+
+    // Do we want any icons left and right?
+    &::before, &::after,
+        .leftImage, .rightImage{
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 16px;
+        height: 100%;
+        // position: absolute;
+        // top: 0px;
+    }
+    &::before, .leftImage{
+        padding-right: 4px;
+        grid-column: 1;
+    }
+    &::after, .rightImage{
+        padding-left: 4px;
+        grid-column: 3;
+    }
+    @if $leftIcon != ""{
+        &::before{
+            content: "";
+            background-image: $leftIcon;
+            left: 12px;
+        }
+    }
+    @if $rightIcon != ""{
+        &::after{
+            content: "";
+            background-image: $rightIcon;
+            right: 12px;
+        }
+    }
+
+}

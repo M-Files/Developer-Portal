@@ -17,6 +17,18 @@ The User Interface Extensibility Framework is used to develop additional client-
 * Context-menu items that allow custom processing for selected objects.
 * Display of [dashboards]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/) that contain custom user interfaces.  These user interfaces may be context-sensitive, such as showing a [burndown chart](https://en.wikipedia.org/wiki/Burn_down_chart) for a project when the project is selected in M-Files.
 
+## Versions
+
+There are two versions of the User Interface Extensibility Framework.  Version 1 is compatible with M-Files Desktop and - with some restrictions - M-Files Classic Web.  Version 2 is compatible with M-Files Web.  Whilst the core concepts are transferrable between the two versions, the development practices and API models vary significantly.
+
+### Version 2
+
+The User Interface Extensibility Framework version 2 will be made available more widely in 2024.  There are some significant differences between the older version and this newer version, including:
+
+* The API model uses the gRPC structures and methods, replacing the older COM API structures.  The gRPC API structures are often more verbose, but there is some wider functionality available.
+* The API methods, and many methods within the UIX object model (e.g. ShellFrame), now return Promises and are designed to be used in an asynchronous manner.
+* M-Files is looking to improve the developer experience by enabling TypeScript and other technologies as first-class citizens.
+
 ## Development practices
 
 [Developing User Interface Extensibility Framework applications]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/) uses a different set of technologies and approaches compared to server-side development such as [VBScript]({{ site.baseurl }}/Built-In/VBScript/) or the [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/).

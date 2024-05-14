@@ -9,11 +9,11 @@ Access a copy of the M-Files logo, and details on how it should be used.
 
 ## M-Files desktop Logo
 
-![M-Files logo](Logo-blue-background.png){:.borderless}
+![M-Files logo](Logo-blue-background.png)
 
 Logo settings:
 
-* Width 98 px
+* Width 95 px
 * Height 24 px
 * Resolution 72 dpi
 * Color depth 32 bit
@@ -22,18 +22,18 @@ Logo settings:
 
 ### Distances
 
-* From top 24px
-* From Left 24px
+* From top 22px
+* From left 24px
 
-![Logo usage](Logo usage.png){:.borderless}
+![Logo usage](Logo usage.png)
 
 ### Download
 
 <ul class="quicklinks">
-	<li class="api"><a href="{{ site.baseurl }}/User-Experience/Logo/M-Files logo white.png">
+	<li class="api"><a href="{{ site.baseurl }}/User-Experience/Logo/M-Files_logo_blue_white.png">
 	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
 	Download M-Files Desktop logo (png) </a></li>
-	<li class="api"><a href="{{ site.baseurl }}/User-Experience/Logo/M-Files logo white.svg">
+	<li class="api"><a href="{{ site.baseurl }}/User-Experience/Logo/M-Files_logo_blue_white.svg">
 	<span class="iconify" data-icon="mdi:download"></span> &nbsp;
 	Download M-Files Desktop logo (svg) </a></li>
 </ul>

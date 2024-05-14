@@ -136,41 +136,41 @@ Use **title case** for the following elements:
 
 * Dialog and tab titles
 
-![Dialog uses title cases](Dialog-title-case.png){:.borderless} ![Tab uses title cases](Tab-title-case.png){:.borderless}
+![Dialog uses title cases](Dialog-title-case.png) ![Tab uses title cases](Tab-title-case.png)
 
 * Menu items
 
-![Menu items uses title cases](Menu-items.png){:.borderless} 
+![Menu items uses title cases](Menu-items.png) 
 
 * Button labels
 
-![Button labels uses title cases](Button-labels.png){:.borderless} 
+![Button labels uses title cases](Button-labels.png) 
 
 * Node names in navigation hierarchys
 
-![Node names in a navigation hierarchy uses title cases](Node-names-in-a-navigation-hierarchy.png){:.borderless}
+![Node names in a navigation hierarchy uses title cases](Node-names-in-a-navigation-hierarchy.png)
 
 Use **sentence case** for the following elements:
 * Check box and radio button options
 
-![Sentance cases are used for check box options](Check-box.png){:.borderless} 
-![Sentance cases are used for radio button options](Rabio-button.png){:.borderless}
+![Sentance cases are used for check box options](Check-box.png) 
+![Sentance cases are used for radio button options](Rabio-button.png)
 
 * Drop-down list options
 
-![Sentance cases are used for drop list icons](Drop-down.png){:.borderless} 
+![Sentance cases are used for drop list icons](Drop-down.png) 
 
 * Group box labels
 
-![Sentance cases are used for group box labels](Group-box-labels.png){:.borderless} 
+![Sentance cases are used for group box labels](Group-box-labels.png) 
 
 * Value and setting labels
 
-![Sentance cases are used for value and settings labels](Vault-and-settings-labels.png){:.borderless} 
+![Sentance cases are used for value and settings labels](Vault-and-settings-labels.png) 
 
 * Dialog body text
 
-![Sentance cases are used for dialog body text](Dailog-body-text.png){:.borderless} 
+![Sentance cases are used for dialog body text](Dailog-body-text.png) 
 
 #### M-Files Mobile for iOS
 
@@ -190,7 +190,7 @@ In addition to using colons (:) normally in any body text content, add a colon a
 * Labels calling for the user's attention like _Note_ or _Important_
 * Value and setting labels in various dialogs like in the example below
 
-![Colons are used after following elements: Lables and various dialogs](Colons.png){:.borderless}
+![Colons are used after following elements: Lables and various dialogs](Colons.png)
 
 #### Commas and Semicolons
 
@@ -270,45 +270,45 @@ Use periods after complete sentences that are not questions or exclamations and 
 
 * Dialog and tab titles
 
-![Periods used in dialogs and tab titles](Dialog-and-tab-titles.png){:.borderless}
+![Periods used in dialogs and tab titles](Dialog-and-tab-titles.png)
 
 * Group box labelss
 
-![Periods used in group box labels](Group-box-labels.png){:.borderless}
+![Periods used in group box labels](Group-box-labels.png)
 
 * Menu items
 
-![Periods used in menu items](Menu-items.png){:.borderless}
+![Periods used in menu items](Menu-items.png)
  
 * Button labels
 
-![Periods used in button labels](Button-labels.png){:.borderless}
+![Periods used in button labels](Button-labels.png)
  
 * Node names in a navigation hierarchy
 
-![Periods used in node names in a navigation hierarchy](Node-names-in-a-navigation-hierarchy.png){:.borderless}
+![Periods used in node names in a navigation hierarchy](Node-names-in-a-navigation-hierarchy.png)
  
 * Check box and radio button options
 
-![Periods used in Check box and radio button options](Check-box.png){:.borderless}
+![Periods used in Check box and radio button options](Check-box.png)
      
 * Drop-down list options
 
-![Periods used in Drop-down list options](Drop-down.png){:.borderless}
+![Periods used in Drop-down list options](Drop-down.png)
  
 * Group box labels
  
-![Periods used in Group box labels](Group-box-labels.png){:.borderless}
+![Periods used in Group box labels](Group-box-labels.png)
 
 * Value and setting labels
 
-![Periods used in Value and setting labels](Vault-and-settings-labels.png){:.borderless}
+![Periods used in Value and setting labels](Vault-and-settings-labels.png)
 
 **Periods in the M-Files Mobile Apps**
 
 Include a period only after **body text** in message boxes and alerts.
 
-![Include a period only after body text in message boxes and alerts](Body-text.png){:.borderless}
+![Include a period only after body text in message boxes and alerts](Body-text.png)
 
 #### Ellipses
 

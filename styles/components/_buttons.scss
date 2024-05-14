@@ -1,0 +1,23 @@
+
+@use "../design-system/_variables" as variables;
+@use "../design-system/icons" as icons;
+@use "../design-system/mixins/_colours" as colours;
+@use "../design-system/mixins/_fonts" as fonts;
+@use "../design-system/mixins/components/_widget" as widgets;
+@use "../design-system/mixins/components/buttons" as buttons;
+
+body{
+	.buttons{
+		margin-top: 16px;
+		grid-gap: 16px;
+		display: grid;
+		grid-auto-flow: column;
+		justify-content: right;
+	}
+	button, a.button, input[type=button], input[type=submit]{
+		@include buttons.button("secondary");
+		&.primary, &[type=submit]{
+			@include buttons.button("primary");
+		}
+	}
+}

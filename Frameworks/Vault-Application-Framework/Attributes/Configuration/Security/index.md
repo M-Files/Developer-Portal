@@ -2,7 +2,7 @@
 layout: page
 title: Configuration Security
 includeInSearch: true
-breadcrumb: Validation
+breadcrumb: Security
 requiredVaultApplicationFrameworkVersion: 2.1
 ---
 

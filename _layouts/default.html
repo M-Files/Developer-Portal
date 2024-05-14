@@ -14,33 +14,29 @@ layout: compress
 
 	<title>{% if page.title %}{{ page.title }} {% endif %}</title>
 
-    {% include meta.html %}
+    {% include_cached meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
 	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script" />
-	<link rel="preload" href="https://code.iconify.design/2/2.1.2/iconify.min.js" as="script" />
 	<link rel="preload" href="/sw-register.js?{{ site.github.build_revision }}" as="script" />
 	<link rel="preload" href="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}" as="script" />
 	<link rel="preconnect" href="https://www.google-analytics.com" />
 	<link rel="preconnect" href="https://www.googletagmanager.com" />
 	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-	<style type="text/css">
+	<style type="text/css" media="screen">
 		@import url("{{ site.baseurl }}/styles/site.css?{{ site.github.build_revision }}");
 	</style>
 	<noscript>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/vs.min.css" integrity="sha384-j3ef4ee2gA8EhVMhTKq3LDlu9tybPMmXAD+y+1+RvZWR7gtFJHPj8N7saZeIGK/6" crossorigin="anonymous" />
 	</noscript>
-	<link rel="stylesheet" media="print" href="{{ site.baseurl }}/styles/print.css?{{ site.github.build_revision }}" />
+	<link rel="deferred-stylesheet" media="print" href="{{ site.baseurl }}/styles/print.css?{{ site.github.build_revision }}" />
 	<link rel="deferred-stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/vs.min.css" integrity="sha384-j3ef4ee2gA8EhVMhTKq3LDlu9tybPMmXAD+y+1+RvZWR7gtFJHPj8N7saZeIGK/6" crossorigin="anonymous" />
-	<link rel="preload" href="{{ site.baseurl }}/styles/themes/light.css" as="style" />
-	<link rel="preload" href="{{ site.baseurl }}/styles/themes/dark.css" as="style" />
 	
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 	<script defer src="/sw-register.js?{{ site.github.build_revision }}"></script>
 
 </head>
@@ -59,13 +55,27 @@ layout: compress
 
 <body class="reveal {{bodycssClass}} {{isLegacy}}">
 
-	<script src="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}"></script>
+	{% if 1 == 0 %}
+		<script src="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}"></script>
+	{% endif %}
 		
     <header>
 		<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z" /></svg>
-        <h1 class="title">
-            {% if page.title %} {{ page.title }} {% endif %}
-		</h1>
+		{% include_cached logo.svg %}
+        <div class="search" itemscope itemtype="http://schema.org/WebSite">
+			<meta itemprop="url" content="http://developer.m-files.com/"/>
+			<meta itemprop="name" content="M-Files Developer Portal"/>
+			<form class="search" action="/Search/" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+			<meta itemprop="target" content="http://developer.m-files.com/Search/?query={query}"/>
+				<input type="text" itemprop="query-input" class="search-box" id="query" name="query" autocomplete="off" placeholder="Search..." aria-label="Search Query" />
+				<button class="btn btn-default btn-block" type="submit" aria-label="Perform Search">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.125 18.125L12.5884 12.5M12.5884 12.5C13.6936 11.3727 14.375 9.82841 14.375 8.125C14.375 4.67322 11.5768 1.875 8.125 1.875C4.67322 1.875 1.875 4.67322 1.875 8.125C1.875 11.5768 4.67322 14.375 8.125 14.375C9.87337 14.375 11.4541 13.6571 12.5884 12.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+						</svg>				
+						<span class="label">search</span>
+					</button>
+			</form>
+		</div>
 	</header>
 
     {{ content }}
@@ -73,6 +83,8 @@ layout: compress
     <aside id="sidebar" role="complementary" aria-label="Navigational sidebar">
 		{% capture navigation %}{% include navigation.html %}{% endcapture %}{{ navigation | strip_newlines }}
     </aside>
+
+	{% include_cached footer.html %}
 
 	<script defer src="{{ site.baseurl }}/scripts/highlight.pack.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/highlightjs-line-numbers.js?{{ site.github.build_revision }}"></script>
@@ -82,7 +94,6 @@ layout: compress
 	<script defer src="{{ site.baseurl }}/scripts/external-links.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/cookies.js?{{ site.github.build_revision }}"></script>
 	<script defer src="{{ site.baseurl }}/scripts/legacy.js?{{ site.github.build_revision }}"></script>
-	<script src="{{ site.baseurl }}/scripts/iconify.js?{{ site.github.build_revision }}"></script>
 
 	<script>
 		var deferredStylesheets = document.querySelectorAll("link[rel=deferred-stylesheet]");
@@ -92,7 +103,7 @@ layout: compress
 		}
 	</script>
 
-    {% include analytics.html %}
+    {% include_cached analytics.html %}
 
 </body>
 

@@ -11,19 +11,11 @@ Good typography is invisible, enabling users to have a seamless experience while
 
 M-Files Desktop uses Segoe UI typeface.
 
-![Typefaces. Segoe UI Light is used in sub-headings. Segoe UI Regular is used as base text. Segoe UI Bold is used to highlight text.](Typefaces.png){:.borderless}
-
-## Scale
-
-Typography has 4 different scales.
-
-![Typography scale](Scale.png){:.borderless}
-
 ## Text and background
 
-Text is displayed bit diferently depending on the background color. With blue background white text is used and with gray background darker text is used.
+Text is displayed bit differently depending on the background color. With blue background white text is used and with gray background darker text is used.
 
-![With blue background text color is white. With light background text color is black or gray.](Text background.png){:.borderless}
+![With blue background text color is white. With light background text color is black or gray.](Text background.png)
 
 ## How to use and when
 
@@ -31,20 +23,22 @@ Below is explained how to use different fonts in M-Files Desktop.
 
 ### Vault listing typography
 
-![Vault listing typography](Vault-listing-typography.png){:.borderless}
+![Vault listing typography](Vault-listing-typography.png)
 
-1.	Lato 14px, White #FFFFFF
-2.	Lato 16px, Gray 1 #363A40
-3.	Lato 14px, Gray 1 #363A40
-4.	Lato 14px, Gray 1 #363A40
+1.	{: .swatch style="--hex-color: #ffffff" title="#ffffff"}Segoe UI 14px, #FFFFFF
+2.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}Segoe UI 16px, #0A1541
+3.	{: .swatch style="--hex-color: #ffffff" title="#ffffff"}Segoe UI 16px, #FFFFFF
+4.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}Segoe UI 14px, #0A1541
+{:.swatches}
 
 ### Metadata card and text
 
-![Metadata card typography](Metadata-typography.png){:.borderless}
+![Metadata card typography](Metadata-typography.png)
 
-1.	Lato 20px, Gray 1 #363A40
-2.	Lato 14px, Gray 2 #767676
-3.	Lato 14px, Gray 2 #767676
-4.	Lato 14px, Gray 1 #363A40
-5.	Lato 14px, Gray 1 #363A40
-6.	Lato 14px, Gray 1 #363A40
+1.	{: .swatch style="--hex-color: #363A40" title="#363A40"}Segoe UI 22px, #363A40
+2.	{: .swatch style="--hex-color: #6C728D" title="#6C728D"}Segoe UI 14px, #6C728D
+3.	{: .swatch style="--hex-color: #6C728D" title="#6C728D"}Segoe UI 14px, #6C728D
+4.	{: .swatch style="--hex-color: #006EEF" title="#006EEF"}Segoe UI 14px, #006EEF
+5.	{: .swatch style="--hex-color: #6C728D" title="#6C728D"}Segoe UI 14px, #6C728D
+6.	{: .swatch style="--hex-color: #363A40" title="#363A40"}Segoe UI 14px, #363A40
+{:.swatches}

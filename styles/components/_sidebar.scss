@@ -1,0 +1,51 @@
+@use "../design-system/_variables" as variables;
+@use "../design-system/mixins/_colours" as colours;
+@import "sidebar/treeview";
+
+body{
+
+	aside#sidebar{
+		display: none;
+		position: fixed;
+		top: 68px;
+		left: 0px;
+		width: 300px;
+		padding: 10px 20px 10px 10px;
+		bottom: 0px;
+		overflow: auto;
+		background-color: colours.deepBlue(5);
+		border-top-left-radius: variables.$borderradius;
+		z-index: 130;
+	}
+
+	&.sidebar-expanded{
+		aside#sidebar{
+			display: block;
+		}
+	}
+	nav.secondary li {
+		a, a:visited, a:active, a:hover{
+			color: colours.nightSky();
+            display: block;
+            padding: 7px 0px 7px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+	body{
+		aside#sidebar{
+			display: block;
+			position: relative;
+			top: 0;
+			left: 0;
+			grid-column: 1;
+			grid-row: 2;
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			border-right-width: 0px;
+		}
+	}
+}

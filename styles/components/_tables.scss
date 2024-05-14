@@ -1,0 +1,7 @@
+@use "../design-system/mixins/components/tables" as tables;
+
+body{
+    table:not(.hljs-ln){
+        @include tables.table();
+    }
+}

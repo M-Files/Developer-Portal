@@ -1,0 +1,175 @@
+@use "../../design-system/mixins/_colours" as colours;
+@use "../../design-system/mixins/_fonts" as fonts;
+
+
+
+pre {
+    position: relative;
+	border: 1px solid colours.nightSky(20);
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-break: break-word;
+	&.highlight.parsing
+	{
+		display: none;
+	}
+}
+
+/* for block of numbers */
+.hljs-ln td.hljs-ln-numbers {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	text-align: right;
+	color: colours.nightSky(60);
+	border-right: 1px solid colours.nightSky(20);
+	vertical-align: top;
+	padding-right: 5px;
+    text-wrap: nowrap;
+}
+
+/* for block of code */
+.hljs-ln td.hljs-ln-code {
+	padding-left: 10px;
+}
+
+code.highlighter-rouge
+{
+    padding: 0px 5px;
+    background-color: colours.highlightYellow();
+    border: 1px solid colours.yellow();
+	margin: 0px 2px;
+	font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+	color-adjust: exact;
+}
+
+pre>code.hljs,
+	pre>code.language-txt,
+	pre>code.language-reg {
+    border-top: 32px solid colours.nightSky(5);
+	display: block;
+	overflow-x: auto;
+    border-radius: 8px;
+}
+
+code::before {
+    font-size: 0.8em;
+    float: left;
+    position: absolute;
+    top: 8px;
+	right: 8px;
+	color: colours.nightSky();
+}
+
+code.language-reg::before {
+    content: '.reg';
+}
+
+.language-vbscript code.hljs::before,
+	 code.hljs.language-vbscript::before {
+    content: 'VBScript';
+}
+
+.language-text code.hljs::before,
+	 code.hljs.language-text::before {
+    content: 'Text';
+}
+
+.language-csharp code.hljs::before,
+	code.hljs.language-cs::before,
+	code.hljs.language-csharp::before {
+    content: 'C# (.NET)';
+}
+
+.language-xml code.hljs::before,
+	code.hljs.language-xml::before {
+    content: 'XML';
+}
+
+.language-javascript code.hljs::before,
+	code.hljs.language-javascript::before {
+    content: 'JavaScript';
+}
+
+.language-json code.hljs::before,
+	code.hljs.language-json::before {
+    content: 'JSON';
+}
+
+.language-html code.hljs::before,
+	code.hljs.language-html::before {
+    content: 'HTML';
+}
+
+.disableLineNumbers .hljs-ln-numbers
+{
+	display: none;
+}
+
+.toggleLineNumbers,
+	.copyCode
+{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+	left: 8px;
+	font-size: 1.5em;
+	color: colours.nightSky(60);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	max-height: 25px;
+}
+
+.copyCode
+{
+	left: 40px;
+}
+
+.highlight .btn
+{
+	position: relative;
+	top: -2px;
+	left: -4px;
+	padding: 2px;
+	width: 26px;
+	height: 22px;
+}
+
+.highlight .btn:hover,
+	.toggleLineNumbers .btn
+{
+	background-color: #DDD;
+}
+.disableLineNumbers .toggleLineNumbers .btn
+{
+	background-color: transparent;
+}
+
+.toggleLineNumbers i.btn::before {
+    top: 1px;
+}
+.copyCode i.btn::before {
+    font-size: 0.8em;
+    top: 0px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm)
+{ 
+	/* Chrome displays the icons slightly differently and it needs moving */
+	.copyCode i.btn::before {
+		position: relative;
+		top: -2px;
+	}
+}

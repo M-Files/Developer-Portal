@@ -6,17 +6,7 @@ noInnerLinks: true
 
 ## Legacy Vault Application Framework (VAF)
 
-* Vault Application Framework 2.2
-	* [VAF 2.2 Visual Studio Project Template](VAF2.2/)
-	* [Legacy Task Queue approach](VAF2.2/Multi-Server-Mode/)
-		* [Broadcast Queues](VAF2.2/Multi-Server-Mode/Broadcast/)
-		* [Concurrent Queues](VAF2.2/Multi-Server-Mode/Concurrent/)
-		* [Sequential Queues](VAF2.2/Multi-Server-Mode/Sequential/)
-* Vault Application Framework 2.1
-	* [VAF 2.1 Visual Studio Project Template](VAF2.1/)
-* Vault Application Framework 2.0
-	* [VAF 2.0 Visual Studio Project Template](VAF2.0/)
+* Vault Application Framework
+	* [Visual Studio Project Templates](Visual-Studio)
 * General
 	* [Background Operations](Background-Operations/)
-
-

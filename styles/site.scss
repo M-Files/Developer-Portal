@@ -1,41 +1,165 @@
 ---
 ---
 
-@import "colours";
-@import "mixins";
-@import "base";
-@import "buttons";
-@import "header";
-@import "footer";
-@import "breadcrumb";
-@import "sidebar";
-@import "in-page-nav";
-@import "external-links";
-@import "search";
-@import "quicklinks";
-@import "tables";
-@import "code-formatting";
-@import "highlightjs-custom";
-@import "samples.scss";
-@import "sharing.scss";
-@import "ux.scss";
-@import "cookies.scss";
-@import "options.scss";
+@use "reset.css";
 
-@import "tags.scss";
-@import "other-articles.scss";
-@media screen and (min-width: 500px)
-{
-	@import "min-width-500px/base";
-}
-@media screen and (min-width: 1000px)
-{
-	@import "min-width-1000px/base";
-}
-@media screen and (min-width: 1500px)
-{
-	@import "min-width-1500px/base";
-	@import "min-width-1500px/in-page-nav";
-	@import "min-width-1500px/sharing";
+@use "design-system/icons" as icons;
+@use "design-system/mixins/_colours" as colours;
+@use "design-system/mixins/_fonts" as fonts;
+
+@import "components/scrollbar";
+@import "components/footer";
+@import "components/header";
+@import "components/buttons";
+@import "components/sidebar";
+@import "components/tables";
+@import "components/page-contents";
+
+html { scroll-behavior: smooth; } 
+
+body{
+	min-width: 490px;
+	background-color: colours.white();
+	color: colours.nightSky();
+	@include fonts.font-body1();
+	display: grid;
+	grid-template-rows: 68px auto auto;
+	grid-template-columns: 0px auto 0px;
+
+	strong{
+		font-weight: 400;
+	}
+
+	h1, h2, h3, h4, h5, h6, h7, h8 {
+		@include fonts.font-heading;
+	}
+
+	h1{ @include fonts.font-heading1; }
+	h2{ @include fonts.font-heading2; }
+	h3{ @include fonts.font-heading3; }
+	h4{ @include fonts.font-heading4; }
+	h5{ @include fonts.font-heading5; }
+	h6{ @include fonts.font-heading6; }
+	h7{ @include fonts.font-heading7; }
+
+	p { margin: 12px 0px;}
+
+	a, a:visited, a:link, a:active{
+		color: colours.blueMoment();
+		text-decoration: none;
+		&.external::after{
+			content: " ";
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background-image: icons.externalLink();
+			background-repeat: no-repeat;
+			background-position: 0px 2px;
+		}
+		&.public-anchor{
+			margin: 0px 5px;
+			svg path{
+				fill: colours.nightSky(40);
+			}
+			&:hover{
+				svg path{
+					fill: colours.nightSky();
+				}
+			}
+		}
+	}
+	p.color{
+		display: grid;
+		grid-template-columns: 100px 100px min-content auto;
+		align-items: center;
+		gap: 16px;
+		&:before {
+			display: grid;
+			grid-column: 1;
+			content: " ";
+			width: 100px;
+			height: 100px;
+			background-color: var(--hex-color);
+			content: attr(data-hex);
+			border-radius: 20px;
+			align-items: center;
+			justify-items: center;
+			color: white;
+		}
+		&.invert:before{
+			color: #0A1541;
+		}
+		&:after {
+			display: block;
+			grid-column: 4;
+			content: attr(data-where);
+		}
+	}
+	ul.swatches, ol.swatches{
+		> li{
+			position: relative;
+			&.swatch{
+				&:before{
+					display: inline-block;
+					content: " ";
+					background-color: var(--hex-color);
+					width: 1em;
+					height: 1em;
+					border-radius: 4px;
+					margin: 0px 4px;
+					border: 1px solid black;
+					position: absolute;
+					left: calc(-0.5em + 4px);
+					top: 2px;
+				}
+			}
+		}
+	}
+	ul.swatches{
+		> li{
+			&.swatch{
+				list-style-type: none;
+				&:before{
+					left: calc(-1em - 12px);
+				}
+			}
+		}
+	}
+	ol.swatches{
+		> li{
+			padding-left: calc(1em + 8px);
+		}
+	}
 }
 
+@media screen and (min-width: 800px) {
+	body{
+		grid-template-columns: 0px auto 280px;
+		&:not(:has(#in-page-nav)) {
+			grid-template-columns: 0px auto 0px;
+		}
+	}
+}
+@media screen and (min-width: 1000px) {
+	body{
+	}
+}
+@media screen and (min-width: 1200px) {
+	body{
+		grid-template-columns: 280px auto 280px;
+		&:not(:has(#in-page-nav)) {
+			grid-template-columns: 280px auto 0px;
+		}
+	}
+}
+@media screen and (min-width: 1500px) {
+	body{
+	}
+}
+
+#share-links, #options{
+	display: none;
+}
+
+
+@import "themes/_themes";
