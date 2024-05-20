@@ -18,7 +18,6 @@
 html { scroll-behavior: smooth; } 
 
 body{
-	min-width: 490px;
 	background-color: colours.white();
 	color: colours.nightSky();
 	@include fonts.font-body1();
