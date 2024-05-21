@@ -10,7 +10,7 @@ This page refers to running Vault Application Framework applications within the 
 
 ## Available cloud architectures
 
-M-Files Cloud offers two distinct architectures: isolated (e.g. one server/container per customer) or within a shared instance (e.g. many vaults/customers on one server).
+M-Files Cloud offers two distinct architectures: isolated (e.g. one environment per customer) or within a shared instance (e.g. many vaults/customers on one environment).
 
 Feature | Shared M-Files Cloud | Isolated M-Files Cloud
 --- | --- | ---
@@ -39,7 +39,7 @@ Once an application has passed validation, a [signed version](#code-signing) of 
 
 ### Validation process
 
-To request code validation, partners should open an Implementation Support Request using the [Support Portal](https://m-files.force.com/s/).  Customers without access to the Support Portal should email [support@m-files.com](mailto:support@m-files.com).  Ensure that the Implementation Support Request contains a summary of the application you wish to be validated.  If submitting an update to an already-validated application then please include a summary of changes.  A member of the validation team will contact you and guide you through the process, including providing details on how to upload the application source code.
+To request code validation, partners should open an Implementation Support Request using the [Support Portal](https://m-files.force.com/s/).  Ensure that the Implementation Support Request contains a summary of the application you wish to be validated.  If submitting an update to an already-validated application then please include a summary of changes.  A member of the validation team will contact you and guide you through the process, including providing details on how to upload the application source code.
 
 ### Rules of thumb
 
@@ -65,7 +65,7 @@ The validation team will check a number of items in the source code, including:
 
 <div class="checklist" markdown="1">
 
-1. Your application must be [Multi-Server-Mode-compatible]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) to run in the New Cloud.  In order to ensure that vaults can be migrated to the newer infrastructure, **all newly-submitted vault applications must be multi-server-mode compatible**.
+1. Your application must be [Multi-Server-Mode-compatible]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) to run in M-Files Cloud.  In order to ensure that vaults can be migrated to the newer infrastructure, **all newly-submitted vault applications must be multi-server-mode compatible**.
 1. The application **must not attempt to modify any Windows-level settings**.
 1. The application **must not install any Windows applications or reboot the server**.
 1. The application **must not excessively use server resources**, even in dedicated environments.
