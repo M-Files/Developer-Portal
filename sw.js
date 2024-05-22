@@ -24,6 +24,11 @@ self.addEventListener('fetch', function(event) {
 	{
 		return;
 	}
+	// Skip data from other domains
+	if(!event.request.url.startsWith("https://developer.m-files.com"))
+	{
+		return;
+	}
 	event.respondWith(checkResponse(event.request).catch(function() {
 		console.log('Returning cached asset for ' + event.request.url);
 		return returnFromCache(event.request)}
