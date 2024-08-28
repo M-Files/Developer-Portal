@@ -5,6 +5,9 @@ includeInSearch: true
 breadcrumb: Audit Trail
 ---
 
+If you need to develop new scripts or edit existing, we recommend that you replace VBScript with Vault Application Framework (VAF) development for future compatibility. For more information see [the Vault Application Framework section]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/).
+{:.note.warning}
+
 If a server-side script (e.g. event handler, or workflow state action) alters an object during the save process, it can affect the way in which the audit trail records and displays information.
 
 ## The broken audit trail

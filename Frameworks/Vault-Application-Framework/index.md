@@ -8,6 +8,10 @@ excerpt: The Vault Application Framework was created within M-Files to provide a
 
 ## Why use the Vault Application Framework?
 
+### Longevity
+
+Microsoft has announced that VBScript is starting a deprecation process; future versions of Microsoft Windows will not include VBScript by default then, later, future versions will remove it entirely.  It is strongly recommended that new customisations are written using the VAF to avoid this limitation.
+
 ### Improvements over VBScript
 
 #### Strong typing
