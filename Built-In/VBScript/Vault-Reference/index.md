@@ -5,6 +5,9 @@ includeInSearch: true
 breadcrumb: Vault Reference
 ---
 
+If you need to develop new scripts or edit existing, we recommend that you replace VBScript with Vault Application Framework (VAF) development for future compatibility. For more information see [the Vault Application Framework section]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/).
+{:.note.warning}
+
 When connecting using the [COM API]({{ site.baseurl }}/APIs/COM-API), you must use a [client connection]({{ site.baseurl }}/APIs/COM-API/Connecting-And-Authenticating/#creating-a-client-connection) or [server connection]({{ site.baseurl }}/APIs/COM-API/Connecting-And-Authenticating/#creating-a-server-connection) to connect to the server and retrieve a vault reference.  When using VBScript a reference to the current vault is [automatically provided via the `Vault` VBScript variable](https://www.m-files.com/user-guide/latest/eng/Variables.html).
 
 ## Using the vault reference
