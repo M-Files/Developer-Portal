@@ -115,7 +115,37 @@ var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8
 
 ### Specifying server details
 
-Connection can be made via TCP/IP (default):
+#### Using gRPC
+
+The gRPC protocol should be used for all connections, where available.
+{:.note.warning}
+
+```csharp
+// Instantiate an MFilesServerApplication object.
+// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
+var mfServerApplication = new MFilesServerApplication();
+
+// Set up the connection data.
+var connectionData = new ConnectionData();
+connectionData.ClientCapabilities.UnmanagedObjectsSupported = true;
+connectionData.AllowUsingAuthenticationPlugins = true;
+connectionData.EncryptedConnection = true; // Must be true if the server uses TLS.
+// Ensure that you use the correct port.  In the cloud this is 443 but may be different in other architectures.
+// Check with the system administrator.
+connectionData.Endpoint = "443";
+connectionData.NetworkAddress = "m-files.mycompany.com"; // Connect to m-files.mycompany.com;
+connectionData.ProtocolSequence = "grpc";
+
+// Connect using the default authentication details.
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+mfServerApplication.ConnectEx7(connectionData);
+
+// Obtain a connection to the vault with GUID {C840BE1A-5B47-4AC0-8EF7-835C166C8E24}.
+// Note: this will except if the vault is not found.
+var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
+```
+
+#### Using TCP/IP
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
@@ -135,7 +165,7 @@ mfServerApplication.Connect(
 var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
 ```
 
-Connection can be made via HTTPS:
+#### Using RPC over HTTPS
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
@@ -157,34 +187,6 @@ var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8
 
 With the HTTPS protocol, specify the M-Files Server endpoint that will be used between the RPC Proxy and M-Files Server on the server side. Typically this value is 4466. Note that this parameter does not affect the port that the client uses to communicate with the server. Regardless of this setting, the client will always use the standard HTTPS port for communicating with the server.
 {:.note}
-
-### Connecting via the gRPC protocol
-
-The gRPC protocol should be used when connecting to some M-Files Cloud vaults.  Only a small number of cloud vaults currently require this protocol and you will be informed if you need to use this protocol when connecting.
-{:.note}
-
-```csharp
-// Instantiate an MFilesServerApplication object.
-// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
-var mfServerApplication = new MFilesServerApplication();
-
-// Set up the connection data.
-var connectionData = new ConnectionData();
-connectionData.ClientCapabilities.UnmanagedObjectsSupported = true;
-connectionData.AllowUsingAuthenticationPlugins = true;
-connectionData.EncryptedConnection = true; // Must be true if the server uses TLS.
-connectionData.Endpoint = "443";
-connectionData.NetworkAddress = "m-files.mycompany.com"; // Connect to m-files.mycompany.com;
-connectionData.ProtocolSequence = "grpc";
-
-// Connect using the default authentication details.
-// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
-mfServerApplication.ConnectEx7(connectionData);
-
-// Obtain a connection to the vault with GUID {C840BE1A-5B47-4AC0-8EF7-835C166C8E24}.
-// Note: this will except if the vault is not found.
-var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
-```
 
 ### Connecting via OAuth
 
