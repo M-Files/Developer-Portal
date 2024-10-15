@@ -3,11 +3,10 @@ layout: page
 title: Using Pre-Shared Keys through the M-Files Web Service (REST API)
 includeInSearch: true
 breadcrumb: Pre-Shared Keys
-legacy: true
 ---
 
 Pre-shared keys are not supported in M-Files Cloud and should not be used for new implementations.  [OAuth]({{site.baseurl}}/APIs/REST-API/Authentication/#connecting-via-oauth) should be used for authentication instead of pre-shared keys.
-{:note.warning}
+{:.note.warning}
 
 This article discusses how to provide Pre-Shared Key information when using the M-Files Web Service.  Pre-Shared Key setup and configuration information can be found [in the M-Files Knowledgebase](https://kb.cloudvault.m-files.com/link.ashx?Action=Download&vault=3ECA226F-7B54-428B-B539-DE443E6134EC&objectGUID=1A27BE65-4C0B-4A78-9919-825A8E20635C&fileGUID=C0B87DAE-C30E-4337-A4B5-860EC729A9CD&ObjectVersion=-1).
 {:.note}
