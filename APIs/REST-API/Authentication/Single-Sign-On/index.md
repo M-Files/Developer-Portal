@@ -3,11 +3,10 @@ layout: page
 title: Using Single Sign On (SSO) through the M-Files Web Service (REST API)
 includeInSearch: true
 breadcrumb: Single Sign On
-legacy: true
 ---
 
 Single Sign-On should not be used for new implementations.  [OAuth]({{site.baseurl}}/APIs/REST-API/Authentication/#connecting-via-oauth) should be used for authentication instead of Single Sign-On.
-{:note.warning}
+{:.note.warning}
 
 Single Sign-On is a mechanism to allow authenticated users to interact with network resources without explicitly authenticating with each one individually.  M-Files Classic Web, and therefore the M-Files Web Service, supports Single Sign-On, but requires some manual steps to enable and configure.
 This document details those steps and provides a sample C# class which shows the process of signing into the M-Files Classic Web and using the token received to authenticate to the M-Files Web Service and execute further queries.
