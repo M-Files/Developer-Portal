@@ -1,0 +1,91 @@
+
+@use "../../design-system/_variables" as variables;
+@use "../../design-system/icons" as icons;
+@use "../../design-system/mixins/_colours" as colours;
+@use "../../design-system/mixins/_fonts" as fonts;
+@use "../../design-system/mixins/components/_widget" as widgets;
+@use "../../design-system/mixins/components/buttons" as buttons;
+
+body{
+	.treeview{
+		ul{
+			padding-left: 14px;
+		}
+		li{
+			display: none;
+			position: relative;
+			margin: 4px 0px;
+			svg.expandCollapseIcon{
+				position: absolute;
+				top: 10px;
+				left: 5px;
+				cursor: pointer;
+				path{ fill: colours.nightSky(); }
+			}
+			a{
+				display: block;
+				padding: 7px 0px 7px 24px;
+				text-decoration: none;
+				border-radius: variables.$borderradius_small;
+				span.icon
+				{
+					width: 16px;
+					height: 16px;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: contain;
+					display: inline-block;
+					position: relative;
+					top: 3px;
+					left: 5px;
+					&.official-reference{
+						background-image: icons.officialReference()
+					}
+					&.github{
+						background-image: icons.github()
+					}
+				}
+			}
+			a, a:visited, a:active, a:hover{
+				color: colours.nightSky();
+			}
+			&.current > a, &:has(li.current) > a {
+				font-weight: 600;
+			}
+		}
+		> li,
+			li:has(li.current) > ul > li,
+			li.current > ul > li,
+			li.expanded > ul > li{
+				display: block;
+		}
+		li.collapsed > ul > li{
+			display: none !important;
+		}
+		li.current > a{
+			background-color: colours.deepBlue(10);
+			border-radius: variables.$borderradius_small;
+		}
+		li.expanded, li.current, li:has(li.current){
+			&:not(.collapsed){
+				> svg.expandCollapseIcon{
+					rotate: 90deg;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	body{
+		.treeview{
+			li{ display: none; }
+			> li, li.expanded > ul > li{
+				display: block;
+			}
+			ul{
+				padding-left: 14px;
+			}
+		}
+	}
+}

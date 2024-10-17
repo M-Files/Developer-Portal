@@ -49,7 +49,7 @@
     </div>
     <div id="i-header-content" class="i-header-content">
         <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
-            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files API 22.6.11519.0<!--DXMETADATA end--></div>
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files API 23.11.13135.0<!--DXMETADATA end--></div>
         <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="PageItemTitle" -->MFBuiltInPropertyDef Enumeration<!--DXMETADATA end--></div></div>
     </div>
     <div id="i-after-header-content" class="i-after-header-content">
@@ -77,6 +77,7 @@
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefComment</td><td align="right" Class="i-enum-value">33</td><td class="i-description">Comment text for the object version. Same as MFBuiltInPropertyDefVersionComment.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefCompleted</td><td align="right" Class="i-enum-value">98</td><td class="i-description">Specifies whether or not the assignment has been completed.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefCompletedBy</td><td align="right" Class="i-enum-value">45</td><td class="i-description">A list of users who have completed the current assignment.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefConflictedVersion</td><td align="right" Class="i-enum-value">107</td><td class="i-description">The version where the conflict happened.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefConflictResolved</td><td align="right" Class="i-enum-value">96</td><td class="i-description">The date and time a conflict was last resolved in favor of the object.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefCreated</td><td align="right" Class="i-enum-value">20</td><td class="i-description">The creation date and time of an object.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefCreatedBy</td><td align="right" Class="i-enum-value">25</td><td class="i-description">Identifies the user who created the object.</td></tr>
@@ -85,7 +86,11 @@
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefDeleted</td><td align="right" Class="i-enum-value">27</td><td class="i-description">The deletion date and time of the object.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefDeletedBy</td><td align="right" Class="i-enum-value">28</td><td class="i-description">Identifies the user who deleted the object.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefDeletionStatusChanged</td><td align="right" Class="i-enum-value">93</td><td class="i-description">The date and time of the last change to the deletion status of the object.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefEditAccessToUserGroups</td><td align="right" Class="i-enum-value">111</td><td class="i-description">List of users groups that have edit access to document.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefEditAccessToUsers</td><td align="right" Class="i-enum-value">110</td><td class="i-description">List of users that have edit access to document.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefEmailConversationID</td><td align="right" Class="i-enum-value">112</td><td class="i-description">The conversation ID of an email.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefFavoriteView</td><td align="right" Class="i-enum-value">82</td><td class="i-description">The 'favorite views' where the object should be shown.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefIncompleteMetadata</td><td align="right" Class="i-enum-value">104</td><td class="i-description">Incomplete metadata.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefInReplyTo</td><td align="right" Class="i-enum-value">84</td><td class="i-description">E-mail in-reply-to internet header value.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefInReplyToReference</td><td align="right" Class="i-enum-value">85</td><td class="i-description">E-mail in-reply-to references between documents belonging to the same conversation.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefIsTemplate</td><td align="right" Class="i-enum-value">37</td><td class="i-description">A Boolean property identifying whether the object is a template.</td></tr>
@@ -98,15 +103,20 @@
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefMonitoredBy</td><td align="right" Class="i-enum-value">43</td><td class="i-description">A list of users who are monitoring the current assignment.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefNameOrTitle</td><td align="right" Class="i-enum-value">0</td><td class="i-description">The name or title property definition.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefObjectChanged</td><td align="right" Class="i-enum-value">89</td><td class="i-description">The date and time of the last change to the object.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefObjectChangedForExport</td><td align="right" Class="i-enum-value">105</td><td class="i-description">The last time the object had either a versioning or non-versioning change for content exporting.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefObjectID</td><td align="right" Class="i-enum-value">-102</td><td class="i-description">This special value is used for referring to Object ID in ObjectTypeColumnMapping.TargetPropertyDef.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefObjectVersionChangedForExport</td><td align="right" Class="i-enum-value">106</td><td class="i-description">The last time the object version had a change for content exporting.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefOriginalPath</td><td align="right" Class="i-enum-value">75</td><td class="i-description">The location from which the object was imported to M-Files.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefOriginalPath2</td><td align="right" Class="i-enum-value">77</td><td class="i-description">The location from which the object was imported to M-Files (continued).</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefOriginalPath3</td><td align="right" Class="i-enum-value">78</td><td class="i-description">The location from which the object was imported to M-Files (continued).</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefReadAccessToUserGroups</td><td align="right" Class="i-enum-value">109</td><td class="i-description">List of user groups that have read access to document.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefReadAccessToUsers</td><td align="right" Class="i-enum-value">108</td><td class="i-description">List of users that have read access to document.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefReference</td><td align="right" Class="i-enum-value">76</td><td class="i-description">A list of referenced documents.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefRejectedBy</td><td align="right" Class="i-enum-value">97</td><td class="i-description">A list of users who have rejected the current assignment.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefReportPlacement</td><td align="right" Class="i-enum-value">88</td><td class="i-description">Report placement.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefReportURL</td><td align="right" Class="i-enum-value">87</td><td class="i-description">Report URL.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefRepository</td><td align="right" Class="i-enum-value">102</td><td class="i-description">The repository of an object.</td></tr>
+<tr><td class=MemberNameCell>MFBuiltInPropertyDefShareAsReadOnly</td><td align="right" Class="i-enum-value">113</td><td class="i-description">List of Share objects that will give read-only permissions.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefSharedFiles</td><td align="right" Class="i-enum-value">95</td><td class="i-description">The shared location paths of the object's shared files.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefSignatureManifestation</td><td align="right" Class="i-enum-value">86</td><td class="i-description">Signature manifestation.</td></tr>
 <tr><td class=MemberNameCell>MFBuiltInPropertyDefSingleFileObject</td><td align="right" Class="i-enum-value">22</td><td class="i-description">A Boolean property identifying whether the object is a single-file object.</td></tr>
@@ -134,7 +144,7 @@
     </div>
     <div id="i-footer-content" class="i-footer-content">
         <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
-<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2022 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2023 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
 <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><a href="mailto:support@m-files.com?subject=M-Files API Documentation Feedback: MFilesAPI~MFBuiltInPropertyDef.html">Send comments</a><!--DXMETADATA end-->
     </div>
     

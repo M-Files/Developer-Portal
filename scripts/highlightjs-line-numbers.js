@@ -141,12 +141,12 @@ $(document).ready(function()
 
 				var $toggleLineNumbersElement = $("<div></div>")
 					.addClass("toggleLineNumbers")
-					.html("<span class='iconify btn' data-icon='mdi:format-list-numbered'></span>")
+					.html('<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.25 3C9.25 3.69036 8.69036 4.25 8 4.25C7.30964 4.25 6.75 3.69036 6.75 3C6.75 2.30964 7.30964 1.75 8 1.75C8.69036 1.75 9.25 2.30964 9.25 3ZM9.25 13C9.25 13.6904 8.69036 14.25 8 14.25C7.30964 14.25 6.75 13.6904 6.75 13C6.75 12.3096 7.30964 11.75 8 11.75C8.69036 11.75 9.25 12.3096 9.25 13ZM8 9.25C8.69036 9.25 9.25 8.69036 9.25 8C9.25 7.30964 8.69036 6.75 8 6.75C7.30964 6.75 6.75 7.30964 6.75 8C6.75 8.69036 7.30964 9.25 8 9.25Z" fill="#0A1541"/></svg>')
 					.attr("title", "Toggle line numbers")
 					.click(toggleLineNumbers);
 				var $copyCodeElement = $("<div></div>")
 					.addClass("copyCode")
-					.html("<span class='iconify btn' data-icon='mdi:content-copy'></span>")
+					.html('<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 2H3C2.44772 2 2 2.44772 2 3V10C2 10.5523 2.44772 11 3 11H4V12H3C1.89543 12 1 11.1046 1 10V3C1 1.89543 1.89543 1 3 1H9C10.1046 1 11 1.89543 11 3H10C10 2.44772 9.55229 2 9 2ZM6 6C6 5.44772 6.44772 5 7 5H13C13.5523 5 14 5.44772 14 6V13C14 13.5523 13.5523 14 13 14H7C6.44772 14 6 13.5523 6 13V6ZM5 6C5 4.89543 5.89543 4 7 4H13C14.1046 4 15 4.89543 15 6V13C15 14.1046 14.1046 15 13 15H7C5.89543 15 5 14.1046 5 13V6Z" fill="#0A1541"/></svg>')
 					.attr("title", "Copy to clipboard")
 					.click(selectAndCopyCode);
 				

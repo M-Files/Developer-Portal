@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="c4d72f96-6f8d-d980-192d-f87016e301ec.htm">Json<wbr />Conf<wbr />Editor<wbr />Attribute</a>
+    </li>
+    <li>
+      <a href="b2fdb222-2bd7-fd75-8c5f-9d9ddbf4d427.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="2548aeae-7fc8-6fb6-13a3-50b124cb37ed" href="2548aeae-7fc8-6fb6-13a3-50b124cb37ed.htm">Child<wbr />Name</a>
+    </li>
+    <li>
+      <a id="c453f2d9-e93a-983e-a451-8e87af687da3" href="c453f2d9-e93a-983e-a451-8e87af687da3.htm">Child<wbr />Type<wbr />Editor</a>
+    </li>
+    <li>
+      <a id="d35e7b0a-0bd4-ead3-1b93-1f31c6cb257a" href="d35e7b0a-0bd4-ead3-1b93-1f31c6cb257a.htm">Clear<wbr />On<wbr />Copy</a>
+    </li>
+    <li>
+      <a id="a36c9ee0-7425-9f79-cfcd-4314f3202cd6" href="a36c9ee0-7425-9f79-cfcd-4314f3202cd6.htm">Commentable</a>
+    </li>
+    <li>
+      <a id="f706a681-1a8d-4049-d801-ff5504de2585" href="f706a681-1a8d-4049-d801-ff5504de2585.htm">Default<wbr />Value</a>
+    </li>
+    <li>
+      <a id="880fd739-aa1f-1620-4860-615f5fbcf405" href="880fd739-aa1f-1620-4860-615f5fbcf405.htm">Doc<wbr />Reference</a>
+    </li>
+    <li>
+      <a id="f9f2fe24-9a35-ae34-e11d-18b3c5c15d0a" href="f9f2fe24-9a35-ae34-e11d-18b3c5c15d0a.htm">Extends<wbr />Editor</a>
+    </li>
+    <li>
+      <a id="450a05f5-eb07-4dcf-b6bf-b06d2f3abd09" href="450a05f5-eb07-4dcf-b6bf-b06d2f3abd09.htm">Force<wbr />Child<wbr />Leaf<wbr />Behavior</a>
+    </li>
+    <li>
+      <a id="4c6caea9-328d-a04f-85f8-b4b6deb9518a" href="4c6caea9-328d-a04f-85f8-b4b6deb9518a.htm">Force<wbr />Leaf<wbr />Behavior</a>
+    </li>
+    <li>
+      <a id="69e46d1b-3751-2e40-a89a-809a9455bdfb" href="69e46d1b-3751-2e40-a89a-809a9455bdfb.htm">Help<wbr />Text</a>
+    </li>
+    <li>
+      <a id="2c417381-9037-d0e2-93a9-b445ba44b3f0" href="2c417381-9037-d0e2-93a9-b445ba44b3f0.htm">Help<wbr />Text<wbr />Resource<wbr />Id</a>
+    </li>
+    <li>
+      <a id="b62b1e38-698c-8b3e-646f-e688ec461008" href="b62b1e38-698c-8b3e-646f-e688ec461008.htm">Hidden</a>
+    </li>
+    <li>
+      <a id="0e387db0-04e5-10e0-4ef8-8da9093bd0de" href="0e387db0-04e5-10e0-4ef8-8da9093bd0de.htm">Hide<wbr />When</a>
+    </li>
+    <li>
+      <a id="cce5f36a-d28b-f98a-1ee5-a6535f31585a" href="cce5f36a-d28b-f98a-1ee5-a6535f31585a.htm">Is<wbr />Required</a>
+    </li>
+    <li>
+      <a id="5eb9727d-59b7-b6f7-f39b-a2552c28bdb5" href="5eb9727d-59b7-b6f7-f39b-a2552c28bdb5.htm">Label</a>
+    </li>
+    <li>
+      <a id="e044339c-6960-6bb5-8c1a-407b401ca21a" href="e044339c-6960-6bb5-8c1a-407b401ca21a.htm">Name<wbr />Member</a>
+    </li>
+    <li>
+      <a id="938e8af7-f0b6-4e82-e0f7-1ce47f9e5f22" href="938e8af7-f0b6-4e82-e0f7-1ce47f9e5f22.htm">Options</a>
+    </li>
+    <li>
+      <a id="6d8c35f3-234e-2f49-3ada-6dc06fe5421a" href="6d8c35f3-234e-2f49-3ada-6dc06fe5421a.htm">Reg<wbr />Ex<wbr />Mask</a>
+    </li>
+    <li>
+      <a id="68496fb5-ccea-b012-14c4-ac06c380ecb8" href="68496fb5-ccea-b012-14c4-ac06c380ecb8.htm">Resource<wbr />Id<wbr />Prefix</a>
+    </li>
+    <li>
+      <a id="4e2b3f8e-a802-f474-e168-81f22da28946" href="4e2b3f8e-a802-f474-e168-81f22da28946.htm">Show<wbr />When</a>
+    </li>
+    <li>
+      <a id="b0ce7b0e-cbf5-f9a0-c609-8a0ca6ebc4f8" href="b0ce7b0e-cbf5-f9a0-c609-8a0ca6ebc4f8.htm">Type<wbr />Editor</a>
+    </li>
+    <li>
+      <a id="d40cec48-3715-6356-11ba-223ed5cbb257" href="d40cec48-3715-6356-11ba-223ed5cbb257.htm">Use<wbr />Non<wbr />Public<wbr />Members</a>
+    </li>
+    <li>
+      <a id="ee1beb7b-10ae-30af-b969-604b913c17e3" href="ee1beb7b-10ae-30af-b969-604b913c17e3.htm">Uses<wbr />Adapter</a>
+    </li>
+    <li>
+      <a id="550f4432-3a6c-2d47-f4f5-f57de8a1e948" href="550f4432-3a6c-2d47-f4f5-f57de8a1e948.htm">Value<wbr />Member</a>
+    </li>
+  </tocItems>
+</toc>

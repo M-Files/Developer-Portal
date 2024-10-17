@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="a717174e-7c41-64f0-01eb-654556e6e8e5.htm">Property<wbr />Def<wbr />Or<wbr />Object<wbr />Type<wbr />JA</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="998a468f-cb38-fd47-852e-2de5af302cd0" class="has-submenu" href="998a468f-cb38-fd47-852e-2de5af302cd0.htm">
+        <span data-tocFile="../toc/IDAMKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="a09d25cf-bb7e-e138-1707-2f3857017135" class="has-submenu" href="a09d25cf-bb7e-e138-1707-2f3857017135.htm">
+        <span data-tocFile="../toc/IDBMKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="02761571-0fcb-a35e-32a8-09189a409ea0" class="has-submenu" href="02761571-0fcb-a35e-32a8-09189a409ea0.htm">
+        <span data-tocFile="../toc/IDCMKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

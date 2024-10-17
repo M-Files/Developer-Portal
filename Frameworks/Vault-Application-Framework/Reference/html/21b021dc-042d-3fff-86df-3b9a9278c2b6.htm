@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>JsonMap Class</title>
+    <meta name="Title" content="JsonMap" />
+    <meta name="Help.Id" content="T:MFiles.VAF.Configuration.JsonMapping.JsonMap" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration.JsonMapping" />
+    <meta name="guid" content="21b021dc-042d-3fff-86df-3b9a9278c2b6" />
+    <meta name="Description" content="Defines a set of s that are used to map values in a source JSON structure to values in a target JSON structure." />
+    <meta name="tocFile" content="../toc/IDMEBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Json<wbr />Map Class</h1>
+            <div class="summary">
+            Defines a set of <a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a>s that are used to
+            map values in a source JSON structure to values in a target JSON
+            structure.
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.VAF.Configuration.JsonMapping</a><br /><strong>Assembly:</strong> MFiles.VAF.Configuration (in MFiles.VAF.Configuration.dll) Version: 23.12.13247.3<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">JsonMap</span> : <span class="identifier">List</span>&lt;<span class="identifier">JsonValueMapping</span>&gt;</code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_0" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_1" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">JsonMap</span></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDAAEASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="fc6d9cbb-8bfb-f83c-157f-932787acfcb6.htm">JsonMap<span id="LST46561B84_2" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td>
+            Default constructor.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7db83f73-9ea8-a48d-6bf1-a14c7c64f2b3.htm">JsonMap(Dictionary<span id="LST46561B84_3" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String, String<span id="LST46561B84_4" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>
+            Constructor.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="ID0EB0EASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity#System_Collections_Generic_List_1_Capacity" target="_blank" rel="noopener noreferrer">Capacity</a>
+                  </td>
+                  <td>Gets or sets the total number of elements the internal data structure can hold without resizing.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_5" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_6" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.count#System_Collections_Generic_List_1_Count" target="_blank" rel="noopener noreferrer">Count</a>
+                  </td>
+                  <td>Gets the number of elements contained in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_7" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_8" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_9" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_10" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.item#System_Collections_Generic_List_1_Item_System_Int32_" target="_blank" rel="noopener noreferrer">Item</a>
+                  </td>
+                  <td>Gets or sets the element at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_11" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_12" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDBEASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add#System_Collections_Generic_List_1_Add__0_" target="_blank" rel="noopener noreferrer">Add</a>
+                  </td>
+                  <td>Adds an object to the end of the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_13" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_14" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_15" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_16" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange#System_Collections_Generic_List_1_AddRange_System_Collections_Generic_IEnumerable__0__" target="_blank" rel="noopener noreferrer">AddRange</a>
+                  </td>
+                  <td>Adds the elements of the specified collection to the end of the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_17" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_18" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_19" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_20" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly#System_Collections_Generic_List_1_AsReadOnly" target="_blank" rel="noopener noreferrer">AsReadOnly</a>
+                  </td>
+                  <td>Returns a read-only <a href="https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1" target="_blank" rel="noopener noreferrer">ReadOnlyCollection<span id="LST46561B84_21" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_22" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> wrapper for the current collection.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_23" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_24" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_" target="_blank" rel="noopener noreferrer">BinarySearch(T)</a>
+                  </td>
+                  <td>Searches the entire sorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_25" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_26" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> for an element using the default comparer and returns the zero-based index of the element.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_27" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_28" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_System_Collections_Generic_IComparer__0__" target="_blank" rel="noopener noreferrer">BinarySearch(T, IComparer<span id="LST46561B84_29" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_30" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Searches the entire sorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_31" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_32" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> for an element using the specified comparer and returns the zero-based index of the element.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_33" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_34" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch_System_Int32_System_Int32__0_System_Collections_Generic_IComparer__0__" target="_blank" rel="noopener noreferrer">BinarySearch(Int32, Int32, T, IComparer<span id="LST46561B84_35" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_36" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Searches a range of elements in the sorted <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_37" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_38" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> for an element using the specified comparer and returns the zero-based index of the element.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_39" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_40" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.clear#System_Collections_Generic_List_1_Clear" target="_blank" rel="noopener noreferrer">Clear</a>
+                  </td>
+                  <td>Removes all elements from the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_41" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_42" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_43" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_44" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.contains#System_Collections_Generic_List_1_Contains__0_" target="_blank" rel="noopener noreferrer">Contains</a>
+                  </td>
+                  <td>Determines whether an element is in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_45" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_46" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_47" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_48" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall#System_Collections_Generic_List_1_ConvertAll__1_System_Converter__0___0__" target="_blank" rel="noopener noreferrer">ConvertAll<span id="LST46561B84_49" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TOutput<span id="LST46561B84_50" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
+                  </td>
+                  <td>Converts the elements in the current <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_51" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_52" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> to another type, and returns a list containing the converted elements.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_53" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_54" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="dca894da-b57c-5e09-11fb-7c3053375ece.htm">ConvertSource</a>
+                  </td>
+                  <td>
+            Converts a source json string to a target json string using the
+            mappings defined in this object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___" target="_blank" rel="noopener noreferrer">CopyTo(<span id="LST46561B84_55" data-languageSpecificText="cpp=array&lt;"></span>T<span id="LST46561B84_56" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>)</a>
+                  </td>
+                  <td>Copies the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_57" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_58" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> to a compatible one-dimensional array, starting at the beginning of the target array.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_59" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_60" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo__0___System_Int32_" target="_blank" rel="noopener noreferrer">CopyTo(<span id="LST46561B84_61" data-languageSpecificText="cpp=array&lt;"></span>T<span id="LST46561B84_62" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, Int32)</a>
+                  </td>
+                  <td>Copies the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_63" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_64" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> to a compatible one-dimensional array, starting at the specified index of the target array.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_65" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_66" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#System_Collections_Generic_List_1_CopyTo_System_Int32__0___System_Int32_System_Int32_" target="_blank" rel="noopener noreferrer">CopyTo(Int32, <span id="LST46561B84_67" data-languageSpecificText="cpp=array&lt;"></span>T<span id="LST46561B84_68" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, Int32, Int32)</a>
+                  </td>
+                  <td>Copies a range of elements from the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_69" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_70" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> to a compatible one-dimensional array, starting at the specified index of the target array.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_71" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_72" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6f385927-9a40-35a0-a548-6302aca62250.htm">CreateReverseMap</a>
+                  </td>
+                  <td>
+            Creates an inverted map that will map values from
+            the target JSON structure, back to the source JSON structure.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.exists#System_Collections_Generic_List_1_Exists_System_Predicate__0__" target="_blank" rel="noopener noreferrer">Exists</a>
+                  </td>
+                  <td>Determines whether the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_73" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_74" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> contains elements that match the conditions defined by the specified predicate.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_75" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_76" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.find#System_Collections_Generic_List_1_Find_System_Predicate__0__" target="_blank" rel="noopener noreferrer">Find</a>
+                  </td>
+                  <td>Searches for an element that matches the conditions defined by the specified predicate, and returns the first occurrence within the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_77" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_78" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_79" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_80" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findall#System_Collections_Generic_List_1_FindAll_System_Predicate__0__" target="_blank" rel="noopener noreferrer">FindAll</a>
+                  </td>
+                  <td>Retrieves all the elements that match the conditions defined by the specified predicate.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_81" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_82" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Predicate__0__" target="_blank" rel="noopener noreferrer">FindIndex(Predicate<span id="LST46561B84_83" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_84" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_85" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_86" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_87" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_88" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Predicate__0__" target="_blank" rel="noopener noreferrer">FindIndex(Int32, Predicate<span id="LST46561B84_89" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_90" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_91" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_92" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> that extends from the specified index to the last element.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_93" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_94" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#System_Collections_Generic_List_1_FindIndex_System_Int32_System_Int32_System_Predicate__0__" target="_blank" rel="noopener noreferrer">FindIndex(Int32, Int32, Predicate<span id="LST46561B84_95" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_96" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the first occurrence within the range of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_97" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_98" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> that starts at the specified index and contains the specified number of elements.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_99" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_100" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast#System_Collections_Generic_List_1_FindLast_System_Predicate__0__" target="_blank" rel="noopener noreferrer">FindLast</a>
+                  </td>
+                  <td>Searches for an element that matches the conditions defined by the specified predicate, and returns the last occurrence within the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_101" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_102" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_103" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_104" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Predicate__0__" target="_blank" rel="noopener noreferrer">FindLastIndex(Predicate<span id="LST46561B84_105" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_106" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_107" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_108" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_109" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_110" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Predicate__0__" target="_blank" rel="noopener noreferrer">FindLastIndex(Int32, Predicate<span id="LST46561B84_111" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_112" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_113" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_114" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> that extends from the first element to the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_115" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_116" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#System_Collections_Generic_List_1_FindLastIndex_System_Int32_System_Int32_System_Predicate__0__" target="_blank" rel="noopener noreferrer">FindLastIndex(Int32, Int32, Predicate<span id="LST46561B84_117" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_118" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Searches for an element that matches the conditions defined by the specified predicate, and returns the zero-based index of the last occurrence within the range of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_119" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_120" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> that contains the specified number of elements and ends at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_121" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_122" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach#System_Collections_Generic_List_1_ForEach_System_Action__0__" target="_blank" rel="noopener noreferrer">ForEach</a>
+                  </td>
+                  <td>Performs the specified action on each element of the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_123" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_124" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_125" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_126" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator#System_Collections_Generic_List_1_GetEnumerator" target="_blank" rel="noopener noreferrer">GetEnumerator</a>
+                  </td>
+                  <td>Returns an enumerator that iterates through the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_127" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_128" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_129" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_130" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange#System_Collections_Generic_List_1_GetRange_System_Int32_System_Int32_" target="_blank" rel="noopener noreferrer">GetRange</a>
+                  </td>
+                  <td>Creates a shallow copy of a range of elements in the source <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_131" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_132" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_133" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_134" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_" target="_blank" rel="noopener noreferrer">IndexOf(T)</a>
+                  </td>
+                  <td>Searches for the specified object and returns the zero-based index of the first occurrence within the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_135" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_136" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_137" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_138" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_" target="_blank" rel="noopener noreferrer">IndexOf(T, Int32)</a>
+                  </td>
+                  <td>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_139" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_140" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> that extends from the specified index to the last element.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_141" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_142" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#System_Collections_Generic_List_1_IndexOf__0_System_Int32_System_Int32_" target="_blank" rel="noopener noreferrer">IndexOf(T, Int32, Int32)</a>
+                  </td>
+                  <td>Searches for the specified object and returns the zero-based index of the first occurrence within the range of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_143" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_144" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> that starts at the specified index and contains the specified number of elements.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_145" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_146" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insert#System_Collections_Generic_List_1_Insert_System_Int32__0_" target="_blank" rel="noopener noreferrer">Insert</a>
+                  </td>
+                  <td>Inserts an element into the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_147" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_148" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_149" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_150" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange#System_Collections_Generic_List_1_InsertRange_System_Int32_System_Collections_Generic_IEnumerable__0__" target="_blank" rel="noopener noreferrer">InsertRange</a>
+                  </td>
+                  <td>Inserts the elements of a collection into the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_151" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_152" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_153" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_154" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_" target="_blank" rel="noopener noreferrer">LastIndexOf(T)</a>
+                  </td>
+                  <td>Searches for the specified object and returns the zero-based index of the last occurrence within the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_155" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_156" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_157" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_158" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_" target="_blank" rel="noopener noreferrer">LastIndexOf(T, Int32)</a>
+                  </td>
+                  <td>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_159" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_160" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> that extends from the first element to the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_161" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_162" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#System_Collections_Generic_List_1_LastIndexOf__0_System_Int32_System_Int32_" target="_blank" rel="noopener noreferrer">LastIndexOf(T, Int32, Int32)</a>
+                  </td>
+                  <td>Searches for the specified object and returns the zero-based index of the last occurrence within the range of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_163" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_164" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> that contains the specified number of elements and ends at the specified index.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_165" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_166" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="de9f144b-ca7f-bab3-6ea5-0a5c1682b36f.htm">MapAllValues</a>
+                  </td>
+                  <td>
+            Maps all values referenced by this map from a source JSON structure 
+            into a target JSON structure.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="562a6449-1873-95a8-1e1d-133c576d77ea.htm">MapValues</a>
+                  </td>
+                  <td>
+            Maps all values referenced by a specific mapping a source 
+            JSON structure into a target JSON structure.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.remove#System_Collections_Generic_List_1_Remove__0_" target="_blank" rel="noopener noreferrer">Remove</a>
+                  </td>
+                  <td>Removes the first occurrence of a specific object from the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_167" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_168" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_169" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_170" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall#System_Collections_Generic_List_1_RemoveAll_System_Predicate__0__" target="_blank" rel="noopener noreferrer">RemoveAll</a>
+                  </td>
+                  <td>Removes all the elements that match the conditions defined by the specified predicate.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_171" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_172" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat#System_Collections_Generic_List_1_RemoveAt_System_Int32_" target="_blank" rel="noopener noreferrer">RemoveAt</a>
+                  </td>
+                  <td>Removes the element at the specified index of the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_173" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_174" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_175" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_176" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange#System_Collections_Generic_List_1_RemoveRange_System_Int32_System_Int32_" target="_blank" rel="noopener noreferrer">RemoveRange</a>
+                  </td>
+                  <td>Removes a range of elements from the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_177" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_178" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_179" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_180" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse" target="_blank" rel="noopener noreferrer">Reverse<span id="LST46561B84_181" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td>Reverses the order of the elements in the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_182" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_183" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_184" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_185" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#System_Collections_Generic_List_1_Reverse_System_Int32_System_Int32_" target="_blank" rel="noopener noreferrer">Reverse(Int32, Int32)</a>
+                  </td>
+                  <td>Reverses the order of the elements in the specified range.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_186" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_187" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a5bce043-581a-478f-5526-0791c714bc87.htm">SetPathIndexes</a>
+                  </td>
+                  <td>
+            Get the specific path for a target value by
+            replacing any array index wild cards in the target path with
+            indexes used in the source value's path.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort" target="_blank" rel="noopener noreferrer">Sort<span id="LST46561B84_188" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td>Sorts the elements in the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_189" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_190" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> using the default comparer.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_191" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_192" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Comparison__0__" target="_blank" rel="noopener noreferrer">Sort(Comparison<span id="LST46561B84_193" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_194" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Sorts the elements in the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_195" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_196" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> using the specified <a href="https://docs.microsoft.com/dotnet/api/system.comparison-1" target="_blank" rel="noopener noreferrer">Comparison<span id="LST46561B84_197" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_198" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_199" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_200" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Collections_Generic_IComparer__0__" target="_blank" rel="noopener noreferrer">Sort(IComparer<span id="LST46561B84_201" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_202" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Sorts the elements in the entire <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_203" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_204" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> using the specified comparer.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_205" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_206" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#System_Collections_Generic_List_1_Sort_System_Int32_System_Int32_System_Collections_Generic_IComparer__0__" target="_blank" rel="noopener noreferrer">Sort(Int32, Int32, IComparer<span id="LST46561B84_207" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST46561B84_208" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>Sorts the elements in a range of elements in <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_209" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_210" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> using the specified comparer.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_211" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_212" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray#System_Collections_Generic_List_1_ToArray" target="_blank" rel="noopener noreferrer">ToArray</a>
+                  </td>
+                  <td>Copies the elements of the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_213" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_214" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> to a new array.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_215" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_216" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess#System_Collections_Generic_List_1_TrimExcess" target="_blank" rel="noopener noreferrer">TrimExcess</a>
+                  </td>
+                  <td>Sets the capacity to the actual number of elements in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_217" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_218" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>, if that number is less than a threshold value.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_219" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_220" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall#System_Collections_Generic_List_1_TrueForAll_System_Predicate__0__" target="_blank" rel="noopener noreferrer">TrueForAll</a>
+                  </td>
+                  <td>Determines whether every element in the <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LST46561B84_221" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST46561B84_222" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a> matches the conditions defined by the specified predicate.<br />(Inherited from <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST46561B84_223" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="2a6ad0ac-41eb-127b-32dd-42522d9c10e2.htm">JsonValueMapping</a><span id="LST46561B84_224" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="e429e213-67cd-2664-68de-c88ee6a49972.htm">MFiles.VAF.Configuration.JsonMapping Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

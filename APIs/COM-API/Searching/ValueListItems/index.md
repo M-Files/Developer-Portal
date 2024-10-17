@@ -16,13 +16,13 @@ Value Lists are collections of possible values that can be selected within a pro
 
 Most value lists are relatively small but occasionally - especially with external value lists - the number of items may be quite large.  When interacting with these value lists we may often need to search for values to find the ones which are appropriate to show to the user.
 
-The M-Files API provides a mechanism for searching for value list items using [VaultValueListItemOperations.SearchForValueListItemsEx](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultValueListItemOperations~SearchForValueListItemsEx.html) and [VaultValueListItemOperations.SearchForValueListItemsEx2](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultValueListItemOperations~SearchForValueListItemsEx2.html).  The only difference between these two methods is the ability to define the automatic property definition filter and the maximum number of results to return.  Searching for value list items involves the creation of [SearchCondition](https://www.m-files.com/api/documentation/MFilesAPI~SearchCondition.html) objects in the same way as searching for objects.
+The M-Files API provides a mechanism for searching for value list items using [VaultValueListItemOperations.SearchForValueListItemsEx](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultValueListItemOperations~SearchForValueListItemsEx.html) and [VaultValueListItemOperations.SearchForValueListItemsEx2](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultValueListItemOperations~SearchForValueListItemsEx2.html).  The only difference between these two methods is the ability to define the automatic property definition filter and the maximum number of results to return.  Searching for value list items involves the creation of [SearchCondition](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~SearchCondition.html) objects in the same way as searching for objects.
 
 ## Building the search conditions
 
 ### Searching by name
 
-The code below will create a [SearchCondition](https://www.m-files.com/api/documentation/MFilesAPI~SearchCondition.html) that finds items that start with `United`.
+The code below will create a [SearchCondition](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~SearchCondition.html) that finds items that start with `United`.
 
 ```csharp
 // Create the condition.
@@ -41,7 +41,7 @@ condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "United");
 
 ### Filtering out deleted items
 
-The code below will create a [SearchCondition](https://www.m-files.com/api/documentation/MFilesAPI~SearchCondition.html) which excludes deleted items.
+The code below will create a [SearchCondition](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~SearchCondition.html) which excludes deleted items.
 
 ```csharp
 // Create the condition.
@@ -60,7 +60,7 @@ condition.TypedValue.SetValue(MFDataType.MFDatatypeBoolean, false);
 
 ### Searching by owner
 
-The code below will create a [SearchCondition](https://www.m-files.com/api/documentation/MFilesAPI~SearchCondition.html) which finds value list items that have an owner ID of `3`.  In the example used higher up in this section, this could return all `Regions` within the `United Kingdom`.
+The code below will create a [SearchCondition](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~SearchCondition.html) which finds value list items that have an owner ID of `3`.  In the example used higher up in this section, this could return all `Regions` within the `United Kingdom`.
 
 ```csharp
 // Create the condition.
@@ -165,7 +165,7 @@ var conditions = new SearchConditions();
 }
 
 // Search value list with ID 102.
-// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultValueListItemOperations~SearchForValueListItemsEx.html
+// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultValueListItemOperations~SearchForValueListItemsEx.html
 var results = vault.ValueListItemOperations.SearchForValueListItemsEx(
 	ValueList: 102,
 	SearchConditions: conditions,

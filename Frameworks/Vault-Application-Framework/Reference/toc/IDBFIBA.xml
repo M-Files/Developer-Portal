@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="a8aa3537-3709-6a98-fa8c-07a39ffc2347.htm">App<wbr />Task<wbr />Update<wbr />Info</a>
+    </li>
+    <li>
+      <a href="c678a00d-ea17-6dc3-c461-0d5899f34205.htm">Properties</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c1e344e3-1e7b-694b-4d0c-5f220ee02cf1" href="c1e344e3-1e7b-694b-4d0c-5f220ee02cf1.htm">Create<wbr />At<wbr />Utc</a>
+    </li>
+    <li>
+      <a id="135620a8-3550-a91b-181b-fa5ac40282a4" href="135620a8-3550-a91b-181b-fa5ac40282a4.htm">Ended<wbr />At<wbr />Utc</a>
+    </li>
+    <li>
+      <a id="3955403d-696b-65f2-01a8-4f15629c4289" href="3955403d-696b-65f2-01a8-4f15629c4289.htm">Failure<wbr />Info</a>
+    </li>
+    <li>
+      <a id="85eba7d1-4e56-8640-c21b-560118777ce5" href="85eba7d1-4e56-8640-c21b-560118777ce5.htm">Last<wbr />Updated<wbr />At<wbr />Utc</a>
+    </li>
+    <li>
+      <a id="18e36b73-93fe-418f-696d-b3abc38061c7" href="18e36b73-93fe-418f-696d-b3abc38061c7.htm">Percent<wbr />Complete</a>
+    </li>
+    <li>
+      <a id="0628c750-5f6a-630d-4311-71cf9fee742d" href="0628c750-5f6a-630d-4311-71cf9fee742d.htm">Processing<wbr />Targets</a>
+    </li>
+    <li>
+      <a id="e79e4dcf-2dac-2f20-c865-b58e7b74a8c0" href="e79e4dcf-2dac-2f20-c865-b58e7b74a8c0.htm">Remarks</a>
+    </li>
+    <li>
+      <a id="e4c54c1a-23f2-3b2f-0ea9-201c657ed54e" href="e4c54c1a-23f2-3b2f-0ea9-201c657ed54e.htm">Server<wbr />Guid</a>
+    </li>
+    <li>
+      <a id="323e9766-7f61-477b-5a86-5c9b99d76594" href="323e9766-7f61-477b-5a86-5c9b99d76594.htm">Server<wbr />Name</a>
+    </li>
+    <li>
+      <a id="fa014d21-b6eb-7f6e-1e25-ad0f446221fd" href="fa014d21-b6eb-7f6e-1e25-ad0f446221fd.htm">Status<wbr />Info</a>
+    </li>
+    <li>
+      <a id="efba4815-c7b8-ab54-3ddc-e6c436195109" href="efba4815-c7b8-ab54-3ddc-e6c436195109.htm">Task<wbr />State</a>
+    </li>
+    <li>
+      <a id="246976dd-e784-eff9-db85-e7ba99ce3b90" href="246976dd-e784-eff9-db85-e7ba99ce3b90.htm">Trace<wbr />Info</a>
+    </li>
+    <li>
+      <a id="8571958e-4902-5bb6-535d-95cffd021744" href="8571958e-4902-5bb6-535d-95cffd021744.htm">Update<wbr />Count</a>
+    </li>
+  </tocItems>
+</toc>

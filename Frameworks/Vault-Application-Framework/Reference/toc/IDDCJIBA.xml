@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="43d6bf58-2554-a6ab-afe8-4cf53b711103.htm">Availability<wbr />Group<wbr />Status<wbr />Writer</a>
+    </li>
+    <li>
+      <a href="a1922c96-994d-5a6a-561f-dd5e80869f83.htm">Methods</a>
+    </li>
+    <li>
+      <a href="5de42647-29ae-fa34-db73-1ae660488d0d.htm">Report<wbr />Findings</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4261f3e9-e31e-49fb-41a8-90b74a1cf3e3" href="4261f3e9-e31e-49fb-41a8-90b74a1cf3e3.htm">Report<wbr />Findings(<wbr />Availability<wbr />Group<wbr />Status<wbr />Settings, String, Boolean, IEnumerable&lt;Validation<wbr />Finding&gt;, String)</a>
+    </li>
+    <li>
+      <a id="cffeb5b2-8911-31d0-834a-af94fe25cec4" href="cffeb5b2-8911-31d0-834a-af94fe25cec4.htm">Report<wbr />Findings(<wbr />String, Boolean, IEnumerable&lt;Validation<wbr />Finding&gt;, Vault, String)</a>
+    </li>
+  </tocItems>
+</toc>

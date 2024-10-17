@@ -14,6 +14,18 @@ This page contains information that is specific to implementing logging within t
 It is strongly recommended that applications utilize the [VAF Extensions library](#using-the-vaf-extensions-library) when implemented logging, as this library deals with initializing the logging framework, ensuring that configuration is validated and applied, and rendering the logging configuration to the application's dashboard.
 {:.note}
 
+## VAF 22.12
+
+To get started with the new approach, please read the documentation on the [VAF upgrade page](/Frameworks/Vault-Application-Framework/Versions/#from-version-23-to-version-2212).
+
+### Differences to previous versions
+
+There are three primary differences to the previous logging framework:
+
+1. There are two required packages: `MFiles.VAF.Configuration` and `MFiles.VAF.Configuration.Logging.NLog`.  The latter includes NLog-specific implementations.
+2. The namespace `MFiles.VaultApplication.Logging` has changed to `MFiles.VAF.Configuration.Logging`.
+3. The string-based logging methods (e.g. `Logger.Info("hello {0}", worldVar);` or `Logger.Info("hello world");`) are not supported.  Interpolated strings should be used instead (e.g. `Logger.Info($"hello {worldVar}"` or `Logger.Info($"hello world"`).
+
 ## Using the VAF Extensions library
 
 There are three steps to using the logging framework with the VAF Extensions library:
@@ -26,7 +38,7 @@ Once done, you can then use the logger from within your code:
 
 ```csharp
 using MFiles.VAF.Extensions.Dashboards;
-using MFiles.VaultApplications.Logging;
+using MFiles.VAF.Configuration.Logging;
 namespace extensionstest2
 {
 	public class VaultApplication
@@ -41,7 +53,7 @@ namespace extensionstest2
 		[ShowOnDashboard("Import data", ShowRunCommand = true)]
 		public void ProcessBackgroundTask(ITaskProcessingJob<TaskDirective> job)
 		{
-			this.Logger.Info("hello world");
+			this.Logger.Info($"hello world");
 		}
 
 	}
@@ -91,7 +103,7 @@ using MFiles.VAF.AppTasks;
 using MFiles.VAF.Configuration;
 using MFiles.VAF.Extensions;
 using MFiles.VAF.Extensions.Dashboards;
-using MFiles.VaultApplications.Logging;
+using MFiles.VAF.Configuration.Logging;
 using MFiles.VaultApplications.Logging.Resources;
 using MFilesAPI;
 using System.Collections.Generic;

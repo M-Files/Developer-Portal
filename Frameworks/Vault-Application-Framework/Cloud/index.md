@@ -10,21 +10,15 @@ This page refers to running Vault Application Framework applications within the 
 
 ## Available cloud architectures
 
-M-Files Cloud offers two distinct architectures: New Cloud and Classic Cloud.  In addition: within each architecture a vault can be configured within an isolated/dedicated instance (e.g. one server/container per vault/customer), or within a shared instance (e.g. many vaults/customers on one server).
+M-Files Cloud offers two distinct architectures: isolated (e.g. one environment per customer) or within a shared instance (e.g. many vaults/customers on one environment).
 
-M-Files is actively migrating customers from Classic Cloud to New Cloud.  **Applications - including changes to existing applications - submitted for validation that are not multi-server-mode-compatible will be rejected**.
-{:.note}
-
-Feature | Shared M-Files Classic Cloud | Shared M-Files New Cloud | Dedicated M-Files Classic Cloud | Isolated M-Files New Cloud
+Feature | Shared M-Files Cloud | Isolated M-Files Cloud
 --- | --- | ---
-Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | No | Yes | No | Yes
-Can execute [signed applications](#code-signing) | Yes | Yes | Yes | Yes
-Custom code requires [validation](#code-validation) to run | Yes | Yes | Yes | No
+Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | Yes | Yes
+Can execute [signed applications](#code-signing) | Yes | Yes
+Custom code requires [validation](#code-validation) to run | Yes | No
 
 ## Code signing
-
-Code signing will be available in 2022.
-{:.note.warning}
 
 Applications which are signed can be installed on shared M-Files instances without validation.  First-party applications such as the M-Files Compliance Kit are provided as signed packages.  Custom code can be signed by submitting it for [validation](#code-validation).
 
@@ -39,14 +33,13 @@ In order to maintain a high quality of service for customers within our Cloud in
 * **The validation team will require the source code to your VAF applications, including the source code of any libraries** .  Common libraries (e.g. Newtonsoft) can be referenced from nuget.  Libraries provided by a trusted entity (e.g. libraries signed by Microsoft or other reputable sources) may be accepted without source code.  If in doubt, please contact us prior to initiating the validation process.  We reserve the right to make minor changes to enable validation to pass.
 * **Source code will be stored in our version control systems**.  You may be asked to authorize this to comply with our internal security requirements.  Ensure that your source code does not include any credentials.
 * **The validation team will compile the code themselves**, and it is this compiled code which will be installed to the server.  Ensure that all solution files, project files, resources, imagery, libraries or other references are included in the supplied package.  Good practice is to take the package you are delivering onto another machine and attempt to compile it using just the files in the package.  If it does not compile for you there then it will not compile for us here.
-* **Unless specified, the application will be installed into the vault as soon as possible after validation**.  This will require the vault be restarted, which may result in a small time when the vault is unavailable.  To request a specific time when this installation occurs, please liaise with the validation team.  Note that installations are typically only undertaken during the working hours of the validation team assigned.
 
 Once an application has passed validation, a [signed version](#code-signing) of the code will be provided to the party who submitted the code.  This signed application can then be installed into any vault within the M-Files Cloud.  Third parties creating reusable applications that can be run in multiple vaults may consider validating their code package in order to receive a signed version that can easily be installed by clients into any vault.
 {:.note}
 
 ### Validation process
 
-To request code validation, partners should open an Implementation Support Request using the [Support Portal](https://m-files.force.com/s/).  Customers without access to the Support Portal should email [support@m-files.com](mailto:support@m-files.com).  Ensure that the Implementation Support Request contains a summary of the application you wish to be validated.  If submitting an update to an already-validated application then please include a summary of changes.  A member of the validation team will contact you and guide you through the process, including providing details on how to upload the application source code.
+To request code validation, partners should open an Implementation Support Request using the [Support Portal](https://m-files.force.com/s/).  Ensure that the Implementation Support Request contains a summary of the application you wish to be validated.  If submitting an update to an already-validated application then please include a summary of changes.  A member of the validation team will contact you and guide you through the process, including providing details on how to upload the application source code.
 
 ### Rules of thumb
 
@@ -54,10 +47,10 @@ To request code validation, partners should open an Implementation Support Reque
 * Be aware that code may run in a shared environment, so try and be as lightweight as possible.
 * Ensure that you do not touch anything outside of the vault (e.g. filesystem, registry, etc.), as the host Windows machine can be switched out and your changes will be lost.
 * Be careful when designing solutions that use external resources; connections to external network addresses are typically denied, and sending email could be a potential avenue for abuse.
-* Process objects in a batched way ([GetPropertiesOfMultipleObjects](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~GetPropertiesOfMultipleObjects.html), [CheckOutMultipleObjects](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectOperations~CheckOutMultipleObjects.html), [CheckInMultipleObjects](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectOperations~CheckInMultipleObjects.html), etc.), where possible, as this is vastly more efficient than processing individual items.
-* If you need multiple properties on an object, consider retrieving [all the properties in one call](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) rather than one-by-one, as this is vastly more efficient.
+* Process objects in a batched way ([GetPropertiesOfMultipleObjects](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~GetPropertiesOfMultipleObjects.html), [CheckOutMultipleObjects](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectOperations~CheckOutMultipleObjects.html), [CheckInMultipleObjects](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectOperations~CheckInMultipleObjects.html), etc.), where possible, as this is vastly more efficient than processing individual items.
+* If you need multiple properties on an object, consider retrieving [all the properties in one call](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) rather than one-by-one, as this is vastly more efficient.
 * Do not perform operations that have a significant overhead in a frequently-called processes.
-* If working with files, consider accessing the content via a byte array ([DownloadFileInBlocks](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectFileOperations.html)), rather than downloading and then re-reading the file. 
+* If working with files, consider accessing the content via a byte array ([DownloadFileInBlocks](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations.html)), rather than downloading and then re-reading the file. 
 
 ### Cloud checklist
 
@@ -72,7 +65,7 @@ The validation team will check a number of items in the source code, including:
 
 <div class="checklist" markdown="1">
 
-1. Your application must be [Multi-Server-Mode-compatible]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) to run in the New Cloud.  In order to ensure that vaults can be migrated to the newer infrastructure, **all newly-submitted vault applications must be multi-server-mode compatible**.
+1. Your application must be [Multi-Server-Mode-compatible]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) to run in M-Files Cloud.  In order to ensure that vaults can be migrated to the newer infrastructure, **all newly-submitted vault applications must be multi-server-mode compatible**.
 1. The application **must not attempt to modify any Windows-level settings**.
 1. The application **must not install any Windows applications or reboot the server**.
 1. The application **must not excessively use server resources**, even in dedicated environments.
@@ -83,7 +76,10 @@ The validation team will check a number of items in the source code, including:
 	1. **Temporary files, handles, and other resources must be properly disposed of**.
 	1. File operations (upload/download) using the M-Files API are typically restricted.
 1. The application **must not attempt to access or modify any server-level settings in M-Files** (login accounts, scheduled jobs, etc.).
-1. The application **must not connect to arbitrary internet addresses.  Connections to specific addresses may be allowed**. *Note that connections may be allowed where the web address is [only configurable by the M-Files Cloud Ops teams]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/Security/#restricting-who-can-change-configuration-elements) - please contact support for more details*.
+1. The application **must not connect to arbitrary internet addresses.  Connections to specific addresses may be allowed**. *Note that connections may be allowed where the network address is [only configurable by the M-Files Cloud Ops teams]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Attributes/Configuration/Security/#restricting-who-can-change-configuration-elements) - please contact support for more details*.  Items which must only be changeable by system administrators include:
+	* URLs (e.g. full web addresses)
+	* Network hosts (e.g. mail servers or other host names)
+	* IP addresses
 1. If the application must send emails directly then it **must use the customer's own mail servers** for doing so.
 1. The application **must not attempt to establish separate connections to the vault**.
 1. The application **must not attempt to alter anything outside of the vault during the initialization routines**.
@@ -93,3 +89,13 @@ The validation team will check a number of items in the source code, including:
 1. Logging should be undertaken using the [M-Files Vault Application Logging Framework](/Frameworks/Logging/).
 
 </div>
+
+## Vault Application Framework Licensing
+
+Note that Vault Application Framework licensing has limitations when running within the M-Files Cloud infrastructure.  This is because the license assigned to the M-Files server is generic with larger user limits than the specific license that the customer may have.
+
+Specifically:
+
+* You cannot restrict the VAF application license use by the customer's serial number.
+* You cannot restrict the VAF application license use by the number of users.
+* You **should** restrict the VAF license by the vault GUID.

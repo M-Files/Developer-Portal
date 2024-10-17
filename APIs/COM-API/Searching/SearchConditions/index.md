@@ -8,7 +8,7 @@ breadcrumb: Conditions
 This page is solely applicable to searching for objects within an M-Files vault.  To search for value list items within a value list, please [see this page]({{ site.baseurl }}/APIs/COM-API/Searching/ValueListItems/).
 {:.note.warning}
 
-Detailed below are methods of creating individual [SearchCondition](https://www.m-files.com/api/documentation/index.html#MFilesAPI~SearchCondition.html) objects.  These are typically combined into a collection of [SearchConditions](https://www.m-files.com/api/documentation/index.html#MFilesAPI~SearchConditions.html) before being [executed against the vault](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectSearchOperations.html).
+Detailed below are methods of creating individual [SearchCondition](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SearchCondition.html) objects.  These are typically combined into a collection of [SearchConditions](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SearchConditions.html) before being [executed against the vault](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectSearchOperations.html).
 
 When using the Vault Application Framework, the <a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/Helpers/MFSearchBuilder/">MFSearchBuilder</a> class can be used to more easily construct otherwise-complex search conditions.
 {:.note}
@@ -17,7 +17,7 @@ When using the Vault Application Framework, the <a href="{{ site.baseurl }}/Fram
 
 Deleted items are included by default when using the COM API.
 
-Below is an example of creating a [SearchCondition](https://www.m-files.com/api/documentation/index.html#MFilesAPI~SearchCondition.html) which represents the exclusion of deleted items.
+Below is an example of creating a [SearchCondition](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SearchCondition.html) which represents the exclusion of deleted items.
 
 ```csharp
 // Create the condition.
@@ -51,7 +51,7 @@ condition.TypedValue.SetValue(MFDataType.MFDatatypeBoolean, true);
 
 ## Executing a full-text search
 
-A full-text search can search across both the metadata and file contents and is executed when the [SearchForObjectsByString](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectSearchOperations~SearchForObjectsByString.html) API method is called.  To use it in combination with other search conditions, the following `SearchCondition` object can be created:
+A full-text search can search across both the metadata and file contents and is executed when the [SearchForObjectsByString](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectSearchOperations~SearchForObjectsByString.html) API method is called.  To use it in combination with other search conditions, the following `SearchCondition` object can be created:
 
 ```csharp
 // Create the condition.
@@ -67,6 +67,17 @@ condition.ConditionType = MFConditionType.MFConditionTypeContains;
 // Set the value.
 // In this case "ESTT" is the text to search for.
 condition.TypedValue.SetValue(MFDataType.MFDatatypeText, "ESTT");
+```
+
+For Smart Search, either the `MFFullTextSearchFlagsTypeAllWords` or `MFFullTextSearchFlagsTypeAnyWords` flag needs to be present in the expression otherwise an error will be thrown.
+{:.note}
+
+```csharp
+// When using the Smart Search index, 'MFFullTextSearchFlagsTypeAllWords' or 'MFFullTextSearchFlagsTypeAnyWords'
+// must be present in the flags.
+conditionText.Expression.SetAnyFieldExpression(MFFullTextSearchFlags.MFFullTextSearchFlagsLookInFileData
+                | MFFullTextSearchFlags.MFFullTextSearchFlagsLookInMetaData 
+                | MFFullTextSearchFlags.MFFullTextSearchFlagsTypeAllWords );
 ```
 
 ## Searching by file type
@@ -371,7 +382,7 @@ var searchConditions = new SearchConditions();
 
 ## Searching by an external ID
 
-When using [external object types](https://www.m-files.com/user-guide/latest/eng/Connection_to_external_database.html), the object ID shown on the metadata card will be the primary key for the object in the remote system.  A search can be executed to convert the external ID to an internal ID (e.g. to populate a [PropertyValue](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyValue.html) for a lookup):
+When using [external object types](https://www.m-files.com/user-guide/latest/eng/Connection_to_external_database.html), the object ID shown on the metadata card will be the primary key for the object in the remote system.  A search can be executed to convert the external ID to an internal ID (e.g. to populate a [PropertyValue](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~PropertyValue.html) for a lookup):
 
 ```csharp
 // Create the condition.
@@ -418,7 +429,7 @@ Often searches need to return objects that should be filtered by properties on o
 An indirect reference can be either by object type or property.  In the screenshot above, any valid reference to a customer (regardless of the property being used to make the reference) will be included in the search results.  In the result returned above the relationship to the Test Customer was made via the `Owner (Customer)` property, but other valid properties would also be considered.
 {:.note}
 
-When searching via the COM API, [Indirection Levels](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Expression~IndirectionLevels.html) are used to describe the relationship between the object being returned and the location of the property being used in the search condition.  In our example above, there is one level of indirection between the `Contact` object and the `Country` property definition: the `Customer` object.
+When searching via the COM API, [Indirection Levels](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~Expression~IndirectionLevels.html) are used to describe the relationship between the object being returned and the location of the property being used in the search condition.  In our example above, there is one level of indirection between the `Contact` object and the `Country` property definition: the `Customer` object.
 
 It is important to note that indirection levels only follow relationships 'from' the selected object, not relationships 'to' it, whereas the 360 degree view in the M-Files Desktop Client shows relationships in either direction.
 {:.note.warning}
@@ -679,7 +690,7 @@ objSearchCondition.TypedValue.SetValue MFDatatypeMultiSelectLookup, objArrayList
 
 ## Restricting by object flags (e.g. searching for conflict objects)
 
-The following search condition can be used to find objects with specific flags (e.g. objects that are conflicts or shortcuts).  Conflicts can then subsequently be resolved using the [ResolveConflict](https://www.m-files.com/api/documentation/latest/index.html#MFilesAPI~VaultObjectOperations~ResolveConflict.html) API method.
+The following search condition can be used to find objects with specific flags (e.g. objects that are conflicts or shortcuts).  Conflicts can then subsequently be resolved using the [ResolveConflict](https://developer.m-files.com/APIs/COM-API/Reference/latest/index.html#MFilesAPI~VaultObjectOperations~ResolveConflict.html) API method.
 
 ```csharp
 // Create the condition.

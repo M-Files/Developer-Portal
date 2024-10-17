@@ -22,5 +22,5 @@ Type | Name | Description
 `int` | ObjectType
 `int` | ValueList
 
-This is related to [the PropertyDef class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyDef.html) in the COM API.
+This is related to [the PropertyDef class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~PropertyDef.html) in the COM API.
 {:.remark}

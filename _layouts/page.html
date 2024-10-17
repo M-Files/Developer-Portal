@@ -1,114 +1,97 @@
 ---
 layout: default
 ---
+			
+{% if page.legacy %}
 
-<article class="page" itemscope itemtype="http://schema.org/WebPage" role="main">
-
-	<div id="options"></div>
-
-	{% include logo.svg %}
-
-	<h1 itemprop="headline">{{ page.title }}</h1>
-
-	{% include social.html %}
-
-	<nav role="navigation" aria-label="Page location in site">
-		<ol class="breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
-
-			{% assign position = 1 %}
-			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{ site.baseurl }}/"><span itemprop="name">Home</span><meta itemprop="identifier" content="{{ site.baseurl }}/" /></a><meta itemprop="position" content="{{ position }}" /></li>
-			{% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}{% for i in (1..forLoopMaxInt) %}{% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}{% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}{% for breadcrumb_page in site.pages %}{% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}{% assign j = forLoopMaxInt | plus: 0 %}
-			{% assign position = position | plus: 1 %}
-			{% if breadcrumb_page.breadcrumb != nill or breadcrumb_page.title != nill %}
-			<li {% if i == j %}class="active"{% endif %}  itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">{% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
-				<a itemprop="item" href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">
-					<span itemprop="name">{% if breadcrumb_page.breadcrumb == nil %}{{ breadcrumb_page.title }}{% else %}{{ breadcrumb_page.breadcrumb }}{% endif %}</span>
-					<meta itemprop="identifier" content="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}" />
-				</a>
-				<meta itemprop="position" content="{{ position }}" />
-			</li>{% endif %}{% endif %}{% endfor %}{% endfor %}
-		</ol>
-	</nav>
-	
-	{% if page.legacy %}
-
-
-		<div class="legacy-banner"><a href="{{ site.baseurl }}/Legacy/">Legacy functionality</a></div>
-	
-		<div class="legacy">
+	<div class="wrapper">
+		<div class="prompt">
+			<h2>Warning - legacy content</h2>
 			<p class="note warning legacy">
-				You are not viewing the latest version of this guidance.  The information on this page is for legacy reference only, and should not be used with new M-Files developments.
-				<span class="buttons">
-					<button class="close">Show me the legacy version</button>
-					<a href="{{page.latest_version}}" class="button latest">Show me the latest version</a>
-				</span>
+				You are not viewing the latest version of this guidance.  The information on this page is for reference only, and should not be used with new M-Files developments.
+				<div class="buttons">
+					<button class="close" type="button">Show me the legacy version</button>
+					<a href="{{page.latest_version}}" class="button latest primary">Show me the latest version</a>
+				</div>
 			</p>
 		</div>
-
-	{% endif %}
-
-	<div class="entry">
-
-	<article role="article" aria-label="Page contents">
-
-		{% if page.requiredMFilesServerVersion != nill or page.requiredVaultApplicationFrameworkVersion != nill %}
-		<div class="compatibility">
-			<h2>Compatibility</h2>
-			<p>The content of this page can only be used if the following condition(s) are all met:</p>
-			<ul>
-				{% if page.requiredMFilesServerVersion != nill %}
-					<li>You must be running <strong>M-Files {{ page.requiredMFilesServerVersion }}</strong> or higher.</li>
-				{% endif %}
-				{% if page.requiredVaultApplicationFrameworkVersion != nill %}
-					<li>You must target the <strong>Vault Application Framework {{ page.requiredVaultApplicationFrameworkVersion }}</strong> or higher.</li>
-				{% endif %}
-			</ul>
-		</div>
-		{% endif %}
-
-		{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
-		{% assign inthisarticle_size = inthisarticle | size %}
-
-		{% if inthisarticle_size > 0 and page.noInnerLinks != true %}
-		<nav id="in-page-nav" role="navigation" aria-label="In this article">
-			<div id="in-this-article">
-				<h2>In this article</h2>
-				{{ inthisarticle }}
-			</div>
-		</nav>
-		{% endif %}
-
-		{% if page.prerelease %}
-			<p class="note prerelease">Please note that this page content refers to a pre-release version of software.  Please read the information below thoroughly for more information.</p>
-			{% endif %}
-		{% if page.stubPage %}
-			<p class="note stub">Please note that this page content is not complete.</p>
-		{% endif %}
-		
-		<h2>Overview</h2>
-
-		{% if page.excerpt %}
-			<div class="description">{{ page.excerpt | markdownify  }}</div>
-		{% endif %}
-		
-		{{ content }}
-	</article>
-
-	{% capture other %}{% include other-articles.html items=site.data.navigation %}{% endcapture %}
-	{% assign other_size = other | size %}
-	{% if other_size > 0 %}
-		{{ other | strip_newlines }}
-	{% endif %}
-
-	{% if page.comments %} 
-	{% include disqus.html %}
-	{% endif %}
-
 	</div>
-  
-    <footer>
-        <p>&copy; M-Files. <a href="mailto:devsupport@m-files.com">Contact the <abbr title="Developer Relations">DevRel</abbr> team at M-Files.</a></p>
-	</footer>
-	
+
+{% endif %}
+
+{% capture inthisarticle %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
+{% assign inthisarticle_size = inthisarticle | size %}
+
+{% if inthisarticle_size > 0 and page.noInnerLinks != true %}
+<nav id="in-page-nav" role="navigation" aria-label="In this article">
+	<div id="in-this-article">
+		<h2>On this page</h2>
+		{{ inthisarticle }}
+	</div>
+</nav>
+{% endif %}
+
+<article class="page" itemscope itemtype="http://schema.org/WebPage" role="main">
+			<div id="options"></div>
+            
+			<h1 itemprop="headline">{{ page.title }}</h1>
+
+			<nav role="navigation" aria-label="Page location in site">
+				<ol class="breadcrumb" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+
+					{% assign position = 1 %}
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="{{ site.baseurl }}/"><span itemprop="name">Home</span><meta itemprop="identifier" content="{{ site.baseurl }}/" /></a><meta itemprop="position" content="{{ position }}" /></li>
+					{% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}{% for i in (1..forLoopMaxInt) %}{% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}{% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}{% for breadcrumb_page in site.pages %}{% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}{% assign j = forLoopMaxInt | plus: 0 %}
+					{% assign position = position | plus: 1 %}
+					{% if breadcrumb_page.breadcrumb != nill or breadcrumb_page.title != nill %}
+					<li {% if i == j %}class="active"{% endif %}  itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">{% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
+						<a itemprop="item" href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">
+							<span itemprop="name">{% if breadcrumb_page.breadcrumb == nil %}{{ breadcrumb_page.title }}{% else %}{{ breadcrumb_page.breadcrumb }}{% endif %}</span>
+							<meta itemprop="identifier" content="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}" />
+						</a>
+						<meta itemprop="position" content="{{ position }}" />
+					</li>{% endif %}{% endif %}{% endfor %}{% endfor %}
+				</ol>
+			</nav>
+			
+			{% include_cached social.html %}
+
+			<article role="article" aria-label="Page contents">
+
+				{% if page.requiredMFilesServerVersion != nill or page.requiredVaultApplicationFrameworkVersion != nill %}
+				<div class="compatibility">
+					<h2>Compatibility</h2>
+					<p>The content of this page can only be used if the following condition(s) are all met:</p>
+					<ul>
+						{% if page.requiredMFilesServerVersion != nill %}
+							<li>You must be running <strong>M-Files {{ page.requiredMFilesServerVersion }}</strong> or higher.</li>
+						{% endif %}
+						{% if page.requiredVaultApplicationFrameworkVersion != nill %}
+							<li>You must target the <strong>Vault Application Framework {{ page.requiredVaultApplicationFrameworkVersion }}</strong> or higher.</li>
+						{% endif %}
+					</ul>
+				</div>
+				{% endif %}
+
+				{% if page.prerelease %}
+					<p class="note prerelease">Please note that this page content refers to a pre-release version of software.  Please read the information below thoroughly for more information.</p>
+					{% endif %}
+				{% if page.stubPage %}
+					<p class="note stub">Please note that this page content is not complete.</p>
+				{% endif %}
+
+				{% if page.excerpt %}
+				<h2>Overview</h2>
+					<div class="description">{{ page.excerpt | markdownify  }}</div>
+				{% endif %}
+				
+				{{ content }}
+			</article>
+
+            {% capture other %}{% include other-articles.html items=site.data.navigation %}{% endcapture %}
+            {% assign other_size = other | size %}
+            {% if other_size > 0 %}
+                {{ other | strip_newlines }}
+            {% endif %}
 </article>
 

@@ -11,95 +11,34 @@ Good typography is invisible, enabling users to have a seamless experience while
 
 M-Files Desktop uses Segoe UI typeface.
 
-![Typefaces. Segoe UI Light is used in sub-headings. Segoe UI Regular is used as base text. Segoe UI Bold is used to highlight text.](typefaces.png){:.borderless}
-
-## Scale
-
-Typography has 4 different scales.
-
-![Scale. Heading size is 22px and weight regular. Sub-Heading size is 14p and weight regular. Sub heading italic size is 12px and weight regular. Base size is 13px and weight regular.](scale.png){:.borderless}
-
 ## Text and background
 
-Text is displayed bit diferently depending on the background color. With blue background white text is used and with gray background darker text is used.
+Text is displayed bit differently depending on the background color. With blue background white text is used and with gray background darker text is used.
 
-![Text and background. With blue background text color is white. With light background text color is black or gray.](text-background.png){:.borderless}
+![With blue background text color is white. With light background text color is black or gray.](Text background.png)
 
 ## How to use and when
 
 Below is explained how to use different fonts in M-Files Desktop.
 
+### Vault listing typography
+
+![Vault listing typography](Vault-listing-typography.png)
+
+1.	{: .swatch style="--hex-color: #ffffff" title="#ffffff"}Segoe UI 14px, #FFFFFF
+2.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}Segoe UI 16px, #0A1541
+3.	{: .swatch style="--hex-color: #ffffff" title="#ffffff"}Segoe UI 16px, #FFFFFF
+4.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}Segoe UI 14px, #0A1541
+{:.swatches}
+
 ### Metadata card and text
 
-![Metadata card and text](metadatacard-text.png){:.borderless}
+![Metadata card typography](Metadata-typography.png)
 
-1. Heading 22px, Gray 3, #676767
-2. Sub-heading (Italic) 12px, Gray 4, #808080
-3. Base 13px,  Gray 5, #999999
-4. Base 13px, Main black, #000000
-5. Base (italic) 13px
-
-### Vault view and text
-
-![Vault view and text](vault-view-text.png){:.borderless}
-
-1. Base 13px, Main white, #FFFFFF
-2. Base 13px (bold), Gray 1, #333333
-3. Base 13px, Main black, #000000
-
-{% comment %} 
-
-## Web Typography
-
-### Web Typefaces
-
-M-Files Web uses Lato typeface.
-
-![Web typefaces](web-typefaces.png){:.borderless}
-
-### Web Scale
-
-Typography scale changes according to text.
-
-![Web typefaces](web-scale.png){:.borderless}
-
-### Web Text and background colors
-
-Text is displayed bit diferently depending on the background color.
-
-![Web text and background](web-text-and-background.png){:.borderless}
-
-### Web How to use and when
-
-Below is explained how to use different fonts in M-Files Web.
-
-![Web how to use and when](web-how-to-use-and-when.png){:.borderless}
-
-
-## Manage Typography
-
-### Manage Typefaces
-
-M-Files Manage uses Lato typeface.
-
-![Manage typefaces](manage-typefaces.png){:.borderless}
-
-### Manage Scale
-
-Typography scale changes according to text.
-
-![Manage scale](manage-scale.png){:.borderless}
-
-### Manage Text and background colors
-
-Text is displayed bit diferently depending on the background color.
-
-![Manage text and background](manage-text-and-background-colors.png){:.borderless}
-
-### Manage How to use and when
-
-Below is explained how to use different fonts in M-Files Web.
-
-![Manage how when](manage-how-to-use-and-when.png){:.borderless}
-
- {% endcomment %}
+1.	{: .swatch style="--hex-color: #363A40" title="#363A40"}Segoe UI 22px, #363A40
+2.	{: .swatch style="--hex-color: #6C728D" title="#6C728D"}Segoe UI 14px, #6C728D
+3.	{: .swatch style="--hex-color: #6C728D" title="#6C728D"}Segoe UI 14px, #6C728D
+4.	{: .swatch style="--hex-color: #006EEF" title="#006EEF"}Segoe UI 14px, #006EEF
+5.	{: .swatch style="--hex-color: #6C728D" title="#6C728D"}Segoe UI 14px, #6C728D
+6.	{: .swatch style="--hex-color: #363A40" title="#363A40"}Segoe UI 14px, #363A40
+{:.swatches}

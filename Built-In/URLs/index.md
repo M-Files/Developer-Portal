@@ -5,6 +5,14 @@ includeInSearch: true
 breadcrumb: URLs
 ---
 
+## M-Files Links
+
+Since M-Files 22.12, M-Files has an option to create HTTP-based links which the user can choose to open in either M-Files Desktop or M-Files Web.  Within M-Files Desktop these links can be created using the "Copy Link" option.
+
+These links can be created to show objects or files, or to link directly to views.
+
+Full details and samples are availble in the [Configuring M-Files Links](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/225FB16D-FD29-4744-9321-4FDD7C52127C/latest) document, available in our online knowledgebase.
+
 ## M-Files Desktop
 
 When the M-Files Desktop client is installed, it installs a custom URI handler.  This allows M-Files to react to links that start "m-files://".  Common usage scenarios include:
@@ -36,5 +44,5 @@ Linking directly to a view by ID and, optionally, virtual folder.
 
 Full details and samples are available in the [Creating M-Files Web URLs](https://kb.cloudvault.m-files.com/Default.aspx?#3ECA226F-7B54-428B-B539-DE443E6134EC/object/A20AFDD6-9F0E-42FB-AA30-D2347142B51C/latest) document, available in our online knowledgebase.
 
-Linking to objects, files or views will require the user to log into the M-Files Web Access, if appropriate, prior to accessing the relevant item.
+Linking to objects, files or views will require the user to log into the M-Files Classic Web, if appropriate, prior to accessing the relevant item.
 {:.note}

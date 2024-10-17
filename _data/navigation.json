@@ -107,8 +107,8 @@
 		"Icon": "mdi:circle-outline",
 		"Title": "COM API",
 		"Items": [{
-				"Link": "https://www.m-files.com/api/documentation/index.html",
-				"Title": "Official API Reference ",
+				"Link": "https://developer.m-files.com/APIs/COM-API/Reference/",
+				"Title": "Official API Reference",
 				"IsExternal": true,
 				"IsOfficialReference": true
 			},
@@ -168,7 +168,7 @@
 		"Title": "REST API",
 		"Items": [{
 				"Link": "/APIs/REST-API/Reference/",
-				"Title": "Official API Reference ",
+				"Title": "Official API Reference",
 				"IsExternal": true,
 				"IsOfficialReference": true
 			},
@@ -232,7 +232,7 @@
 		"Title": "UI Extensibility Framework",
 		"Items": [{
 				"Link": "https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html",
-				"Title": "Official Reference ",
+				"Title": "Official Reference",
 				"IsExternal": true,
 				"IsOfficialReference": true
 			},
@@ -310,7 +310,7 @@
 		"Title": "Vault Application Framework",
 		"Items": [{
 				"Link": "/Frameworks/Vault-Application-Framework/Reference/",
-				"Title": "Official Reference ",
+				"Title": "Official Reference",
 				"IsExternal": true,
 				"IsOfficialReference": true
 			},{
@@ -362,7 +362,11 @@
 				"Title": "Configuration",
 				"Items": [{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Editors/",
-						"Title": "Configuration value editors"
+						"Title": "Configuration value editors",
+						"Items": [{
+							"Link": "/Frameworks/Vault-Application-Framework/Configuration/Editors/IStableValueOptionsProvider/",
+							"Title": "IStableValueOptionsProvider"
+						}]
 					},
 					{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Hierarchical-Configuration/",
@@ -387,6 +391,10 @@
 					{
 						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Custom-Validation/",
 						"Title": "Custom validation"
+					},
+					{
+						"Link": "/Frameworks/Vault-Application-Framework/Configuration/Placeholders/",
+						"Title": "Placeholders"
 					}
 				]
 			},
@@ -474,7 +482,7 @@
 				"Title": "Licensing"
 			},
 			{
-				"Link": "/Frameworks/Vault-Application-Framework/Logging/",
+				"Link": "/Frameworks/Logging/Vault-Application-Framework/",
 				"Title": "Logging"
 			},
 			{
@@ -508,6 +516,9 @@
 		"Title": "Logging",
 		"Icon": "mdi:file-document-outline",
 		"Items": [{
+			"Link": "/Frameworks/Logging/Layout-Renderers/",
+			"Title": "Layout Renderers"
+		},{
 			"Link": "/Frameworks/Logging/Sensitivity/",
 			"Title": "Log Sensitivity"
 		},{
@@ -707,6 +718,9 @@
 						"Link": "/Legacy/Vault-Application-Framework/Visual-Studio/",
 						"Title": "Visual Studio Integration",
 						"Items": [{
+							"Link": "/Legacy/Vault-Application-Framework/Visual-Studio/VAF2.2/",
+							"Title": "VAF 2.2 Visual Studio Template"
+						},{
 							"Link": "/Legacy/Vault-Application-Framework/Visual-Studio/VAF2.1/",
 							"Title": "VAF 2.1 Visual Studio Template"
 						},{
@@ -717,27 +731,6 @@
 					{
 						"Link": "/Legacy/Vault-Application-Framework/Background-Operations/",
 						"Title": "Background Operations"
-					},
-					{
-						"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/",
-						"Title": "VAF 2.2 Multi-Server Mode",
-						"Items": [{
-								"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/",
-								"Title": "Task Queues",
-								"Items": [{
-									"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/Broadcast/",
-									"Title": "Broadcast"
-								},{
-									"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/Concurrent/",
-									"Title": "Concurrent"
-								},{
-									"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Task-Queues/Sequential/",
-									"Title": "Sequential"
-								}]
-							},{
-								"Link": "/Legacy/Vault-Application-Framework/VAF2.2/Multi-Server-Mode/Recurring-Tasks/",
-								"Title": "Recurring Tasks"
-							}]
 					}]
 			}
 		]

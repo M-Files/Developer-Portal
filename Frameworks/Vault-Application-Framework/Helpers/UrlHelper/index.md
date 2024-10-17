@@ -7,7 +7,7 @@ breadcrumb: UrlHelper
 
 `UrlHelper` is contained in the `MFiles.VAF.Common` namespace and provides common utility methods for generating URLs to M-Files content.
 
-* `GetBaseUrlForWebAccess` - returns the defined base URL for M-Files Web Access.  For example, this may be `https://m-files.mycompany.com`.
+* `GetBaseUrlForWebAccess` - returns the defined base URL for M-Files Classic Web.  For example, this may be `https://m-files.mycompany.com`.
 
 * `GetHyperlinkFragmentHtml` - returns a HTML-formatted set of links to an object, including Desktop, Web and Mobile links (if defined).
 

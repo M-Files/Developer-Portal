@@ -1,0 +1,40 @@
+﻿div#divResults p
+{
+	display: none;
+}
+
+div#divResults a
+{
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.searchresults tr td:first-child
+{
+	display: none;
+}
+
+.searchresults td.innerrow
+{
+	border: none;
+}
+
+div#operators
+{
+	display: none;
+}
+
+div#highlightcontainer
+{
+	display: none;
+}
+
+input#txtSearch
+{
+	height: 28px;
+}
+input#search
+{
+	margin-top: 3px;
+	height: 28px;
+}

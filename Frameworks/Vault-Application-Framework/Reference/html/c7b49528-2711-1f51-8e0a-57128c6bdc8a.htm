@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>MFiles.VAF.Configuration.AdminConfigurations Namespace</title>
+    <meta name="Title" content="MFiles.VAF.Configuration.AdminConfigurations" />
+    <meta name="Help.Id" content="N:MFiles.VAF.Configuration.AdminConfigurations" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Configuration.AdminConfigurations" />
+    <meta name="guid" content="c7b49528-2711-1f51-8e0a-57128c6bdc8a" />
+    <meta name="tocFile" content="../toc/IDEBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Admin<wbr />Configurations Namespace</h1>
+            <div class="summary"> </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Classes</h2>
+            <div id="IDACASection">
+              <table id="classList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="cd945b9f-2f46-318e-d719-6b2ca8259cf6.htm">AdminConfigurationManagerBase</a>
+                  </td>
+                  <td>
+             Base implementation of best practices for managing ConfigurationDomains
+             and interacting with MFAdmin's configurator.
+             
+             This base implementation can register/unregister root nodes at a given 
+             configuration extension point, corresponding to one of the 
+             <a href="c356a27f-d8eb-2a84-9257-0120d4bc5622.htm">ConfigurationDomain<span id="LSTEB772AEB_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DefaultNamespaces</a>.
+             
+             Implementations of this class are responsible for:
+             
+            		- Creating and resolving references for nodes anywhere in the hierarchy
+            		  so base methods know how to refer to nodes, and can resolve them easily
+            		  using <a href="4a2b2bf1-40f6-7415-27b7-9946d1aa23a0.htm">ResolveNodeReference(IConfigurationRequestContext, String)</a> 
+            		  and <a href="824c1d0c-0820-ce2c-ef96-46965699eaa9.htm">GetNodeReference(DomainNodeLocation)</a>).
+            
+            		- Generating the correct <a href="4d842217-bb3e-9c53-8d1d-f5694c1b6410.htm">SourceDefinition</a>s and 
+            		  <a href="e92e5d6b-e356-ab10-c0ed-4adfb4c2339c.htm">MethodSourceDefinition</a>s for MFAdmin to communicate 
+            		  back with the M-Files server using 
+            		  <a href="111918ce-c689-e619-aee9-8988a9fdd9cb.htm">CreateSourceDefinition(DomainNodeLocation, BuiltInDomainCommand, <span id="LSTEB772AEB_1" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LSTEB772AEB_2" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>)</a>,
+            		  <a href="f577ee6c-17d6-6d7a-6081-b1f629ef5dad.htm">CreateReadWriteConfigurationSourceDefinition(DomainNodeLocation)</a>, and
+            		  <a href="91ae3918-f72f-2153-654c-687129417e12.htm">CreateCommandMethodSource(DomainNodeLocation, String)</a>.
+            
+            		- Ensuring requests from MFAdmin are received and routed back to this manager's
+            		  <a href="2021e501-00af-9c69-9957-572b97af7997.htm">ExecuteBuiltInCommand(IConfigurationRequestContext, DomainNodeLocation, BuiltInDomainCommand, <span id="LSTEB772AEB_3" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LSTEB772AEB_4" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>)</a>
+            		  and <a href="972055c3-97cc-781f-b775-c32752c04b79.htm">ExecuteCustomCommand(IConfigurationRequestContext, DomainNodeLocation, String, <span id="LSTEB772AEB_5" data-languageSpecificText="cpp=array&lt;"></span>String<span id="LSTEB772AEB_6" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>)</a>
+            		  methods as appropriate.
+             </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0fac679d-e246-4b81-7bc1-c7a27f0295b2.htm">AdminConfigurationPluginBase</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d8274199-ebf8-7690-1965-e9d1383a3f29.htm">ClientOperations</a>
+                  </td>
+                  <td>
+            Provides a simple interface for updating the MFAdmin configuration interface.
+            
+            Instances of this class are created by <a href="cd945b9f-2f46-318e-d719-6b2ca8259cf6.htm">AdminConfigurationManagerBase</a> for
+            node requests that can return proper responses. The appropriate node methods or 
+            custom command methods are then passed the instance so the MFAdmin interface can
+            be informed of any changes made on the server.
+            
+            Each client operation method generates one or more directives that are then passed back
+            to MFAdmin at the end of the request.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="467b1f04-1223-c1a2-989a-0954019864cb.htm">CommandLocationListExtensionMethods</a>
+                  </td>
+                  <td>
+            Helper methods for generating <a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List<span id="LSTEB772AEB_7" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LSTEB772AEB_8" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>s of
+            <a href="17325947-3213-79be-73bd-6e67c78aca36.htm">ICommandLocation</a>s for use in 
+            <a href="1926b460-6235-e9d6-8ccb-577b138cc26e.htm">CustomDomainCommand</a>s .
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6a5709ec-97c0-2e4b-5b3c-8f017efbf890.htm">ConfigurationDomainNode</a>
+                  </td>
+                  <td>
+            Represents a configuration domain node within the MFAdmin configurator.
+            
+            This abstract base class makes it easier to implement <a href="13c853b1-0fe2-84dd-d1f2-08298586bb53.htm">IConfigurationDomainNode</a>
+            in classes that can inherit from it, as only the methods corresponding to supported 
+            capabilities need to be defined.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7883856d-069c-d193-bba8-c95181a5e208.htm">ConfigurationDomainNodeExtensionMethods</a>
+                  </td>
+                  <td>
+            Provide common helper methods for the <a href="13c853b1-0fe2-84dd-d1f2-08298586bb53.htm">IConfigurationDomainNode</a>
+            interface, so that implementations don't need to introduce them.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1926b460-6235-e9d6-8ccb-577b138cc26e.htm">CustomDomainCommand</a>
+                  </td>
+                  <td>
+            Defines a custom command for an <a href="13c853b1-0fe2-84dd-d1f2-08298586bb53.htm">IConfigurationDomainNode</a>.
+            
+            <a href="cd945b9f-2f46-318e-d719-6b2ca8259cf6.htm">AdminConfigurationManagerBase</a> implementations will convert these
+            to <a href="c76e7bdd-b213-78a4-507b-607da3c7654c.htm">ConfigurationDomainCommand</a>s and ensure applicable MFAdmin
+            requests will be delegated back to the <a href="95bd4185-013f-cf04-28cf-b995c4abf188.htm">Execute</a> callback. 
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9a4f75ea-c248-c26d-f446-984e47799d3f.htm">DefaultConfigurationRequestContextEx</a>
+                  </td>
+                  <td>
+            Default request context implementation.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="341a6c91-4b02-9201-e7ba-d8f365722a1f.htm">DomainNodeLocation</a>
+                  </td>
+                  <td>
+            Wraps an <a href="13c853b1-0fe2-84dd-d1f2-08298586bb53.htm">IConfigurationDomainNode</a> with information
+            about it's location.
+            
+            Primarily used by <a href="cd945b9f-2f46-318e-d719-6b2ca8259cf6.htm">AdminConfigurationManagerBase</a>
+            and it's implementations to generate a node reference.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="10a26c48-c463-2d2f-90da-9a55719460b7.htm">DomainNodeNotFoundException</a>
+                  </td>
+                  <td>
+            Exception triggered when a domain node cannot be resolved from a node reference.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e81b6191-67ad-83b9-e8ae-dff832bcf0ba.htm">ExtensionMethodAdminConfigurationManager</a>
+                  </td>
+                  <td>
+            Manages the setting up the communication between M-Files Admin and the Dashboard Nodes
+            using a common vault extension method approach.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b5c5e80f-d19c-e73b-d4de-d154ebfe27b2.htm">MenuIcon</a>
+                  </td>
+                  <td>
+            List of available icons to use in context menu locations.
+            Corresponds to jqueryui's icons.
+            Many jqueryui icons are not listed as they are not considered practical in a context menu location.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Interfaces</h2>
+            <div id="IDMCASection">
+              <table id="interfaceList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="acc5da0f-0a52-ab4e-31b2-035587d20383.htm">IAdminConfigurationPlugin</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="13c853b1-0fe2-84dd-d1f2-08298586bb53.htm">IConfigurationDomainNode</a>
+                  </td>
+                  <td>
+            Represents a configuration domain node within the MFAdmin configurator
+            that can be managed by an <a href="cd945b9f-2f46-318e-d719-6b2ca8259cf6.htm">AdminConfigurationManagerBase</a>
+            implementation.
+            
+            The <a href="7f56443f-a708-a790-1e34-f7c57c5606cf.htm">GetCapabilities<span id="LSTEB772AEB_9" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> method is used to tell the manager which
+            features a node supports and directly corresponds to which methods it
+            can call. Most methods therefore do not need any real implementations. 
+            
+            For example, <a href="3d365416-e4cd-44e9-501e-ac0fc3acf3dd.htm">Validate(IConfigurationRequestContext, String)</a>
+            can simply throw a <a href="https://docs.microsoft.com/dotnet/api/system.notsupportedexception" target="_blank" rel="noopener noreferrer">NotSupportedException</a> unless 
+            <a href="7f56443f-a708-a790-1e34-f7c57c5606cf.htm">GetCapabilities<span id="LSTEB772AEB_10" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a> returns the 
+            <a href="6e042713-a4d2-2735-b258-fceb22b98cf7.htm">Validation</a> flag.
+            
+            Conversely though, even if a proper implementation is provided, it will
+            not be used unless the corresponding flag is returned from 
+            <a href="7f56443f-a708-a790-1e34-f7c57c5606cf.htm">GetCapabilities<span id="LSTEB772AEB_11" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>.
+            
+            The following methods must have real implementations:
+             - <a href="87df2b26-7e57-ee28-b48f-a191f889e60f.htm">GetID<span id="LSTEB772AEB_12" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+             - <a href="c4eadd12-5de8-8ff3-3f82-a8a6715e037e.htm">GetName(IConfigurationRequestContext)</a>
+             - <a href="7a89d212-4d94-61c5-9b42-582a348d4999.htm">GetDescription(IConfigurationRequestContext)</a>
+             - <a href="2b4f15fa-c7dc-cb45-ae35-40c65bea3620.htm">GetSortPriority(IConfigurationRequestContext)</a>
+             - <a href="7f56443f-a708-a790-1e34-f7c57c5606cf.htm">GetCapabilities<span id="LSTEB772AEB_13" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1f8f2790-ba3a-4639-5c86-2a9dc067cf9e.htm">IConfigurationRequestContext</a>
+                  </td>
+                  <td>
+            The context of an MFAdmin Configurator request.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="766f141a-038f-a1bf-5d35-ccad474a5f1c.htm">IConfigurationRequestContextEx</a>
+                  </td>
+                  <td>
+            The extended context of an MFAdmin Configurator request.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="497c12a7-219d-6dc9-ac3f-1f0a6b6cbd26.htm">IUsesAdminConfigurationPlugins</a>
+                  </td>
+                  <td> </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Enumerations</h2>
+            <div id="IDBCASection">
+              <table id="enumerationList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="35deb9ba-c6bd-ee81-fa58-94b2a92f70b6.htm">BuiltInDomainCommand</a>
+                  </td>
+                  <td>
+            List of built-in domain commands.
+            Not all commands are supported by all domains.
+            </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Classes</a>
+                </li>
+                <li>
+                  <a class="quickLink">Interfaces</a>
+                </li>
+                <li>
+                  <a class="quickLink">Enumerations</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

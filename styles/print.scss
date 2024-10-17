@@ -1,143 +1,61 @@
 ---
 ---
 
-@page
-{
-	size: auto;
-}
-div#share-links,
-	ol.breadcrumb,
-	#in-page-nav,
-	.hljs-ln-numbers,
-	.toggleLineNumbers,
-	.copyCode,
-	header,
-	#cookies,
-	#theme-toggle
-{
-	/* Hide navigational/functional content.  */
-	display: none;
-}
-body > article.page
-{
-	font-size: 80%;
-	margin: 0px !important;
-	padding: 0px !important;
-	> h1
-	{
-		display: block;
-		margin-top: 0px;
-		padding-top: 0px;
-	}
-	a:not([href~=external])
-	{
-		/* internal links should be the same as the current text colour */
-		color: #333;
-	}
-	> #logo
-	{
-		display: block;
-		position: relative;
-		width: 30%;
-		left: 40%;
-		margin: 20px 0px;
-		*
-		{
-			fill: #333;
-		}
-	}
-}
-article[role=main]
-{
-	/* Remove dashed border under article */
-	border: none;
-}
-a.public-anchor
-{
-	/* Hide the anchors for in-page-linking */
-	display: none;
-}
-#options
-{
-	/* Hide the theme switcher and the like */
-	display: none;
-}
-pre
-{
-	/* code needs to be wrapped so that we don't have half-lines. */
-	white-space: pre-wrap;
-	word-wrap: break-word;
-	page-break-inside:avoid;
-	page-break-after:auto;
-}
-img
-{
-	/* images broken over the page are hard to read.*/
-	page-break-inside:avoid;
-}
-body>article img
-{
-	margin: 0px;
-	padding: 0px;
-}
-a[rel~=external]::after
-{
-	/* external links write out the address afterwards. */
-	content: " (" attr(href) ")";
-	text-decoration: underline;
-}
-code.highlighter-rouge
-{
-	/* format the keywords in the page better for printing. */
-	display: inline;
-	padding: 0px 2px;
-	background-color: inherit;
-}
-p.note, p.note.warning
-{
-	/* As we lose the background colour on print, re-format to look nicer. */
-	border-left: 0px;
-	border-right: 0px;
-	background-color: inherit;
-	padding-left: 30px;
-	padding-right: 30px;
-	&::before
-	{
-		position: initial;
-		width: auto;
-		height: auto;
-		font-weight: bold;
-		content: "Note: ";
-	}
-	&.warning::before
-	{
-		content: "Warning: ";
-	}
-}
-body > footer
-{
-	border: 0px;
-	margin: 0px;
-	padding: 0px;
-}
-footer a
-{
-	/* no point having a contact link in the footer. */
-	display: none;
-}
-code::before
-{
-	/* move the language tag to the left on print (easier to read) */
-	left: 8px;
-	right: auto;
-}
-article.page .tag
-{
-	display: none;
-}
+@use "design-system/mixins/_fonts" as fonts;
+@import "components/page-contents/notes";
+@import "components/tables";
+@import "components/page-contents/code-formatting";
 
-/* Remove "you may also be interested in */
-.other-articles
-{
-	display: none;
+@page{size:auto}
+
+body{
+	@include fonts.font-body1();
+    font-size: 80%;
+
+	h1, h2, h3, h4, h5, h6, h7, h8 {
+		@include fonts.font-heading;
+	}
+
+    a[rel~=external]::after
+    {
+        content:" (" attr(href) ")";
+        text-decoration:underline;
+    }
+
+    header {
+        #hamburger, .search{
+            display: none;
+        }
+        #logo{
+            path{
+                fill: #000 !important;
+            }
+        }
+    }
+    pre{
+        white-space:pre-wrap;
+        word-wrap:break-word;
+        page-break-inside:avoid;
+        page-break-after:auto
+    }
+    img{
+        page-break-inside: avoid
+    }
+
+    #share-links, 
+        #options,
+        #in-page-nav,
+        .breadcrumb, 
+        .other-articles,
+        .copyCode,
+        .toggleLineNumbers, 
+        .public-anchor,
+        aside#sidebar,
+        footer svg, footer section, footer div.icons{
+        display: none;
+    }
+
+    .hljs-ln td.hljs-ln-numbers{
+        padding-right: 5px;
+    }
 }

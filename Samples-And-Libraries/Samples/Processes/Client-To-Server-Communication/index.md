@@ -20,7 +20,7 @@ To create the vault extension method:
 2. Right-click on the vault name and selet `Event Handlers` (vault extension methods are created within the same section as event handlers).
 3. Click `Add Event Handler...` and create a new vault extension method.
 	1. Choose `Vault extension method` from the `Select event` dropdown.
-	2. Provide an appropriate name.  This name will be used to [execute the vault extension method](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).
+	2. Provide an appropriate name.  This name will be used to [execute the vault extension method](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).
 4. Select the new vault extension method and click `Edit Code`
 
 ![The vault extension method being created](add-extension-method.png)
@@ -110,7 +110,7 @@ It is important to note:
 </application>
 ```
 
-The above code declares <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#declaring-compatibility-with-both-platforms">platform compatibility with both M-Files Desktop and M-Files Web Access</a>. 
+The above code declares <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/#declaring-compatibility-with-both-platforms">platform compatibility with both M-Files Desktop and M-Files Classic Web</a>. 
 {:.note}
 
 ### The module file
@@ -121,7 +121,7 @@ We will create a module file that:
 2. Reacts when the buttons are clicked and executes a vault extension method (lines 56-95).
 3. Displays the result of the vault extension method in a message box (lines 71 and 85).
 
-The below code uses the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming style</a> so that the code is compatible with M-Files Web Access.
+The below code uses the <a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/">asynchronous programming style</a> so that the code is compatible with M-Files Classic Web.
 {:.note}
 
 ```javascript
@@ -189,8 +189,8 @@ function getShellFrameStartedHandler(shellFrame) {
 					case vbScriptCommand: // It was the VBScript command.
 
 						// Call the extension method passing the string "hello" as the parameter.
-						// Note: this is called async for compatibility with M-Files Web Access.
-						// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html
+						// Note: this is called async for compatibility with M-Files Classic Web.
+						// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html
 						shellFrame.ShellUI.Vault.Async.ExtensionMethodOperations.ExecuteVaultExtensionMethod(
 							VBScriptVaultExtensionName, // The name of the extension method to execute.
 							"hello", // The input (string) to pass it.
@@ -204,8 +204,8 @@ function getShellFrameStartedHandler(shellFrame) {
 					case vafCommand: // It was the VAF command.
 
 						// Call the extension method passing the string "world" as the parameter.
-						// Note: this is called async for compatibility with M-Files Web Access.
-						// ref: https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html
+						// Note: this is called async for compatibility with M-Files Classic Web.
+						// ref: https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html
 						shellFrame.ShellUI.Vault.Async.ExtensionMethodOperations.ExecuteVaultExtensionMethod(
 							VAFVaultExtensionName, // The name of the extension method to execute.
 							"world", // The input (string) to pass it.
@@ -308,7 +308,7 @@ The two applications should be shown as installed within the M-Files Admin tool:
 
 ## Testing
 
-To test the application, open the M-Files Desktop or M-Files Web Access clients and:
+To test the application, open the M-Files Desktop or M-Files Classic Web clients and:
 
 1. Ensure that the commands are available within the task area.
 2. Click the commands and ensure that the expected message was shown.
@@ -319,9 +319,9 @@ To test the application, open the M-Files Desktop or M-Files Web Access clients 
 
 ![A callback to a Vault Application Framework Vault Extension Method from a User Interface Extensibility Framework application running in the M-Files Desktop client](complete-desktop-vaf.png)
 
-### M-Files Web Access
+### M-Files Classic Web
 
-![A callback to a VBScript Vault Extension Method from a User Interface Extensibility Framework application running in the M-Files Web Access](complete-web-vbscript.png)
+![A callback to a VBScript Vault Extension Method from a User Interface Extensibility Framework application running in the M-Files Classic Web](complete-web-vbscript.png)
 
-![A callback to a Vault Application Framework Vault Extension Method from a User Interface Extensibility Framework application running in the M-Files Web Access](complete-web-vaf.png)
+![A callback to a Vault Application Framework Vault Extension Method from a User Interface Extensibility Framework application running in the M-Files Classic Web](complete-web-vaf.png)
 

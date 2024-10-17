@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="9c9ed616-c279-6ea3-48d1-3d2fc437590c" class="has-submenu" href="9c9ed616-c279-6ea3-48d1-3d2fc437590c.htm">
+        <span data-tocFile="../toc/IDAAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Crypto<wbr />AES</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="98c2d90c-9160-3ca2-c9f3-30e0c63cbdac" class="has-submenu" href="98c2d90c-9160-3ca2-c9f3-30e0c63cbdac.htm">
+        <span data-tocFile="../toc/IDBAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Crypto<wbr />RSA</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="677b2f61-5726-c34e-1a4d-e901b55a1f2f" class="has-submenu" href="677b2f61-5726-c34e-1a4d-e901b55a1f2f.htm">
+        <span data-tocFile="../toc/IDCAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>License<wbr />Helper</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bfc99b63-434c-83ce-9c0b-8b9f8cf531ab" class="has-submenu" href="bfc99b63-434c-83ce-9c0b-8b9f8cf531ab.htm">
+        <span data-tocFile="../toc/IDDAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Util</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -17,5 +17,5 @@ Value | Member
 3 | MFObjVerVersionTypeAll
 4 | MFObjVerVersionTypeSpecific 
 
-This is related to [the MFObjVerVersionType enumeration](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFObjVerVersionType.html) in the COM API.
+This is related to [the MFObjVerVersionType enumeration](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFObjVerVersionType.html) in the COM API.
 {:.remark}

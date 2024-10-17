@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="048801e3-2852-e157-d2f7-aaa2def6e3e3.htm">Cancellable<wbr />Operation&lt;T&gt;</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7baadbd8-98f4-28ff-9ec1-9e24667585d8" href="7baadbd8-98f4-28ff-9ec1-9e24667585d8.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="2b868362-af94-6c11-01b3-fa5e1efa2489" class="has-submenu" href="2b868362-af94-6c11-01b3-fa5e1efa2489.htm">
+        <span data-tocFile="../toc/IDBOIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="25ccab05-29c2-45a2-ac26-a27b7133ca7b" class="has-submenu" href="25ccab05-29c2-45a2-ac26-a27b7133ca7b.htm">
+        <span data-tocFile="../toc/IDCOIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d8ec6599-8cc1-7b15-f923-302e6f55233e" class="has-submenu" href="d8ec6599-8cc1-7b15-f923-302e6f55233e.htm">
+        <span data-tocFile="../toc/IDDOIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Events</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

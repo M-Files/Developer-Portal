@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="fd299750-25e7-20f0-edee-e2ec051f1d82.htm">IConfiguration<wbr />Storage</a>
+    </li>
+    <li>
+      <a href="6883e229-0b74-8f2a-7d22-a5c670c0d054.htm">Methods</a>
+    </li>
+    <li>
+      <a href="c6f25abe-5be2-d5c1-00cd-4da396ce156e.htm">Load</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="1914d1c7-66a1-628d-c3a4-5338edb1077b" href="1914d1c7-66a1-628d-c3a4-5338edb1077b.htm">Load&lt;T&gt;(<wbr />Vault, String, String)</a>
+    </li>
+    <li>
+      <a id="fb54d1ca-0748-0ad3-01be-041c33d1dc41" href="fb54d1ca-0748-0ad3-01be-041c33d1dc41.htm">Load(<wbr />Vault, Type, String, String)</a>
+    </li>
+  </tocItems>
+</toc>

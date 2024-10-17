@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>MFiles.VAF.Placeholders.Commands Namespace</title>
+    <meta name="Title" content="MFiles.VAF.Placeholders.Commands" />
+    <meta name="Help.Id" content="N:MFiles.VAF.Placeholders.Commands" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Placeholders.Commands" />
+    <meta name="guid" content="91795330-3dc0-5040-6a62-ef190584060b" />
+    <meta name="tocFile" content="../toc/IDJBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>MFiles.<wbr />VAF.<wbr />Placeholders.<wbr />Commands Namespace</h1>
+            <div class="summary"> </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Classes</h2>
+            <div id="IDACASection">
+              <table id="classList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="5cee7aad-749e-7063-0819-d53c3b31b0f4.htm">AveragePlaceholder</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="bbc7201a-11b9-1021-bcc2-576766a49e5c.htm">CountPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the number of values are in the current context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d0efa1da-cdde-4c1f-1471-ab39640a23d0.htm">CurrentContextPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the objects parent via the relevant Owner property.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="eb1eaeef-53f9-1407-3d58-d9487e536378.htm">DaysAgoPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the number of days that have passed since the context date.
+            Use when the context date is in the past.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c8c97062-6eed-7709-4d1c-c175dba20818.htm">DaysUntilPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the number of days until the context date.
+            Use when the context date is in the future.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2fb321d9-b8b8-6d14-db4f-12362afdc7ba.htm">EncodeHtmlPlaceholder</a>
+                  </td>
+                  <td>
+            Html encodes the text value of the current context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="b52203b6-c0a4-3866-de86-9a2838d73441.htm">EncodeNonePlaceholder</a>
+                  </td>
+                  <td>
+            Converts the current context to its text value (without encoding).
+            Serves as an encoder placeholder to prevent other encoders from processing the value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="78973608-d87b-6a9f-1dcd-1cee001fc9f0.htm">EncodeUrlPlaceholder</a>
+                  </td>
+                  <td>
+            Url encodes the text value of the current context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="cfff45ee-3c49-5fb5-cd7d-52a602a45fcc.htm">EncodingPlaceholderCommandHandler</a>
+                  </td>
+                  <td>
+            Abstract class for placeholder command handlers that do final encoding.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4f7fbfce-e8bb-7765-9b9d-5b8bffcd6ada.htm">FileNamesPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the file names of each object context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f9dd2860-b354-c986-345b-1b92292b1b77.htm">FirstVersionPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the specific version of an object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e11a8552-4b32-a94e-1f8c-3ac4ff893e20.htm">ForEachPlaceholder</a>
+                  </td>
+                  <td>
+            Handler that begins a foreach template block. Closed by <a href="d57b7cc3-8e4f-60bc-b7c8-0243a25ab1c0.htm">NextPlaceholder</a>.
+            The block is expanded for each object in the context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0c0a23f0-463f-8f61-e1d4-0b26d388abf7.htm">FormatPlaceholder</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1cac025f-9950-7df2-7528-92129398b899.htm">HyperlinkFragmentHtmlPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to an HTML formatted hyperlink containing URLs to the object 
+            for M-Files Desktop, M-Files Web, and M-Files Mobile.
+            IEncodingPlaceholderCommand is implemented to avoid being double encoded.
+            This should not be used as a default encoder.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0f197e7c-5166-1523-ca8b-54e76322a74f.htm">HyperlinkFragmentPlainPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to a plain-text formatted hyperlink containing URLs to the object 
+            for M-Files Desktop, M-Files Web, and M-Files Mobile.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2dfca705-fcf9-ce8a-628b-ecac7b12c885.htm">InternalIDPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the internal id of each context object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ff2a5f0c-0b2f-7d7a-2727-4819845676bb.htm">MFilesUrlPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to an M-Files URL that shows the latest version of the object in question.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a682a686-0ab1-9499-3139-4f1c81dc1490.htm">MFilesUrlPlaceholderCommandProvider</a>
+                  </td>
+                  <td>
+            Provides an MFilesUrlPlaceholder handler.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="45382711-3193-5a24-54de-6757535d7721.htm">NameAndSeparateLink</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="821ced41-f7c7-cce7-1d7c-3aaa486b923a.htm">NameWithHtmlLink</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d57b7cc3-8e4f-60bc-b7c8-0243a25ab1c0.htm">NextPlaceholder</a>
+                  </td>
+                  <td>
+            Closes a block opened by the <a href="e11a8552-4b32-a94e-1f8c-3ac4ff893e20.htm">ForEachPlaceholder</a> handler.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="310d99ce-9fce-27b8-38cd-9efa28e92e5b.htm">ObjIDPlaceholder</a>
+                  </td>
+                  <td>
+            Expands an object reference to it's external (display) id.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="45c84f10-6587-ae2e-4066-43c54e9cf13f.htm">ObjIDStrPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the ObjID strings of the context objects.
+            Format: "(ObjTypeID-ObjectID)"
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1d32e3c5-6b54-5170-61cf-63193aa16305.htm">ObjTitlePlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the titles of the context objects.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c6de2635-6746-9fac-9320-a18104aae175.htm">ObjTypeIDPlaceholder</a>
+                  </td>
+                  <td>
+            Placeholder that expands to the id an object's object type.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e4aea1a5-0e29-825d-9eb0-6553aa148a31.htm">ObjTypePlaceholder</a>
+                  </td>
+                  <td>
+            Placeholder that expands to the the name of an object's object type (simple mode)
+            or to all references of the object type specified with a parameter. (complex mode)
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5326a45d-348c-2d16-3807-3b6d27b428bc.htm">ObjVerStrPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the ObjVer strings of the context objects.
+            Format: "(ObjTypeID-ObjectID-Version)"
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="df9a457f-9df4-8fbc-b650-02e3e52aee54.htm">OldPropertyPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the typed value of an object's previous version's property value for the specified property def.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="55b52201-99d9-b013-f315-63d7d2273adb.htm">ParentPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the objects parent via the relevant Owner property.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7914da13-b44f-f597-d3d2-6cc85b75bbaf.htm">PreviousVersionPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to an objects last previous version in simple mode, or a previous
+            version a specified number of versions ago in complex mode.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="763dc92e-c749-681a-6a15-f30dd18a6b5e.htm">PropertyPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the typed value of an object's property value for the specified property def.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="81442bae-42e8-9f8c-93ab-8f01a31129c9.htm">RelationshipPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to objects related to the context object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6bbc9906-b197-dcc8-bb3a-6e23dc452a7c.htm">RequirePlaceholder</a>
+                  </td>
+                  <td>
+            Does not modify the current context, but creates an expansion issue if the
+            current context is empty.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="18b5a37e-c700-1f52-739d-d92dcc129c9f.htm">SimpleObjectToTextPlaceholderBase</a>
+                  </td>
+                  <td>
+            Base for simple commands that expand an object to a text value without any initialization.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c950622a-70ee-2341-49a8-f1a4fcfdb8de.htm">SpecificVersionPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the specific version of an object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1c4c3263-8de8-dce8-e3bc-34c6d592ddfa.htm">StaticContextPlaceholder</a>
+                  </td>
+                  <td>
+            Generic handler for creating a placeholder that always resolves to the same context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a8ff0e00-6e88-a632-c046-f9669f0c1ea1.htm">StaticContextPlaceholderProvider</a>
+                  </td>
+                  <td>
+            Provides handlers that expands to a static context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="15998163-5f25-c008-2cbe-be8b95b838e5.htm">ToDatePlaceholder</a>
+                  </td>
+                  <td>
+            Expands a timestamp context into a date context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e156ba60-aab1-6713-c4f5-bfdf3e3bfbb1.htm">TodayPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the current vault guid.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="59a6421b-a9d2-bdd4-255a-8351599c74d8.htm">UniquePlaceholder</a>
+                  </td>
+                  <td>
+            Expands a context down to unique values only (removes duplicate values).
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8beb8350-e421-3a41-c9cb-d5874a5426d6.htm">UnknownPlaceholder</a>
+                  </td>
+                  <td>
+            Handler for all unrecognized placeholder level commands.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c97df2a1-c8b9-52cb-9101-cf6fd207ddab.htm">UserCausedWorkflowStatePlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the users who moved the context objects into a specific state.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e6914efd-cb66-2db6-4c40-841fa3fda6bd.htm">VaultGuidPlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the current vault guid.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a5f17fb5-10bd-9bd8-9d44-0513f1b4ac60.htm">VaultNamePlaceholder</a>
+                  </td>
+                  <td>
+            Expands to the current vault name.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Interfaces</h2>
+            <div id="IDHCASection">
+              <table id="interfaceList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="1a78cd92-0cca-a4d0-9e4a-171a40dd6159.htm">IStaticPlaceholderProvider</a>
+                  </td>
+                  <td>
+            Provides handlers that expand to a static context.
+            </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Classes</a>
+                </li>
+                <li>
+                  <a class="quickLink">Interfaces</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

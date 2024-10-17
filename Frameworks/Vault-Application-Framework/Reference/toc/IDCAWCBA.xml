@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="58860159-a1e5-a84d-eb1b-bb27c435a5f6.htm">Task<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="f1522ab0-9906-90d2-e694-d03e136f45fe.htm">Methods</a>
+    </li>
+    <li>
+      <a href="c3066d6c-f764-b04d-04c7-ff6ac8530d1b.htm">Get<wbr />Tasks</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="42027ce1-c946-cc36-3673-3a1534a4b6f2" href="42027ce1-c946-cc36-3673-3a1534a4b6f2.htm">Get<wbr />Tasks(<wbr />Vault, Strings)</a>
+    </li>
+    <li>
+      <a id="2fcb4b96-b609-387e-c905-79004e4e5e8a" href="2fcb4b96-b609-387e-c905-79004e4e5e8a.htm">Get<wbr />Tasks(<wbr />Vault, IEnumerable&lt;String&gt;)</a>
+    </li>
+    <li>
+      <a id="8f7e82f0-1f45-728c-6f17-3ce9d91c29d5" href="8f7e82f0-1f45-728c-6f17-3ce9d91c29d5.htm">Get<wbr />Tasks(<wbr />Vault, String[])</a>
+    </li>
+  </tocItems>
+</toc>

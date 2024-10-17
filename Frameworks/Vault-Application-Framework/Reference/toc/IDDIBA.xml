@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="e43ee33b-ac43-f65b-e6f7-6ea4a840794e.htm">App<wbr />Task<wbr />Processing<wbr />Report</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="fd744739-f7d4-7c0b-6290-6c4f5709fbde" class="has-submenu" href="fd744739-f7d4-7c0b-6290-6c4f5709fbde.htm">
+        <span data-tocFile="../toc/IDADIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bd5a9ffe-9567-ee69-5ed1-fd6d8469e890" class="has-submenu" href="bd5a9ffe-9567-ee69-5ed1-fd6d8469e890.htm">
+        <span data-tocFile="../toc/IDBDIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e674041f-39f2-0f5b-2863-0963c025e270" class="has-submenu" href="e674041f-39f2-0f5b-2863-0963c025e270.htm">
+        <span data-tocFile="../toc/IDCDIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

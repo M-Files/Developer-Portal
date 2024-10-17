@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="fdcaf046-e291-df5e-2b7d-65eb336a4430.htm">ITask<wbr />Queue<wbr />Processor</a>
+    </li>
+    <li>
+      <a href="35230290-7b4d-1684-0292-2b6be8a9bdae.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="30a41e4e-4b81-bee4-9e88-5d54db3b1bf0" href="30a41e4e-4b81-bee4-9e88-5d54db3b1bf0.htm">Get<wbr />Active<wbr />Task<wbr />Ids</a>
+    </li>
+    <li>
+      <a id="dc3ec4ee-4f03-0547-94ae-0e20bb37239d" href="dc3ec4ee-4f03-0547-94ae-0e20bb37239d.htm">Get<wbr />Broadcast<wbr />Processor</a>
+    </li>
+    <li>
+      <a id="4837a7f5-502e-6613-9430-16bcf4a2b487" href="4837a7f5-502e-6613-9430-16bcf4a2b487.htm">Get<wbr />Broadcast<wbr />Processors</a>
+    </li>
+    <li>
+      <a id="7fd15ab3-dc39-95fc-b736-aa9e9d7c390a" href="7fd15ab3-dc39-95fc-b736-aa9e9d7c390a.htm">Get<wbr />Settings</a>
+    </li>
+    <li>
+      <a id="c5177450-b171-46c8-631c-489cca4a89f1" href="c5177450-b171-46c8-631c-489cca4a89f1.htm">Get<wbr />Task<wbr />Processor</a>
+    </li>
+    <li>
+      <a id="893c628c-b570-5851-202e-7bb3240f372b" href="893c628c-b570-5851-202e-7bb3240f372b.htm">Get<wbr />Task<wbr />Processors</a>
+    </li>
+    <li>
+      <a id="65152e53-31a6-d3ea-52b4-09c7471d20bc" href="65152e53-31a6-d3ea-52b4-09c7471d20bc.htm">Update<wbr />Settings</a>
+    </li>
+  </tocItems>
+</toc>

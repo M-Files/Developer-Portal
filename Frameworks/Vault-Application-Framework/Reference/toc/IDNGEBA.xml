@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="cb74f91b-35d8-3463-99aa-4cb9d83d6f20.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Domain.<wbr />Dashboards</a>
+    </li>
+    <li>
+      <a href="c06d86e3-0b1c-6fd7-37ca-b80b3bf3ff52.htm">Dashboard<wbr />Panel</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="26a92a30-6e6b-5786-943a-072127cf6204" href="26a92a30-6e6b-5786-943a-072127cf6204.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="fe9973f8-cddc-5a0a-e7ca-3cfdf0bc4ec9" class="has-submenu" href="fe9973f8-cddc-5a0a-e7ca-3cfdf0bc4ec9.htm">
+        <span data-tocFile="../toc/IDBNGEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="3ee43244-2401-6dba-bb3b-771c309a433f" class="has-submenu" href="3ee43244-2401-6dba-bb3b-771c309a433f.htm">
+        <span data-tocFile="../toc/IDCNGEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

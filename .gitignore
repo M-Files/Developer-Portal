@@ -4,7 +4,6 @@ _site
 .jekyll-metadata
 .bundle
 .sass-cache
-Gemfile
 Gemfile.lock
 node_modules
 package.json
@@ -19,3 +18,4 @@ SearchHelp.aspx
 SearchHelp.inc.php
 SearchHelp.php
 Web.Config
+debug-deployment.log

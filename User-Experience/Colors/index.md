@@ -5,127 +5,136 @@ includeInSearch: true
 redirect_from: /UX-Design/Colors/
 ---
 
+This page describes the various colors used by M-Files clients.
+
 ## Colors
 
-Color | Color name  | Color code  | Where to use
---- | --- | --- |
-![Main blue](main-blue.png){:.borderless .leftcol} | Main blue | #318CCC | Backgrounds, buttons
-![Secondary blue](secondary-blue.png){:.borderless .leftcol} | Secondary blue | #3AABED | Metadata header
-![Light blue](lightblue.png){:.borderless .leftcol} | Light blue | #CBE8F6| Selected item
-![Light blue 2](lightblue2.png){:.borderless .leftcol} | Light blue 2 | #E5F3FF| Hover
-![Main white](main-white.png){:.borderless .leftcol} | Main white | #FFFFFF | Backgrounds, text color, inactive icon
-![Main black](main-black.png){:.borderless .leftcol} | Main black | #000000 | Text color
-![Gray 1](gray1.png){:.borderless .leftcol} | Gray 1 | #333333 | Base text color
-![Gray 2](gray2.png){:.borderless .leftcol} | Gray 2 | #666666 | Header text  (inactive)
-![Gray 3](gray3.png){:.borderless .leftcol} | Gray 3 | #676767 | Metadata card heading
-![Gray 4](gray4.png){:.borderless .leftcol} | Gray 4 | #808080 | Metadata card italic sub-heading
-![Gray 5](gray5.png){:.borderless .leftcol} | Gray 5 | #999999 |  Metadata card left text
-![Gray 6](gray6.png){:.borderless .leftcol} | Gray 6 | #B3B3B3 | Search button, Task pane menu item (upper)
-![Gray 7](gray7.png){:.borderless .leftcol} | Gray 7 | #CCCCCC | Pane header (active)
-![Gray 8](gray8.png){:.borderless .leftcol} | Gray 8 | #E6E6E6 | Pane header (inactive)
-![Gray 9](gray9.png){:.borderless .leftcol} | Gray 9  | #F2F2F2 | Dialog background 
+### Night Sky
+
+Night Sky 100
+{: .color style="--hex-color: #0A1541" data-hex="#0A1541" data-where="Main text, surface, selection" }
+Night Sky 80
+{: .color style="--hex-color: #3B4467" data-hex="#3B4467" data-where="Surface, field title text" }
+Night Sky 60
+{: .color style="--hex-color: #6C728D" data-hex="#6C728D" data-where="Secondary text" }
+Night Sky 40
+{: .color .invert style="--hex-color: #9DA1B3" data-hex="#9DA1B3" data-where="Text box border" }
+Night Sky 20
+{: .color .invert style="--hex-color: #CED0D9" data-hex="#CED0D9" data-where="Table borders, Lines, Disabled, icon select" }
+Night Sky 10
+{: .color .invert style="--hex-color: #E6E8EC" data-hex="#E6E8EC" data-where="Surface" }
+
+### Blue Moment
+
+Blue Moment 100
+{: .color style="--hex-color: #006EEF" data-hex="#006EEF" data-where="Primary, button" }
+Blue Moment 100 (links)
+{: .color style="--hex-color: #0069E0" data-hex="#0069E0" data-where="Primary (links)" }
+Blue Moment 80
+{: .color style="--hex-color: #338BF2" data-hex="#338BF2" data-where="M-Logo, Surface" }
+Blue Moment 60
+{: .color style="--hex-color: #66A8F5" data-hex="#66A8F5" data-where="Surface" }
+Blue Moment 40
+{: .color .invert style="--hex-color: #99C5F9" data-hex="#99C5F9" data-where="Surface" }
+Blue Moment 20
+{: .color .invert style="--hex-color: #CCE2FC" data-hex="#CCE2FC" data-where="Surface" }
+Blue Moment 10
+{: .color .invert style="--hex-color: #E5F0FD" data-hex="#E5F0FD" data-where="Surface" }
+Blue Moment 5
+{: .color .invert style="--hex-color: #F2F8FE" data-hex="#F2F8FE" data-where="Hover" }
+
+### Deep Blue
+
+Deep Blue 100
+{: .color style="--hex-color: #001F88" data-hex="#001F88" data-where="Blue button press" }
+Deep Blue 80
+{: .color style="--hex-color: #334CA0" data-hex="#334CA0" data-where="Blue button hover" }
+Deep Blue 60
+{: .color style="--hex-color: #6679B8" data-hex="#6679B8" data-where="Surface" }
+Deep Blue 40
+{: .color .invert style="--hex-color: #99A5CF" data-hex="#99A5CF" data-where="Surface" }
+Deep Blue 20
+{: .color .invert style="--hex-color: #CCD2E7" data-hex="#CCD2E7" data-where="Selection, Surface" }
+Deep Blue 10
+{: .color .invert style="--hex-color: #E5E9F3" data-hex="#E5E9F3" data-where="Surface" }
+Deep Blue 5
+{: .color .invert style="--hex-color: #F2F4F9" data-hex="#F2F4F9" data-where="Background, Hover" }
+
+### Evergreen
+
+Evergreen 100
+{: .color style="--hex-color: #0C685D" data-hex="#0C685D" data-where="Illustrations, other" }
+Evergreen 80
+{: .color style="--hex-color: #3D867D" data-hex="#3D867D" data-where="Illustrations, other" }
+Evergreen 60
+{: .color style="--hex-color: #6DA49E" data-hex="#6DA49E" data-where="Illustrations, other" }
+Evergreen 40
+{: .color .invert style="--hex-color: #9EC3BE" data-hex="#9EC3BE" data-where="Illustrations, other" }
+Evergreen 20
+{: .color .invert style="--hex-color: #CEE1DF" data-hex="#CEE1DF" data-where="Illustrations, other" }
+Evergreen 10
+{: .color .invert style="--hex-color: #E7F0EF" data-hex="#E7F0EF" data-where="Illustrations, other" }
+Evergreen 5
+{: .color .invert style="--hex-color: #F3F8F7" data-hex="#F3F8F7" data-where="Illustrations, other" }
+
+### Common
+
+Alert Green
+{: .color style="--hex-color: #00AB47" data-hex="#00AB47" data-where="Success" }
+Alert Yellow
+{: .color style="--hex-color: #C28900" data-hex="#C28900" data-where="Caution" }
+Alert Red
+{: .color style="--hex-color: #D50000" data-hex="#D50000" data-where="Warning" }
+Alert Blue
+{: .color style="--hex-color: #006EEF" data-hex="#006EEF" data-where="Info" }
+Dark
+{: .color style="--hex-color: #000000" data-hex="#000000" data-where="Background overlay" }
+White
+{: .color .invert style="--hex-color: #FFFFFF" data-hex="#FFFFFF" data-where="Surface, text" }
+Highlight Yellow
+{: .color .invert style="--hex-color: #FFFFAF" data-hex="#FFFFAF" data-where="Highlight search results" }
 
 ## How to use and when
 
 ### Vault view colors
 
-![Vault view colors](Vault-view-colors.png){:.borderless}
+![Vault view colors](Vault-view-colors.png)
 
-1. Main blue, #318CCC
-2. Gray 8, #E6E6E6
-3. Gray 6, #B3B3B3
-4. Gray 6, #B3B3B3
-5. Gray 7, #CCCCCC
-6. Gray 6, #333333
-7. Light blue, #CBE8F6
-8. Main black, #000000
-9. Main white, #FFFFFF
-10. Gray 2, #666666
-11. Gray 8, #E6E6E6
+1.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}#0A1541
+2.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}#0A1541
+3.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}#0A1541
+4.	{: .swatch style="--hex-color: #F2F4F9" title="#F2F4F9"}#F2F4F9
+5.	{: .swatch style="--hex-color: #FFFFFF" title="#FFFFFF"}#FFFFFF
+6.	{: .swatch style="--hex-color: #CCD2E7" title="#CCD2E7"}#CCD2E7
+7.	{: .swatch style="--hex-color: #F2F4F9" title="#F2F4F9"}#F2F4F9
+{:.swatches}
 
 ### Metadata colors
 
-![Metadata colors](metadata-colors.png){:.borderless}
+![Metadata colors](metadata-colors.png)
 
-1. Gray 3, #676767
-2. Gray 9, #F2F2F2
-3. Gray 4, #808080
-4. Main blue, #318CCC
-5. Main white, #FFFFFF (icon)
-6.  Main black, #000000
-7.  Gray 5, #999999
+1.	{: .swatch style="--hex-color: #FFFFFF" title="#FFFFFF"}#FFFFFF
+2.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}#0A1541
+3.	{: .swatch style="--hex-color: #0A1541" title="#6C728D"}#6C728D
+4.	{: .swatch style="--hex-color: #F2F4F9" title="#F2F4F9"}#F2F4F9
+5.	{: .swatch style="--hex-color: #6C728D" title="#6C728D"}#6C728D
+6.	{: .swatch style="--hex-color: #0A1541" title="#0A1541"}#0A1541
+{:.swatches}
 
-### Create vault colors
+### Accessibility principles
 
-![Create vault view colors](create-view.png){:.borderless}
+Contrast and color use are vital to accessibility and important in M-Files design. Users, including users with visual disabilities, must be able to perceive content and visual elements on the screen.
 
-1. Gray 1, #333333
-2. Main white, #FFFFFF
-3. Gray 9, #F2F2F2
-4. Gray 1,  #333333
-5. Light blue, #CBE8F6
-6. Gray 1, #333333
-7. Main blue, #318CCC
+Minimum level AA requirements:
 
-{% comment %} 
+The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:
 
----> Web colors
+•	Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;
+•	Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+•	Logotypes: Text that is part of a logo or brand name has no contrast requirement.
 
-## Web colors
+Source: [https://www.w3.org/](https://www.w3.org/)
 
-| |
---- | --- | ---
-Background colors |  | 
-![Web colors](web-main-background.png){:.borderless .leftcol} | Main background | #FFFFFF
-Text |  | 
-![Web colors](web-main-text.png){:.borderless .leftcol} | Main text | #819196
-Lines |  | 
-![Web colors](web-highlight-line.png){:.borderless .leftcol} | Highlight line | #033A82
-![Web colors](web-light-line.png){:.borderless .leftcol} | Light line | #D2DAEC
-Headers |  | 
-![Web colors](web-headlines.png){:.borderless .leftcol} | Headlines | #819196
-![Web colors](web-property-headline.png){:.borderless .leftcol} | Property headline  | #50575D
-Icons |  | 
-![Web colors](web-icon.png){:.borderless .leftcol} | Icon | #3D679F
-Hover |  | 
-![Web colors](web-hover.png){:.borderless .leftcol} | Hover | #E5EBF2
-Other |  |
-![Web colors](web-notification-warning.png){:.borderless .leftcol} | Notification warning | #EF583F
-![Web colors](web-boxes.png){:.borderless .leftcol} | Boxes | #819196
+![At least a 4.5:1 contrast ratio is needed](contrast.png)
 
-
-## Web colors how to use and when
-
-![Web how when](web-how-to-use.png){:.borderless}
-
-
----> Manage colors
-
-## Manage Colors
-
-| | 
---- | --- | ---
-Background colors |  | 
-![Manage colors](manage-main-background.png){:.borderless .leftcol} | Main background | #FFFFFF
-![Manage colors](manage-highlight-background.png){:.borderless .leftcol} | Highlight background | #E0ECF1
-![Manage colors](manage-selected-menu-item.png){:.borderless .leftcol} | Selected menu item | #026491
-Headers |  | 
-![Manage colors](manage-header-active.png){:.borderless .leftcol} | Header (active) | #026491
-Text |  | 
-![Manage colors](manage-main-text.png){:.borderless .leftcol} | Header (active) | #424242
-![Manage colors](manage-second-text.png){:.borderless .leftcol} | Header (active) | #026491
-Buttons |  | 
-![Manage colors](manage-buttons.png){:.borderless .leftcol} | Buttons | #026491
-Lines |  | 
-![Manage colors](manage-heading-underline.png){:.borderless .leftcol} | Heading underline | #026491
-![Manage colors](manage-light-green-underline.png){:.borderless .leftcol} | Heading underline | #CBDDE2
-![Manage colors](manage-light-grey-underline.png){:.borderless .leftcol} | Heading underline | #EAECED
-Icons |  | 
-![Manage colors](manage-icons.png){:.borderless .leftcol} | Icons | #026491
-
-
-## Manage colors how to use and when
-
-![Web how when](manage-how-to-use.png){:.borderless}
-
-{% endcomment %}
+WebAIM contrast checker: [https://webaim.org/resources/contrastchecker/](https://webaim.org/resources/contrastchecker/)

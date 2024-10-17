@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>FloatContext Class</title>
+    <meta name="Title" content="FloatContext" />
+    <meta name="Help.Id" content="T:MFiles.VAF.Placeholders.FloatContext" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Placeholders" />
+    <meta name="guid" content="e9e25207-df4e-5119-4d93-f524575c6390" />
+    <meta name="Description" content="A list of floating point numbers as the input or output of placeholder level expansion." />
+    <meta name="tocFile" content="../toc/IDAJBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Float<wbr />Context Class</h1>
+            <div class="summary">
+            A list of floating point numbers as the input or output of placeholder level expansion.
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.VAF.Placeholders</a><br /><strong>Assembly:</strong> MFiles.VAF (in MFiles.VAF.dll) Version: 24.1.706.1<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">FloatContext</span> : <span class="identifier">TypedValueContext</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext</a><span id="LST5DD13191_0" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><span class="noLink">TypedValue</span><span id="LST5DD13191_1" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <a href="c0eb6144-fb43-6172-7b9d-70812ebb3e5a.htm">TypedValueContext</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">FloatContext</span></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDAIEASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="ad883b9c-4918-ade9-fe92-06d27785f48d.htm">FloatContext<span id="LST5DD13191_2" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="512a8a85-80d5-1ecf-003a-34190351bf4c.htm">FloatContext(<span id="LST5DD13191_3" data-languageSpecificText="cpp=array&lt;"></span>Double<span id="LST5DD13191_4" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>)</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9dd4f097-27e4-2a8a-08b0-a0a0f2f96d16.htm">FloatContext(IEnumerable<span id="LST5DD13191_5" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>Double<span id="LST5DD13191_6" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td> </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDQEASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="2d80a9e2-8c30-390a-f2a9-acadf63bb22b.htm">ContextType</a>
+                  </td>
+                  <td>
+            The type of value this context contains.
+            <br />(Overrides <a href="507109ec-114d-7c66-93a8-e32381ef26c2.htm">ExpansionContext<span id="LST5DD13191_7" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_8" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST5DD13191_9" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>ContextType</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ccfbafda-2e55-aa53-988e-c4c89d80b8c3.htm">Count</a>
+                  </td>
+                  <td>
+            Gets the number of elements contained in the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_10" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_11" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="35e03bbf-f346-f9ff-2d09-e675310c1ffd.htm">DataType</a>
+                  </td>
+                  <td>
+            The datatype of the values in this context.
+            <br />(Overrides <a href="012436a4-be6b-5690-1d56-05600ad3d1d2.htm">TypedValueContext<span id="LST5DD13191_12" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>DataType</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c9d9a48a-7031-1de1-6b1f-0eda1c0600f8.htm">IsReadOnly</a>
+                  </td>
+                  <td>
+            Indicates if the list can be modified, or is readonly.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_13" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_14" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="36203f11-a6a6-c03c-cff9-7d89ce8d70a9.htm">Item</a>
+                  </td>
+                  <td>
+            Gets or sets the item at the specified index.
+            Ignores null values.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_15" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_16" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e56af20f-2d86-1c05-7e89-e8a20d9512b8.htm">List</a>
+                  </td>
+                  <td>
+            Internal list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_17" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_18" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1dd55837-c883-bc3c-c3d0-cb2676788f3d.htm">Text</a>
+                  </td>
+                  <td>
+            A string representation of the values contained.
+            <br />(Inherited from <a href="c0eb6144-fb43-6172-7b9d-70812ebb3e5a.htm">TypedValueContext</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="39da2f64-2908-4771-f1f8-dbf8d4389353.htm">Type</a>
+                  </td>
+                  <td>
+            The type of item this list contains.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_19" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_20" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDAEASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="dcab14cb-f1cf-9166-6dff-15967848a73c.htm">Add(Double)</a>
+                  </td>
+                  <td>
+            Adds a raw value to the context (wraps it in a typedValue).
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0d7a0eb1-ac9f-0f41-67b6-3465dcad8d0f.htm">Add(T)</a>
+                  </td>
+                  <td>
+             Adds an item to the list. Ignores null values.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_21" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_22" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="25bdb27c-9e4c-9b6a-415c-27a3b3ad3fa4.htm">AddRange</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="02c33656-eb76-b49b-b185-bc6c663158ec.htm">AssertValidItem</a>
+                  </td>
+                  <td>
+            Ensures an item is valid before it is added to the list.
+            Delegated to by the IList methods that add a value to the list.
+            <br />(Inherited from <a href="c0eb6144-fb43-6172-7b9d-70812ebb3e5a.htm">TypedValueContext</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c687d88a-8800-0fc9-a4ac-108167e07a4c.htm">Clear</a>
+                  </td>
+                  <td>
+            Removes all items from the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_23" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_24" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="01b3cc3d-d7e2-f5e9-3f32-20cf019e0aa5.htm">Clone</a>
+                  </td>
+                  <td>
+            Returns a new instance of this context type with the same values.
+            <br />(Overrides <a href="ffea47da-d1bb-3399-18e1-3fb0b64a332e.htm">ExpansionContext<span id="LST5DD13191_25" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_26" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST5DD13191_27" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>Clone<span id="LST5DD13191_28" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="19aa29ba-0940-62b6-14b5-1f8be6c0f416.htm">Contains</a>
+                  </td>
+                  <td>
+            Determines whether the item is present in the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_29" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_30" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d089cffc-60c8-dbdf-e37f-901ffcf47395.htm">CopyTo</a>
+                  </td>
+                  <td>
+            Copies the elements of the list to an Array, starting at a particular Array index.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_31" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_32" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4be9da61-31a3-d300-83eb-7c1bdc7e0e38.htm">GetEnumerator</a>
+                  </td>
+                  <td>
+            Returns an enumerator that iterates through each item of the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_33" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_34" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8f2daa00-2582-8e6c-4302-b8f055396d24.htm">IndexOf</a>
+                  </td>
+                  <td>
+            Determines the index of a specific item.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_35" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_36" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8aa113c4-e28f-4f15-2ac1-03f77ac5b149.htm">Insert</a>
+                  </td>
+                  <td>
+            Inserts an item at the specified index.
+            Ignores null values.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_37" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_38" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="8e6ea837-f3c9-85bc-6791-3b9955164a60.htm">Remove</a>
+                  </td>
+                  <td>
+            Removes an item from the list.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_39" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_40" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f1189214-14a2-e620-4660-ef4c9eafadbe.htm">RemoveAt</a>
+                  </td>
+                  <td>
+            Removes the item at the specified index.
+            <br />(Inherited from <a href="d51a9218-a516-f565-d336-b2aa743cb8ab.htm">ExpansionContext<span id="LST5DD13191_41" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_42" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="68874e0a-b332-140a-c9d5-733b5ee7ac5b.htm">SafeCast<span id="LST5DD13191_43" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T2<span id="LST5DD13191_44" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a>
+                  </td>
+                  <td>
+            Casts the context to an enumerable list of type T safely.
+            If the cast is not valid, null is returned.
+            <br />(Overrides <a href="e36c62d2-1024-0edd-e1b0-08530ef6f1cc.htm">ExpansionContext<span id="LST5DD13191_45" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_46" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST5DD13191_47" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>SafeCast<span id="LST5DD13191_48" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T2<span id="LST5DD13191_49" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span><span id="LST5DD13191_50" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1e7f7b44-7e49-de06-0fbd-1998e42a71da.htm">UniqueValues</a>
+                  </td>
+                  <td>
+            Returns a new instance of this context type with duplicate values removed.
+            <br />(Overrides <a href="75869e21-acce-e006-85f0-b4264c09a425.htm">ExpansionContext<span id="LST5DD13191_51" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|nu=(|fs=&lt;'"></span>T<span id="LST5DD13191_52" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|nu=)|fs=&gt;"></span><span id="LST5DD13191_53" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>UniqueValues<span id="LST5DD13191_54" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Operators</h2>
+            <div id="IDMEASection">
+              <table id="OperatorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="6994cbf2-2840-1e09-55a7-5ef3c8e78ef3.htm">
+                      <span id="LST5DD13191_55" data-languageSpecificText="cs=Explicit|vb=Narrowing|cpp=Explicit|nu=Explicit|fs=Explicit"></span>(FloatContext to List<span id="LST5DD13191_56" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>Double<span id="LST5DD13191_57" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>
+            Explicit cast to a list of doubles.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.VAF.Placeholders Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">Operators</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

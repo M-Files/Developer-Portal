@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>PlaceholderTemplateSettings Class</title>
+    <meta name="Title" content="PlaceholderTemplateSettings" />
+    <meta name="Help.Id" content="T:MFiles.VAF.Placeholders.PlaceholderTemplateSettings" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Placeholders" />
+    <meta name="guid" content="392d68e1-21d5-5987-35a3-1b8727b84f12" />
+    <meta name="Description" content="Settings to control how a placeholder template is parsed and expanded." />
+    <meta name="tocFile" content="../toc/IDAJBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Placeholder<wbr />Template<wbr />Settings Class</h1>
+            <div class="summary">
+            Settings to control how a placeholder template is parsed and expanded.
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.VAF.Placeholders</a><br /><strong>Assembly:</strong> MFiles.VAF (in MFiles.VAF.dll) Version: 24.1.706.1<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">PlaceholderTemplateSettings</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">PlaceholderTemplateSettings</span></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDAEASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="4c58dffd-7360-5fef-cf4f-d61c0684c09f.htm">PlaceholderTemplateSettings</a>
+                  </td>
+                  <td>
+            Constructor.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDCEASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="96f3f306-0120-e205-9b4b-d71efc44d8d9.htm">CommandProviders</a>
+                  </td>
+                  <td>
+            The Placeholder Levels available for expansion.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="a4fa27c8-a560-edac-02c8-ac4d97f9e3c7.htm">DefaultEncoder</a>
+                  </td>
+                  <td>
+            Indicates which encoding should be used on expanded placeholder texts by default.
+            If a placeholder already contains an encoder this will not be used on its values.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="d6af74f7-8c78-72b8-8165-6e5e85fb85f3.htm">Formatter</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0055a41c-d187-dbcb-265f-2866b6c2e479.htm">HideMissingValues</a>
+                  </td>
+                  <td>
+            Indicates whether placeholders should be left as they are if the object doesn't have a
+            property referenced by a placeholder, instead of being replaced by an empty string.
+            If set to false, format string can be passed to multiple objects.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e805ac23-59d5-0ab4-2e0a-b7d9603b0ef0.htm">UrlFriendlyParsing</a>
+                  </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e8fecdf5-811c-1424-0015-d1542d1df485.htm">UseNumericDigitGrouping</a>
+                  </td>
+                  <td>
+            When true, number grouping separators  are applied to number values.
+            - UseNumericDigitGrouping = False =&gt; "100000"
+            - UseNumericDigitGrouping = True =&gt; "100,000"
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e0116988-4227-7628-6f59-59457f944ca0.htm">UserSession</a>
+                  </td>
+                  <td>
+            The current user session. If set, the placeholder expansion will be limited
+            to vault elements and content visible to this user's session.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDBEASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="ac3a2629-2226-bc03-ed72-91c0a528f2aa.htm">GetParsingOptions</a>
+                  </td>
+                  <td> </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="336264bd-b663-d65d-2247-8bd5207422b6.htm">MFiles.VAF.Placeholders Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

@@ -21,7 +21,7 @@ This method assumes that Saturday and Sunday are not working days, and makes no 
 
 ## Transaction variables
 
-There are a number of methods available to work with transaction variables (i.e. variables held within [Named Value Storage](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultNamedValueStorageOperations.html)):
+There are a number of methods available to work with transaction variables (i.e. variables held within [Named Value Storage](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultNamedValueStorageOperations.html)):
 
 * `SetTransactionVariable` - sets a value within named value storage.
 * `TryGetTransactionVariable` - attempts to retrieve a value from named value storage and returns `true` if it was successful.

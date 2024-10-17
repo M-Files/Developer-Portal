@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="921b018e-2c4f-106b-b642-fd378fda0138.htm">Obj<wbr />Ver<wbr />Ex</a>
+    </li>
+    <li>
+      <a href="78b14d1b-51c7-0c94-41cd-d9080f0d5c2e.htm">Methods</a>
+    </li>
+    <li>
+      <a href="0e3d31dd-96c2-49eb-17cc-78f70e429881.htm">Add<wbr />Lookup</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="87beba9b-21ac-4835-dbd7-f0ccfbf93841" href="87beba9b-21ac-4835-dbd7-f0ccfbf93841.htm">Add<wbr />Lookup(<wbr />MFIdentifier, MFIdentifier)</a>
+    </li>
+    <li>
+      <a id="6b4d9656-6454-2b2f-4e56-8ad889af8074" href="6b4d9656-6454-2b2f-4e56-8ad889af8074.htm">Add<wbr />Lookup(<wbr />Object, Object)</a>
+    </li>
+    <li>
+      <a id="2e15fd82-6303-bcca-fbc6-882918cfab68" href="2e15fd82-6303-bcca-fbc6-882918cfab68.htm">Add<wbr />Lookup(<wbr />MFIdentifier, Obj<wbr />Ver, Boolean)</a>
+    </li>
+    <li>
+      <a id="3b8e0ef9-2053-f256-88e3-fc78f6b2750a" href="3b8e0ef9-2053-f256-88e3-fc78f6b2750a.htm">Add<wbr />Lookup(<wbr />Object, Obj<wbr />Ver, Boolean)</a>
+    </li>
+  </tocItems>
+</toc>

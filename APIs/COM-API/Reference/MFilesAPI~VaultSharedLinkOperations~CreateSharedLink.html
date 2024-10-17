@@ -49,7 +49,7 @@
     </div>
     <div id="i-header-content" class="i-header-content">
         <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
-            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files API 22.6.11519.0<!--DXMETADATA end--></div>
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->M-Files API 23.11.13135.0<!--DXMETADATA end--></div>
         <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="PageItemTitle" -->CreateSharedLink Method<!--DXMETADATA end--></div></div>
     </div>
     <div id="i-after-header-content" class="i-after-header-content">
@@ -82,6 +82,8 @@ The information for creating the shared link.
     <li>This method is available only if M-Files API is used in the <a href="MFilesAPI~MFilesServerApplication.html">server interface</a> mode.</li>
 
     <li>The value of the "Version" property for the associated "FileVer" object must be set to "-1".</li>
+
+    <li>If creating a visitor link, the object should be set as the latest version. If called for an existing visitor link, removes a possible expiration time, setting the link as not-expired.</li>
 </ul></div><!--DXMETADATA end -->
             <!--DXMETADATA start type="sourcecode" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=source,caption=$$Source_Code$$%%<table border=0 cellpadding=0 cellspacing=0 class=sourcecode><tr><td nowrap>%%sourcecode%%</td></tr></table></div>" --><!--DXMETADATA end -->
             <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=example,caption=""$$Example$$%%designlist:tagidentifier=##EXAMPLECODE,itemtype=Example%%""%%%%comment%%" --><!--DXMETADATA end -->
@@ -95,7 +97,7 @@ The information for creating the shared link.
     </div>
     <div id="i-footer-content" class="i-footer-content">
         <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
-<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2022 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><p>&nbsp;</p><p>&nbsp;</p><hr style="height: 1px" /><p>&copy; 2023 M-Files Corporation. All rights reserved.</p><!--DXMETADATA end -->
 <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><a href="mailto:support@m-files.com?subject=M-Files API Documentation Feedback: MFilesAPI~VaultSharedLinkOperations~CreateSharedLink.html">Send comments</a><!--DXMETADATA end-->
     </div>
     

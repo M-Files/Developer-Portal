@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="831fb633-b8d9-a473-b18f-2ff08dd1b836" class="has-submenu" href="831fb633-b8d9-a473-b18f-2ff08dd1b836.htm">
+        <span data-tocFile="../toc/IDABA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="0e4841e0-3121-cacc-d27d-9308d69311a9" class="has-submenu" href="0e4841e0-3121-cacc-d27d-9308d69311a9.htm">
+        <span data-tocFile="../toc/IDBBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />Admin<wbr />Configurations</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="5c8b3b6d-df60-7659-15a9-b7525318de0b" class="has-submenu" href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">
+        <span data-tocFile="../toc/IDCBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d0790086-32dc-72f6-dadf-6fce3c1d4a3f" class="has-submenu" href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">
+        <span data-tocFile="../toc/IDDBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="5a079801-0cdc-4fb9-e9e1-a77870477d9f" class="has-submenu" href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">
+        <span data-tocFile="../toc/IDEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="c7f378bb-95b1-5476-eb54-f682b91c3b53" class="has-submenu" href="c7f378bb-95b1-5476-eb54-f682b91c3b53.htm">
+        <span data-tocFile="../toc/IDFBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />Core</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="baa11ef2-26f7-26c8-7b15-ecd802663520" class="has-submenu" href="baa11ef2-26f7-26c8-7b15-ecd802663520.htm">
+        <span data-tocFile="../toc/IDGBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />Metadata<wbr />Cache</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="e02daeb8-c306-9504-d921-7b26606fe222" class="has-submenu" href="e02daeb8-c306-9504-d921-7b26606fe222.htm">
+        <span data-tocFile="../toc/IDHBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />Module Namespaces</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="972fe331-93e6-8784-fda5-27881793d2f6" class="has-submenu" href="972fe331-93e6-8784-fda5-27881793d2f6.htm">
+        <span data-tocFile="../toc/IDIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="de1211d2-82b7-6900-ca1e-00cbe5205c09" class="has-submenu" href="de1211d2-82b7-6900-ca1e-00cbe5205c09.htm">
+        <span data-tocFile="../toc/IDJBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF.<wbr />Placeholders Namespaces</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

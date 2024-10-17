@@ -5,22 +5,6 @@ includeInSearch: true
 excerpt: This website complements and extends our existing documentation, available either online or within repositories such as the M-Files Partner Portal.  The purpose of this website is to provide tailored guidance, tutorials, and samples to software developers looking to extend or integrate with M-Files.
 ---
 
-## Quick links
-
-<ul class="quicklinks">
-	<li class="api"><a href="{{ site.baseurl }}/APIs/COM-API/"><span class="text"><span class="iconify" data-icon="mdi:circle-outline"></span> COM API</span></a></li>
-	<li class="api"><a href="{{ site.baseurl }}/APIs/REST-API/"><span class="text"><span class="iconify" data-icon="mdi:cloud-outline"></span> REST API</span></a></li>
-	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/Vault-Application-Framework/"><span class="text"><span class="iconify" data-icon="mdi:widgets"></span> Vault Application Framework</span></a></li>
-	<li class="framework"><a href="{{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/"><span class="text"><span class="iconify" data-icon="mdi:window-restore"></span> User Interface Extensibility Framework</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/External-Object-Type-Data-Source/"><span class="text"><span class="iconify" data-icon="mdi:swap-vertical-variant"></span> External Object Type Data Sources</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/Metadata-Card-Configuration/"><span class="text"><span class="iconify" data-icon="mdi:settings-outline"></span> Metadata Card Configuration</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl}}/UX-Design/"><span class="text"><span class="iconify" data-icon="mdi:view-dashboard"></span>UX/Design guidance</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/URLs/"><span class="text"><span class="iconify" data-icon="mdi:link"></span> M-Files URLs</span></a></li>
-	<li class="built-in"><a href="{{ site.baseurl }}/Built-In/VBScript/"><span class="text"><span class="iconify" data-icon="mdi:script-text-outline"></span> VBScript</span></a></li>
-	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/Samples"><span class="text"><span class="iconify" data-icon="mdi:github-circle"></span> Samples</span></a></li>
-	<li class="sample"><a href="{{ site.baseurl }}/Samples-And-Libraries/Libraries"><span class="text"><span class="iconify" data-icon="mdi:github-circle"></span> Libraries</span></a></li>
-</ul>
-
 ## M-Files as a Platform
 
 M-Files' powerful approach to Enterprise Content Management allows businesses to work with what content is, instead of where it's saved.  This powerful metadata-based approach can be used to easily design, build and deploy systems that support businesses in almost any sector, of almost any size.  Whilst M-Files' out-of-the-box functionality allows deep integration with various platforms and technologies, it also has a broad set of developer-orientated APIs and frameworks which can be used to extend this even further.
@@ -51,7 +35,7 @@ More information is available in the [COM API section](/APIs/COM-API/).
 
 ### The M-Files Web Service (MFWS)
 
-* A REST-like web service that is available from within M-Files Web Access.
+* A REST-like web service that is available from within M-Files Classic Web.
 * Can be called from any environment that can make HTTP requests (e.g. mobile), and is not limited to Windows operating systems.
 * Connections to the MFWS are done via HTTPS.
 * Supports most "user" operations, but cannot be used to undertake "administrative" functions.
@@ -62,7 +46,7 @@ More information is available in the [REST API section]({{ site.baseurl }}/APIs/
 
 ## Our Frameworks
 
-M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Web Access.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
+M-Files provides two separate frameworks for building applications that run within the M-Files software: the User Interface Extensibility Framework (UIX), and the Vault Application Framework (VAF).  The [User Interface Extensibility Framework (UIX)]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/) is used to create client-side applications that interact with, replace, or react to, the M-Files Desktop client or M-Files Classic Web.  The [Vault Application Framework (VAF)]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) is designed as a replacement for using VBScript within M-Files vaults, allowing the use of .NET code instead.
 
 ### User Interface Extensibility Framework (UIX)
 

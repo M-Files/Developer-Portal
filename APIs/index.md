@@ -23,7 +23,7 @@ More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">
 
 ## [The M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/)
 
-* A REST-like web service that is available from within M-Files Web Access.
+* A REST-like web service that is available from within M-Files Classic Web.
 * Can be called from any environment that can make HTTP requests (e.g. mobile), and is not limited to Windows operating systems.
 * Connections to the MFWS are done via HTTPS.
 * Supports most "user" operations, but cannot be used to undertake "administrative" functions.

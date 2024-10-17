@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="8c613261-ae88-5f69-4ce5-687a65bda5a9.htm">Reg<wbr />Key</a>
+    </li>
+    <li>
+      <a href="626c66f7-d6e7-6314-f4d6-40b6b85efc71.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="8a595960-6d6b-02ce-cf81-22f4ed0a2f28" href="8a595960-6d6b-02ce-cf81-22f4ed0a2f28.htm">Close</a>
+    </li>
+    <li>
+      <a id="718ea42e-24a2-333f-5960-a0c94c60d1c3" href="718ea42e-24a2-333f-5960-a0c94c60d1c3.htm">Delete<wbr />Sub<wbr />Keys</a>
+    </li>
+    <li>
+      <a id="2145f82c-0eb4-ec50-04db-e626c121f54a" href="2145f82c-0eb4-ec50-04db-e626c121f54a.htm">Dispose</a>
+    </li>
+    <li>
+      <a id="15e4fb57-5ff6-8692-ced0-9f1ae0d938a8" href="15e4fb57-5ff6-8692-ced0-9f1ae0d938a8.htm">Finalize</a>
+    </li>
+    <li>
+      <a id="24c6ec29-c347-d258-e8fd-7ef28f7128f7" href="24c6ec29-c347-d258-e8fd-7ef28f7128f7.htm">Get<wbr />Sub<wbr />Key<wbr />Names</a>
+    </li>
+    <li>
+      <a id="ab181a10-85a6-0ff1-9e15-8f080a2438a8" class="has-submenu" href="ab181a10-85a6-0ff1-9e15-8f080a2438a8.htm">
+        <span data-tocFile="../toc/IDFC0VC0ADBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Get<wbr />Value</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="310ff505-4ef0-b71f-ace3-a570b028ae19" href="310ff505-4ef0-b71f-ace3-a570b028ae19.htm">Open<wbr />Sub<wbr />Key</a>
+    </li>
+    <li>
+      <a id="14c553c2-2d9b-1de0-d5ee-b8573aa36b29" href="14c553c2-2d9b-1de0-d5ee-b8573aa36b29.htm">Set<wbr />Value</a>
+    </li>
+  </tocItems>
+</toc>

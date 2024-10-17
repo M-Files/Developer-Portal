@@ -195,3 +195,4 @@ public VaultApplication()
 ### Application Insights
 
  Application Insights is a feature of Azure Monitor that provides extensible application performance management (APM) and monitoring for applications.  Future extensions of the logging library may allow customers to log to their own Application Insights instance.
+ 

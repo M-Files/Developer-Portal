@@ -2,8 +2,11 @@
 layout: page
 title: Vault Extension Methods
 includeInSearch: true
-excerpt: Vault Extension Methods are snippets of code that are only executed when explicitly called using the [ExecuteVaultExtensionMethod method](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).  Vault Extension Methods can either be written using [VBScript](#vbscript) or registered using the [Vault Application Framework's VaultExtensionMethodAttribute](/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/).
+excerpt: Vault Extension Methods are snippets of code that are only executed when explicitly called using the [ExecuteVaultExtensionMethod method](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).  Vault Extension Methods can either be written using [VBScript](#vbscript) or registered using the [Vault Application Framework's VaultExtensionMethodAttribute](/Frameworks/Vault-Application-Framework/Attributes/Vault-Extension-Methods/).
 ---
+
+If you need to develop new scripts or edit existing, we recommend that you replace VBScript with Vault Application Framework (VAF) development for future compatibility. For more information see [the Vault Application Framework section]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/).
+{:.note.warning}
 
 From M-Files 11.1.4310.124, Vault Extension Methods can also be executed through the [M-Files Web Service]({{ site.baseurl }}/APIs/REST-API/Vault-Extension-Methods/).
 {:.note}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a927114c-8614-2427-a3c1-64e94e6ff8cb.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Mapping.<wbr />Mappers</a>
+    </li>
+    <li>
+      <a href="f1fec586-190c-1a30-9222-51513ed6cb60.htm">Flags<wbr />Object<wbr />Mapper</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="6d530bd1-18e4-9aec-c400-edeaefbccf49" href="6d530bd1-18e4-9aec-c400-edeaefbccf49.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="b4963e31-e5fe-6830-c718-c74c256b7a7b" class="has-submenu" href="b4963e31-e5fe-6830-c718-c74c256b7a7b.htm">
+        <span data-tocFile="../toc/IDBBOEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

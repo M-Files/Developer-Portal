@@ -85,7 +85,7 @@ var auth = new
 };
 ```
 
-If no expiry information is provided then the authentication token returned will have an indeterminate expiry.  Note that you **should write code to handle a 403 returned by the token having expired**, as many situations may cause the token to become unusable.  Without an expiration datetime, the only way to forcibly expire an authentication token is to change the user's login credentials and restart M-Files Web Access.
+If no expiry information is provided then the authentication token returned will have an indeterminate expiry.  Note that you **should write code to handle a 403 returned by the token having expired**, as many situations may cause the token to become unusable.  Without an expiration datetime, the only way to forcibly expire an authentication token is to change the user's login credentials and restart M-Files Classic Web.
 {:.note.warning}
 
 ### Logging out sessions
@@ -145,7 +145,7 @@ var response = (HttpWebResponse)request.GetResponse();
 This method is not recommended.  Instead, obtain an authentication token so that raw credentials are not passed in all your HTTP requests.
 {:.note.warning}
 
-The M-Files Web Service documentation details the available [authentication request parameters](https://www.m-files.com/mfws/parameters.html), which are then included in your subsequent HTTP requests:
+The M-Files Web Service documentation details the available [authentication request parameters](/APIs/REST-API/Reference/parameters/), which are then included in your subsequent HTTP requests:
 
 ```csharp
 // Create a web request pointing at the endpoint that returns all items in the root view.
@@ -396,6 +396,9 @@ this.client.AddDefaultHeader("Authorization", "Bearer " + tokens.AccessToken);
 this.client.AddDefaultHeader("X-Vault", this.oAuthPluginInfo.VaultGuid);
 ```
 
+Note that the plugin configuration may contain a flag named `UseIdTokenAsAccessToken`.  If this is set, and it is set to true, then the ID Token returned by the OAuth process should be used in the Authorization header, instead of the Access Token shown above.
+{:.note}
+
 ## Multi-Server Mode Considerations
 
 In platforms that use the M-Files [Multi-Server Mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) approach (e.g. the M-Files "New Cloud"), M-Files servers to be attached to the same vault database at the same time.  In this configuration, any one of the multiple servers in the availability group may potentially respond to individual REST API calls.
@@ -409,5 +412,3 @@ See [MFWSClient.Authentication.cs](https://github.com/M-Files/Libraries.MFWSClie
 
 You will still need to handle any `403` HTTP status codes that you may receive in the future and re-request an authentication token.  This could happen for the same reasons as in a single-server instance (e.g. if the token times out, or the credentials are changed on the server), but could also happen if the server used to create the token is no longer available (e.g. if it goes offline).  By re-requesting the authentication token and using the newly-provided session ID, the integration will now start to use (and continue to consistently use) a different server in the availability group.
 {:.note}
-
-These steps may not be required in future releases of Multi-Server Mode.  This notice will be removed at that point.

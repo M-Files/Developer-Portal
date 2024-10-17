@@ -26,5 +26,5 @@ Type | Name | Description
 `bool` | LicenseAllowsModifications
 `int` | UserID
 
-This is related to [the SessionInfo class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~SessionInfo.html) in the COM API.
+This is related to [the SessionInfo class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SessionInfo.html) in the COM API.
 {:.remark}

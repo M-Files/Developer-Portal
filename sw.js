@@ -24,6 +24,11 @@ self.addEventListener('fetch', function(event) {
 	{
 		return;
 	}
+	// Skip data from other domains
+	if(!event.request.url.startsWith("https://developer.m-files.com"))
+	{
+		return;
+	}
 	event.respondWith(checkResponse(event.request).catch(function() {
 		console.log('Returning cached asset for ' + event.request.url);
 		return returnFromCache(event.request)}
@@ -44,17 +49,19 @@ var checkResponse = function(request){
 };
 
 var addToCache = function(request){
-	return caches.open('pwa-offline').then(function (cache) {
-		return fetch(request.clone())
-			.then(function (response) {
+	if(request.bodyUsed || !request.url.startsWith("https://developer.m-files.com"))
+		return Promise.resolve();
+	return fetch(request.clone())
+		.then(function (response) {
+			return caches.open('pwa-offline').then(function (cache) {
 				return cache.put(request, response);
-			})
-			.catch(function(error)
-			{
-				console.log("Exception requesting file: " + error)
-				return Promise.reject("no match");
 			});
-	});
+		})
+		.catch(function(error)
+		{
+			console.log("Exception requesting file: " + error)
+			return Promise.reject("no match");
+		});
 };
 
 var returnFromCache = function(request){

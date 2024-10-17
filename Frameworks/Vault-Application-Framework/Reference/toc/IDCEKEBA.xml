@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="28e27e77-e5ef-931f-7243-1bbb0f720aa3.htm">Json<wbr />Lookup<wbr />Item<wbr />Adaptor<wbr />Json<wbr />Converter</a>
+    </li>
+    <li>
+      <a href="8e71e663-18b4-54d7-bebe-595b56b9c6e0.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="ec251bff-8449-e1a5-f199-969e8fa8d1eb" href="ec251bff-8449-e1a5-f199-969e8fa8d1eb.htm">Can<wbr />Convert</a>
+    </li>
+    <li>
+      <a id="d46730b3-b302-e9e4-12fc-c92f953fe61d" href="d46730b3-b302-e9e4-12fc-c92f953fe61d.htm">Read<wbr />Json</a>
+    </li>
+    <li>
+      <a id="bb990abe-7f2b-f0ff-8cc6-e43a8b70632c" href="bb990abe-7f2b-f0ff-8cc6-e43a8b70632c.htm">Write<wbr />Json</a>
+    </li>
+  </tocItems>
+</toc>

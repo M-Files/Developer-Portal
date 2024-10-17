@@ -16,5 +16,5 @@ Type | Name | Description
 `bool` | MoreResults | Specifies whether there are more results in the folder. 
 [FolderContentItem[]](../foldercontentitem/) | Items | The actual folder contents. 
 
-This is related to [the FolderContentItems class](https://www.m-files.com/api/documentation/index.html#MFilesAPI~FolderContentItems.html) in the COM API.
+This is related to [the FolderContentItems class](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~FolderContentItems.html) in the COM API.
 {:.remark}

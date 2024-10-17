@@ -7,7 +7,7 @@ breadcrumb: Connecting
 
 The API can be used in either "server" or "client" mode. Some API methods are only available in one of the modes.  Client mode is designed to be used in situations where both the user is present, and a connection to the vault has been created in the M-Files Desktop Settings. In client mode, built-in M-Files dialogs (e.g. the "create new object" metadata card) can be shown to the user for them to interact with.  Server mode is designed to be used in situations where the user is not necessarily present, and/or a connection to the vault has not been created in the M-Files Desktop Settings. In server mode, dialogs cannot be shown and the code must programmatically undertake these actions.  The server mode allows connections to M-Files servers using the standard protocols – TCP/IP, HTTPS, and LPC – and supports all the same authentication schemes that M-Files supports.
 
-The primary focus of creating a connection to the server is to create a [Vault](https://www.m-files.com/api/documentation/MFilesAPI~Vault.html) object.  The Vault object can then be used to query content from the vault, or to process it in some manner.
+The primary focus of creating a connection to the server is to create a [Vault](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~Vault.html) object.  The Vault object can then be used to query content from the vault, or to process it in some manner.
 
 ## Creating a Client Connection
 
@@ -15,7 +15,7 @@ A client connection requires that a connection to the vault has already been cre
 
 ```csharp
 // Instantiate an MFilesClientApplication object.
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesClientApplication.html
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesClientApplication.html
 var mfClientApplication = new MFilesClientApplication();
 
 // Find all connections to the vault with GUID {C840BE1A-5B47-4AC0-8EF7-835C166C8E24},
@@ -33,11 +33,11 @@ When creating a server connection, you must provide all information about the co
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
-// https://www.m-files.com/api/documentation/MFilesAPI~MFilesServerApplication.html
+// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
 var mfServerApplication = new MFilesServerApplication();
 
 // Connect to a local server using the default parameters (TCP/IP, localhost, current Windows user).
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
 mfServerApplication.Connect();
 
 // Obtain a connection to the vault with GUID {C840BE1A-5B47-4AC0-8EF7-835C166C8E24}.
@@ -53,18 +53,18 @@ To connect using the current Windows credentials (default):
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
-// https://www.m-files.com/api/documentation/MFilesAPI~MFilesServerApplication.html
+// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
 var mfServerApplication = new MFilesServerApplication();
 
 // Connect to a local server using the default parameters (TCP/IP, localhost, current Windows user).
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
 mfServerApplication.Connect();
 
 // OR:
 
 // Connect to a local server using the default parameters (TCP/IP, localhost),
 // explicitly stating the current Windows user for auth.
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
 mfServerApplication.Connect(MFAuthType.MFAuthTypeLoggedOnWindowsUser);
 
 // Obtain a connection to the vault with GUID {C840BE1A-5B47-4AC0-8EF7-835C166C8E24}.
@@ -76,12 +76,12 @@ To connect using a specific M-Files user:
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
-// https://www.m-files.com/api/documentation/MFilesAPI~MFilesServerApplication.html
+// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
 var mfServerApplication = new MFilesServerApplication();
 
 // Connect to a local server using the default parameters (TCP/IP, localhost),
 // using an M-Files user for authentication.
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
 mfServerApplication.Connect(
 				MFAuthType.MFAuthTypeSpecificMFilesUser, 
 				UserName: "Craig", 
@@ -96,12 +96,12 @@ To connect using a specific Windows user:
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
-// https://www.m-files.com/api/documentation/MFilesAPI~MFilesServerApplication.html
+// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
 var mfServerApplication = new MFilesServerApplication();
 
 // Connect to a local server using the default parameters (TCP/IP, localhost),
 // using an M-Files user for authentication.
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
 mfServerApplication.Connect(
 				MFAuthType.MFAuthTypeSpecificWindowsUser, 
 				UserName: "Craig", 
@@ -115,16 +115,46 @@ var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8
 
 ### Specifying server details
 
-Connection can be made via TCP/IP (default):
+#### Using gRPC
+
+The gRPC protocol should be used for all connections, where available.
+{:.note.warning}
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
-// https://www.m-files.com/api/documentation/MFilesAPI~MFilesServerApplication.html
+// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
+var mfServerApplication = new MFilesServerApplication();
+
+// Set up the connection data.
+var connectionData = new ConnectionData();
+connectionData.ClientCapabilities.UnmanagedObjectsSupported = true;
+connectionData.AllowUsingAuthenticationPlugins = true;
+connectionData.EncryptedConnection = true; // Must be true if the server uses TLS.
+// Ensure that you use the correct port.  In the cloud this is 443 but may be different in other architectures.
+// Check with the system administrator.
+connectionData.Endpoint = "443";
+connectionData.NetworkAddress = "m-files.mycompany.com"; // Connect to m-files.mycompany.com;
+connectionData.ProtocolSequence = "grpc";
+
+// Connect using the default authentication details.
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+mfServerApplication.ConnectEx7(connectionData);
+
+// Obtain a connection to the vault with GUID {C840BE1A-5B47-4AC0-8EF7-835C166C8E24}.
+// Note: this will except if the vault is not found.
+var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
+```
+
+#### Using TCP/IP
+
+```csharp
+// Instantiate an MFilesServerApplication object.
+// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
 var mfServerApplication = new MFilesServerApplication();
 
 // Connect using the default authentication details,
 // specifying the server details.
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
 mfServerApplication.Connect(
 	ProtocolSequence: "ncacn_ip_tcp", // Connect using TCP/IP.
 	NetworkAddress: "m-files.mycompany.com", // Connect to m-files.mycompany.com
@@ -135,16 +165,16 @@ mfServerApplication.Connect(
 var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
 ```
 
-Connection can be made via HTTPS:
+#### Using RPC over HTTPS
 
 ```csharp
 // Instantiate an MFilesServerApplication object.
-// https://www.m-files.com/api/documentation/MFilesAPI~MFilesServerApplication.html
+// https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~MFilesServerApplication.html
 var mfServerApplication = new MFilesServerApplication();
 
 // Connect using the default authentication details,
 // specifying the server details.
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesServerApplication~Connect.html
+// https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFilesServerApplication~Connect.html
 mfServerApplication.Connect(
 	ProtocolSequence: "ncacn_http", // Connect using HTTPS.
 	NetworkAddress: "m-files.mycompany.com", // Connect to m-files.mycompany.com
@@ -157,34 +187,6 @@ var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8
 
 With the HTTPS protocol, specify the M-Files Server endpoint that will be used between the RPC Proxy and M-Files Server on the server side. Typically this value is 4466. Note that this parameter does not affect the port that the client uses to communicate with the server. Regardless of this setting, the client will always use the standard HTTPS port for communicating with the server.
 {:.note}
-
-### Connecting via the gRPC protocol
-
-The gRPC protocol should be used when connecting to some M-Files Cloud vaults.  Only a small number of cloud vaults currently require this protocol and you will be informed if you need to use this protocol when connecting.
-{:.note}
-
-```csharp
-// Instantiate an MFilesServerApplication object.
-// https://www.m-files.com/api/documentation/MFilesAPI~MFilesServerApplication.html
-var mfServerApplication = new MFilesServerApplication();
-
-// Set up the connection data.
-var connectionData = new ConnectionData();
-connectionData.ClientCapabilities.UnmanagedObjectsSupported = true;
-connectionData.AllowUsingAuthenticationPlugins = true;
-connectionData.EncryptedConnection = true; // Must be true if the server uses TLS.
-connectionData.Endpoint = "443";
-connectionData.NetworkAddress = "m-files.mycompany.com"; // Connect to m-files.mycompany.com;
-connectionData.ProtocolSequence = "grpc";
-
-// Connect using the default authentication details.
-// https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFilesServerApplication~Connect.html
-mfServerApplication.ConnectEx7(connectionData);
-
-// Obtain a connection to the vault with GUID {C840BE1A-5B47-4AC0-8EF7-835C166C8E24}.
-// Note: this will except if the vault is not found.
-var vault = mfServerApplication.LogInToVault("{C840BE1A-5B47-4AC0-8EF7-835C166C8E24}");
-```
 
 ### Connecting via OAuth
 

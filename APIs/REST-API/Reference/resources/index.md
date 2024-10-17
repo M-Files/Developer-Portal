@@ -25,7 +25,7 @@ Token | Regex expansion | Meaning
 `(id)` | `(\d+)` | A numerical ID used with different structures.
 `(path)` | `([^/]+/)*` | View path. May be completely empty. See [Encoding syntax]({{ site.baseurl }}/APIs/REST-API/Reference/syntax/) for encoding reference.
 
-Note that the JSON structures returned by M-Files Web Service may contain fields not specified in this document. These fields are used by M-Files Web Access and they may change in future M-Files versions. Do not use these fields if you require long term compatibility. Only the fields specified in this document will be monitored for version compatibility.
+Note that the JSON structures returned by M-Files Web Service may contain fields not specified in this document. These fields are used by M-Files Classic Web and they may change in future M-Files versions. Do not use these fields if you require long term compatibility. Only the fields specified in this document will be monitored for version compatibility.
 {:.remark}
 
 ## Contents

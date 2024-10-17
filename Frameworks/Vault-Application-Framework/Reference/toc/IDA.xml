@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c62ba15d-1642-2388-5fca-022279440967" class="has-submenu" href="c62ba15d-1642-2388-5fca-022279440967.htm">
+        <span data-tocFile="../toc/IDAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />Crypto</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="561f7c2b-6a74-0008-6288-36e80455f9d4" class="has-submenu" href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">
+        <span data-tocFile="../toc/IDBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>MFiles.<wbr />VAF Namespaces</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

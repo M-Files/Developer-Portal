@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="2e7930e9-66a2-b682-0dfa-e82eaa5311ac.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Json<wbr />Adaptor</a>
+    </li>
+    <li>
+      <a href="3a17ff6f-fa81-c468-0ba9-4d658d7d949d.htm">Typed<wbr />Value<wbr />JA</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4e4bac17-5eeb-2db0-11e8-bc32e245ae75" class="has-submenu" href="4e4bac17-5eeb-2db0-11e8-bc32e245ae75.htm">
+        <span data-tocFile="../toc/IDAQKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Constructors</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="01e0bbcd-552f-7674-8396-e1fbb3073404" class="has-submenu" href="01e0bbcd-552f-7674-8396-e1fbb3073404.htm">
+        <span data-tocFile="../toc/IDBQKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="619e3d26-fe3c-0f9c-a2af-0ea53abea50d" class="has-submenu" href="619e3d26-fe3c-0f9c-a2af-0ea53abea50d.htm">
+        <span data-tocFile="../toc/IDCQKEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

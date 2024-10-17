@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="e13ec804-f262-c71d-8df7-9bb64bf3112b.htm">Background<wbr />Operation<wbr />Manager</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="c3024d56-74f2-0b75-ddaa-0cffff23509f" href="c3024d56-74f2-0b75-ddaa-0cffff23509f.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="67b798c9-3660-8530-7abc-4b6f46b061ab" class="has-submenu" href="67b798c9-3660-8530-7abc-4b6f46b061ab.htm">
+        <span data-tocFile="../toc/IDBKADBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="ff7345a2-a3d4-e560-2be8-f643788ada4c" class="has-submenu" href="ff7345a2-a3d4-e560-2be8-f643788ada4c.htm">
+        <span data-tocFile="../toc/IDCKADBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="66dffd08-b740-b8e7-5a2a-5e75b9fdfac3" class="has-submenu" href="66dffd08-b740-b8e7-5a2a-5e75b9fdfac3.htm">
+        <span data-tocFile="../toc/IDDKADBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Events</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

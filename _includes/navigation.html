@@ -1,21 +1,13 @@
-<div class="search" itemscope itemtype="http://schema.org/WebSite">
-	<meta itemprop="url" content="http://developer.m-files.com/"/>
-	<meta itemprop="name" content="M-Files Developer Portal"/>
-	<form class="search" action="/Search/" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
-	<meta itemprop="target" content="http://developer.m-files.com/Search/?query={query}"/>
-		<input type="text" itemprop="query-input" class="search-box" id="query" name="query" autocomplete="off" placeholder="Search..." aria-label="Search Query" required />
-		<button class="btn btn-default btn-block" type="submit" aria-label="Perform Search">
-				<span class="iconify" data-icon="mdi:magnify"></i>
-				<span class="label">search</span>
-			</button>
-	</form>
-</div>
+{%- assign navurl = page.url | remove: 'index.html' -%}
+{%- capture match -%}<li><a href="{{ navurl }}">{%- endcapture -%}
+{%- capture replaceWith -%}<li class="current"><a href="{{ navurl }}">{%- endcapture -%}
 <nav class="primary" role="navigation" aria-label="Primary site navigation">
-    {%- include nav-data.html items=site.data.navigation -%}
+    {%- capture nav -%}{%- include_cached nav-data.html items=site.data.navigation -%}{%- endcapture -%}
+    {{ nav | replace_first: match, replaceWith }}
 </nav>
 <nav class="secondary" role="navigation" aria-label="Secondary site navigation">
     <ul>
-        <li><a href="mailto:devsupport@m-files.com"><span class="text"><span class="iconify" data-icon="mdi:comment-text-multiple-outline"></span>Feedback</span></a></li>
-        <li><a href="{{ site.baseurl }}/Links"><span class="text">Links<span class="iconify" data-icon="mdi:link-variant"></span></span></a></li>
+        <li><a href="https://community.m-files.com">Feedback</a></li>
+        <li><a href="{{ site.baseurl }}/Links">Links</a></li>
     </ul>
 </nav>

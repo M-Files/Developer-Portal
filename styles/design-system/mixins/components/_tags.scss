@@ -1,0 +1,28 @@
+@use "../colours" as colours;
+@use "../fonts" as fonts;
+
+@mixin tag-list(){
+	margin: 15px 0px;
+}
+@mixin tag-list-item(){
+	display: inline-block;
+	padding: 4px 12px;
+	background: colours.nightSky();
+	border: 0px;
+	border-radius: 8px;
+	margin-left: 10px;
+	@include fonts.tag();
+	a, a:link, a:hover{
+		color: white;
+		text-decoration: none;
+	}
+	&:nth-child(1){ margin-left: 0px; }
+}
+@mixin tag-list-small(){
+	@include tag-list();
+	margin: 5px 0px;
+}
+@mixin tag-list-item-small{
+	@include tag-list-item();
+	@include fonts.tag-small();
+}

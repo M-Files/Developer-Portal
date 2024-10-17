@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.<wbr />VAF.<wbr />Common</a>
+    </li>
+    <li>
+      <a href="b933bcf4-f518-6e32-5bab-b5f95c8cd627.htm">IProperty<wbr />Environment</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0c37159b-1fe7-56b4-fb15-07b219d70394" class="has-submenu" href="0c37159b-1fe7-56b4-fb15-07b219d70394.htm">
+        <span data-tocFile="../toc/IDA2ADBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Properties</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="81d6df37-7383-c77a-e862-20a13a304871" href="81d6df37-7383-c77a-e862-20a13a304871.htm">Methods</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,69 @@
+
+@use "../../design-system/_variables" as variables;
+@use "../../design-system/icons" as icons;
+@use "../../design-system/mixins/_colours" as colours;
+@use "../../design-system/mixins/_fonts" as fonts;
+@use "../../design-system/mixins/components/_widget" as widgets;
+@use "../../design-system/mixins/components/buttons" as buttons;
+
+body{
+
+	p.note {
+		@include widgets.widget();
+		box-shadow: none;
+		background-color: colours.deepBlue(5);
+		position: relative;
+		padding: 18px 18px 18px 34px;
+		margin: 20px 0px;
+		border-radius: variables.$borderradius_small;
+		min-height: 24px;
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+		color-adjust: exact;
+		&::before {
+			content: "Note:";
+			position: relative;
+			left: -20px;
+			padding-left: 20px;
+			line-height: 24px;
+			white-space: pre;
+			display: block;
+			-webkit-print-color-adjust: exact;
+			print-color-adjust: exact;
+			color-adjust: exact;
+			background-image: icons.information();
+			background-position: left center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	#notice p.note{
+		margin-top: 0;
+	}
+	
+	p.note.warning,
+		p.note.stub,
+		p.note.prerelease,
+		p.note.prerelease
+	{
+		&.stub
+		{
+			font-style: italic;
+		}
+		&.warning::before, &.stub::before {
+			content: "Warning:";
+			background-image: icons.warning();
+		}
+	}
+	
+	p.note.hint
+	{
+		background-color: rgba(224, 237, 222, 1);
+		border: 1px solid rgb(64, 146, 89);
+		&::before
+		{
+			content: "Hint: ";
+			background-image: icons.hint();
+		}
+	}
+}

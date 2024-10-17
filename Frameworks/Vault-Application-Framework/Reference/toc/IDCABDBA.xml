@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="d0790086-32dc-72f6-dadf-6fce3c1d4a3f.htm">MFiles.<wbr />VAF.<wbr />Common Namespaces</a>
+    </li>
+    <li>
+      <a href="d685572d-372e-40a9-f473-712980cc0948.htm">MFiles.<wbr />VAF.<wbr />Common.<wbr />Application<wbr />Task<wbr />Queue</a>
+    </li>
+    <li>
+      <a href="48286b98-3841-4932-f5c0-79bb304788ee.htm">Application<wbr />Task</a>
+    </li>
+    <li>
+      <a href="2ebe01d0-8852-334f-4681-bb7215a1ed64.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="7ebca31d-7cd9-b5b0-e86d-9b2ca669dadc" href="7ebca31d-7cd9-b5b0-e86d-9b2ca669dadc.htm">Deep<wbr />Clone</a>
+    </li>
+    <li>
+      <a id="1008cc12-eda6-e9f5-9f8a-58987bc1d87b" class="has-submenu" href="1008cc12-eda6-e9f5-9f8a-58987bc1d87b.htm">
+        <span data-tocFile="../toc/IDBCABDBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>To<wbr />Application<wbr />Broadcast<wbr />Message</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="bcbebc58-d0e1-61c5-be10-e84f8c3992e9" class="has-submenu" href="bcbebc58-d0e1-61c5-be10-e84f8c3992e9.htm">
+        <span data-tocFile="../toc/IDCCABDBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>To<wbr />Application<wbr />Task<wbr />Info</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

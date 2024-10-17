@@ -22,6 +22,36 @@ In fast-browsing mode the `ShellFrame` is created once - during the `ShellUI` st
 
 For most applications this new behavior will not directly affect the application's functionality.  Some applications - those that rely on the previous `ShellFrame` lifecycle - may need alterations to correctly function in fast-browsing mode.
 
+## How to tell if your application is fast-browsing-compatible
+
+The easiest way to confirm whether your application is fast-browsing-compatible is to use M-Files Admin to export the application from your vault and then to check the application's [manifest file](../Application-Definition/).  You can do this by following these steps:
+
+1. Open M-Files Admin and locate the vault containing your UI applications.
+2. Right-click on the vault name and select `Applications`.
+3. This will list all applications installed, both client applications and server applications (one column in the list states which is which).  Only client applications need to be updated.
+4. Select each application in turn and click `Export...` and export them to your computer.
+
+Some client applications appear as "children" of a server application (e.g. you must expand the server application to see the child).  You can use this process to confirm whether each child application is fast-browsing-compatible, but you should contact the author of the server application to implement the fix.  **The instructions below apply only to client applications which are distributed separately from a vault application.**
+{:.note}
+
+Once you have the applications they will have either an `.mfappx` or `.zip` extension.  Both of these files are zip files.  Rename any `.mfappx` files to `.zip` and extract their contents.  For each application you should end up with a folder within which there will be a file named `appdef.xml`.
+
+1. Open this file using a text editor such as Notepad.
+2. Locate any and all elements that start "&lt;module".  These XML elements define any modules in the application.  Most applications have a single module, but it is possible for applications to define multiple.
+3. Check the "&lt;module&gt;" element attributes.  **If the module contains an attribute named `fast-browsing-compatible`, and the value is `true`, then this application is fast-browsing-compatible.**  If the module does not contain an attribute with this name, or the value is false, then the application is not fast-browsing-compatible.
+
+### Examples
+
+This is a fast-browsing-compatible application.  Note that the module has the `fast-browsing-compatible` attribute and its value is set to `true`:
+
+![A module that is fast-browsing-compatible](fast-browsing-compatible.png)
+
+These are not fast-browsing-compatible applications.  Note that the module either does not have the `fast-browsing-compatible` attribute, or the value is set to `false`:
+
+![A module that is explicitly incompatible with fast browsing](fast-browsing-incompatible1.png)
+
+![A module that is has no fast-browsing attribute](fast-browsing-incompatible2.png)
+
 ## New events
 
 As the `ShellFrame`'s lifecycle cannot be used to identify when the user changes view, M-Files 20.12 adds two additional new events to the `ShellFrame`:

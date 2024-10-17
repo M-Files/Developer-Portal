@@ -6,8 +6,8 @@ breadcrumb: VBScript
 excerpt: VBScript provides an easily-accessible mechanism for server-side code to be placed within an M-Files vault or server.  Code can react to vault events (e.g. event handlers), can execute when objects move through workflows (e.g. to enforce that an object meets some conditions before moving into a state), or even to calculate or validate values of properties on objects.
 ---
 
-The [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) can be used to enable .NET (typically C#) code to be used in many of the places that VBScript can be used, and should be considered for complex scripts.
-{:.note}
+If you need to develop new scripts or edit existing, we recommend that you replace VBScript with Vault Application Framework (VAF) development for future compatibility. For more information see [the Vault Application Framework section]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/).
+{:.note.warning}
 
 ## Locations VBScript can execute
 
@@ -56,7 +56,7 @@ VBScript can be used to [automate the transition between two workflow states](ht
 
 ### Vault Extension Methods
 
-VBScript can be used to create [Vault Extension Methods]({{ site.baseurl }}/Built-In/VBScript/Vault-Extension-Methods/), which are snippets of code that can be executed using [ExecuteVaultExtensionMethod](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).  These Vault Extension Methods can be executed by other VBScript, by external applications using the COM API, by [external applications using the REST API](/APIs/REST-API/Vault-Extension-Methods/), or by User Interface Extensibility Framework applications running within the M-Files desktop or web clients.
+VBScript can be used to create [Vault Extension Methods]({{ site.baseurl }}/Built-In/VBScript/Vault-Extension-Methods/), which are snippets of code that can be executed using [ExecuteVaultExtensionMethod](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultExtensionMethodOperations~ExecuteVaultExtensionMethod.html).  These Vault Extension Methods can be executed by other VBScript, by external applications using the COM API, by [external applications using the REST API](/APIs/REST-API/Vault-Extension-Methods/), or by User Interface Extensibility Framework applications running within the M-Files desktop or web clients.
 
 ## Tips and tricks
 

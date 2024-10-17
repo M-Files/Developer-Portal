@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="a3b60ffe-d18c-97f8-7c1d-28d9f88eb206.htm">MFiles.<wbr />VAF.<wbr />Configuration</a>
+    </li>
+    <li>
+      <a href="3c782a86-a778-c0b5-6eb5-ac32ce309a8d.htm">Configuration<wbr />Storage<wbr />In<wbr />Vault.<wbr />Validating<wbr />Contract<wbr />Resolver</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="d762f0c6-498d-47ca-a09e-e8894e1a8bbe" href="d762f0c6-498d-47ca-a09e-e8894e1a8bbe.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="cd6426f8-0f14-8e49-7fc6-9fad70b97891" href="cd6426f8-0f14-8e49-7fc6-9fad70b97891.htm">Properties</a>
+    </li>
+    <li>
+      <a id="104e8adb-e913-eb51-92d4-b6384b2df7b4" class="has-submenu" href="104e8adb-e913-eb51-92d4-b6384b2df7b4.htm">
+        <span data-tocFile="../toc/IDCEAEBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

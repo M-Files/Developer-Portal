@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>IPropertyEnvironment Properties</title>
+    <meta name="Title" content="Properties" />
+    <meta name="Help.Id" content="Properties.T:MFiles.VAF.Common.IPropertyEnvironment" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Common" />
+    <meta name="guid" content="0c37159b-1fe7-56b4-fb15-07b219d70394" />
+    <meta name="tocFile" content="../toc/ID2ADBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>IProperty<wbr />Environment Properties</h1>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Properties</h2>
+            <div id="IDADASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="5a42b16a-26ea-e022-d15a-3bf3d7133f89.htm">ActivityID</a>
+                  </td>
+                  <td>
+            The activity ID for the current event call. Can be used with event tracking framework.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="679f057c-37c0-2cde-8de0-524575b67de3.htm">CurrentTransactionID</a>
+                  </td>
+                  <td>
+            The current transaction id. Represents either real transaction or enlisting DB transaction.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="468989e8-17cc-7c67-2e07-1bb3db056a3f.htm">CurrentUserID</a>
+                  </td>
+                  <td>
+            The current (author) user id for the current event.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="fa0d1218-528c-8647-75d5-af077612ce36.htm">CurrentUserSessionInfo</a>
+                  </td>
+                  <td>
+            The session info that represents the current (invoker) user session.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="501a6771-48c3-57b1-81f3-4c13b504338f.htm">DisplayID</a>
+                  </td>
+                  <td>
+            The handled object or value list item display id. Relevant only for events that handle objects of value list items.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="21dd6640-e35d-7336-27de-e0d3ea3774fc.htm">LastUsed</a>
+                  </td>
+                  <td>
+            The last used property number. Is defined only in customized automatic numbering.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f7fcae8c-2f41-edfa-93ca-762d9a188fff.htm">MasterTransactionID</a>
+                  </td>
+                  <td>
+            The master (real) DB transaction id.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2a4a6a40-a307-4f1d-89b5-9abedd5c62d6.htm">ObjVer</a>
+                  </td>
+                  <td>
+            Object version identifier for current event. Set if the event is associated with an object version.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ffb800cf-1d87-4699-f23a-91bc559cf235.htm">ParentTransactionID</a>
+                  </td>
+                  <td>
+            Parent transaction id. Set with enlisting transaction only.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="51ed58c1-aaf3-bc2d-e96f-c146d49fa3e8.htm">PropertyDefinition</a>
+                  </td>
+                  <td>
+            The property definition in which context the execution is.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7e21a5ce-12b5-9d1d-279f-d429515b85d8.htm">PropertyValue</a>
+                  </td>
+                  <td>
+            The property value handled to the execution.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="37ce4301-f2c3-f09c-2ea7-12e5b31988fe.htm">SavepointVariables</a>
+                  </td>
+                  <td>
+                    <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="66a88809-c7a1-22c3-392a-f3ace5a8cf43.htm">TransactionCache</a>
+                  </td>
+                  <td>
+            Accessor for the transaction cache.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2c5947af-437d-869c-c0c1-76ad67af09c9.htm">Vault</a>
+                  </td>
+                  <td>
+            Current vault object. This vault object is bound with current DB transaction.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="11338896-9ba2-47a5-de48-73062fef84d1.htm">VaultSharedVariables</a>
+                  </td>
+                  <td>
+            Accessor for the shared variabled.
+            <br />(Inherited from <a href="e3ae1241-6233-aa6b-5f36-63adb3d12baa.htm">IEnvironment</a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="b933bcf4-f518-6e32-5bab-b5f95c8cd627.htm">IPropertyEnvironment Interface</a>
+              </div>
+              <div>
+                <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.VAF.Common Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+});</script>
+  </body>
+</html>

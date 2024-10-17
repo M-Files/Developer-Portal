@@ -156,7 +156,7 @@ public class VaultApplication
 	}
 
 	[BroadcastProcessor(BroadcastTaskType)]
-	public void BroadcastProcessor(IBroadcastProcessingJob<TaskDirective> job)
+	public void BroadcastProcessor(IBroadcastProcessingJob<BroadcastDirective> job)
 	{ 
 		// TODO: Handle the broadcast.
 	}
@@ -221,21 +221,23 @@ The progress can be reported back as frequently as possible, but the system will
 
 There are 7 potential task processing results that exceptions can use:
 
-* `TaskProcessingJobResult.Abort`: Indicates the task should not be updated further, so it automatically gets restored to the `MFTaskState.MFTaskStateWaiting` state.
-* `TaskProcessingJobResult.Fatal`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, and **may not** be re-queued.
-* `TaskProcessingJobResult.Fail`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, but **may** be re-queued.
-* `TaskProcessingJobResult.Requeue`: Indicates the task should be set to `MFTaskState.MFTaskStateFailed`, and **must** be re-queued.
-* `TaskProcessingJobResult.Retry`:  Indicates the task may be reprocessed immediately, and left in the `MFTaskState.MFTaskStateInProgress` state.
-* `TaskProcessingJobResult.Cancel`:  Indicates the task should be marked canceled in the vault, and not processed any further.
-* `TaskProcessingJobResult.Complete`:  Indicates the task my be set to `MFTaskState.MFTaskStateCompleted`.
+* `TaskProcessingJobResult.Abort`: Abandons the task and allows the server to automatically move it back to the waiting state at some point in the future.
+* `TaskProcessingJobResult.Fatal`: Will fail the current task and never re-queue it.
+* `TaskProcessingJobResult.Fail`: Fail will fail the current task and requeue it if allowed (i.e., we haven't hit the requeue limit).
+* `TaskProcessingJobResult.Requeue`: Fails the task but re-queues it regardless of the requeue limit.
+* `TaskProcessingJobResult.Retry`:  Does not fail the task, but instead re-runs the task immediately in a new transaction.  If the retry limit is hit then it will behave as "fail" and re-queue the task if the requeue limit has not been hit.
+* `TaskProcessingJobResult.Cancel`:  Indicates the task should be marked as canceled in the vault, and not processed any further.
+* `TaskProcessingJobResult.Complete`:  Indicates the task was successfully completed.
+
+The default retry limit is 3, and the default requeue limit is 5.  These can be altered in the `[TaskProcessor]` declaration.
+{:.note} 
 
 ### By throwing exceptions
 
-To control how the task is re-processed (or not, as appropriate), often the easiest approach is to throw an instance of `AppTaskException` and provide the correct `TaskPRocessingJobResult`:
+To control how the task is re-processed (or not, as appropriate), often the easiest approach is to throw an instance of `AppTaskException` and provide the correct `TaskProcessingJobResult`:
 
 ```csharp
 [TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]
-[TaskExceptionBehavior(TaskProcessingJobResult.Fatal, typeof(InvalidOperationException))]
 public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
 {
 	if (rnd.Next(1, 4) == 2)
@@ -246,6 +248,9 @@ public void ImportDataFromRemoteSystem(ITaskProcessingJob<TaskDirective> job)
 ### By mapping exception types or M-Files error codes
 
 As a developer you can choose what effect different exceptions raised within your code will have on the task itself.  This is done by mapping the exception type to an expected `TaskProcessingJobResult`.  In the example below, any `InvalidOperationException` thrown by the task processing will be considered fatal:
+
+Mapping exception types is normally not required.
+{:.note}
 
 ```csharp
 [TaskProcessor(QueueId, ImportDataFromRemoteSystemTaskType)]

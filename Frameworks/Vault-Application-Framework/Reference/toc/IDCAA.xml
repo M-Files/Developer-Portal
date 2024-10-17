@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+    <li>
+      <a href="677b2f61-5726-c34e-1a4d-e901b55a1f2f.htm">License<wbr />Helper</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="0b92986c-e89e-b84a-5244-f89fa1893ead" href="0b92986c-e89e-b84a-5244-f89fa1893ead.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="f54b6959-78f4-2249-8024-3dabe8a1f29c" class="has-submenu" href="f54b6959-78f4-2249-8024-3dabe8a1f29c.htm">
+        <span data-tocFile="../toc/IDBCAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -76,7 +76,7 @@ Destroying one or more versions of an object is done by executing a HTTP DELETE 
 
 ### Destroying specific object versions
 
-If the `allVersions` parameter is `false` (or not provided) then the version must be checked out to the current user, and performs an equivalent of [UndoCheckout](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~UndoCheckout.html) (or [ForceUndoCheckout](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectOperations~ForceUndoCheckout.html), if the `force` parameter is `true`).
+If the `allVersions` parameter is `false` (or not provided) then the version must be checked out to the current user, and performs an equivalent of [UndoCheckout](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectOperations~UndoCheckout.html) (or [ForceUndoCheckout](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectOperations~ForceUndoCheckout.html), if the `force` parameter is `true`).
 {:.note}
 
 This endpoint can never destroy a specific version of an object which is checked in.

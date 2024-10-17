@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="6cd7a669-d464-de8d-d6f5-9c56ea2c5728.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging.<wbr />Sensitivity<wbr />Filters</a>
+    </li>
+    <li>
+      <a href="721a8c1e-c36f-2133-3920-87b89b26f492.htm">Log<wbr />Sensitivity<wbr />Filter<wbr />Base&lt;TSupported<wbr />Type&gt;</a>
+    </li>
+    <li>
+      <a href="5f9efd7c-22cd-1fd6-f674-c4d37a3f64e2.htm">Methods</a>
+    </li>
+    <li>
+      <a href="180a9011-370c-6b06-41b0-ba65487eaaa8.htm">Can<wbr />Log</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="daaf8ab1-231d-4582-84cb-f53b4aafe1c2" href="daaf8ab1-231d-4582-84cb-f53b4aafe1c2.htm">Can<wbr />Log(<wbr />Log<wbr />Sensitivity, String)</a>
+    </li>
+    <li>
+      <a id="ba155641-0940-9c48-2174-fc641b69a92e" href="ba155641-0940-9c48-2174-fc641b69a92e.htm">Can<wbr />Log(<wbr />Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, Sensitivity<wbr />Flag)</a>
+    </li>
+    <li>
+      <a id="304f57af-7c24-0ae0-5611-265f9df6335a" href="304f57af-7c24-0ae0-5611-265f9df6335a.htm">Can<wbr />Log(<wbr />Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, Sensitivity<wbr />Flag[])</a>
+    </li>
+    <li>
+      <a id="e0c0b8fd-c40a-f1ca-f468-4d09c6206719" href="e0c0b8fd-c40a-f1ca-f468-4d09c6206719.htm">Can<wbr />Log(<wbr />Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, Sensitivity<wbr />Flag<wbr />Behavior, Sensitivity<wbr />Flag[])</a>
+    </li>
+    <li>
+      <a id="6a1aca69-8eaf-4224-5ae6-8c5fdc360c50" href="6a1aca69-8eaf-4224-5ae6-8c5fdc360c50.htm">Can<wbr />Log(<wbr />String, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, Sensitivity<wbr />Flag)</a>
+    </li>
+    <li>
+      <a id="fd267c28-b66a-f719-d065-e668d29ce366" href="fd267c28-b66a-f719-d065-e668d29ce366.htm">Can<wbr />Log(<wbr />String, Log<wbr />Sensitivity, IEnumerable&lt;Sensitivity<wbr />Flag&gt;, Sensitivity<wbr />Flag<wbr />Behavior, Sensitivity<wbr />Flag[])</a>
+    </li>
+  </tocItems>
+</toc>

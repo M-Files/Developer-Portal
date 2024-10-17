@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="c62ba15d-1642-2388-5fca-022279440967.htm">MFiles.<wbr />Crypto</a>
+    </li>
+    <li>
+      <a href="677b2f61-5726-c34e-1a4d-e901b55a1f2f.htm">License<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="f54b6959-78f4-2249-8024-3dabe8a1f29c.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="33b6c40e-c3f9-415b-6cca-70923643c53b" href="33b6c40e-c3f9-415b-6cca-70923643c53b.htm">Create<wbr />License<wbr />Shared<wbr />Secret</a>
+    </li>
+    <li>
+      <a id="2e52c5a2-dc29-8f54-e258-4680041adac1" href="2e52c5a2-dc29-8f54-e258-4680041adac1.htm">Create<wbr />License<wbr />Two<wbr />Keys</a>
+    </li>
+    <li>
+      <a id="bc062764-e0a5-6b54-d8de-56b185d19f70" href="bc062764-e0a5-6b54-d8de-56b185d19f70.htm">Generate<wbr />New<wbr />Keys</a>
+    </li>
+    <li>
+      <a id="22ba06a2-5524-6d46-eb78-1f41d424a002" class="has-submenu" href="22ba06a2-5524-6d46-eb78-1f41d424a002.htm">
+        <span data-tocFile="../toc/IDDBCAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Get<wbr />License<wbr />Version<wbr />ID</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="8a0ec0a7-c9cc-2ad3-00e6-54a32899bd37" class="has-submenu" href="8a0ec0a7-c9cc-2ad3-00e6-54a32899bd37.htm">
+        <span data-tocFile="../toc/IDEBCAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Read<wbr />License<wbr />Shared<wbr />Secret</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="f71fb311-4f49-c3d8-6fd6-98947a7f3609" class="has-submenu" href="f71fb311-4f49-c3d8-6fd6-98947a7f3609.htm">
+        <span data-tocFile="../toc/IDFBCAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Read<wbr />License<wbr />Two<wbr />Keys</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="adf628e8-01f3-a716-c39c-2e57f9508962" href="adf628e8-01f3-a716-c39c-2e57f9508962.htm">Remove<wbr />Header</a>
+    </li>
+    <li>
+      <a id="8fea2fc5-7fc2-5b46-993e-3f46ed6e2920" href="8fea2fc5-7fc2-5b46-993e-3f46ed6e2920.htm">Unpack<wbr />License</a>
+    </li>
+  </tocItems>
+</toc>

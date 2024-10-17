@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5c8b3b6d-df60-7659-15a9-b7525318de0b.htm">MFiles.<wbr />VAF.<wbr />App<wbr />Tasks</a>
+    </li>
+    <li>
+      <a href="feb1d578-0a32-b85c-1df1-fdf3a0cf5a0f.htm">Task<wbr />Status<wbr />Helper</a>
+    </li>
+    <li>
+      <a href="fe4306d8-3734-4ef3-37f7-63ddce7e47b4.htm">Methods</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="77c191cd-a378-6909-4485-1753bd78ae1a" href="77c191cd-a378-6909-4485-1753bd78ae1a.htm">Attach</a>
+    </li>
+    <li>
+      <a id="b53b77a9-3af2-a922-49eb-8afc2614af3b" href="b53b77a9-3af2-a922-49eb-8afc2614af3b.htm">Detach</a>
+    </li>
+    <li>
+      <a id="fbc29dc8-2eb8-7231-f543-371c07d0cf19" href="fbc29dc8-2eb8-7231-f543-371c07d0cf19.htm">Get<wbr />All<wbr />Task<wbr />Data</a>
+    </li>
+    <li>
+      <a id="59b878bf-43d3-8516-2eea-12825e9e5bc2" href="59b878bf-43d3-8516-2eea-12825e9e5bc2.htm">Get<wbr />Instance</a>
+    </li>
+    <li>
+      <a id="bea2f33b-93f5-6f6b-b3a2-d85b0f10594b" href="bea2f33b-93f5-6f6b-b3a2-d85b0f10594b.htm">Is<wbr />Attached</a>
+    </li>
+    <li>
+      <a id="b8569cad-85c5-1bfc-2ed9-c0920f05d70d" href="b8569cad-85c5-1bfc-2ed9-c0920f05d70d.htm">Update<wbr />Task<wbr />Data&lt;TDirective&gt;</a>
+    </li>
+  </tocItems>
+</toc>

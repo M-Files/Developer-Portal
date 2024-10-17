@@ -1,0 +1,18 @@
+
+@use "../design-system/_variables" as variables;
+@use "../design-system/mixins/_colours" as colours;
+
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #E6E8EC;
+}
+::-webkit-scrollbar-thumb
+{
+ 	border-radius: variables.$borderradius_small;
+    background: colours.nightSky();
+}

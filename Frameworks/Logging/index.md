@@ -15,6 +15,12 @@ The framework can be used from both [Vault Application Framework](Vault-Applicat
 
 ## Getting started
 
+### VAF Version 22.12
+
+The latest version of the Vault Application Framework supersedes the below approach, and includes the interfaces and other structures needed for logging.  It is recommended that you read the notes on the [Vault Application Framework](Vault-Application-Framework/#vaf-2212) page.
+
+### Previous VAF versions
+
 The M-Files Vault Application Logging Framework is available as a [nuget package](https://www.nuget.org/packages/MFiles.VaultApplications.Logging/) which can be installed into your vault applications.  **It is strongly recommended that you follow the specific guidance for [Vault Application Framework](Vault-Application-Framework) and Intelligent Metadata Layer applications.**
 {:.note.warning}
 
@@ -53,7 +59,7 @@ namespace myApplication
 
 ## What should be logged?
 
-Care should be taken by application developers that logs do not contain personally-identifiable or other potentially sensitive information.  Application developers may use [log sensitivity filters](#log-sensitivity) to allow administrators to configure whether common content such as object titles should be included in logs.  M-Files Cloud customers that do not wish for any logs to be held within the M-Files Cloud infrastructure may choose to log to other cloud-based log targets such as [Application Insights](#application-insights).
+Care should be taken by application developers that logs do not contain personally-identifiable or other potentially sensitive information.  Application developers may use [log sensitivity filters](#log-sensitivity) to allow administrators to configure whether common content such as object titles should be included in logs.  M-Files Cloud customers that do not wish for any logs to be held within the M-Files Cloud infrastructure may choose to log to other cloud-based log targets such as [Application Insights](Targets/#application-insights).
 {:.note.warning}
 
 It is important to get into the habit of adding logging to your applications as you build them.  By doing this, and using the appropriate [log level](#log-levels), you will build applications whose logging is flexible and can be scaled up or down as needed to diagnose problems.
@@ -61,8 +67,6 @@ It is important to get into the habit of adding logging to your applications as 
 Care should be taken when implementing logging so that the information in the logs does not constitute a security or privacy risk.  When writing log statements consider using a syntax that supports [log sensitivity](#log-sensitivity), allowing vault administrators to decide whether information such as object titles should be included in the resulting logs or not.
 
 ## General structure
-
-The `MFiles.VaultApplications.Logging` framework is available via a nuget package which can be referenced from your vault applications.  If using the latest releases of the [VAF Extensions library](#using-the-vaf-extensions-library), this package will be included for you automatically.
 
 Each class in your application should expose a [Logger](#loggers), which your application should use to log messages at a [appropriate levels](#log-levels).  At runtime the application can be configured to output some or all of these log messages to one or more enabled [Targets](#targets); depending upon the architecture and client requirements, these targets could be files on disk, the Windows Event Log, email, or some other suitable area.
 
@@ -142,7 +146,7 @@ The targets are configured within M-Files Admin.  Each target typically supports
 * `Minimum Log Level` - the minimum log level (inclusive) that is logged to this target
 * `Maximum Log Level` - the maximum log level (inclusive) that is logged to this target
 * `Advanced`
-  * `Layout` - an instruction on how the log message (and other environmental information) should be formatted in the target.  In the current implementation these use the [NLog implementation](https://github.com/nlog/nlog/wiki/Configuration-file#layouts-and-layout-renderers), with some additional [custom layout renderers](#custom-layout-renderers)
+  * `Layout` - an instruction on how the log message (and other environmental information) should be formatted in the target.  In the current implementation these use the [NLog implementation](https://github.com/nlog/nlog/wiki/Configuration-file#layouts-and-layout-renderers), with some additional [custom layout renderers](Layout-Renderers)
   * `Log Sensitivity` - details on the [sensitivity level](#log-sensitivity) that should be applied to this target
 
 ![An example of configuring the log targets](targets.png)
@@ -234,14 +238,7 @@ public void Process(ObjectVersion objectVersion, ILoggingContext externalLogging
 
 ### Custom layout renderers
 
-The logging library supports several custom layout renderers in addition to the [standard NLog layout renderers](https://nlog-project.org/config/?tab=layout-renderers).  These layout renderers can be included in any layout string and will be substituted with the appropriate value:
-
-* `${application-guid}` - renders the current application GUID, if available, [in "D" format](https://docs.microsoft.com/en-us/dotnet/api/system.guid.tostring).
-* `${application-name}` - renders the current application name, if available.
-* `${application-version}` - renders the current application version, if available.
-* `${server-guid}` - renders the current server GUID [in "D" format](https://docs.microsoft.com/en-us/dotnet/api/system.guid.tostring).
-* `${vault-guid}` - renders the current vault GUID [in "D" format](https://docs.microsoft.com/en-us/dotnet/api/system.guid.tostring).
-* `${log-context}` - renders any current [context](#context) information.
+This content has been moved to a dedicated page on [custom layout renderers](Layout-Renderers).
 
 ## Vault Application Framework applications
 

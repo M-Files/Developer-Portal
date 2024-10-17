@@ -17,7 +17,7 @@ Any object type can be allowed to [have files](https://www.m-files.com/user-guid
 
 ### Object types in the COM API
 
-`Object Type` information can be accessed via the [VaultObjectTypeOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectTypeOperations.html) class.  When working with object types, most information can be obtained from the [ObjType](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectTypeOperations~GetObjectType.html) class, although the [ObjTypeAdmin](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjTypeAdmin.html) class contains administrative information such as external object type connection and any [aliases]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
+`Object Type` information can be accessed via the [VaultObjectTypeOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectTypeOperations.html) class.  When working with object types, most information can be obtained from the [ObjType](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectTypeOperations~GetObjectType.html) class, although the [ObjTypeAdmin](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ObjTypeAdmin.html) class contains administrative information such as external object type connection and any [aliases]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
 
 ### Object types in the REST API
 
@@ -31,7 +31,7 @@ Many organizations already have other systems of record that contain information
 
 Each `Object Type` in the M-Files vault consists of at least one `Class`.  A `Class` can be thought of as a specific type of object and is used to categorize objects when they are stored into M-Files.  For example when storing documents the vault may have classes for `Contract`, `Invoice` or `Presentation`.  Classes can also be used to logically classify other object types.  For example a `Project` object type may have classes for `Customer Project` and `Internal Project`.
 
-Each `Class` can specify the [properties](#property-definitions) that the user will be asked to complete when adding an object to the vault, including which are mandatory.  Mandatory properties are shown on the M-Files Desktop and M-Files Web Access clients with an asterisk.
+Each `Class` can specify the [properties](#property-definitions) that the user will be asked to complete when adding an object to the vault, including which are mandatory.  Mandatory properties are shown on the M-Files Desktop and M-Files Classic Web clients with an asterisk.
 
 Notice in the screenshots below that as the user alters the `Class` of the document they're adding, the metadata requested (and the metadata which is mandatory) changes.
 
@@ -42,12 +42,12 @@ Notice in the screenshots below that as the user alters the `Class` of the docum
 Users can choose to add additional properties to an object by clicking the `Add property` text shown in the metadata card.
 {:.note}
 
-Information on the properties defined for each class - including whether they are mandatory or not - can be found via the [ObjectClass.AssociatedPropertyDefs](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectClass~AssociatedPropertyDefs.html) property.
+Information on the properties defined for each class - including whether they are mandatory or not - can be found via the [ObjectClass.AssociatedPropertyDefs](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ObjectClass~AssociatedPropertyDefs.html) property.
 {:.note.api.hint}
 
 ### Classes in the COM API
 
-`Class` information can be accessed via the [VaultObjectClassOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectClassOperations.html) class.  When working with classes, most information can be obtained from the [ObjectClass](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectClass.html) class, although the [ObjectClassAdmin](https://www.m-files.com/api/documentation/index.html#MFilesAPI~ObjectClassAdmin.html) class contains additional administrative information such as any [aliases]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
+`Class` information can be accessed via the [VaultObjectClassOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectClassOperations.html) class.  When working with classes, most information can be obtained from the [ObjectClass](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ObjectClass.html) class, although the [ObjectClassAdmin](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ObjectClassAdmin.html) class contains additional administrative information such as any [aliases]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
 
 ### Classes in the REST API
 
@@ -55,7 +55,7 @@ Information on the properties defined for each class - including whether they ar
 
 ## Property definitions
 
-`Property Definition`s are simply the individual elements of metadata that the system may need to collect.  In addition to the [built-in property definitions](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html), the system implementation will typically define many custom property definitions to allow it to function according to the organization's needs.
+`Property Definition`s are simply the individual elements of metadata that the system may need to collect.  In addition to the [built-in property definitions](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html), the system implementation will typically define many custom property definitions to allow it to function according to the organization's needs.
 
 A property definition is different to a [Property Value](#property-values).  A property definition is soley the declaration of how a property should work, whereas a property value is a specific entry on an object's metadata card (the property definition, and the value that was entered).  When working with objects you will often need to create or parse a collection of property values.
 {:.note.warning}
@@ -64,7 +64,7 @@ A property definition must be given a name and a [data type](#data-types).  Valu
 
 ### Data types
 
-The following [data types](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFDataType.html) are supported within M-Files:
+The following [data types](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFDataType.html) are supported within M-Files:
 
 * `Text`: A single line of text, limited to 100 characters.
 
@@ -88,7 +88,7 @@ The following [data types](https://www.m-files.com/api/documentation/index.html#
 
 ### Property definitions in the COM API
 
-`Property Definition` information can be accessed via the [VaultPropertyDefOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultPropertyDefOperations.html) class.  When working with classes, most information can be obtained from the [PropertyDef](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyDef.html) class, although the [PropertyDefAdmin](https://www.m-files.com/api/documentation/index.html#MFilesAPI~PropertyDefAdmin.html) class contains additional administrative information such as any [aliases]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
+`Property Definition` information can be accessed via the [VaultPropertyDefOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultPropertyDefOperations.html) class.  When working with classes, most information can be obtained from the [PropertyDef](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~PropertyDef.html) class, although the [PropertyDefAdmin](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~PropertyDefAdmin.html) class contains additional administrative information such as any [aliases]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
 
 ### Property definitions in the REST API
 
@@ -103,15 +103,15 @@ Objects may need to be [checked out]({{ site.baseurl }}/Getting-Started/Objects-
 
 ### Property values in the COM API
 
-Retrieving and setting property values on an object version is done via [VaultObjectPropertyOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultObjectPropertyOperations.html).
+Retrieving and setting property values on an object version is done via [VaultObjectPropertyOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectPropertyOperations.html).
 
-[GetProperty](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~GetProperty.html) can be used to retrieve a single property value, and [GetProperties](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) to retrieve multiple property values on one object.
+[GetProperty](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~GetProperty.html) can be used to retrieve a single property value, and [GetProperties](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~GetProperties.html) to retrieve multiple property values on one object.
 
-[SetProperty](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~SetProperty.html) can be used to update a single property value on an object version, and [SetProperties](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~SetProperties.html) to set multiple property values on one object.  Note that [SetAllProperties](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~SetAllProperties.html) must be used if the class of the object is to change.
+[SetProperty](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~SetProperty.html) can be used to update a single property value on an object version, and [SetProperties](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~SetProperties.html) to set multiple property values on one object.  Note that [SetAllProperties](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~SetAllProperties.html) must be used if the class of the object is to change.
 
-A property can be removed using [RemoveProperty](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~RemoveProperty.html).
+A property can be removed using [RemoveProperty](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~RemoveProperty.html).
 
-When dealing with multiple objects, [GetPropertiesOfMultipleObjects](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~GetPropertiesOfMultipleObjects.html) and [SetPropertiesOfMultipleObjects](https://www.m-files.com/api/documentation/MFilesAPI~VaultObjectPropertyOperations~SetPropertiesOfMultipleObjects.html) may be used.
+When dealing with multiple objects, [GetPropertiesOfMultipleObjects](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~GetPropertiesOfMultipleObjects.html) and [SetPropertiesOfMultipleObjects](https://developer.m-files.com/APIs/COM-API/Reference/MFilesAPI~VaultObjectPropertyOperations~SetPropertiesOfMultipleObjects.html) may be used.
 {:.note}
 
 ### Property values in the REST API
@@ -135,12 +135,12 @@ HTTP PUT and DELETE requests may not work in some scenarios.  Instead, it is rec
 
 Worfklows are created using the M-Files Admin software during initial implementation.  M-Files 2015 and later support a [graphical workflow designer](https://www.m-files.com/user-guide/latest/eng/graphical_workflows.html) to more easily create, visualize and manage workflows.
 
-The current workflow and state of an object are held in its [property values](#property-values), against property definitions [MFBuiltInPropertyDefWorkflow (38) and MFBuiltInPropertyDefState (39), respectively](https://www.m-files.com/api/documentation/index.html#MFilesAPI~MFBuiltInPropertyDef.html).
+The current workflow and state of an object are held in its [property values](#property-values), against property definitions [MFBuiltInPropertyDefWorkflow (38) and MFBuiltInPropertyDefState (39), respectively](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html).
 {:.note}
 
 ### Workflows in the COM API
 
-`Workflow` information can be accessed via the [VaultWorkflowOperations](https://www.m-files.com/api/documentation/index.html#MFilesAPI~VaultWorkflowOperations.html) class.  When working with classes, most information can be obtained from the [Workflow](https://www.m-files.com/api/documentation/index.html#MFilesAPI~Workflow.html) and [State](https://www.m-files.com/api/documentation/index.html#MFilesAPI~State.html) classes, although the [WorkflowAdmin](https://www.m-files.com/api/documentation/index.html#MFilesAPI~WorkflowAdmin.html) and [StateAdmin](https://www.m-files.com/api/documentation/index.html#MFilesAPI~StateAdmin.html) classes contains additional administrative information such as any [aliases]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
+`Workflow` information can be accessed via the [VaultWorkflowOperations](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultWorkflowOperations.html) class.  When working with classes, most information can be obtained from the [Workflow](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~Workflow.html) and [State](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~State.html) classes, although the [WorkflowAdmin](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~WorkflowAdmin.html) and [StateAdmin](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~StateAdmin.html) classes contains additional administrative information such as any [aliases]({{ site.baseurl }}/Getting-Started/Vault-Structure/Aliases/).
 
 ### Workflows in the REST API
 

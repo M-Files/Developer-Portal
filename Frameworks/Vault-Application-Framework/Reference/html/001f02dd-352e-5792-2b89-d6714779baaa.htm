@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html >
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/presentationStyle.css" />
+    <link rel="stylesheet" href="../css/vs.min.css" />
+    <script src="../scripts/jquery-3.5.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js"></script>
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/presentationStyle.js"></script>
+    <title>RegistryHelper Class</title>
+    <meta name="Title" content="RegistryHelper" />
+    <meta name="Help.Id" content="T:MFiles.VAF.Common.RegistryHelper" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MFiles.VAF.Common" />
+    <meta name="guid" content="001f02dd-352e-5792-2b89-d6714779baaa" />
+    <meta name="Description" content="Registry helper class originally taken from the, &quot;MFiles." />
+    <meta name="tocFile" content="../toc/IDADBA.xml" />
+  </head>
+  <body>
+    <div class="fixedLayout">
+      <div id="Header" class="fixedHeader">
+        <div class="pageHeader level mb-0 py-2 px-4">
+          <div id="TitleContainer" class="level-left">
+            <div class="level-item">
+              <img src="../icons/Help.png" />
+            </div>
+            <div id="DocumentationTitle" class="level-item">M-Files Vault Application Framework</div>
+          </div>
+          <div id="LangFilterSearchContainer" class="level-right">
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span id="CurrentLanguage"></span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" role="menu">
+                  <div id="LanguageSelections" class="dropdown-content">
+                    <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item">
+              <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <button id="SearchButton" type="submit" class="is-hidden"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixedContent">
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5 fixedContent">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu" />
+            </nav>
+          </div>
+          <div id="Resizer" class="is-hidden"></div>
+          <div id="TopicContent" class="column content is-7">
+            <h1>Registry<wbr />Helper Class</h1>
+            <div class="summary">
+            Registry helper class originally taken from the, "MFiles.System" namespace
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.VAF.Common</a><br /><strong>Assembly:</strong> MFiles.VAF (in MFiles.VAF.dll) Version: 24.1.706.1<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">RegistryHelper</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://docs.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">RegistryHelper</span></dd></dl></div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Constructors</h2>
+            <div id="IDREASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="6ae62422-4f2b-6075-4be7-8a011eec4586.htm">RegistryHelper</a>
+                  </td>
+                  <td> </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Methods</h2>
+            <div id="IDSEASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="38660a30-58bd-f07d-b261-b02287802672.htm">CreateKey</a>
+                  </td>
+                  <td>
+            Creates a registry key.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0c48c1de-250b-4803-3ffb-027f59632700.htm">DeleteRegKey(UIntPtr, RegistryHelper<span id="LST2C275F61_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>RegistryAccessFlags, String)</a>
+                  </td>
+                  <td>
+            Deletes the registry key. The key must not have subkeys.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7c78c576-6c9d-f05e-f061-ec2dea65c74a.htm">DeleteRegKey(UIntPtr, RegistryHelper<span id="LST2C275F61_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>RegSAM, String)</a>
+                  </td>
+                  <td>
+            Deletes the registry key. The key must not have subkeys.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6389551e-1861-97ba-b883-c4256b3a9753.htm">DeleteRegKeyEx_Wrapper</a>
+                  </td>
+                  <td>
+            Deletes the registry key. Deals with missing implementation on pre-XP SP2 systems. The key must not have subkeys.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="ca512bc0-513c-6b49-7a62-862e43e9ef4e.htm">DeleteRegValue</a>
+                  </td>
+                  <td>
+            Deletes the registry value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="77656736-e235-ec3f-5c63-0b32da12207b.htm">EnumSubkeyByIndex</a>
+                  </td>
+                  <td>
+            Enumerates a sub-key of the given key specified by index.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="136da762-824d-e5a7-69bd-b601ccd2318e.htm">EnumSubkeys</a>
+                  </td>
+                  <td>
+            Enumerates all sub-keys. If key is missing, return empty vector.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1b6c2f17-0389-2ddd-8e44-49857d3854c0.htm">GetProcAddress</a>
+                  </td>
+                  <td>
+            Retrieves the address of an exported function or variable from the specified dynamic-link library (DLL).
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="4ff2a7c8-fe6b-9395-02ee-8d2b6a5ec468.htm">IsWow64Process</a>
+                  </td>
+                  <td>
+            Determines whether the specified process is running under WOW64 or an Intel64 of x64 processor.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="dfe6f5d9-5c68-bbae-b3d2-b5594db3891b.htm">OpenKey</a>
+                  </td>
+                  <td>
+            Tries to open registry key. If the key cannot be found, pbExists receives false.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="7d028436-4b55-3c4a-ff6b-5c5af70a38d9.htm">ReadRegValue(UIntPtr, RegistryHelper<span id="LST2C275F61_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>RegistryAccessFlags, String, String)</a>
+                  </td>
+                  <td>
+            Reads RegValue from registry. If the key or value is missing, tells it.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e671b8b1-f4a4-f2d8-aee8-2fe373fb0993.htm">ReadRegValue(UIntPtr, RegistryHelper<span id="LST2C275F61_3" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>RegistryAccessFlags, String, String, RegistryHelper<span id="LST2C275F61_4" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>RegSAM)</a>
+                  </td>
+                  <td>
+            Reads RegValue from registry. If the key or value is missing, tells it.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e0365461-c309-16da-8e7d-f1757c67690a.htm">RegCloseKey</a>
+                  </td>
+                  <td>
+            Closes a handle to the specified registry key.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2547adf1-ecc6-298a-e9ff-f4d8f5801d9a.htm">RegDeleteKey</a>
+                  </td>
+                  <td>
+            Deletes a subkey and its values. Note that key names are not case sensitive.
+            - 64-bit Windows:  On WOW64, 32-bit applications view a registry tree that is separate from the
+            registry tree that 64-bit applications view. To enable an application to delete an entry in the
+            alternate registry view, use the RegDeleteKeyEx function.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="076a1e7e-fe9a-90f1-ff1f-91529bd5c5b7.htm">RegDeleteKeyEx</a>
+                  </td>
+                  <td>
+            Deletes a subkey and its values from the specified platform-specific view of the registry. Note that key names are not case sensitive.
+            - To delete a subkey as a transacted operation, call the RegDeleteKeyTransacted function.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="9d2f113f-0e65-eaad-761b-32f6f92ed1d6.htm">RegDeleteValue</a>
+                  </td>
+                  <td>
+            Removes a named value from the specified registry key. Note that value names are not case sensitive.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="afa551bc-f983-8f8d-8bd7-f6239a020470.htm">WriteRegValue</a>
+                  </td>
+                  <td>
+            Writes the specified value to the registry.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>Fields</h2>
+            <div id="IDAEASection">
+              <table id="FieldList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="8b37a3a0-aece-6e37-4980-2e03270dd932.htm">ADVAPI32_DLL</a>
+                  </td>
+                  <td>
+            AdvApi32 library name.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="be4079f3-beb6-c255-5533-b608c3cbe96a.htm">ERROR_FILE_NOT_FOUND</a>
+                  </td>
+                  <td>
+            Error code, file not found.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="34c5417f-54d3-fb3a-6fa2-2b1705616506.htm">ERROR_MORE_DATA</a>
+                  </td>
+                  <td>
+            Error code, more data.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="0d7d096c-797a-7ba1-8f13-daf9318f9744.htm">ERROR_NO_MORE_ITEMS</a>
+                  </td>
+                  <td>
+            Error code, no more items.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="e60c4c9e-9008-e3b7-0cad-0c715c97bec5.htm">ERROR_SUCCESS</a>
+                  </td>
+                  <td>
+            Error code, success.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="1648f573-a5b0-acdf-047a-e670eae9982f.htm">HKEY_LOCAL_MACHINE</a>
+                  </td>
+                  <td>
+            Local machine registry key, the others are in WINREG.H.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="67e3cced-83fa-5bed-12a7-1553319fdd90.htm">KERNEL32_DLL</a>
+                  </td>
+                  <td>
+            Kernel32 library name.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="75153c84-3244-144d-0b22-1d77a90a30f3.htm">REG_BINARY</a>
+                  </td>
+                  <td>
+            Registry type, "binary" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="97cb5971-241c-cc25-f6ec-ced133cf4223.htm">REG_DWORD</a>
+                  </td>
+                  <td>
+            Registry type, "number" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="f4617536-db4f-d738-d829-a106d94be6ab.htm">REG_DWORD_BIG_ENDIAN</a>
+                  </td>
+                  <td>
+            Registry type, "big endian" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="c14473fe-7ce6-1d15-1168-ce357efdaba1.htm">REG_DWORD_LITTLE_ENDIAN</a>
+                  </td>
+                  <td>
+            Registry type, "little endian" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="80673677-dc9f-bc47-d8e2-b0e7c715ac26.htm">REG_EXPAND_SZ</a>
+                  </td>
+                  <td>
+            Registry type, "expand string" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="6631dddd-5072-1694-e387-2fb314f6fd65.htm">REG_LINK</a>
+                  </td>
+                  <td>
+            Registry type, "link" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="2f5336fa-2a59-f640-ba7a-5fcdfe714089.htm">REG_MULTI_SZ</a>
+                  </td>
+                  <td>
+            Registry type, "multi string" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="49f19ff4-9e17-0a83-10e0-6356fbbcb6f6.htm">REG_NONE</a>
+                  </td>
+                  <td>
+            Registry type, "none" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="05a22621-f062-6053-e590-8920fd0e07b3.htm">REG_SZ</a>
+                  </td>
+                  <td>
+            Registry type, "string" value.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="5f60f35e-7aa5-d260-915f-5248211b63a9.htm">USER32_DLL</a>
+                  </td>
+                  <td>
+            User32 library name.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">
+              <span class="icon toggleSection" tabindex="0">
+                <i class="fa fa-angle-down"></i>
+              </span>See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="43e5b38f-d9d9-be93-149b-2d1ade04d2c5.htm">MFiles.VAF.Common Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">Fields</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer id="PageFooter" class="footer border-top py-3 fixedFooter">
+        <div class="columns">
+          <div class="column">
+            <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:devsupport%40m-files.com?Subject=M-Files%20Vault%20Application%20Framework">devsupport@m-files.com</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script> 
+				</div>
+          <div class="column"> 
+				</div>
+        </div>
+      </footer>
+    </div>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="5a079801-0cdc-4fb9-e9e1-a77870477d9f.htm">MFiles.<wbr />VAF.<wbr />Configuration Namespaces</a>
+    </li>
+    <li>
+      <a href="251deeb5-96b5-c366-e146-8d0990d8233e.htm">MFiles.<wbr />VAF.<wbr />Configuration.<wbr />Logging</a>
+    </li>
+    <li>
+      <a href="15ad723e-61b1-694a-b070-bf9ce648bc0d.htm">Null<wbr />Logger</a>
+    </li>
+    <li>
+      <a href="90f95b1a-418e-e0e3-49c3-2c49364e4c87.htm">Methods</a>
+    </li>
+    <li>
+      <a href="98df1c8b-a0ed-37bf-1a39-eda8bb01ed76.htm">Log</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="8cc908a7-d4c7-ba60-800c-654575466475" href="8cc908a7-d4c7-ba60-800c-654575466475.htm">Log(<wbr />Log<wbr />Level, Formattable<wbr />String[])</a>
+    </li>
+    <li>
+      <a id="afe32a79-0694-0660-6752-63bc3a938b87" href="afe32a79-0694-0660-6752-63bc3a938b87.htm">Log(<wbr />Exception, Log<wbr />Level, Formattable<wbr />String[])</a>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Docs</a>
+    </li>
+    <li>
+      <a href="854ccd60-6c3b-4754-1fee-cd46e85c309b.htm">Namespaces</a>
+    </li>
+    <li>
+      <a href="561f7c2b-6a74-0008-6288-36e80455f9d4.htm">MFiles.<wbr />VAF Namespaces</a>
+    </li>
+    <li>
+      <a href="972fe331-93e6-8784-fda5-27881793d2f6.htm">MFiles.<wbr />VAF.<wbr />Multiserver<wbr />Mode</a>
+    </li>
+    <li>
+      <a href="95c8d1d2-9dd4-13af-bec6-4467ebd8747d.htm">Application<wbr />Task<wbr />Operation</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="4e54e585-8b77-10eb-d187-2c23046a4157" href="4e54e585-8b77-10eb-d187-2c23046a4157.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="851d9277-4fc7-8d37-8a6f-ae1be3ce5563" href="851d9277-4fc7-8d37-8a6f-ae1be3ce5563.htm">Properties</a>
+    </li>
+    <li>
+      <a id="84afa707-b2ce-24c4-5a80-7b4bc9f55dab" class="has-submenu" href="84afa707-b2ce-24c4-5a80-7b4bc9f55dab.htm">
+        <span data-tocFile="../toc/IDCAIBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="d9afff50-91cb-7173-dc3a-67ba268366df" href="d9afff50-91cb-7173-dc3a-67ba268366df.htm">Events</a>
+    </li>
+  </tocItems>
+</toc>

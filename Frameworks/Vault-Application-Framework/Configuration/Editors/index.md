@@ -274,8 +274,10 @@ In many situations, the use of an [enumerated value](#enumerations-editor) may b
 
 ### Stable values option provider
 
-It is also possible to provide a set of values at runtime, instead of hard-coding these into a JSON collection.  This can be done by using a class that implements `IStableValueOptionsProvider`:
+The sample below shows a basic implementation of `IStableValueOptionsProvider`.  There is more detailed information, including important information on using it from a class library, on the [dedicated IStableValueOptionsProvider page](IStableValueOptionsProvider).
+{:.note.warning}
 
+It is also possible to provide a set of values at runtime, instead of hard-coding these into a JSON collection.  This can be done by using a class that implements `IStableValueOptionsProvider`:
 
 {% highlight csharp %}
 using System.Runtime.Serialization;
@@ -322,7 +324,6 @@ public class Configuration
 
 Options provided this way are rendered into the configuration schema, so are only refreshed when the configuration itself is reloaded (i.e. by right-clicking on the "Configurations" node in the tree on the left and selecting 'Refresh').  As a result this cannot provide truly dynamic options.  Also: providing large numbers of options will significantly affect the performance of the configuration editor.
 {:.note}
-
 
 ## Placeholder editor
 
