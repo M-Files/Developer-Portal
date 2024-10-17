@@ -19,9 +19,9 @@ Electronic signing is not available because the necessary metadata definitions f
 * Stay consistent. Always use the same terms for the same elements. This makes it a lot easier for the users to find their way around the user interface.
 
 CORRECT | INCORRECT  
+You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="correct">context menu</span>, or by clicking the star icon on the <span class="correct">option ribbon</span> of the <span class="correct">metadata card</span>. | You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="incorrect">shortcut menu</span>, or by clicking the star icon on the <span class="incorrect">toolbar</span> of the <span class="incorrect">object properties pane</span>.
 --- | --- |
-You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="correct"> context menu</span>, or by clicking the star icon on the <span class="correct">option ribbon</span>  of the <span class="correct">metadata card.</span> | You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="incorrect">shortcut menu</span>, or by clicking the star icon on the <span class="incorrect">toolbar</span> of the <span class="incorrect">object properties pane.</span>
-This command adds the object to the <span class="correct">Pinned tab.</span> | This command adds the object to the <span class="incorrect">Pinboard.</span>
+This command adds the object to the <span class="correct">Pinned tab</span>. | This command adds the object to the <span class="incorrect">Pinboard</span>.
 
 ## Tone and Voice of User Interface Texts
 
@@ -30,25 +30,25 @@ This section applies to user interface texts only.
 
 * Keep the texts casual, polite, and friendly.
     * Use _sorry_ and _please_ if it feels natural to do so.
-    * Feel free to use contractions like _don't, shouldn't, we're,_ and so on.
-    * Do not, however, use abbreviations such as _etc., e.g.,_ and _i.e._
+    * Feel free to use contractions like _don't_, _shouldn't_, _we're_, and so on.
+    * Do not, however, use abbreviations such as _etc._, _e.g._, and _i.e._
 
 CORRECT | INCORRECT  
 --- | --- |
-<span class="correct">Sorry, but we couldn't get</span> you the most recent version. | The most recent version <span class="incorrect">is unavailable.</span>
-<span class="correct">Please try again</span> later. | The operation <span class="incorrect">can be attempted again </span> at a later time.
+<span class="correct">Sorry, but we couldn't get</span> you the most recent version. | The most recent version <span class="incorrect">is unavailable</span>.
+<span class="correct">Please try again</span> later. | The operation <span class="incorrect">can be attempted again</span> at a later time.
 
-* If you have to choose, be easily understandable rather than colorful and exciting. In most cases, however, being clear does not automatically mean that you need to also sound flat and uninteresting
+* If you have to choose, be easily understandable rather than colorful and exciting. In most cases, however, being clear does not automatically mean that you need to also sound flat and uninteresting.
 
 ## Style Conventions
 
-This section outlines the style conventions used for at M-Files.
+This section outlines the style conventions used at M-Files.
 
 ### Standard American English
 
-All M-Files content must be written in **Standard American English.** The most significant difference between written Standard American English and, say, written British English is that certain words are spelled differently. Pay special attention to how you spell certain words.
+All M-Files content must be written in **Standard American English**. The most significant difference between written Standard American English and, for example, written British English is that certain words are spelled differently. Pay special attention to how you spell certain words.
 
-The tables below list spelling differences of words and suffixes (word endings) between Standard American English and British English. Please note that the lists are not by any means exhaustive, but they cover some of the most common differences. Whenever you are unsure of how a word is spelled in Standard American English, consult a dictionary, such as the online dictionaries by [Merriam-Webster]({{ site.baseurl }}/User-Experience/Writing-Style/#reference-documents) or [Macmillan]({{ site.baseurl }}/User-Experience/Writing-Style/#reference-documents).
+The tables below list spelling differences of words and suffixes (word endings) between Standard American English and British English. Lists are not exhaustive, but they cover some of the most common differences. Whenever you are unsure of how a word is spelled in Standard American English, consult a dictionary, such as the online dictionaries by [Merriam-Webster]({{ site.baseurl }}/User-Experience/Writing-Style/#reference-documents) or [Macmillan]({{ site.baseurl }}/User-Experience/Writing-Style/#reference-documents).
 
 #### Words with Specific Endings
 
@@ -85,8 +85,7 @@ Elevator | Lift
 
 ### Readability
 
-Avoid large chunks of text. Too much text in the user interface looks scary and lowers the chance of the user actually reading it.
-In documentation, the maximum number of words in a sentence is:
+Avoid large chunks of text. Too much text in the user interface looks scary and lowers the chance of the user actually reading it. In documentation, the maximum number of words in a sentence is:
 * 20 in procedures
 
     `In M-Files Admin, go to the "Advanced Vault Settings" section.`
@@ -101,7 +100,7 @@ Capitalization means writing a word with the first letter as an upper-case lette
 
 #### Headings
 
-Headings should use the so-called _title case_, in which the first letter of each _major_ word in the heading is capitalized, including individual words in hyphenated word combinations (such as _Client-Side Registry Settings_). Articles (_a/an/the_), conjunctions, and prepositions _with fewer than five letters_ are not capitalized unless they start the heading. Examples of conjunctions not to be capitalized are _and, but,_ and _if_. Examples of prepositions not to be capitalized are _at, to, for,_ and _with_.
+Headings should use the so-called _title case_, in which the first letter of each _major_ word in the heading is capitalized, including individual words in hyphenated word combinations (such as _Client-Side Registry Settings_). Articles (_a_/_an_/_the_), conjunctions, and prepositions _with fewer than five letters_ are not capitalized unless they start the heading. Examples of conjunctions not to be capitalized are _and_, _but_, and _if_. Examples of prepositions not to be capitalized are _at_, _to_, _for_, and _with_.
 
 In contrast to the title case is the sentence case, which is the standard way of capitalizing English sentences. In the sentence case, only the first letter of a sentence is capitalized and subsequent letters are in lowercase, with the exception of proper names and acronyms.
 
@@ -119,7 +118,7 @@ Proper names are nouns denoting unique entities. Proper names are always capital
 
 #### Acronyms
 
-Acronyms are abbreviations formed from the initial letters or parts in a phrase or a word. Examples of acronyms include _URL, laser, HDMI, tRNA,_ and _PnP_. Acronyms are written in all uppercase, mixed case or lowercase, but most commonly follow the all-uppercase capitalization scheme, in which every letter in the acronym is capitalized (such as in _HDMI_ and _URL_).
+Acronyms are abbreviations formed from the initial letters or parts in a phrase or a word. Examples of acronyms include _URL, _laser_, _HDMI_, _tRNA_, and _PnP_. Acronyms are written in all uppercase, mixed case or lowercase, but most commonly follow the all-uppercase capitalization scheme, in which every letter in the acronym is capitalized (such as in _HDMI_ and _URL_).
 
 Some acronyms use mixed-case capitalization, especially the ones that are derived from an existing acronym by affixing. _tRNA_, for instance, uses a mixed-case capitalization scheme, since it is formed by affixing "transfer" to the acronym RNA. PnP similarly uses mixed-case capitalization, since the letter "n" in the acronym stands for "and", which is commonly written in lowercase even in title case.
 
@@ -130,7 +129,7 @@ Some commonly used acronyms have taken on an identity as regular words. Such acr
 
 Do not use apostrophes (') when forming plural forms of acronyms. For example, write _URLs_, not _URL's_.
 
-#### M-Files Desktop, Classic M-Files Web, and M-Files Admin
+#### Classic M-Files Desktop, Classic M-Files Web, and M-Files Admin
 
 Use **title case** for the following elements:
 
@@ -153,30 +152,30 @@ Use **title case** for the following elements:
 Use **sentence case** for the following elements:
 * Check box and radio button options
 
-![Sentance cases are used for check box options](Check-box.png) 
-![Sentance cases are used for radio button options](Rabio-button.png)
+![Sentence case is used for check box options](Check-box.png){:.borderless} 
+![Sentence case is used for radio button options](Rabio-button.png){:.borderless}
 
 * Drop-down list options
 
-![Sentance cases are used for drop list icons](Drop-down.png) 
+![Sentence case is used for drop list icons](Drop-down.png){:.borderless} 
 
 * Group box labels
 
-![Sentance cases are used for group box labels](Group-box-labels.png) 
+![Sentence case is used for group box labels](Group-box-labels.png){:.borderless} 
 
 * Value and setting labels
 
-![Sentance cases are used for value and settings labels](Vault-and-settings-labels.png) 
+![Sentencen case is used for value and settings labels](Vault-and-settings-labels.png){:.borderless} 
 
 * Dialog body text
 
-![Sentance cases are used for dialog body text](Dailog-body-text.png) 
+![Sentence case is used for dialog body text](Dailog-body-text.png){:.borderless} 
 
 #### M-Files Mobile for iOS
 
 Use title case for message titles, button names, and menu items. Use sentence case for message content. When in doubt, use title case.
 
-#### M-Files Manage, New M-Files Web, and All Other New User Interfaces (Desktop)
+#### M-Files Manage, M-Files Web, and All Other New User Interfaces
 
 Use sentence case throughout the user interface.
 
@@ -190,14 +189,14 @@ In addition to using colons (:) normally in any body text content, add a colon a
 * Labels calling for the user's attention like _Note_ or _Important_
 * Value and setting labels in various dialogs like in the example below
 
-![Colons are used after following elements: Lables and various dialogs](Colons.png)
+![Colons are used after following elements: Labels and various dialogs](Colons.png){:.borderless}
 
 #### Commas and Semicolons
 
 Rules for using commas (,) and semicolons (;):
-* Use a comma to separate three or more words, phrases, or clauses in a series. Comma must also be used before the final conjunction (_and, or, or nor_) in a series of three or more elements:
+* Use a comma to separate three or more words, phrases, or clauses in a series. Comma must also be used before the final conjunction (_and_, _or_, or _nor_) in a series of three or more elements:
 
-    `You can find the corresponding M-Files functions can be in PowerPoint versions 2003, 2007, 2010, and 2013.`
+    `You can find the corresponding M-Files functions in PowerPoint versions 2003, 2007, 2010, and 2013.`
 
 * Use a comma to separate an introductory phrase from the rest of the sentence:
 
@@ -218,9 +217,9 @@ Place a question mark (?) at the end of any question. This also applies to the u
 
 Quotation marks are used for identifying named entities, such as object or command names, in text content. Always use double quotes (") when quoting something. Use single quotes (') only if you need to use quotation marks inside double quotes.
 
-Use double quotes to refer to user interface elements in cases where you are unable to italicize or bold the text referring to the element. Referring to user interface elements in headings, for example, can be one such case.
+Use double quotes to refer to user interface elements in cases where you cannot italicize or bold the text referring to the element. Referring to user interface elements in headings, for example, can be one such case.
 
-In the user interface, use both quotation marks and apostrophes sparingly. For example, referring to short command names does not usually require using quotation marks: _Use the Refresh Now command to resynchronize the group members_.
+In the user interface, use both quotation marks and apostrophes sparingly. For example, referring to short command names does not usually require using quotation marks: _Use the **Refresh Now** command to resynchronize the group members._
 
 #### Dashes
 
@@ -228,9 +227,9 @@ There are two types of dashes to be used in documentation:
 * En dash
 * Hyphen
 
-You can create an en dash (–) by typing ALT+0150 on Windows or by typing a single hyphen between two words in Word with AutoFormat enabled. The en dash is commonly used for indicating a closed range of values. Follow these guidelines for using en dashes:
+You can create an en dash (–) by typing ALT+0150 in Windows or by typing a single hyphen between two words in Word with AutoFormat enabled. The en dash is commonly used for indicating a closed range of values. Follow these guidelines for using en dashes:
 
-* Use an en dash with no whitespace around the dash to indicate a range. Alternatively, you can use constructions such as _from_ … to for indicating a range:
+* Use an en dash with no whitespace around the dash to indicate a range. Alternatively, you can use constructions such as _from … to_ for indicating a range:
 
     `Repeat the steps 1–4 separately for each subtask.`
 
@@ -248,7 +247,7 @@ Use the hyphen (-) character in the following cases:
 
     `co-worker, re-elect`
 
-* The prefixes _ex-, all-,_ and _self-_ are special cases. Always use a hyphen with them:
+* The prefixes _ex-_, _all-_, and _self-_ are special cases. Always use a hyphen with them:
 
     `Ex-president, all-inclusive, self-explanatory`
 
@@ -272,7 +271,7 @@ Use periods after complete sentences that are not questions or exclamations and 
 
 ![Periods used in dialogs and tab titles](Dialog-and-tab-titles.png)
 
-* Group box labelss
+* Group box labels
 
 ![Periods used in group box labels](Group-box-labels.png)
 
@@ -290,15 +289,15 @@ Use periods after complete sentences that are not questions or exclamations and 
  
 * Check box and radio button options
 
-![Periods used in Check box and radio button options](Check-box.png)
+![Periods used in check box and radio button options](Check-box.png){:.borderless}
      
 * Drop-down list options
 
-![Periods used in Drop-down list options](Drop-down.png)
+![Periods used in drop-down list options](Drop-down.png){:.borderless}
  
 * Group box labels
  
-![Periods used in Group box labels](Group-box-labels.png)
+![Periods used in group box labels](Group-box-labels.png){:.borderless}
 
 * Value and setting labels
 
@@ -314,15 +313,7 @@ Include a period only after **body text** in message boxes and alerts.
 
 Do not include ellipsis (…) in user documentation even if the ellipsis is part of the user interface text.
 
-Use ellipses to indicate that something is in progress or requires further user input:
-
-* Menu items and button labels referring to actions that will require user input
-
-    `Add…`
-
-    `Make Copy…`
-
-* Process indicators 
+Use ellipses in user interface texts only to indicate that something is in progress:
 
     `Searching…`
 
@@ -342,10 +333,10 @@ Avoid technical jargon and overly technical and abstract terms.
 
 CORRECT | INCORRECT 
 --- | --- |
-Sorry, but you can't use this operation for <span class="correct">value list based properties.</span> | The operation is not supported for <span class="incorrect">lookups.</span> 
-<span class="correct">Update object permissions based on the changes</span> to the <span class="correct">named access control list</span>  "%s". | <span class="incorrect">Propagate changes</span> to the <span class="incorrect">NACL</span> "%s".
+Sorry, but you can't use this operation for <span class="correct">value list based properties</span>. | The operation is not supported for <span class="incorrect">lookups</span>.
+<span class="correct">Update object permissions based on the changes</span> to the <span class="correct">named access control list</span> "%s". | <span class="incorrect">Propagate changes</span> to the <span class="incorrect">NACL</span> "%s".
 
-Do not use deictic expressions like _today, here, below, above, or on the left_. Their context can change. However, when you refer to any commands, buttons, or other elements in the user interface, make sure that the user does not have to guess where to find them, either.
+Do not use deictic expressions like _today_, _here_, _below_, _above_, or _on the left_. Their context can change. However, when you refer to any commands, buttons, or other elements in the user interface, make sure that the user does not have to guess where to find them, either.
 
 The table lists the correct terms to use in documentation. Please use these terms to keep the language in documentation consistent.
 
@@ -380,7 +371,7 @@ Windows notification area | system tray, status area
 The **New User** dialog is opened. | The **New User** dialog appears. The **New User** dialog emerges.
 
 
-: _A dialog_ is most often defined as a small window prompting for user response, whereas a _window_ is a broader concept, essentially covering the term _dialog_ as well.
+A _dialog_ is most often defined as a small window prompting for user response, whereas a _window_ is a broader concept, essentially covering the term _dialog_ as well.
 {:.note}  
 
 ### Referring to User Interface Elements
@@ -389,15 +380,15 @@ Use a **bolded font** when referring to any user interface elements, like button
 
 When referring to non-interactable user interface elements, use a definite article followed by the name of the element and then the type of the element:
 
-The **New User** dialog is opened.
+`The **New User** dialog is opened.`
 
 When referring to interactable user interface elements, use just the name of the element:
 
-Click **OK** once you are done.
+`Click **OK**.`
 
 Sometimes, for clarity, it can be necessary to add the user interface element as an icon as well. In these cases, add the icon in parentheses right after the name of the user interface element:
 
-Click the **Create** (![Create icon](create.png){:.borderless.nomargin}) button and then select **Document**... from the context menu.
+Click the **Create** (![Create icon](create.png){:.borderless.nomargin}) button and then select **Document**.
 
 If the icon is big, consider making the screenshot smaller.
 
@@ -405,9 +396,9 @@ If the icon is big, consider making the screenshot smaller.
 
 When you refer to content that is in the same documentation where you refer from, use the verb "see". When you refer to external documentation, use the verb "refer".
 
-`For more information, see Adding Users.`
+`For more information, see _Adding Users_.`
 
-`For more information, refer to Editing Content in the M-Files user guide.`
+`For more information, refer to _Editing Content_ in the M-Files user guide.`
 
 ### Abbreviations and Acronyms
 
@@ -415,12 +406,12 @@ Spell out the complete term the first time an abbreviation or acronym appears in
 
 Here is an example:
 
-Organizations have traditionally relied on **Virtual Private Network (VPN)** technology to secure access to corporate resources (such as M-Files vaults) from outside the private network of the organization.
-
-...
-
-Together, the HTTPS encryption and the use of a pre-shared key as a second factor in authentication provide similar security as **VPN** but without the complexity and compatibility challenges of **VPN.**
-
+> Organizations have traditionally relied on **Virtual Private Network (VPN)** technology to secure access to corporate resources (such as M-Files vaults) from outside the private network of the organization.
+> 
+> ...
+> 
+> Together, the HTTPS encryption and the use of a pre-shared key as a second factor in authentication provide similar security as **VPN** but without the complexity and compatibility challenges of **VPN**.
+ 
 Remember to include all acronyms in the glossary of the document.
 
 ### Headings
@@ -440,7 +431,7 @@ Use first, second, and third level headings for structuring your document. Use a
 
 #### Heading Structure for Task Procedures
 
-Use the gerund (the _–ing_ form that is used for forming verbal nouns from verbs) form of a verb as the subject in task headings, instead of the sentence-initial _to_-infinitive phrase or a bare infinitive. Below are examples of the correct and incorrect heading structure for task procedures. Instead of using the _how_ to structure, use the –_ing_ form in headings as well as in the document title.
+Use the gerund (the _–ing_ form that is used for forming verbal nouns from verbs) form of a verb as the subject in task headings, instead of the sentence-initial _to-infinitive_ phrase or a bare infinitive. Below are examples of the correct and incorrect heading structure for task procedures. Instead of using the _how_ to structure, use the _-ing_ form in headings as well as in the document title.
 
 CORRECT | INCORRECT 
 --- | --- |
@@ -456,7 +447,7 @@ The rules for lists are:
 
 * Use lists generously, if space permits, to present information in a more digestible format than regular body text.
 * Use ordered lists only when the sequence of the items is of special importance.
-* Use parallel structures for the items in a list to make the list easier to read. You can use, for instance, a sentence-initial gerund form in all the list items or you can comprise a list of simple noun phrases. The table gives some examples of list items with a parallel structure.
+* Use parallel structures for the items in a list to make the list easier to read. The table gives some examples of list items with a parallel structure.
 
 <table>
 <thead>
@@ -475,11 +466,11 @@ The rules for lists are:
                 <li>M-Files Admin</li>
             </ul>
         </td>
-        <td>Inperative form:
+        <td>Imperative form:
             <ol>
                 <li>Open M-Files Admin.</li>
-                <li>Highlight <b>Login Accounts</b> in the tree view.</li>
-                <li>Click <b>New Login Account...</b> on the task pane.</li>
+                <li>Highlight **Login Accounts** in the tree view.</li>
+                <li>Click **New Login Account** on the task pane.</li>
             </ol>
         </td>
     </tr>
@@ -492,8 +483,8 @@ The rules for lists are:
                 <li>Downloading M-Files installers</li>
             </ul>
         </td>
-        <td>Sentence fragment that begins with a verb:<br/>
-        Multi-level interaction between several document vaults enables you to:
+        <td>Sentence fragment that begins with a verb:<br/><br/>
+        Multi-level interaction between many vaults enables you to do these tasks:
             <ul>
                 <li>Replicate data across several locations.</li>
                 <li>Archive data from an actively used vault to an archive vault.</li>
@@ -511,38 +502,39 @@ The rules for lists are:
 ### Procedures (Step Lists)
 
 Use numbered lists for sequential procedure steps to indicate the order in which a task must be carried out. When writing step lists, follow these guidelines:
-* Introduce the procedure with an introductory sentence in the format `To <objective>:`. In Finnish, use the format `<Objective>:`.
 
-    English: `To add a remark:`
+* Introduce the procedure with an introductory sentence in the format `To <objective>:`.
 
-    Finnish: `Lisätäksesi huomion:`
+    For example: `To add a remark:`
 
 * If a step has sub-steps, add a nested list below the step, ordered using lowercase letters as labels, followed by a period:
 
 **EXAMPLE**
+
 1. Open M-Files Admin and go to a vault.
 
     a) Open M-Files Admin. 
 
     b) In the left-side tree view, expand a connection to M-Files Server. 
 
-    c) In the left-side tree view, expand Document Vaults, and then expand a vault.
+    c) In the left-side tree view, expand **Document Vaults**, and then expand a vault.
 
 * If a task has more than ten steps, try to split the task into separate, smaller tasks to make the instructions easier to follow.
 * If there are multiple ways to complete a task step, use this structure:
 
 **EXAMPLE**
+
 1.	Complete one of these steps:
-    * Click **New Login Account** on the task pane
+    * Click **New Login Account** in the task area.
     
     or
     
-    * Select **Action > New Login Account**
+    * Select **Action** > **New Login Account**.
 
-* If necessary, add a _Result_ section after the step list to give a description of what to expect after they have completed the task successfully.
+* If necessary, add a _Result_ section after the step list to give a description of what to expect after they have completed the task.
 * You can also add the _Result_ section after an individual step if you consider that the results are not self-evident.
 
-1.	Click **OK.**
+1.	Click **OK**.
     
     **Result:** A warning dialog is opened to tell you that the operation cannot be undone.
     
@@ -552,8 +544,8 @@ Use numbered lists for sequential procedure steps to indicate the order in which
 
 * The source string should always enable the translator to create as natural a translation as possible. On the other hand, this should never compromise the quality of the source string.
 * Make sure that there is enough space in the user interface for the localizations:
-    * If the user interface text length is 10 characters or less, increase the space by 1.5. 
-    * If the user interface text length is more than 10 characters, increase the space by 1.3.
+    * If the user interface text length is **10 characters or less**, increase the space by **1.5**. 
+    * If the user interface text length is **more than 10 characters**, increase the space by **1.3**.
 
 ## Grammar Rules
 
@@ -569,7 +561,7 @@ Even though proper names refer to unique entities, in some cases, it can be nece
 
 * The `<proper name>` `<grouping word>`
 
-    `The New User dialog`
+    For example: `The New User dialog`
 
 Note that an entity denoted by a proper name may belong to more than one group. In such a case, just use the grouping word you need to refer to.
 
@@ -580,8 +572,6 @@ Note that an entity denoted by a proper name may belong to more than one group. 
 Write the proper name with initial capital and the grouping word with lowercase letters.
 
 If the proper name is not followed by a grouping word (like in the _M-Files software_), do not use an article.
-
-
 
 <span class="correct">Correct:</span> `Everything in M-Files is organized by what it is instead of where it is stored.`
 
@@ -609,7 +599,7 @@ ACTIVE VOICE | PASSIVE VOICE
 --- | --- |
 M-Files can also store customer and project data. | M-Files can be deployed on-premises, in the cloud, or as a hybrid of both.
 
-Use active voice whenever possible.
+**Use active voice whenever possible.**
 
 Switch to the passive voice only when the primary focus of the clause is not on the subject. In written English, focus is primarily expressed by placing the new, non-derivable, or contrastive information at the beginning of a sentence. By switching to the passive voice, you can start the sentence with the element that would be the object of the sentence in the active voice. You can also use the passive voice when the subject of the clause need not be expressed or it is not known.
 
@@ -631,15 +621,15 @@ Use future or past tenses only if it is required by the context, and if so, use 
 
 Here are some examples of acceptable uses of the past and the future tense:
 
-`By enabling this setting, any of the objects that were included in an earlier export set, but are not in the current one, will be deleted in the target vault upon import.`
+`When this setting is enabled, any of the objects that were included in an earlier export set, but are not in the current one, will be deleted in the target vault upon import.`
 
-`Thanks to Automatic Updates, your M-Files installation will always be up to date.`
+`Thanks to the automatic updates, your M-Files installation will always be up to date.`
 
 ### Modal Verbs
 
-Modals are used to express for example ability, possibility, permission, or obligation. Modal verbs include _can, could, may, might, should, and must._ In technical documentation and user interface texts, use _should_ only if something is optional. If something must be done, always use _must_.
+Modals are used to express, for example, ability, possibility, permission, or obligation. Modal verbs include _can_, _could_, _may_, _might_, _should_, and _must_. In technical documentation and user interface texts, avoid using _should_. If something must be done, always use _must_.
 
-Use can to tell what the user or the system is able to do. Avoid using _may_. You can use it to describe possibility, but do not use it to tell that the user has permission to do something. As a rule of thumb, do not use _might_.
+Use _can_ to tell what the user or the system is able to do. Do not use _may_ or _might_.
 
 ### Compound Modifiers
 
@@ -656,7 +646,7 @@ A well-known process | The process is well known.
 
 ### Gender-Neutral Language
 
-Avoid gender-specific pronouns when writing documentation. There are a number of techniques for using gender-neutral language. The list below provides alternative ways of writing in a gender-neutral manner the sentence _"The user can enter his e-mail address and his full name in the personal information fields"_:
+Avoid gender-specific pronouns when writing documentation. There are a number of techniques for using gender-neutral language. The list below provides alternative ways of writing in a gender-neutral manner the sentence _"The user can enter his e-mail address and his full name in the personal information fields."_
 
 * Use the imperative mood:
 
@@ -666,7 +656,7 @@ Avoid gender-specific pronouns when writing documentation. There are a number of
 
     `You can enter your email address and your full name in the personal information fields.`
 
-* Use the third-person plural forms their, them and they in place of the gender-specific her/his, her/him and she/he:
+* Use the third-person plural forms _their_, _them_ and _they_ in place of the gender-specific _her_/_his-, _her_/_him_ and _she_/_he_:
 
     `The user can enter their email address and their full name in the personal information fields.`
 
@@ -690,7 +680,7 @@ In some cases, it can be necessary to use the first person to indicate the user'
 
 A contraction is a shortening of a word, word group, or syllable, created by omitting internal letters. _Can't_, for example, is a contraction of _cannot_.
 
-_Do not_ use contractions in documentation. Always write the full form of the word or word group instead. One exception is _of_ in the phrase _o'clock_, in which the contraction is mandatory in contemporary use.
+**Do not** use contractions in documentation. Always write the full form of the word or word group instead. One exception is _of_ in the phrase _o'clock_, in which the contraction is mandatory in contemporary use.
 
 ### Numbers
 
@@ -698,8 +688,7 @@ _Cardinal numbers (one, 2, III)_ are used for counting things, while _ordinal nu
 
 #### Numerals
 
-The symbols used for numbers (such as _1, 2,_ and _3_) are called numerals. 
-The rules for using numerals are:
+The symbols used for numbers (such as _1_, _2_, and _3_) are called numerals. The rules for using numerals are:
 
 * Never start a sentence with a numeral. Spell out the number instead.
 * Spell out the numbers from zero to nine. Express numbers greater than nine in numerals.
@@ -735,6 +724,7 @@ Negative numbers are written with a minus sign (-) immediately before the first 
 `-60%`
 
 #### Decimal Numbers and Digit Grouping
+
 Use the period character (.) as a decimal separator. If a number has more than three digits, separate sequences of three digits with a comma, starting from the first digit preceding the decimal point or the last digit if the number does not have a decimal point. Do not sequence the fractional part to the right of the decimal point.
 
 Here are some examples:
@@ -765,9 +755,9 @@ Negative amounts can be generally indicated with the words _losses_ and _deficit
 
 In other text types, for instance in tabular data, negative amounts are denoted by a leading minus sign (-). Prefer using the currency symbol in conjunction with the leading minus sign, and use the currency code with a negative amount only if it is absolutely necessary:
 
-`Preferred: -€600,000.00`
+Preferred: `-€600,000.00`
 
-`Non-preferred: -EUR 600,000.00`
+Non-preferred: `-EUR 600,000.00`
 
 #### Dates
 
