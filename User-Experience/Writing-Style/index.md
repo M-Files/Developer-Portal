@@ -18,9 +18,9 @@ Electronic signing is not available because the necessary metadata definitions f
 
 * Stay consistent. Always use the same terms for the same elements. This makes it a lot easier for the users to find their way around the user interface.
 
-CORRECT | INCORRECT  
-You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="correct">context menu</span>, or by clicking the star icon on the <span class="correct">option ribbon</span> of the <span class="correct">metadata card</span>. | You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="incorrect">shortcut menu</span>, or by clicking the star icon on the <span class="incorrect">toolbar</span> of the <span class="incorrect">object properties pane</span>.
+CORRECT | INCORRECT
 --- | --- |
+You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="correct">context menu</span>, or by clicking the star icon on the <span class="correct">option ribbon</span> of the <span class="correct">metadata card</span>. | You can add content to your favorites by right-clicking on an item and selecting **Add to Favorites** in the <span class="incorrect">shortcut menu</span>, or by clicking the star icon on the <span class="incorrect">toolbar</span> of the <span class="incorrect">object properties pane</span>.
 This command adds the object to the <span class="correct">Pinned tab</span>. | This command adds the object to the <span class="incorrect">Pinboard</span>.
 
 ## Tone and Voice of User Interface Texts
