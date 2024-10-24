@@ -602,53 +602,7 @@
 					},
 					{
 						"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/",
-						"Title": "User Interface Extensibility Framework",
-						"Items": [{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/HelloWorld/",
-								"Title": "Hello, World"
-							},
-							{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/Commands/",
-								"Title": "Commands"
-							},
-							{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/BuiltInCommand-Event/",
-								"Title": "Handling Built-In Commands"
-							},
-							{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/Display-Persistent-Web-Page-In-Tab/",
-								"Title": "Display Persistent Web Page In Tab"
-							},
-							{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/",
-								"Title": "Creating Assignments"
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ConfirmWorkflowStateChange",
-								"Title": "Confirm Workflow State Change",
-								"IsExternal": true
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ShowWebPageInIFrame",
-								"Title": "Show Web Page in tab (iframe)",
-								"IsExternal": true
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/AlterContextMenuDependingOnSelectedObject",
-								"Title": "Using OnShowContextMenu event",
-								"IsExternal": true
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/UsingManagedAssemblies",
-								"Title": "Using Managed Assemblies",
-								"IsExternal": true
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ViewURLGenerator/#readme",
-								"Title": "View URL Generator",
-								"IsExternal": true
-							}
-						]
+						"Title": "User Interface Extensibility Framework"
 					},
 					{
 						"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/",
