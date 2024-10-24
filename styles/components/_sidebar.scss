@@ -1,6 +1,6 @@
 @use "../design-system/_variables" as variables;
 @use "../design-system/mixins/_colours" as colours;
-@import "sidebar/treeview";
+@use "sidebar/treeview";
 
 body{
 
