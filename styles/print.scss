@@ -2,9 +2,9 @@
 ---
 
 @use "design-system/mixins/_fonts" as fonts;
-@import "components/page-contents/notes";
-@import "components/tables";
-@import "components/page-contents/code-formatting";
+@use "components/page-contents/notes";
+@use "components/tables";
+@use "components/page-contents/code-formatting";
 
 @page{size:auto}
 
