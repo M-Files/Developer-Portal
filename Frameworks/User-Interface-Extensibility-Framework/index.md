@@ -3,6 +3,9 @@ layout: page
 title: The User Interface Extensibility Framework
 breadcrumb: UIX
 includeInSearch: true
+redirect_from:
+    - /Frameworks/User-Interface-Extensibility-Framework/Reference/Version2/
+    - /Frameworks/User-Interface-Extensibility-Framework/Reference/Version2
 ---
 
 
