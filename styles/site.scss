@@ -7,13 +7,14 @@
 @use "design-system/mixins/_colours" as colours;
 @use "design-system/mixins/_fonts" as fonts;
 
-@import "components/scrollbar";
-@import "components/footer";
-@import "components/header";
-@import "components/buttons";
-@import "components/sidebar";
-@import "components/tables";
-@import "components/page-contents";
+@use "sass:meta";
+@use "components/scrollbar";
+@use "components/footer";
+@use "components/header";
+@use "components/buttons";
+@use "components/sidebar";
+@use "components/tables";
+@use "components/page-contents";
 
 html { scroll-behavior: smooth; } 
 
@@ -177,4 +178,4 @@ body{
 }
 
 
-@import "themes/_themes";
+@include meta.load-css("themes/_themes");

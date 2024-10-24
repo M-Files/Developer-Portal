@@ -6,9 +6,9 @@
 @use "../design-system/mixins/components/buttons" as buttons;
 
 
-@import "page-contents/breadcrumb";
-@import "page-contents/notes";
-@import "page-contents/code-formatting";
+@use "page-contents/breadcrumb";
+@use "page-contents/notes";
+@use "page-contents/code-formatting";
 
 body{
 
