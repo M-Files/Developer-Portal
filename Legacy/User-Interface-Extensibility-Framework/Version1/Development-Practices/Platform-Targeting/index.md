@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Platform Targeting
-includeInSearch: true
 breadcrumb: Platforms
+legacy: true
+latest_version: /Frameworks/User-Interface-Extensibility-Framework/Reference/
+redirect_from: /Frameworks/User-Interface-Extensibility-Framework/Platform-Targeting/
 ---
 
 The [V3 client application definition schema]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/#v3-schema) introduced the ability for applications to define the platforms in which they should execute.  Prior to V3 of the schema, applications only ever executed within the M-Files Desktop client.

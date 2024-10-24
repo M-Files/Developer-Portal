@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Using a local folder for User Interface Extensibility Framework application development
-includeInSearch: true
 breadcrumb: Local development folder
+legacy: true
+latest_version: /Frameworks/User-Interface-Extensibility-Framework/Reference/
+redirect_from: /Frameworks/User-Interface-Extensibility-Framework/Local-Development-Folder/
 ---
 
 Developing applications can be done without direct access to the M-Files Server.  This allows developers to test code on their machines before deploying it to multiple users.  To develop applications locally you will need to know the [GUID of the vault you wish to test the application in]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-vault-guid), and the [version of M-Files that is running on your machine]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/#the-m-files-client-version) (note: the version of M-Files on your machine may be different to that running on the server).  The application files, such as the [application definition file]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Application-Definition/), [module files]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Modules/) or any [dashboard content]({{ site.baseurl }}/Frameworks/User-Interface-Extensibility-Framework/Dashboards/) can be saved into this folder.

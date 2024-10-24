@@ -1,8 +1,10 @@
 ---
 layout: page
 title: User Interface Extensibility Framework Object Lifecycle
-includeInSearch: true
 breadcrumb: Object Lifecycle
+legacy: true
+latest_version: /Frameworks/User-Interface-Extensibility-Framework/Reference/
+redirect_from: /Frameworks/User-Interface-Extensibility-Framework/Object-Lifecycle/
 ---
 
 ## Handling multiple listings and shell frames
