@@ -231,9 +231,8 @@
 		"Icon": "mdi:window-restore",
 		"Title": "UI Extensibility Framework",
 		"Items": [{
-				"Link": "https://www.m-files.com/UI_Extensibility_Framework/#FrontPage.html",
+				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Reference/",
 				"Title": "Official Reference",
-				"IsExternal": true,
 				"IsOfficialReference": true
 			},
 			{
@@ -245,32 +244,20 @@
 				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/",
 				"Title": "Development Practices",
 				"Items": [{
-						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Asynchronous-API-Programming/",
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Reference/",
 						"Title": "Asynchronous API programming"
 					},
 					{
-						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Debugging/",
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Reference/Overview/Debugging/",
 						"Title": "Debugging"
 					},
 					{
-						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Deployment/",
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Reference/Overview/InstallingApplications/",
 						"Title": "Deployment"
 					},
 					{
-						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Event-Registration-And-Entry-Points/",
+						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Reference/Overview/Events/",
 						"Title": "Event registration and entry points"
-					},
-					{
-						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Local-Development-Folder/",
-						"Title": "Local development folder"
-					},
-					{
-						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Object-Lifecycle/",
-						"Title": "Object Lifecycle"
-					},
-					{
-						"Link": "/Frameworks/User-Interface-Extensibility-Framework/Development-Practices/Platform-Targeting/",
-						"Title": "Platform targeting"
 					}
 				]
 			},
@@ -285,18 +272,6 @@
 			{
 				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Dashboards/",
 				"Title": "Dashboards"
-			},
-			{
-				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Modules/",
-				"Title": "Modules"
-			},
-			{
-				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Pre-Approval/",
-				"Title": "Pre-Approval"
-			},
-			{
-				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Fast-Browsing/",
-				"Title": "Fast Browsing"
 			},
 			{
 				"Link": "/Frameworks/User-Interface-Extensibility-Framework/Visual-Studio/",
@@ -627,53 +602,7 @@
 					},
 					{
 						"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/",
-						"Title": "User Interface Extensibility Framework",
-						"Items": [{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/HelloWorld/",
-								"Title": "Hello, World"
-							},
-							{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/Commands/",
-								"Title": "Commands"
-							},
-							{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/BuiltInCommand-Event/",
-								"Title": "Handling Built-In Commands"
-							},
-							{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/Display-Persistent-Web-Page-In-Tab/",
-								"Title": "Display Persistent Web Page In Tab"
-							},
-							{
-								"Link": "/Samples-And-Libraries/Samples/User-Interface-Extensibility-Framework/AssignToMe/",
-								"Title": "Creating Assignments"
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ConfirmWorkflowStateChange",
-								"Title": "Confirm Workflow State Change",
-								"IsExternal": true
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ShowWebPageInIFrame",
-								"Title": "Show Web Page in tab (iframe)",
-								"IsExternal": true
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/AlterContextMenuDependingOnSelectedObject",
-								"Title": "Using OnShowContextMenu event",
-								"IsExternal": true
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/UsingManagedAssemblies",
-								"Title": "Using Managed Assemblies",
-								"IsExternal": true
-							},
-							{
-								"Link": "https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/UIX%20Applications/ViewURLGenerator/#readme",
-								"Title": "View URL Generator",
-								"IsExternal": true
-							}
-						]
+						"Title": "User Interface Extensibility Framework"
 					},
 					{
 						"Link": "/Samples-And-Libraries/Samples/Vault-Application-Framework/",
@@ -732,6 +661,75 @@
 						"Link": "/Legacy/Vault-Application-Framework/Background-Operations/",
 						"Title": "Background Operations"
 					}]
+			},
+			{
+				"Link": "/Legacy/User-Interface-Extensibility-Framework/",
+				"Title": "User Interface Extensibility Framework",
+				"Items": [
+					{
+						"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/",
+						"Title": "Version 1",
+						"Items": [
+							{
+								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Reference/",
+								"Title": "Reference",
+								"IsOfficialReference": true
+							},
+							{
+								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Dashboards/",
+								"Title": "Dashboards"
+							},
+							{
+								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Development-Practices/",
+								"Title": "Development Practices",
+								"Items": [{
+										"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Development-Practices/Asynchronous-API-Programming/",
+										"Title": "Asynchronous API programming"
+									},
+									{
+										"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Development-Practices/Debugging/",
+										"Title": "Debugging"
+									},
+									{
+										"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Development-Practices/Deployment/",
+										"Title": "Deployment"
+									},
+									{
+										"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Development-Practices/Event-Registration-And-Entry-Points/",
+										"Title": "Event registration and entry points"
+									},
+									{
+										"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Development-Practices/Local-Development-Folder/",
+										"Title": "Local development folder"
+									},
+									{
+										"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Development-Practices/Object-Lifecycle/",
+										"Title": "Object Lifecycle"
+									},
+									{
+										"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Development-Practices/Platform-Targeting/",
+										"Title": "Platform targeting"
+									}
+								]
+							},
+							{
+								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Fast-Browsing/",
+								"Title": "Fast Browsing"
+							},
+							{
+								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Modules/",
+								"Title": "Modules"
+							},
+							{
+								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Pre-Approval/",
+								"Title": "Pre-Approval"
+							},
+							{
+								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Visual-Studio/",
+								"Title": "Visual Studio Integration"
+							}]
+					}
+				]
 			}
 		]
 	}

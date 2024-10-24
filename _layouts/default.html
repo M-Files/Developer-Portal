@@ -21,7 +21,11 @@ layout: compress
 
 	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script" />
 	<link rel="preload" href="/sw-register.js?{{ site.github.build_revision }}" as="script" />
-	<link rel="preload" href="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}" as="script" />
+	
+	{% if 1 == 0 %}
+		<link rel="preload" href="{{ site.baseurl }}/scripts/themes.js?{{ site.github.build_revision }}" as="script" />
+	{% endif %}
+
 	<link rel="preconnect" href="https://www.google-analytics.com" />
 	<link rel="preconnect" href="https://www.googletagmanager.com" />
 	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />

@@ -12,9 +12,21 @@ The application definition/manifest file contains information that the M-Files s
 There are three versions of the XML that can be used, each using a different schema.  It is recommended that you target the latest version of the schema supported by the M-Files Server (and Clients) that you using.
 {:.note.warning}
 
+### V5 schema
+
+The V5 schema was added to enable UIX support within M-Files Web and the new M-Files Desktop client (released in 2024).  These clients only support applications that use the V5 schema format.
+
+More information can be found [on the dedicated page](../Reference/Overview/ApplicationStructure/).
+
+The V5 schema is only supported in the latest M-Files clients.  If you need to support classic clients as well then a separate UI application - targeting the V4 schema and using the older object model and development approaches - is needed.  It is recommended that new development is done solely against the V5 schema and targets the new clients.
+{:.note.warning}
+
 ### V4 schema
 
 The V4 schema is supported in M-Files 20.12 and higher, and adds compatibility with [fast browsing](../Fast-Browsing/).
+
+The V4 schema - and older - are not supported in the latest M-Files clients.  Please update your applications to support the V5 schema (and the updated version of the UIX Framework) to add support for these clients.
+{:.note.warning}
 
 ### V3 schema
 
