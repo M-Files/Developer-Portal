@@ -18,6 +18,9 @@ The V5 schema was added to enable UIX support within M-Files Web and the new M-F
 
 More information can be found [on the dedicated page](../Reference/Overview/ApplicationStructure/).
 
+The V5 schema is only supported in the latest M-Files clients.  If you need to support classic clients as well then a separate UI application - targeting the V4 schema and using the older object model and development approaches - is needed.  It is recommended that new development is done solely against the V5 schema and targets the new clients.
+{:.note.warning}
+
 ### V4 schema
 
 The V4 schema is supported in M-Files 20.12 and higher, and adds compatibility with [fast browsing](../Fast-Browsing/).
