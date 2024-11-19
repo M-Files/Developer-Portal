@@ -9,7 +9,7 @@ M-Files uses `Object Types` to define the objects that will be managed, stored, 
 
 Each Object Type can be defined as Internal (created and managed within the M-Files clients), or External (typically managed within an external system).  External object types can either be read-only within the M-Files client, or can be defined as read/write, where objects created, changed, or deleted in the M-Files client can be pushed back to the originating system.
 
-Code for this tutorial can be found in our GitHub repository: [https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/ExtOTDS/ExtOTDS.Json](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples/ExtOTDS/ExtOTDS.Json).
+Code for this tutorial can be found in our GitHub repository: [https://github.com/M-Files/Samples.CustomExternalObjectTypeDataSources](https://github.com/M-Files/Samples.CustomExternalObjectTypeDataSources).
 {:.note}
 
 ### Built-in support for External Object Types

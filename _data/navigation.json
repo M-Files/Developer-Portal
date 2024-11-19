@@ -721,10 +721,6 @@
 								"Title": "Modules"
 							},
 							{
-								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Pre-Approval/",
-								"Title": "Pre-Approval"
-							},
-							{
 								"Link": "/Legacy/User-Interface-Extensibility-Framework/Version1/Visual-Studio/",
 								"Title": "Visual Studio Integration"
 							}]
