@@ -5,7 +5,7 @@ includeInSearch: true
 breadcrumb: Authentication
 ---
 
-We support three primary authentication mechanisms: credentials in HTTP headers, cookie-based sessions, and authentication tokens.
+We support four primary authentication mechanisms: OAuth (via a bearer token), credentials in HTTP headers, cookie-based sessions, and authentication tokens.
 
 These examples use the .NET HttpWebRequest and HttpWebResponse objects directly, and uses the [JSON.NET](http://www.newtonsoft.com/json) library for serialization/deserialization.  Other libraries are available that may make interacting with REST-like web services more simplistic, such as [RestSharp](http://restsharp.org/).  Always check the license details of third-party libraries to ensure that they can be used within your projects.
 {:.note}
@@ -394,6 +394,12 @@ Once we have the access token we can connect to the vault:
 // Add the auth token to the default headers.
 this.client.AddDefaultHeader("Authorization", "Bearer " + tokens.AccessToken);
 this.client.AddDefaultHeader("X-Vault", this.oAuthPluginInfo.VaultGuid);
+
+// If your vault contains multiple OAuth configurations then pass the name of
+// the correct one via the X-AuthConfig header, so that the system knows which to use.
+// This is of increased importance in the cloud where the vault often contains both the
+// M-Files Login Service as an OAuth provider, plus other custom configurations.
+this.client.AddDefaultHeader("X-AuthConfig", this.oAuthPluginInfo.Name);
 ```
 
 Note that the plugin configuration may contain a flag named `UseIdTokenAsAccessToken`.  If this is set, and it is set to true, then the ID Token returned by the OAuth process should be used in the Authorization header, instead of the Access Token shown above.
