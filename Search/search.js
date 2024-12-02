@@ -29,7 +29,8 @@ window.executeSearch = (function(){
             this.add({
             'id': key,
             'title': window.searchData[key].title,
-            'category': window.searchData[key].category
+            'category': window.searchData[key].category,
+            'content': window.searchData[key].content
             });
         }
     });
