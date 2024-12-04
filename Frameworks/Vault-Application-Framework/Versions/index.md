@@ -6,7 +6,7 @@ includeInSearch: true
 
 ## Feature Compatibility Matrix
 
-Feature / Version | [1.0](#version-10) | [2.0](#version-20) | [2.1](#version-21) | [2.2](#version-22) | [2.3](#version-23) | [22.12](#version-2212) | 24.1 | 24.10
+Feature / Version | [1.0](#version-10) | [2.0](#version-20) | [2.1](#version-21) | [2.2](#version-22) | [2.3](#version-23) | [22.12](#version-2212) | 24.1 | [23.10](#version-2410)
 --- | ---
 Minimum M-Files Server Version | 2015 | 2015.3 | 19.9 | 20.5 | 20.5 | 22.3 | 23.6 | 23.6
 Minimum .NET Framework Version | 4.5 | 4.5 | 4.5 | 4.5 | 4.5 | 4.7.2 | 4.7.2 | 4.7.2
