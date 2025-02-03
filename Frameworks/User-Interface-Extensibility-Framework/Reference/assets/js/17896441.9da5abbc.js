@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuix_2=self.webpackChunkuix_2||[]).push([[7918],{34205:(s,e,u)=>{u.d(e,{Z:()=>k});var a=u(54498),b=u(73992),c=u(18679);const k={...a.Z,Tabs:b.Z,TabItem:c.Z}}}]);
