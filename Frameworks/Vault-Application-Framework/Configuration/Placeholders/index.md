@@ -377,8 +377,12 @@ public class Configuration
 	[DataMember]
 	public string TimestampFormat { get; set; }
 
+	// We declare our template property using generic parameters to indicate
+	// it uses the custom environment and context we've created.
+	// This allows the schema to include the correct list of placeholders to show in M-Files Admin,
+	// and ensures Template.ExpandText() uses the intended settings.
 	[DataMember]
-	public PlaceholderTextEx Template { get; set; }
+	public PlaceholderTextEx<FormattableEnv, FormattableContext> Template { get; set; }
 
 	public string ExpandPlaceholderTemplate( ObjVerEx objVerEx )
 	{
@@ -408,13 +412,13 @@ public class Configuration
 // TimestampFormat: "D"
 // Template: "Modified: %PROPERTY_21%, Value: %PROPERTY_{PD.Value}.FORMAT_{C}%"
 conf.ExpandPlaceholderTemplate( objVerEx ); 
-// -> "Modified: Dienstag, 12. M?rz 2024, Value: 600,00 ?"
+// -> "Modified: Dienstag, 12. März 2024, Value: 600,00 €"
 
 // Override TimestampFormat defined in configuration/settings with FORMAT command. 
 // (Underscores are used for spaces, literal underscores must be escaped with backslash.)
 // Template: "Modified: %PROPERTY_21.FORMAT_{ddd,_dd\_MMM\_yy}%, Value: %PROPERTY_{PD.Value}.FORMAT_{C}%"
 conf.ExpandPlaceholderTemplate( objVerEx ); 
-// -> "Modified: : Di, 12_Mrz_24, Value: 600,00 ?"
+// -> "Modified: : Di, 12_Mrz_24, Value: 600,00 €"
 
 ```
 
