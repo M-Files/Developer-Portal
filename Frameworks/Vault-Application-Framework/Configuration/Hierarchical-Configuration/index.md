@@ -55,32 +55,32 @@ This can be done in two ways: either by adding a member to the class in the coll
 Ensure that your configuration item class inherits from the correct base class:
 
 ```csharp
-	[DataContract]
-	public class Configuration
-	{
-		[DataMember]
-		public ConfigurationChild MySubConfiguration { get; set; }
+[DataContract]
+public class Configuration
+{
+	[DataMember]
+	public ConfigurationChild MySubConfiguration { get; set; }
 
-		[DataMember]
-		public List<ConfigurationChild> Children { get; set; }
-	}
+	[DataMember]
+	public List<ConfigurationChild> Children { get; set; }
+}
 
-	[DataContract]
-	public class ConfigurationChild
-		: MFiles.VAF.Extensions.Configuration.ConfigurationCollectionItemBase
-	{
-		[DataMember]
-		public string Value1 { get; set; }
+[DataContract]
+public class ConfigurationChild
+	: MFiles.VAF.Extensions.Configuration.ConfigurationCollectionItemBase
+{
+	[DataMember]
+	public string Value1 { get; set; }
 
-		[DataMember]
-		[TextEditor(IsRequired = true)]
-		public string Name { get; set; }
-	}
+	[DataMember]
+	[TextEditor(IsRequired = true)]
+	public string Name { get; set; }
+}
 
-	public class VaultApplication
-		: ConfigurableVaultApplicationBase<Configuration>
-	{
-	}
+public class VaultApplication
+	: ConfigurableVaultApplicationBase<Configuration>
+{
+}
 	
 ```
 
@@ -102,7 +102,6 @@ public class Configuration
 
 [DataContract]
 public class ConfigurationChild
-	: MFiles.VAF.Extensions.Configuration.ConfigurationCollectionItemBase
 {
 	[DataMember]
 	public string Value1 { get; set; }
