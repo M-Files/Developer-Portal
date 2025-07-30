@@ -44,6 +44,93 @@ namespace MFVaultApplication1
 }
 {% endhighlight %}
 
+## Array Element Guid
+
+When working with collections it is important that each collection member has an ID which can be used to subsequently refer to the member.  This is used when saving the configuration, for example, to understand what has changed.  If you do not include this member then the system may not correctly persist passwords, or may require system-administrator permission to save the configuration, even if only vault-admin level is required for the changed elements.
+
+This can be done in two ways: either by adding a member to the class in the collection, or by inheriting from the [ConfigurationCollectionItemBase](https://github.com/M-Files/VAF.Extensions.Community/blob/master/MFiles.VAF.Extensions/Configuration/ConfigurationCollectionItemBase.cs) class in the VAF Extensions library.
+
+### Using the VAF Extensions
+
+Ensure that your configuration item class inherits from the correct base class:
+
+```csharp
+	[DataContract]
+	public class Configuration
+	{
+		[DataMember]
+		public ConfigurationChild MySubConfiguration { get; set; }
+
+		[DataMember]
+		public List<ConfigurationChild> Children { get; set; }
+	}
+
+	[DataContract]
+	public class ConfigurationChild
+		: MFiles.VAF.Extensions.Configuration.ConfigurationCollectionItemBase
+	{
+		[DataMember]
+		public string Value1 { get; set; }
+
+		[DataMember]
+		[TextEditor(IsRequired = true)]
+		public string Name { get; set; }
+	}
+
+	public class VaultApplication
+		: ConfigurableVaultApplicationBase<Configuration>
+	{
+	}
+	
+```
+
+### Implementing manually
+
+Add an item to the class with the following signature (`arrayElementGuid`):
+
+```csharp
+
+[DataContract]
+public class Configuration
+{
+	[DataMember]
+	public ConfigurationChild MySubConfiguration { get; set; }
+
+	[DataMember]
+	public List<ConfigurationChild> Children { get; set; }
+}
+
+[DataContract]
+public class ConfigurationChild
+	: MFiles.VAF.Extensions.Configuration.ConfigurationCollectionItemBase
+{
+	[DataMember]
+	public string Value1 { get; set; }
+
+	[DataMember]
+	[TextEditor(IsRequired = true)]
+	public string Name { get; set; }
+
+	[DataMember(Name = "arrayElementGuid", EmitDefaultValue = false, Order = 99)]
+	[JsonConfEditor
+	(
+		TypeEditor = "guid",
+		Hidden = true,
+		IsRequired = true,
+		ClearOnCopy = true
+	)]
+	public string ArrayElementGuid { get; set; }
+		= System.Guid.NewGuid().ToString();
+
+}
+
+public class VaultApplication
+	: ConfigurableVaultApplicationBase<Configuration>
+{
+}
+
+```
+
 ## Customising array element names
 
 In the example screenshot above, adding new items to the `Children` collection results in items being added named `ConfigurationChild[1]`, `ConfigurationChild[1]`, etc.  In some situations, it is more useful to show a different value for the item name to make locating the correct item more simple.
@@ -79,6 +166,17 @@ namespace MFVaultApplication1
 		[DataMember]
 		[TextEditor(IsRequired = true)]
 		public string Name { get; set; }
+
+		[DataMember(Name = "arrayElementGuid", EmitDefaultValue = false, Order = 99)]
+		[JsonConfEditor
+		(
+			TypeEditor = "guid",
+			Hidden = true,
+			IsRequired = true,
+			ClearOnCopy = true
+		)]
+		public string ArrayElementGuid { get; set; }
+			= System.Guid.NewGuid().ToString();
 	}
 
 	public class VaultApplication
@@ -118,6 +216,17 @@ namespace MFVaultApplication1
 		[DataMember]
 		[TextEditor(IsRequired = true)]
 		public string NameProperty { get; set; }
+
+		[DataMember(Name = "arrayElementGuid", EmitDefaultValue = false, Order = 99)]
+		[JsonConfEditor
+		(
+			TypeEditor = "guid",
+			Hidden = true,
+			IsRequired = true,
+			ClearOnCopy = true
+		)]
+		public string ArrayElementGuid { get; set; }
+			= System.Guid.NewGuid().ToString();
 	}
 
 	public class VaultApplication
