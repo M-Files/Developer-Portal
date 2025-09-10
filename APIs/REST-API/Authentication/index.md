@@ -407,14 +407,30 @@ Note that the plugin configuration may contain a flag named `UseIdTokenAsAccessT
 
 ## Multi-Server Mode Considerations
 
-In platforms that use the M-Files [Multi-Server Mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) approach (e.g. the M-Files "New Cloud"), M-Files servers to be attached to the same vault database at the same time.  In this configuration, any one of the multiple servers in the availability group may potentially respond to individual REST API calls.
+In platforms that use the M-Files [Multi-Server Mode]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/Multi-Server-Mode/) approach (e.g. the M-Files Cloud), multiple M-Files servers will be attached to the same vault database at the same time.  In this configuration, any one of the multiple servers in the availability group may potentially respond to individual REST API calls.
 
-One issue that developers may encounter is that authentication tokens created via a call to server A cannot be decrypted and used on servers B or C.  In this instance you will receive an error about `OAEP padding`.
+One issue that developers may encounter is that authentication tokens created via a call to server A cannot be decrypted and used on servers B or C.  In this instance you will receive an error about `OAEP padding` similar to:
 
-To resolve this, the developer must ensure that any cookies that are provided within the HTTP response of `/server/authenticationtokens` are added to any and all subsequent REST API calls.  By doing so, future requests will be routed to the same server that provided the token, ensuring that they can be correctly used.
+```
+Error Message : "Method": "POST",
+"Exception": {
+"Name": "ForbiddenException",
+"Message": "Token-based authentication failed.",
+"InnerException": {
+"Name": "CryptographicException",
+"Message": "Error occurred while decoding OAEP padding.",
+. . .
+```
 
-See [MFWSClient.Authentication.cs](https://github.com/M-Files/Libraries.MFWSClient/blob/master/MFaaP.MFWSClient/MFWSClient.Authentication.cs) in [MFWSClient](https://github.com/M-Files/Libraries.MFWSClient) (C# M-Files Web Service Wrapper) as an example of setting up cookies with CookieContainer.
+To resolve this, the developer and the server administrator must ensure that the same server that provided the `/server/authenticationtokens` response will receive the future requests that carry it, ensuring that the token can be correctly used.
+
+In the M-Files Cloud, this is achieved by sending any cookies that are provided within the HTTP response of `/server/authenticationtokens` are added to any and all subsequent REST API calls. The name of the cookie use to provide the session stickiness in the M-Files Cloud is `mfilesmsm`.
+
+In on-premises environments, the local administrators must provide a suitable way to have that session stickiness, which depends on the local infrastructure capabilities and administrator preferences.
+
+See [MFWSClient.Authentication.cs](https://github.com/M-Files/Libraries.MFWSClient/blob/master/MFaaP.MFWSClient/MFWSClient.Authentication.cs) in [MFWSClient](https://github.com/M-Files/Libraries.MFWSClient) (C# M-Files Web Service Wrapper) as an example of setting up cookies with `CookieContainer`.
 {:.note}
 
 You will still need to handle any `403` HTTP status codes that you may receive in the future and re-request an authentication token.  This could happen for the same reasons as in a single-server instance (e.g. if the token times out, or the credentials are changed on the server), but could also happen if the server used to create the token is no longer available (e.g. if it goes offline).  By re-requesting the authentication token and using the newly-provided session ID, the integration will now start to use (and continue to consistently use) a different server in the availability group.
 {:.note}
+
