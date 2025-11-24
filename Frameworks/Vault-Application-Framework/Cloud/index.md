@@ -12,11 +12,11 @@ This page refers to running Vault Application Framework applications within the 
 
 M-Files Cloud offers two distinct architectures: isolated (e.g. one environment per customer) or within a shared instance (e.g. many vaults/customers on one environment).
 
-Feature | Shared M-Files Cloud | Isolated M-Files Cloud
+Feature | Standard Cloud | Partner Cloud | Premium Cloud
 --- | --- | ---
-Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | Yes | Yes
-Can execute [signed applications](#code-signing) | Yes | Yes
-Custom code requires [validation](#code-validation) to run | Yes | No
+Natively implemented as [M-Files Multi-Server Mode](../Multi-Server-Mode) | Yes | Yes | Yes
+Can execute [signed applications](#code-signing) | Yes | Yes | Yes
+Custom code requires [validation](#code-validation) to run | Yes | No | No
 
 ## Code signing
 
