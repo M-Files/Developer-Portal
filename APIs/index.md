@@ -1,11 +1,11 @@
 ---
 layout: page
-title: The M-Files COM and REST APIs
+title: The M-Files APIs
 includeInSearch: true
 breadcrumb: APIs
 ---
 
-M-Files provides two Application Programming Interfaces for developers to communicate with: the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) and the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/). The choice of which to use in each scenario will depend upon the technology you are using and the operations that you wish to undertake.
+M-Files provides three Application Programming Interfaces for developers to communicate with: the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/), the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/), and the [External Storage API]({{ site.baseurl }}/APIs/EXTERNAL-API/). The choice of which to use in each scenario will depend upon the technology you are using and the operations that you wish to undertake.
 
 ## [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/)
 
@@ -30,4 +30,16 @@ More information is available in the <a href="{{ site.baseurl }}/APIs/COM-API/">
 * Not tied directly to the M-Files Server version.
 
 More information is available in the <a href="{{ site.baseurl }}/APIs/REST-API/">REST API section</a>.
+{:.note}
+
+## [External Storage API]({{ site.baseurl }}/APIs/EXTERNAL-API/)
+
+* A REST API for importing and managing objects in M-Files external cloud storage (Master Storage).
+* Designed for bulk data import, integration, and migration scenarios.
+* Connects directly to the cloud storage layer, not through the M-Files Server.
+* Supports object creation with metadata, inline file upload, and large file upload via SAS tokens.
+* Every imported object requires a security context object that controls access rights.
+* Authentication via JWT Bearer token with the `mfmasterstorage` scope.
+
+More information is available in the <a href="{{ site.baseurl }}/APIs/EXTERNAL-API/">External Storage API section</a>.
 {:.note}
