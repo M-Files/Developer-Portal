@@ -126,6 +126,8 @@ The logging framework exposes 6 different logging levels: `Trace`, `Debug`, `Inf
 NLog provides some guidance on how to [use different log levels](https://github.com/nlog/nlog/wiki/Configuration-file#log-levels).
 {:.}
 
+If the application generates a lot of logs (especially for `Trace` and/or `Debug` levels), and the vault is under heavy load, enabling logging at these levels can cause a performance hit that, in extreme cases, can have adverse effect on operations. If you need to log at such a detailed level, consider if you can do that when the vault activity is low, as this reduces the risk of performance issues, and generates fewer log entries which makes it easier for you to review them.
+
 ### Targets
 
 Please see the [dedicated targets page](Targets) for more information.
