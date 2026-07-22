@@ -221,6 +221,10 @@
 				"Title": "Vault Extension Methods"
 			},
 			{
+				"Link": "/APIs/REST-API/Monitoring-Vault-Online-Status/",
+				"Title": "Monitoring Vault Online Status"
+			},
+			{
 				"Link": "/APIs/REST-API/Useful-Applications/",
 				"Title": "Useful Applications"
 			}
