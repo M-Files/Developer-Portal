@@ -38,20 +38,20 @@ Adding a page does **not** add it to any menu. You must edit the relevant nav by
 
 Contributions go through a fork → branch → PR flow (see [CONTRIBUTING.md](CONTRIBUTING.md)); the upstream is `M-Files/Developer-Portal`, default branch `main`.
 
-Watch out for the account you're pushing as — the two identities on this machine behave differently:
+Watch out for which account you're pushing as — if you have both an enterprise and a personal GitHub identity available, they behave differently:
 
-- **Enterprise Managed User (EMU) account** (e.g. the `gh` login `ville-linnalehto_MFiles`) is **blocked**: it has only READ on the upstream repo, and EMU policy forbids forking (`gh repo fork` → `HTTP 403: As an Enterprise Managed User, you cannot access this content`). Do not push or PR through it.
-- **Personal (non-EMU) account** (e.g. `vee41`, which is what git's stored github.com credential resolves to) **works**: it can fork the public repo and push to its own fork.
+- An **Enterprise Managed User (EMU) account** may be **blocked**: if it only has READ on the upstream repo, EMU policy also forbids forking (`gh repo fork` → `HTTP 403: As an Enterprise Managed User, you cannot access this content`). Don't push or PR through it.
+- A **personal (non-EMU) account** with read access **works**: it can fork the public repo and push to its own fork. Note that `gh` and `git` may authenticate as different identities — `gh` uses its keyring login, while `git push` uses the stored github.com credential.
 
-Working recipe (personal account):
+Working recipe when you must fork with a personal account whose token differs from the `gh` keyring login:
 
-1. Fork with the personal account's token, not the `gh` keyring token. Pull the token from git's credential store and pass it explicitly so `gh` doesn't use the EMU login:
+1. Pull the personal token from git's credential store and pass it explicitly so `gh` doesn't fall back to the keyring (EMU) login:
    `TOKEN=$(printf 'protocol=https\nhost=github.com\n\n' | git credential fill | sed -n 's/^password=//p')`
    `GH_TOKEN="$TOKEN" gh api -X POST repos/M-Files/Developer-Portal/forks -q .full_name`
-2. Add the fork remote and push (plain `git push` uses the personal credential automatically):
-   `git remote add fork https://github.com/<personal-account>/Developer-Portal.git`
+2. Add the fork remote and push (plain `git push` uses the stored credential automatically):
+   `git remote add fork https://github.com/<your-account>/Developer-Portal.git`
    `git push -u fork <branch>`
 3. Open the PR with the same personal token:
-   `GH_TOKEN="$TOKEN" gh pr create --repo M-Files/Developer-Portal --base main --head <personal-account>:<branch> ...`
+   `GH_TOKEN="$TOKEN" gh pr create --repo M-Files/Developer-Portal --base main --head <your-account>:<branch> ...`
 
-Note the PR is authored by the personal account, not the M-Files identity. CONTRIBUTING.md also asks contributors to email devsupport@m-files.com before a content PR.
+The PR is authored by whichever account owns the fork, not necessarily your M-Files identity. CONTRIBUTING.md also asks contributors to email devsupport@m-files.com before a content PR.
