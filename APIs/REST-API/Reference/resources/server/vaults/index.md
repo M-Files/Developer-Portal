@@ -21,3 +21,10 @@ Gets the vaults that are on-line and available for the user on the server.
 {:.method}
 Output: | [Vault[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/vault/)
 | Retrieves the vaults that are on-line and available for the user on the server.
+
+### Sub-Resources
+
+{:#sub-resources}
+Item | Description
+--- | ---
+[Vault status]({{ site.baseurl }}/APIs/REST-API/Reference/resources/server/vaults/vault/status/) | Checks the availability and online status of a single vault.
