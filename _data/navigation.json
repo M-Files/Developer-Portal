@@ -84,7 +84,16 @@
 					},
 					{
 						"Link": "/Built-In/Property-Calculator/Configuration/",
-						"Title": "Configuration Reference"
+						"Title": "Configuration Reference",
+						"Items": [{
+								"Link": "/Built-In/Property-Calculator/Configuration/Calculation-Modes/",
+								"Title": "Calculation Modes"
+							},
+							{
+								"Link": "/Built-In/Property-Calculator/Configuration/Conditions/",
+								"Title": "Conditions"
+							}
+						]
 					},
 					{
 						"Link": "/Built-In/Property-Calculator/NCalc-Expressions/",

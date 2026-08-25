@@ -501,7 +501,7 @@ The same mode also sets a property to `NULL` — just choose "Set to NULL" as th
 
 ### Pick Substring
 
-Full field reference (Remove Substring from Main String, In Error Case, Pick Only Subexpression, etc.): [Pick Substring settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/#pick-substring).
+Full field reference (Remove Substring from Main String, In Error Case, Pick Only Subexpression, etc.): [Pick Substring settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/Calculation-Modes/#pick-substring).
 {:.note}
 
 **Scenario:** Incoming scanned documents have titles like `"INV-2026-0042 Acme Corp 15.01.2026"`. Parse them into separate properties.
@@ -548,7 +548,7 @@ To remove several properties on the same condition (e.g. all approval fields whe
 
 ### Convert Date
 
-Full field reference (Set Timezone, Text Timezone, etc.): [Convert Date settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/#convert-date).
+Full field reference (Set Timezone, Text Timezone, etc.): [Convert Date settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/Calculation-Modes/#convert-date).
 {:.note}
 
 **Scenario:** Convert a date stored as Finnish text (from imported data) into a proper DateTime property.
@@ -582,7 +582,7 @@ Target Property: PD.CreatedText
 
 ### Count Date Or Time
 
-Full field reference (per-operation Increase/Decrease, Unit, Data Type, etc.): [Count Date Or Time settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/#count-date-or-time).
+Full field reference (per-operation Increase/Decrease, Unit, Data Type, etc.): [Count Date Or Time settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/Calculation-Modes/#count-date-or-time).
 {:.note}
 
 **Scenario:** Set a due date to 5 business days after the received date.
@@ -739,7 +739,7 @@ Conditions for Listed Object:
 
 ### Search Objects
 
-Full field reference (Keep Previous Content, Include Deleted Objects, Add version-specific reference, etc.): [Search Objects settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/#search-objects).
+Full field reference (Keep Previous Content, Include Deleted Objects, Add version-specific reference, etc.): [Search Objects settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/Calculation-Modes/#search-objects).
 {:.note}
 
 **Scenario:** Populate an MSLU with all invoices belonging to the same customer.
@@ -772,7 +772,7 @@ Search Value: %PROPERTY_{PD.DepartmentText}%
 
 ### Create Object
 
-Full field reference (Create as Copy, Append Text to File Names, Create in Background, etc.): [Create Object settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/#create-object).
+Full field reference (Create as Copy, Append Text to File Names, Create in Background, etc.): [Create Object settings]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/Calculation-Modes/#create-object).
 {:.note}
 
 **Scenario:** When an order is confirmed, create a single delivery note.
