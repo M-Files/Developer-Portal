@@ -62,7 +62,7 @@ The configuration has four top-level sections:
 
 ## Expression engine
 
-Property Calculator uses **NCalc 6.x** as its expression engine. NCalc is a mathematical expression evaluator that supports:
+Property Calculator uses **[NCalc](https://github.com/ncalc/ncalc) 6.x** as its expression engine. NCalc is an open-source .NET mathematical expression evaluator, distributed under the [MIT License](https://github.com/ncalc/ncalc/blob/master/LICENSE), that supports:
 
 * Standard arithmetic: `+`, `-`, `*`, `/`
 * Comparisons: `==`, `!=`, `<`, `>`, `<=`, `>=`
