@@ -76,6 +76,52 @@
 				"Title": "Metadata Card Configuration"
 			},
 			{
+				"Link": "/Built-In/Property-Calculator/",
+				"Title": "Property Calculator",
+				"Items": [{
+						"Link": "/Built-In/Property-Calculator/Dashboard/",
+						"Title": "Dashboard"
+					},
+					{
+						"Link": "/Built-In/Property-Calculator/Configuration/",
+						"Title": "Configuration Reference",
+						"Items": [{
+								"Link": "/Built-In/Property-Calculator/Configuration/Calculation-Modes/",
+								"Title": "Calculation Modes"
+							},
+							{
+								"Link": "/Built-In/Property-Calculator/Configuration/Conditions/",
+								"Title": "Conditions"
+							}
+						]
+					},
+					{
+						"Link": "/Built-In/Property-Calculator/NCalc-Expressions/",
+						"Title": "NCalc Expressions"
+					},
+					{
+						"Link": "/Built-In/Property-Calculator/Examples/",
+						"Title": "Examples"
+					},
+					{
+						"Link": "/Built-In/Property-Calculator/Background-Operations/",
+						"Title": "Background Operations"
+					},
+					{
+						"Link": "/Built-In/Property-Calculator/Troubleshooting/",
+						"Title": "Troubleshooting"
+					},
+					{
+						"Link": "/Built-In/Property-Calculator/NVS-Namespaces/",
+						"Title": "NVS Namespaces"
+					},
+					{
+						"Link": "/Built-In/Property-Calculator/Breaking-Changes/",
+						"Title": "Breaking Changes & Upgrade Guide"
+					}
+				]
+			},
+			{
 				"Link": "/Built-In/Theming/",
 				"Title": "Theming"
 			},
