@@ -8,13 +8,9 @@ excerpt: This page is the complete configuration reference for Property Calculat
 
 ## Top-Level Structure
 
-```text
-Configuration
-├── Calculation Rules          ← Class groups with property calculations
-├── Value List Operations      ← Validation for value list items
-├── Background Operations      ← Scheduled tasks and state transitions
-└── Settings                   ← Global application settings
-```
+The configuration has four top-level sections: **Calculation Rules** (class groups with property
+calculations), **Value List Operations** (validation for value list items), **Background Operations**
+(scheduled tasks and state transitions), and **Settings** (global application settings).
 
 The individual **calculation modes** and **condition types** referenced throughout this page have their own dedicated reference pages: [Calculation Modes]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/Calculation-Modes/) and [Conditions]({{ site.baseurl }}/Built-In/Property-Calculator/Configuration/Conditions/).
 {:.note}

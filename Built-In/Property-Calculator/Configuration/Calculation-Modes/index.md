@@ -618,9 +618,9 @@ Grouping Level: "Line Item Calculations"
   Conditions:
     - Changed Propertyvalues: PD.Quantity, PD.UnitPrice
   Properties:
-    ├─ Rule 1: Calculate Line Total
-    ├─ Rule 2: Calculate Tax Amount
-    └─ Rule 3: Calculate Line Grand Total
+    - Rule 1: Calculate Line Total
+    - Rule 2: Calculate Tax Amount
+    - Rule 3: Calculate Line Grand Total
 → All three rules only execute when Quantity or UnitPrice changes
 ```
 

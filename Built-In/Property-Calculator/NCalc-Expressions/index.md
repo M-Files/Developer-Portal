@@ -49,7 +49,7 @@ The behavior of placeholders differs based on position:
 | **Outside quotes** | Resolved as typed parameters (number, date, lookup) | `%PROPERTY_{PD.Amount}% * 2` → `250 * 2` |
 | **Inside single quotes** | Resolved as text, escaped for the string literal | `'Invoice %PROPERTY_{PD.Number}%'` → `'Invoice 12345'` |
 
-For more advanced placeholder forms — chaining through lookups, aggregating Multi-Select Lookups, `.FOREACH%` blocks, and how the engine keeps user-entered values from ever being treated as part of the expression — see [Advanced Placeholder Patterns](#advanced-placeholder-patterns) later in this document.
+For more advanced placeholder forms — chaining through lookups, aggregating Multi-Select Lookups, and `.FOREACH%` blocks — see [Advanced Placeholder Patterns](#advanced-placeholder-patterns) later in this document.
 
 ---
 
@@ -185,8 +185,7 @@ When a task is updated and triggers a recalculation on the parent project:
 
 The basic placeholders covered earlier get you a long way. This section covers three more advanced
 patterns: chaining through a lookup, aggregating a Multi-Select Lookup, and generating repeated text
-with `.FOREACH%`. It also explains why user-entered property values can never break or hijack your
-rule, no matter what someone types into a field.
+with `.FOREACH%`.
 
 ### Chained Property Placeholders
 
@@ -249,48 +248,6 @@ Sum(%PROPERTY_{PD.InvoiceLines}.FOREACH%%PROPERTY_{PD.Amount}%,%NEXT%)
 Use the chained form `Sum(%PROPERTY_{MSLU}.PROPERTY_{Field}%)` instead.
 
 **Per-item computation over several fields** (e.g. Σ qty × price) is best done by adding a calculated property on the item (materialize the per-item value) and aggregating that single field on the parent with `Sum` / `Avg`.
-
-### Expression Safety & Injection
-
-Property values are edited by end users, so they are **untrusted input**. In plain terms: a property
-value is always treated as *data*, never as part of the expression's own syntax — so a user can't
-break your rule or make it do something unexpected just by typing operators, function names, quotes,
-or even `%PLACEHOLDER%`-looking text into a field. This holds for every placeholder path: plain
-placeholders, placeholders inside string literals, and `.FOREACH%` blocks.
-
-One related point worth knowing: a value is never re-expanded. If a user stores the literal text
-`%PROPERTY_{PD.Salary}%` in a field, that text is kept as-is — it is not resolved a second time, so a
-value a user typed can't make the calculation go read some other property they aren't allowed to see.
-
-> **How it works internally (optional):** Outside string literals, a placeholder is resolved to a
-> **typed parameter** — the value is bound to a slot like `[__P0]` and the engine evaluates that
-> parameter, never the raw text:
-> ```text
-> Rule expression:   %PROPERTY_{PD.Amount}% * 2
-> Becomes:           [__P0] * 2          ([__P0] = the value)
->
-> Field value:       1) ; DangerousFunc((2
-> Becomes:           [__P0] * 2          ([__P0] = "1) ; DangerousFunc((2")
-> Result:            the whole string is just a value — it is NOT executed
-> ```
-> Inside a string literal, the value is expanded to text and **escaped** for NCalc's string syntax
-> (backslash escaping), so it cannot close the quote and break out:
-> ```text
-> Rule expression:   'Note: %PROPERTY_{PD.UserText}%'
-> Field value:       ' ); DangerousFunc((
-> Escaped to:        'Note: \' ); DangerousFunc(('    (the value stays inside the string)
-> ```
-> `.FOREACH%` follows the same rule: it iterates a multi-select lookup and expands its body once per
-> linked object, and each item's inner placeholders are resolved as **bound parameters against that
-> item** — the admin-authored template structure (operators, function names, quotes) stays as syntax,
-> but the untrusted values become parameters:
-> ```text
-> %PROPERTY_{MSLU}.FOREACH%+%PROPERTY_{Amount}%%NEXT%
-> Becomes:  +[__P0]+[__P1]+[__P2]      (each [__Pn] = one item's Amount)
-> ```
-> This is also why re-typed placeholder-looking text is never re-expanded: values are bound/escaped as
-> literal data rather than being parsed again, so there is no path for a value to make the calculation
-> read properties the user isn't allowed to see (no data-exfiltration via a "confused deputy").
 
 ---
 

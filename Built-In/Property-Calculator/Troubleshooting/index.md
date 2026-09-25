@@ -57,14 +57,8 @@ Use the **Upgrade from Legacy PC** button on the dashboard to automatically conv
 
 ### What Causes Loops
 
-Loops occur when related object updates create circular dependencies:
-
-```text
-Object A changes → triggers update on Object B
-Object B changes → triggers update on Object A
-Object A changes → triggers update on Object B
-... (infinite)
-```
+Loops occur when related object updates create circular dependencies — Object A's change triggers an
+update on Object B, whose change triggers an update back on Object A, and so on indefinitely.
 
 ### How Loop Detection Works
 
@@ -120,27 +114,12 @@ For the exact internal storage locations behind each of these — useful when M-
 
 ### Stuck / Failing Object Lifecycle
 
-```text
-                     runs, succeeds
-        ┌───────────────────────────────────► Done ✅
-        │                                        ▲
-        │  runs, fails (escalating back-off)     │ due, runs, succeeds
-        │  too much waiting work                 │
-        ▼  (moved to overflow, still retrying)    │
-    Waiting ─────────────────────────────► Retrying ─┐
-                                               ▲      │ due, runs, fails
-                                               └──────┘ (back-off)
-                                               │
-                                               │ retry window exhausted
-                                               │ (14 days from first failure)
-                                               ▼
-                                    Dead-Letter — needs manual action
-                                               │
-                                               │ admin fixes cause, re-queues
-                                               │ (NVS Browser)
-                                               ▼
-                                         back to Waiting
-```
+An update starts out **Waiting**; if it runs and succeeds it's **Done**. A failure moves it into
+**Retrying** with an escalating back-off (spilling into the overflow buffer if the hot queue has too
+much waiting work), where it keeps cycling between due-and-retry and fail-and-back-off. Once the
+retry window is exhausted (14 days from the first failure), it moves to **Dead-Letter**, where it sits
+until an administrator fixes the underlying cause and re-queues it from the NVS Browser, sending it
+back to Waiting.
 
 ### Background Processing — Three Recurring Processors
 
@@ -283,7 +262,6 @@ Full breaking-changes reference: see [Breaking Changes & Upgrade Guide]({{ site.
 | **Logical Operators** | Case-insensitive (`AND`, `and`) | **Lowercase only** (`and`, `or`, `not`) |
 | **LIKE Wildcards** | `*` and `?` | `%` and `_` (SQL-style) |
 | **Custom Functions** | Limited | 50+ functions (lookup, date, regex, aggregation, file, etc.) |
-| **Security** | DataTable injection risks | Parameterized evaluation (injection-safe) |
 | **Background Operations** | Basic | Full dashboard management with scheduling |
 | **Expression Builder** | Not available | Interactive testing tool |
 | **Condition Types** | Basic only | 8 types including regex, file changes, property comparison |

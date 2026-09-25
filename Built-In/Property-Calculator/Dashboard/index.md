@@ -8,32 +8,10 @@ excerpt: This page describes the Property Calculator dashboard in M-Files Admin 
 
 ## Dashboard Layout
 
-```text
-┌──────────────────────────────────────────────────────────────┐
-│  ⚠️  LOGGING WARNING (shown only when NLog not configured)   │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│  📋 Queue Status                                    🔄       │
-│  ┌────────────────────────────────────────────────────────┐  │
-│  │  Status: OK  │  Queued: 0  │  Stuck: 0                │  │
-│  └────────────────────────────────────────────────────────┘  │
-│                                                              │
-│  Automatic Object Update Rules                               │
-│  ┌──────┬───────────┬──────────────────────┬────┬────────┐  │
-│  │ Icon │ Status    │ Rule Name            │Type│Actions │  │
-│  ├──────┼───────────┼──────────────────────┼────┼────────┤  │
-│  │  ✅  │ Completed │ Update Invoices      │ ⟳  │ ▶⏸⏹  │  │
-│  │  🔄  │ Running   │ Sync Contracts       │ 1x │ ⏸⏹    │  │
-│  │  ⏸️  │ Paused    │ Archive Old Records  │ ⟳  │ ▶⏹    │  │
-│  └──────┴───────────┴──────────────────────┴────┴────────┘  │
-│                                                              │
-│  ┌──────────────┐ ┌───────────────────┐ ┌────────────────┐  │
-│  │ NVS Browser  │ │ 🔧 Expression     │ │ 🔄 Upgrade     │  │
-│  │              │ │    Builder        │ │  from Off. PC  │  │
-│  └──────────────┘ └───────────────────┘ └────────────────┘  │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
+The dashboard is a single page in M-Files Admin: a logging warning banner (shown only when NLog isn't
+configured) at the top, followed by the Queue Status header, the Automatic Object Update Rules table,
+and a row of buttons for the NVS Browser, Expression Builder, and Upgrade from Legacy PC — each
+described in detail below.
 
 ## Queue Status Header
 

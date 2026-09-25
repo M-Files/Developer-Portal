@@ -84,11 +84,6 @@ The **Related Object** configuration defines how to find the objects that need u
 
 The **current object** has a lookup property pointing to the target object(s).
 
-```text
-Current Object (Invoice Line)
-  └── PD.ParentInvoice → Invoice (ID: 42)  ← this object gets updated
-```
-
 **Use when:** The object being modified has a lookup to the object that needs recalculation.
 
 **Example:** Invoice line has a lookup `PD.ParentInvoice`. When the line amount changes, update the parent invoice.
@@ -96,13 +91,6 @@ Current Object (Invoice Line)
 #### Indirect Reference
 
 The **target objects** have a lookup property pointing to the current object. Property Calculator searches for objects that reference the current one.
-
-```text
-Current Object (Customer, ID: 10)
-  ↑── Invoice A: PD.Customer = 10  ← these objects get updated
-  ↑── Invoice B: PD.Customer = 10  ←
-  ↑── Invoice C: PD.Customer = 10  ←
-```
 
 **Use when:** Other objects reference the current one, and they need to be recalculated when the current object changes.
 
@@ -137,14 +125,8 @@ When several queued updates for the **same object** are merged during cleanup (d
 ### Cascading Updates
 
 Related object updates can **cascade** — updating Object A triggers an update on Object B, which
-triggers an update on Object C, and so on.
-
-```text
-Invoice Line changed
-  → Update Invoice (recalculate total)
-    → Update Customer (recalculate total outstanding)
-      → Update Department (recalculate department budget)
-```
+triggers an update on Object C, and so on. For example, an invoice line change updates the invoice,
+which updates the customer's total outstanding, which updates the department budget.
 
 Deep cascading chains can cause performance issues and potentially trigger loop detection. Keep chains as short as possible.
 {:.note.warning}
@@ -157,28 +139,28 @@ runtime (it is not stored in NVS). See [Troubleshooting]({{ site.baseurl }}/Buil
 
 ```text
 Update Related Objects:
-  ┌─ "Update Parent Invoice"
-  │  Related Object:
-  │    Reference: Direct
-  │    Property: PD.ParentInvoice
-  │  Update delay (minutes): 0
-  │  Trigger Mode: ❌
-  │  Conditions:
-  │    - Type: Changed Propertyvalues
-  │      Value Changed: Propertyvalue Changed
-  │      Properties: PD.Amount, PD.Quantity
-  │
-  └─ "Update All Customer Invoices"
-     Related Object:
-       Reference: Indirect
-       Object Type: Invoice
-       Property: PD.Customer (on the target objects)
-     Update delay (minutes): 30  (could be many invoices — coalesce bursts)
-     Trigger Mode: ❌
-     Conditions:
-       - Type: Changed Propertyvalues
-         Value Changed: Propertyvalue Changed
-         Properties: PD.CustomerAddress, PD.CustomerName
+  - "Update Parent Invoice"
+    Related Object:
+      Reference: Direct
+      Property: PD.ParentInvoice
+    Update delay (minutes): 0
+    Trigger Mode: ❌
+    Conditions:
+      - Type: Changed Propertyvalues
+        Value Changed: Propertyvalue Changed
+        Properties: PD.Amount, PD.Quantity
+
+  - "Update All Customer Invoices"
+    Related Object:
+      Reference: Indirect
+      Object Type: Invoice
+      Property: PD.Customer (on the target objects)
+    Update delay (minutes): 30  (could be many invoices — coalesce bursts)
+    Trigger Mode: ❌
+    Conditions:
+      - Type: Changed Propertyvalues
+        Value Changed: Propertyvalue Changed
+        Properties: PD.CustomerAddress, PD.CustomerName
 ```
 
 ## The Processing Pipeline
@@ -192,34 +174,15 @@ pile up at once — a mass import, say — they wait safely in a holding area in
 down. And if a specific object's update keeps failing over an extended period, it is set aside so an
 administrator can investigate and manually re-trigger it once the underlying problem is fixed.
 
-```text
-Event handler / automatic rule enqueues an update
-        │
-        ▼
-Tier 1 — Hot Queue
-  VAF task queue "PropertyCalculatorV3"
-  task type: UpdateRelatedObjectNow
-  processed one at a time; deduplicated by the cleanup processor
-        │
-        ├── drain, execute ────────────────► Object updated (or retried)
-        │
-        └── spill when > 2,000 waiting
-                │
-                ▼
-        Tier 2 — Cold Overflow Buffer (NVS)
-          segmented FIFO, two chains:
-          Fresh (not yet failed) · Retry (failed, backing off)
-          bounded: 100,000 objects
-                │
-                ├── drain: fresh first, then due retry ──► Object updated
-                │
-                └── retry exhausted (14 days)
-                        │
-                        ▼
-                Tier 3 — Dead-Letter (NVS archive)
-                  keyed "type,id"
-                  admin fixes the cause, re-queues from NVS Browser
-```
+An event handler or automatic rule enqueues an update into **Tier 1 — the Hot Queue** (VAF task queue
+`PropertyCalculatorV3`, task type `UpdateRelatedObjectNow`), which processes updates one at a time and
+deduplicates them via the cleanup processor. When more than 2,000 updates are waiting, the excess
+spills into **Tier 2 — the Cold Overflow Buffer**, a segmented, NVS-backed FIFO with two chains — Fresh
+(not yet failed) and Retry (failed, backing off) — bounded at 100,000 objects, which drains fresh
+entries first and then due retries back into completed updates. If an object's update keeps failing
+until the retry window (14 days) is exhausted, it moves to **Tier 3 — the Dead-Letter archive** (an NVS
+archive keyed `"type,id"`), where an administrator fixes the cause and re-queues it from the NVS
+Browser.
 
 ### Tier 1 — Hot Queue
 
@@ -371,15 +334,8 @@ The CRON scheduler is *catch-up aware* — if a scheduled time passed while the 
 
 #### CRON Expression Format
 
-```text
-┌───────────── minute (0-59)
-│ ┌───────────── hour (0-23)
-│ │ ┌───────────── day of month (1-31)
-│ │ │ ┌───────────── month (1-12)
-│ │ │ │ ┌───────────── day of week (0-6, 0=Sunday)
-│ │ │ │ │
-* * * * *
-```
+A CRON expression has five space-separated fields, in order: minute (0-59), hour (0-23), day of month
+(1-31), month (1-12), and day of week (0-6, where 0 is Sunday).
 
 **Common CRON examples:**
 
@@ -411,32 +367,32 @@ for the config-to-dashboard workflow.
 
 ```text
 Automatic Object Updates:
-  ┌─ "Daily Contract Expiry Check"
-  │  Rule Key:     contract-expiry
-  │  Recurring:    ✅
-  │  Schedule:     Cron: 0 6 * * *  (daily at 6:00 AM)
-  │  Object Type:  Contract
-  │  Conditions:   Class = Contract AND Status = Active
-  │  Filtering:    (none)
-  │
-  ├─ "Weekly Invoice Recalculation"
-  │  Rule Key:     invoice-recalc
-  │  Recurring:    ✅
-  │  Schedule:     Cron: 0 2 * * 0  (every Sunday at 2:00 AM)
-  │  Object Type:  Invoice
-  │  Conditions:   Class = Invoice AND Created after 2026-01-01
-  │  Filtering:    (none)
-  │
-  └─ "One-Time Data Migration"
-     Rule Key:     data-migration-v2
-     Recurring:    ❌
-     Schedule:     Every Cycle (runs as fast as possible)
-     Object Type:  Document
-     Conditions:   Class = Document AND PD.MigrationFlag is empty
-     Filtering:
-       - Type: Match with RegExp
-         Value: %PROPERTY_{PD.LegacyCode}%
-         RegExp: ^[A-Z]{2}-\d{4}$
+  - "Daily Contract Expiry Check"
+    Rule Key:     contract-expiry
+    Recurring:    ✅
+    Schedule:     Cron: 0 6 * * *  (daily at 6:00 AM)
+    Object Type:  Contract
+    Conditions:   Class = Contract AND Status = Active
+    Filtering:    (none)
+
+  - "Weekly Invoice Recalculation"
+    Rule Key:     invoice-recalc
+    Recurring:    ✅
+    Schedule:     Cron: 0 2 * * 0  (every Sunday at 2:00 AM)
+    Object Type:  Invoice
+    Conditions:   Class = Invoice AND Created after 2026-01-01
+    Filtering:    (none)
+
+  - "One-Time Data Migration"
+    Rule Key:     data-migration-v2
+    Recurring:    ❌
+    Schedule:     Every Cycle (runs as fast as possible)
+    Object Type:  Document
+    Conditions:   Class = Document AND PD.MigrationFlag is empty
+    Filtering:
+      - Type: Match with RegExp
+        Value: %PROPERTY_{PD.LegacyCode}%
+        RegExp: ^[A-Z]{2}-\d{4}$
 ```
 
 ## Automatic State Transitions
@@ -492,15 +448,15 @@ Automatic State Transitions:
   Activated: ✅
 
   Workflows:
-    ┌─ "Auto-approve small invoices"
-    │  From State:  Pending Approval
-    │  To State:    Approved
-    │  Conditions:  PD.InvoiceTotal < 500
-    │
-    └─ "Archive expired contracts"
-       From State:  Active
-       To State:    Archived
-       Conditions:  PD.EndDate < today
+    - "Auto-approve small invoices"
+      From State:  Pending Approval
+      To State:    Approved
+      Conditions:  PD.InvoiceTotal < 500
+
+    - "Archive expired contracts"
+      From State:  Active
+      To State:    Archived
+      Conditions:  PD.EndDate < today
 ```
 
 ## Retry, Back-off & Dead-Letter
@@ -578,14 +534,8 @@ the tolerance).
 
 ### Why throttling and spilling matter
 
-Without these mechanisms, a burst like this could overwhelm the vault:
-
-```text
-User saves Invoice Line 1 → triggers Invoice update
-User saves Invoice Line 2 → triggers Invoice update
-User saves Invoice Line 3 → triggers Invoice update
-(all within 2 seconds)
-```
+Without these mechanisms, a burst like this could overwhelm the vault: a user saves three invoice
+lines within two seconds, and each save triggers its own Invoice update.
 
 Throttling collapses rapid repeat-updates on the same object; deduplication keeps only one waiting
 task per object; and if the backlog still grows past the hot-queue bound, spilling moves it into the

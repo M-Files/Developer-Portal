@@ -101,7 +101,28 @@
 					},
 					{
 						"Link": "/Built-In/Property-Calculator/Examples/",
-						"Title": "Examples"
+						"Title": "Examples",
+						"Items": [{
+								"Link": "/Built-In/Property-Calculator/Examples/Basic/",
+								"Title": "Basic Examples"
+							},
+							{
+								"Link": "/Built-In/Property-Calculator/Examples/Intermediate/",
+								"Title": "Intermediate Examples"
+							},
+							{
+								"Link": "/Built-In/Property-Calculator/Examples/Advanced/",
+								"Title": "Advanced Examples"
+							},
+							{
+								"Link": "/Built-In/Property-Calculator/Examples/Other-Calculation-Modes/",
+								"Title": "Other Calculation Mode Examples"
+							},
+							{
+								"Link": "/Built-In/Property-Calculator/Examples/Complete-Configurations/",
+								"Title": "Complete Configuration Examples"
+							}
+						]
 					},
 					{
 						"Link": "/Built-In/Property-Calculator/Background-Operations/",

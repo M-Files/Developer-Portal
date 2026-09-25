@@ -39,7 +39,7 @@ Each change is tagged with how it is resolved:
 
 ## The One Big Change: DataTable → NCalc
 
-The legacy Property Calculator builds **numeric** value expressions and **advanced conditions** as `System.Data.DataTable` compute strings. (Text fields were only expanded to literal text, and date/boolean fields used their own resolvers — DataTable was never involved there.) The current version removed that engine entirely (it was also an injection risk) and now evaluates everything with **NCalc 6.1.1**, using **parameterized, injection-safe** evaluation where untrusted property values are bound as typed parameters instead of being concatenated into the expression text.
+The legacy Property Calculator builds **numeric** value expressions and **advanced conditions** as `System.Data.DataTable` compute strings. (Text fields were only expanded to literal text, and date/boolean fields used their own resolvers — DataTable was never involved there.) The current version removed that engine entirely and now evaluates everything with **NCalc 6.1.1**.
 
 The two engines share a lot of surface syntax (`+ - * /`, `< <= > >=`, `=`, string literals in single quotes), which is why *most* configurations keep working. The differences that **do** break are listed below.
 
