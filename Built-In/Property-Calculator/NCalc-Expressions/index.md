@@ -15,7 +15,7 @@ Placeholders are references to M-Files property values that get resolved to actu
 | Syntax | Description | Example |
 |--------|-------------|---------|
 | `%PROPERTY_{Alias}%` | Reference by property definition alias | `%PROPERTY_{PD.InvoiceAmount}%` |
-| `%PROPERTY_{GUID}%` | Reference by property GUID | `%PROPERTY_{{12345678-1234-...}}%` |
+| `%PROPERTY_{GUID}%` | Reference by property GUID | {% raw %}`%PROPERTY_{{12345678-1234-...}}%`{% endraw %} |
 | `%PROPERTY_ID%` | Reference by property definition ID (number) | `%PROPERTY_1234%` |
 
 ### System Placeholders
