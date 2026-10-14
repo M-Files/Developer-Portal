@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkuix_2=globalThis.webpackChunkuix_2||[]).push([[18401],{16029(a,s,b){b.d(s,{A:()=>c});var u=b(76993),h=b(49489),i=b(7227);const c={...u.A,Tabs:h.A,TabItem:i.A}}}]);
