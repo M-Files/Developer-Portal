@@ -27,6 +27,10 @@
 						"Title" : "Deleting objects with the COM API"
 					},
 					{
+						"Link" : "/APIs/COM-API/Uploading-Files/",
+						"Title" : "Uploading files with the COM API"
+					},
+					{
 						"Link": "/APIs/REST-API/Creating-Objects/",
 						"Title": "Creating objects with the REST API"
 					},
@@ -208,6 +212,10 @@
 					{
 						"Link": "/APIs/COM-API/Deleting-Objects/",
 						"Title": "Deleting objects"
+					},
+					{
+						"Link": "/APIs/COM-API/Uploading-Files/",
+						"Title": "Uploading files"
 					}
 				]
 			},
