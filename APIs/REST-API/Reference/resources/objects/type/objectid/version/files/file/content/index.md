@@ -43,7 +43,14 @@ Note that PUT and DELETE verbs may not be supported in IIS; it is recommended to
 {:.method}
 Input: | Stream: `application/octet-stream` or `multipart/form-data`
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/)
+Parameters: | `?statelessUpload` (optional, defaulting to `false`) - If `true` and the server supports it, the content is uploaded with the stateless upload (M-Files MFILES_VERSION_TBD and later).
 | Replaces the object file contents. 
+
+The PUT request uploads the new content and replaces the file in a single request, so it returns no upload ID or file reference, and needs no sticky session. With `?statelessUpload=true`, M-Files MFILES_VERSION_TBD and later upload the content internally with the stateless upload instead of an upload session.
+{:.remark}
+
+To replace the content with a file uploaded in separate requests, for example a large file [uploaded in blocks]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/upload/) that can be retried block by block, upload it with `?statelessUpload=true` and pass its file reference to [/objects/(type)/(objectid)/(version)/files/(file)/upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/upload/) or [/files/fileref/(fileRef)/(file)/(version)/(size)/uploadcommit]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/file/version/size/uploadcommit/).
+{:.remark}
 
 Supports Range header on GET: 
 {:.remarks}

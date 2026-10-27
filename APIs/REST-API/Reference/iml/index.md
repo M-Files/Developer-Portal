@@ -28,7 +28,7 @@ Metadata suggestions can be provided in the following scenarios:
 	* Ensure that `AutomaticMetadataRequestInfo.ObjectType` is populated with the object type you wish to create (e.g. 0 for documents).
 
 * **For one or more files that have been uploaded, but where the object has not yet been created**
-	* Ensure that `AutomaticMetadataRequestInfo.UploadIds` contains the ids returned from a call to [/REST/files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/).
+	* Ensure that `AutomaticMetadataRequestInfo.UploadedFiles` contains the [UploadInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/uploadinfo/) objects, with their `FileRef` and `Extension`, returned from a call to [/REST/files?statelessUpload=true]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/) (M-Files MFILES_VERSION_TBD and later). On older servers, use `AutomaticMetadataRequestInfo.UploadIds` with the upload ids returned from a call to [/REST/files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/); upload ids are obsolete.
 	* Ensure that `AutomaticMetadataRequestInfo.ObjectType` is populated with the object type you wish to create (e.g. 0 for documents).
 
 ## External Repository Connectors

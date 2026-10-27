@@ -96,7 +96,21 @@ Data URI from which the file content is uploaded.
 <dd>Data URI from which the file content is uploaded.</dd>
 </dl></div><!--DXMETADATA end -->
             <!--DXMETADATA start type="TaggedComment" source="Item" id="##RETURNS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=returns,caption=$$Return_Type$$%%<div class=""i-returns-content"">%%comment%%</div></div>" --><!--DXMETADATA end -->
-            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=remarks,caption=$$Remarks$$%%%%comment%%</div>" --><div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content"><p>The data URI scheme is a URI scheme that encodes content within the URI itself. This is especially useful within the M-Files UI Extensibility Framework. In this context, the data URIs allow&nbsp;content received via HTML5 drag&nbsp;and drop to be uploaded to the vault.</p>
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=remarks,caption=$$Remarks$$%%%%comment%%</div>" --><div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content"><table style="BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px" cellspacing="0" cols="1" cellpadding="0">
+    <tbody>
+        <tr>
+            <td style="BACKGROUND-COLOR: #ffffc0">
+                <p><strong>Stateless alternative</strong></p>
+
+                <p>In the server interface mode, this method uploads the decoded content through an upload session, which is bound to the server instance that created it. To upload without an upload session, decode the data yourself, upload it with <a href="MFilesAPI~VaultObjectFileOperations~FileUploadWhole.html">FileUploadWhole</a> and attach it with <a href="MFilesAPI~VaultObjectFileOperations~FileUploadAttach.html">FileUploadAttach</a>. Requires M-Files MFILES_VERSION_TBD or later. Use <a href="MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html">IsFileUploadStatelessSupported</a> to check whether the stateless file upload can be used.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p></p>
+
+<p>The data URI scheme is a URI scheme that encodes content within the URI itself. This is especially useful within the M-Files UI Extensibility Framework. In this context, the data URIs allow&nbsp;content received via HTML5 drag&nbsp;and drop to be uploaded to the vault.</p>
 
 <p>Only base64-encoded data URIs are supported and MIME-type is not optional. Uploading files larger than 64MB is not supported because the whole data is be kept in the memory of the calling process.</p>
 

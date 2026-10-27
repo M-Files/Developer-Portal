@@ -28,6 +28,7 @@ Type | Name | Description
 `bool` |  FacetSearchSupported | Specifies whether facet search is allowed.
 `bool` |  FavorFullTextSearchSupported | Specifies if the server can support favour full text search.
 `bool` |  FileStreamingSupported | Specifies whether file streaming is supported.
+`bool` |  FileUploadStatelessSupported | The server supports the stateless file upload, which identifies the uploads by file references instead of upload IDs (`?statelessUpload=true`). Requires M-Files MFILES_VERSION_TBD or later.
 `bool` |  FindDuplicatesSupported | Specifies if the server can support find duplicate.
 `bool` |  FullControlVaultUserCanModifyCodeSupported | Specifies if full control vault user can modify vault applications and VBScripts.
 `bool` |  GetTextContentWithOptionsSupported | The server supports option flags when retrieving the text content of a file.

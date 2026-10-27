@@ -193,7 +193,10 @@ Date: Fri, 26 Jan 2018 09:44:34 GMT
 
 ## Creating an object with files
 
-To create an object with files, the file content must first be `POST`ed to [/files](https://developer.m-files.com/APIs/REST-API/Reference/resources/files.html).  The file will be saved into a temporary location on the server and an [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html) returned containing an ID for the temporary file.  During the file creation, these UploadInfo objects are provided as part of the [ObjectCreationInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/objectcreationinfo.html) and the server automatically attaches the temporary files to the new object.
+To create an object with files, the file content must first be `POST`ed to [/files](https://developer.m-files.com/APIs/REST-API/Reference/resources/files.html).  The file will be saved on the server and an [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html) returned containing a reference to the uploaded file.  During the file creation, these UploadInfo objects are provided as part of the [ObjectCreationInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/objectcreationinfo.html) and the server automatically attaches the uploaded files to the new object.
+
+In M-Files MFILES_VERSION_TBD and later, add `?statelessUpload=true` to the upload request, as in the samples below. The returned UploadInfo then contains a file reference (`FileRef`) instead of a temporary upload ID (`UploadID`). A file reference can be used on any server instance, so the upload and the object creation do not need a sticky session to the same server. Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later; older servers, and servers that do not support the stateless upload ([ServerVaultCapabilities](https://developer.m-files.com/APIs/REST-API/Reference/structs/servervaultcapabilities/).`FileUploadStatelessSupported`), ignore the parameter and return an `UploadID`. Large files can be uploaded in blocks with [/files/upload](https://developer.m-files.com/APIs/REST-API/Reference/resources/files/upload/).
+{:.note}
 
 ### Uploading files
 
@@ -209,7 +212,7 @@ var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 
 // Upload the file and retrieve the upload information.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
-var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files.aspx"),
+var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files.aspx?statelessUpload=true"),
 	new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
 
 // Extract the value.
@@ -237,7 +240,7 @@ objectCreationInfo.Files = new UploadInfo[]
 #### HTTP request
 
 ```text
-POST http://localhost/REST/files.aspx HTTP/1.1
+POST http://localhost/REST/files.aspx?statelessUpload=true HTTP/1.1
 X-Authentication: DummyAuthenticationToken
 Host: localhost
 Cookie: ASP.NET_SessionId=tsxugyihuwdyj4vtzalt34je
@@ -261,13 +264,13 @@ Date: Fri, 26 Jan 2018 10:04:26 GMT
 Content-Length: 48
 
 {
-  "UploadID": 1,
+  "FileRef": "<file reference>",
   "Size": 27,
   "FileInformationType": 0
 }
 ```
 
-After a file is uploaded to [/files](https://developer.m-files.com/APIs/REST-API/Reference/resources/files.html), an [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html) will be returned containing the temporary upload given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
+After a file is uploaded to [/files](https://developer.m-files.com/APIs/REST-API/Reference/resources/files.html), an [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html) will be returned containing the file reference (or, on older servers, the temporary upload ID) given to the file.  If the Extension property on this object is not correctly set (manually, as above) before creating the new object, then the file will not have an extension when it is saved into M-Files.
 {:.note}
 
 ### Putting it all together
@@ -314,7 +317,7 @@ var localFileToUpload = new System.IO.FileInfo(@"C:\temp\test.txt");
 
 // Upload the file and retrieve the upload information.
 // NOTE: http://developer.m-files.com/APIs/REST-API/#iis-compatibility
-var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files.aspx"),
+var uploadFileResponse = await client.PostAsync(new Uri("http://localhost/REST/files.aspx?statelessUpload=true"),
 	new System.Net.Http.StreamContent(localFileToUpload.OpenRead()));
 			
 // Extract the value.
@@ -395,7 +398,7 @@ Expect: 100-continue
   ],
   "Files": [
     {
-      "UploadID": 1,
+      "FileRef": "<file reference>",
       "Title": null,
       "Extension": "txt",
       "Size": 27
@@ -524,6 +527,8 @@ public class Lookup
 * Using libraries such as [JSON.NET](http://www.newtonsoft.com/json) or [RestSharp](http://restsharp.org/) can simplify interacting with the M-Files Web Service.  Both libraries can easily be installed using [NuGet](https://www.nuget.org/), which is available for Visual Studio 2013 and upwards.
 
 * Failing to set the [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo.html)'s Extension property will mean that uploaded files are left with no extension.  Ensure this is set correctly after the temporary upload has completed.
+
+* Older copies of the [downloadable code samples](https://developer.m-files.com/APIs/REST-API/Reference/samples.html) define `UploadInfo.UploadID` as a non-nullable `int` and have no `FileRef` property.  With `?statelessUpload=true` the server returns `"UploadID": null` and a `FileRef`, which those classes cannot deserialize or send back.  Download the samples again, or change `UploadID` to `int?` and add a `string FileRef` property to the `UploadInfo` class.
 
 * The .NET [FileInfo.Extension](https://msdn.microsoft.com/en-us/library/system.io.filesysteminfo.extension(v=vs.110).aspx) property includes the period as part of the returned value.  The UploadInfo object expects the file extension without the period.
 

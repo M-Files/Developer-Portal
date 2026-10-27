@@ -1,10 +1,12 @@
 ```csharp
-public ObjectVersion CreateObject( int type, PropertyValue[] propertyValues, Stream file )
+public ObjectVersion CreateObject( int type, PropertyValue[] propertyValues, Stream file, string extension )
 {
     // First upload the file.
 
     // Create the file upload request.
-    string uploadUrl = "http://example.org/REST/files";
+    // statelessUpload=true asks for a file reference (FileRef) instead of an upload ID,
+    // so the requests need no sticky session (M-Files MFILES_VERSION_TBD and later).
+    string uploadUrl = "http://example.org/REST/files?statelessUpload=true";
     var uploadRequest = WebRequest.Create( uploadUrl );
     uploadRequest.Method = "POST";
 
@@ -22,6 +24,10 @@ public ObjectVersion CreateObject( int type, PropertyValue[] propertyValues, Str
     var uploadResponse = uploadRequest.GetResponse();
     var uploadSerializer = new DataContractJsonSerializer( typeof( UploadInfo ) );
     var uploadInfo = (UploadInfo)uploadSerializer.ReadObject( uploadResponse.GetResponseStream() );
+
+    // The raw upload has no file name, so set the extension of the file, without the dot.
+    // Otherwise the file is saved without an extension.
+    uploadInfo.Extension = extension;
 
     // Once the file is uploaded it can be used in object creation.
 
