@@ -25,7 +25,7 @@
     <!--DXMETADATA start type="PackageLink" packagename="core-ax" filetype="script"--><script src="template/packages/core-ax/script/dx.com.min.js" type="text/javascript"></script><!--DXMETADATA end-->
     
     <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="MFilesAPI~VaultDocumentComparisonOperations~CompareWithTemporaryFile"/><!--DXMETADATA end-->
-    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="Obsolete. Gets a URL which can be used to display the differences between a document in the vault and a temporarily uploaded file." /><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="Gets a URL which can be used to display the differences between a document in the vault and a temporarily uploaded file." /><!--DXMETADATA end-->
     <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="MFilesAPI~VaultDocumentComparisonOperations_methods"/><!--DXMETADATA end-->
     <meta name="Microsoft.Help.ContentType" content="Reference" />
     <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
@@ -84,7 +84,7 @@ True if the download options should be enabled in the compare UI, false otherwis
 </div>
 <!--DXMETADATA end -->
     <div id="i-body-content" class="i-body-content">
-        <!--DXMETADATA start type="Description" source="Item" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=description,caption=$$Description$$%%<div class=""i-description-content"">%%description%%</div></div>" --><div class="i-section-heading" id="i-description-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Description</span></div><div id="i-description-section-content" class="i-section-content"><div class="i-description-content"><strong>Obsolete.</strong> Gets a URL which can be used to display the differences between a document in the vault and a temporarily uploaded file.</div></div><!--DXMETADATA end -->
+        <!--DXMETADATA start type="Description" source="Item" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=description,caption=$$Description$$%%<div class=""i-description-content"">%%description%%</div></div>" --><div class="i-section-heading" id="i-description-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Description</span></div><div id="i-description-section-content" class="i-section-content"><div class="i-description-content">Gets a URL which can be used to display the differences between a document in the vault and a temporarily uploaded file.</div></div><!--DXMETADATA end -->
             <!--DXMETADATA start type="Syntax" lang="VB" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=syntax,caption=$$Syntax$$%%<div class=i-language-specific id=Syntax_VB><table class="syntaxtable" width="100%" cellpadding="0" cellspacing="0"><tr><th>Visual Basic</th></tr><tr><td><pre>%%Syntax%%</pre></tr></table></div></div>" --><div class="i-section-heading" id="i-syntax-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Syntax</span></div><div id="i-syntax-section-content" class="i-section-content"><div class=i-language-specific id=Syntax_VB><table class="syntaxtable" width="100%" cellpadding="0" cellspacing="0"><tr><th>Visual Basic</th></tr><tr><td><pre><pre><span style="color: #0000FF; ">Public</span> <span style="color: #0000FF; ">Function</span> CompareWithTemporaryFile( _
    <span style="color: #0000FF; ">ByVal</span> <i><a class="i-popup-link" id="ObjIdOriginalPopupLink" data-popup-contentsource="#ObjIdOriginalPopupContent" data-popup-showevent="click mouseenter">ObjIdOriginal</a></i> <span style="color: #0000FF; ">As</span> <a href="MFilesAPI~ObjID.html">ObjID</a>, _
    <span style="color: #0000FF; ">ByVal</span> <i><a class="i-popup-link" id="FileVerOriginalPopupLink" data-popup-contentsource="#FileVerOriginalPopupContent" data-popup-showevent="click mouseenter">FileVerOriginal</a></i> <span style="color: #0000FF; ">As</span> <a href="MFilesAPI~FileVer.html">FileVer</a>, _
@@ -108,23 +108,7 @@ True if the download options should be enabled in the compare UI, false otherwis
 <dd>True if the download options should be enabled in the compare UI, false otherwise.</dd>
 </dl></div><!--DXMETADATA end -->
             <!--DXMETADATA start type="TaggedComment" source="Item" id="##RETURNS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=returns,caption=$$Return_Type$$%%<div class=""i-returns-content"">%%comment%%</div></div>" --><!--DXMETADATA end -->
-            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=remarks,caption=$$Remarks$$%%%%comment%%</div>" --><div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content"><table style="BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px" cellspacing="0" cols="1" cellpadding="0">
-    <tbody>
-        <tr>
-            <td style="BACKGROUND-COLOR: #ffffc0">
-                <p><strong>Obsolete</strong></p>
-
-                <p>This method takes the upload ID of an upload session. Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later.</p>
-
-                <p>Use <a href="MFilesAPI~VaultDocumentComparisonOperations~CompareWithUploadedFile.html">CompareWithUploadedFile</a> with the file reference of the stateless file upload instead.</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<p></p>
-
-<p>Supported in&nbsp;M-Files&nbsp;19.10.8339.0&nbsp;and later.</p>
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=remarks,caption=$$Remarks$$%%%%comment%%</div>" --><div class="i-section-heading" id="i-remarks-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Remarks</span></div><div id="i-remarks-section-content" class="i-section-content"><p>Supported in&nbsp;M-Files&nbsp;19.10.8339.0&nbsp;and later.</p>
 
 <p>This method is available only if M-Files API is used in the <a href="MFilesAPI~MFilesServerApplication.html">server interface</a> mode.</p></div><!--DXMETADATA end -->
             <!--DXMETADATA start type="sourcecode" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=source,caption=$$Source_Code$$%%<table border=0 cellpadding=0 cellspacing=0 class=sourcecode><tr><td nowrap>%%sourcecode%%</td></tr></table></div>" --><!--DXMETADATA end -->
