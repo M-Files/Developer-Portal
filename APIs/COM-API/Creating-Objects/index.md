@@ -182,7 +182,7 @@ var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
 
 ## Creating a document from a file reference
 
-In M-Files MFILES_VERSION_TBD and later, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID. Source files cannot be given as file references, so create the object without checking it in, add an empty file, attach the uploaded content to it with [FileUploadAttach](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadAttach.html), and then check the object in.
+In M-Files MFILES_VERSION_TBD and later, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID. Source files cannot be given as file references, so create the object without checking it in, add an empty file, commit the uploaded content to it with [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html), and then check the object in. FileUploadCommit requires the MD5 checksum of the content; see [The checksum of the file]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/#the-checksum-of-the-file).
 
 The stateless file upload requires the [server interface mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server) and a gRPC connection to the server. Use [IsFileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html) to check whether it can be used.
 {:.note}
@@ -197,6 +197,11 @@ The stateless file upload requires the [server interface mode]({{ site.baseurl }
 var content = File.ReadAllBytes(@"C:\temp\test.txt");
 var fileRef = vault.ObjectFileOperations.FileUploadWhole(content);
 
+// Calculate the MD5 checksum of the uploaded content for FileUploadCommit.
+byte[] checksum;
+using (var md5 = System.Security.Cryptography.MD5.Create())
+	checksum = md5.ComputeHash(content);
+
 // Create the document without files, and do not check it in yet.
 var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
 	(int) MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
@@ -206,16 +211,17 @@ var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
 	CheckIn: false );
 try
 {
-	// Add an empty file and attach the uploaded content to it.
+	// Add an empty file and commit the uploaded content to it.
 	var fileVer = vault.ObjectFileOperations.AddEmptyFile(
 		objectVersion.ObjVer,
 		Title: "My test document",
 		Extension: "txt");
-	vault.ObjectFileOperations.FileUploadAttach(
+	vault.ObjectFileOperations.FileUploadCommit(
 		FileRef: fileRef,
 		ObjID: objectVersion.ObjVer.ObjID,
 		FileVer: fileVer,
-		LogicalSize: content.LongLength);
+		LogicalSize: content.LongLength,
+		Checksum: checksum);
 
 	// The document now has exactly one file, so make it a single-file-document.
 	vault.ObjectOperations.SetSingleFileObject(objectVersion.ObjVer, SingleFile: true);

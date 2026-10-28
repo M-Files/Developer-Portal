@@ -198,6 +198,9 @@ To create an object with files, the file content must first be `POST`ed to [/fil
 In M-Files MFILES_VERSION_TBD and later, add `?statelessUpload=true` to the upload request, as in the samples below. The returned UploadInfo then contains a file reference (`FileRef`) instead of a temporary upload ID (`UploadID`). A file reference can be used on any server instance, so the upload and the object creation do not need a sticky session to the same server. Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later; older servers, and servers that do not support the stateless upload ([ServerVaultCapabilities](https://developer.m-files.com/APIs/REST-API/Reference/structs/servervaultcapabilities/).`FileUploadStatelessSupported`), ignore the parameter and return an `UploadID`. Large files can be uploaded in blocks with [/files/upload](https://developer.m-files.com/APIs/REST-API/Reference/resources/files/upload/).
 {:.note}
 
+With a file reference, the returned UploadInfo also contains the MD5 `Checksum` of the file, which the object creation requires, so pass the UploadInfo back as is. For a file uploaded in blocks, the blocks can be received by different server instances, so calculate the checksum on the client and set it; see [UploadInfo](https://developer.m-files.com/APIs/REST-API/Reference/structs/uploadinfo/).
+{:.note}
+
 ### Uploading files
 
 ```csharp
@@ -265,6 +268,7 @@ Content-Length: 48
 
 {
   "FileRef": "<file reference>",
+  "Checksum": "<MD5 checksum>",
   "Size": 27,
   "FileInformationType": 0
 }
@@ -399,6 +403,7 @@ Expect: 100-continue
   "Files": [
     {
       "FileRef": "<file reference>",
+      "Checksum": "<MD5 checksum>",
       "Title": null,
       "Extension": "txt",
       "Size": 27

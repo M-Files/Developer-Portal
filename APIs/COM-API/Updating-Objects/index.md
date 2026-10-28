@@ -114,7 +114,7 @@ vault.ObjectOperations.CheckIn(checkedOutObjectVersion.ObjVer);
 
 ## Replacing the content of a file with a file reference
 
-In M-Files MFILES_VERSION_TBD and later, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID and does not need a sticky session to the server. [FileUploadAttach](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadAttach.html) then sets the content of a file in the checked-out object. It replaces `UploadFileCommitEx` and the other upload session methods, which are obsolete.
+In M-Files MFILES_VERSION_TBD and later, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID and does not need a sticky session to the server. [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html) then commits the content to a file in the checked-out object. It requires the MD5 checksum of the content; see [The checksum of the file]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/#the-checksum-of-the-file). It replaces `UploadFileCommitEx` and the other upload session methods, which are obsolete.
 
 The stateless file upload requires the [server interface mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server) and a gRPC connection to the server. Use [IsFileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html) to check whether it can be used.
 {:.note}
@@ -134,22 +134,28 @@ objID.SetIDs(
 var content = File.ReadAllBytes(@"C:\temp\test.txt");
 var fileRef = vault.ObjectFileOperations.FileUploadWhole(content);
 
+// Calculate the MD5 checksum of the uploaded content for FileUploadCommit.
+byte[] checksum;
+using (var md5 = System.Security.Cryptography.MD5.Create())
+	checksum = md5.ComputeHash(content);
+
 // Check out the object.
 var checkedOutObjectVersion = vault.ObjectOperations.CheckOut(objID);
 
-// Attach the uploaded content to the first file of the object.
+// Commit the uploaded content to the first file of the object.
 var file = vault.ObjectFileOperations.GetFiles(checkedOutObjectVersion.ObjVer)[1];
-vault.ObjectFileOperations.FileUploadAttach(
+vault.ObjectFileOperations.FileUploadCommit(
 	FileRef: fileRef,
 	ObjID: objID,
 	FileVer: file.FileVer,
-	LogicalSize: content.LongLength);
+	LogicalSize: content.LongLength,
+	Checksum: checksum);
 
 // Check the object back in.
 vault.ObjectOperations.CheckIn(checkedOutObjectVersion.ObjVer);
 ```
 
-To add a new file instead, add an empty file with [AddEmptyFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~AddEmptyFile.html) and attach the uploaded content to the file version that it returns.
+To add a new file instead, add an empty file with [AddEmptyFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~AddEmptyFile.html) and commit the uploaded content to the file version that it returns.
 
 ## Converting between single-file and multi-file
 

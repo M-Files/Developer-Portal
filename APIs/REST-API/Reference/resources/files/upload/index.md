@@ -28,6 +28,9 @@ Parameters: | `?statelessUpload=true` - Begins a stateless upload, identified by
 Upload the blocks of the file to [/files/fileref/(fileRef)/upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/upload/). Every block but the last must be `MaxBlockSize` bytes, and if `RequireSequentialBlocks` is `true`, the blocks must be uploaded in order, one at a time. The upload ends with its last block.
 {:.remark}
 
+The blocks can be received by different server instances, so the server can't calculate the checksum of the file. Calculate the MD5 checksum of the whole file while reading it for the upload, and set it as the `Checksum` of the UploadInfo that adds the file to an object, or give it to [uploadcommit]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/file/version/size/uploadcommit/). An empty file has the checksum `d41d8cd98f00b204e9800998ecf8427e`.
+{:.remark}
+
 An empty file (`Size` is `0`) has no blocks: it is uploaded completely by this request, and the returned `FileRef` can be used right away.
 {:.remark}
 

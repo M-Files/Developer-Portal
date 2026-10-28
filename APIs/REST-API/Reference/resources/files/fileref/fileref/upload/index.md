@@ -33,5 +33,8 @@ The `fileRef` is the `FileRef` returned by [/files/upload]({{ site.baseurl }}/AP
 The upload ends when the block whose `resumableChunkNumber` equals `resumableTotalChunks` is uploaded. Without the parameters, the request is the only block of the file. The parameter names match those sent by the [Resumable.js](http://resumablejs.com/) library.
 {:.remark}
 
-After the upload ends, the file reference can be used in [object creation]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/), [added to an existing object]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/upload/), or [committed as the content of an existing file]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/file/version/size/uploadcommit/). The requests can reach any server instance, so no sticky session is needed.
+The returned UploadInfo has no `Checksum`, as the blocks can be received by different server instances. Calculate the MD5 checksum of the whole file on the client; see [/files/upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/upload/).
+{:.remark}
+
+After the upload ends, the file reference can be used with its checksum in [object creation]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/), [added to an existing object]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/upload/), or [committed as the content of an existing file]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/file/version/size/uploadcommit/). The requests can reach any server instance, so no sticky session is needed.
 {:.remark}
