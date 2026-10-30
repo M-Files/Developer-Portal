@@ -25,5 +25,8 @@ This library aims to provide an easy-to-use .NET wrapper for the [M-Files Web Se
 
 The library contains a set of basic unit tests, which will be expanded as the library progresses.
 
+The library uploads files with temporary upload IDs, which are bound to the server instance that created them and need a sticky session to it. M-Files MFILES_VERSION_TBD and later also support the stateless file upload, which identifies an upload by a file reference (`FileRef`) that any server instance can use; see [/files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/) and the `?statelessUpload=true` parameter. Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later.
+{:.note}
+
 More details and examples are available [in in the GitHub repository](https://github.com/M-Files/Libraries.MFWSClient#readme).
 {:.note}

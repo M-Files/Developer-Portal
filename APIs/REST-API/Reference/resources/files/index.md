@@ -10,7 +10,7 @@ redirect_from: "/APIs/REST-API/Reference/resources/files.html"
 ## /files
 {:.url-with-parameters}
 
-A collection of temporary uploads. 
+A collection of uploaded files that are not yet attached to any object.
 {:.description}
 
 ### Methods
@@ -21,8 +21,24 @@ A collection of temporary uploads.
 {:.method}
 Input: | Stream: `application/octet-stream` or `multipart/form-data`
 Output: | [UploadInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/uploadinfo/) (when using `application/octet-stream`) or [UploadInfo[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/uploadinfo/) (when using `multipart/form-data`).
-| Stores a temporary file on the server and assigns an ID for it.
-| Once uploaded the file can be used in [object creation]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/). 
+| Uploads the file content to the server and returns a reference to it.
+| Once uploaded the file can be used in [object creation]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/), or [added to an existing object]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/upload/).
+Parameters: | `?statelessUpload` (optional, defaulting to `false`) - If `true`, the upload is identified by a file reference (`FileRef`) instead of an upload ID (`UploadID`).
+
+With `?statelessUpload=true`, the returned [UploadInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/uploadinfo/) contains a `FileRef` instead of an `UploadID`. A file reference can be used on any server instance, so the requests that use it do not need a sticky session (session affinity) to the server that received the upload. Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later; use file references whenever the server supports them ([ServerVaultCapabilities]({{ site.baseurl }}/APIs/REST-API/Reference/structs/servervaultcapabilities/).`FileUploadStatelessSupported`). If the server does not support the stateless upload, the parameter is ignored and an `UploadID` is returned.
+{:.remark}
+
+To upload a large file in several requests, use [/files/upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/upload/).
+{:.remark}
+
+### Sub-Resources
+
+{:#sub-resources}
+Item | Description
+--- | ---
+[Upload in blocks]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/upload/) | Begins an upload of a file in blocks.
+[Block of a stateless upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/upload/) | Uploads a block of a file identified by its file reference.
+[Commit a stateless upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/file/version/size/uploadcommit/) | Sets the uploaded content as the content of a file of an object.
 
 ### Example
 

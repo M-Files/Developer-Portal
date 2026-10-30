@@ -65,7 +65,7 @@ Item | Description
 [StackTraceElement](stacktraceelement/) | M-Files Web Service error stack trace element.
 [StatusResponse](statusresponse/) | Response for status requests.
 [TypedValue](typedvalue/) | A `typed value` represents a value, such as text, number, date or lookup item.
-[UploadInfo](uploadinfo/) | Contains the information on a temporary upload.
+[UploadInfo](uploadinfo/) | Contains the information on an uploaded file.
 [ValueListItem](valuelistitem/) | Based on M-Files API. 
 [Vault](vault/) | Vault information.
 [WebServiceError](webserviceerror/) | M-Files Web Service error object.

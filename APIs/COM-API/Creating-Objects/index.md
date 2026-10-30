@@ -180,6 +180,57 @@ var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
 	CheckIn: true );
 ```
 
+## Creating a document from a file reference
+
+In M-Files MFILES_VERSION_TBD and later, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID. Source files cannot be given as file references, so create the object without checking it in, add an empty file, commit the uploaded content to it with [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html), and then check the object in.
+
+The stateless file upload requires the [server interface mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server) and a gRPC connection to the server. Use [IsFileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html) to check whether it can be used.
+{:.note}
+
+```csharp
+// The vault is connected in the server interface mode, and the property values
+// are defined as in the samples above.
+// ref: http://developer.m-files.com/APIs/COM-API/#api-modes-client-vs-server
+
+// Upload the content and get its file reference.
+// Use FileUploadBegin, FileUploadBlock and FileUploadEnd instead for large files.
+var content = File.ReadAllBytes(@"C:\temp\test.txt");
+var fileRef = vault.ObjectFileOperations.FileUploadWhole(content);
+
+// Create the document without files, and do not check it in yet.
+var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
+	(int) MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
+	propertyValues,
+	new MFilesAPI.SourceObjectFiles(),
+	SFD: false,
+	CheckIn: false );
+try
+{
+	// Add an empty file and commit the uploaded content to it.
+	var fileVer = vault.ObjectFileOperations.AddEmptyFile(
+		objectVersion.ObjVer,
+		Title: "My test document",
+		Extension: "txt");
+	vault.ObjectFileOperations.FileUploadCommit(
+		FileRef: fileRef,
+		ObjID: objectVersion.ObjVer.ObjID,
+		FileVer: fileVer,
+		LogicalSize: content.LongLength);
+
+	// The document now has exactly one file, so make it a single-file-document.
+	vault.ObjectOperations.SetSingleFileObject(objectVersion.ObjVer, SingleFile: true);
+
+	// Check the object in.
+	vault.ObjectOperations.CheckIn(objectVersion.ObjVer);
+}
+catch
+{
+	// Do not leave the new object checked out.
+	vault.ObjectOperations.UndoCheckout(objectVersion.ObjVer);
+	throw;
+}
+```
+
 ## Creating a non-document-object
 
 In the sample below, an `Employee` is created instead of a document.  The employee has no files, but requires us to provide a property value to state whether or not they are a supervisor:

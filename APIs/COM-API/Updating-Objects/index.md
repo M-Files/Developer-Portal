@@ -112,6 +112,45 @@ vault.ObjectOperations.CheckIn(checkedOutObjectVersion.ObjVer);
 
 ```
 
+## Replacing the content of a file with a file reference
+
+In M-Files MFILES_VERSION_TBD and later, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID and does not need a sticky session to the server. [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html) then sets the content of a file in the checked-out object. It replaces `UploadFileCommitEx` and the other upload session methods, which are obsolete.
+
+The stateless file upload requires the [server interface mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server) and a gRPC connection to the server. Use [IsFileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html) to check whether it can be used.
+{:.note}
+
+```csharp
+// The vault is connected in the server interface mode.
+// ref: http://developer.m-files.com/APIs/COM-API/#api-modes-client-vs-server
+
+// We want to alter the document with ID 664.
+var objID = new MFilesAPI.ObjID();
+objID.SetIDs(
+	ObjType: (int)MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
+	ID: 664);
+
+// Upload the new content and get its file reference.
+// Use FileUploadBegin, FileUploadBlock and FileUploadEnd instead for large files.
+var content = File.ReadAllBytes(@"C:\temp\test.txt");
+var fileRef = vault.ObjectFileOperations.FileUploadWhole(content);
+
+// Check out the object.
+var checkedOutObjectVersion = vault.ObjectOperations.CheckOut(objID);
+
+// Commit the uploaded content to the first file of the object.
+var file = vault.ObjectFileOperations.GetFiles(checkedOutObjectVersion.ObjVer)[1];
+vault.ObjectFileOperations.FileUploadCommit(
+	FileRef: fileRef,
+	ObjID: objID,
+	FileVer: file.FileVer,
+	LogicalSize: content.LongLength);
+
+// Check the object back in.
+vault.ObjectOperations.CheckIn(checkedOutObjectVersion.ObjVer);
+```
+
+To add a new file instead, add an empty file with [AddEmptyFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~AddEmptyFile.html) and commit the uploaded content to the file version that it returns.
+
 ## Converting between single-file and multi-file
 
 Occasionally it is required to alter a document from a [single-file document to a multi-file document](https://www.m-files.com/user-guide/latest/eng/MFD_SFD.html?hl=single-file%2Cdocument).  To do this, either use [SetSingleFileObject](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectOperations~SetSingleFileObject.html), or alter [property 22 (MFBuiltInPropertyDefSingleFileObject)](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~MFBuiltInPropertyDef.html).

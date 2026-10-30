@@ -29,6 +29,10 @@ Output: | [ObjectFile[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/obje
 Input: | Stream: `application/octet-stream` or `multipart/form-data`
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/)
 | Adds a new file to the object. 
+Parameters: | `?statelessUpload` (optional, defaulting to `false`) - If `true` and the server supports it, the content is uploaded with the stateless upload (M-Files MFILES_VERSION_TBD and later).
+
+To add files that were uploaded earlier, by their file references, use [/objects/(type)/(objectid)/(version)/files/upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/upload/).
+{:.remark}
 
 ### Sub-Resources
 
@@ -36,3 +40,4 @@ Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/obj
 Item | Description
 --- | ---
 [Object file]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/) | A single file on an object.
+[Add uploaded files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/upload/) | Adds previously uploaded files to the object.
