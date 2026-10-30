@@ -37,11 +37,6 @@ var useFileRefs = vault.ObjectFileOperations.IsFileUploadStatelessSupported();
 ```csharp
 var content = File.ReadAllBytes(@"C:\temp\test.txt");
 var fileRef = vault.ObjectFileOperations.FileUploadWhole(content);
-
-// Calculate the MD5 checksum of the uploaded content for FileUploadCommit.
-byte[] checksum;
-using (var md5 = System.Security.Cryptography.MD5.Create())
-	checksum = md5.ComputeHash(content);
 ```
 
 ## Uploading a large file in blocks
@@ -60,12 +55,8 @@ var fileRef = vault.ObjectFileOperations.FileUploadBegin(
 	MaxBlockSize: out long maxBlockSize,
 	RequireSequentialBlocks: out bool requireSequentialBlocks);
 
-// Upload the blocks in order, and calculate the MD5 checksum of the content
-// for FileUploadCommit while reading it.
+// Upload the blocks in order.
 long blockCount = 0;
-byte[] checksum;
-using (var md5 = System.Security.Cryptography.IncrementalHash.CreateHash(
-	System.Security.Cryptography.HashAlgorithmName.MD5))
 using (var stream = File.OpenRead(filePath))
 {
 	var buffer = new byte[maxBlockSize];
@@ -75,11 +66,9 @@ using (var stream = File.OpenRead(filePath))
 		var block = buffer;
 		if (read < buffer.Length)
 			Array.Resize(ref block, read);  // Only the last block can be smaller.
-		md5.AppendData(block);
 		vault.ObjectFileOperations.FileUploadBlock(fileRef, blockCount, block);
 		blockCount++;
 	}
-	checksum = md5.GetHashAndReset();
 }
 
 // End the upload.
@@ -90,18 +79,11 @@ vault.ObjectFileOperations.FileUploadEnd(fileRef, blockCount);
 
 An ended upload does not belong to any object yet. Use the file reference with:
 
-* [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html) to commit the content to a file in a checked-out object. See [Updating objects]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/#replacing-the-content-of-a-file-with-a-file-reference) and [Creating objects]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/#creating-a-document-from-a-file-reference).
+* [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html) to set the content of a file in a checked-out object. See [Updating objects]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/#replacing-the-content-of-a-file-with-a-file-reference) and [Creating objects]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/#creating-a-document-from-a-file-reference).
 * [GetAutomaticMetadataForUploadedFiles](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultAutomaticMetadataOperations~GetAutomaticMetadataForUploadedFiles.html) to get metadata suggestions for the uploaded files.
 * [CompareWithUploadedFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultDocumentComparisonOperations~CompareWithUploadedFile.html) to compare a document in the vault with the uploaded file.
 
 A file reference has no file name, so these methods take the file extension or file name as a separate parameter where needed.
-
-## The checksum of the file
-
-[FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html) requires the 16-byte MD5 checksum of the whole content. Calculate it from the exact bytes that were uploaded, while reading them for the upload, as in the samples above. The server stores it as the checksum of the file, which M-Files uses, for example, to find duplicate files.
-
-Depending on where the vault stores its file data, the server may store the checksum without reading the content again to verify it. A wrong checksum stays with the file and can make later checksum verifications of the file fail.
-{:.note.warning}
 
 ## Moving from upload IDs to file references
 
@@ -111,7 +93,7 @@ Depending on where the vault stores its file data, the server may store the chec
 | `UploadTemporaryFileBlockBegin`, `UploadFileBlockBegin` (and `_32bit`) | `FileUploadBegin` |
 | `UploadTemporaryFileBlock`, `UploadFileBlock` (and `_32bit`) | `FileUploadBlock` (blocks by index, not by byte offset) |
 | `UploadTemporaryFileCommit` (and `_32bit`) | `FileUploadEnd` |
-| `UploadFileCommit`, `UploadFileCommitEx` (and `_32bit`, `_32bitEx`) | `FileUploadEnd` + `FileUploadCommit` (with the MD5 checksum of the content) |
+| `UploadFileCommit`, `UploadFileCommitEx` (and `_32bit`, `_32bitEx`) | `FileUploadEnd` + `FileUploadCommit` |
 | `CloseUploadSession` | Not needed: there is no session to close |
 | `GetAutomaticMetadataForTemporaryFile(s)`, `GetAutomaticMetadata` with upload IDs | `GetAutomaticMetadataForUploadedFiles` |
 | `CompareWithTemporaryFile` | `CompareWithUploadedFile` |

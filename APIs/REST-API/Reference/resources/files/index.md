@@ -28,9 +28,6 @@ Parameters: | `?statelessUpload` (optional, defaulting to `false`) - If `true`, 
 With `?statelessUpload=true`, the returned [UploadInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/uploadinfo/) contains a `FileRef` instead of an `UploadID`. A file reference can be used on any server instance, so the requests that use it do not need a sticky session (session affinity) to the server that received the upload. Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later; use file references whenever the server supports them ([ServerVaultCapabilities]({{ site.baseurl }}/APIs/REST-API/Reference/structs/servervaultcapabilities/).`FileUploadStatelessSupported`). If the server does not support the stateless upload, the parameter is ignored and an `UploadID` is returned.
 {:.remark}
 
-With `?statelessUpload=true`, the returned UploadInfo also contains the `Checksum` of the file, which adding the file to an object requires. Pass the returned UploadInfo as is.
-{:.remark}
-
 To upload a large file in several requests, use [/files/upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/upload/).
 {:.remark}
 

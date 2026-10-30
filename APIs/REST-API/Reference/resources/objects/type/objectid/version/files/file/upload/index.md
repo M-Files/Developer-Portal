@@ -22,7 +22,7 @@ Note that PUT and DELETE verbs may not be supported in IIS; it is recommended to
 
 {:.method}
 Input: | [UploadInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/uploadinfo/)
-| The uploaded file, identified by its `FileRef` with its `Checksum` (or by obsolete `UploadID`), with its `Size`. If the `Title` or `Extension` differs from the file, the file is renamed.
+| The uploaded file, identified by its `FileRef` (or obsolete `UploadID`), with its `Size`. If the `Title` or `Extension` differs from the file, the file is renamed.
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/)
 | The updated object version.
 

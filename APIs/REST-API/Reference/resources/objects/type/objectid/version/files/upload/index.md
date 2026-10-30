@@ -19,7 +19,7 @@ Adds previously uploaded files to an object.
 
 {:.method}
 Input: | [UploadInfo[]]({{ site.baseurl }}/APIs/REST-API/Reference/structs/uploadinfo/)
-| The uploaded files, each identified by its `FileRef` with its `Checksum` (or by obsolete `UploadID`), with its `Title`, `Extension` and `Size`.
+| The uploaded files, each identified by its `FileRef` (or obsolete `UploadID`), with its `Title`, `Extension` and `Size`.
 Output: | [ExtendedObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/extendedobjectversion/)
 | The updated object version.
 

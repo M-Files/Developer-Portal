@@ -15,7 +15,7 @@ Specifies the information required when creating a new object.
 Type | Name | Description
 --- | --- | ---
 [PropertyValue[]](../propertyvalue/) | PropertyValues | Properties for the new object. 
-[UploadInfo[]](../uploadinfo/) | Files | References previously uploaded files, each by its `FileRef` with its `Checksum` (M-Files MFILES_VERSION_TBD and later) or by obsolete `UploadID`. 
+[UploadInfo[]](../uploadinfo/) | Files | References previously uploaded files, each by its `FileRef` (M-Files MFILES_VERSION_TBD and later) or obsolete `UploadID`. 
 
 Upload the files to [/files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/) with `?statelessUpload=true` to get file references. File references can be used on any server instance, so the object creation needs no sticky session to the server that received the uploads.
 {:.remark}
