@@ -14,7 +14,7 @@ M-Files has published a number of public samples within our [MFilesSamplesAndLib
 More information on the <a href="COM-API">COM API samples</a> is available in the dedicated page.
 {:.note}
 
-The COM API is our most comprehensive API and can be used to create almost any solution that retrieves or processes information within M-Files.
+The COM API can be used to create almost any solution that retrieves or processes information within M-Files.
 
 ## REST API
 

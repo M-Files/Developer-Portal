@@ -17,11 +17,21 @@ M-Files provides significant built-in functionality which can be used by develop
 
 ## Our APIs
 
-M-Files provides two Application Programming Interfaces for developers: the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) and the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/). The choice of which to use in each scenario will depend upon the technology you are using and the operations that you wish to undertake.
+M-Files provides three Application Programming Interfaces for developers: the [gRPC API]({{ site.baseurl }}/APIs/gRPC-API/), the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) and the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/). The choice of which to use in each scenario will depend upon the technology you are using and the operations that you wish to undertake.
+
+### gRPC API
+
+* The complete interface to M-Files Server: the API that the M-Files clients and M-Files Admin use, providing interfaces for both "user" and "administrative" functions.
+* Can be called from any language and operating system that has a gRPC implementation; quickstarts and samples are available for C#, Python and Go.
+* Works with both M-Files Cloud and on-premises servers.
+* The COM/.NET API and the M-Files Web Service are layers on top of the same server interface and expose much, but not all, of its functionality.
+
+More information is available in the [gRPC API section](/APIs/gRPC-API/).
+{:.note}
 
 ### COM/.NET API
 
-* Our most comprehensive API, providing interfaces for both "user" and "administrative" functions.
+* Provides interfaces for both "user" and "administrative" functions.
 * Can only be run on Windows, where the M-Files COM object can be made available.
 * Supports the same connection protocols as the desktop client.
 * Supports the same authentication schemes as the desktop client.
