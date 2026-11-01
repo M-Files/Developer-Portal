@@ -5,7 +5,11 @@ includeInSearch: true
 breadcrumb: APIs
 ---
 
-M-Files provides three Application Programming Interfaces for developers to communicate with: the [gRPC API]({{ site.baseurl }}/APIs/gRPC-API/), the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) and the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/). The choice of which to use in each scenario will depend upon the technology you are using and the operations that you wish to undertake.
+M-Files provides three Application Programming Interfaces for developers to communicate with: the [gRPC API]({{ site.baseurl }}/APIs/gRPC-API/), the [COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) and the [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/).
+
+**For new development, use the gRPC API**, especially when you build with AI coding agents. It is the complete and direct interface to M-Files Server, with no extra layer in between, so it offers the most functionality and the best performance. It can be called from any language and platform that has a gRPC implementation, and its documentation is written for coding agents as well as for people. Choose the COM/.NET API or the M-Files Web Service for new development only when a specific tool or technology calls for them.
+
+Code that runs inside M-Files, such as [Vault Application Framework]({{ site.baseurl }}/Frameworks/Vault-Application-Framework/) applications and [VBScript]({{ site.baseurl }}/Built-In/VBScript/) event handlers, uses the COM API that M-Files provides to it.
 
 ## [gRPC API]({{ site.baseurl }}/APIs/gRPC-API/)
 
