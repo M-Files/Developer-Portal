@@ -170,6 +170,28 @@
 		]
 	},
 	{
+		"Link": "/APIs/gRPC-API/",
+		"Icon": "mdi:api",
+		"Title": "gRPC API",
+		"Items": [{
+				"Link": "/APIs/gRPC-API/guides/quickstart-python/",
+				"Title": "Quickstarts"
+			},
+			{
+				"Link": "/APIs/gRPC-API/vault/",
+				"Title": "Vault API reference"
+			},
+			{
+				"Link": "/APIs/gRPC-API/admin/",
+				"Title": "Administration API reference"
+			},
+			{
+				"Link": "/APIs/gRPC-API/integration/",
+				"Title": "Server integration API reference"
+			}
+		]
+	},
+	{
 		"Link": "/APIs/COM-API/",
 		"Icon": "mdi:circle-outline",
 		"Title": "COM API",

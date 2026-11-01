@@ -1,0 +1,19 @@
+# M-Files Developer Portal
+
+> Documentation for developers who build on M-Files: the M-Files Server gRPC API, the COM API,
+> the REST API (M-Files Web Service), the Vault Application Framework, the User Interface
+> Extensibility Framework and built-in scripting. Every gRPC API page is also available as
+> Markdown at the same URL with index.md appended.
+
+## Platform overview
+
+- [Getting started](https://developer.m-files.com/Getting-Started/): the M-Files object model, vault structure, aliases and IDs.
+- [APIs](https://developer.m-files.com/APIs/): which API to use for what.
+
+## Other APIs and frameworks
+
+- [COM API](https://developer.m-files.com/APIs/COM-API/): the Windows API of M-Files, with user and administrative functions.
+- [REST API](https://developer.m-files.com/APIs/REST-API/): the M-Files Web Service.
+- [Vault Application Framework](https://developer.m-files.com/Frameworks/Vault-Application-Framework/): server-side vault applications.
+- [User Interface Extensibility Framework](https://developer.m-files.com/Frameworks/User-Interface-Extensibility-Framework/): client-side UI extensions.
+- [Built-in functionality](https://developer.m-files.com/Built-In/): VBScript and other built-in features.

@@ -1,0 +1,6 @@
+# The gRPC API documentation section (/APIs/gRPC-API/) is generated from the M-Files Server IDL
+# and added to the site at deploy time by .github/workflows/jekyll.yml. This file pins the release
+# whose asset is used. To publish a new version, change the release and asset here.
+repository: M-Files/Developer-Portal
+release: grpc-api-26.11
+asset: grpc-api-site-26.11.zip

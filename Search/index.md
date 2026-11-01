@@ -35,7 +35,15 @@ window.addEventListener("load", function()
 		}{% unless forloop.last %},{% endunless %}{% endfor %}
 	];
 
-  window.executeSearch();
+  /* The gRPC API section is generated outside Jekyll and brings its own search data.
+     (Block comment: the layout compresses the page onto one line.) */
+  fetch("{{ site.baseurl }}/APIs/gRPC-API/search-data.json")
+    .then(function(response) { return response.ok ? response.json() : []; })
+    .catch(function() { return []; })
+    .then(function(items) {
+      window.searchData = window.searchData.concat(items);
+      window.executeSearch();
+    });
 });
 
 </script>
