@@ -26,7 +26,7 @@ Input: | [UploadInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/uploadi
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/)
 | The updated object version.
 
-Upload the file first to [/files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/) or [/files/upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/upload/) with `?statelessUpload=true`, and pass the returned `FileRef`. File references can be used on any server instance, so this request needs no sticky session to the server that received the upload. File references require M-Files MFILES_VERSION_TBD or later; upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later.
+Upload the file first to [/files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/) or [/files/upload]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/upload/) with `?statelessUpload=true`, and pass the returned `FileRef`. File references can be used on any server instance, so this request needs no sticky session to the server that received the upload. File references require a server that supports the stateless upload; upload IDs are obsolete.
 {:.remark}
 
 If the object is not checked out, it is checked out for the replacement and checked in again after it.

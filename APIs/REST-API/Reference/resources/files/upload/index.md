@@ -2,7 +2,6 @@
 layout: mfws
 title: Upload in blocks
 includeInSearch: true
-minimumVersion: MFILES_VERSION_TBD
 ---
 
 # Upload in blocks
@@ -31,5 +30,5 @@ Upload the blocks of the file to [/files/fileref/(fileRef)/upload]({{ site.baseu
 An empty file (`Size` is `0`) has no blocks: it is uploaded completely by this request, and the returned `FileRef` can be used right away.
 {:.remark}
 
-Without `?statelessUpload=true`, or if the server does not support the stateless upload ([ServerVaultCapabilities]({{ site.baseurl }}/APIs/REST-API/Reference/structs/servervaultcapabilities/).`FileUploadStatelessSupported`), this request begins an upload session and returns an `UploadID` instead. Upload sessions are bound to the server instance that created them, so every request of the upload needs a sticky session to that server. Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later.
+Without `?statelessUpload=true`, or if the server does not support the stateless upload ([ServerVaultCapabilities]({{ site.baseurl }}/APIs/REST-API/Reference/structs/servervaultcapabilities/).`FileUploadStatelessSupported`), this request begins an upload session and returns an `UploadID` instead. Upload sessions are bound to the server instance that created them, so every request of the upload needs a sticky session to that server. Upload IDs are obsolete.
 {:.remark}

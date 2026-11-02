@@ -30,7 +30,7 @@ Input: | [ObjectCreationInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs
 Output: | [ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/)
 | Creates a new object. 
 
-The files of the new object are uploaded first to [/files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/), and referenced in `Files` of the [ObjectCreationInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectcreationinfo/). In M-Files MFILES_VERSION_TBD and later, upload them with `?statelessUpload=true` and reference them by their `FileRef`; upload IDs are obsolete.
+The files of the new object are uploaded first to [/files]({{ site.baseurl }}/APIs/REST-API/Reference/resources/files/), and referenced in `Files` of the [ObjectCreationInfo]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectcreationinfo/). When the server supports the stateless upload, upload them with `?statelessUpload=true` and reference them by their `FileRef`; upload IDs are obsolete.
 {:.remark}
 
 ### Example

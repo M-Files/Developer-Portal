@@ -7,7 +7,7 @@ breadcrumb: Uploading files
 
 This page explains how to upload file content to the server with the COM API: the stateless file upload, which identifies an upload by a **file reference**, and the older upload sessions, which identify an upload by an **upload ID**.
 
-Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later. Use file references in new code whenever the server supports them.
+Upload IDs are obsolete. Use file references in new code whenever the server supports them.
 {:.note.warning}
 
 ## Why file references replace upload IDs
@@ -22,7 +22,7 @@ The stateless file upload methods are available only when:
 
 * M-Files API is used in the [server interface mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server),
 * the connection to the server uses gRPC, and
-* the server is M-Files MFILES_VERSION_TBD or later and supports the stateless file upload ([ServerVaultCapabilities.FileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ServerVaultCapabilities~FileUploadStatelessSupported.html)).
+* the server supports the stateless file upload ([ServerVaultCapabilities.FileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~ServerVaultCapabilities~FileUploadStatelessSupported.html)).
 
 Call [IsFileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html) to check all of these at once. If it returns `false`, use the upload session methods.
 

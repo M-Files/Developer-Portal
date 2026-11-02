@@ -2,7 +2,6 @@
 layout: mfws
 title: Block of a stateless upload
 includeInSearch: true
-minimumVersion: MFILES_VERSION_TBD
 ---
 
 # Block of a stateless upload

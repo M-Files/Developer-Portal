@@ -182,7 +182,7 @@ var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
 
 ## Creating a document from a file reference
 
-In M-Files MFILES_VERSION_TBD and later, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID. Source files cannot be given as file references, so create the object without checking it in, add an empty file, commit the uploaded content to it with [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html), and then check the object in.
+When the server supports the stateless upload, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID. Source files cannot be given as file references, so create the object without checking it in, add an empty file, commit the uploaded content to it with [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html), and then check the object in.
 
 The stateless file upload requires the [server interface mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server) and a gRPC connection to the server. Use [IsFileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html) to check whether it can be used.
 {:.note}

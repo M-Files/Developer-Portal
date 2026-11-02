@@ -2,7 +2,6 @@
 layout: mfws
 title: Commit a stateless upload
 includeInSearch: true
-minimumVersion: MFILES_VERSION_TBD
 ---
 
 # Commit a stateless upload
@@ -30,5 +29,5 @@ The `fileRef` is the `FileRef` of an ended upload, from [/files]({{ site.baseurl
 If the object is not checked out, it is checked out for the commit and checked in again after it.
 {:.remark}
 
-This replaces `/files/(uploadID)/(file)/(version)/(size)/uploadcommit`, which commits an upload session by its upload ID. Upload IDs are obsolete in M-Files MFILES_VERSION_TBD and later.
+This replaces `/files/(uploadID)/(file)/(version)/(size)/uploadcommit`, which commits an upload session by its upload ID. Upload IDs are obsolete.
 {:.remark}
