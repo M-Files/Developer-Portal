@@ -79,7 +79,9 @@ vault.ObjectFileOperations.FileUploadEnd(fileRef, blockCount);
 
 An ended upload does not belong to any object yet. Use the file reference with:
 
-* [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html) to set the content of a file in a checked-out object. See [Updating objects]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/#replacing-the-content-of-a-file-with-a-file-reference) and [Creating objects]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/#creating-a-document-from-a-file-reference).
+* [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html) to replace the content of an existing file in a checked-out object. See [Updating objects]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/#replacing-the-content-of-a-file-with-a-file-reference).
+* [FileUploadAdd](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadAdd.html) to add a new file to a checked-out object. See [Updating objects]({{ site.baseurl }}/APIs/COM-API/Updating-Objects/#replacing-the-content-of-a-file-with-a-file-reference).
+* [SourceObjectFiles.AddUploadedFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SourceObjectFiles~AddUploadedFile.html) to create an object with the uploaded file as one of its source files. See [Creating objects]({{ site.baseurl }}/APIs/COM-API/Creating-Objects/#creating-a-document-from-a-file-reference).
 * [GetAutomaticMetadataForUploadedFiles](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultAutomaticMetadataOperations~GetAutomaticMetadataForUploadedFiles.html) to get metadata suggestions for the uploaded files.
 * [CompareWithUploadedFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultDocumentComparisonOperations~CompareWithUploadedFile.html) to compare a document in the vault with the uploaded file.
 
