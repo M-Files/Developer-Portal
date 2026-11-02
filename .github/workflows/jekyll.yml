@@ -47,6 +47,21 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Add the gRPC API documentation
+        # The gRPC API section is generated from the M-Files Server IDL and published as a release
+        # asset; _data/grpc-api.yml pins the release. It is added after the Jekyll build so that its
+        # Markdown files are served exactly as generated.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          read -r repo release asset < <(ruby -ryaml -e \
+            'c = YAML.load_file("_data/grpc-api.yml"); puts [c["repository"], c["release"], c["asset"]].join(" ")')
+          gh release download "$release" --repo "$repo" --pattern "$asset" --dir "$RUNNER_TEMP"
+          target="_site/APIs/gRPC-API"
+          mkdir -p "$target"
+          unzip -q "$RUNNER_TEMP/$asset" -d "$target"
+          cat "$target/llms-section.txt" >> _site/llms.txt
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v5
