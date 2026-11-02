@@ -149,7 +149,16 @@ vault.ObjectFileOperations.FileUploadCommit(
 vault.ObjectOperations.CheckIn(checkedOutObjectVersion.ObjVer);
 ```
 
-To add a new file instead, add an empty file with [AddEmptyFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~AddEmptyFile.html) and commit the uploaded content to the file version that it returns.
+To add a new file instead, use [FileUploadAdd](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadAdd.html). It creates the file in the checked-out object and commits the uploaded content in one call, so no empty file is left behind if the call fails. It returns the file version of the new file.
+
+```csharp
+var newFile = vault.ObjectFileOperations.FileUploadAdd(
+	ObjVer: checkedOutObjectVersion.ObjVer,
+	Title: "Attachment",
+	Extension: "pdf",
+	FileRef: fileRef,
+	Size: content.LongLength);
+```
 
 ## Converting between single-file and multi-file
 

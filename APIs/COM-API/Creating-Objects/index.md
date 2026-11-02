@@ -182,7 +182,7 @@ var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
 
 ## Creating a document from a file reference
 
-When the server supports the stateless upload, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID. Source files cannot be given as file references, so create the object without checking it in, add an empty file, commit the uploaded content to it with [FileUploadCommit](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~FileUploadCommit.html), and then check the object in.
+When the server supports the stateless upload, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID. Add the file reference to the source files with [AddUploadedFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SourceObjectFiles~AddUploadedFile.html). The object and its files are created in one call, so no empty file is left behind if the call fails, and a single-file-document can be created directly.
 
 The stateless file upload requires the [server interface mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server) and a gRPC connection to the server. Use [IsFileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html) to check whether it can be used.
 {:.note}
@@ -197,39 +197,24 @@ The stateless file upload requires the [server interface mode]({{ site.baseurl }
 var content = File.ReadAllBytes(@"C:\temp\test.txt");
 var fileRef = vault.ObjectFileOperations.FileUploadWhole(content);
 
-// Create the document without files, and do not check it in yet.
+// Give the uploaded file as a source file. The size is the exact size of the uploaded content.
+var sourceFiles = new MFilesAPI.SourceObjectFiles();
+sourceFiles.AddUploadedFile(
+	Title: "My test document",
+	Extension: "txt",
+	FileRef: fileRef,
+	Size: content.LongLength);
+
+// Create the single-file-document and check it in.
 var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
 	(int) MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
 	propertyValues,
-	new MFilesAPI.SourceObjectFiles(),
-	SFD: false,
-	CheckIn: false );
-try
-{
-	// Add an empty file and commit the uploaded content to it.
-	var fileVer = vault.ObjectFileOperations.AddEmptyFile(
-		objectVersion.ObjVer,
-		Title: "My test document",
-		Extension: "txt");
-	vault.ObjectFileOperations.FileUploadCommit(
-		FileRef: fileRef,
-		ObjID: objectVersion.ObjVer.ObjID,
-		FileVer: fileVer,
-		LogicalSize: content.LongLength);
-
-	// The document now has exactly one file, so make it a single-file-document.
-	vault.ObjectOperations.SetSingleFileObject(objectVersion.ObjVer, SingleFile: true);
-
-	// Check the object in.
-	vault.ObjectOperations.CheckIn(objectVersion.ObjVer);
-}
-catch
-{
-	// Do not leave the new object checked out.
-	vault.ObjectOperations.UndoCheckout(objectVersion.ObjVer);
-	throw;
-}
+	sourceFiles,
+	SFD: true,
+	CheckIn: true );
 ```
+
+The source files of an object cannot combine files given by a file reference with files given by a path. A file reference can be used only once.
 
 ## Creating a non-document-object
 
