@@ -13,6 +13,9 @@ The [M-Files Web Service (MFWS)]({{ site.baseurl }}/APIs/REST-API/) is a REST-li
 
 * Code interacting with the MFWS is not directly dependent on the M-Files sever version; as the server and MFWS are updated, it is unlikely that your code will require further changes.
 
+For new development, use the [gRPC API]({{ site.baseurl }}/APIs/gRPC-API/): it is the complete and direct interface to M-Files Server, and the M-Files Web Service is built on the COM API, a layer on top of it. Choose the M-Files Web Service for new development only when a specific tool or technology calls for it.
+{:.note}
+
 ## Setup
 
 The M-Files Web Service (MFWS) is part of the M-Files Classic Web Web.  Once M-Files Classic Web is correctly configured, the M-Files Web Service will be available to use.  More information on [setting up the M-Files Web and Mobile Access is available in our user guide](https://www.m-files.com/user-guide/latest/eng/Configure_M-Files_Web_Access.html).  Once configured the REST API is available within the M-Files Classic Web at `/REST/`.  If your Web Access has been configured in a subdirectory then remember to prefix that on all links (e.g. if it's in `/MFiles/` then your REST API is available within `/MFiles/REST/`).
