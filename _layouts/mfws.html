@@ -39,7 +39,7 @@ hljs.initHighlightingOnLoad();
         <div class="title"><a href="{{ site.baseurl }}/APIs/REST-API/Reference/">M-Files Web Service</a></div>
         <div class="breadcrumb">
 			
-			{% capture page_url_without_index_html %}{{ page.url | remove: "index.html" }}{% endcapture %}{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:2 }}{% endcapture %}{% for i in (1..forLoopMaxInt) %}{% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}{% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}{% for breadcrumb_page in site.pages %}{% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}{% assign j = forLoopMaxInt | plus: 0 %}
+			{% capture page_url_without_index_html %}{{ page.url | remove: "index.html" }}{% endcapture %}{% assign splitted_url_parts = page_url_without_index_html | split: '/' %}{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:2 }}{% endcapture %}{% for i in (1..forLoopMaxInt) %}{% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}{% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}{% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}{% assign bc_index_matches = site.pages | where: "url", current_breadcrumb_url %}{% assign bc_slash_matches = site.pages | where: "url", current_breadcrumb_md_url %}{% assign bc_matches = bc_index_matches | concat: bc_slash_matches %}{% for breadcrumb_page in bc_matches %}{% assign j = forLoopMaxInt | plus: 0 %}
 
 				{% if i > 3 %}
 
@@ -48,7 +48,7 @@ hljs.initHighlightingOnLoad();
 				{% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
 				<a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}" id="bc-{{ j }}">
 					{% if breadcrumb_page.breadcrumb == nil %}{{ breadcrumb_page.title }}{% else %}{{ breadcrumb_page.breadcrumb }}{% endif %}
-				</a>{% endif %}{% endif %}{% endfor %}{% endfor %}
+				</a>{% endif %}{% endfor %}{% endfor %}
 				
 				&gt; <span>{% if page.title %}{{ page.title }} {% endif %}</span>
 
