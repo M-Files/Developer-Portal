@@ -5,6 +5,9 @@ includeInSearch: true
 breadcrumb: COM/.NET API
 ---
 
+For new development, use the [gRPC API]({{ site.baseurl }}/APIs/gRPC-API/): it is the complete and direct interface to M-Files Server, and the COM API is a layer on top of it. Choose the COM API for new development only when a specific tool or technology calls for it. Vault Application Framework applications and VBScript event handlers use the COM API that M-Files provides to them.
+{:.note}
+
 The [M-Files COM/.NET API]({{ site.baseurl }}/APIs/COM-API/) can be used from any software that can interact with COM. It provides interfaces for many "user" and "administrative" functions; the [gRPC API]({{ site.baseurl }}/APIs/gRPC-API/) is the complete interface to M-Files Server.  The API is available on both 32-bit and 64-bit versions and is typically referenced from your code by adding a [reference to the nuget package](https://www.nuget.org/packages/Interop.MFilesAPI/) within your project:
 
 ![Adding a reference to the COM API](add-reference.png)
