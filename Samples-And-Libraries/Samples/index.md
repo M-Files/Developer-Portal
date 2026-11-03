@@ -9,6 +9,10 @@ Please note that these samples and libraries are provided "as-is" and with no wa
 
 M-Files has published a number of public samples within our [MFilesSamplesAndLibraries GitHub repository](https://github.com/M-Files/MFilesSamplesAndLibraries/tree/master/Samples#readme), which focus on achieving specific tasks using our public APIs or Frameworks.
 
+## gRPC API
+
+The [gRPC API documentation]({{ site.baseurl }}/APIs/gRPC-API/) has quickstarts and task recipes in Python, C# and Go, tested against M-Files Server and downloadable as one bundle. The gRPC API is the complete interface to M-Files Server and is recommended for new development.
+
 ## COM API
 
 More information on the <a href="COM-API">COM API samples</a> is available in the dedicated page.
