@@ -22,6 +22,9 @@ Collection of objects filtered by object type.
 Output: | [Results]({{ site.baseurl }}/APIs/REST-API/Reference/structs/resultst/)<[ObjectVersion]({{ site.baseurl }}/APIs/REST-API/Reference/structs/objectversion/)>
 | Retrieves objects of the given type. The amount of returned objects is limited by the server. See [/objects]( .. ) for how to further specify the objects. 
 
+Supply `orderBy=id` together with `limit` and `pageToken` to page through the entire result set in a stable order. See [Paging and sorting]({{ site.baseurl }}/APIs/REST-API/Paging-And-Sorting/).
+{:.remark}
+
 ### POST
 {:.method}
 

@@ -306,6 +306,10 @@
 				"Title": "Searching for objects"
 			},
 			{
+				"Link": "/APIs/REST-API/Paging-And-Sorting/",
+				"Title": "Paging and sorting object search results"
+			},
+			{
 				"Link": "/APIs/REST-API/Vault-Extension-Methods/",
 				"Title": "Vault Extension Methods"
 			},

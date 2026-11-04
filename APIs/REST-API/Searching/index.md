@@ -264,3 +264,7 @@ You can provide a querystring parameter to the search named `limit`, with a maxi
 
 Please note that this endpoint calls the [SearchForObjectsByConditionsEx](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectSearchOperations~SearchForObjectsByConditionsEx.html) API method and provides the limit value to the `MaxSearchResults` parameter. The timeout stays at the default (60 seconds), and the limitations described in the API endpoint are still applicable.
 {:.note}
+
+### Paging through large result sets
+
+Raising `limit` only caps how many objects are returned; it does not let you continue past that cap, and the results are not guaranteed to be in a stable order. To walk an entire large result set in a well-defined order — without skipping or duplicating objects — use the `orderBy=id` and `pageToken` parameters described on the [Paging and sorting]({{ site.baseurl }}/APIs/REST-API/Paging-And-Sorting/) page (M-Files 26.6 and later).

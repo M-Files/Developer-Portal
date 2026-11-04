@@ -25,6 +25,9 @@ Output: | [Results]({{ site.baseurl }}/APIs/REST-API/Reference/structs/resultst/
 Earlier 9.0.3372.x M-Files versions have an issue preventing the use of this resource.  The search within root view ([/views/objects]({{ site.baseurl }}/APIs/REST-API/Reference/resources/views/path/objects/)) resource is identical to this one and can be used as a working alternative.
 {:.remark}
 
+Supply `orderBy=id` together with `limit` and `pageToken` to page through the entire result set in a stable order. See [Paging and sorting]({{ site.baseurl }}/APIs/REST-API/Paging-And-Sorting/).
+{:.remark}
+
 ### Example
 
 <div class="sample" id="example-1">
