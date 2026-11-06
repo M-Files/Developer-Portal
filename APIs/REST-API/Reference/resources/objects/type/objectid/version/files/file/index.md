@@ -40,3 +40,4 @@ Item | Description
 [Contents]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/content/) | The contents of a single file. 
 [File name]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/title/) | The file name of an object file. 
 [File thumbnail]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/preview/) | File thumbnail. 
+[Replace with uploaded file]({{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/upload/) | Replaces the content of the file with a previously uploaded file.

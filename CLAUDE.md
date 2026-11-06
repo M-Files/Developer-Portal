@@ -8,6 +8,18 @@ The M-Files Developer Portal — a **Jekyll** site published to <https://develop
 - `_layouts/`, `_includes/` — HTML templates. `_data/` — data files (notably navigation). `styles/` — Sass. `scripts/` — JS.
 - Markdown is Kramdown (GFM). Styling is applied with Kramdown **inline attribute lists (IAL)** — e.g. `{:.note}`, `{:.note.warning}`, `{:.description}`. Match the classes already used on sibling pages.
 
+## Generated content: don't edit it here
+
+Some folders hold **generated output** from other repositories. Hand edits are overwritten at the next regeneration, and in the UIX build they don't even render fully. Each of these folders has a `_GENERATED.md` (not published, because of the leading `_`) that names the exact source files. Change the source and regenerate. If you can't, list the source changes that are needed instead of editing the output.
+
+| Generated here | Generator | Source |
+|---|---|---|
+| `APIs/COM-API/Reference/**` (`MFilesAPI~*.html`, `webtoc.html`, `webindex.html`, `ftsindex.js`) | Document! X | M-Files Core (GitLab `m-files/m-files`): `src/Build/Doc/MFilesAPIDocs/MFilesAPI.dxc` for topic text; `src/Shared/MFilesAPI/PublishedInterface*.idl` for members and summaries |
+| `Frameworks/User-Interface-Extensibility-Framework/Reference/**` (Docusaurus build; page text is also in `assets/js/*.js`) | M-Files Spec Collector (GitLab `R-n-D/utilities/m-files-spec-collector`); publish per its `RELEASING.md` | vNext (GitHub `M-Files-Cloud/m-files-vnext`) `MFCore/src/MFClientScript/` JSDoc for `UIExt2/**`; Spec Collector `test/source/mfiles.proto`, copied from Core `src/Build/IDL/gRPC/uiext/mfiles.combined.generated.proto` (from `src/Build/IDL/**/*.idl` comments), for `gRPC/**` |
+| `APIs/REST-API/Reference/MFWS_Samples.zip` and the `APIs/REST-API/Reference/**/samples/**/*.md` code snippets | MFWS documentation Runner in classic web (GitLab `m-files/m-files-web`, `MFWS Documentation/`) | `Documentation/spec_structs.tex` (structs in the C#/Java utilities), `MFiles.MFWS.Sample/*.cs` and `Samples.js` (samples) |
+
+Everything else in `APIs/REST-API/` (resource, struct and enum pages, and guides) is maintained by hand.
+
 ## The REST API reference (`APIs/REST-API/`)
 
 - `APIs/REST-API/Reference/resources/<url-path>/index.md` — one folder per URL segment. **Path parameters use parentheses**, e.g. `/objects/(type)/(objectid)` → folder `objects/type/objectid/`.

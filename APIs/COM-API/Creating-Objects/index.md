@@ -180,6 +180,42 @@ var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
 	CheckIn: true );
 ```
 
+## Creating a document from a file reference
+
+When the server supports the stateless upload, file content can be uploaded with the [stateless file upload]({{ site.baseurl }}/APIs/COM-API/Uploading-Files/), which identifies the upload by a file reference instead of an upload ID. Add the file reference to the source files with [AddUploadedFile](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~SourceObjectFiles~AddUploadedFile.html). The object and its files are created in one call, so no empty file is left behind if the call fails, and a single-file-document can be created directly.
+
+The stateless file upload requires the [server interface mode]({{ site.baseurl }}/APIs/COM-API/#api-modes-client-vs-server) and a gRPC connection to the server. Use [IsFileUploadStatelessSupported](https://developer.m-files.com/APIs/COM-API/Reference/index.html#MFilesAPI~VaultObjectFileOperations~IsFileUploadStatelessSupported.html) to check whether it can be used.
+{:.note}
+
+```csharp
+// The vault is connected in the server interface mode, and the property values
+// are defined as in the samples above.
+// ref: http://developer.m-files.com/APIs/COM-API/#api-modes-client-vs-server
+
+// Upload the content and get its file reference.
+// Use FileUploadBegin, FileUploadBlock and FileUploadEnd instead for large files.
+var content = File.ReadAllBytes(@"C:\temp\test.txt");
+var fileRef = vault.ObjectFileOperations.FileUploadWhole(content);
+
+// Give the uploaded file as a source file. The size is the exact size of the uploaded content.
+var sourceFiles = new MFilesAPI.SourceObjectFiles();
+sourceFiles.AddUploadedFile(
+	Title: "My test document",
+	Extension: "txt",
+	FileRef: fileRef,
+	Size: content.LongLength);
+
+// Create the single-file-document and check it in.
+var objectVersion = vault.ObjectOperations.CreateNewObjectEx(
+	(int) MFBuiltInObjectType.MFBuiltInObjectTypeDocument,
+	propertyValues,
+	sourceFiles,
+	SFD: true,
+	CheckIn: true );
+```
+
+The source files of an object cannot combine files given by a file reference with files given by a path. A file reference can be used only once.
+
 ## Creating a non-document-object
 
 In the sample below, an `Employee` is created instead of a document.  The employee has no files, but requires us to provide a property value to state whether or not they are a supervisor:
