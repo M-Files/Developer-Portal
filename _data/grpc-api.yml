@@ -2,5 +2,5 @@
 # and added to the site at deploy time by .github/workflows/jekyll.yml. This file pins the release
 # whose asset is used. To publish a new version, change the release and asset here.
 repository: M-Files/Developer-Portal
-release: grpc-api-26.11-r3
-asset: grpc-api-site-26.11-r3.zip
+release: grpc-api-26.11-r4
+asset: grpc-api-site-26.11-r4.zip
