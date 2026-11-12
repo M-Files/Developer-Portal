@@ -144,7 +144,7 @@ Errors follow the HTTP Problem Details format (RFC 7807):
 | Status | Meaning | Action |
 |--------|---------|--------|
 | 400 | Bad request — malformed payload or missing required fields | Fix the request body |
-| 401 | Unauthorized — token expired or invalid | Refresh the access token |
+| 401 | Unauthorized — token expired or invalid | Get a new access token (see [Authentication]({{ site.baseurl }}/APIs/EXTERNAL-API/Authentication/#running-a-program-continuously)) |
 | 403 | Forbidden — insufficient scope | Ensure token has `mfmasterstorage` scope |
 | 404 | Not found — object or file does not exist | Verify the IDs in the URL |
 | 413 | Payload too large — file exceeds 25 MB | Use the [SAS token flow]({{ site.baseurl }}/APIs/EXTERNAL-API/Large-File-Upload/) |
