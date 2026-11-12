@@ -62,6 +62,7 @@ This API is separate from the [M-Files Web Service (REST API)]({{ site.baseurl }
 
 ## Getting started
 
-1. [Obtain an access token]({{ site.baseurl }}/APIs/EXTERNAL-API/Authentication/)
-2. [Understand core concepts]({{ site.baseurl }}/APIs/EXTERNAL-API/Concepts/) (security context, property values, tags)
-3. [Create your first object]({{ site.baseurl }}/APIs/EXTERNAL-API/Creating-Objects/)
+1. [Quickstart]({{ site.baseurl }}/APIs/EXTERNAL-API/Quickstart/): create a client application and make your first call with ready-made scripts
+2. [Authentication]({{ site.baseurl }}/APIs/EXTERNAL-API/Authentication/): how programs get access tokens without anyone signing in
+3. [Understand core concepts]({{ site.baseurl }}/APIs/EXTERNAL-API/Concepts/) (security context, property values, tags)
+4. [Create your first object]({{ site.baseurl }}/APIs/EXTERNAL-API/Creating-Objects/)
