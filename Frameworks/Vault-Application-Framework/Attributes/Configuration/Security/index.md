@@ -11,8 +11,27 @@ If you are not inheriting from `ConfigurableVaultApplicationBase<T>` then the be
 
 ## Default configuration visibility
 
-By default any configuration exposed using the VAF 2.1 base class will be **visible** to both vault administrators and system administrators, but will only be **editable** by system administrators.  To allow vault administrators to change this, a [Security(ChangeBy = SecurityAttribute.UserLevel.VaultAdmin)] attribute should be added to the configuration class.
+By default any configuration exposed using the VAF 2.1 base class will be **visible** to both vault administrators and system administrators, but will only be **editable** by system administrators.  Applications can change the default editing level by overriding `GetConfigurationManager()` and supplying the desired `defaultLevel` to `SecureConfigurationManager<T>`.
 {:.note}
+
+The `[Security]` attribute applies to configuration properties and fields, not configuration classes or vault application classes.
+
+{% highlight csharp %}
+using MFiles.VAF.Configuration;
+using MFiles.VAF.Core;
+
+public class VaultApplication : ConfigurableVaultApplicationBase<Configuration>
+{
+	// Override the configuration manager creation to set the default
+	// security level to VaultAdmin instead of SystemAdmin.
+	protected override SecureConfigurationManager<Configuration> GetConfigurationManager()
+	{
+		return new SecureConfigurationManager<Configuration>(
+			this.GetType().FullName,
+			defaultLevel: SecurityAttribute.UserLevel.VaultAdmin);
+	}
+}
+{% endhighlight %}
 
 ## Restricting who can view and change configuration elements
 
@@ -61,6 +80,44 @@ namespace MyCompany.MyProduct.MyVaultApplication3
 	}
 }
 {% endhighlight %}
+
+## Nested configuration
+
+- A property's `ChangeBy` setting also applies to members of its nested object or collection elements unless a nested member has its own `[Security]` attribute.
+- A nested member's explicit `[Security]` replaces the inherited `ChangeBy` setting, allowing either stricter or less restrictive editing permissions.
+- If no property or field along the containing path has `[Security]`, the configuration manager's default editing level applies.
+- Only `ChangeBy` is inherited this way; `ViewBy` and `IsPassword` are not inherited.
+
+{% highlight csharp %}
+using System.Runtime.Serialization;
+using MFiles.VAF.Configuration;
+
+[DataContract]
+public class Configuration
+{
+	[DataMember]
+	[Security(ChangeBy = SecurityAttribute.UserLevel.VaultAdmin)]
+	public ConnectionSettings Connection { get; set; }
+}
+
+[DataContract]
+public class ConnectionSettings
+{
+	// Inherits VaultAdmin editing permission from Connection.
+	[DataMember]
+	public string Username { get; set; }
+
+	// Overrides the inherited permission: only system admins can edit.
+	[DataMember]
+	[Security(ChangeBy = SecurityAttribute.UserLevel.SystemAdmin)]
+	public string ServerAddress { get; set; }
+}
+{% endhighlight %}
+
+An explicit attribute defaults `ChangeBy` to `SystemAdmin`, so `[Security(IsPassword = true)]` does not preserve an inherited `VaultAdmin` editing permission.  Specify `ChangeBy` explicitly to preserve it, for example `[Security(IsPassword = true, ChangeBy = SecurityAttribute.UserLevel.VaultAdmin)]`.
+{:.note.warning}
+
+Adding or removing an entire nested object is also checked against the containing property's permission, even when individual members allow less restrictive editing.
 
 ## Passwords within configuration elements
 
