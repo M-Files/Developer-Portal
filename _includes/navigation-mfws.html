@@ -41,8 +41,10 @@
 								<li class="nav-item" id="nav-resources-objects-type-objectid-version-files-file-content" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/content/">Contents</a></li>
 								<li
 								 class="nav-item" id="nav-resources-objects-type-objectid-version-files-file-title" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/title/">File name</a></li>
+								<li class="nav-item" id="nav-resources-objects-type-objectid-version-files-file-upload" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/upload/">Replace with uploaded file</a></li>
 						<li
 						 class="nav-item" id="nav-resources-objects-type-objectid-version-files-file-preview" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/file/preview/">File thumbnail</a></li>
+						<li class="nav-item" id="nav-resources-objects-type-objectid-version-files-upload" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/objects/type/objectid/version/files/upload/">Add uploaded files</a></li>
 		</ul>
 </li>
 </ul>
@@ -120,7 +122,13 @@
 							 class="nav-item" id="nav-resources-session-vaults" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/session/vaults/">Vaults</a></li>
 					</ul>
 					</li>
-					<li class="nav-item" id="nav-resources-files" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/files/">Temporary upload</a></li>
+					<li class="nav-item" id="nav-resources-files" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/files/">Temporary upload</a>
+						<ul class="nav-children">
+							<li class="nav-item" id="nav-resources-files-upload" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/files/upload/">Upload in blocks</a></li>
+							<li class="nav-item" id="nav-resources-files-fileref-upload" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/upload/">Block of a stateless upload</a></li>
+							<li class="nav-item" id="nav-resources-files-fileref-uploadcommit" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/files/fileref/fileref/file/version/size/uploadcommit/">Commit a stateless upload</a></li>
+						</ul>
+					</li>
 					<li class="nav-item" id="nav-resources-structure" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/">Vault structure</a>
 						<ul class="nav-children">
 								<li class="nav-item" id="nav-resources-structure-classes" rel="resource"><a class="title" href="{{ site.baseurl }}/APIs/REST-API/Reference/resources/structure/itemidbyalias/">Alias to ID</a></li>
