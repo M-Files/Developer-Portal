@@ -141,7 +141,7 @@ var checkedOutObjectVersion = vault.ObjectOperations.CheckOut(objID);
 var file = vault.ObjectFileOperations.GetFiles(checkedOutObjectVersion.ObjVer)[1];
 vault.ObjectFileOperations.FileUploadCommit(
 	FileRef: fileRef,
-	ObjID: objID,
+	ObjVer: checkedOutObjectVersion.ObjVer,
 	FileVer: file.FileVer,
 	LogicalSize: content.LongLength);
 
