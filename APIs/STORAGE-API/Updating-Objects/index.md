@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Updating Objects — External Storage API
+title: Updating Objects — Storage API
 includeInSearch: true
 breadcrumb: Updating Objects
 ---
@@ -9,7 +9,7 @@ breadcrumb: Updating Objects
 PUT /storage/external/v1/vaults/{vaultId}/objects/{typeId}/{objectId}
 ```
 
-Creates or updates (upserts) an object. If an object with the given GUID exists it is updated; otherwise a new object is created. Supports both JSON-only and multipart formats, identical to [Creating Objects]({{ site.baseurl }}/APIs/EXTERNAL-API/Creating-Objects/).
+Creates or updates (upserts) an object. If an object with the given GUID exists it is updated; otherwise a new object is created. Supports both JSON-only and multipart formats, identical to [Creating Objects]({{ site.baseurl }}/APIs/STORAGE-API/Creating-Objects/).
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -52,7 +52,7 @@ curl -X PUT \
           "value": {
             "lookups": [
               {
-                "name": "TestBasicObject",
+                "name": "Archived Contract",
                 "guid": "1BD819F8-33B8-47B8-8157-10EBF403AB53",
                 "objId": { "objType": 1, "id": 94 }
               }
@@ -89,13 +89,13 @@ curl -X PUT \
   -F 'propertyValues=[
     {"propertyDef":0,"value":{"dataType":"text","value":{"text":"Updated Report"}}},
     {"propertyDef":25,"value":{"dataType":"lookup","value":{"lookups":[{"name":"John Smith","guid":"e98c7224-8ee5-417b-8ca9-f8ba04bb0352","objId":{"objType":6,"id":20}}]}}},
-    {"propertyDef":100,"value":{"dataType":"lookup","value":{"lookups":[{"name":"TestBasicObject","guid":"1BD819F8-33B8-47B8-8157-10EBF403AB53","objId":{"objType":1,"id":94}}]}}}
+    {"propertyDef":100,"value":{"dataType":"lookup","value":{"lookups":[{"name":"Archived Contract","guid":"1BD819F8-33B8-47B8-8157-10EBF403AB53","objId":{"objType":1,"id":94}}]}}}
   ]' \
   -F 'securityContextObject={"objType":101,"id":23}' \
   -F "file=@/path/to/updated-report.pdf"
 ```
 
-The same [multipart rules]({{ site.baseurl }}/APIs/EXTERNAL-API/Creating-Objects/#multipart-rules) apply as for POST.
+The same [multipart rules]({{ site.baseurl }}/APIs/STORAGE-API/Creating-Objects/#multipart-rules) apply as for POST.
 
 ## Behavior
 

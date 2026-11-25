@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Creates, rotates or removes a client application for the M-Files External Storage API.
+    Creates, rotates or removes a client application for the M-Files Storage API.
 
 .DESCRIPTION
     A client application is a login for a program, not for a person. It has a client ID and a
@@ -34,13 +34,13 @@
     Deletes the saved client application and its saved credentials.
 
 .EXAMPLE
-    .\New-ExternalApiClient.ps1 -SubscriptionId 123-45678901 -VaultGuid 2f0b7c4e-0000-0000-0000-000000000000
+    .\New-StorageApiClient.ps1 -SubscriptionId 123-45678901 -VaultGuid 2f0b7c4e-0000-0000-0000-000000000000
 
 .EXAMPLE
-    .\New-ExternalApiClient.ps1 -SubscriptionId 123-45678901 -RotateSecret
+    .\New-StorageApiClient.ps1 -SubscriptionId 123-45678901 -RotateSecret
 
 .EXAMPLE
-    .\New-ExternalApiClient.ps1 -SubscriptionId 123-45678901 -Remove
+    .\New-StorageApiClient.ps1 -SubscriptionId 123-45678901 -Remove
 
 .NOTES
     TEMPORARY SOLUTION: this way of creating client applications is temporary until a full
@@ -56,14 +56,14 @@ param(
     [string[]] $VaultGuid,
 
     [Parameter(ParameterSetName = 'Create')]
-    [string] $Name = 'External API client',
+    [string] $Name = 'Storage API client',
 
     # Days until the secret expires. Rotate the secret before that.
     [Parameter(ParameterSetName = 'Create')]
     [ValidateRange(1, 3650)]
     [int] $ValidityDays = 90,
 
-    # 1027 = full control + log in + internal user. The External Storage API requires full vault access.
+    # 1027 = full control + log in + internal user. The Storage API requires full vault access.
     [Parameter(ParameterSetName = 'Create')]
     [int] $VaultRoles = 1027,
 
@@ -78,7 +78,7 @@ param(
     [switch] $CheckBrowser,
 
     # Where the encrypted client ID and secret are saved.
-    [string] $CredentialFile = (Join-Path $env:LOCALAPPDATA 'M-Files\ExternalApi\client.xml'),
+    [string] $CredentialFile = (Join-Path $env:LOCALAPPDATA 'M-Files\StorageApi\client.xml'),
 
     # Overwrite an existing credential file when creating.
     [switch] $Force,
@@ -328,4 +328,4 @@ if ($ShowSecret) {
     Write-Host 'Store the secret in a secret store. Do not put it in source code.' -ForegroundColor Yellow
 }
 Write-Host ''
-Say 'Next: .\Get-ExternalApiToken.ps1   (a new client can take up to a minute before its first token works)'
+Say 'Next: .\Get-StorageApiToken.ps1   (a new client can take up to a minute before its first token works)'

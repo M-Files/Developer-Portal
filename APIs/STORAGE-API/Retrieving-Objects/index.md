@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Retrieving Objects — External Storage API
+title: Retrieving Objects — Storage API
 includeInSearch: true
 breadcrumb: Retrieving Objects
 ---

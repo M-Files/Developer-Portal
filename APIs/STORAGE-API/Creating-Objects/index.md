@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Creating Objects — External Storage API
+title: Creating Objects — Storage API
 includeInSearch: true
 breadcrumb: Creating Objects
 ---
@@ -9,9 +9,9 @@ breadcrumb: Creating Objects
 POST /storage/external/v1/vaults/{vaultId}/objects/{typeId}
 ```
 
-Creates a new object in the vault. Two content types are supported: JSON-only (no files) and multipart (with files).
+Creates a new Record in the vault. Two content types are supported: JSON-only (no files) and multipart (with files).
 
-Every request must include `propertyValues` and `securityContextObject`. The security context object determines which Advanced object's ACL controls access to the new object. See [Concepts]({{ site.baseurl }}/APIs/EXTERNAL-API/Concepts/) for details.
+Every request must include `propertyValues` and `securityContextObject`, the workspace the Record belongs to. The Record inherits the workspace's permissions. See [Concepts]({{ site.baseurl }}/APIs/STORAGE-API/Concepts/) for details.
 {:.note.warning}
 
 ## Option 1 — JSON only (no files)
@@ -53,7 +53,7 @@ curl -X POST \
           "value": {
             "lookups": [
               {
-                "name": "TestBasicObject",
+                "name": "Archived Contract",
                 "guid": "1BD819F8-33B8-47B8-8157-10EBF403AB53",
                 "objId": { "objType": 1, "id": 94 }
               }
@@ -105,7 +105,7 @@ Host: <host>
         "value": {
           "lookups": [
             {
-              "name": "TestBasicObject",
+              "name": "Archived Contract",
               "guid": "1BD819F8-33B8-47B8-8157-10EBF403AB53",
               "objId": { "objType": 1, "id": 94 }
             }
@@ -146,7 +146,7 @@ curl -X POST \
   -F 'propertyValues=[
     {"propertyDef":0,"value":{"dataType":"text","value":{"text":"Quarterly Report Q1 2025"}}},
     {"propertyDef":25,"value":{"dataType":"lookup","value":{"lookups":[{"name":"John Smith","guid":"e98c7224-8ee5-417b-8ca9-f8ba04bb0352","objId":{"objType":6,"id":20}}]}}},
-    {"propertyDef":100,"value":{"dataType":"lookup","value":{"lookups":[{"name":"TestBasicObject","guid":"1BD819F8-33B8-47B8-8157-10EBF403AB53","objId":{"objType":1,"id":94}}]}}}
+    {"propertyDef":100,"value":{"dataType":"lookup","value":{"lookups":[{"name":"Archived Contract","guid":"1BD819F8-33B8-47B8-8157-10EBF403AB53","objId":{"objType":1,"id":94}}]}}}
   ]' \
   -F 'securityContextObject={"objType":101,"id":23}' \
   -F "file=@/path/to/report.pdf" \
@@ -192,7 +192,7 @@ Content-Type: application/json
       "value": {
         "lookups": [
           {
-            "name": "TestBasicObject",
+            "name": "Archived Contract",
             "guid": "1BD819F8-33B8-47B8-8157-10EBF403AB53",
             "objId": { "objType": 1, "id": 94 }
           }
@@ -231,12 +231,12 @@ Multipart requests are processed asynchronously. The 202 status indicates the re
 * The `propertyValues` part **must come before** the file parts
 * The `securityContextObject` part **must come before** the file parts
 * Metadata part name must be `propertyValues` or `data`
-* Security context part name must be `securityContextObject`
+* The workspace part name must be `securityContextObject`
 * File part name must be `file` or `files`
 * The `propertyValues` JSON must be a bare array `[...]`
 * Multiple files can be included in a single request
 * PropertyDef 22 (Single file) is auto-calculated from file count — **do not send it**
-* Max file size for direct upload: **25 MB** (use the [SAS token flow]({{ site.baseurl }}/APIs/EXTERNAL-API/Large-File-Upload/) for larger files)
+* Max file size for direct upload: **25 MB** (use the [SAS token flow]({{ site.baseurl }}/APIs/STORAGE-API/Large-File-Upload/) for larger files)
 
 ## Request body reference
 
@@ -251,8 +251,8 @@ Multipart requests are processed asynchronously. The 202 status indicates the re
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `objType` | int | Object type ID of the security context object |
-| `id` | int | Object ID of the security context object |
+| `objType` | int | Object type ID of the workspace |
+| `id` | int | Object ID of the workspace |
 
 ## Full metadata example
 
@@ -295,7 +295,7 @@ The following example uses values from a test vault. Adjust property IDs, class 
             {
               "objId": { "objType": 1, "id": 94 },
               "guid": "1BD819F8-33B8-47B8-8157-10EBF403AB53",
-              "name": "TestBasicObject"
+              "name": "Archived Contract"
             }
           ]
         }

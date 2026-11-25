@@ -1,29 +1,29 @@
 <#
 .SYNOPSIS
-    Gets an access token for the M-Files External Storage API with a client application's
+    Gets an access token for the M-Files Storage API with a client application's
     client ID and secret (OAuth 2.0 client credentials). Nobody signs in.
 
 .DESCRIPTION
     The client ID and secret are taken from, in this order:
       1. -ClientId and -ClientSecret
       2. Environment variables MFILES_CLIENT_ID and MFILES_CLIENT_SECRET
-      3. The file saved by New-ExternalApiClient.ps1
+      3. The file saved by New-StorageApiClient.ps1
 
     The script returns an object with the token and when it expires, and prints a short summary.
     It prints the token itself only with -Raw.
 
     Tokens are valid for about one hour. There is no refresh token: when a token is about to
-    expire, run this again (Invoke-ExternalApiDemo.ps1 shows how a program does that).
+    expire, run this again (Invoke-StorageApiDemo.ps1 shows how a program does that).
 
 .EXAMPLE
-    .\Get-ExternalApiToken.ps1
+    .\Get-StorageApiToken.ps1
 
 .EXAMPLE
-    $token = (.\Get-ExternalApiToken.ps1 -Quiet).AccessToken
+    $token = (.\Get-StorageApiToken.ps1 -Quiet).AccessToken
 
 .EXAMPLE
     $env:MFILES_CLIENT_ID = 'subapp,<guid>'; $env:MFILES_CLIENT_SECRET = '<secret>'
-    .\Get-ExternalApiToken.ps1
+    .\Get-StorageApiToken.ps1
 
 .NOTES
     Provided as a sample, as-is, without warranty. Works on Windows, macOS and Linux (PowerShell 7).
@@ -32,7 +32,7 @@
 param(
     [string] $ClientId,
     [securestring] $ClientSecret,
-    [string] $CredentialFile = $(if ($env:LOCALAPPDATA) { Join-Path $env:LOCALAPPDATA 'M-Files\ExternalApi\client.xml' }),
+    [string] $CredentialFile = $(if ($env:LOCALAPPDATA) { Join-Path $env:LOCALAPPDATA 'M-Files\StorageApi\client.xml' }),
     [string] $Authority = 'https://login.m-files.com',
     [string] $Scope = 'mfmasterstorage',
     # Keep retrying "invalid_client" for this long. Useful right after creating a client.
@@ -69,7 +69,7 @@ elseif ($CredentialFile -and (Test-Path $CredentialFile)) {
     $secret = [Net.NetworkCredential]::new('', $saved.Secret).Password
 }
 else {
-    throw 'No client ID and secret. Run New-ExternalApiClient.ps1, or set MFILES_CLIENT_ID and MFILES_CLIENT_SECRET.'
+    throw 'No client ID and secret. Run New-StorageApiClient.ps1, or set MFILES_CLIENT_ID and MFILES_CLIENT_SECRET.'
 }
 if ($ClientId -notmatch '^subapp,') { $ClientId = "subapp,$ClientId" }
 
@@ -108,7 +108,7 @@ function ConvertFrom-Base64Url([string]$s) {
 $claims = ConvertFrom-Base64Url ($resp.access_token.Split('.')[1]) | ConvertFrom-Json
 $rights = if ($claims.accessrights -is [string]) { $claims.accessrights | ConvertFrom-Json } else { $claims.accessrights }
 
-$fullAccess = [int64]274808663551     # vault access bits required by the External Storage API
+$fullAccess = [int64]274808663551     # vault access bits required by the Storage API
 $vaults = [ordered]@{}
 foreach ($p in @($rights.vault2.PSObject.Properties)) { $vaults[$p.Name] = [int64]$p.Value }
 
@@ -131,7 +131,7 @@ if (-not $Quiet) {
     }
     foreach ($v in $vaults.Keys) {
         $ok = $result.FullAccessVaults -contains $v
-        Write-Host ("  Vault {0}: {1}" -f $v, $(if ($ok) { 'full access (External Storage API allowed)' } else { 'limited access (External Storage API will refuse)' })) `
+        Write-Host ("  Vault {0}: {1}" -f $v, $(if ($ok) { 'full access (Storage API allowed)' } else { 'limited access (Storage API will refuse)' })) `
             -ForegroundColor $(if ($ok) { 'Green' } else { 'Yellow' })
     }
 }

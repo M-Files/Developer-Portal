@@ -1,11 +1,11 @@
 ---
 layout: page
-title: File Operations — External Storage API
+title: File Operations — Storage API
 includeInSearch: true
 breadcrumb: File Operations
 ---
 
-These endpoints manage files on existing objects. For uploading files during object creation, see [Creating Objects]({{ site.baseurl }}/APIs/EXTERNAL-API/Creating-Objects/). For files larger than 25 MB, see [Large File Upload]({{ site.baseurl }}/APIs/EXTERNAL-API/Large-File-Upload/).
+These endpoints manage files on existing objects. For uploading files during object creation, see [Creating Objects]({{ site.baseurl }}/APIs/STORAGE-API/Creating-Objects/). For files larger than 25 MB, see [Large File Upload]({{ site.baseurl }}/APIs/STORAGE-API/Large-File-Upload/).
 
 ## Upload a file to an existing object
 
@@ -43,7 +43,7 @@ Content-Type: application/json
 }
 ```
 
-The maximum file size for direct upload is 25 MB. For larger files, use the [SAS token flow]({{ site.baseurl }}/APIs/EXTERNAL-API/Large-File-Upload/).
+The maximum file size for direct upload is 25 MB. For larger files, use the [SAS token flow]({{ site.baseurl }}/APIs/STORAGE-API/Large-File-Upload/).
 {:.note}
 
 ## Download a file

@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Core Concepts — External Storage API
+title: Core Concepts — Storage API
 includeInSearch: true
 breadcrumb: Concepts
 ---
 
-## Security context object
+## Workspace (`securityContextObject`)
 
-Every imported object **must** have a `securityContextObject`. This is a reference to an existing Advanced object (e.g. a Project) whose ACL (Access Control List) determines who can access the imported object.
+Every Record **must** belong to a workspace: an existing Active Content object, such as an account or a project. In the API this is the `securityContextObject`. The Record is listed in that workspace and inherits its permissions.
 
 ```json
 {
@@ -20,38 +20,25 @@ Every imported object **must** have a `securityContextObject`. This is a referen
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `objType` | int | The object type ID of the parent object |
-| `id` | int | The ID of the parent object |
+| `objType` | int | The object type ID of the workspace |
+| `id` | int | The ID of the workspace |
 
-The security context links a Basic object to the Advanced object that controls its permissions. When M-Files checks whether a user can access a Basic object, it evaluates the ACL of the referenced security context object.
+When M-Files checks whether a user can see a Record, it checks the user's access to the Record's workspace.
 {:.note}
 
-## How objects relate through security context and tags
+## Related objects
 
-Consider a scenario where Object B is an Advanced object (e.g. a Project), and Objects A, C, and D are Basic objects that reference it:
+A Record can refer to Active Content objects through lookup properties. Those objects then show the Record as a related object.
 
 ```
-Object A ──┐
-            ├──► Object B (Advanced / Project)
-Object C ──┤     ▲ security context
-            │
-Object D ──┘
+Record A ──┐
+           ├──► Project 23 (workspace)
+Record C ──┤
+           │
+Record D ──┘
 ```
 
-When Basic objects are created:
-
-1. Their lookup properties that reference Advanced objects are used to **generate tags**
-2. Tags follow the pattern: `related-{vaultId}-{referencedObjectType}` = `{referencedObjectId}`
-3. When the Advanced object is viewed, the system searches for all Basic objects tagged with references to its ID
-
-### Tag generation example
-
-Given a Basic object with property 1078 referencing a Project (objType=101, id=23):
-
-* **Generated tag:** `related-{vaultId}-101` = `"23"`
-* **Result:** When Project id=23 is opened, this Basic object is found as a related object
-
-This creates an efficient reverse lookup — Advanced objects can find all Basic objects that reference them without scanning every object.
+For example, a Record with property 1078 referring to Project 23 (`objType` 101, `id` 23) is listed when Project 23 is opened.
 
 ## Property values
 
@@ -144,9 +131,9 @@ Errors follow the HTTP Problem Details format (RFC 7807):
 | Status | Meaning | Action |
 |--------|---------|--------|
 | 400 | Bad request — malformed payload or missing required fields | Fix the request body |
-| 401 | Unauthorized — token expired or invalid | Get a new access token (see [Authentication]({{ site.baseurl }}/APIs/EXTERNAL-API/Authentication/#running-a-program-continuously)) |
+| 401 | Unauthorized — token expired or invalid | Get a new access token (see [Authentication]({{ site.baseurl }}/APIs/STORAGE-API/Authentication/#running-a-program-continuously)) |
 | 403 | Forbidden — insufficient scope | Ensure token has `mfmasterstorage` scope |
 | 404 | Not found — object or file does not exist | Verify the IDs in the URL |
-| 413 | Payload too large — file exceeds 25 MB | Use the [SAS token flow]({{ site.baseurl }}/APIs/EXTERNAL-API/Large-File-Upload/) |
+| 413 | Payload too large — file exceeds 25 MB | Use the [SAS token flow]({{ site.baseurl }}/APIs/STORAGE-API/Large-File-Upload/) |
 | 429 | Too many requests — rate limited | Back off; respect `Retry-After` header |
 | 500 | Internal server error | Retry with exponential backoff |

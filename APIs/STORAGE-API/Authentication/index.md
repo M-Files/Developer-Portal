@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Authentication — External Storage API
+title: Authentication — Storage API
 includeInSearch: true
 breadcrumb: Authentication
 ---
 
-Every External Storage API request needs a JWT access token with the `mfmasterstorage` scope:
+Every Storage API request needs a JWT access token with the `mfmasterstorage` scope:
 
 ```
 Authorization: Bearer <access token>
@@ -13,7 +13,7 @@ Authorization: Bearer <access token>
 
 Programs get this token with a **client application**: a login for a program rather than for a person. A client application has a client ID and a secret, and it can access only the vaults you give it. With these, your program gets tokens by itself, with no one signing in (the OAuth 2.0 *client credentials* flow).
 
-New to the API? The [Quickstart]({{ site.baseurl }}/APIs/EXTERNAL-API/Quickstart/) takes you from nothing to your first API call with ready-made scripts.
+New to the API? The [Quickstart]({{ site.baseurl }}/APIs/STORAGE-API/Quickstart/) takes you from nothing to your first API call with ready-made scripts.
 {:.note}
 
 ## 1. Create a client application
@@ -21,10 +21,10 @@ New to the API? The [Quickstart]({{ site.baseurl }}/APIs/EXTERNAL-API/Quickstart
 **Temporary solution.** Creating a client application with this script is a temporary solution until a full solution is available. The way you create client applications will change; getting tokens and calling the API (steps 2 and 3) will not.
 {:.note.warning}
 
-You do this once, as a subscription administrator. Download [`New-ExternalApiClient.ps1`]({{ site.baseurl }}/APIs/EXTERNAL-API/Quickstart/scripts/New-ExternalApiClient.ps1) and run:
+You do this once, as a subscription administrator. Download [`New-StorageApiClient.ps1`]({{ site.baseurl }}/APIs/STORAGE-API/Quickstart/scripts/New-StorageApiClient.ps1) and run:
 
 ```powershell
-.\New-ExternalApiClient.ps1 -SubscriptionId <subscription ID> -VaultGuid <vault GUID>
+.\New-StorageApiClient.ps1 -SubscriptionId <subscription ID> -VaultGuid <vault GUID>
 ```
 
 An Edge window opens. Sign in to M-Files Manage as you normally do; the script does the rest and saves the client ID and secret to a file that only your Windows user account can read.
@@ -45,18 +45,18 @@ An Edge window opens. Sign in to M-Files Manage as you normally do; the script d
 3. Reads your Manage sign-in from that window's requests to the M-Files subscription API. To do this it starts Edge with remote debugging enabled on a local port that only your computer can reach.
 4. Closes the window and deletes the temporary profile. Your sign-in is used only for this one operation and is not saved.
 5. Creates the client application with access to the vaults you gave, and **no** subscription administration rights.
-6. Saves the client ID and secret, encrypted for your Windows user, to `%LOCALAPPDATA%\M-Files\ExternalApi\client.xml`.
+6. Saves the client ID and secret, encrypted for your Windows user, to `%LOCALAPPDATA%\M-Files\StorageApi\client.xml`.
 
 The secret is shown only once, when the client is created. Add `-ShowSecret` to print it so you can store it in your own secret store, such as Azure Key Vault. Never put it in source code.
 {:.note.warning}
 
 ### Vault access
 
-The External Storage API requires **full access** to the vault. By default the script grants vault roles `1027`, which is:
+The Storage API requires **full access** to the vault. By default the script grants vault roles `1027`, which is:
 
 | Role | Value | Why |
 |---|---|---|
-| Full control of vault | 1 | Required by the External Storage API |
+| Full control of vault | 1 | Required by the Storage API |
 | Log in to vault | 2 | Without this the vault is left out of the token completely |
 | Internal user | 1024 | Other roles have no effect without it |
 
@@ -97,10 +97,10 @@ curl -X POST https://login.m-files.com/connect/token \
 
 ### PowerShell
 
-[`Get-ExternalApiToken.ps1`]({{ site.baseurl }}/APIs/EXTERNAL-API/Quickstart/scripts/Get-ExternalApiToken.ps1) reads the client saved by `New-ExternalApiClient.ps1`, or the environment variables `MFILES_CLIENT_ID` and `MFILES_CLIENT_SECRET`:
+[`Get-StorageApiToken.ps1`]({{ site.baseurl }}/APIs/STORAGE-API/Quickstart/scripts/Get-StorageApiToken.ps1) reads the client saved by `New-StorageApiClient.ps1`, or the environment variables `MFILES_CLIENT_ID` and `MFILES_CLIENT_SECRET`:
 
 ```powershell
-$token = (.\Get-ExternalApiToken.ps1 -Quiet).AccessToken
+$token = (.\Get-StorageApiToken.ps1 -Quiet).AccessToken
 ```
 
 ### C#
@@ -144,7 +144,7 @@ Send the token in the `Authorization` header. The API address is your vault's ad
 | | |
 |---|---|
 | Vault address | `https://<vault-name>.cloudvault.m-files.com` |
-| External Storage API | `https://<vault-name>.cloudvault.api.m-files.com/storage` |
+| Storage API | `https://<vault-name>.cloudvault.api.m-files.com/storage` |
 
 ```bash
 curl -H "Authorization: Bearer <access token>" \
@@ -165,7 +165,7 @@ curl -H "Authorization: Bearer <access token>" \
 Removing a client application, or its access to a vault, does not cancel tokens it already has. They stay valid until they expire, at most one hour later.
 {:.note.warning}
 
-[`Invoke-ExternalApiDemo.ps1`]({{ site.baseurl }}/APIs/EXTERNAL-API/Quickstart/scripts/Invoke-ExternalApiDemo.ps1) with `-Watch` shows these rules in a running loop.
+[`Invoke-StorageApiDemo.ps1`]({{ site.baseurl }}/APIs/STORAGE-API/Quickstart/scripts/Invoke-StorageApiDemo.ps1) with `-Watch` shows these rules in a running loop.
 
 ## Troubleshooting
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deleting Objects — External Storage API
+title: Deleting Objects — Storage API
 includeInSearch: true
 breadcrumb: Deleting Objects
 ---

@@ -1,11 +1,11 @@
 <#
 .SYNOPSIS
-    Read-only demo of the M-Files External Storage API using a client application's token.
+    Read-only demo of the M-Files Storage API using a client application's token.
     Nothing is created, changed or deleted in the vault.
 
 .DESCRIPTION
     Default run:
-      1. Gets a token (Get-ExternalApiToken.ps1).
+      1. Gets a token (Get-StorageApiToken.ps1).
       2. Lists the first objects of one object type.
       3. Reads the first object.
       4. With -DownloadTo, downloads that object's first file.
@@ -16,7 +16,7 @@
       * on 429 or 503, wait (honouring Retry-After) and try again.
 
 .PARAMETER StorageUrl
-    External Storage API address of the vault, for example
+    Storage API address of the vault, for example
     https://<vault-name>.cloudvault.api.m-files.com/storage
 
 .PARAMETER VaultUrl
@@ -24,13 +24,13 @@
     https://<vault-name>.cloudvault.m-files.com. The script works out the API address from it.
 
 .EXAMPLE
-    .\Invoke-ExternalApiDemo.ps1 -VaultUrl https://contoso.cloudvault.m-files.com
+    .\Invoke-StorageApiDemo.ps1 -VaultUrl https://contoso.cloudvault.m-files.com
 
 .EXAMPLE
-    .\Invoke-ExternalApiDemo.ps1 -VaultUrl https://contoso.cloudvault.m-files.com -DownloadTo .\downloads
+    .\Invoke-StorageApiDemo.ps1 -VaultUrl https://contoso.cloudvault.m-files.com -DownloadTo .\downloads
 
 .EXAMPLE
-    .\Invoke-ExternalApiDemo.ps1 -VaultUrl https://contoso.cloudvault.m-files.com -Watch -IntervalSeconds 300
+    .\Invoke-StorageApiDemo.ps1 -VaultUrl https://contoso.cloudvault.m-files.com -Watch -IntervalSeconds 300
 
 .NOTES
     Provided as a sample, as-is, without warranty.
@@ -84,7 +84,7 @@ if ($VaultUrl) {
 $StorageUrl = $StorageUrl.TrimEnd('/')
 
 # --- Token handling: get one, renew it 5 minutes before it expires ----------------------------
-$tokenScript = Join-Path $PSScriptRoot 'Get-ExternalApiToken.ps1'
+$tokenScript = Join-Path $PSScriptRoot 'Get-StorageApiToken.ps1'
 $script:token = $null
 function Get-Token([switch]$Force) {
     if ($Force -or -not $script:token -or $script:token.ExpiresAtUtc -lt (Get-Date).ToUniversalTime().AddMinutes(5)) {

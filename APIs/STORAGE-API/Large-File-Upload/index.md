@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Large File Upload (SAS Token Flow) — External Storage API
+title: Large File Upload (SAS Token Flow) — Storage API
 includeInSearch: true
 breadcrumb: Large File Upload
 ---
